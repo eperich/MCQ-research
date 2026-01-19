@@ -1,0 +1,116 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,3,0,1
+2,3,0,1
+3,3,0,1
+4,3,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,2,9
+1,3,3,2,9
+1,4,1,1,9
+2,3,2,2,9
+2,4,2,3,9
+3,4,1,1,9
+
+Summary
+Total Comparisons,66
+Duplicates (≥85%),11
+Similar (70-85%),15
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What does the method scnr.next() read from input?,1,1,q1,What does the method scnr.next() read from input?,3,1,0.946,duplicate
+q1,What does the method scnr.next() read from input?,3,1,q1,What does the method scnr.next() do when reading input?,4,1,0.935,duplicate
+q1,What does the method scnr.next() return when reading input?,2,1,q1,What does the method scnr.next() read from input?,3,1,0.93,duplicate
+q2,"When assigning one String variable to another, what happens?",2,2,q2,"After assigning one String variable to another, what happens?",3,2,0.93,duplicate
+q1,What does the method scnr.next() read from input?,1,1,q1,What does the method scnr.next() return when reading input?,2,1,0.929,duplicate
+q1,What does the method scnr.next() read from input?,1,1,q1,What does the method scnr.next() do when reading input?,4,1,0.922,duplicate
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q3,Which method should be used to read a string that includes spaces?,3,3,0.905,duplicate
+q1,What does the method scnr.next() return when reading input?,2,1,q1,What does the method scnr.next() do when reading input?,4,1,0.895,duplicate
+q2,What happens if a String variable is assigned to another String variable?,1,2,q2,"After assigning one String variable to another, what happens?",3,2,0.856,duplicate
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.856,duplicate
+q2,What happens if a String variable is assigned to another String variable?,1,2,q2,"When assigning one String variable to another, what happens?",2,2,0.855,duplicate
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q1,What does the method scnr.next() return when reading input?,2,1,0.778,similar
+q1,What does the method scnr.next() read from input?,1,1,q3,Which method reads an entire line including spaces into a string variable?,1,3,0.768,similar
+q1,What does the method scnr.next() return when reading input?,2,1,q3,Which method should be used to read a string that includes spaces?,3,3,0.759,similar
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q1,What does the method scnr.next() read from input?,3,1,0.758,similar
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,q1,What does the method scnr.next() do when reading input?,4,1,0.758,similar
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q1,What does the method scnr.next() do when reading input?,4,1,0.752,similar
+q1,What does the method scnr.next() read from input?,1,1,q3,Which method should be used to read a string that includes spaces?,3,3,0.749,similar
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,q1,What does the method scnr.next() read from input?,3,1,0.749,similar
+q1,What does the method scnr.next() return when reading input?,2,1,q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,0.741,similar
+q1,What does the method scnr.next() read from input?,3,1,q3,Which method should be used to read a string that includes spaces?,3,3,0.726,similar
+q1,What does the method scnr.next() read from input?,1,1,q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,0.725,similar
+q1,What does the method scnr.next() return when reading input?,2,1,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.722,similar
+q3,Which method should be used to read a string that includes spaces?,3,3,q1,What does the method scnr.next() do when reading input?,4,1,0.717,similar
+q1,What does the method scnr.next() return when reading input?,2,1,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.712,similar
+q1,What does the method scnr.next() do when reading input?,4,1,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.706,similar
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,0.699,low
+q1,What does the method scnr.next() read from input?,3,1,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.692,low
+q1,What does the method scnr.next() read from input?,1,1,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.682,low
+q1,What does the method scnr.next() read from input?,1,1,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.668,low
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,q3,Which method should be used to read a string that includes spaces?,3,3,0.667,low
+q1,What does the method scnr.next() read from input?,3,1,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.667,low
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.666,low
+q3,Which method should be used to read a string that includes spaces?,3,3,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.662,low
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.656,low
+q3,Which method should be used to read a string that includes spaces?,3,3,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.653,low
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.649,low
+q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.649,low
+q1,What does the method scnr.next() do when reading input?,4,1,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.632,low
+q2,"After assigning one String variable to another, what happens?",3,2,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.415,low
+q2,"When assigning one String variable to another, what happens?",2,2,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.407,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,2,0.399,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q3,Which method reads an entire line including spaces into a string variable?,1,3,0.276,low
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q2,"When assigning one String variable to another, what happens?",2,2,0.271,low
+q3,Which method reads an entire line including spaces into a string variable?,1,3,q2,"After assigning one String variable to another, what happens?",3,2,0.266,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,0.262,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q3,Which method should be used to read a string that includes spaces?,3,3,0.26,low
+q2,"When assigning one String variable to another, what happens?",2,2,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.255,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.254,low
+q2,"When assigning one String variable to another, what happens?",2,2,q3,Which method should be used to read a string that includes spaces?,3,3,0.252,low
+q2,"When assigning one String variable to another, what happens?",2,2,q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,0.247,low
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,3,q2,"After assigning one String variable to another, what happens?",3,2,0.246,low
+q2,"After assigning one String variable to another, what happens?",3,2,q3,Which method should be used to read a string that includes spaces?,3,3,0.245,low
+q2,"After assigning one String variable to another, what happens?",3,2,q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,3,0.244,low
+q1,What does the method scnr.next() return when reading input?,2,1,q2,"When assigning one String variable to another, what happens?",2,2,0.231,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q1,What does the method scnr.next() return when reading input?,2,1,0.227,low
+q1,What does the method scnr.next() return when reading input?,2,1,q2,"After assigning one String variable to another, what happens?",3,2,0.214,low
+q1,What does the method scnr.next() read from input?,1,1,q2,What happens if a String variable is assigned to another String variable?,1,2,0.213,low
+q1,What does the method scnr.next() read from input?,1,1,q2,"When assigning one String variable to another, what happens?",2,2,0.199,low
+q1,What does the method scnr.next() read from input?,1,1,q2,"After assigning one String variable to another, what happens?",3,2,0.199,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q1,What does the method scnr.next() read from input?,3,1,0.197,low
+q2,What happens if a String variable is assigned to another String variable?,1,2,q1,What does the method scnr.next() do when reading input?,4,1,0.196,low
+q1,What does the method scnr.next() read from input?,3,1,q2,"After assigning one String variable to another, what happens?",3,2,0.178,low
+q2,"When assigning one String variable to another, what happens?",2,2,q1,What does the method scnr.next() read from input?,3,1,0.176,low
+q2,"When assigning one String variable to another, what happens?",2,2,q1,What does the method scnr.next() do when reading input?,4,1,0.17,low
+q2,"After assigning one String variable to another, what happens?",3,2,q1,What does the method scnr.next() do when reading input?,4,1,0.17,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Declare and initialize string variables in Java.  
+Differentiate between string literals and other data types such as integers and characters.  
+Perform input and output operations with strings, including handling strings with and without whitespace.  
+Use Scanner methods next() and nextLine() appropriately to read strings from input.  
+Analyze and resolve common issues when mixing different string input methods like next() and nextLine()."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the method scnr.next() read from input?,1,yes,"This question assesses the use of Scanner's next() method to read strings from input, directly related to learning objectives about input operations and Scanner methods."
+q2,What happens if a String variable is assigned to another String variable?,1,yes,"This question evaluates understanding of string variable assignment and references, which relates to differentiating string literals and handling string variables."
+q3,Which method reads an entire line including spaces into a string variable?,1,yes,"This question tests knowledge of which Scanner method reads an entire line including spaces, directly linked to input/output operations with strings and Scanner method usage."
+q1,What does the method scnr.next() return when reading input?,2,yes,"This question again assesses understanding of what scnr.next() returns, aligning with learning objectives on Scanner methods and string input handling."
+q2,"When assigning one String variable to another, what happens?",2,yes,"This question evaluates what happens when assigning one String variable to another, related to understanding string references and data types."
+q3,Why is an extra scnr.nextLine() needed after scnr.next() before reading a full line?,2,yes,"This question addresses the common issue of mixing next() and nextLine() methods and why an extra nextLine() is needed, directly aligned with the learning objectives."
+q1,What does the method scnr.next() read from input?,3,yes,"This question tests knowledge of what scnr.next() reads from input, related to Scanner methods and string input handling."
+q2,"After assigning one String variable to another, what happens?",3,yes,"This question assesses understanding of string variable assignment and references, which is part of differentiating string literals and variables."
+q3,Which method should be used to read a string that includes spaces?,3,yes,"This question evaluates which Scanner method should be used to read strings including spaces, directly related to input/output operations and Scanner methods."
+q1,What does the method scnr.next() do when reading input?,4,yes,"This question tests understanding of the behavior of scnr.next() when reading input, aligned with learning objectives on Scanner methods."
+q2,"After executing str1 = scnr.next() and str2 = scnr.nextLine(), what does str2 contain?",4,yes,"This question assesses understanding of the effect of mixing scnr.next() and scnr.nextLine() on string input, directly related to handling input methods and common issues."
+q3,Why is an extra scnr.nextLine() needed when mixing next() and nextLine() calls?,4,yes,"This question evaluates why an extra scnr.nextLine() is needed when mixing next() and nextLine(), directly addressing common issues in string input handling."

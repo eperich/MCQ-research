@@ -1,0 +1,54 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='63b99b47-d578-9165-3b9a-32546d9b04d5'>
+<instructions>
+Which statement has a syntax error? Assume variables x, y, z, and age have already been defined.
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>y = y</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>x + y = z</codeBlock></choice>
+<choice><codeBlock language='python'>age = "32"</codeBlock></choice>
+<choice><codeBlock language='python'>print("Name, age")</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='b5460447-5d5c-551a-242e-bea32a9a92f3'>
+<instructions>
+Dividing by zero is an example of which type of error?
+</instructions>
+
+<choices>
+<choice correct='true'>runtime</choice>
+<choice>syntax</choice>
+<choice>logic</choice>
+<choice>infinity</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='4e34619d-b0b2-6105-d328-9d4c82357893'>
+<instructions>
+Which runtime error type occurs when trying to convert "abc" to an integer?
+</instructions>
+
+<choices>
+<choice>TypeError</choice>
+<choice>LogicError</choice>
+<choice>NameError</choice>
+<choice correct='true'>ValueError</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='bcbd3e4a-ad6f-65b5-4790-a7558bbcc596'>
+<instructions>
+ Which type of error does not cause the program to crash?
+</instructions>
+
+<choices>
+<choice correct='true'>logic error</choice>
+<choice>value error</choice>
+<choice>indentation error</choice>
+<choice>assignment error</choice>
+</choices>
+</question>

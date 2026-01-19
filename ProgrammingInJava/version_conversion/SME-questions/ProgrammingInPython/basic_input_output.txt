@@ -1,0 +1,82 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='47fbe3f8-1e3a-4f38-1517-1f1431f50842'>
+<instructions>
+Which statement outputs the text: "I won't quit!"?
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>print(I won't quit!)</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>print("I won't quit!")</codeBlock></choice>
+<choice><codeBlock language='python'>print('I won't quit!')</codeBlock></choice>
+<choice><codeBlock language='python'>print('I won't quit!', punctuation=True)</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='b1c33e2e-fda3-c54b-ab99-83f9d7e0e486'>
+<instructions>
+Space, tab, and newline are all called _____ characters.
+</instructions>
+
+<choices>
+<choice>noprint</choice>
+<choice>symbol</choice>
+<choice>space-line</choice>
+<choice correct='true'>whitespace</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='1d330a7e-f814-aa1e-49e3-af9dbc758e59'>
+<instructions>
+Which statement does not print a newline character at the end?
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>print("First part…")</codeBlock></choice>
+<choice><codeBlock language='python'>print("First part…\n")</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>print("First part…", end="")</codeBlock></choice>
+<choice><codeBlock language='python'>print("First part…", end="-\n")</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='70f835a5-49c1-9739-d61a-0a1bc5757490'>
+<instructions>
+Which statement reads a user-entered string into variable user_name?
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>input = user_name()</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>user_name = input()</codeBlock></choice>
+<choice><codeBlock language='python'>input() => user_name</codeBlock></choice>
+<choice><codeBlock language='python'>user_name = "input()"</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='7ae62d7c-7844-9fe2-33ba-2d43aef4c211'>
+<instructions>
+ Which function converts a string to an integer?
+</instructions>
+
+<choices>
+<choice correct='true'>int()</choice>
+<choice>integer()</choice>
+<choice>string_to_int()</choice>
+<choice>convert(string, int)</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='3add837f-13b6-420c-6a39-53e5324bf5db'>
+<instructions>
+In the statement: <codeBlock language='python'>age = input("Enter your age: ")</codeBlock>, the string "Enter your age: " is called a(n) _____.
+</instructions>
+
+<choices>
+<choice correct='true'>prompt</choice>
+<choice>prefix</choice>
+<choice>variable</choice>
+<choice>assignment</choice>
+</choices>
+</question>

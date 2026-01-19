@@ -1,0 +1,172 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,1,16
+1,3,2,1,16
+1,4,2,1,16
+2,3,1,1,16
+2,4,1,1,16
+3,4,3,1,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),10
+Similar (70-85%),6
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,Which is a valid assignment statement?,1,2,q4,Which is a valid assignment statement?,3,4,0.973,duplicate
+q1,What does an assignment statement do in a program?,1,1,q1,What does an assignment statement do in programming?,4,1,0.926,duplicate
+q1,What does an assignment statement do in a program?,1,1,q1,What does an assignment statement do in programming?,3,1,0.916,duplicate
+q3,Which is a valid assignment statement in programming?,2,3,q4,Which is a valid assignment statement?,3,4,0.914,duplicate
+q3,Which is a valid assignment statement in programming?,2,3,q4,Which of the following is a valid assignment statement?,4,4,0.91,duplicate
+q1,What does an assignment statement do in programming?,3,1,q1,What does an assignment statement do in programming?,4,1,0.9,duplicate
+q2,Which is a valid assignment statement?,1,2,q3,Which is a valid assignment statement in programming?,2,3,0.897,duplicate
+q2,Which is a valid assignment statement?,1,2,q4,Which of the following is a valid assignment statement?,4,4,0.897,duplicate
+q4,Which is a valid assignment statement?,3,4,q4,Which of the following is a valid assignment statement?,4,4,0.897,duplicate
+q3,"In x = x + 1, what happens to x?",3,3,q3,"In the statement x = x + 1, what happens to x?",4,3,0.864,duplicate
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.833,similar
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.758,similar
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.728,similar
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,0.724,similar
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.721,similar
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.712,similar
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.671,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.671,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q3,Which is a valid assignment statement in programming?,2,3,0.666,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q4,Which of the following is a valid assignment statement?,4,4,0.665,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.664,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q3,"In x = x + 1, what happens to x?",3,3,0.661,low
+q2,Which is a valid assignment statement?,1,2,q1,"In programming, what does the statement x = 5 do?",2,1,0.64,low
+q3,Which is a valid assignment statement in programming?,2,3,q1,What does an assignment statement do in programming?,4,1,0.634,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q4,Which is a valid assignment statement?,3,4,0.631,low
+q3,Which is a valid assignment statement in programming?,2,3,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.619,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,0.615,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.613,low
+q1,What does an assignment statement do in a program?,1,1,q1,"In programming, what does the statement x = 5 do?",2,1,0.612,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q1,What does an assignment statement do in programming?,3,1,0.612,low
+q4,Which is a valid assignment statement?,3,4,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.612,low
+q1,What does an assignment statement do in a program?,1,1,q3,Which is a valid assignment statement in programming?,2,3,0.61,low
+q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,q4,Which of the following is a valid assignment statement?,4,4,0.607,low
+q4,Which is a valid assignment statement?,3,4,q1,What does an assignment statement do in programming?,4,1,0.605,low
+q2,Which is a valid assignment statement?,1,2,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.604,low
+q2,Which is a valid assignment statement?,1,2,q1,What does an assignment statement do in programming?,4,1,0.602,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q3,"In the statement x = x + 1, what happens to x?",4,3,0.602,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q1,What does an assignment statement do in programming?,4,1,0.599,low
+q1,What does an assignment statement do in a program?,1,1,q2,Which is a valid assignment statement?,1,2,0.596,low
+q1,What does an assignment statement do in a program?,1,1,q4,Which is a valid assignment statement?,3,4,0.596,low
+q3,Which is a valid assignment statement in programming?,2,3,q1,What does an assignment statement do in programming?,3,1,0.596,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q3,"In x = x + 1, what happens to x?",3,3,0.589,low
+q1,What does an assignment statement do in programming?,4,1,q4,Which of the following is a valid assignment statement?,4,4,0.586,low
+q3,Which is a valid assignment statement in programming?,2,3,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.58,low
+q1,What does an assignment statement do in a program?,1,1,q4,Which of the following is a valid assignment statement?,4,4,0.579,low
+q2,Which is a valid assignment statement?,1,2,q1,What does an assignment statement do in programming?,3,1,0.579,low
+q1,What does an assignment statement do in programming?,3,1,q4,Which is a valid assignment statement?,3,4,0.579,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.578,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.574,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q3,"In the statement x = x + 1, what happens to x?",4,3,0.569,low
+q1,What does an assignment statement do in programming?,3,1,q4,Which of the following is a valid assignment statement?,4,4,0.568,low
+q3,Which is a valid assignment statement in programming?,2,3,q3,"In the statement x = x + 1, what happens to x?",4,3,0.567,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q3,"In x = x + 1, what happens to x?",3,3,0.559,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.551,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q3,"In the statement x = x + 1, what happens to x?",4,3,0.55,low
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,q4,Which of the following is a valid assignment statement?,4,4,0.548,low
+q2,Which is a valid assignment statement?,1,2,q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,0.547,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q4,Which is a valid assignment statement?,3,4,0.539,low
+q2,Which is a valid assignment statement?,1,2,q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,0.538,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.537,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q4,Which is a valid assignment statement?,3,4,0.533,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q3,Which is a valid assignment statement in programming?,2,3,0.529,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q4,Which of the following is a valid assignment statement?,4,4,0.528,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q3,Which is a valid assignment statement in programming?,2,3,0.526,low
+q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,q3,"In the statement x = x + 1, what happens to x?",4,3,0.526,low
+q3,"In x = x + 1, what happens to x?",3,3,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.522,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q3,"In x = x + 1, what happens to x?",3,3,0.519,low
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,q4,Which is a valid assignment statement?,3,4,0.519,low
+q3,"In the statement x = x + 1, what happens to x?",4,3,q4,Which of the following is a valid assignment statement?,4,4,0.519,low
+q4,Which is a valid assignment statement?,3,4,q3,"In the statement x = x + 1, what happens to x?",4,3,0.518,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q3,"In the statement x = x + 1, what happens to x?",4,3,0.517,low
+q2,Which is a valid assignment statement?,1,2,q3,"In the statement x = x + 1, what happens to x?",4,3,0.511,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,0.511,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q1,"In programming, what does the statement x = 5 do?",2,1,0.511,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q3,"In the statement x = x + 1, what happens to x?",4,3,0.504,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q3,"In x = x + 1, what happens to x?",3,3,0.503,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q4,Which of the following is a valid assignment statement?,4,4,0.502,low
+q2,Which is a valid assignment statement?,1,2,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.499,low
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,q3,"In x = x + 1, what happens to x?",3,3,0.499,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q1,"In programming, what does the statement x = 5 do?",2,1,0.493,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q3,Which is a valid assignment statement in programming?,2,3,0.493,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.493,low
+q3,Which is a valid assignment statement in programming?,2,3,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.493,low
+q3,Which is a valid assignment statement in programming?,2,3,q3,"In x = x + 1, what happens to x?",3,3,0.486,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q4,Which of the following is a valid assignment statement?,4,4,0.482,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q4,Which of the following is a valid assignment statement?,4,4,0.48,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q4,Which is a valid assignment statement?,3,4,0.477,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q4,Which is a valid assignment statement?,3,4,0.476,low
+q2,Which is a valid assignment statement?,1,2,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.467,low
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,q3,"In the statement x = x + 1, what happens to x?",4,3,0.467,low
+q1,What does an assignment statement do in a program?,1,1,q3,"In the statement x = x + 1, what happens to x?",4,3,0.459,low
+q1,What does an assignment statement do in programming?,4,1,q3,"In the statement x = x + 1, what happens to x?",4,3,0.45,low
+q2,Which is a valid assignment statement?,1,2,q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,0.449,low
+q1,What does an assignment statement do in programming?,3,1,q3,"In the statement x = x + 1, what happens to x?",4,3,0.445,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,0.444,low
+q3,"In x = x + 1, what happens to x?",3,3,q4,Which of the following is a valid assignment statement?,4,4,0.434,low
+q1,"In programming, what does the statement x = 5 do?",2,1,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.43,low
+q3,"In x = x + 1, what happens to x?",3,3,q4,Which is a valid assignment statement?,3,4,0.424,low
+q2,Which is a valid assignment statement?,1,2,q3,"In x = x + 1, what happens to x?",3,3,0.421,low
+q1,What does an assignment statement do in a program?,1,1,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.349,low
+q1,What does an assignment statement do in a program?,1,1,q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,0.336,low
+q1,What does an assignment statement do in programming?,4,1,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.332,low
+q3,"In x = x + 1, what happens to x?",3,3,q1,What does an assignment statement do in programming?,4,1,0.317,low
+q1,What does an assignment statement do in programming?,3,1,q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,2,0.314,low
+q1,What does an assignment statement do in programming?,3,1,q3,"In x = x + 1, what happens to x?",3,3,0.31,low
+q1,What does an assignment statement do in a program?,1,1,q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,0.308,low
+q1,What does an assignment statement do in a program?,1,1,q3,"In x = x + 1, what happens to x?",3,3,0.308,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q1,What does an assignment statement do in programming?,4,1,0.308,low
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,2,q1,What does an assignment statement do in programming?,3,1,0.299,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q1,What does an assignment statement do in programming?,3,1,0.287,low
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,3,q1,What does an assignment statement do in programming?,4,1,0.285,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q1,What does an assignment statement do in programming?,4,1,0.279,low
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,q1,What does an assignment statement do in programming?,3,1,0.275,low
+q1,What does an assignment statement do in a program?,1,1,q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,4,0.272,low
+q1,What does an assignment statement do in a program?,1,1,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.221,low
+q1,What does an assignment statement do in programming?,3,1,q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,0.221,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q1,What does an assignment statement do in programming?,3,1,0.218,low
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,2,q1,What does an assignment statement do in programming?,4,1,0.217,low
+q1,What does an assignment statement do in a program?,1,1,q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,0.203,low
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,4,q1,What does an assignment statement do in programming?,4,1,0.199,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Differentiate variables from assignment statements.  
+Trace and determine variable values after code execution.  
+Write assignment statements to store or update variable values, including assignments with multiple variable expressions."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does an assignment statement do in a program?,1,yes,"Yes, the question directly assesses the learning objective of differentiating variables from assignment statements, as it specifically asks about the function of an assignment statement in a program."
+q2,Which is a valid assignment statement?,1,yes,"Yes, the question assesses the learning objective of writing assignment statements to store or update variable values, as it requires identifying valid assignment syntax."
+q3,"After executing x = 4 and then x = x + 3, what is the value of x?",1,yes,"Yes, the question directly assesses the ability to trace and determine variable values after code execution, as it requires understanding the assignment statements and their effects on the variable x."
+q4,"If y = 10 and x = y, what happens to x if y later changes to 5?",1,yes,"Yes, the question directly assesses the ability to differentiate variables from assignment statements and trace variable values after code execution, as it requires understanding how variable assignments work and how changes to one variable affect another."
+q1,"In programming, what does the statement x = 5 do?",2,yes,"Yes, the question directly assesses the learning objective of differentiating variables from assignment statements, as it specifically asks about the function of an assignment statement."
+q2,"After executing y = x + 2 with x = 4, what is y's value?",2,yes,"Yes, this question directly assesses the ability to trace and determine variable values after code execution, as it requires calculating the value of y based on the given assignment statement and variable value."
+q3,Which is a valid assignment statement in programming?,2,yes,"Yes, the question directly assesses the learning objective of differentiating variables from assignment statements, as it requires the identification of a valid assignment statement among the provided choices."
+q4,"If x = 5 and then x = x + 3, what is x's final value?",2,yes,"Yes, this question directly assesses the learning objectives by requiring the learner to trace and determine the value of the variable x after executing the assignment statement."
+q1,What does an assignment statement do in programming?,3,yes,"Yes, the question directly assesses the learning objective of differentiating variables from assignment statements, as it specifically asks about the function of an assignment statement in programming."
+q2,"Given x = 4 and y = x + 3, what is the value of y?",3,yes,"Yes, this question directly assesses the ability to trace and determine variable values after code execution, as it requires the learner to evaluate the assignment statement and compute the value of y based on the given value of x."
+q3,"In x = x + 1, what happens to x?",3,yes,"Yes, the question directly assesses the objective of differentiating variables from assignment statements and tracing variable values after code execution, as it requires understanding the effect of the assignment statement on the variable x."
+q4,Which is a valid assignment statement?,3,yes,"Yes, this question directly assesses the learning objective of differentiating variables from assignment statements, as it requires identifying a valid assignment statement among the given choices."
+q1,What does an assignment statement do in programming?,4,yes,"Yes, the question directly assesses the learning objective of differentiating variables from assignment statements, as it specifically asks about the function of an assignment statement in programming."
+q2,"After executing x = 5 and then y = x + 3, what is y's value?",4,yes,"Yes, the question directly assesses the ability to trace and determine variable values after code execution, as it requires the learner to evaluate the assignment statements to find the value of y."
+q3,"In the statement x = x + 1, what happens to x?",4,yes,"Yes, the question assesses the objective of tracing and determining variable values after code execution, as it requires understanding the effect of the assignment statement on the variable x."
+q4,Which of the following is a valid assignment statement?,4,yes,"Yes, the question directly assesses the learning objective of differentiating variables from assignment statements, as it requires identifying a valid assignment statement among the given choices."

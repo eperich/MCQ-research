@@ -1,0 +1,54 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='d9d86e6b-7ab3-cee8-4a45-28d8165309ce'>
+<instructions>
+What is the name of the data type used for floating point numbers?
+</instructions>
+
+<choices>
+<choice correct='true'>float</choice>
+<choice>decimal</choice>
+<choice>non_integer</choice>
+<choice>floating_point</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='7db882c2-3701-3293-355c-bc3e69aa0214'>
+<instructions>
+Which of the following data values is best represented with a floating point variable?
+</instructions>
+
+<choices>
+<choice>The number of pets in a house.</choice>
+<choice>The number of acorns in a tree.</choice>
+<choice>The number of children in a classroom.</choice>
+<choice correct='true'>The speed of a snail.</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='fee291a8-d3aa-4c69-bd73-50eddc297c7a'>
+<instructions>
+ In Python, which of the following literals is shown in valid scientific notation?
+</instructions>
+
+<choices>
+<choice correct='true'>3.0004e-12</choice>
+<choice>17.012s14</choice>
+<choice>0.003x10^-5</choice>
+<choice>e12f3.04</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='8161a515-1429-1cc8-cb0e-bd4a4369f528'>
+<instructions>
+ Assigning a value to a floating point variable that is too large for the computer to represent is a condition called _____ .
+</instructions>
+
+<choices>
+<choice>bit error</choice>
+<choice correct='true'>overflow</choice>
+<choice>overcapacity</choice>
+<choice>system error</choice>
+</choices>
+</question>

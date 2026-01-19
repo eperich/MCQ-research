@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What is a common word for the textual representation of a program?,code,code,prompt,interpreter,expression,,,,,,
+Which instruction displays variables or expression values?,print(),put(),print(),output(),display(),,,,,,
+Which symbol is used in Python to create a comment?,#,*,C,//,#,,,,,,
+Which code example is an expression?,```python\n(x * y) / 2\n```,```python\nx = 4\n```,```python\nprint(x)\n```,```python\n(x * y) / 2\n```,```python\n# Display x\n```,,,,,,

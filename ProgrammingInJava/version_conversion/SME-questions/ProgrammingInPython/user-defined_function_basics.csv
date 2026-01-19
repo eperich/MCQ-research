@@ -1,0 +1,29 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nThe code that includes the keyword ""def"" is called a _____.",function definition,function call,function definition,function reference,function constructor,,,,,,
+"\nAfter a function's last statement is executed, the program returns to the next line after the _____.",function call,import statement,function definition,function call,start of the program,,,,,,
+"\nIn the following code, the variable size is the function's _____.\n```python\ndef calc_square_area(size):
+    area = size * size
+    return area
+
+val = float(input(""Enter size of square: ""))
+square_area = calc_square_area(val)
+print(f""A square of size {val} has area {square_area}"")\n```",parameter,parameter,argument,property,value,,,,,,
+"\nIn the following code, the variable val is the function call's _____.\n```python\ndef calc_square_area(size):
+    area = size * size
+    return area
+
+val = float(input(""Enter size of square: ""))
+square_area = calc_square_area(val)
+print(f""A square of size {val} has area {square_area}"")\n```",argument,parameter,argument,property,value,,,,,,
+"\nWhat is output?\n```python\ndef calc(num1, num2):
+    return 1 + num1 + num2
+
+print(calc(4, 5), calc(1, 2))\n```",10 4,9 3,10 4,145 112,"4, 5, 1, 2",,,,,,
+"\nWhich correctly calls the add() function?\n```python\ndef add(a, b, c):
+    return a + b + c\n```","add(2, 4, 6)",add(2 4 6),add(2 + 4 + 6),add(2; 4; 6),"add(2, 4, 6)",,,,,,
+\nWhich of the following is true?,"A function can have any number of return statements, or no return statement at all.","A function must have exactly one return statement, or no return statement at all.",A function must always have at least one return statement.,"A function can only return strings and numbers, not lists or dictionaries.","A function can have any number of return statements, or no return statement at all.",,,,,,
+"\nWhich XXX is valid for the following code?\n```python\ndef calc_sum(a, b):
+    return a + b
+
+XXX
+print(y)\n```","```python\ny = calc_sum(4, 5)\n```",```python\ny = calc_sum()\n```,"```python\ny = calc_sum(4, 5)\n```",```python\ny = calc_sum(4 + 5)\n```,"```python\ncalc_sum(y, 4, 5)\n```",,,,,,

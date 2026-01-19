@@ -1,0 +1,4 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nmyString is declared as a string and is the only variable declared. Which is a valid assignment?,"myString = ""H"";",myString = 'Hello';,myString = Hey;,"myString = ""H"";",myString = [Hoy];,,,,,,
+"\nWhat is read into string myString for input ""One-hit wonder"".\n```java\nmyString = scnr.next();\n```",One-hit,One,One-,One-hit,One-hit wonder,,,,,,
+\nWhich reads an entire line of text into string myString?,```cpp\nmyString = scnr.nextLine();\n```,```cpp\nmyString = scnr.next();\n```,```cpp\nscnr.next(myString);\n```,```cpp\nmyString = scnr.nextLine();\n```,```cpp\nscnr.nextLine(myString);\n```,,,,,,

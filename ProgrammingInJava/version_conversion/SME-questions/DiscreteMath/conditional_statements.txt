@@ -1,0 +1,177 @@
+<question xsi:type='MultipleChoiceQuestion' guid='c2ac71ff-b2ab-d7e8-d047-e2fa55ddd659'>
+<instructions>
+<p>Select the converse of <ilatex>p \to q</ilatex>.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>p \to q</ilatex></choice>
+<choice correct='true'><ilatex>q \to p</ilatex></choice>
+<choice><ilatex>\neg p \to \neg q</ilatex></choice>
+<choice><ilatex>\neg q \to \neg p</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='94d34df1-e6de-26e6-77d2-15e231a2baf8'>
+<instructions>
+<line> Which statement is the contrapositive of: </line>
+<line>"If <ilatex>x = 4</ilatex>, then <ilatex>3x = 12</ilatex>." </line>
+</instructions>
+
+<choices>
+<choice>If <ilatex>x = 4</ilatex>, then <ilatex>3x = 12</ilatex>.</choice>
+<choice>If <ilatex>3x = 12</ilatex>, then <ilatex>x = 4</ilatex>.</choice>
+<choice>If <ilatex>n \neq 12</ilatex>, then <ilatex>3x \neq 12</ilatex>.</choice>
+<choice correct='true'>If <ilatex>3x \neq 12</ilatex>, then <ilatex>x \neq 4</ilatex>.</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='5c0df9cf-4ab3-ac64-bd2e-7eb3957f74d1'>
+<instructions>
+<p>Select the <i>false</i> statement.</p>
+</instructions>
+
+<choices>
+<choice>If <ilatex>3</ilatex> is a prime number, then  <ilatex>5</ilatex> is a prime number. </choice>
+<choice>If <ilatex>4</ilatex> is a prime number, then <ilatex>6</ilatex> is a prime number. </choice>
+<choice>If <ilatex>4</ilatex> is a prime number, then  <ilatex>5</ilatex> is a prime number. </choice>
+<choice correct='true'>If <ilatex>3</ilatex> is a prime number, then <ilatex>6</ilatex> is a prime number. </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='a01c9b33-c666-786d-ccc1-597930bf5689'>
+<instructions>
+<p> The propositional variables <ilatex>b</ilatex>, <ilatex>v</ilatex>, and <ilatex>s</ilatex> represent the propositions:</p>
+<line><ilatex>b{:}</ilatex> Alice rode her bike today. </line>
+<line><ilatex>v{:}</ilatex> Alice overslept today. </line>
+<line><ilatex>s{:}</ilatex> It is sunny today. </line>
+<p>Select the logical expression that represents the statement: "Alice rode her bike today only if it was sunny today and she did not oversleep."</p> 
+</instructions>
+
+<choices>
+<choice><ilatex>b \to s \to \neg v</ilatex></choice>
+<choice correct='true'><ilatex>b \to ( s \wedge \neg v)</ilatex></choice>
+<choice><ilatex>s \wedge (\neg v \to b )</ilatex></choice>
+<choice><ilatex>(s \wedge \neg v ) \to b</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='e1da66d2-007b-7f40-75a1-894d6c287f28'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{F}</ilatex>, and <ilatex>r = \text{T}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>false</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\neg ( q \wedge r ) \to p</ilatex></choice>
+<choice correct='true'><ilatex>(p \wedge r) \to q</ilatex></choice>
+<choice><ilatex>( q \wedge r ) \to p</ilatex></choice>
+<choice><ilatex>(q \wedge r) \to \neg p</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='521ef331-27ae-aa7a-7841-a6112d13bfaa'>
+<instructions>
+<line> <ilatex>p = \text{F}</ilatex>, <ilatex>q = \text{T}</ilatex>, and <ilatex>r = \text{T}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>true</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\neg (q \vee p) \leftrightarrow r</ilatex></choice>
+<choice correct='true'><ilatex>(\neg p \wedge r) \to q</ilatex></choice>
+<choice><ilatex>(q \vee \neg r) \to p</ilatex></choice>
+<choice><ilatex>q \leftrightarrow (p \wedge r)</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='71722b9d-4909-4e78-8640-848a76052189'>
+<instructions><p>Select the inverse of the following statement:</p>
+<p>If it rained this morning, then the train will be late.</p></instructions>
+
+<choices>
+<choice correct='true'>If it didn't rain this morning, then the train will not be late.</choice>
+<choice>The train is not late despite the fact that it rained this morning.</choice>
+<choice>If the train is not late, then it didn't rain this morning.</choice>
+<choice>If the train is late, then it rained this morning.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='348ebba9-3057-4ea3-a5cf-d865bef844b7'>
+<instructions><p>Select the converse of the following statement:</p>
+<p>If it rained this morning, then the train will be late.</p></instructions>
+
+<choices>
+<choice>If it didn't rain this morning, then the train will not be late.</choice>
+<choice>The train is not late despite the fact that it rained this morning.</choice>
+<choice>If the train is not late, then it didn't rain this morning.</choice>
+<choice correct='true'>If the train is late, then it rained this morning.</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='0c6559e8-9055-4b65-832f-6df698df31ab'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{F}</ilatex>, and <ilatex>r = \text{T}</ilatex>. </line>
+<line>Select the correct truth values for the two propositions:</line>
+<line><ilatex>r \leftrightarrow (p \wedge \neg q)</ilatex></line>
+<line><ilatex>p \rightarrow \neg(q \vee r)</ilatex></line>
+</instructions>
+
+<choices>
+<choice><ilatex>r \leftrightarrow (p \wedge \neg q) = \text{T}</ilatex>, and <ilatex>p \rightarrow \neg(q \vee r) = \text{T}</ilatex></choice>
+<choice correct='true'><ilatex>r \leftrightarrow (p \wedge \neg q) = \text{T}</ilatex>,  and <ilatex>p \rightarrow \neg(q \vee r) = \text{F}</ilatex></choice>
+<choice><ilatex>r \leftrightarrow (p \wedge \neg q) = \text{F}</ilatex>,  and <ilatex>p \rightarrow \neg(q \vee r) = \text{T}</ilatex></choice>
+<choice><ilatex>r \leftrightarrow (p \wedge \neg q) = \text{F}</ilatex>, and <ilatex>p \rightarrow \neg(q \vee r) = \text{F}</ilatex></choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='41d19d69-52ae-4b34-b664-658b28aa3b79'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{T}</ilatex>, and <ilatex>r = \text{F}</ilatex>. </line>
+<line>Select the correct truth values for the two propositions:</line>
+<line><ilatex>(q \vee r) \rightarrow \neg p</ilatex></line>
+<line><ilatex>\neg r \leftrightarrow (p \wedge q)</ilatex></line>
+</instructions>
+
+<choices>
+<choice><ilatex>(q \vee r) \rightarrow \neg p = \text{T}</ilatex>,  and <ilatex>\neg r \leftrightarrow (p \wedge q) = \text{T}</ilatex></choice>
+<choice><ilatex>(q \vee r) \rightarrow \neg p = \text{T}</ilatex>,  and <ilatex>\neg r \leftrightarrow (p \wedge q) = \text{F}</ilatex></choice>
+<choice correct='true'><ilatex>(q \vee r) \rightarrow \neg p = \text{F}</ilatex>,  and <ilatex>\neg r \leftrightarrow (p \wedge q) = \text{T}</ilatex></choice>
+<choice><ilatex>(q \vee r) \rightarrow \neg p = \text{F}</ilatex>,  and <ilatex>\neg r \leftrightarrow (p \wedge q) = \text{F}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='07b15bf8-b11b-458b-9d94-dd02d1dacc8f'>
+<instructions><p> The propositional variables <ilatex>m</ilatex> and <ilatex>e</ilatex> represent the propositions:</p>
+<line><ilatex>m{:}</ilatex> The patient is allergic to the medicine. </line>
+<line><ilatex>e{:}</ilatex> The patient is eligible to participate in the study. </line>
+<p>Select the logical expression that represents the statement: "It is necessary for the patient not to be allergic to the medicine in order for the patient to be eligible for the study."</p> 
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>e \rightarrow \neg m</ilatex></choice>
+<choice><ilatex>\neg m \rightarrow e</ilatex></choice>
+<choice><ilatex>\neg  e \rightarrow m</ilatex></choice>
+<choice><ilatex>e \rightarrow m</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='2cef935c-20ba-4f4c-9455-b54430598fc9'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex> and  <ilatex>q = \text{F}</ilatex>. </line>
+<line>Select the correct statement about the proposition: <ilatex>(p \wedge q) \rightarrow r</ilatex></line>
+</instructions>
+
+<choices>
+<choice correct='true'>The proposition is true, regardless of the truth value for <ilatex>r.</ilatex></choice>
+<choice>The proposition  is false, regardless of the truth value for <ilatex>r.</ilatex></choice>
+<choice>If <ilatex>r = \text{T}</ilatex>, then the propositions is true, and if <ilatex>r = \text{F}</ilatex>, then the proposition is false.</choice>
+<choice>If <ilatex>r = \text{F}</ilatex>, then the propositions is true, and if <ilatex>r = \text{T}</ilatex>, then the proposition is false.</choice>
+</choices>
+</question>

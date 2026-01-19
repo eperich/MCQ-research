@@ -1,0 +1,76 @@
+<question xsi:type='MultipleChoiceQuestion' guid='66dbcd6d-ce98-5e6a-bde1-195e5ceddaeb' subjects='java'>
+<instructions>
+<p>Which of the following statements is false? </p>
+</instructions>
+
+<choices>
+<choice>Program execution begins at main(). </choice>
+<choice>A program executes one statement at a time.</choice>
+<choice correct='true'>Each statement ends with a period. </choice>
+<choice>An output statement outputs a value to the screen. </choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='e4af2d6a-7e7b-7e43-e636-a5b54c8162a2' subjects='java'>
+<instructions>
+<p>Choose the statement(s) that generate(s) this output:</p>
+<line>I wish</line>
+<line>you were here</line>
+<line></line>
+</instructions>
+
+<choices> 
+<choice><codeBlock language='java'>
+System.out.println("I wish" + "you were here");</codeBlock>
+</choice>
+
+
+<choice correct='true'><codeBlock language='java'>
+System.out.println("I wish");
+System.out.println("you were here");</codeBlock>
+</choice>
+
+
+<choice><codeBlock language='java'>
+System.out.print("I wish");
+System.out.println("you were here");</codeBlock>
+</choice>
+
+
+<choice><codeBlock language='java'>
+System.out.print("I wish" + ln + "you were here");</codeBlock>
+</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='517c7642-1404-8b6e-7591-12e415d1b599' subjects='java'>
+<instructions>
+<p>What does this code output?</p>
+<codeBlock language='java'>
+System.out.print("I ");
+System.out.println("want pie.");</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>I want pie.</choice>
+
+
+<choice><line> "I "</line>
+<line>"want pie."</line></choice>
+
+
+<choice><line>I want</line>
+<line>pie</line></choice>
+
+
+<choice><line>I want</line>
+<line></line>
+<line>pie</line></choice>
+
+
+<choice><line>I wantpie</line></choice>
+</choices>
+</question>

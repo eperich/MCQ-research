@@ -1,0 +1,32 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhich input value causes ""Goodbye"" to be output next?\n```python\nx = int(input())
+while x >= 0:
+    # Do something
+    x = int(input())
+print(""Goodbye"")\n```",-1,-1,0,1,No such value,,,,,,
+"\nWhich input for variable c causes ""Done"" to be output next?\n```python\nc = ""y""
+while c == ""y"":
+    # Do something
+    print(""Enter y to continue, n to quit: "", end="" "")
+    c = input()
+print(""Done"");\n```","Any value other than ""y""","""y"" only","""n"" only","Any value other than ""y""",No such value (infinite loop),,,,,,
+"\nWhat is the output?\n```python\ncount = 0
+while count < 3:
+     print(""loop"")
+count = count + 1
+print(f""Final value of count: {count}"")\n```","Prints ""loop"" forever (infinite loop)","Prints ""loop"" once, then ""Final value of count: 1""","Prints ""loop"" three times, then ""Final value of count: 3""","Prints ""loop"" three times, then ""Final value of count: 4""","Prints ""loop"" forever (infinite loop)",,,,,,
+"\nWhat initial value of x will cause an infinite loop?\n```python\nx = int(input())
+while x != 0:
+    x = x - 2
+    print(x)\n```",7,0,2,4,7,,,,,,
+"\nWhat is the output?\n```python\nx = 18
+while x % 3 == 0:
+    print(x, end="" "")
+    x = x // 3\n```",18 6,6,6 2,18 6,18 6 2,,,,,,
+"\nWhat is the output?\n```python\nmy_list = [3, 7, 0, 2, -1, 8]
+index = 0
+while my_list[index] > 0:
+    print(my_list[index], end="" "")
+    index += 1\n```",3 7,3 7,3 7 0,3 7 0 2,3 7 0 2 -1,,,,,,
+"\nWhich is an\n<i>essential</i>\nfeature of a while loop having the following form?\n```text\nwhile loop_expression:
+   loop_body\n```",The loop_expression should be affected by the loop_body,The loop_expression should be affected by the loop_body,The loop_expression should not be affected by the loop_body,The loop_body should get user input,The loop_body should update at least two variables,,,,,,

@@ -1,0 +1,55 @@
+<question xsi:type='MultipleChoiceQuestion' guid='e7e83e2b-76df-49fc-94f6-e969fa03002e'>
+<instructions>
+<p>What is the correct order for the five-step process in the data science life cycle?</p>
+</instructions>
+
+<choices>
+<choice correct='true'>Gathering data, Cleaning data, Exploring data, Modeling data, Interpreting data</choice>
+<choice>Exploring data, Modeling data, Gathering data, Cleaning data, Interpreting data</choice>
+<choice>Gathering data, Modeling data, Cleaning data, Interpreting data, Exploring data</choice>
+<choice>Cleaning data, Gathering data, Interpreting data, Exploring data, Modeling data</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='70e6e964-4068-4645-be1b-b0193c7d9c0e'>
+<instructions>
+In data science, which describes the process of exploring data?
+</instructions>
+
+<choices>
+<choice correct='true'>Create data visualizations and calculate summary statistics to explore potential relationships in the dataset.</choice>
+<choice>Describe and interpret conclusions from data through written reports and presentations.</choice>
+<choice>Identify available and relevant data; gather new data if needed.</choice>
+<choice>Use modeling skills and content knowledge to fit and evaluate models, measure relationships, and make predictions.</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='992183a7-13ec-40c4-bbad-be9e62fc1299'>
+<instructions>
+<p>Which of the following would be considered unstructured data?</p>
+</instructions>
+
+<choices>
+<choice>A sample of 500 product reviews where each review is a rating on a scale of 1 to 5.</choice>
+<choice>A sample of revenues made over a month from 500 different products.</choice>
+<choice correct='true'>A sample of 50 emails sent from the customer service center of a retailer.</choice>
+<choice>A sample of 50 prices being charged for the same product on different websites.</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='52555b5f-2756-4e3b-bf63-e96443d310b1'>
+<instructions>
+Which of the following scenarios is appropriate for a regression model?
+</instructions>
+
+<choices>
+<choice>Predicting what phone plan a customer will purchase.</choice>
+<choice>Predicting whether a patient with heart disease will survive.</choice>
+<choice>Predicting which type of heating unit will be best for an office building.</choice>
+<choice correct='true'>Predicting the gas mileage of a vehicle.</choice>
+</choices>
+</question>

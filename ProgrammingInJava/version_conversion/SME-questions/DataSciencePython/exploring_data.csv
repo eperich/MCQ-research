@@ -1,0 +1,36 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"A voluntary survey on politics asked voters to identify as Democrats, Independents, or Republicans. How many survey takers identified as Independent?\nParty\nNumber of respondents
+
+Democrat\n2
+
+Independent\n4
+
+Republican\n3
+
+Did not respond\n1",4,1,2,3,4,,,,,,
+"A voluntary survey on politics asked voters to identify as Democrats, Independents, or Republicans. What type of table is shown below?\nParty\nNumber of respondents
+
+Democrat\n2
+
+Independent\n4
+
+Republican\n3
+
+Did not respond\n1",frequency table,contingency table,count table,frequency table,pivot table,,,,,,
+"A European bank wanted to understand customer banking habits. The table contains the mean number of years a customer has had an account at the bank, by country and gender.
+What is the mean number of years an account has been active for women in Spain?\nMean account years\nFrance\nGermany\nSpain
+
+Female\n4.95\n4.97\n5.03
+
+Male\n5.12\n4.83\n5.06",5.03,4.83,4.97,5.03,5.06,,,,,,
+"A European bank wanted to understand customer banking habits. The table contains the mean number of years a customer has had an account at the bank, by country and gender. What type of table is shown below?\nMean account years\nFrance\nGermany\nSpain
+
+Female\n4.95\n4.97\n5.03
+
+Male\n5.12\n4.83\n5.06",pivot table,contingency table,count table,frequency table,pivot table,,,,,,
+"A European bank wanted to understand customer banking habits. The table contains the mean number of customers at each bank's branch, by country and gender. What type of table is shown below?\nNumber of customers\nFrance\nGermany\nSpain
+
+Female\n2261\n1193\n1089
+
+Male\n2753\n1316\n1388",contingency table,contingency table,count table,frequency table,pivot table,,,,,,
+What Python function could be used to create a contingency table?,\n`pivot_table`,\n`contingency_table`,\n`count_table`,\n`table`,\n`pivot_table`,,,,,,

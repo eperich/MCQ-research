@@ -1,0 +1,338 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,6,0,0
+2,6,0,0
+3,6,0,0
+4,6,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,3,0,36
+1,3,1,2,36
+1,4,1,2,36
+2,3,1,3,36
+2,4,1,3,36
+3,4,1,2,36
+
+Summary
+Total Comparisons,276
+Duplicates (≥85%),8
+Similar (70-85%),12
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,Why is data exploration essential in data wrangling?,3,1,q1,Why is data exploration important in data wrangling?,4,1,0.965,duplicate
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q1,What is the main purpose of data exploration in data wrangling?,2,1,0.939,duplicate
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.923,duplicate
+q3,A frequency table displays _____ of a categorical feature.,1,3,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.922,duplicate
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q1,Why is data exploration important in data wrangling?,4,1,0.895,duplicate
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q1,Why is data exploration important in data wrangling?,4,1,0.873,duplicate
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q1,Why is data exploration essential in data wrangling?,3,1,0.865,duplicate
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.861,duplicate
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q1,Why is data exploration essential in data wrangling?,3,1,0.848,similar
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.848,similar
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.812,similar
+q4,What describes a contingency table in data analysis?,2,4,q4,What does a contingency table show in data exploration?,4,4,0.792,similar
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.785,similar
+q4,How does a pivot table differ from a frequency table?,1,4,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.774,similar
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.755,similar
+q4,How does a pivot table differ from a frequency table?,1,4,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.736,similar
+q5,"In a contingency table, the values represent the _____.",1,5,q4,What does a contingency table show in data exploration?,4,4,0.718,similar
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.718,similar
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.713,similar
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.713,similar
+q4,How does a pivot table differ from a frequency table?,1,4,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.69,low
+q5,"In a contingency table, the values represent the _____.",1,5,q4,What describes a contingency table in data analysis?,2,4,0.677,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.676,low
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.67,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.664,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.653,low
+q4,How does a pivot table differ from a frequency table?,1,4,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.652,low
+q4,How does a pivot table differ from a frequency table?,1,4,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.636,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.627,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q5,"In a contingency table, the values represent the _____.",1,5,0.626,low
+q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.626,low
+q5,"In a contingency table, the values represent the _____.",1,5,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.615,low
+q5,"In a contingency table, the values represent the _____.",1,5,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.614,low
+q5,"In a contingency table, the values represent the _____.",1,5,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.603,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q4,What does a contingency table show in data exploration?,4,4,0.602,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.598,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q4,What does a contingency table show in data exploration?,4,4,0.592,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.587,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.584,low
+q4,What describes a contingency table in data analysis?,2,4,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.572,low
+q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,q4,What does a contingency table show in data exploration?,4,4,0.568,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.567,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.566,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.564,low
+q4,How does a pivot table differ from a frequency table?,1,4,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.562,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q4,How does a pivot table differ from a frequency table?,1,4,0.561,low
+q5,"In a contingency table, the values represent the _____.",1,5,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.549,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.544,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.543,low
+q4,How does a pivot table differ from a frequency table?,1,4,q4,What describes a contingency table in data analysis?,2,4,0.54,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.538,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q4,What does a contingency table show in data exploration?,4,4,0.538,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q4,What describes a contingency table in data analysis?,2,4,0.536,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.534,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.533,low
+q4,How does a pivot table differ from a frequency table?,1,4,q4,What does a contingency table show in data exploration?,4,4,0.532,low
+q4,How does a pivot table differ from a frequency table?,1,4,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.529,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.528,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.524,low
+q4,How does a pivot table differ from a frequency table?,1,4,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.523,low
+q5,"In a contingency table, the values represent the _____.",1,5,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.521,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.519,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q4,What describes a contingency table in data analysis?,2,4,0.517,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.513,low
+q2,Which feature type is best for grouping a dataset into subsets?,4,2,q4,What does a contingency table show in data exploration?,4,4,0.512,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.511,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q4,How does a pivot table differ from a frequency table?,1,4,0.509,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.509,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,0.508,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.507,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.501,low
+q4,How does a pivot table differ from a frequency table?,1,4,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.5,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.496,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q4,What does a contingency table show in data exploration?,4,4,0.496,low
+q5,"In a contingency table, the values represent the _____.",1,5,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.494,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.494,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.491,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.486,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.485,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.484,low
+q4,What describes a contingency table in data analysis?,2,4,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.484,low
+q5,"In a contingency table, the values represent the _____.",1,5,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.483,low
+q4,What describes a contingency table in data analysis?,2,4,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.482,low
+q4,What describes a contingency table in data analysis?,2,4,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.482,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.479,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.479,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.478,low
+q4,What does a contingency table show in data exploration?,4,4,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.478,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.477,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.477,low
+q2,Which feature type is best for grouping a dataset into subsets?,4,2,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.477,low
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.474,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.473,low
+q4,How does a pivot table differ from a frequency table?,1,4,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.472,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.471,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.469,low
+q4,What describes a contingency table in data analysis?,2,4,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.469,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.468,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q4,What does a contingency table show in data exploration?,4,4,0.468,low
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,q4,What does a contingency table show in data exploration?,4,4,0.466,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.461,low
+q4,What describes a contingency table in data analysis?,2,4,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.461,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.461,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.46,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.457,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.454,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.453,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.453,low
+q4,What describes a contingency table in data analysis?,2,4,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.452,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.452,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.451,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.45,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.449,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q1,Why is data exploration essential in data wrangling?,3,1,0.446,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q4,What describes a contingency table in data analysis?,2,4,0.445,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.443,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.443,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.439,low
+q4,How does a pivot table differ from a frequency table?,1,4,q5,"In a contingency table, the values represent the _____.",1,5,0.439,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.438,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.437,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.436,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.436,low
+q1,Why is data exploration essential in data wrangling?,3,1,q4,What does a contingency table show in data exploration?,4,4,0.436,low
+q1,Why is data exploration important in data wrangling?,4,1,q4,What does a contingency table show in data exploration?,4,4,0.434,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q1,Why is data exploration important in data wrangling?,4,1,0.433,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.432,low
+q2,Which feature type is best for grouping a dataset into subsets?,4,2,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.432,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.431,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.427,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.425,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.425,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.422,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q4,What does a contingency table show in data exploration?,4,4,0.42,low
+q5,"In a contingency table, the values represent the _____.",1,5,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.419,low
+q5,"In a contingency table, the values represent the _____.",1,5,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.419,low
+q4,How does a pivot table differ from a frequency table?,1,4,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.418,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q4,What does a contingency table show in data exploration?,4,4,0.415,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.407,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.406,low
+q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.403,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.402,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.399,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.394,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.394,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.393,low
+q4,How does a pivot table differ from a frequency table?,1,4,q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,0.392,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.392,low
+q4,What does a contingency table show in data exploration?,4,4,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.391,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.387,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q4,What does a contingency table show in data exploration?,4,4,0.382,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.379,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.378,low
+q4,What describes a contingency table in data analysis?,2,4,q1,Why is data exploration essential in data wrangling?,3,1,0.375,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.375,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q4,What does a contingency table show in data exploration?,4,4,0.371,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q4,What does a contingency table show in data exploration?,4,4,0.371,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.37,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.366,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.363,low
+q1,Why is data exploration important in data wrangling?,4,1,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.359,low
+q4,How does a pivot table differ from a frequency table?,1,4,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.357,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.357,low
+q1,Why is data exploration essential in data wrangling?,3,1,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.356,low
+q2,Which feature type is best for grouping a dataset into subsets?,4,2,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.356,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.354,low
+q4,How does a pivot table differ from a frequency table?,1,4,q1,Why is data exploration essential in data wrangling?,3,1,0.353,low
+q4,What describes a contingency table in data analysis?,2,4,q1,Why is data exploration important in data wrangling?,4,1,0.353,low
+q4,How does a pivot table differ from a frequency table?,1,4,q1,Why is data exploration important in data wrangling?,4,1,0.351,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.351,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q4,What does a contingency table show in data exploration?,4,4,0.35,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q4,What does a contingency table show in data exploration?,4,4,0.347,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q4,What describes a contingency table in data analysis?,2,4,0.341,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.34,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.34,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.338,low
+q4,What describes a contingency table in data analysis?,2,4,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.336,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q4,What describes a contingency table in data analysis?,2,4,0.329,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.329,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q1,Why is data exploration important in data wrangling?,4,1,0.327,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.324,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.322,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q4,What describes a contingency table in data analysis?,2,4,0.321,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q1,Why is data exploration essential in data wrangling?,3,1,0.319,low
+q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.317,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.316,low
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.316,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.315,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.314,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.314,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.313,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q1,Why is data exploration important in data wrangling?,4,1,0.313,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.311,low
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,q1,Why is data exploration important in data wrangling?,4,1,0.311,low
+q1,Why is data exploration essential in data wrangling?,3,1,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.31,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.307,low
+q4,What describes a contingency table in data analysis?,2,4,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.307,low
+q1,Why is data exploration essential in data wrangling?,3,1,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.307,low
+q4,How does a pivot table differ from a frequency table?,1,4,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.306,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q4,How does a pivot table differ from a frequency table?,1,4,0.304,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.304,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.3,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.297,low
+q4,How does a pivot table differ from a frequency table?,1,4,q1,What is the main purpose of data exploration in data wrangling?,2,1,0.296,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q3,A frequency table displays _____ of a categorical feature.,1,3,0.293,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.292,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.292,low
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.292,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.289,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.284,low
+q5,"In a contingency table, the values represent the _____.",1,5,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.281,low
+q4,What describes a contingency table in data analysis?,2,4,q2,Which feature is best to group the cars dataset for meaningful subsets?,3,2,0.279,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q1,Why is data exploration essential in data wrangling?,3,1,0.277,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q2,Grouping data by a categorical feature primarily helps to _____.,2,2,0.277,low
+q2,Grouping data by a categorical feature primarily helps to _____.,2,2,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.277,low
+q1,Why is data exploration essential in data wrangling?,3,1,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.276,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q1,Why is data exploration important in data wrangling?,4,1,0.274,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.272,low
+q5,"In a contingency table, the values represent the _____.",1,5,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.271,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.269,low
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,q1,Why is data exploration important in data wrangling?,4,1,0.267,low
+q1,Why is data exploration essential in data wrangling?,3,1,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.263,low
+q1,Why is data exploration important in data wrangling?,4,1,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.263,low
+q1,Why is data exploration essential in data wrangling?,3,1,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.262,low
+q1,Why is data exploration important in data wrangling?,4,1,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.262,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,0.255,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,4,0.254,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q1,Why is data exploration essential in data wrangling?,3,1,0.251,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q5,"In a contingency table, the values represent the _____.",1,5,0.248,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q1,What is the main purpose of data exploration in data wrangling?,2,1,0.247,low
+q5,"In a contingency table, the values represent the _____.",1,5,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.247,low
+q5,"In a pivot table, the rows and columns display values from _____.",2,5,q1,Why is data exploration important in data wrangling?,4,1,0.247,low
+q5,"In a contingency table, the values represent the _____.",1,5,q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,0.245,low
+q1,Why is data exploration essential in data wrangling?,3,1,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.237,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q4,What does a contingency table show in data exploration?,4,4,0.235,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.234,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q2,Which feature type is best for grouping a dataset into subsets?,4,2,0.234,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.233,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.232,low
+q1,Why is data exploration important in data wrangling?,4,1,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.232,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q6,"In a pivot table, what is assigned to the columns parameter?",4,6,0.231,low
+q4,What describes a contingency table in data analysis?,2,4,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.229,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,5,0.227,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q4,What describes a contingency table in data analysis?,2,4,0.226,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q3,A table showing group sizes for a categorical feature is called a _____ table.,4,3,0.212,low
+q1,Why is data exploration essential in data wrangling?,3,1,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.209,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.207,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q5,"In a pivot table, the rows and columns display values from _____.",2,5,0.207,low
+q5,"In a contingency table, the values represent the _____.",1,5,q1,Why is data exploration essential in data wrangling?,3,1,0.203,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q1,Why is data exploration essential in data wrangling?,3,1,0.203,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q1,Why is data exploration essential in data wrangling?,3,1,0.2,low
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,q1,Why is data exploration important in data wrangling?,4,1,0.2,low
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,2,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.199,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q1,Why is data exploration essential in data wrangling?,3,1,0.197,low
+q3,A frequency table displays _____ for each category in a categorical feature.,2,3,q1,Why is data exploration important in data wrangling?,4,1,0.197,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,0.196,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q1,Why is data exploration important in data wrangling?,4,1,0.194,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,5,0.194,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q1,Why is data exploration important in data wrangling?,4,1,0.192,low
+q5,"In a contingency table, the values represent the _____.",1,5,q1,Why is data exploration important in data wrangling?,4,1,0.187,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,6,0.187,low
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,6,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.186,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q5,"In a contingency table, the values represent the _____.",1,5,0.179,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q1,What is the main purpose of data exploration in data wrangling?,2,1,0.178,low
+q5,"In a contingency table, the values represent the _____.",1,5,q1,What is the main purpose of data exploration in data wrangling?,2,1,0.169,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.168,low
+q1,Why is data exploration essential in data wrangling?,3,1,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.168,low
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,q1,Why is data exploration important in data wrangling?,4,1,0.167,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q3,A frequency table displays _____ of a categorical feature.,1,3,0.163,low
+q5,"In a contingency table, the values represent the _____.",1,5,q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,0.16,low
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.16,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q1,What is the main purpose of data exploration in data wrangling?,2,1,0.155,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q3,A frequency table displays _____ for each category in a categorical feature.,2,3,0.155,low
+q1,What is the main purpose of data exploration in data wrangling?,2,1,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.142,low
+q3,A frequency table displays _____ of a categorical feature.,1,3,q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,6,0.14,low
+q1,What is the main purpose of data exploration in data wrangling?,1,1,q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,3,0.126,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define data exploration and its role in the data wrangling process.  
+Apply the group, calculate, and combine framework to compute descriptive statistics for grouped data.  
+Define and interpret frequency tables, contingency tables, and pivot tables.  
+Compare groups within a dataset using descriptive statistics to identify patterns and differences.  
+Use pandas in Python to compute descriptive statistics and create tables for data exploration."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the main purpose of data exploration in data wrangling?,1,yes,"This question assesses understanding of the role of data exploration in data wrangling, directly related to the first learning objective."
+q2,Which pandas method splits a DataFrame into subsets based on a categorical feature?,1,yes,"This question evaluates knowledge of pandas methods for grouping data, aligning with the fifth learning objective and the second learning objective."
+q3,A frequency table displays _____ of a categorical feature.,1,yes,"This question tests the definition and interpretation of frequency tables, matching the third learning objective."
+q4,How does a pivot table differ from a frequency table?,1,yes,"This question compares pivot tables and frequency tables, addressing the third learning objective."
+q5,"In a contingency table, the values represent the _____.",1,yes,"This question defines the values in a contingency table, directly related to the third learning objective."
+q6,Which code snippet creates a pivot table with 'Drive' as rows and 'EngineType' as columns in pandas?,1,yes,"This question requires applying pandas to create pivot tables, aligning with the fifth learning objective."
+q1,What is the main purpose of data exploration in data wrangling?,2,yes,"This question assesses the purpose of data exploration in data wrangling, matching the first learning objective."
+q2,Grouping data by a categorical feature primarily helps to _____.,2,yes,"This question tests understanding of grouping data for comparison, related to the second and fourth learning objectives."
+q3,A frequency table displays _____ for each category in a categorical feature.,2,yes,"This question evaluates knowledge of frequency tables, aligned with the third learning objective."
+q4,What describes a contingency table in data analysis?,2,yes,"This question defines contingency tables, matching the third learning objective."
+q5,"In a pivot table, the rows and columns display values from _____.",2,yes,"This question assesses understanding of pivot tables and their categorical features, related to the third learning objective."
+q6,Which pandas method splits a dataframe into groups based on a categorical feature?,2,yes,"This question tests knowledge of pandas grouping methods, aligned with the fifth and second learning objectives."
+q1,Why is data exploration essential in data wrangling?,3,yes,"This question evaluates the importance of data exploration in wrangling, matching the first and fourth learning objectives."
+q2,Which feature is best to group the cars dataset for meaningful subsets?,3,yes,"This question assesses selecting categorical features for grouping, related to the second and fourth learning objectives."
+q3,A table showing counts of rear-wheel drive cars is a _____ table.,3,yes,"This question tests understanding of frequency tables, aligned with the third learning objective."
+q4,A pivot table differs from a frequency table by summarizing data based on _____ categorical features.,3,yes,"This question compares pivot tables and frequency tables based on categorical features, matching the third learning objective."
+q5,"In pandas, which function splits a dataframe into subsets based on a categorical feature?",3,yes,"This question evaluates pandas functions for grouping data, aligned with the fifth and second learning objectives."
+q6,"In a pivot table, the rows represent one categorical feature, and the columns represent _____.",3,yes,"This question assesses understanding of pivot table structure with categorical features, related to the third learning objective."
+q1,Why is data exploration important in data wrangling?,4,yes,"This question tests the importance of data exploration in wrangling, matching the first and fourth learning objectives."
+q2,Which feature type is best for grouping a dataset into subsets?,4,yes,"This question evaluates knowledge of feature types best for grouping, related to the second and fourth learning objectives."
+q3,A table showing group sizes for a categorical feature is called a _____ table.,4,yes,"This question defines frequency tables by group sizes, aligned with the third learning objective."
+q4,What does a contingency table show in data exploration?,4,yes,"This question assesses understanding of contingency tables in data exploration, matching the third learning objective."
+q5,What does the pandas method df.groupby(by=['Drive']).median() compute?,4,yes,"This question tests pandas grouping and calculation of descriptive statistics, aligned with the second and fifth learning objectives."
+q6,"In a pivot table, what is assigned to the columns parameter?",4,yes,"This question evaluates understanding of pivot table parameters in pandas, related to the third and fifth learning objectives."

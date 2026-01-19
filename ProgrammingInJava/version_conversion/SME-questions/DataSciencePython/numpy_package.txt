@@ -1,0 +1,123 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='c9743973-869f-40dc-b9d7-cd3b46c374f2'>
+<instructions>
+<line>What is the output for the following code?</line>
+<codeBlock language='python'>
+import numpy as np
+arr = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(arr.shape)
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>(3,4)</choice>
+<choice>(4,3)</choice>
+<choice>(12)</choice>
+<choice>(1,3,4)</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='bc94a07c-98c3-48ae-bd05-7e7fd15756c2'>
+<instructions>
+Which XXX would generate 
+<codeBlock language='python'>
+[[1 2 3 4]
+ [5 6 7 8]]
+</codeBlock>?
+<line></line>
+<codeBlock language='python'>
+import numpy as np
+arr = XXX
+print(arr)
+</codeBlock>
+
+</instructions>
+
+<choices>
+<choice><code>array([[1,2,3,4],[5,6,7,8]])</code></choice>
+<choice><code>array([[1,5],[2,6],[3,7],[4,8]])</code></choice>
+<choice correct='true'><code>np.array([[1,2,3,4],[5,6,7,8]])</code></choice>
+<choice><code>np.array([[1,5],[2,6],[3,7],[4,8]])</code></choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='656f67e5-ea8f-4fc0-8def-237cd5cc8aab'>
+<instructions>
+<line>What is the output for the following code?</line>
+<codeBlock language='python'>
+import numpy as np
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(np.ravel(arr))
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>[1 2 3 4 5 6 7 8 9]</choice>
+<choice>[1 4 7 2 5 8 3 6 9]</choice>
+<choice>[9 6 3 8 5 2 7 4 1]</choice>
+<choice>[9 8 7 6 5 4 3 2 1]</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='2237ab62-9943-492a-86bd-63241e04efbc'>
+<instructions>
+<line>What is the output for the following code?</line>
+<codeBlock language='python'>
+import numpy as np
+A = np.array([[1,2,3],[4,5,6],[7,8,9]])
+B = np.array([[4,5,6],[3,2,1],[1,0,0]])
+print(A*B)
+</codeBlock>
+
+</instructions>
+
+<choices>
+
+<choice><codeBlock language='python'>[[13  9  8]
+ [37 30 29]
+ [61 51 50]]
+</codeBlock>
+</choice>
+<choice><codeBlock language='python'>[[ 4  6  3]
+ [20 10  0]
+ [42  8  0]]
+</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>[[ 4 10 18]
+ [12 10  6]
+ [ 7  0  0]]
+</codeBlock>
+</choice>
+<choice><codeBlock language='python'>[[66 81 96]
+ [18 24 30]
+ [ 1  2  3]]
+</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='7446f4ee-cc5a-4102-bef3-f087c23fae12'>
+<instructions>
+Which XXX would generate 
+<codeBlock language='python'>
+[[1 5]
+ [2 6]
+ [3 7]
+ [4 8]]
+</codeBlock>?
+<line></line>
+<codeBlock language='python'>
+import numpy as np
+arr = np.array([[1,2,3,4],[5,6,7,8]])
+print(XXX)
+</codeBlock>
+
+</instructions>
+
+<choices>
+<choice><code>np.ravel(arr)</code></choice>
+<choice><code>np.reshape(arr, (4,2))</code></choice>
+<choice correct='true'><code>np.transpose(arr)</code></choice>
+<choice><code>print(np.resize(arr,(4,2)))</code></choice>
+</choices>
+</question>

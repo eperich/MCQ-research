@@ -1,0 +1,25 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhich expression for YYY will result in an output of ""Pass"" only if x is exactly 32?\n```python\nif YYY:
+   print(""Pass"")
+else:
+   print(""Fail"")\n```",x == 32,x != 32,x == 32,x >= 32,x <= 32,,,,,,
+"\nWhat is the value of test_val after the following code is executed?\n```python\na = 12
+test_val = 6
+if a * 2 == test_val:
+    a = a + 7
+else:
+    test_val = 2 * a
+
+
+test_val = a + 1\n```",13,7,13,24,25,,,,,,
+"\nWhat is displayed when the following code is executed?\n```python\nday = 23
+if day % 10 == 1:
+    ending = ""st""
+elif day % 10 == 2:
+    ending = ""nd""
+elif day % 10 == 3:
+    ending = ""rd""
+else:
+    ending = ""th""
+print(str(day) + ending)\n```",23rd,23th,23st,23nd,23rd,,,,,,
+"\nTo quit, a user types ""q"". To continue, a user types any other key. Which expression evaluates to true if a user should continue?","key != ""q""","key == ""q""","key != ""q""","(!key) == ""q""","key == (!""q"")",,,,,,

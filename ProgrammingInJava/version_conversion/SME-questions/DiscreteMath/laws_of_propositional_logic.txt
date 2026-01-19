@@ -1,0 +1,137 @@
+<question xsi:type='MultipleChoiceQuestion' guid='275562eb-4911-975c-6ab5-d527b70d42cc'>
+<instructions>
+<line> Select the law that shows that the two propositions are logically equivalent.</line>
+<line><ilatex>\neg ((w \vee p ) \wedge (\neg q \wedge q \wedge w))</ilatex></line>
+<line><ilatex>\neg (w \vee p) \vee \neg ( \neg q \wedge q \wedge w)</ilatex></line>
+</instructions>
+
+<choices>
+<choice correct='true'>De Morgan’s law </choice>
+<choice>Distributive law </choice>
+<choice>Associative law</choice>
+<choice>Complement law </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='47a52b2c-61d6-da99-4b67-99910f0e9168'>
+<instructions>
+<line> Select the law that shows that the two propositions are logically equivalent.</line>
+<line><ilatex>(\neg p \wedge (r \vee \neg q)) \vee  ( \neg p \wedge w)</ilatex></line>
+<line><ilatex>\neg p \wedge ((r \vee \neg q) \vee w)</ilatex></line>
+</instructions>
+
+<choices>
+<choice>De Morgan’s law </choice>
+<choice correct='true'>Distributive law </choice>
+<choice>Associative law</choice>
+<choice>Commutative law </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='8f46c6e1-3c58-5349-9dd4-6c42a10071b3'>
+<instructions>
+<line> Select the law that shows that the two propositions are logically equivalent.</line>
+<line><ilatex>r \wedge (p \vee q)</ilatex></line>
+<line><ilatex>r \wedge (q \vee p)</ilatex></line>
+</instructions>
+
+<choices>
+<choice>De Morgan’s law </choice>
+<choice>Distributive law </choice>
+<choice>Associative law</choice>
+<choice correct='true'>Commutative law</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='98c88d3f-7b81-fa25-66cf-6dafbad54ff3'>
+<instructions>
+<line> Select the law that shows that the two propositions are logically equivalent.</line>
+<line><ilatex>(r \wedge p) \vee (\neg p \wedge q)</ilatex></line>
+<line><ilatex>((r \wedge p) \vee \neg p ) \wedge ((r \wedge p)\vee q)</ilatex></line>
+</instructions>
+
+<choices>
+<choice>De Morgan’s law </choice>
+<choice correct='true'>Distributive law </choice>
+<choice>Associative law</choice>
+<choice>Commutative law </choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='79f43528-3fa7-4a08-b130-8b6c1939b990'>
+<instructions>
+<line> Select the law that shows that the two propositions are logically equivalent.</line>
+<line><ilatex>(r \vee q) \vee ((r \vee q) \wedge p)</ilatex></line>
+<line><ilatex>r \vee q</ilatex></line>
+</instructions>
+
+<choices>
+<choice>Idempotent law </choice>
+<choice correct='true'>Absorption law </choice>
+<choice>Identity  law</choice>
+<choice>Domination  law </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='e227c874-e948-4759-9bfe-a08d6ebcb21e'>
+<instructions>
+<line> Select the law which shows that the two propositions are logically equivalent.</line>
+<line><ilatex>(r \vee q) \wedge (\neg p \wedge \neg q)</ilatex></line>
+<line><ilatex>(r \vee q) \wedge \neg (p \vee q)</ilatex></line>
+</instructions>
+
+<choices>
+<choice correct='true'>De Morgan’s law </choice>
+<choice>Distributive law </choice>
+<choice>Associative law</choice>
+<choice>Commutative law </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='67cb0e8a-d0c7-46fc-ad87-9aab1d7ca6cb'>
+<instructions>
+Which logical equivalence is an example of the Distributive law?
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>(p \vee \neg q) \wedge (p \vee \neg r) \equiv p \vee (\neg q \wedge \neg r)</ilatex> </choice>
+<choice><ilatex>(p \wedge \neg q) \vee (p \vee \neg r) \equiv ((p \wedge \neg q) \vee p ) \vee \neg r</ilatex> </choice>
+<choice><ilatex>(p \vee \neg q) \wedge (p \vee \neg r) \equiv (\neg \neg p \vee \neg q) \wedge (p \vee \neg r)</ilatex></choice>
+<choice><ilatex>(p \vee \neg q) \wedge (p \vee \neg r) \equiv (p \vee \neg r) \wedge  (p \vee \neg q)</ilatex> </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='398e7bf6-38fb-4055-8b2c-9c5b792f3a10'>
+<instructions>
+<p>The table below shows a proof that <ilatex> q \vee p \equiv \neg q \rightarrow p</ilatex>. Select the proposition that replaces the (x)</p>
+<table>
+<row>
+<cell><ilatex> q \vee p</ilatex></cell>
+<cell></cell>
+</row>
+
+<row>
+<cell>(x)</cell>
+<cell>Double negation law</cell>
+</row>
+
+<row>
+<cell><ilatex> \neg q \rightarrow p</ilatex></cell>
+<cell>Conditional identity</cell>
+</row>
+</table>
+
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex> \neg \neg q \vee p</ilatex> </choice>
+<choice><ilatex>q \vee \neg \neg  p</ilatex> </choice>
+<choice><ilatex>\neg \neg (q \vee p)</ilatex></choice>
+<choice><ilatex>\neg q \vee  \neg  p</ilatex> </choice>
+</choices>
+</question>

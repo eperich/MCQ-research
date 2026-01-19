@@ -1,0 +1,122 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='a694feda-aa7b-47dc-b7da-6708868939b0'>
+<instructions>
+A container is _____  if an individual element can be changed.
+</instructions>
+
+<choices>
+<choice>immutable</choice>
+<choice>indexed</choice>
+<choice correct='true'>mutable</choice>
+<choice>ordered</choice>
+</choices>
+</question>
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='a4ca8a2a-1407-441d-a1a7-48d643906965'>
+<instructions>
+Which code matches the following description best? 
+<p></p>
+
+
+
+<codeBlock language='text'>
+Creates the list [10, "abc"].
+Appends the value 7 to the end of the list
+Changes the second element in the list to 8.5. 
+The final result is [10, 8.5, 7].
+</codeBlock>
+
+</instructions>
+
+<choices>
+<choice correct='true'>
+<codeBlock language='python'>
+list = [10, "abc"]
+list.append(7)
+list[1] = 8.5
+</codeBlock>
+</choice>
+<choice>
+<codeBlock language='python'>
+list = [10, "abc"]
+list[2] = 7
+list[1] = 8.5
+</codeBlock>
+</choice>
+<choice>
+<codeBlock language='python'>
+list = [10, "abc"]
+list.append(7)
+list[2] = 8.5
+</codeBlock>
+</choice>
+<choice>
+<codeBlock language='python'>
+list = [10, "abc"]
+list.add(7)
+list[1] = 8.5
+</codeBlock>
+</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='db4f7f3b-3960-44ec-b534-b482a43e99e0'>
+<instructions>
+<code>{"yellow", "red", "green"}</code> is an example of a/an _____.
+</instructions>
+
+<choices>
+<choice>array</choice>
+<choice>list</choice>
+<choice correct='true'>set</choice>
+<choice>tuple</choice>
+</choices>
+</question>
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='0c7e7622-8d02-423c-a5b1-27c562977d62'>
+<instructions>
+<p>
+What is the value of <code>dict['fourth']</code>?</p>
+
+<codeBlock language='python'>
+dict = { "fifth": 1, "fourth": 3,
+         "third": 4, "second": 7,
+         "first" : 10}
+</codeBlock>
+
+</instructions>
+
+<choices>
+<choice>1</choice>
+<choice correct='true'>3</choice>
+<choice>4</choice>
+<choice>7</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='4a932b99-67a2-4758-be5a-53186ea69752'>
+<instructions>
+<p>
+Which of the following changes the value for the index 'third' to 5?</p>
+
+<codeBlock language='python'>
+dict = { "fifth": 1, "fourth": 3,
+         "third": 4, "second": 7,
+         "first" : 10}
+</codeBlock>
+
+
+</instructions>
+
+<choices>
+<choice correct='true'><code>dict["third"]=5</code></choice>
+<choice><code>dict[5]="third"</code></choice>
+<choice><code>dict["third":5]</code></choice>
+<choice><code>dict+{"third:5}</code></choice>
+</choices>
+</question>

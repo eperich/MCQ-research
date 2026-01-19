@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nWhich is  not a valid identifier?,1stName,firstName,first_name,1stName,name1,,,,,,
+\nAn identifier can _____ .,start with an underscore,be a reserved word,start with an underscore,contain a period,contain spaces,,,,,,
+Which identifier name shows good practice?,sizeOfBox,m_v,revPhyMgt,cost_of_shipping_furniture_crates_by_sea,sizeOfBox,,,,,,
+Which variable naming convention is used for distanceFromSun?,lower camel case,snake case,hill valley case,lower camel case,varied capitalization case,,,,,,

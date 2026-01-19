@@ -1,0 +1,174 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,1,16
+1,3,1,1,16
+1,4,0,2,16
+2,3,0,2,16
+2,4,3,0,16
+3,4,1,1,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),5
+Similar (70-85%),7
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,What does the escape sequence '\n' represent in output?,1,2,q2,What does the escape sequence \n represent in output?,3,2,0.968,duplicate
+q4,The escape sequence for a tab character is _____.,2,4,q2,Which escape sequence represents a tab character in output?,4,2,0.934,duplicate
+q1,A _char_ variable stores _____.,2,1,q1,A _char_ variable stores a/an _____ internally.,4,1,0.871,duplicate
+q2,What does the escape sequence \n represent in output?,3,2,q2,Which escape sequence represents a tab character in output?,4,2,0.861,duplicate
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.859,duplicate
+q2,What does the escape sequence '\n' represent in output?,1,2,q2,Which escape sequence represents a tab character in output?,4,2,0.85,similar
+q1,A char variable stores a single _____.,3,1,q1,A _char_ variable stores a/an _____ internally.,4,1,0.834,similar
+q1,A _char_ variable stores _____.,2,1,q1,A char variable stores a single _____.,3,1,0.803,similar
+q4,The escape sequence for a tab character is _____.,2,4,q2,What does the escape sequence \n represent in output?,3,2,0.801,similar
+q2,What does the escape sequence '\n' represent in output?,1,2,q4,The escape sequence for a tab character is _____.,2,4,0.784,similar
+q4,The ASCII code 97 corresponds to which character?,1,4,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.758,similar
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.71,similar
+q1,Which data type stores a single character value like 'm'?,1,1,q1,A char variable stores a single _____.,3,1,0.678,low
+q1,Which data type stores a single character value like 'm'?,1,1,q1,A _char_ variable stores a/an _____ internally.,4,1,0.65,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,0.636,low
+q1,Which data type stores a single character value like 'm'?,1,1,q1,A _char_ variable stores _____.,2,1,0.624,low
+q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.62,low
+q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.595,low
+q1,A _char_ variable stores _____.,2,1,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.562,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.558,low
+q1,A char variable stores a single _____.,3,1,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.547,low
+q1,A _char_ variable stores _____.,2,1,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.546,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.535,low
+q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,q1,A _char_ variable stores a/an _____ internally.,4,1,0.522,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q1,A char variable stores a single _____.,3,1,0.475,low
+q1,A _char_ variable stores _____.,2,1,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.461,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q1,A _char_ variable stores _____.,2,1,0.46,low
+q1,A char variable stores a single _____.,3,1,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.45,low
+q1,A _char_ variable stores _____.,2,1,q2,"In Java, to read a single character from input, use _____.",2,2,0.447,low
+q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,q1,A _char_ variable stores a/an _____ internally.,4,1,0.443,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.438,low
+q1,A char variable stores a single _____.,3,1,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.431,low
+q1,A _char_ variable stores a/an _____ internally.,4,1,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.429,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q1,A _char_ variable stores a/an _____ internally.,4,1,0.415,low
+q4,The escape sequence for a tab character is _____.,2,4,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.398,low
+q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,q2,Which escape sequence represents a tab character in output?,4,2,0.396,low
+q1,Which data type stores a single character value like 'm'?,1,1,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.395,low
+q1,Which data type stores a single character value like 'm'?,1,1,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.384,low
+q1,A _char_ variable stores _____.,2,1,q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,0.384,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.383,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q1,A _char_ variable stores a/an _____ internally.,4,1,0.38,low
+q2,What does the escape sequence \n represent in output?,3,2,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.38,low
+q1,A char variable stores a single _____.,3,1,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.377,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q1,A char variable stores a single _____.,3,1,0.373,low
+q1,Which data type stores a single character value like 'm'?,1,1,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.372,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q4,The escape sequence for a tab character is _____.,2,4,0.369,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q1,A char variable stores a single _____.,3,1,0.368,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q1,A _char_ variable stores _____.,2,1,0.361,low
+q1,A _char_ variable stores _____.,2,1,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.36,low
+q1,Which data type stores a single character value like 'm'?,1,1,q2,"In Java, to read a single character from input, use _____.",2,2,0.359,low
+q4,The escape sequence for a tab character is _____.,2,4,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.359,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.358,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q2,Which escape sequence represents a tab character in output?,4,2,0.358,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.356,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.354,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q2,"In Java, to read a single character from input, use _____.",2,2,0.354,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q2,"In Java, to read a single character from input, use _____.",2,2,0.352,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q1,A _char_ variable stores a/an _____ internally.,4,1,0.352,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q4,The escape sequence for a tab character is _____.,2,4,0.351,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q1,A char variable stores a single _____.,3,1,0.351,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.35,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q2,Which escape sequence represents a tab character in output?,4,2,0.349,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q2,What does the escape sequence \n represent in output?,3,2,0.349,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q2,Which escape sequence represents a tab character in output?,4,2,0.348,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q1,A _char_ variable stores a/an _____ internally.,4,1,0.341,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,0.333,low
+q1,A _char_ variable stores a/an _____ internally.,4,1,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.332,low
+q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,q2,Which escape sequence represents a tab character in output?,4,2,0.326,low
+q1,A _char_ variable stores _____.,2,1,q4,The escape sequence for a tab character is _____.,2,4,0.325,low
+q1,Which data type stores a single character value like 'm'?,1,1,q4,The ASCII code 97 corresponds to which character?,1,4,0.322,low
+q1,Which data type stores a single character value like 'm'?,1,1,q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,0.315,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q4,The escape sequence for a tab character is _____.,2,4,0.315,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,0.314,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q2,What does the escape sequence \n represent in output?,3,2,0.313,low
+q2,"In Java, to read a single character from input, use _____.",2,2,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.313,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.313,low
+q1,Which data type stores a single character value like 'm'?,1,1,q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,0.31,low
+q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.307,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q2,What does the escape sequence \n represent in output?,3,2,0.306,low
+q4,The escape sequence for a tab character is _____.,2,4,q1,A char variable stores a single _____.,3,1,0.305,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q2,What does the escape sequence \n represent in output?,3,2,0.304,low
+q1,A _char_ variable stores _____.,2,1,q2,What does the escape sequence \n represent in output?,3,2,0.302,low
+q1,A _char_ variable stores _____.,2,1,q2,Which escape sequence represents a tab character in output?,4,2,0.301,low
+q1,Which data type stores a single character value like 'm'?,1,1,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.295,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,0.295,low
+q2,Which escape sequence represents a tab character in output?,4,2,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.294,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q2,Which escape sequence represents a tab character in output?,4,2,0.293,low
+q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.287,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,0.286,low
+q1,A char variable stores a single _____.,3,1,q2,Which escape sequence represents a tab character in output?,4,2,0.285,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q4,The ASCII code 97 corresponds to which character?,1,4,0.284,low
+q2,What does the escape sequence \n represent in output?,3,2,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.282,low
+q4,The escape sequence for a tab character is _____.,2,4,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.275,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.274,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,0.274,low
+q4,The ASCII code 97 corresponds to which character?,1,4,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.274,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.273,low
+q1,Which data type stores a single character value like 'm'?,1,1,q2,Which escape sequence represents a tab character in output?,4,2,0.271,low
+q4,The escape sequence for a tab character is _____.,2,4,q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,0.271,low
+q1,A char variable stores a single _____.,3,1,q2,What does the escape sequence \n represent in output?,3,2,0.268,low
+q2,What does the escape sequence \n represent in output?,3,2,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.268,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q1,A _char_ variable stores _____.,2,1,0.262,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q2,"In Java, to read a single character from input, use _____.",2,2,0.259,low
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,3,q4,The escape sequence for a tab character is _____.,2,4,0.257,low
+q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,4,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.256,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q4,The ASCII code 97 corresponds to which character?,1,4,0.255,low
+q4,The escape sequence for a tab character is _____.,2,4,q1,A _char_ variable stores a/an _____ internally.,4,1,0.255,low
+q2,Which escape sequence represents a tab character in output?,4,2,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.253,low
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,3,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.251,low
+q1,Which data type stores a single character value like 'm'?,1,1,q4,The escape sequence for a tab character is _____.,2,4,0.244,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q3,"In ASCII, the character 'A' is stored as the number _____.",3,3,0.244,low
+q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,3,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.241,low
+q1,A _char_ variable stores a/an _____ internally.,4,1,q2,Which escape sequence represents a tab character in output?,4,2,0.237,low
+q2,What does the escape sequence \n represent in output?,3,2,q1,A _char_ variable stores a/an _____ internally.,4,1,0.236,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q1,A char variable stores a single _____.,3,1,0.234,low
+q1,Which data type stores a single character value like 'm'?,1,1,q2,What does the escape sequence \n represent in output?,3,2,0.232,low
+q2,What does the escape sequence \n represent in output?,3,2,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.219,low
+q1,Which data type stores a single character value like 'm'?,1,1,q2,What does the escape sequence '\n' represent in output?,1,2,0.213,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q1,A _char_ variable stores a/an _____ internally.,4,1,0.197,low
+q2,What does the escape sequence '\n' represent in output?,1,2,q4,ASCII encoding uses exactly _____ bits to represent characters.,4,4,0.188,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Declare and initialize character variables in programming languages such as C, C++, and Java.  
+Output multiple character variables together in a single statement correctly, understanding string concatenation versus numeric addition.  
+Understand that characters are internally stored as numeric ASCII (or Unicode) values and use this knowledge for character manipulation.  
+Implement and use escape sequences to represent special characters in output statements.  
+Read single character input from users in programming languages, including handling language-specific input methods."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Which data type stores a single character value like 'm'?,1,yes,"This question assesses knowledge of declaring and initializing character variables, specifically the char data type."
+q2,What does the escape sequence '\n' represent in output?,1,yes,This question evaluates understanding and use of escape sequences in output statements.
+q3,How does the compiler treat System.out.print(let1 + let2) if let1 and let2 are chars?,1,yes,This question tests understanding of outputting multiple character variables and the difference between string concatenation and numeric addition.
+q4,The ASCII code 97 corresponds to which character?,1,yes,This question assesses knowledge that characters are stored as numeric ASCII values and using that knowledge for character manipulation.
+q1,A _char_ variable stores _____.,2,yes,"This question evaluates understanding of what a char variable stores internally, relating to character representation as numbers."
+q2,"In Java, to read a single character from input, use _____.",2,yes,This question assesses reading single character input from users and handling language-specific input methods in Java.
+q3,"Why does System.out.print("""" + c1 + c2) output characters, not their sum?",2,yes,This question tests understanding of string concatenation versus numeric addition when outputting multiple char variables.
+q4,The escape sequence for a tab character is _____.,2,yes,This question evaluates knowledge and implementation of escape sequences to represent special characters in output.
+q1,A char variable stores a single _____.,3,yes,"This question assesses understanding of what a char variable stores, directly related to declaring and initializing character variables."
+q2,What does the escape sequence \n represent in output?,3,yes,This question evaluates understanding and use of escape sequences in output statements.
+q3,"In ASCII, the character 'A' is stored as the number _____.",3,yes,This question tests knowledge that characters are stored as numeric ASCII values and using that knowledge for character manipulation.
+q4,"To output multiple char variables as characters in one statement, start the print with _____.",3,yes,"This question assesses correct output of multiple char variables together, understanding string concatenation."
+q1,A _char_ variable stores a/an _____ internally.,4,yes,This question evaluates understanding of the internal numeric representation of char variables.
+q2,Which escape sequence represents a tab character in output?,4,yes,This question tests knowledge and use of escape sequences for special characters in output.
+q3,"What does the statement System.out.print("""" + c1 + c2); do in Java when c1 and c2 are chars?",4,yes,This question assesses understanding of string concatenation versus numeric addition when printing multiple char variables.
+q4,ASCII encoding uses exactly _____ bits to represent characters.,4,yes,"This question evaluates knowledge of ASCII encoding specifics, relating to internal numeric storage of characters."

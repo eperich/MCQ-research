@@ -1,0 +1,172 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,1
+3,4,0,1
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,2,16
+1,3,1,3,16
+1,4,1,1,16
+2,3,2,2,16
+2,4,1,2,16
+3,4,0,2,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),6
+Similar (70-85%),14
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.929,duplicate
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.928,duplicate
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.921,duplicate
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.899,duplicate
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,0.893,duplicate
+q1,What must an identifier start with in Python?,1,1,q1,What is the first character allowed in a Python identifier?,4,1,0.877,duplicate
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.818,similar
+q4,A good variable name should be _____ and use _____ between words.,1,4,q4,A good variable name should be _____.,3,4,0.812,similar
+q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.809,similar
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.793,similar
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.791,similar
+q1,What must an identifier start with in Python?,1,1,q1,Why must a Python identifier start with a letter or underscore?,2,1,0.774,similar
+q1,What must an identifier start with in Python?,1,1,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.762,similar
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.756,similar
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.74,similar
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.739,similar
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,0.734,similar
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q1,What is the first character allowed in a Python identifier?,4,1,0.719,similar
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q1,What is the first character allowed in a Python identifier?,4,1,0.707,similar
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q1,Why must a Python identifier start with a letter or underscore?,2,1,0.7,similar
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.697,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.692,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q1,Why must a Python identifier start with a letter or underscore?,2,1,0.667,low
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.661,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.646,low
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.641,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,0.634,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.626,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.625,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,0.623,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.617,low
+q2,What does it mean that Python identifiers are case sensitive?,3,2,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.617,low
+q1,What must an identifier start with in Python?,1,1,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.616,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.61,low
+q1,What must an identifier start with in Python?,1,1,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.604,low
+q1,What must an identifier start with in Python?,1,1,q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,0.596,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.592,low
+q1,What must an identifier start with in Python?,1,1,q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,0.591,low
+q1,What must an identifier start with in Python?,1,1,q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,0.589,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,0.584,low
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q1,What is the first character allowed in a Python identifier?,4,1,0.582,low
+q2,What does it mean that Python identifiers are case sensitive?,3,2,q1,What is the first character allowed in a Python identifier?,4,1,0.58,low
+q4,A good variable name should be _____.,3,4,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.566,low
+q2,What does it mean that Python identifiers are case sensitive?,3,2,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.562,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,0.56,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,q1,What is the first character allowed in a Python identifier?,4,1,0.557,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q1,What is the first character allowed in a Python identifier?,4,1,0.556,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q1,What is the first character allowed in a Python identifier?,4,1,0.548,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.545,low
+q1,What must an identifier start with in Python?,1,1,q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,0.544,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q4,A good variable name should be _____.,3,4,0.544,low
+q1,What must an identifier start with in Python?,1,1,q4,A good variable name should be _____.,3,4,0.541,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.541,low
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q4,A good variable name should be _____.,3,4,0.534,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.533,low
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.533,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.529,low
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.523,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q1,What is the first character allowed in a Python identifier?,4,1,0.519,low
+q1,What must an identifier start with in Python?,1,1,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.518,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.515,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.514,low
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q4,A good variable name should be _____.,3,4,0.513,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.505,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.501,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,0.495,low
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.494,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,0.491,low
+q1,What must an identifier start with in Python?,1,1,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.476,low
+q4,A good variable name should be _____.,3,4,q1,What is the first character allowed in a Python identifier?,4,1,0.475,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q1,Why must a Python identifier start with a letter or underscore?,2,1,0.473,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,q4,A good variable name should be _____.,3,4,0.468,low
+q2,Why should variable names avoid starting and ending with double underscores?,4,2,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.468,low
+q1,What is the first character allowed in a Python identifier?,4,1,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.467,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,0.466,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q4,A good variable name should be _____.,3,4,0.465,low
+q1,What must an identifier start with in Python?,1,1,q4,A good variable name should be _____ and use _____ between words.,1,4,0.454,low
+q4,A good variable name should be _____.,3,4,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.445,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q4,A good variable name should be _____.,3,4,0.444,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q4,A good variable name should be _____ and use _____ between words.,1,4,0.441,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.441,low
+q1,What is the first character allowed in a Python identifier?,4,1,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.439,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.426,low
+q2,What does it mean that Python identifiers are case sensitive?,3,2,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.414,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q1,What is the first character allowed in a Python identifier?,4,1,0.413,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.408,low
+q4,A good variable name should be _____.,3,4,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.407,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q4,A good variable name should be _____.,3,4,0.406,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.406,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.404,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q4,A good variable name should be _____.,3,4,0.397,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.391,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,0.391,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q4,A good variable name should be _____ and use _____ between words.,1,4,0.383,low
+q4,A good variable name should be _____ and use _____ between words.,1,4,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.359,low
+q2,What does it mean that Python identifiers are case sensitive?,3,2,q4,A good variable name should be _____.,3,4,0.355,low
+q2,Why should variable names avoid starting and ending with double underscores?,4,2,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.313,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.291,low
+q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.284,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.276,low
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.274,low
+q1,What must an identifier start with in Python?,1,1,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.271,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q2,Why should variable names avoid starting and ending with double underscores?,4,2,0.268,low
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,2,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.249,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.248,low
+q1,What must an identifier start with in Python?,1,1,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.242,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,3,0.242,low
+q2,What does it mean that Python identifiers are case sensitive?,3,2,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.242,low
+q1,Why must Python identifiers start with a letter or underscore?,3,1,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.24,low
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,3,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.239,low
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,2,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.224,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.223,low
+q1,What is the first character allowed in a Python identifier?,4,1,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.222,low
+q1,Why must a Python identifier start with a letter or underscore?,2,1,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.212,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q4,Which of the following is a good variable name for storing temperature in Celsius?,4,4,0.21,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q1,Why must Python identifiers start with a letter or underscore?,3,1,0.209,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q1,What is the first character allowed in a Python identifier?,4,1,0.206,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q2,What does it mean that Python identifiers are case sensitive?,3,2,0.2,low
+q4,A good variable name for storing temperature in Celsius is _____.,2,4,q3,Which is a reason to avoid names starting and ending with double underscores?,3,3,0.176,low
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,3,q4,A good variable name for storing temperature in Celsius is _____.,2,4,0.168,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Explain Python identifier rules, including allowable characters, case sensitivity, and reserved words.  
+Identify and create valid and invalid variable names using Python identifier rules.  
+Conduct good coding practice by creating clear, consistent, and meaningful variable names."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What must an identifier start with in Python?,1,yes,"Yes, the question directly assesses the first learning objective by asking about the rules for starting an identifier in Python, which includes allowable characters."
+q2,Which describes Python’s treatment of uppercase and lowercase letters in identifiers?,1,yes,"Yes, because the question directly assesses the understanding of Python identifier rules, specifically regarding case sensitivity, which is explicitly mentioned in the first learning objective."
+q3,Which is a reason to avoid names starting and ending with double underscores?,1,yes,"Yes, the question assesses the understanding of Python identifier rules, specifically regarding reserved words and naming conventions, which aligns with the first learning objective."
+q4,A good variable name should be _____ and use _____ between words.,1,yes,"Yes, the question assesses the learning objective of conducting good coding practice by creating clear, consistent, and meaningful variable names, as it prompts for characteristics of a good variable name."
+q1,Why must a Python identifier start with a letter or underscore?,2,yes,"Yes, this question directly assesses the first learning objective by requiring an explanation of Python identifier rules, specifically the requirement for identifiers to start with a letter or underscore."
+q2,"How does Python treat the identifiers ""Cat"" and ""cat""?",2,yes,"Yes, the question directly assesses the learning objective of explaining Python identifier rules, specifically case sensitivity, as it asks how Python treats two identifiers that differ only in case."
+q3,Which is a key reason to avoid names starting and ending with double underscores?,2,yes,"Yes, the question directly assesses the understanding of Python identifier rules, specifically regarding reserved words and naming conventions, which aligns with the first learning objective."
+q4,A good variable name for storing temperature in Celsius is _____.,2,yes,"Yes, the question directly assesses the learning objectives by requiring the identification of a valid variable name according to Python identifier rules, including allowable characters and case sensitivity."
+q1,Why must Python identifiers start with a letter or underscore?,3,yes,"Yes, the question directly assesses the first learning objective by evaluating the understanding of Python identifier rules, specifically the requirement for identifiers to start with a letter or underscore."
+q2,What does it mean that Python identifiers are case sensitive?,3,yes,"Yes, the question directly assesses the learning objective of explaining Python identifier rules, specifically regarding case sensitivity, as it asks about the implications of case differences in identifiers."
+q3,Which is a reason to avoid names starting and ending with double underscores?,3,yes,"Yes, the question directly assesses the understanding of Python identifier rules, specifically regarding reserved names and their special uses, which aligns with the first learning objective."
+q4,A good variable name should be _____.,3,yes,"Yes, the question directly assesses the learning objective of conducting good coding practice by creating clear, consistent, and meaningful variable names, as it prompts the respondent to identify the characteristics of a good variable name."
+q1,What is the first character allowed in a Python identifier?,4,yes,"Yes, the question directly assesses the first learning objective by asking about the rules governing Python identifiers, specifically the allowable characters."
+q2,Why should variable names avoid starting and ending with double underscores?,4,yes,"Yes, the question assesses the understanding of Python identifier rules, specifically regarding reserved words and naming conventions, which aligns with the learning objectives."
+q3,"Python identifiers are case sensitive, so ""Data"" and ""data"" are considered:",4,yes,"Yes, this question directly assesses the first learning objective by evaluating the understanding of Python identifier rules, specifically case sensitivity."
+q4,Which of the following is a good variable name for storing temperature in Celsius?,4,yes,"Yes, this question directly assesses the learning objectives by requiring the identification of a valid variable name that adheres to Python identifier rules and promotes good coding practices."

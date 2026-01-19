@@ -1,0 +1,55 @@
+<question xsi:type='MultipleChoiceQuestion' guid='fff16553-d882-6d23-aedb-3ce1a1ee182e' subjects='c, cpp, java'>
+<instructions>
+<p>Given only int variables a and b, which is a valid expression?</p>
+</instructions>
+
+<choices>
+<choice>4a + 3 </choice>
+<choice>a + ab </choice>
+<choice correct='true'>a + -2 </choice>
+<choice>2 x 3 </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='74325db7-7c5b-5124-188f-1c824b79b792' subjects='c, cpp, java'>
+<instructions>
+<p>Which expression is evaluated first?</p>
+<line>w = y + 2 + 3 * x + z;</line>
+</instructions>
+
+<choices>
+<choice>y + 2 </choice>
+<choice>2 + 3 </choice>
+<choice correct='true'>3 * x </choice>
+<choice>x + z </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='18a106dc-9ea1-b953-7fd6-6efe189165a6' subjects='c, cpp, java'>
+<instructions>
+<p>What is the ending value of x?</p>
+<line>x = 160 / 20 / 4; </line>
+</instructions>
+
+<choices>
+<choice correct='true'>2 </choice>
+<choice>16 </choice>
+<choice>32 </choice>
+<choice>No value; runtime error </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='3cb9933e-1185-7ce1-9b43-8c4afb95d779' subjects='c'>
+<instructions>
+Which changes the value of m, where m = x * y + z / -8 % 9 + w?
+</instructions>
+
+<choices>
+<choice> m = x * y + ((z / -8) % 9) + w</choice>
+<choice> m = x * y + (z / -8 % 9) + w</choice>
+<choice> m = ((x * y) + (z / -8) % 9) + w</choice>
+<choice correct='true'> m = (x * y) + z / (-8 % 9 + w)</choice>
+</choices>
+</question>

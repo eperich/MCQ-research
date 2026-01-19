@@ -1,0 +1,64 @@
+<question xsi:type='MultipleChoiceQuestion' guid='74ee6ec0-3239-4f87-a71a-84b9e6317e23' subjects='c,cpp,java'>
+<instructions>
+<p>What is y after executing the statements?</p>
+<codeBlock language='c'>
+x = 5;
+y = x + 1;
+y = y * 2;</codeBlock>
+</instructions>
+
+<choices>
+<choice>5 </choice>
+<choice>6 </choice>
+<choice>8 </choice>
+<choice correct='true'>12 </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='c56bdbd5-dcb9-4ae2-b504-35754dd1e98b' subjects='c,cpp,java'>
+<instructions>
+<p>What is y after executing the statements?</p>
+<codeBlock language='c'>
+x = 4;
+y = x + 1;
+x = 3;
+y = y * 2;</codeBlock>
+</instructions>
+
+<choices>
+<choice>6 </choice>
+<choice>8 </choice>
+<choice correct='true'>10 </choice>
+<choice>12 </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='e7e193dd-6d77-bde6-5eb2-dd77761c658b' subjects='c,cpp,java'>
+<instructions>
+Which statement is incrementing the integer x, where y is also an integer?
+</instructions>
+
+<choices>
+<choice> <code>x = x - 1;</code></choice>
+<choice correct='true'> <code>x = x + 1;</code></choice>
+<choice> <code>y = x + 1;</code></choice>
+<choice> <code>y = x - 1;</code></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='39a278d2-d0c5-a838-1942-774ed160bf75' subjects='c,cpp,java'>
+<instructions>
+What is the purpose of a variable?
+</instructions>
+
+<choices>
+<choice> To assign values</choice>
+<choice> To perform calculations</choice>
+<choice correct='true'> To hold a value</choice>
+<choice> To hold a constant value</choice>
+</choices>
+</question>
+
+</sectionTestBank> 

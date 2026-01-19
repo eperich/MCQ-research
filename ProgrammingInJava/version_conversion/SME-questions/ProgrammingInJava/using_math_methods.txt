@@ -1,0 +1,68 @@
+<question xsi:type='MultipleChoiceQuestion' guid='2b9885b5-65cc-1dc4-77e1-ad2c4f7582f0' subjects='java'>
+<instructions>
+<p>What is the ending value of z? </p>
+<codeBlock language='text'>
+x = 0;
+y = 3;
+z = Math.pow(x + 2, y);</codeBlock>
+</instructions>
+
+<choices>
+<choice>0.0 </choice>
+<choice>4.0 </choice>
+<choice correct='true'>8.0 </choice>
+<choice>Error: Cannot have an expression within a method call  </choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='408cb745-8f81-14d2-e8fa-7067954d7bcb' subjects='java'>
+<instructions>
+<p>What is the ending value of y? Math.sqrt(u) returns the square root of u. Math.pow(u, v) returns u raised to the power of v.</p>
+<codeBlock language='text'>
+x = 9.0;
+y = 4.0;
+y = Math.pow(Math.sqrt(x), Math.sqrt(y));</codeBlock>
+</instructions>
+
+<choices>
+<choice>8.0 </choice>
+<choice correct='true'>9.0  </choice>
+<choice>6561.0 </choice>
+<choice>Error: The sqrt methods cannot appear in the call to the pow method</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='5c9319d8-6c88-ad33-15cd-8cd17fa82727' subjects='java'>
+<instructions>
+<p>What is the ending value of y? Math.pow(u, v) returns u raised to the power of v. </p>
+<codeBlock language='text'>
+x = 2.0;
+y = 3.0;
+y = Math.pow(Math.pow(x, y)) + 1.0;</codeBlock>
+</instructions>
+
+<choices>
+<choice>8.0 </choice>
+<choice>9.0  </choice>
+<choice>65.0 </choice>
+<choice correct='true'>Error: The compiler complains about calling pow without the correct number of arguments</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='a9685c14-ddfe-fa1c-cd96-794141a5a3f4' subjects='c, cpp, java'>
+<instructions>
+<p>Given function Multiply(u, v) that returns u * v, and Add(u, v) that returns u + v, which expression corresponds to: </p>
+<line>Add(Multiply(x, Add(y, z)), w)</line>
+</instructions>
+
+<choices>
+<choice correct='true'>(x * (y + z)) + w </choice>
+<choice>(x + (y + z) * w) </choice>
+<choice>((x * y) + z) + w </choice>
+<choice>(x * (y + z) * w) </choice>
+</choices>
+</question>

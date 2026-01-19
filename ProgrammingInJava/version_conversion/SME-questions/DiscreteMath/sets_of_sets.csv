@@ -1,0 +1,9 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\n$A = \big\{1, 2, \{3, 4\}, \{5, 6, 7\} \big\}$\nSelect the\n<i>true</i>\nstatement.","$\{ 1, 2 \} \subseteq A$",$\{ 3 \} \in A$,"$\{ 3, 4 \} \subseteq A$","$\{ 1, 2 \} \subseteq A$","$\{ 1, 2 \} \in A$",,,,,,
+"\n$A = \big\{1, 2, \{3, 4\}, \{5, 6, 7\} \big\}$\nSelect the correct value for\n$|A|$\n.",$4$,$4$,$5$,$6$,$7$,,,,,,
+"\n$ A = \{1, 2, 3, 4\}$\n.\nSelect the\n<i>false</i>\nstatement.","$\{2, 3\} \subseteq P(A)$",$\emptyset \in P(A)$,$\emptyset \subseteq P(A)$,"$\{2, 3\} \in P(A)$","$\{2, 3\} \subseteq P(A)$",,,,,,
+\n$A$\nis a finite set such that\n$|P(A)| = 32$\n. What is\n$|A|$\n?,$5$,$32$,$16$,$5$,Not enough information is given to determine\n$|A|$\n.,,,,,,
+"\n$A = \{1, 2, 3, 4, 5, 6, 7\}$\n. Which expression is\n<i>not</i>\nan element of\n$P(A)?$",$1$,$\emptyset$,$1$,$\{1\}$,$A$,,,,,,
+"\n$A = \{1, 2, 3, 4, 5, 6, 7\}$\n. Select the\n<i>false</i>\nstatement.",$A \subset P(A)$,$\emptyset \subset P(A)$,$\emptyset \in P(A)$,$A \subset P(A)$,$A \in P(A)$,,,,,,
+"\n$A =\big\{ \{1, 2\}, 3, \{4, 5, 6, 7\}\big\}$\nSelect the correct value for\n$|A|$\n.",$3$,$3$,$4$,$6$,$7$,,,,,,
+"\n$A =\big\{ \{1, 2\}, 3, \{4, 5, 6, 7\}\big\}$\nSelect the\n<i>true</i>\nstatement.","$\{1, 2\} \in A$","$\{1, 2\} \in P(A)$","$\{1, 2\} \in A$",$\{3\} \in A$,$\{3\} \subset P(A)$,,,,,,

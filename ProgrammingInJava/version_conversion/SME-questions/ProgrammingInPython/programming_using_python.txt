@@ -1,0 +1,54 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='51a89396-c158-34cb-419a-e6bbce76c3f6'>
+<instructions>
+What is a common word for the textual representation of a program?
+</instructions>
+
+<choices>
+<choice correct='true'>code</choice>
+<choice>prompt</choice>
+<choice>interpreter</choice>
+<choice>expression</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='eaae5132-c3f2-54c9-916f-0f716886899b'>
+<instructions>
+Which instruction displays variables or expression values?
+</instructions>
+
+<choices>
+<choice>put()</choice>
+<choice correct='true'>print()</choice>
+<choice>output()</choice>
+<choice>display()</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='cc7ab56f-c511-1f93-e74b-e6b2fde85d44'>
+<instructions>
+Which symbol is used in Python to create a comment?
+</instructions>
+
+<choices>
+<choice>*</choice>
+<choice>C</choice>
+<choice>//</choice>
+<choice correct='true'>#</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='c6217b51-b7dd-4d5a-8440-ed781da99435'>
+<instructions>
+Which code example is an expression?
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>x = 4</codeBlock></choice>
+<choice><codeBlock language='python'>print(x)</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>(x * y) / 2</codeBlock></choice>
+<choice><codeBlock language='python'># Display x</codeBlock></choice>
+</choices>
+</question>

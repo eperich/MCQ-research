@@ -1,0 +1,54 @@
+<question xsi:type='MultipleChoiceQuestion' guid='ee3db661-022d-1b10-4ed6-fa54bacba4b0' subjects='cpp, java'>
+<instructions>
+<p>myString is declared as a string and is the only variable declared. Which is a valid assignment? </p>
+</instructions>
+
+<choices>
+<choice>myString = 'Hello'; </choice>
+<choice>myString = Hey; </choice>
+<choice correct='true'>myString = "H"; </choice>
+<choice>myString = [Hoy]; </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='358edbcc-67dd-2298-af3a-592327199c32' subjects='java'>
+<instructions>
+<p>What is read into string myString for input "One-hit wonder". </p>
+<codeBlock language='java'>
+myString = scnr.next();
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>One</choice>
+<choice>One-</choice>
+<choice correct='true'>One-hit</choice>
+<choice>One-hit wonder</choice></choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='d1fb219d-4463-86be-dfa8-983fe541e3e2' subjects='java'>
+<instructions>
+<p>Which reads an entire line of text into string myString?</p>
+</instructions>
+
+<choices>
+<choice><codeBlock language='cpp'>
+myString = scnr.next();
+</codeBlock></choice>
+
+
+<choice><codeBlock language='cpp'>
+scnr.next(myString);
+</codeBlock></choice>
+ 
+	<choice correct='true'><codeBlock language='cpp'>
+	myString = scnr.nextLine();
+</codeBlock></choice>
+
+
+<choice><codeBlock language='cpp'>
+scnr.nextLine(myString);
+</codeBlock></choice>
+</choices>
+</question>

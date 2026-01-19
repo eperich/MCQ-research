@@ -1,0 +1,248 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,5,0,0
+2,5,0,0
+3,5,0,0
+4,5,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,2,25
+1,3,0,1,25
+1,4,1,3,25
+2,3,1,1,25
+2,4,1,0,25
+3,4,1,0,25
+
+Summary
+Total Comparisons,190
+Duplicates (≥85%),4
+Similar (70-85%),7
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q2,Which instruction type receives data from a keyboard or file?,4,2,0.975,duplicate
+q1,What type of instruction receives data from a keyboard or file?,3,1,q2,Which instruction type receives data from a keyboard or file?,4,2,0.942,duplicate
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q1,What type of instruction receives data from a keyboard or file?,3,1,0.941,duplicate
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q1,A computer program executes instructions _____ at a time.,4,1,0.887,duplicate
+q2,Which instruction type gets data from the user or a file?,1,2,q2,Which instruction type takes data from the keyboard or a file?,2,2,0.815,similar
+q2,Which instruction type gets data from the user or a file?,1,2,q2,Which instruction type receives data from a keyboard or file?,4,2,0.793,similar
+q2,Which instruction type gets data from the user or a file?,1,2,q1,What type of instruction receives data from a keyboard or file?,3,1,0.792,similar
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.754,similar
+q3,"In programming, a variable is used to _____.",1,3,q1,What is the main reason a computer program uses variables?,2,1,0.748,similar
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.739,similar
+q4,Why is computational thinking important in the information age?,2,4,q5,Computational thinking is important because it helps people _____.,3,5,0.707,similar
+q3,"In programming, a variable is used to _____.",1,3,q3,Variables in a program are named because their _____ change during execution.,4,3,0.683,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q4,Why is computational thinking important in the information age?,2,4,0.656,low
+q1,What is the main reason a computer program uses variables?,2,1,q3,Variables in a program are named because their _____ change during execution.,4,3,0.64,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q5,Computational thinking is important because it helps people _____.,3,5,0.639,low
+q1,What is the main reason a computer program uses variables?,2,1,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.602,low
+q3,"In programming, a variable is used to _____.",1,3,q2,Which instruction type takes data from the keyboard or a file?,2,2,0.583,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.583,low
+q3,"In programming, a variable is used to _____.",1,3,q2,Which instruction type receives data from a keyboard or file?,4,2,0.579,low
+q3,"In programming, a variable is used to _____.",1,3,q1,What type of instruction receives data from a keyboard or file?,3,1,0.578,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q1,What is the main reason a computer program uses variables?,2,1,0.572,low
+q1,What is the main reason a computer program uses variables?,2,1,q1,What type of instruction receives data from a keyboard or file?,3,1,0.57,low
+q1,What is the main reason a computer program uses variables?,2,1,q2,Which instruction type takes data from the keyboard or a file?,2,2,0.559,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.559,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.559,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q4,How does a computer program differ from a cooking recipe?,3,4,0.555,low
+q1,What is the main reason a computer program uses variables?,2,1,q2,Which instruction type receives data from a keyboard or file?,4,2,0.553,low
+q1,What is the main reason a computer program uses variables?,2,1,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.551,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.551,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q2,Which instruction type receives data from a keyboard or file?,4,2,0.549,low
+q2,Which instruction type gets data from the user or a file?,1,2,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.542,low
+q3,"In programming, a variable is used to _____.",1,3,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.536,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.533,low
+q5,Computational thinking is important because it helps people _____.,3,5,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.517,low
+q4,How does a computer program differ from a cooking recipe?,3,4,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.515,low
+q4,How does a computer program differ from a cooking recipe?,3,4,q1,A computer program executes instructions _____ at a time.,4,1,0.514,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.513,low
+q3,"In programming, a variable is used to _____.",1,3,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.511,low
+q4,Why is computational thinking important in the information age?,2,4,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.508,low
+q4,How does a computer program differ from a cooking recipe?,3,4,q5,Computational thinking is important because it helps people _____.,3,5,0.5,low
+q2,Which instruction type receives data from a keyboard or file?,4,2,q3,Variables in a program are named because their _____ change during execution.,4,3,0.5,low
+q2,Which instruction type gets data from the user or a file?,1,2,q1,What is the main reason a computer program uses variables?,2,1,0.496,low
+q1,What is the main reason a computer program uses variables?,2,1,q4,Why is computational thinking important in the information age?,2,4,0.494,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q3,Variables in a program are named because their _____ change during execution.,4,3,0.494,low
+q1,What is the main reason a computer program uses variables?,2,1,q4,How does a computer program differ from a cooking recipe?,3,4,0.492,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.489,low
+q1,What is the main reason a computer program uses variables?,2,1,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.486,low
+q2,Which instruction type gets data from the user or a file?,1,2,q4,What is the purpose of an algorithm in computational thinking?,1,4,0.483,low
+q1,A computer program executes instructions _____ at a time.,4,1,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.482,low
+q1,What is the main reason a computer program uses variables?,2,1,q5,Computational thinking is important because it helps people _____.,3,5,0.478,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q3,Variables in a program are named because their _____ change during execution.,4,3,0.465,low
+q2,Which instruction type gets data from the user or a file?,1,2,q3,"In programming, a variable is used to _____.",1,3,0.463,low
+q2,Which instruction type gets data from the user or a file?,1,2,q4,Why is computational thinking important in the information age?,2,4,0.461,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.456,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q4,How does a computer program differ from a cooking recipe?,3,4,0.453,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q4,How does a computer program differ from a cooking recipe?,3,4,0.442,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q3,Variables in a program are named because their _____ change during execution.,4,3,0.442,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q3,Variables in a program are named because their _____ change during execution.,4,3,0.441,low
+q3,"In programming, a variable is used to _____.",1,3,q4,What is the purpose of an algorithm in computational thinking?,1,4,0.438,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q5,Computational thinking is important because it helps people _____.,3,5,0.438,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q3,"In programming, a variable is used to _____.",1,3,0.435,low
+q2,Which instruction type gets data from the user or a file?,1,2,q5,Computational thinking is important because it helps people _____.,3,5,0.432,low
+q3,"In programming, a variable is used to _____.",1,3,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.428,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q1,What type of instruction receives data from a keyboard or file?,3,1,0.427,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q1,A computer program executes instructions _____ at a time.,4,1,0.42,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q4,What is the purpose of an algorithm in computational thinking?,1,4,0.419,low
+q2,Which instruction type gets data from the user or a file?,1,2,q4,How does a computer program differ from a cooking recipe?,3,4,0.419,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.417,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q4,How does a computer program differ from a cooking recipe?,3,4,0.417,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.412,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.412,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q4,How does a computer program differ from a cooking recipe?,3,4,0.41,low
+q3,"In programming, a variable is used to _____.",1,3,q1,A computer program executes instructions _____ at a time.,4,1,0.403,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.403,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q1,What is the main reason a computer program uses variables?,2,1,0.401,low
+q3,"In programming, a variable is used to _____.",1,3,q4,How does a computer program differ from a cooking recipe?,3,4,0.398,low
+q2,Which instruction type gets data from the user or a file?,1,2,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.395,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q2,Which instruction type gets data from the user or a file?,1,2,0.394,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q5,Computational thinking is important because it helps people _____.,3,5,0.393,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q1,A computer program executes instructions _____ at a time.,4,1,0.39,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q1,What type of instruction receives data from a keyboard or file?,3,1,0.387,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.387,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.382,low
+q2,Which instruction type gets data from the user or a file?,1,2,q3,Variables in a program are named because their _____ change during execution.,4,3,0.38,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q2,Which instruction type takes data from the keyboard or a file?,2,2,0.379,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q4,How does a computer program differ from a cooking recipe?,3,4,0.377,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q2,Which instruction type receives data from a keyboard or file?,4,2,0.377,low
+q2,Which instruction type gets data from the user or a file?,1,2,q1,A computer program executes instructions _____ at a time.,4,1,0.376,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.369,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q2,Which instruction type receives data from a keyboard or file?,4,2,0.368,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q3,Variables in a program are named because their _____ change during execution.,4,3,0.367,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q2,Which instruction type receives data from a keyboard or file?,4,2,0.366,low
+q1,What is the main reason a computer program uses variables?,2,1,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.366,low
+q3,Variables in a program are named because their _____ change during execution.,4,3,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.366,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q2,Which instruction type takes data from the keyboard or a file?,2,2,0.365,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.363,low
+q4,How does a computer program differ from a cooking recipe?,3,4,q2,Which instruction type receives data from a keyboard or file?,4,2,0.363,low
+q3,"In programming, a variable is used to _____.",1,3,q5,Computational thinking is important because it helps people _____.,3,5,0.362,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.358,low
+q1,What is the main reason a computer program uses variables?,2,1,q1,A computer program executes instructions _____ at a time.,4,1,0.358,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.357,low
+q4,How does a computer program differ from a cooking recipe?,3,4,q3,Variables in a program are named because their _____ change during execution.,4,3,0.357,low
+q1,A computer program executes instructions _____ at a time.,4,1,q3,Variables in a program are named because their _____ change during execution.,4,3,0.356,low
+q4,Why is computational thinking important in the information age?,2,4,q1,What type of instruction receives data from a keyboard or file?,3,1,0.352,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q1,A computer program executes instructions _____ at a time.,4,1,0.35,low
+q3,"In programming, a variable is used to _____.",1,3,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.348,low
+q2,Which instruction type receives data from a keyboard or file?,4,2,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.347,low
+q2,Which instruction type gets data from the user or a file?,1,2,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.344,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q1,What type of instruction receives data from a keyboard or file?,3,1,0.344,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q5,Computational thinking is important because it helps people _____.,3,5,0.343,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q5,Computational thinking is important because it helps people _____.,3,5,0.343,low
+q1,A computer program executes instructions _____ at a time.,4,1,q2,Which instruction type receives data from a keyboard or file?,4,2,0.343,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q1,A computer program executes instructions _____ at a time.,4,1,0.341,low
+q5,Computational thinking is important because it helps people _____.,3,5,q1,A computer program executes instructions _____ at a time.,4,1,0.34,low
+q4,Why is computational thinking important in the information age?,2,4,q4,How does a computer program differ from a cooking recipe?,3,4,0.338,low
+q3,"In programming, a variable is used to _____.",1,3,q4,Why is computational thinking important in the information age?,2,4,0.336,low
+q4,Why is computational thinking important in the information age?,2,4,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.335,low
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,q1,A computer program executes instructions _____ at a time.,4,1,0.332,low
+q2,Which instruction type gets data from the user or a file?,1,2,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.325,low
+q4,Why is computational thinking important in the information age?,2,4,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.325,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.319,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q4,Why is computational thinking important in the information age?,2,4,0.319,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.317,low
+q4,Why is computational thinking important in the information age?,2,4,q2,Which instruction type receives data from a keyboard or file?,4,2,0.316,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q2,Which instruction type receives data from a keyboard or file?,4,2,0.315,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q3,Variables in a program are named because their _____ change during execution.,4,3,0.315,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q1,A computer program executes instructions _____ at a time.,4,1,0.314,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.309,low
+q2,Which instruction type gets data from the user or a file?,1,2,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.308,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q4,How does a computer program differ from a cooking recipe?,3,4,0.301,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q5,Computational thinking is important because it helps people _____.,3,5,0.3,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q4,Why is computational thinking important in the information age?,2,4,0.298,low
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.296,low
+q4,Why is computational thinking important in the information age?,2,4,q1,A computer program executes instructions _____ at a time.,4,1,0.294,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.292,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.291,low
+q1,What is the main reason a computer program uses variables?,2,1,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.289,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.285,low
+q5,Computational thinking is important because it helps people _____.,3,5,q2,Which instruction type receives data from a keyboard or file?,4,2,0.285,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.284,low
+q5,Computational thinking is important because it helps people _____.,3,5,q3,Variables in a program are named because their _____ change during execution.,4,3,0.283,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q1,What type of instruction receives data from a keyboard or file?,3,1,0.281,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q3,Variables in a program are named because their _____ change during execution.,4,3,0.279,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,3,0.279,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,0.273,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q5,Computational thinking is important because it helps people _____.,3,5,0.267,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.265,low
+q4,Why is computational thinking important in the information age?,2,4,q3,Variables in a program are named because their _____ change during execution.,4,3,0.265,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.257,low
+q3,"In programming, a variable is used to _____.",1,3,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.253,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.249,low
+q2,Which instruction type takes data from the keyboard or a file?,2,2,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.249,low
+q1,What type of instruction receives data from a keyboard or file?,3,1,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.248,low
+q2,Which instruction type gets data from the user or a file?,1,2,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.243,low
+q2,Which instruction type gets data from the user or a file?,1,2,q5,Which instruction completes this triangle area formula? base * height * _____,1,5,0.24,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q2,A sequence of instructions that solves a problem is called a/an _____.,3,2,0.238,low
+q2,Which instruction type receives data from a keyboard or file?,4,2,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.236,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q2,Which instruction type receives data from a keyboard or file?,4,2,0.233,low
+q3,Variables in a program are named because their _____ change during execution.,4,3,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.233,low
+q3,"In programming, a variable is used to _____.",1,3,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.23,low
+q1,What is the main reason a computer program uses variables?,2,1,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.23,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.228,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q5,Computational thinking is important because it helps people _____.,3,5,0.227,low
+q5,Computational thinking is important because it helps people _____.,3,5,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.227,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.226,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q4,Why is computational thinking important in the information age?,2,4,0.216,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q4,How does a computer program differ from a cooking recipe?,3,4,0.213,low
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,3,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.209,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.209,low
+q4,How does a computer program differ from a cooking recipe?,3,4,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.208,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q1,A computer program executes instructions _____ at a time.,4,1,0.2,low
+q4,Why do programs use sequences of instructions called algorithms?,4,4,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.196,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q1,What type of instruction receives data from a keyboard or file?,3,1,0.195,low
+q1,A computer program executes instructions _____ at a time.,4,1,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.195,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.194,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q2,Which instruction type takes data from the keyboard or a file?,2,2,0.194,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q1,What is the main reason a computer program uses variables?,2,1,0.192,low
+q3,"In programming, a variable is used to _____.",1,3,q5,Which instruction completes this triangle area formula? base * height * _____,1,5,0.189,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q2,Which instruction type receives data from a keyboard or file?,4,2,0.185,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q3,Variables in a program are named because their _____ change during execution.,4,3,0.176,low
+q4,Why is computational thinking important in the information age?,2,4,q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,0.174,low
+q4,Why is computational thinking important in the information age?,2,4,q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,5,0.171,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q5,Computational thinking is important because it helps people _____.,3,5,0.169,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q1,A computer program executes instructions _____ at a time.,4,1,0.162,low
+q4,What is the purpose of an algorithm in computational thinking?,1,4,q5,Which instruction completes this triangle area formula? base * height * _____,1,5,0.154,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q4,Why do programs use sequences of instructions called algorithms?,4,4,0.146,low
+q1,A computer program executes instructions _____ to perform tasks.,1,1,q5,Which instruction completes this triangle area formula? base * height * _____,1,5,0.141,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q4,How does a computer program differ from a cooking recipe?,3,4,0.133,low
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,5,q3,Variables in a program are named because their _____ change during execution.,4,3,0.127,low
+q5,Which instruction completes this triangle area formula? base * height * _____,1,5,q4,Why is computational thinking important in the information age?,2,4,0.121,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Understand the basic components and structure of a computer program, including input, process, and output.  
+Identify and explain the role of variables in programming and how they can change values during execution.  
+Demonstrate the ability to create and manipulate simple algorithms to solve problems.  
+Apply computational thinking to design sequences of instructions for specific tasks, such as drawing shapes.  
+Differentiate between programming instructions and traditional mathematical expressions, particularly in the context of assignment statements."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A computer program executes instructions _____ to perform tasks.,1,yes,"Yes, the question assesses the understanding of the basic components and structure of a computer program, specifically the sequential execution of instructions, which relates to the first learning objective."
+q2,Which instruction type gets data from the user or a file?,1,yes,"Yes, this question directly assesses the learning objective of understanding the basic components and structure of a computer program, specifically the role of input in that structure."
+q3,"In programming, a variable is used to _____.",1,yes,"Yes, the question directly assesses the learning objective that identifies and explains the role of variables in programming and how they can change values during execution."
+q4,What is the purpose of an algorithm in computational thinking?,1,yes,"Yes, the question directly assesses the learning objective of demonstrating the ability to create and manipulate simple algorithms to solve problems, as it asks about the purpose of an algorithm in computational thinking."
+q5,Which instruction completes this triangle area formula? base * height * _____,1,no,"No, this question does not directly assess the learning objectives as it focuses on a mathematical formula rather than the components and structure of a computer program or programming concepts."
+q1,What is the main reason a computer program uses variables?,2,yes,"Yes, the question directly assesses the learning objective of identifying and explaining the role of variables in programming and how they can change values during execution."
+q2,Which instruction type takes data from the keyboard or a file?,2,yes,"Yes, the question assesses the learning objective of understanding the basic components and structure of a computer program, specifically the input component, as it directly relates to identifying how data is received in programming."
+q3,A program that assigns z = x + y and inputs x = 3 and y = 4 will output _____.,2,yes,"Yes, the question assesses the understanding of variables and their role in programming, as well as the differentiation between programming instructions and mathematical expressions, particularly through the assignment statement."
+q4,Why is computational thinking important in the information age?,2,no,"No, the question does not directly assess the learning objectives as it focuses on the importance of computational thinking rather than evaluating the understanding or application of programming components, variables, algorithms, or the differentiation between programming instructions and mathematical expressions."
+q5,"In turtle graphics, what does the instruction ""Turn left 90"" do?",2,yes,"Yes, the question assesses the understanding of basic components and structure of a computer program, specifically the role of programming instructions in turtle graphics, which relates to the learning objectives regarding input, process, and output."
+q1,What type of instruction receives data from a keyboard or file?,3,yes,"Yes, the question directly assesses the learning objective of understanding the basic components and structure of a computer program, specifically the input component."
+q2,A sequence of instructions that solves a problem is called a/an _____.,3,yes,"Yes, the question directly assesses the learning objective of demonstrating the ability to create and manipulate simple algorithms to solve problems, as it specifically asks for the term that describes a sequence of instructions designed to solve a problem."
+q3,In the program: x = Get next input; y = Get next input; z = x + y; Put z to output; what is the role of z = x + y?,3,yes,"Yes, this question directly assesses the learning objective of identifying and explaining the role of variables in programming and how they can change values during execution, as it requires understanding the processing instruction that involves the variable z."
+q4,How does a computer program differ from a cooking recipe?,3,no,"No, the question does not directly assess the learning objectives as it focuses on comparing a computer program to a cooking recipe rather than evaluating understanding of program components, variables, algorithms, or computational thinking."
+q5,Computational thinking is important because it helps people _____.,3,yes,"Yes, the question directly assesses the learning objective of applying computational thinking to design sequences of instructions for specific tasks, as it asks about the importance of computational thinking in creating sequences to solve problems."
+q1,A computer program executes instructions _____ at a time.,4,no,"No, this question does not directly assess the learning objectives as it focuses on the execution of instructions rather than the components, variables, algorithms, or computational thinking involved in programming."
+q2,Which instruction type receives data from a keyboard or file?,4,yes,"Yes, this question directly assesses the learning objective of understanding the basic components and structure of a computer program, specifically the input component."
+q3,Variables in a program are named because their _____ change during execution.,4,yes,"Yes, the question directly assesses the learning objective of identifying and explaining the role of variables in programming and how they can change values during execution."
+q4,Why do programs use sequences of instructions called algorithms?,4,yes,"Yes, the question directly assesses the learning objective of demonstrating the ability to create and manipulate simple algorithms to solve problems, as it asks about the purpose of algorithms in programming."
+q5,Which completes this program to compute a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,4,yes,"Yes, this question assesses the understanding of basic components and structure of a computer program, as well as the ability to create and manipulate simple algorithms to solve problems, specifically in calculating the area of a triangle."

@@ -1,0 +1,248 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,5,0,0
+2,5,0,0
+3,5,0,0
+4,5,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,3,25
+1,3,1,2,25
+1,4,1,1,25
+2,3,1,2,25
+2,4,1,2,25
+3,4,0,1,25
+
+Summary
+Total Comparisons,190
+Duplicates (≥85%),5
+Similar (70-85%),11
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.911,duplicate
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.902,duplicate
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.884,duplicate
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.87,duplicate
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.862,duplicate
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.85,similar
+q2,What is the scope of a local variable in Python?,1,2,q2,"In Python, where does the scope of a local variable begin?",3,2,0.84,similar
+q1,What does the function header in Python always include?,1,1,q1,What does a function header in Python always include?,3,1,0.839,similar
+q2,What is the scope of a local variable in Python?,1,2,q5,What is the scope of a global variable in a Python program?,2,5,0.818,similar
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.817,similar
+q2,What is the scope of a local variable in Python?,1,2,q3,What is the scope of a local variable defined inside a function?,4,3,0.781,similar
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q5,How can keyword arguments improve function calls in Python?,3,5,0.761,similar
+q5,What is the scope of a global variable in a Python program?,2,5,q3,What is the scope of a local variable defined inside a function?,4,3,0.748,similar
+q5,What is the scope of a global variable in a Python program?,2,5,q2,"In Python, where does the scope of a local variable begin?",3,2,0.722,similar
+q4,"In Python, what is a keyword argument?",1,4,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.719,similar
+q1,What does the function header in Python always include?,1,1,q1,What part of a function contains the parameters and ends with a colon?,2,1,0.715,similar
+q4,"In Python, what is a keyword argument?",1,4,q5,How can keyword arguments improve function calls in Python?,3,5,0.683,low
+q5,How can keyword arguments improve function calls in Python?,3,5,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.67,low
+q4,"In Python, what is a keyword argument?",1,4,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.652,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q1,What does a function header in Python always include?,3,1,0.64,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q3,What is the scope of a local variable defined inside a function?,4,3,0.637,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q5,What is the effect of the global statement inside a function?,4,5,0.63,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q5,What is the scope of a global variable in a Python program?,2,5,0.606,low
+q5,What is the scope of a global variable in a Python program?,2,5,q5,What is the effect of the global statement inside a function?,4,5,0.579,low
+q3,What is the scope of a local variable defined inside a function?,4,3,q5,What is the effect of the global statement inside a function?,4,5,0.566,low
+q1,What does the function header in Python always include?,1,1,q2,"In Python, where does the scope of a local variable begin?",3,2,0.54,low
+q5,What is the scope of a global variable in a Python program?,2,5,q3,Which statement correctly declares a global variable inside a function?,3,3,0.54,low
+q1,What does a function header in Python always include?,3,1,q2,"In Python, where does the scope of a local variable begin?",3,2,0.538,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q3,Which statement correctly declares a global variable inside a function?,3,3,0.535,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q5,What is the effect of the global statement inside a function?,4,5,0.532,low
+q5,What type of object is a Python function considered?,1,5,q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,0.513,low
+q2,What is the scope of a local variable in Python?,1,2,q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,0.51,low
+q5,What type of object is a Python function considered?,1,5,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.504,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q2,"In Python, where does the scope of a local variable begin?",3,2,0.5,low
+q4,"In Python, what is a keyword argument?",1,4,q1,What does a function header in Python always include?,3,1,0.499,low
+q1,What does the function header in Python always include?,1,1,q5,What type of object is a Python function considered?,1,5,0.496,low
+q2,What is the scope of a local variable in Python?,1,2,q5,What is the effect of the global statement inside a function?,4,5,0.489,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q3,What is the scope of a local variable defined inside a function?,4,3,0.486,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q2,"In Python, where does the scope of a local variable begin?",3,2,0.483,low
+q5,What type of object is a Python function considered?,1,5,q1,What does a function header in Python always include?,3,1,0.475,low
+q5,What type of object is a Python function considered?,1,5,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.475,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q1,What does a function header in Python always include?,3,1,0.475,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q3,What is the scope of a local variable defined inside a function?,4,3,0.471,low
+q5,What type of object is a Python function considered?,1,5,q5,What is the scope of a global variable in a Python program?,2,5,0.459,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q5,What type of object is a Python function considered?,1,5,0.443,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q5,What is the effect of the global statement inside a function?,4,5,0.443,low
+q5,What type of object is a Python function considered?,1,5,q1,What does a function return if it has no return statement?,4,1,0.442,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q5,What is the effect of the global statement inside a function?,4,5,0.439,low
+q1,What does the function header in Python always include?,1,1,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.437,low
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,q5,What is the effect of the global statement inside a function?,4,5,0.431,low
+q1,What does a function header in Python always include?,3,1,q5,How can keyword arguments improve function calls in Python?,3,5,0.43,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q3,Which statement correctly declares a global variable inside a function?,3,3,0.429,low
+q2,What is the scope of a local variable in Python?,1,2,q3,Which statement correctly declares a global variable inside a function?,3,3,0.428,low
+q5,What type of object is a Python function considered?,1,5,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.427,low
+q2,What is the scope of a local variable in Python?,1,2,q5,What type of object is a Python function considered?,1,5,0.418,low
+q2,What is the scope of a local variable in Python?,1,2,q1,What does a function header in Python always include?,3,1,0.416,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q5,What is the effect of the global statement inside a function?,4,5,0.415,low
+q1,What does the function header in Python always include?,1,1,q2,What is the scope of a local variable in Python?,1,2,0.414,low
+q4,What happens when a mutable object is passed as an argument to a function?,4,4,q5,What is the effect of the global statement inside a function?,4,5,0.413,low
+q4,"In Python, what is a keyword argument?",1,4,q5,What type of object is a Python function considered?,1,5,0.409,low
+q1,What does the function header in Python always include?,1,1,q4,"In Python, what is a keyword argument?",1,4,0.408,low
+q4,"In Python, what is a keyword argument?",1,4,q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,0.403,low
+q5,What type of object is a Python function considered?,1,5,q2,"In Python, where does the scope of a local variable begin?",3,2,0.403,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q3,What is the scope of a local variable defined inside a function?,4,3,0.396,low
+q1,What does the function header in Python always include?,1,1,q5,What is the scope of a global variable in a Python program?,2,5,0.392,low
+q4,"In Python, what is a keyword argument?",1,4,q2,"In Python, where does the scope of a local variable begin?",3,2,0.392,low
+q5,What is the scope of a global variable in a Python program?,2,5,q1,What does a function header in Python always include?,3,1,0.381,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q5,What is the effect of the global statement inside a function?,4,5,0.379,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q2,"In Python, where does the scope of a local variable begin?",3,2,0.379,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q3,Which statement correctly declares a global variable inside a function?,3,3,0.376,low
+q5,What is the scope of a global variable in a Python program?,2,5,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.373,low
+q5,What type of object is a Python function considered?,1,5,q1,What part of a function contains the parameters and ends with a colon?,2,1,0.368,low
+q1,What does the function header in Python always include?,1,1,q1,What does a function return if it has no return statement?,4,1,0.366,low
+q5,What type of object is a Python function considered?,1,5,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.366,low
+q5,What type of object is a Python function considered?,1,5,q5,What is the effect of the global statement inside a function?,4,5,0.366,low
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,q5,How can keyword arguments improve function calls in Python?,3,5,0.364,low
+q4,"In Python, what is a keyword argument?",1,4,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.363,low
+q2,What is the scope of a local variable in Python?,1,2,q1,What part of a function contains the parameters and ends with a colon?,2,1,0.362,low
+q2,What is the scope of a local variable in Python?,1,2,q4,"In Python, what is a keyword argument?",1,4,0.355,low
+q2,What is the scope of a local variable in Python?,1,2,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.354,low
+q1,What does the function header in Python always include?,1,1,q5,How can keyword arguments improve function calls in Python?,3,5,0.347,low
+q1,What does a function header in Python always include?,3,1,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.346,low
+q4,"In Python, what is a keyword argument?",1,4,q5,What is the scope of a global variable in a Python program?,2,5,0.345,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q1,What does a function return if it has no return statement?,4,1,0.345,low
+q1,What does the function header in Python always include?,1,1,q3,What is the scope of a local variable defined inside a function?,4,3,0.343,low
+q5,What type of object is a Python function considered?,1,5,q3,What is the scope of a local variable defined inside a function?,4,3,0.341,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.336,low
+q5,What type of object is a Python function considered?,1,5,q5,How can keyword arguments improve function calls in Python?,3,5,0.334,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q5,What is the scope of a global variable in a Python program?,2,5,0.333,low
+q1,What does a function header in Python always include?,3,1,q3,Which statement correctly declares a global variable inside a function?,3,3,0.333,low
+q2,What is the scope of a local variable in Python?,1,2,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.332,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q3,What is the scope of a local variable defined inside a function?,4,3,0.332,low
+q1,What does a function header in Python always include?,3,1,q1,What does a function return if it has no return statement?,4,1,0.33,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q1,What does a function header in Python always include?,3,1,0.328,low
+q1,What does a function return if it has no return statement?,4,1,q5,What is the effect of the global statement inside a function?,4,5,0.323,low
+q1,What does the function header in Python always include?,1,1,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.322,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q3,What is the scope of a local variable defined inside a function?,4,3,0.316,low
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,q3,What is the scope of a local variable defined inside a function?,4,3,0.315,low
+q3,What is the scope of a local variable defined inside a function?,4,3,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.315,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.314,low
+q1,What does the function header in Python always include?,1,1,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.313,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.311,low
+q5,How can keyword arguments improve function calls in Python?,3,5,q5,What is the effect of the global statement inside a function?,4,5,0.309,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q5,How can keyword arguments improve function calls in Python?,3,5,0.308,low
+q1,What does the function header in Python always include?,1,1,q3,Which statement correctly declares a global variable inside a function?,3,3,0.307,low
+q1,What does the function header in Python always include?,1,1,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.306,low
+q1,What does the function header in Python always include?,1,1,q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,0.304,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q5,How can keyword arguments improve function calls in Python?,3,5,0.303,low
+q1,What does the function header in Python always include?,1,1,q5,What is the effect of the global statement inside a function?,4,5,0.3,low
+q2,What is the scope of a local variable in Python?,1,2,q5,How can keyword arguments improve function calls in Python?,3,5,0.3,low
+q5,What type of object is a Python function considered?,1,5,q3,Which statement correctly declares a global variable inside a function?,3,3,0.3,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q5,What is the scope of a global variable in a Python program?,2,5,0.299,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.298,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q5,What is the scope of a global variable in a Python program?,2,5,0.296,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.295,low
+q2,How are arguments matched to parameters when using keyword arguments?,4,2,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.295,low
+q1,What does a function header in Python always include?,3,1,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.294,low
+q1,What does a function header in Python always include?,3,1,q5,What is the effect of the global statement inside a function?,4,5,0.289,low
+q1,What does the function header in Python always include?,1,1,q3,What happens when a mutable object is passed as an argument to a function?,1,3,0.288,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q5,What is the scope of a global variable in a Python program?,2,5,0.288,low
+q1,What does a function header in Python always include?,3,1,q3,What is the scope of a local variable defined inside a function?,4,3,0.288,low
+q5,How can keyword arguments improve function calls in Python?,3,5,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.288,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.282,low
+q5,What type of object is a Python function considered?,1,5,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.281,low
+q5,What is the scope of a global variable in a Python program?,2,5,q1,What does a function return if it has no return statement?,4,1,0.281,low
+q5,What is the scope of a global variable in a Python program?,2,5,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.281,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,0.28,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q5,How can keyword arguments improve function calls in Python?,3,5,0.28,low
+q2,What is the scope of a local variable in Python?,1,2,q1,What does a function return if it has no return statement?,4,1,0.279,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.279,low
+q5,What is the scope of a global variable in a Python program?,2,5,q5,How can keyword arguments improve function calls in Python?,3,5,0.276,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q1,What does a function return if it has no return statement?,4,1,0.275,low
+q4,"In Python, what is a keyword argument?",1,4,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.274,low
+q2,What is the scope of a local variable in Python?,1,2,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.272,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q3,Which statement correctly declares a global variable inside a function?,3,3,0.264,low
+q2,How are arguments matched to parameters when using keyword arguments?,4,2,q3,What is the scope of a local variable defined inside a function?,4,3,0.264,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.262,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q3,Which statement correctly declares a global variable inside a function?,3,3,0.262,low
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,q1,What does a function return if it has no return statement?,4,1,0.262,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.259,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.257,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.257,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q1,What does a function return if it has no return statement?,4,1,0.256,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q5,How can keyword arguments improve function calls in Python?,3,5,0.256,low
+q2,What is the scope of a local variable in Python?,1,2,q3,What happens when a mutable object is passed as an argument to a function?,1,3,0.254,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q4,"In Python, what is a keyword argument?",1,4,0.253,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.253,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.252,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q1,What does a function return if it has no return statement?,4,1,0.252,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.25,low
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.25,low
+q2,What is the scope of a local variable in Python?,1,2,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.249,low
+q1,What does a function header in Python always include?,3,1,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.249,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q1,What does a function return if it has no return statement?,4,1,0.248,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q1,What does a function return if it has no return statement?,4,1,0.248,low
+q1,What does the function header in Python always include?,1,1,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.247,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q1,What part of a function contains the parameters and ends with a colon?,2,1,0.247,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.246,low
+q4,"In Python, what is a keyword argument?",1,4,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.244,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,0.243,low
+q4,"In Python, what is a keyword argument?",1,4,q1,What part of a function contains the parameters and ends with a colon?,2,1,0.243,low
+q5,What is the scope of a global variable in a Python program?,2,5,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.243,low
+q2,What is the scope of a local variable in Python?,1,2,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.242,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q1,What does a function header in Python always include?,3,1,0.241,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q4,How are keyword arguments matched to function parameters in Python?,2,4,0.24,low
+q4,"In Python, what is a keyword argument?",1,4,q3,Which statement correctly declares a global variable inside a function?,3,3,0.238,low
+q1,What does a function return if it has no return statement?,4,1,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.237,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.233,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q3,What happens when a mutable object is passed as an argument to a function?,2,3,0.232,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q5,How can keyword arguments improve function calls in Python?,3,5,0.232,low
+q1,What does a function return if it has no return statement?,4,1,q3,What is the scope of a local variable defined inside a function?,4,3,0.232,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q5,How can keyword arguments improve function calls in Python?,3,5,0.23,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q3,What is the scope of a local variable defined inside a function?,4,3,0.23,low
+q3,What happens when a mutable object is passed as an argument to a function?,1,3,q2,"In Python, where does the scope of a local variable begin?",3,2,0.224,low
+q4,"In Python, what is a keyword argument?",1,4,q5,What is the effect of the global statement inside a function?,4,5,0.223,low
+q3,Which statement correctly declares a global variable inside a function?,3,3,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.221,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q3,Which statement correctly declares a global variable inside a function?,3,3,0.217,low
+q2,"In Python, where does the scope of a local variable begin?",3,2,q4,What happens when a mutable object is passed as an argument to a function?,4,4,0.216,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q1,What does a function return if it has no return statement?,4,1,0.215,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q1,What does a function header in Python always include?,3,1,0.213,low
+q2,How are arguments matched to parameters when using keyword arguments?,4,2,q5,What is the effect of the global statement inside a function?,4,5,0.209,low
+q3,What happens when a mutable object is passed as an argument to a function?,2,3,q2,"In Python, where does the scope of a local variable begin?",3,2,0.202,low
+q4,"In Python, what is a keyword argument?",1,4,q3,What is the scope of a local variable defined inside a function?,4,3,0.201,low
+q4,How are keyword arguments matched to function parameters in Python?,2,4,q5,What is the effect of the global statement inside a function?,4,5,0.201,low
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,2,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.199,low
+q5,How can keyword arguments improve function calls in Python?,3,5,q3,What is the scope of a local variable defined inside a function?,4,3,0.196,low
+q5,How can keyword arguments improve function calls in Python?,3,5,q1,What does a function return if it has no return statement?,4,1,0.191,low
+q1,What part of a function contains the parameters and ends with a colon?,2,1,q4,What happens when a mutable object is passed as an argument to a function in Python?,3,4,0.186,low
+q4,"In Python, what is a keyword argument?",1,4,q1,What does a function return if it has no return statement?,4,1,0.162,low
+q1,What does a function return if it has no return statement?,4,1,q2,How are arguments matched to parameters when using keyword arguments?,4,2,0.14,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define the components of a Python function, including headers, parameters, bodies, and return statements.  
+Explain the scope of variables and functions, distinguishing between local and global names.  
+Identify and use keyword arguments, default parameters, and positional parameters in function calls.  
+Describe and predict the behavior of Python’s pass-by-assignment parameter passing mechanism.  
+Understand that functions are objects in Python and can be assigned, passed, and returned like other objects."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the function header in Python always include?,1,yes,"This question assesses knowledge of the components of a Python function header, directly related to the first learning objective."
+q2,What is the scope of a local variable in Python?,1,yes,"This question evaluates understanding of the scope of local variables, which aligns with the second learning objective."
+q3,What happens when a mutable object is passed as an argument to a function?,1,yes,"This question addresses the behavior of mutable objects passed to functions, relating to the fourth learning objective about parameter passing."
+q4,"In Python, what is a keyword argument?",1,yes,"This question tests knowledge of keyword arguments, which is part of the third learning objective."
+q5,What type of object is a Python function considered?,1,yes,"This question assesses understanding that functions are objects in Python, matching the fifth learning objective."
+q1,What part of a function contains the parameters and ends with a colon?,2,yes,"This question focuses on the function header and its components, aligning with the first learning objective."
+q2,"In Python, a variable defined inside a function is called a/an _____ variable.",2,yes,"This question evaluates understanding of local variables, directly related to the second learning objective."
+q3,What happens when a mutable object is passed as an argument to a function?,2,yes,"This question again addresses the behavior of mutable objects passed to functions, related to the fourth learning objective."
+q4,How are keyword arguments matched to function parameters in Python?,2,yes,"This question tests understanding of how keyword arguments are matched to parameters, which is part of the third learning objective."
+q5,What is the scope of a global variable in a Python program?,2,yes,"This question assesses knowledge of the scope of global variables, aligning with the second learning objective."
+q1,What does a function header in Python always include?,3,yes,"This question evaluates the components of a function header, directly related to the first learning objective."
+q2,"In Python, where does the scope of a local variable begin?",3,yes,"This question tests understanding of where the scope of a local variable begins, which matches the second learning objective."
+q3,Which statement correctly declares a global variable inside a function?,3,yes,"This question assesses knowledge of declaring global variables inside functions, related to the second learning objective."
+q4,What happens when a mutable object is passed as an argument to a function in Python?,3,yes,"This question addresses the behavior of mutable objects passed to functions, aligning with the fourth learning objective."
+q5,How can keyword arguments improve function calls in Python?,3,yes,"This question evaluates how keyword arguments improve function calls, which is part of the third learning objective."
+q1,What does a function return if it has no return statement?,4,yes,"This question tests understanding of function return behavior when no return statement is present, related to the first learning objective."
+q2,How are arguments matched to parameters when using keyword arguments?,4,yes,"This question assesses how arguments are matched to parameters using keyword arguments, aligning with the third learning objective."
+q3,What is the scope of a local variable defined inside a function?,4,yes,"This question evaluates the scope of local variables, directly related to the second learning objective."
+q4,What happens when a mutable object is passed as an argument to a function?,4,yes,"This question addresses the behavior of mutable objects passed as arguments, matching the fourth learning objective."
+q5,What is the effect of the global statement inside a function?,4,yes,"This question tests understanding of the effect of the global statement inside a function, related to the second learning objective."

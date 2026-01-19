@@ -1,0 +1,174 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,3,16
+1,3,2,1,16
+1,4,1,1,16
+2,3,1,2,16
+2,4,0,2,16
+3,4,1,1,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),6
+Similar (70-85%),10
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What type of error occurs when code violates language syntax rules?,1,1,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.958,duplicate
+q1,What type of error occurs when code violates language syntax rules?,1,1,q1,What type of error occurs when code violates programming language rules?,4,1,0.916,duplicate
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q1,What type of error occurs when code violates programming language rules?,4,1,0.894,duplicate
+q4,What is a good coding practice to reduce syntax errors?,1,4,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.891,duplicate
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.882,duplicate
+q4,What is a good coding practice to reduce syntax errors?,1,4,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.87,duplicate
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.825,similar
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.796,similar
+q1,What type of error occurs when code violates language syntax rules?,1,1,q1,What type of error stops a program due to invalid code structure before running?,2,1,0.795,similar
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q3,A logic error occurs when a program _____.,2,3,0.756,similar
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q1,What type of error occurs when code violates programming language rules?,4,1,0.745,similar
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.737,similar
+q2,A runtime error occurs when the program _____.,1,2,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.722,similar
+q2,A runtime error occurs when the program _____.,1,2,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.72,similar
+q2,A runtime error occurs when the program _____.,1,2,q3,A logic error occurs when a program _____.,2,3,0.718,similar
+q3,A logic error occurs when a program _____.,2,3,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.709,similar
+q3,A logic error occurs when a program _____.,2,3,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.7,low
+q2,A runtime error occurs when the program _____.,1,2,q2,A program crashes when converting text to int because of a _____ error.,2,2,0.698,low
+q2,A runtime error occurs when the program _____.,1,2,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.685,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q2,A runtime error occurs when the program _____.,1,2,0.676,low
+q2,A runtime error occurs when the program _____.,1,2,q1,What type of error stops a program due to invalid code structure before running?,2,1,0.676,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.676,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q3,Why should programmers run and test code frequently during development?,4,3,0.674,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.674,low
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.673,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.665,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.656,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.652,low
+q2,A runtime error occurs when the program _____.,1,2,q1,What type of error occurs when code violates programming language rules?,4,1,0.649,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q3,A logic error occurs when a program _____.,2,3,0.647,low
+q3,A logic error occurs when a program _____.,2,3,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.647,low
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.646,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.645,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q3,Why should programmers run and test code frequently during development?,4,3,0.644,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.643,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.641,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q3,Logic errors differ from syntax errors because logic errors _____.,1,3,0.637,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q1,What type of error stops a program due to invalid code structure before running?,2,1,0.637,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q3,A logic error occurs when a program _____.,2,3,0.633,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.632,low
+q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,q3,Why should programmers run and test code frequently during development?,4,3,0.629,low
+q2,A runtime error occurs when the program _____.,1,2,q3,Logic errors differ from syntax errors because logic errors _____.,1,3,0.618,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q3,A logic error occurs when a program _____.,2,3,0.618,low
+q1,What type of error occurs when code violates programming language rules?,4,1,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.617,low
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,q1,What type of error occurs when code violates programming language rules?,4,1,0.604,low
+q3,A logic error occurs when a program _____.,2,3,q1,What type of error occurs when code violates programming language rules?,4,1,0.603,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q2,A program crashes when converting text to int because of a _____ error.,2,2,0.594,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.593,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q2,A program crashes when converting text to int because of a _____ error.,2,2,0.588,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q2,A program crashes when converting text to int because of a _____ error.,2,2,0.583,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q1,What type of error occurs when code violates programming language rules?,4,1,0.578,low
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.577,low
+q3,Which error type indicates a program uses a variable that was never defined?,3,3,q1,What type of error occurs when code violates programming language rules?,4,1,0.569,low
+q3,Which error type indicates a program uses a variable that was never defined?,3,3,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.56,low
+q2,A runtime error occurs when the program _____.,1,2,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.535,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q1,What type of error occurs when code violates programming language rules?,4,1,0.533,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.522,low
+q1,What type of error occurs when code violates programming language rules?,4,1,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.511,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q3,Why should programmers run and test code frequently during development?,4,3,0.501,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.5,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.497,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.495,low
+q2,A runtime error occurs when the program _____.,1,2,q3,Why should programmers run and test code frequently during development?,4,3,0.492,low
+q2,A runtime error occurs when the program _____.,1,2,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.49,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.49,low
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.49,low
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.489,low
+q3,A logic error occurs when a program _____.,2,3,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.487,low
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q3,Why should programmers run and test code frequently during development?,4,3,0.486,low
+q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.485,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q1,What type of error occurs when code violates programming language syntax rules?,3,1,0.479,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q1,What type of error stops a program due to invalid code structure before running?,2,1,0.478,low
+q3,A logic error occurs when a program _____.,2,3,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.477,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q1,What type of error occurs when code violates programming language rules?,4,1,0.476,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.474,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q3,Why should programmers run and test code frequently during development?,4,3,0.473,low
+q3,Which error type indicates a program uses a variable that was never defined?,3,3,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.473,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.472,low
+q1,What type of error occurs when code violates programming language rules?,4,1,q3,Why should programmers run and test code frequently during development?,4,3,0.471,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q4,What is a good coding practice to reduce syntax errors?,1,4,0.47,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.47,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q3,Why should programmers run and test code frequently during development?,4,3,0.469,low
+q1,What type of error stops a program due to invalid code structure before running?,2,1,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.458,low
+q2,A runtime error occurs when the program _____.,1,2,q4,What is a good coding practice to reduce syntax errors?,1,4,0.451,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q1,What type of error occurs when code violates programming language rules?,4,1,0.45,low
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.45,low
+q2,A runtime error occurs when the program _____.,1,2,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.448,low
+q2,A runtime error occurs when the program _____.,1,2,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.446,low
+q3,A logic error occurs when a program _____.,2,3,q3,Why should programmers run and test code frequently during development?,4,3,0.444,low
+q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,q1,What type of error occurs when code violates programming language rules?,4,1,0.444,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q4,What is a good coding practice to reduce syntax errors?,1,4,0.443,low
+q1,What type of error occurs when code violates programming language syntax rules?,3,1,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.441,low
+q3,A logic error occurs when a program _____.,2,3,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.438,low
+q1,What type of error occurs when code violates language syntax rules?,1,1,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.437,low
+q3,Why should programmers run and test code frequently during development?,4,3,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.436,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.435,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q3,A logic error occurs when a program _____.,2,3,0.434,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.428,low
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,q3,Why should programmers run and test code frequently during development?,4,3,0.423,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.421,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q4,What is a recommended coding practice to reduce many syntax errors?,2,4,0.415,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.414,low
+q3,A logic error occurs when a program _____.,2,3,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.413,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,0.402,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.402,low
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,2,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.395,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.392,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q3,Why should programmers run and test code frequently during development?,4,3,0.382,low
+q2,A program crashes when converting text to int because of a _____ error.,2,2,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.381,low
+q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,4,0.381,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q2,A program crashes when converting text to int because of a _____ error.,2,2,0.376,low
+q3,Logic errors differ from syntax errors because logic errors _____.,1,3,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.37,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.335,low
+q4,What is a recommended coding practice to reduce many syntax errors?,2,4,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.313,low
+q3,Which error type indicates a program uses a variable that was never defined?,3,3,q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,0.309,low
+q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,4,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.298,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q3,Which error type indicates a program uses a variable that was never defined?,3,3,0.291,low
+q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,q3,Why should programmers run and test code frequently during development?,4,3,0.279,low
+q4,What is a good coding practice to reduce syntax errors?,1,4,q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,2,0.277,low
+q3,Which error type indicates a program uses a variable that was never defined?,3,3,q3,Why should programmers run and test code frequently during development?,4,3,0.258,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Distinguish between syntax, runtime, and logic errors, and common error types.  
+Interpret error messages to help detect and address code errors.  
+Conduct good coding practice by testing code frequently.  
+Identify and correct syntax errors in code.  
+Recognize and differentiate between various types of runtime errors."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What type of error occurs when code violates language syntax rules?,1,yes,"Yes, this question directly assesses the learning objective of distinguishing between syntax, runtime, and logic errors, as it specifically asks about the type of error related to language syntax rules."
+q2,A runtime error occurs when the program _____.,1,yes,"Yes, the question directly assesses the learning objective of recognizing and differentiating between various types of runtime errors, as it specifically asks about the nature of a runtime error."
+q3,Logic errors differ from syntax errors because logic errors _____.,1,yes,"Yes, the question directly assesses the learning objective of distinguishing between syntax, runtime, and logic errors, as it specifically asks about the characteristics that differentiate logic errors from syntax errors."
+q4,What is a good coding practice to reduce syntax errors?,1,yes,"Yes, the question directly assesses the learning objective of conducting good coding practice by testing code frequently, as it evaluates the understanding of effective strategies to minimize syntax errors."
+q1,What type of error stops a program due to invalid code structure before running?,2,yes,"Yes, this question directly assesses the learning objective to ""Distinguish between syntax, runtime, and logic errors, and common error types,"" as it specifically asks about the type of error related to invalid code structure."
+q2,A program crashes when converting text to int because of a _____ error.,2,yes,"Yes, the question directly assesses the learning objective of recognizing and differentiating between various types of runtime errors, as it specifically addresses a scenario that results in a runtime error."
+q3,A logic error occurs when a program _____.,2,yes,"Yes, the question directly assesses the learning objective of distinguishing between syntax, runtime, and logic errors, as it specifically asks about the definition of a logic error."
+q4,What is a recommended coding practice to reduce many syntax errors?,2,yes,"Yes, the question directly assesses the learning objective of conducting good coding practice by testing code frequently, as it emphasizes the importance of running code after writing a few lines to reduce syntax errors."
+q1,What type of error occurs when code violates programming language syntax rules?,3,yes,"Yes, this question directly assesses the learning objective to ""distinguish between syntax, runtime, and logic errors, and common error types,"" as it specifically asks about the definition of a syntax error."
+q2,A program crashes during execution due to dividing by zero. This is an example of a _____ error.,3,yes,"Yes, the question directly assesses the learning objective of recognizing and differentiating between various types of runtime errors, as it specifically addresses a scenario that exemplifies a runtime error."
+q3,Which error type indicates a program uses a variable that was never defined?,3,yes,"Yes, this question directly assesses the learning objective of distinguishing between syntax, runtime, and logic errors, as it specifically asks about identifying a type of error related to variable definition."
+q4,What is a recommended coding practice to reduce frustration from many syntax errors?,3,yes,"Yes, the question directly assesses the learning objective of conducting good coding practice by testing code frequently, as it emphasizes the importance of running and testing code after writing a few lines to reduce syntax errors."
+q1,What type of error occurs when code violates programming language rules?,4,yes,"Yes, the question directly assesses the learning objective of distinguishing between syntax, runtime, and logic errors, as it specifically asks about the type of error that occurs when code violates programming language rules, which is a syntax error."
+q2,"A program crashes because int(""Hello"") was called. What error type is this?",4,yes,"Yes, this question assesses the objective of recognizing and differentiating between various types of runtime errors, as it requires the student to identify the specific error type that occurs when invalid input is provided to the `int()` function."
+q3,Why should programmers run and test code frequently during development?,4,yes,"Yes, the question directly assesses the learning objective of conducting good coding practice by testing code frequently, as it emphasizes the importance of identifying and fixing errors early in the development process."
+q4,A program runs without crashing but gives wrong output. This is a/an _____ error.,4,yes,"Yes, this question directly assesses the learning objective of distinguishing between syntax, runtime, and logic errors, as it specifically asks about identifying a type of error based on the program's behavior."

@@ -1,0 +1,79 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+"Which of the following is true of a\n`pandas`\nDataFrame, but not of a\n`numpy`\narray?",Different dataframe columns may have different types,"Dataframes are indexed, ordered, and mutable containers",Dataframes have a shape.,Dataframes may have any number of dimensions.,Different dataframe columns may have different types,,,,,,,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhich code would create the following dataframe?\n[Image: A table with column labels Name, Age, City and State. The rows are numbered 0 to 3. The first row is Riley, who is 19 and from Dubuque, IA. Next Lex is 25 and from Riverside, CA. Third is Mel, aged 20 and from Hoboken, NJ. Finally is Lynn who is 22 and from Austin, TX. ]","```python\nimport pandas as pd
+pd.DataFrame(data = [[""Riley"", 19, ""Dubuque"", ""IA""],
+                     [""Lex"", 25, ""Riverside"", ""CA""],
+                     [""Mel"", 20, ""Hoboken"", ""NJ""],
+                     [""Lynn"", 22, ""Austin"", ""TX""]],
+             columns = [""Name"", ""Age"", ""City"", ""State""],
+             index = None
+            )\n```","```python\nimport pandas as pd
+pd.DataFrame(data = [[""Riley"", 19, ""Dubuque"", ""IA""],
+                     [""Lex"", 25, ""Riverside"", ""CA""],
+                     [""Mel"", 20, ""Hoboken"", ""NJ""],
+                     [""Lynn"", 22, ""Austin"", ""TX""]],
+             columns = [""Name"", ""Age"", ""City"", ""State""],
+             index = None
+            )\n```","```python\nimport pandas as pd
+pd.DataFrame(data = [[""Riley"", 19, ""Dubuque"", ""IA""],
+                     [""Lex"", 25, ""Riverside"", ""CA""],
+                     [""Mel"", 20, ""Hoboken"", ""NJ""],
+                     [""Lynn"", 22, ""Austin"", ""TX""]],
+             labels = [""Name"", ""Age"", ""City"", ""State""],
+             index = 0:3
+            )\n```","```python\nimport pandas as pd
+pd.DataFrame(info = [[""Riley"", 19, ""Dubuque"", ""IA""],
+                     [""Lex"", 25, ""Riverside"", ""CA""],
+                     [""Mel"", 20, ""Hoboken"", ""NJ""],
+                     [""Lynn"", 22, ""Austin"", ""TX""]],
+             columns = [""Name"", ""Age"", ""City"", ""State""],
+             index = 0:3
+            )\n```","```python\nimport pandas as pd
+pd.DataFrame(info = [[""Riley"", 19, ""Dubuque"", ""IA""],
+                     [""Lex"", 25, ""Riverside"", ""CA""],
+                     [""Mel"", 20, ""Hoboken"", ""NJ""],
+                     [""Lynn"", 22, ""Austin"", ""TX""]],
+             labels = [""Name"", ""Age"", ""City"", ""State""],
+             index = None
+            )\n```",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Fail,Pass,Pass,Pass
+"\nThe DataFrame dat is defined as:\nName\nAge\nCity\nState
+
+0\nRiley\n19\nDubuque\nIA
+
+1\nLex\n25\nRiverside\nCA
+
+2\nMel\n20\nHoboken\nNJ
+
+3\nLynn\n22\nAustin\nTX\nWhich will return the following?\nName\nAge
+
+1\nLex\n25
+
+2\nMel\n20","`dat.iloc[1:3,0:2]`","`dat.iloc[1:2,0:1]`","`dat.iloc[1:3,0:2]`","`dat.loc[1:2, 0:1]`","`dat.loc[2:3, [""Name"",""Age""]]`",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass
+"\nThe DataFrame dat is defined as:\nName\nAge\nCity\nState
+
+0\nRiley\n19\nDubuque\nIA
+
+1\nLex\n25\nRiverside\nCA
+
+2\nMel\n20\nHoboken\nNJ
+
+3\nLynn\n22\nAustin\nTX\nWhich will return the following?\nName\nAge\nCity\nState
+
+0\nRiley\n19\nDubuque\nIA
+
+2\nMel\n20\nHoboken\nNJ","`dat[dat[""Age""]<21]`","`dat[""Age""]<21`","`dat[dat[""Age""]<21]`","`dat[dat[""Age""]>21]`",`dat[dat.iloc[1]<21]`,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass
+"\nThe DataFrame dat is defined as:\nName\nAge\nCity\nState
+
+0\nRiley\n19\nDubuque\nIA
+
+1\nLex\n25\nRiverside\nCA
+
+2\nMel\n20\nHoboken\nNJ
+
+3\nLynn\n22\nAustin\nTX\nWhich will return the following?\nName\nState
+
+0\nRiley\nIA
+
+2\nMel\nNJ
+
+3\nLynn\nTX","`dat[dat[""Age""]<=22][[""Name"",""State""]]`","`dat[dat[""Age""]<=22,[""Name"",""State""]]`","`dat[dat[""Age""]<=22]`","`dat[dat[""Age""]<=22][""Name"",""State""]`","`dat[dat[""Age""]<=22][[""Name"",""State""]]`",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass

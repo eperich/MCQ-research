@@ -1,0 +1,338 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,6,0,0
+2,6,0,0
+3,6,0,0
+4,6,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,0,36
+1,3,1,2,36
+1,4,0,3,36
+2,3,1,1,36
+2,4,0,2,36
+3,4,1,1,36
+
+Summary
+Total Comparisons,276
+Duplicates (≥85%),3
+Similar (70-85%),9
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,What does the list method append() do?,2,2,q1,What does the list method append() do?,3,1,0.918,duplicate
+q4,How does the pop(i) method modify a list?,1,4,q5,What does the list method pop(i) do?,3,5,0.904,duplicate
+q2,What is the index of the first element in any list?,3,2,q2,What is the index of the first element in a Python list?,4,2,0.901,duplicate
+q2,"In a list, the index of the first element is _____.",1,2,q2,What is the index of the first element in any list?,3,2,0.802,similar
+q3,Which method adds a new element to the end of a list?,1,3,q3,Which list method adds a new element to the end of a list?,4,3,0.791,similar
+q5,What does the expression len(my_list) return?,1,5,q6,What will len(list) return?,3,6,0.779,similar
+q1,What does it mean that a list is a mutable container?,1,1,q1,A list is a container that is _____.,4,1,0.772,similar
+q2,"In a list, the index of the first element is _____.",1,2,q2,What is the index of the first element in a Python list?,4,2,0.769,similar
+q6,What does the expression list1 + list2 do?,2,6,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.757,similar
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q1,A list is a container that is _____.,4,1,0.756,similar
+q2,What does the list method append() do?,2,2,q3,Which list method adds a new element to the end of a list?,4,3,0.73,similar
+q1,What does the list method append() do?,3,1,q3,Which list method adds a new element to the end of a list?,4,3,0.728,similar
+q3,Which method adds a new element to the end of a list?,1,3,q1,What does the list method append() do?,3,1,0.663,low
+q1,What does it mean that a list is a mutable container?,1,1,q1,A list is called _____ because its elements can be changed after creation.,2,1,0.662,low
+q3,Which method adds a new element to the end of a list?,1,3,q2,What does the list method append() do?,2,2,0.66,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q6,What does the expression list1 + list2 do?,2,6,0.645,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.632,low
+q5,What does the list method pop(i) do?,3,5,q3,Which list method adds a new element to the end of a list?,4,3,0.627,low
+q5,Which method removes the first element with a given value in a list?,2,5,q5,What does the list method pop(i) do?,3,5,0.617,low
+q3,Which method adds a new element to the end of a list?,1,3,q3,How can an element in a list be updated?,3,3,0.615,low
+q5,What does the expression len(my_list) return?,1,5,q4,What does the expression my_list[2] do?,4,4,0.608,low
+q3,Which method adds a new element to the end of a list?,1,3,q5,What does the list method pop(i) do?,3,5,0.604,low
+q1,What does the list method append() do?,3,1,q5,What does the list method pop(i) do?,3,5,0.598,low
+q3,Which method adds a new element to the end of a list?,1,3,q5,Which method removes the first element with a given value in a list?,2,5,0.596,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q6,What will len(list) return?,3,6,0.593,low
+q4,How does the pop(i) method modify a list?,1,4,q5,Which method removes the first element with a given value in a list?,2,5,0.581,low
+q4,How does the pop(i) method modify a list?,1,4,q3,Which list method adds a new element to the end of a list?,4,3,0.581,low
+q2,What does the list method append() do?,2,2,q5,What does the list method pop(i) do?,3,5,0.578,low
+q5,What does the expression len(my_list) return?,1,5,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.573,low
+q2,What is the index of the first element in any list?,3,2,q6,What will len(list) return?,3,6,0.566,low
+q5,Which method removes the first element with a given value in a list?,2,5,q3,Which list method adds a new element to the end of a list?,4,3,0.565,low
+q3,Which method adds a new element to the end of a list?,1,3,q4,How does the pop(i) method modify a list?,1,4,0.563,low
+q6,What does the expression list1 + list2 do?,2,6,q1,What does the list method append() do?,3,1,0.561,low
+q6,What will len(list) return?,3,6,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.554,low
+q5,What does the expression len(my_list) return?,1,5,q4,The function that returns the number of elements in a list is _____.,2,4,0.55,low
+q2,What does the list method append() do?,2,2,q4,What does the expression my_list[2] do?,4,4,0.547,low
+q1,What does the list method append() do?,3,1,q4,What does the expression my_list[2] do?,4,4,0.542,low
+q6,What will len(list) return?,3,6,q2,What is the index of the first element in a Python list?,4,2,0.54,low
+q4,How does the pop(i) method modify a list?,1,4,q1,What does the list method append() do?,3,1,0.532,low
+q2,"In a list, the index of the first element is _____.",1,2,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.53,low
+q4,How does the pop(i) method modify a list?,1,4,q2,What does the list method append() do?,2,2,0.53,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q2,What is the index of the first element in any list?,3,2,0.517,low
+q6,What does the expression list1 + list2 do?,2,6,q4,What does the expression my_list[2] do?,4,4,0.515,low
+q6,What does the expression list1 + list2 do?,2,6,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.506,low
+q2,What does the list method append() do?,2,2,q6,What will len(list) return?,3,6,0.504,low
+q2,What does the list method append() do?,2,2,q6,What does the expression list1 + list2 do?,2,6,0.502,low
+q1,What does the list method append() do?,3,1,q6,What will len(list) return?,3,6,0.497,low
+q2,What is the index of the first element in any list?,3,2,q5,What does the list method pop(i) do?,3,5,0.495,low
+q6,What will len(list) return?,3,6,q5,"What is the result of len([10, 20, 30])?",4,5,0.492,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.488,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q4,What does the expression my_list[2] do?,4,4,0.487,low
+q2,"In a list, the index of the first element is _____.",1,2,q6,What will len(list) return?,3,6,0.486,low
+q3,Which method adds a new element to the end of a list?,1,3,q6,"How can two lists, list1 and list2, be combined into one list?",1,6,0.485,low
+q5,What does the list method pop(i) do?,3,5,q4,What does the expression my_list[2] do?,4,4,0.485,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q3,Which list method adds a new element to the end of a list?,4,3,0.483,low
+q5,Which method removes the first element with a given value in a list?,2,5,q1,What does the list method append() do?,3,1,0.475,low
+q3,How can an element in a list be updated?,3,3,q3,Which list method adds a new element to the end of a list?,4,3,0.474,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q6,What will len(list) return?,3,6,0.472,low
+q2,What does the list method append() do?,2,2,q3,How can an element in a list be updated?,3,3,0.471,low
+q1,What does the list method append() do?,3,1,q3,How can an element in a list be updated?,3,3,0.466,low
+q5,What does the expression len(my_list) return?,1,5,q6,What does the expression list1 + list2 do?,2,6,0.462,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q6,What will len(list) return?,3,6,0.457,low
+q6,What will len(list) return?,3,6,q4,What does the expression my_list[2] do?,4,4,0.457,low
+q4,How does the pop(i) method modify a list?,1,4,q2,What is the index of the first element in any list?,3,2,0.456,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.455,low
+q5,What does the list method pop(i) do?,3,5,q2,What is the index of the first element in a Python list?,4,2,0.454,low
+q5,What does the expression len(my_list) return?,1,5,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.452,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q2,What is the index of the first element in a Python list?,4,2,0.452,low
+q6,What does the expression list1 + list2 do?,2,6,q6,What will len(list) return?,3,6,0.452,low
+q3,Which list method adds a new element to the end of a list?,4,3,q4,What does the expression my_list[2] do?,4,4,0.452,low
+q5,What does the expression len(my_list) return?,1,5,q5,"What is the result of len([10, 20, 30])?",4,5,0.451,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q1,What does the list method append() do?,3,1,0.45,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q3,How can an element in a list be updated?,3,3,0.448,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q1,A list is a container that is _____.,4,1,0.448,low
+q1,What does it mean that a list is a mutable container?,1,1,q3,How can an element in a list be updated?,3,3,0.444,low
+q1,What does the list method append() do?,3,1,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.442,low
+q6,What does the expression list1 + list2 do?,2,6,q3,Which list method adds a new element to the end of a list?,4,3,0.441,low
+q3,How can an element in a list be updated?,3,3,q5,What does the list method pop(i) do?,3,5,0.441,low
+q5,What does the expression len(my_list) return?,1,5,q2,What is the index of the first element in a Python list?,4,2,0.44,low
+q5,What does the list method pop(i) do?,3,5,q6,What will len(list) return?,3,6,0.439,low
+q2,"In a list, the index of the first element is _____.",1,2,q5,What does the list method pop(i) do?,3,5,0.438,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q1,A list is a container that is _____.,4,1,0.437,low
+q5,What does the expression len(my_list) return?,1,5,q2,What is the index of the first element in any list?,3,2,0.435,low
+q3,Which method adds a new element to the end of a list?,1,3,q4,What does the expression my_list[2] do?,4,4,0.434,low
+q3,Which list method adds a new element to the end of a list?,4,3,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.432,low
+q6,What will len(list) return?,3,6,q3,Which list method adds a new element to the end of a list?,4,3,0.431,low
+q4,How does the pop(i) method modify a list?,1,4,q4,What does the expression my_list[2] do?,4,4,0.428,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.425,low
+q4,How does the pop(i) method modify a list?,1,4,q2,What is the index of the first element in a Python list?,4,2,0.423,low
+q5,What does the expression len(my_list) return?,1,5,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.421,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q4,What does the expression my_list[2] do?,4,4,0.42,low
+q4,How does the pop(i) method modify a list?,1,4,q6,What will len(list) return?,3,6,0.419,low
+q6,What does the expression list1 + list2 do?,2,6,q5,What does the list method pop(i) do?,3,5,0.419,low
+q4,How does the pop(i) method modify a list?,1,4,q3,How can an element in a list be updated?,3,3,0.417,low
+q3,How can an element in a list be updated?,3,3,q2,What is the index of the first element in a Python list?,4,2,0.416,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q3,Which list method adds a new element to the end of a list?,4,3,0.416,low
+q1,What does the list method append() do?,3,1,q2,What is the index of the first element in any list?,3,2,0.414,low
+q2,What does the list method append() do?,2,2,q5,Which method removes the first element with a given value in a list?,2,5,0.413,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q4,What does the expression my_list[2] do?,4,4,0.413,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.412,low
+q1,What does the list method append() do?,3,1,q2,What is the index of the first element in a Python list?,4,2,0.41,low
+q5,What does the expression len(my_list) return?,1,5,q2,What does the list method append() do?,2,2,0.409,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q2,What is the index of the first element in a Python list?,4,2,0.409,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q5,What does the list method pop(i) do?,3,5,0.407,low
+q2,What does the list method append() do?,2,2,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.406,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q3,How can an element in a list be updated?,3,3,0.406,low
+q3,Which method adds a new element to the end of a list?,1,3,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.403,low
+q1,A list is a container that is _____.,4,1,q3,Which list method adds a new element to the end of a list?,4,3,0.403,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q2,What does the list method append() do?,2,2,0.4,low
+q3,Which method adds a new element to the end of a list?,1,3,q6,What will len(list) return?,3,6,0.399,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q2,What is the index of the first element in any list?,3,2,0.397,low
+q2,What does the list method append() do?,2,2,q2,What is the index of the first element in any list?,3,2,0.396,low
+q2,What does the list method append() do?,2,2,q1,A list is a container that is _____.,4,1,0.395,low
+q1,What does it mean that a list is a mutable container?,1,1,q3,Which list method adds a new element to the end of a list?,4,3,0.394,low
+q3,Which method adds a new element to the end of a list?,1,3,q6,What does the expression list1 + list2 do?,2,6,0.394,low
+q4,How does the pop(i) method modify a list?,1,4,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.394,low
+q2,"In a list, the index of the first element is _____.",1,2,q4,How does the pop(i) method modify a list?,1,4,0.393,low
+q1,What does it mean that a list is a mutable container?,1,1,q1,What does the list method append() do?,3,1,0.392,low
+q2,"In a list, the index of the first element is _____.",1,2,q1,A list is a container that is _____.,4,1,0.392,low
+q1,What does the list method append() do?,3,1,q1,A list is a container that is _____.,4,1,0.392,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q3,How can an element in a list be updated?,3,3,0.39,low
+q1,What does it mean that a list is a mutable container?,1,1,q2,What does the list method append() do?,2,2,0.389,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q3,Which list method adds a new element to the end of a list?,4,3,0.388,low
+q2,What is the index of the first element in any list?,3,2,q3,How can an element in a list be updated?,3,3,0.388,low
+q3,How can an element in a list be updated?,3,3,q1,A list is a container that is _____.,4,1,0.388,low
+q1,What does it mean that a list is a mutable container?,1,1,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.386,low
+q3,Which method adds a new element to the end of a list?,1,3,q2,What is the index of the first element in a Python list?,4,2,0.386,low
+q5,What does the expression len(my_list) return?,1,5,q1,What does the list method append() do?,3,1,0.386,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q3,Which list method adds a new element to the end of a list?,4,3,0.386,low
+q2,"In a list, the index of the first element is _____.",1,2,q5,"What is the result of len([10, 20, 30])?",4,5,0.385,low
+q2,What does the list method append() do?,2,2,q2,What is the index of the first element in a Python list?,4,2,0.385,low
+q5,What does the list method pop(i) do?,3,5,q1,A list is a container that is _____.,4,1,0.385,low
+q1,What does the list method append() do?,3,1,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.384,low
+q2,"In a list, the index of the first element is _____.",1,2,q3,How can an element in a list be updated?,3,3,0.383,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q1,What does the list method append() do?,3,1,0.383,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q5,What does the list method pop(i) do?,3,5,0.382,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q5,What does the list method pop(i) do?,3,5,0.381,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q4,The function that returns the number of elements in a list is _____.,2,4,0.379,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q4,What does the expression my_list[2] do?,4,4,0.379,low
+q1,What does it mean that a list is a mutable container?,1,1,q5,What does the list method pop(i) do?,3,5,0.378,low
+q2,What is the index of the first element in any list?,3,2,q5,"What is the result of len([10, 20, 30])?",4,5,0.378,low
+q2,What does the list method append() do?,2,2,q4,The function that returns the number of elements in a list is _____.,2,4,0.376,low
+q2,What is the index of the first element in a Python list?,4,2,q3,Which list method adds a new element to the end of a list?,4,3,0.376,low
+q2,"In a list, the index of the first element is _____.",1,2,q5,What does the expression len(my_list) return?,1,5,0.375,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q2,What does the list method append() do?,2,2,0.375,low
+q3,How can an element in a list be updated?,3,3,q4,What does the expression my_list[2] do?,4,4,0.375,low
+q3,How can an element in a list be updated?,3,3,q6,What will len(list) return?,3,6,0.374,low
+q3,Which method adds a new element to the end of a list?,1,3,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.373,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q1,What does the list method append() do?,3,1,0.373,low
+q3,Which method adds a new element to the end of a list?,1,3,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.372,low
+q5,Which method removes the first element with a given value in a list?,2,5,q3,How can an element in a list be updated?,3,3,0.372,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q5,"What is the result of len([10, 20, 30])?",4,5,0.371,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.368,low
+q6,What does the expression list1 + list2 do?,2,6,q1,A list is a container that is _____.,4,1,0.368,low
+q2,"In a list, the index of the first element is _____.",1,2,q4,The function that returns the number of elements in a list is _____.,2,4,0.367,low
+q2,What does the list method append() do?,2,2,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.366,low
+q6,What will len(list) return?,3,6,q1,A list is a container that is _____.,4,1,0.365,low
+q5,Which method removes the first element with a given value in a list?,2,5,q4,What does the expression my_list[2] do?,4,4,0.362,low
+q2,What is the index of the first element in any list?,3,2,q1,A list is a container that is _____.,4,1,0.362,low
+q3,Which method adds a new element to the end of a list?,1,3,q2,What is the index of the first element in any list?,3,2,0.361,low
+q2,"In a list, the index of the first element is _____.",1,2,q1,A list is called _____ because its elements can be changed after creation.,2,1,0.359,low
+q4,How does the pop(i) method modify a list?,1,4,q6,What does the expression list1 + list2 do?,2,6,0.358,low
+q2,What is the index of the first element in a Python list?,4,2,q4,What does the expression my_list[2] do?,4,4,0.358,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q5,What does the list method pop(i) do?,3,5,0.356,low
+q2,"In a list, the index of the first element is _____.",1,2,q1,What does the list method append() do?,3,1,0.355,low
+q3,How can an element in a list be updated?,3,3,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.354,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q2,What is the index of the first element in any list?,3,2,0.351,low
+q2,What does the list method append() do?,2,2,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.351,low
+q4,What does the expression my_list[2] do?,4,4,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.349,low
+q1,What does it mean that a list is a mutable container?,1,1,q3,Which method adds a new element to the end of a list?,1,3,0.348,low
+q2,What is the index of the first element in a Python list?,4,2,q5,"What is the result of len([10, 20, 30])?",4,5,0.348,low
+q6,What does the expression list1 + list2 do?,2,6,q3,How can an element in a list be updated?,3,3,0.347,low
+q5,What does the expression len(my_list) return?,1,5,q3,Which list method adds a new element to the end of a list?,4,3,0.344,low
+q2,What is the index of the first element in any list?,3,2,q4,What does the expression my_list[2] do?,4,4,0.344,low
+q6,What does the expression list1 + list2 do?,2,6,q2,What is the index of the first element in a Python list?,4,2,0.342,low
+q2,What is the index of the first element in any list?,3,2,q3,Which list method adds a new element to the end of a list?,4,3,0.342,low
+q5,Which method removes the first element with a given value in a list?,2,5,q2,What is the index of the first element in any list?,3,2,0.339,low
+q1,What does it mean that a list is a mutable container?,1,1,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.338,low
+q1,What does it mean that a list is a mutable container?,1,1,q5,What does the expression len(my_list) return?,1,5,0.333,low
+q1,What does it mean that a list is a mutable container?,1,1,q2,What is the index of the first element in any list?,3,2,0.333,low
+q2,"In a list, the index of the first element is _____.",1,2,q2,What does the list method append() do?,2,2,0.333,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q6,What will len(list) return?,3,6,0.333,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q5,"What is the result of len([10, 20, 30])?",4,5,0.332,low
+q1,What does it mean that a list is a mutable container?,1,1,q4,How does the pop(i) method modify a list?,1,4,0.331,low
+q1,What does it mean that a list is a mutable container?,1,1,q6,What does the expression list1 + list2 do?,2,6,0.331,low
+q4,How does the pop(i) method modify a list?,1,4,q6,"How can two lists, list1 and list2, be combined into one list?",1,6,0.331,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q5,Which method removes the first element with a given value in a list?,2,5,0.331,low
+q1,A list is a container that is _____.,4,1,q2,What is the index of the first element in a Python list?,4,2,0.33,low
+q5,Which method removes the first element with a given value in a list?,2,5,q6,What will len(list) return?,3,6,0.327,low
+q2,What is the index of the first element in any list?,3,2,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.326,low
+q1,What does it mean that a list is a mutable container?,1,1,q4,What does the expression my_list[2] do?,4,4,0.325,low
+q5,What does the expression len(my_list) return?,1,5,q3,How can an element in a list be updated?,3,3,0.325,low
+q3,How can an element in a list be updated?,3,3,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.325,low
+q2,"In a list, the index of the first element is _____.",1,2,q3,Which method adds a new element to the end of a list?,1,3,0.323,low
+q2,What is the index of the first element in a Python list?,4,2,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.323,low
+q4,How does the pop(i) method modify a list?,1,4,q1,A list is a container that is _____.,4,1,0.322,low
+q1,What does it mean that a list is a mutable container?,1,1,q6,What will len(list) return?,3,6,0.321,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.321,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q3,Which list method adds a new element to the end of a list?,4,3,0.321,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q5,"What is the result of len([10, 20, 30])?",4,5,0.321,low
+q5,What does the expression len(my_list) return?,1,5,q5,What does the list method pop(i) do?,3,5,0.319,low
+q3,Which method adds a new element to the end of a list?,1,3,q1,A list is a container that is _____.,4,1,0.318,low
+q6,What does the expression list1 + list2 do?,2,6,q2,What is the index of the first element in any list?,3,2,0.317,low
+q2,"In a list, the index of the first element is _____.",1,2,q4,What does the expression my_list[2] do?,4,4,0.316,low
+q4,How does the pop(i) method modify a list?,1,4,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.316,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q1,What does the list method append() do?,3,1,0.316,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q6,What will len(list) return?,3,6,0.315,low
+q3,Which method adds a new element to the end of a list?,1,3,q5,What does the expression len(my_list) return?,1,5,0.314,low
+q4,What is the result of the expression list1 + list2 where both are lists?,3,4,q2,What is the index of the first element in a Python list?,4,2,0.314,low
+q4,What does the expression my_list[2] do?,4,4,q5,"What is the result of len([10, 20, 30])?",4,5,0.314,low
+q5,What does the expression len(my_list) return?,1,5,q1,A list is a container that is _____.,4,1,0.313,low
+q2,"In a list, the index of the first element is _____.",1,2,q3,Which list method adds a new element to the end of a list?,4,3,0.312,low
+q4,How does the pop(i) method modify a list?,1,4,q5,What does the expression len(my_list) return?,1,5,0.312,low
+q3,Which method adds a new element to the end of a list?,1,3,q1,A list is called _____ because its elements can be changed after creation.,2,1,0.311,low
+q3,Which method adds a new element to the end of a list?,1,3,q4,The function that returns the number of elements in a list is _____.,2,4,0.311,low
+q4,How does the pop(i) method modify a list?,1,4,q1,A list is called _____ because its elements can be changed after creation.,2,1,0.311,low
+q5,What does the list method pop(i) do?,3,5,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.31,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.309,low
+q2,"In a list, the index of the first element is _____.",1,2,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.308,low
+q2,What is the index of the first element in any list?,3,2,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.307,low
+q1,A list is a container that is _____.,4,1,q4,What does the expression my_list[2] do?,4,4,0.307,low
+q2,"In a list, the index of the first element is _____.",1,2,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.306,low
+q1,What does it mean that a list is a mutable container?,1,1,q2,What is the index of the first element in a Python list?,4,2,0.305,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q1,A list is a container that is _____.,4,1,0.305,low
+q2,"In a list, the index of the first element is _____.",1,2,q5,Which method removes the first element with a given value in a list?,2,5,0.304,low
+q5,What does the expression len(my_list) return?,1,5,q1,A list is called _____ because its elements can be changed after creation.,2,1,0.301,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q2,What is the index of the first element in a Python list?,4,2,0.3,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q3,How can an element in a list be updated?,3,3,0.3,low
+q1,What does it mean that a list is a mutable container?,1,1,q2,"In a list, the index of the first element is _____.",1,2,0.299,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q2,What is the index of the first element in a Python list?,4,2,0.299,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q4,The function that returns the number of elements in a list is _____.,2,4,0.296,low
+q5,Which method removes the first element with a given value in a list?,2,5,q2,What is the index of the first element in a Python list?,4,2,0.296,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q6,What does the expression list1 + list2 do?,2,6,0.293,low
+q5,"What is the result of len([10, 20, 30])?",4,5,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.293,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q5,What does the list method pop(i) do?,3,5,0.291,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q1,A list is a container that is _____.,4,1,0.29,low
+q5,Which method removes the first element with a given value in a list?,2,5,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.285,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q4,What does the expression my_list[2] do?,4,4,0.284,low
+q2,"In a list, the index of the first element is _____.",1,2,q6,What does the expression list1 + list2 do?,2,6,0.282,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q5,Which method removes the first element with a given value in a list?,2,5,0.281,low
+q1,What does it mean that a list is a mutable container?,1,1,q4,The function that returns the number of elements in a list is _____.,2,4,0.278,low
+q4,How does the pop(i) method modify a list?,1,4,q5,"What is the result of len([10, 20, 30])?",4,5,0.277,low
+q1,What does it mean that a list is a mutable container?,1,1,q5,Which method removes the first element with a given value in a list?,2,5,0.276,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q6,What does the expression list1 + list2 do?,2,6,0.276,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q6,What does the expression list1 + list2 do?,2,6,0.276,low
+q4,The function that returns the number of elements in a list is _____.,2,4,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.275,low
+q4,How does the pop(i) method modify a list?,1,4,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.274,low
+q5,What does the list method pop(i) do?,3,5,q5,"What is the result of len([10, 20, 30])?",4,5,0.274,low
+q5,Which method removes the first element with a given value in a list?,2,5,q4,What is the result of the expression list1 + list2 where both are lists?,3,4,0.271,low
+q6,What does the expression list1 + list2 do?,2,6,q5,"What is the result of len([10, 20, 30])?",4,5,0.27,low
+q1,A list is a container that is _____.,4,1,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.269,low
+q5,Which method removes the first element with a given value in a list?,2,5,q1,A list is a container that is _____.,4,1,0.262,low
+q4,How does the pop(i) method modify a list?,1,4,q4,The function that returns the number of elements in a list is _____.,2,4,0.258,low
+q5,What does the expression len(my_list) return?,1,5,q6,"How can two lists, list1 and list2, be combined into one list?",1,6,0.258,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.258,low
+q3,Accessing list elements requires using _____ inside brackets.,2,3,q5,Which method removes the first element with a given value in a list?,2,5,0.254,low
+q1,What does it mean that a list is a mutable container?,1,1,q6,Which of the following returns the sum of all numeric elements in a list?,4,6,0.251,low
+q1,What does it mean that a list is a mutable container?,1,1,q6,"How can two lists, list1 and list2, be combined into one list?",1,6,0.249,low
+q5,What does the expression len(my_list) return?,1,5,q5,Which method removes the first element with a given value in a list?,2,5,0.242,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q2,What is the index of the first element in any list?,3,2,0.238,low
+q2,"In a list, the index of the first element is _____.",1,2,q6,"How can two lists, list1 and list2, be combined into one list?",1,6,0.234,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q1,A list is called _____ because its elements can be changed after creation.,2,1,0.233,low
+q1,A list is a container that is _____.,4,1,q5,"What is the result of len([10, 20, 30])?",4,5,0.231,low
+q5,Which method removes the first element with a given value in a list?,2,5,q6,What does the expression list1 + list2 do?,2,6,0.23,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q5,Which method removes the first element with a given value in a list?,2,5,0.229,low
+q1,A list is called _____ because its elements can be changed after creation.,2,1,q5,"What is the result of len([10, 20, 30])?",4,5,0.221,low
+q5,Which method removes the first element with a given value in a list?,2,5,q5,"What is the result of len([10, 20, 30])?",4,5,0.22,low
+q3,Which list method adds a new element to the end of a list?,4,3,q5,"What is the result of len([10, 20, 30])?",4,5,0.216,low
+q2,What does the list method append() do?,2,2,q5,"What is the result of len([10, 20, 30])?",4,5,0.211,low
+q1,What does the list method append() do?,3,1,q5,"What is the result of len([10, 20, 30])?",4,5,0.206,low
+q1,What does it mean that a list is a mutable container?,1,1,q5,"What is the result of len([10, 20, 30])?",4,5,0.202,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q4,The function that returns the number of elements in a list is _____.,2,4,0.202,low
+q3,Which method adds a new element to the end of a list?,1,3,q5,"What is the result of len([10, 20, 30])?",4,5,0.18,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q5,"What is the result of len([10, 20, 30])?",4,5,0.177,low
+q3,How can an element in a list be updated?,3,3,q5,"What is the result of len([10, 20, 30])?",4,5,0.175,low
+q6,"How can two lists, list1 and list2, be combined into one list?",1,6,q3,Accessing list elements requires using _____ inside brackets.,2,3,0.174,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Create lists containing elements of various data types.  
+Access and update individual list elements using indices.  
+Add and remove list elements using append(), pop(), and remove() methods.  
+Apply sequence-type functions and methods, including len(), sum(), min(), max(), index(), and count().  
+Perform list operations such as concatenation and element lookup."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does it mean that a list is a mutable container?,1,yes,"Yes, the question assesses the understanding of mutability in lists, which relates to the ability to access, update, and manipulate list elements as outlined in the learning objectives."
+q2,"In a list, the index of the first element is _____.",1,yes,"Yes, the question directly assesses the understanding of list indexing, which is related to the learning objective of accessing individual list elements using indices."
+q3,Which method adds a new element to the end of a list?,1,yes,"Yes, this question directly assesses the learning objective of adding and removing list elements using the append() method."
+q4,How does the pop(i) method modify a list?,1,yes,"Yes, the question directly assesses the learning objective of adding and removing list elements using the pop() method, as it specifically asks about the functionality of pop(i) in modifying a list."
+q5,What does the expression len(my_list) return?,1,yes,"Yes, the question directly assesses the learning objective of applying sequence-type functions and methods, specifically the use of the len() function to determine the number of elements in a list."
+q6,"How can two lists, list1 and list2, be combined into one list?",1,yes,"Yes, the question directly assesses the learning objective of performing list operations such as concatenation, as the correct choice (list1 + list2) demonstrates combining two lists."
+q1,A list is called _____ because its elements can be changed after creation.,2,no,"No, this question does not directly assess the learning objectives listed above, as it focuses on the definition of a list's mutability rather than practical skills related to creating, accessing, updating, or manipulating lists."
+q2,What does the list method append() do?,2,yes,"Yes, the question directly assesses the learning objective of adding and removing list elements using the append() method, as it specifically asks about the function of the append() method."
+q3,Accessing list elements requires using _____ inside brackets.,2,yes,"Yes, the question directly assesses the learning objective of accessing and updating individual list elements using indices, as it specifically asks about the type of index required for accessing list elements."
+q4,The function that returns the number of elements in a list is _____.,2,yes,"Yes, the question assesses the learning objective of applying sequence-type functions and methods, specifically the use of the len() function to determine the number of elements in a list."
+q5,Which method removes the first element with a given value in a list?,2,yes,"Yes, this question directly assesses the learning objective of adding and removing list elements using the remove() method."
+q6,What does the expression list1 + list2 do?,2,yes,"Yes, this question directly assesses the learning objective of performing list operations such as concatenation, as it specifically asks about the behavior of the concatenation operator (+) with lists."
+q1,What does the list method append() do?,3,yes,"Yes, this question directly assesses the learning objective of adding and removing list elements using the append() method, as it specifically asks about the function and purpose of that method."
+q2,What is the index of the first element in any list?,3,yes,"Yes, this question assesses the understanding of list indexing, which is related to the objective of accessing and updating individual list elements using indices."
+q3,How can an element in a list be updated?,3,yes,"Yes, the question directly assesses the learning objective of accessing and updating individual list elements using indices, as it specifically asks about how to update an element in a list."
+q4,What is the result of the expression list1 + list2 where both are lists?,3,yes,"Yes, the question directly assesses the learning objective of performing list operations such as concatenation, as it specifically asks about the result of adding two lists together."
+q5,What does the list method pop(i) do?,3,yes,"Yes, the question directly assesses the learning objective of adding and removing list elements using the pop() method, as it specifically asks about the functionality of that method."
+q6,What will len(list) return?,3,yes,"Yes, this question directly assesses the learning objective of applying sequence-type functions and methods, specifically the use of the len() function to determine the number of elements in a list."
+q1,A list is a container that is _____.,4,no,"No, the question does not directly assess the learning objectives listed above, as it focuses on the properties of lists rather than the specific skills related to creating, accessing, updating, and manipulating list elements."
+q2,What is the index of the first element in a Python list?,4,yes,"Yes, this question assesses the learning objective of accessing individual list elements using indices, as it requires knowledge of how indexing works in Python lists."
+q3,Which list method adds a new element to the end of a list?,4,yes,"Yes, this question directly assesses the learning objective of adding and removing list elements using the append() method."
+q4,What does the expression my_list[2] do?,4,yes,"Yes, the question directly assesses the objective of accessing and updating individual list elements using indices, as it specifically asks about the action of accessing an element at a given index in a list."
+q5,"What is the result of len([10, 20, 30])?",4,yes,"Yes, this question directly assesses the learning objective of applying sequence-type functions and methods, specifically the use of the len() function to determine the number of elements in a list."
+q6,Which of the following returns the sum of all numeric elements in a list?,4,yes,"Yes, the question directly assesses the learning objective of applying sequence-type functions and methods, specifically the use of the sum() function on a list."

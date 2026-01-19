@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhat is the ending value of x?\n```text\nint y = 6;
+int x = (4 / 2) * y + 8;\n```",20,8,20,28,32,,,,,,
+\nWhich expression doubles x?,x *= 2;,x += 2;,x *= 2;,x *= x;,x *= x * 2;,,,,,,
+Which is a valid compound operator?,%=,$=,%=,!=,?=,,,,,,

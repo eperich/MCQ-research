@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+15 _____ 3 = 5.0,/,%,^,/,//,,,,,,,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass
+15 _____ 3 = 0,%,%,/,//,*,,,,,,,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass
+Which expression gives the number of whole minutes that corresponds to some number of seconds?,seconds // 60,seconds % 60,seconds / 60,seconds * 60,seconds // 60,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass
+What is the value of 11 // 2?,5,5,6,0,-5,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass

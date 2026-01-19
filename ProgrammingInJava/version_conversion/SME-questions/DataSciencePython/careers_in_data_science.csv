@@ -1,0 +1,4 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+The US Bureau of Labor Statistics predicts a ______ increase in data science jobs through 2030.,30%,10%,20%,30%,40%,,,,,,
+What job in data science focuses mostly on visualizing data and summarizing data?,Data analyst,Data engineer,Machine learning engineer,Data analyst,Data scientist,,,,,,
+"Which job in data science focuses mostly on the implementation of a model, rather than selecting the model and interpreting the results?",Machine learning engineer,Data engineer,Machine learning engineer,Data analyst,Data scientist,,,,,,

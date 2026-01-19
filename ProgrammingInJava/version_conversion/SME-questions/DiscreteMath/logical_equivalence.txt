@@ -1,0 +1,152 @@
+<question xsi:type='MultipleChoiceQuestion' guid='5e64eaa2-c2d9-49c8-8496-2c7859b49b3d'>
+<instructions>
+<p>Select the proposition that is a tautology.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>(p \wedge q) \to \neg p</ilatex></choice>
+<choice><ilatex>(p \vee q) \to p</ilatex></choice>
+<choice><ilatex>(p \wedge q) \leftrightarrow p</ilatex></choice>
+<choice correct='true'><ilatex>(p \wedge q) \to p</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='496e8052-6d98-85c3-6661-dba55dae5bc7'>
+<instructions>
+<p> Select the proposition that is a contradiction.</p>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\neg (p \vee q) \wedge p</ilatex></choice>
+<choice><ilatex>(p \vee q) \wedge p</ilatex></choice>
+<choice><ilatex>(\neg p \wedge q) \leftrightarrow p</ilatex></choice>
+<choice><ilatex>(\neg p \wedge \neg q) \to p</ilatex></choice></choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='8f91af64-e4ad-afbd-25a6-5edbbb9abdd5'>
+<instructions>
+<p>Select the proposition that is logically equivalent to <ilatex>\neg p \to q</ilatex>. </p>
+</instructions>
+
+<choices>
+<choice><ilatex>p \wedge \neg q</ilatex></choice>
+<choice correct='true'><ilatex>p \vee q</ilatex></choice>
+<choice><ilatex>\neg p \vee q</ilatex></choice>
+<choice><ilatex>\neg p \wedge q</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='314356ac-21d5-50e3-142c-4c7a366d0ef7'>
+<instructions>
+<line> Use De Morgan’s law to select the statement that is equivalent to:</line>
+<line>"It is not true that the employee received a large bonus and has a big office." </line>
+</instructions>
+
+<choices>
+<choice>The employee received a big bonus or has a big office. </choice>
+<choice>The employee did not receive a big bonus and does not have a big office. </choice>
+<choice correct='true'>The employee did not receive a big bonus or does not have a big office. </choice>
+<choice>The employee received a big bonus and has a big office. </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='1e2d3a8c-252f-3b73-8b72-4b75d795f7bd'>
+<instructions>
+<line> Use De Morgan’s law to select the statement that is equivalent to: </line>
+<line>"It is not true that the patient has high blood pressure or influenza." </line>
+</instructions>
+
+<choices>
+<choice>The patient has high blood pressure or has influenza.</choice>
+<choice correct='true'>The patient does not have high blood pressure and does not have influenza. </choice>
+<choice>The patient does not have high blood pressure or does not have influenza. </choice>
+<choice>The patient has high blood pressure and has influenza. </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='a46a5a2b-db5b-4c67-9f65-8235efd7a847'>
+<instructions>
+<line> Use De Morgan’s law to select the statement that is equivalent to:</line>
+<line>"The employee did not receive a big bonus and does not have a big office." </line>
+</instructions>
+
+<choices>
+<choice>The employee did not receive a big bonus or the employee does not have a big  office. </choice>
+<choice>It's not true that the employee has a big office and received a large bonus. </choice>
+<choice correct='true'>It's not true that the employee has a big office or received a large bonus. </choice>
+<choice>If the employee received a large bonus, then the employee also has a big office. </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='5d67226c-48bc-459e-a6aa-b945a079ea8c'>
+<instructions>
+<line> Use De Morgan’s law to select the statement that is equivalent to: </line>
+<line>"The patient does not have high blood pressure or the patient does not have influenza." </line>
+</instructions>
+
+<choices>
+<choice correct='true'>It is not true that the patient has high blood pressure and influenza.</choice>
+<choice>It is not true that the patient has high blood pressure or influenza. </choice>
+<choice>The patient does not have high blood pressure and the patient does not have influenza. </choice>
+<choice>The patient has high blood pressure but not  influenza. </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='53b68ef6-1ff8-4461-9ac6-94124334ea77'>
+<instructions>
+<p>Select the proposition that is neither a tautology or a contradiction. </p>
+</instructions>
+
+<choices>
+<choice><ilatex>(p \wedge q) \rightarrow q</ilatex></choice>
+<choice correct='true'><ilatex>(p \vee q) \rightarrow q</ilatex></choice>
+<choice><ilatex>q \rightarrow (p \vee q)</ilatex></choice>
+<choice><ilatex>(p \wedge \neg p) \rightarrow q</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='4ce1ed8d-a6f9-477a-a12b-82d757457dc2'>
+<instructions>
+<p>Select the proposition that is neither a tautology or a contradiction. </p>
+</instructions>
+
+<choices>
+<choice><ilatex>(p \leftrightarrow \neg q) \vee (p \leftrightarrow q)</ilatex></choice>
+<choice correct='true'><ilatex>(\neg p \leftrightarrow \neg q) \wedge (p \leftrightarrow q)</ilatex></choice>
+<choice><ilatex>(p \leftrightarrow \neg q) \wedge (p \leftrightarrow q)</ilatex></choice>
+<choice><ilatex>(p \rightarrow q) \vee  (q \rightarrow p)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='931f8c54-abd7-4ca1-902d-c72d4dbd9e8e'>
+<instructions>
+<p>Select the proposition that is logically equivalent to <ilatex>p \leftrightarrow q</ilatex>. </p>
+</instructions>
+
+<choices>
+<choice><ilatex>(p \vee q) \wedge (\neg p \vee \neg q)</ilatex></choice>
+<choice correct='true'><ilatex>(p \wedge q) \vee (\neg p \wedge \neg q)</ilatex></choice>
+<choice><ilatex>(p \rightarrow q) \vee (q \rightarrow p)</ilatex></choice>
+<choice><ilatex>(\neg p \rightarrow q) \wedge  (\neg q \rightarrow p)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='3edd9ea7-cbc0-42f2-81ea-662de2525e66'>
+<instructions>
+<p>Select the proposition that is logically equivalent to <ilatex>p \wedge \neg q</ilatex>. </p>
+</instructions>
+
+<choices>
+<choice><ilatex>\neg(q \rightarrow p)</ilatex></choice>
+<choice correct='true'><ilatex>\neg(p \rightarrow q)</ilatex></choice>
+<choice><ilatex>\neg(\neg p \rightarrow q)</ilatex></choice>
+<choice><ilatex>\neg(q \rightarrow \neg p)</ilatex></choice>
+</choices>
+</question>

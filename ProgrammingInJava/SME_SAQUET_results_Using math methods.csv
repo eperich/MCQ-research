@@ -1,0 +1,11 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+"\nWhat is the ending value of z?\n```text\nx = 0;
+y = 3;
+z = Math.pow(x + 2, y);\n```",8.0,0.0,4.0,8.0,Error: Cannot have an expression within a method call,,,,,,,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass
+"\nWhat is the ending value of y? Math.sqrt(u) returns the square root of u. Math.pow(u, v) returns u raised to the power of v.\n```text\nx = 9.0;
+y = 4.0;
+y = Math.pow(Math.sqrt(x), Math.sqrt(y));\n```",9.0,8.0,9.0,6561.0,Error: The sqrt methods cannot appear in the call to the pow method,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhat is the ending value of y? Math.pow(u, v) returns u raised to the power of v.\n```text\nx = 2.0;
+y = 3.0;
+y = Math.pow(Math.pow(x, y)) + 1.0;\n```",Error: The compiler complains about calling pow without the correct number of arguments,8.0,9.0,65.0,Error: The compiler complains about calling pow without the correct number of arguments,,,,,,,Fail,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nGiven function Multiply(u, v) that returns u * v, and Add(u, v) that returns u + v, which expression corresponds to:\nAdd(Multiply(x, Add(y, z)), w)",(x * (y + z)) + w,(x * (y + z)) + w,(x + (y + z) * w),((x * y) + z) + w,(x * (y + z) * w),,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass

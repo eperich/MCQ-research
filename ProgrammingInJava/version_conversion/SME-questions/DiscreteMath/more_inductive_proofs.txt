@@ -1,0 +1,173 @@
+<question xsi:type='MultipleChoiceQuestion' guid='32e383e9-779f-a122-5026-b70081d659a7'>
+<instructions>
+<p><ilatex>Q(n)</ilatex> is a statement parameterized by a positive integer <ilatex>n</ilatex>. The following theorem is proven by induction:</p>
+<line>Theorem: For any positive integer <ilatex>n</ilatex>, <ilatex>Q(n)</ilatex> is true. </line>
+<p>What must be proven in the inductive step? </p>
+</instructions>
+
+<choices>
+<choice>For any integer <ilatex>k \ge 1</ilatex>, <ilatex>Q(k-1)</ilatex> implies <ilatex>Q(k)</ilatex>. </choice>
+<choice>For any integer <ilatex>k \ge 1</ilatex>, <ilatex>Q(k)</ilatex> implies <ilatex>Q(n)</ilatex>. </choice>
+<choice>For any integer <ilatex>k \ge 1</ilatex>, <ilatex>Q(k)</ilatex>. </choice>
+<choice correct='true'>For any integer <ilatex>k \ge 1</ilatex>, <ilatex>Q(k)</ilatex> implies <ilatex>Q(k+1)</ilatex>. </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='5434a2de-5cd1-aa52-3743-2cb12cea7c0e'>
+<instructions>
+<p>The sequence <ilatex>\{ g_n\}</ilatex> is defined recursively as follows: </p>
+<line><ilatex>g_0 = 1</ilatex>, and <ilatex>g_n = 3 \cdot g_{n - 1} + 2n</ilatex>, for <ilatex>n \ge 1</ilatex>.</line>
+<p>If the theorem below is proven by induction, what must be established in the inductive step?</p>
+<line>Theorem: For any nonnegative integer <ilatex>n</ilatex>, <ilatex>g_n = \frac 5 2 \cdot 2^n -n- \frac 3 2</ilatex>. </line>
+</instructions>
+
+<choices>
+<choice><line>For <ilatex>k \ge 0</ilatex>, if <ilatex>g_k = 3 \cdot g_{k-1} + 2k</ilatex>,</line>
+<line>then <ilatex>g_{k+1} = \frac 5 2 \cdot 2^{k+1} -(k+1)-\frac 3 2</ilatex>.</line></choice>
+
+
+<choice correct='true'><line>For <ilatex>k \ge 0</ilatex>, if <ilatex>g_k = \frac 5 2 \cdot 2^k -k-\frac 3 2</ilatex>,</line>
+<line>then <ilatex>g_{k+1} = \frac 5 2 \cdot 2^{k+1} -(k+1)-\frac 3 2</ilatex>. </line></choice>
+
+<choice><line>For <ilatex>k \ge 0</ilatex>, if <ilatex>g_k = 3 \cdot g_{k-1} + 2k</ilatex>,</line>
+<line>then <ilatex>g_{k+1} = 3 \cdot g_{k} + 2(k+1)</ilatex>. </line></choice>
+
+<choice><line>For <ilatex>k \ge 0</ilatex>, if <ilatex>g_k = \frac 5 2 \cdot 2^k -k-\frac 3 2</ilatex>,</line>
+<line>then <ilatex>g_{k+1} = 3 \cdot g_{k} + 2(k+1)</ilatex>. </line></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='0d8d4e9e-64b3-9837-7271-577c4eebe8e9'>
+<instructions>
+<p>Select the mathematical statements to correctly fill in the beginning of the proof of an inductive step below: </p>
+<p> We will assume for <ilatex>k \ge 1</ilatex> that <ilatex>7</ilatex> divides <ilatex>6^{2k} - 1</ilatex> and will prove that <ilatex>7</ilatex> divides <ilatex>6^{2(k+1)}-1</ilatex>. Since, by the inductive hypothesis, <ilatex>7</ilatex> divides <ilatex>6^{2k} - 1</ilatex>, then <ilatex>6^{2k}</ilatex> can be expressed as (<ilatex>A?</ilatex>), where <ilatex>m</ilatex> is an integer. </p>
+<blatex>
+\begin{array}{rl}
+
+6^{2(k+1)}-1 &amp;=  6^2\cdot 6^{2k} - 1\\
+\ &amp;=  (B?) ~\mbox{By the ind. hyp.}\\
+\ &amp;=  \cdots
+\end{array}
+</blatex>
+</instructions>
+
+<choices>
+<choice><line><ilatex>(A){:}~7m</ilatex></line>
+<line><ilatex>(B){:}~ 36(7m) - 1</ilatex></line></choice>
+
+
+<choice correct='true'><line><ilatex>(A){:}~7m+1</ilatex></line>
+<line><ilatex>(B){:}~ 36(7m+1) - 1</ilatex></line></choice>
+
+<choice><line><ilatex>(A){:}~7m</ilatex></line>
+<line><ilatex>(B){:}~ 36(6^{2k}) - 1</ilatex></line> </choice>
+
+<choice><line><ilatex>(A){:}~7m+1</ilatex></line>
+<line><ilatex>(B){:}~ 36(6^{2k}) - 1</ilatex></line> </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='521e4eb3-5224-40e6-a065-d43767d950b5'>
+<instructions>
+<p>Select the mathematical statements to correctly fill in the beginning of the proof of an inductive step below: </p>
+<p> We will assume for <ilatex>k \ge 1</ilatex> that <ilatex>4</ilatex> divides <ilatex>9^k - 5^k</ilatex> and will prove that <ilatex>4</ilatex> divides <ilatex>9^{k+1}-5^{k+1}</ilatex>. Since, by the inductive hypothesis, <ilatex>4</ilatex> divides <ilatex>9^k - 5^k</ilatex>, then <ilatex>9^k</ilatex> can be expressed as (<ilatex>A</ilatex>?), where <ilatex>m</ilatex> is an integer. </p>
+
+<blatex>
+\begin{array}{lll}
+9^{k+1}-5^{k+1} &amp; =  9 \cdot 9^k - 5 \cdot 5^k\\
+9^{k+1}-5^{k+1} &amp; =  (B?)  &amp;~\mbox{By the ind. Hyp.}\\
+9^{k+1}-5^{k+1} &amp; =  \cdots 
+\end{array}
+</blatex>
+</instructions>
+
+<choices>
+
+<choice><line><ilatex>(A){:}~4m</ilatex></line>
+<line><ilatex>(B){:}~ (4m + 5^k) - 5 \cdot 5^k</ilatex></line></choice>
+
+<choice><line><ilatex>(A){:}~4m + 5^k</ilatex></line>
+<line><ilatex>(B){:}~ (4m + 5^k) - 5 \cdot 5^k</ilatex></line></choice>
+
+<choice><line><ilatex>(A){:}~4m</ilatex></line>
+<line><ilatex>(B){:}~ 9 (4m + 5^k) - 5 \cdot 5^k</ilatex></line></choice>
+
+
+
+
+<choice correct='true'><line><ilatex>(A){:}~4m + 5^k</ilatex></line>
+<line><ilatex>(B){:}~ 9(4m + 5^k) - 5 \cdot 5^k</ilatex></line></choice>
+
+
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='ecc8b518-0f38-49af-b401-969a9ebefaec'>
+<instructions>
+<p>The sequence <ilatex>\{ h_n\}</ilatex> is defined recursively as follows: </p>
+<line><ilatex>h_0 = 1</ilatex>, and <ilatex>h_n = 3 \cdot h_{n - 1} + 1</ilatex>, for <ilatex>n \ge 1</ilatex>.</line>
+<p>Suppose that the following theorem is proven by induction:</p>
+<line>Theorem: For any nonnegative integer <ilatex>n</ilatex>, <ilatex>h_n = \frac 1 2 \cdot (3^{n+1} -1)</ilatex>. </line>
+<p>The proof of the induction step (after stating what is assumed and will be proven) starts out as:</p>
+<blatex>
+\begin{array}{lll}
+h_{k+1} &amp; =  3 \cdot h_k + 1 &amp;~(\mbox{Label}~1)\\
+h_{k+1} &amp; =  3  \cdot \frac 1 2 (3^{k+1}-1)  &amp;~(\mbox{Label}~2)\\
+h_{k+1} &amp; =  \cdots 
+\end{array}
+</blatex>
+
+<p>What are the correct labels for lines <ilatex>1</ilatex> and <ilatex>2</ilatex>?</p>
+</instructions>
+
+<choices>
+<choice correct='true'><line>Label <ilatex>1</ilatex>: by definition</line>
+<line>Label <ilatex>2</ilatex>: by the inductive hypothesis</line></choice>
+
+
+<choice><line>Label <ilatex>1</ilatex>: by algebra</line>
+<line>Label <ilatex>2</ilatex>: by the inductive hypothesis</line></choice>
+
+
+
+<choice><line>Label <ilatex>1</ilatex>: by the inductive hypothesis</line><line>Label <ilatex>2</ilatex>: by definition</line>
+</choice>
+
+
+<choice><line>Label <ilatex>1</ilatex>: by the inductive hypothesis</line><line>Label <ilatex>2</ilatex>: by algebra</line>
+</choice>
+
+
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='718dd938-2593-4ef8-ba16-563febaf2001'>
+<instructions>
+<p>The sequence <ilatex>\{ f_n\}</ilatex> is defined recursively as follows: </p>
+<line><ilatex>f_1 = 7</ilatex>, and <ilatex>f_n = (f_{n - 1})^3</ilatex>, for <ilatex>n \ge 2</ilatex>.</line>
+<p>Suppose that the following theorem is proven by induction:</p>
+<line>Theorem: For any positive integer <ilatex>n</ilatex>, <ilatex>f_n = 7^{(3^{n - 1})}</ilatex>. </line>
+<p>The proof of the induction step starts out as:</p>
+<p>For <ilatex>k \ge 1</ilatex>, we will assume that <ilatex>[A]</ilatex> and will prove <ilatex>[B]</ilatex>.</p>
+<p>What are the correct expressions for <ilatex>[A]</ilatex> and <ilatex>[B]</ilatex>?</p>
+</instructions>
+
+<choices>
+<choice><line><ilatex>[A]: f_k= (f_{k-1})^3</ilatex>.</line>
+<line><ilatex>[B]: f_{k+1}= (f_{k})^3</ilatex></line></choice>
+
+<choice><line><ilatex>[A]: f_k= 7^{(3^{k-1})}</ilatex>.</line>
+<line><ilatex>[B]: f_{k+1}= (f_{k})^3</ilatex></line></choice>
+
+<choice><line><ilatex>[A]: f_k= (f_{k-1})^3</ilatex>.</line>
+<line><ilatex>[B]: f_{k+1}= 7^{(3^{k})}</ilatex></line></choice>
+
+
+
+<choice correct='true'><line><ilatex>[A]: f_k= 7^{(3^{k-1})}</ilatex>.</line>
+<line><ilatex>[B]: f_{k+1}= 7^{(3^{k})}</ilatex></line></choice>
+
+</choices>
+</question>

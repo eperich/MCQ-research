@@ -1,0 +1,174 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,1
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,3,16
+1,3,0,2,16
+1,4,0,2,16
+2,3,1,4,16
+2,4,1,2,16
+3,4,1,2,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),3
+Similar (70-85%),16
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What does the equality operator (==) check in an if statement?,2,1,q1,What does the equality operator (==) check in an if statement?,3,1,0.922,duplicate
+q1,What does the equality operator (==) check in an if statement?,2,1,q1,What does the equality operator (==) check in an if statement?,4,1,0.895,duplicate
+q1,What does the equality operator (==) check in an if statement?,3,1,q1,What does the equality operator (==) check in an if statement?,4,1,0.876,duplicate
+q3,"In an if-else statement, which branch executes if the condition is False?",3,3,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.812,similar
+q1,What does the equality operator == do in an if statement?,1,1,q1,What does the equality operator (==) check in an if statement?,3,1,0.801,similar
+q2,What happens when an if statement's condition evaluates to False?,2,2,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.793,similar
+q2,What happens when an if statement's condition evaluates to False?,2,2,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.778,similar
+q1,What does the equality operator == do in an if statement?,1,1,q1,What does the equality operator (==) check in an if statement?,4,1,0.771,similar
+q3,"In an if-else statement, when does the else branch execute?",2,3,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.767,similar
+q2,What happens when an if statement’s expression evaluates to False?,3,2,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.764,similar
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q4,What keyword introduces an additional branch between if and else?,3,4,0.762,similar
+q1,What does the equality operator == do in an if statement?,1,1,q1,What does the equality operator (==) check in an if statement?,2,1,0.761,similar
+q3,"In an if-else statement, when does the else branch execute?",2,3,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.745,similar
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q3,"In an if-else statement, when does the else branch execute?",2,3,0.739,similar
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.737,similar
+q2,What happens when an if statement's condition evaluates to False?,2,2,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.713,similar
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q1,What does the equality operator (==) check in an if statement?,2,1,0.709,similar
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.707,similar
+q2,What happens when an if statement's condition evaluates to False?,2,2,q3,"In an if-else statement, when does the else branch execute?",2,3,0.705,similar
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q1,What does the equality operator (==) check in an if statement?,3,1,0.695,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.68,low
+q1,What does the equality operator == do in an if statement?,1,1,q2,What is the purpose of the else branch in an if-else statement?,1,2,0.679,low
+q4,What keyword introduces an additional branch between if and else?,3,4,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.676,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.673,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q1,What does the equality operator (==) check in an if statement?,4,1,0.668,low
+q1,What does the equality operator == do in an if statement?,1,1,q3,"In an if-else statement, when does the else branch execute?",2,3,0.66,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.639,low
+q2,What happens when an if statement’s expression evaluates to False?,3,2,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.633,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q2,What happens when an if statement's condition evaluates to False?,2,2,0.629,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q3,"In an if-else statement, when does the else branch execute?",2,3,0.622,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.612,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q2,What happens when an if statement's condition evaluates to False?,2,2,0.611,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,0.597,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q1,What does the equality operator (==) check in an if statement?,3,1,0.597,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.582,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q1,What does the equality operator (==) check in an if statement?,3,1,0.574,low
+q1,What does the equality operator == do in an if statement?,1,1,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.563,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q1,What does the equality operator (==) check in an if statement?,4,1,0.563,low
+q1,What does the equality operator == do in an if statement?,1,1,q4,The inequality operator != evaluates to True when two values are _____.,1,4,0.562,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q4,What keyword introduces an additional branch between if and else?,3,4,0.562,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.555,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.553,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.551,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q1,What does the equality operator (==) check in an if statement?,2,1,0.55,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q3,"In an if-else statement, when does the else branch execute?",2,3,0.55,low
+q1,What does the equality operator == do in an if statement?,1,1,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.543,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.539,low
+q3,"In an if-else statement, which branch executes if the condition is False?",3,3,q4,What keyword introduces an additional branch between if and else?,3,4,0.536,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.532,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q4,What keyword introduces an additional branch between if and else?,3,4,0.531,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q1,What does the equality operator (==) check in an if statement?,4,1,0.522,low
+q1,What does the equality operator == do in an if statement?,1,1,q2,What happens when an if statement's condition evaluates to False?,2,2,0.516,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q3,"In an if-else statement, when does the else branch execute?",2,3,0.512,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q4,What keyword introduces an additional branch between if and else?,3,4,0.501,low
+q4,What keyword introduces an additional branch between if and else?,3,4,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.489,low
+q1,What does the equality operator == do in an if statement?,1,1,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.487,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.486,low
+q1,What does the equality operator (==) check in an if statement?,3,1,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.481,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.467,low
+q2,What happens when an if statement's condition evaluates to False?,2,2,q4,What keyword introduces an additional branch between if and else?,3,4,0.462,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.458,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.451,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.45,low
+q1,What does the equality operator == do in an if statement?,1,1,q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,0.449,low
+q2,"In an if-else statement, what happens if the condition is false?",4,2,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.444,low
+q1,What does the equality operator (==) check in an if statement?,3,1,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.434,low
+q1,What does the equality operator (==) check in an if statement?,3,1,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.434,low
+q3,"In an if-else statement, when does the else branch execute?",2,3,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.433,low
+q3,"In an if-else statement, which branch executes if the condition is False?",3,3,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.431,low
+q1,What does the equality operator (==) check in an if statement?,3,1,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.423,low
+q2,What happens when an if statement's condition evaluates to False?,2,2,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.418,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q4,The inequality operator != evaluates to True when two values are _____.,1,4,0.406,low
+q3,"In an if-else statement, which branch executes if the condition is False?",3,3,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.404,low
+q1,What does the equality operator == do in an if statement?,1,1,q4,What keyword introduces an additional branch between if and else?,3,4,0.402,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.401,low
+q2,What is the purpose of the else branch in an if-else statement?,1,2,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.4,low
+q1,What does the equality operator (==) check in an if statement?,4,1,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.4,low
+q2,What happens when an if statement's condition evaluates to False?,2,2,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.394,low
+q1,What does the equality operator == do in an if statement?,1,1,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.393,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.39,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.388,low
+q2,What happens when an if statement’s expression evaluates to False?,3,2,q4,What keyword introduces an additional branch between if and else?,3,4,0.385,low
+q2,What happens when an if statement's condition evaluates to False?,2,2,q1,What does the equality operator (==) check in an if statement?,3,1,0.384,low
+q1,What does the equality operator == do in an if statement?,1,1,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.379,low
+q1,What does the equality operator == do in an if statement?,1,1,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.378,low
+q3,"In an if-else statement, which branch executes if the condition is False?",3,3,q1,What does the equality operator (==) check in an if statement?,4,1,0.373,low
+q1,What does the equality operator (==) check in an if statement?,4,1,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.373,low
+q2,What happens when an if statement’s expression evaluates to False?,3,2,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.369,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q3,"In an if-else statement, which branch executes if the condition is False?",3,3,0.364,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.363,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q1,What does the equality operator (==) check in an if statement?,3,1,0.362,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.357,low
+q1,What does the equality operator (==) check in an if statement?,3,1,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.356,low
+q2,What happens when an if statement’s expression evaluates to False?,3,2,q1,What does the equality operator (==) check in an if statement?,4,1,0.356,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.347,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.347,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q4,The inequality operator != evaluates to True when two values are _____.,1,4,0.343,low
+q2,What happens when an if statement's condition evaluates to False?,2,2,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.339,low
+q2,"In an if-else statement, what happens if the condition is false?",4,2,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.337,low
+q2,What happens when an if statement's condition evaluates to False?,2,2,q1,What does the equality operator (==) check in an if statement?,4,1,0.331,low
+q2,What happens when an if statement’s expression evaluates to False?,3,2,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.33,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q1,What does the equality operator (==) check in an if statement?,4,1,0.328,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q1,What does the equality operator (==) check in an if statement?,3,1,0.323,low
+q1,What does the equality operator (==) check in an if statement?,4,1,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.323,low
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,3,q1,What does the equality operator (==) check in an if statement?,2,1,0.322,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q2,"In an if-else statement, what happens if the condition is false?",4,2,0.318,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q2,What happens when an if statement's condition evaluates to False?,2,2,0.313,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.309,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q1,What does the equality operator (==) check in an if statement?,4,1,0.309,low
+q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.3,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q2,What happens when an if statement's condition evaluates to False?,2,2,0.291,low
+q1,What does the equality operator (==) check in an if statement?,3,1,q4,What keyword introduces an additional branch between if and else?,3,4,0.29,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q2,What happens when an if statement’s expression evaluates to False?,3,2,0.284,low
+q1,What does the equality operator (==) check in an if statement?,2,1,q4,What keyword introduces an additional branch between if and else?,3,4,0.284,low
+q4,What keyword introduces an additional branch between if and else?,3,4,q1,What does the equality operator (==) check in an if statement?,4,1,0.271,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q3,What keyword allows checking multiple conditions in sequence in Python?,4,3,0.269,low
+q4,What keyword introduces an additional branch between if and else?,3,4,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.251,low
+q4,What keyword is used to add additional conditions after an if statement?,2,4,q4,What Boolean value results from the expression: 5 != 5?,4,4,0.219,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q4,What keyword is used to add additional conditions after an if statement?,2,4,0.199,low
+q4,The inequality operator != evaluates to True when two values are _____.,1,4,q4,What keyword introduces an additional branch between if and else?,3,4,0.191,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use if statements with equality and inequality operators to compare values and generate outputs.  
+Implement if-else statements to execute different actions depending on whether a condition is true or false.  
+Determine which branch of a conditional statement executes based on a variable's value.  
+Understand the use of multi-branch if-else statements with the elif keyword for multiple conditions.  
+Evaluate expressions involving equality and inequality operators to produce Boolean outcomes."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the equality operator == do in an if statement?,1,yes,"Yes, this question directly assesses the learning objective of evaluating expressions involving equality operators to produce Boolean outcomes, as it specifically asks about the function of the equality operator in an if statement."
+q2,What is the purpose of the else branch in an if-else statement?,1,yes,"Yes, the question directly assesses the second learning objective, as it specifically asks about the function of the else branch in an if-else statement, which relates to executing different actions based on the truth value of a condition."
+q3,"In a multi-branch if-else statement, how many branches can execute?",1,yes,"Yes, the question directly assesses the understanding of multi-branch if-else statements and which branch executes based on conditions, aligning with the learning objectives regarding the use of the elif keyword and determining which branch executes."
+q4,The inequality operator != evaluates to True when two values are _____.,1,yes,"Yes, this question directly assesses the learning objective of evaluating expressions involving equality and inequality operators to produce Boolean outcomes, as it specifically tests the understanding of the inequality operator."
+q1,What does the equality operator (==) check in an if statement?,2,yes,"Yes, the question directly assesses the learning objective of evaluating expressions involving equality operators to produce Boolean outcomes, as it specifically asks about the function of the equality operator (==) in an if statement."
+q2,What happens when an if statement's condition evaluates to False?,2,yes,"Yes, the question directly assesses the understanding of what occurs when an if statement's condition evaluates to False, which relates to the learning objective of implementing if-else statements to execute different actions based on a condition's truth value."
+q3,"In an if-else statement, when does the else branch execute?",2,yes,"Yes, the question directly assesses the learning objective of implementing if-else statements to execute different actions depending on whether a condition is true or false, as it specifically asks about the execution of the else branch based on the if condition's truth value."
+q4,What keyword is used to add additional conditions after an if statement?,2,yes,"Yes, the question assesses the learning objective related to understanding the use of multi-branch if-else statements with the elif keyword for multiple conditions."
+q1,What does the equality operator (==) check in an if statement?,3,yes,"Yes, this question directly assesses the learning objective of evaluating expressions involving equality operators to produce Boolean outcomes, as it specifically asks about the function of the equality operator (==) in an if statement."
+q2,What happens when an if statement’s expression evaluates to False?,3,yes,"Yes, this question directly assesses the learning objective of determining which branch of a conditional statement executes based on a variable's value, as it specifically asks about the outcome when an if statement evaluates to False."
+q3,"In an if-else statement, which branch executes if the condition is False?",3,yes,"Yes, this question assesses the learning objective of implementing if-else statements to execute different actions depending on whether a condition is true or false, as it directly tests the understanding of which branch executes when the condition is false."
+q4,What keyword introduces an additional branch between if and else?,3,yes,"Yes, this question directly assesses the learning objective of understanding the use of multi-branch if-else statements with the elif keyword for multiple conditions."
+q1,What does the equality operator (==) check in an if statement?,4,yes,"Yes, this question directly assesses the learning objective of evaluating expressions involving equality operators to produce Boolean outcomes, as it specifically asks about the function of the equality operator (==) in an if statement."
+q2,"In an if-else statement, what happens if the condition is false?",4,yes,"Yes, this question directly assesses the learning objective of implementing if-else statements to execute different actions depending on whether a condition is true or false, as it specifically addresses the behavior of the else branch when the condition is false."
+q3,What keyword allows checking multiple conditions in sequence in Python?,4,yes,"Yes, the question assesses the learning objective related to understanding the use of multi-branch if-else statements with the elif keyword for multiple conditions."
+q4,What Boolean value results from the expression: 5 != 5?,4,yes,"Yes, this question assesses the learning objective of evaluating expressions involving equality and inequality operators to produce Boolean outcomes, as it requires the student to determine the result of an inequality expression."

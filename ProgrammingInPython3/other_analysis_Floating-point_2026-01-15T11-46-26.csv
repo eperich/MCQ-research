@@ -1,0 +1,173 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,1,16
+1,3,2,1,16
+1,4,0,0,16
+2,3,2,1,16
+2,4,0,1,16
+3,4,1,1,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),6
+Similar (70-85%),5
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,Why does the float data type exist in programming languages?,1,1,q1,Why does the float data type exist in programming languages?,2,1,0.947,duplicate
+q3,What causes an OverflowError when working with floats in Python?,1,3,q3,What causes an OverflowError when working with floats in Python?,3,3,0.897,duplicate
+q1,Why does the float data type exist in programming languages?,1,1,q1,Why is the float data type used instead of int?,3,1,0.876,duplicate
+q4,How does Python output a float with exactly two digits after the decimal point?,3,4,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.869,duplicate
+q1,Why does the float data type exist in programming languages?,2,1,q1,Why is the float data type used instead of int?,3,1,0.865,duplicate
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.851,duplicate
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.773,similar
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.724,similar
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q3,What causes an OverflowError when working with floats in Python?,3,3,0.717,similar
+q3,What causes an OverflowError when working with floats in Python?,3,3,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.715,similar
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.708,similar
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.692,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.679,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.676,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,0.669,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.657,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.632,low
+q1,Why is the float data type used instead of int?,3,1,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.607,low
+q1,Why does the float data type exist in programming languages?,2,1,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.597,low
+q2,Which Python function converts input strings to floating-point numbers?,4,2,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.584,low
+q4,How does Python output a float with exactly two digits after the decimal point?,3,4,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.583,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.582,low
+q1,Why does the float data type exist in programming languages?,1,1,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.575,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,0.566,low
+q1,Why does the float data type exist in programming languages?,2,1,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.562,low
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.543,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.541,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.531,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q1,Why does the float data type exist in programming languages?,2,1,0.525,low
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.522,low
+q1,Why does the float data type exist in programming languages?,1,1,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.521,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,0.52,low
+q1,Why does the float data type exist in programming languages?,2,1,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.52,low
+q1,Why does the float data type exist in programming languages?,2,1,q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,0.516,low
+q1,Why is the float data type used instead of int?,3,1,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.515,low
+q1,A floating-point number is used to represent a number with a/an _____.,4,1,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.511,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q3,What causes an OverflowError when working with floats in Python?,1,3,0.51,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.508,low
+q1,Why does the float data type exist in programming languages?,1,1,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.498,low
+q1,Why does the float data type exist in programming languages?,2,1,q3,What causes an OverflowError when working with floats in Python?,3,3,0.498,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.498,low
+q3,What causes an OverflowError when working with floats in Python?,3,3,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.497,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.496,low
+q1,Why does the float data type exist in programming languages?,1,1,q3,What causes an OverflowError when working with floats in Python?,3,3,0.495,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.494,low
+q1,Why does the float data type exist in programming languages?,2,1,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.489,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.488,low
+q1,Why is the float data type used instead of int?,3,1,q3,What causes an OverflowError when working with floats in Python?,3,3,0.488,low
+q1,Why is the float data type used instead of int?,3,1,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.487,low
+q1,Why does the float data type exist in programming languages?,1,1,q3,What causes an OverflowError when working with floats in Python?,1,3,0.486,low
+q1,Why does the float data type exist in programming languages?,1,1,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.482,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q3,What causes an OverflowError when working with floats in Python?,3,3,0.48,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q1,Why is the float data type used instead of int?,3,1,0.477,low
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.477,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.473,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q1,Why is the float data type used instead of int?,3,1,0.472,low
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.471,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.47,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q1,Why does the float data type exist in programming languages?,2,1,0.468,low
+q1,Why is the float data type used instead of int?,3,1,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.466,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.465,low
+q1,Why does the float data type exist in programming languages?,1,1,q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,0.462,low
+q1,Why does the float data type exist in programming languages?,2,1,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.461,low
+q3,What causes an OverflowError when working with floats in Python?,3,3,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.457,low
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q3,What causes an OverflowError when working with floats in Python?,3,3,0.45,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.448,low
+q1,Why does the float data type exist in programming languages?,2,1,q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,0.448,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q1,Why does the float data type exist in programming languages?,2,1,0.447,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.443,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.443,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,0.442,low
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.44,low
+q3,What causes an OverflowError when working with floats in Python?,3,3,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.44,low
+q1,Why does the float data type exist in programming languages?,1,1,q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,0.438,low
+q1,Why does the float data type exist in programming languages?,1,1,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.436,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q4,How does Python output a float with exactly two digits after the decimal point?,3,4,0.435,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,0.432,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,0.429,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q1,Why is the float data type used instead of int?,3,1,0.429,low
+q1,Why is the float data type used instead of int?,3,1,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.428,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.427,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.426,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q1,Why is the float data type used instead of int?,3,1,0.425,low
+q1,Why does the float data type exist in programming languages?,1,1,q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,0.422,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.42,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.418,low
+q1,Why does the float data type exist in programming languages?,2,1,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.415,low
+q1,Why does the float data type exist in programming languages?,1,1,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.414,low
+q1,Why does the float data type exist in programming languages?,1,1,q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,0.41,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,0.409,low
+q1,Why does the float data type exist in programming languages?,2,1,q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,0.409,low
+q1,Why is the float data type used instead of int?,3,1,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.408,low
+q1,Why does the float data type exist in programming languages?,1,1,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.404,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.404,low
+q4,How does Python output a float with exactly two digits after the decimal point?,3,4,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.404,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,0.403,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q1,Why is the float data type used instead of int?,3,1,0.401,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.401,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q3,What causes an OverflowError when working with floats in Python?,3,3,0.398,low
+q1,A floating-point number is used to represent a number with a/an _____.,4,1,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.395,low
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.387,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.384,low
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.379,low
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q1,Why is the float data type used instead of int?,3,1,0.375,low
+q3,What causes an OverflowError when working with floats in Python?,3,3,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.366,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,0.364,low
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,4,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.361,low
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,2,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.349,low
+q3,What causes an OverflowError when working with floats in Python?,1,3,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.349,low
+q3,What does an OverflowError in floating-point operations indicate?,4,3,q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,4,0.348,low
+q4,How does Python output a float with exactly two digits after the decimal point?,3,4,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.346,low
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q1,A floating-point number is used to represent a number with a/an _____.,4,1,0.333,low
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,q3,What causes an OverflowError when working with floats in Python?,3,3,0.33,low
+q1,A floating-point number is used to represent a number with a/an _____.,4,1,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.329,low
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,2,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.322,low
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,4,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.319,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,3,0.306,low
+q2,Which Python function converts input strings to floating-point numbers?,4,2,q3,What does an OverflowError in floating-point operations indicate?,4,3,0.301,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q3,What causes an OverflowError when working with floats in Python?,3,3,0.298,low
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,2,q2,Which Python function converts input strings to floating-point numbers?,4,2,0.272,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Convert between floating-point literals and scientific notation.  
+Use float() to read floating-point values from input.  
+Select appropriate data types to represent data and avoid overflow errors.  
+Output floating-point values rounded to a specified number of digits after the decimal point."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Why does the float data type exist in programming languages?,1,no,"No, because the question does not directly evaluate the ability to convert between floating-point literals and scientific notation or use the float() function, nor does it assess the selection of appropriate data types or rounding of floating-point values."
+q2,How is the floating-point literal 6.02e23 interpreted in Python?,1,yes,"Yes, this question assesses the learning objective of converting between floating-point literals and scientific notation, as it requires understanding the interpretation of the scientific notation format in Python."
+q3,What causes an OverflowError when working with floats in Python?,1,no,"No, the question does not directly assess the learning objectives as it focuses specifically on the cause of an OverflowError rather than the broader skills of converting, reading, selecting data types, or rounding floats."
+q4,"How does print(f""{my_float:.2f}"") manipulate floating-point output?",1,yes,"Yes, the question directly assesses the learning objective of outputting floating-point values rounded to a specified number of digits after the decimal point."
+q1,Why does the float data type exist in programming languages?,2,no,"No, the question does not directly assess the learning objectives listed above, as it focuses on the purpose of the float data type rather than the specific skills related to converting, reading, selecting data types, or rounding floating-point values."
+q2,How does scientific notation represent the floating-point number 3.2e5?,2,yes,"Yes, the question directly assesses the learning objective of converting between floating-point literals and scientific notation, as it requires understanding the representation of the number in scientific notation."
+q3,What happens if a floating-point value exceeds the maximum representable range in Python?,2,no,"No, the question does not directly assess the learning objectives listed above, as it focuses on error handling related to floating-point values rather than conversion, input reading, data type selection, or rounding output."
+q4,Which Python code correctly outputs the float variable my_float with three digits after the decimal point?,2,yes,"Yes, the question directly assesses the learning objective of outputting floating-point values rounded to a specified number of digits after the decimal point, as it specifically asks for the correct formatting to achieve this."
+q1,Why is the float data type used instead of int?,3,yes,"Yes, the question directly assesses the learning objective of selecting appropriate data types to represent data, as it requires understanding the purpose of the float data type in contrast to int."
+q2,"What does the ""e"" in a floating-point literal like 6.02e23 represent?",3,yes,"Yes, the question directly assesses the learning objective of converting between floating-point literals and scientific notation, as it tests the understanding of the representation of numbers in scientific notation."
+q3,What causes an OverflowError when working with floats in Python?,3,no,"No, the question does not directly assess the learning objectives listed above, as it focuses on the specific cause of an OverflowError rather than the broader concepts of converting between floating-point literals, using float() for input, selecting appropriate data types, or rounding output."
+q4,How does Python output a float with exactly two digits after the decimal point?,3,yes,"Yes, the question directly assesses the learning objective of outputting floating-point values rounded to a specified number of digits after the decimal point, as it specifically asks how to format a float to two decimal places in Python."
+q1,A floating-point number is used to represent a number with a/an _____.,4,no,"No, the question does not directly assess the learning objectives as it focuses on the definition of a floating-point number rather than the specific skills related to conversion, data type selection, or output formatting."
+q2,Which Python function converts input strings to floating-point numbers?,4,yes,"Yes, the question directly assesses the learning objective of using float() to read floating-point values from input, as it specifically asks for the function that converts input strings to floating-point numbers."
+q3,What does an OverflowError in floating-point operations indicate?,4,no,"No, the question does not directly assess the learning objectives listed above, as it focuses on understanding the concept of OverflowError rather than the specific skills related to converting literals, using float(), selecting data types, or rounding values."
+q4,How does Python output a floating-point number rounded to two digits after the decimal?,4,yes,"Yes, the question directly assesses the learning objective of outputting floating-point values rounded to a specified number of digits after the decimal point, as it specifically asks about the correct syntax for formatting a floating-point number in Python."

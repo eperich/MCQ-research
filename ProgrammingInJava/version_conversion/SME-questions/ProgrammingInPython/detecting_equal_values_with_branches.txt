@@ -1,0 +1,92 @@
+<question xsi:type='MultipleChoiceQuestion' guid='11bdb7f7-11f5-864e-2800-8b9ea93556c8' subjects='python3'>
+<instructions>
+<p>Which expression for YYY will result in an output of "Pass" only if x is exactly 32?</p>
+<codeBlock language='python'>
+if YYY:
+   print("Pass")
+else:
+   print("Fail")
+</codeBlock>
+</instructions>
+
+<choices>
+<choice> x != 32</choice>
+<choice correct='true'> x == 32</choice>
+<choice> x &gt;= 32</choice>
+<choice> x &lt;= 32</choice>
+</choices>
+</question>
+
+
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='6545ee4e-eb0a-779d-2a1e-154a9595a654'>
+<instructions>
+<line>What is the value of test_val after the following code is executed?</line>
+
+<codeBlock language='python'>
+a = 12
+test_val = 6
+if a * 2 == test_val:
+    a = a + 7
+else:
+    test_val = 2 * a
+
+
+test_val = a + 1
+</codeBlock>
+</instructions>
+
+
+<choices>
+<choice>7</choice>
+<choice correct='true'>13</choice>
+<choice>24</choice>
+<choice>25</choice>
+</choices>
+</question>
+
+
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='7aebec4c-548d-35a9-6dfd-7c9ef0564b04'>
+<instructions>
+<line>What is displayed when the following code is executed?</line>
+<codeBlock language='python'>
+day = 23
+if day % 10 == 1:
+    ending = "st"
+elif day % 10 == 2:
+    ending = "nd"
+elif day % 10 == 3:
+    ending = "rd"
+else:
+    ending = "th"
+print(str(day) + ending)
+</codeBlock>
+</instructions>
+
+
+<choices>
+<choice>23th</choice>
+<choice>23st</choice>
+<choice>23nd</choice>
+<choice correct='true'>23rd</choice>
+</choices>
+</question>
+
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='c767c16a-5e6c-149e-a3ca-e8c232011257' subjects='python3'>
+<instructions>
+<p>To quit, a user types "q". To continue, a user types any other key. Which expression evaluates to true if a user should continue? </p>
+</instructions>
+
+<choices>
+<choice>key == "q" </choice>
+<choice correct='true'>key != "q" </choice>
+<choice>(!key) == "q" </choice>
+<choice>key == (!"q") </choice>
+</choices>
+</question>

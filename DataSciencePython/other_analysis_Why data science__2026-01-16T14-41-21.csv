@@ -1,0 +1,116 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,3,0,0
+2,3,0,0
+3,3,0,0
+4,3,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,2,9
+1,3,0,1,9
+1,4,1,0,9
+2,3,0,2,9
+2,4,0,1,9
+3,4,0,2,9
+
+Summary
+Total Comparisons,66
+Duplicates (≥85%),1
+Similar (70-85%),8
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,Data scientists handle big data variety by _____.,1,3,q3,How do data scientists handle the variety of big data formats?,4,3,0.852,duplicate
+q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,q1,What term describes a dataset's individual measured characteristic?,4,1,0.843,similar
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.832,similar
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,0.806,similar
+q2,"Big data's ""velocity"" refers to _____.",1,2,q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,0.8,similar
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q1,What term describes a dataset's individual measured characteristic?,4,1,0.75,similar
+q3,Data scientists handle big data variety by _____.,1,3,q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,0.741,similar
+q2,"Big data's ""velocity"" refers to _____.",1,2,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.72,similar
+q3,Cloud-based storage makes big data more manageable by _____.,3,3,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.717,similar
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,q3,How do data scientists handle the variety of big data formats?,4,3,0.653,low
+q3,Data scientists handle big data variety by _____.,1,3,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.582,low
+q1,A dataset consists of _____ and _____.,1,1,q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,0.532,low
+q3,Data scientists handle big data variety by _____.,1,3,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.53,low
+q2,Why do data scientists use cloud-based storage for big data?,4,2,q3,How do data scientists handle the variety of big data formats?,4,3,0.514,low
+q1,A dataset consists of _____ and _____.,1,1,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.51,low
+q1,A dataset consists of _____ and _____.,1,1,q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,0.509,low
+q1,A dataset consists of _____ and _____.,1,1,q1,What term describes a dataset's individual measured characteristic?,4,1,0.493,low
+q1,A dataset consists of _____ and _____.,1,1,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.45,low
+q3,Cloud-based storage makes big data more manageable by _____.,3,3,q3,How do data scientists handle the variety of big data formats?,4,3,0.449,low
+q1,A dataset consists of _____ and _____.,1,1,q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,0.447,low
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.447,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q3,Data scientists handle big data variety by _____.,1,3,0.443,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.443,low
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.442,low
+q1,A dataset consists of _____ and _____.,1,1,q3,Data scientists handle big data variety by _____.,1,3,0.433,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,0.426,low
+q1,A dataset consists of _____ and _____.,1,1,q2,"Big data's ""velocity"" refers to _____.",1,2,0.415,low
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,0.412,low
+q3,Data scientists handle big data variety by _____.,1,3,q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,0.411,low
+q3,Data scientists handle big data variety by _____.,1,3,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.406,low
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.385,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,0.378,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,0.369,low
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.369,low
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,0.365,low
+q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,q3,How do data scientists handle the variety of big data formats?,4,3,0.365,low
+q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.364,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.359,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q3,How do data scientists handle the variety of big data formats?,4,3,0.355,low
+q2,"Big data's ""velocity"" refers to _____.",1,2,q1,What term describes a dataset's individual measured characteristic?,4,1,0.353,low
+q3,Data scientists handle big data variety by _____.,1,3,q1,What term describes a dataset's individual measured characteristic?,4,1,0.35,low
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,0.347,low
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,q1,What term describes a dataset's individual measured characteristic?,4,1,0.341,low
+q3,Data scientists handle big data variety by _____.,1,3,q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,0.333,low
+q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,q1,What term describes a dataset's individual measured characteristic?,4,1,0.328,low
+q1,A dataset consists of _____ and _____.,1,1,q3,How do data scientists handle the variety of big data formats?,4,3,0.326,low
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q3,How do data scientists handle the variety of big data formats?,4,3,0.325,low
+q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.325,low
+q1,A dataset consists of _____ and _____.,1,1,q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,0.324,low
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q1,What term describes a dataset's individual measured characteristic?,4,1,0.324,low
+q1,A dataset consists of _____ and _____.,1,1,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.321,low
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,0.319,low
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.319,low
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,3,q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,0.316,low
+q3,Data scientists handle big data variety by _____.,1,3,q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,0.308,low
+q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,2,0.307,low
+q1,What term describes a dataset's individual measured characteristic?,4,1,q3,How do data scientists handle the variety of big data formats?,4,3,0.304,low
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,2,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.302,low
+q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.294,low
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q3,Cloud-based storage makes big data more manageable by _____.,3,3,0.293,low
+q3,Cloud-based storage makes big data more manageable by _____.,3,3,q1,What term describes a dataset's individual measured characteristic?,4,1,0.28,low
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q3,How do data scientists handle the variety of big data formats?,4,3,0.257,low
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,1,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.248,low
+q1,What term describes a dataset's individual measured characteristic?,4,1,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.233,low
+q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,q3,How do data scientists handle the variety of big data formats?,4,3,0.227,low
+q1,A _____ is a characteristic measured on each instance in a dataset.,3,1,q2,Why do data scientists use cloud-based storage for big data?,4,2,0.206,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define features and instances in a dataset.  
+Describe the three Vs of big data: volume, velocity, and variety.  
+Explain practical approaches data scientists use to manage volume, velocity, and variety in big data.  
+Identify specialized tools and techniques used to handle large volumes of data.  
+Understand how reproducible analysis and automation help manage high-velocity data updates."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A dataset consists of _____ and _____.,1,yes,This question assesses the ability to define features and instances in a dataset.
+q2,"Big data's ""velocity"" refers to _____.",1,yes,"This question evaluates understanding of the ""velocity"" aspect of the three Vs of big data."
+q3,Data scientists handle big data variety by _____.,1,yes,This question tests knowledge of practical approaches data scientists use to manage variety in big data.
+q1,"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",2,yes,This question directly assesses the definition of an instance and feature in a dataset.
+q2,Big data's _____ refers to the speed at which data is created and updated in real time.,2,yes,"This question evaluates understanding of the ""velocity"" characteristic in big data."
+q3,Data scientists handle variety in big data by using tools from _____ disciplines.,2,yes,This question assesses how data scientists handle variety by using tools from multiple disciplines.
+q1,A _____ is a characteristic measured on each instance in a dataset.,3,yes,This question tests the definition of a feature as a characteristic measured on each instance.
+q2,"Which ""V"" of big data describes the fast rate at which data is created and updated?",3,yes,"This question evaluates knowledge of the ""velocity"" V in big data."
+q3,Cloud-based storage makes big data more manageable by _____.,3,yes,This question assesses understanding of practical tools (cloud-based storage) used to manage big data volume and velocity.
+q1,What term describes a dataset's individual measured characteristic?,4,yes,This question tests the definition of a feature as an individual measured characteristic in a dataset.
+q2,Why do data scientists use cloud-based storage for big data?,4,yes,This question evaluates knowledge of specialized tools (cloud storage) used to handle large volumes of data.
+q3,How do data scientists handle the variety of big data formats?,4,yes,This question assesses how data scientists handle variety in big data using tools from multiple disciplines.

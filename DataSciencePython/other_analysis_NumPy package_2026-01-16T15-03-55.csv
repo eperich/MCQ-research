@@ -1,0 +1,248 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,5,0,0
+2,5,0,0
+3,5,0,0
+4,5,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,0,25
+1,3,0,2,25
+1,4,2,1,25
+2,3,0,1,25
+2,4,1,2,25
+3,4,0,1,25
+
+Summary
+Total Comparisons,190
+Duplicates (≥85%),5
+Similar (70-85%),7
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What does the shape attribute of a NumPy array represent?,1,1,q1,What does the shape attribute of a NumPy array represent?,4,1,0.976,duplicate
+q1,What does the shape attribute of a NumPy array represent?,1,1,q1,What does the shape attribute of a NumPy array represent?,2,1,0.95,duplicate
+q1,What does the shape attribute of a NumPy array represent?,2,1,q1,What does the shape attribute of a NumPy array represent?,4,1,0.949,duplicate
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,0.912,duplicate
+q3,How does the reshape() function affect a NumPy array?,1,3,q4,How does the reshape() function affect a NumPy array?,4,4,0.886,duplicate
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.837,similar
+q3,How does the reshape() function affect a NumPy array?,1,3,q3,What does the NumPy function reshape() do to an array?,3,3,0.829,similar
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q3,What does the axis parameter specify in NumPy functions?,4,3,0.829,similar
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.797,similar
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.784,similar
+q3,What does the NumPy function reshape() do to an array?,3,3,q4,How does the reshape() function affect a NumPy array?,4,4,0.768,similar
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.705,similar
+q4,What does the ravel() function do to an array?,1,4,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.691,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.672,low
+q4,Flattening a NumPy array changes it to a _____ array.,3,4,q4,How does the reshape() function affect a NumPy array?,4,4,0.661,low
+q3,What does the NumPy function reshape() do to an array?,3,3,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.65,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.636,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.621,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.615,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q4,How does the reshape() function affect a NumPy array?,4,4,0.59,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q3,What does the NumPy function reshape() do to an array?,3,3,0.588,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q1,What does the shape attribute of a NumPy array represent?,2,1,0.586,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q1,What does the shape attribute of a NumPy array represent?,4,1,0.584,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q3,What does the NumPy function reshape() do to an array?,3,3,0.582,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.581,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q3,How does the reshape() function affect a NumPy array?,1,3,0.573,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q4,How does the reshape() function affect a NumPy array?,4,4,0.573,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q3,What does the NumPy function reshape() do to an array?,3,3,0.572,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.57,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.566,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q3,What does the NumPy function reshape() do to an array?,3,3,0.564,low
+q3,What does the NumPy function reshape() do to an array?,3,3,q3,What does the axis parameter specify in NumPy functions?,4,3,0.559,low
+q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.554,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.553,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q3,What does the axis parameter specify in NumPy functions?,4,3,0.552,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q3,What does the axis parameter specify in NumPy functions?,4,3,0.552,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q4,How does the reshape() function affect a NumPy array?,4,4,0.552,low
+q1,What does the shape attribute of a NumPy array represent?,4,1,q3,What does the axis parameter specify in NumPy functions?,4,3,0.552,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.549,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q3,What does the axis parameter specify in NumPy functions?,4,3,0.548,low
+q1,What does the shape attribute of a NumPy array represent?,4,1,q4,How does the reshape() function affect a NumPy array?,4,4,0.547,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q4,How does the reshape() function affect a NumPy array?,4,4,0.544,low
+q3,What does the NumPy function reshape() do to an array?,3,3,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.544,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q3,What does the NumPy function reshape() do to an array?,3,3,0.543,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q3,What does the axis parameter specify in NumPy functions?,4,3,0.538,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.534,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.525,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q3,What does the NumPy function reshape() do to an array?,3,3,0.525,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q3,What does the NumPy function reshape() do to an array?,3,3,0.524,low
+q3,What does the NumPy function reshape() do to an array?,3,3,q1,What does the shape attribute of a NumPy array represent?,4,1,0.524,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.523,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q3,What does the NumPy function reshape() do to an array?,3,3,0.518,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.518,low
+q4,Flattening a NumPy array changes it to a _____ array.,3,4,q1,What does the shape attribute of a NumPy array represent?,4,1,0.518,low
+q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,q4,How does the reshape() function affect a NumPy array?,4,4,0.517,low
+q4,What does the ravel() function do to an array?,1,4,q4,How does the reshape() function affect a NumPy array?,4,4,0.516,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q3,What does the axis parameter specify in NumPy functions?,4,3,0.516,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q1,What does the shape attribute of a NumPy array represent?,4,1,0.512,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.51,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.507,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.505,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.501,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.5,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.499,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.492,low
+q1,What does the shape attribute of a NumPy array represent?,4,1,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.491,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.49,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.486,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.484,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q3,What does the axis parameter specify in NumPy functions?,4,3,0.482,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.481,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.481,low
+q4,Flattening a NumPy array changes it to a _____ array.,3,4,q3,What does the axis parameter specify in NumPy functions?,4,3,0.48,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.479,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q4,How does the reshape() function affect a NumPy array?,4,4,0.479,low
+q4,Flattening a NumPy array changes it to a _____ array.,3,4,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.475,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q4,What does the ravel() function do to an array?,1,4,0.473,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.469,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.469,low
+q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.469,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q1,What does the shape attribute of a NumPy array represent?,4,1,0.468,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.466,low
+q3,What does the axis parameter specify in NumPy functions?,4,3,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.464,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.463,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q1,What does the shape attribute of a NumPy array represent?,4,1,0.461,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q3,How does the reshape() function affect a NumPy array?,1,3,0.458,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.456,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.455,low
+q3,What does the axis parameter specify in NumPy functions?,4,3,q4,How does the reshape() function affect a NumPy array?,4,4,0.452,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.451,low
+q4,Flattening a NumPy array changes it to a _____ array.,3,4,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.451,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.449,low
+q4,What does the ravel() function do to an array?,1,4,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.447,low
+q4,What does the ravel() function do to an array?,1,4,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.447,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.446,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q1,What does the shape attribute of a NumPy array represent?,4,1,0.438,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.434,low
+q3,What does the NumPy function reshape() do to an array?,3,3,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.43,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.429,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.429,low
+q4,What does the ravel() function do to an array?,1,4,q3,What does the NumPy function reshape() do to an array?,3,3,0.428,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,0.427,low
+q3,What does the NumPy function reshape() do to an array?,3,3,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.424,low
+q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,q4,How does the reshape() function affect a NumPy array?,4,4,0.424,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q4,How does the reshape() function affect a NumPy array?,4,4,0.423,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q4,How does the reshape() function affect a NumPy array?,4,4,0.423,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.422,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.421,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.421,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.42,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.42,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.418,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.416,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q3,What does the axis parameter specify in NumPy functions?,4,3,0.416,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.411,low
+q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,q1,What does the shape attribute of a NumPy array represent?,4,1,0.41,low
+q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,q3,What does the axis parameter specify in NumPy functions?,4,3,0.406,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.401,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.401,low
+q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.398,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,0.397,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,0.395,low
+q4,Flattening a NumPy array changes it to a _____ array.,3,4,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.395,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,0.393,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.392,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.388,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.388,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.388,low
+q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,q3,What does the axis parameter specify in NumPy functions?,4,3,0.385,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.384,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.384,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q3,What does the NumPy function reshape() do to an array?,3,3,0.381,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q4,How does the reshape() function affect a NumPy array?,4,4,0.38,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.378,low
+q4,What does the ravel() function do to an array?,1,4,q2,Which function creates a NumPy array filled with a specified value and shape?,4,2,0.377,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.377,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q1,What does the shape attribute of a NumPy array represent?,4,1,0.373,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.373,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q3,What does the axis parameter specify in NumPy functions?,4,3,0.371,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q2,Which function inserts values into a NumPy array at a specified axis?,1,2,0.368,low
+q4,What does the ravel() function do to an array?,1,4,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.368,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.363,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q4,What does the ravel() function do to an array?,1,4,0.361,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.359,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.358,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,0.357,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q3,What does the axis parameter specify in NumPy functions?,4,3,0.357,low
+q1,What does the shape attribute of a NumPy array represent?,4,1,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.357,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q1,What does the shape attribute of a NumPy array represent?,4,1,0.356,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.356,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q1,What does the shape attribute of a NumPy array represent?,2,1,0.353,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.353,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,0.352,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.351,low
+q3,How does the reshape() function affect a NumPy array?,1,3,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.348,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q3,What does the NumPy function reshape() do to an array?,3,3,0.347,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,0.345,low
+q4,How does the reshape() function affect a NumPy array?,4,4,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.345,low
+q4,What does the ravel() function do to an array?,1,4,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.342,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.341,low
+q4,What does the ravel() function do to an array?,1,4,q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,0.341,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q1,What does the shape attribute of a NumPy array represent?,2,1,0.341,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q4,How does the reshape() function affect a NumPy array?,4,4,0.341,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q4,Flattening a NumPy array changes it to a _____ array.,3,4,0.34,low
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,5,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.338,low
+q4,What does the ravel() function do to an array?,1,4,q3,What does the axis parameter specify in NumPy functions?,4,3,0.334,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q3,What does the axis parameter specify in NumPy functions?,4,3,0.334,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q1,What does the shape attribute of a NumPy array represent?,4,1,0.329,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,0.328,low
+q2,Which NumPy function inserts elements into an array before a specified index?,3,2,q1,What does the shape attribute of a NumPy array represent?,4,1,0.327,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,0.324,low
+q4,What does the ravel() function do to an array?,1,4,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.322,low
+q4,What does the ravel() function do to an array?,1,4,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.322,low
+q4,What does the ravel() function do to an array?,1,4,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.31,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q4,How does the axis parameter affect the sort() function in NumPy?,2,4,0.31,low
+q4,What does the ravel() function do to an array?,1,4,q1,What does the shape attribute of a NumPy array represent?,4,1,0.309,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q4,How does the reshape() function affect a NumPy array?,4,4,0.304,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.301,low
+q4,What does the ravel() function do to an array?,1,4,q1,What does the shape attribute of a NumPy array represent?,2,1,0.3,low
+q1,What does the shape attribute of a NumPy array represent?,2,1,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.299,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q5,Which operator applies element-wise to two NumPy arrays?,4,5,0.294,low
+q1,What does the shape attribute of a NumPy array represent?,1,1,q4,What does the ravel() function do to an array?,1,4,0.29,low
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,2,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.29,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,5,0.289,low
+q2,Which function inserts values into a NumPy array at a specified axis?,1,2,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.288,low
+q4,How does the axis parameter affect the sort() function in NumPy?,2,4,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.277,low
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,0.273,low
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,3,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.27,low
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,1,q2,Which NumPy function inserts elements into an array before a specified index?,3,2,0.245,low
+q4,What does the ravel() function do to an array?,1,4,q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,5,0.226,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define NumPy arrays and understand their dimensionality and structure.  
+Use NumPy functions to create, modify, and access arrays, including understanding array shape and indexing.  
+Apply array manipulation functions such as insert, delete, reshape, resize, ravel, and transpose.  
+Utilize NumPy mathematical operators and functions, including arithmetic, simple, aggregate, and matrix functions on arrays.  
+Understand the concepts of array flattening, reshaping, and ordering (row-major vs. column-major)."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the shape attribute of a NumPy array represent?,1,yes,"This question assesses understanding of the shape attribute, directly related to array dimensionality and structure in learning objective 1 and 2."
+q2,Which function inserts values into a NumPy array at a specified axis?,1,yes,"This question evaluates knowledge of the insert() function for modifying arrays, aligned with learning objective 3."
+q3,How does the reshape() function affect a NumPy array?,1,yes,"This question tests understanding of reshape() and its effect on array dimensions, matching learning objective 3 and 5."
+q4,What does the ravel() function do to an array?,1,yes,"This question assesses the ravel() function and array flattening, directly related to learning objective 3 and 5."
+q5,Which NumPy function returns the dot product of two arrays interpreted as matrices?,1,yes,"This question evaluates use of the dot() function for matrix operations, aligned with learning objective 4."
+q1,What does the shape attribute of a NumPy array represent?,2,yes,"This question again tests knowledge of the shape attribute and array dimensionality, related to learning objectives 1 and 2."
+q2,Which NumPy function inserts values into an existing array along a specified axis?,2,yes,"This question assesses the insert() function for modifying arrays along an axis, matching learning objective 3."
+q3,What is the result of calling ravel() on a two-dimensional NumPy array?,2,yes,"This question evaluates the effect of ravel() on a 2D array, related to array flattening in learning objectives 3 and 5."
+q4,How does the axis parameter affect the sort() function in NumPy?,2,no,"This question focuses on the axis parameter in sort(), which is not explicitly covered in the learning objectives."
+q5,Which statement correctly describes an aggregate function like var() in NumPy?,2,yes,"This question tests understanding of aggregate functions like var(), aligned with learning objective 4."
+q1,What is the shape of a two-dimensional array with 3 rows and 5 columns?,3,yes,"This question assesses knowledge of array shape for a 2D array, directly related to learning objectives 1 and 2."
+q2,Which NumPy function inserts elements into an array before a specified index?,3,yes,"This question evaluates the insert() function for adding elements before an index, matching learning objective 3."
+q3,What does the NumPy function reshape() do to an array?,3,yes,"This question tests understanding of reshape() function effects, aligned with learning objectives 3 and 5."
+q4,Flattening a NumPy array changes it to a _____ array.,3,yes,"This question assesses understanding of array flattening, related to learning objectives 3 and 5."
+q5,Which type of NumPy function returns a single value summarizing the entire array or slice?,3,yes,"This question evaluates knowledge of aggregate functions returning single summary values, aligned with learning objective 4."
+q1,What does the shape attribute of a NumPy array represent?,4,yes,"This question tests understanding of the shape attribute and array dimensionality, related to learning objectives 1 and 2."
+q2,Which function creates a NumPy array filled with a specified value and shape?,4,yes,"This question assesses knowledge of the full() function for creating arrays with specified values and shapes, matching learning objective 2."
+q3,What does the axis parameter specify in NumPy functions?,4,yes,"This question evaluates understanding of the axis parameter specifying dimension for operations, related to learning objectives 2 and 3."
+q4,How does the reshape() function affect a NumPy array?,4,yes,"This question tests the effect of reshape() on array shape and data, aligned with learning objectives 3 and 5."
+q5,Which operator applies element-wise to two NumPy arrays?,4,yes,"This question assesses knowledge of element-wise arithmetic operators on arrays, matching learning objective 4."

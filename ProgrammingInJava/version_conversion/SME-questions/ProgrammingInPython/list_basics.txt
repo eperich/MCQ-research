@@ -1,0 +1,97 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='0947e4d7-0134-22aa-8dfb-212118e111e0'>
+<instructions>
+<line>Which of the following statements about my_list is false?</line>
+<codeBlock language='python'>
+my_list = ["JFK", "LAX", "MIA"]
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>The element at index 1 is "JFK"</choice>
+<choice>The list has a length of 3</choice>
+<choice>The list elements are all strings</choice>
+<choice>The index of the last item in the list is 2</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='45db7a2c-698f-6caa-1aab-6f2bef967e50'>
+<instructions>
+Which of the following assignment statements creates a list with 4 integer elements?
+</instructions>
+
+<choices>
+<choice correct='true'><codeBlock language='python'>my_list = [7, 2, -8, 16]</codeBlock></choice>
+<choice><codeBlock language='python'>my_list = [4]</codeBlock></choice>
+<choice><codeBlock language='python'>my_list = ["1", "2", "3", "4"]</codeBlock></choice>
+<choice><codeBlock language='python'>my_list = integer(4)</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='452769c0-94aa-b1cf-be8c-5c3439c4221a'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+my_list = [2, 8, 3, 1, 18, 5]
+print(my_list[3] + my_list[1] * 2)
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>7</choice>
+<choice>10</choice>
+<choice correct='true'>17</choice>
+<choice>18</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='165bf73c-9122-64f9-8443-e14852aadbb8'>
+<instructions>
+Which statement removes the last element of my_list?
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>my_list.pop(len(my_list)</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>my_list.pop(len(my_list)-1)</codeBlock></choice>
+<choice><codeBlock language='python'>my_list.remove(len(my_list))</codeBlock></choice>
+<choice><codeBlock language='python'>my_list.remove(len(my_list)-1)</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='642c0bbf-ea2b-2784-a0e4-9bba45a3b85d'>
+<instructions>
+Which method call returns the number of elements in my_list?
+</instructions>
+
+<choices>
+<choice correct='true'>len(my_list)</choice>
+<choice>size(my_list)</choice>
+<choice>my_list.count()</choice>
+<choice>my_list.size()</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='b43c2d98-2111-1c60-7c07-9136a5ec508e'>
+<instructions>
+<line>What are the contents of names_list after the following code is executed?</line>
+
+
+
+<codeBlock language='python'>
+names_list = ["one", "two", "three"]
+digits_list = ["1", "2", "3"]
+names_list = names_list + digits_list
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>["1one", "2two", "3three"]</choice>
+<choice>["two", "four", "six"]</choice>
+<choice correct='true'>["one", "two", "three", "1", "2", "3"]</choice>
+<choice> ["1", "2", "3", "one", "two", "three"]</choice>
+</choices>
+</question>

@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"Which statement has a syntax error? Assume variables x, y, z, and age have already been defined.",```python\nx + y = z\n```,```python\ny = y\n```,```python\nx + y = z\n```,"```python\nage = ""32""\n```","```python\nprint(""Name, age"")\n```",,,,,,
+Dividing by zero is an example of which type of error?,runtime,runtime,syntax,logic,infinity,,,,,,
+"Which runtime error type occurs when trying to convert ""abc"" to an integer?",ValueError,TypeError,LogicError,NameError,ValueError,,,,,,
+Which type of error does not cause the program to crash?,logic error,logic error,value error,indentation error,assignment error,,,,,,

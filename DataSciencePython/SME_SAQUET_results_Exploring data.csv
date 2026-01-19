@@ -1,0 +1,36 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+"A voluntary survey on politics asked voters to identify as Democrats, Independents, or Republicans. How many survey takers identified as Independent?\nParty\nNumber of respondents
+
+Democrat\n2
+
+Independent\n4
+
+Republican\n3
+
+Did not respond\n1",4,1,2,3,4,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"A voluntary survey on politics asked voters to identify as Democrats, Independents, or Republicans. What type of table is shown below?\nParty\nNumber of respondents
+
+Democrat\n2
+
+Independent\n4
+
+Republican\n3
+
+Did not respond\n1",frequency table,contingency table,count table,frequency table,pivot table,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"A European bank wanted to understand customer banking habits. The table contains the mean number of years a customer has had an account at the bank, by country and gender.
+What is the mean number of years an account has been active for women in Spain?\nMean account years\nFrance\nGermany\nSpain
+
+Female\n4.95\n4.97\n5.03
+
+Male\n5.12\n4.83\n5.06",5.03,4.83,4.97,5.03,5.06,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"A European bank wanted to understand customer banking habits. The table contains the mean number of years a customer has had an account at the bank, by country and gender. What type of table is shown below?\nMean account years\nFrance\nGermany\nSpain
+
+Female\n4.95\n4.97\n5.03
+
+Male\n5.12\n4.83\n5.06",pivot table,contingency table,count table,frequency table,pivot table,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"A European bank wanted to understand customer banking habits. The table contains the mean number of customers at each bank's branch, by country and gender. What type of table is shown below?\nNumber of customers\nFrance\nGermany\nSpain
+
+Female\n2261\n1193\n1089
+
+Male\n2753\n1316\n1388",contingency table,contingency table,count table,frequency table,pivot table,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+What Python function could be used to create a contingency table?,\n`pivot_table`,\n`contingency_table`,\n`count_table`,\n`table`,\n`pivot_table`,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass

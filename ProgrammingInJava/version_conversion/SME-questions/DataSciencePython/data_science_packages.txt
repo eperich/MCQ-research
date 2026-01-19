@@ -1,0 +1,66 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='27dc7471-9b61-4f2d-b8c8-fcdf368aa8c9'>
+<instructions>
+Which code loads the package <code>seaborn</code> with the alias <code>sns</code>?
+</instructions>
+
+<choices>
+<choice>from seaborn import scatterplot</choice>
+<choice correct='true'>import seaborn as sns</choice>
+<choice>import sns as seaborn</choice>
+<choice>library(seaborn)</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='27a44f3d-aee8-48cc-a4d4-773bee989037'>
+<instructions>
+Which code loads the function <code>read_csv</code> from the package <code>pandas</code>?
+</instructions>
+
+<choices>
+<choice correct='true'><code>from pandas import read_csv</code></choice>
+<choice><code>from read_csv import pandas</code></choice>
+<choice><code>import pandas as read_csv</code></choice>
+<choice><code>import pandas.read_csv</code></choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='2664d1d8-d449-43c8-9d74-2e1d71f93cfa'>
+<instructions>
+Which best describes the package <code>pandas</code>?
+</instructions>
+
+<choices>
+<choice>Allows the creation of data visualizations</choice>
+<choice>Includes functions and classes that aid in numerical computation</choice>
+<choice>Provides algorithms and functions for computing problems that arise in science, engineering and statistics</choice>
+<choice correct='true'>Provides methods and classes for tabular and time-series data</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='22c4e62b-3845-4b8b-9efe-960d1f91bb25'>
+<instructions>
+Which package allows the creation of data visualizations and works well with <code>pandas</code>?
+</instructions>
+
+<choices>
+<choice><code>numpy</code></choice>
+<choice correct='true'><code>seaborn</code></choice>
+<choice><code>scipy</code></choice>
+<choice><code>sklearn</code></choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='23f8f737-a352-4e54-a5ee-381b72bdf49b'>
+<instructions>
+A/An _____ installs, updates, and removes packages.
+</instructions>
+
+<choices>
+<choice>dependency</choice>
+<choice>installer</choice>
+<choice correct='true'>package manager</choice>
+<choice>terminal</choice>
+</choices>
+</question>

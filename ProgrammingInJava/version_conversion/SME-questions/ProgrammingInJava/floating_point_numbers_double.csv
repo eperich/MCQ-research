@@ -1,0 +1,15 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nWhich assignments would yield a non-floating-point number for y?\ny = 32.0 + (x / (z + 1.0));,x = 1.0; z = -1.0;,x = 0.0; z = 1.0;,x = -32.0; z = 1.0;,x = 0.0; z = 0.0;,x = 1.0; z = -1.0;,,,,,,
+\nFor which quantity is a double the best type?,Height of a building,People in a household,Boxes on a conveyor belt,Planes above a city,Height of a building,,,,,,
+\nWhich expression fails to compute the area of a triangle having base b and height h (area is one-half base time height)?,(1 / 2) * b * h,(1.0 / 2.0 ) * b * h,(1 / 2) * b * h,(b * h) / 2.0,0.5 * b * h,,,,,,
+"\nWhat is the output?\n```c\n#include <stdio.h>
+
+int main(void) {
+   double dividend = 0.0;
+   double divisor = 0.0;
+   printf(""%lf\n"", dividend / divisor);
+
+   dividend = 3.0;
+   printf(""%lf\n"", dividend / divisor);
+   return 0;
+}\n```",\nnan\ninf,\ninf\nnan,\nnan\ninf,\ninf\n0.0,\nnan\n0.0,,,,,,

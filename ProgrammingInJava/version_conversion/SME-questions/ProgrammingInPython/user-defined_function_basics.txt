@@ -1,0 +1,142 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='4482660e-72cf-4481-b5ba-f91d4aed0c0a'>
+<instructions>
+<line>The code that includes the keyword "def" is called a _____.</line>
+</instructions>
+
+<choices>
+<choice>function call</choice>
+<choice correct='true'>function definition</choice>
+<choice>function reference</choice>
+<choice>function constructor</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='3a7aeaff-5382-437d-ad40-3755af20c0e3'>
+<instructions>
+<line>After a function's last statement is executed, the program returns to the next line after the _____.</line>
+</instructions>
+
+<choices>
+<choice>import statement</choice>
+<choice>function definition</choice>
+<choice correct='true'>function call</choice>
+<choice>start of the program</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='6872c3fb-3612-d4d3-95aa-14a982e2374b'>
+<instructions>
+<line>In the following code, the variable size is the function's _____.</line>
+<codeBlock language='python'>
+def calc_square_area(size):
+    area = size * size
+    return area
+
+val = float(input("Enter size of square: "))
+square_area = calc_square_area(val)
+print(f"A square of size {val} has area {square_area}")
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>parameter</choice>
+<choice>argument</choice>
+<choice>property</choice>
+<choice>value</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='e7a490ff-9d64-443f-adbc-33b62a3cccfa'>
+<instructions>
+<line>In the following code, the variable val is the function call's _____.</line>
+<codeBlock language='python'>
+def calc_square_area(size):
+    area = size * size
+    return area
+
+val = float(input("Enter size of square: "))
+square_area = calc_square_area(val)
+print(f"A square of size {val} has area {square_area}")
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>parameter</choice>
+<choice correct='true'>argument</choice>
+<choice>property</choice>
+<choice>value</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='7bdc3e48-eb2d-4bbe-87e9-fde3d0762efd'>
+<instructions>
+<line>What is output?</line>
+<codeBlock language='python'>
+def calc(num1, num2):
+    return 1 + num1 + num2
+
+print(calc(4, 5), calc(1, 2))
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>9 3 </choice>
+<choice correct='true'>10 4 </choice>
+<choice>145 112</choice>
+<choice>4, 5, 1, 2</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='de082f0b-7193-4f8e-80c1-3e806c00ad10'>
+<instructions>
+<line>Which correctly calls the add() function?</line>
+<codeBlock language='python'>
+def add(a, b, c):
+    return a + b + c
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>add(2 4 6)</choice>
+<choice>add(2 + 4 + 6)</choice>
+<choice>add(2; 4; 6)</choice>
+<choice correct='true'>add(2, 4, 6)</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='73d8c803-1d98-4e46-b45d-30dce951ecfe'>
+<instructions>
+<line>Which of the following is true?</line>
+</instructions>
+
+<choices>
+<choice>A function must have exactly one return statement, or no return statement at all.</choice>
+<choice>A function must always have at least one return statement.</choice>
+<choice>A function can only return strings and numbers, not lists or dictionaries.</choice>
+<choice correct='true'>A function can have any number of return statements, or no return statement at all.</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='2c156f04-05fe-4295-84a7-e8da9d9d0188'>
+<instructions>
+<line>Which XXX is valid for the following code? </line>
+<codeBlock language='python'>
+def calc_sum(a, b):
+    return a + b
+
+XXX
+print(y)
+</codeBlock>
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>y = calc_sum()</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>y = calc_sum(4, 5)</codeBlock></choice>
+<choice><codeBlock language='python'>y = calc_sum(4 + 5)</codeBlock></choice>
+<choice><codeBlock language='python'>calc_sum(y, 4, 5)</codeBlock></choice>
+</choices>
+
+
+</question>

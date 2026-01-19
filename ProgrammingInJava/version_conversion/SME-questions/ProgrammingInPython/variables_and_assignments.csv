@@ -1,0 +1,10 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+A _____ is a named item used to hold a value.,variable,constant,number,statement,variable,,,,,,
+"\nWhat is the value of y after the following code is executed? Note that the question asks for y, not x.\n```python\nx = 10
+y = x + 2
+x = 12\n```",12,8,10,12,14,,,,,,
+Which of the following statements has a syntax error? Assume age and years are variables that have already been defined.,```python\nage + 2 = years\n```,```python\nage = years - 2\n```,```python\nage + 2 = years\n```,```python\nage = 17 - 2\n```,```python\nage = -15\n```,,,,,,
+"\nWhat is the value of x after the following code is executed?\n```python\nx = 15
+x = x + 1
+x = x * 2
+x = 30 - x\n```",-2,-2,2,15,32,,,,,,

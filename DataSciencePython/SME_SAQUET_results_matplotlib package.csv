@@ -1,0 +1,36 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+XXX
+plt.scatter(x = xx, y = yy)\n```\n[Image: A scatter plot of 4 points that is twice as tall as wide.]","plt.figure(figsize=[2,4])","plt.figure(figsize=[2,4])","plt.figure(figsize=[4,2])","plt.figure(figsize=[4,4])",plt.figure(figsize=2),,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+plt.scatter(x = xx, y = yy)
+XXX\n```\n[Image: A scatter plot of 4 points with the title Title, and axes Horizontal feature and Vertical Feature.]","```python\nplt.xlabel(""Horizontal feature"")
+plt.ylabel(""Vertical feature"")
+plt.title(""Title"")\n```","```python\nplt.xlabel(""Horizontal feature"")
+plt.ylabel(""Vertical feature"")
+plt.title(""Title"")\n```","```python\nplt.xlabel(Horizontal feature)
+plt.ylabel(Vertical feature)
+plt.title(Title)\n```","```python\nplt.xlabel(""Horizontal feature"")
+plt.ylabel(""Vertical feature"")\n```","```python\nplt.ylabel(""Horizontal feature"")
+plt.xlabel(""Vertical feature"")
+plt.title(""Title"")\n```",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Fail,Pass,Pass
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+XXX\n```\n[Image: A line plot of four points that is a red solid line.]","`plt.plot(xx, yy, ""r-"")`","`plt.plot(xx, yy, ""r-"")`","`plt.plot(xx, yy, ""r."")`","`plt.plot(xx, yy, ""r--"")`","`plt.plot(xx, yy, ""d"")`",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = np.linspace(-5, 5, num=100)
+
+XXX 1)
+plt.plot(xx, 4*xx-3)
+plt.title(""Linear"")
+
+XXX 2)
+plt.plot(xx, xx*xx-16, 'g')
+plt.title(""Quadratic"")\n```\n[Image: A line plot of four points that is a red solid line.]","plt.subplot(1,2,","plt.subplot(1,2,",subplot(,"plt.subplot(2,1,","plt.subplot(2,",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Fail,Pass,Pass,Fail,Pass,Pass
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+XXX\n```\n[Image: A line plot of four points that is a red solid line.]","plt.grid(color=""b"", linestyle=""--"")","plt.grid(color=""b"", linestyle=""--"")","grid(color=""b"", linestyle=""--"")","plt.grid( linestyle=""--"")","plt.grid(color=""b"")",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass

@@ -1,0 +1,4 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nGiven a list of syntax errors from a compiler, a programmer should focus attention on which error(s), before recompiling?",The first error only,All the errors,The first error only,The middle error only,The last error only,,,,,,
+"\nIf a program compiles without errors, the program is free from _____.",syntax errors,syntax errors,logic errors,runtime errors,semantic errors,,,,,,
+\nA program should compute two times x. Which statement has a logic error?,y = x * x;,y = x + x;,y = 2 * x;,y = x * x;,y = x * 2;,,,,,,

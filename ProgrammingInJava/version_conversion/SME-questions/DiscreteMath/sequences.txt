@@ -1,0 +1,111 @@
+<question xsi:type='MultipleChoiceQuestion' guid='3856979d-09bb-4c22-6e98-84dda41e81eb'>
+<instructions>
+<p>Select the description that fits the sequence below: </p>
+<line><ilatex>8, 5, 2, 2, 1, -1</ilatex> </line> 
+</instructions>
+
+<choices>
+<choice>Non-decreasing but not increasing</choice>
+<choice>Nonincreasing and decreasing</choice>
+<choice correct='true'>Nonincreasing but not decreasing </choice>
+<choice>Non-decreasing and increasing</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='82566ed8-1996-d92f-328c-f8e5ed4eac7b'>
+<instructions>
+<p>What is the common ratio of the following geometric sequence? </p>
+<line><ilatex>27, 9, 3, 1, ...  </ilatex></line> 
+</instructions>
+
+<choices>
+<choice><ilatex>27</ilatex></choice>
+<choice><ilatex>9</ilatex></choice>
+<choice><ilatex>3</ilatex></choice>
+<choice correct='true'><ilatex>\frac{1}{3}</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='db7d7321-7985-ad67-f497-a1349843fada'>
+<instructions>
+<p>The sequence <ilatex>\{ f_n\}</ilatex> starts with an index of <ilatex>1</ilatex> and is defined so that <ilatex>f_n</ilatex> is the largest integer <ilatex>k</ilatex> such that <ilatex>k^2 \le n</ilatex>. Which sequence fits the definition of <ilatex>\{ f_n\}</ilatex>? </p>
+<line> </line> 
+</instructions>
+
+<choices>
+<choice><ilatex>1, 4, 9, 16, 25, ...</ilatex></choice>
+<choice correct='true'><ilatex>1, 1, 1, 2, 2, ...</ilatex></choice>
+<choice><ilatex>2, 4, 8, 16, 32, ... </ilatex></choice>
+<choice><ilatex>1, 2, 3, 4, 5, ... </ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='2375a83d-f835-498d-95e4-279ca6ad15fd'>
+<instructions>
+<p>A geometric sequences starts with <ilatex>a_0 = \frac{1}{4}</ilatex>.  The common ratio is
+<ilatex>r = 2</ilatex>. What is <ilatex>a_3</ilatex>?</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\frac{1}{32}</ilatex></choice>
+<choice><ilatex>\frac{1}{16}</ilatex></choice>
+<choice><ilatex>1</ilatex></choice>
+<choice correct='true'><ilatex>2</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='5b1c52f0-e217-4de3-9473-b967e966ae32'>
+<instructions>
+<p>An arithmetic sequences starts with <ilatex>a_1 = 4</ilatex>.  The common difference is
+<ilatex>d = -3</ilatex>. What is <ilatex>a_3</ilatex>?</p>
+</instructions>
+
+<choices>
+<choice><ilatex>-5</ilatex></choice>
+<choice correct='true'><ilatex>-2</ilatex></choice>
+<choice><ilatex>10</ilatex></choice>
+<choice><ilatex>13</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='89fe7a00-6c0c-4a06-bef1-e86976d4f985'>
+<instructions>
+<p>A geometric sequence is neither nonincreasing nor nondecreasing. Which is the possible value for the common ratio r?</p>
+</instructions>
+
+<choices>
+<choice><ilatex>r = \frac{1}{2}</ilatex></choice>
+<choice><ilatex>r = 1</ilatex></choice>
+<choice correct='true'><ilatex>r = -2</ilatex></choice>
+<choice>A geometric sequence must be either nonincreasing or nondecreasing.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='ecc7f6eb-ad4f-4a7a-9308-a7853391eb84'>
+<instructions>
+<p>An arithmetic sequence is neither nonincreasing nor nondecreasing. Which is the possible value for the common difference d?</p>
+</instructions>
+
+<choices>
+<choice><ilatex>d = -2</ilatex></choice>
+<choice><ilatex>d = 0</ilatex></choice>
+<choice><ilatex>d = \frac{1}{2}</ilatex></choice>
+<choice correct='true'>An arithmetic sequence must be nonincreasing or nondecreasing.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='b35f651c-4243-4fe0-8237-cb23deec8c5f'>
+<instructions>
+<p>Let <ilatex>\{a_n\}</ilatex> be a sequence that starts with an index of <ilatex>0</ilatex>. The sequence begins with:</p>
+<p><ilatex>-3, -2, -2, -1, -1, \ldots</ilatex>.</p>
+<p>Select the explicit formula for the sequence.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>a_n = \lceil \frac{n}{2}\rceil  - 2</ilatex> for <ilatex>n \ge 0</ilatex></choice>
+<choice><ilatex>a_n = \lfloor \frac{n}{2}\rfloor  - 3</ilatex> for <ilatex>n \ge 0</ilatex></choice>
+<choice correct='true'><ilatex>a_n = \lfloor \frac{n - 5}{2} \rfloor</ilatex> for <ilatex>n \ge 0</ilatex></choice>
+<choice><ilatex>a_n = \lfloor \frac{n - 6}{2} \rfloor</ilatex> for <ilatex>n \ge 0</ilatex></choice></choices>
+</question>

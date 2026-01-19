@@ -1,0 +1,1436 @@
+<zySection title="Characters" shorttitle="Characters" id="74adc1b5-fe5a-3733-6f98-03503d07457e" depend="12d3b1b9-7781-c15f-57ee-9b9cb3d18ade" weakdepend="e9da0eb4-ba87-2e17-18ca-0dd59f7408e5">
+<zypInfo person="Alex" date="03/20/14" hwStatus="1" Status="2"> Need HW problems converted to Java, otherwise ready for second review </zypInfo>
+<zypInfo person="Susan" date="4/12/14" Status="3">Second review done. (There is a note about a hardcoded id)</zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="Draft1Doing"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/11/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/11/14" minutes="" hwStatusCpp ="Rev1Done"></zypInfo> 
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Roman" date="07/16/14" minutes="20" status ="Rev2Done">Modified the Java example to show printing a single character variable and multiple. Not sure what the status should be here.</zypInfo> 
+<zypInfo person="Roman" date="08/19/14" minutes="15" status ="Rev2Done">Added discussion of escape sequences.</zypInfo> 
+<zypInfo person="Roman" date="02/27/16" minutes="30" status ="Draft2Done">Added reading character example for C .</zypInfo> 
+<zypInfo person="Susan" date="02/27/16" minutes="5" status ="Rev2Done">Reviewed new reading char example</zypInfo> 
+<zypInfo person="Nicole" date="03/20/17" minutes="10"> Cleaned up gdocs in preparation for a new release.  </zypInfo>
+<zypInfo person="Susan" date="6/14/17" minutes="25" status="Rev1Done">Checked style. </zypInfo>
+<zypInfo person="Roman" date="6/15/17" minutes="15" status="Rev1Done"></zypInfo>
+<zypInfo person="Frank" date="6/30/17" minutes="250" status="Draft1Done">Major rewrite</zypInfo>
+<zypInfo person="Susan" date="7/24/17" minutes="90" status="Rev1Done">Reviewed updated section. Converted to C and Java as needed. </zypInfo>
+<zypInfo person="Amanda" date="7/31/17" minutes="120" status="Rev2Doing">Suggested typos. </zypInfo>
+<zypInfo person="Susan" date="08/01/17" minutes="5" status="Rev2Done">Addressing comments </zypInfo>
+<zypInfo person="Joshua" date="11/02/22" minutes="30" status="Rev2Done">Added alt text </zypInfo>
+<zypInfo person="Aubrey" date="01/26/23" minutes="25" status="BugFix">adding back notes to codewriting CAs</zypInfo>
+<zypInfo person="LukeM" date="10/6/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<zyAside type="bordered" name="" id="75ffbfa8-212b-4dea-8390-027ebc806811">
+Learn to:
+<ul>
+<li>Declare and initialize character variables.</li> <!-- C: SS1, SS3, SS5, CA1, CA2, CA3, TB1, TB3, TB4 --> <!-- Cpp: SS1, SS3, SS5, CA1, CA2, TB1, TB3, TB4 --> <!-- Java: SS1, SS3, SS6, CA1, CA2, TB1, TB3, TB4 -->
+<li>Output multiple character variables in a single statement.</li> <!-- CCpp: SS1, SS2, SS5, CA1, CA2 --> <!-- Java: SS1, SS2, SS5, SS6, CA1, CA2 -->
+<li>Understand and utilize ASCII values for character manipulation.</li> <!-- SS3 -->
+<li>Implement escape sequences to handle special characters in output statements.</li> <!-- C: SS4, CA1, CA2, CA3, TB3 --> <!-- CppJava: SS4, TB3 -->
+</ul>
+</zyAside>
+
+
+
+<zyHTML id="266b389c-4250-3af2-167f-843d06e39937" subsection="true" caption="Basics">
+<h3>Basics</h3>
+</zyHTML>
+
+
+<zyHTML id="8d93cda6-4670-409b-a169-a3bb04f16fe0">
+<p><zyDefn>A variable of _char_ type, as in <zyICode>char myChar;</zyICode>, can store a single character like the letter m.</zyDefn> <zyDefn>A _character literal_ is surrounded with single quotes, as in <zyICode>myChar = 'm';</zyICode>.</zyDefn></p>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Simple char example: Arrow." id="d1681108-ca15-4d52-3653-c38a3a40495a" type="CodeConsole">
+<zyCode language="java"> 
+public class CharArrow {
+   public static void main(String[] args) {
+      char arrowBody;
+      char arrowHead;
+
+      arrowBody = '-';
+      arrowHead = '>';
+
+      System.out.println(arrowHead);
+      System.out.println("" + arrowBody + arrowBody + arrowBody + arrowHead);
+
+      arrowBody = 'o';
+
+      System.out.println("" + arrowBody + arrowBody + arrowBody + arrowHead);
+   }
+}
+</zyCode>
+<zyConsole>
+>
+--->
+ooo>
+</zyConsole>
+</zyFigure>
+</zyVersion>
+ 
+
+
+<zyQSetShortAnswer caption="char data type." id="3420ee75-7e51-76c8-6aa6-118bb876ac28">
+<zyQ>
+<zyQText>Declare a character variable middleInitial. </zyQText>
+<zyQHint>char middle???????;</zyQHint>
+<zyQAns>char middleInitial; </zyQAns>
+<zyQExpl>char is a built-in type like int.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText>Assume char variable userKey is already declared. Write a statement that assigns userKey with the letter a. </zyQText>
+<zyQHint>userKey = '?'; </zyQHint>
+<zyQAns>userKey = 'a';</zyQAns>
+<zyQExpl> A character literal is written surrounded by single quotes as in 'a'.    </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer> 
+
+
+
+<zyHTML id="583a2515-143b-8754-4b67-449323616c33" subsection="true" caption="Getting a character from input">
+<h3>Getting a character from input</h3>
+</zyHTML>
+
+
+<zyHTML id="423d9781-c465-0987-8651-d9bd8dac2ed1" caption="Getting char from input">
+<zyVersion version="java">
+<p> Java does not have a method for getting one character from input. Instead, the following sequence can be used: <zyICode>myChar = scnr.next().charAt(0);</zyICode> The charAt(0) is explained in another section. Briefly, next() gets the next sequence of non-whitespace characters (as a <i>string</i>), and charAt(0) gets the first character in that string.  </p> 
+</zyVersion>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Getting a character from input" id="e93e13e3-c7b3-8e03-4ab3-a998b8ac5ad5">
+<zyCode language="java">import java.util.Scanner;
+
+public class ArrowChars {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      char bodyChar;
+      char headChar;
+
+      System.out.print("Enter two characters: ");
+      bodyChar = scnr.next().charAt(0);
+      headChar = scnr.next().charAt(0);
+
+      // Output arrow body then head
+      System.out.print(bodyChar);
+      System.out.print(bodyChar);
+      System.out.print(bodyChar);
+      System.out.println(headChar);
+   }
+}
+</zyCode> 
+<zyConsole>
+Enter two characters: - >
+--->
+...
+Enter two characters:      *     /
+***/
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyTry caption="char variables." id="b8137e7d-b108-daf7-1bba-9dfade60b74b"> 
+<p>This program gets a character from input. Press Run to see how that character is used. Try changing the input character and pressing Run again.   </p> 
+
+<zyVersion version="java">
+<zyDE id="8477b789-ee8f-a32b-a6a4-2e4c2c3ca077" language="java" input="true" reset="true" stacked="false" activity_type="tinker">
+<zyInput>* </zyInput>
+<zyProgram>import java.util.Scanner;
+
+public class GettingInputChar{
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      char userChar;
+
+      userChar = scnr.next().charAt(0);
+
+      System.out.println(userChar + " " + userChar);
+      System.out.println(" " + userChar);
+      System.out.println("" + userChar + userChar + userChar);
+   }
+}
+</zyProgram>
+</zyDE>
+</zyVersion>
+</zyTry>
+
+
+
+<zyHTML id="cdfe21cb-11b9-eb6b-d489-c8bb2b8cf3cf" subsection="true" caption="A character is internally stored as a number">
+<h3>A character is internally stored as a number</h3>
+</zyHTML>
+
+
+<zyHTML id="84367031-9187-4e1f-870d-23f83f6465c1">
+<p> Under the hood, a char variable stores a number. Ex:  'a' is stored as 97.  In an output statement, the  compiler outputs the number's corresponding character. </p> 
+</zyHTML>
+
+
+
+<zyAnimator id="09a57d78-80d5-4858-9d64-76e798e85586" caption="A char variable stores a number." height="254px" width="600px" selectedInstr="10" selectedObj="none" numObjsEverCreated="27" loadOnDemand="false">
+<!-- Last modified Mon Jul 24 2017 12:44:59 GMT-0700 (MST) with version 2.17.2.06 --><zyObjects><zyObject objNum="27" objType="box" objName="Object 27: Box" top="9px" left="521px" useConstrainedProportions="false" height="93px" width="64px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="6" objType="box" objName="Object 4: Box" top="55px" left="299px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" width="60px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="7" objType="box" objName="Object 5: Box" top="77px" left="299px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" width="60px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="8" objType="text" objName="userLet" top="50px" left="147px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>userLet</text></zyObject><zyObject objNum="9" objType="text" objName="75" top="62px" left="281px" font-size='8px' font-family='arial, sans-serif'><text>75</text></zyObject><zyObject objNum="10" objType="text" objName="Object 8: Text" top="82px" left="281px" font-size='8px' font-family='arial, sans-serif'><text>76</text></zyObject><zyObject objNum="11" objType="text" objName="97" top="72px" left="189px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>97</text></zyObject><zyObject objNum="12" objType="text" objName="(output userLet)" top="98px" left="111px"><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">(output userLet)</zyCode></zyObject><zyObject objNum="13" objType="text" objName="userLet = &apos;a&apos;;" top="74px" left="111px"><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">userLet = 'a';</zyCode></zyObject><zyObject objNum="14" objType="text" objName="char userLet;" top="50px" left="111px"><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">char userLet;</zyCode></zyObject><zyObject objNum="15" objType="text" objName="Encodings" top="12px" left="526px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>Encodings</text></zyObject><zyObject objNum="16" objType="text" objName="&apos;a&apos;" top="32px" left="535px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>'a'</text></zyObject><zyObject objNum="17" objType="text" objName="97" top="32px" left="559px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>97</text></zyObject><zyObject objNum="18" objType="text" objName="&apos;b&apos;" top="48px" left="535px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>'b'</text></zyObject><zyObject objNum="19" objType="text" objName="98" top="48px" left="559px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>98</text></zyObject><zyObject objNum="20" objType="text" objName="&apos;c&apos;" top="64px" left="535px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>'c'</text></zyObject><zyObject objNum="21" objType="text" objName="99" top="64px" left="559px" color='zyAnimator-gray' font-size='11px' font-family='arial, sans-serif'><text>99</text></zyObject><zyObject objNum="23" objType="text" objName="..." top="82px" left="551px" color='zyAnimator-gray' font-size='15px' font-family='arial, sans-serif' transformDeg="90"><text>...</text></zyObject><zyObject objNum="24" objType="box" objName="Object 24: Box" top="130px" left="283px" opacity="0" border-radius="10px" background-color="zyAnimator-white" useConstrainedProportions="false" height="50px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="25" objType="text" objName="a" top="110px" left="194px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>a</text></zyObject><zyObject objNum="26" objType="text" objName="97" top="58px" left="321px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>97</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A char is encoded and stored as a number.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="8" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="8" timeLabel="0" top="57" left="368"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="-" top="58" left="321"></zyInstruction>
+<zyInstruction instrType="step"><text>When outputting a char variable, the compiler converts the number to the appropriate letter. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="24" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="26" timeLabel="0" top="113" left="191"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="25" timeLabel="0" top="134" left="295"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Static figure:
+Pictured are some pseudo code, system memory, an output, and a table of encodings from character values to integer values.
+Begin Pseudo code:
+char userLet;
+userLet =  'a';
+(output userLet)
+End Pseudo code.
+
+In the memory, at address 75 is stored the value 97, which is labeled "userLet". The encoding table has three rows, each of which is an encoding, which are from top to bottom thus: 'a' is 97; 'b' is 98; 'c' is 99. The table then has an ellipsis, signifying that more characters are included in the table but not shown. There is an output display which has the letter "a" displayed.
+
+Step 1: A char is encoded and stored as a number. Visible are the code, addresses 75 and 76 in memory (which are empty), and the encoding table. Over the code "char userLet;", the text "userLet" replicates and the replica moves to the right of memory address 75. The number "97" then appears over the code "userLet = 'a';" and moves to address 75. 
+
+Step 2: When outputting a char variable, the compiler converts the number to the appropriate letter. An empty output display appears. The number "97", which is in memory, replicates and the replica moves directly under the  line of code "(output userLet)". The number "97" then turns into the letter "a". This letter "a" then moves into the output display. Here, to display the character saved as userLet, the number representation of the character was converted from a number back to a character. 
+</zyAltDescription>
+
+
+</zyAnimator>
+
+
+<zyHTML id="c6af2add-0259-484b-bdc9-8930692cbf64">
+<p><zyDefn>_ASCII_ is an early standard for encoding characters as numbers</zyDefn>. The following table shows the ASCII encoding as a decimal number (Dec) for common printable characters (for readers who have studied binary numbers, the table shows the binary encoding also).  Other characters such as control characters (e.g., a "line feed" character) or extended characters (e.g., the letter "n" with a tilde above it as used in Spanish) are not shown. Source: <zyLink link="http://www.asciitable.com/">http://www.asciitable.com/</zyLink>.</p>
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyHTML id="43837936-1277-4bc4-bc52-19709fa3cdad">
+<p> Many earlier programming languages like C or C++ use ASCII. Java uses a more recent standard called Unicode. ASCII can represent 255 items, whereas Unicode can represent over 64,000 items; Unicode can represent characters from many different human languages, many symbols, and more. (For those who have studied binary: ASCII uses 8 bits, while Unicode uses 16, hence the 255 versus 64,000). Unicode's first several hundred items are the same as ASCII. The Unicode encoding for these characters has 0's on the left to yield 16 bits.  </p> 
+</zyHTML>
+</zyVersion>
+
+
+<zyTable caption="Character encodings as numbers in the ASCII standard." id="b7fa53e4-7712-7d24-9468-2b59944782bb">
+<table style="background: none; text-align: center;">
+<tr style="vertical-align: top;">
+<td>
+<table style="text-align: center;">
+<tr>
+<th>Binary</th>
+<th>Dec</th>
+<th>Char</th>
+</tr>
+
+<tr>
+<td>010 0000</td>
+<!--<td style="background: #cff;">32</td>--><td>32</td>
+<td>space</td>
+</tr>
+
+<tr>
+<td>010 0001</td>
+<!--<td style="background: #cff;">33</td>--><td>33</td>
+<td>!</td>
+</tr>
+
+<tr>
+<td>010 0010</td>
+<!--<td style="background: #cff;">34</td>--><td>34</td>
+<td>"</td>
+</tr>
+
+<tr>
+<td>010 0011</td>
+<!--<td style="background: #cff;">35</td>--><td>35</td>
+<td>#</td>
+</tr>
+
+<tr>
+<td>010 0100</td>
+<!--<td style="background: #cff;">36</td>--><td>36</td>
+<td>$</td>
+</tr>
+
+<tr>
+<td>010 0101</td>
+<!--<td style="background: #cff;">37</td>--><td>37</td>
+<td>%</td>
+</tr>
+
+<tr>
+<td>010 0110</td>
+<!--<td style="background: #cff;">38</td>--><td>38</td>
+<td>&amp;</td>
+</tr>
+
+<tr>
+<td>010 0111</td>
+<!--<td style="background: #cff;">39</td>--><td>39</td>
+<td>'</td>
+</tr>
+
+<tr>
+<td>010 1000</td>
+<!--<td style="background: #cff;">40</td>--><td>40</td>
+<td>(</td>
+</tr>
+
+<tr>
+<td>010 1001</td>
+<!--<td style="background: #cff;">41</td>--><td>41</td>
+<td>)</td>
+</tr>
+
+<tr>
+<td>010 1010</td>
+<!--<td style="background: #cff;">42</td>--><td>42</td>
+<td>*</td>
+</tr>
+
+<tr>
+<td>010 1011</td>
+<!--<td style="background: #cff;">43</td>--><td>43</td>
+<td>+</td>
+</tr>
+
+<tr>
+<td>010 1100</td>
+<!--<td style="background: #cff;">44</td>--><td>44</td>
+<td>,</td>
+</tr>
+
+<tr>
+<td>010 1101</td>
+<!--<td style="background: #cff;">45</td>--><td>45</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>010 1110</td>
+<!--<td style="background: #cff;">46</td>--><td>46</td>
+<td>.</td>
+</tr>
+
+<tr>
+<td>010 1111</td>
+<!--<td style="background: #cff;">47</td>--><td>47</td>
+<td>/</td>
+</tr>
+
+<tr>
+<td>011 0000</td>
+<!--<td style="background: #cff;">48</td>--><td>48</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>011 0001</td>
+<!--<td style="background: #cff;">49</td>--><td>49</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>011 0010</td>
+<!--<td style="background: #cff;">50</td>--><td>50</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>011 0011</td>
+<!--<td style="background: #cff;">51</td>--><td>51</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>011 0100</td>
+<!--<td style="background: #cff;">52</td>--><td>52</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>011 0101</td>
+<!--<td style="background: #cff;">53</td>--><td>53</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>011 0110</td>
+<!--<td style="background: #cff;">54</td>--><td>54</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>011 0111</td>
+<!--<td style="background: #cff;">55</td>--><td>55</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>011 1000</td>
+<!--<td style="background: #cff;">56</td>--><td>56</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>011 1001</td>
+<!--<td style="background: #cff;">57</td>--><td>57</td>
+<td>9</td>
+</tr>
+
+<tr>
+<td>011 1010</td>
+<!--<td style="background: #cff;">58</td>--><td>58</td>
+<td>:</td>
+</tr>
+
+<tr>
+<td>011 1011</td>
+<!--<td style="background: #cff;">59</td>--><td>59</td>
+<td>;</td>
+</tr>
+
+<tr>
+<td>011 1100</td>
+<!--<td style="background: #cff;">60</td>--><td>60</td>
+<td>&lt;</td>
+</tr>
+
+<tr>
+<td>011 1101</td>
+<!--<td style="background: #cff;">61</td>--><td>61</td>
+<td>=</td>
+</tr>
+
+<tr>
+<td>011 1110</td>
+<!--<td style="background: #cff;">62</td>--><td>62</td>
+<td>&gt;</td>
+</tr>
+
+<tr>
+<td>011 1111</td>
+<!--<td style="background: #cff;">63</td>--><td>63</td>
+<td>?</td>
+</tr>
+</table>
+</td>
+
+<!-- Second column -->
+<td>
+<table style="text-align: center;">
+<tr style="vertical-align: bottom;"><th>Binary</th><th>Dec</th><th>Char</th></tr>
+
+<tr>
+<td>100 0000</td>
+<!--<td style="background: #cff;">64</td>--><td>64</td>
+<td>@</td>
+</tr>
+
+<tr>
+<td>100 0001</td>
+<!--<td style="background: #cff;">65</td>--><td>65</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>100 0010</td>
+<!--<td style="background: #cff;">66</td>--><td>66</td>
+<td>B</td>
+</tr>
+
+<tr>
+<td>100 0011</td>
+<!--<td style="background: #cff;">67</td>--><td>67</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>100 0100</td>
+<!--<td style="background: #cff;">68</td>--><td>68</td>
+<td>D</td>
+</tr>
+
+<tr>
+<td>100 0101</td>
+<!--<td style="background: #cff;">69</td>--><td>69</td>
+<td>E</td>
+</tr>
+
+<tr>
+<td>100 0110</td>
+<!--<td style="background: #cff;">70</td>--><td>70</td>
+<td>F</td>
+</tr>
+
+<tr>
+<td>100 0111</td>
+<!--<td style="background: #cff;">71</td>--><td>71</td>
+<td>G</td>
+</tr>
+
+<tr>
+<td>100 1000</td>
+<!--<td style="background: #cff;">72</td>--><td>72</td>
+<td>H</td>
+</tr>
+
+<tr>
+<td>100 1001</td>
+<!--<td style="background: #cff;">73</td>--><td>73</td>
+<td>I</td>
+</tr>
+
+<tr>
+<td>100 1010</td>
+<!--<td style="background: #cff;">74</td>--><td>74</td>
+<td>J</td>
+</tr>
+
+<tr>
+<td>100 1011</td>
+<!--<td style="background: #cff;">75</td>--><td>75</td>
+<td>K</td>
+</tr>
+
+<tr>
+<td>100 1100</td>
+<!--<td style="background: #cff;">76</td>--><td>76</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>100 1101</td>
+<!--<td style="background: #cff;">77</td>--><td>77</td>
+<td>M</td>
+</tr>
+
+<tr>
+<td>100 1110</td>
+<!--<td style="background: #cff;">78</td>--><td>78</td>
+<td>N</td>
+</tr>
+
+<tr>
+<td>100 1111</td>
+<!--<td style="background: #cff;">79</td>--><td>79</td>
+<td>O</td>
+</tr>
+
+<tr>
+<td>101 0000</td>
+<!--<td style="background: #cff;">80</td>--><td>80</td>
+<td>P</td>
+</tr>
+
+<tr>
+<td>101 0001</td>
+<!--<td style="background: #cff;">81</td>--><td>81</td>
+<td>Q</td>
+</tr>
+
+<tr>
+<td>101 0010</td>
+<!--<td style="background: #cff;">82</td>--><td>82</td>
+<td>R</td>
+</tr>
+
+<tr>
+<td>101 0011</td>
+<!--<td style="background: #cff;">83</td>--><td>83</td>
+<td>S</td>
+</tr>
+
+<tr>
+<td>101 0100</td>
+<!--<td style="background: #cff;">84</td>--><td>84</td>
+<td>T</td>
+</tr>
+
+<tr>
+<td>101 0101</td>
+<!--<td style="background: #cff;">85</td>--><td>85</td>
+<td>U</td>
+</tr>
+<tr>
+<td>101 0110</td>
+<!--<td style="background: #cff;">86</td>--><td>86</td>
+<td>V</td>
+</tr>
+
+<tr>
+<td>101 0111</td>
+<!--<td style="background: #cff;">87</td>--><td>87</td>
+<td>W</td>
+</tr>
+
+<tr>
+<td>101 1000</td>
+<!--<td style="background: #cff;">88</td>--><td>88</td>
+<td>X</td>
+</tr>
+
+<tr>
+<td>101 1001</td>
+<!--<td style="background: #cff;">89</td>--><td>89</td>
+<td>Y</td>
+</tr>
+
+<tr>
+<td>101 1010</td>
+<!--<td style="background: #cff;">90</td>--><td>90</td>
+<td>Z</td>
+</tr>
+
+<tr>
+<td>101 1011</td>
+<!--<td style="background: #cff;">91</td>--><td>91</td>
+<td>[</td>
+</tr>
+
+<tr>
+<td>101 1100</td>
+<!--<td style="background: #cff;">92</td>--><td>92</td>
+<td>\</td>
+</tr>
+
+<tr>
+<td>101 1101</td>
+<!--<td style="background: #cff;">93</td>--><td>93</td>
+<td>]</td>
+</tr>
+
+<tr>
+<td>101 1110</td>
+<!--<td style="background: #cff;">94</td>--><td>94</td>
+<td>^</td>
+</tr>
+
+<tr>
+<td>101 1111</td>
+<!--<td style="background: #cff;">95</td>--><td>95</td>
+<td>_</td>
+</tr>
+</table>
+</td>
+
+<!-- Third column -->
+<td>
+<table style="text-align: center;">
+<tr style="vertical-align: bottom;"><th>Binary</th><th>Dec</th><th>Char</th></tr>
+
+<tr>
+<td>110 0000</td>
+<!--<td style="background: #cff;">96</td>--><td>96</td>
+<td>`</td>
+</tr>
+
+<tr>
+<td>110 0001</td>
+<!--<td style="background: #cff;">97</td>--><td>97</td>
+<td>a</td>
+</tr>
+
+<tr>
+<td>110 0010</td>
+<!--<td style="background: #cff;">98</td>--><td>98</td>
+<td>b</td>
+</tr>
+
+<tr>
+<td>110 0011</td>
+<!--<td style="background: #cff;">99</td>--><td>99</td>
+<td>c</td>
+</tr>
+
+<tr>
+<td>110 0100</td>
+<!--<td style="background: #cff;">100</td>--><td>100</td>
+<td>d</td>
+</tr>
+
+<tr>
+<td>110 0101</td>
+<!--<td style="background: #cff;">101</td>--><td>101</td>
+<td>e</td>
+</tr>
+
+<tr>
+<td>110 0110</td>
+<!--<td style="background: #cff;">102</td>--><td>102</td>
+<td>f</td>
+</tr>
+
+<tr>
+<td>110 0111</td>
+<!--<td style="background: #cff;">103</td>--><td>103</td>
+<td>g</td>
+</tr>
+
+<tr>
+<td>110 1000</td>
+<!--<td style="background: #cff;">104</td>--><td>104</td>
+<td>h</td>
+</tr>
+
+<tr>
+<td>110 1001</td>
+<!--<td style="background: #cff;">105</td>--><td>105</td>
+<td>i</td>
+</tr>
+
+<tr>
+<td>110 1010</td>
+<!--<td style="background: #cff;">106</td>--><td>106</td>
+<td>j</td>
+</tr>
+
+<tr>
+<td>110 1011</td>
+<!--<td style="background: #cff;">107</td>--><td>107</td>
+<td>k</td>
+</tr>
+
+<tr>
+<td>110 1100</td>
+<!--<td style="background: #cff;">108</td>--><td>108</td>
+<td>l</td>
+</tr>
+
+<tr>
+<td>110 1101</td>
+<!--<td style="background: #cff;">109</td>--><td>109</td>
+<td>m</td>
+</tr>
+
+<tr>
+<td>110 1110</td>
+<!--<td style="background: #cff;">110</td>--><td>110</td>
+<td>n</td>
+</tr>
+
+<tr>
+<td>110 1111</td>
+<!--<td style="background: #cff;">111</td>--><td>111</td>
+<td>o</td>
+</tr>
+
+<tr>
+<td>111 0000</td>
+<!--<td style="background: #cff;">112</td>--><td>112</td>
+<td>p</td>
+</tr>
+
+<tr>
+<td>111 0001</td>
+<!--<td style="background: #cff;">113</td>--><td>113</td>
+<td>q</td>
+</tr>
+
+<tr>
+<td>111 0010</td>
+<!--<td style="background: #cff;">114</td>--><td>114</td>
+<td>r</td>
+</tr>
+
+<tr>
+<td>111 0011</td>
+<!--<td style="background: #cff;">115</td>--><td>115</td>
+<td>s</td>
+</tr>
+
+<tr>
+<td>111 0100</td>
+<!--<td style="background: #cff;">116</td>--><td>116</td>
+<td>t</td>
+</tr>
+
+<tr>
+<td>111 0101</td>
+<!--<td style="background: #cff;">117</td>--><td>117</td>
+<td>u</td>
+</tr>
+
+<tr>
+<td>111 0110</td>
+<!--<td style="background: #cff;">118</td>--><td>118</td>
+<td>v</td>
+</tr>
+
+<tr>
+<td>111 0111</td>
+<!--<td style="background: #cff;">119</td>--><td>119</td>
+<td>w</td>
+</tr>
+
+<tr>
+<td>111 1000</td>
+<!--<td style="background: #cff;">120</td>--><td>120</td>
+<td>x</td>
+</tr>
+
+<tr>
+<td>111 1001</td>
+<!--<td style="background: #cff;">121</td>--><td>121</td>
+<td>y</td>
+</tr>
+
+<tr>
+<td>111 1010</td>
+<!--<td style="background: #cff;">122</td>--><td>122</td>
+<td>z</td>
+</tr>
+
+<tr>
+<td>111 1011</td>
+<!--<td style="background: #cff;">123</td>--><td>123</td>
+<td>{</td>
+</tr>
+
+<tr>
+<td>111 1100</td>
+<!--<td style="background: #cff;">124</td>--><td>124</td>
+<td>|</td>
+</tr>
+
+<tr>
+<td>111 1101</td>
+<!--<td style="background: #cff;">125</td>--><td>125</td>
+<td>}</td>
+</tr>
+
+<tr>
+<td>111 1110</td>
+<!--<td style="background: #cff;">126</td>--><td>126</td>
+<td>~</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</zyTable>
+
+
+
+
+
+
+
+
+<zyTool name="charEncoding" id="dec8f248-57d7-6ce4-5c68-567b63175356" caption="Character encodings.">
+<zyAltDescription>
+This activity allows a user to type a character, and automatically displays that character's ASCII number. For instance, 'a' is converted to 97, 'A' is converted to 65, and '0' is converted to 48. 
+</zyAltDescription>
+</zyTool>
+
+
+<zyQSetTF caption="Character encodings." id="eea166e4-5235-44d6-b408-f25cbcef29ad">
+<zyQ>
+<zyQText correct="65" truelabel="65" falselabel="97">'A' is stored as _____. </zyQText>
+<zyQExpl>The ASCII table shows that uppercase 'A' is encoded as 65. In contrast, lowercase 'a' is encoded as 97.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="38" truelabel="38" falselabel="(no such encoding)">'&amp;' is stored as _____. </zyQText>
+<zyQExpl>Encodings exist for various symbols, not just letters.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="7" truelabel="7" falselabel="55">7 is stored as _____. </zyQText>
+<zyQExpl>7 without quotes is an integer literal<!--, so--> and is stored as 7. In contrast, '7' with quotes is a character literal, and would be stored as 55 (per the ASCII table).   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="X" truelabel="X" falselabel="x">A variable's memory location stores 88. Outputting that value as a character yields _____. </zyQText>
+<zyQExpl>88 is the encoding for uppercase 'X'. By itself, the 88 gives no information as to whether the number represents the integer 88 or the character 'X'. However, the variable's type and/or an output statement may specifically indicate that the value should be output as a character, in which case the 88 is output as X.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="5e6518cc-9a04-a9c8-f765-c28e738dafe7" subsection="true" caption="Escape sequences">
+<h3>Escape sequences</h3>
+</zyHTML>
+
+
+<zyHTML id="32426523-59cb-4c86-977e-a876e2b92b12">
+<p>In addition to regular characters like Z, $, or 5, character encoding includes numbers for several special characters. Ex: A newline character is encoded as 10. Because no visible character exists for a newline, the language uses an <zyDefn> _escape sequence_: A two-character sequence starting with \ that represents a special character.</zyDefn>  Ex:  '\n' represents a newline character. Escape sequences also enable representing characters like ', ", or \.  Ex: myChar = '\'' assigns myChar with a single-quote character. myChar = '\\' assigns myChar with \  (just '\' would yield a compiler error, since \' is the escape sequence for ', and then a closing ' is missing).  </p>
+</zyHTML>
+
+
+
+<zyTable caption="Common escape sequences" id="d4a1b882-9146-a3b6-7484-4d49a9da8d49">
+<table style="background: none; text-align: center;">
+<tr>
+<th>Escape sequence</th>
+<th>Char</th>
+</tr>
+
+<tr>
+<td>\n</td>
+<td>newline</td>
+</tr>
+
+<tr>
+<td>\t</td>
+<td>tab</td>
+</tr>
+
+<tr>
+<td>\'</td>
+<td>single quote</td>
+</tr>
+
+<tr>
+<td>\"</td>
+<td>double quote</td>
+</tr>
+
+<tr>
+<td>\\</td>
+<td>backslash</td>
+</tr>
+</table>
+</zyTable>
+
+
+
+<zyQSetMultipleChoice caption="Escape sequences. " id="c212390a-77a9-4086-8abd-ce44b4553ce5">
+<zyQ>
+<zyQText>Goal output: Say "Hello"<br />
+<zyVersion version="java"><zyCode language="java" nobox="true">System.out.print(_____);</zyCode></zyVersion>
+</zyQText>
+<zyQChoice>
+<zyQAns>"Say "Hello""</zyQAns>
+<zyQExpl>The second " (before H) ends the string "Say ". Thus the subsequent H will yield a compiler error. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>"Say \"Hello\""</zyQAns>
+<zyQExpl>Each \" represents a single " character. The \ is needed so the compiler doesn't treat the " before the H as the end of the string "Say ". </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>"Say \\"Hello\\""</zyQAns>
+<zyQExpl>Only one \ is needed, not two. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Goal output: OK&nbsp;&nbsp;&nbsp;&nbsp;bye<br />
+(Assume a tab exists between OK and bye). <br />
+<zyVersion version="java"><zyCode language="java" nobox="true">System.out.print(_____);</zyCode></zyVersion>
+</zyQText>
+<zyQChoice correct="true">
+<zyQAns>"OK\tbye"</zyQAns>
+<zyQExpl>Upon seeing the \, the compiler looks at the next character. Seeing the t, the compiler inserts a single tab character. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>"OK&nbsp;&nbsp;&nbsp;&nbsp;\tbye"</zyQAns>
+<zyQExpl>No spaces are needed before the tab character \t.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>"OK\t&nbsp;&nbsp;&nbsp;&nbsp;bye"</zyQAns>
+<zyQExpl>No spaces are needed after the tab character \t.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Given string "a\"b", the first character is stored in memory as 97 (the numeric value for 'a'). What is stored for the second character? </zyQText>
+<zyQChoice correct="true">
+<zyQAns>34</zyQAns>
+<zyQExpl>The compiler treats \" as a single character, namely ", whose ASCII value is 34. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>92</zyQAns>
+<zyQExpl>92 is for \. But the compiler treats \" as the double quote character ", whose number is 34. </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+
+
+
+<zyVersion version="java">
+<zyHTML id="4ad2b775-a3ee-d5a3-889c-125a5d6d2642" subsection="true" caption="Outputting multiple character variables with one output statement">
+<h3>Outputting multiple character variables with one output statement</h3>
+</zyHTML>
+
+
+<zyHTML id="dae8018a-6f2a-43d2-8b85-5aa21ba0c7e0">
+<p>A programmer can output multiple character variables with one statement as follows: <zyICode>System.out.print("" + c1 + c2);</zyICode>. The initial "" tells the compiler to output a string of characters, and the +'s combine the subsequent characters into such a string. Without the "", the compiler will simply add the numerical values of c1 and c2, and output the resulting sum. </p>
+</zyHTML>
+
+
+
+<zyQSetTF caption="Outputting multiple characters. " id="8409b0d9-1e88-4bd1-9ffb-c47c130e05b6">
+<p>Indicate the output. char let1 = 'a', and char let2 = 'b'. </p>
+
+<zyQ>
+<zyQText correct="a" truelabel="97" falselabel="a">System.out.print(let1);</zyQText>
+<zyQExpl>let1's memory location stores 97 (the numerical encoding for 'a'). The compiler knows that let1 is of type char. Thus, the program outputs 97 as the character a.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="195" truelabel="ab" falselabel="195">System.out.print(let1 + let2);</zyQText>
+<zyQExpl>The compiler adds the values of let1 and let2. let1's 'a' is 97, and let2's 'b' is 98, yielding 195. Thus, the statement outputs 195. Such output is rarely what the programmer intended.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="ab" truelabel="ab" falselabel="195">System.out.print("" + let1 + let2);</zyQText>
+<zyQExpl>The "" tells the compiler that the output will be a string (a sequence of characters). So the +'s are then used to concatenate the subsequent variable's characters. So the output is a followed by b, with no spaces.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="a * b" truelabel="a*b" falselabel="a * b">System.out.print("" + let1 + " * " + let2);</zyQText>
+<zyQExpl>The output is a, followed by a space, *, and space, followed by b.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+</zyVersion>
+
+
+
+<zyHTML id="77b626c5-c1c0-011c-7680-46cc98956da1" subsection="true" caption="Common errors">
+<h3>Common errors</h3>
+</zyHTML>
+
+
+<zyHTML id="b2113be7-4e76-4099-9614-aa46dc9df302">
+<p> <zyCommonError id="6aa55868-bb7b-0365-bda7-1771c91975de"> A common error is to use double quotes rather than single quotes around a character literal, as in <zyICode>myChar = "x"</zyICode>, yielding a compiler error.</zyCommonError> </p> 
+
+<p> Similarly, <zyCommonError id="7ce72332-3f48-6cac-d68c-983d574c7a81"> a common error is to forget the quotes around a character literal, as in <zyICode>myChar = x</zyICode>, usually yielding a compiler error (unless x is also a declared variable, then perhaps yielding a logic error). </zyCommonError></p> 
+</zyHTML>
+
+
+
+<zypInfo person="Vanessa/Kevin" date="7/16/18"> Changed magic numbers to input. Added braces to student code in testbench.</zypInfo>
+<zypInfo person="Kenny" date="5/16/23" minutes="" status="Draft1Done"></zypInfo>
+<zypInfo person="DNorment" date="10/02/23" minutes="20" status="Rev1Done"></zypInfo>
+
+<zyTool name="ParsonsCodingPA" caption="Outputting all combinations" id="016e6926-0d45-46e8-ad1a-f629b982543b" parts="1" challenge="true" edited-last="Fri May 02 2025 13:59:51 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><files type="list"><li type="dict"><contents type="list"><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+   char let1;
+   char let2;
+   char let3;
+
+   cin &gt;&gt; let1;
+   cin &gt;&gt; let2;
+   cin &gt;&gt; let3;
+   </solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; let1 &lt;&lt; let2 &lt;&lt; let3;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; &quot; &quot; &lt;&lt; let1 &lt;&lt; let3 &lt;&lt; let2;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; &quot; &quot; &lt;&lt; let2 &lt;&lt; let1 &lt;&lt; let3;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; &quot; &quot; &lt;&lt; let2 &lt;&lt; let3 &lt;&lt; let1;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; &quot; &quot; &lt;&lt; let3 &lt;&lt; let1 &lt;&lt; let2;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; &quot; &quot; &lt;&lt; let3 &lt;&lt; let2 &lt;&lt; let1;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">1</indents><solution type="string">cout &lt;&lt; endl;</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">   
+   return 0;
+}</solution></li></contents><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li></files><language type="string">cpp</language><languageOption type="string"></languageOption><prompt type="string">Organize the code statements to output all unique arrangements of character variables let1, let2, and let3 in the order shown below. After the final output, end with a newline.
+
+Ex: If the input is `A B C`, then the output is:
+
+`ABC ACB BAC BCA CAB CBA`</prompt><tests type="list"><li type="dict"><stdin type="string">A B C</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string"># $ %</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string">1 2 3</stdin><type type="string">stdout</type><filename type="string"></filename></li></tests></zyOptions></zyTool>
+<!-- zyHomeworkProblem (cpp): Printing a message with ints and chars -->
+<zyHomeworkProblem id="eb8e4a0e-5986-6e1d-e344-4b916c48c329" language="cpp" caption="Printing a message with ints and chars." author="FV/SS/SL">
+<zyInstructions>
+Print a message telling a user to press the letterToQuit key numPresses times to quit. End with newline.  Ex: If letterToQuit = 'q' and numPresses = 2, print: <br />
+<pre>
+Press the q key 2 times to quit.</pre>  
+<!-- Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs q and 2, and then with the inputs x and 4.-->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+q 2
+x 4
+</zyInput>
+<zyStudentProgram>
+#include <iostream>
+using namespace std;
+
+int main() {
+   char letterToQuit;
+   int  numPresses; 
+
+   cin >> letterToQuit;
+   cin >> numPresses; 
+
+   <STUDENT CODE>
+
+   return 0;
+}
+</zyStudentProgram>
+
+
+<zySolution>
+cout << "Press the " << letterToQuit << " key " << numPresses << " times to quit." << endl;
+</zySolution>
+
+<zyTestVectors>
+int main() {
+   char letterToQuit;
+   int  numPresses; 
+   string testStrRight;
+   string testMsg; 
+
+   cin >> letterToQuit;
+   cin >> numPresses; 
+
+   {<STUDENT CODE>}
+   ostringstream msgStream;
+   msgStream << "Testing with '" << letterToQuit << "' and " << numPresses << "." << endl;
+   testMsg = msgStream.str();
+
+   ostringstream tstStream;
+   tstStream << "Press the " << letterToQuit << " key " << numPresses << " times to quit." << endl;
+   testStrRight = tstStream.str();
+   zyAssertOutput(testStrRight, testMsg, false, false, true, false);
+
+   cin >> letterToQuit;
+   cin >> numPresses; 
+   {<STUDENT CODE>}
+   ostringstream msgStream3;
+   msgStream3 << "Testing with '" << letterToQuit << "' and " << numPresses << ".";
+   testMsg = msgStream3.str();
+
+   ostringstream tstStream3;
+   tstStream3 << "Press the "<< letterToQuit << " key " << numPresses << " times to quit." << endl;
+   testStrRight = tstStream3.str();
+   zyAssertOutput(testStrRight, testMsg, false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+</zyVersion>
+
+
+
+<zypInfo person="Vanessa/Kevin" date="7/16/18"> Changed magic numbers to input. Added braces to student code in testbench.</zypInfo>
+
+<zyVersion version="java">
+<!-- Parsons (Java): Outputting all combinations -->
+<zypInfo person="DNorment" date="01/31/24" minutes="30" status="Draft1Doing"></zypInfo>
+<zyTool name="ParsonsCodingPA" caption="Outputting all combinations" id="9a16fbad-d95f-41dc-8251-dddf605727f9" parts="1" challenge="true" edited-last="Fri May 02 2025 14:00:40 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><files type="list"><li type="dict"><contents type="list"><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">import java.util.Scanner;
+
+public class OutputCombinations {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      char let1;
+      char let2;
+      char let3;
+
+      let1 = scnr.next().charAt(0);
+      let2 = scnr.next().charAt(0);
+      let3 = scnr.next().charAt(0);
+      </solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot;&quot; + let1 + let2 + let3);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot; &quot; + let1 + let3 + let2);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot; &quot; + let2 + let1 + let3);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot; &quot; + let2 + let3 + let1);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot; &quot; + let3 + let1 + let2);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot; &quot; + let3 + let2 + let1);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.println(&quot;&quot;);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">   }
+}</solution></li></contents><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputCombinations.java</name></li></files><language type="string">java</language><languageOption type="string"></languageOption><prompt type="string">Organize the code statements to output all combinations of character variables let1, let2, and let3 in the order shown below. After the final combination, end with a newline.
+
+Ex: If the input is `A B C`, then the output is:
+
+`ABC ACB BAC BCA CAB CBA`</prompt><tests type="list"><li type="dict"><stdin type="string">A B C</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string"># $ %</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string">1 2 3</stdin><type type="string">stdout</type><filename type="string"></filename></li></tests></zyOptions></zyTool>
+
+<!-- zyHomeworkProblem (java): Printing a message with ints and chars -->
+<zyHomeworkProblem id="5b436823-6c4b-6a19-b3a7-17da12235b79" language="java" caption="Printing a message with ints and chars." author="FV/SS/SL/RS">
+<zyInstructions>
+Print a message telling a user to press the letterToQuit key numPresses times to quit. End with newline.  Ex: If letterToQuit = 'q' and numPresses = 2, print: <br />
+<pre>
+Press the q key 2 times to quit.</pre>  
+<!-- Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs q and 2, and then with the inputs x and 4. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+
+<zyInput>
+q 2
+x 4
+</zyInput>
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class QuitScreen {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      char letterToQuit;
+      int  numPresses; 
+
+      letterToQuit = scnr.next().charAt(0);
+      numPresses = scnr.nextInt();
+
+      <STUDENT CODE>
+
+   }
+}
+</zyStudentProgram>
+
+
+<zySolution>
+System.out.println("Press the " + letterToQuit + " key " + numPresses + " times to quit.");
+</zySolution>
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   Scanner scnr = new Scanner(System.in);
+   char letterToQuit;
+   int  numPresses; 
+   String testStrRight = "";
+   String testMsg = ""; 
+
+   letterToQuit = scnr.next().charAt(0);
+   numPresses = scnr.nextInt();
+
+   {<STUDENT CODE>}
+   
+   testMsg = String.format("Testing with '%c' and %d.\n", letterToQuit, numPresses);
+
+   testStrRight = String.format("Press the %c key %d times to quit.\n", letterToQuit, numPresses);
+   zyAssertOutput(testStrRight, testMsg, false, false, true, false);
+
+   letterToQuit = scnr.next().charAt(0);
+   numPresses = scnr.nextInt();
+
+   {<STUDENT CODE>}
+   testMsg = String.format("Testing with '%c' and %d.\n", letterToQuit, numPresses);
+
+   testStrRight = String.format("Press the %c key %d times to quit.\n", letterToQuit, numPresses);
+   zyAssertOutput(testStrRight, testMsg, false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+
+</zyVersion>
+
+
+<zypInfo person="Susan" date="7/24/17">Converted C++ to C</zypInfo>
+<zypInfo person="Vanessa/Kevin" date="7/16/18"> Changed magic numbers to input. </zypInfo>
+
+<zyVersion version="java">
+<!--<zyHomeworkProblem id="842bebc9-0b43-2bb6-56d5-c76dabd6ac52" language="java" caption="Outputting all combinations." author="FV">
+<zyInstructions>
+Output all arrangements of character variables a, b, and c, in the order shown below. After the final output, end with a newline. If a = 'x', b = 'y', and c = 'z', then the output is: <br />
+<pre>
+xyz xzy yxz yzx zxy zyx</pre>Note: If outputting multiple character variables with one statement, the argument for System.out.print() should start with "" + 
+<br /><br />
+<!-- Your code will be tested in three different programs, with a, b, c assigned with 'x', 'y', 'z', then with '#', '$', '%', then with '1', '2', '3'. -->Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested three times, first with the inputs x y z, then with the inputs # $ %, and finally with the inputs 1 2 3.</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+x y z
+# $ %
+1 2 3
+</zyInput>
+<zyStudentProgram>
+import java.util.Scanner;
+public class OutputCombinations {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      char a;
+      char b;
+      char c;
+
+      a = scnr.next().charAt(0);
+      b = scnr.next().charAt(0);
+      c = scnr.next().charAt(0);
+
+      <STUDENT CODE>
+   }
+}
+</zyStudentProgram>
+
+
+<zySolution>
+System.out.print("" + a + b + c);
+System.out.print(" " + a + c + b);
+System.out.print(" " + b + a + c);
+System.out.print(" " + b + c + a);
+System.out.print(" " + c + a + b);
+System.out.print(" " + c + b + a);
+System.out.println("");
+</zySolution>
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   Scanner scnr = new Scanner(System.in);
+   
+   {  
+      char a;
+      char b;
+      char c;
+
+      a = scnr.next().charAt(0);
+      b = scnr.next().charAt(0);
+      c = scnr.next().charAt(0);
+
+      <STUDENT CODE>
+      zyAssertOutput("xyz xzy yxz yzx zxy zyx\n", "Testing with 'x', 'y', 'z'", 
+                     false, false, false, false);
+   }
+
+   { 
+      char a;
+      char b;
+      char c;
+
+      a = scnr.next().charAt(0);
+      b = scnr.next().charAt(0);
+      c = scnr.next().charAt(0); 
+
+      <STUDENT CODE>
+      	zyAssertOutput("#$% #%$ $#% $%# %#$ %$#\n", "Testing with '#', '$', '%'", 
+                     false, false, false, false);
+   }
+
+   { 
+      char a;
+      char b;
+      char c;
+
+      a = scnr.next().charAt(0);
+      b = scnr.next().charAt(0);
+      c = scnr.next().charAt(0);
+      <STUDENT CODE>
+      zyAssertOutput("123 132 213 231 312 321\n", "Testing with '1', '2', '3'", 
+                        false, false, false, false);
+   }
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+</zyVersion>
+
+
+<zypInfo person="Vanessa/Kevin" date="7/16/18"> Changed magic numbers to input. Added braces to student code in testbench.</zypInfo>
+<zyHomeworkProblem id="6de5337f-a9ad-a8d9-f413-83ea5547ba16" language="c" caption="Printing a message with ints and chars." author="FV/SS/SL/RS">
+<zyInstructions>
+Print a message telling a user to press the letterToQuit key numPresses times to quit. End with newline.  Ex: If letterToQuit = 'q' and numPresses = 2, print: <br />
+<pre>
+Press the q key 2 times to quit.</pre>  
+<!-- Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs q and 2, and then with the inputs x and 4. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+
+<zyInput>
+q 2
+x 4
+</zyInput>
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   char letterToQuit;
+   int  numPresses; 
+
+   scanf(" %c ", &letterToQuit);
+   scanf("%d", &numPresses);
+
+   <STUDENT CODE>
+
+   return 0;
+}
+</zyStudentProgram>
+
+
+<zySolution>
+printf("Press the %c key %d times to quit.\n", letterToQuit, numPresses);
+</zySolution>
+
+<zyTestVectors>
+#include <stdio.h>
+int main(void) {
+   char letterToQuit = '?';
+   int  numPresses = 2; 
+
+   char testStrRight [50] = "";
+   char testMsg [50] = "";
+
+   scanf(" %c ", &letterToQuit);
+   scanf("%d", &numPresses);
+
+   {<STUDENT CODE>}
+   sprintf(testMsg, "Testing with '%c' and %d.\n", letterToQuit, numPresses);
+   sprintf(testStrRight, "Press the %c key %d times to quit.\n", letterToQuit, numPresses);
+   zyAssertOutput(testStrRight, testMsg, false, false, true, false);
+
+   scanf(" %c ", &letterToQuit);
+   scanf("%d", &numPresses);
+
+   {<STUDENT CODE>}
+   sprintf(testMsg, "Testing with '%c' and %d.\n", letterToQuit, numPresses);
+   sprintf(testStrRight, "Press the %c key %d times to quit.\n", letterToQuit, numPresses);
+   zyAssertOutput(testStrRight, testMsg, false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+
+<zyHomeworkProblem id="fc48818a-c17a-4e44-5ad2-9b3d9d1b5464" language="c" caption="Successive letters." author="SL/RS">
+<zyInstructions>
+Declare a character variable letterStart. Write a statement to read a letter from the user into letterStart, followed by statements that output that letter and the next letter in the alphabet. End with a newline. Hint: A letter is stored as its ASCII number, so adding 1 yields the next letter. Sample output assuming the user enters 'd': 
+de
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the input a, and then with the input E. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   <STUDENT CODE>
+
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+   char letterStart;
+   
+   scanf("%c", &letterStart);
+   printf("%c", letterStart);
+   letterStart = letterStart + 1; 
+   printf("%c\n", letterStart);
+</zySolution>
+
+<zyInput>aE</zyInput>
+<zyTestVectors>
+int main(void) {
+
+   {  <STUDENT CODE>
+      zyAssertOutput("ab\n", "Test starting character a", 
+                     false, false, true, false);
+   }
+
+   {  <STUDENT CODE>
+      zyAssertOutput("EF\n", "Test starting character E", 
+                     false, false, false, false);
+   }
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+</zyVersion>
+
+</zySection>

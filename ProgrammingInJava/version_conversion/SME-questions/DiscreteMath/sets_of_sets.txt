@@ -1,0 +1,110 @@
+<question xsi:type='MultipleChoiceQuestion' guid='8de5d0fe-e399-8be3-bab8-a904de4cfeb5'>
+<instructions>
+<line><ilatex>A = \big\{1, 2, \{3, 4\}, \{5, 6, 7\} \big\}</ilatex></line>
+<line>Select the <i>true</i> statement.</line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\{ 3 \} \in A</ilatex></choice>
+<choice><ilatex>\{ 3, 4 \} \subseteq A</ilatex></choice>
+<choice correct='true'><ilatex>\{ 1, 2 \} \subseteq A</ilatex></choice>
+<choice><ilatex>\{ 1, 2 \} \in A</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='7f5bdee8-82de-0507-aba6-c4121d43e3a2'>
+<instructions>
+<line><ilatex>A = \big\{1, 2, \{3, 4\}, \{5, 6, 7\} \big\}</ilatex></line>
+<line>Select the correct value for <ilatex>|A|</ilatex>.</line> 
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>4</ilatex></choice>
+<choice><ilatex>5</ilatex></choice>
+<choice><ilatex>6</ilatex></choice>
+<choice><ilatex>7</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='54ff785e-86e4-fa13-3bd9-d41787b65521'>
+<instructions>
+<line><ilatex> A = \{1, 2, 3, 4\}</ilatex>. </line>
+<line>Select the <i>false</i> statement. </line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\emptyset \in P(A)</ilatex></choice>
+<choice><ilatex>\emptyset \subseteq P(A)</ilatex></choice>
+<choice><ilatex>\{2, 3\} \in P(A)</ilatex></choice>
+<choice correct='true'><ilatex>\{2, 3\} \subseteq P(A)</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='fbcf6754-057f-4a71-8f92-f0cdf4225730'>
+<instructions>
+<ilatex>A</ilatex> is a finite set such that <ilatex>|P(A)| = 32</ilatex>. What is <ilatex>|A|</ilatex>?
+</instructions>
+
+<choices>
+<choice><ilatex>32</ilatex></choice>
+<choice><ilatex>16</ilatex></choice>
+<choice correct='true'><ilatex>5</ilatex></choice>
+<choice>Not enough information is given to determine <ilatex>|A|</ilatex>.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='6312f744-2a52-422a-a51b-f5b8e3c29a90'>
+<instructions>
+<ilatex>A = \{1, 2, 3, 4, 5, 6, 7\}</ilatex>. Which expression is <i>not</i> an element of <ilatex>P(A)?</ilatex>
+</instructions>
+
+<choices>
+<choice><ilatex>\emptyset</ilatex></choice>
+<choice correct='true'><ilatex>1</ilatex></choice>
+<choice><ilatex>\{1\}</ilatex></choice>
+<choice><ilatex>A</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='e9ea3892-a791-410b-83d2-e4192ea11ed9'>
+<instructions>
+<ilatex>A = \{1, 2, 3, 4, 5, 6, 7\}</ilatex>. Select the <i>false</i> statement.
+</instructions>
+
+<choices>
+<choice><ilatex>\emptyset \subset P(A)</ilatex></choice>
+<choice><ilatex>\emptyset \in P(A)</ilatex></choice>
+<choice correct='true'><ilatex>A \subset P(A)</ilatex></choice>
+<choice><ilatex>A \in P(A)</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='88c34c86-6d1e-4d40-a900-f181c421ce01'>
+<instructions>
+<line><ilatex>A =\big\{ \{1, 2\}, 3, \{4, 5, 6, 7\}\big\}</ilatex> </line>
+<line>Select the correct value for <ilatex>|A|</ilatex>.</line> 
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>3</ilatex></choice>
+<choice><ilatex>4</ilatex></choice>
+<choice><ilatex>6</ilatex></choice>
+<choice><ilatex>7</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='9111aae7-3d97-4c9d-9aff-23303e550446'>
+<instructions>
+<line><ilatex>A =\big\{ \{1, 2\}, 3, \{4, 5, 6, 7\}\big\}</ilatex> </line>
+<line>Select the <i>true</i> statement.</line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\{1, 2\} \in P(A)</ilatex> </choice>
+<choice correct='true'><ilatex>\{1, 2\} \in A</ilatex></choice>
+<choice><ilatex>\{3\} \in A</ilatex></choice>
+<choice><ilatex>\{3\} \subset P(A)</ilatex></choice>
+</choices>
+</question>

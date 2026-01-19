@@ -1,0 +1,704 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,9,0,4
+2,9,0,5
+3,9,0,0
+4,9,0,2
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,11,81
+1,3,0,3,81
+1,4,0,6,81
+2,3,0,5,81
+2,4,0,11,81
+3,4,1,4,81
+
+Summary
+Total Comparisons,630
+Duplicates (≥85%),2
+Similar (70-85%),51
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.927,duplicate
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.857,duplicate
+q9,Which statement about variable names in quantified statements is true?,2,9,q7,Which is true about variable names in quantified statements?,3,7,0.842,similar
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.832,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.832,similar
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.829,similar
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.828,similar
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.808,similar
+q3,The scope of a quantifier determines:,2,3,q2,The scope of a quantifier includes _____.,4,2,0.803,similar
+q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.798,similar
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.797,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.793,similar
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q2,The scope of a quantifier includes _____.,4,2,0.79,similar
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.785,similar
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.779,similar
+q9,Which statement about variable names in quantified statements is true?,2,9,q8,Variable names in quantified statements can be changed if _____.,4,8,0.779,similar
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.773,similar
+q7,Which is true about variable names in quantified statements?,3,7,q8,Variable names in quantified statements can be changed if _____.,4,8,0.769,similar
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.762,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.761,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.759,similar
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.756,similar
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.755,similar
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.754,similar
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.751,similar
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.747,similar
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.744,similar
+q3,The scope of a quantifier determines:,2,3,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.743,similar
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.742,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.741,similar
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.739,similar
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.737,similar
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.737,similar
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.734,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.733,similar
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.731,similar
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.731,similar
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.728,similar
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.725,similar
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.725,similar
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,0.721,similar
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.721,similar
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.715,similar
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.712,similar
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.711,similar
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.71,similar
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.71,similar
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,0.705,similar
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.704,similar
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,0.703,similar
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.703,similar
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.702,similar
+q2,The scope of a quantifier includes _____.,4,2,q8,Variable names in quantified statements can be changed if _____.,4,8,0.701,similar
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.692,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q8,Variable names in quantified statements can be changed if _____.,4,8,0.687,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.685,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q8,Variable names in quantified statements can be changed if _____.,4,8,0.685,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.684,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.681,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.678,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.676,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.674,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.672,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q9,Which statement about variable names in quantified statements is true?,2,9,0.671,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.668,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.666,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,0.665,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.664,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q8,Variable names in quantified statements can be changed if _____.,4,8,0.664,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.663,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.662,low
+q3,The scope of a quantifier determines:,2,3,q8,Variable names in quantified statements can be changed if _____.,4,8,0.66,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.656,low
+q3,The scope of a quantifier determines:,2,3,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.656,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.655,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.653,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.652,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.651,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q8,Variable names in quantified statements can be changed if _____.,4,8,0.651,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.649,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,0.647,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,0.646,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.646,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.645,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.643,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.642,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q2,The scope of a quantifier includes _____.,4,2,0.641,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.639,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.638,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q2,The scope of a quantifier includes _____.,4,2,0.637,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.635,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.635,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.634,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q9,Which statement about variable names in quantified statements is true?,2,9,0.634,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.633,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q2,The scope of a quantifier includes _____.,4,2,0.633,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,0.632,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q2,The scope of a quantifier includes _____.,4,2,0.631,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.63,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,0.629,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.629,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.629,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.626,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.626,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.624,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.623,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.621,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q2,The scope of a quantifier includes _____.,4,2,0.619,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.619,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q3,The scope of a quantifier determines:,2,3,0.618,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.618,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,0.617,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q8,Variable names in quantified statements can be changed if _____.,4,8,0.617,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.616,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.615,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.612,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.612,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.612,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.611,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q2,The scope of a quantifier includes _____.,4,2,0.61,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q7,Which is true about variable names in quantified statements?,3,7,0.61,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.609,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.609,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q8,Variable names in quantified statements can be changed if _____.,4,8,0.608,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.607,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,0.605,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.605,low
+q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.605,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.604,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q8,Variable names in quantified statements can be changed if _____.,4,8,0.604,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.603,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q2,The scope of a quantifier includes _____.,4,2,0.603,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.602,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.601,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.6,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.6,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.6,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.599,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q9,Which statement about variable names in quantified statements is true?,2,9,0.596,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,0.595,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.595,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.594,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.594,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.594,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.593,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.593,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.592,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.591,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.59,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.59,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.589,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.589,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.587,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.586,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.586,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q7,Which is true about variable names in quantified statements?,3,7,0.586,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.584,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,0.584,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.584,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.584,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.583,low
+q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.582,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.581,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.581,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.581,low
+q3,The scope of a quantifier determines:,2,3,q9,Which statement about variable names in quantified statements is true?,2,9,0.581,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q2,The scope of a quantifier includes _____.,4,2,0.58,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.58,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.58,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.579,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q5,A statement with free variables is _____.,4,5,0.578,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.578,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.577,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.575,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.575,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.575,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.574,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.573,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.571,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.57,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.569,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.569,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.569,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,0.568,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,0.566,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.565,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.564,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q5,A statement with free variables is _____.,4,5,0.564,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.563,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.563,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.563,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.562,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.562,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.561,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.561,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.561,low
+q7,Which is true about variable names in quantified statements?,3,7,q2,The scope of a quantifier includes _____.,4,2,0.561,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.56,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.56,low
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.56,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.559,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.558,low
+q3,The scope of a quantifier determines:,2,3,q7,Which is true about variable names in quantified statements?,3,7,0.556,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q8,Variable names in quantified statements can be changed if _____.,4,8,0.555,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.554,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.55,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.549,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.549,low
+q3,The scope of a quantifier determines:,2,3,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.547,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.546,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.546,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q5,A statement with free variables is _____.,4,5,0.545,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.545,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.544,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.544,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.544,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.543,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.543,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.543,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.543,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,0.542,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.542,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q2,The scope of a quantifier includes _____.,4,2,0.541,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.541,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.539,low
+q3,The scope of a quantifier determines:,2,3,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.539,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.538,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q3,The scope of a quantifier determines:,2,3,0.537,low
+q7,Which is true about variable names in quantified statements?,3,7,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.537,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.536,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.536,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.535,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.535,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q5,A statement with free variables is _____.,4,5,0.533,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.532,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.53,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.529,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.529,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.528,low
+q3,The scope of a quantifier determines:,2,3,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.528,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.528,low
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.528,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.526,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q5,A statement with free variables is _____.,4,5,0.525,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.524,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.523,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.523,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.523,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.521,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q9,Which statement about variable names in quantified statements is true?,2,9,0.521,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.521,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q5,A statement with free variables is _____.,4,5,0.521,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.52,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.519,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.519,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.518,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.517,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.517,low
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.516,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.515,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.514,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.514,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.514,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.513,low
+q7,Which is true about variable names in quantified statements?,3,7,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.512,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.511,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.51,low
+q5,A statement with free variables is _____.,4,5,q8,Variable names in quantified statements can be changed if _____.,4,8,0.51,low
+q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.51,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.509,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.509,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.509,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.507,low
+q3,The scope of a quantifier determines:,2,3,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.507,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.506,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.506,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.505,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.505,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.504,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.503,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.503,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.502,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.502,low
+q3,The scope of a quantifier determines:,2,3,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.501,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q3,The scope of a quantifier determines:,2,3,0.5,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.499,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.499,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.498,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.498,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,0.497,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q8,Variable names in quantified statements can be changed if _____.,4,8,0.497,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.495,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q7,Which is true about variable names in quantified statements?,3,7,0.493,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.493,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.493,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q5,A statement with free variables is _____.,4,5,0.492,low
+q2,The scope of a quantifier includes _____.,4,2,q5,A statement with free variables is _____.,4,5,0.492,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.491,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q5,A statement with free variables is _____.,4,5,0.491,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.49,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.488,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.487,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.487,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.486,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.486,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.486,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q2,The scope of a quantifier includes _____.,4,2,0.484,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.484,low
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,q8,Variable names in quantified statements can be changed if _____.,4,8,0.484,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.482,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.482,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.48,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.479,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.479,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.478,low
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.476,low
+q5,A statement with free variables is _____.,4,5,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.476,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.475,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.474,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.474,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.474,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.473,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q9,Which statement about variable names in quantified statements is true?,2,9,0.472,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.472,low
+q2,The scope of a quantifier includes _____.,4,2,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.471,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.469,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.469,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.468,low
+q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.467,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.466,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.465,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.465,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q5,A statement with free variables is _____.,4,5,0.465,low
+q3,The scope of a quantifier determines:,2,3,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.465,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.465,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.465,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q7,Which is true about variable names in quantified statements?,3,7,0.465,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.464,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.464,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q8,Variable names in quantified statements can be changed if _____.,4,8,0.464,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.463,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,0.462,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.46,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q8,Variable names in quantified statements can be changed if _____.,4,8,0.46,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.46,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.46,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,0.459,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.459,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.459,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q9,Which statement about variable names in quantified statements is true?,2,9,0.459,low
+q5,A statement with free variables is _____.,4,5,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.458,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.457,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.457,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.457,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.457,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.456,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.456,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q5,A statement with free variables is _____.,4,5,0.455,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q5,A statement with free variables is _____.,4,5,0.454,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.454,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.454,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q8,Variable names in quantified statements can be changed if _____.,4,8,0.454,low
+q2,The scope of a quantifier includes _____.,4,2,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.454,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,0.453,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q2,The scope of a quantifier includes _____.,4,2,0.453,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.452,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q2,The scope of a quantifier includes _____.,4,2,0.452,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q2,The scope of a quantifier includes _____.,4,2,0.452,low
+q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.452,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.45,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.449,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.448,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q2,The scope of a quantifier includes _____.,4,2,0.448,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q3,The scope of a quantifier determines:,2,3,0.447,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.447,low
+q3,The scope of a quantifier determines:,2,3,q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,0.446,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.446,low
+q3,The scope of a quantifier determines:,2,3,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.444,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q5,A statement with free variables is _____.,4,5,0.443,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.443,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.442,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q7,Which is true about variable names in quantified statements?,3,7,0.44,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q9,Which statement about variable names in quantified statements is true?,2,9,0.44,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.44,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q2,The scope of a quantifier includes _____.,4,2,0.439,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.439,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q5,A statement with free variables is _____.,4,5,0.439,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.438,low
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.438,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.436,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,0.436,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q5,A statement with free variables is _____.,4,5,0.436,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.436,low
+q2,The scope of a quantifier includes _____.,4,2,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.436,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.435,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.434,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.431,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.431,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.431,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q7,Which is true about variable names in quantified statements?,3,7,0.43,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,0.43,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q8,Variable names in quantified statements can be changed if _____.,4,8,0.43,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.428,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q5,A statement with free variables is _____.,4,5,0.427,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.427,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.427,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.426,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q5,A statement with free variables is _____.,4,5,0.426,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.423,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.423,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.423,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q8,Variable names in quantified statements can be changed if _____.,4,8,0.423,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q9,Which statement about variable names in quantified statements is true?,2,9,0.422,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.422,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q2,The scope of a quantifier includes _____.,4,2,0.422,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,7,0.42,low
+q3,The scope of a quantifier determines:,2,3,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.418,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.418,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.418,low
+q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,q5,A statement with free variables is _____.,4,5,0.418,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q3,The scope of a quantifier determines:,2,3,0.417,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.417,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q5,A statement with free variables is _____.,4,5,0.417,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.417,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.417,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.416,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.416,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.416,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.416,low
+q3,The scope of a quantifier determines:,2,3,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.416,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.416,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.416,low
+q3,The scope of a quantifier determines:,2,3,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.415,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.414,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.414,low
+q3,The scope of a quantifier determines:,2,3,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.412,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.412,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.412,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.41,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.41,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.409,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.408,low
+q3,The scope of a quantifier determines:,2,3,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.408,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.408,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,0.407,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.407,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.407,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.406,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.406,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.406,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q2,The scope of a quantifier includes _____.,4,2,0.404,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q2,The scope of a quantifier includes _____.,4,2,0.403,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.402,low
+q2,The scope of a quantifier includes _____.,4,2,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.402,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.4,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.399,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.398,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q2,The scope of a quantifier includes _____.,4,2,0.398,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.398,low
+q7,Which is true about variable names in quantified statements?,3,7,q5,A statement with free variables is _____.,4,5,0.398,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q2,The scope of a quantifier includes _____.,4,2,0.397,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.397,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.397,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q5,A statement with free variables is _____.,4,5,0.397,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.396,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.395,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.395,low
+q3,The scope of a quantifier determines:,2,3,q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,0.394,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.393,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q8,Variable names in quantified statements can be changed if _____.,4,8,0.393,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,0.392,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q2,The scope of a quantifier includes _____.,4,2,0.392,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q8,Variable names in quantified statements can be changed if _____.,4,8,0.391,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q3,The scope of a quantifier determines:,2,3,0.391,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q7,Which is true about variable names in quantified statements?,3,7,0.391,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q9,Which statement about variable names in quantified statements is true?,2,9,0.39,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q9,Which statement about variable names in quantified statements is true?,2,9,0.39,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.39,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q8,Variable names in quantified statements can be changed if _____.,4,8,0.39,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.389,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.389,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.388,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q2,The scope of a quantifier includes _____.,4,2,0.387,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.386,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.386,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.386,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.386,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.386,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.386,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q7,Which is true about variable names in quantified statements?,3,7,0.385,low
+q1,Which variable is bound in \(\forall x P(x)\)?,2,1,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.385,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.384,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q8,Variable names in quantified statements can be changed if _____.,4,8,0.384,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.384,low
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.384,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.383,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q3,The scope of a quantifier determines:,2,3,0.382,low
+q8,Variable names in quantified statements can be changed if _____.,4,8,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.382,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,0.38,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.38,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q2,The scope of a quantifier includes _____.,4,2,0.38,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q3,The scope of a quantifier determines:,2,3,0.379,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q7,Which is true about variable names in quantified statements?,3,7,0.378,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.377,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.377,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.376,low
+q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,q8,Variable names in quantified statements can be changed if _____.,4,8,0.376,low
+q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,q8,Variable names in quantified statements can be changed if _____.,4,8,0.375,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.374,low
+q2,The scope of a quantifier includes _____.,4,2,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.374,low
+q3,The scope of a quantifier determines:,2,3,q5,A statement with free variables is _____.,4,5,0.373,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q3,The scope of a quantifier determines:,2,3,0.372,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,0.372,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.372,low
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,q5,A statement with free variables is _____.,4,5,0.372,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q1,Which variable is bound in \(\forall x P(x)\)?,2,1,0.371,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.37,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.368,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q9,Which statement about variable names in quantified statements is true?,2,9,0.367,low
+q7,Which is true about variable names in quantified statements?,3,7,q3,"Which quantifier corresponds to ""There exists"" in logic?",4,3,0.367,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,0.366,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q9,Which statement about variable names in quantified statements is true?,2,9,0.366,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.365,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.365,low
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,3,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.362,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.36,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.359,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q7,Which is true about variable names in quantified statements?,3,7,0.358,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q8,Variable names in quantified statements can be changed if _____.,4,8,0.356,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q8,Variable names in quantified statements can be changed if _____.,4,8,0.356,low
+q7,Which is true about variable names in quantified statements?,3,7,q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,9,0.356,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q8,Variable names in quantified statements can be changed if _____.,4,8,0.354,low
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,7,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.354,low
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,1,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.352,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.352,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.35,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.349,low
+q3,The scope of a quantifier determines:,2,3,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.349,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q5,A statement with free variables is _____.,4,5,0.349,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.348,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q5,A statement with free variables is _____.,4,5,0.347,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.346,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q9,Which statement about variable names in quantified statements is true?,2,9,0.345,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q8,Variable names in quantified statements can be changed if _____.,4,8,0.345,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q2,The scope of a quantifier includes _____.,4,2,0.34,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.339,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.339,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.338,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q9,Which statement about variable names in quantified statements is true?,2,9,0.337,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q5,A statement with free variables is _____.,4,5,0.337,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.336,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q5,A statement with free variables is _____.,4,5,0.335,low
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,6,q7,Which is true about variable names in quantified statements?,3,7,0.33,low
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.33,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.33,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.329,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q2,The scope of a quantifier includes _____.,4,2,0.327,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q8,Variable names in quantified statements can be changed if _____.,4,8,0.327,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.326,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q3,The scope of a quantifier determines:,2,3,0.324,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.322,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.321,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.321,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.32,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q7,Which is true about variable names in quantified statements?,3,7,0.32,low
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,q5,A statement with free variables is _____.,4,5,0.32,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.319,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q7,Which is true about variable names in quantified statements?,3,7,0.318,low
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,5,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.317,low
+q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,q8,Variable names in quantified statements can be changed if _____.,4,8,0.317,low
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.316,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.313,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q8,Variable names in quantified statements can be changed if _____.,4,8,0.313,low
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,9,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.313,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.313,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.312,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.309,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.308,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.307,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.307,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,2,0.305,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.304,low
+q9,Which statement about variable names in quantified statements is true?,2,9,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.304,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.303,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,5,0.301,low
+q3,The scope of a quantifier determines:,2,3,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.301,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.301,low
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,6,q5,A statement with free variables is _____.,4,5,0.3,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q3,The scope of a quantifier determines:,2,3,0.3,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,8,0.299,low
+q3,The scope of a quantifier determines:,2,3,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.297,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.296,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.291,low
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,4,q7,Which is true about variable names in quantified statements?,3,7,0.29,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q8,Variable names in quantified statements can be changed if _____.,4,8,0.288,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q7,Which is true about variable names in quantified statements?,3,7,0.286,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q9,Which statement about variable names in quantified statements is true?,2,9,0.285,low
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,2,q7,Which is true about variable names in quantified statements?,3,7,0.284,low
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.284,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.281,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.281,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,0.28,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q5,A statement with free variables is _____.,4,5,0.28,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q9,Which statement about variable names in quantified statements is true?,2,9,0.28,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.273,low
+q5,A statement with free variables is _____.,4,5,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.272,low
+q7,Which is true about variable names in quantified statements?,3,7,q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,4,0.271,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.267,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q7,Which is true about variable names in quantified statements?,3,7,0.266,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.265,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,6,0.265,low
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,1,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.264,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.263,low
+q7,Which is true about variable names in quantified statements?,3,7,q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,6,0.262,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.26,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.259,low
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,5,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.258,low
+q8,Variables that are not bound by a quantifier in a statement are called:,2,8,q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,0.255,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q5,A statement with free variables is _____.,4,5,0.255,low
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,2,q7,Which is true about variable names in quantified statements?,3,7,0.253,low
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,3,q7,Which is true about variable names in quantified statements?,3,7,0.25,low
+q7,Which is true about variable names in quantified statements?,3,7,q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,9,0.246,low
+q7,Which is true about variable names in quantified statements?,3,7,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.244,low
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,q7,"Which logical expression matches ""Every new employee met the deadline""?",4,7,0.244,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.242,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,1,0.241,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q8,Variables that are not bound by a quantifier in a statement are called:,2,8,0.24,low
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,4,q7,Which is true about variable names in quantified statements?,3,7,0.237,low
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,8,q7,Which is true about variable names in quantified statements?,3,7,0.225,low
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,4,q7,Which is true about variable names in quantified statements?,3,7,0.221,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"- Translate English statements into logical expressions involving quantifiers, predicates, and logical operators, and vice versa.  
+- Determine the truth value of quantified statements using predicate truth tables over finite domains.  
+- Identify free and bound variables in logical expressions and understand the scope of quantifiers.  
+- Recognize equivalent logical expressions with different variable names and scopes.  
+- Evaluate and interpret quantified logical statements in real-world contexts and translate between formal logic and natural language."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A variable \(x\) in \(\forall x P(x) \land Q(x)\) is _____.,1,yes,This question assesses identification of bound and free variables and understanding quantifier scope.
+q2,The statement \(\forall x (P(x) \rightarrow Q(x))\) means:,1,yes,This question evaluates translation of quantified statements into natural language and interpretation of their meaning.
+q3,"Which expression correctly means ""Some \(x\) is \(P\) and \(Q\)""?",1,yes,This question tests translation between English and logical expressions involving quantifiers and predicates.
+q4,"For the domain of employees, if all new employees met the deadline, which is true?",1,yes,This question assesses evaluation and interpretation of quantified statements in a real-world context.
+q5,Why is \(\exists x (P(x) \land Q(x))\) true when \(P(x)\) is true for some \(x\)?,1,yes,This question evaluates understanding of existential quantification and truth conditions of quantified statements.
+q6,What is the scope of the quantifier in \(\forall x (P(x) \land Q(x))\)?,1,yes,This question tests knowledge of the scope of quantifiers in logical expressions.
+q7,Which predicate variable is free in the statement \((\exists x P(x)) \land Q(x)\)?,1,yes,This question assesses identification of free variables in logical expressions.
+q8,"Translate ""Everyone was not sick"" into a logical expression.",1,yes,This question evaluates translation from natural language to quantified logical expressions.
+q9,Which of the following is a counterexample to \(\forall x (P(x) \rightarrow Q(x))\) being true?,1,yes,This question tests understanding of truth values of quantified statements and counterexamples.
+q1,Which variable is bound in \(\forall x P(x)\)?,2,yes,This question assesses identification of bound variables in quantified expressions.
+q2,The proposition \(\exists x (P(x) \land \lnot Q(x))\) means:,2,yes,This question evaluates interpretation of existential quantifiers and logical conjunction/negation.
+q3,The scope of a quantifier determines:,2,yes,This question tests understanding of the scope of quantifiers in logical expressions.
+q4,The expression \(\forall x (P(x) \rightarrow Q(x))\) is true if:,2,yes,This question assesses evaluation of truth conditions for universal quantified implications.
+q5,The statement \(\exists x P(x) \land Q(x)\) differs from \(\exists x (P(x) \land Q(x))\) because:,2,yes,This question evaluates understanding of logical equivalence and the role of parentheses in quantification.
+q6,"Which logical operator is used to express ""if ... then ..."" in quantified logic?",2,yes,"This question tests recognition of logical operators used in quantified logic, specifically implication."
+q7,"In the statement \(\exists x (P(x) \lor Q(x))\), what does the quantifier \(\exists\) mean?",2,yes,This question assesses interpretation of existential quantifiers in logical expressions.
+q8,Variables that are not bound by a quantifier in a statement are called:,2,yes,This question evaluates identification of free versus bound variables in logical statements.
+q9,Which statement about variable names in quantified statements is true?,2,yes,This question tests understanding of variable renaming and equivalence in quantified statements.
+q1,Why must variables be bound in a quantified statement to form a proposition?,3,yes,This question assesses understanding why variables must be bound to form propositions.
+q2,"Which quantifier expresses ""There exists a positive integer that is prime and even""?",3,yes,This question evaluates translation of natural language statements into quantified logical expressions.
+q3,How does the truth value of \(\forall x (P(x) \rightarrow Q(x))\) depend on counterexamples?,3,yes,This question tests understanding of how counterexamples affect the truth value of universal quantified statements.
+q4,"Which expression correctly translates ""Every new employee met the deadline""?",3,yes,This question assesses translation of real-world statements into quantified logical expressions.
+q5,Fill in the blank: The scope of a quantifier is the part of the logical expression to which the quantifier _____.,3,yes,This question evaluates understanding of the scope of quantifiers in logical expressions.
+q6,"Why is \(\exists x (S(x) \lor P(x))\) not logically equivalent to ""Someone was sick and came to the party""?",3,yes,This question tests interpretation of logical operators and quantifiers in relation to natural language meaning.
+q7,Which is true about variable names in quantified statements?,3,yes,This question assesses understanding of variable renaming and scope in quantified logic.
+q8,Fill in the blank: The predicate \(P(x)\) with variable \(x\) free is called a/an _____ variable.,3,yes,This question evaluates identification of free variables in predicates.
+q9,How does the expression \(\forall x (P(x) \land Q(y))\) differ from \(\forall x (P(x) \land Q(x))\) in terms of proposition status?,3,yes,This question tests understanding of free variables and proposition status in quantified expressions.
+q1,A variable _____ in a predicate is bound if it is attached to a quantifier.,4,yes,This question assesses knowledge of what it means for a variable to be bound in a predicate.
+q2,The scope of a quantifier includes _____.,4,yes,This question evaluates understanding of the scope of quantifiers in logical expressions.
+q3,"Which quantifier corresponds to ""There exists"" in logic?",4,yes,This question tests recognition of quantifiers and their logical symbols.
+q4,"The statement ""All prime numbers are odd"" translates logically to _____.",4,yes,This question assesses translation of natural language universal statements into quantified logic.
+q5,A statement with free variables is _____.,4,yes,This question evaluates understanding of the difference between propositions and statements with free variables.
+q6,The expression \(\exists x (P(x) \land Q(x))\) means _____.,4,yes,This question tests interpretation of existential quantification and conjunction in logical expressions.
+q7,"Which logical expression matches ""Every new employee met the deadline""?",4,yes,This question assesses translation of real-world statements into quantified logical expressions.
+q8,Variable names in quantified statements can be changed if _____.,4,yes,This question evaluates understanding of variable renaming rules within quantifier scope.
+q9,The proposition \(\exists x (P(x) \lor Q(x))\) is true if _____.,4,yes,This question tests evaluation of truth conditions for existential quantified disjunctions.

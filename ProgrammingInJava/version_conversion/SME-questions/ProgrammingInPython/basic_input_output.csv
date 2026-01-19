@@ -1,0 +1,7 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"Which statement outputs the text: ""I won't quit!""?","```python\nprint(""I won't quit!"")\n```",```python\nprint(I won't quit!)\n```,"```python\nprint(""I won't quit!"")\n```",```python\nprint('I won't quit!')\n```,"```python\nprint('I won't quit!', punctuation=True)\n```",,,,,,
+"Space, tab, and newline are all called _____ characters.",whitespace,noprint,symbol,space-line,whitespace,,,,,,
+Which statement does not print a newline character at the end?,"```python\nprint(""First part…"", end="""")\n```","```python\nprint(""First part…"")\n```","```python\nprint(""First part…\n"")\n```","```python\nprint(""First part…"", end="""")\n```","```python\nprint(""First part…"", end=""-\n"")\n```",,,,,,
+Which statement reads a user-entered string into variable user_name?,```python\nuser_name = input()\n```,```python\ninput = user_name()\n```,```python\nuser_name = input()\n```,```python\ninput() => user_name\n```,"```python\nuser_name = ""input()""\n```",,,,,,
+Which function converts a string to an integer?,int(),int(),integer(),string_to_int(),"convert(string, int)",,,,,,
+"In the statement:\n```python\nage = input(""Enter your age: "")\n```\n, the string ""Enter your age: "" is called a(n) _____.",prompt,prompt,prefix,variable,assignment,,,,,,

@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What is the main purpose of comments in source code?,To provide explanations for human readers,To increase the program's execution speed,To help the compiler optimize machine code,To provide explanations for human readers,To add extra functionality to the program,,,,,,
+Which symbol correctly starts a single-line comment in Java?,/*,/*,//,<!--,##,,,,,,
+How does a compiler treat whitespace in source code?,It ignores most whitespace except inside string literals,It converts whitespace into machine code,It ignores most whitespace except inside string literals,It treats whitespace as syntax errors,It requires whitespace for variable declarations,,,,,,
+What does a compiler do with comments in source code?,Ignores them during compilation,Converts them into machine code,Ignores them during compilation,Treats them as syntax errors,Executes them as instructions,,,,,,
+A multi-line comment in Java starts with _____ and ends with _____.,"/*, */","//, //","/*, */","<!--, -->","#, #",,,,,,
+Which is a good whitespace practice in code formatting?,Align operators and indent consistently,Put multiple statements on the same line,Align operators and indent consistently,Avoid spaces around operators like =,Remove all blank lines between statements,,,,,,
+What is the purpose of comments in code?,To help humans understand the code,To increase program execution speed,To be read by the compiler,To help humans understand the code,To replace whitespace in code,,,,,,
+A single-line comment in Java starts with _____.,##,/*,//,-->,##,,,,,,
+How does a compiler treat whitespace in code?,It ignores most whitespace except in string literals,It treats whitespace as syntax errors,It ignores most whitespace except in string literals,It converts all whitespace to semicolons,It requires no whitespace for code to compile,,,,,,
+What does a single-line comment start with in Java?,//,/*,#,--,//,,,,,,
+Which is a good use of whitespace in code?,Using spaces before and after operators,Multiple statements on the same line without spaces,Indenting lines unevenly,Using spaces before and after operators,No spaces between operators and operands,,,,,,
+The compiler ignores _____ and comments when converting code to machine code.,whitespace,string literals,whitespace,variables,semicolons,,,,,,

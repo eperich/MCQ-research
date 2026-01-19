@@ -1,0 +1,4 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+The operator *= is called a(n) _____ operator.,compound,double,compound,increment,multiple assignment,,,,,,
+\nWhich statement is equivalent to the following assignment?\nx -= 2 + y,x = x - (2 + y),x = 2 + y - x,x = -(2 + y),x = x - (2 + y),x = x - 2 + y,,,,,,
+Which floating-point literal correctly represents the scientific notation value: 2.3 x 10^7?,2.3e7,2.3e7,2.3*10e7,2.3e10^7,2.3xe7,,,,,,

@@ -1,0 +1,248 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,5,0,0
+2,5,0,0
+3,5,0,0
+4,5,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,2,25
+1,3,1,1,25
+1,4,1,2,25
+2,3,0,4,25
+2,4,2,1,25
+3,4,1,3,25
+
+Summary
+Total Comparisons,190
+Duplicates (≥85%),6
+Similar (70-85%),13
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q5,Which pandas method replaces missing values with a specified value?,3,5,q5,Which pandas method replaces missing values with a specified value?,4,5,0.998,duplicate
+q3,Which pandas method replaces missing values with specified values?,1,3,q5,Which pandas method replaces missing values with a specified value?,4,5,0.918,duplicate
+q3,Which pandas method replaces missing values with specified values?,1,3,q5,Which pandas method replaces missing values with a specified value?,3,5,0.917,duplicate
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q3,When should discarding dirty instances be avoided?,4,3,0.9,duplicate
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.899,duplicate
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.864,duplicate
+q4,What is the main disadvantage of pairwise discarding?,1,4,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.811,similar
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.81,similar
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.788,similar
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.783,similar
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q5,Which pandas method replaces missing values with a specified value?,4,5,0.773,similar
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q5,Which pandas method replaces missing values with a specified value?,3,5,0.77,similar
+q3,Which pandas method replaces missing values with specified values?,1,3,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.765,similar
+q4,How does pairwise discarding handle dirty data during analysis?,3,4,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.759,similar
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,0.754,similar
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.739,similar
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q3,When should discarding dirty instances be avoided?,4,3,0.727,similar
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.715,similar
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.713,similar
+q4,What is the main disadvantage of pairwise discarding?,1,4,q2,Why should duplicate instances usually be discarded from a dataset?,2,2,0.698,low
+q4,How does pairwise discarding handle dirty data during analysis?,3,4,q3,When should discarding dirty instances be avoided?,4,3,0.697,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.691,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.69,low
+q2,Which technique removes entire rows with missing values?,1,2,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.678,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.677,low
+q2,Which technique removes entire rows with missing values?,1,2,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.67,low
+q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.67,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.665,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.665,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q3,When should discarding dirty instances be avoided?,4,3,0.661,low
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.65,low
+q2,Which technique removes entire rows with missing values?,1,2,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.649,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.64,low
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.628,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.619,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.615,low
+q2,Which technique removes entire rows with missing values?,1,2,q4,What is the main disadvantage of pairwise discarding?,1,4,0.605,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.598,low
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.595,low
+q2,Which technique removes entire rows with missing values?,1,2,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.584,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.583,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.582,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.581,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.577,low
+q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,q3,When should discarding dirty instances be avoided?,4,3,0.575,low
+q3,When should discarding dirty instances be avoided?,4,3,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.569,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.568,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.563,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.561,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q3,When should discarding dirty instances be avoided?,4,3,0.56,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.556,low
+q4,How does pairwise discarding handle dirty data during analysis?,3,4,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.553,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.551,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.55,low
+q2,Which technique removes entire rows with missing values?,1,2,q5,What imputation method replaces missing data with the average of the feature?,1,5,0.549,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.549,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.54,low
+q2,Which technique removes entire rows with missing values?,1,2,q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,0.54,low
+q2,Which technique removes entire rows with missing values?,1,2,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.54,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.538,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.537,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.534,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q3,When should discarding dirty instances be avoided?,4,3,0.53,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.528,low
+q2,Which technique removes entire rows with missing values?,1,2,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.523,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.522,low
+q2,Which technique removes entire rows with missing values?,1,2,q5,Which pandas method replaces missing values with a specified value?,4,5,0.513,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.512,low
+q2,Which technique removes entire rows with missing values?,1,2,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.511,low
+q2,Which technique removes entire rows with missing values?,1,2,q5,Which pandas method replaces missing values with a specified value?,3,5,0.511,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q5,Which pandas method replaces missing values with a specified value?,3,5,0.507,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q5,Which pandas method replaces missing values with a specified value?,4,5,0.506,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q3,When should discarding dirty instances be avoided?,4,3,0.504,low
+q2,Which technique removes entire rows with missing values?,1,2,q2,Why should duplicate instances usually be discarded from a dataset?,2,2,0.503,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.503,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.503,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q2,Why should duplicate instances usually be discarded from a dataset?,2,2,0.499,low
+q2,Which technique removes entire rows with missing values?,1,2,q3,Which pandas method replaces missing values with specified values?,1,3,0.498,low
+q2,Which technique removes entire rows with missing values?,1,2,q3,When should discarding dirty instances be avoided?,4,3,0.496,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q2,Why should duplicate instances usually be discarded from a dataset?,2,2,0.491,low
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.488,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.486,low
+q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.481,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.475,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q2,Which technique removes entire rows with missing values?,1,2,0.473,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.467,low
+q2,Which technique removes entire rows with missing values?,1,2,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.466,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.462,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.462,low
+q2,"Dirty data includes missing, outlier, and _____ data.",4,2,q3,When should discarding dirty instances be avoided?,4,3,0.46,low
+q2,Which technique removes entire rows with missing values?,1,2,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.459,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.459,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.459,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,0.456,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.454,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.452,low
+q4,How does pairwise discarding handle dirty data during analysis?,3,4,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.451,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q3,When should discarding dirty instances be avoided?,4,3,0.45,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.446,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.444,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.443,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.441,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.429,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.427,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q5,Which pandas method replaces missing values with a specified value?,3,5,0.418,low
+q2,Which technique removes entire rows with missing values?,1,2,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.416,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q5,Which pandas method replaces missing values with a specified value?,4,5,0.416,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.414,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.409,low
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.409,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.408,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.407,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q5,Which pandas method replaces missing values with a specified value?,3,5,0.403,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q5,Which pandas method replaces missing values with a specified value?,4,5,0.402,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,0.402,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.401,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.394,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.394,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q4,What is the main disadvantage of pairwise discarding?,1,4,0.393,low
+q4,How does pairwise discarding handle dirty data during analysis?,3,4,q5,Which pandas method replaces missing values with a specified value?,3,5,0.391,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q5,Which pandas method replaces missing values with a specified value?,3,5,0.389,low
+q4,How does pairwise discarding handle dirty data during analysis?,3,4,q5,Which pandas method replaces missing values with a specified value?,4,5,0.389,low
+q5,Which pandas method replaces missing values with a specified value?,3,5,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.388,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q5,Which pandas method replaces missing values with a specified value?,4,5,0.386,low
+q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,q5,Which pandas method replaces missing values with a specified value?,4,5,0.386,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q5,What imputation method replaces missing data with the average of the feature?,1,5,0.385,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q5,What imputation method replaces missing data with the average of the feature?,1,5,0.384,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.384,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.384,low
+q5,Which pandas method replaces missing values with a specified value?,3,5,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.383,low
+q4,What is the effect of pairwise discarding on dataset analysis?,4,4,q5,Which pandas method replaces missing values with a specified value?,4,5,0.382,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,0.379,low
+q5,Which pandas method replaces missing values with a specified value?,3,5,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.376,low
+q2,"Dirty data includes missing, outlier, and _____ data.",4,2,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.376,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.374,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q3,When should discarding dirty instances be avoided?,4,3,0.372,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q5,Which pandas method replaces missing values with a specified value?,3,5,0.371,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q5,Which pandas method replaces missing values with a specified value?,4,5,0.37,low
+q2,"Dirty data includes missing, outlier, and _____ data.",4,2,q5,Which pandas method replaces missing values with a specified value?,4,5,0.37,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.369,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.366,low
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q5,Which pandas method replaces missing values with a specified value?,4,5,0.366,low
+q3,When is discarding an entire feature recommended in data cleaning?,3,3,q5,Which pandas method replaces missing values with a specified value?,3,5,0.362,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q5,Which pandas method replaces missing values with a specified value?,3,5,0.361,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.359,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q5,Which pandas method replaces missing values with a specified value?,4,5,0.359,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.354,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.353,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.352,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.352,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.347,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q3,Which pandas method replaces missing values with specified values?,1,3,0.343,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q1,What type of dirty data is a missing value represented as a blank or NaN?,3,1,0.338,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q4,How does pairwise discarding handle dirty data during analysis?,3,4,0.338,low
+q2,Why should duplicate instances usually be discarded from a dataset?,2,2,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.335,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q4,What is the effect of pairwise discarding on dataset analysis?,4,4,0.331,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.327,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.324,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,0.324,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q3,When is discarding an entire feature recommended in data cleaning?,3,3,0.32,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q2,Why should duplicate instances usually be discarded from a dataset?,2,2,0.318,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q5,Which pandas method replaces missing values with a specified value?,3,5,0.317,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q5,Which pandas method replaces missing values with a specified value?,4,5,0.317,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.317,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q5,What imputation method replaces missing data with the average of the feature?,1,5,0.314,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q2,Why should duplicate instances usually be discarded from a dataset?,2,2,0.314,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.313,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q5,Which pandas method replaces missing values with a specified value?,3,5,0.312,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.309,low
+q1,What type of dirty data is a numeric value far from the mean called?,1,1,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.308,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.308,low
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,q5,Which pandas method replaces missing values with a specified value?,4,5,0.308,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q5,Which pandas method replaces missing values with a specified value?,3,5,0.301,low
+q5,Which pandas method replaces missing values with a specified value?,3,5,q3,When should discarding dirty instances be avoided?,4,3,0.301,low
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,1,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.3,low
+q4,What is the main disadvantage of pairwise discarding?,1,4,q5,Which pandas method replaces missing values with a specified value?,4,5,0.298,low
+q3,When should discarding dirty instances be avoided?,4,3,q5,Which pandas method replaces missing values with a specified value?,4,5,0.298,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q3,When is discarding instances a suitable method to handle dirty data?,2,3,0.295,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q1,What term describes data values that are much larger or smaller than most in the same feature?,4,1,0.291,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q2,"Dirty data includes missing, outlier, and _____ data.",4,2,0.289,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q3,When should discarding dirty instances be avoided?,4,3,0.287,low
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,q3,When should discarding dirty instances be avoided?,4,3,0.286,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q3,When should discarding dirty instances be avoided?,4,3,0.272,low
+q3,When is discarding instances a suitable method to handle dirty data?,2,3,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.269,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.266,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q2,Why should outlier data typically be removed or corrected in a dataset?,3,2,0.263,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q4,What is the main disadvantage of pairwise discarding?,1,4,0.258,low
+q3,Which pandas method replaces missing values with specified values?,1,3,q3,When should discarding dirty instances be avoided?,4,3,0.251,low
+q5,What imputation method replaces missing data with the average of the feature?,1,5,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.249,low
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,4,q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,5,0.249,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"List and identify types of dirty data in datasets, including missing, outlier, and duplicate data  
+Explain methods to discard dirty data, such as discarding instances, features, and pairwise discarding, and when each method is appropriate  
+Describe techniques for imputing missing and outlier data, including mean, hot-deck, cold-deck, and regression imputation  
+Apply pandas methods to detect, discard, and impute dirty data in Python dataframes effectively  
+Understand the impact of dirty data on data analysis and the importance of cleaning data for accurate results"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What type of dirty data is a numeric value far from the mean called?,1,yes,"This question assesses identification of outlier data, directly related to the first learning objective."
+q2,Which technique removes entire rows with missing values?,1,yes,"This question evaluates knowledge of discarding instances as a method to handle dirty data, matching the second learning objective."
+q3,Which pandas method replaces missing values with specified values?,1,yes,"This question tests application of pandas methods to impute missing data, aligning with the fourth learning objective."
+q4,What is the main disadvantage of pairwise discarding?,1,yes,"This question addresses understanding the disadvantage of pairwise discarding, which relates to the second learning objective."
+q5,What imputation method replaces missing data with the average of the feature?,1,yes,"This question assesses knowledge of mean imputation technique, directly linked to the third learning objective."
+q1,What term describes data values that are much larger or smaller than most values in a feature?,2,yes,"This question again tests identification of outlier data, supporting the first learning objective."
+q2,Why should duplicate instances usually be discarded from a dataset?,2,yes,"This question evaluates understanding of why duplicate data should be discarded, related to the first and second learning objectives."
+q3,When is discarding instances a suitable method to handle dirty data?,2,yes,"This question assesses when discarding instances is appropriate, matching the second learning objective."
+q4,"Fill in the blank: _____ imputation replaces missing values with the mean of a feature, excluding missing and outlier values.",2,yes,"This question tests knowledge of mean imputation, which is part of the third learning objective."
+q5,"In pandas, which method removes duplicate rows from a DataFrame?",2,yes,"This question evaluates use of pandas method to discard duplicate data, aligning with the fourth learning objective."
+q1,What type of dirty data is a missing value represented as a blank or NaN?,3,yes,"This question assesses identification of missing data, directly related to the first learning objective."
+q2,Why should outlier data typically be removed or corrected in a dataset?,3,yes,"This question evaluates understanding of the impact of outlier data on analysis, linked to the fifth learning objective."
+q3,When is discarding an entire feature recommended in data cleaning?,3,yes,"This question tests when discarding features is recommended, matching the second learning objective."
+q4,How does pairwise discarding handle dirty data during analysis?,3,yes,"This question assesses understanding of how pairwise discarding works, related to the second learning objective."
+q5,Which pandas method replaces missing values with a specified value?,3,yes,"This question evaluates application of pandas method to impute missing data, aligned with the fourth learning objective."
+q1,What term describes data values that are much larger or smaller than most in the same feature?,4,yes,"This question tests identification of outlier data, directly related to the first learning objective."
+q2,"Dirty data includes missing, outlier, and _____ data.",4,yes,"This question assesses knowledge of types of dirty data, including duplicate data, matching the first learning objective."
+q3,When should discarding dirty instances be avoided?,4,yes,"This question evaluates when discarding instances should be avoided, linked to the second learning objective."
+q4,What is the effect of pairwise discarding on dataset analysis?,4,yes,"This question tests understanding of the effect of pairwise discarding on analysis, related to the second learning objective."
+q5,Which pandas method replaces missing values with a specified value?,4,yes,"This question assesses use of pandas method to impute missing data, aligned with the fourth learning objective."

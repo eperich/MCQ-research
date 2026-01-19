@@ -1,0 +1,173 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,3,16
+1,3,1,2,16
+1,4,1,3,16
+2,3,0,2,16
+2,4,0,2,16
+3,4,1,1,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),3
+Similar (70-85%),13
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,"In Python, a variable is used to _____.",1,3,q3,"In Python, a variable is used to _____.",3,3,0.985,duplicate
+q4,What is the role of the print() function in Python?,1,4,q4,What is the role of the print() function in Python?,4,4,0.965,duplicate
+q1,What does the Python interpreter do?,3,1,q1,What does the Python interpreter do?,4,1,0.903,duplicate
+q1,What does the Python interpreter do?,1,1,q1,What does the Python interpreter do?,3,1,0.847,similar
+q1,What does the Python interpreter do?,1,1,q1,What does the Python interpreter do?,4,1,0.836,similar
+q3,"In Python, a variable is used to _____.",1,3,q2,"In Python, what does a variable do?",2,2,0.823,similar
+q2,"In Python, what does a variable do?",2,2,q3,"In Python, a variable is used to _____.",3,3,0.819,similar
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q2,The interactive interpreter allows the user to _____.,3,2,0.805,similar
+q3,"In Python, a variable is used to _____.",3,3,q3,"In Python, a variable stores _____.",4,3,0.786,similar
+q3,"In Python, a variable is used to _____.",1,3,q3,"In Python, a variable stores _____.",4,3,0.776,similar
+q2,"In Python, what does a variable do?",2,2,q3,"In Python, a variable stores _____.",4,3,0.737,similar
+q1,What does the Python interpreter do?,1,1,q1,What is the primary role of the Python interpreter?,2,1,0.716,similar
+q1,What is the primary role of the Python interpreter?,2,1,q1,What does the Python interpreter do?,3,1,0.713,similar
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q1,What does the Python interpreter do?,4,1,0.703,similar
+q4,What is the role of the print() function in Python?,1,4,q2,"In Python, what does a variable do?",2,2,0.703,similar
+q1,What is the primary role of the Python interpreter?,2,1,q1,What does the Python interpreter do?,4,1,0.703,similar
+q2,"In Python, what does a variable do?",2,2,q4,What is the role of the print() function in Python?,4,4,0.684,low
+q3,"In Python, a variable is used to _____.",1,3,q4,What is the role of the print() function in Python?,4,4,0.683,low
+q3,"In Python, a variable is used to _____.",1,3,q4,What is the role of the print() function in Python?,1,4,0.676,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q1,What does the Python interpreter do?,3,1,0.67,low
+q3,"In Python, a variable is used to _____.",3,3,q4,What is the role of the print() function in Python?,4,4,0.663,low
+q4,What is the role of the print() function in Python?,1,4,q3,"In Python, a variable is used to _____.",3,3,0.662,low
+q2,The interactive interpreter allows the user to _____.,3,2,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.658,low
+q1,What does the Python interpreter do?,1,1,q2,The interactive interpreter is best described as a tool that _____.,1,2,0.642,low
+q1,What does the Python interpreter do?,1,1,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.637,low
+q2,The interactive interpreter allows the user to _____.,3,2,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.636,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.635,low
+q2,"In Python, what does a variable do?",2,2,q4,What is an expression in Python?,2,4,0.626,low
+q1,What does the Python interpreter do?,1,1,q2,"In Python, what does a variable do?",2,2,0.615,low
+q4,What is an expression in Python?,2,4,q3,"In Python, a variable stores _____.",4,3,0.608,low
+q2,"In Python, what does a variable do?",2,2,q1,What does the Python interpreter do?,3,1,0.606,low
+q4,What is the role of the print() function in Python?,1,4,q4,What is an expression in Python?,2,4,0.603,low
+q4,What is the role of the print() function in Python?,1,4,q1,What is the primary role of the Python interpreter?,2,1,0.601,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.587,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.584,low
+q1,What is the primary role of the Python interpreter?,2,1,q4,What is the role of the print() function in Python?,4,4,0.583,low
+q4,What is an expression in Python?,2,4,q4,What is the role of the print() function in Python?,4,4,0.583,low
+q4,What is an expression in Python?,2,4,q3,"In Python, a variable is used to _____.",3,3,0.58,low
+q4,What is the role of the print() function in Python?,1,4,q3,"In Python, a variable stores _____.",4,3,0.576,low
+q3,"In Python, a variable is used to _____.",1,3,q4,What is an expression in Python?,2,4,0.571,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q1,What is the primary role of the Python interpreter?,2,1,0.57,low
+q1,What does the Python interpreter do?,1,1,q2,The interactive interpreter allows the user to _____.,3,2,0.566,low
+q2,"In Python, what does a variable do?",2,2,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.565,low
+q2,"In Python, what does a variable do?",2,2,q1,What does the Python interpreter do?,4,1,0.563,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.561,low
+q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,q1,What does the Python interpreter do?,4,1,0.551,low
+q3,"In Python, a variable stores _____.",4,3,q4,What is the role of the print() function in Python?,4,4,0.551,low
+q3,"In Python, a variable is used to _____.",1,3,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.549,low
+q1,What does the Python interpreter do?,3,1,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.544,low
+q1,What does the Python interpreter do?,3,1,q4,What is the role of the print() function in Python?,4,4,0.539,low
+q2,The interactive interpreter allows the user to _____.,3,2,q1,What does the Python interpreter do?,4,1,0.539,low
+q4,What is the role of the print() function in Python?,1,4,q1,What does the Python interpreter do?,3,1,0.537,low
+q4,What is an expression in Python?,2,4,q1,What does the Python interpreter do?,3,1,0.537,low
+q4,What is an expression in Python?,2,4,q1,What does the Python interpreter do?,4,1,0.534,low
+q1,What is the primary role of the Python interpreter?,2,1,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.533,low
+q3,"In Python, a variable is used to _____.",3,3,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.533,low
+q1,What does the Python interpreter do?,3,1,q2,The interactive interpreter allows the user to _____.,3,2,0.53,low
+q1,What is the primary role of the Python interpreter?,2,1,q2,The interactive interpreter allows the user to _____.,3,2,0.527,low
+q1,What does the Python interpreter do?,1,1,q4,What is an expression in Python?,2,4,0.521,low
+q1,What does the Python interpreter do?,1,1,q3,"In Python, a variable is used to _____.",1,3,0.515,low
+q1,What does the Python interpreter do?,1,1,q4,What is the role of the print() function in Python?,1,4,0.514,low
+q1,What is the primary role of the Python interpreter?,2,1,q2,"In Python, what does a variable do?",2,2,0.513,low
+q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,q4,What is the role of the print() function in Python?,4,4,0.51,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,0.508,low
+q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,q3,"In Python, a variable stores _____.",4,3,0.508,low
+q1,What does the Python interpreter do?,1,1,q4,What is the role of the print() function in Python?,4,4,0.507,low
+q4,What is an expression in Python?,2,4,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.503,low
+q1,What does the Python interpreter do?,1,1,q3,"In Python, a variable is used to _____.",3,3,0.501,low
+q1,What does the Python interpreter do?,1,1,q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,0.497,low
+q3,"In Python, a variable is used to _____.",1,3,q2,The interactive interpreter allows the user to _____.,3,2,0.497,low
+q1,What does the Python interpreter do?,1,1,q3,"In Python, a variable stores _____.",4,3,0.494,low
+q1,What does the Python interpreter do?,4,1,q4,What is the role of the print() function in Python?,4,4,0.494,low
+q4,What is the role of the print() function in Python?,1,4,q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,0.493,low
+q4,What is the role of the print() function in Python?,1,4,q1,What does the Python interpreter do?,4,1,0.492,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q1,What does the Python interpreter do?,3,1,0.492,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q1,What does the Python interpreter do?,4,1,0.489,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q3,"In Python, a variable is used to _____.",1,3,0.488,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q2,"In Python, what does a variable do?",2,2,0.488,low
+q1,What is the primary role of the Python interpreter?,2,1,q4,What is an expression in Python?,2,4,0.482,low
+q3,"In Python, a variable is used to _____.",1,3,q1,What does the Python interpreter do?,3,1,0.481,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q2,The interactive interpreter allows the user to _____.,3,2,0.481,low
+q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,4,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.481,low
+q2,The interactive interpreter allows the user to _____.,3,2,q3,"In Python, a variable is used to _____.",3,3,0.48,low
+q1,What is the primary role of the Python interpreter?,2,1,q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,0.479,low
+q2,"In Python, what does a variable do?",2,2,q2,The interactive interpreter allows the user to _____.,3,2,0.476,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q4,What is an expression in Python?,2,4,0.47,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q3,"In Python, a variable is used to _____.",3,3,0.469,low
+q1,What does the Python interpreter do?,3,1,q3,"In Python, a variable is used to _____.",3,3,0.469,low
+q4,What is the role of the print() function in Python?,1,4,q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,0.468,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q4,What is the role of the print() function in Python?,4,4,0.463,low
+q3,"In Python, a variable is used to _____.",1,3,q1,What is the primary role of the Python interpreter?,2,1,0.462,low
+q3,"In Python, a variable is used to _____.",1,3,q1,What does the Python interpreter do?,4,1,0.449,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q4,What is an expression in Python?,2,4,0.448,low
+q1,What is the primary role of the Python interpreter?,2,1,q3,"In Python, a variable is used to _____.",3,3,0.445,low
+q4,What is the role of the print() function in Python?,1,4,q2,The interactive interpreter allows the user to _____.,3,2,0.442,low
+q2,"In Python, what does a variable do?",2,2,q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,0.442,low
+q4,What is an expression in Python?,2,4,q2,The interactive interpreter allows the user to _____.,3,2,0.441,low
+q3,"In Python, a variable is used to _____.",3,3,q1,What does the Python interpreter do?,4,1,0.434,low
+q2,The interactive interpreter allows the user to _____.,3,2,q3,"In Python, a variable stores _____.",4,3,0.425,low
+q2,The interactive interpreter allows the user to _____.,3,2,q4,What is the role of the print() function in Python?,4,4,0.421,low
+q1,What does the Python interpreter do?,3,1,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.42,low
+q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,q3,"In Python, a variable stores _____.",4,3,0.418,low
+q1,What is the primary role of the Python interpreter?,2,1,q3,"In Python, a variable stores _____.",4,3,0.413,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q4,What is the role of the print() function in Python?,1,4,0.412,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q3,"In Python, a variable stores _____.",4,3,0.412,low
+q1,What does the Python interpreter do?,4,1,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.41,low
+q4,What is an expression in Python?,2,4,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.408,low
+q1,What does the Python interpreter do?,1,1,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.407,low
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,q3,"In Python, a variable is used to _____.",3,3,0.406,low
+q3,"In Python, a variable is used to _____.",1,3,q3,What indicates the Python interactive interpreter is ready to accept code?,2,3,0.404,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q4,What is the role of the print() function in Python?,4,4,0.402,low
+q2,"In Python, what does a variable do?",2,2,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.4,low
+q3,"In Python, a variable is used to _____.",3,3,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.4,low
+q3,"In Python, a variable is used to _____.",1,3,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.395,low
+q1,What does the Python interpreter do?,3,1,q3,"In Python, a variable stores _____.",4,3,0.395,low
+q2,The interactive interpreter is best described as a tool that _____.,1,2,q3,"In Python, a variable stores _____.",4,3,0.393,low
+q1,What is the primary role of the Python interpreter?,2,1,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.38,low
+q1,What does the Python interpreter do?,4,1,q3,"In Python, a variable stores _____.",4,3,0.371,low
+q4,What is the role of the print() function in Python?,1,4,q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,0.358,low
+q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,2,q4,What is the role of the print() function in Python?,4,4,0.342,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Explain the Python interpreter and the role of an interactive interpreter in executing a program.  
+Define basic Python terms, including interpreter, code, line, and prompt.  
+Differentiate between code statements, expressions, variables, the print() function, and comments.  
+Modify and execute a simple Python program."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the Python interpreter do?,1,yes,"Yes, the question directly assesses the learning objective of explaining the Python interpreter and its role in executing a program, as it specifically asks about the function of the interpreter."
+q2,The interactive interpreter is best described as a tool that _____.,1,yes,"Yes, the question directly assesses the learning objective of explaining the Python interpreter and the role of an interactive interpreter in executing a program, as it specifically asks about the function of the interactive interpreter."
+q3,"In Python, a variable is used to _____.",1,yes,"Yes, the question directly assesses the learning objective to define basic Python terms, including variables, as it specifically asks about the function of a variable in Python."
+q4,What is the role of the print() function in Python?,1,yes,"Yes, the question directly assesses the learning objective of differentiating between code statements, expressions, variables, the print() function, and comments, as it specifically asks about the role of the print() function in Python."
+q1,What is the primary role of the Python interpreter?,2,yes,"Yes, the question directly assesses the learning objective of explaining the Python interpreter and its role in executing a program, as it specifically asks about the primary function of the interpreter."
+q2,"In Python, what does a variable do?",2,yes,"Yes, the question directly assesses the learning objective of defining basic Python terms, specifically the concept of a variable and its role in storing values for later use."
+q3,What indicates the Python interactive interpreter is ready to accept code?,2,yes,"Yes, the question directly assesses the learning objective of defining basic Python terms, including the prompt, as it specifically asks about the indicator that shows the interpreter is ready to accept code."
+q4,What is an expression in Python?,2,yes,"Yes, the question directly assesses the learning objective to define basic Python terms, specifically the term ""expression."""
+q1,What does the Python interpreter do?,3,yes,"Yes, the question directly assesses the learning objective of explaining the Python interpreter and its role in executing a program, as it asks specifically about the function of the Python interpreter."
+q2,The interactive interpreter allows the user to _____.,3,yes,"Yes, the question directly assesses the learning objective of explaining the role of an interactive interpreter in executing a program, as it specifically asks about the functionality of the interactive interpreter."
+q3,"In Python, a variable is used to _____.",3,yes,"Yes, the question directly assesses the learning objective of defining basic Python terms, specifically the term ""variable,"" as it asks for the function of a variable in Python."
+q4,What is the main advantage of writing Python code in a file instead of the interactive interpreter?,3,yes,"Yes, the question assesses the learning objective of differentiating between code statements and the role of the interactive interpreter, as it highlights the advantages of using files for code execution compared to the interactive environment."
+q1,What does the Python interpreter do?,4,yes,"Yes, the question directly assesses the learning objective of explaining the Python interpreter and its role in executing a program, as it specifically asks about the function of the Python interpreter."
+q2,"The interactive interpreter prompt "">>>>"" indicates _____.",4,yes,"Yes, this question directly assesses the second learning objective, as it requires understanding the definition of the prompt in the context of the Python interpreter."
+q3,"In Python, a variable stores _____.",4,yes,"Yes, the question directly assesses the learning objective of defining basic Python terms, including variables, as it tests the understanding of what a variable stores in Python."
+q4,What is the role of the print() function in Python?,4,yes,"Yes, the question directly assesses the learning objective of differentiating between code statements, expressions, variables, the print() function, and comments, as it specifically asks about the role of the print() function in Python."

@@ -1,0 +1,566 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,8,0,1
+2,8,0,4
+3,8,0,7
+4,8,1,4
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,10,64
+1,3,5,7,64
+1,4,3,6,64
+2,3,0,15,64
+2,4,1,13,64
+3,4,2,15,64
+
+Summary
+Total Comparisons,496
+Duplicates (≥85%),12
+Similar (70-85%),82
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q6,The statement \(\exists x P(x)\) means:,3,6,0.981,duplicate
+q2,Which symbol represents the universal quantifier?,1,2,q2,Which symbol denotes a universal quantifier?,3,2,0.978,duplicate
+q1,What is a predicate in logic?,1,1,q1,What is a predicate in logic?,3,1,0.949,duplicate
+q6,The statement \(\exists x P(x)\) means:,3,6,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.941,duplicate
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.93,duplicate
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.919,duplicate
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.912,duplicate
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.897,duplicate
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.875,duplicate
+q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.852,duplicate
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.851,duplicate
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.851,duplicate
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.848,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.842,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.839,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.828,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.817,similar
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.817,similar
+q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.812,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.811,similar
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q7,The domain of a variable in a predicate is _____.,4,7,0.796,similar
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.796,similar
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.796,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q6,The statement \(\exists x P(x)\) means:,3,6,0.791,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.791,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.79,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.789,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.789,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.789,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.783,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.782,similar
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.781,similar
+q5,What shows that a universally quantified statement is false?,1,5,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.78,similar
+q1,What is a predicate in logic?,1,1,q1,What distinguishes a predicate from a proposition?,2,1,0.778,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.778,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.777,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.776,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.774,similar
+q6,The statement \(\exists x P(x)\) means:,3,6,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.774,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.773,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.771,similar
+q1,What distinguishes a predicate from a proposition?,2,1,q1,What is a predicate in logic?,3,1,0.771,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.771,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.771,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.769,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q6,The statement \(\exists x P(x)\) is true if:,1,6,0.768,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.767,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q6,The statement \(\exists x P(x)\) means:,3,6,0.765,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.765,similar
+q6,The statement \(\exists x P(x)\) means:,3,6,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.765,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.763,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q6,The statement \(\exists x P(x)\) means:,3,6,0.763,similar
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.762,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.761,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.756,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.754,similar
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.754,similar
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.753,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.753,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.751,similar
+q5,The statement \(\exists x P(x)\) means _____.,4,5,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.751,similar
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.75,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.749,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.749,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.749,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.747,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.743,similar
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q6,The statement \(\exists x P(x)\) means:,3,6,0.743,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.742,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.741,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.741,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.74,similar
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.74,similar
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.74,similar
+q6,The statement \(\exists x P(x)\) means:,3,6,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.736,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.735,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q6,The statement \(\exists x P(x)\) means:,3,6,0.733,similar
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.733,similar
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.73,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.728,similar
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.728,similar
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.727,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q6,The statement \(\exists x P(x)\) means:,3,6,0.726,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.726,similar
+q1,What is a predicate in logic?,3,1,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.723,similar
+q1,What is a predicate in logic?,1,1,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.721,similar
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.72,similar
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.718,similar
+q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.718,similar
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.714,similar
+q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.711,similar
+q2,Which symbol represents the universal quantifier?,1,2,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.709,similar
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.702,similar
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.702,similar
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.692,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.691,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.691,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.69,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.688,low
+q2,Which symbol denotes a universal quantifier?,3,2,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.687,low
+q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.687,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.683,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.683,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.682,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.682,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.68,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q7,The domain of a variable in a predicate is _____.,4,7,0.68,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.677,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.677,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,0.676,low
+q5,What shows that a universally quantified statement is false?,1,5,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.676,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.676,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.672,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q6,The statement \(\exists x P(x)\) means:,3,6,0.671,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.669,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.668,low
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.668,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.667,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.667,low
+q1,What distinguishes a predicate from a proposition?,2,1,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.664,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.659,low
+q1,What is a predicate in logic?,1,1,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.655,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.655,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.653,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q6,The statement \(\exists x P(x)\) means:,3,6,0.653,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.652,low
+q1,What distinguishes a predicate from a proposition?,2,1,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.65,low
+q5,What shows that a universally quantified statement is false?,1,5,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.649,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,0.648,low
+q1,What is a predicate in logic?,3,1,q7,The domain of a variable in a predicate is _____.,4,7,0.648,low
+q5,What shows that a universally quantified statement is false?,1,5,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.647,low
+q5,What shows that a universally quantified statement is false?,1,5,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.646,low
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.645,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.643,low
+q6,The statement \(\exists x P(x)\) means:,3,6,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.643,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.64,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.639,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.637,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.636,low
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.636,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.635,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.63,low
+q1,What is a predicate in logic?,1,1,q7,The domain of a variable in a predicate is _____.,4,7,0.628,low
+q2,Which symbol represents the universal quantifier?,1,2,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.627,low
+q8,Which expression is a proposition?,1,8,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.626,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.626,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q1,What is a predicate in logic?,3,1,0.625,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.624,low
+q6,The statement \(\exists x P(x)\) means:,3,6,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.62,low
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.62,low
+q1,What distinguishes a predicate from a proposition?,2,1,q7,The domain of a variable in a predicate is _____.,4,7,0.619,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.618,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.616,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.616,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.616,low
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.615,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.614,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.612,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.612,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q2,Which symbol denotes a universal quantifier?,3,2,0.611,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.61,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.61,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.609,low
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.609,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.608,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.608,low
+q5,The statement \(\exists x P(x)\) means _____.,4,5,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.608,low
+q8,Which expression is a proposition?,1,8,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.606,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q6,The statement \(\exists x P(x)\) means:,3,6,0.606,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.606,low
+q1,What is a predicate in logic?,3,1,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.606,low
+q1,What is a predicate in logic?,1,1,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.605,low
+q1,What distinguishes a predicate from a proposition?,2,1,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.604,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.604,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q6,The statement \(\exists x P(x)\) means:,3,6,0.604,low
+q5,What shows that a universally quantified statement is false?,1,5,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.601,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.601,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.601,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.599,low
+q1,What is a predicate in logic?,1,1,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.597,low
+q5,What shows that a universally quantified statement is false?,1,5,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.597,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.596,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q7,The domain of a variable in a predicate is _____.,4,7,0.596,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.594,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.593,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.593,low
+q6,The statement \(\exists x P(x)\) means:,3,6,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.591,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.59,low
+q5,What shows that a universally quantified statement is false?,1,5,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.59,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q6,The statement \(\exists x P(x)\) means:,3,6,0.588,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.587,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.586,low
+q1,What is a predicate in logic?,3,1,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.583,low
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.583,low
+q5,What shows that a universally quantified statement is false?,1,5,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.58,low
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.58,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q5,What shows that a universally quantified statement is false?,1,5,0.579,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.578,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.577,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.577,low
+q1,What distinguishes a predicate from a proposition?,2,1,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.577,low
+q5,What shows that a universally quantified statement is false?,1,5,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.573,low
+q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,q7,The domain of a variable in a predicate is _____.,4,7,0.572,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.57,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.569,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.568,low
+q1,What is a predicate in logic?,1,1,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.567,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.567,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q1,What is a predicate in logic?,3,1,0.567,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.566,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.565,low
+q6,The statement \(\exists x P(x)\) means:,3,6,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.565,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.564,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.563,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.563,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.561,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.56,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.557,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.556,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,0.555,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.555,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.555,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.554,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.553,low
+q1,What distinguishes a predicate from a proposition?,2,1,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.552,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.552,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q6,The statement \(\exists x P(x)\) means:,3,6,0.55,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q6,The statement \(\exists x P(x)\) is true if:,1,6,0.548,low
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.548,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.547,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q7,The domain of a variable in a predicate is _____.,4,7,0.545,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.543,low
+q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.543,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q5,What shows that a universally quantified statement is false?,1,5,0.542,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.542,low
+q2,Which symbol represents the universal quantifier?,1,2,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.539,low
+q5,What shows that a universally quantified statement is false?,1,5,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.538,low
+q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.538,low
+q8,Which expression is a proposition?,1,8,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.537,low
+q2,Which symbol represents the universal quantifier?,1,2,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.536,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.536,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.536,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.535,low
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.534,low
+q2,Which symbol represents the universal quantifier?,1,2,q6,The statement \(\exists x P(x)\) means:,3,6,0.533,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.533,low
+q2,Which symbol represents the universal quantifier?,1,2,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.53,low
+q5,What shows that a universally quantified statement is false?,1,5,q6,The statement \(\exists x P(x)\) is true if:,1,6,0.529,low
+q2,Which symbol denotes a universal quantifier?,3,2,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.529,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.529,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.528,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.528,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.527,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.527,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.527,low
+q8,Which expression is a proposition?,1,8,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.525,low
+q2,Which symbol represents the universal quantifier?,1,2,q6,The statement \(\exists x P(x)\) is true if:,1,6,0.524,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.524,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.524,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.524,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.523,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.523,low
+q7,The domain of a variable in a predicate is _____.,4,7,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.523,low
+q1,What is a predicate in logic?,1,1,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.522,low
+q2,Which symbol denotes a universal quantifier?,3,2,q6,The statement \(\exists x P(x)\) means:,3,6,0.522,low
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.522,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.521,low
+q2,Which symbol represents the universal quantifier?,1,2,q5,What shows that a universally quantified statement is false?,1,5,0.519,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.519,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.519,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.519,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.518,low
+q5,What shows that a universally quantified statement is false?,1,5,q6,The statement \(\exists x P(x)\) means:,3,6,0.516,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.516,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q7,The domain of a variable in a predicate is _____.,4,7,0.516,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q2,Which symbol denotes a universal quantifier?,3,2,0.516,low
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.515,low
+q8,Which expression is a proposition?,1,8,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.513,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q2,Which symbol denotes a universal quantifier?,3,2,0.512,low
+q8,Which expression is a proposition?,1,8,q6,The statement \(\exists x P(x)\) means:,3,6,0.512,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.512,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.512,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.512,low
+q2,Which symbol represents the universal quantifier?,1,2,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.511,low
+q5,What shows that a universally quantified statement is false?,1,5,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.511,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.51,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q2,Which symbol denotes a universal quantifier?,3,2,0.51,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.509,low
+q5,What shows that a universally quantified statement is false?,1,5,q2,Which symbol denotes a universal quantifier?,3,2,0.509,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.509,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.506,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.505,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.505,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q8,Which expression is a proposition?,1,8,0.504,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.503,low
+q2,Which symbol denotes a universal quantifier?,3,2,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.502,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.499,low
+q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.499,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.498,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.498,low
+q1,What is a predicate in logic?,3,1,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.497,low
+q2,Which symbol represents the universal quantifier?,1,2,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.496,low
+q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,q7,The domain of a variable in a predicate is _____.,4,7,0.496,low
+q2,Which symbol represents the universal quantifier?,1,2,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.495,low
+q5,What shows that a universally quantified statement is false?,1,5,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.495,low
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.494,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.494,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.491,low
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q7,The domain of a variable in a predicate is _____.,4,7,0.491,low
+q5,What shows that a universally quantified statement is false?,1,5,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.49,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.49,low
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.49,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.489,low
+q2,Which symbol denotes a universal quantifier?,3,2,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.489,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.488,low
+q8,Which expression is a proposition?,1,8,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.487,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.487,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.487,low
+q2,Which symbol denotes a universal quantifier?,3,2,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.486,low
+q2,Which symbol denotes a universal quantifier?,3,2,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.485,low
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.484,low
+q1,What is a predicate in logic?,1,1,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.483,low
+q2,Which symbol represents the universal quantifier?,1,2,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.483,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.483,low
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.483,low
+q2,Which symbol represents the universal quantifier?,1,2,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.481,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.481,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q8,Which expression is a proposition?,1,8,0.479,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.477,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.475,low
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,q2,Which symbol denotes a universal quantifier?,3,2,0.475,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.475,low
+q5,What shows that a universally quantified statement is false?,1,5,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.474,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.472,low
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,q7,The domain of a variable in a predicate is _____.,4,7,0.472,low
+q5,What shows that a universally quantified statement is false?,1,5,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.471,low
+q8,Which expression is a proposition?,1,8,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.471,low
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.471,low
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.471,low
+q2,Which symbol represents the universal quantifier?,1,2,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.469,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,6,0.469,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.469,low
+q2,Which symbol represents the universal quantifier?,1,2,q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,0.468,low
+q8,Which expression is a proposition?,1,8,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.468,low
+q1,What is a predicate in logic?,1,1,q6,The statement \(\exists x P(x)\) is true if:,1,6,0.467,low
+q2,Which symbol represents the universal quantifier?,1,2,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.467,low
+q2,Which symbol represents the universal quantifier?,1,2,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.467,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.467,low
+q8,Which expression is a proposition?,1,8,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.467,low
+q1,What is a predicate in logic?,1,1,q6,The statement \(\exists x P(x)\) means:,3,6,0.466,low
+q8,Which expression is a proposition?,1,8,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.465,low
+q8,Which expression is a proposition?,1,8,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.465,low
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.465,low
+q1,What is a predicate in logic?,1,1,q8,Which expression is a proposition?,1,8,0.464,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.463,low
+q2,Which symbol represents the universal quantifier?,1,2,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.461,low
+q2,Which symbol denotes a universal quantifier?,3,2,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.461,low
+q1,What is a predicate in logic?,1,1,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.46,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q2,Which symbol denotes a universal quantifier?,3,2,0.46,low
+q1,What is a predicate in logic?,1,1,q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,0.458,low
+q2,Which symbol represents the universal quantifier?,1,2,q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,0.458,low
+q5,What shows that a universally quantified statement is false?,1,5,q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,0.458,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q2,Which symbol denotes a universal quantifier?,3,2,0.458,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,0.457,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.457,low
+q2,Which symbol represents the universal quantifier?,1,2,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.456,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q7,The domain of a variable in a predicate is _____.,4,7,0.456,low
+q2,Which symbol denotes a universal quantifier?,3,2,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.456,low
+q8,Which expression is a proposition?,1,8,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.455,low
+q6,The statement \(\exists x P(x)\) means:,3,6,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.455,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q7,The domain of a variable in a predicate is _____.,4,7,0.454,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q2,Which symbol denotes a universal quantifier?,3,2,0.454,low
+q8,Which expression is a proposition?,1,8,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.454,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.454,low
+q2,Which symbol denotes a universal quantifier?,3,2,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.452,low
+q5,The statement \(\exists x P(x)\) means _____.,4,5,q7,The domain of a variable in a predicate is _____.,4,7,0.452,low
+q1,What is a predicate in logic?,1,1,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.451,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.451,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.45,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q1,What is a predicate in logic?,3,1,0.45,low
+q8,Which expression is a proposition?,1,8,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.45,low
+q2,Which symbol denotes a universal quantifier?,3,2,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.449,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q1,What is a predicate in logic?,3,1,0.448,low
+q8,Which expression is a proposition?,1,8,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.448,low
+q8,Which expression is a proposition?,1,8,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.448,low
+q1,What is a predicate in logic?,3,1,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.448,low
+q1,What is a predicate in logic?,3,1,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.448,low
+q8,Which expression is a proposition?,1,8,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.447,low
+q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,q7,The domain of a variable in a predicate is _____.,4,7,0.447,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.445,low
+q1,What is a predicate in logic?,3,1,q6,The statement \(\exists x P(x)\) means:,3,6,0.445,low
+q2,Which symbol represents the universal quantifier?,1,2,q8,Which expression is a proposition?,1,8,0.444,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.444,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.444,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q7,The domain of a variable in a predicate is _____.,4,7,0.443,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q2,Which symbol denotes a universal quantifier?,3,2,0.443,low
+q1,What is a predicate in logic?,3,1,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.443,low
+q1,What is a predicate in logic?,1,1,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.442,low
+q5,What shows that a universally quantified statement is false?,1,5,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.439,low
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,q7,The domain of a variable in a predicate is _____.,4,7,0.439,low
+q2,Which symbol represents the universal quantifier?,1,2,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.438,low
+q8,Which expression is a proposition?,1,8,q1,What is a predicate in logic?,3,1,0.438,low
+q8,Which expression is a proposition?,1,8,q1,What distinguishes a predicate from a proposition?,2,1,0.437,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.436,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q8,Which expression is a proposition?,1,8,0.435,low
+q1,What is a predicate in logic?,1,1,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.434,low
+q1,What is a predicate in logic?,1,1,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.433,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.433,low
+q8,Which expression is a proposition?,1,8,q2,Which symbol denotes a universal quantifier?,3,2,0.433,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.433,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q7,The domain of a variable in a predicate is _____.,4,7,0.433,low
+q1,What distinguishes a predicate from a proposition?,2,1,q5,The statement \(\exists x P(x)\) means _____.,4,5,0.431,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q7,The domain of a variable in a predicate is _____.,4,7,0.431,low
+q1,What distinguishes a predicate from a proposition?,2,1,q4,A counterexample for \(\forall x P(x)\) is _____.,4,4,0.43,low
+q2,Which symbol represents the universal quantifier?,1,2,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.427,low
+q1,What is a predicate in logic?,1,1,q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,0.426,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.424,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q2,Which symbol denotes a universal quantifier?,3,2,0.422,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.421,low
+q1,What distinguishes a predicate from a proposition?,2,1,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.42,low
+q1,What is a predicate in logic?,1,1,q5,What shows that a universally quantified statement is false?,1,5,0.418,low
+q1,What is a predicate in logic?,1,1,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.418,low
+q1,What is a predicate in logic?,1,1,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.418,low
+q5,What shows that a universally quantified statement is false?,1,5,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.418,low
+q1,What is a predicate in logic?,1,1,q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,0.416,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.416,low
+q2,The universal quantifier \(\forall x P(x)\) means:,2,2,q1,What is a predicate in logic?,3,1,0.415,low
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.414,low
+q1,What is a predicate in logic?,1,1,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.413,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.413,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q1,What is a predicate in logic?,3,1,0.413,low
+q1,What is a predicate in logic?,3,1,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.412,low
+q1,What distinguishes a predicate from a proposition?,2,1,q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,3,0.411,low
+q2,Which symbol represents the universal quantifier?,1,2,q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,0.41,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q2,Which symbol denotes a universal quantifier?,3,2,0.41,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,0.407,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.406,low
+q5,What shows that a universally quantified statement is false?,1,5,q1,What is a predicate in logic?,3,1,0.404,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q1,What is a predicate in logic?,3,1,0.403,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q8,Which expression is a proposition?,1,8,0.402,low
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,q1,What is a predicate in logic?,3,1,0.402,low
+q8,Which expression is a proposition?,1,8,q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,5,0.401,low
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,q1,What is a predicate in logic?,3,1,0.401,low
+q1,What is a predicate in logic?,1,1,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.397,low
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,7,q1,What distinguishes a predicate from a proposition?,2,1,0.397,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q6,The statement \(\exists x P(x)\) means:,3,6,0.397,low
+q2,Which symbol denotes a universal quantifier?,3,2,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.397,low
+q1,What is a predicate in logic?,1,1,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.395,low
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,q7,The domain of a variable in a predicate is _____.,4,7,0.394,low
+q1,What is a predicate in logic?,1,1,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.392,low
+q1,What distinguishes a predicate from a proposition?,2,1,q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,3,0.391,low
+q6,The statement \(\exists x P(x)\) means:,3,6,q7,The domain of a variable in a predicate is _____.,4,7,0.39,low
+q2,Which symbol represents the universal quantifier?,1,2,q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,8,0.389,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.389,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q7,The domain of a variable in a predicate is _____.,4,7,0.388,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q7,The domain of a variable in a predicate is _____.,4,7,0.388,low
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,q1,What is a predicate in logic?,3,1,0.388,low
+q1,What is a predicate in logic?,3,1,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.388,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q1,What is a predicate in logic?,3,1,0.387,low
+q1,What is a predicate in logic?,1,1,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.386,low
+q1,What distinguishes a predicate from a proposition?,2,1,q2,The universal quantifier \(\forall x P(x)\) means:,2,2,0.385,low
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,5,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.383,low
+q1,What is a predicate in logic?,1,1,q2,Which symbol denotes a universal quantifier?,3,2,0.382,low
+q6,The statement \(\exists x P(x)\) is true if:,1,6,q1,What distinguishes a predicate from a proposition?,2,1,0.382,low
+q1,What is a predicate in logic?,3,1,q2,Which symbol denotes a universal quantifier?,3,2,0.381,low
+q2,Which symbol denotes a universal quantifier?,3,2,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.381,low
+q2,Which symbol represents the universal quantifier?,1,2,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.38,low
+q1,What is a predicate in logic?,3,1,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.379,low
+q1,What is a predicate in logic?,3,1,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.378,low
+q8,Which expression is a proposition?,1,8,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.376,low
+q8,Which expression is a proposition?,1,8,q7,The domain of a variable in a predicate is _____.,4,7,0.375,low
+q1,What distinguishes a predicate from a proposition?,2,1,q6,The statement \(\exists x P(x)\) means:,3,6,0.375,low
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q1,A logical statement with a truth value depending on variables is called a/an _____.,4,1,0.375,low
+q1,What distinguishes a predicate from a proposition?,2,1,q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,4,0.374,low
+q1,What distinguishes a predicate from a proposition?,2,1,q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,8,0.374,low
+q5,What shows that a universally quantified statement is false?,1,5,q1,What distinguishes a predicate from a proposition?,2,1,0.372,low
+q5,What shows that a universally quantified statement is false?,1,5,q7,The domain of a variable in a predicate is _____.,4,7,0.372,low
+q1,What is a predicate in logic?,3,1,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.371,low
+q5,What shows that a universally quantified statement is false?,1,5,q8,Which expression is a proposition?,1,8,0.369,low
+q1,What is a predicate in logic?,1,1,q2,Which symbol represents the universal quantifier?,1,2,0.368,low
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,4,q1,What distinguishes a predicate from a proposition?,2,1,0.368,low
+q1,What distinguishes a predicate from a proposition?,2,1,q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,6,0.368,low
+q2,Which symbol denotes a universal quantifier?,3,2,q7,The domain of a variable in a predicate is _____.,4,7,0.368,low
+q2,Which symbol represents the universal quantifier?,1,2,q1,What is a predicate in logic?,3,1,0.364,low
+q2,Which symbol represents the universal quantifier?,1,2,q7,The domain of a variable in a predicate is _____.,4,7,0.364,low
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,q7,The domain of a variable in a predicate is _____.,4,7,0.36,low
+q1,What distinguishes a predicate from a proposition?,2,1,q4,A single counterexample to \(\forall x P(x)\) does what?,3,4,0.359,low
+q5,What shows that a universally quantified statement is false?,1,5,q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,8,0.358,low
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,q7,The domain of a variable in a predicate is _____.,4,7,0.358,low
+q1,What distinguishes a predicate from a proposition?,2,1,q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,7,0.354,low
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,3,q1,What distinguishes a predicate from a proposition?,2,1,0.353,low
+q1,What distinguishes a predicate from a proposition?,2,1,q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,3,0.347,low
+q1,What distinguishes a predicate from a proposition?,2,1,q7,"To show \(\exists x P(x)\) is false, what must be done?",3,7,0.333,low
+q1,What distinguishes a predicate from a proposition?,2,1,q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,2,0.297,low
+q1,What distinguishes a predicate from a proposition?,2,1,q2,Which symbol denotes a universal quantifier?,3,2,0.294,low
+q2,Which symbol represents the universal quantifier?,1,2,q1,What distinguishes a predicate from a proposition?,2,1,0.277,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Differentiate between propositions and predicates.  
+Determine the truth value of quantified statements given predicates and domains.  
+Translate mathematical statements into logical expressions using predicates and quantifiers.  
+Understand how to prove or disprove universally and existentially quantified statements.  
+Use examples and counterexamples to verify the truth or falsity of quantified statements."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is a predicate in logic?,1,yes,This question assesses the ability to differentiate between propositions and predicates.
+q2,Which symbol represents the universal quantifier?,1,yes,"This question relates to understanding and using quantifiers, specifically the universal quantifier symbol."
+q3,"To prove \(\forall x P(x)\) is true, one must show:",1,yes,This question evaluates knowledge on how to prove universally quantified statements.
+q4,An example that makes \(\exists x P(x)\) true is called a/an _____.,1,yes,This question tests understanding of examples that verify existentially quantified statements.
+q5,What shows that a universally quantified statement is false?,1,yes,This question assesses the use of counterexamples to disprove universally quantified statements.
+q6,The statement \(\exists x P(x)\) is true if:,1,yes,This question evaluates understanding of the truth value conditions for existentially quantified statements.
+q7,"If the domain is empty, the statement \(\forall x P(x)\) is:",1,yes,This question tests knowledge about the truth value of universally quantified statements over empty domains.
+q8,Which expression is a proposition?,1,yes,This question assesses the ability to differentiate between predicates and propositions.
+q1,What distinguishes a predicate from a proposition?,2,yes,This question evaluates understanding of what distinguishes predicates from propositions.
+q2,The universal quantifier \(\forall x P(x)\) means:,2,yes,This question tests comprehension of the meaning of the universal quantifier in logical expressions.
+q3,What is required to prove the statement \(\exists x P(x)\) is true?,2,yes,This question assesses how to prove existentially quantified statements using examples.
+q4,How can a universally quantified statement \(\forall x P(x)\) be shown false?,2,yes,This question evaluates understanding of disproving universally quantified statements via counterexamples.
+q5,Fill in the blank: The domain of a variable in a predicate is the set of all possible _____ for the variable.,2,yes,This question tests knowledge of the domain concept related to predicates.
+q6,Why is the statement \(P(5)\) called a proposition if \(P(x)\) is a predicate?,2,yes,This question assesses understanding of why substituting a variable with a constant yields a proposition.
+q7,"Fill in the blank: To show \(\forall x P(x)\) is true, one can prove \(P(x)\) holds for an _____ element \(x\).",2,yes,This question evaluates the method of proving universally quantified statements using arbitrary elements.
+q8,What is the truth value of \(\exists x (x + 1 < x)\) for positive integers \(x\)?,2,yes,This question tests determining the truth value of an existentially quantified statement given a domain and predicate.
+q1,What is a predicate in logic?,3,yes,This question assesses understanding of predicates as logical statements dependent on variables.
+q2,Which symbol denotes a universal quantifier?,3,yes,This question relates to recognizing the universal quantifier symbol.
+q3,"To prove \(\forall x P(x)\) is true, what must be shown?",3,yes,This question evaluates knowledge on proving universally quantified statements.
+q4,A single counterexample to \(\forall x P(x)\) does what?,3,yes,This question tests understanding of how a counterexample affects the truth of universally quantified statements.
+q5,"If the domain is empty, what is the truth value of \(\forall x P(x)\)?",3,yes,This question assesses knowledge of truth values of universally quantified statements over empty domains.
+q6,The statement \(\exists x P(x)\) means:,3,yes,This question evaluates understanding of the meaning of existential quantifiers.
+q7,"To show \(\exists x P(x)\) is false, what must be done?",3,yes,This question tests how to show an existentially quantified statement is false by examining all elements.
+q8,Is \(P(5)\) (where \(P(x): x\) is odd) a proposition or predicate?,3,yes,This question assesses the difference between predicates and propositions after variable substitution.
+q1,A logical statement with a truth value depending on variables is called a/an _____.,4,yes,This question evaluates the definition of a predicate as a logical statement dependent on variables.
+q2,The symbol \(\forall\) in \(\forall x P(x)\) represents a/an _____ quantifier.,4,yes,This question tests knowledge of the universal quantifier symbol and its meaning.
+q3,"To show \(\forall x P(x)\) is true, one must prove _____.",4,yes,This question assesses understanding of what must be shown to prove universally quantified statements.
+q4,A counterexample for \(\forall x P(x)\) is _____.,4,yes,This question evaluates the concept of counterexamples in disproving universally quantified statements.
+q5,The statement \(\exists x P(x)\) means _____.,4,yes,This question tests understanding of the meaning of existential quantification.
+q6,"To prove \(\exists x P(x)\) is true, it suffices to _____.",4,yes,This question assesses how to prove existentially quantified statements by providing examples.
+q7,The domain of a variable in a predicate is _____.,4,yes,This question evaluates understanding of the domain of variables in predicates.
+q8,"The statement ""\(x\) is an odd number"" is a predicate because _____.",4,yes,This question tests understanding of why a statement with variables is considered a predicate.

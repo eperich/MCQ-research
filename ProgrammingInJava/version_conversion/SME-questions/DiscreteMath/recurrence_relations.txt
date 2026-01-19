@@ -1,0 +1,101 @@
+<question xsi:type='MultipleChoiceQuestion' guid='2d7524c4-1707-0b60-d3bf-dd23dd282954'>
+<instructions>
+<p>A sequence <ilatex>\{ a_n\}</ilatex> is defined as follows: <ilatex>a_0 = 2</ilatex>, <ilatex>a_1 = 1</ilatex>, and for <ilatex>n \ge 2,  a_n = 3 \cdot a_{n - 1} - n \cdot a_{n-2} + 1</ilatex>. </p>
+
+<p>What is <ilatex>a_3</ilatex>? </p>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>-2</ilatex></choice>
+<choice><ilatex>-1</ilatex></choice>
+<choice><ilatex>1</ilatex></choice>
+<choice><ilatex>2</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='0c3b2e82-9c00-bd35-9060-74849b82293b'>
+<instructions>
+<p>A sequence is defined by the recurrence relation <ilatex>f_n = n \cdot f_{n - 1} - f_{n-3}</ilatex>. How many initial values are required so that the sequence is well defined for all <ilatex>n \ge 0</ilatex>? </p>
+</instructions>
+
+<choices>
+<choice><ilatex>0</ilatex></choice>
+<choice><ilatex>1</ilatex></choice>
+<choice><ilatex>2</ilatex></choice>
+<choice correct='true'><ilatex>3</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='1912149b-7c37-0c5f-e5fd-bcc4f3d79d50'>
+<instructions>
+<p>A population of mice increases by <ilatex>10</ilatex>% every year. Define <ilatex>g_n</ilatex> to be the number of mice after <ilatex>n</ilatex> years. Select the recurrence relation that describes the sequence <ilatex>\{ g_n\}</ilatex>. </p>
+</instructions>
+
+<choices>
+<choice><ilatex>g_n = (1.01) \cdot g_{n - 1}</ilatex></choice>
+<choice correct='true'><ilatex>g_n = (1.1) \cdot g_{n - 1}</ilatex></choice>
+<choice><ilatex>g_n = (0.01) \cdot g_{n - 1} + g_{n-2}</ilatex></choice>
+<choice><ilatex>g_n = (0.1) \cdot g_{n - 1} + g_{n-2}</ilatex></choice>
+</choices>
+</question>
+<question xsi:type='MultipleChoiceQuestion' guid='30660fbf-ccc6-45e7-86d3-ec73ebb53f83'>
+<instructions>
+<p>A nursery grows aloe plants for sale. Every month, the nursery takes a cutting from
+each of the aloe plants and plants it in a new pot. Each cutting creates one new aloe plant.
+At the end of the month, the nursery sells <ilatex>100</ilatex> plants to a local landscaper.
+Let  <ilatex>a_n</ilatex> be the number of aloe plants 
+after <ilatex>n</ilatex> months. Select the recurrence relation that describes the sequence <ilatex>\{ a_n\}</ilatex>. </p>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>a_n = 2 \cdot a_{n - 1} - 100</ilatex></choice>
+<choice><ilatex>a_n = 2 ( a_{n - 1} - 100)</ilatex></choice>
+<choice><ilatex>a_n = a_{n - 1} + a_{n-2} - 100</ilatex></choice>
+<choice><ilatex>a_n = a_{n - 1} + a_{n-2} - 200</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='debac076-6a39-4134-a526-2e930cc373a1'>
+<instructions>
+<p>A sequence is defined by the recurrence relation <ilatex>d_n = 2 \cdot d_{n-5} + d_{n-4}</ilatex>. How many initial values are required so that the sequence is well defined for all <ilatex>n \ge 0</ilatex>? </p>
+</instructions>
+
+<choices>
+<choice><ilatex>2</ilatex></choice>
+<choice><ilatex>3</ilatex></choice>
+<choice correct='true'><ilatex>5</ilatex></choice>
+<choice><ilatex>6</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='1eb4ab4f-5910-40a8-8299-9a3c6559c7bd'>
+<instructions>
+<p>A sequence <ilatex>\{ a_n\}</ilatex> is defined as follows: <ilatex>a_0 = 3</ilatex>, <ilatex>a_1 = 1</ilatex>, and for <ilatex>n \ge 2,  a_n = a_{n - 1} \cdot a_{n-2} - 2</ilatex>. </p>
+
+<p>What is <ilatex>a_3</ilatex>? </p>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>-1</ilatex></choice>
+<choice><ilatex>1</ilatex></choice>
+<choice><ilatex>3</ilatex></choice>
+<choice><ilatex>9</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='f7dc91bb-1b00-4e52-ba56-9fa614c740d3'>
+<instructions>
+<p>A sequence <ilatex>\{ b_n\}</ilatex> is defined as follows: <ilatex>b_1 = 3</ilatex>, <ilatex>b_2 = 0</ilatex>, and for <ilatex>n \ge 3,  b_n = n^2 \cdot b_{n - 1} -  (b_{n-2})^2 - 2</ilatex>. </p>
+
+<p>What is <ilatex>b_3</ilatex>? </p>
+</instructions>
+
+<choices>
+<choice><ilatex>-178</ilatex></choice>
+<choice correct='true'><ilatex>-11</ilatex></choice>
+<choice><ilatex>-5</ilatex></choice>
+<choice><ilatex>9</ilatex></choice>
+</choices>
+</question>

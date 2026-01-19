@@ -1,0 +1,48 @@
+<question xsi:type='MultipleChoiceQuestion' guid='ea3d28ca-d24c-254a-741e-9186734c537d'>
+<instructions>
+<p>What will a compiler do for the following code?</p>
+<codeBlock language='java'>
+/* 
+   numItems = 2;  /* Total items to buy */
+   rate = 0.5;
+*/
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>Ignore numItems = 2, but generate code for rate = 0.5. </choice>
+<choice>Generate code for numItems = 2, but ignore rate = 0.5. </choice>
+<choice>Ignore both statements. </choice>
+<choice correct='true'>Generate an error. </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='66b4c584-6c16-2bfe-f01e-273155be9172'>
+<instructions>
+<p>Which is true for comments?</p>
+</instructions>
+<choices>
+<choice>The compiler converts comments into a series of machine instructions. </choice>
+<choice>The compiler translates comments into ASCII values.  </choice>
+<choice>The compiler allocates memory for comments along with for variables. </choice>
+<choice correct='true'>The compiler does not generate machine code for comments. </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='8e81bc88-8a41-5027-ec04-469c2bd6841e'>
+<instructions>
+<p> What will a compiler do for the following three lines of code?</p>
+<codeBlock language='cpp'>
+// x = 2;  // width
+// y = 0.5
+// z = x * y;  Total area</codeBlock>
+</instructions>
+
+<choices>
+<choice>Yield an error for line 1 (x = ...) </choice>
+<choice>Yield an error for line 2 (y = ...) </choice>
+<choice>Yield an error for line 3 (z = ...) </choice>
+<choice correct='true'>Ignore all three lines </choice>
+</choices>
+</question>

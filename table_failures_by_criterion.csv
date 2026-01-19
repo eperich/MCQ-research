@@ -1,0 +1,19 @@
+Criterion,AI_Failures,AI_Total,AI_Failure_Rate_%,SME_Failures,SME_Total,SME_Failure_Rate_%,Difference_%
+Longest Answer Correct,175,1249,14.01,6,322,1.86,12.15
+Absolute Terms,128,1249,10.25,6,322,1.86,8.38
+Avoid Convergence Cues,112,1249,8.97,62,322,19.25,-10.29
+Word Repeats In Stem And Correct Answer,81,1249,6.49,4,322,1.24,5.24
+Implausible Distractors,70,1249,5.6,7,322,2.17,3.43
+Complex K Type,69,1249,5.52,62,322,19.25,-13.73
+Negative Worded Stem,58,1249,4.64,35,322,10.87,-6.23
+Grammatical Cues In Stem,44,1249,3.52,32,322,9.94,-6.42
+Avoid Logical Cues,44,1249,3.52,12,322,3.73,-0.2
+Lost Sequence,32,1249,2.56,3,322,0.93,1.63
+Ambiguous Unclear Information,30,1249,2.4,9,322,2.8,-0.39
+None Of The Above,27,1249,2.16,0,322,0.0,2.16
+Vague Terms,12,1249,0.96,2,322,0.62,0.34
+True Or False,10,1249,0.8,2,322,0.62,0.18
+More Than One Correct,3,1249,0.24,1,322,0.31,-0.07
+All Of The Above,2,1249,0.16,1,322,0.31,-0.15
+Gratuitous Information In Stem,1,1249,0.08,3,322,0.93,-0.85
+Unfocused Stem,0,1249,0.0,5,322,1.55,-1.55

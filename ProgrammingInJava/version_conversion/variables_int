@@ -1,0 +1,2298 @@
+<zySection title="Variables (int)" shorttitle="Variables (int)" id="e30e4a72-126c-665b-428b-929539365edb" depend="fb59cca6-9b78-8367-f4eb-1bdbfb9deef9">
+<zypInfo person="Alex" date="03/20/14" hwStatus="0" Status="2"> Need 2 HW problems, otherwise ready for second review </zypInfo>
+<zypInfo person="Susan" date="4/09/14" Status="2">Second MOSTLY review done. (Animations need update)</zypInfo>
+<zypInfo person="Susan" date="04/23/14" hwStatus="1"> Added 2 HW problems.</zypInfo>
+<zypInfo person="Alex" date="5/5/14" Status="3"> Second review done. </zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="Draft1Doing"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/10/14" minutes="" hwStatusCpp ="Rev1Done"></zypInfo> 
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Nicole" date="03/20/17" minutes="10"> Cleaned up gdocs in preparation for a new release.  </zypInfo> 
+<zypInfo person="Roman" date="5/30/17" minutes="330" status="Draft1Doing">Mostly finished major revisions pass. A Java and C animations needs to be updated, and a progression needs to be revised.</zypInfo>
+<zypInfo person="Susan" date="05/30/17" minutes="120" status="Rev1Doing">Reviewed C++ updates. Updated animation to match new style.</zypInfo> 
+<zypInfo person="Susan" date="6/07/17" minutes="180" status="Rev1Done">Converting to C and J. Checked style.</zypInfo>
+<zypInfo person="Roman" date="6/15/17" minutes="15" status="Rev1Done"></zypInfo>
+<zypInfo person="Amanda" date="6/23/17" minutes="120" status="Rev2Done"></zypInfo>
+<zypInfo person="Aubrey" date="09/10/20" minutes="30">bug report: newlines in PA</zypInfo>
+<zypInfo person="Aubrey" date="10/29/20" minutes="10">non-bug feedback</zypInfo>
+<zypInfo person="Aubrey" date="11/03/20" minutes="10">non-bug feedback</zypInfo>
+<zypInfo person="Kenny" date="05/18/22" minutes="10">non-bug feedback (replaced the word allocates bc not previously used/defined)</zypInfo>
+<zypInfo person="Joshua" date="09/22/22" minutes="40" status="Rev2Done">Adding alt-text</zypInfo>
+<zypInfo person="Joshua Zingale" date="10/08/22" minutes="20" status="Rev2Done">Editing alt-text Done</zypInfo>
+<zypInfo person="Aubrey" date="12/19/22" minutes="5" status="BugFix">changing HowTo link for java CA</zypInfo>
+<zypInfo person="Aubrey" date="01/26/23" minutes="25" status="BugFix">adding back notes to codewriting CAs</zypInfo>
+<zypInfo person="Roman" date="07/12/23" minutes="10" >Added definitions for allocate. </zypInfo>
+<zypInfo person="DanO" date="03/16/24" minutes="20" status="BugFix">Modified compiler optimization language.</zypInfo>
+<zypInfo person="Grace" date="6/10/25" minutes="131" status="BugFix">Fixed formatting for Variable assignments ... People-known example animation</zypInfo>
+<zypInfo person="LukeM" date="9/24/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<zyAside type="bordered" name="" id="b53ef809-f6f6-4ee7-9f7f-2e7f23165f0a">
+Learn to:
+<ul>
+<li>Declare and initialize integer variables.</li> <!-- C: SS1, SS2, SS3, CA2 (L1-4), TB1, TB2, TB3 -->
+<!-- Cpp: SS1, SS2, SS3, CA2 (L1-4), TB1, TB2, TB3, TB4 -->
+<!-- Java: SS1, SS2, SS3, CA2, CA3, TB1, TB2, TB3 -->
+<li>Understand the process of memory allocation for variables by the compiler.</li> <!-- C: SS1, SS3, SS5, TB1, TB2, TB4 -->
+<!-- CppJava: SS1, SS3, SS5, TB1, TB2, TB3 -->
+<li>Write assignment statements to update the value of variables.</li> <!-- C: SS2, SS4, CA1 (L3, L6), CA2 (L2-4), TB1, TB2 -->
+<!-- Cpp: SS2, SS4, CA1 (L3, L6), CA2 (L2-4), TB1, TB2 -->
+<!-- Java: SS2, SS4, CA1 (L3, L6), CA2, CA4, CA5 (L3-4), TB1, TB2 -->
+<li>Recognize the importance of initializing variables before use to avoid undefined behavior.</li> <!-- C: SS3, SS4, SS5, CA2 (L1-4), TB2, TB3 -->
+<!-- Cpp: SS3, SS4, SS5, CA2 (L1-4) -->
+<!-- Java: SS3, SS4, SS5, CA3, CA4, CA5 (L1-4), TB3 -->
+<li>Identify and correct common errors related to variable usage and assignment.</li> <!-- C: SS5, TB3 -->
+<!-- CppJava: SS5 -->
+</ul>
+</zyAside>
+
+
+<zyHTML id="82764b7c-3bd3-87ae-d744-8ec4119310bd" subsection="true" caption="Variable declarations">
+<h3>Variable declarations</h3>
+</zyHTML>
+
+
+<zyHTML id="a62c87a4-b552-44b9-4f01-5dcbeaccf780" caption="Variable declarations">
+<p><zyDefn>A _variable declaration_ is a statement that declares a new variable, specifying the variable's name and type.</zyDefn> Ex: <zyICode>int userAge;</zyICode> declares a new variable named userAge that can hold an integer value. The compiler <!--ensures space in memory--> <!--allocates a memory location--> allocates a memory location for userAge capable of storing an integer. <zyDefn>_Allocation_ is the process of determining a suitable memory location to store data like variables.</zyDefn>
+Ex: In the animation below,  the compiler has given userAge memory location 97<!--allocated userAge to memory location 97-->, which is known as the variable's address. The choice of 97 is arbitrary and irrelevant to the programmer, but the idea that a variable corresponds to a memory location  is important to understand. </p>
+
+<p>When a statement that assigns a variable with a value executes, the processor writes the value into the variable's memory location. Likewise, reading a variable's value reads the value from the variable's memory location. The programmer must declare a variable before any statement that assigns or reads the variable, so that the variable's memory location is known. </p>
+</zyHTML>
+
+
+
+
+
+
+
+<zyVersion version="java">
+<zyAnimator id="35096100-3171-902c-7db7-9c1773a5e056" caption="A variable refers to a memory location." height="298px" width="724px" selectedInstr="29" selectedObj="none" numObjsEverCreated="20" loadOnDemand="false">
+<!-- Last modified Wed Jun 07 2017 13:29:01 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="20" objType="box" objName="Code blue box" top="44px" left="18px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="177px" width="418px"></zyObject><zyObject objNum="12" objType="box" objName="code highlight" top="49px" left="18px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="16px" width="1px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="1" objType="text" objName="#include &lt;stdio.h&gt;
+ 
+" top="46px" left="20px" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="java" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+ 
+public class AgePrinter {
+   public static void main(String[] args) {
+      int userAge;
+
+      System.out.print(&quot;Enter your age: &quot;);
+      Scanner scnr = new Scanner(System.in);
+      userAge = scnr.nextInt();
+      System.out.println(userAge + &quot; is a great age.&quot;);
+   }
+}</zyCode></zyObject><zyObject objNum="2" objType="box" objName="Object 2: Box" top="70px" left="507px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" border-color="zyAnimator-orange"></zyObject><zyObject objNum="3" objType="box" objName="Object 3: Box" top="92px" left="507px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" border-color="zyAnimator-orange"></zyObject><zyObject objNum="4" objType="box" objName="Object 4: Box" top="114px" left="507px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" border-color="zyAnimator-orange"></zyObject><zyObject objNum="5" objType="box" objName="Object 5: Box" top="136px" left="507px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" border-color="zyAnimator-orange"></zyObject><zyObject objNum="6" objType="text" objName="Memory" top="46px" left="527px" color='zyAnimator-orange' font-family='arial, sans-serif'><text>Memory</text></zyObject><zyObject objNum="7" objType="box" objName="Object 7: Box" top="170px" left="463px" border-radius="5px" useConstrainedProportions="false" height="68px" width="212px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="8" objType="text" objName="96" top="72px" left="486px" font-family='arial, sans-serif'><text>96</text></zyObject><zyObject objNum="9" objType="text" objName="97" top="94px" left="486px" font-family='arial, sans-serif'><text>97</text></zyObject><zyObject objNum="10" objType="text" objName="98" top="116px" left="486px" font-family='arial, sans-serif'><text>98</text></zyObject><zyObject objNum="11" objType="text" objName="99" top="139px" left="486px" font-family='arial, sans-serif'><text>99</text></zyObject><zyObject objNum="13" objType="text" objName="userAge" top="103px" left="93px" opacity="0" font-family='arial, sans-serif'><text>userAge</text></zyObject><zyObject objNum="15" objType="text" objName="Enter your age:" top="132px" left="193px" opacity="0" font-family='arial, sans-serif'><text>Enter your age:</text></zyObject><zyObject objNum="16" objType="text" objName="23" top="173px" left="567px" opacity="0" font-family='arial, sans-serif'><text>23</text></zyObject><zyObject objNum="17" objType="text" objName="Object 17: Text" top="173px" left="567px" opacity="0" font-family='arial, sans-serif'><text>23</text></zyObject><zyObject objNum="18" objType="text" objName="23" top="93px" left="548px" opacity="0" font-family='arial, sans-serif'><text>23 </text></zyObject><zyObject objNum="19" objType="text" objName="is a great age." top="174px" left="292px" opacity="0" font-family='arial, sans-serif'><text>is a great age.</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Compiler allocates a memory location for userAge, in this case location 97.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="12" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="12" timeLabel="-" height="16" width="418"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0" top="104" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="0" top="94" left="614"></zyInstruction>
+<zyInstruction instrType="step"><text>First print statement executes.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0.2" top="133" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="15" timeLabel="0" top="173" left="467"></zyInstruction>
+<zyInstruction instrType="step"><text>User types 23. Statement assigns userAge with 23.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0.2" top="146" left="18"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0" top="160" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="93" left="548"></zyInstruction>
+<zyInstruction instrType="step"><text>Print statement prints userAge&apos;s value to screen.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0.2" top="175" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="18" timeLabel="0" top="175" left="213"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="18" timeLabel="0" top="191" left="468"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="-" top="191" left="488"></zyInstruction><zyInstruction instrType="resize" objNum="12" timeLabel="0" height="16" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="12" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown textually to the left, graphically to the right.
+
+import java.util.Scanner;
+ 
+public class AgePrinter {
+   public static void main(String[] args) {
+      int userAge;
+
+      System.out.print("Enter your age: ");
+      Scanner scnr = new Scanner(System.in);
+      userAge = scnr.nextInt();
+      System.out.println(userAge + " is a great age.");
+   }
+}
+
+In memory, the variable userAge is assigned with 23 and stored at address 97.
+
+The console shows:
+Enter your age: 23
+23 is a great age
+</zyAltDescription></zyAnimator>
+</zyVersion>
+
+
+
+<zyQSetShortAnswer caption="Declaring integer variables." id="b59bd7c5-aa78-e9b1-fb0d-787898a72036">
+<p> Note: Capitalization matters, so MyNumber is not the same as myNumber. </p>
+
+<zyQ>
+<zyQText> Declare an integer variable named numPeople. (Do not initialize the variable.)</zyQText>
+<zyQAns obeycase="true" obeyspace="true">int numPeople;</zyQAns>
+<zyQHint> int num??????;  <br />Don't forget the ; </zyQHint>
+<zyQExpl> The compiler will allocate a particular memory location for numPeople.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Using two statements on two separate lines, declare integer variables named newSales and totalSales. (Do not initialize the variables.)</zyQText>
+<zyQAns lines="2" columns="25" obeycase="true" obeyspace="true" preferred="true" strip_ending_newlines="false">int newSales;
+int totalSales;</zyQAns>
+<zyQAns lines="2" columns="25" obeycase="true" obeyspace="true" preferred="true" strip_ending_newlines="false">int newSales;
+int totalSales;
+</zyQAns>
+<zyQAns lines="2" columns="25"  obeycase="true" obeyspace="true" strip_ending_newlines="true">int totalSales;
+int newSales;</zyQAns>
+<zyQAns lines="2" columns="25"  obeycase="true" obeyspace="true" strip_ending_newlines="true">int totalSales;
+int newSales;</zyQAns>
+<zyQHint> int new?????; <br /> 
+int total?????;</zyQHint>
+<zyQExpl>Multiple variables can be declared in the same statement, as in: <zyICode>int newSales, totalSales;</zyICode>, but this material usually avoids that style.
+</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> What memory location (address) will a compiler allocate for the variable declaration below? If appropriate, type: Unknown <br /><br />
+<zyCode nobox="true">int numHouses = 99; </zyCode>
+</zyQText>
+<zyQAns obeycase="false">Unknown</zyQAns>
+<zyQHint> The compiler decides the location, not the programmer. The 99 is the value stored in that location, but is not the address of the location.  </zyQHint>
+<zyQExpl> 
+A programmer does not know the specific location, but understanding that a specific location is allocated for a variable is important. </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+<zyAside type="elaboration" name="Compiler optimization" id="447e745d-1d16-6160-6968-33a2d3b69127"> 
+Modern compilers may <!--optimize variables away-->ignore unused variables, allocate variables on the stack, or use registers for variables. However, the conceptual view of a variable in memory helps understand many language aspects.
+</zyAside>
+
+<zyHTML id="83fdfbea-558b-4c4a-e968-b780931b6a15" subsection="true" caption="Assignment statement">
+<h3>Assignment statements</h3>
+</zyHTML>
+
+
+<zyHTML id="faf1df95-fd7e-413c-9abe-cb3d7ddbb3e9">
+<p><zyDefn>An _assignment statement_ assigns the variable on the left-side of the = with the current value of the right-side expression.</zyDefn> Ex: <zyICode>numApples = 8;</zyICode> assigns numApples with the value of the right-side expression (in this case 8).<zyFootnote name="1" id="9987b3f6-7346-de29-ba8e-a9c47ae2cbaa">We ask instructors to give us leeway to teach the idea of an "assignment statement," rather than the language's actual "assignment expression," whose use we condone primarily in a simple statement. </zyFootnote> </p>
+
+<p> <zyDefn> An _expression_ may be a number like 80, a variable name like numApples, or a simple calculation like numApples + 1.</zyDefn>  Simple calculations can involve standard math operators like +, -, and *, and parentheses as in 2 * (numApples - 1). <zyDefn> An integer like 80 appearing in an expression is known as an _integer literal_.</zyDefn> </p> 
+</zyHTML>
+
+
+
+<zyGdocImage id="479dc867-e66b-e547-4b59-588513012b8a" alt= "Cartoon of a mouse." width= "60" pull="right" from="http://openclipart.org/image/800px/svg_to_png/177358/qubodup-cute-mouse.png">
+ 
+<zyText> Watch out... </zyText> 
+</zyGdocImage> 
+
+
+
+<zyHTML id="8ae86e73-7c41-4a47-8ec8-8729492132f4">
+<p>In the code below, litterSize is assigned with 3, and yearlyLitters is assigned with 5. Later, annualMice is assigned with the value of litterSize * yearlyLitters (3 * 5, or 15), which is then printed. Next, litterSize is assigned with 14, yearlyLitters is assigned with 10, and annualMice is assigned with their product (14 * 10, or 140), which is printed.</p>
+</zyHTML>
+
+
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Assigning a variable." id="b9e32aee-9d7a-acc6-a2c1-a0ac78966a1c" type="CodeConsole">
+<zyCode language="java">
+public class Mice {
+   public static void main(String[] args) {
+      int litterSize;
+      int yearlyLitters;
+      int annualMice;
+   
+      litterSize    = 3; // Low end of litter size range
+      yearlyLitters = 5; // Low end of litters per year
+
+      System.out.print("One female mouse may give birth to ");
+      annualMice = litterSize * yearlyLitters;
+      System.out.println(annualMice + " mice,");
+
+      litterSize    = 14; // High end
+      yearlyLitters = 10; // High end
+
+      System.out.print("and up to ");
+      annualMice = litterSize * yearlyLitters;
+      System.out.println(annualMice + " mice, in a year.");
+   }
+}
+</zyCode> 
+<zyConsole>
+One female mouse may give birth to 15 mice,
+and up to 140 mice, in a year.
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyQSetShortAnswer caption="Assignment statements." id="7273935c-9cc2-8e03-ee12-57b3e6dab548">
+<p>Be sure to end assignment statements with a semicolon (;). </p>
+
+<zyQ>
+<zyQText> Write an assignment statement to assign numCars with 99.   </zyQText>
+<zyQAns obeycase="true"> numCars = 99; </zyQAns>
+<zyQHint> numCars = ??;   <br /> Don't forget the ;.  </zyQHint>
+<zyQExpl> The statement assigns the variable numCars with the value 99.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Assign houseSize with 2300.   </zyQText>
+<zyQAns obeycase="true"> houseSize = 2300; </zyQAns>
+<zyQHint> houseSize  = ????;  </zyQHint>
+<zyQExpl> The program assigns the variable houseSize with the value 2300.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Assign numFruit with the current value of numApples.     </zyQText>
+<zyQAns obeycase="true"> numFruit = numApples; </zyQAns>
+<zyQHint> numFruit  = ????????? ; </zyQHint>
+<zyQExpl> The program evaluates the value of numApples by reading the value held in numApples' memory location, and then assigns numFruit with that value.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> The current value in houseRats is 200. What is in houseRats  after executing the statement  below? Valid answers: 0, 199, 200, or unknown. <br /><br />
+<zyCode language="cpp" nobox="true">numRodents = houseRats;</zyCode> 
+</zyQText>
+<zyQAns> 200 </zyQAns>
+<zyQHint> Evaluating a variable does <i>not</i> change the variable's value.</zyQHint>
+<zyQExpl> The statement evaluates the value of houseRats by reading the value held in houseRats' memory location, and stores a copy of that value into numRodents.  houseRats doesn't change. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Assign numItems with the result of ballCount - 3.</zyQText>
+<zyQAns columns="30" obeycase="true" nobox="true"> numItems = ballCount - 3; </zyQAns>
+<zyQHint> numItems  = ballCount - ?;    </zyQHint>
+<zyQExpl> The program reads the value of ballCount, subtract 3 from that value, and assigns numItems with the result.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> dogCount is 5. What is in animalsTotal after executing the statement below?<br /><br />
+<zyCode language="cpp" nobox="true">animalsTotal = dogCount <!-- - -->+ 3;</zyCode> 
+</zyQText>
+<zyQAns><!--2-->8</zyQAns>
+<zyQHint> dogCount is 5. 5 <!-- - -->+ 3 is calculated, and animalsTotal is assigned with the result.</zyQHint>
+<zyQExpl> The statement reads the value of dogCount (5), <!--subtracts-->adds 3, and assigns animalsTotal with the result of <!--2-->8.</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> dogCount is 5. What is in dogCount after executing the statement below?<br /><br />
+<zyCode language="cpp" nobox="true">animalsTotal = dogCount <!-- - -->+ 3;</zyCode>
+</zyQText>
+<zyQAns>5</zyQAns>
+<zyQHint> dogCount is only read, so dogCount's value doesn't change.</zyQHint>
+<zyQExpl> The statement reads the value of dogCount, but does not change the value of dogCount.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> What is in numBooks after both statements execute?<br /><br />
+<zyCode language="cpp" nobox="true">
+numBooks = 5; 
+numBooks = 3;
+</zyCode> 
+</zyQText>
+<zyQAns>3</zyQAns>
+<zyQHint> The second statement assigns the numBooks with the right-side value, replacing the value held in numBooks.  </zyQHint>
+<zyQExpl> The first statement assigns numBooks with 5. The second statement assigns numBooks with 3, replacing the previously held value 5.</zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+
+
+<zyVersion version="java"> 
+<zyTool name="codeOutput" caption="Enter the output of the variable assignments." id="d7ceabed-1663-4d16-b2d9-c9e840c3fcd2" parts="6" challenge="true">
+<zyOptions>
+<language>java</language>
+<questions type="list">
+<item type="dict">
+	<template unescape-html="true">public class CombinedOutput {
+   public static void main(String[] args) {
+      int x;
+      int y;
+
+      x = {{updatedXValue}};
+      y = {{initialYValue}};
+
+      System.out.print(x + " " + y);
+   }
+}</template>
+	<parameters type="dict">
+<initialYValue type="list">
+			<item>4</item>
+			<item>5</item>
+			<item>6</item>
+</initialYValue>
+<updatedXValue type="list">
+			<item>7</item>
+			<item>8</item>
+			<item>9</item>
+</updatedXValue>
+</parameters>
+</item>
+<item type="dict">
+	<template unescape-html="true">public class CombinedOutput {
+   public static void main(String[] args) {
+      int x;
+      int y;
+
+      x = {{updatedXValue}};
+      y = {{updatedYValue}};
+
+      System.out.print(x + " " + y);
+   }
+}</template>
+	<parameters type="dict">
+<updatedXValue type="list">
+			<item>6</item>
+			<item>7</item>
+			<item>8</item>
+			<item>9</item>
+			<item>10</item>
+</updatedXValue>
+<updatedYValue type="list">
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+			<item>4</item>
+			<item>5</item>
+</updatedYValue>
+</parameters>
+</item>
+<item type="dict">
+	<template unescape-html="true">public class CombinedOutput {
+   public static void main(String[] args) {
+       int x;
+       int y;
+
+       x = {{updatedXValue1}};
+       y = {{updatedYValue1}};
+       x = {{updatedXValue2}};
+
+       System.out.print(x + " " + y);
+   }
+}</template>
+	<parameters type="dict">
+<updatedXValue1 type="list">
+			<item>4</item>
+			<item>5</item>
+			<item>6</item>
+</updatedXValue1>
+<updatedYValue1 type="list">
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+</updatedYValue1>
+<updatedXValue2 type="list">
+			<item>7</item>
+			<item>8</item>
+			<item>9</item>
+</updatedXValue2>
+</parameters>
+</item>
+<item type="dict">
+	<template unescape-html="true">public class CombinedOutput {
+   public static void main(String[] args) {
+      int x;
+      int y;
+
+      y = {{initialYValue}};
+      x = y;
+
+      System.out.print(x + " " + y);
+   }
+}</template>
+	<parameters type="dict">
+<initialYValue type="list">
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+			<item>4</item>
+			<item>5</item>
+<item>6</item>
+			<item>7</item>
+			<item>8</item>
+			<item>9</item>
+</initialYValue>
+</parameters>
+<explanation>x is assigned to the value of y.</explanation>
+</item>
+<item type="dict">
+	<template unescape-html="true">public class CombinedOutput {
+   public static void main(String[] args) {
+      int x;
+      int y;
+
+      y = {{initialYValue}};
+      x = y + {{valueAdded}};
+
+      System.out.print(x + " " + y);
+   }
+}</template>
+	<parameters type="dict">
+<initialYValue type="list">
+<item>6</item>
+			<item>7</item>
+			<item>8</item>
+			<item>9</item>
+			<item>10</item>
+</initialYValue>
+<valueAdded type="list">
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+			<item>4</item>
+			<item>5</item>
+</valueAdded>
+</parameters>
+<explanation>x is assigned to the value of y plus a literal.</explanation>
+</item>
+<item type="dict">
+	<template unescape-html="true">public class CombinedOutput {
+   public static void main(String[] args) {
+      int x;
+      int y;
+
+      y = {{initialYValue}};
+      x = y + {{valueAdded}};
+      y = {{updatedYValue}};
+
+      System.out.print(x + " " + y);
+   }
+}</template>
+	<parameters type="dict">
+<initialYValue type="list">
+<item>4</item>
+			<item>5</item>
+			<item>6</item>
+</initialYValue>
+<valueAdded type="list">
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+			<item>4</item>
+			<item>5</item>
+</valueAdded>
+<updatedYValue type="list">
+<item>12</item>
+			<item>13</item>
+			<item>14</item>
+</updatedYValue>
+</parameters>
+<explanation>x is assigned to the value of y plus a literal, then y is assigned to a literal.</explanation>
+</item>
+</questions>
+</zyOptions>
+</zyTool>
+</zyVersion>
+
+
+
+
+<zyHomeworkProblem id="88c4b595-8ec9-d1e9-62f6-6196dba03d72" language="java" caption="Assigning a sum." author="FV/SL/RL/FG">
+<zyInstructions>
+Write a statement that assigns numCoins with numNickels + numDimes.  
+Ex: 5 nickels and 6 dimes results in 11 coins. <br /> <br /> 
+<!-- Note: These activities may test code with different test values. This activity will perform two tests: the first with nickels = 5 and dimes = 6, the second with nickels = 9 and dimes = 0. See <zyLink link="https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/8<!-- https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/3 -->"> How to Use zyBooks</zyLink>. -->
+Note: Our autograder automatically runs your program several times, trying different test values each time to ensure your program works for any values. This program is tested twice, first with numNickels = 5 and numDimes = 6, and then with numNickels = 9 and numDimes = 0. 
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class AssigningSum {
+   public static void main(String[] args) {
+      int numCoins;
+      int numNickels;
+      int numDimes;
+
+      numNickels = 5;
+      numDimes = 6;
+
+      <STUDENT CODE>
+   
+      System.out.print("There are ");
+      System.out.print(numCoins);
+      System.out.println(" coins");  
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+numCoins = numNickels + numDimes;
+</zySolution>
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   int numCoins;
+   int numNickels;
+   int numDimes;
+
+   numNickels = 5;
+   numDimes = 6;
+   <STUDENT CODE>
+   zyAssertIntValue(11, numCoins, "Testing with numNickels = 5 and numDimes = 6", 
+      true, false);
+
+   numNickels = 9;
+   numDimes = 0;
+   <STUDENT CODE>
+   zyAssertIntValue(9, numCoins, "Testing with numNickels = 9 and numDimes = 0", false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+
+
+
+<!--zyHomeworkProblem id="68aea799-e456-9036-8074-e9a121329e24" language="c" caption="Assigning a sum." author="FV/SL/RL/RS">
+<zyInstructions>
+Write a statement that assigns numCoins with numNickels + numDimes.  
+Ex: 5 nickels and 6 dimes results in 11 coins.<br /> <br />
+<!--Note: These activities may test code with different test values. This activity will perform two tests: the first with nickels = 5 and dimes = 6, the second with nickels = 9 and dimes = 0. See <zyLink link="https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/3"> How to Use zyBooks</zyLink>. -->
+Note: Our autograder automatically runs your program several times, trying different test values each time to ensure your program works for any values. This program is tested twice, first with numNickels = 5 and numDimes = 6, and then with numNickels = 9 and numDimes = 0. 
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   int numCoins;
+   int numNickels;
+   int numDimes;
+
+   numNickels = 5;
+   numDimes = 6;
+
+   <STUDENT CODE>
+
+   printf("There are %d coins\n", numCoins);
+
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+numCoins = numNickels + numDimes;
+</zySolution>
+
+<zyTestVectors>
+int main() {
+   int numCoins   = 0;
+   int numNickels = 0;
+   int numDimes   = 0;
+
+   numNickels = 5;
+   numDimes = 6;
+   <STUDENT CODE>
+   zyAssertIntValue(11, numCoins, "Testing with numNickels = 5 and numDimes = 6", 
+      true, false);
+
+   numNickels = 9;
+   numDimes = 0;
+   <STUDENT CODE>
+   zyAssertIntValue(9, numCoins, "Testing with numNickels = 9 and numDimes = 0", false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem-->
+
+
+
+<zyHTML id="73e34dab-be13-e661-4c21-1b0918536a5c" subsection="true" caption="Initializing variables">
+<h3>Initializing variables</h3>
+</zyHTML>
+
+
+<zyHTML id="bf7ff678-091c-46fa-9207-00d7731fcdf8">
+<p>Although not required, an integer variable is often assigned an initial value when declared. Ex: <zyICode>int maxScore = 100;</zyICode> declares an int variable named maxScore with an initial value of 100. </p> 
+</zyHTML>
+
+
+
+<zyFigure id="793372e0-ad4d-8ba4-39b7-818cae81e135" caption="Variable initialization: Example program.">
+
+
+
+
+<zyVersion version="java">
+<zyCode language="cpp" highlight="5">import java.util.Scanner;
+
+public class AgePrinter {
+   public static void main(String[] args) {
+      int avgLifespan = 70;
+      int userAge;
+
+      System.out.print("Enter your age: ");
+      Scanner scnr = new Scanner(System.in);
+      userAge = scnr.nextInt();
+
+      System.out.println(userAge + " is a great age");
+      System.out.println("Average lifespan is " + avgLifespan);
+   }
+}
+</zyCode>
+<zyConsole>
+Enter your age: 24
+24 is a great age
+Average lifespan is 70
+</zyConsole>
+</zyVersion>
+</zyFigure>
+
+
+
+<zyQSetShortAnswer caption="Declaring and initializing integer variables." id="6e7fab56-6981-91ef-bac7-1d17f099698b">
+<zyQ>
+<zyQText> Declare an integer variable named numDogs, initializing the variable to 0 in the declaration.   </zyQText>
+<zyQAns obeycase="true" obeyspace="true" preferred="true">int numDogs = 0;</zyQAns>
+<zyQAns obeycase="true" obeyspace="true">int numDogs= 0;</zyQAns>
+<zyQAns obeycase="true" obeyspace="true">int numDogs=0;</zyQAns>
+<zyQAns obeycase="true" obeyspace="true">int numDogs =0;</zyQAns>
+<zyQHint> int numDogs = ?;<br /> Don't forget the ; </zyQHint>
+<zyQExpl> The compiler will allocate a particular memory location for numDogs, and initially store 0 in that location.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Declare an integer variable named daysCount, initializing the variable to 365 in the declaration.   </zyQText>
+<zyQAns obeycase="true" obeyspace="true" preferred="true">int daysCount = 365;</zyQAns>
+<zyQAns obeycase="true" obeyspace="true">int daysCount= 365;</zyQAns>
+<zyQAns obeycase="true" obeyspace="true">int daysCount=365;</zyQAns>
+<zyQAns obeycase="true" obeyspace="true">int daysCount =365;</zyQAns>
+<zyQHint> int ????????? = ???; </zyQHint>
+<zyQExpl> The compiler will allocate a particular memory location for daysCount, and initially store 365 in that location.   </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+<!--zyHomeworkProblem id="c037b793-425a-5a56-21a0-44b8ed7f7a03" language="c" caption="Declaring and initializing variables." author="SL/RS">
+<zyInstructions>
+Write one statement that declares an integer variable numHouses initialized to 25. </zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   <STUDENT CODE>
+
+   printf("%d\n",numHouses);
+   
+   return 0;
+}
+</zyStudentProgram>
+<zyTestVectors>
+int main(void) {
+   <STUDENT CODE>
+   zyAssertIntValue(25, numHouses, "Testing for numHouses value", false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+<zySolution>
+int numHouses = 25;
+</zySolution>
+<!-- FUTURE: Check for single declaration statement with init, and actually printing  variable. Frank 6/8/14 --> 
+</zyHomeworkProblem-->
+
+
+
+<zyHomeworkProblem id="84ab3624-33ba-7a52-ddcd-c56a863772ac" language="java" caption="Declaring and initializing variables." author="SL/FV/RL/FG">
+<zyInstructions>
+Write one statement that declares an integer variable numHouses initialized to 25. 
+
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class DeclaringVariables {
+   public static void main(String[] args) {
+      <STUDENT CODE>
+
+      System.out.println(numHouses);
+   }
+}
+</zyStudentProgram>
+
+
+<zySolution>
+int numHouses = 25;
+</zySolution>
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   <STUDENT CODE>
+   zyAssertIntValue(25, numHouses, "Testing for numHouses value", true, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+
+<!-- FUTURE: Check for single variable declaration statement with initialization, and actually print variable. Frank 6/8/14 --> 
+</zyHomeworkProblem>
+
+
+
+
+<zyHTML id="7bec2c11-0cd8-3964-bf08-d69a898f05e1" subsection="true" caption="Assignment statement with same variable on both sides">
+<h3>Assignment statement with same variable on both sides</h3>
+</zyHTML>
+
+
+<zyHTML id="2d5ec86c-d956-435c-9122-f9f9fb439e25">
+<p> Commonly, a variable appears on both the right and left side of the = operator. Ex: If numItems is 5, after <zyICode>numItems = numItems + 1;</zyICode> executes, numItems will be 6. The statement reads the value of numItems (5), adds 1, and assigns numItems with the result of 6, which replaces the value previously held in numItems.</p> 
+</zyHTML>
+
+
+
+
+
+
+<zyVersion version="java">
+<!-- Last modified Mon Aug 15 2022 16:26:02 GMT-0700 (Pacific Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="ce6a0a68-4e2d-8b94-798f-62f1c47b14c1" caption="Variable assignments overwrite a variable's previous values: People-known example." height="496px" width="600px" selectedInstr="2" selectedObj="none" numObjsEverCreated="46" loadOnDemand="false">
+<zyObjects><zyObject objNum="5" objType="box" objName="Code blue box" top="48px" left="15px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="273px" width="556px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="6" objType="box" objName="Code highlighter" top="106px" left="15px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="16px" width="1px" border-color="rgb(87, 128, 220)"></zyObject><zyObject objNum="7" objType="text" objName="Code snippet" top="48px" left="16px" color='rgb(51, 51, 51)' font-weight='400' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' border-color='rgb(176, 214, 251)'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+
+public class PeopleKnown {
+   public static void main(String[] args) {
+      int yourFriends;
+      int totalFriends;
+
+      System.out.print("Enter the number of people you know: ");
+      Scanner scnr = new Scanner(System.in);
+      yourFriends = scnr.nextInt();
+
+      totalFriends = yourFriends;
+      System.out.println(" You know " + totalFriends + " people.");
+      totalFriends = totalFriends * yourFriends;
+      System.out.println(" Those people know " + totalFriends + " people.");
+      totalFriends = totalFriends * yourFriends;
+      System.out.println(" And they know " + totalFriends + " people.");
+   }
+}</zyCode></zyObject><zyObject objNum="8" objType="box" objName="Console stand" top="419px" left="103px" useConstrainedProportions="false" height="8px" width="112px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="9" objType="box" objName="Console" top="347px" left="16px" border-radius="16px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="71px" width="292px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="10" objType="box" objName="Object 44: Box" top="264px" left="168px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="12px" width="395px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="11" objType="box" objName="total-friends cover" top="236px" left="169px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="12px" width="387px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="12" objType="box" objName="Mem block 96" top="350px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="13" objType="box" objName="Mem block 97" top="372px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="14" objType="box" objName="Mem block 98" top="394px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="15" objType="box" objName="Mem block 99" top="416px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="16" objType="text" objName="Mem address 96" top="352px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>96</text></zyObject><zyObject objNum="17" objType="text" objName="Mem address 97" top="374px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>97</text></zyObject><zyObject objNum="18" objType="text" objName="Mem address 98" top="397px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>98</text></zyObject><zyObject objNum="19" objType="text" objName="Mem address 99" top="418px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>99</text></zyObject><zyObject objNum="20" objType="text" objName="Mem block 96 data" top="352px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="21" objType="text" objName="Mem block 97 data" top="374px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="22" objType="text" objName="Mem block 98 data" top="396px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="23" objType="text" objName="Mem block 99 data" top="418px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="24" objType="text" objName="&quot;yourfriends&quot;" top="107px" left="91px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text>yourFriends</text></zyObject><zyObject objNum="25" objType="text" objName="&quot;totalfriends&quot;" top="121px" left="92px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text>totalFriends</text></zyObject><zyObject objNum="26" objType="text" objName="&quot;Enter the number of people you know:&quot;" top="149px" left="207px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>Enter the number of people you know:</text></zyObject><zyObject objNum="27" objType="text" objName="cin 200" top="408px" left="340px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="28" objType="text" objName="200 for &quot;yourfriends&quot;" top="350px" left="251px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="29" objType="text" objName="200 for &quot;totalfriends&quot;" top="375px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="30" objType="text" objName="cout &quot;You know&quot; " top="220px" left="213px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>You know</text></zyObject><zyObject objNum="31" objType="text" objName="cout 200" top="396px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="32" objType="text" objName="cout &quot;people.&quot;" top="220px" left="430px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>people.</text></zyObject><zyObject objNum="33" objType="text" objName="200 from &quot;totalfriends&quot; for 1st mult " top="396px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="34" objType="text" objName="200 from &quot;yourfriends&quot; for 1st mult " top="375px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="35" objType="text" objName="40000 from 1st mult" top="233px" left="372px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>40000</text></zyObject><zyObject objNum="36" objType="text" objName="cout &quot;Those people know&quot;" top="247px" left="213px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>Those people know</text></zyObject><zyObject objNum="37" objType="text" objName="cout &quot;40000&quot;" top="396px" left="444px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>40000</text></zyObject><zyObject objNum="38" objType="text" objName="cout &quot;people&quot;" top="247px" left="494px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>people.</text></zyObject><zyObject objNum="39" objType="text" objName="40000 from &quot;totalfriends&quot; for 2nd mult" top="396px" left="444px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>40000</text></zyObject><zyObject objNum="40" objType="text" objName="200 from &quot;yourfriends&quot; for 2nd mult" top="375px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="41" objType="text" objName="8000000" top="261px" left="400px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>8000000</text></zyObject><zyObject objNum="42" objType="text" objName="cout &quot;And they know &quot;" top="275px" left="212px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>And they know</text></zyObject><zyObject objNum="43" objType="text" objName="cout &quot;8000000&quot;" top="396px" left="438px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>8000000</text></zyObject><zyObject objNum="44" objType="text" objName="cout &quot;people.&quot;" top="275px" left="466px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>people.</text></zyObject><zyObject objNum="45" objType="text" objName="*" top="234px" left="265px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>*</text></zyObject><zyObject objNum="46" objType="text" objName="Object 46: Text" top="262px" left="265px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>*</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>The compiler allocated memory for variables.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="6" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="6" timeLabel="-" height="16" width="552"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="24" timeLabel="0" top="375" left="503"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0" top="120" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="25" timeLabel="0" top="397" left="503"></zyInstruction>
+<zyInstruction instrType="step"><text>Prompt user with system.out.print.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="149" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="26" timeLabel="0" top="350" left="28"></zyInstruction>
+<zyInstruction instrType="step"><text>The scnr statement assigns to yourFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="162" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="27" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="27" timeLabel="-" top="350" left="252"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0" top="176" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="28" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="28" timeLabel="0" top="375" left="452"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>totalFriends is assigned with the value of yourFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="204" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0" top="205" left="183"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0.2" top="205" left="67"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0.2" top="396" left="452"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>The println statement outputs totalFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="219" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="30" timeLabel="0" top="366" left="28"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="31" timeLabel="0" top="220" left="312"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="31" timeLabel="0" top="366" left="88"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="32" timeLabel="0" top="366" left="113"></zyInstruction>
+<zyInstruction instrType="step"><text>The assignment statement reads totalFriends (200) and yourFriends (200), multiplies those values, and assigns totalFriends with the product of 40000.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="232" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="33" timeLabel="0" top="233" left="217"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="34" timeLabel="0" top="233" left="297"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="35" timeLabel="0" top="233" left="72"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="35" timeLabel="0.2" top="396" left="444"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>The println statement outputs totalFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="247" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="36" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="36" timeLabel="0" top="382" left="28"></zyInstruction><zyInstruction instrType="fade" objNum="37" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="37" timeLabel="0" top="247" left="405"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="37" timeLabel="0" top="382" left="145"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="38" timeLabel="0" top="382" left="184"></zyInstruction>
+<zyInstruction instrType="step"><text>Assignment reads totalFriends (now 40000) and yourFriends (200), multiplies those values, and assigns totalFriends with the result of 8000000.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="260" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="39" timeLabel="0" top="261" left="197"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="40" timeLabel="0" top="261" left="306"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="41" timeLabel="0" top="261" left="75"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="41" timeLabel="0" top="396" left="438"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="275" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="42" timeLabel="0" top="398" left="29"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="43" timeLabel="0" top="275" left="357"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="43" timeLabel="0" top="398" left="117"></zyInstruction><zyInstruction instrType="fade" objNum="44" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="44" timeLabel="0" top="398" left="171"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="288" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="6" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="resize" objNum="6" timeLabel="-" height="14" width="4"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown textually above, graphically below.
+
+import java.util.Scanner;
+
+public class PeopleKnown {
+ public static void main(String[] args) {
+    int yourFriends;
+    int totalFriends;
+
+    System.out.print("Enter the number of people you know: ");
+    Scanner scnr = new Scanner(System.in);
+    yourFriends = scnr.nextInt();
+
+    totalFriends = yourFriends;
+    System.out.println(" You know " + totalFriends + " people.");
+    totalFriends = totalFriends * yourFriends;
+    System.out.println(" Those people know " + totalFriends + " people.");
+    totalFriends = totalFriends * yourFriends;
+    System.out.println(" And they know " + totalFriends + " people.");
+ }
+}<!--In memory, the variable yourFriends is assigned with 200 and stored at address 97. The variable totalFriends is assigned with 8000000 and stored at address 98.-->
+
+The console shows:
+Enter the number of people you know: 200
+You know 200 people.
+Those people know 40000 people.
+And they know 8000000 people.
+
+yourFriends is initialized and given memory address 97. totalFriends is initialized and given memory address 98. After being prompted with "Enter the number of people you know:", the user enters 200. 200 is assigned to yourFriends and stored in memory address 97. When totalFriends is assigned with yourFriends, the value 200 is now also stored in memory address 98. After printing totalFriends (200), totalFriends is multiplied by yourFriends and totalFriends is assigned with the product (40000). 40000 is stored in memory address 98, replacing the previous value of 200. The next print statement prints the new values of totalFriends. totalFriends is then multiplied by yourFriends one more time, resulting in a product of 8000000. totalFriends is assigned with the product (8000000) and 8000000 is stored in memory address 98. totalFriends is printed one last time. In memory, the variable yourFriends is assigned with 200 and stored at address 97. The variable totalFriends is assigned with 8000000 and stored at address 98.
+
+</zyAltDescription>
+</zyAnimator>
+</zyVersion>
+
+
+<!--
+<zyVersion version="java">
+<!-- Last modified Thu May 20 2021 17:22:50 GMT-0700 (Pacific Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="ce6a0a68-4e2d-8b94-798f-62f1c47b14c1" caption="Variable assignments overwrite a variable's previous values: People-known example." height="496px" width="600px" selectedInstr="none" selectedObj="27" numObjsEverCreated="46" loadOnDemand="false">
+<zyObjects><zyObject objNum="5" objType="box" objName="Code blue box" top="48px" left="15px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="273px" width="556px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="6" objType="box" objName="Code highlighter" top="106px" left="15px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="16px" width="1px" border-color="rgb(87, 128, 220)"></zyObject><zyObject objNum="7" objType="text" objName="Code snippet" top="48px" left="16px" color='rgb(51, 51, 51)' font-weight='400' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' border-color='rgb(176, 214, 251)'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+
+public class PeopleKnown {
+  public static void main(String[] args) {
+     int yourFriends;
+     int totalFriends;
+
+     System.out.print(&quot;Enter the number of people you know: &quot;);
+     Scanner scnr = new Scanner(System.in);
+     yourFriends = scnr.nextInt();
+
+     totalFriends = yourFriends;
+     System.out.println(&quot; You know &quot; + totalFriends + &quot; people.&quot;);
+     totalFriends = totalFriends * yourFriends;
+     System.out.println(&quot; Those people know &quot; + totalFriends + &quot; people.&quot;);
+     totalFriends = totalFriends * yourFriends;
+     System.out.println(&quot; And they know &quot; + totalFriends + &quot; people.&quot;);
+  }
+}</zyCode></zyObject><zyObject objNum="8" objType="box" objName="Console stand" top="419px" left="95px" useConstrainedProportions="false" height="8px" width="112px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="9" objType="box" objName="Console" top="347px" left="16px" border-radius="16px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="71px" width="292px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="10" objType="box" objName="Object 44: Box" top="264px" left="168px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="12px" width="395px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="11" objType="box" objName="total-friends cover" top="236px" left="169px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="12px" width="387px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="12" objType="box" objName="Mem block 96" top="350px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="13" objType="box" objName="Mem block 97" top="372px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="14" objType="box" objName="Mem block 98" top="394px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="15" objType="box" objName="Mem block 99" top="416px" left="432px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="64px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="16" objType="text" objName="Mem address 96" top="352px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>96</text></zyObject><zyObject objNum="17" objType="text" objName="Mem address 97" top="374px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>97</text></zyObject><zyObject objNum="18" objType="text" objName="Mem address 98" top="397px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>98</text></zyObject><zyObject objNum="19" objType="text" objName="Mem address 99" top="418px" left="412px" color='rgb(51, 51, 51)' font-size='11px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='12px'><text>99</text></zyObject><zyObject objNum="20" objType="text" objName="Mem block 96 data" top="352px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="21" objType="text" objName="Mem block 97 data" top="374px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="22" objType="text" objName="Mem block 98 data" top="396px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="23" objType="text" objName="Mem block 99 data" top="418px" left="456px" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>??</text></zyObject><zyObject objNum="24" objType="text" objName="&quot;yourfriends&quot;" top="107px" left="91px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text>yourFriends</text></zyObject><zyObject objNum="25" objType="text" objName="&quot;totalfriends&quot;" top="121px" left="92px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text>totalFriends</text></zyObject><zyObject objNum="26" objType="text" objName="&quot;Enter the number of people you know:&quot;" top="149px" left="207px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>Enter the number of people you know:</text></zyObject><zyObject objNum="27" objType="text" objName="cin 200" top="408px" left="340px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="28" objType="text" objName="200 for &quot;yourfriends&quot;" top="350px" left="251px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="29" objType="text" objName="200 for &quot;totalfriends&quot;" top="375px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="30" objType="text" objName="cout &quot;You know&quot; " top="220px" left="213px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>You know</text></zyObject><zyObject objNum="31" objType="text" objName="cout 200" top="396px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="32" objType="text" objName="cout &quot;people.&quot;" top="220px" left="430px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>people.</text></zyObject><zyObject objNum="33" objType="text" objName="200 from &quot;totalfriends&quot; for 1st mult " top="396px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="34" objType="text" objName="200 from &quot;yourfriends&quot; for 1st mult " top="375px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="35" objType="text" objName="40000 from 1st mult" top="233px" left="372px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>40000</text></zyObject><zyObject objNum="36" objType="text" objName="cout &quot;Those people know&quot;" top="247px" left="213px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>Those people know</text></zyObject><zyObject objNum="37" objType="text" objName="cout &quot;40000&quot;" top="396px" left="444px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>40000</text></zyObject><zyObject objNum="38" objType="text" objName="cout &quot;people&quot;" top="247px" left="494px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>people.</text></zyObject><zyObject objNum="39" objType="text" objName="40000 from &quot;totalfriends&quot; for 2nd mult" top="396px" left="444px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>40000</text></zyObject><zyObject objNum="40" objType="text" objName="200 from &quot;yourfriends&quot; for 2nd mult" top="375px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>200</text></zyObject><zyObject objNum="41" objType="text" objName="8000000" top="261px" left="400px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>8000000</text></zyObject><zyObject objNum="42" objType="text" objName="cout &quot;And they know &quot;" top="275px" left="212px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>And they know</text></zyObject><zyObject objNum="43" objType="text" objName="cout &quot;8000000&quot;" top="396px" left="438px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>8000000</text></zyObject><zyObject objNum="44" objType="text" objName="cout &quot;people.&quot;" top="275px" left="466px" opacity="0" color='rgb(51, 51, 51)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text>people.</text></zyObject><zyObject objNum="45" objType="text" objName="*" top="234px" left="265px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>*</text></zyObject><zyObject objNum="46" objType="text" objName="Object 46: Text" top="262px" left="265px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>*</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>The compiler allocated memory for variables.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="6" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="6" timeLabel="-" height="16" width="556"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="24" timeLabel="0" top="375" left="503"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0" top="120" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="25" timeLabel="0" top="397" left="503"></zyInstruction>
+<zyInstruction instrType="step"><text>Prompt user with system.out.print.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="149" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="26" timeLabel="0" top="350" left="23"></zyInstruction>
+<zyInstruction instrType="step"><text>The scnr statement assigns to yourFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="162" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="27" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="27" timeLabel="-" top="350" left="249"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0" top="176" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="28" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="28" timeLabel="0" top="375" left="452"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>totalFriends is assigned with the value of yourFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="204" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0" top="205" left="183"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0.2" top="205" left="67"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0.2" top="396" left="452"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>The println statement outputs totalFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="219" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="30" timeLabel="0" top="366" left="28"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="31" timeLabel="0" top="220" left="312"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="31" timeLabel="0" top="366" left="88"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="32" timeLabel="0" top="366" left="113"></zyInstruction>
+<zyInstruction instrType="step"><text>The assignment statement reads totalFriends (200) and yourFriends (200), multiplies those values, and assigns totalFriends with the product of 40000.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="232" left="15"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="33" timeLabel="0" top="233" left="217"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="34" timeLabel="0" top="233" left="297"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="35" timeLabel="0" top="233" left="72"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="35" timeLabel="0.2" top="396" left="444"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>The println statement outputs totalFriends.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="247" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="36" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="36" timeLabel="0" top="382" left="28"></zyInstruction><zyInstruction instrType="fade" objNum="37" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="37" timeLabel="0" top="247" left="405"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="37" timeLabel="0" top="382" left="145"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="38" timeLabel="0" top="382" left="184"></zyInstruction>
+<zyInstruction instrType="step"><text>Assignment reads totalFriends (now 40000) and yourFriends (200), multiplies those values, and assigns totalFriends with the result of 8000000.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="260" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="39" timeLabel="0" top="261" left="197"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="40" timeLabel="0" top="261" left="306"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="41" timeLabel="0" top="261" left="75"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="41" timeLabel="0" top="396" left="438"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="275" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="42" timeLabel="0" top="398" left="28"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="43" timeLabel="0" top="275" left="357"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="43" timeLabel="0" top="398" left="117"></zyInstruction><zyInstruction instrType="fade" objNum="44" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="44" timeLabel="0" top="398" left="171"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="288" left="14"></zyInstruction><zyInstruction instrType="fade" objNum="6" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="resize" objNum="6" timeLabel="-" height="14" width="4"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown textually above, graphically below.
+
+import java.util.Scanner;
+
+public class PeopleKnown {
+  public static void main(String[] args) {
+     int yourFriends;
+     int totalFriends;
+
+     System.out.print("Enter the number of people you know: ");
+     Scanner scnr = new Scanner(System.in);
+     yourFriends = scnr.nextInt();
+
+     totalFriends = yourFriends;
+     System.out.println(" You know " + totalFriends + " people.");
+     totalFriends = totalFriends * yourFriends;
+     System.out.println(" Those people know " + totalFriends + " people.");
+     totalFriends = totalFriends * yourFriends;
+     System.out.println(" And they know " + totalFriends + " people.");
+  }
+}
+
+The console shows:
+Enter the number of people you know: 200
+You know 200 people.
+Those people know 40000 people.
+And they know 8000000 people.
+
+yourFriends is initialized and given memory address 97. totalFriends is initialized and given memory address 98. After being prompted with "Enter the number of people you know:", the user enters 200. 200 is assigned to yourFriends and stored in memory address 97. When totalFriends is assigned with yourFriends, the value 200 is now also stored in memory address 98. After printing totalFriends (200), totalFriends is multiplied by yourFriends and totalFriends is assigned with the product (40000). 40000 is stored in memory address 98, replacing the previous value of 200. The next print statement prints the new values of totalFriends. totalFriends is then multiplied by yourFriends one more time, resulting in a product of 8000000. totalFriends is assigned with the product (8000000) and 8000000 is stored in memory address 98. totalFriends is printed one last time. In memory, the variable yourFriends is assigned with 200 and stored at address 97. The variable totalFriends is assigned with 8000000 and stored at address 98.
+
+</zyAltDescription>
+</zyAnimator>
+</zyVersion>
+-->
+
+<zyAside type="elaboration" name="Six degrees of separation" id="4384e64e-ae2a-2260-e04b-f8059a87ab92"> 
+<p>The above example relates to the popular idea that any two people on earth are connected by just "six degrees of separation", accounting for overlapping of known-people. </p> 
+</zyAside>
+
+
+
+<zyQSetShortAnswer caption="Assignment statements with same variable on both sides." id="d5d27acb-ec40-4dbe-c999-6acd053d1ea8">
+<zyQ>
+<zyQText> numApples is initially 5. What is numApples after: <br /><br />
+<zyCode language="cpp" nobox="true">numApples = numApples + 3;  </zyCode>  
+</zyQText>
+<zyQAns>8</zyQAns>
+<zyQHint>Read the value of numApples, add 3, and assign numApples with the result (overwriting the initial value).   </zyQHint>
+<zyQExpl> The statement reads the current value of numApples (5), adds 3, and assign numApples with  the result of 8.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> numApples is initially 5. What is numFruit  after: <br /><br />
+<zyCode language="cpp" nobox="true">numFruit  = numApples;  
+numFruit  = numFruit + 1;  </zyCode></zyQText>
+<zyQAns>6</zyQAns>
+<zyQHint>The first statement assigns numFruit with 5. </zyQHint>
+<zyQExpl> The first statement assigns numFruit with 5. The second statement reads numFruit (5), adds 1, and assigns numFruit with the result of 6.    </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Write a statement ending with - 1 that decreases the value of variable flyCount<!--'s value--> by 1.</zyQText>
+<zyQAns obeycase="true" preferred="true">flyCount = flyCount - 1;</zyQAns>
+<zyQAns obeycase="true">flyCount += -1;</zyQAns>
+<zyQHint>flyCount = ???????? - 1; </zyQHint>
+<zyQExpl> The statement reads the value of flyCount, subtracts 1, and assigns flyCount with the result (overwriting the previous value).     </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+<zypInfo person="Kevin/Vanessa" date="7/2/18">  Changed magic numbers to input and added braces to student code in the test bench. </zypInfo> 
+<zyHomeworkProblem id="794da9d3-72ee-7bdc-fb38-41b171b820ce" language="java" caption="Adding a number to a variable." author="FV/FG">
+<zyInstructions>
+ Write a statement that increases numPeople by 5. Ex: If numPeople is initially 10, the output is: 
+There are 15 people.
+<br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested three times, first with the input 10, then with the input 99, and finally with the input 0.
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+10
+99
+0
+</zyInput> 
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class AssigningNumberToVariable {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int numPeople;
+  
+      numPeople = scnr.nextInt();
+      <STUDENT CODE>
+      System.out.print("There are ");
+      System.out.print(numPeople);
+      System.out.println(" people.");
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+numPeople = numPeople + 5;
+</zySolution>
+
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   Scanner scnr = new Scanner(System.in);
+   int numPeople;
+   numPeople = scnr.nextInt();
+   {<STUDENT CODE>}
+   System.out.print("There are ");
+   System.out.print(numPeople);
+   System.out.println(" people.");
+   zyAssertOutput("There are 15 people.\n", "Testing with numPeople initially 10", false, false, false, false);
+
+   numPeople = scnr.nextInt();
+   {<STUDENT CODE>}
+   System.out.print("There are ");
+   System.out.print(numPeople);
+   System.out.println(" people.");
+   zyAssertOutput("There are 104 people.\n", "Testing with numPeople initially 99", false, false, false, false);
+
+   numPeople = scnr.nextInt();
+   {<STUDENT CODE>}
+   System.out.print("There are ");
+   System.out.print(numPeople);
+   System.out.println(" people.");
+   zyAssertOutput("There are 5 people.\n", "Testing with numPeople initially 0", false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+
+
+<zypInfo person="Kevin/Vanessa" date="7/2/18">  Changed magic numbers to input and added braces to student code in the test bench. </zypInfo>
+<!--zyHomeworkProblem id="5863abeb-c079-3fae-3743-cb1eb6901668" language="c" caption="Adding a number to a variable." author="FV/RS">
+<zyInstructions>
+Write a statement that increases numPeople by 5. If numPeople is initially 10, then numPeople becomes 15.
+<br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested three times, first with the input 10, then with the input 99, and finally with the input 0.
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput> 
+10
+99
+0
+</zyInput> 
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   int numPeople;
+  
+   scanf("%d", &numPeople);
+   <STUDENT CODE>
+
+   printf("There are %d people.\n", numPeople);
+
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+numPeople = numPeople + 5;
+</zySolution>
+
+
+<zyTestVectors>
+int main(void) {
+   int numPeople;
+   scanf("%d", &numPeople);
+   {<STUDENT CODE>}
+   printf("There are %d people.\n", numPeople);
+   zyAssertOutput("There are 15 people.\n", "Testing with numPeople initially 10", false, false, false, false);
+
+   scanf("%d", &numPeople);
+   {<STUDENT CODE>}
+   printf("There are %d people.\n", numPeople);
+   zyAssertOutput("There are 104 people.\n", "Testing with numPeople initially 99", false, false, false, false);
+
+   scanf("%d", &numPeople);
+   {<STUDENT CODE>}
+   printf("There are %d people.\n", numPeople);
+   zyAssertOutput("There are 5 people.\n", "Testing with numPeople initially 0", false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem-->
+
+
+
+<zyHTML id="176c8b53-dec4-61da-54de-2e6db9a5144b" subsection="true" caption="Common errors">
+<h3>Common errors</h3>
+</zyHTML>
+
+
+<zyHTML id="1d14a0d8-8266-4ccf-bcf0-ed862b1d40da">
+<p> <zyCommonError id="60491c67-b04e-140c-ecda-8793551ae55a">A common error is to read a variable that has not yet been assigned a value.</zyCommonError>  A programmer must ensure that a program assigns a variable with a value before reading.</p>
+
+<p><zyCommonError id="790b76a9-8e7d-8635-7c8e-25b306a26698">A common error by new programmers is to write an assignment statement in reverse. Ex: <zyICode>numKids + numAdults = numPeople</zyICode>, or <zyICode>9 = beansCount</zyICode></zyCommonError>. Those statements won't compile, but writing <zyICode>numCats = numDogs</zyICode> in reverse <i>will</i> compile, leading to a hard-to-find bug.</p> 
+</zyHTML>
+
+
+
+<zyQSetTF caption="Common errors." id="6c479572-1553-7d8a-6c31-5937c8655c35" truelabel="Error" falselabel="No error">
+<p>Which code segments have an error?</p>
+
+<zyQ>
+<zyQText correct="Error"> <zyCode language="cpp" nobox="true">21 = dogCount;</zyCode>  </zyQText>
+<zyQexpl>The statement will not compile because the left side must be a variable. The programmer likely meant to write <zyICode>  dogCount = 21;</zyICode> </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="No error"><zyCode language="cpp" nobox="true">int amountOwed = -999;</zyCode> </zyQText>
+<zyQexpl>A variable can be initialized when declared, and an int variable can hold negative values.    </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Error"><zyCode language="cpp" nobox="true">int numDays;
+int numYears;  
+
+numDays = numYears * 365;
+</zyCode></zyQText>
+<zyQexpl>numYears is used without having been assigned with a value, so the value of numYears is unknown. Most modern compilers check if a variable is used before being assigned with a value, reporting an error or warning.</zyQexpl>
+</zyQ>
+</zyQSetTF>
+
+<zypInfo person="Fay" date="11/09/21" minutes="90" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/09/21" minutes="75" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Ginny" date="01/24/22" minutes="740" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="01/25/22" minutes="60" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Ginny" date="02/14/22" minutes="480" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="02/15/22" minutes="21" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Ginny" date="06/24/22" minutes="70" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="06/27/22" minutes="25" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Ginny" date="06/27/22" minutes="25" status="SpecReviewing"></zypInfo>
+<zypInfo person="Amanda" date="07/19/22" minutes="1115" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="07/20/22" minutes="45" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="07/20/22" minutes="138" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="07/20/22" minutes="16" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="07/20/22" minutes="18" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/20/22" minutes="44" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="07/20/22" minutes="152" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="07/21/22" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/21/22" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="07/21/22" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/21/22" minutes="4" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="44" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="5" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/03/22" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/05/22" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/18/22" minutes="22" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="01/19/23" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/19/22" minutes="28" status="CodeDoing">Golden_CA_development</zypInfo>
+​​<zypInfo person="Stephanie" date="02/16/23" minutes="109" status="CodeDoing"></zypInfo>
+<zypInfo person="Stephanie" date="02/16/23" minutes="249" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="02/22/23" minutes="100" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/01/23" minutes="112" status="CodeReviewing"></zypInfo>
+<zypInfo person="Enrique" date="03/01/23" minutes="30" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/02/23" minutes="8" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="03/07/23" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/09/23" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="03/13/23" minutes="25" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/14/23" minutes="407" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="03/14/23" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/14/23" minutes="21" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="03/15/23" minutes="30" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="04/04/23" minutes="374" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="04/05/23" minutes="45" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="04/06/23" minutes="11" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="04/06/23" minutes="5" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="04/06/23" minutes="296" status="QADoing">Golden_CA_development</zypInfo>
+`<zypInfo person="Nicole Collins" date="07/18/24" minutes="90" status="BugFix">Golden_CA_development</zypInfo>`
+`<zypInfo person="Jamie" date="07/18/24" minutes="10" status="BugFix">Golden_CA_development</zypInfo>`
+`<zypInfo person="Nicole Collins" date="07/18/24" minutes="45" status="BugFix">Golden_CA_development</zypInfo>`
+`<zypInfo person="Jamie" date="07/18/24" minutes="30" status="BugFix">Golden_CA_development</zypInfo>`
+`<zypInfo person="Jamie" date="07/18/24" minutes="10" status="BugFix">Golden_CA_development</zypInfo>`
+
+
+
+
+<zypInfo person="Amanda" date="07/28/22" minutes="47" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="08/01/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="90" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="12" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="107" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="30" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="19" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/03/22" minutes="40" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/04/22" minutes="36" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/04/22" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/05/22" minutes="18" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/09/22" minutes="31" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/18/22" minutes="22" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="01/19/23" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/19/22" minutes="28" status="CodeDoing">Golden_CA_development</zypInfo>
+<zyVersion version="java"> 
+<zyTool name="CodeWriting" caption="Variables (int)" id="2f313305-cb29-e3e8-4cc8-8edd6b784457" parts="4" challenge="true" edited-last="Thu Nov 13 2025 09:43:51 GMT-0700 (Mountain Standard Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+class_postfix = pick_from([&apos;Details&apos;, &apos;Info&apos;, &apos;Data&apos;])
+
+fruits = [
+    &apos;fig&apos;, &apos;date&apos;, &apos;kiwi&apos;, &apos;lime&apos;, &apos;pear&apos;, &apos;plum&apos;,
+    &apos;apple&apos;, &apos;gourd&apos;, &apos;grape&apos;, &apos;guava&apos;, &apos;lemon&apos;, &apos;mango&apos;, &apos;melon&apos;,
+    &apos;banana&apos;, &apos;jujube&apos;, &apos;orange&apos;, &apos;papaya&apos;, &apos;quince&apos;, &apos;tomato&apos;,
+    &apos;apricot&apos;, &apos;avocado&apos;, &apos;coconut&apos;, &apos;pumpkin&apos;,
+    &apos;cucumber&apos;, &apos;jalapeno&apos;, &apos;plantain&apos;, &apos;zucchini&apos;,
+    &apos;carambola&apos;, &apos;jackfruit&apos;, &apos;nectarine&apos;, &apos;persimmon&apos;, &apos;pineapple&apos;, &apos;tangerine&apos;,
+    &apos;breadfruit&apos;, &apos;cantaloupe&apos;, &apos;clementine&apos;, &apos;grapefruit&apos;, &apos;pomegranate&apos;,
+]
+
+animals = [
+    &apos;ant&apos;, &apos;bat&apos;, &apos;bee&apos;, &apos;cat&apos;, &apos;cow&apos;, &apos;dog&apos;, &apos;elk&apos;, &apos;emu&apos;, &apos;owl&apos;, &apos;pig&apos;, &apos;yak&apos;,
+    &apos;bear&apos;, &apos;bird&apos;, &apos;boar&apos;, &apos;crow&apos;, &apos;deer&apos;, &apos;duck&apos;, &apos;goat&apos;, &apos;hare&apos;, &apos;hawk&apos;,
+    &apos;lion&apos;, &apos;mink&apos;, &apos;mule&apos;, &apos;orca&apos;, &apos;pika&apos;, &apos;puma&apos;, &apos;swan&apos;, &apos;toad&apos;, &apos;wren&apos;,
+    &apos;eagle&apos;, &apos;gecko&apos;, &apos;hippo&apos;, &apos;horse&apos;, &apos;hyena&apos;, &apos;lemur&apos;, &apos;llama&apos;, &apos;otter&apos;,
+    &apos;panda&apos;, &apos;quail&apos;, &apos;rhino&apos;, &apos;robin&apos;, &apos;shark&apos;, &apos;shrew&apos;, &apos;skunk&apos;, &apos;sloth&apos;,
+    &apos;snake&apos;, &apos;squid&apos;, &apos;stork&apos;, &apos;tiger&apos;, &apos;wasp&apos;, &apos;whale&apos;, &apos;zebra&apos;,
+    &apos;alpaca&apos;, &apos;beaver&apos;, &apos;coyote&apos;, &apos;donkey&apos;, &apos;ferret&apos;, &apos;gerbil&apos;, &apos;gopher&apos;,
+    &apos;iguana&apos;, &apos;jackal&apos;, &apos;jaguar&apos;, &apos;lizard&apos;, &apos;monkey&apos;, &apos;oyster&apos;, &apos;parrot&apos;,
+    &apos;rabbit&apos;, &apos;spider&apos;, &apos;turkey&apos;, &apos;turtle&apos;, &apos;urchin&apos;, &apos;weasel&apos;, &apos;wombat&apos;, &apos;badger&apos;,
+    &apos;buzzard&apos;, &apos;cheetah&apos;, &apos;chicken&apos;, &apos;dolphin&apos;, &apos;giraffe&apos;, &apos;gorilla&apos;, &apos;hamster&apos;, &apos;lemming&apos;,
+    &apos;leopard&apos;, &apos;narwhal&apos;, &apos;opossum&apos;, &apos;pelican&apos;, &apos;penguin&apos;, &apos;raccoon&apos;, &apos;rooster&apos;, &apos;vulture&apos;,
+    &apos;antelope&apos;, &apos;elephant&apos;, &apos;flamingo&apos;, &apos;hedgehog&apos;, &apos;kangaroo&apos;,
+    &apos;pheasant&apos;, &apos;scorpion&apos;, &apos;seahorse&apos;, &apos;squirrel&apos;, &apos;tortoise&apos;,
+]
+
+pets = [&apos;dog&apos;, &apos;cat&apos;, &apos;lizard&apos;, &apos;hamster&apos;, &apos;snake&apos;, &apos;rabbit&apos;, &apos;turtle&apos;, &apos;ferret&apos;, &apos;bird&apos;, &apos;parrot&apos;, &apos;gecko&apos;,
+        &apos;chinchilla&apos;, &apos;hedgehog&apos;]
+
+flowers = [
+    &apos;ageratum&apos;, &apos;anemone&apos;, &apos;aster&apos;, &apos;azalea&apos;, &apos;begonia&apos;, &apos;bellflower&apos;, &apos;birthroot&apos;,
+    &apos;bluebell&apos;, &apos;bougainvillea&apos;, &apos;buttercup&apos;, &apos;calendula&apos;, &apos;carnation&apos;, &apos;chrysanthemum&apos;,
+    &apos;cornflower&apos;, &apos;daffodil&apos;, &apos;dahlia&apos;, &apos;foxglove&apos;, &apos;fuchsia&apos;, &apos;gardenia&apos;,
+    &apos;geranium&apos;, &apos;goldenrod&apos;, &apos;heliotrope&apos;, &apos;hollyhock&apos;, &apos;honeysuckle&apos;, &apos;hydrangea&apos;, &apos;jasmine&apos;,
+    &apos;larkspur&apos;, &apos;lavender&apos;, &apos;lilac&apos;, &apos;lupine&apos;, &apos;magnolia&apos;, &apos;mallow&apos;, &apos;marigold&apos;, &apos;monkshood&apos;,
+    &apos;orchid&apos;, &apos;periwinkle&apos;, &apos;poinsettia&apos;, &apos;primrose&apos;, &apos;rose&apos;, &apos;snapdragon&apos;, &apos;statice&apos;,
+    &apos;strawflower&apos;, &apos;sunflower&apos;, &apos;tulip&apos;, &apos;verbena&apos;, &apos;violet&apos;, &apos;yarrow&apos;, &apos;zinnia&apos;
+]
+
+readings = [&apos;book&apos;, &apos;magazine&apos;, &apos;ebook&apos;, &apos;newspaper&apos;]
+
+clothes = [&apos;shirt&apos;, &apos;sweater&apos;, &apos;hat&apos;, &apos;jacket&apos;, &apos;coat&apos;, &apos;vest&apos;]
+
+names = [
+    &apos;Abe&apos;, &apos;Ada&apos;, &apos;Ali&apos;, &apos;Amy&apos;, &apos;Ana&apos;, &apos;Ani&apos;, &apos;Ann&apos;, &apos;Ara&apos;, &apos;Ari&apos;, &apos;Ava&apos;,
+    &apos;Avi&apos;, &apos;Aya&apos;, &apos;Ben&apos;, &apos;Bly&apos;, &apos;Bob&apos;, &apos;Cal&apos;, &apos;Cam&apos;, &apos;Dan&apos;, &apos;Dax&apos;, &apos;Del&apos;,
+    &apos;Edd&apos;, &apos;Eli&apos;, &apos;Erl&apos;, &apos;Eve&apos;, &apos;Fay&apos;, &apos;Fin&apos;, &apos;Gil&apos;, &apos;Gio&apos;, &apos;Gus&apos;, &apos;Guy&apos;,
+    &apos;Hal&apos;, &apos;Han&apos;, &apos;Hud&apos;, &apos;Huy&apos;, &apos;Ian&apos;, &apos;Ike&apos;, &apos;Ina&apos;, &apos;Ira&apos;, &apos;Jan&apos;, &apos;Jay&apos;,
+    &apos;Jeb&apos;, &apos;Jen&apos;, &apos;Jim&apos;, &apos;Joe&apos;, &apos;Jon&apos;, &apos;Joy&apos;, &apos;Kai&apos;, &apos;Kay&apos;, &apos;Ken&apos;, &apos;Kim&apos;,
+    &apos;Kit&apos;, &apos;Lei&apos;, &apos;Leo&apos;, &apos;Lia&apos;, &apos;Lou&apos;, &apos;Mac&apos;, &apos;Mae&apos;, &apos;Mai&apos;, &apos;Max&apos;, &apos;May&apos;,
+    &apos;Meg&apos;, &apos;Mel&apos;, &apos;Moe&apos;, &apos;Mox&apos;, &apos;Ned&apos;, &apos;Nia&apos;, &apos;Oma&apos;, &apos;Pal&apos;, &apos;Pam&apos;, &apos;Pat&apos;,
+    &apos;Rae&apos;, &apos;Ray&apos;, &apos;Rob&apos;, &apos;Ron&apos;, &apos;Sal&apos;, &apos;Sam&apos;, &apos;Seb&apos;, &apos;Sid&apos;, &apos;Sue&apos;, &apos;Tad&apos;,
+    &apos;Taj&apos;, &apos;Tay&apos;, &apos;Ted&apos;, &apos;Tia&apos;, &apos;Tim&apos;, &apos;Tom&apos;, &apos;Uma&apos;, &apos;Val&apos;, &apos;Van&apos;, &apos;Vic&apos;,
+    &apos;Wes&apos;, &apos;Wyn&apos;, &apos;Xan&apos;, &apos;Xim&apos;, &apos;Xio&apos;, &apos;Yaz&apos;, &apos;Zak&apos;, &apos;Zel&apos;, &apos;Zia&apos;, &apos;Zoe&apos;,
+]
+
+fruit1, fruit2 = random.sample(fruits, 2)
+animal1, animal2 = random.sample(animals, 2)
+pet1, pet2 = random.sample(pets, 2)
+flower1, flower2 = random.sample(flowers, 2)
+reading1, reading2 = random.sample(readings, 2)
+clothe1, clothe2 = random.sample(clothes, 2)
+
+
+def plural(obj):
+    if obj == &apos;tomato&apos;:
+        return &apos;tomatoes&apos;
+    elif obj in [&apos;squid&apos;, &apos;elk&apos;, &apos;deer&apos;, &apos;quail&apos;]:
+        return obj
+    return &apos;{}s&apos;.format(obj)</global><language type="string">java</language><languageOption type="string"></languageOption><levels type="list"><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);${distractor.declare_var}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.println(${distractor.var});
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">${distractor.prompt}
+
+The output is: `${distractor.num}`
+
+&lt;a href=&quot;https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/8&quot; target=&quot;_blank&quot;&gt;Learn how our autograder works&lt;/a&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    level_dict.update(scenarios[scenario])
+    
+    return level_dict</distractor><meaningful type="string">def make_meaningful_permutation():
+    
+    return {
+        &apos;scenario&apos;: pick_from(scenarios.keys())
+    }</meaningful><setup type="string">noun = pick_from(fruits + animals + flowers)
+
+level_dict = {
+    &apos;num&apos;: pick_from(range(5, 100, 5)),
+    &apos;noun&apos;: noun,
+    &apos;var&apos;: &apos;num{}s&apos;.format(noun.capitalize()),
+    &apos;class_var&apos;: &apos;{}{}&apos;.format(noun.capitalize(), class_postfix)
+}
+
+scenarios = {
+    &apos;declare&apos;: {
+        &apos;prompt&apos;: &apos;Declare an integer variable {} initialized to {}.&apos;.format(level_dict[&apos;var&apos;], level_dict[&apos;num&apos;]),
+        &apos;declare_var&apos;: &apos;&apos;,
+        &apos;solution&apos;: &apos;int {} = {};&apos;.format(level_dict[&apos;var&apos;], level_dict[&apos;num&apos;]),
+        &apos;explain&apos;: &apos;&lt;code&gt;int {0}&lt;/code&gt; declares the variable named {0} that can hold an integer value. Then, &lt;code&gt;{0} = {1}&lt;/code&gt; initializes {0} with the value after the equal sign ({1}).&apos;.format(level_dict[&apos;var&apos;], level_dict[&apos;num&apos;])
+    },
+    
+    &apos;assign&apos;: {
+        &apos;prompt&apos;: &apos;Assign the integer variable {} with {}.&apos;.format(level_dict[&apos;var&apos;], level_dict[&apos;num&apos;]),
+        &apos;declare_var&apos;: &apos;\n\t\tint {};&apos;.format(level_dict[&apos;var&apos;]),
+        &apos;solution&apos;: &apos;{} = {};&apos;.format(level_dict[&apos;var&apos;], level_dict[&apos;num&apos;]),
+        &apos;explain&apos;: &apos;&lt;code&gt;{0} = {1}&lt;/code&gt; assigns the variable {0} with the value after the equal sign ({1}).&apos;.format(level_dict[&apos;var&apos;], level_dict[&apos;num&apos;])
+    }
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${distractor.var1};${distractor.var2_declare}${distractor.var3_declare}
+   
+      ${distractor.var1} = scnr.nextInt();${distractor.var3_in}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      ${distractor.output}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">${distractor.prompt}
+
+${distractor.example_input}
+```
+${distractor.example_out}
+```
+
+&lt;a href=&quot;https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/8&quot; target=&quot;_blank&quot;&gt;Learn how our autograder works&lt;/a&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    
+    version = pick_from([&apos;&apos;, &apos;2&apos;]) if scenario in [&apos;d&apos;, &apos;e&apos;] else &apos;&apos;
+    prompt = scenarios[scenario][&apos;prompt{}&apos;.format(version)]
+    example_in = scenarios[scenario][&apos;example_in{}&apos;.format(version)]
+    example_out = scenarios[scenario][&apos;example_out{}&apos;.format(version)]
+    solution = scenarios[scenario][&apos;solution{}&apos;.format(version)]
+    explain = scenarios[scenario][&apos;explain{}&apos;.format(version)]
+
+    var2_declare = &apos;\n\t\tint {};&apos;.format(scenarios[scenario][&apos;var2&apos;])
+    var3_in = scenarios[scenario][&apos;var3_in&apos;]
+    if (version == &apos;2&apos;) and (scenario == &apos;e&apos;):
+        var2_declare = &apos;&apos;
+        var3_in = &apos;&apos;
+    
+    example_input = &apos;Ex: If the input is `{}`, then the output is:&apos;.format(example_in1)   
+    if scenario == &apos;c&apos; or (scenario == &apos;e&apos; and version != &apos;2&apos;):
+        example_input = &apos;Ex: If the input is `{} {}`, then the output is:&apos;.format(example_in1, example_in2)
+    
+    return {
+        &apos;prompt&apos;: prompt,
+        &apos;example_in1&apos;: example_in1,
+        &apos;example_in2&apos;: example_in2,
+        &apos;example_in&apos;: example_in,
+        &apos;example_out&apos;: example_out,
+        &apos;example_input&apos;: example_input,
+        &apos;var1&apos;: scenarios[scenario][&apos;var1&apos;],
+        &apos;var2_declare&apos;: var2_declare,
+        &apos;var3_declare&apos;: scenarios[scenario][&apos;var3_declare&apos;],
+        &apos;var3_in&apos;: var3_in,
+        &apos;solution&apos;: solution,
+        &apos;output&apos;: scenarios[scenario][&apos;output&apos;],
+        &apos;explain&apos;: explain,
+        &apos;version&apos;: version,
+        &apos;class_var&apos;: scenarios[scenario][&apos;class_var&apos;],
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    
+    return {
+        &apos;scenario&apos;: pick_from(scenarios.keys())
+    }</meaningful><setup type="string">&quot;&quot;&quot;
+qtypes summary
+a) var2 = var1
+b) var2 = var1 + num
+c) var3 = var1 + var2
+d1) var2 = num - var1
+d2) var2 = var1 - num
+e1) var3 = var1 * var2
+e2) var2 = var1 * num
+&quot;&quot;&quot;
+
+qtypes_a = {
+    &apos;pet&apos;: {
+        &apos;noun&apos;: &apos;pet owner&apos;,
+        &apos;verb&apos;: &apos;adopts&apos;,
+        &apos;verb2&apos;: &apos;decides to adopt&apos;,
+        &apos;verb3&apos;: &apos;adopted&apos;,
+        &apos;object1&apos;: pet1,
+        &apos;object2&apos;: pet2,
+        &apos;var1&apos;: &apos;num{}s&apos;.format(pet1.capitalize()),
+        &apos;var2&apos;: &apos;num{}s&apos;.format(pet2.capitalize()),
+    },
+    
+    &apos;florist&apos;: {
+        &apos;noun&apos;: &apos;florist&apos;,
+        &apos;verb&apos;: &apos;picks&apos;,
+        &apos;verb2&apos;: &apos;decides to pick&apos;,
+        &apos;verb3&apos;: &apos;picked&apos;,
+        &apos;object1&apos;: flower1,
+        &apos;object2&apos;: flower2,
+        &apos;var1&apos;: &apos;num{}s&apos;.format(flower1.capitalize()),
+        &apos;var2&apos;: &apos;num{}s&apos;.format(flower2.capitalize()),
+    },
+    
+    &apos;student&apos;: {
+        &apos;noun&apos;: &apos;student&apos;,
+        &apos;verb&apos;: &apos;reads&apos;,
+        &apos;verb2&apos;: &apos;decides to read&apos;,
+        &apos;verb3&apos;: &apos;read&apos;,
+        &apos;object1&apos;: reading1,
+        &apos;object2&apos;: reading2,
+        &apos;var1&apos;: &apos;num{}s&apos;.format(reading1.capitalize()),
+        &apos;var2&apos;: &apos;num{}s&apos;.format(reading2.capitalize()),
+    },
+    
+    &apos;shopper&apos;: {
+        &apos;noun&apos;: &apos;student&apos;,
+        &apos;verb&apos;: &apos;buys&apos;,
+        &apos;verb2&apos;: &apos;decides to buy&apos;,
+        &apos;verb3&apos;: &apos;bought&apos;,
+        &apos;object1&apos;: clothe1,
+        &apos;object2&apos;: clothe2,
+        &apos;var1&apos;: &apos;num{}s&apos;.format(clothe1.capitalize()),
+        &apos;var2&apos;: &apos;num{}s&apos;.format(clothe2.capitalize()),
+    },
+    
+    &apos;shopper&apos;: {
+        &apos;noun&apos;: &apos;technician&apos;,
+        &apos;verb&apos;: &apos;buys&apos;,
+        &apos;verb2&apos;: &apos;decides to buy&apos;,
+        &apos;verb3&apos;: &apos;bought&apos;,
+        &apos;object1&apos;: &apos;keyboard&apos;,
+        &apos;object2&apos;: &apos;mousepad&apos;,
+        &apos;var1&apos;: &apos;numKeyboards&apos;,
+        &apos;var2&apos;: &apos;numMousepads&apos;,
+    },
+}
+
+qtypes_b = {
+    &apos;reader&apos;: {
+        &apos;noun&apos;: &apos;reader&apos;,
+        &apos;verb&apos;: &apos;buys&apos;,
+        &apos;verb_past&apos;: &apos;bought&apos;,
+        &apos;object&apos;: &apos;books&apos;,
+        &apos;place&apos;: &apos;book sale&apos;,
+        &apos;var1&apos;: &apos;numBooks&apos;,
+        &apos;var2&apos;: &apos;totalBooks&apos;,
+    },
+    
+    &apos;shopper&apos;: {
+        &apos;noun&apos;: &apos;shopper&apos;,
+        &apos;verb&apos;: &apos;buys&apos;,
+        &apos;verb_past&apos;: &apos;bought&apos;,
+        &apos;object&apos;: &apos;onions&apos;,
+        &apos;place&apos;: &apos;grocery store&apos;,
+        &apos;var1&apos;: &apos;numOnions&apos;,
+        &apos;var2&apos;: &apos;totalOnions&apos;,
+    },
+    
+    &apos;student&apos;: {
+        &apos;noun&apos;: &apos;student&apos;,
+        &apos;verb&apos;: &apos;is assigned&apos;,
+        &apos;verb_past&apos;: &apos;assigned&apos;,
+        &apos;object&apos;: &apos;assignments&apos;,
+        &apos;place&apos;: &apos;school&apos;,
+        &apos;var1&apos;: &apos;numAssignments&apos;,
+        &apos;var2&apos;: &apos;totalAssignments&apos;,
+    },
+    
+    &apos;child&apos;: {
+        &apos;noun&apos;: &apos;child&apos;,
+        &apos;verb&apos;: &apos;receives&apos;,
+        &apos;verb_past&apos;: &apos;received&apos;,
+        &apos;object&apos;: &apos;toys&apos;,
+        &apos;place&apos;: &apos;birthday party&apos;,
+        &apos;var1&apos;: &apos;numToys&apos;,
+        &apos;var2&apos;: &apos;totalToys&apos;,
+    },
+    
+    &apos;gardener&apos;: {
+        &apos;noun&apos;: &apos;gardener&apos;,
+        &apos;verb&apos;: &apos;plants&apos;,
+        &apos;verb_past&apos;: &apos;planted&apos;,
+        &apos;object&apos;: &apos;plants&apos;,
+        &apos;place&apos;: &apos;community garden&apos;,
+        &apos;var1&apos;: &apos;numPlants&apos;,
+        &apos;var2&apos;: &apos;totalPlants&apos;,
+    },
+}
+
+qtypes_c = {
+    &apos;shopper&apos;: {
+        &apos;noun&apos;: &apos;grocery shopper&apos;,
+        &apos;object1&apos;: fruit1,
+        &apos;object2&apos;: fruit2,
+        &apos;object3&apos;: &apos;fruit&apos;,
+        &apos;var1&apos;: &apos;num{}&apos;.format(plural(fruit1).capitalize()),
+        &apos;var2&apos;: &apos;num{}&apos;.format(plural(fruit2).capitalize()),
+        &apos;var3&apos;: &apos;totalFruit&apos;,
+    },
+    
+    &apos;car&apos;: {
+        &apos;noun&apos;: &apos;vehicle enthusiast&apos;,
+        &apos;object1&apos;: &apos;car&apos;,
+        &apos;object2&apos;: &apos;truck&apos;,
+        &apos;object3&apos;: &apos;vehicles&apos;,
+        &apos;var1&apos;: &apos;numCars&apos;,
+        &apos;var2&apos;: &apos;numTrucks&apos;,
+        &apos;var3&apos;: &apos;totalVehicles&apos;,
+    },
+    
+    &apos;computer&apos;: {
+        &apos;noun&apos;: &apos;computer lab&apos;,
+        &apos;object1&apos;: &apos;laptop&apos;,
+        &apos;object2&apos;: &apos;desktop&apos;,
+        &apos;object3&apos;: &apos;computers&apos;,
+        &apos;var1&apos;: &apos;numLaptops&apos;,
+        &apos;var2&apos;: &apos;numDesktops&apos;,
+        &apos;var3&apos;: &apos;totalComputers&apos;,
+    },
+    
+    &apos;flower&apos;: {
+        &apos;noun&apos;: &apos;bouquet of flowers&apos;,
+        &apos;object1&apos;: flower1,
+        &apos;object2&apos;: flower2,
+        &apos;object3&apos;: &apos;flowers&apos;,
+        &apos;var1&apos;: &apos;num{}s&apos;.format(flower1.capitalize()),
+        &apos;var2&apos;: &apos;num{}s&apos;.format(flower2.capitalize()),
+        &apos;var3&apos;: &apos;totalFlowers&apos;,
+    },
+    
+    &apos;classroom&apos;: {
+        &apos;noun&apos;: &apos;classroom&apos;,
+        &apos;object1&apos;: &apos;chair&apos;,
+        &apos;object2&apos;: &apos;table&apos;,
+        &apos;object3&apos;: &apos;furniture&apos;,
+        &apos;var1&apos;: &apos;numChairs&apos;,
+        &apos;var2&apos;: &apos;numTables&apos;,
+        &apos;var3&apos;: &apos;totalFurniture&apos;,
+    },
+}
+
+qtypes_d = {
+    &apos;tea&apos;: {
+        &apos;noun&apos;: &apos;tea party&apos;,
+        &apos;item&apos;: &apos;cups of tea&apos;,
+        &apos;verb&apos;: &apos;drunk&apos;,
+        &apos;var1&apos;: &apos;numCups&apos;,
+        &apos;var2&apos;: &apos;cupsRemaining&apos;,  
+    },
+    
+    &apos;florist&apos;: {
+        &apos;noun&apos;: &apos;florist&apos;,
+        &apos;item&apos;: &apos;roses&apos;,
+        &apos;verb&apos;: &apos;purchased&apos;,
+        &apos;var1&apos;: &apos;numRoses&apos;,
+        &apos;var2&apos;: &apos;rosesRemaining&apos;, 
+        
+    },
+    
+    &apos;potluck&apos;: {
+        &apos;noun&apos;: &apos;potluck&apos;,
+        &apos;item&apos;: &apos;cookies&apos;,
+        &apos;verb&apos;: &apos;eaten&apos;,
+        &apos;var1&apos;: &apos;numCookies&apos;,
+        &apos;var2&apos;: &apos;cookiesRemaining&apos;, 
+    },
+    
+    &apos;student&apos;: {
+        &apos;noun&apos;: &apos;student&apos;,
+        &apos;item&apos;: &apos;math problems&apos;,
+        &apos;verb&apos;: &apos;solved&apos;,
+        &apos;var1&apos;: &apos;numSolved&apos;,
+        &apos;var2&apos;: &apos;problemsRemaining&apos;,
+    },
+}
+
+qtypes_e = {
+    &apos;vacation&apos;: {
+        &apos;noun_phrase&apos;: &apos;family has gone on vacation&apos;,
+        &apos;object1&apos;: &apos;vacations&apos;,
+        &apos;object2&apos;: &apos;year&apos;,
+        &apos;verb_phrase&apos;: &apos;for&apos;,
+        &apos;total_span&apos;: &apos;in that time period&apos;,
+        &apos;num&apos;: pick_from(range(10, 20)),
+        &apos;var1&apos;: &apos;numVacations&apos;,
+        &apos;var2&apos;: &apos;numYears&apos;,
+        &apos;var3&apos;: &apos;totalVacations&apos;,
+    },
+    
+    &apos;fish&apos;: {
+        &apos;noun_phrase&apos;: &apos;fish hatchery has&apos;,
+        &apos;object1&apos;: &apos;fish&apos;,
+        &apos;object2&apos;: &apos;tank&apos;,
+        &apos;verb_phrase&apos;: &apos;&apos;,
+        &apos;total_span&apos;: &apos;in the hatchery&apos;,
+        &apos;num&apos;: pick_from(range(10, 50)),
+        &apos;var1&apos;: &apos;numFish&apos;,
+        &apos;var2&apos;: &apos;numTanks&apos;,
+        &apos;var3&apos;: &apos;totalFish&apos;,
+    },
+    
+    &apos;farm&apos;: {
+        &apos;noun_phrase&apos;: &apos;farm has&apos;,
+        &apos;object1&apos;: &apos;pigs&apos;,
+        &apos;object2&apos;: &apos;pen&apos;,
+        &apos;verb_phrase&apos;: &apos;&apos;,
+        &apos;total_span&apos;: &apos;in the farm\&apos;s pigpens&apos;,
+        &apos;num&apos;: pick_from(range(10, 20)),
+        &apos;var1&apos;: &apos;numPigs&apos;,
+        &apos;var2&apos;: &apos;numPens&apos;,
+        &apos;var3&apos;: &apos;totalPigs&apos;,
+    },
+    
+    &apos;student&apos;: {
+        &apos;noun_phrase&apos;: &apos;student takes&apos;,
+        &apos;object1&apos;: &apos;classes&apos;,
+        &apos;object2&apos;: &apos;semester&apos;,
+        &apos;verb_phrase&apos;: &apos;classes for&apos;,
+        &apos;total_span&apos;: &apos;the student has taken&apos;,
+        &apos;num&apos;: pick_from(range(2, 6)),
+        &apos;var1&apos;: &apos;numClasses&apos;,
+        &apos;var2&apos;: &apos;numSemesters&apos;,
+        &apos;var3&apos;: &apos;totalClasses&apos;,
+    },
+    
+    &apos;school&apos;: {
+        &apos;noun_phrase&apos;: &apos;school has&apos;,
+        &apos;object1&apos;: &apos;students&apos;,
+        &apos;object2&apos;: &apos;classroom&apos;,
+        &apos;verb_phrase&apos;: &apos;&apos;,
+        &apos;total_span&apos;: &apos;in the school&apos;,
+        &apos;num&apos;: pick_from(range(50, 300)),
+        &apos;var1&apos;: &apos;numStudents&apos;,
+        &apos;var2&apos;: &apos;numClassrooms&apos;,
+        &apos;var3&apos;: &apos;totalStudents&apos;,
+    },
+}
+
+a_data, b_data, c_data, d_data, e_data = pick_from(qtypes_a.keys()), pick_from(qtypes_b.keys()), pick_from(qtypes_c.keys()), pick_from(qtypes_d.keys()), pick_from(qtypes_e.keys())
+a, b, c, d, e = qtypes_a[a_data], qtypes_b[b_data], qtypes_c[c_data], qtypes_d[d_data], qtypes_e[e_data]
+
+b_num = pick_from(range(10, 20))
+d1_num = pick_from(range(30, 50))
+d2_num = pick_from(range(2, 5))
+
+example_in1, example_in2 = random.sample(range(6, 10), 2)
+
+scenarios = {
+    &apos;a&apos;: {
+        &apos;prompt&apos;: &apos;Integer {5} is read from input representing the number of {3} {2}. Assign integer {6} with the same number of {4} {2}.&apos;\
+            .format(plural(a[&apos;noun&apos;]), a[&apos;verb&apos;], a[&apos;verb3&apos;], plural(a[&apos;object1&apos;]), plural(a[&apos;object1&apos;]), a[&apos;var1&apos;], a[&apos;var2&apos;]), 
+        &apos;example_in&apos;: example_in1,
+        &apos;example_out&apos;: &apos;{0}\n{0}&apos;.format(example_in1),
+        &apos;var1&apos;: a[&apos;var1&apos;],
+        &apos;var2&apos;: a[&apos;var2&apos;],
+        &apos;var3_declare&apos;: &apos;&apos;,
+        &apos;var3_in&apos;: &apos;&apos;,
+        &apos;solution&apos;: &apos;{} = {};&apos;.format(a[&apos;var2&apos;], a[&apos;var1&apos;]),
+        &apos;output&apos;: &apos;System.out.println({});\n\t\tSystem.out.println({});&apos;.format(a[&apos;var1&apos;], a[&apos;var2&apos;]),
+        &apos;explain&apos;: &apos;{1} is assigned with {0}. Thus, both variables have the same value.&apos;\
+            .format(a[&apos;var1&apos;], a[&apos;var2&apos;]),
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(a_data.capitalize(), class_postfix),
+    },
+    
+    &apos;b&apos;: {
+        &apos;prompt&apos;: &apos;Integer {5} is read from input representing the number of {2} a {0} {1} at {7} {3}. The {0} already has {4} {2}. Assign integer {6} with the total number of {2} the {0} now has.&apos;\
+            .format(b[&apos;noun&apos;], b[&apos;verb&apos;], b[&apos;object&apos;], b[&apos;place&apos;], b_num, b[&apos;var1&apos;], b[&apos;var2&apos;], &apos;&apos; if b_data == &apos;student&apos; else &apos;a&apos;),
+        &apos;example_in&apos;: example_in1,
+        &apos;example_out&apos;: example_in1 + b_num,
+        &apos;var1&apos;: b[&apos;var1&apos;],
+        &apos;var2&apos;: b[&apos;var2&apos;],
+        &apos;var3_declare&apos;: &apos;&apos;,
+        &apos;var3_in&apos;: &apos;&apos;,
+        &apos;solution&apos;: &apos;{} = {} + {};&apos;.format(b[&apos;var2&apos;], b[&apos;var1&apos;], b_num),
+        &apos;output&apos;: &apos;System.out.println({});&apos;.format(b[&apos;var2&apos;]),
+        &apos;explain&apos;: &apos;The total number of {0} is the number of {0} the {6} already has plus the number of {0} {5} at {7} {1}. {3} is assigned with \
+            the value after the =, the result of the expression &lt;code&gt;{2} + {4}&lt;/code&gt;.&apos;\
+            .format(b[&apos;object&apos;], b[&apos;place&apos;], b[&apos;var1&apos;], b[&apos;var2&apos;], b_num, b[&apos;verb_past&apos;], b[&apos;noun&apos;], &apos;&apos; if b_data == &apos;student&apos; else &apos;the&apos;),
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(b_data.capitalize(), class_postfix),
+    },
+    
+    &apos;c&apos;: {
+        &apos;prompt&apos;: &apos;Integers {4} and {5} are read from input representing the number of {1} and {2} a {0} has, respectively. Assign integer variable {6} with the total number of {3} ({1} and {2}) the {0} has.&apos;\
+            .format(c[&apos;noun&apos;], plural(c[&apos;object1&apos;]), plural(c[&apos;object2&apos;]), c[&apos;object3&apos;], c[&apos;var1&apos;], c[&apos;var2&apos;], c[&apos;var3&apos;]),
+        &apos;example_in&apos;: &apos;{} {}&apos;.format(example_in1, example_in2),
+        &apos;example_out&apos;: example_in1 + example_in2,
+        &apos;var1&apos;: c[&apos;var1&apos;],
+        &apos;var2&apos;: c[&apos;var2&apos;],
+        &apos;var3_declare&apos;: &apos;\n\t\tint {};&apos;.format(c[&apos;var3&apos;]),
+        &apos;var3_in&apos;: &apos;\n\t\t{} = scnr.nextInt();&apos;.format(c[&apos;var2&apos;]),
+        &apos;solution&apos;: &apos;{} = {} + {};&apos;.format(c[&apos;var3&apos;], c[&apos;var1&apos;], c[&apos;var2&apos;]),
+        &apos;output&apos;: &apos;System.out.println({});&apos;.format(c[&apos;var3&apos;]),
+        &apos;explain&apos;: &apos;The total number of {2} is the number of {0} plus the number of {1}. {5} is assigned with \
+            the value after the =, the result of the expression &lt;code&gt;{3} + {4}&lt;/code&gt;.&apos;\
+            .format(plural(c[&apos;object1&apos;]), plural(c[&apos;object2&apos;]), c[&apos;object3&apos;], c[&apos;var1&apos;], c[&apos;var2&apos;], c[&apos;var3&apos;]),
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(c_data.capitalize(), class_postfix),
+    },
+    
+    &apos;d&apos;: {
+        &apos;prompt&apos;: &apos;A {0} starts out with {4} {1}. Then, integer {3} is read from input representing the number of {1} {2}. Assign integer {5} with the number of {1} that are left.&apos;\
+            .format(d[&apos;noun&apos;], d[&apos;item&apos;], d[&apos;verb&apos;], d[&apos;var1&apos;], d1_num, d[&apos;var2&apos;]),
+        &apos;prompt2&apos;: &apos;Integer {2} is read from input representing  the number of {1} a {0} starts out with. Then, {4}. Assign integer {3} with the number of {1} that are left.&apos;\
+            .format(d[&apos;noun&apos;], d[&apos;item&apos;], d[&apos;var1&apos;], d[&apos;var2&apos;],\
+            &apos;the student solves {} math problems&apos;.format(d2_num) if d[&apos;noun&apos;] == &apos;student&apos; else &apos;{} {} are {}&apos;.format(d2_num, d[&apos;item&apos;], d[&apos;verb&apos;])),
+        &apos;example_in&apos;: example_in1,
+        &apos;example_in2&apos;: example_in1,
+        &apos;example_out&apos;: d1_num - example_in1,
+        &apos;example_out2&apos;: example_in1 - d2_num,
+        &apos;var1&apos;: d[&apos;var1&apos;],
+        &apos;var2&apos;: d[&apos;var2&apos;],
+        &apos;var3_declare&apos;: &apos;&apos;,
+        &apos;var3_in&apos;: &apos;&apos;,
+        &apos;solution&apos;: &apos;{} = {} - {};&apos;.format(d[&apos;var2&apos;], d1_num, d[&apos;var1&apos;]),
+        &apos;solution2&apos;: &apos;{} = {} - {};&apos;.format(d[&apos;var2&apos;], d[&apos;var1&apos;], d2_num),
+        &apos;output&apos;: &apos;System.out.println({});&apos;.format(d[&apos;var2&apos;]),
+        &apos;explain&apos;: &apos;The number of {0} that are left is {3} minus {1}, so {2} is assigned with the value of the expression &lt;span style=&quot;white-space: nowrap&quot;&gt;&lt;code&gt;{3} - {1}&lt;/code&gt;.&lt;/span&gt;&apos;\
+            .format(d[&apos;item&apos;], d[&apos;var1&apos;], d[&apos;var2&apos;], d1_num),
+        &apos;explain2&apos;: &apos;The number of {0} that are left is {1} minus {3}, so {2} is assigned with the value of the expression &lt;span style=&quot;white-space: nowrap&quot;&gt;&lt;code&gt;{1} - {3}&lt;/code&gt;.&lt;/span&gt;&apos;\
+            .format(d[&apos;item&apos;], d[&apos;var1&apos;], d[&apos;var2&apos;], d2_num),
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(d_data.capitalize(), class_postfix),
+    },
+    
+    &apos;e&apos;: {
+        &apos;prompt&apos;: &apos;Integers {6} and {7} are read from input representing the number of {1} per {2} and the number of {9} a {0}, respectively. Assign integer {8} with the total number of {1} {4}.&apos;\
+            .format(e[&apos;noun_phrase&apos;], e[&apos;object1&apos;], e[&apos;object2&apos;], e[&apos;verb_phrase&apos;], e[&apos;total_span&apos;], e[&apos;num&apos;], e[&apos;var1&apos;], e[&apos;var2&apos;], e[&apos;var3&apos;], plural(e[&apos;object2&apos;])),
+        &apos;prompt2&apos;: &apos;Integer {6} is read from input representing the number of {1} per {2} a {0}. The {0} {3} {5} {2}. Assign integer {8} with the total number of {1} {4}.&apos;\
+            .format(e[&apos;noun_phrase&apos;], e[&apos;object1&apos;], plural(e[&apos;object2&apos;]), e[&apos;verb_phrase&apos;], e[&apos;total_span&apos;], e[&apos;num&apos;], e[&apos;var1&apos;], e[&apos;var2&apos;], e[&apos;var3&apos;], plural(e[&apos;object2&apos;])),
+        &apos;example_in&apos;: &apos;{} {}&apos;.format(example_in1, example_in2),
+        &apos;example_in2&apos;: example_in1,
+        &apos;example_out&apos;: example_in1 * example_in2,
+        &apos;example_out2&apos;: example_in1 * e[&apos;num&apos;],
+        &apos;var1&apos;: e[&apos;var1&apos;],
+        &apos;var2&apos;: e[&apos;var2&apos;],
+        &apos;var3_declare&apos;: &apos;\n\t\tint {};&apos;.format(e[&apos;var3&apos;]),
+        &apos;var3_in&apos;: &apos;\n\t\t{} = scnr.nextInt();&apos;.format(e[&apos;var2&apos;]),
+        &apos;solution&apos;: &apos;{} = {} * {};&apos;.format(e[&apos;var3&apos;], e[&apos;var1&apos;], e[&apos;var2&apos;]),
+        &apos;solution2&apos;: &apos;{} = {} * {};&apos;.format(e[&apos;var3&apos;], e[&apos;var1&apos;], e[&apos;num&apos;]),
+        &apos;output&apos;: &apos;System.out.println({});&apos;.format(e[&apos;var3&apos;]),
+        &apos;explain&apos;: &apos;The total number of {0} is the number of {0} per {1} times the number of {5}. {4} is assigned\
+            with the value after the =, the result of the expression &lt;code&gt;{2} * {3}&lt;/code&gt;.&apos;\
+            .format(e[&apos;object1&apos;], e[&apos;object2&apos;], e[&apos;var1&apos;], e[&apos;var2&apos;], e[&apos;var3&apos;], plural(e[&apos;object2&apos;])),
+        &apos;explain2&apos;: &apos;The total number of {1} is the number of {1} per {2} times {6}. {5} is assigned\
+            with the value after the =, the result of the expression &lt;code&gt;{3} * {6}&lt;/code&gt;.&apos;\
+            .format(example_in1, e[&apos;object1&apos;], e[&apos;object2&apos;], e[&apos;var1&apos;], e[&apos;var2&apos;], e[&apos;var3&apos;], e[&apos;num&apos;]),
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(e_data.capitalize(), class_postfix),
+    },
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    example_in1 = distractor_permutation[&apos;example_in1&apos;]
+    example_in2 = distractor_permutation[&apos;example_in2&apos;]
+    version = distractor_permutation[&apos;version&apos;]
+
+    test2, test2_num2, test3, test3_num2, test4, test4_num2 = random.sample([x for x in range(5, 50) if x not in [example_in1, example_in2]], 6)
+    if scenario == &apos;c&apos; or ((scenario == &apos;e&apos;) and (version == &apos;&apos;)):
+        test2 = &apos;{} {}&apos;.format(test2, test2_num2)
+        test3 = &apos;{} {}&apos;.format(test3, test3_num2)
+        test4 = &apos;{} {}&apos;.format(test4, test4_num2)
+
+    return {
+        &apos;test2&apos;: test2,
+        &apos;test3&apos;: test3,
+        &apos;test4&apos;: test4,
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li></tests></li><li type="dict">
+<explanation type="string">&lt;p&gt;${distractor.explain_general}&lt;/p&gt;
+
+&lt;p&gt;Ex: If the input is &lt;code&gt;${distractor.example_in}&lt;/code&gt;, ${distractor.explain}&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${distractor.var1};
+   
+      ${distractor.var1} = scnr.nextInt();
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.println(${distractor.var1});
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">&lt;p&gt;${distractor.prompt}&lt;/p&gt;
+
+Ex: If the input is `${distractor.example_in}`, then the output is: 
+```
+${distractor.example_out}
+```
+
+Note: The variable ${distractor.var1} should appear on both the left and right side of the assignment statement.
+
+&lt;a href=&quot;https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/8&quot; target=&quot;_blank&quot;&gt;Learn how our autograder works&lt;/a&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    num = pick_from_range(2, 4)
+    example_in = pick_from_range(6, 24)
+    example_out = example_in - num
+    if scenario == &apos;adds&apos;:
+        example_out = example_in + num
+    if scenario == &apos;multiplies&apos;:
+        example_out = example_in * num
+    
+    dataset = scenarios[scenario][&apos;dataset&apos;]
+    op = scenarios[scenario][&apos;op&apos;]
+    prompt_phrase = scenarios[scenario][&apos;prompt_phrase&apos;]
+    prompt_phrase2 = scenarios[scenario][&apos;prompt_phrase2&apos;]
+    
+    qtype = pick_from(dataset.keys())
+    var1 = &apos;num{}&apos;.format(dataset[qtype][&apos;object&apos;].capitalize())
+    noun = noun2 = dataset[qtype][&apos;noun&apos;]
+    object1 = dataset[qtype][&apos;object&apos;]
+    verb = dataset[qtype][&apos;verb&apos;]
+
+    scenario_phrase = &apos;adds {} to {}&apos;.format(num, var1)
+    if scenario == &apos;multiplies&apos;:
+        noun2 = dataset[qtype][&apos;noun2&apos;]
+        scenario_phrase = &apos;multiplies {} by {}&apos;.format(var1, num)
+        
+    recipe_phrase = &apos;&apos;
+    if scenario == &apos;subtracts&apos;:
+        scenario_phrase = &apos;subtracts {} from {}&apos;.format(num, var1)
+        if qtype == &apos;recipe&apos;:
+            recipe_phrase = &apos; to make a recipe&apos;
+        
+    prompt = &quot;Integer {0} is read from input representing the number of {1} {10} {2} has. Then, the {3} {4} {5} {6} {1}{7}. Write an assignment statement that {8}s {0} by {9}.&quot;\
+        .format(var1, object1, noun, noun2, verb, num, prompt_phrase, recipe_phrase, prompt_phrase2, num, &apos;an&apos; if noun[0] == &apos;a&apos; else &apos;a&apos;)
+    
+    explain_general = &apos;{0} is first assigned with a number read from input. Since the {3} {6} {1} {4} {5}{7}, &apos;\
+        .format(var1, num, prompt_phrase2, noun2, prompt_phrase, object1, verb, recipe_phrase)
+    explain_general += &apos; {0} is then assigned with {1} {2} {3}.&apos;.format(var1, var1, op, num)
+    explain = &apos;{0} is first assigned with {1}. Then, {0} is assigned with {0} {2} {3}, meaning {1} {2} {3}, so {4}.&apos;\
+        .format(var1, example_in, op, num, example_out)
+
+    return {
+        &apos;prompt&apos;: prompt,
+        &apos;example_in&apos;: example_in,
+        &apos;example_out&apos;: example_out,
+        &apos;var1&apos;: var1,
+        &apos;solution&apos;: &apos;{0} = {0} {1} {2};&apos;.format(var1, op, num),
+        &apos;explain_general&apos;: explain_general,
+        &apos;explain&apos;: explain,
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(qtype.capitalize(), class_postfix),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+
+    return {
+        &apos;scenario&apos;: pick_from(scenarios.keys())
+    }</meaningful><setup type="string">sub = {
+    &apos;eating&apos;: {
+        &apos;noun&apos;: &apos;person&apos;,
+        &apos;object&apos;: pick_from([&apos;apples&apos;, &apos;bananas&apos;, &apos;grapes&apos;, &apos;plums&apos;, &apos;pears&apos;, &apos;apricots&apos;,
+                            &apos;oranges&apos;, &apos;mangoes&apos;,&apos;tomatoes&apos;, &apos;carrots&apos;]),
+        &apos;verb&apos;: &apos;eats&apos;,
+    },
+    
+    &apos;coins&apos;: {
+        &apos;noun&apos;: &apos;person&apos;,
+        &apos;object&apos;: &apos;coins&apos;,
+        &apos;verb&apos;: &apos;loses&apos;,
+    },
+    
+    &apos;recipe&apos;: {
+        &apos;noun&apos;: &apos;chef&apos;,
+        &apos;object&apos;: pick_from([&apos;lemons&apos;, &apos;limes&apos;, &apos;avocados&apos;, &apos;tomatoes&apos;, &apos;carrots&apos;, &apos;onions&apos;,
+                            &apos;peppers&apos;, &apos;eggs&apos;]),
+        &apos;verb&apos;: &apos;uses&apos;,
+    },
+    
+    &apos;shark&apos;: {
+        &apos;noun&apos;: &apos;shark&apos;,
+        &apos;object&apos;: &apos;teeth&apos;,
+        &apos;verb&apos;: &apos;loses&apos;,
+    },
+    
+    &apos;bus&apos;: {
+        &apos;noun&apos;: &apos;bus&apos;,
+        &apos;object&apos;: pick_from([&apos;students&apos;, &apos;passengers&apos;, &apos;tourists&apos;, &apos;travelers&apos;]),
+        &apos;verb&apos;: &apos;drops off&apos;,
+    },
+}
+
+add = {
+    &apos;duck&apos;: {
+        &apos;noun&apos;: &apos;duck&apos;,
+        &apos;object&apos;: &apos;ducklings&apos;,
+        &apos;verb&apos;: &apos;has&apos;,
+    },
+    
+    &apos;plant&apos;: {
+        &apos;noun&apos;: &apos;plant&apos;,
+        &apos;object&apos;: pick_from([&apos;leaves&apos;, &apos;flowers&apos;]),
+        &apos;verb&apos;: &apos;grows&apos;,
+    },
+    
+    &apos;person&apos;: {
+        &apos;noun&apos;: &apos;person&apos;,
+        &apos;object&apos;: pick_from([&apos;coins&apos;, &apos;seashells&apos;, &apos;rings&apos;, &apos;necklaces&apos;, &apos;plants&apos;, 
+                            &apos;books&apos;, &apos;dolls&apos;, &apos;keychains&apos;, &apos;postcards&apos;]),
+        &apos;verb&apos;: &apos;buys&apos;,
+    },
+    
+    &apos;chef&apos;: {
+        &apos;noun&apos;: &apos;chef&apos;,
+        &apos;object&apos;: pick_from([&apos;omelettes&apos;, &apos;croissants&apos;, &apos;tacos&apos;, &apos;burgers&apos;, &apos;pancakes&apos;, &apos;waffles&apos;, 
+                            &apos;gyros&apos;, &apos;dumplings&apos;, &apos;cannolis&apos;, &apos;donuts&apos;, &apos;cookies&apos;, &apos;macarons&apos;, 
+                            &apos;cupcakes&apos;]),
+        &apos;verb&apos;: &apos;makes&apos;,
+    },
+    
+    &apos;city&apos;: {
+        &apos;noun&apos;: &apos;city&apos;,
+        &apos;object&apos;: &apos;buildings&apos;,
+        &apos;verb&apos;: &apos;builds&apos;,
+    },
+}
+
+mult = {
+    &apos;bacteria&apos;: {
+        &apos;noun&apos;: &apos;bacteria colony&apos;,
+        &apos;object&apos;: &apos;cells&apos;,
+        &apos;verb&apos;: &apos;grows to&apos;,
+        &apos;noun2&apos;: &apos;number of bacteria cells&apos;,
+    },
+    
+    &apos;school&apos;: {
+        &apos;noun&apos;: &apos;school&apos;,
+        &apos;object&apos;: &apos;students&apos;,
+        &apos;verb&apos;: &apos;increases to&apos;,
+        &apos;noun2&apos;: &apos;enrollment&apos;,
+    },
+    
+    &apos;fish&apos;: {
+        &apos;noun&apos;: &apos;school of fish&apos;,
+        &apos;object&apos;: &apos;fish&apos;,
+        &apos;verb&apos;: &apos;grows to&apos;,
+        &apos;noun2&apos;: &apos;school&apos;,
+    },
+    
+    &apos;library&apos;: {
+        &apos;noun&apos;: &apos;library&apos;,
+        &apos;object&apos;: &apos;books&apos;,
+        &apos;verb&apos;: &apos;is increased to&apos;,
+        &apos;noun2&apos;: &apos;library collection&apos;,
+    },
+    
+    &apos;warehouse&apos;: {
+        &apos;noun&apos;: &apos;warehouse&apos;,
+        &apos;object&apos;: &apos;items&apos;,
+        &apos;verb&apos;: &apos;increases to&apos;,
+        &apos;noun2&apos;: &apos;warehouse inventory&apos;,
+    },
+
+    &apos;farmer&apos;: {
+        &apos;noun&apos;: &apos;farmer&apos;,
+        &apos;object&apos;: pick_from([&apos;pigs&apos;, &apos;cows&apos;, &apos;horses&apos;, &apos;goats&apos;, &apos;sheep&apos;, &apos;chickens&apos;]),
+        &apos;verb&apos;: &apos;increases to&apos;,
+        &apos;noun2&apos;: &apos;livestock&apos;,
+    },
+        
+    &apos;kitchen&apos;: {
+        &apos;noun&apos;: pick_from([&apos;chef&apos;, &apos;baker&apos;]),
+        &apos;object&apos;: pick_from([&apos;spatulas&apos;, &apos;pans&apos;, &apos;towels&apos;, &apos;spoons&apos;, &apos;utensils&apos;, &apos;aprons&apos;]),
+        &apos;verb&apos;: &apos;increases its set to&apos;,
+        &apos;noun2&apos;: &apos;kitchen&apos;,
+    },
+    
+    &apos;clown&apos;: {
+        &apos;noun&apos;: &apos;clown&apos;,
+        &apos;object&apos;: pick_from([&apos;wigs&apos;, &apos;balloons&apos;, &apos;pies&apos;, &apos;costumes&apos;]),
+        &apos;verb&apos;: &apos;increases to&apos;,
+        &apos;noun2&apos;: &apos;clown\&apos;s collection&apos;,
+    },
+    
+    &apos;antiques&apos;: {
+        &apos;noun&apos;: &apos;antique shop&apos;,
+        &apos;object&apos;: pick_from([&apos;trinkets&apos;, &apos;books&apos;, &apos;clocks&apos;, &apos;teapots&apos;, &apos;cameras&apos;, &apos;vases&apos;]),
+        &apos;verb&apos;: &apos;is increased to&apos;,
+        &apos;noun2&apos;: &apos;collection&apos;,
+    },
+}
+
+scenarios = {
+    &apos;subtracts&apos;: {
+        &apos;dataset&apos;: sub,
+        &apos;op&apos;: &apos;-&apos;,
+        &apos;prompt_phrase&apos;: &apos;&apos;,
+        &apos;prompt_phrase2&apos;: &apos;decrease&apos;,
+    },
+    
+    &apos;adds&apos;: {
+        &apos;dataset&apos;: add,
+        &apos;op&apos;: &apos;+&apos;,
+        &apos;prompt_phrase&apos;: &apos;additional&apos;,
+        &apos;prompt_phrase2&apos;: &apos;increase&apos;,
+    },
+    
+    &apos;multiplies&apos;: {
+        &apos;dataset&apos;: mult,
+        &apos;op&apos;: &apos;*&apos;,
+        &apos;prompt_phrase&apos;: &apos;times as many&apos;,
+        &apos;prompt_phrase2&apos;: &apos;multiplie&apos;,
+    },
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    example_in = distractor_permutation[&apos;example_in&apos;]
+
+    test2, test3, test4 = random.sample([x for x in range(5, 50) if x != example_in], 3)
+
+    return {
+        &apos;test2&apos;: test2,
+        &apos;test3&apos;: test3,
+        &apos;test4&apos;: test4,
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${distractor.var1};
+      int ${distractor.var2};
+      int ${distractor.var3};
+
+      ${distractor.var1} = scnr.nextInt();${distractor.var2_in}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}
+${distractor.var3} = ${distractor.var1} + ${distractor.var2};</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.println(${distractor.var1} + &quot; ${distractor.object1}&quot;);
+      System.out.println(${distractor.var2} + &quot; ${distractor.object2}&quot;);
+      System.out.println(${distractor.var3} + &quot; ${distractor.total}&quot;);
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">${distractor.prompt}
+
+&lt;details&gt;
+&lt;summary&gt;&lt;b&gt;Click here for example&lt;/b&gt;&lt;/summary&gt;
+${distractor.example_input}
+```
+${distractor.example_out}
+```
+&lt;/details&gt;
+
+&lt;a href=&quot;https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/8&quot; target=&quot;_blank&quot;&gt;Learn how our autograder works&lt;/a&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    
+    version = pick_from([&apos;&apos;, &apos;2&apos;]) if scenario in [&apos;add_sub&apos;, &apos;mult_add&apos;, &apos;mult_sub&apos;] else &apos;&apos;
+    
+    prompt = scenarios[scenario][&apos;prompt{}&apos;.format(version)]
+    example_out = scenarios[scenario][&apos;example_out{}&apos;.format(version)]
+    solution = scenarios[scenario][&apos;solution{}&apos;.format(version)]
+    explain = scenarios[scenario][&apos;explain{}&apos;.format(version)]
+    explain += &apos;&lt;br&gt;Then, {2} is assigned with the sum of {0} and {1}.&apos;.format(var1, var2, var3)
+
+    var2_in = &apos;&apos;
+    example_input = &apos;Ex: If the input is `{}`, then the output is:&apos;.format(example_in1)
+    example_in = example_in1
+    if scenario in [&apos;add_add&apos;, &apos;add_sub&apos;, &apos;mult&apos;, &apos;mult_add&apos;, &apos;mult_sub&apos;]:
+        var2_in = &apos;\n\t\t{} = scnr.nextInt();&apos;.format(var2)
+        example_input = &apos;Ex: If the input is `{} {}`, then the output is:&apos;.format(example_in1, example_in2)
+        example_in = &apos;{} {}&apos;.format(example_in1, example_in2)
+
+    return {
+        &apos;prompt&apos;: prompt,
+        &apos;example_in&apos;: example_in,
+        &apos;example_out&apos;: example_out,
+        &apos;example_input&apos;: example_input,
+        &apos;solution&apos;: solution,
+        &apos;explain&apos;: explain,
+        &apos;object1&apos;: object1,
+        &apos;object2&apos;: object2,
+        &apos;total&apos;: &apos;total&apos;,
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+        &apos;var2_in&apos;: var2_in,
+        &apos;num1&apos;: num1,
+        &apos;num2&apos;: num2,
+        &apos;example_in1&apos;: example_in1,
+        &apos;example_in2&apos;: example_in2,
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(qtype.capitalize(), class_postfix)
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+
+    return {
+        &apos;scenario&apos;: pick_from(scenarios.keys()),
+    }</meaningful><setup type="string">qtypes = {
+    &apos;fruit&apos;: {
+        &apos;noun&apos;: &apos;fruit stand&apos;,
+        &apos;object1&apos;: plural(fruit1),
+        &apos;object2&apos;: plural(fruit2),
+        &apos;object3&apos;: &apos;fruit&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;sells&apos;,
+    },
+    
+    &apos;vehicle&apos;: {
+        &apos;noun&apos;: &apos;dealership&apos;,
+        &apos;object1&apos;: &apos;cars&apos;,
+        &apos;object2&apos;: &apos;trucks&apos;,
+        &apos;object3&apos;: &apos;vehicles&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;sells&apos;,
+    },
+    
+    &apos;lab&apos;: {
+        &apos;noun&apos;: &apos;computer lab&apos;,
+        &apos;object1&apos;: &apos;laptops&apos;,
+        &apos;object2&apos;: &apos;desktops&apos;,
+        &apos;object3&apos;: &apos;computers&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;removes&apos;,
+    },
+    
+    &apos;florist&apos;: {
+        &apos;noun&apos;: &apos;florist&apos;,
+        &apos;object1&apos;: &apos;{}s&apos;.format(flower1),
+        &apos;object2&apos;: &apos;{}s&apos;.format(flower2),
+        &apos;object3&apos;: &apos;flowers&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;sells&apos;,
+    },
+    
+    &apos;furniture&apos;: {
+        &apos;noun&apos;: &apos;classroom&apos;,
+        &apos;object1&apos;: &apos;chairs&apos;,
+        &apos;object2&apos;: &apos;tables&apos;,
+        &apos;object3&apos;: &apos;furniture&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;removes&apos;,
+    },
+    
+    &apos;shoes&apos;: {
+        &apos;noun&apos;: &apos;shoe store&apos;,
+        &apos;object1&apos;: &apos;pairs of boots&apos;,
+        &apos;object2&apos;: &apos;pairs of sandals&apos;,
+        &apos;object3&apos;: &apos;pairs of shoes&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;sells&apos;,
+    },
+    
+    &apos;fish&apos;: {
+        &apos;noun&apos;: &apos;fish market&apos;,
+        &apos;object1&apos;: &apos;sardines&apos;,
+        &apos;object2&apos;: &apos;trout&apos;,
+        &apos;object3&apos;: &apos;fish&apos;,
+        &apos;add_verb&apos;: &apos;receives&apos;,
+        &apos;sub_verb&apos;: &apos;sells&apos;,
+    },
+}
+
+qtype = pick_from(qtypes.keys())
+
+noun = qtypes[qtype][&apos;noun&apos;]
+name = pick_from(names)
+object1 = qtypes[qtype][&apos;object1&apos;]
+object2 = qtypes[qtype][&apos;object2&apos;]
+object3 = qtypes[qtype][&apos;object3&apos;]
+var1 = &apos;num{}&apos;.format(object1.capitalize())
+var2 = &apos;num{}&apos;.format(object2.capitalize())
+var3 = &apos;total{}&apos;.format(object3.capitalize())
+if qtype == &apos;shoes&apos;:
+    var1 = &apos;pairsOfBoots&apos;
+    var2 = &apos;pairsOfSandals&apos;
+    var3 = &apos;totalPairs&apos;
+    
+
+add_verb = qtypes[qtype][&apos;add_verb&apos;]
+sub_verb = qtypes[qtype][&apos;sub_verb&apos;]
+
+nums = random.sample(range(2, 10), 4)
+nums.sort()
+num1, num2, example_in1, example_in2 = nums
+
+scenarios = {
+    &apos;add_add&apos;: {
+        &apos;prompt&apos;: &apos;Integers {3} and {4} are read from input representing the number of {1} and the number of {2} at the {0}, respectively. The {0} then {8} {6} additional {1} and {7} additional {2}. Write statements to update {3} and {4}. Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(noun, object1, object2, var1, var2, var3, num1, num2, add_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, (example_in2 + num2), object2, (example_in1 + num1 + example_in2 + num2)),
+        &apos;solution&apos;: &apos;{0} = {0} + {2};\n{1} = {1} + {3};&apos;.format(var1, var2, num1, num2),
+        &apos;explain&apos;: &apos;{0} is assigned with {0} plus {1}.&lt;br&gt;{2} is assigned with {2} plus {3}.&apos;.format(var1, num1, var2, num2),
+    },
+
+    &apos;add_sub&apos;: {
+        &apos;prompt&apos;: &apos;Integers {3} and {4} are read from input representing the number of {1} and the number of {2} at the {0}, respectively. The {0} then {8} {6} additional {1} and {9} {7} {2}. \n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(noun, object1, object2, var1, var2, var3, num1, num2, add_verb, sub_verb),
+        &apos;prompt2&apos;: &apos;Integers {3} and {4} are read from input representing the number of {1} and the number of {2} at the {0}, respectively. The {0} then {9} {6} {1} and {8} {7} additional {2}. \n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(noun, object1, object2, var1, var2, var3, num1, num2, add_verb, sub_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, (example_in2 - num2), object2, (example_in1 + num1 + example_in2 - num2)),
+        &apos;example_out2&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 - num1), object1, (example_in2 + num2), object2, (example_in1 - num1 + example_in2 + num2)),
+        &apos;solution&apos;: &apos;{0} = {0} + {2};\n{1} = {1} - {3};&apos;.format(var1, var2, num1, num2),
+        &apos;solution2&apos;: &apos;{0} = {0} - {2};\n{1} = {1} + {3};&apos;.format(var1, var2, num1, num2),
+        &apos;explain&apos;: &apos;{0} is assigned with {0} plus {1}.&lt;br&gt;{2} is assigned with {2} minus {3}.&apos;.format(var1, num1, var2, num2),
+        &apos;explain2&apos;: &apos;{0} is assigned with {0} minus {1}.&lt;br&gt;{2} is assigned with {2} plus {3}.&apos;.format(var1, num1, var2, num2),
+    },
+    
+    &apos;mult&apos;: {
+        &apos;prompt&apos;: &apos;A {0} has integer {3} {1} and integer {4} {2} read from input. The {0}\&apos;s number of {1} increases to {6} times the original amount, and the number of {2} increases to {7} times the original amount. Write statements to update {3} and {4}. Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(noun, object1, object2, var1, var2, var3, num1, num2, add_verb, sub_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 * num1), object1, (example_in2 * num2), object2, ((example_in1 * num1) + (example_in2 * num2))),
+        &apos;solution&apos;: &apos;{0} = {0} * {2};\n{1} = {1} * {3};&apos;.format(var1, var2, num1, num2),
+        &apos;explain&apos;: &apos;{0} is assigned with {0} multiplied by {1}.&lt;br&gt;{2} is assigned with {2} multiplied by {3}.&apos;.format(var1, num1, var2, num2),
+    },
+    
+    &apos;add_equal&apos;: {
+        &apos;prompt&apos;: &apos;Integer {3} is read from input representing the number of {1} a {0} has. The {0} then {7} {6} additional {1}. The next day, the {0} {7} enough {2} such that they have the same number of {1} and {2}. &apos;\
+            &apos;\n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(noun, object1, object2, var1, var2, var3, num1, add_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, (example_in1 + num1), object2, (example_in1 + num1) * 2),
+        &apos;solution&apos;: &apos;{0} = {0} + {2};\n{1} = {0};&apos;.format(var1, var2, num1),
+        &apos;explain&apos;: &apos;{0} is assigned with {0} plus {1}.&lt;br&gt;{2} is assigned with {0}.&apos;.format(var1, num1, var2),
+    },
+    
+    &apos;equal_add&apos;: {
+        &apos;prompt&apos;: &apos;Integer {3} is read from input representing the number of {1} a {0} has. The {0} then {7} enough {2} such that they have the same number of {1} and {2}. The next day, the {0} receives {6} additional {1}. &apos;\
+            &apos;\n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+	        .format(noun, object1, object2, var1, var2, var3, num1, add_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, example_in1, object2, (example_in1 * 2) + num1),
+        &apos;solution&apos;: &apos;{1} = {0};\n{0} = {0} + {2};&apos;.format(var1, var2, num1),
+        &apos;explain&apos;: &apos;{1} is assigned with {0}.&lt;br&gt;{0} is assigned with {0} plus {2}.&apos;.format(var1, var2, num1),
+    },
+    
+    &apos;add_equal2&apos;: {
+        &apos;prompt&apos;: &apos;The initial value of integer {0} is read from input. Assign integer {1} with the sum of {0} and {3}. Then, assign {0} with the same value as {1}. &apos;\
+            &apos;Lastly, assign integer {2} with the sum of {0} and {1}.&apos;.format(var1, var2, var3, num1),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, (example_in1 + num1), object2, ((example_in1 + num1)) * 2),
+        &apos;solution&apos;: &apos;{1} = {0} + {2};\n{0} = {1};&apos;.format(var1, var2, num1),
+        &apos;explain&apos;: &apos;{1} is assigned with {0} plus {2}.&lt;br&gt;{0} is assigned with {1}.&apos;.format(var1, var2, num1),
+    },
+    
+    &apos;equal_add2&apos;: {
+        &apos;prompt&apos;: &apos;The initial value of integer {0} is read from input. Assign integer {1} with the same value as {0}. Then, assign {0} with the sum of {1} and {3}. &apos;\
+            &apos;Lastly, assign integer {2} with the sum of {0} and {1}.&apos;.format(var1, var2, var3, num1),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, example_in1, object2, (example_in1 * 2) + num1),
+        &apos;solution&apos;: &apos;{1} = {0};\n{0} = {1} + {2};&apos;.format(var1, var2, num1),
+        &apos;explain&apos;: &apos;{1} is assigned with {0}.&lt;br&gt;{0} is assigned with {1} plus {2}.&apos;.format(var1, var2, num1),
+    },
+    
+    &apos;mult_add&apos;: {
+        &apos;prompt&apos;: &apos;The number of {1} and {2} {0} has are read from input represented by integers {3} and {4}, respectively. {0}\&apos;s number of {1} increases to {6} times the original amount. {0} {8} {7} additional {2}. &apos;\
+            &apos;\n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(name, object1, object2, var1, var2, var3, num1, num2, add_verb),
+        &apos;prompt2&apos;: &apos;The number of {1} and {2} {0} has are read from input represented by integers {3} and {4}, respectively. {0} {8} {6} additional {1}. {0}\&apos;s number of {2} increases to {7} times the original amount. &apos;\
+            &apos;\n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos; \
+            .format(name, object1, object2, var1, var2, var3, num1, num2, add_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 * num1), object1, (example_in2 + num2), object2, (example_in1 * num1) + (example_in2 + num2)),
+        &apos;example_out2&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 + num1), object1, (example_in2 * num2), object2, (example_in1 + num1) + (example_in2 * num2)),
+        &apos;solution&apos;: &apos;{0} = {0} * {2};\n{1} = {1} + {3};&apos;.format(var1, var2, num1, num2),
+        &apos;solution2&apos;: &apos;{0} = {0} + {2};\n{1} = {1} * {3};&apos;.format(var1, var2, num1, num2),
+        &apos;explain&apos;: &apos;{0} is assigned with {0} multiplied by {2}.&lt;br&gt;{1} is assigned with {1} plus {3}.&apos;.format(var1, var2, num1, num2),
+        &apos;explain2&apos;: &apos;{0} is assigned with {0} plus {2}.&lt;br&gt;{1} is assigned with {1} multiplied by {3}.&apos;.format(var1, var2, num1, num2),
+    },
+    
+    &apos;mult_sub&apos;: {
+        &apos;prompt&apos;: &apos;Integers {3} and {4} are read from input representing the number of {1} and the number of {2} {0} has, respectively. {0} {8} {6} {1}. {0}\&apos;s number of {2} increases to {7} times the original amount. &apos;\
+            &apos;\n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos;\
+            .format(name, object1, object2, var1, var2, var3, num1, num2, sub_verb),
+        &apos;prompt2&apos;: &apos;Integers {3} and {4} are read from input representing the number of {1} and the number of {2} {0} has, respectively. {0}\&apos;s number of {1} increases to {6} times the original amount. {0} {8} {7} {2}. &apos;\
+            &apos;\n- First, write statements to update {3} and {4}. \n- Then, assign integer {5} with the total number of {1} and {2}.&apos; \
+            .format(name, object1, object2, var1, var2, var3, num1, num2, sub_verb),
+        &apos;example_out&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 - num1), object1, (example_in2 * num2), object2, (example_in1 - num1) + (example_in2 * num2)),
+        &apos;example_out2&apos;: &apos;{} {}\n{} {}\n{} total&apos;.format((example_in1 * num1), object1, (example_in2 - num2), object2, (example_in1 * num1) + (example_in2 - num2)),
+        &apos;solution&apos;: &apos;{0} = {0} - {2};\n{1} = {1} * {3};&apos;.format(var1, var2, num1, num2),
+        &apos;solution2&apos;: &apos;{0} = {0} * {2};\n{1} = {1} - {3};&apos;.format(var1, var2, num1, num2),
+         &apos;explain&apos;: &apos;{0} is assigned with {0} minus {2}.&lt;br&gt;{1} is assigned with {1} multiplied by {3}.&apos;.format(var1, var2, num1, num2),
+        &apos;explain2&apos;: &apos;{0} is assigned with {0} multiplied by {2}.&lt;br&gt;{1} is assigned with {1} minus {3}.&apos;.format(var1, var2, num1, num2),
+    },
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    num1 = distractor_permutation[&apos;num1&apos;]
+    num2 = distractor_permutation[&apos;num2&apos;]
+    example_in1 = distractor_permutation[&apos;example_in1&apos;]
+    example_in2 = distractor_permutation[&apos;example_in2&apos;]
+
+    used_nums = [num1, num2, example_in1, example_in2]
+    test2, test2_num2, test3, test3_num2, test4, test4_num2 = random.sample([x for x in range(num2 + 1, 50) if x not in used_nums], 6)
+    
+    if scenario in [&apos;add_add&apos;, &apos;add_sub&apos;, &apos;mult&apos;, &apos;mult_add&apos;, &apos;mult_sub&apos;]:
+        test2 = &apos;{} {}&apos;.format(test2, test2_num2)
+        test3 = &apos;{} {}&apos;.format(test3, test3_num2)
+        test4 = &apos;{} {}&apos;.format(test4, test4_num2)
+    
+    return {
+        &apos;test2&apos;: test2,
+        &apos;test3&apos;: test3,
+        &apos;test4&apos;: test4,
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+
+</zyVersion>
+
+
+
+
+</zySection>
+

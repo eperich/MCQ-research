@@ -1,0 +1,143 @@
+<question xsi:type='MultipleChoiceQuestion' guid='fb569575-3d8c-3e44-dea6-45655c52d6e9'>
+<instructions>
+<line><ilatex>A =  \{ x \in \mathbb{Z}: x~\mbox{ is a prime number}\}</ilatex></line>
+<line><ilatex>B = \{ 4, 7, 9, 11, 13, 14\}</ilatex></line> 
+<line>Select the set corresponding to <ilatex>A \cap B</ilatex>.</line>
+</instructions>
+
+<choices>
+<choice><ilatex>\emptyset</ilatex></choice>
+<choice correct='true'><ilatex>\{7, 11, 13\}</ilatex></choice>
+<choice><ilatex>\{7, 9, 11, 13\}</ilatex></choice>
+<choice><ilatex>\{4, 7, 9, 11, 13, 14\}</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='6c751bc8-dd3b-1735-8b77-ce75dc5cda6d'>
+<instructions>
+<line><ilatex>A =  \{ x \in \mathbb{Z} : x~\mbox{ is a prime number}\}</ilatex></line>
+<line><ilatex>B = \{4, 7, 9, 11, 13, 14\}</ilatex></line>
+<line><ilatex>C =  \{ x \in \mathbb{Z} : 3 \le x \le 10\}</ilatex></line>
+<line>Select the set corresponding to <ilatex>(A \cup B) \cap C</ilatex>.</line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\{3, 5, 7\}</ilatex></choice>
+<choice><ilatex>\{3, 4, 7, 9\}</ilatex></choice>
+<choice correct='true'><ilatex>\{3, 4, 5, 7, 9\}</ilatex></choice>
+<choice><ilatex>\{3, 4, 5, 7, 9, 11, 13\}</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='c5e7fc44-415d-3329-02c9-35f2aea3143d'>
+<instructions>
+<p>For <ilatex>i \in \mathbb{Z}^+</ilatex>, <ilatex>A_i</ilatex> is defined to be the set of all integer multiples of <ilatex>i</ilatex>.  Select the set corresponding to <ilatex>\left( \bigcap_{i=2}^{4} A_i \right) \cap  \{ x \in \mathbb{Z}: 1 \le x \le 30\}</ilatex></p> 
+</instructions>
+
+<choices>
+<choice><ilatex>\emptyset</ilatex></choice>
+<choice><ilatex>\{24\}</ilatex></choice>
+<choice correct='true'><ilatex>\{12, 24\}</ilatex></choice>
+<choice><ilatex>\{6, 12, 18, 24, 30\}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='770eb2dc-5bc7-4eea-a0c1-c078c87528de'>
+<instructions>
+<p>For <ilatex>i \in \mathbb{Z}^+</ilatex>, <ilatex>A_i</ilatex> is defined as:</p>
+<line><ilatex>A_i = \{ x \in \mathbb{Z} : i \le x \le i^2\}</ilatex></line>
+<p> Select the set corresponding to <ilatex>\left( \bigcap_{i=2}^{6} A_i \right).</ilatex></p> 
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\emptyset</ilatex></choice>
+<choice><ilatex>\{6\}</ilatex></choice>
+<choice><ilatex>\{2, 3, 4\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z} : 2 \le x \le 36\}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='65168342-9baa-4ff0-b2e9-a9974d21902a'>
+<instructions>
+<line><ilatex>A =  \{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\}</ilatex></line>
+<line><ilatex>B = \{-3, -1, 0, 2, 3, 5, 6, 9, 14\}</ilatex></line>
+<line>Select the set corresponding to <ilatex>A \cap B</ilatex>.</line> 
+</instructions>
+
+<choices>
+<choice   correct='true'><ilatex>\{3, 5, 9\}</ilatex></choice>
+<choice><ilatex>\{-3, -1, 3, 5, 9\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\} \cup \{-3, -1, 3, 5, 9\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\} \cup \{0, 2, 6, 14\}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='9ca84dcf-a369-4c8f-aa51-ee01702b4e0e'>
+<instructions>
+<line><ilatex>A =  \{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\}</ilatex></line>
+<line><ilatex>B = \{-3, -1, 0, 2, 3, 5, 6, 9, 14\}</ilatex></line>
+<line>Select the set corresponding to <ilatex>A \cup B</ilatex>.</line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\{3, 5, 9\}</ilatex></choice>
+<choice><ilatex>\{-3, -1, 3, 5, 9\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\} \cup \{2, 6, 14\}</ilatex></choice>
+<choice correct='true'><ilatex>\{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\} \cup \{-3, -1, 0, 2, 6, 14\}</ilatex></choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='cf653ae2-4f76-47bf-a9d0-476dcaeea675'>
+<instructions>
+<line><ilatex>A =  \{ x \in \mathbb{Z}^+: x~\mbox{ is odd}\}</ilatex></line>
+<line><ilatex>B = \{2, 3, 5, 6, 9, 14\}</ilatex></line>
+<line><ilatex>C =  \{ x \in \mathbb{Z}: 4 \le x \le 12\}</ilatex></line>
+<line>Select the set corresponding to <ilatex>(A \cap B) \cup C</ilatex>.</line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\{2, 3, 5, 6, 7, 9, 11\}</ilatex></choice>
+<choice><ilatex>\{2, 3, 5, 6, 7, 9, 11, 13\}</ilatex></choice>
+<choice correct='true'><ilatex> \{ x \in \mathbb{Z}: 3 \le x \le 12\}</ilatex></choice>
+<choice><ilatex> \{ x \in \mathbb{Z}: 2 \le x \le 12\}</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='454af7e0-28ff-4ae2-8e86-dfa39bcf01d5'>
+<instructions>
+<p>Select the expression that is equal to the set corresponding to the shaded region in the Venn diagram below:</p>
+<image alt='The Venn diagram with 3 overlapping circles A, B, and C has 8 separate regions.  Five regions are shaded: All 4 regions in C;  and A intersect B without C' width='200' guid='44a7bd26-0048-4499-a7e4-d5801a5887af'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice><ilatex>(A \cup B) \cup C</ilatex></choice>
+<choice><ilatex>(A \cap B) \cap C</ilatex></choice>
+<choice><ilatex>(A \cup B) \cap C</ilatex></choice>
+<choice correct='true'><ilatex>(A \cap B) \cup C</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='ceb375e2-8227-4ce2-b988-b99cdb309cdd'>
+<instructions>
+<p>Select the expression that is equal to the set corresponding to the shaded region in the Venn diagram below:</p>
+<image alt='The Venn diagram with 3 overlapping circles A, B, and C has 8 separate regions.  Three regions are shaded:  A intersect B intersect C;  and the other regions in A intersect B and A intersect C.' width='200' guid='629fb92f-272c-4bc5-abd2-fad2325a992d'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice><ilatex>(C \cup B) \cup A</ilatex></choice>
+<choice><ilatex>(C \cap B) \cap A</ilatex></choice>
+<choice correct='true'><ilatex>(C \cup B) \cap A</ilatex></choice>
+<choice><ilatex>(C \cap B) \cup A</ilatex></choice>
+</choices>
+</question>

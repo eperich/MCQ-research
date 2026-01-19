@@ -1,0 +1,1997 @@
+<zySection title="Constant variables" shorttitle="Constant variables" id="c792693c-b7cc-a3ab-7014-e37e14683d11" depend="12d3b1b9-7781-c15f-57ee-9b9cb3d18ade, FltPtDbl">
+<zypInfo person="Alex" date="03/20/14" hwStatus="0" Status="2"> Need 2 HW problems, otherwise ready for second review </zypInfo>
+<zypInfo person="Susan" date="4/10/14" Status="3">Second review done.</zypInfo>
+<zypInfo person="Susan" date="4/23/14" hwStatus="1">Added 2 HW problems.</zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="Draft1Doing"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/10/14" minutes="" hwStatusCpp ="Rev1Done"></zypInfo> 
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Nicole" date="03/20/17" minutes="10"> Cleaned up gdocs in preparation for a new release.  </zypInfo>
+<zypInfo person="Susan" date="6/08/17" minutes="15" status="Rev1Done">Checked style. </zypInfo>
+<zypInfo person="Roman" date="6/15/17" minutes="5" status="Rev2Done"></zypInfo>
+<zypInfo person="Aubrey" date="01/26/23" minutes="15" status="BugFix">adding back notes to codewriting CAs</zypInfo>
+<zypInfo person="LukeM" date="10/6/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<zyAside type="bordered" name="" id="9d0c36c4-1c24-411e-9639-c22dcd4cdad5">
+Learn to:
+<ul>
+<li>Define what constant variables are and important use cases.</li> <!-- SS1, TB1 -->
+<li>Apply constant variables in expressions and understand the behavior of constants in assignment statements.</li> <!-- SS1, CA1, CA2 (L1-2), TB1 -->
+<li>Analyze and correct code snippets to ensure proper use of constant variables.</li> <!-- SS1, CA1 -->
+<li>Understand the benefits of using constant variables for code readability and maintainability.</li> <!-- SS1, CA1, CA2 (L1-2), TB3 -->
+</ul>
+</zyAside>
+
+
+<zyVersion version="java">
+<zyHTML id="f2c3fea8-71fd-45ba-b4c6-2d88f8b06556">
+<p><zyGoodPractice id="5243d2d1-bd87-b461-e7bb-620ccd82d6bc"> A good practice is to minimize the use of  literal numbers in code. </zyGoodPractice> One reason is to improve code readability.  newPrice = origPrice - 5 is less clear than newPrice = origPrice - priceDiscount. When a variable represents a literal, the variable's value should not be changed in the code. If the programmer precedes the variable declaration with the keyword <zyDefn>const</zyDefn>, then the compiler will report an error  if a later statement tries to change that variable's value. <zyDefn> An initialized variable whose value cannot change is called a _constant variable_</zyDefn>. <zyGoodPractice id="1a684bc3-4660-4833-be84-6516dc9066f9"> A common convention, or good practice, is to name constant variables using upper case letters with words separated by underscores, to make constant variables clearly visible in code.</zyGoodPractice> </p> 
+</zyHTML>
+</zyVersion>
+
+<zyVersion version="java">
+<zyHTML id="d80330a0-efb1-484b-9f8e-4a690d5afd8a">
+<p><zyGoodPractice id="c1129e97-ee50-e7a7-2e8d-36d80d6ec615"> A good practice is to minimize the use of  literal numbers in code. </zyGoodPractice> One reason is to improve code readability.  newPrice = origPrice - 5 is less clear than newPrice = origPrice - priceDiscount. When a variable represents a literal, the variable's value should not be changed in the code. If the programmer precedes the variable declaration with the keyword <zyDefn>final</zyDefn>, then the compiler will report an error  if a later statement tries to change that variable's value. <zyDefn> An initialized variable whose value cannot change is called a _constant variable_</zyDefn>. <zyDefn>A constant variable is also known as a _final variable_.</zyDefn> <zyGoodPractice id="93dafe08-e2b3-c073-184f-7ba91aeb5cbb"> A common convention, or good practice, is to name constant variables using upper case letters with words separated by underscores, to make constant variables clearly visible in code.</zyGoodPractice> </p> 
+</zyHTML>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Final variable example: Lightning distance." id="a5312946-e446-6623-2594-9cb78b4be8ac" type="CodeConsole">
+<zyCode language="java" highlight="9, 10">
+import java.util.Scanner;
+
+// Estimates distance of lightning based on seconds
+// between lightning and thunder
+
+public class LightningDist {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      final double SPEED_OF_SOUND   = 761.207; // Miles/hour (sea level)
+      final double SECONDS_PER_HOUR = 3600.0;  // Secs/hour
+      double secondsBetween;
+      double timeInHours;
+      double distInMiles;
+
+      System.out.println("Enter seconds between");
+      System.out.print("lightning strike and thunder: ");
+      secondsBetween = scnr.nextDouble();
+
+      timeInHours = secondsBetween / SECONDS_PER_HOUR;
+      distInMiles = SPEED_OF_SOUND * timeInHours;
+
+      System.out.println("Lightning strike was approximately");
+      System.out.println(distInMiles + " miles away.");
+   }
+}
+</zyCode> 
+<zyConsole>
+Enter seconds between
+lightning strike and thunder: 7
+Lightning strike was approximately
+1.4801247222222222 miles away.
+
+...
+
+Enter seconds between
+lightning strike and thunder: 1
+Lightning strike was approximately
+0.2114463888888889 miles away.
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyQSetTF caption="Constant variables." id="ac4bb763-7075-6aab-8588-d776c9cf4327">
+Which of the following statements are valid declarations <!--and-->or uses of a constant integer variable named STEP_SIZE? Assume that variables totalStepHeight and numSteps have previously been declared as integers.
+
+<zyQ>
+<zyQText correct="False"><zyICode>int STEP_SIZE = 5;</zyICode></zyQText>
+<zyQExpl>Declares and initializes an int variable, but the variable is not a constant.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="True"><zyICode>final int STEP_SIZE = 14;</zyICode></zyQText>
+<zyQExpl>Declares a constant int variable STEP_SIZE and initializes the constant with the value 14.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="True"><zyICode>totalStepHeight = numSteps * STEP_SIZE;</zyICode></zyQText>
+<zyQExpl>Constant variables can be used in expressions just like other variables.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="False"><zyICode>STEP_SIZE = STEP_SIZE + 1;</zyICode></zyQText>
+<zyQExpl>Results in a compilation error. Constant variables cannot be changed within assignment statements.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+</zyVersion>
+
+
+
+
+<zypInfo person="Vanessa/Kevin" date="7/15/18"> Changed magic numbers to input. Changed all parameters in zyAssertOutput to false. </zypInfo>
+<zypInfo person="Roman" date="7/24/18"> Revised to require user get the input to avoid having to declare constant in the middle of statements. </zypInfo>
+<!--<zyHomeworkProblem id="decaf6e8-2031-1655-5d17-168e64a179d9" language="cpp" caption="Using constants in expressions." author="SL">
+<zyInstructions>
+The cost to ship a package is a flat fee of 75 cents plus 25 cents per pound.  <br />
+1. Declare a const named CENTS_PER_POUND and initialize with 25.  <br />
+2. Get the shipping weight from user input storing the weight into shipWeightPounds.  <br />
+3. Using FLAT_FEE_CENTS and CENTS_PER_POUND constants, assign shipCostCents with the cost of shipping a package weighing  shipWeightPounds.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the input 10, and then with the input 2. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+10
+2
+</zyInput>
+<zyStudentProgram>
+#include <iostream>
+using namespace std;
+
+int main() {
+   int shipWeightPounds;
+   int shipCostCents = 0;
+   const int FLAT_FEE_CENTS = 75;
+
+   <STUDENT CODE>
+
+   cout << "Weight(lb): " << shipWeightPounds;
+   cout << ", Flat fee(cents): " << FLAT_FEE_CENTS;
+   cout << ", Cents per lb: " << CENTS_PER_POUND << endl;
+   cout << "Shipping cost(cents): " << shipCostCents << endl;
+  
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+const int CENTS_PER_POUND = 25;
+
+cin >> shipWeightPounds;
+shipCostCents = FLAT_FEE_CENTS + (CENTS_PER_POUND * shipWeightPounds);
+</zySolution>
+
+<zyTestVectors>
+int main() {
+
+   {  int shipWeightPounds;
+      int shipCostCents = 0;
+      const int FLAT_FEE_CENTS = 75;
+      <STUDENT CODE> 
+   
+      cout << "Weight(lb): " << shipWeightPounds;
+      cout << ", Flat fee(cents): " << FLAT_FEE_CENTS;
+      cout << ", Cents per lb: " << CENTS_PER_POUND << endl;
+      cout << "Shipping cost(cents): " << shipCostCents << endl;
+
+      zyAssertOutput("Weight(lb): 10, Flat fee(cents): 75, Cents per lb: 25\nShipping cost(cents): 325\n",
+                     "Testing shipWeightPounds = 10", false, false, 
+                     false, false);
+
+   }
+
+   {  int shipWeightPounds;
+      int shipCostCents = 0;
+      const int FLAT_FEE_CENTS = 75;
+
+      <STUDENT CODE> 
+
+      cout << "Weight(lb): " << shipWeightPounds;
+      cout << ", Flat fee(cents): " << FLAT_FEE_CENTS;
+      cout << ", Cents per lb: " << CENTS_PER_POUND << endl;
+      cout << "Shipping cost(cents): " << shipCostCents << endl;
+
+      zyAssertOutput("Weight(lb): 2, Flat fee(cents): 75, Cents per lb: 25\nShipping cost(cents): 125\n",
+                     "Testing shipWeightPounds = 2", false, false, 
+                     false, false);
+   }
+
+   zyTerminate();
+}
+
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+
+<zypInfo person="Kenny" date="3/27/23" minutes="20" status="Draft1Done"></zypInfo>
+<zypInfo person="DNorment" date="11/03/23" minutes="10" status="Rev1Done"></zypInfo>
+
+
+<zypInfo person="Vanessa/Kevin" date="7/15/18"> Changed magic numbers to input. Changed all parameters in zyAssertOutput to false. </zypInfo>
+<zypInfo person="Roman" date="7/24/18"> Revised to require user get the input to avoid having to declare constant in the middle of statements. </zypInfo>
+<zypInfo person="Kenny" date="9/12/21"> Added text about which character is used to read in an int variable.</zypInfo>
+<!--<zyHomeworkProblem id="8487f75d-46b4-94b2-851b-4597645dc31f" language="c" caption="Using constants in expressions." author="SL/RS">
+<zyInstructions>
+The cost to ship a package is a flat fee of 75 cents plus 25 cents per pound.  <br />
+1. Declare a const named CENTS_PER_POUND and initialize with 25.  <br />
+2. Get the shipping weight from user input storing the weight into shipWeightPounds.  (Remember %d is used to read in an integer from the user.)<br />
+3. Using FLAT_FEE_CENTS and CENTS_PER_POUND constants, assign shipCostCents with the cost of shipping a package weighing  shipWeightPounds.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the input 10, and then with the input 2. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+
+<zyInput>
+10
+2
+</zyInput>
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   int shipWeightPounds;
+   int shipCostCents = 0;
+   const int FLAT_FEE_CENTS = 75;
+
+   <STUDENT CODE>
+
+   printf("Weight(lb): %d, Flat fee(cents): %d, Cents per pound: %d\nShipping cost(cents): %d\n",
+          shipWeightPounds, FLAT_FEE_CENTS, CENTS_PER_POUND, shipCostCents);
+  
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+const int CENTS_PER_POUND = 25;
+
+scanf("%d", &shipWeightPounds);
+shipCostCents = FLAT_FEE_CENTS + (CENTS_PER_POUND * shipWeightPounds);
+</zySolution>
+
+<zyTestVectors>
+int main(void) {
+
+   {  int shipWeightPounds;
+      int shipCostCents = 0;
+      const int FLAT_FEE_CENTS = 75;
+
+      <STUDENT CODE>
+
+   printf("Weight(lb): %d, Flat fee(cents): %d, Cents per pound: %d\nShipping cost(cents): %d\n",
+          shipWeightPounds, FLAT_FEE_CENTS, CENTS_PER_POUND, shipCostCents);
+   
+      zyAssertOutput("Weight(lb): 10, Flat fee(cents): 75, Cents per pound: 25\nShipping cost(cents): 325\n",
+                     "Testing shipWeightPounds = 10", false, false, 
+                     false, false);
+   }
+
+   {  int shipWeightPounds;
+      int shipCostCents = 0;
+      const int FLAT_FEE_CENTS = 75;
+
+      <STUDENT CODE>
+
+   printf("Weight(lb): %d, Flat fee(cents): %d, Cents per pound: %d\nShipping cost(cents): %d\n",
+          shipWeightPounds, FLAT_FEE_CENTS, CENTS_PER_POUND, shipCostCents);
+
+      zyAssertOutput("Weight(lb): 2, Flat fee(cents): 75, Cents per pound: 25\nShipping cost(cents): 125\n",
+                     "Testing shipWeightPounds = 2", false, false, 
+                     false, false);
+   }
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+<zypInfo person="Stephanie" date="04/25/24" minutes="395" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/01/24" minutes="451" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/02/24" minutes="182" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="05/02/24" minutes="62" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/14/24" minutes="630" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/15/24" minutes="180" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="05/16/24" minutes="25" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/16/24" minutes="41" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="05/21/24" minutes="25" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/22/24" minutes="21" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/31/24" minutes="5" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="06/04/24" minutes="39" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="06/06/24" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="06/06/24" minutes="23" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="06/06/24" minutes="21" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="06/10/24" minutes="65" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="06/11/24" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="06/11/24" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="06/14/24" minutes="31" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="06/14/24" minutes="5" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="05/09/25" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+
+<DELETION_START_CPP_CODEWRITING> parts="2" challenge="true" edited-last="Fri May 09 2025 11:17:27 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+ex_in_set = set(range(2, 31))
+example_input = pick_from(ex_in_set)
+
+dtype_dict_dict = {
+    &apos;int&apos;: {
+        &apos;post_type&apos;: &apos;eger&apos;, 
+        &apos;fstr&apos;: &apos;{}&apos;, 
+        &apos;out_states_fstr&apos;: &apos;\tcout &lt;&lt; {} &lt;&lt; &quot; {} = &quot; &lt;&lt; {} &lt;&lt; &quot; {}&quot; &lt;&lt; endl;&apos;, 
+        &apos;directive&apos;: &apos;&apos;, 
+    }, 
+    &apos;double&apos;: {
+        &apos;post_type&apos;: &apos;&apos;, 
+        &apos;fstr&apos;: &apos;{:.2f}&apos;, 
+        &apos;out_states_fstr&apos;: &apos;\tcout &lt;&lt; {} &lt;&lt; &quot; {} = &quot;;\n&apos;\
+                            &apos;\tcout &lt;&lt; fixed &lt;&lt; setprecision(2) &lt;&lt; {} &lt;&lt; &quot; {}&quot; &lt;&lt; endl;&apos;, 
+        &apos;directive&apos;: &apos;\n#include &lt;iomanip&gt;&apos;, 
+    }, 
+}
+
+
+def get_test_dict(ex_in, num_tests):
+    return {&apos;test{}&apos;.format(i + 2): v for i, v in enumerate(random.sample(ex_in_set - {ex_in}, num_tests))}
+
+
+def singular_to_plural(singular):
+    exceptions_dict = {&apos;INCH&apos;: &apos;INCHES&apos;, &apos;FOOT&apos;: &apos;FEET&apos;, &apos;FEE&apos;: &apos;FEE&apos;, &apos;COST&apos;: &apos;COST&apos;}
+    
+    plural = &apos;{}S&apos;.format(singular)
+    if singular in exceptions_dict:
+        plural = exceptions_dict[singular]
+    
+    return plural
+
+
+class ConstantName:
+    def __init__(self, pre_list, post_list):
+        self.pre = pick_from(pre_list)
+        self.post = pick_from(post_list)
+    
+    def get_name(self):
+        return &apos;{}_PER_{}&apos;.format(singular_to_plural(self.pre), self.post)
+
+
+class Constant:
+    def __init__(self, dtype, constant_name_obj, val_list):
+        self.dtype = dtype
+        self.constant_name_obj = constant_name_obj
+        self.val_list = val_list
+    
+    def get_name(self):
+        return self.constant_name_obj.get_name()
+    
+    def get_value(self, ex=-1):
+        return pick_from(self.val_list, exclude=[ex])
+
+
+cost_const_obj_list = [
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;SECOND&apos;]), [0.25, 0.5]), 
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;MINUTE&apos;]), [0.25, 0.5, 1.0, 1.25]), 
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;HOUR&apos;]), [(i / 2.0) for i in range(3, 21)]), 
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;DAY&apos;]), [(i / 2.0) for i in range(20, 101)]), 
+    Constant(
+        &apos;double&apos;, 
+        ConstantName([&apos;COST&apos;], [&apos;OUNCE&apos;, &apos;CENTIMETER&apos;, &apos;METER&apos;, &apos;INCH&apos;, &apos;CUP&apos;, &apos;PINT&apos;, &apos;TABLESPOON&apos;]), 
+        [0.25, 0.5], 
+    ), 
+]
+
+unit_const_obj_list = [
+    Constant(&apos;int&apos;, ConstantName([&apos;MINUTE&apos;], [&apos;HOUR&apos;]), [60]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;SECOND&apos;], [&apos;MINUTE&apos;]), [60]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;SECOND&apos;], [&apos;HOUR&apos;]), [3600]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;HOUR&apos;], [&apos;DAY&apos;]), [24]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;DAY&apos;], [&apos;WEEK&apos;]), [7]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;OUNCE&apos;], [&apos;POUND&apos;]), [16]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;CENTIMETER&apos;], [&apos;METER&apos;]), [100]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;METER&apos;], [&apos;KILOMETER&apos;]), [1000]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;INCH&apos;], [&apos;FOOT&apos;]), [12]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;CUP&apos;], [&apos;GALLON&apos;]), [16]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;PINT&apos;], [&apos;GALLON&apos;]), [16]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;TABLESPOON&apos;], [&apos;CUP&apos;]), [16]), 
+]</global><language type="string">cpp</language><languageOption type="string"></languageOption><levels type="list"><li type="dict">
+<explanation type="string">&lt;p&gt;A constant ${distractor.constant_data_type} variable is declared using &lt;code&gt;const&lt;/code&gt; followed by &lt;code&gt;${distractor.const_dtype}&lt;/code&gt;.&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &quot;testcode.h&quot;  // For code testing purposes
+#include &lt;iostream&gt;${distractor.directive}
+using namespace std;
+
+int main() {
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">const ${distractor.const_dtype}</solution><template type="string">   /* Your code goes here */</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"> ${distractor.constant_name} = ${distractor.constant_value};
+   int ${distractor.input_variable};
+   ${distractor.const_dtype} ${distractor.output_variable};
+
+   cin &gt;&gt; ${distractor.input_variable};
+
+   ${distractor.output_variable} = ${distractor.input_variable} * ${distractor.constant_name};
+
+${distractor.output_statements}
+
+   RunTests();  // Testing code
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">// Developed with assistance from copilot.microsoft.com
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+#include &lt;cctype&gt;
+using namespace std;
+
+const bool DEBUG = false;
+
+string Extract() {
+   string inputFileName = &quot;main.cpp&quot;;
+   string startMarker = &quot;int main() {&quot;;          // not including newline
+   string endMarker = &quot;${distractor.constant_name} = ${distractor.constant_value};&quot;;  // not including newline   // Implementer: Please update the string
+   string line;
+   string extractedSection = &quot;&quot;;
+   bool sectionStarted;
+
+   try {
+      // Open the input file
+      ifstream inputFile(inputFileName);
+      if (!inputFile.is_open()) 
+         return &quot;&quot;;
+
+      // Read the content line by line
+      sectionStarted = false;
+
+      while (getline(inputFile, line)) {
+         if (line.find(startMarker) != string::npos) {
+            sectionStarted = true;
+            extractedSection += line + &quot;\n&quot;; // Include the start marker line
+         } else if (sectionStarted) {
+            extractedSection += line + &quot;\n&quot;; // Include subsequent lines until the end marker
+            if (line.find(endMarker) != string::npos) {
+               int start = extractedSection.find(startMarker) + startMarker.length(); // remove startMarker
+               int end = extractedSection.find(endMarker);
+               extractedSection = extractedSection.substr(start, end - start); // remove endMarker
+               break; // End marker found, stop reading
+            }
+         }
+      }
+
+      // Close the input file
+      inputFile.close();
+
+      if (DEBUG) cout &lt;&lt; &quot;Section extracted: &quot; &lt;&lt; extractedSection &lt;&lt; endl;
+      
+   } catch (const exception&amp; e) {
+      // Do nothing
+   }
+
+   return extractedSection;
+}
+
+
+// Function to remove single-line comments from a line
+bool RemoveComment(string&amp; line) {
+   size_t commentStart = line.find(&quot;//&quot;);
+   if (commentStart == string::npos) 
+      return false;
+
+   size_t commentEnd = line.find(&quot;\n&quot;, commentStart);
+   if (commentEnd == string::npos)
+      return false;
+   
+   line.erase(commentStart, commentEnd - commentStart); // Not include newline
+   return true;
+}
+
+bool RemoveBlockComment(string&amp; line) {
+   size_t commentStart = line.find(&quot;/*&quot;);
+   size_t commentEnd = line.find(&quot;*/&quot;);
+   if (commentStart != string::npos &amp;&amp; commentEnd != string::npos) {
+      line.erase(commentStart, commentEnd - commentStart + 2); // Include */
+      return true;
+   }
+   return false;
+}
+
+bool RepeatedSpaces(char lhs, char rhs) {
+   return (lhs == rhs) &amp;&amp; (lhs == &apos; &apos;);
+}
+
+string TrimSpaces(string str) {
+   // Replace all tabs and newlines by whitespaces
+   for (char&amp; c : str) {
+      if (c == &apos;\t&apos; || c == &apos;\n&apos;) c = &apos; &apos;;
+   }
+   // Remove repeated spaces
+   string::iterator newEnd = unique(str.begin(), str.end(), RepeatedSpaces);
+   str.erase(newEnd, str.end());
+   if (DEBUG) cout &lt;&lt; &quot;\nTrimmed: &quot; &lt;&lt; str &lt;&lt; endl;
+   return str;
+}
+
+void Check(string data) {
+   bool isOK = true;
+   /* Implementer: please update the following three lines accordingly. */
+   /* Expected tokens */
+   const int numTokens = 2; // Total 2 tokens
+   const string tokens[numTokens] = {&quot;const&quot;, &quot;${distractor.const_dtype}&quot;};  // The tokens
+   const int occurrence[numTokens] = {1, 1};  // 1 means the first occurrence of the token.
+
+   int found[numTokens];
+
+   try {
+   
+      for (int i = 0; i &lt; numTokens; ++i) {
+         // Find the index of the n-th occurrence of a token
+         int pos = data.find(tokens[i]);  // First occurrence
+         for (int n = 1; n &lt; occurrence[i] &amp;&amp; pos != string::npos; ++n) {
+            pos = data.find(tokens[i], pos + 1); // Next occurrence
+         }
+         found[i] = pos;
+      
+         if (DEBUG) cout &lt;&lt; &quot;Found &quot; &lt;&lt; tokens[i] &lt;&lt; &quot; at &quot; &lt;&lt; found[i] &lt;&lt; endl;
+      
+         if (found[i] == string::npos) {
+            cout &lt;&lt; tokens[i] &lt;&lt; &quot; not found&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+   
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Perform further tests if needed
+   }
+   catch (const exception&amp; e) {
+      cout &lt;&lt; &quot;Error found:&quot; &lt;&lt; data &lt;&lt; endl;
+   }
+}
+
+
+void RunTests() {
+   string s = Extract();   
+   while (RemoveBlockComment(s));
+   while (RemoveComment(s));
+   s = TrimSpaces(s);
+   if (DEBUG) cout &lt;&lt; &quot;Cleaned: &quot; &lt;&lt; s &lt;&lt; endl;
+   
+   Check(s);
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef TESTCODE
+#define TESTCODE
+void RunTests();
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.h</name></li></files><prompt type="string">&lt;p&gt;Complete the declaration of the constant ${distractor.constant_data_type} variable ${distractor.constant_name}.&lt;/p&gt;
+
+&lt;p&gt;The program then reads integer ${distractor.input_variable} from input and ${distractor.prompt}, using ${distractor.constant_name}.&lt;/p&gt;
+
+&lt;p&gt;Ex: If the input is &lt;code&gt;${distractor.example_input}&lt;/code&gt;, then the output is:&lt;/p&gt;
+&lt;pre&gt;${distractor.example_output}&lt;/pre&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario_obj_index = meaningful_permutation[&apos;scenario_obj_index&apos;]
+    
+    scenario_obj = scenario_obj_list[scenario_obj_index]
+    const_obj = scenario_obj.const_obj
+    
+    const_val = const_obj.get_value()
+    example_output = example_input * const_val
+    
+    input_variable = scenario_obj.get_in_var()
+    output_variable = scenario_obj.get_out_var()
+    
+    return {
+        &apos;constant_data_type&apos;: &apos;{}{}&apos;.format(const_obj.dtype, dtype_dict_dict[const_obj.dtype][&apos;post_type&apos;]), 
+        &apos;constant_name&apos;: const_obj.get_name(), 
+        &apos;input_variable&apos;: input_variable, 
+        &apos;prompt&apos;: scenario_obj.get_prompt(), 
+        &apos;example_input&apos;: example_input, 
+        &apos;example_output&apos;: scenario_obj.get_ex_out(example_input, example_output), 
+        &apos;directive&apos;: dtype_dict_dict[const_obj.dtype][&apos;directive&apos;], 
+        &apos;const_dtype&apos;: const_obj.dtype, 
+        &apos;constant_value&apos;: dtype_dict_dict[const_obj.dtype][&apos;fstr&apos;].format(const_val), 
+        &apos;output_variable&apos;: output_variable, 
+        &apos;output_statements&apos;: scenario_obj.get_out_states(input_variable, output_variable), 
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;scenario_obj_index&apos;: random.randrange(len(scenario_obj_list))}</meaningful><setup type="string">item_const_obj_list = [
+    Constant(
+        &apos;int&apos;, 
+        ConstantName(
+            [&apos;APPLE&apos;, &apos;ORANGE&apos;, &apos;EGG&apos;, &apos;DONUT&apos;, &apos;PEAR&apos;, &apos;LEMON&apos;, &apos;KEYCHAIN&apos;, &apos;TRINKET&apos;, &apos;BRACELET&apos;], 
+            [&apos;BOX&apos;], 
+        ), 
+        [(i * 2) for i in range(1, 7)]
+    ), 
+]
+
+cost_const_obj_list.append(
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;WEEK&apos;]), [(i / 2.0) for i in range(100, 201)])
+)
+
+
+class Scenario:
+    def __init__(self, const_obj):
+        self.const_obj = const_obj
+    
+    def get_prompt(self):
+        raise NotImplementedError
+    
+    def get_in_var(self):
+        raise NotImplementedError
+    
+    def get_out_var(self):
+        raise NotImplementedError
+    
+    def get_ex_out(self):
+        raise NotImplementedError
+    
+    def get_out_states(self):
+        raise NotImplementedError
+
+
+class CostScenario(Scenario):
+    def __init__(self, const_obj):
+        Scenario.__init__(self, const_obj)
+        self.cost = pick_from([&apos;cost&apos;, &apos;expense&apos;])
+    
+    def get_prompt(self):
+        return &apos;calculates the total {} given the number of {}&apos;.format(
+            self.cost, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj.constant_name_obj.post).capitalize())
+    
+    def get_out_var(self):
+        return &apos;total{}&apos;.format(self.cost.capitalize())
+    
+    def get_ex_out(self, ex_in, ex_out):
+        return &apos;{} {} = {} dollars&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            dtype_dict_dict[self.const_obj.dtype][&apos;fstr&apos;].format(ex_out), 
+        )
+    
+    def get_out_states(self, in_var, out_var):
+        return dtype_dict_dict[self.const_obj.dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            out_var, 
+            &apos;dollars&apos;, 
+        )
+
+
+class UnitScenario(Scenario):
+    def get_prompt(self):
+        return &apos;converts the number of {} to number of {}&apos;.format(
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            singular_to_plural(self.const_obj.constant_name_obj.pre).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj.constant_name_obj.post).capitalize())
+    
+    def get_out_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj.constant_name_obj.pre).capitalize())
+    
+    def get_ex_out(self, ex_in, ex_out):
+        return &apos;{} {} = {} {}&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            dtype_dict_dict[self.const_obj.dtype][&apos;fstr&apos;].format(ex_out), 
+            singular_to_plural(self.const_obj.constant_name_obj.pre).lower(), 
+        )
+    
+    def get_out_states(self, in_var, out_var):
+        return dtype_dict_dict[self.const_obj.dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            out_var, 
+            singular_to_plural(self.const_obj.constant_name_obj.pre).lower(), 
+        )
+
+
+class ItemScenario(Scenario):
+    def __init__(self, const_obj):
+        Scenario.__init__(self, const_obj)
+        self.item = self.const_obj.constant_name_obj.pre
+    
+    def get_prompt(self):
+        return &apos;calculates the total number of {} given the number of boxes&apos;.format(
+            singular_to_plural(self.item).lower()
+        )
+    
+    def get_in_var(self):
+        return &apos;numBoxes&apos;
+    
+    def get_out_var(self):
+        return &apos;total{}&apos;.format(singular_to_plural(self.item).capitalize())
+    
+    def get_ex_out(self, ex_in, ex_out):
+        return &apos;{} boxes = {} {}&apos;.format(
+            ex_in, 
+            dtype_dict_dict[self.const_obj.dtype][&apos;fstr&apos;].format(ex_out), 
+            singular_to_plural(self.item).lower(), 
+        )
+    
+    def get_out_states(self, in_var, out_var):
+        return dtype_dict_dict[self.const_obj.dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            &apos;boxes&apos;, 
+            out_var, 
+            singular_to_plural(self.item).lower(), 
+        )
+
+
+scenario_obj_list = [
+    UnitScenario(pick_from(unit_const_obj_list)), 
+    CostScenario(pick_from(cost_const_obj_list)), 
+    ItemScenario(pick_from(item_const_obj_list)), 
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(distractor_permutation[&apos;example_input&apos;], 2)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_input}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">&lt;p&gt;The declaration of constant ${distractor.constant1_data_type} variable ${distractor.constant1_name} begins with &lt;code&gt;const&lt;/code&gt;, followed by &lt;code&gt;${distractor.constant1_dtype}&lt;/code&gt; and ${distractor.constant1_name}. Then, ${distractor.constant1_name} is initialized with the value ${distractor.constant1_value}. The constant ${distractor.constant2_data_type} variable ${distractor.constant2_name} is declared and initialized similarly.&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &quot;testcode.h&quot;  // For code testing purposes
+#include &lt;iostream&gt;${distractor.directive}
+using namespace std;
+
+int main() {
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">const ${distractor.constant1_dtype} ${distractor.constant1_name} = ${distractor.constant1_value};
+const ${distractor.constant2_dtype} ${distractor.constant2_name} = ${distractor.constant2_value};</solution><template type="string">
+   /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   int ${distractor.input_variable};
+   ${distractor.out_var_dtype} ${distractor.output_variable};
+
+   cin &gt;&gt; ${distractor.input_variable};
+
+   ${distractor.output_variable} = ${distractor.computation};
+
+${distractor.output_statements}
+
+   RunTests();  // Testing code
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">// Adapted from copilot.microsoft.com
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+#include &lt;cctype&gt;
+using namespace std;
+
+const bool DEBUG = false;
+
+string Extract() {
+   string inputFileName = &quot;main.cpp&quot;;
+   string startMarker = &quot;int main() {&quot;;          // not including newline
+   string endMarker = &quot;int ${distractor.input_variable};&quot;;           // not including newline   // Implementer: Please update the string
+   string line;
+   string extractedSection = &quot;&quot;;
+   bool sectionStarted;
+
+   try {
+      // Open the input file
+      ifstream inputFile(inputFileName);
+      if (!inputFile.is_open()) 
+         return &quot;&quot;;
+
+      // Read the content line by line
+      sectionStarted = false;
+
+      while (getline(inputFile, line)) {
+         if (line.find(startMarker) != string::npos) {
+            sectionStarted = true;
+            extractedSection += line + &quot;\n&quot;; // Include the start marker line
+         } else if (sectionStarted) {
+            extractedSection += line + &quot;\n&quot;; // Include subsequent lines until the end marker
+            if (line.find(endMarker) != string::npos) {
+               int start = extractedSection.find(startMarker) + startMarker.length(); // remove startMarker
+               int end = extractedSection.find(endMarker);
+               extractedSection = extractedSection.substr(start, end - start); // remove endMarker
+               break; // End marker found, stop reading
+            }
+         }
+      }
+
+      // Close the input file
+      inputFile.close();
+
+      if (DEBUG) cout &lt;&lt; &quot;Section extracted: &quot; &lt;&lt; extractedSection &lt;&lt; endl;
+      
+   } catch (const exception&amp; e) {
+      // Do nothing
+   }
+
+   return extractedSection;
+}
+
+
+// Function to remove single-line comments from a line
+bool RemoveComment(string&amp; line) {
+   size_t commentStart = line.find(&quot;//&quot;);
+   if (commentStart == string::npos) 
+      return false;
+
+   size_t commentEnd = line.find(&quot;\n&quot;, commentStart);
+   if (commentEnd == string::npos)
+      return false;
+   
+   line.erase(commentStart, commentEnd - commentStart); // Not include newline
+   return true;
+}
+
+bool RemoveBlockComment(string&amp; line) {
+   size_t commentStart = line.find(&quot;/*&quot;);
+   size_t commentEnd = line.find(&quot;*/&quot;);
+   if (commentStart != string::npos &amp;&amp; commentEnd != string::npos) {
+      line.erase(commentStart, commentEnd - commentStart + 2); // Include */
+      return true;
+   }
+   return false;
+}
+
+bool RepeatedSpaces(char lhs, char rhs) {
+   return (lhs == rhs) &amp;&amp; (lhs == &apos; &apos;);
+}
+
+string TrimSpaces(string str) {
+   // Replace all tabs and newlines by whitespaces
+   for (char&amp; c : str) {
+      if (c == &apos;\t&apos; || c == &apos;\n&apos;) c = &apos; &apos;;
+   }
+   // Remove repeated spaces
+   string::iterator newEnd = unique(str.begin(), str.end(), RepeatedSpaces);
+   str.erase(newEnd, str.end());
+   if (DEBUG) cout &lt;&lt; &quot;\nTrimmed: &quot; &lt;&lt; str &lt;&lt; endl;
+   return str;
+}
+
+void Check(string data) {
+   bool isOK = true;
+   
+   /* Implementer: please update the following three lines accordingly. */
+   /* Expected tokens */
+   const int numTokens = 8;
+   const string tokens[numTokens] = {&quot;const&quot;, &quot;${distractor.constant1_dtype}&quot;, &quot;${distractor.constant1_name}&quot;, &quot;;&quot;, &quot;,&quot;, &quot;const&quot;, &quot;${distractor.constant2_dtype}&quot;, &quot;${distractor.constant2_name}&quot;};
+   const int occurrence[numTokens] = {1, 1, 1, 1, 1, 2, ${distractor.token}, 1};
+   
+   int found[numTokens];
+
+   try {
+   
+      for (int i = 0; i &lt; numTokens; ++i) {
+         // Find the index of the n-th occurrence of a token
+         int pos = data.find(tokens[i]);  // First occurrence
+         for (int n = 1; n &lt; occurrence[i] &amp;&amp; pos != string::npos; ++n) {
+            pos = data.find(tokens[i], pos + 1); // Next occurrence
+         }
+         found[i] = pos;
+      
+         if (DEBUG) cout &lt;&lt; &quot;Found token[&quot; &lt;&lt; i &lt;&lt; &quot;]&quot; &lt;&lt; tokens[i] &lt;&lt; &quot; at &quot; &lt;&lt; found[i] &lt;&lt; endl;
+      
+      }
+
+      int valid = false;
+      // Customization for constant declaration. 
+      // const type1 var1... ; const type2 var2...
+      // For this case, type1 and type2 can be identical or different.
+      if (0&lt;=found[0] &amp;&amp; found[0]&lt;found[1] &amp;&amp; found[1]&lt;found[2]               // const type1 var1
+            &amp;&amp; found[2]&lt;found[3]                                              // ; after var1
+            &amp;&amp; found[3]&lt;found[5] &amp;&amp; found[5]&lt;found[6] &amp;&amp; found[6]&lt;found[7]) { // const type2 var2
+         if (DEBUG) cout &lt;&lt; &quot;const type1 var1... ; const type2 var2...&quot; &lt;&lt; endl;
+         valid = true;
+      }
+      // const type2 var2... ; const type1 var1...
+      if (tokens[1] != tokens[6]
+            &amp;&amp; 0&lt;=found[0] &amp;&amp; found[0]&lt;found[6] &amp;&amp; found[6]&lt;found[7]          // const type2 var2
+            &amp;&amp; found[7]&lt;found[3]                                              // ; after var2
+            &amp;&amp; found[3]&lt;found[5] &amp;&amp; found[5]&lt;found[1] &amp;&amp; found[1]&lt;found[2]) { // const type1 var1
+         if (DEBUG) cout &lt;&lt; &quot;const type2 var2... ; const type1 var1...&quot; &lt;&lt; endl;
+         valid = true;
+      }
+      // const type2 var2... ; const type1 var1...
+      if (tokens[1] == tokens[6]
+            &amp;&amp; 0&lt;=found[0] &amp;&amp; found[0]&lt;found[1] &amp;&amp; found[1]&lt;found[7]          // const type var2
+            &amp;&amp; found[7]&lt;found[3]                                              // ; after var2
+            &amp;&amp; found[3]&lt;found[5] &amp;&amp; found[5]&lt;found[6] &amp;&amp; found[6]&lt;found[2]) { // const type var1
+         if (DEBUG) cout &lt;&lt; &quot;const type2 var2... ; const type1 var1...&quot; &lt;&lt; endl;
+         valid = true;
+      }
+      // const type var1... , var2...
+      if (tokens[1] == tokens[6]
+            &amp;&amp; 0&lt;=found[0] &amp;&amp; found[0]&lt;found[1] &amp;&amp; found[1]&lt;found[2]          // const type var1
+            &amp;&amp; found[2]&lt;found[4] &amp;&amp; found[4]&lt;found[7]) {                      // var1 , var2
+         if (DEBUG) cout &lt;&lt; &quot;const type var1... , var2...&quot; &lt;&lt; endl;
+         valid = true;
+      }
+      // const type var2... , var1...
+      if (tokens[1] == tokens[6]
+            &amp;&amp; 0&lt;=found[0] &amp;&amp; found[0]&lt;found[1] &amp;&amp; found[1]&lt;found[7]          // const type var2
+            &amp;&amp; found[7]&lt;found[4] &amp;&amp; found[4]&lt;found[2]) {                      // var2 , var1
+         if (DEBUG) cout &lt;&lt; &quot;const type var2... , var1...&quot; &lt;&lt; endl;
+         valid = true;
+      }
+      if (!valid) {
+         isOK = false;
+         int messaged = 0;
+         // Try to provide more helpful feedback
+         if (found[0]==-1) {  // Missing the first &apos;const&apos;
+            cout &lt;&lt; &quot;&apos;const&apos; missing.&quot; &lt;&lt; endl;
+            messaged++;
+         }
+         if (found[4]==-1 &amp;&amp; found[5]==-1) {  // Comma not used. Missing the second &apos;const&apos;
+            cout &lt;&lt; &quot;&apos;const&apos; missing.&quot; &lt;&lt; endl;
+            messaged++;
+         }
+         if (messaged==0) {
+            cout &lt;&lt; &quot;The type of at least one variable is incorrect.&quot; &lt;&lt; endl;
+         }         
+      }
+   
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Perform further tests if needed
+   }
+   catch (const exception&amp; e) {
+      cout &lt;&lt; &quot;Error found:&quot; &lt;&lt; data &lt;&lt; endl;
+   }
+}
+
+
+void RunTests() {
+   string s = Extract();   
+   while (RemoveBlockComment(s));
+   while (RemoveComment(s));
+   s = TrimSpaces(s);
+   if (DEBUG) cout &lt;&lt; &quot;Cleaned: &quot; &lt;&lt; s &lt;&lt; endl;
+   
+   Check(s);
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef TESTCODE
+#define TESTCODE
+void RunTests();
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.h</name></li></files><prompt type="string">&lt;p&gt;Declare constant ${distractor.constant1_data_type} variable ${distractor.constant1_name} and constant ${distractor.constant2_data_type} variable ${distractor.constant2_name}, and initialize the variables as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;${distractor.constant1_name} has value ${distractor.constant1_value}.&lt;/li&gt;
+&lt;li&gt;${distractor.constant2_name} has value ${distractor.constant2_value}.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The program then reads integer ${distractor.input_variable} from input and ${distractor.prompt}, using ${distractor.constant1_name} and ${distractor.constant2_name}.&lt;/p&gt;
+
+&lt;p&gt;Ex: If the input is &lt;code&gt;${distractor.example_input}&lt;/code&gt;, then the output is:&lt;/p&gt;
+&lt;pre&gt;${distractor.example_output}&lt;/pre&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    comp_obj_index = meaningful_permutation[&apos;comp_obj_index&apos;]
+    comp_obj = comp_obj_list[comp_obj_index]
+    
+    const_obj1 = comp_obj.get_const_obj1()
+    const_obj2 = comp_obj.get_const_obj2()
+    
+    const1_val = const_obj1.get_value()
+    const2_val = const_obj2.get_value(ex=const1_val)
+    
+    const1_name = const_obj1.get_name()
+    const2_name = const_obj2.get_name()
+    
+    in_var = comp_obj.get_in_var()
+    out_var_dtype, out_var = comp_obj.get_out_var_tuple()
+    
+    ex_out = comp_obj.compute(example_input, const1_val, const2_val)
+    
+    return {
+        &apos;constant1_data_type&apos;: &apos;{}{}&apos;.format(const_obj1.dtype, dtype_dict_dict[const_obj1.dtype][&apos;post_type&apos;]), 
+        &apos;constant1_name&apos;: const1_name, 
+        &apos;constant2_data_type&apos;: &apos;{}{}&apos;.format(const_obj2.dtype, dtype_dict_dict[const_obj2.dtype][&apos;post_type&apos;]), 
+        &apos;constant2_name&apos;: const2_name, 
+        &apos;constant1_value&apos;: dtype_dict_dict[const_obj1.dtype][&apos;fstr&apos;].format(const1_val), 
+        &apos;constant2_value&apos;: dtype_dict_dict[const_obj2.dtype][&apos;fstr&apos;].format(const2_val), 
+        &apos;prompt&apos;: comp_obj.get_prompt(), 
+        &apos;example_input&apos;: example_input, 
+        &apos;example_output&apos;: comp_obj.get_ex_out(example_input, ex_out, out_var_dtype), 
+        &apos;directive&apos;: dtype_dict_dict[out_var_dtype][&apos;directive&apos;], 
+        &apos;input_variable&apos;: in_var, 
+        &apos;out_var_dtype&apos;: out_var_dtype, 
+        &apos;output_variable&apos;: out_var, 
+        &apos;computation&apos;: comp_obj.get_comp(in_var, const1_name, const2_name), 
+        &apos;output_statements&apos;: comp_obj.get_out_states(out_var_dtype, in_var, out_var), 
+        &apos;constant1_dtype&apos;: const_obj1.dtype, 
+        &apos;constant2_dtype&apos;: const_obj2.dtype, 
+        &apos;token&apos;: 2 if const_obj1.dtype == const_obj2.dtype else 1, 
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;comp_obj_index&apos;: random.randrange(len(comp_obj_list))}</meaningful><setup type="string">class Const(Constant):
+    def __init__(self, dtype, constant_name, val_list):
+        Constant.__init__(self, dtype, None, val_list)
+        self.constant_name = constant_name
+    
+    def get_name(self):
+        return self.constant_name
+
+
+class Comp:
+    def __init__(self):
+        self.cost = pick_from([&apos;cost&apos;, &apos;expense&apos;])
+        self.const_obj1 = None
+        self.const_obj2 = None
+    
+    def get_out_var_tuple(self):
+        dtype = &apos;double&apos; if &apos;double&apos; in [self.const_obj1.dtype, self.const_obj2.dtype] else &apos;int&apos;
+        var_name = &apos;total{}&apos;.format(self.cost.capitalize())
+        
+        return dtype, var_name
+    
+    def get_const_obj1(self):
+        return self.const_obj1
+    
+    def get_const_obj2(self):
+        return self.const_obj2
+    
+    def get_prompt(self):
+        raise NotImplementedError
+    
+    def get_in_var(self):
+        raise NotImplementedError
+    
+    def compute(self, ex_in, const1_val, const2_val):
+        raise NotImplementedError
+    
+    def get_ex_out(self, ex_in, ex_out):
+        raise NotImplementedError
+    
+    def get_comp(self, in_var, const1_name, const2_name):
+        raise NotImplementedError
+    
+    def get_out_states(self):
+        raise NotImplementedError
+
+
+class MultComp(Comp):
+    def __init__(self):
+        Comp.__init__(self)
+        
+        self.const_obj2 = pick_from(cost_const_obj_list)
+        self.const_obj1 = pick_from([
+            unit_const_obj for unit_const_obj in unit_const_obj_list 
+            if unit_const_obj.constant_name_obj.pre == self.const_obj2.constant_name_obj.post
+        ])
+    
+    def get_prompt(self):
+        return &apos;calculates the total {} given the number of {}&apos;.format(
+            self.cost, singular_to_plural(self.const_obj1.constant_name_obj.post).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj1.constant_name_obj.post).capitalize())
+    
+    def compute(self, ex_in, const1_val, const2_val):
+        return ex_in * const1_val * const2_val
+    
+    def get_ex_out(self, ex_in, ex_out, out_var_dtype):
+        return &apos;{} {} = {} dollars&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj1.constant_name_obj.post).lower(), 
+            dtype_dict_dict[out_var_dtype][&apos;fstr&apos;].format(ex_out), 
+        )
+    
+    def get_comp(self, in_var, const1_name, const2_name):
+        return &apos;{} * {} * {}&apos;.format(in_var, const1_name, const2_name)
+    
+    def get_out_states(self, out_var_dtype, in_var, out_var):
+        return dtype_dict_dict[out_var_dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj1.constant_name_obj.post).lower(), 
+            out_var, 
+            &apos;dollars&apos;, 
+        )
+    
+
+class AddComp(Comp):
+    def __init__(self):
+        Comp.__init__(self)
+        
+        # First constant: int/double BASE_COST, BASE_EXPENSE, ONE_TIME_COST = [10.0 to 200.0]
+        dtype = pick_from([&apos;int&apos;, &apos;double&apos;]) # Use interval = 0.5 for double, 5 for integer
+        self.const_obj1 = Const(
+            dtype, 
+            pick_from([&apos;BASE_COST&apos;, &apos;BASE_EXPENSE&apos;, &apos;ONE_TIME_COST&apos;]), 
+            list(range(10, 201, 5)) if dtype == &apos;int&apos; else [(i / 2.0) for i in range(20, 401)], 
+        )
+        
+        # Second constant: int/double COST_PER_{VISIT, BOOKING, TRIP, EVENT, TOUR, SHOW} = [10.0 to 50.0]
+        dtype = pick_from([&apos;int&apos;, &apos;double&apos;]) # Use interval = 0.5 for double, 5 for integer
+        self.const_obj2 = Constant(
+            dtype, 
+            ConstantName([&apos;COST&apos;], [&apos;VISIT&apos;, &apos;BOOKING&apos;, &apos;TRIP&apos;, &apos;EVENT&apos;, &apos;TOUR&apos;, &apos;SHOW&apos;]), 
+            list(range(10, 51, 5)) if dtype == &apos;int&apos; else [(i / 2.0) for i in range(20, 101)], 
+        )
+    
+    def get_prompt(self):
+        return &apos;calculates the total {} given the number of {}&apos;.format(
+            self.cost, singular_to_plural(self.const_obj2.constant_name_obj.post).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj2.constant_name_obj.post).capitalize())
+    
+    def compute(self, ex_in, const1_val, const2_val):
+        return (ex_in * const2_val) + const1_val
+    
+    def get_ex_out(self, ex_in, ex_out, out_var_dtype):
+        return &apos;{} {} = {} dollars&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj2.constant_name_obj.post).lower(), 
+            dtype_dict_dict[out_var_dtype][&apos;fstr&apos;].format(ex_out), 
+        )
+    
+    def get_comp(self, in_var, const1_name, const2_name):
+        return &apos;({} * {}) + {}&apos;.format(in_var, const2_name, const1_name)
+    
+    def get_out_states(self, out_var_dtype, in_var, out_var):
+        return dtype_dict_dict[out_var_dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj2.constant_name_obj.post).lower(), 
+            out_var, 
+            &apos;dollars&apos;, 
+        )
+
+
+<DELETION_END_CPP_CODEWRITING>
+
+<zypInfo person="Stephanie" date="3/07/25" minutes="120" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="3/10/25" minutes="150" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="3/13/25" minutes="45" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="3/24/25" minutes="180" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="3/24/25" minutes="15" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="04/06/25" minutes="10" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Vanessa/Kevin" date="7/15/18"> Changed magic numbers to input. Changed all parameters in zyAssertOutput to false. </zypInfo>
+<zypInfo person="Roman" date="7/24/18"> Revised to require user get the input to avoid having to declare constant in the middle of statements. </zypInfo>
+<zyVersion version="java">
+<!--<zyHomeworkProblem id="d05b7721-c4b7-f884-3230-2839a3241d5a" language="java" caption="Using constants in expressions." author="SL/FG">
+<zyInstructions>
+The cost to ship a package is a flat fee of 75 cents plus 25 cents per pound. <br />
+1. Declare a constant named CENTS_PER_POUND and initialize with 25. <br />
+2. Get the shipping weight from user input storing the weight into shipWeightPounds.  <br />
+3. Using FLAT_FEE_CENTS and CENTS_PER_POUND constants, assign shipCostCents with the cost of shipping a package weighing shipWeightPounds.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the input 10, and then with the input 2. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+
+<zyInput>
+10
+2
+</zyInput>
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class ShippingCalculator {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int shipWeightPounds;
+      int shipCostCents = 0;
+      final int FLAT_FEE_CENTS = 75;
+      
+      <STUDENT CODE>
+
+      System.out.println("Weight(lb): " + shipWeightPounds);
+      System.out.println("Flat fee(cents): " + FLAT_FEE_CENTS);
+      System.out.println("Cents per pound: " + CENTS_PER_POUND);
+      System.out.println("Shipping cost(cents): " + shipCostCents);
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+final int CENTS_PER_POUND = 25;
+
+shipWeightPounds = scnr.nextInt();
+shipCostCents = FLAT_FEE_CENTS + (CENTS_PER_POUND * shipWeightPounds);
+</zySolution>
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   Scanner scnr = new Scanner(System.in); 
+
+   {   
+      int shipWeightPounds;
+      int shipCostCents = 0;
+      final int FLAT_FEE_CENTS = 75;
+
+      <STUDENT CODE> 
+   
+      System.out.println("Weight(lb): " + shipWeightPounds);
+      System.out.println("Flat fee(cents): " + FLAT_FEE_CENTS);
+      System.out.println("Cents per pound: " + CENTS_PER_POUND);
+      System.out.println("Shipping cost(cents): " + shipCostCents);
+
+      zyAssertOutput("Weight(lb): 10\nFlat fee(cents): 75\nCents per pound: 25\nShipping cost(cents): 325\n",
+                     "Testing shipWeightPounds = 10", false, false, 
+                     false, false);
+   }
+
+   {  int shipWeightPounds;
+      int shipCostCents = 0;
+      final int FLAT_FEE_CENTS = 75;
+
+      <STUDENT CODE>
+   
+      System.out.println("Weight(lb): " + shipWeightPounds);
+      System.out.println("Flat fee(cents): " + FLAT_FEE_CENTS);
+      System.out.println("Cents per pound: " + CENTS_PER_POUND);
+      System.out.println("Shipping cost(cents): " + shipCostCents);
+
+      zyAssertOutput("Weight(lb): 2\nFlat fee(cents): 75\nCents per pound: 25\nShipping cost(cents): 125\n",
+                     "Testing shipWeightPounds = 2", false, false, 
+                     false, false);
+   }
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+<!-- Parsons (Java): Using constants in expressions -->
+<zypInfo person="DNorment" date="01/31/24" minutes="30" status="Draft1Doing"></zypInfo>
+<zyTool name="ParsonsCodingPA" caption="Using constants in expressions" id="0fa20f31-e7ef-4fab-8567-cb011482b07d" parts="1" challenge="true" edited-last="Fri May 02 2025 13:25:50 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><files type="list"><li type="dict"><contents type="list"><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">import java.util.Scanner;
+
+public class ShippingCalculator {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int shipWeightPounds;
+      int shipCostCents = 0;
+      final int FLAT_FEE_CENTS = 75;</solution></li><li type="dict"><distractors type="list"><li type="string">constant int CENTS_PER_POUND = 25;</li><li type="string">const int CENTS_PER_POUND = 25;</li></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">final int CENTS_PER_POUND = 25;
+</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">shipWeightPounds = scnr.nextInt();</solution></li><li type="dict"><distractors type="list"><li type="string">shopCostCents = flatFeeCents + (centsPerPound * shipWeightPounds);</li></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">shipCostCents = FLAT_FEE_CENTS + (CENTS_PER_POUND * shipWeightPounds);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">
+      System.out.println(&quot;Weight(lb): &quot; + shipWeightPounds);
+      System.out.println(&quot;Flat fee(cents): &quot; + FLAT_FEE_CENTS);
+      System.out.println(&quot;Cents per pound: &quot; + CENTS_PER_POUND);
+      System.out.println(&quot;Shipping cost(cents): &quot; + shipCostCents);
+   }
+}</solution></li></contents><input type="boolean">false</input><main type="boolean">true</main><name type="string">ShippingCalculator.java</name></li></files><language type="string">java</language><languageOption type="string"></languageOption><prompt type="string">The cost to ship a package is a flat fee of 75 cents plus 25 cents per pound. Organize the correct code statements to:
+
+1. Declare a constant integer variable named CENTS\_PER\_POUND and initialize the constant with the value 25.
+2. Read the shipping weight from input and store the weight into shipWeightPounds.
+3. Assign shipCostCents with the cost of shipping a package weighing shipWeightPounds. Use the constants FLAT\_FEE\_CENTS and CENTS\_PER\_POUND.
+
+&lt;details closed&gt;&lt;summary&gt;&lt;b&gt;Click here for example&lt;/b&gt;&lt;/summary&gt;
+Ex: If the input is `10`, then the output is:
+
+`Weight(lb): 10`&lt;br /&gt;
+`Flat fee(cents): 75`&lt;br /&gt;
+`Cents per lb: 25`&lt;br /&gt;
+`Shipping cost(cents): 325`
+&lt;/details&gt;
+
+Note: Not all code statements on the left will be used in the final solution.</prompt><tests type="list"><li type="dict"><stdin type="string">10</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string">2</stdin><type type="string">stdout</type><filename type="string"></filename></li></tests></zyOptions></zyTool>
+</zyVersion>
+
+
+<zypInfo person="Enrique" date="04/23/25" minutes="480" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="04/25/25" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="04/25/25" minutes="120" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="05/01/25" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/05/25" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="05/07/25" minutes="90" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/08/25" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="05/09/25" minutes="180" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/09/25" minutes="10" status="QADone">Golden_CA_development</zypInfo>
+<zyVersion version="java">
+<zyTool name="CodeWriting" caption="Constant variables" id="3c988ad0-84b8-468b-97d7-92b46d1f94c4" parts="2" challenge="true" edited-last="Wed May 07 2025 09:31:36 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+
+ex_in_set = set(range(2, 31))
+example_input = pick_from(ex_in_set)
+
+
+dtype_dict_dict = {
+    &apos;int&apos;: {
+        &apos;post_type&apos;: &apos;eger&apos;, 
+        &apos;fstr&apos;: &apos;{}&apos;, 
+        &apos;out_states_fstr&apos;: &apos;\t\tSystem.out.println({} + &quot; {} = &quot; + {} + &quot; {}&quot;);&apos;, 
+    }, 
+    &apos;double&apos;: {
+        &apos;post_type&apos;: &apos;&apos;, 
+        &apos;fstr&apos;: &apos;{:.2f}&apos;, 
+        &apos;out_states_fstr&apos;: &apos;\t\tSystem.out.print({} + &quot; {} = &quot;);\n&apos;\
+                            &apos;\t\tSystem.out.printf(&quot;%.2f&quot;, {});\n&apos;\
+                            &apos;\t\tSystem.out.println(&quot; {}&quot;);&apos;, 
+    }, 
+}
+
+
+
+
+def get_test_dict(ex_in, num_tests):
+    return {&apos;test{}&apos;.format(i + 2): v for i, v in enumerate(random.sample(ex_in_set - {ex_in}, num_tests))}
+
+
+
+
+def singular_to_plural(singular):
+    exceptions_dict = {&apos;INCH&apos;: &apos;INCHES&apos;, &apos;FOOT&apos;: &apos;FEET&apos;, &apos;FEE&apos;: &apos;FEE&apos;, &apos;COST&apos;: &apos;COST&apos;}
+    
+    plural = &apos;{}S&apos;.format(singular)
+    if singular in exceptions_dict:
+        plural = exceptions_dict[singular]
+    
+    return plural
+
+
+
+
+class ConstantName:
+    def __init__(self, pre_list, post_list):
+        self.pre = pick_from(pre_list)
+        self.post = pick_from(post_list)
+    
+    def get_name(self):
+        return &apos;{}_PER_{}&apos;.format(singular_to_plural(self.pre), self.post)
+
+
+
+
+class Constant:
+    def __init__(self, dtype, constant_name_obj, val_list):
+        self.dtype = dtype
+        self.constant_name_obj = constant_name_obj
+        self.val_list = val_list
+    
+    def get_name(self):
+        return self.constant_name_obj.get_name()
+    
+    def get_value(self, ex=-1):
+        return pick_from(self.val_list, exclude=[ex])
+
+
+
+
+cost_const_obj_list = [
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;SECOND&apos;]), [0.25, 0.5]), 
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;MINUTE&apos;]), [0.25, 0.5, 1.0, 1.25]), 
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;HOUR&apos;]), [(i / 2.0) for i in range(3, 21)]), 
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;DAY&apos;]), [(i / 2.0) for i in range(20, 101)]), 
+    Constant(
+        &apos;double&apos;, 
+        ConstantName([&apos;COST&apos;], [&apos;OUNCE&apos;, &apos;CENTIMETER&apos;, &apos;METER&apos;, &apos;INCH&apos;, &apos;CUP&apos;, &apos;PINT&apos;, &apos;TABLESPOON&apos;]), 
+        [0.25, 0.5], 
+    ), 
+]
+
+
+unit_const_obj_list = [
+    Constant(&apos;int&apos;, ConstantName([&apos;MINUTE&apos;], [&apos;HOUR&apos;]), [60]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;SECOND&apos;], [&apos;MINUTE&apos;]), [60]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;SECOND&apos;], [&apos;HOUR&apos;]), [3600]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;HOUR&apos;], [&apos;DAY&apos;]), [24]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;DAY&apos;], [&apos;WEEK&apos;]), [7]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;OUNCE&apos;], [&apos;POUND&apos;]), [16]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;CENTIMETER&apos;], [&apos;METER&apos;]), [100]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;METER&apos;], [&apos;KILOMETER&apos;]), [1000]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;INCH&apos;], [&apos;FOOT&apos;]), [12]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;CUP&apos;], [&apos;GALLON&apos;]), [16]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;PINT&apos;], [&apos;GALLON&apos;]), [16]), 
+    Constant(&apos;int&apos;, ConstantName([&apos;TABLESPOON&apos;], [&apos;CUP&apos;]), [16]), 
+]</global><language type="string">java</language><levels type="list"><li type="dict">
+<explanation type="string">&lt;p&gt;A constant ${distractor.constant_data_type} variable is declared using &lt;code&gt;final&lt;/code&gt; followed by &lt;code&gt;${distractor.const_dtype}&lt;/code&gt;.&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+
+public class ${distractor.class_name} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      </template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">final ${distractor.const_dtype}</solution><template type="string">/* Your code goes here */</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"> ${distractor.constant_name} = ${distractor.constant_value};
+      int ${distractor.input_variable};
+      ${distractor.const_dtype} ${distractor.output_variable};
+
+
+      ${distractor.input_variable} = scnr.nextInt();
+
+
+      ${distractor.output_variable} = ${distractor.input_variable} * ${distractor.constant_name};
+
+
+${distractor.output_statements}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">${distractor.class_name}.java</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.StandardCharsets;
+
+
+public class Driver {
+   String className = &quot;${distractor.class_name}.java&quot;;
+   String variableName = &quot;${distractor.constant_name}&quot;;
+   String variableType = &quot;${distractor.const_dtype}&quot;;
+   String startMarker = &quot;Scanner scnr = new Scanner(System.in);&quot;;
+   String endMarker = variableName;
+   String path = className;
+   Boolean DEBUG = false;
+
+
+   private String removeComments(String data) {
+      // Recommended by Google&apos;s AI assisted search
+      data = data.replaceAll(&quot;(?s)/\\*.*?\\*/&quot;, &quot;&quot;); // multiline comment
+      data = data.replaceAll(&quot;//.*&quot;, &quot;&quot;);  // single-line comment
+      return data;
+   }
+   
+   void run() {
+      // Check for keywords afterwards
+      try {
+         String data = new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8);
+         int startIndex = data.indexOf(startMarker) + startMarker.length();
+         int endIndex = data.indexOf(endMarker);
+         String answer = data.substring(startIndex, endIndex);
+         
+         answer = removeComments(answer);
+         
+         if (DEBUG) {
+            System.out.println(answer);
+         }
+         
+         if (!answer.contains(&quot;final&quot;)) {
+            System.out.println(variableName + &quot; not final&quot;);
+         }
+         if (!answer.contains(variableType)) {
+            System.out.println(variableName + &quot; not &quot; + variableType);
+         }
+         
+      } catch (Exception e) {
+         if (DEBUG) {
+            System.err.println(&quot;Error &quot; + e.getMessage());
+         }
+      }
+   }
+   
+   public static void main(String[] args) {
+      // Run the program first.
+      ${distractor.class_name}.main(null);
+      
+      new Driver().run();
+   }
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Driver.java</name></li></files><prompt type="string">&lt;p&gt;Complete the declaration of the constant ${distractor.constant_data_type} variable ${distractor.constant_name}.&lt;/p&gt;
+
+
+&lt;p&gt;The program then reads integer ${distractor.input_variable} from input and ${distractor.prompt}, using ${distractor.constant_name}.&lt;/p&gt;
+
+
+&lt;p&gt;Ex: If the input is &lt;code&gt;${distractor.example_input}&lt;/code&gt;, then the output is:&lt;/p&gt;
+&lt;pre&gt;${distractor.example_output}&lt;/pre&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario_obj_index = meaningful_permutation[&apos;scenario_obj_index&apos;]
+    
+    scenario_obj = scenario_obj_list[scenario_obj_index]
+    const_obj = scenario_obj.const_obj
+    
+    const_val = const_obj.get_value()
+    example_output = example_input * const_val
+    
+    input_variable = scenario_obj.get_in_var()
+    output_variable = scenario_obj.get_out_var()
+    
+    return {
+        &apos;constant_data_type&apos;: &apos;{}{}&apos;.format(const_obj.dtype, dtype_dict_dict[const_obj.dtype][&apos;post_type&apos;]), 
+        &apos;constant_name&apos;: const_obj.get_name(), 
+        &apos;input_variable&apos;: input_variable, 
+        &apos;prompt&apos;: scenario_obj.get_prompt(), 
+        &apos;example_input&apos;: example_input, 
+        &apos;example_output&apos;: scenario_obj.get_ex_out(example_input, example_output), 
+        &apos;class_name&apos;:scenario_obj.get_class_name(), 
+        &apos;const_dtype&apos;: const_obj.dtype, 
+        &apos;constant_value&apos;: dtype_dict_dict[const_obj.dtype][&apos;fstr&apos;].format(const_val), 
+        &apos;output_variable&apos;: output_variable, 
+        &apos;output_statements&apos;: scenario_obj.get_out_states(input_variable, output_variable), 
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;scenario_obj_index&apos;: random.randrange(len(scenario_obj_list))}</meaningful><setup type="string">item_const_obj_list = [
+    Constant(
+        &apos;int&apos;, 
+        ConstantName(
+            [&apos;APPLE&apos;, &apos;ORANGE&apos;, &apos;EGG&apos;, &apos;DONUT&apos;, &apos;PEAR&apos;, &apos;LEMON&apos;, &apos;KEYCHAIN&apos;, &apos;TRINKET&apos;, &apos;BRACELET&apos;], 
+            [&apos;BOX&apos;], 
+        ), 
+        [(i * 2) for i in range(1, 7)]
+    ), 
+]
+
+
+cost_const_obj_list.append(
+    Constant(&apos;double&apos;, ConstantName([&apos;FEE&apos;], [&apos;WEEK&apos;]), [(i / 2.0) for i in range(100, 201)])
+)
+
+
+
+
+class Scenario:
+    def __init__(self, const_obj):
+        self.const_obj = const_obj
+    
+    def get_class_name(self):
+        raise NotImplementedError
+    
+    def get_prompt(self):
+        raise NotImplementedError
+    
+    def get_in_var(self):
+        raise NotImplementedError
+    
+    def get_out_var(self):
+        raise NotImplementedError
+    
+    def get_ex_out(self):
+        raise NotImplementedError
+    
+    def get_out_states(self):
+        raise NotImplementedError
+
+
+
+
+class CostScenario(Scenario):
+    def __init__(self, const_obj):
+        Scenario.__init__(self, const_obj)
+        self.cost = pick_from([&apos;cost&apos;, &apos;expense&apos;])
+    
+    def get_class_name(self):
+        return &apos;Total{}&apos;.format(self.cost.capitalize())
+    
+    def get_prompt(self):
+        return &apos;calculates the total {} given the number of {}&apos;.format(
+            self.cost, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj.constant_name_obj.post).capitalize())
+    
+    def get_out_var(self):
+        return &apos;total{}&apos;.format(self.cost.capitalize())
+    
+    def get_ex_out(self, ex_in, ex_out):
+        return &apos;{} {} = {} dollars&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            dtype_dict_dict[self.const_obj.dtype][&apos;fstr&apos;].format(ex_out), 
+        )
+    
+    def get_out_states(self, in_var, out_var):
+        return dtype_dict_dict[self.const_obj.dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            out_var, 
+            &apos;dollars&apos;, 
+        )
+
+
+
+
+class UnitScenario(Scenario):
+    def get_class_name(self):
+        return &apos;UnitConversion&apos;
+    
+    def get_prompt(self):
+        return &apos;converts the number of {} to number of {}&apos;.format(
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            singular_to_plural(self.const_obj.constant_name_obj.pre).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj.constant_name_obj.post).capitalize())
+    
+    def get_out_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj.constant_name_obj.pre).capitalize())
+    
+    def get_ex_out(self, ex_in, ex_out):
+        return &apos;{} {} = {} {}&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            dtype_dict_dict[self.const_obj.dtype][&apos;fstr&apos;].format(ex_out), 
+            singular_to_plural(self.const_obj.constant_name_obj.pre).lower(), 
+        )
+    
+    def get_out_states(self, in_var, out_var):
+        return dtype_dict_dict[self.const_obj.dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj.constant_name_obj.post).lower(), 
+            out_var, 
+            singular_to_plural(self.const_obj.constant_name_obj.pre).lower(), 
+        )
+
+
+
+
+class ItemScenario(Scenario):
+    def __init__(self, const_obj):
+        Scenario.__init__(self, const_obj)
+        self.item = self.const_obj.constant_name_obj.pre
+    
+    def get_class_name(self):
+        return &apos;Total{}&apos;.format(singular_to_plural(self.item).capitalize())
+    
+    def get_prompt(self):
+        return &apos;calculates the total number of {} given the number of boxes&apos;.format(
+            singular_to_plural(self.item).lower()
+        )
+    
+    def get_in_var(self):
+        return &apos;numBoxes&apos;
+    
+    def get_out_var(self):
+        return &apos;total{}&apos;.format(singular_to_plural(self.item).capitalize())
+    
+    def get_ex_out(self, ex_in, ex_out):
+        return &apos;{} boxes = {} {}&apos;.format(
+            ex_in, 
+            dtype_dict_dict[self.const_obj.dtype][&apos;fstr&apos;].format(ex_out), 
+            singular_to_plural(self.item).lower(), 
+        )
+    
+    def get_out_states(self, in_var, out_var):
+        return dtype_dict_dict[self.const_obj.dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            &apos;boxes&apos;, 
+            out_var, 
+            singular_to_plural(self.item).lower(), 
+        )
+
+
+
+
+scenario_obj_list = [
+    UnitScenario(pick_from(unit_const_obj_list)), 
+    CostScenario(pick_from(cost_const_obj_list)), 
+    ItemScenario(pick_from(item_const_obj_list)), 
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(distractor_permutation[&apos;example_input&apos;], 2)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_input}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">&lt;p&gt;The declaration of constant ${distractor.constant1_data_type} variable ${distractor.constant1_name} begins with &lt;code&gt;final&lt;/code&gt;, followed by &lt;code&gt;${distractor.constant1_dtype}&lt;/code&gt; and ${distractor.constant1_name}. Then, ${distractor.constant1_name} is initialized with the value ${distractor.constant1_value}. The constant ${distractor.constant2_data_type} variable ${distractor.constant2_name} is declared and initialized similarly.&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+
+public class ${distractor.class_name} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">final ${distractor.constant1_dtype} ${distractor.constant1_name} = ${distractor.constant1_value};
+final ${distractor.constant2_dtype} ${distractor.constant2_name} = ${distractor.constant2_value};</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      int ${distractor.input_variable};
+      ${distractor.out_var_dtype} ${distractor.output_variable};
+
+
+      ${distractor.input_variable} = scnr.nextInt();
+
+
+      ${distractor.output_variable} = ${distractor.computation};
+
+
+${distractor.output_statements}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">${distractor.class_name}.java</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.StandardCharsets;
+
+
+public class Driver {
+   String className = &quot;${distractor.class_name}.java&quot;;
+   String type1 = &quot;${distractor.constant1_dtype}&quot;;
+   String type2 = &quot;${distractor.constant2_dtype}&quot;;
+   String var1 = &quot;${distractor.constant1_name}&quot;;
+   String var2 = &quot;${distractor.constant2_name}&quot;;
+   String startMarker = &quot;Scanner scnr = new Scanner(System.in);&quot;;
+   String endMarker = &quot;int ${distractor.input_variable};&quot;;
+   String path = className;
+   Boolean DEBUG = false;
+   
+   private String removeComments(String data) {
+      // Recommended by Google&apos;s AI assisted search
+      data = data.replaceAll(&quot;(?s)/\\*.*?\\*/&quot;, &quot;&quot;); // multiline comment
+      data = data.replaceAll(&quot;//.*&quot;, &quot;&quot;);  // single-line comment
+      return data;
+   }
+   private String removeWhitespaces(String data) {
+      data = data.replaceAll(&quot;\\s+&quot;, &quot; &quot;);
+      return data;
+   }
+   private String removeMultiSemicolons(String data) {
+      data = data.replaceAll(&quot;;\\s*;*&quot;, &quot;;&quot;);
+      return data;
+   }
+   
+   void run() {
+      // Check for keywords afterwards
+      try {
+         String data = new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8);
+         int startIndex = data.indexOf(startMarker) + startMarker.length();
+         int endIndex = data.indexOf(endMarker);
+         String answer = data.substring(startIndex, endIndex);
+         answer = removeComments(answer).trim();
+         answer = removeWhitespaces(answer);
+         answer = removeMultiSemicolons(answer);
+         boolean isOK = true;
+
+
+         if (DEBUG) {
+            System.out.println(answer);
+         }
+
+
+
+
+         Boolean sameType = type1.equals(type2);
+         
+         // Step 1: check type
+         {
+            int numDeclarations = answer.split(&quot;;&quot;, -1).length - 1; // Ex: 2 declarations means 2 semicolons which gives 3 fields
+         
+            // Two types, or same type but two separate declarations
+            if (!sameType || (sameType &amp;&amp; numDeclarations==2)) {
+               if (!answer.contains(type1 + &quot; &quot; + var1)) {
+                  System.out.println(var1 + &quot; not &quot; + type1);
+                  isOK = false;
+               }
+               if (!answer.contains(type2 + &quot; &quot; + var2)) {
+                  System.out.println(var2 + &quot; not &quot; + type2);
+                  isOK = false;
+               }
+            }
+            // One type one declaration. Ex: final double var1=1, var2=2;
+            else if (sameType &amp;&amp; numDeclarations==1) {
+               if (!answer.contains(type1 + &quot; &quot; + var1) &amp;&amp; !answer.contains(type1 + &quot; &quot; + var2)) {
+                  System.out.println(var1 + &quot; and &quot; + var2 + &quot; not &quot; + type1);
+                  isOK = false;
+               }
+            }
+            else {
+               System.out.println(&quot;Two final variable declarations expected&quot;);
+               isOK = false;
+            }
+         }
+         if (!isOK) return;
+
+
+         // Step 2: check final
+         {
+            int numDeclarations = answer.split(type1, -1).length - 1;
+            String[] tokens = answer.split(&quot;final&quot;, -1);
+            int occurrences = tokens.length - 1;
+            // final not found
+            if (occurrences == 0) {
+               System.out.println(&quot;Both &quot; + var1 + &quot; and &quot; + var2 + &quot; not final&quot;);
+               isOK = false;
+            }
+            // one final cannot be shared by two different types or two separate declarations
+            else if (occurrences == 1 &amp;&amp; (!sameType || (sameType &amp;&amp; numDeclarations==2))) {
+               // var1 appears before final
+               if (tokens[0].contains(var1)) {
+                  System.out.println(var1 + &quot; not final&quot;);
+                  isOK = false;
+               }
+               // var2 appears before final
+               else if (tokens[0].contains(var2)) {
+                  System.out.println(var2 + &quot; not final&quot;);
+                  isOK = false;
+               }
+               // final applies to var1 but not var2
+               else if (tokens[1].indexOf(var1) &lt; tokens[1].indexOf(var2)) {
+                  System.out.println(var2 + &quot; not final&quot;);
+                  isOK = false;
+               }
+               // final applies to var2 but not var1
+               else if (tokens[1].indexOf(var2) &lt; tokens[1].indexOf(var1)) {
+                  System.out.println(var1 + &quot; not final&quot;);
+                  isOK = false;
+               }
+            }
+         }
+         if (!isOK) return;
+      } catch (Exception e) {
+         if (DEBUG) {
+            System.err.println(&quot;Error &quot; + e.getMessage());
+         }
+      }
+   }
+
+
+   public static void main(String[] args) {
+      // Run the program first.
+      ${distractor.class_name}.main(null);
+      new Driver().run();
+   }
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Driver.java</name></li></files><prompt type="string">&lt;p&gt;Declare constant ${distractor.constant1_data_type} variable ${distractor.constant1_name} and constant ${distractor.constant2_data_type} variable ${distractor.constant2_name}, and initialize the variables as follows:&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;${distractor.constant1_name} has value ${distractor.constant1_value}.&lt;/li&gt;
+&lt;li&gt;${distractor.constant2_name} has value ${distractor.constant2_value}.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The program then reads integer ${distractor.input_variable} from input and ${distractor.prompt}, using ${distractor.constant1_name} and ${distractor.constant2_name}.&lt;/p&gt;
+
+
+&lt;p&gt;Ex: If the input is &lt;code&gt;${distractor.example_input}&lt;/code&gt;, then the output is:&lt;/p&gt;
+&lt;pre&gt;${distractor.example_output}&lt;/pre&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    comp_obj_index = meaningful_permutation[&apos;comp_obj_index&apos;]
+    comp_obj = comp_obj_list[comp_obj_index]
+    
+    const_obj1 = comp_obj.get_const_obj1()
+    const_obj2 = comp_obj.get_const_obj2()
+    
+    const1_val = const_obj1.get_value()
+    const2_val = const_obj2.get_value(ex=const1_val)
+    
+    const1_name = const_obj1.get_name()
+    const2_name = const_obj2.get_name()
+    
+    in_var = comp_obj.get_in_var()
+    out_var_dtype, out_var = comp_obj.get_out_var_tuple()
+    
+    ex_out = comp_obj.compute(example_input, const1_val, const2_val)
+    
+    return {
+        &apos;constant1_data_type&apos;: &apos;{}{}&apos;.format(const_obj1.dtype, dtype_dict_dict[const_obj1.dtype][&apos;post_type&apos;]), 
+        &apos;constant1_name&apos;: const1_name, 
+        &apos;constant2_data_type&apos;: &apos;{}{}&apos;.format(const_obj2.dtype, dtype_dict_dict[const_obj2.dtype][&apos;post_type&apos;]), 
+        &apos;constant2_name&apos;: const2_name, 
+        &apos;constant1_value&apos;: dtype_dict_dict[const_obj1.dtype][&apos;fstr&apos;].format(const1_val), 
+        &apos;constant2_value&apos;: dtype_dict_dict[const_obj2.dtype][&apos;fstr&apos;].format(const2_val), 
+        &apos;prompt&apos;: comp_obj.get_prompt(), 
+        &apos;example_input&apos;: example_input, 
+        &apos;example_output&apos;: comp_obj.get_ex_out(example_input, ex_out, out_var_dtype), 
+        &apos;class_name&apos;: comp_obj.get_class_name(), 
+        &apos;input_variable&apos;: in_var, 
+        &apos;out_var_dtype&apos;: out_var_dtype, 
+        &apos;output_variable&apos;: out_var, 
+        &apos;computation&apos;: comp_obj.get_comp(in_var, const1_name, const2_name), 
+        &apos;output_statements&apos;: comp_obj.get_out_states(out_var_dtype, in_var, out_var), 
+        &apos;constant1_dtype&apos;: const_obj1.dtype, 
+        &apos;constant2_dtype&apos;: const_obj2.dtype, 
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;comp_obj_index&apos;: random.randrange(len(comp_obj_list))}</meaningful><setup type="string">class Const(Constant):
+    def __init__(self, dtype, constant_name, val_list):
+        Constant.__init__(self, dtype, None, val_list)
+        self.constant_name = constant_name
+    
+    def get_name(self):
+        return self.constant_name
+
+
+
+
+class Comp:
+    def __init__(self):
+        self.cost = pick_from([&apos;cost&apos;, &apos;expense&apos;])
+        self.const_obj1 = None
+        self.const_obj2 = None
+    
+    def get_class_name(self):
+        return &apos;Total{}&apos;.format(self.cost.capitalize())
+    
+    def get_out_var_tuple(self):
+        dtype = &apos;double&apos; if &apos;double&apos; in [self.const_obj1.dtype, self.const_obj2.dtype] else &apos;int&apos;
+        var_name = &apos;total{}&apos;.format(self.cost.capitalize())
+        
+        return dtype, var_name
+    
+    def get_prompt(self):
+        raise NotImplementedError
+    
+    def get_const_obj1(self):
+        return self.const_obj1
+    
+    def get_const_obj2(self):
+        return self.const_obj2
+    
+    def get_in_var(self):
+        raise NotImplementedError
+    
+    def compute(self, ex_in, const1_val, const2_val):
+        raise NotImplementedError
+    
+    def get_ex_out(self, ex_in, ex_out):
+        raise NotImplementedError
+    
+    def get_comp(self, in_var, const1_name, const2_name):
+        raise NotImplementedError
+    
+    def get_out_states(self):
+        raise NotImplementedError
+
+
+
+
+class MultComp(Comp):
+    def __init__(self):
+        Comp.__init__(self)
+        
+        self.const_obj2 = pick_from(cost_const_obj_list)
+        self.const_obj1 = pick_from([
+            unit_const_obj for unit_const_obj in unit_const_obj_list 
+            if unit_const_obj.constant_name_obj.pre == self.const_obj2.constant_name_obj.post
+        ])
+    
+    def get_prompt(self):
+        return &apos;calculates the total {} given the number of {}&apos;.format(
+            self.cost, singular_to_plural(self.const_obj1.constant_name_obj.post).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj1.constant_name_obj.post).capitalize())
+    
+    def compute(self, ex_in, const1_val, const2_val):
+        return ex_in * const1_val * const2_val
+    
+    def get_ex_out(self, ex_in, ex_out, out_var_dtype):
+        return &apos;{} {} = {} dollars&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj1.constant_name_obj.post).lower(), 
+            dtype_dict_dict[out_var_dtype][&apos;fstr&apos;].format(ex_out), 
+        )
+    
+    def get_comp(self, in_var, const1_name, const2_name):
+        return &apos;{} * {} * {}&apos;.format(in_var, const1_name, const2_name)
+    
+    def get_out_states(self, out_var_dtype, in_var, out_var):
+        return dtype_dict_dict[out_var_dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj1.constant_name_obj.post).lower(), 
+            out_var, 
+            &apos;dollars&apos;, 
+        )
+
+
+
+
+class AddComp(Comp):
+    def __init__(self):
+        Comp.__init__(self)
+        
+        # First constant: int/double BASE_COST, BASE_EXPENSE, ONE_TIME_COST = [10.0 to 200.0]
+        dtype = pick_from([&apos;int&apos;, &apos;double&apos;]) # Use interval = 0.5 for double, 5 for integer
+        self.const_obj1 = Const(
+            dtype, 
+            pick_from([&apos;BASE_COST&apos;, &apos;BASE_EXPENSE&apos;, &apos;ONE_TIME_COST&apos;]), 
+            list(range(10, 201, 5)) if dtype == &apos;int&apos; else [(i / 2.0) for i in range(20, 401)], 
+        )
+        
+        # Second constant: int/double COST_PER_{VISIT, BOOKING, TRIP, EVENT, TOUR, SHOW} = [10.0 to 50.0]
+        dtype = pick_from([&apos;int&apos;, &apos;double&apos;]) # Use interval = 0.5 for double, 5 for integer
+        self.const_obj2 = Constant(
+            dtype, 
+            ConstantName([&apos;COST&apos;], [&apos;VISIT&apos;, &apos;BOOKING&apos;, &apos;TRIP&apos;, &apos;EVENT&apos;, &apos;TOUR&apos;, &apos;SHOW&apos;]), 
+            list(range(10, 51, 5)) if dtype == &apos;int&apos; else [(i / 2.0) for i in range(20, 101)], 
+        )
+    
+    def get_prompt(self):
+        return &apos;calculates the total {} given the number of {}&apos;.format(
+            self.cost, singular_to_plural(self.const_obj2.constant_name_obj.post).lower(), 
+        )
+    
+    def get_in_var(self):
+        return &apos;num{}&apos;.format(singular_to_plural(self.const_obj2.constant_name_obj.post).capitalize())
+    
+    def compute(self, ex_in, const1_val, const2_val):
+        return (ex_in * const2_val) + const1_val
+    
+    def get_ex_out(self, ex_in, ex_out, out_var_dtype):
+        return &apos;{} {} = {} dollars&apos;.format(
+            ex_in, 
+            singular_to_plural(self.const_obj2.constant_name_obj.post).lower(), 
+            dtype_dict_dict[out_var_dtype][&apos;fstr&apos;].format(ex_out), 
+        )
+    
+    def get_comp(self, in_var, const1_name, const2_name):
+        return &apos;({} * {}) + {}&apos;.format(in_var, const2_name, const1_name)
+    
+    def get_out_states(self, out_var_dtype, in_var, out_var):
+        return dtype_dict_dict[out_var_dtype][&apos;out_states_fstr&apos;].format(
+            in_var, 
+            singular_to_plural(self.const_obj2.constant_name_obj.post).lower(), 
+            out_var, 
+            &apos;dollars&apos;, 
+        )
+
+
+
+
+comp_obj_list = [MultComp(), AddComp()]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(distractor_permutation[&apos;example_input&apos;], 2)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_input}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li></levels></zyOptions></zyTool>
+</zyVersion>
+
+
+</zySection>

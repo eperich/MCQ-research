@@ -1,0 +1,1691 @@
+<zySection title="Using math methods" shorttitle="Math methods" id="360398db-77ad-d1e9-e4c2-d7b537ee27d7" depend="FltPtDbl" zymath="true">
+<zypInfo person="Roman" date="02/14/14"> Still needs links for math functions.</zypInfo>
+<zypInfo person="Alex" date="03/20/14" hwStatus="0" status="2"> Need 2 HW problems and links for math functions, otherwise ready for second review. </zypInfo>
+<zypInfo person="Susan" date="4/12/14" Status="3">Second review done. (completed the fixme to make function names zyterm. Another note says it should be links, do we want to do this in addition to zyterms?</zypInfo>
+<zypInfo person="Susan" date="04/24/14" hwStatus="1"> Added 2 HW problems. </zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="Draft1Doing"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/10/14" minutes="" hwStatusCpp ="Rev1Done"></zypInfo> 
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Roman" date="08/01/14" minutes="5"> Added version specific titles.</zypInfo> 
+<zypInfo person="Frank" date="02/11/15" minutes="30"> Changed population example to mass, so use of double is OK (in response to Thomas Howell feedback). </zypInfo>
+<zypInfo person="Nicole" date="03/20/17" minutes="10"> Cleaned up gdocs in preparation for a new release.  </zypInfo>
+<zypInfo person="Frank" date="05/31/17" minutes="180"> Redid  </zypInfo>
+<zypInfo person="Susan" date="6/08/17" minutes="300" status="Rev1Doing">Reviewing C++ updates. Converting to C and Java. Checked style. C and J need review. </zypInfo>
+<zypInfo person="Roman" date="6/15/17" minutes="15" status="Rev1Done"></zypInfo>
+<zypInfo person="Roman" date="6/30/17" minutes="30" status="Rev1Done">Revised Java to remove import based on instructor feedback. Updated equations to use LaTeX for accessibility</zypInfo>
+<zypInfo person="Amanda" date="6/28/17" minutes="60" status="Rev2Done"></zypInfo>
+<zypInfo person="Roman" date="7/18/18" minutes="15" status="Rev2Done">Added sentence to clarify how Math class methods are call.</zypInfo>
+<zypInfo person="Aubrey" date="09/16/21" minutes="45" status="Rev2Done">bug report</zypInfo>
+<zypInfo person="Aubrey" date="09/22/22" minutes="15" status="Rev2Done">added % to Mass Growth figure</zypInfo>
+<zypInfo person="Aubrey" date="10/04/22" minutes="10" status="Rev2Done">fixed math functions link</zypInfo>
+<zypInfo person="Joshua Zingale" date="10/15/22" minutes="25" status="Rev2Done">Alt-text additions not done</zypInfo>
+<zypInfo person="Joshua Zingale" date="10/21/22" minutes="25" status="Rev2Done">Alt-text additions done</zypInfo>
+<zypInfo person="Aubrey" date="01/26/23" minutes="25" status="BugFix">adding back notes to codewriting CAs</zypInfo>
+<zypInfo person="Aubrey" date="11/16/23" minutes="10" status="BugFix">replacing function with method for java</zypInfo>
+<zypInfo person="LukeM" date="10/6/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<zyAside type="bordered" name="" id="635b4c8c-9fdf-40be-bdcf-0815900911f0">
+Learn to:
+<ul>
+<li><zyVersion version="java">Define the purpose of a math class.</zyVersion></li> <!-- SS1 -->
+<li>Execute math operations beyond basic arithmetic by using `method`s.</li> <!-- SS1, SS2, SS3, CA1 (L1-5), CA2, CA3 (L1-3), TB1, TB2, TB3, TB4 -->
+<li>Perform `method` calls with appropriate arguments to run calculations.</li> <!-- SS1, SS2, SS3, CA1 (L1-5), CA2, CA3 (L1-3), TB1, TB2, TB3, TB4 -->
+</ul>
+</zyAside>
+
+
+
+<zyHTML id="3e297717-4b7f-8374-a96d-170e16bf9157" subsection="true" caption="Basics">
+<h3>Basics</h3>
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyHTML id="0382bc4d-7d9e-4827-a4e0-2b476743c452">
+<p> Some programs require math operations beyond +, -, *, /, like  computing a square root. <zyDefn> A standard _Math class_ has about 30 math operations, known as methods.</zyDefn>  The Math class is part of Java's standard language package, so no import is required. </p>
+</zyHTML>
+</zyVersion>
+
+<zyVersion version="java">
+<zyHTML id="d13c2b5b-5135-4f53-9280-e532b2627a48">
+<p><zyDefn>A _method_ is a list of statements executed by invoking the method's name, such invoking is known as a _method call_.</zyDefn> <zyDefn>Any method input values, or _arguments_, appear within ( ), separated by commas if more than one.</zyDefn> A programmer must precede the method name with <zyICode>Math.</zyICode> to call a Math class method. Below, the method Math.sqrt() is called with one argument, areaSquare. The method call evaluates to a value, as in Math.sqrt(areaSquare) below evaluating to 7.0, with which sideSquare is assigned. </p> 
+</zyHTML>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<!-- Last modified Thu Jun 08 2017 08:45:08 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="2" objType="box" objName="Code blue box" top="51px" left="16px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="222px" width="331px"></zyObject><zyObject objNum="3" objType="box" objName="sqrt highlight" top="166px" left="132px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="18px" width="128px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="4" objType="box" objName="cmath highlight" top="68px" left="16px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="16px" width="331px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="5" objType="text" objName="Code snippet" top="53px" left="18px" padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+ 
+int main() {
+   double sideSquare;
+   double areaSquare = 49.0;
+ 
+   sideSquare = sqrt(areaSquare);
+
+   cout &lt;&lt; &quot;Square root of &quot; &lt;&lt; areaSquare
+        &lt;&lt; &quot; is &quot; &lt;&lt; sideSquare &lt;&lt; endl;
+
+   return 0;
+}</zyCode></zyObject><zyObject objNum="15" objType="text" objName="Code flyover - 7.0" top="163px" left="448px" opacity="0" color='zyAnimator-orange' font-family='arial, sans-serif'><text>7.0</text></zyObject><zyObject objNum="13" objType="text" objName="Code flyover - 49.0" top="138px" left="185px" opacity="0" font-family='arial, sans-serif'><text>49.0</text></zyObject><zyObject objNum="17" objType="text" objName="Sqrt fig - 49.0" top="138px" left="185px" opacity="0" font-family='arial, sans-serif'><text>49.0</text></zyObject><zyObject objNum="10" objType="text" objName="Sqrt fig - 7.0" top="117px" left="448px" opacity="0" font-family='arial, sans-serif'><text>7.0</text></zyObject><zyObject objNum="11" objType="box" objName="Sqrt fig - arrow body 2" top="141px" left="458px" background-color="zyAnimator-black" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none"></zyObject><zyObject objNum="12" objType="triangle" objName="Sqrt fig - arrow head 2" top="150px" left="454px" background-color="zyAnimator-black" transformDeg="-90"></zyObject><zyObject objNum="8" objType="box" objName="Sqrt fig - arrow body 1" top="75px" left="458px" background-color="zyAnimator-black" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none"></zyObject><zyObject objNum="9" objType="triangle" objName="Sqrt fig - arrow head 1" top="84px" left="454px" background-color="zyAnimator-black" transformDeg="-90"></zyObject><zyObject objNum="7" objType="text" objName="Sqrt fig - sqrt label" top="106px" left="445px" color='zyAnimator-orange' font-family='arial, sans-serif'><text>sqrt</text></zyObject><zyObject objNum="6" objType="box" objName="Sqrt fig - orange box" top="95px" left="410px" useConstrainedProportions="false" height="42px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="16" objType="box" objName="Sqrt fig - cover" top="71px" left="386px" background-color="zyAnimator-white" useConstrainedProportions="false" height="98px" width="152px" border-width="0px" border-style="none"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Some calculations require more than the +, -, *, / operators. A programmer can include the cmath library, and can then use various math functions like sqrt for square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="4" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="3" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A function is like a black box. The sqrt function takes an input value, and produces that value&apos;s square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="3" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="0.2" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="3" timeLabel="-" top="167" left="166"></zyInstruction><zyInstruction instrType="resize" objNum="3" timeLabel="-" height="16" width="83"></zyInstruction><zyInstruction instrType="resize" objNum="16" timeLabel="0" height="1" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="-" opacity="60"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="182" left="193"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="-" top="182" left="193"></zyInstruction><zyInstruction instrType="fade" objNum="3" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="54" left="442"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="-" top="163" left="448"></zyInstruction>
+<zyInstruction instrType="step"><text>Thus, sqrt(49.0) evaluates to 7.0.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="13" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="3" timeLabel="0.2" top="167" left="132"></zyInstruction><zyInstruction instrType="resize" objNum="3" timeLabel="-" height="16" width="120"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="15" timeLabel="0" top="184" left="163"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription><!--The following program is shown textually to the left, graphically to the right.-->Begin C++ code:
+#include &lt;iostream>
+#include &lt;cmath>
+using namespace std;
+ 
+int main() {
+   double sideSquare;
+   double areaSquare = 49.0;
+ 
+   sideSquare = sqrt(areaSquare);
+
+   cout &lt;&lt; "Square root of " &lt;&lt; areaSquare &lt;&lt; " is " &lt;&lt; sideSquare &lt;&lt; endl;
+
+   return 0;
+}
+End C++ code.
+
+Static Figure:
+The function call  "sqrt(areaSquare)" is highlighted and under it is the number "7.0". To the side of the code is a box labeled "sqrt". Above the box is the number "49.0", from which a downward arrow points to the box. Extending from below the box is a downward arrow that points to the number "7.0".
+
+Step 1: Some calculations require more than the +, -, *, / operators. A programmer can include the cmath library, and can then use various math functions like sqrt for square root.
+Only the code is visible. The lines of code #include &lt;cmath&gt; and  sqrt(areaSquare) are highlighted.
+
+Step 2: 
+A function is like a black box. The sqrt function takes an input value, and produces that value's square root.
+The "sqrt" box appears beside the code. Above the box is an arrow that points to the box and below the box is an arrow that points away from the box. The number "49.0" appears above the line of code "double areaSquare = 49.0;". This appeared "49.0" travels to and then rests below the variable "areaSquare" in the line of code  "sideSquare = sqrt(areaSquare);". The number "49.0" then replicates and the replica travels to and rests above the "sqrt" box. The number "7.0" appears inside the "sqrt" box and then moves such that it rests beneath the box, with the arrow pointing from the box to the number "7.0". 
+
+Step 3: Thus, sqrt(49.0) evaluates to 7.0.
+The code "sqrt(areaSquare)" is highlighted and the number "7.0", which is below the "sqrt" box, replicates and its replica floats to and then rests beneath "areaSquare" in the highlighted code.
+<!--In the code, areaSquare is assigned with value 49.0 and is used as an argument for the sqrt() function and sideSqaure is assigned with the value of the expression. sqrt(areaSquare) calculates and returns the square root of 49.0, which is 7.0. sideSqaure is assigned with 7.0 and then the statement "Square root of 49.0 is 7.0 is output.-->
+</zyAltDescription>
+
+
+</zyAnimator>
+</zyVersion>
+
+
+
+<zyVersion version="java"> 
+<!--<zyAnimator id="9a5de2b8-84a9-94d5-b25d-0b6318f274b0" caption="Using a Math method." height="318px" width="624px" selectedInstr="23" selectedObj="none" numObjsEverCreated="17" loadOnDemand="false">
+<!-- Last modified Fri Jun 30 2017 10:19:54 GMT-0700 (MST) with version 2.17.2.06 --><zyObjects><zyObject objNum="3" objType="box" objName="Code blue box" top="67px" left="16px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="189px" width="414px"></zyObject><zyObject objNum="4" objType="box" objName="sqrt highlight" top="166px" left="154px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="18px" width="154px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="6" objType="text" objName="Code snippet" top="67px" left="18px" padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+
+public class CalcSquareSide {
+  public static void main(String[] args) {
+     double sideSquare;
+     double areaSquare = 49.0;
+
+     sideSquare = Math.sqrt(areaSquare);
+
+     System.out.print(&quot;Square root of &quot; + areaSquare);
+     System.out.println(&quot; is &quot; + sideSquare);
+  }
+}</zyCode></zyObject><zyObject objNum="7" objType="text" objName="Code flyover - 7.0" top="163px" left="504px" opacity="0" color='zyAnimator-orange' font-family='arial, sans-serif' line-height='16px'><text>7.0</text></zyObject><zyObject objNum="8" objType="text" objName="Code flyover - 49.0" top="138px" left="207px" opacity="0" font-family='arial, sans-serif' line-height='16px'><text>49.0</text></zyObject><zyObject objNum="9" objType="text" objName="Sqrt fig - 49.0" top="138px" left="207px" opacity="0" font-family='arial, sans-serif' line-height='16px'><text>49.0</text></zyObject><zyObject objNum="10" objType="text" objName="Sqrt fig - 7.0" top="117px" left="504px" opacity="0" font-family='arial, sans-serif' line-height='16px'><text>7.0</text></zyObject><zyObject objNum="11" objType="box" objName="Sqrt fig - arrow body 2" top="141px" left="514px" background-color="zyAnimator-black" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none"></zyObject><zyObject objNum="12" objType="triangle" objName="Sqrt fig - arrow head 2" top="150px" left="510px" background-color="zyAnimator-black" transformDeg="-90"></zyObject><zyObject objNum="13" objType="box" objName="Sqrt fig - arrow body 1" top="75px" left="514px" background-color="zyAnimator-black" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none"></zyObject><zyObject objNum="14" objType="triangle" objName="Sqrt fig - arrow head 1" top="84px" left="510px" background-color="zyAnimator-black" transformDeg="-90"></zyObject><zyObject objNum="15" objType="text" objName="Sqrt fig - sqrt label" top="106px" left="501px" color='zyAnimator-orange' font-family='arial, sans-serif' line-height='16px'><text>sqrt</text></zyObject><zyObject objNum="16" objType="box" objName="Sqrt fig - orange box" top="95px" left="466px" useConstrainedProportions="false" height="42px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="17" objType="box" objName="Sqrt fig - cover" top="71px" left="442px" background-color="zyAnimator-white" useConstrainedProportions="false" height="98px" width="152px" border-width="0px" border-style="none"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Some calculations require more than the +, -, *, / operators. The Math class, which is automatically imported, defines various methods like sqrt for square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A method is like a black box. The sqrt method takes an input value, and produces that value&apos;s square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0.2" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="-" top="167" left="223"></zyInstruction><zyInstruction instrType="resize" objNum="4" timeLabel="-" height="16" width="84"></zyInstruction><zyInstruction instrType="resize" objNum="17" timeLabel="0" height="1" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="8" timeLabel="-" opacity="60"></zyInstruction><zyInstruction instrType="fade" objNum="9" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0" top="182" left="247"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="8" timeLabel="-" top="182" left="247"></zyInstruction><zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0" top="54" left="498"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="-" top="163" left="504"></zyInstruction>
+<zyInstruction instrType="step"><text>Thus, Math.sqrt(49.0) evaluates to 7.0.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="8" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.2" top="167" left="152"></zyInstruction><zyInstruction instrType="resize" objNum="4" timeLabel="-" height="16" width="157"></zyInstruction><zyInstruction instrType="fade" objNum="7" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="7" timeLabel="0" top="184" left="211"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions></zyAnimator>
+<zyAnimator id="9a5de2b8-84a9-94d5-b25d-0b6318f274b0" caption="Using a Math method." height="318px" width="624px" selectedInstr="21" selectedObj="none" numObjsEverCreated="17" loadOnDemand="false">
+<!-- Last modified Fri May 29 2020 00:08:00 GMT-0400 (Eastern Daylight Time) with version 2.17.12.20 --><zyObjects><zyObject objNum="4" objType="box" objName="Code blue box" top="67px" left="16px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="189px" width="414px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="5" objType="box" objName="sqrt highlight" top="161px" left="159px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="18px" width="160px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="6" objType="text" objName="Code snippet" top="67px" left="30px" opacity="93" color='rgb(51, 51, 51)' padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px' border-color='rgb(51, 51, 51)'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+
+public class CalcSquareSide {
+  public static void main(String[] args) {
+     double sideSquare;
+     double areaSquare = 49.0;
+
+     sideSquare = Math.sqrt(areaSquare);
+
+     System.out.print("Square root of " + areaSquare);
+     System.out.println(" is " + sideSquare);
+  }
+}</zyCode></zyObject><zyObject objNum="7" objType="text" objName="Code flyover - 7.0" top="163px" left="504px" opacity="0" color='rgb(230, 129, 66)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>7.0</text></zyObject><zyObject objNum="8" objType="text" objName="Code flyover - 49.0" top="138px" left="207px" opacity="0" color='rgb(51, 51, 51)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>49.0</text></zyObject><zyObject objNum="9" objType="text" objName="Sqrt fig - 49.0" top="138px" left="207px" opacity="0" color='rgb(51, 51, 51)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>49.0</text></zyObject><zyObject objNum="10" objType="text" objName="Sqrt fig - 7.0" top="117px" left="504px" opacity="0" color='rgb(51, 51, 51)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>7.0</text></zyObject><zyObject objNum="11" objType="box" objName="Sqrt fig - arrow body 2" top="141px" left="514px" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="12" objType="triangle" objName="Sqrt fig - arrow head 2" top="150px" left="510px" background-color="rgb(51, 51, 51)" transformDeg="-90"></zyObject><zyObject objNum="13" objType="box" objName="Sqrt fig - arrow body 1" top="75px" left="514px" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="14" objType="triangle" objName="Sqrt fig - arrow head 1" top="84px" left="510px" background-color="rgb(51, 51, 51)" transformDeg="-90"></zyObject><zyObject objNum="15" objType="text" objName="Sqrt fig - sqrt label" top="106px" left="501px" color='rgb(230, 129, 66)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>sqrt</text></zyObject><zyObject objNum="16" objType="box" objName="Sqrt fig - orange box" top="95px" left="466px" useConstrainedProportions="false" height="42px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="17" objType="box" objName="Sqrt fig - cover" top="71px" left="442px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="98px" width="152px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Some calculations require more than the +, -, *, / operators. The Math class, which is automatically imported, defines various methods like sqrt for square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="5" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A method is like a black box. The sqrt method takes an input value, and produces that value&apos;s square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="5" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0.2" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="-" top="162" left="228"></zyInstruction><zyInstruction instrType="resize" objNum="5" timeLabel="-" height="16" width="84"></zyInstruction><zyInstruction instrType="resize" objNum="17" timeLabel="0" height="1" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="8" timeLabel="-" opacity="60"></zyInstruction><zyInstruction instrType="fade" objNum="9" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0" top="175" left="247"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="8" timeLabel="-" top="175" left="247"></zyInstruction><zyInstruction instrType="fade" objNum="5" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0" top="54" left="498"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="-" top="163" left="504"></zyInstruction>
+<zyInstruction instrType="step"><text>Thus, Math.sqrt(49.0) evaluates to 7.0.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="8" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="0.2" top="161" left="156"></zyInstruction><zyInstruction instrType="resize" objNum="5" timeLabel="-" height="16" width="157"></zyInstruction><zyInstruction instrType="fade" objNum="7" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="7" timeLabel="0" top="179" left="211"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown textually to the left, graphically to the right.
+
+import java.util.Scanner;
+
+public class CalcSquareSide {
+ public static void main(String[] args) {
+    double sideSquare;
+    double areaSquare = 49.0;
+
+    sideSquare = Math.sqrt(areaSquare);
+
+    System.out.print("Square root of " + areaSquare);
+    System.out.println(" is " + sideSquare);
+ }
+}
+</zyAltDescription>
+</zyAnimator>
+-->
+
+<!-- Last modified Thu Sep 16 2021 14:54:22 GMT-0400 (Eastern Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="9a5de2b8-84a9-94d5-b25d-0b6318f274b0" caption="Using a Math method." height="318px" width="624px" selectedInstr="18" selectedObj="5" numObjsEverCreated="17" loadOnDemand="false">
+<zyObjects><zyObject objNum="4" objType="box" objName="Code blue box" top="67px" left="16px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="189px" width="414px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="5" objType="box" objName="sqrt highlight" top="166px" left="153px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="18px" width="160px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="6" objType="text" objName="Code snippet" top="67px" left="30px" opacity="93" color='rgb(51, 51, 51)' font-weight='400' padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px' border-color='rgb(51, 51, 51)'><zyCode language="java" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+
+public class CalcSquareSide {
+ public static void main(String[] args) {
+    double sideSquare;
+    double areaSquare = 49.0;
+
+    sideSquare = Math.sqrt(areaSquare);
+
+    System.out.print("Square root of " + areaSquare);
+    System.out.println(" is " + sideSquare);
+ }
+}</zyCode></zyObject><zyObject objNum="7" objType="text" objName="Code flyover - 7.0" top="163px" left="504px" opacity="0" color='rgb(230, 129, 66)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>7.0</text></zyObject><zyObject objNum="8" objType="text" objName="Code flyover - 49.0" top="138px" left="207px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>49.0</text></zyObject><zyObject objNum="9" objType="text" objName="Sqrt fig - 49.0" top="138px" left="207px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>49.0</text></zyObject><zyObject objNum="10" objType="text" objName="Sqrt fig - 7.0" top="117px" left="504px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>7.0</text></zyObject><zyObject objNum="11" objType="box" objName="Sqrt fig - arrow body 2" top="141px" left="514px" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="12" objType="triangle" objName="Sqrt fig - arrow head 2" top="150px" left="510px" background-color="rgb(51, 51, 51)" transformDeg="-90"></zyObject><zyObject objNum="13" objType="box" objName="Sqrt fig - arrow body 1" top="75px" left="514px" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="12px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="14" objType="triangle" objName="Sqrt fig - arrow head 1" top="84px" left="510px" background-color="rgb(51, 51, 51)" transformDeg="-90"></zyObject><zyObject objNum="15" objType="text" objName="Sqrt fig - sqrt label" top="106px" left="501px" color='rgb(230, 129, 66)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>sqrt</text></zyObject><zyObject objNum="16" objType="box" objName="Sqrt fig - orange box" top="95px" left="466px" useConstrainedProportions="false" height="42px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="17" objType="box" objName="Sqrt fig - cover" top="71px" left="442px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="98px" width="152px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Some calculations require more than the +, -, *, / operators. The Math class, which is automatically imported, defines various methods like sqrt for square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="5" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A method is like a black box. The sqrt method takes an input value, and produces that value&apos;s square root.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="5" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0.2" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="-" top="165" left="226"></zyInstruction><zyInstruction instrType="resize" objNum="5" timeLabel="-" height="16" width="84"></zyInstruction><zyInstruction instrType="resize" objNum="17" timeLabel="0" height="1" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="8" timeLabel="-" opacity="60"></zyInstruction><zyInstruction instrType="fade" objNum="9" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0" top="182" left="247"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="8" timeLabel="-" top="182" left="247"></zyInstruction><zyInstruction instrType="fade" objNum="5" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0" top="54" left="498"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="-" top="163" left="504"></zyInstruction>
+<zyInstruction instrType="step"><text>Thus, Math.sqrt(49.0) evaluates to 7.0.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="8" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="0.2" top="168" left="153"></zyInstruction><zyInstruction instrType="resize" objNum="5" timeLabel="-" height="16" width="157"></zyInstruction><zyInstruction instrType="fade" objNum="7" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="7" timeLabel="0" top="184" left="211"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown textually to the left, graphically to the right.
+
+import java.util.Scanner;
+
+public class CalcSquareSide {
+ public static void main(String[] args) {
+    double sideSquare;
+    double areaSquare = 49.0;
+
+    sideSquare = Math.sqrt(areaSquare);
+
+    System.out.print("Square root of " + areaSquare);
+    System.out.println(" is " + sideSquare);
+ }
+}
+
+The method call "Math.sqrt(areaSquare)" is highlighted and under it is the number "7.0". To the side of the code is a box labeled "sqrt". Above the box is the number "49.0", from which a downward arrow points to the box. Extending from below the box is a downward arrow that points to the number "7.0".
+
+Step 1: Some calculations require more than the +, -, *, / operators. The Math class, which is automatically imported, defines various methods like sqrt for square root.
+Only the code is visible. The lines of code Math.sqrt(areaSquare); is highlighted.
+
+Step 2: A method is like a black box. The sqrt method takes an input value, and produces that value's square root.
+The "sqrt" box appears beside the code. Above the box is an arrow that points to the box and below the box is an arrow that points away from the box. The number "49.0" appears above the line of code "double areaSquare = 49.0;". This appeared "49.0" travels to and then rests below the variable "areaSquare" in the line of code  "sideSquare = Math.sqrt(areaSquare);". The number "49.0" then replicates and the replica travels to and rests above the "sqrt" box. The number "7.0" appears inside the "sqrt" box and then moves such that it rests beneath the box, with the arrow pointing from the box to the number "7.0".
+
+Step 3: Thus, Math.sqrt(49.0) evaluates to 7.0.
+The code "Math.sqrt(areaSquare)" is highlighted and the number "7.0", which is below the "sqrt" box, replicates and its replica floats to and then rests beneath "areaSquare" in the highlighted code.
+</zyAltDescription>
+</zyAnimator>
+
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyTable caption="A few common methods from the standard Math class." id="1e7e341b-a8c2-6a33-0b77-f8b23d4d52ab">
+<table>
+<tr> 
+<th> Method </th> 
+<th> Behavior </th> 
+<th> Example </th>
+</tr>
+ 
+<tr> 
+<td> sqrt(x) </td> 
+<td> Square root of x </td> 
+<td> Math.sqrt(9.0) evaluates to 3.0.  </td>
+</tr>
+ 
+<tr> 
+<td> pow(x, y) </td> 
+<td> Power: \(x^y\) </td> 
+<td> Math.pow(6.0, 2.0) evaluates to 36.0.  </td>
+</tr>
+ 
+<tr> 
+<td> abs(x) </td> 
+<td> Absolute value of x</td> 
+<td> Math.abs(-99.5) evaluates to 99.5.  </td>
+</tr>
+</table>
+</zyTable>
+
+<zyHTML id="6848bc36-87e0-49cb-2ac8-835d27a3d932" caption="">
+<p>Other available <!--function-->methods are log (natural log), log10 (log base 10), exp (raising e to a power), ceil (rounding up), floor (rounding down), various trigonometric <!--function-->methods like sin, cos, tan, and more. See this <zyLink link="https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/Math.html">math methods</zyLink> link for a comprehensive list of built-in math methods. </p>
+</zyHTML>
+</zyVersion> 
+
+
+
+ 
+
+<zyVersion version="java"> 
+<zyQSetTF caption="Math methods. " id="b3356647-d2ec-0eed-ac2e-798606df66a7">
+<zyQ>
+<zyQText correct="6.0" truelabel="6.0" falselabel="36.0">Math.sqrt(36.0) evaluates to _____ . </zyQText>
+<zyQExpl>The method takes argument 36.0 as input, executes some statements to compute the square root of 6.0, and evaluates to that value.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="9.0" truelabel="9.0" falselabel="81.0">What is y?<br />
+<zyCode nobox="true">y = Math.sqrt(81.0); </zyCode></zyQText>
+<zyQExpl>Math.sqrt(81.0) evaluates to 9.0. <br />
+y is assigned with that value.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="256.0" truelabel="64.0" falselabel="256.0">What is y?<br />
+<zyCode nobox="true">y = Math.pow(2.0, 8.0); </zyCode></zyQText>
+<zyQExpl>\(2^8\) is 256. Notice that the arguments are separated by a comma: Math.pow(2.0, 8.0).   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="No" truelabel="Yes" falselabel="No">Is this a valid method call? <br />
+<zyCode nobox="true">y = Math.sqrt(2.0, 8.0); </zyCode></zyQText>
+<zyQExpl>Math.sqrt() only accepts one argument. Trying to pass two arguments is an error.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="No" truelabel="Yes" falselabel="No">Is this a valid method call? <br />
+<zyCode nobox="true">y = Math.pow(8.0); </zyCode></zyQText>
+<zyQExpl>Math.pow() requires two arguments. Trying to call Math.pow() with only one argument is an error.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">If w and x are double variables, is this a valid method call? <br />
+<zyCode nobox="true">y = Math.pow(w, x);</zyCode></zyQText>
+<zyQExpl>The values of w and x will be passed as arguments to Math.pow(). If w is 3.0 and x is 2.0, Math.pow() will evaluate to \(3.0^2\) or 9.0.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="16.0" truelabel="8.0" falselabel="16.0">What is y?<br />
+<zyCode nobox="true">w = 3.0;
+y = Math.pow(w + 1.0, 2.0);</zyCode></zyQText>
+<zyQExpl>Math.pow()'s first argument is 3.0 + 1.0 or 4.0. Thus, Math.pow() evaluates to \(4.0^2\) or 16.0. Arguments may be expressions.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+</zyVersion> 
+
+
+
+<zyHTML id="fd488cc5-1807-98d6-ed31-4db5d1894921" subsection="true" caption="Example: Mass growth">
+<h3>Example: Mass growth</h3>
+</zyHTML>
+
+
+<zyHTML id="51d4702c-5299-509e-2355-8af7356de2e4" caption="">
+<p>The example below computes the growth of a biological mass, such as a tree. If the growth rate is 5% per year, the program computes 1.05 raised to the number of years. A similar program could calculate growth of money given an interest rate. </p>
+</zyHTML>
+
+
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Math method example: Mass growth." id="a2d2925a-ca26-4317-b311-33e7421b03d5">
+<zyCode language="java"> 
+import java.util.Scanner;
+
+public class MassGrowth {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double initMass;   // Initial mass of a substance
+      double growthRate; // Annual growth rate
+      double yearsGrow;  // Years of growth
+      double finalMass;  // Final mass after those years
+
+      System.out.print("Enter initial mass: ");
+      initMass = scnr.nextDouble();
+
+      System.out.print("Enter growth rate (Ex: 0.05 is 5%/year): ");
+      growthRate = scnr.nextDouble();
+
+      System.out.print("Enter years of growth: ");
+      yearsGrow = scnr.nextDouble();
+
+      finalMass = initMass * Math.pow(1.0 + growthRate, yearsGrow);
+      // Ex: Rate of 0.05 yields initMass * 1.05^yearsGrow
+   
+      System.out.print(" Final mass after " + yearsGrow);
+      System.out.println(" years is: " + finalMass);
+   }
+}
+</zyCode>
+<zyConsole>
+Enter initial mass: 10000
+Enter growth rate (Ex: 0.05 is 5%/year): 0.06
+Enter years of growth: 20
+ Final mass after 20.0 years is: 32071.35472212848
+
+...
+
+Enter initial mass: 10000
+Enter growth rate (Ex: 0.05 is 5%/year): 0.4
+Enter years of growth: 10
+ Final mass after 10.0 years is: 289254.6549759998
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetShortAnswer caption="Growth rate. " id="da99e2f5-60ab-8690-5981-332b1477efc0">
+<zyQ>
+<zyQText>If initMass is 10.0, growthRate is 1.0 (100%), and yearsGrow is 3, what is finalMass?<br />
+<zyCode nobox="true">finalMass = initMass * Math.pow(1.0 + growthRate, yearsGrow); </zyCode></zyQText>
+<zyQAns preferred="true" >80.0</zyQAns>
+<zyQAns>80</zyQAns>
+<zyQExpl>10.0 * Math.pow(1.0 + 1.0, 3.0)<br />
+10.0 * Math.pow(2.0, 3.0) <br />
+10.0 * 8.0 <br />
+80.0</zyQExpl>
+<zyQHint>10.0 * Math.pow(2.0, 3.0) is ? </zyQHint>
+</zyQ>
+</zyQSetShortAnswer>
+</zyVersion>
+
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption= "Calculate Pythagorean theorem." id="8ae89b72-2305-2764-1657-c8dea9381a29"> 
+<p>Select the three statements needed to calculate the value of x in the following:
+<br />
+\( x = \sqrt{y^2 + z^2} \)
+<br />
+For this exercise, calculate \(y^2\) before \(z^2\).</p>
+
+<zyQ>
+<zyQText> First statement is:  </zyQText>
+<zyQChoice>
+<zyQAns> temp1 = Math.pow(x , 2.0);</zyQAns>
+<zyQExpl>x doesn't need to be squared.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> temp1 = Math.pow(z , 3.0);</zyQAns>
+<zyQExpl> z needs to be squared, not cubed. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> temp1 = Math.pow(y , 2.0); </zyQAns>
+<zyQExpl>Statement assigns y squared to temp1.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> temp1 = Math.sqrt(y);</zyQAns>
+<zyQExpl> The square root of y is not needed. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText> Second statement is:  </zyQText>
+<zyQChoice>
+<zyQAns> temp2 = Math.sqrt(x , 2.0);</zyQAns>
+<zyQExpl>The Math.sqrt() method takes only 1 argument.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> temp2 = Math.pow(z , 2.0);</zyQAns>
+<zyQExpl>Statement assigns z squared to temp2.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> temp2 = Math.pow(z);</zyQAns>
+<zyQExpl> The Math.pow() method requires two arguments. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> temp2 = x + Math.sqrt(temp1 + temp2);</zyQAns>
+<zyQExpl> x is not needed in the expression. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText> Third statement is: </zyQText>
+<zyQChoice>
+<zyQAns> temp2 = Math.sqrt(temp1 + temp2);</zyQAns>
+<zyQExpl>Almost; x needs to be assigned with the expression.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> x = Math.pow(temp1 + temp2, 2.0);</zyQAns>
+<zyQExpl> temp1 and temp2 shouldn't be added together THEN squared. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> x = Math.sqrt(temp1) + temp2;</zyQAns>
+<zyQExpl> Almost; this expression means compute the square root of temp1, then add temp2. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns correct="true"> x = Math.sqrt(temp1 + temp2);</zyQAns>
+<zyQExpl>Statement assigns square root of (temp1 + temp2) to x.</zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion>
+
+
+
+<zyHTML id="8858eda8-618e-18bf-3d11-9ec8a85569d2" subsection="true" caption="Calls in arguments">
+<h3>Calls in arguments</h3>
+</zyHTML>
+
+
+<zyHTML id="6a909f5b-40ba-b4d0-7ae3-496968dd3afb" caption="">
+<p>Commonly a `method` call's argument itself includes a `method` call. Below, \(x^y\) is computed via Math.pow(x, y). The result is used in an expression that is an argument to another call, in this case to Math.pow() again: Math.pow(2.0, Math.pow(x, y) + 1). </p>
+</zyHTML>
+
+
+
+
+
+
+
+<zyVersion version="java">
+<!-- 
+<zyAnimator id="c225b735-338a-ce18-dceb-f1fe3e6265f2" caption="Method call in an argument." height="294px" width="724px" selectedInstr="22" selectedObj="none" numObjsEverCreated="46" loadOnDemand="false">
+<!-- Last modified Fri Jun 30 2017 11:02:07 GMT-0700 (MST) with version 2.17.2.06 --><zyObjects><zyObject objNum="30" objType="box" objName="blue box" top="69px" left="389px" opacity="0" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="161px" width="326px"></zyObject><zyObject objNum="31" objType="box" objName="purple highlight" top="184px" left="463px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="18px" width="240px" border-color="zyAnimator-purple"></zyObject><zyObject objNum="32" objType="box" objName="orange highlight" top="187px" left="564px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="11px" width="102px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="33" objType="text" objName="code snippet" top="71px" left="391px" opacity="0" padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">public class MassGrowth {
+  public static void main(String[] args) {
+     double x;
+     double y;
+     double z;
+
+     x = 3.0;
+     y = 2.0;
+     z = Math.pow(2.0, Math.pow(x, y) + 1);
+  }
+}</zyCode></zyObject><zyObject objNum="34" objType="text" objName="9.0" top="185px" left="601px" opacity="0" color='zyAnimator-orange' font-family='arial, sans-serif' line-height='16px'><text>9.0</text></zyObject><zyObject objNum="35" objType="text" objName="1024.0" top="186px" left="644px" opacity="0" color='zyAnimator-purple' font-family='arial, sans-serif' line-height='16px'><text>1024.0</text></zyObject><zyObject objNum="36" objType="box" objName="orange underline" top="70px" left="69px" opacity="0" background-color="zyAnimator-orange" useConstrainedProportions="false" height="2px" width="13px" border-width="0px" border-style="none"></zyObject><zyObject objNum="37" objType="box" objName="purple underline" top="80px" left="56px" opacity="0" background-color="zyAnimator-purple" useConstrainedProportions="false" height="2px" width="58px" border-width="0px" border-style="none" border-color="zyAnimator-purple"></zyObject><zyObject objNum="38" objType="triangle" objName="orange arrow head" top="113px" left="89px" opacity="0" background-color="zyAnimator-orange" transformDeg="180"></zyObject><zyObject objNum="39" objType="box" objName="orange arrow body" top="118px" left="46px" opacity="0" background-color="zyAnimator-orange" useConstrainedProportions="false" height="2px" width="45px" border-width="0px" border-style="none"></zyObject><zyObject objNum="40" objType="triangle" objName="purple arrow head" top="149px" left="89px" opacity="0" background-color="zyAnimator-purple" transformDeg="180"></zyObject><zyObject objNum="41" objType="box" objName="purple arrow body" top="154px" left="78px" opacity="0" background-color="zyAnimator-purple" useConstrainedProportions="false" height="2px" width="13px" border-width="0px" border-style="none"></zyObject><zyObject objNum="42" objType="text" objName="purple code snippet" top="144px" left="103px" opacity="0" color='zyAnimator-purple' font-family='courier' line-height='17px'><text>Math.pow(2.0, Math.pow(x, y) + 1)</text></zyObject><zyObject objNum="43" objType="text" objName="orange code snippet" top="108px" left="103px" opacity="0" color='zyAnimator-orange' font-family='courier' line-height='17px'><text>Math.pow(x, y)</text></zyObject><zyObject objNum="44" objType="text" objName="orig equation" top="56px" left="21px" font-size='16px' font-family='arial, sans-serif' line-height='18px'><text language="latex">\(z = 2^{(x^y \; + \; 1)}\)</text></zyObject><zyObject objNum="45" objType="text" objName="orange equation" top="53px" left="68px" opacity="0" color='zyAnimator-orange' font-size='13px' font-family='arial, sans-serif' line-height='15px'><text language="latex">\(x^y\)</text></zyObject><zyObject objNum="46" objType="text" objName="purple equation" top="55px" left="54px" opacity="0" color='zyAnimator-purple' font-size='16px' font-family='arial, sans-serif' line-height='18px'><text language="latex">\(2^{(x^y \; + \; 1)}\)</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>\(x^y\) can be computed using Math.pow(x, y). </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="36" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="45" timeLabel="0" top="108" left="21"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A function&apos;s argument can be an expression, including a call to another function. 
+\(2^{(x^y +1)}\) can be computed as Math.pow(2.0, Math.pow(x, y) + 1). </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="37" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="46" timeLabel="0" top="142" left="7"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Upon execution, if x = 3.0 and y = 2.0, then Math.pow(x, y) is called and evaluates to 9.0.
+Next, Math.pow(2.0, 9.0+1) is called, yielding 1024.0. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="33" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="34" timeLabel="-" top="165" left="601"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="35" timeLabel="-" top="165" left="644"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions></zyAnimator>
+-->
+<!-- Last modified Fri Jan 07 2022 15:51:17 GMT-0500 (Eastern Standard Time) with version 2.19.0.1 -->
+<zyAnimator id="c225b735-338a-ce18-dceb-f1fe3e6265f2" caption="Method call in an argument." height="294px" width="724px" selectedInstr="22" selectedObj="none" numObjsEverCreated="46" loadOnDemand="false">
+<zyObjects><zyObject objNum="30" objType="box" objName="blue box" top="69px" left="389px" opacity="0" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="161px" width="326px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="31" objType="box" objName="purple highlight" top="184px" left="457px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="18px" width="245px" border-color="zyAnimator-purple"></zyObject><zyObject objNum="32" objType="box" objName="orange highlight" top="187px" left="558px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="11px" width="102px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="33" objType="text" objName="code snippet" top="71px" left="391px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px' border-color='rgb(51, 51, 51)'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">public class MassGrowth {
+  public static void main(String[] args) {
+     double x;
+     double y;
+     double z;
+
+     x = 3.0;
+     y = 2.0;
+     z = Math.pow(2.0, Math.pow(x, y) + 1);
+  }
+}</zyCode></zyObject><zyObject objNum="34" objType="text" objName="9.0" top="185px" left="601px" opacity="0" color='rgb(230, 129, 66)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>9.0</text></zyObject><zyObject objNum="35" objType="text" objName="1024.0" top="186px" left="644px" opacity="0" color='zyAnimator-purple' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='16px'><text>1024.0</text></zyObject><zyObject objNum="36" objType="box" objName="orange underline" top="70px" left="69px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="2px" width="13px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="37" objType="box" objName="purple underline" top="80px" left="56px" opacity="0" background-color="zyAnimator-purple" useConstrainedProportions="false" height="2px" width="58px" border-width="0px" border-style="none" border-color="zyAnimator-purple"></zyObject><zyObject objNum="38" objType="triangle" objName="orange arrow head" top="113px" left="89px" opacity="0" background-color="rgb(230, 129, 66)" transformDeg="180"></zyObject><zyObject objNum="39" objType="box" objName="orange arrow body" top="118px" left="46px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="2px" width="45px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="40" objType="triangle" objName="purple arrow head" top="149px" left="89px" opacity="0" background-color="zyAnimator-purple" transformDeg="180"></zyObject><zyObject objNum="41" objType="box" objName="purple arrow body" top="154px" left="78px" opacity="0" background-color="zyAnimator-purple" useConstrainedProportions="false" height="2px" width="13px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="42" objType="text" objName="purple code snippet" top="144px" left="103px" opacity="0" color='zyAnimator-purple' font-weight='400' font-family='courier' border-color='rgb(51, 51, 51)' line-height='17px'><text>Math.pow(2.0, Math.pow(x, y) + 1)</text></zyObject><zyObject objNum="43" objType="text" objName="orange code snippet" top="108px" left="103px" opacity="0" color='rgb(230, 129, 66)' font-weight='400' font-family='courier' border-color='rgb(51, 51, 51)' line-height='17px'><text>Math.pow(x, y)</text></zyObject><zyObject objNum="44" objType="text" objName="orig equation" top="56px" left="21px" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='18px'><text language="latex">\(z = 2^{(x^y \; + \; 1)}\)</text></zyObject><zyObject objNum="45" objType="text" objName="orange equation" top="53px" left="68px" opacity="0" color='rgb(230, 129, 66)' font-size='13px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='15px'><text language="latex">\(x^y\)</text></zyObject><zyObject objNum="46" objType="text" objName="purple equation" top="55px" left="54px" opacity="0" color='zyAnimator-purple' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='18px'><text language="latex">\(2^{(x^y \; + \; 1)}\)</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>\(x^y\) can be computed using Math.pow(x, y). </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="36" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="45" timeLabel="0" top="108" left="21"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A method&apos;s argument can be an expression, including a call to another method. 
+\(2^{(x^y +1)}\) can be computed as Math.pow(2.0, Math.pow(x, y) + 1). </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="37" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="46" timeLabel="0" top="142" left="7"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Upon execution, if x = 3.0 and y = 2.0, then Math.pow(x, y) is called and evaluates to 9.0.
+Next, Math.pow(2.0, 9.0+1) is called, yielding 1024.0. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="33" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="34" timeLabel="-" top="165" left="601"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="35" timeLabel="-" top="165" left="644"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown textually to the right, and in math symbols to the left.
+
+public class MassGrowth {
+  public static void main(String[] args) {
+     double x;
+     double y;
+     double z;
+
+     x = 3.0;
+     y = 2.0;
+     z = Math.pow(2.0, Math.pow(x, y) + 1);
+  }
+}
+</zyAltDescription>
+</zyAnimator>
+
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetShortAnswer caption="Method calls in arguments. " id="82b0364c-f99b-4131-9423-d9ec8452a9c4">
+<p>Type the ending value of z. </p>
+<zyQ>
+<zyQText><zyCode nobox="true">z = Math.pow(2.0, Math.pow(2.0, 3.0)); </zyCode></zyQText>
+<zyQAns columns="5" preferred="true">256.0</zyQAns>
+<zyQAns columns="5">256</zyQAns>
+<zyQExpl>The innermost expression is evaluated first, namely Math.pow(2.0, 3.0) yielding $2^3$ or 8. Then Math.pow(2.0, 8.0) is called, evaluating to  $2^8$ or 256.0. </zyQExpl>
+<zyQHint>$2^3$ is 8. Then $2^8$ is ? </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText><zyCode nobox="true">x = 9.0;
+z = Math.pow(Math.sqrt(x) + Math.sqrt(x), 2.0); </zyCode></zyQText>
+<zyQAns columns="5" preferred="true">36.0</zyQAns>
+<zyQAns columns="5">36</zyQAns>
+<zyQExpl>First, Math.sqrt(x) is called, so Math.sqrt(9.0) evaluated to 3.0. Then, the second Math.sqrt(x) is called, also yielding 3.0. Next, 3.0 + 3.0 is evaluated, yielding 6.0. Finally, Math.pow(6.0, 2.0) is evaluated, yielding 36.0. </zyQExpl>
+<zyQHint>Math.sqrt(9.0) is 3.0. Then, Math.pow(3.0+3.0, 2) is ? </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText><zyCode nobox="true">x = -9.0;
+z = Math.sqrt(Math.abs(x)); </zyCode></zyQText>
+<zyQAns columns="5" preferred="true">3.0</zyQAns>
+<zyQAns columns="5">3</zyQAns>
+<zyQExpl>First, Math.abs(x) is evaluated, so Math.abs(-9.0) evaluates to 9.0. Then, Math.sqrt(9.0) is called, evaluating to 3.0. </zyQExpl>
+<zyQHint>Math.abs(-9.0) evaluates to 9.0. Math.sqrt(9.0) is ? </zyQHint>
+</zyQ>
+</zyQSetShortAnswer> 
+</zyVersion>
+
+
+
+
+
+
+<!-- CodeWriting (cpp): Writing math calculations -->
+<zypInfo person="Joseph Park" date="10/08/19" minutes="35" status="Draft1Doing"></zypInfo>
+<zypInfo person="Arian" date="10/09/19" minutes="30" status="Rev1Doing"></zypInfo>
+<zypInfo person="Joseph Park" date="10/11/19" minutes="10" status="Draft1Doing"></zypInfo>
+<zypInfo person="Arian" date="10/14/19" minutes="10" status="Rev1Doing"></zypInfo>
+<zypInfo person="Joseph Park" date="10/16/19" minutes="5" status="Rev1Doing"></zypInfo>
+<zypInfo person="Keith Zmudzinski" date="10/17/19" minutes="15" status="Rev2Doing"></zypInfo>
+<zypInfo person="Keith Zmudzinski" date="10/25/19" minutes="10" status="Rev2Done"></zypInfo>
+<zypInfo person="Aubrey" date="03/05/20" minutes="10">  bug report </zypInfo>
+<zypInfo person="Amanda" date="12/08/21" minutes="552" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="12/09/21" minutes="20" status="CodeReviewing"> Golden_CA_development </zypInfo>
+<zypInfo person="Amanda" date="12/10/21" minutes="637" status="CodeReviewing"> Golden_CA_development </zypInfo>
+<zypInfo person="Fay" date="12/13/21" minutes="35" status="CodeReviewing"> Golden_CA_development </zypInfo>
+<zypInfo person="Amanda" date="12/16/21" minutes="1162" status="CodeReviewing"> Golden_CA_development </zypInfo>
+<zypInfo person="Amanda" date="12/16/21" minutes="201" status="CodeReviewing"> Golden_CA_development </zypInfo>
+<zypInfo person="Fay" date="12/17/21" minutes="17" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="12/20/21" minutes="384" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="12/21/21" minutes="12" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="12/21/21" minutes="4" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="12/21/21" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="12/21/21" minutes="18" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="12/22/21" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="12/27/21" minutes="45" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="12/27/21" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="12/27/21" minutes="130" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/05/22" minutes="270" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="01/06/22" minutes="17" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/06/22" minutes="6" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="01/06/22" minutes="2" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="07/20/23" minutes="45" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda" date="08/16/23" minutes="15" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda" date="08/24/23" minutes="76" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Enrique" date="08/24/23" minutes="20" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda" date="08/25/23" minutes="14" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda" date="09/20/23" minutes="6" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="DNorment" date="09/27/23" minutes="20" status="QADoing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda" date="10/03/23" minutes="10" status="QADoing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="DNorment" date="10/04/23" minutes="10" status="QADone">Golden_CA_development Cpp</zypInfo>
+
+
+
+
+
+<zypInfo person="Vanessa/Kevin" date="7/15/18"> Changed magic numbers to input.</zypInfo>
+<zypInfo person="Susan" date="7/25/18"> Updated var declaration so they all appear at top.</zypInfo>
+<zypInfo person="Aubrey" date="04/21/20"> bug report for output precision issue </zypInfo>
+<zypInfo person="Kenny" date="5/16/23">Parsons</zypInfo>
+
+<zyVersion version ="cpp">
+
+<!--
+<zyHomeworkProblem id="8004b51b-65e4-68e5-9033-14ed95c66e7f" language="cpp" caption="Using math functions to calculate the distance between two points." author="SL/FV/RL">
+<zyInstructions>
+Determine the distance between point (x1, y1) and point (x2, y2), and assign the result to pointsDistance.  The calculation is: 
+<br /><br />
+\(Distance = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}\)<br /><br />
+Ex: For points  (1.0, 2.0) and (1.0, 5.0),  pointsDistance is 3.0.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 1.0 2.0 1.0 5.0, and then with the inputs -5.0 -2.0 -5.0 -9.0. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+1.0 2.0 1.0 5.0
+<!--2.0 2.0 2.5 3.5-->
+-5.0 -2.0 -5.0 -9.0
+</zyInput>
+<zyStudentProgram>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double x1;
+   double y1;
+   double x2;
+   double y2;
+   double xDist;
+   double yDist;
+   double pointsDistance;
+
+   xDist = 0.0;
+   yDist = 0.0;
+   pointsDistance = 0.0;
+
+   cin >> x1;
+   cin >> y1;
+   cin >> x2;
+   cin >> y2;
+
+   <STUDENT CODE>
+
+   cout << pointsDistance << endl;
+
+   return 0;
+}
+</zyStudentProgram>
+ 
+
+<zySolution>   
+xDist = pow((x2 - x1), 2);
+yDist = pow((y2 - y1), 2);
+pointsDistance = sqrt(xDist + yDist);
+</zySolution>
+
+<zyTestVectors>
+#include <iostream>
+#include <math.h>
+
+int main() {
+   double x1;
+   double y1;
+   double x2;
+   double y2;
+   double xDist;
+   double yDist;
+   double pointsDistance;
+
+   xDist = 0.0;
+   yDist = 0.0;
+   pointsDistance = 0.0;
+
+   cin >> x1;
+   cin >> y1;
+   cin >> x2;
+   cin >> y2;
+   
+   { <STUDENT CODE> }
+   zyAssertDoubleValue(3.000000, pointsDistance, 0.001,
+                       "Testing with (1.0, 2.0) and (1.0, 5.0)", 
+                       true, false);
+
+   cin >> x1;
+   cin >> y1;
+   cin >> x2;
+   cin >> y2;
+   { <STUDENT CODE> }
+   zyAssertDoubleValue(<!--1.581139-->7.000000, pointsDistance, 0.001,
+                       "Testing with <!--(2.0, 2.0)-->(-5.0, -2.0) and <!--(2.5, 3.5)-->(-5.0, -9.0)", 
+                       false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+
+</zyHomeworkProblem>-->
+</zyVersion>
+
+<!-- codeOutput (c): Math functions -->
+
+
+<!-- Parsons (c): Using math functions to calculate the distance between two points -->
+
+
+<zypInfo person="Vanessa/Kevin" date="7/15/18"> Changed magic numbers to input.</zypInfo>
+<zypInfo person="Susan" date="7/25/18"> Updated var declaration so they all appear at top.</zypInfo>
+<zypInfo person="Aubrey" date="04/21/20"> bug report for output precision issue </zypInfo>
+<!--<zyHomeworkProblem id="925f5b0e-f33c-7e33-2877-a2c3ee595be9" language="c" caption="Using math functions to calculate the distance between two points." author="SL/FV/RL/RS">
+<zyInstructions>
+Determine the distance between point (x1, y1) and point (x2, y2), and assign the result to pointsDistance.  The calculation is: 
+<br /><br />
+\(Distance = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}\)<br /><br />
+Ex: For points  (1.0, 2.0) and (1.0, 5.0),  pointsDistance is 3.0.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 1.0 2.0 1.0 5.0, and then with the inputs -5.0 -2.0 -5.0 -9.0. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+1.0 2.0 1.0 5.0
+<!--2.0 2.0 2.5 3.5-->
+-5.0 -2.0 -5.0 -9.0
+</zyInput>
+<zyStudentProgram>
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+   double x1;
+   double y1;
+   double x2;
+   double y2;
+   double xDist;
+   double yDist;
+   double pointsDistance;
+
+   xDist = 0.0;
+   yDist = 0.0;
+   pointsDistance = 0.0;
+
+   scanf("%lf", &x1);
+   scanf("%lf", &y1);
+   scanf("%lf", &x2);
+   scanf("%lf", &y2);
+   
+   <STUDENT CODE>
+
+   printf("%lf\n", pointsDistance);
+
+   return 0;
+}
+</zyStudentProgram>
+
+
+<zySolution>   
+xDist = pow((x2 - x1), 2);
+yDist = pow((y2 - y1), 2);
+pointsDistance = sqrt(xDist + yDist);
+</zySolution>
+
+<zyTestVectors>
+#include <math.h>
+
+int main(void) {
+   double x1;
+   double y1;
+   double x2;
+   double y2;
+   double xDist;
+   double yDist;
+   double pointsDistance;
+
+   xDist = 0.0;
+   yDist = 0.0;
+   pointsDistance = 0.0;
+   
+   scanf("%lf", &x1);
+   scanf("%lf", &y1);
+   scanf("%lf", &x2);
+   scanf("%lf", &y2);
+   { <STUDENT CODE> }
+   zyAssertDoubleValue(3.000000, pointsDistance, 0.001,
+                       "Testing with (1.0, 2.0) and (1.0, 5.0)", 
+                       false, false);
+
+   scanf("%lf", &x1);
+   scanf("%lf", &y1);
+   scanf("%lf", &x2);
+   scanf("%lf", &y2);
+   { <STUDENT CODE> }
+   zyAssertDoubleValue(<!--1.581139-->7.000000, pointsDistance, 0.001,
+                       "Testing with <!--(2.0, 2.0)-->(-5.0, -2.0) and <!--(2.5, 3.5)-->(-5.0, -9.0)",false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+<!-- CodeWriting (c): Writing math calculations -->
+<zypInfo person="Amanda" date="07/20/23" minutes="32" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="07/20/23" minutes="45" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Amanda" date="07/21/23" minutes="103" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/16/23" minutes="756" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Enrique" date="08/16/23" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/24/23" minutes="76" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Enrique" date="08/24/23" minutes="60" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Enrique" date="08/28/23" minutes="4" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="09/20/23" minutes="6" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="DNorment" date="09/27/23" minutes="30" status="QADoing">Golden_CA_development C</zypInfo>
+<zypInfo person="Amanda" date="10/03/23" minutes="10" status="QADoing">Golden_CA_development C</zypInfo>
+<zypInfo person="DNorment" date="10/04/23" minutes="10" status="QADone">Golden_CA_development C</zypInfo>
+
+
+
+<zyVersion version="java">
+<!-- codeOutput (java): Using math methods -->
+<zypInfo person="Keith" date="12/19/19" minutes="30" status="Rev1Doing"></zypInfo>
+<zypInfo person="Keith" date="1/16/20" minutes="5" status="Rev2Doing"></zypInfo>
+<zypInfo person="Reed" date="1/18/20" minutes="5" status="Rev2Doing"></zypInfo>
+<zyTool name='codeOutput' caption='Using math methods' id='6126d448-2c2a-a287-5b0a-6d9b11db6628' parts='5' challenge='true'>
+<zyOptions>
+<language>java</language>
+<levels type='list'>
+<level type='dict'>
+    <explanation>The Math.sqrt() method is called with one argument, ${initial_x_value}.0. Math.sqrt() then evaluates to that argument's square root. Then, System.out.printf() is called with "%.1f\n" and x as arguments to output the value of x rounded to 1 digit after the decimal point, followed by a newline.</explanation>
+    <template>public class MathMethods {
+   public static void main(String[] args) {
+      double x;
+
+      x = Math.sqrt(${initial_x_value}.0);
+
+      // This will output 1 decimal place
+      System.out.printf("%.1f\n", x);
+   }
+}</template>
+    <parameters>
+initial_x_value = pick_from_range(2, 9) ** 2
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation>The Math.abs() method is called with one argument, ${initial_x_value}. Math.abs() evaluates to that argument's absolute value.</explanation>
+    <template>public class MathMethods {
+   public static void main(String[] args) {
+      double x;
+
+      x = Math.abs(${initial_x_value});
+
+      // This will output 1 decimal place
+      System.out.printf("%.1f\n", x);
+   }
+}</template>
+    <parameters>
+whole_number = str(pick_from_range(-9, 9))
+decimal_number = str(pick_from_range(1, 9))
+initial_x_value = '.'.join([whole_number, decimal_number])
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation>The Math.pow() method is called with two arguments, ${initial_x_value}.0 and ${exponent_value}.0. Math.pow(${initial_x_value}.0, ${exponent_value}.0) raises ${initial_x_value}.0 to power ${exponent_value}.0.</explanation>
+    <template>public class MathMethods {
+   public static void main(String[] args) {
+      double x;
+
+      x = Math.pow(${initial_x_value}.0, ${exponent_value}.0);
+
+      // This will output 1 decimal place
+      System.out.printf("%.1f\n", x);
+   }
+}</template>
+    <parameters>
+initial_x_value = pick_from_range(2, 5)
+exponent_value = pick_from_range(2, 3, [initial_x_value])
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation>The innermost expression, ${initial_x_value} + ${initial_y_value}, is evaluated first. Then, Math.abs() takes the result as an argument, and evalutes to that argument's absolute value.</explanation>
+    <template>public class MathMethods {
+   public static void main(String[] args) {
+      double x;
+
+      x = Math.abs(${initial_x_value} + ${initial_y_value});
+
+      // This will output 1 decimal place
+      System.out.printf("%.1f\n", x);
+   }
+}</template>
+    <parameters>
+initial_x_value = round(pick_from_range(-150, -50) * .1, 1)
+initial_y_value = round(pick_from_range(40, -1 * (initial_x_value * 10 + 1)) * .1, 1)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation>The innermost expression, Math.sqrt(${initial_y_value}), is evaluated first, evaluating to ${y_base}. Then Math.pow(${initial_x_value}, ${y_base}) is evaluated. </explanation>
+    <template>public class MathMethods {
+   public static void main(String[] args) {
+      double x;
+
+      x = Math.pow(${initial_x_value}, Math.sqrt(${initial_y_value}));
+
+      // This will output 1 decimal place
+      System.out.printf("%.1f\n", x);
+   }
+}</template>
+    <parameters>
+initial_x_value = pick_from_range(2, 5)
+y_base = pick_from_range(2, 3, [initial_x_value])
+initial_y_value = y_base ** 2
+
+initial_x_value = str(initial_x_value) + '.0'
+initial_y_value = str(initial_y_value) + '.0'
+y_base = str(y_base) + '.0'
+    </parameters>
+</level>
+</levels>
+</zyOptions>
+</zyTool>
+
+<!-- Parsons (Java): Using math methods to calculate the distance between two points -->
+<zypInfo person="DNorment" date="01/31/24" minutes="30" status="Draft1Doing"></zypInfo>
+<zyTool name="ParsonsCodingPA" caption="Using math methods to calculate the distance between two points" id="e19a45d7-f568-4e35-bf9d-0afb31c5ae12" parts="1" challenge="true" edited-last="Wed May 08 2024 11:55:49 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><files type="list"><li type="dict"><contents type="list"><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">import java.util.Scanner;
+
+public class CoordinateGeometry {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double x1;
+      double y1;
+      double x2;
+      double y2;
+      double pointsDistance;
+      double xDist;
+      double yDist;
+
+      x1 = scnr.nextDouble();
+      y1 = scnr.nextDouble();
+      x2 = scnr.nextDouble();
+      y2 = scnr.nextDouble();
+      </solution></li><li type="dict"><distractors type="list"><li type="string">xDist = Math.pow((x1 - y1), 2);</li></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">xDist = Math.pow((x2 - x1), 2);</solution></li><li type="dict"><distractors type="list"><li type="string">yDist = Math.pow((x2 - y2), 2);</li></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">yDist = Math.pow((y2 - y1), 2);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">pointsDistance = Math.sqrt(xDist + yDist);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">
+      System.out.println(pointsDistance);
+   }
+}</solution></li></contents><input type="boolean">false</input><main type="boolean">true</main><name type="string">CoordinateGeometry.java</name></li></files><language type="string">java</language><prompt type="string">Organize the correct code statements to find the distance between point (x1, y1) and point (x2, y2), and assign the result to pointsDistance. The calculation is:
+
+\\(Distance = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}\\)
+
+&lt;details&gt;&lt;summary&gt;&lt;b&gt;Click here for example&lt;/b&gt;&lt;/summary&gt;
+Ex: If the input is:
+
+`1.0 2.0`&lt;br /&gt;
+`1.0 5.0`
+
+then the output is:
+
+`3.0`
+&lt;/details&gt;
+
+Note: Not all code statements on the left will be used in the final solution.</prompt><tests type="list"><li type="dict"><stdin type="string">1.0 2.0
+1.0 5.0</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string">-5.0 -2.0
+-5.0 -9.0</stdin><type type="string">stdout</type><filename type="string"></filename></li></tests></zyOptions></zyTool>
+
+<!-- CodeWriting (java): Math calculations -->
+<zypInfo person="Keith Zmudzinski" date="10/04/19" minutes="30" status="Draft1Doing"></zypInfo>
+<zypInfo person="Arian" date="10/08/19" minutes="30" status="Rev1Doing"></zypInfo>
+<zypInfo person="Keith Zmudzinski" date="10/11/19" minutes="15" status="Draft1Doing"></zypInfo>
+<zypInfo person="Keith Zmudzinski" date="10/15/19" minutes="5" status="Draft1Doing"></zypInfo>
+<zypInfo person="Andrew Munoz" date="10/19/19" minutes="5" status="Rev2Doing"></zypInfo>
+<zypInfo person="Aubrey" date="03/05/20" minutes="10">  bug report </zypInfo>
+<zypInfo person="James" date="04/13/20" minutes="10">Trello QFyEOfSL bug fix</zypInfo>
+<zypInfo person="Amanda" date="02/22/22" minutes="110" status="CodeDoing">Converted to CodeWriting tool for accessibility purposes</zypInfo>
+<zypInfo person="Sabrina" date="02/23/22" minutes="5" status="CodeReviewing"></zypInfo>
+<zypInfo person="Amanda" date="02/23/22" minutes="1" status="CodeReviewing"></zypInfo>
+<zypInfo person="Enrique" date="02/23/22" minutes="20" status="QADoing"></zypInfo>
+<zypInfo person="Amanda" date="02/23/22" minutes="7" status="QADoing"></zypInfo>
+<zypInfo person="Amanda" date="02/23/22" minutes="4" status="QADoing"></zypInfo>
+<zypInfo person="Enrique" date="02/23/22" minutes="5" status="QADone"></zypInfo>
+<zypInfo person="Enrique" date="07/20/23" minutes="45" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Amanda" date="08/16/23" minutes="15" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Amanda" date="08/24/23" minutes="76" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="DNorment" date="09/27/23" minutes="20" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Amanda" date="10/03/23" minutes="10" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="DNorment" date="10/04/23" minutes="10" status="QADone">Golden_CA_development Java</zypInfo>
+<zyTool name="CodeWriting" caption="Writing math calculations" id="1b024e22-c3f8-4105-8a83-3655ec442a14" parts="3" challenge="true" edited-last="Mon Jun 24 2024 18:11:56 GMT-0500 (Central Daylight Time)"><zyOptions type="dict"><global type="string">import math
+import random
+import string
+from common_functions import pick_from, pick_from_range
+
+three_consec_letters = [
+    [&apos;b&apos;, &apos;c&apos;, &apos;d&apos;], [&apos;g&apos;, &apos;h&apos;, &apos;i&apos;], [&apos;h&apos;, &apos;i&apos;, &apos;j&apos;], [&apos;i&apos;, &apos;j&apos;, &apos;k&apos;],
+    [&apos;p&apos;, &apos;q&apos;, &apos;r&apos;], [&apos;v&apos;, &apos;w&apos;, &apos;x&apos;], [&apos;w&apos;, &apos;x&apos;, &apos;y&apos;], [&apos;x&apos;, &apos;y&apos;, &apos;z&apos;],
+]
+var1, var2, var3 = pick_from(three_consec_letters)
+var3 = pick_from([var3, &apos;val&apos;, &apos;answer&apos;])</global><language type="string">java</language><levels type="list"><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class MathMethods {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double ${distractor.var1};
+      double ${distractor.var2};
+      double ${distractor.var3};
+
+      ${distractor.var1} = scnr.nextDouble();
+      ${distractor.var2} = scnr.nextDouble();
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.var3} = ${distractor.solution};</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.printf(&quot;${distractor.print_intro}%.${distractor.precision}f\n&quot;, ${distractor.var3}); // Outputs ${distractor.var3} with ${distractor.postfix_note}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">MathMethods.java</name></li></files><prompt type="string">Compute:  \\\( \ ${distractor.var3} = ${distractor.expression} \\)
+
+Ex: If the input is `${distractor.example_input}`, then the output is:
+
+`${distractor.example_output}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    precision = pick_from_range(1, 2)
+    precision_format = &apos;:.{0}f&apos;.format(precision)
+    print_intro = pick_from([&apos;&apos;, &apos;{} = &apos;.format(var3)])
+    expression, solution, math_func, explain1, explain2, explain3 = pick_from(scenarios[scenario])
+    x, y = vals[scenario]
+    
+    explain = &apos;&apos;
+    if &apos;sqrt&apos; in solution:
+        explain = &apos;Math.sqrt() is used to compute the square root of {}.&apos;.format(explain1) + explain3
+    elif &apos;abs&apos; in solution:
+        explain = &apos;Math.abs() is used to compute the absolute value of {}.&apos;.format(explain1) + explain3
+    elif &apos;pow&apos; in solution:
+        explain = &apos;Math.pow() is used to compute {} to the power of {}.&apos;.format(explain1, explain2) + explain3
+    
+    return {
+        &apos;example_input&apos;: &apos;{{}} {{}}&apos;.format(precision_format, precision_format).format(x, y),
+        &apos;example_output&apos;: print_intro + &apos;{{}}&apos;.format(precision_format).format(math_func(x, y)),
+        &apos;explain&apos;: explain.format(var1, var2),
+        &apos;expression&apos;: expression.format(var1, var2),
+        &apos;postfix_note&apos;: &apos;1 decimal place&apos; if precision == 1 else &apos;2 decimal places&apos;,
+        &apos;precision&apos;: precision,
+        &apos;precision_format&apos;: precision_format,
+        &apos;solution&apos;: solution.format(var1, var2),
+        &apos;print_intro&apos;: print_intro,
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;scenario&apos;: pick_from(scenarios.keys())}</meaningful><setup type="string">scenarios = {
+    &apos;A&apos;: [
+        [&apos;\sqrt{{0} + {1}}&apos;, &apos;Math.sqrt({0} + {1})&apos;, lambda x, y: math.sqrt(x + y), &apos;{0} + {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;{0} + \sqrt{{1}}&apos;, &apos;{0} + Math.sqrt({1})&apos;, lambda x, y: x + math.sqrt(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, {0} is added to Math.sqrt({1}).&apos;],
+        [&apos;{0} - \sqrt{{1}}&apos;, &apos;{0} - Math.sqrt({1})&apos;, lambda x, y: x - math.sqrt(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, Math.sqrt({1}) is subtracted from {0}.&apos;],
+        [&apos;{0} * \sqrt{{1}}&apos;, &apos;{0} * Math.sqrt({1})&apos;, lambda x, y: x * math.sqrt(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, {0} is multiplied by Math.sqrt({1}).&apos;],
+        [&apos;|{0} + {1}|&apos;, &apos;Math.abs({0} + {1})&apos;, lambda x, y: math.fabs(x + y), &apos;{0} + {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|{0} - {1}|&apos;, &apos;Math.abs({0} - {1})&apos;, lambda x, y: math.fabs(x - y), &apos;{0} - {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|{0} * {1}|&apos;, &apos;Math.abs({0} * {1})&apos;, lambda x, y: math.fabs(x * y), &apos;{0} * {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;{0} + |{1}|&apos;, &apos;{0} + Math.abs({1})&apos;, lambda x, y: x + math.fabs(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, {0} is added to Math.abs({1}).&apos;],
+        [&apos;{0} - |{1}|&apos;, &apos;{0} - Math.abs({1})&apos;, lambda x, y: x - math.fabs(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, Math.abs({1}) is subtracted from {0}.&apos;],
+        [&apos;{0} * |{1}|&apos;, &apos;{0} * Math.abs({1})&apos;, lambda x, y: x * math.fabs(y), &apos;y&apos;, &apos;&apos;, &apos; Then, {0} is multiplied by Math.abs({1}).&apos;],
+        [&apos;|{0}| - {1}&apos;, &apos;Math.abs({0}) - {1}&apos;, lambda x, y: math.fabs(x) - y, &apos;{0}&apos;, &apos;&apos;, &apos; Then, {1} is subtracted from Math.abs({0}).&apos;],
+    ],
+    &apos;B&apos;: [
+        [&apos;\sqrt{{0} - {1}}&apos;, &apos;Math.sqrt({0} - {1})&apos;, lambda x, y: math.sqrt(x - y), &apos;{0} - {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;\sqrt{{0}} - {1}&apos;, &apos;Math.sqrt({0}) - {1}&apos;, lambda x, y: math.sqrt(x) - y, &apos;{0}&apos;, &apos;&apos;, &apos; Then, {1} is subtracted from Math.sqrt({0}).&apos;],
+    ],
+    &apos;C&apos;: [[&apos;{0} / \sqrt{{1}}&apos;, &apos;{0} / Math.sqrt({1})&apos;, lambda x, y: x / math.sqrt(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, {0} is divided by Math.sqrt({1}).&apos;],
+        [&apos;({0} / {1})^{\displaystyle 3}&apos;, &apos;Math.pow({0} / {1}, 3)&apos;, lambda x, y: math.pow(x / y, 3), &apos;{0} / {1}&apos;, &apos;3&apos;, &apos;&apos;],
+        [&apos;|{0} / {1}|&apos;, &apos;Math.abs({0} / {1})&apos;, lambda x, y: math.fabs(x / y), &apos;{0} / {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;{0} / |{1}|&apos;, &apos;{0} / Math.abs({1})&apos;, lambda x, y: x / math.fabs(y), &apos;{1}&apos;, &apos;&apos;, &apos; Then, {0} is divided by Math.abs({1}).&apos;],
+        [&apos;|{0}| / {1}&apos;, &apos;Math.abs({0}) / {1}&apos;, lambda x, y: math.fabs(x) / y, &apos;{0}&apos;, &apos;&apos;, &apos; Then, Math.abs({0}) is divided by {1}.&apos;],
+        [&apos;\sqrt{{0} / {1}}&apos;, &apos;Math.sqrt({0} / {1})&apos;, lambda x, y: math.sqrt(x / y), &apos;{0} / {1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;\sqrt{{0}} / {1}&apos;, &apos;Math.sqrt({0}) / {1}&apos;, lambda x, y: math.sqrt(x) / y, &apos;{0}&apos;, &apos;&apos;, &apos; Then, Math.sqrt({0}) is divided by {1}.&apos;]],
+    &apos;D&apos;: [
+        [&apos;{0}^{\displaystyle {1}}&apos;, &apos;Math.pow({0}, {1})&apos;, lambda x, y: math.pow(x, y), &apos;{0}&apos;, &apos;{1}&apos;, &apos;&apos;],
+        [&apos;({0} + {1})^{\displaystyle 3}&apos;, &apos;Math.pow({0} + {1}, 3)&apos;, lambda x, y: math.pow(x + y, 3), &apos;{0} + {1}&apos;, &apos;3&apos;, &apos;&apos;],
+        [&apos;({0} - {1})^{\displaystyle 3}&apos;, &apos;Math.pow({0} - {1}, 3)&apos;, lambda x, y: math.pow(x - y, 3), &apos;{0} - {1}&apos;, &apos;3&apos;, &apos;&apos;],
+        [&apos;({0} * {1})^{\displaystyle 3}&apos;, &apos;Math.pow({0} * {1}, 3)&apos;, lambda x, y: math.pow(x * y, 3), &apos;{0} * {1}&apos;, &apos;3&apos;, &apos;&apos;],
+    ],
+    &apos;E&apos;: [
+        [&apos;\sqrt{{0} * {1}}&apos;, &apos;Math.sqrt({0} * {1})&apos;, lambda x, y: math.sqrt(x * y), &apos;{0} * {1}&apos;, &apos;&apos;, &apos;&apos;]
+    ],
+}
+
+vals = {
+    &apos;A&apos;: [5.0, 4.0],
+    &apos;B&apos;: [4.0, 3.0],
+    &apos;C&apos;: [16.0, 4.0],
+    &apos;D&apos;: [4.0, 2.0],
+    &apos;E&apos;: [4.0, 9.0],
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    precision_format = distractor_permutation[&apos;precision_format&apos;]
+    solution = distractor_permutation[&apos;solution&apos;]
+    var1, var2 = distractor_permutation[&apos;var1&apos;], distractor_permutation[&apos;var2&apos;]
+    
+    ranges = [
+        range(-12, -8), range(-6, -2), range(3, 5), range(7, 10), range(8, 12),
+        range(15, 20), range(1, 3), range(-3, -1), range(4, 6), range(-20, -15),
+    ]
+    val0, val1, val2, val3, val4, val5, val6, val7, val8, val9 = [&apos;{{}}&apos;.format(precision_format).format(pick_from(x)) for x in ranges]
+    val6 = &apos;{{}}&apos;.format(precision_format).format(float(val6) + float(val2))
+    
+    test3_vals = [val0, val5]
+    if &apos;sqrt({})&apos;.format(var1) in solution:
+        test3_vals = [val5, val0]
+    if &apos;sqrt({} / {})&apos;.format(var1, var2) in solution:
+        test3_vals = [val0, val1]
+    if &apos;abs&apos; in solution:
+        test3_vals = [val9, val2]
+        if &apos;abs({})&apos;.format(var2) in solution:
+            test3_vals = [val2, val9]
+
+    test_values = {
+        &apos;A&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;B&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: [val5, val0]},
+        &apos;C&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;D&apos;: {&apos;test2&apos;: [val6, val2], &apos;test3&apos;: [val7, val8]},
+        &apos;E&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: [val0, val1]},
+    }
+
+    return {
+        &apos;test2&apos;: &apos;{} {}&apos;.format(*test_values[scenario][&apos;test2&apos;]),
+        &apos;test3&apos;: &apos;{} {}&apos;.format(*test_values[scenario][&apos;test3&apos;]),
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_input}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class MathMethods {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double ${distractor.var1};
+      double ${distractor.var2};
+      double ${distractor.var3};
+
+      ${distractor.var1} = scnr.nextDouble();
+      ${distractor.var2} = scnr.nextDouble();
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.var3} = ${distractor.solution};</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.printf(&quot;${distractor.print_intro}%.${distractor.precision}f\n&quot;, ${distractor.var3}); // Outputs ${distractor.var3} with ${distractor.postfix_note}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">MathMethods.java</name></li></files><prompt type="string">Compute:  \\\( \ ${distractor.var3} = ${distractor.expression} \\)
+
+Ex: If the input is `${distractor.example_input}`, then the output is:
+
+`${distractor.example_output}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    precision = pick_from_range(1, 2)
+    precision_format = &apos;:.{0}f&apos;.format(precision)
+    print_intro = pick_from([&apos;&apos;, &apos;{} = &apos;.format(var3)])
+    x, y = vals[scenario]
+    explain5 = &apos;&apos;
+
+    if scenario == &apos;pp&apos;:
+        expression, solution, math_func, explain1, explain2, explain3, explain4, explain5 = pick_from(scenarios[scenario])
+    else:
+        expression, solution, math_func, explain1, explain2, explain3, explain4 = pick_from(scenarios[scenario])
+
+    if (scenario == &apos;pf&apos;) and (&apos;{1} /&apos; in solution):
+            x, y = 2.0, 4.0
+    if (scenario == &apos;sf&apos;) and (&apos;abs({0})&apos; not in solution):
+        if (&apos;+&apos; in solution) or (&apos;-&apos; in solution):
+            x, y = 5.0, 4.0
+    if scenario == &apos;ps&apos;:
+        if &apos;+&apos; in solution:
+            y = 5.0
+        if &apos;/&apos; in solution:
+            x, y = 8.0, 2.0
+    
+    fabs_explain = &apos;Math.abs() is used to compute the absolute value of {}.&apos;.format(explain1)
+    sqrt_explain = &apos;Math.sqrt() is used to compute the square root of {}.&apos;.format(explain2)
+    pow_explain = &apos;Math.pow() is used to compute {} to the power of {}.&apos;.format(explain3, explain4)
+    pow_explain2 = &apos;Math.pow() is used to compute {} to the power of {} and {} to the power of {}.&apos;.format(explain1, explain2, explain3, explain4)
+    
+    explanations = {
+        &apos;pf&apos;: [fabs_explain, pow_explain],
+        &apos;fp&apos;: [pow_explain, fabs_explain],
+        &apos;sf&apos;: [fabs_explain, sqrt_explain],
+        &apos;fs1&apos;: [sqrt_explain, fabs_explain],
+        &apos;fs2&apos;: [sqrt_explain, fabs_explain],
+        &apos;sp&apos;: [pow_explain, sqrt_explain],
+        &apos;ps&apos;: [sqrt_explain, pow_explain],
+        &apos;pp&apos;: [pow_explain2, explain5],
+        &apos;x_larger&apos;: [sqrt_explain, pow_explain],
+    }
+    
+    explain = &apos;{}&lt;br&gt;Then, {}&apos;.format(*explanations[scenario])
+    if (scenario == &apos;sf&apos;) and (&apos;Math.abs({0})&apos; in solution):
+            explain = fabs_explain + &apos;&lt;br&gt;Next, {}&apos;.format(sqrt_explain) + &apos;&lt;br&gt;Then, {}.&apos;.format(explain3)
+    if (scenario == &apos;fs2&apos;) and (&apos;Math.abs({0})&apos; in solution):
+            explain = fabs_explain + &apos;&lt;br&gt;Next, {}&apos;.format(sqrt_explain) + &apos;&lt;br&gt;Then, {}.&apos;.format(explain3)
+    if (scenario == &apos;sp&apos;) and ((&apos;{0}, {1}&apos; in solution) or (&apos;{1}, {0}&apos; in solution)):
+            explain = pow_explain + &apos;&lt;br&gt;Then, {}&apos;.format(sqrt_explain)
+    if (scenario == &apos;x_larger&apos;) and (&apos;{1}, 3&apos; in solution):
+            explain = pow_explain + &apos;&lt;br&gt;Then, {}&apos;.format(sqrt_explain)
+
+    return {
+        &apos;example_input&apos;: &apos;{{}} {{}}&apos;.format(precision_format, precision_format).format(x, y),
+        &apos;example_output&apos;: print_intro + &apos;{{}}&apos;.format(precision_format).format(math_func(x, y)),
+        &apos;explain&apos;: explain.format(var1, var2),
+        &apos;expression&apos;: expression.format(var1, var2),
+        &apos;postfix_note&apos;: &apos;1 decimal place&apos; if precision == 1 else &apos;2 decimal places&apos;,
+        &apos;precision&apos;: precision,
+        &apos;precision_format&apos;: precision_format,
+        &apos;solution&apos;: solution.format(var1, var2),
+        &apos;print_intro&apos;: print_intro,
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;scenario&apos;: pick_from(scenarios.keys())}</meaningful><setup type="string">scenarios = {
+    &apos;pf&apos;: [
+        [&apos;|{0}|^{\displaystyle {1}}&apos;, &apos;Math.pow(Math.abs({0}), {1})&apos;, lambda x, y: math.pow(math.fabs(x), y), &apos;{0}&apos;, &apos;&apos;, &apos;Math.abs({0})&apos;, &apos;{1}&apos;],
+        [&apos;{0}^{\displaystyle {|{1}|}}&apos;, &apos;Math.pow({0}, Math.abs({1}))&apos;, lambda x, y: math.pow(x, math.fabs(y)), &apos;{1}&apos;, &apos;&apos;, &apos;{0}&apos;, &apos;Math.abs({1})&apos;],
+        [&apos;|{0} + {1}|^{\displaystyle 3}&apos;, &apos;Math.pow(Math.abs({0} + {1}), 3)&apos;, lambda x, y: math.pow(math.fabs(x + y), 3),&apos;{0} + {1}&apos;, &apos;&apos;, &apos;Math.abs({0} + {1})&apos;, &apos;3&apos;],
+        [&apos;|{0} - {1}|^{\displaystyle 3}&apos;, &apos;Math.pow(Math.abs({0} - {1}), 3)&apos;, lambda x, y: math.pow(math.fabs(x - y), 3),&apos;{0} - {1}&apos;, &apos;&apos;, &apos;Math.abs({0} - {1})&apos;, &apos;3&apos;],
+        [&apos;|{0} * {1}|^{\displaystyle 3}&apos;, &apos;Math.pow(Math.abs({0} * {1}), 3)&apos;, lambda x, y: math.pow(math.fabs(x * y), 3),&apos;{0} * {1}&apos;, &apos;&apos;, &apos;Math.abs({0} * {1})&apos;, &apos;3&apos;],
+        [&apos;|{0} / {1}|^{\displaystyle 3}&apos;, &apos;Math.pow(Math.abs({0} / {1}), 3)&apos;, lambda x, y: math.pow(math.fabs(x / y), 3),&apos;{0} / {1}&apos;, &apos;&apos;, &apos;Math.abs({0} / {1})&apos;, &apos;3&apos;],
+    ],
+    &apos;fp&apos;: [
+        [&apos;|{0}^{\displaystyle {1}}|&apos;, &apos;Math.abs(Math.pow({0}, {1}))&apos;, lambda x, y: math.fabs(math.pow(x, y)), &apos;Math.pow({0}, {1})&apos;, &apos;&apos;, &apos;{0}&apos;, &apos;{1}&apos;],
+        [&apos;|{0} + {1}^{\displaystyle 3}|&apos;, &apos;Math.abs({0} + Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(x + math.pow(y, 3)), &apos;{0} + Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;],
+        [&apos;|{0} - {1}^{\displaystyle 3}|&apos;, &apos;Math.abs({0} - Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(x - math.pow(y, 3)), &apos;{0} - Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;],
+        [&apos;|{0} * {1}^{\displaystyle 3}|&apos;, &apos;Math.abs({0} * Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(x * math.pow(y, 3)), &apos;{0} * Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;],
+        [&apos;|{0} / {1}^{\displaystyle 3}|&apos;, &apos;Math.abs({0} / Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(x / math.pow(y, 3)), &apos;{0} / Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;]
+    ],
+    &apos;sf&apos;: [
+        [&apos;\sqrt{|{0} + {1}|}&apos;, &apos;Math.sqrt(Math.abs({0} + {1}))&apos;, lambda x, y: math.sqrt(math.fabs(x + y)), &apos;{0} + {1}&apos;, &apos;Math.abs({0} + {1})&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0} - {1}|}&apos;, &apos;Math.sqrt(Math.abs({0} - {1}))&apos;, lambda x, y: math.sqrt(math.fabs(x - y)), &apos;{0} - {1}&apos;, &apos;Math.abs({0} - {1})&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0} * {1}|}&apos;, &apos;Math.sqrt(Math.abs({0} * {1}))&apos;, lambda x, y: math.sqrt(math.fabs(x * y)), &apos;{0} * {1}&apos;, &apos;Math.abs({0} * {1})&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0} / {1}|}&apos;, &apos;Math.sqrt(Math.abs({0} / {1}))&apos;, lambda x, y: math.sqrt(math.fabs(x / y)), &apos;{0} / {1}&apos;, &apos;Math.abs({0} / {1})&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0}|} + {1}&apos;, &apos;Math.sqrt(Math.abs({0})) + {1}&apos;, lambda x, y: math.sqrt(math.fabs(x)) + y, &apos;{0}&apos;, &apos;Math.abs({0})&apos;, &apos;the result is added to {1}&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0}|} - {1}&apos;, &apos;Math.sqrt(Math.abs({0})) - {1}&apos;, lambda x, y: math.sqrt(math.fabs(x)) - y, &apos;{0}&apos;, &apos;Math.abs({0})&apos;, &apos;{1} is subtracted from the result&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0}|} * {1}&apos;, &apos;Math.sqrt(Math.abs({0})) * {1}&apos;, lambda x, y: math.sqrt(math.fabs(x)) * y, &apos;{0}&apos;, &apos;Math.abs({0})&apos;, &apos;the result is multiplied by {1}&apos;, &apos;&apos;],
+        [&apos;\sqrt{|{0}|} / {1}&apos;, &apos;Math.sqrt(Math.abs({0})) / {1}&apos;, lambda x, y: math.sqrt(math.fabs(x)) / y, &apos;{0}&apos;, &apos;Math.abs({0})&apos;, &apos;the result is divided by {1}&apos;, &apos;&apos;],
+    ],
+    &apos;fs1&apos;: [
+        [&apos;|\sqrt{{0}} - {1}|&apos;, &apos;Math.abs(Math.sqrt({0}) - {1})&apos;, lambda x, y: math.fabs(math.sqrt(x) - y), &apos;Math.sqrt({0}) - {1}&apos;, &apos;{0}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|\sqrt{{0}} / {1}|&apos;, &apos;Math.abs(Math.sqrt({0}) / {1})&apos;, lambda x, y: math.fabs(math.sqrt(x) / y), &apos;Math.sqrt({0}) / {1}&apos;, &apos;{0}&apos;, &apos;&apos;, &apos;&apos;]
+    ],
+    &apos;fs2&apos;: [
+        [&apos;|{0} + \sqrt{{1}}|&apos;, &apos;Math.abs({0} + Math.sqrt({1}))&apos;, lambda x, y: math.fabs(x + math.sqrt(y)), &apos;{0} + Math.sqrt({1})&apos;, &apos;{1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|{0} - \sqrt{{1}}|&apos;, &apos;Math.abs({0} - Math.sqrt({1}))&apos;, lambda x, y: math.fabs(x - math.sqrt(y)), &apos;{0} - Math.sqrt({1})&apos;, &apos;{1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|{0} * \sqrt{{1}}|&apos;, &apos;Math.abs({0} * Math.sqrt({1}))&apos;, lambda x, y: math.fabs(x * math.sqrt(y)), &apos;{0} * Math.sqrt({1})&apos;, &apos;{1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|{0} / \sqrt{{1}}|&apos;, &apos;Math.abs({0} / Math.sqrt({1}))&apos;, lambda x, y: math.fabs(x / math.sqrt(y)), &apos;{0} / Math.sqrt({1})&apos;, &apos;{1}&apos;, &apos;&apos;, &apos;&apos;],
+        [&apos;|{0}| + \sqrt{{1}}&apos;, &apos;Math.abs({0}) + Math.sqrt({1})&apos;, lambda x, y: math.fabs(x) + math.sqrt(y), &apos;{0}&apos;, &apos;{1}&apos;, &apos;Math.abs({0}) is added to Math.sqrt({1})&apos;, &apos;&apos;],
+        [&apos;|{0}| - \sqrt{{1}}&apos;, &apos;Math.abs({0}) - Math.sqrt({1})&apos;, lambda x, y: math.fabs(x) - math.sqrt(y), &apos;{0}&apos;, &apos;{1}&apos;, &apos;Math.sqrt({1}) is subtracted from Math.abs({0})&apos;, &apos;&apos;],
+        [&apos;|{0}| * \sqrt{{1}}&apos;, &apos;Math.abs({0}) * Math.sqrt({1})&apos;, lambda x, y: math.fabs(x) * math.sqrt(y), &apos;{0}&apos;, &apos;{1}&apos;, &apos;Math.abs({0}) is multiplied b{1} Math.sqrt({1})&apos;, &apos;&apos;],
+        [&apos;|{0}| / \sqrt{{1}}&apos;, &apos;Math.abs({0}) / Math.sqrt({1})&apos;, lambda x, y: math.fabs(x) / math.sqrt(y), &apos;{0}&apos;, &apos;{1}&apos;, &apos;Math.abs({0}) is divided b{1} Math.sqrt({1})&apos;, &apos;&apos;]
+    ],
+    &apos;sp&apos;: [
+        [&apos;\sqrt{{0}^{\displaystyle {1}}}&apos;, &apos;Math.sqrt(Math.pow({0}, {1}))&apos;, lambda x, y: math.sqrt(math.pow(x, y)), &apos;&apos;, &apos;Math.pow({0}, {1})&apos;, &apos;{0}&apos;, &apos;{1}&apos;],
+        [&apos;\sqrt{{0} + {1}^{\displaystyle 5}}&apos;, &apos;Math.sqrt({0} + Math.pow({1}, 5))&apos;, lambda x, y: math.sqrt(x + math.pow(y, 5)), &apos;&apos;, &apos;{0} + Math.pow({1}, 5)&apos;, &apos;{1}&apos;, &apos;5&apos;],
+        [&apos;\sqrt{{0} * {1}^{\displaystyle 2}}&apos;, &apos;Math.sqrt({0} * Math.pow({1}, 2))&apos;, lambda x, y: math.sqrt(x * math.pow(y, 2)), &apos;&apos;, &apos;{0} * Math.pow({1}, 2)&apos;, &apos;{1}&apos;, &apos;2&apos;],
+        [&apos;\sqrt{{0} / {1}^{\displaystyle 2}}&apos;, &apos;Math.sqrt({0} / Math.pow({1}, 2))&apos;, lambda x, y: math.sqrt(x / math.pow(y, 2)), &apos;&apos;, &apos;{0} / Math.pow({1}, 2)&apos;, &apos;{1}&apos;, &apos;2&apos;],
+    ],
+    &apos;ps&apos;: [
+        [&apos;(\sqrt{{0}})^{\displaystyle {1}}&apos;, &apos;Math.pow(Math.sqrt({0}), {1})&apos;, lambda x, y: math.pow(math.sqrt(x), y), &apos;&apos;, &apos;{0}&apos;, &apos;Math.sqrt({0})&apos;, &apos;{1}&apos;],
+        [&apos;(\sqrt{{0} + {1}})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt({0} + {1}), 3)&apos;, lambda x, y: math.pow(math.sqrt(x + y), 3), &apos;&apos;, &apos;{0} + {1}&apos;, &apos;Math.sqrt({0} + {1})&apos;, &apos;3&apos;],
+        [&apos;{0}^{\displaystyle \sqrt{{1}}}&apos;, &apos;Math.pow({0}, Math.sqrt({1}))&apos;, lambda x, y: math.pow(x, math.sqrt(y)), &apos;&apos;, &apos;{1}&apos;, &apos;{0}&apos;, &apos;Math.sqrt({1})&apos;],
+        [&apos;(\sqrt{{0} * {1}})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt({0} * {1}), 3)&apos;, lambda x, y: math.pow(math.sqrt(x * y), 3), &apos;&apos;, &apos;{0} * {1}&apos;, &apos;Math.sqrt({0} * {1})&apos;, &apos;3&apos;],
+        [&apos;(\sqrt{{0} / {1}})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt({0} / {1}), 3)&apos;, lambda x, y: math.pow(math.sqrt(x / y), 3), &apos;&apos;, &apos;{0} / {1}&apos;, &apos;Math.sqrt({0} / {1})&apos;, &apos;3&apos;],
+    ],
+    &apos;pp&apos;: [
+        [&apos;{0}^{\displaystyle 3} + {1}^{\displaystyle 2}&apos;, &apos;Math.pow({0}, 3) + Math.pow({1}, 2)&apos;, lambda x, y: math.pow(x, 3) + math.pow(y, 2), &apos;{0}&apos;, &apos;3&apos;, &apos;{1}&apos;, &apos;2&apos;, &apos;Math.pow({0}, 3) is added to Math.pow({1}, 2).&apos;],
+        [&apos;{0}^{\displaystyle 3} - {1}^{\displaystyle 2}&apos;, &apos;Math.pow({0}, 3) - Math.pow({1}, 2)&apos;, lambda x, y: math.pow(x, 3) - math.pow(y, 2), &apos;{0}&apos;, &apos;3&apos;, &apos;{1}&apos;, &apos;2&apos;, &apos;Math.pow({1}, 2) is subtracted from Math.pow({0}, 3).&apos;],
+        [&apos;{0}^{\displaystyle 3} * {1}^{\displaystyle 2}&apos;, &apos;Math.pow({0}, 3) * Math.pow({1}, 2)&apos;, lambda x, y: math.pow(x, 3) * math.pow(y, 2), &apos;{0}&apos;, &apos;3&apos;, &apos;{1}&apos;, &apos;2&apos;, &apos;Math.pow({0}, 3) is multiplied by Math.pow({1}, 2).&apos;],
+        [&apos;{0}^{\displaystyle 3} / {1}^{\displaystyle 2}&apos;, &apos;Math.pow({0}, 3) / Math.pow({1}, 2)&apos;, lambda x, y: math.pow(x, 3) / math.pow(y, 2), &apos;{0}&apos;, &apos;3&apos;, &apos;{1}&apos;, &apos;2&apos;, &apos;Math.pow({0}, 3) is divided by Math.pow({1}, 2).&apos;],
+    ],
+    &apos;x_larger&apos;: [
+        [&apos;\sqrt{{0} - {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt({0} - Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(x - math.pow(y, 3)), &apos;&apos;, &apos;{0} - Math.pow({1}, 3)&apos;, &apos;{1}&apos;, &apos;3&apos;],
+        [&apos;(\sqrt{{0} - {1}})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt({0} - {1}), 3)&apos;, lambda x, y: math.pow(math.sqrt(x - y), 3), &apos;&apos;, &apos;{0} - {1}&apos;, &apos;Math.sqrt({0} - {1})&apos;, &apos;3&apos;]
+    ],
+}
+
+vals = {
+    &apos;pf&apos;: [4.0, 2.0],
+    &apos;fp&apos;: [4.0, 2.0],
+    &apos;sf&apos;: [16.0, 4.0],
+    &apos;fs1&apos;: [4.0, 2.0],
+    &apos;fs2&apos;: [2.0, 4.0],
+    &apos;sp&apos;: [4.0, 2.0],
+    &apos;ps&apos;: [4.0, 9.0],
+    &apos;pp&apos;: [2.0, 4.0],
+    &apos;x_larger&apos;: [5.0, 1.0],
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    precision_format = distractor_permutation[&apos;precision_format&apos;]
+    solution = distractor_permutation[&apos;solution&apos;]
+    var1, var2 = distractor_permutation[&apos;var1&apos;], distractor_permutation[&apos;var2&apos;]
+    
+    ranges = [
+        range(-12, -8), range(-6, -2), [3, 5], range(6, 9), [10, 12], [2, 4, 6],
+        range(2, 5), range(5, 8), range(1, 3), range(-11, -6), range(-200, -150)
+    ]
+    val0, val1, val2, val3, val4, val5, val6, val7, val8, val9, val10 = [&apos;{{}}&apos;.format(precision_format).format(pick_from(x)) for x in ranges]
+    
+    test2_vals = [val3, val2]
+    test3_vals = [val1, val4]
+    if (scenario == &apos;sp&apos;) and (&apos;2&apos; in solution):
+        test3_vals = [val4, val1]
+    if scenario == &apos;ps&apos;:
+        if (&apos;sqrt({})&apos;.format(var1) in solution) or (&apos;sqrt({})&apos;.format(var2)) in solution:
+            test3_vals = [val4, val2]
+        if &apos;3&apos; in solution:
+            test3_vals = [val0, val1]
+        if &apos;{} + {}&apos;.format(var1, var2) in solution:
+            test3_vals = [val1, val4]
+    if (scenario == &apos;x_larger&apos;) and (&apos;{}, 3&apos;.format(var2) in solution):
+        test2_vals = [val3, val0]
+    if &apos;abs&apos; in solution:
+        test3_vals = [val9, val2]
+        if &apos;abs({})&apos;.format(var2) in solution:
+            test3_vals = [val2, val9]
+        if &apos;+ pow&apos; in solution:
+            test3_vals = [val10, val2]
+        if scenario == &apos;fs1&apos;:
+            test3_vals = [val4, val1]
+            if &apos;-&apos; in solution:
+                test3_vals = [val5, val4]
+
+    test_values = {
+        &apos;pf&apos;: {&apos;test2&apos;: [val7, val8], &apos;test3&apos;: test3_vals},
+        &apos;fp&apos;: {&apos;test2&apos;: [val7, val8], &apos;test3&apos;: test3_vals},
+        &apos;sf&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;fs1&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;fs2&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: [val0, val5]},
+        &apos;sp&apos;: {&apos;test2&apos;: [val2, val3], &apos;test3&apos;: test3_vals},
+        &apos;ps&apos;: {&apos;test2&apos;: [val2, val3], &apos;test3&apos;: test3_vals},
+        &apos;pp&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: [val1, val4]},
+        &apos;x_larger&apos;: {&apos;test2&apos;: test2_vals, &apos;test3&apos;: [val4, val1]},
+    }
+
+    return {
+        &apos;test2&apos;: &apos;{} {}&apos;.format(*test_values[scenario][&apos;test2&apos;]),
+        &apos;test3&apos;: &apos;{} {}&apos;.format(*test_values[scenario][&apos;test3&apos;]),
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_input}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class MathMethods {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double ${distractor.var1};
+      double ${distractor.var2};
+      double ${distractor.var3};
+
+      ${distractor.var1} = scnr.nextDouble();
+      ${distractor.var2} = scnr.nextDouble();
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.var3} = ${distractor.solution};</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.printf(&quot;${distractor.print_intro}%.${distractor.precision}f\n&quot;, ${distractor.var3}); // Outputs ${distractor.var3} with ${distractor.postfix_note}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">MathMethods.java</name></li></files><prompt type="string">Compute:  \\\( \ ${distractor.var3} = ${distractor.expression} \\)
+
+Ex: If the input is `${distractor.example_input}`, then the output is:
+
+`${distractor.example_output}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    precision = pick_from_range(1, 2)
+    precision_format = &apos;:.{0}f&apos;.format(precision)
+    print_intro = pick_from([&apos;&apos;, &apos;{} = &apos;.format(var3)])
+    
+    expression, solution, math_func, explain1, explain2, explain3, explain4, x, y = pick_from(scenarios[scenario])
+
+    fabs_explain = &apos;Math.abs() is used to compute the absolute value of {}.&apos;.format(explain1)
+    sqrt_explain = &apos;Math.sqrt() is used to compute the square root of {}.&apos;.format(explain2)
+    sqrt_explain2 = &apos;Math.sqrt() is used to compute the square root of Math.abs({}).&apos;.format(explain1)
+    sqrt_explain3 = &apos;Math.sqrt() is used to compute the square root of Math.pow({}, {}).&apos;.format(explain3, explain4)
+    pow_explain = &apos;Math.pow() is used to compute {} to the power of {}.&apos;.format(explain3, explain4)
+    pow_explain2 = &apos;Math.pow() is used to compute {}.&apos;.format(explain3)
+    
+    explanations = {
+        &apos;psf&apos;: &apos;{}&lt;br&gt;Next, {}&apos;.format(fabs_explain, sqrt_explain),
+        &apos;f_pp&apos;: &apos;{}&lt;br&gt;Then, {}&apos;.format(pow_explain, fabs_explain),
+        &apos;pff&apos;: &apos;{}&lt;br&gt;Then, {}&apos;.format(fabs_explain, pow_explain),
+        &apos;s_pp&apos;: &apos;{}&lt;br&gt;Then, {}&apos;.format(pow_explain, sqrt_explain),
+        &apos;spf&apos;: &apos;{}&lt;br&gt;Next, {}&lt;br&gt;Then, {}&apos;.format(fabs_explain, pow_explain, sqrt_explain3),
+        &apos;sfp&apos;: &apos;{}&lt;br&gt;Next, {}&lt;br&gt;Then, {}&apos;.format(pow_explain, fabs_explain, sqrt_explain2),
+        &apos;s_ff&apos;: &apos;{}&lt;br&gt;Then, {}&apos;.format(fabs_explain, sqrt_explain),
+        &apos;s_pf&apos;: &apos;{}&lt;br&gt;Next, {}&lt;br&gt;Then, {}&apos;.format(pow_explain, fabs_explain, sqrt_explain),
+        &apos;s_fp&apos;: &apos;{}&lt;br&gt;Next, {}&lt;br&gt;Then, {}&apos;.format(fabs_explain, pow_explain2, sqrt_explain),
+        &apos;p_ss&apos;: &apos;{}&lt;br&gt;Then, {}&apos;.format(sqrt_explain, pow_explain),
+    }
+    
+    explain = explanations[scenario]
+    if scenario == &apos;psf&apos;:
+        if (&apos;sqrt({0})&apos; in solution) and (solution.index(&apos;sqrt&apos;) &lt; solution.index(&apos;abs&apos;)):
+            explain = &apos;{}&lt;br&gt;Next, {}&apos;.format(sqrt_explain, fabs_explain)
+        if &apos;sqrt({1})&apos; in solution and (solution.index(&apos;sqrt&apos;) &lt; solution.index(&apos;abs&apos;)):
+            explain = &apos;{}&lt;br&gt;Next, {}&apos;.format(sqrt_explain, fabs_explain)
+        explain += &apos;&lt;br&gt;Then, {}&apos;.format(pow_explain)
+   
+    return {
+        &apos;example_input&apos;: &apos;{{}} {{}}&apos;.format(precision_format, precision_format).format(x, y),
+        &apos;example_output&apos;: print_intro + &apos;{{}}&apos;.format(precision_format).format(math_func(x, y)),
+        &apos;explain&apos;: explain.format(var1, var2),
+        &apos;expression&apos;: expression.format(var1, var2),
+        &apos;postfix_note&apos;: &apos;1 decimal place&apos; if precision == 1 else &apos;2 decimal places&apos;,
+        &apos;precision&apos;: precision,
+        &apos;precision_format&apos;: precision_format,
+        &apos;solution&apos;: solution.format(var1, var2),
+        &apos;print_intro&apos;: print_intro,
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;scenario&apos;: pick_from(scenarios.keys())}</meaningful><setup type="string">scenarios = {
+    &apos;psf&apos;: [
+        [&apos;(\sqrt{|{0} + {1}|})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt(Math.abs({0} + {1})), 3)&apos;, lambda x, y: math.pow(math.sqrt(math.fabs(x + y)), 3), &apos;{0} + {1}&apos;, &apos;Math.abs({0} + {1})&apos;, &apos;Math.sqrt(Math.abs({0} + {1}))&apos;, &apos;3&apos;, 4.0, 5.0],
+        [&apos;(\sqrt{|{0} - {1}|})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt(Math.abs({0} - {1})), 3)&apos;, lambda x, y: math.pow(math.sqrt(math.fabs(x - y)), 3), &apos;{0} - {1}&apos;, &apos;Math.abs({0} - {1})&apos;, &apos;Math.sqrt(Math.abs({0} - {1}))&apos;, &apos;3&apos;, 6.0, 2.0],
+        [&apos;(\sqrt{|{0} * {1}|})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt(Math.abs({0} * {1})), 3)&apos;, lambda x, y: math.pow(math.sqrt(math.fabs(x * y)), 3), &apos;{0} * {1}&apos;, &apos;Math.abs({0} * {1})&apos;, &apos;Math.sqrt(Math.abs({0} * {1}))&apos;, &apos;3&apos;, 2.0, 8.0],
+        [&apos;(\sqrt{|{0} / {1}|})^{\displaystyle 3}&apos;, &apos;Math.pow(Math.sqrt(Math.abs({0} / {1})), 3)&apos;, lambda x, y: math.pow(math.sqrt(math.fabs(x / y)), 3), &apos;{0} / {1}&apos;, &apos;Math.abs({0} / {1})&apos;, &apos;Math.sqrt(Math.abs({0} / {1}))&apos;, &apos;3&apos;, 8.0, 2.0],
+        [&apos;(\sqrt{{0}})^{\displaystyle {|{1}|}}&apos;, &apos;Math.pow(Math.sqrt({0}), Math.abs({1}))&apos;, lambda x, y: math.pow(math.sqrt(x), math.fabs(y)), &apos;{1}&apos;, &apos;{0}&apos;, &apos;Math.sqrt({0})&apos;, &apos;Math.abs({1})&apos;, 4.0, 3.0],
+        [&apos;|{0}|^{\displaystyle \sqrt{{1}}}&apos;, &apos;Math.pow(Math.abs({0}), Math.sqrt({1}))&apos;, lambda x, y: math.pow(math.fabs(x), math.sqrt(y)), &apos;{0}&apos;, &apos;{1}&apos;, &apos;Math.abs({0})&apos;, &apos;Math.sqrt({1})&apos;, 2.0, 4.0],
+    ],
+    &apos;f_pp&apos;: [
+        [&apos;|{0}^{\displaystyle 4} + {1}^{\displaystyle 3}|&apos;, &apos;Math.abs(Math.pow({0}, 4) + Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(math.pow(x, 4) + math.pow(y, 3)), &apos;Math.pow({0}, 4) + Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 2.0, 3.0],
+        [&apos;|{0}^{\displaystyle 4} - {1}^{\displaystyle 3}|&apos;, &apos;Math.abs(Math.pow({0}, 4) - Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(math.pow(x, 4) - math.pow(y, 3)), &apos;Math.pow({0}, 4) - Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 2.0, 3.0],
+        [&apos;|{0}^{\displaystyle 4} * {1}^{\displaystyle 3}|&apos;, &apos;Math.abs(Math.pow({0}, 4) * Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(math.pow(x, 4) * math.pow(y, 3)), &apos;Math.pow({0}, 4) * Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 2.0, 3.0],
+        [&apos;|{0}^{\displaystyle 4} / {1}^{\displaystyle 3}|&apos;, &apos;Math.abs(Math.pow({0}, 4) / Math.pow({1}, 3))&apos;, lambda x, y: math.fabs(math.pow(x, 4) / math.pow(y, 3)), &apos;Math.pow({0}, 4) / Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 2.0, 3.0],
+    ],
+    &apos;pff&apos;: [
+        [&apos;|{0}|^{\displaystyle {|{1}|}}&apos;, &apos;Math.pow(Math.abs({0}), Math.abs({1}))&apos;, lambda x, y: math.pow(math.fabs(x), math.fabs(y)), &apos;{0} and the absolute value of {1}&apos;, &apos;&apos;, &apos;Math.abs({0})&apos;, &apos;Math.abs({1})&apos;, 2.0, 4.0],
+    ],
+    &apos;s_pp&apos;: [
+        [&apos;\sqrt{{0}^{\displaystyle 4} + {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow({0}, 4) + Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(pow(x, 4) + math.pow(y, 3)), &apos;&apos;, &apos;Math.pow({0}, 4) + Math.pow({1}, 3)&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 1.0, 2.0],
+        [&apos;\sqrt{{0}^{\displaystyle 4} - {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow({0}, 4) - Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.pow(x, 4) - math.pow(y, 3)), &apos;&apos;, &apos;Math.pow({0}, 4) - Math.pow({1}, 3)&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 1.0, 0.0],
+        [&apos;\sqrt{{0}^{\displaystyle 4} * {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow({0}, 4) * Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.pow(x, 4) * math.pow(y, 3)), &apos;&apos;, &apos;Math.pow({0}, 4) * Math.pow({1}, 3)&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 2.0, 1.0],
+        [&apos;\sqrt{{0}^{\displaystyle 4} / {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow({0}, 4) / Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.pow(x, 4) / math.pow(y, 3)), &apos;&apos;, &apos;Math.pow({0}, 4) / Math.pow({1}, 3)&apos;, &apos;{0} to the power of 4 and {1}&apos;, &apos;3&apos;, 2.0, 1.0]
+    ],
+    &apos;spf&apos;: [
+        [&apos;\sqrt{|{0}|^{\displaystyle {1}}}&apos;, &apos;Math.sqrt(Math.pow(Math.abs({0}), {1}))&apos;, lambda x, y: math.sqrt(math.pow(math.fabs(x), y)), &apos;{0}&apos;, &apos;&apos;, &apos;Math.abs({0})&apos;, &apos;{1}&apos;, 3.0, 2.0],
+        [&apos;\sqrt{|{0} + {1}|^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow(Math.abs({0} + {1}), 3))&apos;, lambda x, y: math.sqrt(math.pow(math.fabs(x + y), 3)), &apos;{0} + {1}&apos;, &apos;&apos;, &apos;Math.abs({0} + {1})&apos;, &apos;3&apos;, 1.0, 3.0],
+        [&apos;\sqrt{|{0} - {1}|^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow(Math.abs({0} - {1}), 3))&apos;, lambda x, y: math.sqrt(math.pow(math.fabs(x - y), 3)), &apos;{0} - {1}&apos;, &apos;&apos;, &apos;Math.abs({0} - {1})&apos;, &apos;3&apos;, 5.0, 1.0],
+        [&apos;\sqrt{|{0} * {1}|^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow(Math.abs({0} * {1}), 3))&apos;, lambda x, y: math.sqrt(math.pow(math.fabs(x * y), 3)), &apos;{0} * {1}&apos;, &apos;&apos;, &apos;Math.abs({0} * {1})&apos;, &apos;3&apos;, 4.0, 1.0],
+        [&apos;\sqrt{|{0} / {1}|^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.pow(Math.abs({0} / {1}), 3))&apos;, lambda x, y: math.sqrt(math.pow(math.fabs(x / y), 3)), &apos;{0} / {1}&apos;, &apos;&apos;, &apos;Math.abs({0} / {1})&apos;, &apos;3&apos;, 8.0, 2.0],
+    ],
+    &apos;sfp&apos;: [
+        [&apos;\sqrt{|{0} + {1}^{\displaystyle 3}|}&apos;, &apos;Math.sqrt(Math.abs({0} + Math.pow({1}, 3)))&apos;, lambda x, y: math.sqrt(math.fabs(x + math.pow(y, 3))), &apos;{0} + Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;, 1.0, 2.0],
+        [&apos;\sqrt{|{0} - {1}^{\displaystyle 3}|}&apos;, &apos;Math.sqrt(Math.abs({0} - Math.pow({1}, 3)))&apos;, lambda x, y: math.sqrt(math.fabs(x - math.pow(y, 3))), &apos;{0} - Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;, -1.0, 2.0],
+        [&apos;\sqrt{|{0} * {1}^{\displaystyle 3}|}&apos;, &apos;Math.sqrt(Math.abs({0} * Math.pow({1}, 3)))&apos;, lambda x, y: math.sqrt(math.fabs(x * math.pow(y, 3))), &apos;{0} * Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;, 1.0, 4.0],
+        [&apos;\sqrt{|{0} / {1}^{\displaystyle 3}|}&apos;, &apos;Math.sqrt(Math.abs({0} / Math.pow({1}, 3)))&apos;, lambda x, y: math.sqrt(math.fabs(x / math.pow(y, 3))), &apos;{0} / Math.pow({1}, 3)&apos;, &apos;&apos;, &apos;{1}&apos;, &apos;3&apos;, 8.0, 2.0],
+        [&apos;\sqrt{|{0}^{\displaystyle 3} - {1}|}&apos;, &apos;Math.sqrt(Math.abs(Math.pow({0}, 3) - {1}))&apos;, lambda x, y: math.sqrt(math.fabs(math.pow(x, 3) - y)), &apos;Math.pow({0}, 3) - {1}&apos;, &apos;&apos;, &apos;{0}&apos;, &apos;3&apos;, 2.0, 4.0],
+        [&apos;\sqrt{|{0}^{\displaystyle 3} / {1}|}&apos;, &apos;Math.sqrt(Math.abs(Math.pow({0}, 3) / {1}))&apos;, lambda x, y: math.sqrt(math.fabs(math.pow(x, 3) / y)), &apos;Math.pow({0}, 3) / {1}&apos;, &apos;&apos;, &apos;{0}&apos;, &apos;3&apos;, 4.0, 1.0]
+    ],
+    &apos;s_ff&apos;: [
+        [&apos;\sqrt{|{0}| + |{1}|}&apos;, &apos;Math.sqrt(Math.abs({0}) + Math.abs({1}))&apos;, lambda x, y: math.sqrt(math.fabs(x) + math.fabs(y)), &apos;{0} and the absolute value of {1}&apos;, &apos;Math.abs({0}) + Math.abs({1})&apos;, &apos;&apos;, &apos;&apos;, 3.0, 1.0],
+        [&apos;\sqrt{|{0}| * |{1}|}&apos;, &apos;Math.sqrt(Math.abs({0}) * Math.abs({1}))&apos;, lambda x, y: math.sqrt(math.fabs(x) * math.fabs(y)), &apos;{0} and the absolute value of {1}&apos;, &apos;Math.abs({0}) * Math.abs({1})&apos;, &apos;&apos;, &apos;&apos;, 8.0, 2.0],
+        [&apos;\sqrt{|{0}| / |{1}|}&apos;, &apos;Math.sqrt(Math.abs({0}) / Math.abs({1}))&apos;, lambda x, y: math.sqrt(math.fabs(x) / math.fabs(y)), &apos;{0} and the absolute value of {1}&apos;, &apos;Math.abs({0}) / Math.abs({1})&apos;, &apos;&apos;, &apos;&apos;, 8.0, 2.0],
+        [&apos;\sqrt{|{0}| - |{1}|}&apos;, &apos;Math.sqrt(Math.abs({0}) - Math.abs({1}))&apos;, lambda x, y: math.sqrt(math.fabs(x) - math.fabs(y)), &apos;{0} and the absolute value of {1}&apos;, &apos;Math.abs({0}) - Math.abs({1})&apos;, &apos;&apos;, &apos;&apos;, 6.0, 2.0]
+    ],
+    &apos;s_pf&apos;: [
+        [&apos;\sqrt{{0}^{\displaystyle 3} - |{1}|}&apos;, &apos;Math.sqrt(Math.pow({0}, 3) - Math.abs({1}))&apos;, lambda x, y: math.sqrt(math.pow(x, 3) - math.fabs(y)), &apos;{1}&apos;, &apos;Math.pow({0}, 3) - Math.abs({1})&apos;, &apos;{0}&apos;, &apos;3&apos;, 3.0, 2.0],
+        [&apos;\sqrt{{0}^{\displaystyle 3} / |{1}|}&apos;, &apos;Math.sqrt(Math.pow({0}, 3) / Math.abs({1}))&apos;, lambda x, y: math.sqrt(math.pow(x, 3) / math.fabs(y)), &apos;{1}&apos;, &apos;Math.pow({0}, 3) / Math.abs({1})&apos;, &apos;{0}&apos;, &apos;3&apos;, 4.0, 16.0],
+    ],
+    &apos;s_fp&apos;: [
+        [&apos;\sqrt{|{0}| + {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.abs({0}) + Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.fabs(x) + math.pow(y, 3)), &apos;{0}&apos;, &apos;Math.abs({0}) + Math.pow({1}, 3)&apos;, &apos;{1} to the power of 3&apos;, &apos;&apos;, 1.0, 2.0],
+        [&apos;\sqrt{|{0}| * {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.abs({0}) * Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.fabs(x) * math.pow(y, 3)), &apos;{0}&apos;, &apos;Math.abs({0}) * Math.pow({1}, 3)&apos;, &apos;{1} to the power of 3&apos;, &apos;&apos;, 8.0, 2.0],
+        [&apos;\sqrt{|{0}| / {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.abs({0}) / Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.fabs(x) / math.pow(y, 3)), &apos;{0}&apos;, &apos;Math.abs({0}) / Math.pow({1}, 3)&apos;, &apos;{1} to the power of 3&apos;, &apos;&apos;, 32.0, 2.0],
+        [&apos;\sqrt{|{0}| - {1}^{\displaystyle 3}}&apos;, &apos;Math.sqrt(Math.abs({0}) - Math.pow({1}, 3))&apos;, lambda x, y: math.sqrt(math.fabs(x) - math.pow(y, 3)), &apos;{0}&apos;, &apos;Math.abs({0}) - Math.pow({1}, 3)&apos;, &apos;{1} to the power of 3&apos;, &apos;&apos;, 12.0, 2.0],
+    ],
+    &apos;p_ss&apos;: [
+        [&apos;(\sqrt{{0}})^{\displaystyle \sqrt{{1}}}&apos;, &apos;Math.pow(Math.sqrt({0}), Math.sqrt({1}))&apos;, lambda x, y: math.pow(math.sqrt(x), math.sqrt(y)), &apos;&apos;, &apos;{0} and the square root of {1}&apos;, &apos;Math.sqrt({0})&apos;, &apos;Math.sqrt({1})&apos;, 4.0, 9.0],
+    ],
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    precision_format = distractor_permutation[&apos;precision_format&apos;]
+    solution = distractor_permutation[&apos;solution&apos;]
+    var1, var2 = distractor_permutation[&apos;var1&apos;], distractor_permutation[&apos;var2&apos;]
+    
+    ranges = [
+        range(-12, -8), range(-6, -2), [3, 5], range(6, 10), [8, 10, 12],
+        [2, 6, 8], range(-3, -1), range(28, 32), range(1, 3),
+    ]
+    val0, val1, val2, val3, val4, val5, val6, val7, val8 = [&apos;{{}}&apos;.format(precision_format).format(pick_from(x)) for x in ranges]
+    val9 = &apos;{{}}&apos;.format(precision_format).format(float(val8) + float(val2))
+    
+    test2_vals = [val3, val2]
+    test3_vals = [val1, val4]
+    if scenario == &apos;psf&apos;:
+        test3_vals = [val4, val1] if &apos;sqrt({}&apos;.format(var1) in solution else [val0, val5]
+    if scenario == &apos;f_pp&apos;:
+        test3_vals = [val6, val3] if &apos;-&apos; in solution else [val6, val0]
+    if scenario == &apos;s_pp&apos;:
+        if &apos;{}, 4&apos;.format(var1) in solution:
+            test3_vals = [val0, val2]
+        if &apos;{}, 4&apos;.format(var2) in solution:
+            test2_vals = [val2, val3]
+            test3_vals = [val2, val0]
+    if scenario == &apos;sfp&apos;:
+        test3_vals = [val0, val4] if &apos;-&apos; in solution else [val4, val0]
+    if scenario == &apos;s_ff&apos;:
+        if &apos;{}) -&apos;.format(var2) in solution:
+            test2_vals = [val2, val3]
+        if &apos;{}) -&apos;.format(var1) in solution:   
+            test3_vals = [val4, val1]
+    if scenario == &apos;s_pf&apos;:
+        if &apos;{}, 3) -&apos;.format(var2) in solution:
+            test2_vals = [val2, val3]
+        if &apos;abs({}&apos;.format(var2) in solution:
+            test3_vals = [val4, val1]
+            
+    test_values = {
+        &apos;psf&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;f_pp&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;pff&apos;: {&apos;test2&apos;: [val9, val1], &apos;test3&apos;: [val6, val2]},
+        &apos;s_pp&apos;: {&apos;test2&apos;: test2_vals, &apos;test3&apos;: test3_vals},
+        &apos;spf&apos;: {&apos;test2&apos;: [val3, val4], &apos;test3&apos;: [val0, val2]},
+        &apos;sfp&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: test3_vals},
+        &apos;s_ff&apos;: {&apos;test2&apos;: test2_vals, &apos;test3&apos;: test3_vals},
+        &apos;s_pf&apos;: {&apos;test2&apos;: test2_vals, &apos;test3&apos;: test3_vals},
+        &apos;s_fp&apos;: {&apos;test2&apos;: [val7, val8], &apos;test3&apos;: [val0, val8]},
+        &apos;p_ss&apos;: {&apos;test2&apos;: [val3, val2], &apos;test3&apos;: [val8, val4]},
+    }
+
+    return {
+        &apos;test2&apos;: &apos;{} {}&apos;.format(*test_values[scenario][&apos;test2&apos;]),
+        &apos;test3&apos;: &apos;{} {}&apos;.format(*test_values[scenario][&apos;test3&apos;]),
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_input}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li></levels></zyOptions></zyTool>
+
+</zyVersion>
+
+
+<zypInfo person="Vanessa/Kevin" date="7/15/18"> Changed magic numbers to input. </zypInfo>
+<zypInfo person="Susan" date="7/25/18"> Updated var declaration so they all appear at top.</zypInfo>
+<zypInfo person="Aubrey" date="04/23/20"> bug report for output precision issue </zypInfo>
+<zyVersion version="java">
+<!--<zyHomeworkProblem id="bb838941-ef3b-5b5d-1073-a247c8ab00d6" language="java" caption="Using math <!--function-->methods to calculate the distance between two points." author="SL/FV/RL/FG">
+<zyInstructions>
+Determine the distance between point (x1, y1) and point (x2, y2), and assign the result to pointsDistance.  The calculation is: 
+<br /><br />
+\(Distance = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}\)<br /><br />
+Ex: For points  (1.0, 2.0) and (1.0, 5.0),  pointsDistance is 3.0.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 1.0 2.0 1.0 5.0, and then with the inputs -5.0 -2.0 -5.0 -9.0. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+1.0 2.0 1.0 5.0
+<!--2.0 2.0 2.5 3.5-->
+-5.0 -2.0 -5.0 -9.0
+</zyInput>
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class CoordinateGeometry {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      double x1;
+      double y1;
+      double x2;
+      double y2;
+      double pointsDistance;
+      double xDist;
+      double yDist;
+
+      pointsDistance = 0.0;
+      xDist = 0.0;
+      yDist = 0.0;
+
+      x1 = scnr.nextDouble();
+      y1 = scnr.nextDouble();
+      x2 = scnr.nextDouble();
+      y2 = scnr.nextDouble();
+   
+      <STUDENT CODE>
+      System.out.println(pointsDistance);
+   }
+}
+</zyStudentProgram>
+ 
+
+<zySolution>
+xDist = Math.pow((x2 - x1), 2);
+yDist = Math.pow((y2 - y1), 2);
+pointsDistance = Math.sqrt(xDist + yDist);
+</zySolution>
+
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   Scanner scnr = new Scanner(System.in);
+   double x1;
+   double y1;
+   double x2;
+   double y2;
+   double pointsDistance;
+   double xDist;
+   double yDist;
+
+   pointsDistance = 0.0;
+   xDist = 0.0;
+   yDist = 0.0;
+
+   x1 = scnr.nextDouble();
+   y1 = scnr.nextDouble();
+   x2 = scnr.nextDouble();
+   y2 = scnr.nextDouble();
+   
+   { <STUDENT CODE> }
+   zyAssertDoubleValue(3.000000, pointsDistance, 0.001,
+                       "Testing with (1.0, 2.0) and (1.0, 5.0)", 
+                       false, false);
+  
+   x1 = scnr.nextDouble();
+   y1 = scnr.nextDouble();
+   x2 = scnr.nextDouble();
+   y2 = scnr.nextDouble();
+   { <STUDENT CODE> }
+   zyAssertDoubleValue(<!--1.581139-->7.000000, pointsDistance, 0.001,
+                       "Testing with <!--(2.0, 2.0)-->(-5.0, -2.0) and <!--(2.5, 3.5)-->(-5.0, -9.0)", false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+</zyVersion>
+
+</zySection>

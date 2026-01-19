@@ -1,0 +1,58 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='9683169e-ffc5-4f09-b084-628fc2920705'>
+<instructions>
+A program that has source-code available for download and edit is _____.
+</instructions>
+
+<choices>
+<choice>expensive</choice>
+<choice>backward compatible</choice>
+<choice correct='true'>open source</choice>
+<choice>proprietary</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='9d5c9220-2d77-4c15-b30c-5ccf088283c4'>
+<instructions>
+The _____ executes code written in the Python programming language.
+</instructions>
+
+<choices>
+<choice>IDE</choice>
+<choice>Jupyter notebook</choice>
+<choice>program</choice>
+<choice correct='true'>Python interpreter</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='104bd249-7bae-49f2-bbbe-eb15e8a08db9'>
+<instructions>
+In the code below, <code>data</code> is an example of a/an _____.
+<p></p>
+<codeBlock language='python'>
+scatterplot(data=hawks, x="wingLength", y="weight")
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>argument</choice>
+<choice>function</choice>
+<choice correct='true'>parameter</choice>
+<choice>return</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='73110c08-3c88-4993-b15c-024f7c6b53c8'>
+<instructions>
+
+
+Jupyter is convenient for testing, presenting, and sharing code, because ______ contain code, output, and text all in one place.
+</instructions>
+
+<choices>
+<choice>documents</choice>
+<choice correct='true'>notebooks</choice>
+<choice>scripts</choice>
+<choice>web pages</choice>
+</choices>
+</question>

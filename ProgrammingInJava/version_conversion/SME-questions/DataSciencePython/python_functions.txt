@@ -1,0 +1,111 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='9a9fd2c7-87ad-42d7-b3ff-4972def5c1a6'>
+<instructions>
+Python  code that includes the keyword <code>def</code> is called a _____.
+</instructions>
+
+
+<choices>
+<choice>function call</choice>
+<choice>function constructor</choice>
+<choice correct='true'>function definition</choice>
+<choice>function reference</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='8d75cdad-9942-4c9a-aef1-9c3e21154688'>
+<instructions>
+<line>Which correctly calls the add() function?</line>
+<codeBlock language='python'>
+def add(a, b, c):
+    return a + b + c
+</codeBlock>
+
+</instructions>
+
+<choices>
+<choice><code>add(2 4 6)</code></choice>
+<choice><code>add(2 + 4 + 6)</code></choice>
+<choice><code>add(2; 4; 6)</code></choice>
+<choice correct='true'><code>add(2, 4, 6)</code></choice>
+</choices>
+</question>
+
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='2da594e6-6d7c-46f6-a287-52d363049b66'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+LB_PER_KG = 2.2
+
+
+def kgs_to_lbs(kilograms):
+    pounds = kilograms * LB_PER_KG
+    return pounds
+
+pounds = kgs_to_lbs(10)
+print(pounds)
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>22.0</choice>
+<choice>No output: LB_PER_KG causes an error due to being outside any function</choice>
+<choice>No output: LB_PER_KG must be declared within kgs_to_lbs()</choice>
+<choice>No output: Pounds declared in two functions causes an error</choice>
+</choices>
+</question>
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='4ff7d09f-9d2b-4ef2-beed-b63ecfc62ef0'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+def print_app(app_id, plan="basic", term="30"):
+   print("App: " + app_id)
+   print(plan + " plan")
+   print(term + " days")
+print_app("10032", term="14")
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'><codeBlock language='text'>App: 10032
+basic plan
+14 days</codeBlock>
+</choice>
+<choice><codeBlock language='text'>App: 10032
+basic plan
+30 days</codeBlock></choice>
+<choice><codeBlock language='text'>App: 10032
+ plan
+14 days</codeBlock></choice>
+<choice>No output: the function call produces an error</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='68129a6c-4319-4816-931e-87e5e1482407'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+def modify(names, score):
+	names.append("Montana")
+	score = score + 20
+
+players = ["Bailey", "Taylor", "Riley"]
+score = 150
+modify(players, score)
+print(players, score)
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>["Bailey", "Taylor", "Riley"] 150</choice>
+<choice>["Bailey", "Taylor", "Riley"] 170</choice>
+<choice correct='true'>["Bailey", "Taylor", "Riley", "Montana"] 150</choice>
+<choice>["Bailey", "Taylor", "Riley", "Montana"] 170</choice>
+</choices>
+</question>

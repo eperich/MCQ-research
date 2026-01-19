@@ -1,0 +1,248 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,5,0,0
+2,5,0,0
+3,5,0,0
+4,5,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,3,2,25
+1,3,1,1,25
+1,4,0,2,25
+2,3,1,0,25
+2,4,0,2,25
+3,4,0,0,25
+
+Summary
+Total Comparisons,190
+Duplicates (≥85%),5
+Similar (70-85%),7
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.943,duplicate
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.892,duplicate
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q1,What is the main use of the matplotlib package?,2,1,0.86,duplicate
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.86,duplicate
+q1,What is the main use of the matplotlib package?,2,1,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.858,duplicate
+q2,Which pyplot function creates a new figure for plotting?,1,2,q2,Which function creates a new figure in matplotlib?,2,2,0.827,similar
+q2,Which pyplot function creates a new figure for plotting?,1,2,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.814,similar
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.785,similar
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q5,"To add vertical grid lines only, which code is correct?",4,5,0.762,similar
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.739,similar
+q2,Which function creates a new figure in matplotlib?,2,2,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.726,similar
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q5,The plt.grid() function is used to _____.,2,5,0.716,similar
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.698,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.69,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.65,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.648,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.648,low
+q2,Which function creates a new figure in matplotlib?,2,2,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.631,low
+q5,The plt.grid() function is used to _____.,2,5,q5,"To add vertical grid lines only, which code is correct?",4,5,0.629,low
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.612,low
+q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.582,low
+q5,The plt.grid() function is used to _____.,2,5,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.58,low
+q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.58,low
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.573,low
+q2,Which function creates a new figure in matplotlib?,2,2,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.569,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.569,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.565,low
+q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.551,low
+q2,Which function creates a new figure in matplotlib?,2,2,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.548,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.547,low
+q2,Which function creates a new figure in matplotlib?,2,2,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.542,low
+q5,The plt.grid() function is used to _____.,2,5,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.54,low
+q2,Which function creates a new figure in matplotlib?,2,2,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.532,low
+q2,Which function creates a new figure in matplotlib?,2,2,q5,The plt.grid() function is used to _____.,2,5,0.532,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.53,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q5,The plt.grid() function is used to _____.,2,5,0.523,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.522,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q5,"To add vertical grid lines only, which code is correct?",4,5,0.522,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.518,low
+q2,Which function creates a new figure in matplotlib?,2,2,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.517,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q2,Which function creates a new figure in matplotlib?,2,2,0.508,low
+q5,The plt.grid() function is used to _____.,2,5,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.507,low
+q5,The plt.grid() function is used to _____.,2,5,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.496,low
+q5,The plt.grid() function is used to _____.,2,5,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.494,low
+q1,What is the main use of the matplotlib package?,2,1,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.49,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.489,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.489,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.482,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.476,low
+q2,Which function creates a new figure in matplotlib?,2,2,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.476,low
+q1,What is the main use of the matplotlib package?,2,1,q5,The plt.grid() function is used to _____.,2,5,0.47,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.469,low
+q2,Which function creates a new figure in matplotlib?,2,2,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.467,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.466,low
+q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.466,low
+q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,q5,"To add vertical grid lines only, which code is correct?",4,5,0.464,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q5,The plt.grid() function is used to _____.,2,5,0.463,low
+q5,The plt.grid() function is used to _____.,2,5,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.459,low
+q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.459,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.458,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q5,"To add vertical grid lines only, which code is correct?",4,5,0.456,low
+q1,What is the main use of the matplotlib package?,2,1,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.455,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.455,low
+q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,q5,"To add vertical grid lines only, which code is correct?",4,5,0.455,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.454,low
+q1,What is the main use of the matplotlib package?,2,1,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.453,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.451,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.45,low
+q5,The plt.grid() function is used to _____.,2,5,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.449,low
+q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,q5,"To add vertical grid lines only, which code is correct?",4,5,0.449,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.448,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.447,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.447,low
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.447,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.446,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.445,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.445,low
+q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,q5,"To add vertical grid lines only, which code is correct?",4,5,0.441,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.44,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q5,"To add vertical grid lines only, which code is correct?",4,5,0.439,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q5,The plt.grid() function is used to _____.,2,5,0.436,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.435,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.434,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.43,low
+q5,The plt.grid() function is used to _____.,2,5,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.426,low
+q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.425,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.424,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.423,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.421,low
+q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.419,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.418,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.418,low
+q1,What is the main use of the matplotlib package?,2,1,q2,Which function creates a new figure in matplotlib?,2,2,0.416,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q2,Which function creates a new figure in matplotlib?,2,2,0.415,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.414,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.414,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q5,"To add vertical grid lines only, which code is correct?",4,5,0.413,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.413,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.412,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.411,low
+q2,Which function creates a new figure in matplotlib?,2,2,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.41,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,0.409,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.409,low
+q5,The plt.grid() function is used to _____.,2,5,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.409,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q5,The plt.grid() function is used to _____.,2,5,0.408,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.408,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.407,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q5,"To add vertical grid lines only, which code is correct?",4,5,0.407,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q2,Which function creates a new figure in matplotlib?,2,2,0.406,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.406,low
+q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.406,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q5,The plt.grid() function is used to _____.,2,5,0.405,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.404,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.403,low
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.402,low
+q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,q5,"To add vertical grid lines only, which code is correct?",4,5,0.401,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.4,low
+q2,Which function creates a new figure in matplotlib?,2,2,q5,"To add vertical grid lines only, which code is correct?",4,5,0.399,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.399,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.398,low
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,q5,"To add vertical grid lines only, which code is correct?",4,5,0.397,low
+q1,What is the main use of the matplotlib package?,2,1,q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,5,0.396,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q5,"To add vertical grid lines only, which code is correct?",4,5,0.394,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q5,The plt.grid() function is used to _____.,2,5,0.393,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.393,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.393,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.388,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q5,The plt.grid() function by default adds grid lines to which axes?,1,5,0.387,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.386,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q2,Which pyplot function creates a new figure for plotting?,1,2,0.385,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.384,low
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.384,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.383,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.381,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.381,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.378,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.378,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.378,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q3,When should plt.figure() be explicitly called in matplotlib code?,3,3,0.377,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.377,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,0.376,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q1,What is the main use of the matplotlib package?,2,1,0.376,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q5,"To add vertical grid lines only, which code is correct?",4,5,0.376,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q5,The plt.grid() function by default adds grid lines to which axes?,1,5,0.373,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q1,What is the main use of the matplotlib package?,2,1,0.373,low
+q1,What is the main use of the matplotlib package?,2,1,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.372,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.371,low
+q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.371,low
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.37,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.369,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q5,"To add vertical grid lines only, which code is correct?",4,5,0.367,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q5,"To add vertical grid lines only, which code is correct?",4,5,0.367,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.365,low
+q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.364,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.363,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.361,low
+q5,The plt.grid() function by default adds grid lines to which axes?,1,5,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.36,low
+q1,What is the main use of the matplotlib package?,2,1,q5,"To add vertical grid lines only, which code is correct?",4,5,0.36,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q5,The plt.grid() function by default adds grid lines to which axes?,1,5,0.358,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.358,low
+q1,What is the main use of the matplotlib package?,2,1,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.353,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.345,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.345,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.343,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q5,The plt.grid() function by default adds grid lines to which axes?,1,5,0.342,low
+q1,What is the main use of the matplotlib package?,2,1,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.341,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q1,What is the main use of the matplotlib package?,2,1,0.34,low
+q2,Which function creates a new figure in matplotlib?,2,2,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.338,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.337,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,2,0.337,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.331,low
+q1,What is the main purpose of the matplotlib package in Python?,3,1,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.329,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,0.328,low
+q1,What is the main use of the matplotlib package?,2,1,q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,3,0.327,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q2,Which function creates a new figure in matplotlib?,2,2,0.323,low
+q1,What is the main use of the matplotlib package?,2,1,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.321,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,1,0.32,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,0.312,low
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,4,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.312,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,4,0.3,low
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.298,low
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.29,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q4,How can a red dashed line be specified in a matplotlib plot command?,2,4,0.285,low
+q1,What is the main use of the matplotlib package?,2,1,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.283,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q3,Which of the following code adds a legend at the lower right corner of a plot?,2,3,0.278,low
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,q2,Which function is necessary to display a figure in a Python script or terminal?,4,2,0.269,low
+q2,Which pyplot function creates a new figure for plotting?,1,2,q3,How can a dashed red line be specified in a matplotlib plot format string?,1,3,0.268,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q1,What is the main purpose of the matplotlib package in Python?,3,1,0.262,low
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,q1,What is the main use of the matplotlib package?,2,1,0.261,low
+q1,What is the main purpose of the matplotlib package in Python?,1,1,q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,4,0.237,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Create line and scatter plots using matplotlib's pyplot library.  
+Add axis labels, titles, legends, and annotations to plots.  
+Customize plot styles including colors, line styles, and markers.  
+Add and configure grid lines on plots.  
+Create multiple subplots within a single figure and add a figure-level title."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the main purpose of the matplotlib package in Python?,1,yes,"This question assesses understanding of matplotlib's purpose, foundational to creating plots as per the first learning objective."
+q2,Which pyplot function creates a new figure for plotting?,1,yes,"This question evaluates knowledge of creating new figures using pyplot, directly related to creating plots and subplots."
+q3,How can a dashed red line be specified in a matplotlib plot format string?,1,yes,"This question tests customization of plot styles including line styles and colors, matching the third learning objective."
+q4,"To add a legend at the lower right corner of a figure, which parameter is used in plt.legend()?",1,yes,"This question assesses adding and positioning legends, which aligns with the second learning objective."
+q5,The plt.grid() function by default adds grid lines to which axes?,1,yes,"This question evaluates adding and configuring grid lines on plots, directly matching the fourth learning objective."
+q1,What is the main use of the matplotlib package?,2,yes,"This question assesses understanding of matplotlib's purpose in creating plots, foundational to the first learning objective."
+q2,Which function creates a new figure in matplotlib?,2,yes,"This question tests knowledge of creating new figures, related to creating plots and subplots."
+q3,Which of the following code adds a legend at the lower right corner of a plot?,2,yes,"This question evaluates adding legends with location parameters, aligning with the second learning objective."
+q4,How can a red dashed line be specified in a matplotlib plot command?,2,yes,"This question assesses specifying line styles and colors, matching the third learning objective."
+q5,The plt.grid() function is used to _____.,2,yes,"This question tests knowledge of the plt.grid() function for adding grid lines, directly related to the fourth learning objective."
+q1,What is the main purpose of the matplotlib package in Python?,3,yes,"This question assesses understanding of matplotlib's purpose for data visualization, foundational to the first learning objective."
+q2,Which matplotlib pyplot function is used to display a scatter plot of x and y data?,3,yes,"This question evaluates creating scatter plots using pyplot, directly matching the first learning objective."
+q3,When should plt.figure() be explicitly called in matplotlib code?,3,yes,"This question tests when to explicitly create a figure, related to managing figures and subplots in the first and fifth learning objectives."
+q4,Which parameter controls the location of the legend in a matplotlib plot?,3,yes,"This question assesses controlling legend location, aligning with the second learning objective."
+q5,"In matplotlib, how does plt.subplot(nrows, ncols, index) affect a figure?",3,yes,"This question evaluates creating multiple subplots within a figure, directly matching the fifth learning objective."
+q1,"What does the <zyICode>plt.scatter(x, y)</zyICode> function create?",4,yes,"This question tests knowledge of the plt.scatter() function for scatter plots, aligned with the first learning objective."
+q2,Which function is necessary to display a figure in a Python script or terminal?,4,yes,"This question assesses displaying figures, which is part of the plotting process in the first learning objective."
+q3,Which parameter changes the size of a figure in <zyICode>matplotlib</zyICode>?,4,yes,"This question evaluates changing figure size, related to figure customization and subplot management in the fifth learning objective."
+q4,"How does <zyICode>plt.legend(loc=""lower right"")</zyICode> affect a plot?",4,yes,"This question tests how to position legends, aligning with the second learning objective."
+q5,"To add vertical grid lines only, which code is correct?",4,yes,"This question assesses configuring grid lines on specific axes, directly related to the fourth learning objective."

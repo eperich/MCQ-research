@@ -1,0 +1,58 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='9f8c7ace-b79b-d14c-d728-3437326a42ec'>
+<instructions>
+Which statement assigns the string variable airport_code with the value JFK?
+</instructions>
+
+<choices>
+<choice correct='true'><codeBlock language='python'>airport_code = "JFK"</codeBlock></choice>
+<choice><codeBlock language='python'>airport_code = JFK</codeBlock></choice>
+<choice><codeBlock language='python'>"JFK" = airport_code</codeBlock></choice>
+<choice><codeBlock language='python'>JFK = "airport_code"</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='a831a54c-f5e1-1df6-f9ef-dd9b6b31d46b'>
+<instructions>
+<line>What is displayed when the following code is executed?</line>
+<codeBlock language='python'>
+empty_string = ""
+print(len(empty_string))
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>"empty"</choice>
+<choice>1</choice>
+<choice correct='true'>0</choice>
+<choice>"0"</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='69842368-ff7b-b49b-a74d-dd4de209686a'>
+<instructions>
+If text_line = "one fish two fish", what is the value of text_line[6]?
+</instructions>
+
+<choices>
+<choice>" "</choice>
+<choice>"h"</choice>
+<choice>"i"</choice>
+<choice correct='true'>"s"</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='9bce42bc-0ba1-8730-4ac1-6ac2fda451a4'>
+<instructions>
+Which of the following statements produces an error? Assume string_1 = "abc" and string_2 = "123".
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>string_2 = string_1</codeBlock></choice>
+<choice><codeBlock language='python'>string_1 = string_2 + "456"</codeBlock></choice>
+<choice><codeBlock language='python'>print(string_1 + string_2)</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>string_1[1] = "B"</codeBlock></choice>
+</choices>
+</question>

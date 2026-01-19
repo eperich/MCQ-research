@@ -1,0 +1,39 @@
+<question xsi:type='MultipleChoiceQuestion' guid='e4583881-a369-dff0-b95e-4623334c9186'>
+<instructions>
+<p>A sequence of instructions that solves a problem is called a(n) _____ . </p>
+</instructions>
+
+<choices>
+<choice>instruction </choice>
+<choice>process </choice>
+<choice correct='true'>algorithm </choice>
+<choice>variable </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='e14e75ab-967b-e2a3-75bb-615e2e0ec67d'>
+<instructions>
+<p>In an instruction like: z = x + y, the symbols x, y, and z are examples of _____.</p>
+</instructions>
+
+<choices>
+<choice> output </choice>
+<choice>visibles </choice>
+<choice correct='true'>variables </choice>
+<choice>instructions </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='6ccbd682-21de-8331-3789-b256e84b4882'>
+<instructions>
+<p>Which is an example of a process?</p>
+</instructions>
+
+<choices>
+<choice> int </choice>
+<choice>y, 10 </choice>
+<choice>15 </choice>
+<choice correct='true'>x + y </choice>
+</choices>
+</question>

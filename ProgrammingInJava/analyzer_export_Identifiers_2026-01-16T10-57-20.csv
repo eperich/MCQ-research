@@ -1,0 +1,9 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+An identifier must start with a/an _____.,"letter, underscore, or dollar sign",digit,special character,"letter, underscore, or dollar sign",space,,,,,,
+"Why can a reserved word like ""int"" not be used as an identifier?",It is part of the programming language syntax,It is too long,It is case insensitive,It is part of the programming language syntax,It contains special characters,,,,,,
+Which symbol is allowed as the first character of a Java identifier?,underscore (_),digit,underscore (_),space,exclamation mark (!),,,,,,
+"Why can't a reserved word like ""int"" be used as an identifier?",It is part of the language syntax,It contains disallowed symbols,It starts with a digit,It is part of the language syntax,It is too long,,,,,,
+Why can a programmer not use a reserved word as an identifier?,Reserved words are part of the language syntax,Reserved words are longer than identifiers,Reserved words are part of the language syntax,Reserved words must start with a digit,Reserved words contain special characters,,,,,,
+An identifier in Java must start with a/an _____.,"letter, underscore, or dollar sign",digit,"letter, underscore, or dollar sign",space,reserved word,,,,,,
+Why can't a programmer use a reserved word as an identifier?,Reserved words are used by the programming language syntax,Reserved words are used by the programming language syntax,Reserved words are too long for identifiers,Reserved words contain special characters like $,Reserved words must start with a digit,,,,,,
+An identifier must start with a/an _____ to be valid in Java.,"letter, underscore, or dollar sign",digit,"letter, underscore, or dollar sign",space,special symbol like !,,,,,,

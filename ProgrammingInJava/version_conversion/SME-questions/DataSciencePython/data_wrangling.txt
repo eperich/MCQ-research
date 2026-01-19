@@ -1,0 +1,90 @@
+<question xsi:type='MultipleChoiceQuestion' guid='a6367444-b8c3-441c-9f1e-57c2f6e7a8a8'>
+<instructions>
+<p>Each instance in a dataset includes the state in which a purchase was made: Alabama, California, Ohio, etc. As part of the data wrangling process, the data scientist transforms each state name into a numeric value between 1 and 50. What step in the data wrangling process is being performed here?</p>
+</instructions>
+
+<choices>
+<choice>Discovery</choice>
+<choice correct='true'>Structuring data</choice>
+<choice>Cleaning data</choice>
+<choice>Enriching data</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='f334bb8a-5020-4d19-95cb-65878da9424b'>
+<instructions>
+<p>The following dataset is from a voluntary survey on politics. Which instance is most likely to be removed as part of the data cleaning process?</p>
+<image width="450" guid="389df9a8-2fa5-4840-9085-f4b409812b08" alt="
+ Party  Economy  Taxes  Foreign  Immigration  Access
+Party  Economy  Taxes  Foreign  Immigration    Access
+0   Dem      NaN    3.0      NaN          8.0     Cable
+1   Dem      3.0    8.0      5.0          2.0     Cable
+2   Rep      8.0    NaN      3.0          3.0       NaN
+3   Ind      2.0    4.0      5.0          2.0  Internet
+4   NaN     10.0    NaN      NaN         10.0       NaN
+5   Rep      6.0    9.0      4.0          6.0      None
+6   Ind      7.0    3.0      7.0          NaN       NaN
+7   Rep      3.0    NaN      2.0          3.0  Internet
+">
+
+</image>
+
+
+</instructions>
+
+<choices>
+<choice>1</choice>
+<choice>3</choice>
+<choice correct='true'>4</choice>
+<choice>6</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='ba7b3bdf-c17a-40e1-aa4f-574cdbe43230'>
+<instructions>
+<p>The Extract, Transform, Load (ETL) process is particularly useful for datasets that ______.</p>
+</instructions>
+
+<choices>
+<choice>have fewer features</choice>
+<choice>need to be enriched</choice>
+<choice>require manual data wrangling</choice>
+<choice correct='true'>are large in volume</choice>
+</choices>
+</question>
+
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='5a5b3916-3ba0-4434-815f-2d061ce8f2e3'>
+<instructions>
+<p>A data scientist is given a dataframe called <code>tips</code> containing several features observed from restaurant patrons. What Python method could be used to create a new dataframe called <code>tips_reg</code> that includes the first 15 instances of only the total bill and tip?</p>
+<image width="450" guid="76cd3034-b749-43d8-bedf-661f0842e25a" alt="
+total_bill   tip     sex smoker   day    time  size
+0         16.99  1.01  Female     No   Sun  Dinner     2
+1         10.34  1.66    Male     No   Sun  Dinner     3
+2         21.01  3.50    Male     No   Sun  Dinner     3
+3         23.68  3.31    Male     No   Sun  Dinner     2
+4         24.59  3.61  Female     No   Sun  Dinner     4
+..          ...   ...     ...    ...   ...     ...   ...
+239       29.03  5.92    Male     No   Sat  Dinner     3
+240       27.18  2.00  Female    Yes   Sat  Dinner     2
+241       22.67  2.00    Male    Yes   Sat  Dinner     2
+242       17.82  1.75    Male     No   Sat  Dinner     2
+243       18.78  3.00  Female     No  Thur  Dinner     2
+">
+
+</image>
+</instructions>
+
+<choices>
+<choice correct='true'><code>tips_reg = tips.loc[0:14,"total_bill": "tip"]</code></choice>
+<choice><code>tips_reg = tips.info[0:14,"total_bill": "tip"]</code></choice>
+<choice><code>tips_reg.loc[0:14,"total_bill": "tip"]</code></choice>
+<choice><code>tips_reg.info[0:14,"total_bill": "tip"]</code></choice>
+</choices>
+</question>

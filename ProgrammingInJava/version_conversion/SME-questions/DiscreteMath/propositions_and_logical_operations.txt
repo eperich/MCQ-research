@@ -1,0 +1,144 @@
+<question xsi:type='MultipleChoiceQuestion' guid='ed839c8e-939f-61ae-19ec-e7b6959eb2b3'>
+<instructions>Select the statement that is <i>not</i> a proposition.</instructions>
+
+<choices>
+<choice><ilatex>5 + 4 = 88</ilatex></choice>
+<choice>It will be sunny tomorrow.</choice>
+<choice correct='true'>Take out the trash.</choice>
+<choice>Chocolate is the best flavor.</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='21233f10-b943-4e47-d3b3-f7466e763b99'>
+<instructions>
+<line><ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{F}</ilatex>, and <ilatex>r = \text{F}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>true</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>p \wedge q</ilatex></choice>
+<choice><ilatex>\neg p</ilatex></choice>
+<choice><ilatex>q\vee r</ilatex></choice>
+<choice correct='true'><ilatex>p \vee r</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='7b65e3e1-90aa-57a0-996d-b8ce0d79fc4e'>
+<instructions>
+<line> <ilatex>p = \text{F}</ilatex>, <ilatex>q = \text{T}</ilatex>, and <ilatex>r = \text{T}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>false</i>. </line>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\neg q</ilatex></choice>
+<choice><ilatex>q \vee r</ilatex></choice>
+<choice><ilatex>q \wedge r</ilatex></choice>
+<choice><ilatex>p\vee r</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='347508ac-947a-dde8-f511-330cf56c9d94'>
+<instructions>
+<p> The propositional variables <ilatex>s</ilatex> and <ilatex>m</ilatex> represent the two propositions: </p>
+<line><ilatex>s{:}</ilatex> It is sunny today. </line>
+<line><ilatex>m{:}</ilatex> I will bring my umbrella.</line>
+<p>Select the logical expression that represents the statement: "Despite the fact that it is sunny today, I will bring my umbrella." </p>
+</instructions>
+
+<choices>
+<choice><ilatex>s</ilatex></choice>
+<choice correct='true'><ilatex>s \wedge m</ilatex></choice>
+<choice><ilatex>s \vee m</ilatex></choice>
+<choice><ilatex>\neg m</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='d64218c1-0fda-4d02-a353-dc0db7247877'>
+<instructions>Select the statement that is <i>not</i> a proposition.</instructions>
+
+<choices>
+<choice>The stock market will crash next month.</choice>
+<choice>January has <ilatex>30</ilatex> days.</choice>
+<choice><ilatex>5 \times 4 = 25</ilatex></choice>
+<choice correct='true'>Is it your birthday today?</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='0a5f12b9-d466-4af4-84ad-7b22219f74a6'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{T}</ilatex>, and <ilatex>r = \text{F}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>false</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\neg r</ilatex></choice>
+<choice><ilatex>p \vee r</ilatex></choice>
+<choice correct='true'><ilatex>q \wedge r</ilatex></choice>
+<choice><ilatex>p\vee q</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='8b19465a-e9c7-4f61-b902-539e7f66ef50'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{F}</ilatex>, and <ilatex>r = \text{F}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>true</i>. </line>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\neg q</ilatex></choice>
+<choice><ilatex>r \vee q</ilatex></choice>
+<choice><ilatex>q \wedge p</ilatex></choice>
+<choice><ilatex>p \wedge r</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='077ffbce-c2fe-4ff1-a828-10ccb57a260b'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{T}</ilatex>. </line>
+<line>Select the correct truth value for the propositions <ilatex>p \vee q</ilatex> and <ilatex>p \oplus q</ilatex>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>p \vee q{:}</ilatex> true, and <ilatex>p \oplus q{:}</ilatex> true</choice>
+<choice correct='true'><ilatex>p \vee q{:}</ilatex> true and, <ilatex>p \oplus q{:}</ilatex> false</choice>
+<choice><ilatex>p \vee q{:}</ilatex> false, and <ilatex>p \oplus q{:}</ilatex> true</choice>
+<choice><ilatex>p \vee q{:}</ilatex> false, and <ilatex>p \oplus q{:}</ilatex> false</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='2bed41cd-216a-4000-91f9-57a3ffa81540'>
+<instructions>
+<p> Under what conditions do the expressions  <ilatex>p \wedge q</ilatex> and <ilatex>\neg p</ilatex> have the same truth value?</p>
+</instructions>
+
+<choices>
+<choice><ilatex>p = q = \text{F}</ilatex></choice>
+<choice><ilatex>p = \text{F}</ilatex>, and <ilatex>q = \text{T}</ilatex></choice>
+<choice correct='true'><ilatex>p = \text{T}</ilatex>, and <ilatex>q = \text{F}</ilatex></choice>
+<choice><ilatex>p = q = \text{T}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='fbc686c6-b710-4482-b01c-78e3f5afc5f5'>
+<instructions>
+<p> Propositions <ilatex>1</ilatex> and <ilatex>2</ilatex> are defined as follows: </p>
+<line>Proposition <ilatex>1{:}~\neg(12 - 3 = 9)</ilatex></line>
+<line>Proposition <ilatex>2{:}~(12 - 3 = 9) \wedge (5 + 2 = 7)</ilatex></line>
+<p>Select the correct truth value for the two propositions. </p>
+</instructions>
+
+<choices>
+<choice>Proposition <ilatex>1{:}</ilatex> false. Proposition <ilatex>2{:}</ilatex> false.</choice>
+<choice>Proposition <ilatex>1{:}</ilatex> true. Proposition <ilatex>2{:}</ilatex> false.</choice>
+<choice correct='true'>Proposition <ilatex>1{:}</ilatex> false. Proposition <ilatex>2{:}</ilatex> true.</choice>
+<choice>Proposition <ilatex>1{:}</ilatex> true. Proposition <ilatex>2{:}</ilatex> true.</choice>
+</choices>
+</question>

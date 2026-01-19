@@ -1,0 +1,36 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+XXX
+plt.scatter(x = xx, y = yy)\n```\n[Image: A scatter plot of 4 points that is twice as tall as wide.]","plt.figure(figsize=[2,4])","plt.figure(figsize=[2,4])","plt.figure(figsize=[4,2])","plt.figure(figsize=[4,4])",plt.figure(figsize=2),,,,,,
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+plt.scatter(x = xx, y = yy)
+XXX\n```\n[Image: A scatter plot of 4 points with the title Title, and axes Horizontal feature and Vertical Feature.]","```python\nplt.xlabel(""Horizontal feature"")
+plt.ylabel(""Vertical feature"")
+plt.title(""Title"")\n```","```python\nplt.xlabel(""Horizontal feature"")
+plt.ylabel(""Vertical feature"")
+plt.title(""Title"")\n```","```python\nplt.xlabel(Horizontal feature)
+plt.ylabel(Vertical feature)
+plt.title(Title)\n```","```python\nplt.xlabel(""Horizontal feature"")
+plt.ylabel(""Vertical feature"")\n```","```python\nplt.ylabel(""Horizontal feature"")
+plt.xlabel(""Vertical feature"")
+plt.title(""Title"")\n```",,,,,,
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+XXX\n```\n[Image: A line plot of four points that is a red solid line.]","`plt.plot(xx, yy, ""r-"")`","`plt.plot(xx, yy, ""r-"")`","`plt.plot(xx, yy, ""r."")`","`plt.plot(xx, yy, ""r--"")`","`plt.plot(xx, yy, ""d"")`",,,,,,
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+xx = np.linspace(-5, 5, num=100)
+
+XXX 1)
+plt.plot(xx, 4*xx-3)
+plt.title(""Linear"")
+
+XXX 2)
+plt.plot(xx, xx*xx-16, 'g')
+plt.title(""Quadratic"")\n```\n[Image: A line plot of four points that is a red solid line.]","plt.subplot(1,2,","plt.subplot(1,2,",subplot(,"plt.subplot(2,1,","plt.subplot(2,",,,,,,
+"\nWhich XXX would generate the following plot?\n```python\nimport matplotlib.pyplot as plt
+XXX\n```\n[Image: A line plot of four points that is a red solid line.]","plt.grid(color=""b"", linestyle=""--"")","plt.grid(color=""b"", linestyle=""--"")","grid(color=""b"", linestyle=""--"")","plt.grid( linestyle=""--"")","plt.grid(color=""b"")",,,,,,

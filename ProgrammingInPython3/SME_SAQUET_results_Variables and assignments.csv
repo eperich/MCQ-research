@@ -1,0 +1,10 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+A _____ is a named item used to hold a value.,variable,constant,number,statement,variable,,,,,,,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhat is the value of y after the following code is executed? Note that the question asks for y, not x.\n```python\nx = 10
+y = x + 2
+x = 12\n```",12,8,10,12,14,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+Which of the following statements has a syntax error? Assume age and years are variables that have already been defined.,```python\nage + 2 = years\n```,```python\nage = years - 2\n```,```python\nage + 2 = years\n```,```python\nage = 17 - 2\n```,```python\nage = -15\n```,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhat is the value of x after the following code is executed?\n```python\nx = 15
+x = x + 1
+x = x * 2
+x = 30 - x\n```",-2,-2,2,15,32,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass

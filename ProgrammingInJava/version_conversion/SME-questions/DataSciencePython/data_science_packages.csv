@@ -1,0 +1,6 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+Which code loads the package\n`seaborn`\nwith the alias\n`sns`\n?,import seaborn as sns,from seaborn import scatterplot,import seaborn as sns,import sns as seaborn,library(seaborn),,,,,,
+Which code loads the function\n`read_csv`\nfrom the package\n`pandas`\n?,`from pandas import read_csv`,`from pandas import read_csv`,`from read_csv import pandas`,`import pandas as read_csv`,`import pandas.read_csv`,,,,,,
+Which best describes the package\n`pandas`\n?,Provides methods and classes for tabular and time-series data,Allows the creation of data visualizations,Includes functions and classes that aid in numerical computation,"Provides algorithms and functions for computing problems that arise in science, engineering and statistics",Provides methods and classes for tabular and time-series data,,,,,,
+Which package allows the creation of data visualizations and works well with\n`pandas`\n?,`seaborn`,`numpy`,`seaborn`,`scipy`,`sklearn`,,,,,,
+"A/An _____ installs, updates, and removes packages.",package manager,dependency,installer,package manager,terminal,,,,,,

@@ -1,0 +1,65 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='7e5b07ac-4528-1a1b-8e6a-bd9c8cf61902'>
+<instructions>
+A _____ is a named item used to hold a value.
+</instructions>
+
+<choices>
+<choice>constant</choice>
+<choice>number</choice>
+<choice>statement</choice>
+<choice correct='true'>variable</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='13bb3610-9937-5a7e-46e0-f04fe663196b'>
+<instructions>
+<line>What is the value of y after the following code is executed? Note that the question asks for y, not x. </line>
+<codeBlock language='python'>
+x = 10
+y = x + 2
+x = 12
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>8</choice>
+<choice>10</choice>
+<choice correct='true'>12</choice>
+<choice>14</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='8b966cbb-972b-9bac-169e-8ec5e3d85b00'>
+<instructions>
+Which of the following statements has a syntax error? Assume age and years are variables that have already been defined.
+</instructions>
+
+<choices>
+<choice><codeBlock language='python'>age = years - 2</codeBlock></choice>
+<choice correct='true'><codeBlock language='python'>age + 2 = years</codeBlock></choice>
+<choice><codeBlock language='python'>age = 17 - 2</codeBlock></choice>
+<choice><codeBlock language='python'>age = -15</codeBlock></choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='a8d88e2c-c163-abc9-87c3-737c86176488'>
+<instructions>
+<line>What is the value of x after the following code is executed?</line>
+<codeBlock language='python'>
+x = 15
+x = x + 1
+x = x * 2
+x = 30 - x
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>-2</choice>
+<choice>2</choice>
+<choice>15</choice>
+<choice>32</choice>
+</choices>
+</question>

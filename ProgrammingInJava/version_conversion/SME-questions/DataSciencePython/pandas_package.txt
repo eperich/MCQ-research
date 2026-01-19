@@ -1,0 +1,337 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='91780d80-ba13-4f4c-bb68-cc19ac60c055'>
+<instructions>
+Which of the following is true of a <code>pandas</code> DataFrame, but not of a <code>numpy</code> array?
+</instructions>
+
+<choices>
+<choice>Dataframes are indexed, ordered, and mutable containers</choice>
+<choice>Dataframes have a shape.</choice>
+<choice>Dataframes may have any number of dimensions.</choice>
+<choice correct='true'>Different dataframe columns may have different types</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='d6ac4998-c8e5-4c86-b695-42335e5ba29b'>
+<instructions>
+<line>Which code would create the following dataframe?</line>
+<image width='227' guid='743756f8-29f4-4e99-b6ef-d2271908a0bc' alt='A table with column labels Name, Age, City and State. The rows are numbered 0 to 3. The first row is Riley, who is 19 and from Dubuque, IA. Next Lex is 25 and from Riverside, CA. Third is Mel, aged 20 and from Hoboken, NJ. Finally is Lynn who is 22 and from Austin, TX. '>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice correct='true'><codeBlock language='python'>
+import pandas as pd
+pd.DataFrame(data = [["Riley", 19, "Dubuque", "IA"],
+                     ["Lex", 25, "Riverside", "CA"],
+                     ["Mel", 20, "Hoboken", "NJ"],
+                     ["Lynn", 22, "Austin", "TX"]],
+             columns = ["Name", "Age", "City", "State"],
+             index = None
+            )
+</codeBlock></choice>
+<choice><codeBlock language='python'>
+import pandas as pd
+pd.DataFrame(data = [["Riley", 19, "Dubuque", "IA"],
+                     ["Lex", 25, "Riverside", "CA"],
+                     ["Mel", 20, "Hoboken", "NJ"],
+                     ["Lynn", 22, "Austin", "TX"]],
+             labels = ["Name", "Age", "City", "State"],
+             index = 0:3
+            )
+</codeBlock></choice>
+<choice><codeBlock language='python'>
+import pandas as pd
+pd.DataFrame(info = [["Riley", 19, "Dubuque", "IA"],
+                     ["Lex", 25, "Riverside", "CA"],
+                     ["Mel", 20, "Hoboken", "NJ"],
+                     ["Lynn", 22, "Austin", "TX"]],
+             columns = ["Name", "Age", "City", "State"],
+             index = 0:3
+            )
+</codeBlock></choice>
+<choice><codeBlock language='python'>
+import pandas as pd
+pd.DataFrame(info = [["Riley", 19, "Dubuque", "IA"],
+                     ["Lex", 25, "Riverside", "CA"],
+                     ["Mel", 20, "Hoboken", "NJ"],
+                     ["Lynn", 22, "Austin", "TX"]],
+             labels = ["Name", "Age", "City", "State"],
+             index = None
+            )
+</codeBlock></choice>
+</choices>
+</question>
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='a443ca53-6bd6-4d99-a5f9-831bcc84c20f'>
+<instructions>
+<p>The DataFrame dat is defined as:</p>
+
+<table class="dbTable">
+
+<row>
+<header></header>
+<header>Name</header>
+<header>Age</header>
+<header>City</header>
+<header>State</header>
+</row>
+
+<row>
+<cell>0</cell>
+<cell>Riley</cell>
+<cell>19</cell>
+<cell>Dubuque</cell>
+<cell>IA</cell>
+</row>
+
+<row>
+<cell>1</cell>
+<cell>Lex</cell>
+<cell>25</cell>
+<cell>Riverside</cell>
+<cell>CA</cell>
+</row>
+
+<row>
+<cell>2</cell>
+<cell>Mel</cell>
+<cell>20</cell>
+<cell>Hoboken</cell>
+<cell>NJ</cell>
+</row>
+
+<row>
+<cell>3</cell>
+<cell>Lynn</cell>
+<cell>22</cell>
+<cell>Austin</cell>
+<cell>TX</cell>
+</row>
+
+
+</table>
+
+<p>Which will return the following?</p>
+
+<table class="dbTable">
+
+<row>
+<header></header>
+<header>Name</header>
+<header>Age</header>
+</row>
+
+
+
+
+<row>
+<cell>1</cell>
+<cell>Lex</cell>
+<cell>25</cell>
+</row>
+
+<row>
+<cell>2</cell>
+<cell>Mel</cell>
+<cell>20</cell>
+</row>
+
+
+</table>
+
+</instructions>
+
+<choices>
+<choice><code>dat.iloc[1:2,0:1]</code></choice>
+<choice correct='true'><code>dat.iloc[1:3,0:2]</code></choice>
+<choice><code>dat.loc[1:2, 0:1]</code></choice>
+<choice><code>dat.loc[2:3, ["Name","Age"]]</code></choice>
+</choices>
+</question>
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='fe8cfbb8-df1c-4310-821c-0dd50cbbbda8'>
+<instructions>
+<p>The DataFrame dat is defined as:</p>
+
+<table class="dbTable">
+
+<row>
+<header></header>
+<header>Name</header>
+<header>Age</header>
+<header>City</header>
+<header>State</header>
+</row>
+
+<row>
+<cell>0</cell>
+<cell>Riley</cell>
+<cell>19</cell>
+<cell>Dubuque</cell>
+<cell>IA</cell>
+</row>
+
+<row>
+<cell>1</cell>
+<cell>Lex</cell>
+<cell>25</cell>
+<cell>Riverside</cell>
+<cell>CA</cell>
+</row>
+
+<row>
+<cell>2</cell>
+<cell>Mel</cell>
+<cell>20</cell>
+<cell>Hoboken</cell>
+<cell>NJ</cell>
+</row>
+
+<row>
+<cell>3</cell>
+<cell>Lynn</cell>
+<cell>22</cell>
+<cell>Austin</cell>
+<cell>TX</cell>
+</row>
+
+
+</table>
+
+<p>Which will return the following?</p>
+
+<table class="dbTable">
+
+<row>
+<header></header>
+<header>Name</header>
+<header>Age</header>
+<header>City</header>
+<header>State</header>
+</row>
+
+<row>
+<cell>0</cell>
+<cell>Riley</cell>
+<cell>19</cell>
+<cell>Dubuque</cell>
+<cell>IA</cell>
+</row>
+
+<row>
+<cell>2</cell>
+<cell>Mel</cell>
+<cell>20</cell>
+<cell>Hoboken</cell>
+<cell>NJ</cell>
+</row>
+
+
+</table>
+
+</instructions>
+
+<choices>
+<choice><code>dat["Age"]&lt;21</code></choice>
+<choice correct='true'><code>dat[dat["Age"]&lt;21]</code></choice>
+<choice><code>dat[dat["Age"]&gt;21]</code></choice>
+<choice><code>dat[dat.iloc[1]&lt;21]</code></choice>
+</choices>
+</question>
+
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='71f1b18c-ee8b-481c-89d3-8876a0346399'>
+<instructions>
+<p>The DataFrame dat is defined as:</p>
+<table class="dbTable">
+
+<row>
+<header></header>
+<header>Name</header>
+<header>Age</header>
+<header>City</header>
+<header>State</header>
+</row>
+
+<row>
+<cell>0</cell>
+<cell>Riley</cell>
+<cell>19</cell>
+<cell>Dubuque</cell>
+<cell>IA</cell>
+</row>
+
+<row>
+<cell>1</cell>
+<cell>Lex</cell>
+<cell>25</cell>
+<cell>Riverside</cell>
+<cell>CA</cell>
+</row>
+
+<row>
+<cell>2</cell>
+<cell>Mel</cell>
+<cell>20</cell>
+<cell>Hoboken</cell>
+<cell>NJ</cell>
+</row>
+
+<row>
+<cell>3</cell>
+<cell>Lynn</cell>
+<cell>22</cell>
+<cell>Austin</cell>
+<cell>TX</cell>
+</row>
+
+
+</table>
+
+
+<p>Which will return the following?</p>
+
+<table class="dbTable">
+
+<row>
+<header></header>
+<header>Name</header>
+<header>State</header>
+</row>
+
+<row>
+<cell>0</cell>
+<cell>Riley</cell>
+<cell>IA</cell>
+</row>
+
+<row>
+<cell>2</cell>
+<cell>Mel</cell>
+<cell>NJ</cell>
+</row>
+
+<row>
+<cell>3</cell>
+<cell>Lynn</cell>
+<cell>TX</cell>
+</row>
+</table>
+</instructions>
+
+
+<choices>
+<choice><code>dat[dat["Age"]&lt;=22,["Name","State"]]</code></choice>
+<choice><code>dat[dat["Age"]&lt;=22]</code></choice>
+<choice><code>dat[dat["Age"]&lt;=22]["Name","State"]</code></choice>
+<choice correct='true'><code>dat[dat["Age"]&lt;=22][["Name","State"]]</code></choice>
+</choices>
+</question>

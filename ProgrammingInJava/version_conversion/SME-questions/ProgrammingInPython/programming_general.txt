@@ -1,0 +1,79 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='74f39c19-6a69-73a5-7639-b7351bcd1657'>
+<instructions>
+Basic instruction types are input, process, and _____.
+</instructions>
+
+<choices>
+<choice correct='true'>output</choice>
+<choice>memory</choice>
+<choice>calculation</choice>
+<choice>assignment</choice>
+</choices>
+</question>
+
+
+
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='07acc27d-d81e-a552-82da-af304c0815c3'>
+<instructions>
+In an instruction like: z = x + y, the symbols x, y, and z are examples of _____.
+</instructions>
+
+<choices>
+<choice>output</choice>
+<choice>visibles</choice>
+<choice correct='true'>variables</choice>
+<choice>instructions</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='bbda121e-ad41-972d-2fbb-e1a379918ba7'>
+<instructions>
+<p>Consider the following program:</p>
+<codeBlock language='python'>
+t = 15
+t = t * 2
+t = t + 1
+t = t - 4
+put t
+</codeBlock>
+<line>What does the program produce as output?</line>
+</instructions>
+
+<choices>
+<choice>11</choice>
+<choice correct='true'>27</choice>
+<choice>12</choice>
+<choice>15</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='8559e3b7-e63e-0242-6dd2-810bcde0ef97'>
+<instructions>
+Which symbol represents the multiplication operation in programming?
+</instructions>
+
+<choices>
+<choice>.</choice>
+<choice correct='true'>*</choice>
+<choice>x</choice>
+<choice>( )</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='25e8743e-9ab0-1215-4c37-3e959b74bad2'>
+<instructions>
+A sequence of instructions that solves a problem is called _____. 
+</instructions>
+
+<choices>
+<choice correct='true'>an algorithm</choice>
+<choice>a process</choice>
+<choice>an allegory</choice>
+<choice>turtle graphics</choice>
+</choices>
+</question>

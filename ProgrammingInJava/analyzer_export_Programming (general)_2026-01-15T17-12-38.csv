@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"A computer program executes instructions of type _____, process, and output.",input,store,input,delete,compile,,,,,,
+"In a program, a variable is used because its value can _____ during execution.",vary,remain constant,be ignored,vary,be encrypted,,,,,,
+Which instruction correctly calculates a triangle's area given base and height variables?,"Multiply base by height, then multiply by 1/2",Multiply base by height and then multiply by 2,"Add base and height, then multiply by 1/2","Multiply base by height, then multiply by 1/2",Divide height by base,,,,,,
+What is the main purpose of variables in a computer program?,To store data values that can change during program execution,To store data values that can change during program execution,To store fixed constants that never change,To execute instructions in a program,To display output on the screen,,,,,,
+Which instruction type performs computations on input data in a program?,Process,Input,Output,Process,Store,,,,,,
+Why is an algorithm important in computational thinking?,It provides a sequence of instructions to solve a problem,It processes output data,It stores variables,It provides a sequence of instructions to solve a problem,It displays a program's results,,,,,,
+Why do computer programs use variables like x and y?,To refer to data that can change during execution,To store fixed values that never change,To perform output operations only,To refer to data that can change during execution,To speed up the computer hardware,,,,,,
+Which instruction type gets data from a user or file in a program?,Input,Process,Input,Output,Store,,,,,,
+A sequence of instructions that solves a problem is called a/an _____.,algorithm,program,variable,algorithm,input,,,,,,
+"Why do computer programs use variables like x, y, and z?",To refer to data whose values can change during execution,To store fixed values that never change,To execute instructions faster,To refer to data whose values can change during execution,To make programs run on multiple devices,,,,,,
+Which instruction type in a program obtains data from a user or file?,Input,Output,Process,Input,Loop,,,,,,
+What does the instruction 'z = x + y' do in a program?,Assigns z the sum of x and y,Compares z to x plus y,Assigns z the sum of x and y,Declares z as a variable,Prints the sum of x and y to output,,,,,,

@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nSelect the law that shows that the two propositions are logically equivalent.\n$\neg ((w \vee p ) \wedge (\neg q \wedge q \wedge w))$\n$\neg (w \vee p) \vee \neg ( \neg q \wedge q \wedge w)$,De Morgan’s law,De Morgan’s law,Distributive law,Associative law,Complement law,,,,,,
+\nSelect the law that shows that the two propositions are logically equivalent.\n$(\neg p \wedge (r \vee \neg q)) \vee  ( \neg p \wedge w)$\n$\neg p \wedge ((r \vee \neg q) \vee w)$,Distributive law,De Morgan’s law,Distributive law,Associative law,Commutative law,,,,,,
+\nSelect the law that shows that the two propositions are logically equivalent.\n$r \wedge (p \vee q)$\n$r \wedge (q \vee p)$,Commutative law,De Morgan’s law,Distributive law,Associative law,Commutative law,,,,,,
+\nSelect the law that shows that the two propositions are logically equivalent.\n$(r \wedge p) \vee (\neg p \wedge q)$\n$((r \wedge p) \vee \neg p ) \wedge ((r \wedge p)\vee q)$,Distributive law,De Morgan’s law,Distributive law,Associative law,Commutative law,,,,,,
+\nSelect the law that shows that the two propositions are logically equivalent.\n$(r \vee q) \vee ((r \vee q) \wedge p)$\n$r \vee q$,Absorption law,Idempotent law,Absorption law,Identity  law,Domination  law,,,,,,
+\nSelect the law which shows that the two propositions are logically equivalent.\n$(r \vee q) \wedge (\neg p \wedge \neg q)$\n$(r \vee q) \wedge \neg (p \vee q)$,De Morgan’s law,De Morgan’s law,Distributive law,Associative law,Commutative law,,,,,,
+Which logical equivalence is an example of the Distributive law?,$(p \vee \neg q) \wedge (p \vee \neg r) \equiv p \vee (\neg q \wedge \neg r)$,$(p \vee \neg q) \wedge (p \vee \neg r) \equiv p \vee (\neg q \wedge \neg r)$,$(p \wedge \neg q) \vee (p \vee \neg r) \equiv ((p \wedge \neg q) \vee p ) \vee \neg r$,$(p \vee \neg q) \wedge (p \vee \neg r) \equiv (\neg \neg p \vee \neg q) \wedge (p \vee \neg r)$,$(p \vee \neg q) \wedge (p \vee \neg r) \equiv (p \vee \neg r) \wedge  (p \vee \neg q)$,,,,,,
+"\nThe table below shows a proof that\n$ q \vee p \equiv \neg q \rightarrow p$\n. Select the proposition that replaces the (x)\n$ q \vee p$
+
+(x)\nDouble negation law
+
+$ \neg q \rightarrow p$\nConditional identity",$ \neg \neg q \vee p$,$ \neg \neg q \vee p$,$q \vee \neg \neg  p$,$\neg \neg (q \vee p)$,$\neg q \vee  \neg  p$,,,,,,

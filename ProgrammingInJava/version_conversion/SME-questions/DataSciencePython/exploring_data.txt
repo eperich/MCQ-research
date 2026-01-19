@@ -1,0 +1,166 @@
+<question xsi:type='MultipleChoiceQuestion' guid='e9d1b23a-0285-4214-8299-e9a689789fc3'>
+<instructions>
+A voluntary survey on politics asked voters to identify as Democrats, Independents, or Republicans. How many survey takers identified as Independent?
+
+
+<table>
+<row>
+<cell>Party</cell><cell>Number of respondents</cell>
+</row>
+<row>
+<cell>Democrat</cell><cell>2</cell>
+</row>
+<row>
+<cell>Independent</cell><cell>4</cell>
+</row>
+<row>
+<cell>Republican</cell><cell>3</cell>
+</row>
+<row>
+<cell>Did not respond</cell><cell>1</cell>
+</row>
+</table>
+
+</instructions>
+
+<choices>
+<choice>1</choice>
+<choice>2</choice>
+<choice>3</choice>
+<choice correct='true'>4</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='3e66f630-278a-4a6f-a66a-2d6c48994b35'>
+<instructions>
+A voluntary survey on politics asked voters to identify as Democrats, Independents, or Republicans. What type of table is shown below?
+
+
+<table>
+<row>
+<cell>Party</cell><cell>Number of respondents</cell>
+</row>
+<row>
+<cell>Democrat</cell><cell>2</cell>
+</row>
+<row>
+<cell>Independent</cell><cell>4</cell>
+</row>
+<row>
+<cell>Republican</cell><cell>3</cell>
+</row>
+<row>
+<cell>Did not respond</cell><cell>1</cell>
+</row>
+</table>
+
+</instructions>
+
+<choices>
+<choice>contingency table</choice>
+<choice>count table</choice>
+<choice correct='true'>frequency table</choice>
+<choice>pivot table</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='47251262-2f87-4596-90f5-065ad9909557'>
+<instructions>
+A European bank wanted to understand customer banking habits. The table contains the mean number of years a customer has had an account at the bank, by country and gender.
+What is the mean number of years an account has been active for women in Spain?
+
+<table>
+<row>
+<cell>Mean account years</cell><cell>France</cell><cell>Germany</cell><cell>Spain</cell>
+</row>
+<row>
+<cell>Female</cell><cell>4.95</cell><cell>4.97</cell><cell>5.03</cell>
+</row>
+<row>
+<cell>Male</cell><cell>5.12</cell><cell>4.83</cell><cell>5.06</cell>
+</row>
+</table>
+
+</instructions>
+
+<choices>
+<choice>4.83</choice>
+<choice>4.97</choice>
+<choice correct='true'>5.03</choice>
+<choice>5.06</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='271ff13b-a01e-4d3b-af98-e1099edf6dbd'>
+<instructions>
+A European bank wanted to understand customer banking habits. The table contains the mean number of years a customer has had an account at the bank, by country and gender. What type of table is shown below?
+
+<table>
+<row>
+<cell>Mean account years</cell><cell>France</cell><cell>Germany</cell><cell>Spain</cell>
+</row>
+<row>
+<cell>Female</cell><cell>4.95</cell><cell>4.97</cell><cell>5.03</cell>
+</row>
+<row>
+<cell>Male</cell><cell>5.12</cell><cell>4.83</cell><cell>5.06</cell>
+</row>
+</table>
+
+</instructions>
+
+<choices>
+<choice>contingency table</choice>
+<choice>count table</choice>
+<choice>frequency table</choice>
+<choice correct='true'>pivot table</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='881f3701-a9fc-44a4-82c1-f0cce5519200'>
+<instructions>
+A European bank wanted to understand customer banking habits. The table contains the mean number of customers at each bank's branch, by country and gender. What type of table is shown below?
+
+<table>
+<row>
+<cell>Number of customers</cell><cell>France</cell><cell>Germany</cell><cell>Spain</cell>
+</row>
+<row>
+<cell>Female</cell><cell>2261</cell><cell>1193</cell><cell>1089</cell>
+</row>
+<row>
+<cell>Male</cell><cell>2753</cell><cell>1316</cell><cell>1388</cell>
+</row>
+</table>
+
+</instructions>
+
+<choices>
+<choice correct='true'>contingency table</choice>
+<choice>count table</choice>
+<choice>frequency table</choice>
+<choice>pivot table</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='81388f93-bcac-4ace-ba70-58ec6266c463'>
+<instructions>
+What Python function could be used to create a contingency table?</instructions>
+
+<choices>
+<choice>
+<code>contingency_table</code>
+</choice>
+<choice>
+<code>count_table</code>
+</choice>
+<choice>
+<code>table</code>
+</choice>
+<choice correct='true'>
+<code>pivot_table</code>
+</choice>
+</choices>
+</question>

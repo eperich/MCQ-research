@@ -1,0 +1,2070 @@
+<zySection title="Strings" shorttitle="Strings" id="4b419c64-1801-93b3-8f3b-c5358e6abaa4">
+<zypInfo person="Roman" date="02/14/14"> Completed review. Still need to introduce the concept of a null character.</zypInfo>
+<zypInfo person="Adrian" date="02/23/14"> Completed Java content review.</zypInfo>
+<zypInfo person="Alex" date="03/20/14" hwStatus="1" status="1"> Ready for first review, including introducing concept of null character and HW problem converted to C and Java </zypInfo>
+<zypInfo person="Susan" date="4/12/14" Status="2">First review done. (There is a comment about hardocded ids. fixed fixme to talk about null char. added question 2 in QS 2.12.5 for null char. fixed fixme to add zytry (12.12.1-3)).</zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="Draft1Doing"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/11/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/11/14" minutes="" hwStatusCpp ="Rev1Done">FUTURE: Add another problem to this section.</zypInfo> 
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Adrian" date="01/26/15" minutes="" hwStatusCpp ="Rev2Done">Fixing bug on resource ID 689023.</zypInfo> 
+<zypInfo person="Roman" date="11/09/15" minutes="" status ="Rev2Done">Revising text on assigning strings and QS from bug reported by instructor.</zypInfo> 
+<zypInfo person="Roman" date="02/27/16" minutes="60" status ="Draft2Done">Added example reading a character using charAt(0).</zypInfo> 
+<zypInfo person="Susan" date="02/27/16" minutes="5" status ="Rev2Done">Reviewed new reading char example</zypInfo> 
+<zypInfo person="Susan" date="06/15/17" minutes="60" status ="Rev2Done">Made style pass for fall 2017. Also updated old style hints.</zypInfo> 
+<zypInfo person="Frank" date="06/24/17" minutes="180" status ="Draft1Doing">Revising...</zypInfo>
+<zypInfo person="Frank" date="06/25/17" minutes="180" status ="Draft1Done">Major rewrite. Needs better challenge activities. </zypInfo> 
+ <zypInfo person="Susan" date="7/24/17" minutes="140" status="Rev1Done">Converting to C and Java as needed. </zypInfo>
+ <zypInfo person="Susan" date="7/24/17" minutes="120" status="Rev1Done">Reviewed updated section. </zypInfo>
+<zypInfo person="Amanda" date="7/31/17" minutes="180" status="Rev2Doing">Suggested typos. </zypInfo>
+<zypInfo person="Susan" date="08/01/17" minutes="30" status="Rev2Done">Addressing comments </zypInfo>
+<zypInfo person="Aubrey" date="11/05/20" minutes="30">non-bug feedback</zypInfo>
+<zypInfo person="Aubrey" date="08/16/21" minutes="30" status="Rev2Done">removed leaving in whitespace comment for input </zypInfo>
+<zypInfo person="Joshua" date="11/06/22" minutes="90" status="Rev2Done">Added alt text</zypInfo>
+<zypInfo person="Nisreen" date="1/17/22" minutes="15" status="Rev2Done">Converted C++ alt text to Java</zypInfo>
+<zypInfo person="LukeM" date="10/6/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<zyAside type="bordered" name="" id="e4fd68fc-dd3a-4acb-9f05-a2f5300551fa">
+Learn to:
+<zyVersion version="java">
+<ul>
+<li>Declare and initialize string variables.</li> <!-- C: SS1, SS2, CA1 (L2-5), CA2 (L1-4), TB1 --> <!-- Cpp: SS1, SS2, CA1 (L2-7), CA2 (L1-3), TB1 --> <!-- Java: SS1, SS2, CA1 (L2-7), CA2, CA3 (L1-3), TB1 -->
+<li>Identify and differentiate between string literals and other data types like integers and characters.</li> <!-- SS1, SS2 -->
+<li>Implement input and output operations for strings, including handling whitespace and multi-word inputs.</li> <!-- C: SS2, SS3, SS4, SS5, SS6, CA1 (L1-5), CA2 (L1-4), TB2, TB3 --> <!-- Cpp: SS2, SS3, SS4, SS5, SS6, SS7, CA1 (L1-7), CA2 (L1-3), TB2, TB3, TB4 --> <!-- Java: SS2, SS3, SS4, SS5, SS6, SS7, CA1 (L1-7), CA2, CA3 (L1-3), TB2, TB3 -->
+<li>Get string input with or without whitespaces.</li> <!-- C: SS3, SS4, SS5, SS6, CA1 (L5), CA2 (L1, 4), TB3 --> <!-- Cpp: SS3, SS4, SS5, SS6, CA1 (L5-7), CA2 (L1-3), TB2, TB3, TB4 --> <!-- Java: SS3, SS4, SS5, SS6, CA1 (L5-7), CA2, CA3 (L1-3), TB2, TB3 -->
+<li>Analyze and troubleshoot common issues when mixing different string input methods.</li> <!-- Cpp: SS7, CA1 (L7), TB4 --> <!-- Java: SS7, CA1 (L7) -->
+</ul>
+</zyVersion>
+
+</zyAside>
+
+
+<zyHTML id="09303d87-ee16-e8a5-5330-4fbd7ec6fd55" subsection="true" caption="Strings and string literals">
+<h3>Strings and string literals</h3>
+</zyHTML>
+
+
+<zyHTML id="ecd58478-e177-427e-b1a8-ecc0f6802c35">
+<p> <zyDefn>A _string_ is a sequence of characters</zyDefn>. <zyDefn> A _string literal_ surrounds a character sequence with double quotes, as in "Hello", "52 Main St.", or "42"</zyDefn>, vs. an integer literal like 42 or character literal like 'a'. Various characters may be in a string, such as letters, numbers, spaces, or symbols like $ or %, as in "$100 for Julia!!". Earlier sections showed string literals being output, as in: 
+<zyVersion version="java"><zyICode>System.out.print("Hello");</zyICode>.</zyVersion>
+</p> 
+</zyHTML>
+
+
+
+<zyTool name="strToCharSeq" id="230f9254-4cb6-1d5d-a249-6b58351d827b" caption="A string is stored as a sequence of characters in memory.">
+<zyInstructions>Type a string to see how a string is stored as a sequence of characters in memory. In this case, the string happens to be in memory locations 501 to 506. Try typing Hello! or 627.</zyInstructions>
+<zyAltDescription>
+This activity demonstrates how a string is stored as a sequence of characters in memory. Say a string up to 6 characters happens to be allocated to memory locations 501 to 506. If the string is  "Julia", 'J' would be stored in memory location 501, 'u' in 502, 'l' in 503, 'i' in 504, and 'a' in 505, leaving memory location 506 empty.
+</zyAltDescription>
+</zyTool>
+
+
+
+<zyQSetTF caption="String literals. " id="ba3a3483-14bc-4556-b58a-6c6e28f9a569">
+<p>Indicate which items are string literals. </p>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">"Hey"</zyQText>
+<zyQExpl>Consists of characters: H, e, y  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">"Hey there."</zyQText>
+<zyQExpl>A string literal may contain spaces, periods, and other non-letter characters.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="No" truelabel="Yes" falselabel="No">674</zyQText>
+<zyQExpl>A string literal must be surrounded by double quotes.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">"674"</zyQText>
+<zyQExpl>While looking like a number, the double quotes make this a string literal consisting of characters: 6, 7, 4.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="No" truelabel="Yes" falselabel="No">'ok'</zyQText>
+<zyQExpl>A string literal requires double quotes as in "ok", not single quotes as in 'ok'.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">"a"</zyQText>
+<zyQExpl>A string literal may have just one character, but is still considered a string (and not a character).   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="6572bab3-e5c0-3f84-6e93-cff86a7e9874" subsection="true" caption="String variables and assignments">
+<h3>String variables and assignments</h3>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyHTML id="3ad7ecdf-ca1e-4a1d-af17-edcedb867a96">
+<p> Some variables should hold a string.  A programmer declares a string variable similarly to declaring char, int, or double variables, by using the String data type. Note the capital S. </p>
+
+<p> A String variable is a reference type (discussed in depth elsewhere) variable that refers to a String object. <zyDefn>An _object_ consists of some internal data items plus operations that can be performed on that data.</zyDefn> Ex: <zyICode>String movieTitle = "Frozen";</zyICode> declares a String reference variable named movieTitle that refers to a String object. That String object stores the string "Frozen".</p>
+
+<p>A programmer can assign a String variable with a string literal, which creates a new String object. Ex: <zyICode>movieTitle = "The Martian";</zyICode> creates a new String object with the string "The Martian", and assigns the String object's reference to the variable movieTitle.</p>
+
+<p>Assigning one String variable to another String variable causes both variables to refer to the same String, and does not create a new String. Ex: <zyICode>movieTitle = favoriteMovie;</zyICode> assigns favoriteMovie's reference to movieTitle. Both movieTitle and favoriteMovie refer to the same String object. </p>
+
+<p>A programmer can initialize a string variable during declaration, as in <zyICode>String firstMonth = "January";</zyICode>.  </p> 
+</zyHTML>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Declaring and assigning a string." id="7b3b5065-b243-4169-a6aa-a4385f3418c7" type="CodeConsole">
+<zyCode language="java"> 
+public class SentenceFromStrings {
+   public static void main(String[] args) {
+      String sentenceSubject;
+      String sentenceVerb;
+      String sentenceObject = "an apple";
+
+      sentenceSubject = "boy";
+      sentenceVerb = "ate";
+
+      System.out.print("A ");
+      System.out.print(sentenceSubject + " ");
+      System.out.print(sentenceVerb + " ");
+      System.out.println(sentenceObject + ".");
+   }
+}
+</zyCode>
+<zyConsole>
+A boy ate an apple.
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyVersion version="java"> 
+<zyQSetShortAnswer caption="Declaring and assigning a String variable." id="72ac6d97-25d5-413b-a876-b31bcee3c554">
+<zyQ>
+<zyQText>  Declare a string variable userName.    </zyQText>
+<zyQAns  obeycase="true">String userName;</zyQAns>
+<zyQHint><zyICode>String user????;</zyICode></zyQHint>
+<zyQExpl>The compiler creates a String object named userName.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText>  Write a statement that assigns userName with "Sarah".   </zyQText>
+<zyQAns  obeycase="true">userName = "Sarah"; </zyQAns>
+<zyQHint> <zyICode>userName = "?????";</zyICode></zyQHint>
+<zyQExpl>  A new String object with the string "Sarah" is created, and the String object's reference is assigned to userName. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText>  Suppose string str1 is initially "Hello" and str2 is "Hi". <br />
+After <zyICode>str1 = str2;</zyICode>, what is str1? <br />
+Omit the quotes.    </zyQText>
+<zyQAns obeyspace="true" obeycase="true">Hi</zyQAns>
+<zyQHint> str1 will refer to the same String as str2.</zyQHint>
+<zyQExpl> str2's reference to the String object "Hi" is assigned to str1. str1 and str2 both refer to the same String object. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Suppose string str1 is initially "Hello" and str2 is "Hi". <br />
+After <zyICode>str1 = str2;</zyICode> and then <zyICode>str2 = "Bye";</zyICode>, what is str1? <br />
+Omit the quotes.  </zyQText>
+<zyQAns obeyspace="true" obeycase="true">Hi</zyQAns>
+<zyQHint> str2's reference is assigned to str1, so str1 refers to the String object "Hi". A later assignment to str2 either creates a new String or assigns str2 to an existing String object. </zyQHint>
+<zyQExpl>  <zyICode>str1 = str2;</zyICode> assigns the String object str1 with "Hi". Then, <zyICode>str2 = "Bye";</zyICode> creates a new String object "Bye"; the String object "Hi" is not changed.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Type one statement that declares a string named smallestPlanet, initialized with "Mercury".</zyQText>
+<zyQAns obeycase="true" columns="30"> String smallestPlanet = "Mercury"; </zyQAns>
+<zyQHint> <zyICode>String smallestPlanet = "???????";</zyICode>  </zyQHint>
+<zyQExpl> The compiler creates a string capable of storing 7 letters and fills the string's memory locations with M, e, r, c, u, r, y.       </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+</zyVersion>
+
+
+
+<zyHTML id="ecf789e2-7790-9183-54c7-34e6594cae82" subsection="true" caption="Getting a string without spaces from input">
+<h3>Getting a string without whitespaces from input</h3>
+</zyHTML>
+
+
+<zyHTML id="f342c17e-beee-7e25-92c5-978bf41512fe" caption="">
+<p><zyDefn>A _whitespace character_ is a character used to represent horizontal and vertical spaces in text, and includes spaces, tabs, and newline characters.</zyDefn> Ex: "Oh my goodness!" has two whitespace characters, one between h and m, the other between y and g. </p>
+
+<p> Below shows the  basic approach to get a string from input into variable userString. The approach automatically skips initial whitespace, then gets characters until the next whitespace is seen<!-- (leaving that whitespace in the input)-->.  </p>
+
+<p>
+<zyVersion version="java">
+<zyCode>userString = scnr.next();</zyCode>
+</zyVersion>
+</p>
+</zyHTML>
+
+
+
+<zyQSetShortAnswer caption="Getting a string without whitespace from input. " id="e4e53ca8-93f7-4571-852f-c85acd448e53">
+<p>For the given input, indicate what string will be put into userString by:
+<zyVersion version="java">
+<zyCode nobox="true">userString = scnr.next();</zyCode>
+</zyVersion>
+</p>
+
+<zyQ>
+<zyQText>abc</zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">abc</zyQAns>
+<zyQExpl>The characters will be put into userString until the whitespace at the end, so userString will be: abc</zyQExpl>
+<zyQHint>The characters will be put into userString until the whitespace at the end. </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Hi there.</zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">Hi</zyQAns>
+<zyQExpl>H and i will be put into userString. The next character is a whitespace, which is left in the input. </zyQExpl>
+<zyQHint>Only characters up to the first whitespace will be put into userString. </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Hello! I'm tired.</zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">Hello!</zyQAns>
+<zyQExpl>H, e, l, l, o, ! are each non-whitespace characters, so all 6 characters will be put into userString. </zyQExpl>
+<zyQHint>He????</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Very fun. </zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">Very</zyQAns>
+<zyQExpl>The leading whitespace before V is skipped, so the next characters V, e, r, y are put into userString, stopping at the whitespace after the y. </zyQExpl>
+<zyQHint>V???</zyQHint>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+<zyQSetShortAnswer caption="Getting a string without whitespace from input (continued)." id="dcd7e095-2114-9f6c-4a61-5311c7401677">
+<p>For the given input, indicate what string will be put into secondString by:
+
+<zyVersion version="java">
+<zyCode nobox="true">firstString = scnr.next();
+secondString = scnr.next();
+</zyCode>
+</zyVersion>
+</p>
+
+<zyQ>
+<zyQText>Oh my! </zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">my!</zyQAns>
+<zyQExpl>firstString will get "Oh". The secondString will  get the next non-whitespace characters "my!".</zyQExpl>
+<zyQHint> m?? </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Frank<br />
+Sinatra</zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">Sinatra</zyQAns>
+<zyQExpl>firstString will get "Frank", ending at the newline, which is whitespace. The next get first skips that newline, putting "Sinatra" into secondString.</zyQExpl>
+<zyQHint> Sin???? </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Oh...<br />
+<br />
+<br />
+...no!</zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">...no!</zyQAns>
+<zyQExpl>firstString will get "Oh...". The next get first skips the multiple newlines, putting "...no!" into secondString. </zyQExpl>
+<zyQHint> ...n??</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>We all<br />
+know</zyQText>
+<zyQAns obeyspace="true" obeycase="true" lines="1" columns="10">all</zyQAns>
+<zyQExpl>firstString will get "We". The next get skips the space after e, putting "all" into secondString.</zyQExpl>
+<zyQHint> a?? </zyQHint>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+<zyHTML id="6141843e-96ee-8729-2152-ddbd214548ae" subsection="true" caption="Example: Word game">
+<h3>Example: Word game</h3>
+</zyHTML>
+
+
+<zyHTML id="9931cfc8-4059-7a3d-5f5c-8592b434a71e" caption="">
+<p>The following example illustrates getting strings from input and putting strings to output. </p>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Strings example: Word game." id="8d54cf13-31ca-bcd2-be9d-c9878ba3e87a" type="CodeConsole">
+<zyCode language="java"> 
+import java.util.Scanner;
+
+/* A game inspired by "Mad Libs" where user enters nouns,
+   verbs, etc., and then a story using those words is output.
+*/
+
+public class StoryGame {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String wordRelative;
+      String wordFood;
+      String wordAdjective;
+      String wordTimePeriod;
+
+      // Get user's words
+      System.out.println("Provide input without spaces.");
+
+      System.out.println("Enter a kind of relative: ");
+      wordRelative = scnr.next();
+
+      System.out.println("Enter a kind of food: ");
+      wordFood = scnr.next();
+
+      System.out.println("Enter an adjective: ");
+      wordAdjective = scnr.next();
+
+      System.out.println("Enter a time period: ");
+      wordTimePeriod = scnr.next();
+
+      // Tell the story
+      System.out.println();
+      System.out.print  ("My " + wordRelative);
+      System.out.println(" says eating " + wordFood);
+      System.out.println("will make me more " + wordAdjective + ",");
+      System.out.println("so now I eat it every " + wordTimePeriod + ".");
+   }
+}
+</zyCode>
+<zyConsole>
+Provide input without spaces.
+Enter a kind of relative: 
+mother
+Enter a kind of food: 
+apples
+Enter an adjective: 
+loud
+Enter a time period: 
+week
+
+My mother says eating apples
+will make me more loud,
+so now I eat it every week.
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyHTML id="c6fb7441-0736-6945-c284-a8724b59d4b2" subsection="true" caption="Getting a string with whitespace from input">
+<h3>Getting a string with whitespace from input</h3>
+</zyHTML>
+
+
+<zyHTML id="4ebc729d-d267-3336-60db-5540b2c761a6" caption="">
+<p>Sometimes a programmer wishes to get whitespace characters into a string, such as getting a user's input of the name "Franklin D. Roosevelt" into a string variable presidentName.  </p>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyHTML id="4908757f-fee9-4112-a724-b1586d6431d9">
+<p>For such cases, the language supports getting an entire line into a string. <zyDefn>The method _scnr.nextLine()_ gets all remaining text on the current input line, up to the next newline character (which is removed from input but not put in stringVar).</zyDefn> </p> 
+</zyHTML>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption="Getting a string with whitespace from input" id="db57b5b7-7ca1-4e56-bfec-8ce1fdb02a3f">
+<p>What does the following statement store<!--get--> into the indicated variable, for the given input? <br />
+<zyCode language="java" nobox="true">firstString = scnr.nextLine();
+secondString = scnr.nextLine();</zyCode>
+</zyVersion>
+</p>
+
+<zyQ>
+<zyQText>Hello there!<br />
+Welcome.<br />
+<br />
+firstString gets _____ . 
+</zyQText>
+<zyQChoice>
+<zyQAns>Hello</zyQAns>
+<zyQExpl>The first statement gets the entire line, not stopping at the first whitespace. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>Hello there!</zyQAns>
+<zyQExpl>The first statement gets the entire first line. The string does not contain the newline, which instead is just disposed. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>Hello there! Welcome.</zyQAns>
+<zyQExpl>The first statement only gets the first line, and does not also get the second line. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>I<br />
+don't<br />
+know.<br />
+<br />
+firstString gets _____ .</zyQText>
+<zyQChoice correct="true">
+<zyQAns>I</zyQAns>
+<zyQExpl>The first line consists of just one letter, so firstString will just have that one letter. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>I don't</zyQAns>
+<zyQExpl>The statement stops after the first line, and does not get the second line also. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>I<br />
+don't</zyQAns>
+<zyQExpl>The statement does not get two lines and the newline, but stops at the end of the first line.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Hey buddy. <br />
+What's up?<br />
+<br />
+secondString gets _____ .</zyQText>
+<zyQChoice>
+<zyQAns>Hey buddy.</zyQAns>
+<zyQExpl>The first statement gets the first line, so firstString gets "Hey buddy", not secondString. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>What's up?</zyQAns>
+<zyQExpl>The first statement gets the first line, "Hey buddy." The second statement gets "What's up?" into secondString.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>(empty)</zyQAns>
+<zyQExpl>The second statement doesn't get a blank line. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText><br />
+abc<br />
+def<br />
+<br />
+secondString gets _____ . (Note that the first line above is blank). </zyQText>
+<zyQChoice correct="true">
+<zyQAns>abc</zyQAns>
+<zyQExpl>The first statement gets the first line, which is blank, yielding an empty string. Thus the second statement gets "abc" into secondString. This behavior is quite different than the approach for getting a string without whitespace, which ignores leading whitespace and thus would have ignored the initial blank line. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>def</zyQAns>
+<zyQExpl>The first statement gets the first line, which happens to be blank. Thus, the second statement will get the second line, which is not def. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>(blank)</zyQAns>
+<zyQExpl>The second statement doesn't get a blank line. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>&nbsp;&nbsp;&nbsp;&nbsp;Walk away<br />
+<br />
+firstString gets _____ . (Note the leading spaces before Walk). </zyQText>
+<zyQChoice>
+<zyQAns>Walk away</zyQAns>
+<zyQExpl>That string has no leading spaces. The statement does not ignore leading spaces. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>&nbsp;&nbsp;&nbsp;&nbsp;Walk away</zyQAns>
+<zyQExpl>The statement gets the entire line, including leading spaces. The statements do not ignore leading spaces. </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion>
+
+
+
+<zyHTML id="dc431a3d-a1b1-aac6-7b84-ccf8c200d4ae" subsection="true" caption="Example: Getting multi-word names">
+<h3>Example: Getting multi-word names</h3>
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyFigure caption="Reading an input string containing spaces using nextLine." id="c39c6dad-8e8b-65ac-8a44-338795d1ac7b"  type="CodeConsole">
+<zyCode language="java"> 
+import java.util.Scanner;
+
+public class NameWelcome {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String firstName;
+      String lastName;
+
+      System.out.println("Enter first name: ");
+      firstName = scnr.nextLine(); // Gets entire line up to ENTER
+
+      System.out.println("Enter last name: ");
+      lastName = scnr.nextLine(); // Gets entire line up to ENTER
+
+      System.out.println();
+      System.out.println("Welcome " + firstName + " " + lastName + "!");
+      System.out.println("May I call you " + firstName + "?");
+   }
+}
+</zyCode>
+<zyConsole>
+Enter first name: 
+Betty Sue
+Enter last name: 
+McKay
+
+Welcome Betty Sue McKay!
+May I call you Betty Sue?
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyHTML id="164d8ccd-8ee3-8071-96b6-63cf0ad96da2" subsection="true" caption="Mixing cin and getline()">
+<zyVersion version="java">
+<h3>Mixing next() and nextLine()</h3>
+</zyVersion> 
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyHTML id="5bb92a9a-6adf-567b-cb7c-6ccdc2070a14" caption="">
+<p>Mixing next() and nextLine() can be tricky, because next() leaves the newline in the input, while nextLine() does not skip leading whitespace.   </p>
+</zyHTML>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyAnimator id="2e6e9b14-b66f-44df-a5e5-49e97b0b9d26" caption="Combining next() and nextLine() can be tricky." height="426px" width="724px" selectedInstr="49" selectedObj="none" numObjsEverCreated="56" loadOnDemand="false">
+<!-- Last modified Mon Jul 24 2017 18:50:46 GMT-0700 (MST) with version 2.17.2.06 --><zyObjects><zyObject objNum="11" objType="box" objName="Input box" top="234px" left="24px" border-radius="6px" useConstrainedProportions="false" height="52px" width="176px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="12" objType="text" objName="n2" top="107px" left="50px" opacity="0" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>n</text></zyObject><zyObject objNum="13" objType="text" objName="n1" top="107px" left="50px" opacity="0" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>n</text></zyObject><zyObject objNum="14" objType="text" objName="s4" top="131px" left="50px" opacity="0" background-color="zyAnimator-yellow" font-size='13px' font-family='courier' padding-left='1px' padding-right='1px' padding-top='1px' padding-bottom='1px' line-height='16px'><text>s</text></zyObject><zyObject objNum="15" objType="text" objName="s3" top="131px" left="50px" opacity="0" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>s</text></zyObject><zyObject objNum="16" objType="text" objName="s2" top="131px" left="50px" opacity="0" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>s</text></zyObject><zyObject objNum="17" objType="text" objName="s1" top="131px" left="50px" opacity="0" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>s</text></zyObject><zyObject objNum="18" objType="text" objName="Input (contagious)" top="260px" left="91px" font-size='12px' font-family='courier' line-height='17px'><text>contagious
+</text></zyObject><zyObject objNum="19" objType="text" objName="Input (is)" top="260px" left="62px" font-size='12px' font-family='courier' line-height='17px'><text>is
+</text></zyObject><zyObject objNum="20" objType="text" objName="Input (Kindness)" top="239px" left="29px" font-size='12px' font-family='courier' line-height='17px'><text>Kindness
+</text></zyObject><zyObject objNum="21" objType="text" objName="Input label" top="210px" left="14px" font-family='arial, sans-serif'><text>Input</text></zyObject><zyObject objNum="22" objType="box" objName="orange1" top="238px" left="29px" opacity="0" background-color="zyAnimator-orange" useConstrainedProportions="false" height="19px" width="58px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="23" objType="box" objName="orange2" top="259px" left="29px" opacity="0" background-color="zyAnimator-orange" useConstrainedProportions="false" height="19px" width="1px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="24" objType="box" objName="Code blue box 3" top="285px" left="275px" opacity="0" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="63px" width="190px"></zyObject><zyObject objNum="25" objType="box" objName="highlight box 3" top="286px" left="275px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="15px" width="190px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="26" objType="text" objName="Code snippet 3" top="287px" left="277px" opacity="0"><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">str1 = scnr.next();
+// Skip newline
+tmpStr = scnr.nextLine();
+str2 = scnr.nextLine();
+</zyCode></zyObject><zyObject objNum="27" objType="text" objName="S label (is)" top="259px" left="29px" opacity="0" background-color="zyAnimator-white" font-size='12px' font-family='courier' padding-left='1px' padding-right='1px' padding-top='1px' padding-bottom='1px' border-width='2px' border-style='solid' border-color='zyAnimator-orange' line-height='17px'><text>     is contagious</text></zyObject><zyObject objNum="28" objType="text" objName="S label (blank)" top="314px" left="576px" opacity="0" color='zyAnimator-gray' font-size='12px' font-style='italic' font-family='arial, sans-serif'><text>(blank)</text></zyObject><zyObject objNum="29" objType="box" objName="S label (empty box)" top="238px" left="91px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="19px" width="8px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="30" objType="text" objName="S label (Kindness)" top="238px" left="28px" opacity="0" background-color="zyAnimator-white" font-size='12px' font-family='courier' padding-left='1px' padding-right='1px' padding-top='1px' padding-bottom='1px' border-width='2px' border-style='solid' border-color='zyAnimator-orange' line-height='17px'><text>Kindness</text></zyObject><zyObject objNum="31" objType="text" objName="S label (str2)" top="342px" left="523px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>str2:</text></zyObject><zyObject objNum="32" objType="text" objName="S label (tmpStr)" top="314px" left="507px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>tmpStr: </text></zyObject><zyObject objNum="33" objType="text" objName="S label (str1)" top="289px" left="523px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>str1: </text></zyObject><zyObject objNum="34" objType="text" objName="S label (Solution)" top="260px" left="265px" opacity="0" color='zyAnimator-blue' font-family='arial, sans-serif'><text>Solution</text></zyObject><zyObject objNum="35" objType="box" objName="Code blue box 2" top="185px" left="275px" opacity="0" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="35px" width="190px"></zyObject><zyObject objNum="36" objType="box" objName="Code highlight 2" top="187px" left="275px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="15px" width="190px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="37" objType="text" objName="Code snippet 2" top="187px" left="277px" opacity="0"><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">str1 = scnr.next();
+str2 = scnr.nextLine();
+</zyCode></zyObject><zyObject objNum="38" objType="text" objName="A1 label (blank)" top="214px" left="575px" opacity="0" color='zyAnimator-gray' font-size='12px' font-style='italic' font-family='arial, sans-serif'><text>(blank)</text></zyObject><zyObject objNum="39" objType="box" objName="A1 label (empty box)" top="238px" left="91px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="19px" width="8px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="40" objType="text" objName="A2 label (Kindness)" top="238px" left="28px" opacity="0" background-color="zyAnimator-white" font-size='12px' font-family='courier' padding-left='1px' padding-right='1px' padding-top='1px' padding-bottom='1px' border-width='2px' border-style='solid' border-color='zyAnimator-orange' line-height='17px'><text>Kindness</text></zyObject><zyObject objNum="41" objType="text" objName="A2 label (str2)" top="215px" left="523px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>str2:</text></zyObject><zyObject objNum="42" objType="text" objName="A2 label (str1)" top="189px" left="523px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>str1: </text></zyObject><zyObject objNum="43" objType="text" objName="A2 label (Attempt 2)" top="160px" left="265px" opacity="0" color='zyAnimator-blue' font-family='arial, sans-serif'><text>Attempt 2</text></zyObject><zyObject objNum="44" objType="box" objName="Code blue box 1" top="85px" left="275px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="35px" width="190px"></zyObject><zyObject objNum="45" objType="box" objName="Code highlight 1" top="88px" left="275px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="15px" width="1px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="46" objType="text" objName="Code snippet 1" top="88px" left="277px"><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">str1 = scnr.next();
+str2 = scnr.next();
+</zyCode></zyObject><zyObject objNum="47" objType="text" objName="A1 label (is)" top="259px" left="61px" opacity="0" background-color="zyAnimator-white" font-size='12px' font-family='courier' padding-left='1px' padding-right='1px' padding-top='1px' padding-bottom='1px' border-width='2px' border-style='solid' border-color='zyAnimator-orange' line-height='17px'><text>is</text></zyObject><zyObject objNum="48" objType="text" objName="A1 label (Kindness)" top="238px" left="28px" opacity="0" background-color="zyAnimator-white" font-size='12px' font-family='courier' padding-left='1px' padding-right='1px' padding-top='1px' padding-bottom='1px' border-width='2px' border-style='solid' border-color='zyAnimator-orange' line-height='17px'><text>Kindness</text></zyObject><zyObject objNum="49" objType="text" objName="A1 label (str2)" top="115px" left="522px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>str2:</text></zyObject><zyObject objNum="50" objType="text" objName="A1 label (str1)" top="89px" left="522px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>str1: </text></zyObject><zyObject objNum="51" objType="text" objName="A1 label (Attempt 1)" top="60px" left="265px" color='zyAnimator-blue' font-family='arial, sans-serif'><text>Attempt 1</text></zyObject><zyObject objNum="52" objType="text" objName="WS label (n)" top="107px" left="50px" opacity="50" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>n</text></zyObject><zyObject objNum="53" objType="text" objName="WS label (s)" top="131px" left="50px" opacity="50" background-color="zyAnimator-yellow" font-size='12px' font-family='courier' line-height='16px'><text>s</text></zyObject><zyObject objNum="54" objType="text" objName="WS label (Space)" top="131px" left="74px" font-size='12px' font-family='arial, sans-serif'><text>Space</text></zyObject><zyObject objNum="55" objType="text" objName="WS label (Newline)" top="107px" left="74px" font-size='12px' font-family='arial, sans-serif'><text>Newline</text></zyObject><zyObject objNum="56" objType="text" objName="Whitespace character label" top="66px" left="14px" font-size='12px' font-family='arial, sans-serif' text-align='center'><text>Whitespace characters
+(normally invisible)
+</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Input characters include whitespace characters, normally invisible, but shown here using boxes labeled n (newline) and s (space).</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="17" timeLabel="0.2" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="12" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="-" top="260" left="30"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="-" top="260" left="41"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="15" timeLabel="-" top="260" left="52"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="14" timeLabel="-" top="261" left="81"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="-" top="239" left="92"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="-" top="260" left="168"></zyInstruction>
+<zyInstruction instrType="step"><text>str1 = scnr.next() will get &quot;Kindness&quot; into str1, stopping at the first whitespace, in this case a newline character. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="45" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="45" timeLabel="-" height="15" width="190"></zyInstruction><zyInstruction instrType="fade" objNum="48" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="48" timeLabel="0" top="85" left="558"></zyInstruction><zyInstruction instrType="fade" objNum="50" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>The next statement, str2 = scnr.next(), will skip any leading whitespace (the newline, and the next line&apos;s leading spaces), then get the next characters &quot;is&quot; until the next whitespace. </text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="45" timeLabel="0" top="102" left="275"></zyInstruction><zyInstruction instrType="resize" objNum="22" timeLabel="0" height="19" width="79"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="23" timeLabel="-" height="19" width="29"></zyInstruction><zyInstruction instrType="fade" objNum="47" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="23" timeLabel="0" height="19" width="48"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="47" timeLabel="0" top="112" left="558"></zyInstruction><zyInstruction instrType="fade" objNum="49" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Combining next() with nextLine() is a little tricky. The str1 = scnr.next() leaves the newline in the input. Then, str2 = nextLine() gets the rest of the line, which is blank. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="23" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="37" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="36" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="22" timeLabel="-" height="19" width="58"></zyInstruction><zyInstruction instrType="resize" objNum="23" timeLabel="-" height="19" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="40" timeLabel="0" top="185" left="558"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="36" timeLabel="0.2" top="201" left="275"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="22" timeLabel="0" height="19" width="69"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="39" timeLabel="0" top="212" left="558"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>When following next() with nextLine(), an extra nextLine() is needed to get past the newline left in the input by next(). </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="22" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="resize" objNum="23" timeLabel="-" height="19" width="132"></zyInstruction><zyInstruction instrType="fade" objNum="36" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="22" timeLabel="-" height="19" width="58"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="30" timeLabel="0" top="285" left="559"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="25" timeLabel="0" top="301" left="275"></zyInstruction><zyInstruction instrType="resize" objNum="25" timeLabel="-" height="29" width="190"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="22" timeLabel="0" height="19" width="69"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="29" timeLabel="0" top="312" left="559"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="28" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="25" timeLabel="0" top="330" left="275"></zyInstruction><zyInstruction instrType="resize" objNum="25" timeLabel="-" height="15" width="190"></zyInstruction><zyInstruction instrType="fade" objNum="27" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="27" timeLabel="0" top="339" left="559"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0.2" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Static figure:
+Pictured is some text, a program input, three attempts to code the same thing, and three resulting variable assignments corresponding to each coding attempt.
+
+The text: "Whitespace characters (normally invisible) 'n' Newline and 's' Space."
+
+The program input: "Kindness 'n'
+'s''s''s' is 's' contagious 'n'"
+
+The three program attempts are in a column, one after the other. The variable assignments for each attempt are shown to the right of the respective attempt.
+
+First Attempt
+Begin Java code:
+str1 = scnr.next();
+str1 = scnr.next();
+End Java code.
+The First Attempt's resulting assignments: str1 "Kindness"; str2 "is".
+
+Second Attempt
+Begin Java code:
+str1 = scnr.next();
+str2 = scnr.nextLine();
+End Java code.
+The Second Attempt's resulting assignments: str1 "Kindness"; str2 "" (blank).
+
+Solution
+Begin Java code:
+str1 = scnr.next();
+tmpStr = scnr.nextLine();
+str2 = scnr.nextLine();
+End Java code.
+The Solution's resulting assignments: str1 "Kindness"; tmpStr "" (blank); str2 "    is contagious" (begins with three Space characters).
+
+Step 1: Only visible are some text, program input, and the First Attempt Java code. The text reads "Whitespace characters (normally invisible) 'n' Newline and 's' Space." The program input is "Kindness 'n'
+'s''s''s' is 's' contagious 'n'". Whitespace characters are made visible here for didactic purposes.
+
+Step 2: str1 = scnr.next() will get &quot;Kindness&quot; into str1, stopping at the first whitespace, in this case a newline character. One line of code in the first attempt, "scnr.next()", is highlighted. A word in the input, "Kindness", is highlighted. To the right of the highlighted line of code appears the text "str1:"; simultaneously, the highlighted word from the input moves next to this appeared "str1:", resulting in the text "str1: Kindness". The place in the input where the word "Kindness" had been is now blank. Here, the string "Kindness" has been stored into str1, stopping at the first whitespace.
+
+Step 3: The next statement, scnr.next(), will skip any leading whitespace (the newline, and the next line&apos;s leading spaces), then get the next characters &quot;is&quot; until the next whitespace. One line of code in the First Attempt, "scnr.next();", is highlighted. The first Newline character in the input is erased, followed by the first three Space characters being erased.  The word "is" is highlighted. Under "str1: Kindness" appears the text "str2:"; simultaneously, the highlighted word "is" moves next to this new text, resulting in this text: "str2: is:". The place in the input where the word "is" had been is now blank. Here, after having skipped over the beginning white spaces,  the string "is" has been stored into str2, stopping at the first whitespace.
+
+Step 4: Combining next() with nextLine() is a little tricky. The str1 = scnr.next() leaves the newline in the input. Then, str2 = nextLine() gets the rest of the line, which is blank. The Second Attempt code appears below the code of the First Attempt. The input resets such that the original input again is visible. One line of code in the Second Attempt, "str1 = scnr.next();", is highlighted. A word in the input, "Kindness", is highlighted. To the right of the highlighted line of code appears the text "str1:"; simultaneously, the highlighted word from the input moves next to this appeared "str1:", resulting in the text "str1: Kindness". The place in the input where the word "Kindness" had been is now blank. Another line of code in the Second Attempt is highlighted, "str2 = scnr.nextLine();". A blank string that is located directly to the right of the erased part of the input, on the first line, is highlighted. Under "str1: Kindness" appears the text "str2:";  simultaneously, the highlighted blank string from the input moves next to this appeared "str2:", resulting in the text "str2: (blank)". Here, the nextLine call has placed an empty string into str2 because "scnr.next();" leaves the first line with only a Newline character, meaning that the call to nextLine() finishes copying the first line, which is empty.
+
+Step 5: When following next() with nextLine(), an extra nextLine() is needed to get past the newline left in the input by next(). The Solution code appears below the code for the Second Attempt. The input resets such that the original input again is visible. One line of code in the Solution, "str1 = scnr.next();", is highlighted. A word in the input, "Kindness", is highlighted. To the right of the highlighted line of code appears the text "str1:"; simultaneously, the highlighted word from the input moves next to this appeared "str1:", resulting in the text "str1: Kindness". The place in the input where the word "Kindness" had been is now blank. Another line of code in the Solution is highlighted, "tmpStr = scnr.nextLine();". A blank string that is located directly to the right of the erased part of the input, on the first line, is highlighted. Under "str1: Kindness" appears the text "tmpStr:"; simultaneously, the highlighted blank string from the input moves next to this appeared "tmpStr:", resulting in the text "tmpStr: (blank)". The final line of code in the Solution is highlighted, "str2 = scnr.nextLine();". The whole second line of the input, excluding the Newline character, is highlighted. Under the text "tmpStr: (blank)" appears the text "str2:"; simultaneously, the highlighted second line from the input moves next to this appeared "str2:", resulting in the text "str2:   is contagious". (There are three space characters that lead this text.) Here, the desired goal has been achieved: the first line of input text has been placed into str1 and the input text of the second line has been placed into str2.
+</zyAltDescription>
+</zyAnimator>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption="Getting strings without and with whitespace. " id="1fca44fc-f694-4470-96bd-9a3e7f56e67e">
+<p>Given the following input: <br />
+<zyConsole>
+Every one
+is great.
+That's right. 
+</zyConsole></p>
+
+<zyQ>
+<zyQText>What does the following get into str2? <br />
+<zyVersion version="java">
+<zyCode language="java" nobox="true">
+str1 = scnr.next();
+str2 = scnr.next();
+</zyCode>
+</zyVersion>
+</zyQText>
+<zyQChoice>
+<zyQAns>Every</zyQAns>
+<zyQExpl>That text would appear in str1, not str2. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>one</zyQAns>
+<zyQExpl>The first statement gets "Every" stopping at the space after y. The second statement skips that leading space, gets "one", and stops at the newline. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>Every one</zyQAns>
+<zyQExpl>The first statement already got "Every", so that text would not appear in str2. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>What does the following get into str2? <br />
+<zyVersion version="java">
+<zyCode language="java" nobox="true">
+str1 = scnr.next();
+str2 = scnr.nextLine();
+</zyCode>
+</zyVersion>
+</zyQText>
+<zyQChoice>
+<zyQAns>Every one</zyQAns>
+<zyQExpl>The first statement already got "Every". Those characters are no longer in the input. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>one</zyQAns>
+<zyQExpl>Close, but the first statement left a space in the input, and <zyVersion version="java">nextLine()</zyVersion> gets the rest of the line from input without skipping leading whitespace. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>&nbsp;one<br />
+(has a leading space)</zyQAns>
+<zyQExpl>The first statement left a space in the input. <zyVersion version="java">nextLine()</zyVersion> starts with what's left in the input, so starts with that space, continuing to the newline. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>What does the following get into str2? <br />
+<zyVersion version="java">
+<zyCode language="java" nobox="true">
+str0 = scnr.next();
+str1 = scnr.next();
+str2 = scnr.nextLine();
+</zyCode>
+</zyVersion>
+</zyQText>
+<zyQChoice>
+<zyQAns>one</zyQAns>
+<zyQExpl>"Every" is put into str0, and "one" into str1, so "one" would not be put into str2. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>(blank)</zyQAns>
+<zyQExpl>The second statement puts "one" into str1, leaving the newline in the input.  <zyVersion version="java">nextLine()</zyVersion> doesn't skip leading whitespace, so gets the line up to that newline. Thus str2 will be blank. This is the tricky part of combining <zyVersion version="java">next() with nextLine()</zyVersion>. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>is great.</zyQAns>
+<zyQExpl>After the second statement puts "one" into str1, the newline is left in the input. So, <zyVersion version="java">nextLine()</zyVersion> is not yet on the second input line.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>What does the following get into str2? <br />
+<zyVersion version="java">
+<zyCode language="java" nobox="true">
+str0 = scnr.next();
+str1 = scnr.next();
+tmpStr = scnr.nextLine();
+str2 = scnr.nextLine();
+</zyCode>
+</zyVersion>
+</zyQText>
+<zyQChoice>
+<zyQAns>(blank)</zyQAns>
+<zyQExpl>The first <zyVersion version="java">nextLine()</zyVersion> gets  past the first newline. So the second <zyVersion version="java">nextLine()</zyVersion> will get some text, and not be blank. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>is great.</zyQAns>
+<zyQExpl>The first <zyVersion version="java">nextLine()</zyVersion> gets  past the first newline. So the second <zyVersion version="java">nextLine()</zyVersion> starts from the beginning of the second line, thus getting "is great.".</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>That's right.</zyQAns>
+<zyQExpl>The first <zyVersion version="java">nextLine()</zyVersion> gets the rest of the first line, so the second <zyVersion version="java">nextLine()</zyVersion> starts at the second line, not the third line. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>What does the following get into str3? <br />
+<zyVersion version="java">
+<zyCode language="java" nobox="true">
+str0 = scnr.next();
+str1 = scnr.next();
+tmpStr = scnr.nextLine();
+str2 = scnr.nextLine();
+str3 = scnr.nextLine();
+</zyCode>
+</zyVersion>
+</zyQText>
+<zyQChoice correct="true">
+<zyQAns>That's right.</zyQAns>
+<zyQExpl>The second <zyVersion version="java">nextLine()</zyVersion> gets the second line, "is great." into str2, and consumes that line's newline (it does NOT leave the newline in the input). Thus, the third <zyVersion version="java">nextLine()</zyVersion> gets the third line, which is "That's right." </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>(blank)</zyQAns>
+<zyQExpl>A blank would have occurred if the second <zyVersion version="java">nextLine()</zyVersion> left the newline in the input, but <zyVersion version="java">nextLine()</zyVersion> consumes the newline. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>What does the following put into str2? <br />
+<zyVersion version="java">
+<zyCode language="java" nobox="true">
+str0 = scnr.next();
+str1 = scnr.next();
+tmpStr = scnr.next(); 
+str2 = scnr.nextLine();
+</zyCode>
+</zyVersion>
+</zyQText>
+<zyQChoice>
+<zyQAns>is</zyQAns>
+<zyQExpl><zyVersion version="java">nextLine()</zyVersion> gets an entire line, so couldn't possibly just put "is" into str2 without also putting " great." </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>is great.</zyQAns>
+<zyQExpl>The third <zyVersion version="java">next()</zyVersion> does not just skip the newline at the end of line 1, but also puts "is" into tmpStr. Thus, that approach does not work as a means of skipping the newline; <zyVersion version="java">nextLine()</zyVersion> is needed. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>&nbsp;great. <br /> (has a leading space)</zyQAns>
+<zyQExpl>The second <zyVersion version="java">next()</zyVersion> puts "one" into str1, and left the newline in the input. The third <zyVersion version="java">next()</zyVersion> skips that leading whitespace, and puts "is" into tmpStr, leaving the trailing space in the input. Thus, the <zyVersion version="java">nextLine()</zyVersion> will get " great." The third <zyVersion version="java">next()</zyVersion> is not a means of skipping a newline; another <zyVersion version="java">nextLine()</zyVersion> is needed. </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion> 
+
+<zypInfo person="Sabrina" date="03/29/21" minutes="25" status="CodeDoing"></zypInfo>
+<zypInfo person="Ginny" date="03/31/21" minutes="30" status="CodeReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="03/31/21" minutes="5" status="CodeReviewing"></zypInfo>
+<zypInfo person="DNorment" date="4/1/21" minutes="10" status="QADone"></zypInfo>
+<zypInfo person="Sabrina" date="03/29/21" minutes="40" status="CodeDoing"></zypInfo>
+<zypInfo person="DNorment" date="3/29/21" minutes="30" status="CodeReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="03/31/21" minutes="5" status="CodeReviewing"></zypInfo>
+<zypInfo person="Brock" date="04/01/21" minutes="10" status="QADone"></zypInfo>
+<zypInfo person="Aubrey" date="03/31/20" minutes="*" status="Draft1Doing"></zypInfo>
+<zypInfo person="Sabrina" date="03/03/21" minutes="130" status="SpecDoing"></zypInfo>
+<zypInfo person="Ron" date="03/03/21" minutes="10" status="SpecDoing"></zypInfo>
+<zypInfo person="Fay" date="03/05/21" minutes="25" status="SpecReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="03/08/21" minutes="10" status="SpecReviewing"></zypInfo>
+<zypInfo person="Fay" date="03/09/21" minutes="15" status="SpecReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="03/09/21" minutes="5" status="SpecReviewing"></zypInfo>
+<zypInfo person="Fay" date="03/10/21" minutes="15" status="SpecDone"></zypInfo>
+<zypInfo person="Sabrina" date="03/11/21" minutes="60" status="CodeDoing"></zypInfo>
+<zypInfo person="Ron" date="03/16/21" minutes="25" status="CodeReviewing"></zypInfo>
+<zypInfo person="DNorment" date="3/17/21" minutes="10" status="QADone"></zypInfo>
+<zyVersion version="java">
+<zyTool name='codeOutput' caption='Representing text' id='6d095eb0-3a48-44a9-bcb6-f00f6965a065' parts='7' challenge='true'>
+<zyOptions>
+<language>java</language>
+<globalCode>import string
+
+alphabet = string.ascii_letters
+letter_exclusions = ['I', 'l', 'o', 'O', 'u', 'U'] # Ambiguous when in plaintext.Also avoiding u and U as it can be read as 'you'
+letters = [letter for letter in alphabet if letter not in letter_exclusions]
+
+animals = [
+    'ant', 'bear', 'bee', 'bird', 'bison', 'cow', 'deer', 'dog',
+    'eagle', 'elk', 'fox', 'gecko', 'goat', 'horse', 'ibex', 'lion', 
+    'llama', 'moose', 'mouse', 'owl', 'pig', 'quail', 'robin', 'sheep', 
+    'snake', 'stork', 'tiger', 'wasp', 'whale', 'wolf', 'yak', 'zebra'
+]
+
+def get_random_input(num_animals_per_line):
+    num_total_animals = sum(num_animals_per_line)
+    all_animals = random.sample(animals, num_total_animals)
+    
+    input_lines = []
+    for num_animals in num_animals_per_line:
+        input_line = []
+        for i in range(num_animals):
+            input_line.append(all_animals.pop(0))
+        input_lines.append(input_line)
+    
+    return input_lines</globalCode>
+<levels type='list'>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;System.out.println("${output_value}");&lt;/code&gt; outputs the string literal "${output_value}", followed by a newline.</explanation>
+    <template>public class StringOutput {
+   public static void main(String[] args) {
+      System.out.println("${output_value}");
+   }
+}</template>
+    <parameters>
+output_value = pick_from(letters)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;String str1 = "${animal}";&lt;/code&gt; creates a String object str1, initialized with string literal "${animal}".
+&lt;code&gt;System.out.println(str1);&lt;/code&gt; outputs the string stored in str1, so "${animal}", followed by a newline.
+
+</explanation>
+    <template>public class StringOutput {
+   public static void main(String[] args) {
+      String str1 = "${animal}";
+
+      System.out.println(str1);
+   }
+}</template>
+    <parameters>
+animal = pick_from(animals)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;String str1 = "${animal}";&lt;/code&gt; creates a String object str1, initialized with string literal "${animal}".
+&lt;code&gt;String str2 = str1;&lt;/code&gt; assigns str2 with str1's reference to the String object "${animal}".</explanation>
+    <template>public class StringOutput {
+   public static void main(String[] args) {
+      String str1 = "${animal}";
+      String str2 = str1;
+
+      System.out.println(str1 + "${delimiter}" + str2);
+   }
+}</template>
+    <parameters>
+animal = pick_from(animals)
+delimiter = pick_from([' ', ', ', ' + ', ' - ', ' * ', ' / '])
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;String str1 = scnr.next();&lt;/code&gt; gets the string "${input_value}" from input into variable str1.</explanation>
+    <template>import java.util.Scanner;
+
+public class StringOutput {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String str1 = scnr.next();
+
+      System.out.println(str1);
+   }
+}</template>
+    <parameters>
+input_value = pick_from(letters)
+    </parameters>
+    <input>${input_value}</input>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;String str1 = scnr.next();&lt;/code&gt; gets "${letter1}", stopping at the space after ${letter1}.
+&lt;code&gt;String str2 = scnr.next();&lt;/code&gt; skips any leading whitespace and gets the remaining input "${letter2}".</explanation>
+    <template>import java.util.Scanner;
+
+public class StringOutput {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String str1 = scnr.next();
+      String str2 = scnr.next();
+
+      System.out.println(str1);
+      System.out.println(str2);
+   }
+}</template>
+    <parameters>
+letter1 = pick_from(letters)
+letter2 = pick_from(letters, [letter1])
+
+num_spaces = pick_from_range(1, 4)
+space_str = ' ' * num_spaces
+    </parameters>
+    <input>${letter1}${space_str}${letter2}</input>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;String str1 = scnr.nextLine();&lt;/code&gt; gets the entire first line, "${input_lines_str[0]}". The newline is removed from input but not put in str1.
+&lt;code&gt;String str2 = scnr.nextLine();&lt;/code&gt; gets all text on the next input line, so "${input_lines_str[1]}".</explanation>
+    <template>import java.util.Scanner;
+
+public class StringOutput {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String str1 = scnr.nextLine();
+      String str2 = scnr.nextLine();
+
+      System.out.println(str1);
+      System.out.println(str2);
+   }
+}</template>
+    <parameters>
+num_input_lines = pick_from_range(2, 3)
+num_animals_per_line = [1, 2]
+random.shuffle(num_animals_per_line)
+if num_input_lines == 3:
+    num_animals_per_line.append(pick_from_range(1, 2))
+
+input_lines = get_random_input(num_animals_per_line)
+input_lines_str = [' '.join(line) for line in input_lines]
+input_str = '\n'.join(input_lines_str)
+    </parameters>
+    <input>${input_str}</input>
+</level>
+<level type='dict'>
+    <explanation>${explanation}</explanation>
+    <template>import java.util.Scanner;
+
+public class StringOutput {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String str1 = scnr.${method1}();
+      String str2 = scnr.${method2}();
+
+      System.out.println(str1);
+      System.out.println(str2);
+   }
+}</template>
+    <parameters unescape-html='true'>
+num_input_lines = pick_from_range(2, 3)
+num_animals_per_line = [pick_from_range(2, 3)]
+for i in range(num_input_lines - 1):
+    num_animals_per_line.append(pick_from_range(1, 2))
+
+input_lines = get_random_input(num_animals_per_line)
+input_lines_str = [' '.join(line) for line in input_lines]
+input_str = '\n'.join(input_lines_str)
+
+methods = ['next', 'nextLine']
+random.shuffle(methods)
+method1, method2 = methods
+
+explanation = '&lt;code&gt;String str1 = scnr.next();&lt;/code&gt; gets "{0}", stopping at the space after {0}.\n'.format(input_lines[0][0])
+explanation += '&lt;code&gt;String str2 = scnr.nextLine();&lt;/code&gt; gets all remaining text on the first input line, including the leading space, so " {}".'.format(' '.join(input_lines[0][1:]))
+if method1 == 'nextLine':
+    explanation = '&lt;code&gt;String str1 = scnr.nextLine();&lt;/code&gt; gets the entire line "{}". The newline is removed from input but not put in str1.\n'.format(input_lines_str[0])
+    explanation += '&lt;code&gt;String str2 = scnr.next();&lt;/code&gt; gets "{0}", stopping at the {1} after {0}.'.format(input_lines[1][0], 'newline' if len(input_lines[1]) == 1 else 'space')
+    </parameters>
+    <input>${input_str}</input>
+</level>
+</levels>
+</zyOptions>
+</zyTool>
+
+
+</zyVersion>
+
+
+<zypInfo person="Susan" date="7/26/14" minutes="" hkStatus="Draft1Done"> Converted from cpp version  </zypInfo>
+<zypInfo person="Alex" date="7/26/14" minutes="5" hkStatus="Rev1Done">  </zypInfo>
+<zypInfo person="Arash" date="7/30/14" hkStatus="Rev2Done"> Alex addressed comments </zypInfo>
+<!--zyHomeworkProblem id="b2884729-7e4e-8f17-b928-842c3034125e" language="c" caption="Reading and outputting strings." author="FV">
+<zyInstructions>
+Write a program that reads a person's first and last names separated by a space, assuming the first and last names are both single words. Then the program outputs last name, <!--comma, -->first name. End with newline. <br /><br />
+Example output if the input is: Maya Jones <br />
+<pre>
+Jones, Maya
+
+</pre>  
+<!-- Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs Maya and Jones, and then with the inputs Stan and Li. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   char firstName[20];
+   char lastName[20]; 
+
+   <STUDENT CODE>
+
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+scanf("%s %s", firstName, lastName);
+printf("%s, %s\n", lastName, firstName);
+</zySolution>
+
+<zyInput> Maya Jones
+Stan Li
+</zyInput>
+<zyTestVectors>
+int main() {
+   char firstName[20];
+   char lastName[20]; 
+
+   <STUDENT CODE>
+   zyAssertOutput("Jones, Maya\n", 
+                  "Testing with: Maya Jones", false, false, false, false);
+   <STUDENT CODE>
+   zyAssertOutput("Li, Stan\n", 
+                  "Testing with: Stan Li", false, false, false, false);
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem-->
+
+
+<zypInfo person="Alex" date="8/1/14" hkStatus="Rev2Done"></zypInfo>
+<zyHomeworkProblem id="12da3a79-a24a-c0ba-3be9-a6631e311d55" language="java" caption="Reading and outputting strings." author="FV/RS">
+<zyInstructions>
+Write a program that reads a person's first and last names separated by a space, assuming the first and last names are both single words. Then the program outputs last name, <!--comma, -->first name. End with newline. 
+<br /> <br />
+Example output if the input is: Maya Jones <br />
+<pre>
+Jones, Maya 
+
+</pre>  
+<!-- Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs Maya and Jones, and then with the inputs Stan and Li. -->
+</zyInstructions>
+
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class SpaceReplace {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String firstName;
+      String lastName;
+
+
+      <STUDENT CODE>
+
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+firstName = scnr.next();
+lastName = scnr.next();
+
+System.out.println(lastName + ", " + firstName);
+</zySolution>
+
+<zyInput> Maya Jones     Stan Li
+</zyInput>
+<zyTestVectors>
+public static void main(String[] args) {
+   zyInitialize();
+   Scanner scnr = new Scanner(System.in);
+   String firstName = "";
+   String lastName = "";
+
+
+   {<STUDENT CODE>}
+   zyAssertOutput("Jones, Maya\n", 
+                  "Testing with: Maya Jones", false, false, false, false);
+   {<STUDENT CODE>}
+   zyAssertOutput("Li, Stan\n", 
+                  "Testing with: Stan Li", false, false, false, false);
+   zyTerminate();
+}
+</zyTestVectors>
+
+<zyOptions>
+    <longDemoMessage type="boolean">true</longDemoMessage>
+    <hints type="list">
+        <hint type="dict">
+            <regex unescape-html="true">\.\s*nextLine\s*\(\s*\)</regex>
+            <message unescape-html="true">nextLine() vs next(): Your code used nextLine() but should use next(). next() gets characters until the next whitespace is seen.</message>
+            <priority>1</priority>
+        </hint>
+        <hint type="dict">
+            <regex unescape-html="true">\.\s*next\s*\(\s*\)</regex>
+            <message unescape-html="true">Your code did not use next() to get a string from input, but should do so.</message>
+            <priority>2</priority>
+            <invertMatch type="boolean">true</invertMatch>
+        </hint>
+    </hints>
+</zyOptions>
+
+</zyHomeworkProblem>
+
+<zypInfo person="Sabrina" date="06/08/22" minutes="500" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="06/22/22" minutes="73" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/11/22" minutes="60" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="07/12/22" minutes="50" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="7/18/22" minutes="1500" status="CodeDoing"></zypInfo>
+<zypInfo person="Sabrina" date="07/19/22" minutes="28" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="7/18/22" minutes="945" status="CodeDoing"></zypInfo>
+<zypInfo person="Annie" date="7/26/22" minutes="15" status="CodeReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="08/02/22" minutes="37" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/05/22" minutes="136" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/05/22" minutes="1294" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/12/22" minutes="40" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/15/22" minutes="168" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/15/22" minutes="9" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/15/22" minutes="45" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/19/22" minutes="87" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/23/22" minutes="208" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/23/22" minutes="60" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/23/22" minutes="64" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/24/22" minutes="25" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/24/22" minutes="8" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/25/22" minutes="13" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/25/22" minutes="5" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/25/22" minutes="29" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/25/22" minutes="90" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="08/25/22" minutes="31" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/25/22" minutes="30" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="10/20/22" minutes="7" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="09/29/22" minutes="150" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="09/30/22" minutes="121" status="CodeReview">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="10/20/22" minutes="28" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="10/20/22" minutes="41" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="10/20/22" minutes="7" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="10/20/22" minutes="9" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="10/27/22" minutes="40" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/02/22" minutes="36" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="11/04/22" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/08/22" minutes="8" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="11/09/22" minutes="40" status="QADone">Golden_CA_development</zypInfo>
+<zyVersion version="java">
+<zyTool name="CodeWriting" caption="Strings" id="50e11778-7f97-4bf2-b0a6-a0152f5d2fb3" parts="3" challenge="true" edited-last="Tue Nov 08 2022 21:00:59 GMT-0800 (Pacific Standard Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+def get_dataset_without_spaces(dataset):
+    return [x for x in dataset if ' ' not in x]
+
+
+def get_dataset_only_spaces(dataset):
+    return [x for x in dataset if ' ' in x]
+
+
+def get_capitals_without_spaces(dataset):
+    for key, value in list(dataset.items()):
+        if ' ' in key or ' ' in value:
+            del dataset[key]
+    return list(dataset.keys()), list(dataset.values())
+
+
+first_names = [
+    'Ada', 'Ava', 'Ana', 'Ani', 'Aya', 'Eve', 'Fay', 'Ina', 'Jan', 'Jen', 'Kai', 'Mai', 'Meg', 'Mia',
+    'Noa', 'Pat', 'Sue', 'Tia', 'Val', 'Zoe', 'Abe', 'Ari', 'Avi', 'Ben', 'Bob', 'Cam', 'Dan', 'Dax',
+    'Del', 'Eli', 'Gil', 'Gus', 'Guy', 'Huy', 'Ken', 'Kim', 'Mel', 'Rob', 'Ron', 'Taj'
+]
+
+last_names = [
+	'Lee', 'Hall', 'King', 'Hill', 'Reed', 'Cook', 'Bell', 'Cox', 'Ward', 'Gray', 'Khan', 'Sanz',
+	'Wood', 'Ross', 'Long', 'Diaz', 'Ford', 'Cole', 'West', 'Cruz', 'Webb', 'Boyd', 'Yang', 'Fry',
+	'Shaw', 'Rice', 'Hunt', 'Ito', 'Dunn', 'Ray', 'Hart', 'Lane', 'Ruiz', 'Fox', 'Baca', 'Chen',
+	'Sims', 'Kato', 'Carr', 'Reid', 'Dean', 'Day', 'Sato', 'May', 'Wade', 'Soto', 'Leon', 'Lara',
+	'Park', 'Choi', 'Holt', 'Hale', 'Pena', 'Beck', 'Pham', 'Love', 'Page', 'Ball', 'Wong', 'Chow',
+	'Vega', 'Nava', 'Luna', 'Rios',	'Roy', 'Shah', 'Tran', 'Chan'
+]
+
+street_name_start = ['ABC', 'Maple', 'Main', 'Park', 'First', 'Second', 'Third']
+street_name_end = ['Road', 'Street', 'Avenue']
+
+countries = [
+    'Algeria', 'Brazil', 'Chile', 'Denmark', 'Egypt', 'France', 'Greece', 'Haiti',
+    'Italy', 'Japan', 'Korea', 'Latvia', 'Malta', 'Norway', 'Oman', 'Peru', 'Qatar',
+    'Russia', 'Spain', 'Turkey', 'USA', 'Vietnam', 'Yemen', 'Zambia'
+]
+
+state_capitals = {
+    'Alabama': 'Montgomery', 'Montana': 'Helena', 'Alaska': 'Juneau',
+    'Nebraska':	'Lincoln', 'Arizona': 'Phoenix', 'Nevada': 'Carson City',
+    'Arkansas': 'Little Rock', 'New Hampshire': 'Concord', 'California': 'Sacramento',
+    'New Jersey': 'Trenton', 'Colorado': 'Denver', 'New Mexico': 'Santa Fe',
+    'Connecticut': 'Hartford', 'New York': 'Albany', 'Delaware': 'Dover',
+    'North Carolina': 'Raleigh', 'Florida': 'Tallahassee', 'North Dakota': 'Bismarck',
+    'Georgia': 'Atlanta', 'Ohio': 'Columbus', 'Hawaii': 'Honolulu',
+    'Oklahoma': 'Oklahoma City', 'Idaho': 'Boise', 'Oregon': 'Salem',
+    'Illinois': 'Springfield', 'Pennsylvania': 'Harrisburg', 'Indiana': 'Indianapolis',
+    'Rhode Island': 'Providence', 'Iowa': 'Des Moines', 'South Carolina': 'Columbia',
+    'Kansas': 'Topeka', 'South Dakota': 'Pierre', 'Kentucky': 'Frankfort',
+    'Tennessee': 'Nashville', 'Louisiana': 'Baton Rouge', 'Texas': 'Austin',
+    'Maine': 'Augusta', 'Utah': 'Salt Lake City', 'Maryland': 'Annapolis',
+    'Vermont': 'Montpelier', 'Massachusetts': 'Boston', 'Virginia': 'Richmond',
+    'Michigan': 'Lansing', 'Washington': 'Olympia', 'Minnesota': 'St. Paul',
+    'West Virginia': 'Charleston', 'Mississippi': 'Jackson', 'Wisconsin': 'Madison',
+    'Missouri': 'Jefferson City', 'Wyoming': 'Cheyenne'
+}
+
+states = state_capitals.keys()
+cities = state_capitals.values()
+
+course_names = [
+   'Computer Graphics', 'Data Structures', 'Databases', 'Machine Learning', 'Calculus',
+   'Linear Algebra', 'Algebra', 'Number Theory','Creative Writing', 'English Composition',
+   'Modern Literature', 'European History', 'World History', 'Ethics', 'Critical Thinking',
+   'Formal Logic', 'Financial Accounting', 'Business Analytics', 'Personal Finance',
+   'Genetics', 'Entomology', 'Cell Biology', 'Microbiology', 'Immunology', 'Animal Behavior'
+]
+
+fruits = ['apple', 'banana', 'grape', 'plum', 'pear', 'peach', 'apricot', 'orange', 'lemon', 'lime', 'berry']
+
+states_without_spaces = get_dataset_without_spaces(states)
+cities_without_spaces = get_dataset_without_spaces(cities)
+course_names_without_spaces = get_dataset_without_spaces(course_names)
+course_names_only_spaces = get_dataset_only_spaces(course_names)
+state_no_space, city_no_space = get_capitals_without_spaces(state_capitals)
+state_only_space = get_dataset_only_spaces(states)</global><language type="string">java</language><levels type="list"><li type="dict">
+<explanation type="string">For input `${distractor.example_in}`, the string variable ${distractor.var1} holds the string "${distractor.var1_example_in}" and the string variable ${distractor.var2} holds the string "${distractor.var2_example_in}".
+
+A System.out.println() statement outputs the following in order: ${distractor.expl}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class SentenceFromStrings {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String ${distractor.var1};
+      String ${distractor.var2};${distractor.var3_declaration}
+
+      ${distractor.var1} = scnr.next();
+      ${distractor.var2} = scnr.next();
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println(${distractor.var1} + ${distractor.var3_cout} + ${distractor.var2} + ".");</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">SentenceFromStrings.java</name></li></files><prompt type="string">String variables ${distractor.var1} and ${distractor.var2} are read from input. Use variables ${distractor.var_prompt} to output the following, ending with a newline.
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    var1 = pick_from(meaningful_permutation['var1'])
+    var2 = pick_from(meaningful_permutation['var2'])
+    var3 = pick_from(meaningful_permutation['var3'])
+
+    var1_dataset = meaningful_permutation['var1_dataset']
+    var2_dataset = meaningful_permutation['var2_dataset']
+
+    if len(var2_dataset) == 3:
+        var2_dataset = pick_from(meaningful_permutation['var2_dataset'])
+        if var2_dataset == countries:
+            var2 = var2.format('country')
+        elif var2_dataset == states_without_spaces:
+            var2 = var2.format('state')
+        elif var2_dataset == cities_without_spaces:
+            var2 = var2.format('city')
+    var3_dataset = meaningful_permutation['var3_dataset']
+
+    var1_example_in = pick_from(var1_dataset)
+    var2_example_in = pick_from(var2_dataset)
+
+    var3_str = pick_from(meaningful_permutation['var3_dataset'])
+
+    example_in = '{} {}'.format(var1_example_in, var2_example_in)
+    example_out = '{} {} {}.'.format(var1_example_in, var3_str, var2_example_in)
+
+    var3_declaration = ''
+    var3_cout = '" {} "'.format(var3_str)
+    var_prompt = '{} and {}'.format(var1, var2)
+
+    is_three_vars = meaningful_permutation['num_variables'] == 3
+    verb = '" ", {}, " "'.format(var3) if is_three_vars else '" {} "'.format(var3_str)
+
+    if is_three_vars:
+        var3_declaration = '\n\t\tString {} = "{}";'.format(var3, var3_str)
+        var3_cout = '" " + {} + " "'.format(var3)
+        var_prompt = '{}, {}, and {}'.format(var1, var2, var3)
+
+    return {
+        'var1': var1,
+        'var2': var2,
+        'var3': var3,
+        'var1_dataset': var1_dataset,
+        'var2_dataset': var2_dataset,
+        'var3_str': var3_str,
+        'var1_example_in': var1_example_in,
+        'var2_example_in': var2_example_in,
+        'example_in': example_in,
+        'example_out': example_out,
+        'var3_declaration': var3_declaration,
+        'var3_cout': var3_cout,
+        'var_prompt': var_prompt,
+        'verb': verb,
+        'expl': '{}, {}, {}, ".", and a newline.'.format(var1, verb, var2)
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    scenario = pick_from([locations_scenario, courses_scenario])
+    scenario_type = 'locations' if scenario == locations_scenario else 'courses'
+
+    return {
+        'scenario_type': scenario_type,
+        'var1': scenario.var1,
+        'var2': scenario.var2,
+        'var3': scenario.var3,
+        'var1_dataset': scenario.var1_dataset,
+        'var2_dataset': scenario.var2_dataset,
+        'var3_dataset': scenario.var3_dataset,
+        'num_variables': pick_from([2, 3])
+    }</meaningful><setup type="string">class Scenario:
+    def __init__(self, var1, var2, var3, var1_dataset, var2_dataset, var3_dataset):
+        self.var1 = var1
+        self.var2 = var2
+        self.var3 = var3
+        self.var1_dataset = var1_dataset
+        self.var2_dataset = var2_dataset
+        self.var3_dataset = var3_dataset
+
+
+locations_scenario = Scenario(
+    ['userName', 'personName', 'myName'],
+    ['locationName', '{}Name'],
+    ['verbDescription', 'action'],
+    first_names,
+    [countries, states_without_spaces, cities_without_spaces],
+    ['likes', 'has been to', 'has never been to', 'wants to go to', 'went to', 'is in', 'lives in']
+)
+
+courses_scenario = Scenario(
+    ['userName', 'studentName', 'myName'],
+    ['courseName', 'className'],
+    ['verbDescription', 'action'],
+    first_names,
+    course_names_without_spaces,
+    ['likes', 'is taking', 'is studying']
+)</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    var1_dataset = distractor_permutation['var1_dataset']
+    var2_dataset = distractor_permutation['var2_dataset']
+
+    var1_example_in = distractor_permutation['var1_example_in']
+    var2_example_in = distractor_permutation['var2_example_in']
+
+    example_in = '{} {}'.format(var1_example_in, var2_example_in)
+
+    var1_dataset.remove(var1_example_in)
+    var2_dataset.remove(var2_example_in)
+
+    var1_str1, var1_str2 = random.sample(var1_dataset, 2)
+    var2_str1, var2_str2 = random.sample(var2_dataset, 2)
+
+    return {
+        'test2': '{} {}'.format(var1_str1, var2_str1),
+        'test3': '{} {}'.format(var1_str2, var2_str2)
+    }</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">Since ${distractor.explanation}.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_name} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String ${distractor.var1};
+      String ${distractor.var2};${distractor.var3_line}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      ${distractor.print_code}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_name}.java</name></li></files><prompt type="string">Read the string variables ${distractor.prompt_vars}, assuming ${distractor.assumption}
+
+Ex: If the input is${distractor.new_line}`${distractor.example_in}`${distractor.then_output}
+
+`${distractor.example_out}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario_type = meaningful_permutation['scenario_type']
+
+    next_list = [favorites, first_last_names, cities_states]
+    nextline_list = [address, student_courses, birth_cities]
+    scenario = pick_from(next_list) if scenario_type == 'next' else pick_from(nextline_list)
+
+    is_favorites = scenario == favorites
+    is_citystate_or_names = scenario in [cities_states, first_last_names]
+    is_street_state = scenario == address
+    is_name_or_birthplace = scenario == birth_cities
+
+    var3_line, new_line = '', ' '
+    num_vars = 2
+
+    then_output = ', then the output is:'
+    prompt_vars = '{} and {} from input'.format(scenario.var1, scenario.var2)
+    assumption = ' that the {} are single words.'.format(scenario.scene)
+    selected_out = pick_from(scenario.output_statements)
+    explanation = 'the {} are assumed to be single words, scnr.next() is used to read the string variables {}'.format(scenario.scene, prompt_vars)
+
+    var1_example_in = pick_from(scenario.var1_dataset)
+    var2_example_in = pick_from(scenario.var2_dataset)
+    solution = '{} = scnr.next();\n{} = scnr.next();'.format(scenario.var1, scenario.var2)
+
+    if is_favorites:
+        index = pick_from_range(0, len(scenario.scene) - 1)
+        scenario.scene = scenario.scene[index]
+        scenario.class_name = scenario.class_name.format(scenario.scene.capitalize())
+        scenario.var1_dataset = scenario.var1_dataset[index]
+
+        capital_scene = scenario.scene.capitalize()
+        scenario.var1 = scenario.var1.format(capital_scene)
+        scenario.var2 = scenario.var2.format(capital_scene)
+
+        # Reassign due to topic-specific variable names
+        prompt_vars = '{} and {} from input'.format(scenario.var1, scenario.var2)
+        solution = '{} = scnr.next();\n{} = scnr.next();'.format(scenario.var1, scenario.var2)
+
+        var1_example_in, var2_example_in, var3_example_in = random.sample(scenario.var1_dataset, 3)
+        num_vars = pick_from([2, 3])
+        example_inputs = [var1_example_in, var2_example_in]
+        explanation = 'each {} is assumed to be a single word, scnr.next() is used to read the string variables {}'.format(scenario.scene, prompt_vars)
+        assumption = ' that each {} is a single word.'.format(scenario.scene)
+        selected_out = scenario.output_statements[0].format(scenario.scene, '{}', '{}')
+
+        if num_vars == 3:
+            scenario.var3 = scenario.var3.format(capital_scene)
+            example_inputs.append(var3_example_in)
+            var3_line = '\n\t\tString {};'.format(scenario.var3)
+            prompt_vars = '{}, {}, and {} from input'.format(scenario.var1, scenario.var2, scenario.var3)
+            solution += '\n{} = scnr.next();'.format(scenario.var3)
+            selected_out = scenario.output_statements[1].format(scenario.scene, '{}', '{}', '{}')
+            explanation = 'each {} is assumed to be a single word, scnr.next() is used to read the string variables {}'.format(scenario.scene, prompt_vars)
+
+    else:
+        if scenario == cities_states:
+            pair = pick_from_range(0, len(scenario.var1_dataset) - 1)
+            var1_example_in, var2_example_in = scenario.var1_dataset[pair], scenario.var2_dataset[pair]
+
+        elif scenario_type == 'nextLine':
+            assumption = 'that the {} and {} may contain multiple words.'.format(scenario.scene[0], scenario.scene[1])
+            assumption += ' The first input line contains the {} '.format(scenario.scene[0])
+            assumption += 'and the second input line contains the {}.'.format(scenario.scene[1])
+
+            then_output = '\n\nthen the output is:\n\n\n'
+            new_line = ':\n\n\n'
+            explanation = 'the {} and {} may both contain multiple words, scnr.nextLine() is used to read the string variables {}'.format(
+                scenario.scene[0], scenario.scene[1], prompt_vars)
+            solution = '{} = scnr.nextLine();\n{} = scnr.nextLine();'.format(scenario.var1, scenario.var2)
+
+            var1_example_in = '{} {}'.format(pick_from(scenario.var1_dataset[0]), pick_from(scenario.var1_dataset[1]))
+
+            if is_street_state:
+                num_digits = pick_from_range(2, 4)
+                street_num_start = pick_from_range(1, 6)
+                street_num = ''.join(str(x) for x in range(street_num_start, street_num_start + num_digits))
+                var1_example_in = '{} {}'.format(street_num, var1_example_in)
+
+            elif is_name_or_birthplace:
+                index = pick_from_range(0, len(scenario.var2_dataset) - 1)
+                state = scenario.var2_dataset.keys()[index]
+                city = scenario.var2_dataset.values()[index]
+                var2_example_in = '{}, {}'.format(city, state)
+
+        example_inputs = [var1_example_in,var2_example_in]
+
+    separator = ' ' if scenario_type == 'next' else '\n'
+    example_in = separator.join(example_inputs)
+    example_out = selected_out.format(*example_inputs)
+
+    print_code = make_java_out_str(selected_out, num_vars).format(scenario.var1, scenario.var2, scenario.var3)
+    is_first_last_names = scenario.scene ==  'first name and last name'
+    if (is_first_last_names) and (selected_out == '{}, {}'):
+        example_inputs.reverse()
+        example_out = selected_out.format(*example_inputs)
+        print_code = make_java_out_str(selected_out, num_vars).format(scenario.var2, scenario.var1)
+
+    return {
+        'class_name': scenario.class_name,
+        'var1': scenario.var1,
+        'var2': scenario.var2,
+        'var3': scenario.var3,
+        'var3_line': var3_line,
+        'prompt_vars': prompt_vars,
+        'assumption': assumption,
+        'then_output': then_output,
+        'example_in': example_in,
+        'example_out': example_out,
+        'print_code': print_code,
+        'solution': solution,
+        'new_line': new_line,
+        'explanation': explanation,
+        'num_vars': num_vars,
+        'scenario': scenario.scene,
+        'var1_dataset': scenario.var1_dataset,
+        'var2_dataset': scenario.var2_dataset
+    }
+    
+    
+def make_java_out_str(output_str, num_vars):
+    output_str_split = [string for string in output_str.split('{}') if string]
+
+    out_str = 'System.out.println('
+    if num_vars == 3: # Two output statements
+        out_str = 'System.out.print("{}");\n\t\tSystem.out.println('.format(output_str_split[0])
+        out_str += '{} + '
+        output_str_split.pop(0)
+
+    if output_str.index('{}') == 0: # Output starts with a variable
+        out_str += '{} + '
+
+    for i, string in enumerate(output_str_split):
+        out_str += '"{}"'.format(string) # String literal
+        if i != len(output_str_split) - 1:
+            out_str += ' + {} + ' # String variable
+
+    if output_str.rindex('{}') == len(output_str) - 2: # Output ends with a variable
+        out_str += ' + {}'
+
+    out_str += ');'
+
+    return out_str</distractor><meaningful type="string">def make_meaningful_permutation():
+    next_or_nextline = pick_from(['next', 'nextLine'])
+
+    return {
+        'scenario_type': next_or_nextline
+    }</meaningful><setup type="string">colors = [
+   'red', 'green', 'blue', 'yellow', 'orange', 'indigo', 'violet', 'magenta', 'maroon',
+   'brown', 'beige', 'tan', 'sienna', 'ochre', 'brick', 'teal', 'gold', 'gray'
+]
+
+animals = [
+    'ant', 'bear', 'bee', 'bird', 'bison', 'cheetah', 'cougar', 'cow', 'deer', 'dog',
+    'eagle', 'elk', 'fox', 'gecko', 'goat', 'horse', 'ibex', 'jackal', 'kangaroo',
+    'lion', 'lizard', 'llama', 'moose', 'mouse', 'narwhal', 'owl', 'penguin', 'pig',
+    'quail', 'rabbit', 'robin', 'sheep', 'snake', 'stork', 'tiger', 'tortoise', 'turtle',
+    'urchin', 'vulture', 'wasp', 'whale', 'wolf', 'yak', 'zebra',
+]
+
+flowers = ['rose', 'daisy', 'iris', 'poppy', 'azalea', 'peony', 'magnolia', 'violet']
+
+drinks = ['juice', 'milk', 'tea', 'chai', 'coffee', 'latte', 'espresso', 'cocoa', 'smoothie']
+
+class Scenario:
+    def __init__(self, class_name, scene, var1, var2, output_statements, var1_dataset, var2_dataset, var3=''):
+        self.class_name = class_name
+        self.scene = scene
+        self.var1 = var1
+        self.var2 = var2
+        self.output_statements = output_statements
+        self.var1_dataset = var1_dataset
+        self.var2_dataset = var2_dataset
+        self.var3 = var3
+
+
+favorites = Scenario(
+    'Favorite{}s',
+    ['color', 'animal', 'flower', 'drink', 'fruit'],
+    'favorite{}1',
+    'favorite{}2',
+    ['Favorite {}s: {}, {}', 'Favorite {}s: {}, {}, {}'],
+    [colors, animals, flowers, drinks, fruits],
+    [colors, animals, flowers, drinks, fruits],
+    'favorite{}3',
+)
+
+first_last_names = Scenario(
+    'FullName',
+    'first name and last name',
+    'firstName',
+    'lastName',
+    ['{}, {}', 'My name is {} {}'],
+    first_names,
+    last_names,
+)
+
+cities_states = Scenario(
+    'PlaceOfBirth',
+    'city and state',
+    'myCity',
+    'myState',
+    ['{}, {}', 'I am from {}, {}.'],
+    city_no_space,
+    state_no_space,
+)
+
+address = Scenario(
+    'StreetAddress',
+    ['street', 'state'],
+    'userStreet',
+    'userState',
+    ['I live on {} in {}.', 'Address: {}, {}'],
+    [street_name_start, street_name_end],
+    state_only_space,
+)
+
+student_courses = Scenario(
+    'StudentCourse',
+    ['student\'s name', 'course'],
+    'studentName',
+    'courseName',
+    ['{} is taking {}.', '{} is studying {}.'],
+    [first_names, last_names],
+    course_names,
+)
+
+birth_cities = Scenario(
+    'PlaceOfBirth',
+    ['person\'s name', 'birth place'],
+    'personName',
+    'birthPlace',
+    ['{} was born in {}.', '{} is from {}.'],
+    [first_names, last_names],
+    state_capitals,
+)</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    num_vars = distractor_permutation['num_vars']
+    ex_in = distractor_permutation['example_in']
+    scenario = distractor_permutation['scenario']
+    var1_dataset = distractor_permutation['var1_dataset']
+    var2_dataset = distractor_permutation['var2_dataset']
+
+    scenario_type = meaningful_permutation['scenario_type']
+
+    is_nextline = scenario_type == 'nextLine'
+    is_favorites = scenario in ['color', 'animal', 'flower', 'drink', 'fruit']
+
+    if is_nextline:
+        test_values = test_nextline(scenario, ex_in, var1_dataset, var2_dataset)
+    elif is_favorites:
+        test_values = test_favorites(ex_in, var1_dataset, num_vars)
+    else:
+        test_values = test_city_state_and_names(scenario, ex_in, var1_dataset, var2_dataset)
+
+    test2, test3 = test_values
+
+    return {
+        'test2': test2,
+        'test3': test3
+    }
+
+
+def test_favorites(ex_in, dataset, num_vars):
+    tracker = []
+    for x in range(2):
+        while True:
+            vars = random.sample(dataset, num_vars)
+            test = ' '.join(vars)
+
+            if (test not in tracker) and (test != ex_in):
+                tracker.append(test)
+                break
+
+    return tracker
+
+
+def test_city_state_and_names(scenario, ex_in, dataset1, dataset2):
+    tracker = []
+    for x in range(2):
+        while True:
+            test = '{} {}'
+
+            if scenario == 'city and state':
+                i = pick_from_range(0, len(dataset1) - 1)
+                test = test.format(dataset1[i], dataset2[i])
+
+            elif scenario == 'first name and last name':
+                test = test.format(pick_from(dataset1), pick_from(dataset2))
+
+            if (test not in tracker) and (test != ex_in):
+                tracker.append(test)
+                break
+
+    return tracker
+
+
+def test_nextline(scenario, ex_in, dataset1, dataset2):
+    tracker = []
+    for x in range(2):
+        while True:
+            first_var = '{} {}'.format(pick_from(dataset1[0]), pick_from(dataset1[1]))
+            second_var = pick_from(dataset2)
+
+            if scenario == ['street', 'state']:
+                num_digits = pick_from_range(2, 4)
+                street_num_start = pick_from_range(1, 6)
+                street_num = ''.join(str(x) for x in range(street_num_start, street_num_start + num_digits))
+                first_var = '{} {}'.format(street_num, first_var)
+
+            elif scenario == ['person\'s name', 'birth place']:
+                pair = pick_from_range(0, len(dataset2) - 1)
+                city = dataset2.values()[pair]
+                state = dataset2.keys()[pair]
+                second_var = '{}, {}'.format(city, state)
+
+            test = '{}\n{}\n'.format(first_var, second_var)
+
+            if (test not in tracker) and (test != ex_in):
+                tracker.append(test)
+                break
+
+    return tracker</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explanation}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_name} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String ${distractor.var1_name};
+      String ${distractor.var2_name};${distractor.var3_line}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.print_output}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_name}.java</name></li></files><prompt type="string">${distractor.prompt}
+
+Ex: If the input is${distractor.new_line}`${distractor.example_in}`${distractor.then_output}
+
+`${distractor.example_out}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    first_input = meaningful_permutation['first_input']
+
+    is_next_first = first_input == 'next'
+    next_list = [name_address, name_courses, name_city]
+    nextline_list = [grocery_list, student_courses, places_visited]
+
+    scenario = pick_from(next_list) if is_next_first else pick_from(nextline_list)
+    scenario, example_in = create_input(scenario, is_next_first, True)
+
+    single_word, multiple_words = 'is a single word', 'contains multiple words with any leading spaces'
+
+    if is_next_first:
+        var3_line, new_line, print_output = '', ' ', ''
+        then_output = ', then the output is:'
+        vars = [scenario.var1_name, scenario.var2_name]
+        var_names = '{} and {}'.format(*vars)
+
+        assumption = '{} and the {} {}'.format(single_word, scenario.scene, multiple_words)
+        lines = 'All of the input is on one line'
+        prompt_vars = [var_names, 'name', assumption, '', lines]
+        example_out = '{}\n{}'.format(scenario.var1_value, scenario.var2_value)
+        solution = '{} = scnr.next();\n{} = scnr.nextLine();'.format(*vars)
+
+        expl1 = ' `{}`, the input from scnr.next()'.format(example_in)
+        expl2 = 'characters until the next whitespace, so &lt;span style="white-space: nowrap"&gt;"{0}"&lt;/span&gt; is read, '.format(scenario.var1_value)
+        expl2 += 'stopping at the space after {0}'.format(scenario.var1_value)
+        expl3 = 'the scnr.nextLine() statement gets all the remaining '
+        expl3 += 'text on the input line, so &lt;span style="white-space: nowrap"&gt;"{}"&lt;/span&gt; is read, including the leading space.'.format(scenario.var2_value)
+
+        explanation_vars = [
+            'scnr.next()',
+            scenario.var1_name,
+            'name',
+            'be a single word',
+            'scnr.nextLine()',
+            ' {}'.format(scenario.var2_name),
+            'the {}'.format(scenario.scene),
+            'contain multiple words',
+        ]
+    else:
+        then_output = '\n\nthen the output is:\n'
+        new_line = ':\n\n'
+        var3_line = '\n\t\tString {}3;'.format(scenario.var2_name)
+        vars = [
+            scenario.var1_name,
+            '{}1'.format(scenario.var2_name),
+            '{}2'.format(scenario.var2_name),
+            '{}3'.format(scenario.var2_name)]
+        var_names = '{}, {}, {}, and {}'.format(*vars)
+
+        assumption = 'contains multiple words and each {} {}'.format(scenario.list_item_name, single_word)
+
+        is_places_visited = scenario == places_visited
+        list_item_name = 'places visited' if is_places_visited else '{}s'.format(scenario.list_item_name)
+
+        lines = ' The first input line contains the {} and the second input line contains the {}.'.format(
+            scenario.scene, list_item_name)
+        prompt_vars = [var_names, scenario.scene, assumption, lines]
+        example_out = '{}:\n{}'.format(scenario.var1_value, '\n'.join(scenario.var2_value))
+
+        scenario.var2_name = str(vars[1])
+        scenario.var2_name += ';\n\t\tString {}'.format(str(vars[2]))
+        print_output = '\n\t\tSystem.out.println({} + ":");'.format(vars[0])
+        solution = '{} = scnr.nextLine();\n'.format(vars.pop(0))
+        for x in vars: solution += '{} = scnr.next(); \n'.format(x) if x != vars[-1] else '{} = scnr.next();'.format(x)
+
+        expl1 = ':\n\n `{}`&lt;br&gt;`{}`\n\nthe scnr.nextLine()'.format(scenario.var1_value, ' '.join(scenario.var2_value))
+        expl2 = 'the entire first line, stopping at the newline character, '
+        expl2 += 'so "{}" is read'.format(scenario.var1_value)
+        expl3 = 'the three scnr.next() statements skip the whitespace and get'
+        expl3 += ' "{}", "{}", and "{}", respectively.'.format(*scenario.var2_value)
+
+        explanation_vars = [
+            'scnr.nextLine()',
+            scenario.var1_name,
+            scenario.scene,
+            'contain multiple words',
+            'scnr.next()',
+            's {}, {}, and {}'.format(*vars),
+            'each {}'.format(scenario.list_item_name),
+            'be a single word'
+        ]
+
+    for x in vars: print_output += '\n\t\tSystem.out.println({});'.format(x)
+    prompt = 'Read the string variables {} from input, assuming that the {} {}.{}'.format(*prompt_vars)
+
+    explanation = '{} is used to read the string variable {} from input, since the {} is assumed to {}.\n\n'
+    explanation += 'Then, {} is used to read the string variable{} from input, since {} is assumed to {}.\n\n'
+    explanation += 'Ex: For input{} statement gets {}. Then, {}'
+    explanation_vars.extend([expl1, expl2, expl3])
+    explanation = explanation.format(*explanation_vars)
+
+    return {
+        'class_name': scenario.class_name, 
+        'var1_name': scenario.var1_name,
+        'var2_name': scenario.var2_name,
+        'var3_line': var3_line,
+        'prompt': prompt,
+        'assumption': assumption,
+        'then_output': then_output,
+        'example_in': example_in,
+        'example_out': example_out,
+        'print_output': print_output,
+        'solution': solution,
+        'new_line': new_line,
+        'explanation': explanation,
+        'scenario': scenario.scene,
+        'is_next_first':  is_next_first
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    first_input = pick_from(['next', 'nextLine'])
+
+    return {
+        'first_input': first_input
+    }</meaningful><setup type="string">vegetables = [
+    'artichoke', 'beans','carrot', 'celery', 'peas', 'potato', 'radish',
+    'mushroom', 'corn', 'scallion', 'onion', 'garlic'
+]
+
+food = [
+   'milk', 'bread', 'rice', 'oatmeal', 'cereal', 'cheese',
+   'cream', 'tea', 'coffee', 'chocolate', 'butter'
+]
+
+class Scenario:
+    def __init__(self, class_name, scene, var1_name, var2_name, output_statement, var1_value, var2_value, list_item_name=''):
+        self.class_name = class_name
+        self.scene = scene
+        self.var1_name = var1_name
+        self.var2_name = var2_name
+        self.output_statement = output_statement
+        self.var1_value = var1_value
+        self.var2_value = var2_value
+        self.list_item_name = list_item_name
+
+
+name_address = Scenario(
+    'HomeAddress',
+    'address',
+    'userName',
+    'userAddress',
+    '{}\n{}',
+    first_names,
+    [street_name_start, street_name_end]
+)
+
+name_courses = Scenario(
+    'StudentCourse',
+    'course',
+    ['studentName', 'professorName', 'instructorName'],
+    'courseName',
+    '{}\n{}',
+    [first_names, last_names],
+    course_names_only_spaces
+)
+
+name_city = Scenario(
+    'PlaceOfBirth',
+    'birth place',
+    ['userName', 'personName'],
+    'birthPlace',
+    '{}\n{}',
+    first_names,
+    state_capitals
+)
+
+grocery_list = Scenario(
+    'GroceryList',
+    'list name',
+    'listName',
+    'listItem',
+    '{}:\n{}',
+    ['To buy', 'Grocery list', 'Shopping list'],
+    [fruits, vegetables, food],
+    'list item'
+)
+
+student_courses = Scenario(
+    'StudentCourses',
+    'term',
+    'termYear',
+    'course',
+    '{} courses:\n{}',
+    ['Winter', 'Spring', 'Summer', 'Fall'],
+    course_names_without_spaces,
+    'course'
+)
+
+places_visited = Scenario(
+    'PlacesVisited',
+    "list's name",
+    'visitedListName',
+    'place',
+    '{}:\n{}',
+    [['Countries', 'States', 'Cities'], [" I've visited", " I've been to"]],
+    [countries, state_no_space, city_no_space],
+    'place visited'
+)
+
+
+# create_input() generates values for variable names &amp; inputs, and redefines attributes
+# when used in initialization. When NOT used for initialization (i.e. generating inputs for test cases),
+# attributes are not redefined to avoid overwriting data
+def create_input(s, is_next_first, is_initialization):
+    if is_next_first:
+        if s == name_address:
+            var1_value = pick_from(s.var1_value)
+            num_digits = pick_from_range(2, 4)
+            street_num_start = pick_from_range(1, 6)
+            street = '{} {}'.format(pick_from(street_name_start), pick_from(street_name_end))
+            street_num = ''.join(str(x) for x in range(street_num_start, street_num_start + num_digits))
+            var2_value = ' {} {}'.format(street_num, street)
+        elif s == name_courses:
+            if is_initialization:
+                s.var1_name = pick_from(s.var1_name)
+            var1_value = pick_from(first_names) if s.var1_name == 'studentName' else pick_from(last_names)
+            var2_value = ' {}'.format(pick_from(s.var2_value))
+        else:
+            s.var1_name = pick_from(s.var1_name)
+            var1_value = pick_from(s.var1_value)
+            pair = pick_from_range(0, len(s.var2_value) - 1)
+            city, state = state_capitals.values()[pair], state_capitals.keys()[pair]
+            var2_value = ' {}, {}'.format(city, state)
+        generated = '{}{}'.format(var1_value, var2_value)
+    else:
+        if s == grocery_list:
+            var1_value = pick_from(s.var1_value)
+            dataset = pick_from(s.var2_value)
+            var2_value = random.sample(dataset, 3)
+        elif s == student_courses:
+            var1_value = '{} {}'.format(pick_from(s.var1_value), pick_from_range(2010, 2022))
+            var2_value = random.sample(s.var2_value, 3)
+        else:
+            index = pick_from_range(0, 2)
+            var1_value = '{}{}'.format(s.var1_value[0][index], pick_from(s.var1_value[1]))
+            var2_value = random.sample(s.var2_value[index], 3)
+        generated = '{}\n{}'.format(var1_value, ' '.join(var2_value))
+
+    if is_initialization:
+        s.var1_value, s.var2_value = var1_value, var2_value
+
+    return s, generated</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    scenario = distractor_permutation['scenario']
+    ex_in = distractor_permutation['example_in']
+    is_next_first = distractor_permutation['is_next_first']
+    name_type = distractor_permutation['var1_name']
+
+    all_scenarios = [name_address, name_courses, name_city, grocery_list, student_courses, places_visited]
+    for s in all_scenarios:
+        if s.scene == scenario:
+            break
+
+    s.var1_name = name_type
+    test2, test3 = get_inputs(s, is_next_first, ex_in)
+
+    return {
+        'test2': test2,
+        'test3': test3
+    }
+
+
+def get_inputs(s, is_next_first, ex_in):
+    tracker = []
+    has_single_word_test = len(ex_in.split()) == 2
+    for x in range(2):
+        while True:
+            y, generated = create_input(s, is_next_first, False)
+
+            if not has_single_word_test:
+                has_single_word_test = len(generated.split()) == 2
+
+            if (s.scene == 'course') and (not has_single_word_test):
+                var1_value = pick_from(first_names) if s.var1_name == 'studentName' else pick_from(last_names)
+                var2_value = pick_from(get_dataset_without_spaces(course_names))
+                generated = '{} {}'.format(var1_value, var2_value)
+                has_single_word_test = True
+
+            if (generated not in tracker) and (generated != ex_in):
+                tracker.append(generated)
+                break
+
+    random.shuffle(tracker) # Shuffle so name+course scenario single word test is not always 2nd
+    
+    return tracker</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+
+
+
+
+
+
+</zyVersion>
+
+
+<zypInfo person="Jamie" date="08/01/23" minutes="145" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/03/23" minutes="31" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/03/23" minutes="30" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/08/23" minutes="18" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/08/23" minutes="23" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/10/23" minutes="10" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/11/23" minutes="8" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/11/23" minutes="4" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/22/23" minutes="120" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/29/23" minutes="72" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/29/23" minutes="105" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="08/30/23" minutes="95" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="09/05/23" minutes="50" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/05/23" minutes="40" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="09/05/23" minutes="15" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="09/07/23" minutes="20" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="01/09/24" minutes="2400" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="01/09/24" minutes="70" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="01/09/24" minutes="45" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="01/10/24" minutes="180" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="01/10/24" minutes="55" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="01/10/24" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="01/11/24" minutes="120" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="01/11/24" minutes="5" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="01/17/24" minutes="60" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="01/17/24" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="01/17/24" minutes="38" status="QADoing">Golden_CA_development</zypInfo>
+</zySection>

@@ -1,0 +1,137 @@
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='a777f664-7beb-4bef-bede-7cc9c6ce1180'>
+<instructions>
+<p>Which XXX would generate the following plot?</p>
+<codeBlock language='python'>
+import matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+XXX
+plt.scatter(x = xx, y = yy)
+</codeBlock>
+<p></p>
+<image width='149' guid='85bce924-89d7-4083-9cb2-89bd711915f1' alt='A scatter plot of 4 points that is twice as tall as wide.'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice correct='true'>plt.figure(figsize=[2,4])</choice>
+<choice>plt.figure(figsize=[4,2])</choice>
+<choice>plt.figure(figsize=[4,4])</choice>
+<choice>plt.figure(figsize=2)</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='bf311a5b-cb25-413c-8e8a-1c2689933080'>
+<instructions>
+<p>Which XXX would generate the following plot?</p>
+<codeBlock language='python'>
+import matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+plt.scatter(x = xx, y = yy)
+XXX
+</codeBlock>
+<p></p>
+<image width='386' guid='32bc9ccb-01c4-484b-9feb-51c1ec5234da' alt='A scatter plot of 4 points with the title Title, and axes Horizontal feature and Vertical Feature.'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice correct='true'><codeBlock language='python'>plt.xlabel("Horizontal feature")
+plt.ylabel("Vertical feature")
+plt.title("Title")</codeBlock>
+</choice>
+<choice><codeBlock language='python'>plt.xlabel(Horizontal feature)
+plt.ylabel(Vertical feature)
+plt.title(Title)</codeBlock>
+</choice>
+<choice><codeBlock language='python'>plt.xlabel("Horizontal feature")
+plt.ylabel("Vertical feature")</codeBlock>
+</choice>
+<choice><codeBlock language='python'>plt.ylabel("Horizontal feature")
+plt.xlabel("Vertical feature")
+plt.title("Title")</codeBlock>
+</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='8aaf68f2-a117-40a4-915a-a23a03506530'>
+<instructions>
+<p>Which XXX would generate the following plot?</p>
+<codeBlock language='python'>
+import matplotlib.pyplot as plt
+xx = [1,2,3,4]
+yy = [5,1,4,2]
+XXX
+</codeBlock>
+<p></p>
+<image width='372' guid='7f560493-898c-4506-af9a-afb2d747fe69' alt='A line plot of four points that is a red solid line.'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice correct='true'><code>plt.plot(xx, yy, "r-")</code></choice>
+<choice><code>plt.plot(xx, yy, "r.")</code></choice>
+<choice><code>plt.plot(xx, yy, "r--")</code></choice>
+<choice><code>plt.plot(xx, yy, "d")</code></choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='abfc998d-6d84-436a-9dd7-4d3714ef743c'>
+<instructions>
+<p>Which XXX would generate the following plot?</p>
+<codeBlock language='python'>
+import matplotlib.pyplot as plt
+xx = np.linspace(-5, 5, num=100)
+
+XXX 1)
+plt.plot(xx, 4*xx-3)
+plt.title("Linear")
+
+XXX 2)
+plt.plot(xx, xx*xx-16, 'g')
+plt.title("Quadratic")
+
+</codeBlock>
+<p></p>
+<image width='378' guid='2cf5f9a0-6c80-4c5d-bede-cae11e4e37a4' alt='A line plot of four points that is a red solid line.'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice correct='true'>plt.subplot(1,2,</choice>
+<choice>subplot(</choice>
+<choice>plt.subplot(2,1,</choice>
+<choice>plt.subplot(2,</choice>
+</choices>
+</question>
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='bec16ccf-e5ae-4ae9-8a50-17d41f5c522b'>
+<instructions>
+<p>Which XXX would generate the following plot?</p>
+<codeBlock language='python'>
+import matplotlib.pyplot as plt
+XXX
+</codeBlock>
+<p></p>
+<image width='380' guid='17ead9d7-b9cc-4bbe-9f70-7e23c37d2f5b' alt='A line plot of four points that is a red solid line.'>
+
+</image>
+
+</instructions>
+
+<choices>
+<choice correct='true'>plt.grid(color="b", linestyle="--")</choice>
+<choice>grid(color="b", linestyle="--")</choice>
+<choice>plt.grid( linestyle="--")</choice>
+<choice>plt.grid(color="b")</choice>
+</choices>
+</question>

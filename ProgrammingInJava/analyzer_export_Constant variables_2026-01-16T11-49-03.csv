@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What is the main benefit of declaring a variable as a constant?,It improves code readability and prevents accidental changes.,It allows the variable to be changed anywhere in the code.,It improves code readability and prevents accidental changes.,It uses less memory than a regular variable.,It enables the variable to store multiple values.,,,,,,
+Which keyword declares a constant variable in Java?,final,const,constant,final,static,,,,,,
+"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",MAX_SPEED,maxSpeed,Max_speed,MAX_SPEED,max_speed,,,,,,
+Why use constant variables instead of literal numbers in code?,To improve code readability and prevent accidental changes,To reduce the number of variables declared,To allow variables to change during execution,To improve code readability and prevent accidental changes,To speed up program execution,,,,,,
+A constant variable is declared using the keyword _____ in Java.,final,static,const,final,immutable,,,,,,
+What happens if a program tries to assign a new value to a constant variable?,The compiler reports an error,The program changes the value successfully,The compiler reports an error,The value changes only during runtime,The value changes only if it is an integer type,,,,,,
+Why should programmers use constant variables instead of literal numbers in code?,To improve code readability and prevent accidental changes,To increase program execution speed,To improve code readability and prevent accidental changes,To reduce the number of variables needed,To allow the values to be changed during runtime,,,,,,
+Which keyword in Java declares a variable whose value cannot be changed after initialization?,final,static,const,final,immutable,,,,,,
+What happens if a program tries to assign a new value to a constant variable?,The compiler reports an error,The program ignores the assignment,The compiler reports an error,The variable value changes during runtime,The program recompiles the constant automatically,,,,,,
+Why should programmers use constant variables instead of literal numbers in code?,To improve code readability and prevent unintentional changes,To reduce program execution time,To allow changing values throughout the program,To improve code readability and prevent unintentional changes,To enable variables to store different data types,,,,,,
+Which keyword declares a constant variable in Java?,final,const,static,final,immutable,,,,,,
+What happens if a program tries to assign a new value to a constant variable?,The compiler reports an error,The variable changes only once,The compiler reports an error,The program converts the variable to a normal variable,The value changes without warnings,,,,,,

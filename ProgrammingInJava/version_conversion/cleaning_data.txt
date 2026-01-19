@@ -1,0 +1,1441 @@
+<zySection title="Cleaning data" shorttitle="Cleaning data" id="3ac8a456-a178-c944-f86f-b654d31478ab">
+<zypInfo person="Paul" date="3/11/22" minutes="120" status="Draft1Doing"></zypInfo>
+<zypInfo person="Paul" date="3/13/22" minutes="60" status="Draft1Doing"></zypInfo>
+<zypInfo person="Paul" date="3/14/22" minutes="160" status="Draft1Doing"></zypInfo>
+<zypInfo person="Paul" date="3/12/22" minutes="60" status="Draft1Doing"></zypInfo>
+<zypInfo person="Paul" date="3/16/22" minutes="120" status="Draft1Doing">Rework animations per new style guidelines</zypInfo>
+<zypInfo person="Paul" date="3/17/22" minutes="140" status="Draft1Doing">Rework animations per new style guidelines</zypInfo>
+<zypInfo person="Paul" date="4/15/22" minutes="60" status="Draft1Doing">Rework datasets per new style guidelines</zypInfo>
+<zypInfo person="Paul" date="5/3/22" minutes="100" status="Draft1Doing">Rework datasets per new style guidelines</zypInfo>
+<zypInfo person="Paul" date="5/3/22" minutes="110" status="Draft1Doing">Rework datasets per new style guidelines</zypInfo>
+<zypInfo person="Paul" date="5/8/22" minutes="120" status="Draft1Done">Create Jupyter exercise in Python subsection. Edit/add to table of Python methods.</zypInfo>
+<zypInfo person="Mohsen" date="5/11/22" minutes="70" status="Rev1Doing">Performed Rev 1.</zypInfo>
+<zypInfo person="Paul" date= "5/13/22" minutes="50" status="Rev1Doing">Replied to all comments.</zypInfo>
+<zypInfo person="Heatherl" date= "5/19/22" minutes="20" status="Rev2Doing"></zypInfo>
+<zypInfo person="Paul" date= "5/23/22" minutes="5" status="Rev2Done">Closed all comments.</zypInfo>
+<zypInfo person="Cathleen" date= "5/23/22" minutes="60" status="Rev2Done">Copyedit</zypInfo>
+<zypInfo person="Aimee" date="7/22/22" minutes="30" status="Complete">Address reviewer comments</zypInfo>
+<zypInfo person="Aimee" date="10/5/22" minutes="60" status="Draft1Doing">R version</zypInfo>
+<zypInfo person="Aimee" date="10/14/22" minutes="60" status="Draft1Doing">R version</zypInfo>
+<zypInfo person="Aimee" date="10/17/22" minutes="60" status="Draft1Done">R version</zypInfo>
+<zypInfo person="Rissler" date="11/21/22" minutes="15" status="Rev1Doing">comment</zypInfo>
+<zypInfo person="Aimee" date="11/21/22" minutes="5" status="Rev1Done">R version</zypInfo>
+<zypInfo person="Ayla" date="11/30/22" minutes="15" status="Rev2Doing"></zypInfo>
+<zypInfo person="Aimee" date="11/30/22" minutes="5" status="Rev2Done"></zypInfo>
+<zypInfo person="Aimee" date="2/15/23" minutes="5" status="BugFix">Misspelled "feauture"</zypInfo>
+<zypInfo person="Aimee" date="7/13/23" minutes="10" status="BugFix">PA solution</zypInfo>
+<zypInfo person="Pamela" date="12/03/24" minutes="15" status="BugFix">JN python update</zypInfo>
+<zypInfo person="Dianna" date="6/4/25" minutes="15" status="BugFix">Align zyStudio instructions with task (Cleaning data subsection)</zypInfo>
+
+
+<zyAside type="bordered" name="Learn to:" id="d0d2c9c6-d169-c885-5215-9c8d4a0319cd"> 
+
+<ul>
+<li>List types of dirty data.</li>
+<li>Explain techniques to discard dirty data.</li>
+<li>Explain how to replace dirty data with imputed values.</li>
+<zyVersion version="python">
+<li>Use <zyICode>pandas</zyICode> methods to discard and impute data.</li>
+</zyVersion>
+
+</ul>
+
+</zyAside>
+
+
+<zyHTML id="78e1bc68-d573-08d7-efa4-8d81c8b84bad" subsection="true">
+<h3>Dirty data</h3>
+</zyHTML>
+
+<zyHTML id="1d468a1a-a20a-cd7c-87ea-823b7e28ded2">
+
+<p>Raw datasets often contain missing, outlier, and duplicate data.
+</p>
+
+<ul> 
+<li>
+<p>
+<zyDefn>_Missing data_ is an unknown or inapplicable value. In a database, missing data is represented as <zyICode>NULL</zyICode>. 
+</zyDefn><zyVersion version="python">In Python, missing data is represented as <zyICode>NaN</zyICode> (not a number), <zyICode>NaT</zyICode> (not a time), <zyICode>None</zyICode> (an unspecified object), or a blank value.</zyVersion><zyVersion version="nonprog">In other software, <zyICode>NA</zyICode> and <zyICode>NaN</zyICode> are common representations of missing data.</zyVersion>
+</p>
+</li>
+
+<li>
+<p>
+<zyDefn>_Outlier data_ is a numeric value that is much larger or smaller than other values in the same feature. 
+</zyDefn>Outlier data is usually defined as two or three standard deviations from the feature mean. 
+</p>
+</li>
+
+<li>
+<p>
+<zyDefn>_Duplicate data_ are two or more identical instances in a dataset. 
+</zyDefn>Duplicate instances are usually erroneous and should be removed. 
+</p>
+</li>
+
+</ul>
+
+<p>
+<zyDefn>Missing, outlier, and duplicate data are collectively called _dirty data_.
+</zyDefn>
+<zyDefn>A _dirty instance_ and a _dirty feature_ contain dirty data.
+</zyDefn>
+</p>
+
+<p>Dirty data creates bias and inefficiencies in data analysis. Data scientists may struggle to interpret missing data. Values in erroneous duplicates appear too often and are weighted too heavily. Outliers skew results due to one potentially erroneous value. Consequently, missing, outlier, and duplicate data should be corrected or deleted. 
+</p>
+
+</zyHTML>
+
+<zyVersion version="python">
+
+<!-- Last modified Tue May 24 2022 12:16:31 GMT-0700 (Pacific Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="8babf4bf-4092-4890-8a07-73f1ee8fcda0" caption="Dirty data" height="390px" width="750px" selectedInstr="none" selectedObj="none" numObjsEverCreated="164" loadOnDemand="false">
+<zyObjects><zyObject objNum="138" objType="image" objName="dataset" top="84px" left="52px" useConstrainedProportions="true" constrainedProportionsHeight="614" constrainedProportionsWidth="1526" googleDriveFileID="1t6hsxl2kjHajE62XGgTijEGRLcwvn9Vy" height="250px" width="621px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="139" objType="text" objName="Missing - unknown" top="34px" left="218px" opacity="0" border-radius="10px" background-color="rgb(249, 216, 188)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Missing - unknown</text></zyObject><zyObject objNum="140" objType="box" objName="Box 6" top="61px" left="314px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="133px" width="2px" border-width="0px" border-style="none" border-color="rgb(220, 4, 4)" transformDeg="-8"></zyObject><zyObject objNum="141" objType="text" objName="Missing - inapplicab" top="29px" left="514px" opacity="0" border-radius="10px" background-color="rgb(249, 216, 188)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Missing - inapplicable</text></zyObject><zyObject objNum="142" objType="box" objName="Box 7" top="55px" left="530px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="55px" width="2px" border-width="0px" border-color="transparent" transformDeg="8"></zyObject><zyObject objNum="143" objType="box" objName="Box 7" top="56px" left="632px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="47px" width="2px" border-width="0px" border-color="transparent" transformDeg="-12"></zyObject><zyObject objNum="144" objType="text" objName="Outlier" top="136px" left="699px" opacity="0" border-radius="10px" background-color="rgb(249, 216, 188)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Outlier</text></zyObject><zyObject objNum="145" objType="box" objName="Box 8" top="147px" left="678px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="2px" width="18px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="146" objType="box" objName="Box 1" top="111px" left="605px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="60px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="147" objType="box" objName="Box 1" top="111px" left="481px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="60px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="148" objType="box" objName="Box 1" top="164px" left="200px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="60px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="149" objType="box" objName="Box 1" top="197px" left="290px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="60px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="150" objType="box" objName="Box 1" top="231px" left="200px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="60px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="151" objType="box" objName="Box 1" top="138px" left="605px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="60px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="152" objType="box" objName="Box 1" top="261px" left="56px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="29px" width="608px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="153" objType="box" objName="Box 1" top="301px" left="56px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="29px" width="608px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="154" objType="triangle" objName="Triangle 1" top="100px" left="523px" opacity="0" background-color="rgb(51, 51, 51)" transformDeg="281"></zyObject><zyObject objNum="155" objType="triangle" objName="Triangle 2" top="100px" left="634px" opacity="0" background-color="rgb(51, 51, 51)" transformDeg="258"></zyObject><zyObject objNum="156" objType="triangle" objName="Triangle 3" top="186px" left="319px" opacity="0" background-color="rgb(51, 51, 51)" transformDeg="261"></zyObject><zyObject objNum="157" objType="box" objName="Box 2" top="63px" left="235px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="93px" width="2px" border-width="0px" border-color="transparent" transformDeg="5"></zyObject><zyObject objNum="158" objType="triangle" objName="Triangle 4" top="150px" left="226px" opacity="0" background-color="rgb(51, 51, 51)" transformDeg="276"></zyObject><zyObject objNum="159" objType="box" objName="Box 3" top="63px" left="260px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="162px" width="2px" border-width="0px" border-color="transparent" transformDeg="4"></zyObject><zyObject objNum="160" objType="triangle" objName="Triangle 5" top="217px" left="249px" opacity="0" background-color="rgb(51, 51, 51)" transformDeg="278"></zyObject><zyObject objNum="161" objType="triangle" objName="Triangle 6" top="142px" left="668px" opacity="0" background-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="162" objType="text" objName="duplicate" top="304px" left="684px" opacity="0" border-radius="10px" background-color="rgb(249, 216, 188)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Duplicate</text></zyObject><zyObject objNum="163" objType="box" objName="Box 4" top="316px" left="666px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="2px" width="15px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="164" objType="triangle" objName="Triangle 7" top="311px" left="664px" opacity="0" background-color="rgb(51, 51, 51)"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Antarctica has no permanent population and is not an independent country. So life expectancy and independence year are inapplicable.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="147" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="146" timeLabel="-" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="141" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="155" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="154" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="141" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="142" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="143" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Bangladesh, Bolivia, and Switzerland have continents and surface areas. So the missing values are unknown.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="150" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="149" timeLabel="-" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="148" timeLabel="-" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="139" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="140" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="160" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="159" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="158" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="157" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="156" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>China&apos;s independence year is greater than three standard deviations from the mean and is thus an outlier.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="151" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="144" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="145" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="161" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>The United States instances are duplicates. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="153" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="152" timeLabel="-" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="164" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="163" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="162" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription> A dataset is displayed. Columns in the dataset are Country, Continent, SurfaceArea, Population, LifeExpectancy, and IndependenceYear.
+Step 1: Antarctica has missing values for LifeExpectancy and IndependenceYear, which are highlighted.
+Step 2: Bangladesh and Switzerland have missing values for Continent. Bolivia has a missing value for SurfaceArea.
+Step 3: China's independence year is highlighted.
+Step 4: The United States appears in the dataset twice.
+</zyAltDescription>
+</zyAnimator>
+
+</zyVersion>
+
+
+<zyQSetMatch caption="Dirty data" id="8db47497-5e9b-4bf0-8b3d-a5b3ce7976f6">
+
+<p>Refer to the following dataset.
+</p>
+
+
+
+<table class="dbTable">
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Drive</th>
+<th>EngineType</th>
+<th>Cylinders</th>
+<th>Liters</th>
+</tr>
+
+<tr>
+<td>Audi</td>
+<td>A4</td>
+<td>All</td>
+<td>Gas</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>BMW</td>
+<td>328Ci</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>Model 3</td>
+<td>All</td>
+<td>Electric</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Ford</td>
+<td>Mustang</td>
+<td>Rear</td>
+<td>Gas</td>
+<td></td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Rolls-Royce</td>
+<td>Ghost</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>12</td>
+<td>6.6</td>
+</tr>
+</table>
+
+
+<p><br/>Match the term to the vehicle that illustrates the term.
+</p>
+
+<zyQMatchLeft>Outlier</zyQMatchLeft>
+<zyQMatchRight>Rolls-Royce Ghost<zyQExpl>The Rolls-Royce Ghost has 12 cylinders. This data is correct but more than two standard deviations from the mean and is therefore an outlier. </zyQExpl></zyQMatchRight>
+
+<zyQMatchLeft>Missing - inapplicable</zyQMatchLeft>
+<zyQMatchRight>Tesla Model 3<zyQExpl>The Tesla Model 3 is an electric car. Electric engines do not have cylinders or liters, so the NaN values represent inapplicable.</zyQExpl></zyQMatchRight>
+
+<zyQMatchLeft>Duplicate</zyQMatchLeft>
+<zyQMatchRight>Chevrolet Malibu<zyQExpl>The two Chevrolet Malibu instances are duplicates. If these instances represent different models, the models should be differentiated with additional data.</zyQExpl></zyQMatchRight>
+
+<zyQMatchLeft>Missing - unknown</zyQMatchLeft>
+<zyQMatchRight>Ford Mustang<zyQExpl>The Ford Mustang has a gas engine which has cylinders. So, the blank cylinder data represents unknown.</zyQExpl></zyQMatchRight>
+
+</zyQSetMatch>
+
+
+<zyHTML id="80113b0c-ba72-b4d8-e439-6dfb6a8e3300" subsection="true">
+<h3>Discarding data</h3>
+</zyHTML>
+
+<zyHTML id="e993d8bc-1ba9-1392-9d1a-729ae34537f3">
+
+<p>Dirty data may be removed from a dataset by discarding instances, discarding features, or pairwise discarding.
+</p>
+
+<p>
+<zyDefn>_Discarding instances_, also called _listwise deletion_ or _complete case removal_, removes dirty instances from the dataset.
+</zyDefn>Dirty instances are usually discarded when:
+</p>
+
+<ul>
+<li>
+<p>The dirty instances comprise a small percentage of the dataset.
+</p>
+</li>
+
+<li>
+<p>The dirty  instances are random. When missing or outlier values are correlated with values in another feature, discarding dirty instances introduces bias.
+</p>
+</li>
+
+<li>
+<p>Instances are duplicates. Usually, duplicate instances are erroneous, and one instance should be discarded. 
+</p>
+</li>
+</ul>
+
+<p>
+<zyDefn>_Discarding features_ removes dirty features that contain a high percentage of missing values, such as 60% or more. 
+</zyDefn>Discarding features does not usually apply to outlier data since, by definition, a small percentage of values can be outliers. Discarding features never applies to duplicate data.
+</p>
+
+<p>
+<zyDefn>_Pairwise discarding_ retains dirty instances for some analyses and discards dirty instances for others. Instances are discarded only when an analysis uses a dirty feature. 
+</zyDefn>With pairwise discarding, the total number of instances varies for different analyses, which complicates comparisons and correlations. For this reason, pairwise discarding is not commonly used.
+</p>
+
+</zyHTML>
+
+
+<zyVersion version="python">
+
+<zypInfo person="Erica" date="4/12/22" minutes="118" status="Draft1Doing"></zypInfo>
+<zypInfo person="Erica" date="5/3/22" minutes="64" status="Draft1Doing"></zypInfo>
+<!-- Last modified Wed May 04 2022 09:08:55 GMT-0400 (Eastern Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="7c54998d-90a6-4bbb-9b5a-4859a23879b9" caption="Discarding data" height="725px" width="724px" selectedInstr="22" selectedObj="none" numObjsEverCreated="22" loadOnDemand="false">
+<zyObjects><zyObject objNum="9" objType="image" objName="Dirty dataset table" top="66px" left="62px" useConstrainedProportions="true" constrainedProportionsHeight="722" constrainedProportionsWidth="1538" googleDriveFileID="12OUGY5Nr6g49RIYbBpbgYZwn4hEl41Ai" height="280px" width="596px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="10" objType="text" objName="Dirty dataset" top="38px" left="86px" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Dirty dataset</text></zyObject><zyObject objNum="11" objType="text" objName="Cleaned dataset" top="38px" left="86px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Cleaned dataset</text></zyObject><zyObject objNum="12" objType="image" objName="Cleaned dataset table" top="62px" left="66px" opacity="0" useConstrainedProportions="true" constrainedProportionsHeight="722" constrainedProportionsWidth="1538" googleDriveFileID="12OUGY5Nr6g49RIYbBpbgYZwn4hEl41Ai" height="280px" width="596px" border-width="0px" border-style="" border-color="rgb(55, 71, 79)"></zyObject><zyObject objNum="13" objType="box" objName="Box 1" top="636px" left="70px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="32px" width="584px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="14" objType="box" objName="Box 1" top="630px" left="69px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="37px" width="587px" border-color="rgb(255, 255, 255)"></zyObject><zyObject objNum="15" objType="box" objName="Box 2" top="616px" left="78px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" width="576px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="16" objType="image" objName="US Line" top="360px" left="65px" opacity="0" useConstrainedProportions="true" constrainedProportionsHeight="141" constrainedProportionsWidth="300" googleDriveFileID="1g8p-q0GAS8BkBBunm0XobQlW774jfIb5" height="281px" width="598px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="17" objType="box" objName="St Helena highlight" top="571px" left="71px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="584px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="18" objType="box" objName="Life expectancy highlight" top="404px" left="435px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="204px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="19" objType="box" objName="Box 3" top="406px" left="624px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="204px" border-color="rgb(255, 255, 255)"></zyObject><zyObject objNum="20" objType="image" objName="Image 1" top="400px" left="290px" opacity="0" useConstrainedProportions="true" constrainedProportionsHeight="150" constrainedProportionsWidth="202" googleDriveFileID="1wcheac7Rmoqfte7btI91Tqc9Th83o3yY" height="280px" width="377px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="21" objType="box" objName="Box 4" top="432px" left="510px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="18px" width="40px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="22" objType="box" objName="Box 4" top="457px" left="510px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" height="18px" width="40px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>The duplicate United States instance is discarded.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="12" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="-" top="400" left="66"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="-" top="364" left="86"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>The Saint Helena instance has several missing values and is discarded.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="17" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="-" top="336" left="66"></zyInstruction>
+<zyInstruction instrType="step"><text>The LifeExpectancy feature has several missing and outlier values. The feature is discarded.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="20" timeLabel="-" top="400" left="189"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="-" top="406" left="554"></zyInstruction>
+<zyInstruction instrType="step"><text>Independence year is missing for Antarctica and an outlier for China. These instances are pairwise discarded for analysis of independence year.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="-" opacity="30"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The country dataset is displayed and modified as described in the captions.</zyAltDescription>
+</zyAnimator>
+</zyVersion>
+
+<zyQSetTF caption="Discarding data" id="d56f80af-2d8c-46cc-b24c-d56f26f754d0">
+<p>Refer to the following dataset. Miles per gallon (mpg) is the distance a car travels on one gallon of gasoline. Miles per gallon electric (mpge) is the distance a car travels on 33.7 kWh of electricity.
+</p>
+
+
+
+<table class="dbTable">
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Drive</th>
+<th>EngineType</th>
+<th>Cylinders</th>
+<th>Liters</th>
+<th>mpg</th>
+<th>mpge</th>
+<th>Base price</th>
+</tr>
+
+<tr>
+<td>Audi</td>
+<td>A4</td>
+<td>All</td>
+<td>Gas</td>
+<td>4</td>
+<td>2</td>
+<td>24</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>BMW</td>
+<td>328Ci</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+<td>20</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Bentley</td>
+<td>Continental</td>
+<td>Rear</td>
+<td>NULL</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>210</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>Model 3</td>
+<td>All</td>
+<td>Electric</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>134</td>
+<td>$35,990</td>
+</tr>
+
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+<td>18</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Ford</td>
+<td>Mustang</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.7</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Nissan</td>
+<td>Leaf</td>
+<td>Front</td>
+<td>Electric</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>111</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Rolls-Royce</td>
+<td>Ghost</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>12</td>
+<td>6.6</td>
+<td>12</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</table>
+
+
+<zyQ>
+<zyQText correct="True">The Bentley Continental instance is a good candidate for discarding.</zyQText>
+<zyQExpl>The Bentley Continental has missing or outlier data for many features and might be discarded.</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="True">The base price feature is a good candidate for discarding.</zyQText>
+<zyQExpl>Only one feature has a value for base price, all other instances have missing values. This feature has insufficient data for meaningful analysis and might be discarded. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="False">The Tesla Model 3 instance is a good candidate for discarding.</zyQText>
+<zyQExpl>Although the Tesla Model 3 has missing cylinder, liter, and miles per gallon data, this data is inapplicable rather than unknown. Rather than discard the Tesla Model 3, electric vehicles might be retained for analyses that do not require these features. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="True">The Tesla Model 3 and Nissan Leaf instances are good candidates for pairwise discarding.</zyQText>
+<zyQExpl>Electric cars do not have cylinders or liters. Instead of miles per gallon, electric car efficiency is measured as miles per 33.7 kWh (mpge). So electric cars might be discarded for analyses of Cylinders, Liters, and mpg, but retained for analyses of mpge.</zyQExpl>
+</zyQ>
+
+</zyQSetTF>
+
+
+<zyHTML id="74e6a6e8-eca8-2ca4-52a7-a50257398157" subsection="true">
+<h3>Imputing data</h3>
+</zyHTML>
+
+<zyHTML id="c24bdcc8-92ec-4907-6b1c-8abdb7b1ef8e">
+
+<p>
+<zyDefn>_Imputing data_ replaces missing and outlier data with new values.
+</zyDefn>Imputing is more complex than discarding but retains all instances and features. Data may be imputed in several ways:
+</p>
+
+<p>
+<ul>
+
+<li>
+<p>
+<zyDefn>_Hot-deck_ and _cold-deck imputation_ replace missing and outlier data with a value from a randomly selected instance. In hot-deck imputation, the value is selected from other instances in the same dataset. In cold-deck imputation, the value is selected from a different dataset.
+</zyDefn>
+</p>
+</li>
+
+<li>
+<p>
+<zyDefn>_Mean imputation_ replaces missing and outlier data with the mean value of the feature. Missing and outlier data are excluded from the computation of the mean.
+</zyDefn>
+</p>
+</li>
+
+<li>
+<p>
+<zyDefn>_Regression imputation_ replaces missing and outlier data with a value computed from a regression model. In the regression model, the dependent variable is the dirty feature and the independent variables are other features. _Stochastic regression imputation_ introduces uncertainty by adding or subtracting the regression variance to the new value. Regression models are discussed elsewhere in this material.
+</zyDefn>
+</p>
+</li>
+
+</ul>
+</p>
+
+<p>Regression imputation is valuable if the dirty feature is highly correlated with other features. If not, mean imputation is commonly used. Hot- and cold-deck imputation were common when less computer power was available to compute mean and regression but are not widely used today.
+</p>
+
+</zyHTML>
+
+
+
+
+<zyVersion version="python">
+<!-- Last modified Wed Jul 27 2022 12:26:25 GMT-0500 (Central Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="dc5778cd-9231-4c6b-aa41-fb847253c4d0" caption="Imputing data" height="650px" width="696px" selectedInstr="22" selectedObj="none" numObjsEverCreated="26" loadOnDemand="false">
+<zyObjects><zyObject objNum="9" objType="image" objName="Dirty dataset table" top="77px" left="92px" useConstrainedProportions="true" constrainedProportionsHeight="522" constrainedProportionsWidth="1204" googleDriveFileID="1u4q6SXDb7vrtAAOFvWhCJY15gakNE8aN" height="210px" width="484px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="10" objType="text" objName="Dirty dataset" top="53px" left="118px" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Dirty dataset</text></zyObject><zyObject objNum="11" objType="image" objName="Resulting dataset table" top="334px" left="86px" opacity="0" useConstrainedProportions="true" constrainedProportionsHeight="482" constrainedProportionsWidth="1204" googleDriveFileID="1R0pjzYZIIehiX8s1CW2kBSmAdvIXlfDk" height="197px" width="492px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="12" objType="text" objName="Resulting dataset" top="305px" left="118px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Resulting dataset</text></zyObject><zyObject objNum="13" objType="box" objName="Box 1" top="107px" left="97px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="480px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="14" objType="box" objName="Box 2" top="474px" left="540px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="12px" width="32px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="15" objType="box" objName="Box 3" top="472px" left="543px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="32px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="16" objType="text" objName="Mean lifeexpectancy" top="467px" left="613px" opacity="0" border-radius="10px" background-color="rgb(249, 216, 188)" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Mean life
+expectancy</text></zyObject><zyObject objNum="17" objType="box" objName="Box 4" top="481px" left="589px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="2px" width="25px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="18" objType="triangle" objName="Triangle 1" top="476px" left="580px" opacity="0" background-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="19" objType="box" objName="Box 5" top="471px" left="426px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="18px" width="40px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="20" objType="box" objName="Box 3" top="471px" left="428px" opacity="0" background-color="rgb(230, 129, 66)" useConstrainedProportions="false" width="37px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="21" objType="text" objName="population = 25.4 * " top="553px" left="434px" opacity="0" border-radius="10px" background-color="rgb(249, 216, 188)" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>population = 25.4 * surface area</text></zyObject><zyObject objNum="22" objType="box" objName="Box 7" top="523px" left="461px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="2px" width="83px" border-width="0px" border-color="transparent" transformDeg="45"></zyObject><zyObject objNum="23" objType="triangle" objName="Triangle 2" top="489px" left="469px" opacity="0" background-color="rgb(51, 51, 51)" transformDeg="45"></zyObject><zyObject objNum="24" objType="text" objName="NaN" top="472px" left="546px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>NaN</text></zyObject><zyObject objNum="25" objType="text" objName="NaN" top="473px" left="436px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>NaN</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Antarctica&apos;s population is an outlier and life expectancy is inapplicable. So Antarctica is discarded prior to imputing data.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="13" timeLabel="0" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="12" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Saint Helena&apos;s life expectancy is imputed from the mean of this dataset.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="24" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A linear regression on this dataset determines Population = 25.4 * SurfaceArea. So Saint Helena&apos;s population = 25.4 * 314 = 7976.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="25" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="30"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The country dataset appears.
+Step 1: The row containing Antarctica is removed from the dataset.
+Step 3: The missing value for LifeExpectancy in Saint Helena is replaced with 68, which is the mean life expectancy in the dataset.
+Step 4: The missing value for Population in Saint Helena is replaced with 7976, which is the result of applying the regression formula. Population = 25.4*SurfaceArea = 25.4*314 = 7976.</zyAltDescription>
+</zyAnimator>
+</zyVersion>
+
+<zyQSetMultipleChoice caption="Imputing data" id="3d4ae8d1-0870-ef57-a955-60966a47b69b">
+
+<p>Refer to the following dataset.
+</p>
+
+
+<table class="dbTable">
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Drive</th>
+<th>EngineType</th>
+<th>Cylinders</th>
+<th>Liters</th>
+<th>MPG</th>
+</tr>
+
+<tr>
+<td>Audi</td>
+<td>A4</td>
+<td>All</td>
+<td>Gas</td>
+<td>4</td>
+<td>2</td>
+<td>24</td>
+</tr>
+<tr>
+<td>BMW</td>
+<td>328 Ci</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Bentley</td>
+<td>Continental</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Ford</td>
+<td>Mustang</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.7</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>Rolls-Royce</td>
+<td>Ghost</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>12</td>
+<td>6.6</td>
+<td>12</td>
+</tr>
+</table>
+
+<zyQ>
+<zyQText>Using mean imputation, what is the new mpg value for Ford Mustang?</zyQText>
+<zyQChoice correct="true">
+<zyQAns>18.5</zyQAns>
+<zyQExpl>The mean of mpg is the average mpg value, excluding missing and outlier values. The average is (24 + 20 + 18 + 12) / 4 = 18.5.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>47.3</zyQAns>
+<zyQExpl>47.3 is the mean mpg value including the missing value, replaced with 0, and the outlier 210. But missing and outlier values are excluded when computing the mean. </zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>56.8</zyQAns>
+<zyQExpl>56.8 is the mean mpg value excluding the missing value and including the outlier 210. But outliers are excluded when computing the mean.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Assume that a regression model determines<br/><zyICode>mpg = 40 - 2 * Cylinders - Liters</zyICode>.<br/>Using regression imputation, what is the new mpg value for Ford Mustang?</zyQText>
+<zyQChoice>
+<zyQAns>18.5</zyQAns>
+<zyQExpl>18.5 is the mean of mpg, excluding missing and outlier values. But missing values are imputed using regression, not mean.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>20</zyQAns>
+<zyQExpl>20 is the mpg value for BMW 328 Ci. If the BMW were selected randomly using hot-deck imputation, then the Ford Mustang mpg would be 20. But missing values are imputed using regression, not hot-deck imputation.</zyQExpl>
+</zyQChoice>
+<zyQChoice  correct="true">
+<zyQAns>24.3</zyQAns>
+<zyQExpl>The Ford Mustang has 6 cylinders and 3.7 liters. The regression formula is mpg = 40 - 2 * cylinders - liters = 40 - 2 * 6 - 3.7 = 24.3.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>The mpg for the Bentley Continental is an outlier. Can a new value be imputed using the regression model<br/><zyICode>mpg = 40 - 2 * Cylinders - Liters</zyICode>?</zyQText>
+<zyQChoice>
+<zyQAns>Yes</zyQAns>
+<zyQExpl>Cylinders and LIters are missing for the Bentley Continental. A regression formula cannot be applied to missing values.</zyQExpl>
+</zyQChoice>
+<zyQChoice  correct="true">
+<zyQAns>Only if the missing Cylinder and Liters values are first imputed. </zyQAns>
+<zyQExpl>If Cylinders and Liters for the Bentley Continental are imputed, then mpg can be computed from the imputed values. However, imputing values using other imputed values introduces additional uncertainty and is not good practice.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>No</zyQAns>
+<zyQExpl>Cylinders and LIters are missing for the Bentley Continental. A regression formula cannot be applied to missing values. However, the missing values might be imputed.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+</zyQSetMultipleChoice>
+
+
+<zyVersion version="python">
+<zyHTML id="e3b5fdba-6854-205e-5ad0-5c14fce4da4e" subsection="true">
+<h3>Cleaning data with Python</h3>
+</zyHTML>
+
+<zyHTML id="7ef477ab-8736-8bc5-0abb-b6517465d8cc">
+
+<p>In Python, three special symbols represent missing values:
+</p>
+
+<p>
+<ul> 
+<li>
+<p><zyICode>None</zyICode> represents any missing Python object, such as a string.
+</p>
+</li>
+<li>
+<p>NaN represents a missing numeric value. NaN is a <zyICode>NumPy</zyICode> value, specified as <zyICode>numpy.NaN</zyICode>.
+</p>
+</li>
+<li>
+<p>NaT represents a missing datetime value. NaT is a <zyICode>pandas</zyICode> value, specified as <zyICode>pandas.NaT</zyICode>.
+</p>
+</li>
+</ul>
+</p>
+
+<p>In addition, blank and 0 sometimes indicate a missing value, as in any tool.
+</p>
+
+<p>The pandas DataFrame class has methods that identify dirty data and discard and impute values. Important data cleaning methods are described in the table below. The table includes all required parameters and important optional parameters but excludes infrequently used optional parameters. 
+</p>
+
+<p>Methods that change data contain an optional <zyICode>inplace</zyICode> parameter. If <zyICode>inplace</zyICode> is True, changes are made in the input dataframe.  If <zyICode>inplace</zyICode> is False, changes are returned in a new dataframe.
+</p>
+
+</zyHTML>
+
+
+<zyTable id="54be5924-fb00-6434-e32d-8b51beb12c96" caption="pandas data cleaning methods">
+
+<table>
+<tr>
+<th>Method</th>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td><zyICode>df.drop()</zyICode></td>
+<td><zyICode>labels=None
+axis=0
+inplace=False</zyICode></td>
+<td>Removes rows (<zyICode>axis=0</zyICode>) or columns (<zyICode>axis=1</zyICode>) from dataframe <zyICode>df</zyICode>. <zyICode>labels</zyICode> specifies the labels of rows or columns to drop.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.drop_duplicates()</zyICode></td>
+<td><zyICode>subset=None
+inplace=False</zyICode></td>
+<td>Removes duplicate rows from <zyICode>df</zyICode>. <zyICode>subset</zyICode> specifies the labels of columns used to identify duplicates. If <zyICode>subset=None</zyICode>, all columns are used.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.dropna()</zyICode></td>
+<td><zyICode>axis=0
+how="any"
+subset=None
+inplace=False</zyICode></td>
+<td>Removes rows (<zyICode>axis=0</zyICode>) or columns (<zyICode>axis=1</zyICode>) containing missing values from <zyICode>df</zyICode>.  <zyICode>subset</zyICode> specifies labels on the opposite axis to consider for missing values. <zyICode>how</zyICode> indicates whether to drop the row or column if <zyICode>any</zyICode> or if <zyICode>all</zyICode> values are missing.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.duplicated()</zyICode></td>
+<td><zyICode>subset=None</zyICode></td>
+<td>Returns a Boolean series that identifies duplicate rows in <zyICode>df</zyICode>. <zyICode>true</zyICode> indicates a duplicate row. <zyICode>subset</zyICode> specifies the labels of columns used to identify duplicates. If <zyICode>subset=None</zyICode>, all columns are used.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.fillna()</zyICode></td>
+<td><zyICode>value=None
+inplace=False</zyICode></td>
+<td>Replaces NA and NaN values in <zyICode>df</zyICode> with <zyICode>value</zyICode>, which may be a scalar, dict, Series, or DataFrame.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.isnull()
+df.isna()</zyICode></td>
+<td><em>none</em></td>
+<td>Returns a dataframe of Boolean values. <zyICode>True</zyICode> in the returned dataframe indicates the corresponding value of the input <zyICode>df</zyICode> is None, NaT or NaN.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.mean()</zyICode></td>
+<td><zyICode>axis=0
+skipna=True
+numeric_only=None</zyICode></td>
+<td>Returns the mean values of rows (<zyICode>axis=0</zyICode>) or columns (<zyICode>axis=1</zyICode>) of  <zyICode>df</zyICode>.  <zyICode>skipna</zyICode> indicates whether to exclude unknown values in the calculation. <zyICode>numeric_only</zyICode> indicates whether to exclude non-numeric rows or columns.</td>
+</tr>
+
+<tr>
+<td><zyICode>df.replace()</zyICode></td>
+<td><zyICode>to_replace=None
+value=NoDefault.no_default
+inplace=False</zyICode></td>
+<td>Replaces <zyICode>to_replace</zyICode> values in <zyICode>df</zyICode> with <zyICode>value</zyICode>. <zyICode>to_replace</zyICode> and <zyICode>value</zyICode> may be str, dict, list, regex, or other data types.</td>
+</tr>
+
+</table>
+</zyTable>
+
+
+
+
+<zyStudio id="02d51a75-37e5-8726-755a-9094e36554a4" caption="Cleaning data with Python" activity_type="tinker">
+<zyInstructions>
+<p>
+The Python code below imports and cleans automobile data. 
+</p>
+
+<ul>
+<li>Click the double-right arrow to restart the kernel and run all cells.</li>
+<li>Examine the code, noting how each method is used for each task.</li>
+   <ul>
+   <li><zyICode>auto.drop_duplicates()</zyICode> eliminates the duplicate Chevrolet row.</li>
+   <li><zyICode>auto.dropna()</zyICode>  eliminates the Bentley row with two unknown values.</li>
+   <li><zyICode>auto.mean()</zyICode> computes the mean values of Cylinders, LIters, and mpg.</li>
+   <li><zyICode>auto.fillna()</zyICode> replaces the unknown Ford mpg value with the mean mpg    value.</li>
+   </ul>
+</ul>
+</zyInstructions>
+</zyStudio>
+
+
+
+<!--
+<zyHTML id="13c6d0f7-33d8-10e6-bc8d-02ad8ae06d6c">
+<iframe src="https://jupyterlab.dev.kube.zybooks.com/lab/tree/Paul%20Files/Published/datacleaning.ipynb" title="jupyterhub" width="930" height="600">
+</iframe>
+</zyHTML>
+-->
+
+
+<zyQSetShortAnswer caption="Cleaning data with pandas" id="c3007660-65eb-4280-b960-bd67635f2ff2">
+
+<zyQ>
+<zyQText>Complete the code to replace missing values in the <zyICode>cars</zyICode> dataset with 20.</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">fillna(value=20)</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">fillna(value=20, inplace=True)</zyQAns>
+<zyQTextAroundAns>cars.<zyQAnsBox></zyQAnsBox></zyQTextAroundAns>
+<zyQExpl><zyICode>cars.fillna(value=20)</zyICode> will replace any missing values in the <zyICode>cars</zyICode> dataset with 20. The replacement applies to all features in the dataframe. If the replacement for missing values depends on the feature, use a dictionary list in the value argument. Ex: <zyICode>value={"MPG": 20, "Cylinders": 6}</zyICode>.</zyQExpl>
+<zyQHint>The <zyICode>pandas</zyICode> method to replace missing values in a dataframe is <zyICode>.fillna()</zyICode>.</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Complete the code to remove the <zyICode>MPG</zyICode> feature from the cars dataset.</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">drop</zyQAns>
+<zyQTextAroundAns>cars.<zyQAnsBox></zyQAnsBox>(axis=1, labels="MPG")</zyQTextAroundAns>
+<zyQExpl><zyICode>cars.drop(axis=1, labels="MPG")</zyICode> will remove the <zyICode>MPG</zyICode> column (<zyICode>axis=1</zyICode>) from the <zyICode>cars</zyICode> dataset. </zyQExpl>
+<zyQHint>The <zyICode>pandas</zyICode> method to remove a feature from a dataframe is <zyICode>.drop()</zyICode>.</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Complete the code to remove duplicate rows from the <zyICode>cars</zyICode> dataset.</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">drop_duplicates()</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">drop_duplicates(inplace=True)</zyQAns>
+<zyQTextAroundAns>cars.<zyQAnsBox></zyQAnsBox></zyQTextAroundAns>
+<zyQExpl><zyICode>cars.drop_duplicates()</zyICode> will remove duplicate rows from the <zyICode>cars</zyICode> dataframe.</zyQExpl>
+<zyQHint>The <zyICode>pandas</zyICode> method to remove duplicate rows from a dataframe is <zyICode>.drop_duplicates()</zyICode>.</zyQHint>
+</zyQ>
+
+</zyQSetShortAnswer>
+
+</zyVersion>
+
+
+<zypInfo person="Stephanie" date="05/26/22" minutes="244" status="CodeDoing"></zypInfo>
+<zypInfo person="Brock" date="06/01/22" minutes="140" status="CodeReviewing"></zypInfo>
+<zypInfo person="Stephanie" date="06/06/22" minutes="196" status="CodeReviewing"></zypInfo>
+<zypInfo person="Brock" date="06/07/22" minutes="30" status="CodeReviewing"></zypInfo>
+<zypInfo person="Stephanie" date="06/08/22" minutes="14" status="CodeReviewing"></zypInfo>
+<zypInfo person="Brock" date="06/08/22" minutes="5" status="CodeDone"></zypInfo>
+<zypInfo person="Stephanie" date="06/09/22" minutes="8" status="QADoing"></zypInfo>
+<zypInfo person="Fay" date="06/24/22" minutes="12" status="QADoing"></zypInfo>
+<zypInfo person="Stephanie" date="06/24/22" minutes="5" status="QADoing"></zypInfo>
+<zypInfo person="Fay" date="06/24/22" minutes="2" status="QADone"></zypInfo>
+
+<zyTool name="ProgressionPlayerInteractiveAndAccessible" caption="Cleaning data" id="f0ab0f48-f102-41d7-9d91-44c5b617083c" challenge="true" parts="3" optional="false" edited-last="Wed Jan 07 2026 21:20:58 GMT-0600 (Central Standard Time)" image-ids="">
+<zyInstructions></zyInstructions><zyOptions><progression type="dict">
+<code type="string"></code>
+<elements type="list"><item type="dict"><id type="string">5</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">6: Checkbox</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><top type="string">407px</top><left type="string">30px</left></style><type type="string">checkbox</type><correctAnswerIsCheckedString type="string"></correctAnswerIsCheckedString><imageLabelAltText type="string"></imageLabelAltText><label type="string"></label><useImageAsLabel type="boolean">false</useImageAsLabel></item><item type="dict"><id type="string">4</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">5: Checkbox</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><top type="string">377px</top><left type="string">30px</left></style><type type="string">checkbox</type><correctAnswerIsCheckedString type="string"></correctAnswerIsCheckedString><imageLabelAltText type="string"></imageLabelAltText><label type="string"></label><useImageAsLabel type="boolean">false</useImageAsLabel></item><item type="dict"><id type="string">3</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">4: Checkbox</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><top type="string">347px</top><left type="string">30px</left></style><type type="string">checkbox</type><correctAnswerIsCheckedString type="string"></correctAnswerIsCheckedString><imageLabelAltText type="string"></imageLabelAltText><label type="string"></label><useImageAsLabel type="boolean">false</useImageAsLabel></item><item type="dict"><id type="string">2</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">3: Checkbox</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><top type="string">317px</top><left type="string">30px</left></style><type type="string">checkbox</type><correctAnswerIsCheckedString type="string"></correctAnswerIsCheckedString><imageLabelAltText type="string"></imageLabelAltText><label type="string"></label><useImageAsLabel type="boolean">false</useImageAsLabel></item><item type="dict"><id type="string">8</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">9: Text</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><padding type="string">0px</padding><border type="string">2px solid rgba(0, 0, 0, 0)</border><color type="string">zyante-black</color><top type="string">289px</top><left type="string">0px</left></style><type type="string">text</type><ariaHidden type="boolean">true</ariaHidden><enableResizing type="boolean">false</enableResizing><centerText type="boolean">false</centerText><text type="string">add text</text><useMarkdown type="boolean">false</useMarkdown></item><item type="dict"><id type="string">7</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">8: Dropdown</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><top type="string">319px</top><left type="string">30px</left></style><type type="string">dropdown</type><options type="list"></options><optionOrderingMethod type="string">sort</optionOrderingMethod><ariaLabel type="string"></ariaLabel><specifiedOrderPythonListVariable type="string"></specifiedOrderPythonListVariable><specifiedOrder type="list"></specifiedOrder></item><item type="dict"><id type="string">0</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">1: Text</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><padding type="string">0px</padding><border type="string">2px solid rgba(0, 0, 0, 0)</border><color type="string">zyante-black</color><top type="string">280px</top><left type="string">0px</left></style><type type="string">text</type><ariaHidden type="boolean">false</ariaHidden><enableResizing type="boolean">false</enableResizing><centerText type="boolean">false</centerText><text type="string">add text</text><useMarkdown type="boolean">false</useMarkdown></item><item type="dict"><id type="string">11</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">12: Table</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><width type="string">686.8166200000001px</width><top type="string">0px</top><left type="string">0px</left><height type="string">268.53562px</height></style><type type="string">table</type><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item></tableData><ariaHidden type="boolean">false</ariaHidden><databaseForeignKeys type="list"></databaseForeignKeys><databasePrimaryKeys type="list"></databasePrimaryKeys><equalHeightRows type="boolean">false</equalHeightRows><isDatabase type="boolean">false</isDatabase><isFirstColumnHeader type="boolean">false</isFirstColumnHeader><isFirstRowHeader type="boolean">false</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableCaption type="string"></tableCaption></item><item type="dict"><id type="string">9</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">10: Text</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><padding type="string">0px</padding><border type="string">2px solid rgba(0, 0, 0, 0)</border><color type="string">zyante-black</color><top type="string">350px</top><left type="string">0px</left></style><type type="string">text</type><ariaHidden type="boolean">true</ariaHidden><enableResizing type="boolean">false</enableResizing><centerText type="boolean">false</centerText><text type="string">add text</text><useMarkdown type="boolean">false</useMarkdown></item><item type="dict"><id type="string">10</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">true</isSelected><name type="string">11: Shortanswer</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><width type="string">95px</width><top type="string">400px</top><left type="string">30px</left></style><type type="string">shortanswer</type><ariaLabel type="string"></ariaLabel><assessmentMethod type="string">decimal</assessmentMethod><assessmentProperties type="dict"><tolerance type="string">5%</tolerance></assessmentProperties><correctAnswers type="list"></correctAnswers><placeholder type="string"></placeholder></item><item type="dict"><id type="string">12</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">13: Table</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><width type="string">675.41062px</width><top type="string">0px</top><left type="string">0px</left><height type="string">329.98062px</height></style><type type="string">table</type><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item></tableData><ariaHidden type="boolean">false</ariaHidden><databaseForeignKeys type="list"></databaseForeignKeys><databasePrimaryKeys type="list"></databasePrimaryKeys><equalHeightRows type="boolean">false</equalHeightRows><isDatabase type="boolean">false</isDatabase><isFirstColumnHeader type="boolean">false</isFirstColumnHeader><isFirstRowHeader type="boolean">false</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableCaption type="string"></tableCaption></item></elements><levels type="list"><item type="dict">
+<code type="string">checkbox_options = ['Outlier', 'Missing --- unknown', 'Missing --- inapplicable', 'Duplicate']
+
+class Randomization: 
+    def __init__(self, feat_inst, entry, correct_options, description):
+        self.feat_inst = feat_inst
+        self.entry = entry
+        self.correct_options = correct_options 
+        self.description = description
+
+
+randomizations = [
+    Randomization(
+        'instance',
+        'African elephant',
+        [checkbox_options[0], checkbox_options[2]],
+        'The mass for African elephant is considerably higher than any other mass, so the instance is an {}.\n\n'.format(checkbox_options[0].lower())
+        + 'Since African elephants are not extinct, the extinction date is {}.'.format(checkbox_options[2].lower())
+    ),
+    Randomization(
+        'instance',
+        'Thylacine',
+        [checkbox_options[1]],
+        'The thylacine has been extinct since 1936, so the typical body temperature is {}.'.format(checkbox_options[1].lower())
+    ),
+    Randomization(
+        'instance',
+        'Two-toed sloth',
+        [checkbox_options[0], checkbox_options[2]],
+        'The body temperature for Two-toed sloth is unusually low, so the instance is an {}.\n\n'.format(checkbox_options[0].lower())
+        + 'Since two-toed sloths are not extinct, the extinction date is {}.'.format(checkbox_options[2].lower())
+    ),
+    Randomization(
+        'instance',
+        'Ring-tailed lemur',
+        [checkbox_options[2]],
+        'Since ring-tailed lemurs are not extinct, the extinction date is {}.'.format(checkbox_options[2].lower())
+    ),
+    Randomization(
+        'instance',
+        'Aurochs',
+        [checkbox_options[0], checkbox_options[1]],
+        'The mass for Aurochs is higher than most of the other masses, so the instance is an {}.\n\n'.format(checkbox_options[0].lower())
+        + 'The aurochs has been extinct since 1627, the life span and body temperature are {}.'.format(checkbox_options[1].lower())
+    ),
+    Randomization(
+        'instance',
+        'Sea otter',
+        [checkbox_options[3], checkbox_options[2]],
+        'Since the dataset contains two instances for sea otter, the instance has a {}.\n\n'.format(checkbox_options[3].lower())
+        + 'Sea otters are not extinct, so the extinction date is {}.'.format(checkbox_options[2].lower())
+    ),
+    Randomization(
+        'feature',
+        'Mass',
+        [checkbox_options[3]],
+        'Two entries exist for the mass of a sea otter, so mass has a {}.'.format(checkbox_options[3].lower())
+    ),
+    Randomization(
+        'feature',
+        'LifeSpan',
+        [checkbox_options[1], checkbox_options[3]],
+        'Since the aurochs has been extinct since 1627, the life span is {}.\n\n'.format(checkbox_options[1].lower())
+        + 'Two entries exist for the life span of a sea otter, so LifeSpan has a {}.'.format(checkbox_options[3].lower())
+    ),
+    Randomization(
+        'feature',
+        'BodyTemp',
+        [checkbox_options[2], checkbox_options[3]],
+        'The thylacine and the aurochs are both extinct, and thus the body temperatures are {}.\n\n'.format(checkbox_options[2].lower())
+        + 'Two entries exist for the body temperature of a sea otter, so BodyTemp has a {}.'.format(checkbox_options[3].lower())
+    ),
+    Randomization(
+        'feature',
+        'Diet',
+        [checkbox_options[3]],
+        'Two entries exist for the diet of a sea otter, so sea otter has a {}.'.format(checkbox_options[3].lower())
+    ),
+    Randomization(
+        'feature',
+        'ExtinctionDate',
+        [checkbox_options[2], checkbox_options[3]],
+        'Since several of these mammals are not extinct, the extinction dates are {}.\n\n'.format(checkbox_options[2].lower())
+        + 'Two entries exist for the extinction date of a sea otter, so ExtinctionDate has a {}.'.format(checkbox_options[3].lower())
+    ),
+]
+
+randomization = pick_from(randomizations)
+feat_inst = randomization.feat_inst
+entry = randomization.entry
+correct_options = randomization.correct_options
+description = randomization.description
+checkbox_truth_values = [op in correct_options for op in checkbox_options]
+correct_options_in_checkbox_order = [op for op in checkbox_options if op in correct_options]
+
+explanation =  'Expected:\n' 
+explanation += ' \n'.join(correct_options_in_checkbox_order)
+explanation += '\n\n'
+explanation += ''.join(description) </code>
+<elementVariants type="list"></elementVariants><questions type="list"><item type="dict">
+<code type="string"></code>
+<elementVariants type="list"><item type="dict"><id type="string">0</id><text type="string">The ${feat_inst} ${entry} has which type(s) of dirty data? Check all that apply. </text></item><item type="dict"><id type="string">2</id><correctAnswerIsCheckedString type="string">${checkbox_truth_values[0]}</correctAnswerIsCheckedString><label type="string">${checkbox_options[0]}</label></item><item type="dict"><id type="string">3</id><correctAnswerIsCheckedString type="string">${checkbox_truth_values[1]}</correctAnswerIsCheckedString><label type="string">${checkbox_options[1]}</label></item><item type="dict"><id type="string">4</id><correctAnswerIsCheckedString type="string">${checkbox_truth_values[2]}</correctAnswerIsCheckedString><label type="string">${checkbox_options[2]}</label></item><item type="dict"><id type="string">5</id><correctAnswerIsCheckedString type="string">${checkbox_truth_values[3]}</correctAnswerIsCheckedString><label type="string">${checkbox_options[3]}</label></item><item type="dict"><id type="string">11</id><isFirstColumnHeader type="boolean">true</isFirstColumnHeader><isFirstRowHeader type="boolean">true</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Animal</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Mass_kg</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">LifeSpan</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">BodyTemp_C</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Diet</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">ExtinctionDate</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">0</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">African elephant</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">6000</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">60</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">35.9</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">1</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Thylacine</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">20</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">7</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">1936</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">2</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Two-toed sloth</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">6</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">20</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">25</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">3</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Sea otter</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">30</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">15</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37.8</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">4 </content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Ring-tailed lemur</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">2.2</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">17</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Omnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">5</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Aurochs</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">700</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">1627</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">6</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Sea otter</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">30</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">15</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37.8</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item></tableData></item></elementVariants>
+<explanation type="string"></explanation>
+<height type="string"></height><id type="string">81c3d99f-3559-4180-8b0e-83d0dfac7db4</id><isSelected type="boolean">false</isSelected><name type="string">Question a</name><usedElements type="list"></usedElements><width type="string"></width></item></questions>
+<explanation type="string">${explanation}</explanation>
+<height type="string"></height><id type="string">adb23443-be66-445f-b86d-1102ad569956</id><isCollapsed type="boolean">true</isCollapsed><isSelected type="boolean">false</isSelected><name type="string">Level 1</name><usedElements type="list"><item type="string">0</item><item type="string">2</item><item type="string">3</item><item type="string">4</item><item type="string">5</item><item type="string">11</item></usedElements><useMarkdownInExplanation type="boolean">false</useMarkdownInExplanation><width type="string"></width></item><item type="dict">
+<code type="string">dropdown_options = ['Discard feature', 'Discard instance', 'Pairwise discard', 'Do not discard'] 
+
+class Randomization:
+    def __init__(self, dirty_data, correct_option, description):
+        self.dirty_data = dirty_data
+        self.correct_option = correct_option
+        self.description = description 
+
+
+randomizations = [
+    Randomization(
+        'the duplicate entry for sea otter',
+        dropdown_options[1],
+        'Duplicate instances should generally be discarded.'
+    ),
+    Randomization(
+        'the unusually high mass for African elephant',
+        dropdown_options[3],
+        'The high mass may be correlated with the lifespan, that is also unusually high. Removing the instance may introduce bias.'
+    ),
+    Randomization(
+        'the missing body temperature for ring-tailed lemur',
+        dropdown_options[0],
+        'Since a large fraction of the body temperatures are missing, the feature should be discarded.'
+    ),
+    Randomization(
+        'the missing life span for the aurochs',
+        dropdown_options[2],
+        'Although values are missing for two features, the instance might be retained for analysis of extinct animals.'
+    ),
+    Randomization(
+        'the unusually low body temperature for two-toed sloth',
+        dropdown_options[1],
+        'The low body temperature does not appear to be correlated with any other feature and should be safe to discard.'
+    ),
+]
+
+randomization = pick_from(randomizations) 
+dirty_data = randomization.dirty_data
+correct_option = randomization.correct_option
+description = randomization.description
+dropdown_options = dropdown_options[:]
+dropdown_options.remove(correct_option)
+
+explanation = 'Expected: '
+explanation += ''.join(correct_option) 
+explanation += '\n\n'
+explanation += ''.join(description) </code>
+<elementVariants type="list"></elementVariants><questions type="list"><item type="dict">
+<code type="string"></code>
+<elementVariants type="list"><item type="dict"><id type="string">7</id><ariaLabel type="string">How should ${dirty_data} be handled?</ariaLabel><options type="list"><item type="dict"><isCorrectOption type="boolean">false</isCorrectOption><isDefault type="boolean">true</isDefault><isInvalidOption type="boolean">true</isInvalidOption><isSelected type="boolean">true</isSelected><isPythonList type="boolean">false</isPythonList><text type="string">Pick</text></item><item type="dict"><isCorrectOption type="boolean">true</isCorrectOption><isDefault type="boolean">false</isDefault><isInvalidOption type="boolean">false</isInvalidOption><isSelected type="boolean">false</isSelected><isPythonList type="boolean">false</isPythonList><text type="string">${correct_option}</text></item><item type="dict"><isCorrectOption type="boolean">false</isCorrectOption><isDefault type="boolean">false</isDefault><isInvalidOption type="boolean">false</isInvalidOption><isSelected type="boolean">false</isSelected><isPythonList type="boolean">true</isPythonList><text type="string">${dropdown_options}</text></item></options></item><item type="dict"><id type="string">8</id><text type="string">How should ${dirty_data} be handled?</text></item><item type="dict"><id type="string">11</id><isFirstColumnHeader type="boolean">true</isFirstColumnHeader><isFirstRowHeader type="boolean">true</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Animal</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Mass</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">LifeSpan</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">BodyTemp</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Diet</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">ExtinctionDate</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">0</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">African Elephant</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">6000 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">60</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">35.9 C</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">1</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Thylacine</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">20 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">7</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">1936</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">2</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Two-toed sloth</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">6 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">20</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">25 C</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">3</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Sea otter</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">30 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">15</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">4</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Ring-tailed lemur</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">2.2 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">17</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Omnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">5</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Aurochs</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">700 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">1627</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">6</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Sea otter</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">30 kg</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">15</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item></tableData></item></elementVariants>
+<explanation type="string"></explanation>
+<height type="string"></height><id type="string">2a3850ab-d1a6-4e11-8af5-f68e67bbe4c5</id><isSelected type="boolean">true</isSelected><name type="string">Question a</name><usedElements type="list"></usedElements><width type="string"></width></item></questions>
+<explanation type="string">${explanation}</explanation>
+<height type="string"></height><id type="string">7dc22fa0-2ae9-4602-9ad0-72b37c3a3be7</id><isCollapsed type="boolean">true</isCollapsed><isSelected type="boolean">true</isSelected><name type="string">Level 2</name><usedElements type="list"><item type="string">7</item><item type="string">8</item><item type="string">11</item></usedElements><useMarkdownInExplanation type="boolean">false</useMarkdownInExplanation><width type="string"></width></item><item type="dict">
+<code type="string">class Randomization: 
+    def __init__(self, technique, missing, correct_option, description, short_answer):
+        self.technique = technique
+        self.missing = missing
+        self.correct_option = correct_option 
+        self.description = description
+        self.short_answer = short_answer
+        
+        
+randomizations = [
+    Randomization(
+        'mean imputation',
+        'body temperature of a thylacine',
+        34.95,
+        'Using mean imputation, the missing value is replaced with the mean value of the feature. For BodyTemp, the mean is '
+        + r'\(\dfrac{35.9 + 25 + 37.8 + 37 + 37 + 37}{6} = 34.95\;\text{C}\).',
+        'body temperature of a thylacine'
+    ),
+    Randomization( 
+        'mean imputation',
+        'life span of an aurochs',
+        28.85,
+        'Using mean imputation, the missing value is replaced with the mean value of the feature. For LifeSpan, the mean is '
+        + r'\(\dfrac{60 + 20 + 15 + 17 + 50 + 15 + 25}{7} = 28.85\;\text{years}\).',
+        'life span of an aurochs'
+    ),
+    Randomization(
+        'regression imputation',
+        r'life span of aurochs, assuming a regression model determines life span \(= 17.16 + 0.0079(\text{Mass})\)',
+        22.69,
+        r'Using the regression model, life span \(= 17.16 + 0.0079(700) = 22.69\;\text{years}\).',
+        'life span of aurochs, assuming a regression model determines life span = 17.16 + 0.0079(Mass)'
+    ), 
+    Randomization(
+        'regression imputation',
+        r'life span of a thylacine, assuming a regression model determines life span \(= 17.16 + 0.0079(\text{Mass})\)',
+        17.318,
+        r'Using the regression model, life span \(= 17.16 + 0.0079(20) = 17.318\;\text{years}\).',
+        'life span of a thylacine, assuming a regression model determines life span = 17.16 + 0.0079(Mass)'
+    ),
+    Randomization(
+        'regression imputation',
+        r'mass of a sea otter, assuming a regression model determines mass \(= -56.33 + 7.26(\text{LifeSpan})\)',
+        52.57,
+        r'Using the regression model, mass \(= -56.33 + 7.26(15) = 52.57\;\text{kg}\).',
+        'mass of a sea otter, assuming a regression model determines mass = -56.33 + 7.26(LifeSpan)'
+    ),
+    Randomization(
+        'mean imputation',
+        'body temperature of a common warthog',
+        34.95,
+        'Using mean imputation, the missing value is replaced with the mean value of the feature. For BodyTemp, the mean is  '
+        + r'\(\dfrac{35.9 + 25 + 37.8 + 37 + 37 + 37}{6} = 34.95\;\text{C}\).',
+        'body temperature of a common warthog'
+    ),
+]
+
+randomization = pick_from(randomizations)
+technique = randomization.technique
+missing = randomization.missing
+correct_option = randomization.correct_option
+description = randomization.description
+short_answer = randomization.short_answer
+placeholder = 'Ex: 12.345' if correct_option == 17.318 else 'Ex: 12.34'
+
+explanation = 'Expected: '
+explanation += '\({}\)'.format(correct_option)
+explanation += '\n\n'
+explanation += ''.join(description) </code>
+<elementVariants type="list"></elementVariants><questions type="list"><item type="dict">
+<code type="string"></code>
+<elementVariants type="list"><item type="dict"><id type="string">9</id><text type="string">Using ${technique}, impute the value for the ${missing}.</text></item><item type="dict"><id type="string">10</id><ariaLabel type="string">Using ${technique}, impute the value for the ${short_answer}.</ariaLabel><correctAnswers type="list"><item type="string">${correct_option}</item></correctAnswers><placeholder type="string">${placeholder}</placeholder></item><item type="dict"><id type="string">12</id><isFirstColumnHeader type="boolean">true</isFirstColumnHeader><isFirstRowHeader type="boolean">true</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Animal</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Mass_kg</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">LifeSpan</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">BodyTemp</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Diet</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">ExtinctionDate</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">0</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">African elephant</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">6000 </content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">60</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">35.9</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">1</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Thylacine</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">20 </content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">1936</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">2</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Two-toed sloth</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">6</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">20</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">25</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">3</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Sea otter</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">15</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37.8</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">4</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Ring-tailed lemur</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">2.2</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">17</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Omnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">5</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Aurochs</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">700</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Herbivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">1627</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">6</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Common warthog</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">100</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">15</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Omnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">7</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Brown bear</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">200</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">25</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37 </content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Omnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item><item type="list"><item type="dict"><content type="string">8</content><isHeader type="boolean">true</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Orca</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">3000</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">50</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">37</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">Carnivore</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item><item type="dict"><content type="string">NaN</content><isHeader type="boolean">false</isHeader><style type="dict"></style></item></item></tableData></item></elementVariants>
+<explanation type="string"></explanation>
+<height type="string"></height><id type="string">c5f80280-7022-4c62-94e4-1db0e9861811</id><isSelected type="boolean">false</isSelected><name type="string">Question a</name><usedElements type="list"></usedElements><width type="string"></width></item></questions>
+<explanation type="string">${explanation}</explanation>
+<height type="string"></height><id type="string">44b035cc-9b2f-42e0-9f2d-5431705b770c</id><isCollapsed type="boolean">true</isCollapsed><isSelected type="boolean">false</isSelected><name type="string">Level 3</name><usedElements type="list"><item type="string">9</item><item type="string">10</item><item type="string">12</item></usedElements><useMarkdownInExplanation type="boolean">false</useMarkdownInExplanation><width type="string"></width></item></levels>
+<explanation type="string"></explanation>
+<height type="string">460.957px</height><mathjax2 type="boolean">false</mathjax2><useMarkdownInTextElements type="boolean">false</useMarkdownInTextElements><width type="string">686.957px</width><widthLocked type="boolean">false</widthLocked><isExam type="boolean">false</isExam></progression></zyOptions><zyAltDescription></zyAltDescription></zyTool>
+
+<zyVersion version="python">
+from common_functions import pick_from, pick_from_range
+
+p = u'£'
+
+healthy_dataset = {
+    'column_names' : [ 
+        'city', 'rank', 'sunshine_hours', 'cost_bottled_water', 'obesity_levels', 'life_expectancy', 'pollution', 
+        'annual_hours_worked', 'happiness_levels', 'outdoor_activities', 'number_takeout_places', 'cost_gym_membership'
+    ],
+    'data' : [
+        ['Amsterdam', 1, 1858, p + '1.92', '20.40%', 81.2, 30.93, 1434, 7.44, 422, 1048, p + '34.90'],
+        ['Sydney', 2, 2636, p + '1.48', '29.00%', 82.1, 26.86, 1712, 7.22, 406, 1103, p + '41.66'],
+        ['Vienna', 3, 1884, p + '1.94', '20.10%', 81, 17.33, 1501, 7.29, 132, 1008, p + '25.74'],
+        ['Stockholm', 4, 1821, p + '1.72', '20.60%', 81.8, 19.63, 1452, 7.35, 129, 598, p + '37.31'],
+        ['Copenhagen', 5, 1630, p + '2.19', '19.70%', 79.8, 21.24, 1380, 7.64, 154, 523, p + '32.53'],
+        ['Helsinki', 6, 1662, p + '1.60', '22.20%', 80.4, 13.08, 1540, 7.8, 113, 309, p + '35.23'],
+        ['Fukuoka', 7, 2769, p + '0.78', '4.30%', 83.2, 'NaN', 1644, 5.87, 35, 539, p + '55.87'],
+        ['Berlin', 8, 1626, p + '1.55', '22.30%', 80.6, 39.41, 1386, 7.07, 254, 1729, p + '26.11'],
+        ['Barcelona', 9, 2591, p + '1.19', '23.80%', 82.2, 65.19, 1686, 6.4, 585, 2344, p + '37.80'],
+        ['Vancouver', 10, 1938, 'NA', '29.40%', 81.7, 24.26, 1670, 7.23, 218, 788, p + '31.04'],
+        ['Melbourne', 11, 2363, p + '1.57', '29.00%', 82.1, 25.9, 1712, 7.22, 243, 813, p + '36.89'],
+        ['Beijing', 12, 2671, p + '0.26', '6.20%', 75.4, 85.43, 'NaN',5.12, 223, 261, p + '38.62'],
+        ['Bangkok', 13, 2624, p + '0.22', '10.00%', 74.1, 76.64, 'NaN', 5.99, 377, 1796, p + '50.03'],
+        ['Buenos Aires', 14, 2525, p + '0.57', '28.30%', 75.9, 52.64, 'NaN', 5.97, 246, 1435, p + '22.45'],
+        ['Toronto', 15, 2066, p + '1.09', '29.40%', 81.7, 37.83, 1670, 7.23, 174, 1656, p + '32.64'], 
+        ['Madrid', 16, 2769, p + '1.30', '23.80%', 82.2, 52.68, 1686, 6.4, 216, 2491, p + '34.54'],
+        ['Jakarta', 17, 2983, p + '0.21', '6.90%', 68.5, 84.39, 'NaN', 5.28, 114, 833, p + '29.94'],
+        ['Seoul', 18, 2066, p + '0.59', '4.70%', 81.3, 57.82, 1967, 5.87, 144, 389, p + '43.03'],
+        ['Frankfurt', 19, 1662, p + '1.95', '22.30%', 80.6, 37.78, 1386, 7.07, 23, 551, p + '39.01'],
+        ['Geneva', 20, 'NaN', p + '2.62', '19.50%', 82.6, 27.25, 1557, 7.56, 44, 444, p + '70.00'],
+        ['Tel Aviv', 21, 3311, p + '1.63', '26.10%', 81.9, 47.28, 1898, 7.12, 139, 420, p + '58.31'],
+        ['Istanbul', 22, 2218, p + '0.15', '32.10%', 74.7, 69.49, 1832, 5.13, 419, 934, p + '16.97'],
+        ['Cairo', 23, 3542, p + '0.16', '32.00%', 70.7, 91.74, 'NaN', 4.15, 323, 250, p + '23.25'],
+        ['Taipei', 24, 1405, p + '0.57', '6.20%', 75.4, 49.32, 'NaN', 5.12, 134, 717, p + '34.76'],
+        ['Los Angeles', 25, 3254, p + '1.52', 0.362, 78.8, 66.07, 1779, 6.94, 223, 1439, p + '32.00'],
+        ['Mumbai', 26, 2584, p + '0.15', 0.039, 67.3, 82.84, 'NaN', 3.57, 187, 1183, p + '19.54'],
+        ['Boston', 27, 2634, p + '1.39', 0.362, 78.8, 27.03, 1779, 6.94, 88, 588, p + '46.27'],
+        ['Dublin', 28, 1453, p + '1.40', 0.253, 80.5, 40.07, 1772, 7.09, 159, 659, p + '37.35'],
+        ['Tokyo', 29, 1877, p + '0.76', 0.043, 83.2, 42.84, 1644, 5.87, 387, 5802, p + '70.82'],
+        ['Chicago', 30, 2508, p + '1.20', 0.362, 78.8, 43.33, 1779, 6.94, 'NaN', 1320, p + '41.14'],
+        ['Hong Kong', 31, 1836, p + '0.75', 0.062, 75.4, 67.46, 'NaN', 5.51, 277, 1257, p + '57.95'],
+        ['Shanghai', 32, 1776, p + '0.29', 0.062, 75.4, 77.4, 'NaN', 5.12, 108, 346, p + '44.68'],
+        ['Brussels', 33, 1546, p + '2.11', 0.221, 80.4, 62.67, 1583, 6.86, 55, 988, p + '25.34'],
+        ['San Francisco', 34, 3062, p + '1.60', 0.362, 78.8, 47.36, 1779, 6.94, 242, 1031, p + '65.13'],
+        ['Paris', 35, 1662, p + '1.95', 0.216, 81.8, 65.1, 1505, 6.66, 331, 4363, p + '35.93'],
+        ['Sao Paulo', 36, 2003, p + '0.44', 0.221, 73.9, 79.78, 'NaN', 6.37, 158, 3355, p + '16.07'],
+        ['Zurich', 37, 1566, p + '3.20', 0.195, 82.6, 17.31, 1557, 7.56, 69, 'NaN', p + '73.11'],
+        ['London', 38, 1633, p + '1.16', 0.278, 80.4, 58.91, 1538, 7.16, 433, 6417, p + '42.71'],
+        ['Johannesburg', 39, 3124, p + '0.59', 0.283, 56.3, 61.83, 'NaN', 4.81, 194, 492, p + '24.28'],
+        ['Milan', 40, 1915, p + '1.15', 0.199, 82.7, 67.19, 1718, 6.38, 110, 2396, p + '53.49'],
+        ['Washington D.C.', 41, 2528, p + '1.45', 0.362, 78.8, 39.18, 1779, 6.94, 83, 744, p + '65.99'],
+        ['New York', 42, 2535, p + '1.32', 0.362, 78.8, 57.36, 1779, 6.94, 359, 3081, p + '64.66'],
+        ['Moscow', 43, 1901, p + '0.41', 0.231, 69.5, 57.63, 1965, 5.54, 322, 3206, p + '31.40'],
+        ['Mexico City', 44, 2555, p + '0.45', 0.289, 76.4, 82.78, 2137, 6.46, 192, 1313, p + '41.99']
+    ]
+}
+
+data = healthy_dataset['data']
+col_names = healthy_dataset['column_names']
+
+def make_csv_content(cols):
+    col_indices = [col_names.index(col) for col in cols]
+    all_data = [[row[i] for i in col_indices] for row in data]
+    
+    csv_lines = [','.join(cols)] # First row containing column names
+    csv_lines += [','.join(map(str, row)) for row in all_data]
+    
+    return '\n'.join(csv_lines)
+
+
+def get_cols(features_list, headers_list, must_include_list, max_num_cols):
+    for header in headers_list:
+        features_list.remove(header)
+    
+    num_cols = max_num_cols - len(must_include_list) - len(headers_list)
+    columns = must_include_list + headers_list + random.sample(features_list, pick_from_range(num_cols-1, num_cols))
+    random.shuffle(columns)
+    
+    return columns</global><language type="string">r</language><levels type="list"><li type="dict">
+<explanation type="string">To drop rows with missing values, `${distractor.data_name}` is piped into `drop_na()`.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages
+suppressPackageStartupMessages(library(tidyverse))
+
+# Load the dataset
+${distractor.data_name} &lt;- read.csv('${distractor.data_name}_example.csv')
+
+# Keep only certain features
+${distractor.data_name} &lt;- ${distractor.data_name} |&gt; select(city, ${meaningful.header1}, ${meaningful.header2})
+
+# Drop rows with missing values
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.data_name}Clean &lt;- ${distractor.data_name} |&gt; drop_na()</solution><template type="string">${distractor.data_name}Clean &lt;- # Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+nrow(${distractor.data_name}Clean)</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Untitled.R</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.data}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">${distractor.data_name}_example.csv</name></li></files><prompt type="string">This dataset contains information on lifestyle measures such as the amount of sunshine, pollution, and happiness levels for 44 major cities around the world.
+
+- Drop rows in `${distractor.data_name}` with missing values.
+
+The code contains all imports, loads the dataset, subsets the dataset, and displays the number of rows in the cleaned data.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    header1 = meaningful_permutation['header1']
+    header2 = meaningful_permutation['header2']
+    columns = get_cols(sum(features_list_list, []), [header1, header2], ['city'], 5)
+    
+    return {'data_name': pick_from(['healthy', 'lifestyle', 'rankings']), 'data' : make_csv_content(columns)}</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {'header1': pick_from(features_list_list[0]), 'header2': pick_from(features_list_list[1])}</meaningful><setup type="string">features_list_list = [
+    ['sunshine_hours', 'pollution', 'annual_hours_worked'],
+    ['cost_bottled_water', 'obesity_levels', 'life_expectancy', 'happiness_levels', 'outdoor_activities']
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">To ${distractor.keep_remove_lower} the features `${meaningful.feature1}` and `${meaningful.feature2}`, `select()` is used.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages
+suppressPackageStartupMessages(library(tidyverse))
+
+# Load the dataset
+${distractor.data_name} &lt;- read.csv('${distractor.data_name}Sample.csv')
+
+# ${meaningful.keep_remove_cap} the features ${meaningful.feature1} and ${meaningful.feature2}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.data_name}Clean &lt;- ${distractor.solution}</solution><template type="string">${distractor.data_name}Clean &lt;- # Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Print five lines of the cleaned data
+${distractor.data_name}Clean[${distractor.first}:${distractor.last}, ]</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Untitled.R</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.data}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">${distractor.data_name}Sample.csv</name></li></files><prompt type="string">This dataset contains information on lifestyle measures such as the amount of sunshine, pollution, and happiness levels for 44 major cities around the world.
+
+- ${meaningful.keep_remove_cap} the features `${meaningful.feature1}` and `${meaningful.feature2}` from `${distractor.data_name}`.
+
+The code contains all imports, loads the dataset, and displays five rows of `${distractor.data_name}Clean`.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    feature1 = meaningful_permutation['feature1']
+    feature2 = meaningful_permutation['feature2']
+    
+    data_name = pick_from(['healthy', 'lifestyle', 'rankings'])
+    first = pick_from_range(0, 35)
+    
+    solution = '{} |&gt; select(-{}, -{})'.format(data_name, feature1, feature2)
+    if meaningful_permutation['keep_remove_cap'] == 'Keep':
+        solution = solution.replace('-', '')
+    
+    return {
+        'data_name': data_name, 'first': first, 'last': first + 4, 'solution': solution, 
+        'keep_remove_lower': meaningful_permutation['keep_remove_cap'].lower(), 
+        'data' : make_csv_content(get_cols(sum(features_list_list, []), [feature1, feature2], [], 5)), 
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {
+        'keep_remove_cap': pick_from(['Keep', 'Remove']), 
+        'feature1': pick_from(features_list_list[0]), 
+        'feature2': pick_from(features_list_list[1]), 
+    }</meaningful><setup type="string">features_list_list = [
+    ['city', 'rank'],
+    [
+        'sunshine_hours', 'cost_bottled_water', 'obesity_levels', 'life_expectancy', 
+        'annual_hours_worked', 'happiness_levels', 'outdoor_activities', 
+    ], 
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">`mean(${distractor.data_name}$${meaningful.feature}, na.rm=TRUE)` calculates the mean of `${meaningful.feature}`. The mean of `${meaningful.feature}`, `${meaningful.feature}Mean`, is used to fill in the missing values in `${meaningful.feature}`, so &lt;span style="white-space: nowrap"&gt;&lt;code&gt;${distractor.data_name} |&gt; replace_na(list(${meaningful.feature}=${meaningful.feature}Mean))&lt;/code&gt;.&lt;/span&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages
+suppressPackageStartupMessages(library(tidyverse))
+
+# Load the dataset
+${distractor.data_name} &lt;- read.csv('${distractor.data_name}Sample.csv')
+
+# Calculate the mean value of the feature
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${meaningful.feature}Mean &lt;- mean(${distractor.data_name}$${meaningful.feature}, na.rm=TRUE)
+
+# Replace missing values of ${meaningful.feature} with the mean of ${meaningful.feature}
+${distractor.data_name}Clean &lt;- ${distractor.data_name} |&gt; replace_na(list(${meaningful.feature}=${meaningful.feature}Mean))</solution><template type="string">${meaningful.feature}Mean &lt;- # Your code goes here
+
+# Replace missing values of ${meaningful.feature} with the mean of ${meaningful.feature}
+${distractor.data_name}Clean &lt;- # Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+cat('Mean:', ${meaningful.feature}Mean)
+${distractor.data_name}Clean$${meaningful.feature}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Untitled.R</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.data}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">${distractor.data_name}Sample.csv</name></li></files><prompt type="string">This dataset contains information on lifestyle measures such as the amount of sunshine, pollution, and happiness levels for 44 major cities around the world.
+
+- Calculate and print the mean value of `${meaningful.feature}`.
+- Replace the missing values of `${meaningful.feature}` with the mean of `${meaningful.feature}`.
+
+The code contains all imports, loads the dataset, and displays `${distractor.data_name}Clean$${meaningful.feature}`.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    feature = meaningful_permutation['feature']
+    
+    init_features.remove(feature)
+    init_features.extend(['life_expectancy', 'happiness_levels'])
+    columns = [feature, 'cost_bottled_water'] + random.sample(init_features, pick_from_range(2, 3))
+    random.shuffle(columns)
+    
+    return {'data_name': pick_from(['healthy', 'lifestyle', 'rankings']), 'data' : make_csv_content(columns)}</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {'feature' : pick_from(init_features)}</meaningful><setup type="string">init_features = [
+    'sunshine_hours', 'pollution', 'annual_hours_worked', 'outdoor_activities', 'number_takeout_places'
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+</zyVersion>
+
+<zyVersion version="python">
+<zypInfo person="Reed" date="7/15/25" minutes="40" status="QADoing"></zypInfo>
+<zypInfo person="Sabrina" date="7/15/25" minutes="12" status="QADoing"></zypInfo>
+<zypInfo person="Reed" date="7/15/25" minutes="11" status="QADoing"></zypInfo>
+<zypInfo person="Reed" date="7/15/25" minutes="3" status="QADoing"></zypInfo>
+<zyTool name="CodeWriting" caption="Cleaning data using pandas" id="cad78908-8207-42f2-b60e-60a50815289f" parts="3" challenge="true" edited-last="Tue Jul 15 2025 15:51:10 GMT-0700 (Pacific Daylight Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+p = u&apos;£&apos;
+
+healthy_dataset = {
+    &apos;column_names&apos; : [ 
+        &apos;city&apos;, &apos;rank&apos;, &apos;sunshine_hours&apos;, &apos;cost_bottled_water&apos;, &apos;obesity_levels&apos;, &apos;life_expectancy&apos;, 
+        &apos;pollution&apos;, &apos;annual_hours_worked&apos;, &apos;happiness_levels&apos;, &apos;outdoor_activities&apos;, &apos;number_takeout_places&apos;, 
+        &apos;cost_gym_membership&apos;
+    ],
+    &apos;data&apos; : [
+        [&apos;Amsterdam&apos;, 1, 1858, p + &apos;1.92&apos;, &apos;20.40%&apos;, 81.2, 30.93, 1434, 7.44, 422, 1048, p + &apos;34.90&apos;],
+        [&apos;Sydney&apos;, 2, 2636, p + &apos;1.48&apos;, &apos;29.00%&apos;, 82.1, 26.86, 1712, 7.22, 406, 1103, p + &apos;41.66&apos;],
+        [&apos;Vienna&apos;, 3, 1884, p + &apos;1.94&apos;, &apos;20.10%&apos;, 81, 17.33, 1501, 7.29, 132, 1008, p + &apos;25.74&apos;],
+        [&apos;Stockholm&apos;, 4, 1821, p + &apos;1.72&apos;, &apos;20.60%&apos;, 81.8, 19.63, 1452, 7.35, 129, 598, p + &apos;37.31&apos;],
+        [&apos;Copenhagen&apos;, 5, 1630, p + &apos;2.19&apos;, &apos;19.70%&apos;, 79.8, 21.24, 1380, 7.64, 154, 523, p + &apos;32.53&apos;],
+        [&apos;Helsinki&apos;, 6, 1662, p + &apos;1.60&apos;, &apos;22.20%&apos;, 80.4, 13.08, 1540, 7.8, 113, 309, p + &apos;35.23&apos;],
+        [&apos;Fukuoka&apos;, 7, 2769, p + &apos;0.78&apos;, &apos;4.30%&apos;, 83.2, &apos;NaN&apos;, 1644, 5.87, 35, 539, p + &apos;55.87&apos;],
+        [&apos;Berlin&apos;, 8, 1626, p + &apos;1.55&apos;, &apos;22.30%&apos;, 80.6, 39.41, 1386, 7.07, 254, 1729, p + &apos;26.11&apos;],
+        [&apos;Barcelona&apos;, 9, 2591, p + &apos;1.19&apos;, &apos;23.80%&apos;, 82.2, 65.19, 1686, 6.4, 585, 2344, p + &apos;37.80&apos;],
+        [&apos;Vancouver&apos;, 10, 1938, &apos;NaN&apos;, &apos;29.40%&apos;, 81.7, 24.26, 1670, 7.23, 218, 788, p + &apos;31.04&apos;],
+        [&apos;Melbourne&apos;, 11, 2363, p + &apos;1.57&apos;, &apos;29.00%&apos;, 82.1, 25.9, 1712, 7.22, 243, 813, p + &apos;36.89&apos;],
+        [&apos;Beijing&apos;, 12, 2671, p + &apos;0.26&apos;, &apos;6.20%&apos;, 75.4, 85.43, &apos;NaN&apos;,5.12, 223, 261, p + &apos;38.62&apos;],
+        [&apos;Bangkok&apos;, 13, 2624, p + &apos;0.22&apos;, &apos;10.00%&apos;, 74.1, 76.64, &apos;NaN&apos;, 5.99, 377, 1796, p + &apos;50.03&apos;],
+        [&apos;Buenos Aires&apos;, 14, 2525, p + &apos;0.57&apos;, &apos;28.30%&apos;, 75.9, 52.64, &apos;NaN&apos;, 5.97, 246, 1435, p + &apos;22.45&apos;],
+        [&apos;Toronto&apos;, 15, 2066, p + &apos;1.09&apos;, &apos;29.40%&apos;, 81.7, 37.83, 1670, 7.23, 174, 1656, p + &apos;32.64&apos;], 
+        [&apos;Madrid&apos;, 16, 2769, p + &apos;1.30&apos;, &apos;23.80%&apos;, 82.2, 52.68, 1686, 6.4, 216, 2491, p + &apos;34.54&apos;],
+        [&apos;Jakarta&apos;, 17, 2983, p + &apos;0.21&apos;, &apos;6.90%&apos;, 68.5, 84.39, &apos;NaN&apos;, 5.28, 114, 833, p + &apos;29.94&apos;],
+        [&apos;Seoul&apos;, 18, 2066, p + &apos;0.59&apos;, &apos;4.70%&apos;, 81.3, 57.82, 1967, 5.87, 144, 389, p + &apos;43.03&apos;],
+        [&apos;Frankfurt&apos;, 19, 1662, p + &apos;1.95&apos;, &apos;22.30%&apos;, 80.6, 37.78, 1386, 7.07, 23, 551, p + &apos;39.01&apos;],
+        [&apos;Geneva&apos;, 20, &apos;NaN&apos;, p + &apos;2.62&apos;, &apos;19.50%&apos;, 82.6, 27.25, 1557, 7.56, 44, 444, p + &apos;70.00&apos;],
+        [&apos;Tel Aviv&apos;, 21, 3311, p + &apos;1.63&apos;, &apos;26.10%&apos;, 81.9, 47.28, 1898, 7.12, 139, 420, p + &apos;58.31&apos;],
+        [&apos;Istanbul&apos;, 22, 2218, p + &apos;0.15&apos;, &apos;32.10%&apos;, 74.7, 69.49, 1832, 5.13, 419, 934, p + &apos;16.97&apos;],
+        [&apos;Cairo&apos;, 23, 3542, p + &apos;0.16&apos;, &apos;32.00%&apos;, 70.7, 91.74, &apos;NaN&apos;, 4.15, 323, 250, p + &apos;23.25&apos;],
+        [&apos;Taipei&apos;, 24, 1405, p + &apos;0.57&apos;, &apos;6.20%&apos;, 75.4, 49.32, &apos;NaN&apos;, 5.12, 134, 717, p + &apos;34.76&apos;],
+        [&apos;Los Angeles&apos;, 25, 3254, p + &apos;1.52&apos;, 0.362, 78.8, 66.07, 1779, 6.94, 223, 1439, p + &apos;32.00&apos;],
+        [&apos;Mumbai&apos;, 26, 2584, p + &apos;0.15&apos;, 0.039, 67.3, 82.84, &apos;NaN&apos;, 3.57, 187, 1183, p + &apos;19.54&apos;],
+        [&apos;Boston&apos;, 27, 2634, p + &apos;1.39&apos;, 0.362, 78.8, 27.03, 1779, 6.94, 88, 588, p + &apos;46.27&apos;],
+        [&apos;Dublin&apos;, 28, 1453, p + &apos;1.40&apos;, 0.253, 80.5, 40.07, 1772, 7.09, 159, 659, p + &apos;37.35&apos;],
+        [&apos;Tokyo&apos;, 29, 1877, p + &apos;0.76&apos;, 0.043, 83.2, 42.84, 1644, 5.87, 387, 5802, p + &apos;70.82&apos;],
+        [&apos;Chicago&apos;, 30, 2508, p + &apos;1.20&apos;, 0.362, 78.8, 43.33, 1779, 6.94, &apos;NaN&apos;, 1320, p + &apos;41.14&apos;],
+        [&apos;Hong Kong&apos;, 31, 1836, p + &apos;0.75&apos;, 0.062, 75.4, 67.46, &apos;NaN&apos;, 5.51, 277, 1257, p + &apos;57.95&apos;],
+        [&apos;Shanghai&apos;, 32, 1776, p + &apos;0.29&apos;, 0.062, 75.4, 77.4, &apos;NaN&apos;, 5.12, 108, 346, p + &apos;44.68&apos;],
+        [&apos;Brussels&apos;, 33, 1546, p + &apos;2.11&apos;, 0.221, 80.4, 62.67, 1583, 6.86, 55, 988, p + &apos;25.34&apos;],
+        [&apos;San Francisco&apos;, 34, 3062, p + &apos;1.60&apos;, 0.362, 78.8, 47.36, 1779, 6.94, 242, 1031, p + &apos;65.13&apos;],
+        [&apos;Paris&apos;, 35, 1662, p + &apos;1.95&apos;, 0.216, 81.8, 65.1, 1505, 6.66, 331, 4363, p + &apos;35.93&apos;],
+        [&apos;Sao Paulo&apos;, 36, 2003, p + &apos;0.44&apos;, 0.221, 73.9, 79.78, &apos;NaN&apos;, 6.37, 158, 3355, p + &apos;16.07&apos;],
+        [&apos;Zurich&apos;, 37, 1566, p + &apos;3.20&apos;, 0.195, 82.6, 17.31, 1557, 7.56, 69, &apos;NaN&apos;, p + &apos;73.11&apos;],
+        [&apos;London&apos;, 38, 1633, p + &apos;1.16&apos;, 0.278, 80.4, 58.91, 1538, 7.16, 433, 6417, p + &apos;42.71&apos;],
+        [&apos;Johannesburg&apos;, 39, 3124, p + &apos;0.59&apos;, 0.283, 56.3, 61.83, &apos;NaN&apos;, 4.81, 194, 492, p + &apos;24.28&apos;],
+        [&apos;Milan&apos;, 40, 1915, p + &apos;1.15&apos;, 0.199, 82.7, 67.19, 1718, 6.38, 110, 2396, p + &apos;53.49&apos;],
+        [&apos;Washington, D.C.&apos;, 41, 2528, p + &apos;1.45&apos;, 0.362, 78.8, 39.18, 1779, 6.94, 83, 744, p + &apos;65.99&apos;],
+        [&apos;New York&apos;, 42, 2535, p + &apos;1.32&apos;, 0.362, 78.8, 57.36, 1779, 6.94, 359, 3081, p + &apos;64.66&apos;],
+        [&apos;Moscow&apos;, 43, 1901, p + &apos;0.41&apos;, 0.231, 69.5, 57.63, 1965, 5.54, 322, 3206, p + &apos;31.40&apos;],
+        [&apos;Mexico City&apos;, 44, 2555, p + &apos;0.45&apos;, 0.289, 76.4, 82.78, 2137, 6.46, 192, 1313, p + &apos;41.99&apos;]
+    ]
+}
+
+data = healthy_dataset[&apos;data&apos;]
+col_names = healthy_dataset[&apos;column_names&apos;]
+
+def make_csv_content(cols):
+    col_indices = [col_names.index(col) for col in cols]
+    all_data = [[row[i] for i in col_indices] for row in data]
+    
+    csv_lines = [&apos;,&apos;.join(cols)] # First row containing column names
+    csv_lines += [&apos;,&apos;.join(map(str, row)) for row in all_data]
+    
+    return &apos;\n&apos;.join(csv_lines)</global><language type="string">python3</language><languageOption type="string"></languageOption><levels type="list"><li type="dict">
+<explanation type="string">To drop instances with duplicate values of specific features, `dataframe.drop_duplicates()` is used with `subset` initialized to the label of the feature.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages and functions
+import pandas as pd
+
+# Load the dataset
+${meaningful.data_name} = pd.read_csv(&quot;${meaningful.data_name}_example.csv&quot;)
+
+# Remove instances with duplicate values of ${meaningful.feature} 
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${meaningful.data_name}Clean = ${meaningful.data_name}.drop_duplicates(subset=[&quot;${meaningful.feature}&quot;])</solution><template type="string">${meaningful.data_name}Clean = # Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Print summary after cleaning data
+${meaningful.data_name}Clean.info()</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.py</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${meaningful.data}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">${meaningful.data_name}_example.csv</name></li></files><prompt type="string">This dataset contains information on lifestyle measures such as the amount of sunshine, pollution, and happiness levels for 44 major cities around the world.
+
+- Drop instances with duplicate values of `${meaningful.feature}` from the dataset.
+
+The code provided contains all imports, loads the dataset, and prints `${meaningful.data_name}Clean.info()`.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    data_name = pick_from([&apos;healthy&apos;, &apos;lifestyle&apos;, &apos;rankings&apos;])
+    features = [
+        &apos;sunshine_hours&apos;, &apos;cost_bottled_water&apos;, &apos;obesity_levels&apos;, &apos;life_expectancy&apos;, &apos;annual_hours_worked&apos;, 
+        &apos;happiness_levels&apos;, &apos;outdoor_activities&apos;
+    ]
+    feature = pick_from(features)
+    
+    features.remove(feature)
+    other_columns = random.sample(features, pick_from_range(3, 4))
+    columns = [feature] + other_columns
+    random.shuffle(columns)
+    
+    return {
+        &apos;data_name&apos; : data_name,
+        &apos;feature&apos; : feature,
+        &apos;data&apos; : make_csv_content(columns)
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">To drop ${meaningful.inst_feats} with missing values of a specific ${meaningful.feat_inst}, `dataframe.dropna()` is used with `subset` initialized to the label of the ${meaningful.feat_inst}. Since ${meaningful.inst_feats} are represented by ${meaningful.rows_or_cols}, `axis=${meaningful.axis_num}` removes ${meaningful.rows_or_cols} from the dataset.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages and functions
+import pandas as pd
+
+# Load the dataset
+${meaningful.data_name} = pd.read_csv(&quot;${meaningful.data_name}_example.csv&quot;)
+
+# Remove ${meaningful.inst_feats} with missing values of ${meaningful.header}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${meaningful.data_name}Clean = ${meaningful.data_name}.dropna(axis=${meaningful.axis_num}, subset=[${meaningful.apos}${meaningful.header}${meaningful.apos}])</solution><template type="string">${meaningful.data_name}Clean = # Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Print summary after cleaning data
+${meaningful.data_name}Clean.info()</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.py</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${meaningful.data}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">${meaningful.data_name}_example.csv</name></li></files><prompt type="string">This dataset contains information on lifestyle measures such as the amount of sunshine, pollution, and happiness levels for 44 major cities around the world.
+
+- Drop ${meaningful.inst_feats} with missing values of ${meaningful.feat_inst_prompt} ${meaningful.code_or_not}${meaningful.header}${meaningful.code_or_not} from the dataset.
+
+The code provided contains all imports, loads the dataset, and prints `${meaningful.data_name}Clean.info()`.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    
+    data_name = pick_from([&apos;healthy&apos;, &apos;lifestyle&apos;, &apos;rankings&apos;])
+    
+    inst_feat, feat_inst, header, apos, axis_num, code_or_not = pick_from([
+        (&apos;instance&apos;, &apos;feature&apos;, pick_from([&apos;sunshine_hours&apos;, &apos;pollution&apos;, &apos;annual_hours_worked&apos;]), &apos;\&quot;&apos;, 0, &apos;`&apos;),
+        (&apos;feature&apos;, &apos;instance&apos;, pick_from([6, 8, 11, 12, 13, 19, 22, 29, 36]), &apos;&apos;, 1, &apos;&apos;)
+    ])
+    
+    features = [
+        &apos;sunshine_hours&apos;, &apos;cost_bottled_water&apos;, &apos;obesity_levels&apos;, &apos;life_expectancy&apos;, &apos;annual_hours_worked&apos;, 
+        &apos;happiness_levels&apos;, &apos;outdoor_activities&apos;, &apos;pollution&apos;
+    ]
+    if feat_inst is &apos;feature&apos;:
+        features.remove(header)
+        columns = [header] + random.sample(features, pick_from_range(3, 4))
+    else:    
+        columns = [&apos;rank&apos;] + random.sample(features, pick_from_range(3, 4))
+    random.shuffle(columns)
+
+    feat_inst_prompt = feat_inst if  inst_feat == &apos;feature&apos; else &apos;&apos;
+    
+    return {
+        &apos;inst_feat&apos; : inst_feat,
+        &apos;inst_feats&apos; : inst_feat +&apos;s&apos;,
+        &apos;feat_inst&apos; : feat_inst,
+        &apos;feat_inst_prompt&apos; : feat_inst_prompt,
+        &apos;header&apos; : header,
+        &apos;apos&apos; : apos,
+        &apos;axis_num&apos; : axis_num,
+        &apos;code_or_not&apos; : code_or_not,
+        &apos;data_name&apos; : data_name,
+        &apos;data&apos; : make_csv_content(columns),
+        &apos;rows_or_cols&apos;: &apos;rows&apos; if inst_feat == &apos;instance&apos; else &apos;columns&apos;
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">`${meaningful.data_name}.mean(numeric_only=True)` calculates the means of the numerical features in `${meaningful.data_name}`. The mean of `${meaningful.feature}`, `${meaningful.data_name}Mean[&quot;${meaningful.feature}&quot;]`, is used to fill in the missing values in `${meaningful.feature}`, so `${meaningful.data_name}.fillna(${meaningful.data_name}Mean[&quot;${meaningful.feature}&quot;], inplace=True)`.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages and functions
+import pandas as pd
+
+# Load the dataset
+${meaningful.data_name} = pd.read_csv(&quot;${meaningful.data_name}_example.csv&quot;)
+
+# Calculate the mean values of the features
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${meaningful.data_name}Mean = ${meaningful.data_name}.mean(numeric_only=True)
+print(&quot;Mean:&quot;, ${meaningful.data_name}Mean[&quot;${meaningful.feature}&quot;], &quot;\n&quot;)
+
+# Replace missing values of ${meaningful.feature} in place with the mean of ${meaningful.feature}
+${meaningful.data_name}.fillna(${meaningful.data_name}Mean[&quot;${meaningful.feature}&quot;], inplace=True)</solution><template type="string">${meaningful.data_name}Mean = # Your code goes here
+print(&quot;Mean:&quot;, ${meaningful.data_name}Mean[&quot;${meaningful.feature}&quot;], &quot;\n&quot;)
+
+# Replace missing values of ${meaningful.feature} in place with the mean of ${meaningful.feature}
+# Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Print ${meaningful.feature} after replacing missing values with the mean
+print(${meaningful.data_name}[&quot;${meaningful.feature}&quot;])</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.py</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${meaningful.data}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">${meaningful.data_name}_example.csv</name></li></files><prompt type="string">This dataset contains information on lifestyle measures such as the amount of sunshine, pollution, and happiness levels for 44 major cities around the world.
+
+- Calculate and print the mean value of `${meaningful.feature}`.
+- Replace the missing values of `${meaningful.feature}` in place with the mean of `${meaningful.feature}`.
+
+The code provided contains all imports, loads the dataset, and prints `${meaningful.data_name}[&quot;${meaningful.feature}&quot;]`.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    data_name = pick_from([&apos;healthy&apos;, &apos;lifestyle&apos;, &apos;rankings&apos;])
+    init_features = [
+        &apos;sunshine_hours&apos;, &apos;pollution&apos;, &apos;annual_hours_worked&apos;, &apos;outdoor_activities&apos;, &apos;number_takeout_places&apos;
+    ]
+    feature = pick_from(init_features)
+    features = list(init_features)
+    features = features + [&apos;life_expectancy&apos;, &apos;happiness_levels&apos;]
+    features.remove(feature)
+    columns = [feature, &apos;cost_bottled_water&apos;] + random.sample(features, pick_from_range(2, 3))
+    random.shuffle(columns)
+    
+    return {
+        &apos;data_name&apos; : data_name,
+        &apos;feature&apos; : feature,
+        &apos;data&apos; : make_csv_content(columns)
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+</zyVersion>
+
+
+
+</zySection>

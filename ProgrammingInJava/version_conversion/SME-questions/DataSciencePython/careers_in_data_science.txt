@@ -1,0 +1,42 @@
+<question xsi:type='MultipleChoiceQuestion' guid='4af4f278-31e8-4051-9355-0dd45a8bfd73'>
+<instructions>
+The US Bureau of Labor Statistics predicts a ______ increase in data science jobs through 2030.
+</instructions>
+
+<choices>
+<choice>10%</choice>
+<choice>20%</choice>
+<choice correct='true'>30%</choice>
+<choice>40%</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='dbaad631-6eab-42e3-bec3-9aa50f3df4a4'>
+<instructions>
+What job in data science focuses mostly on visualizing data and summarizing data?
+</instructions>
+
+<choices>
+<choice>Data engineer</choice>
+<choice>Machine learning engineer</choice>
+<choice correct='true'>Data analyst</choice>
+<choice>Data scientist</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='b314891a-f593-456c-bd34-6e0ff12d4649'>
+<instructions>
+Which job in data science focuses mostly on the implementation of a model, rather than selecting the model and interpreting the results?
+</instructions>
+
+<choices>
+<choice>Data engineer</choice>
+<choice correct='true'>Machine learning engineer</choice>
+<choice>Data analyst</choice>
+<choice>Data scientist</choice>
+</choices>
+</question>

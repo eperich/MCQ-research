@@ -1,0 +1,2478 @@
+<zySection title= "Exploring data" shorttitle= "Exploring data" id="57e2d254-ef6c-6d31-cd55-5ded2321c369">
+
+<zypInfo person="Aimee" date="9/1/22" minutes="30" status="Draft1Doing">Build section template </zypInfo> 
+<zypInfo person="Aimee" date="9/2/22" minutes="60" status="Draft1Doing">Write Say sections</zypInfo> 
+<zypInfo person="Aimee" date="9/6/22" minutes="360" status="Draft1Doing">Data gathering and compilation, animations</zypInfo> 
+<zypInfo person="Aimee" date="9/7/22" minutes="300" status="Draft1Doing">Section writing</zypInfo> 
+<zypInfo person="Aimee" date="9/8/22" minutes="150" status="Draft1Done">Edits, add alt-text and learning goals</zypInfo>
+ <zypInfo person="Rissler" date="9/21/22" minutes="60" status="Rev1Doing">Making comments</zypInfo>
+<zypInfo person="Aimee" date="9/21/22" minutes="60" status="Rev1Doing"></zypInfo>
+<zypInfo person="Heather" date="9/22/22" minutes="20" status="Rev2Doing"></zypInfo>
+<zypInfo person="Aimee" date="9/23/22" minutes="10" status="Rev2Done"></zypInfo>
+<zypInfo person="Cathleen" date="10/11/22" minutes="90" status="CopyEdit"></zypInfo>
+<zypInfo person="Aimee" date="10/12/22" minutes="20" status="CopyEdit"></zypInfo>
+<zypInfo person="Aimee" date="10/5/22" minutes="60" status="Draft1Doing">R versioning</zypInfo>
+<zypInfo person="Aimee" date="10/12/22" minutes="120" status="Draft1Doing">R versioning</zypInfo>
+<zypInfo person="Aimee" date="10/13/22" minutes="120" status="Draft1Done">R versioning</zypInfo>
+<zypInfo person="Rissler" date="9/21/22" minutes="20" status="Rev1Doing">Making comments</zypInfo>
+<zypInfo person="Aimee" date="10/31/22" minutes="15" status="Rev1Fixes">Spooky changes</zypInfo>
+<zypInfo person="Ayla" date="11/30/22" minutes="15" status="Rev2Doing">lol</zypInfo>
+<zypInfo person="Aimee" date="11/30/22" minutes="10" status="Rev2Doing"></zypInfo>
+<zypInfo person="Pamela" date="5/5/25" minutes="20" status="BugFix">streamlit update to fix issue with not being able to see everything in the columns tab</zypInfo>
+
+
+<zyAside type="bordered" name="Learn to:" id="81131427-5ea5-77a8-ac57-16937ffe45a1"> 
+<ul>
+<li>Define data exploration.</li>
+<li>Use group, calculate, and combine framework to compute descriptive statistics.</li>
+<li>Define and interpret frequency tables, contingency tables, and pivot tables.</li>
+<li>Compare groups in a dataset based on descriptive statistics.</li>
+<zyVersion version='python'><li>Compute descriptive statistics and tables using <zyICode>pandas</zyICode>.</li></zyVersion>
+</ul>
+</zyAside> 
+
+<zyHTML id="2747b353-324f-16ba-1159-3ef748a5247a" subsection="true">
+<h3>Data exploration</h3>
+</zyHTML>
+
+<zyHTML id="87a55876-e4fa-e736-c29e-5e14bbd2dd12">
+<p>
+<zyDefn>_Data exploration_ is the first step of the data wrangling process, which includes exploring patterns and trends within a dataset.</zyDefn> Data exploration can be done visually through plots or figures, or numerically by comparing descriptive statistics.
+</p>
+<p>
+<!--<zyDefn>_Data manipulation_ is the process of organizing or subsetting a dataset to explore a research problem.</zyDefn> Data manipulation-->During data exploration,  datasets may be split into multiple groups based on a categorical feature, or compared based on a specific condition. Descriptive statistics like the mean, median, or proportion can be calculated and compared across groups or conditions. 
+</p>
+</zyHTML>
+
+
+
+<!-- Last modified Fri Sep 23 2022 10:14:56 GMT-0500 (Central Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="426eb19f-1d07-43b4-b350-f3bca937bb99" caption="Discovering data" height="598px" width="724px" selectedInstr="none" selectedObj="none" numObjsEverCreated="42" loadOnDemand="false">
+<zyObjects><zyObject objNum="7" objType="box" objName="Box 6" top="327px" left="405px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="152px" width="290px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="8" objType="image" objName="Image 2" top="85px" left="17px" opacity="0" useConstrainedProportions="true" constrainedProportionsHeight="472" constrainedProportionsWidth="1378" googleDriveFileID="1NlFjndI94xqUsDii_E0gGeAWj3m8qPUE" height="210px" width="613px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="9" objType="image" objName="Image 1" top="313px" left="21px" opacity="0" useConstrainedProportions="true" constrainedProportionsHeight="714" constrainedProportionsWidth="1454" googleDriveFileID="1f3zjPT6imfCpyp_M_1HlTtRa-I5z3NOF" height="180px" width="367px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="10" objType="box" objName="Box 1" top="85px" left="481px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="200px" width="104px" border-width="0px" border-style="none" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="11" objType="text" objName="4.7" top="115px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>4.7</text></zyObject><zyObject objNum="12" objType="text" objName="8.5" top="173px" left="452px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>8.5</text></zyObject><zyObject objNum="13" objType="text" objName="5.7" top="202px" left="451px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>5.7</text></zyObject><zyObject objNum="14" objType="text" objName="14.2" top="231px" left="444px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>14.2</text></zyObject><zyObject objNum="15" objType="text" objName="13.5" top="260px" left="444px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>13.5</text></zyObject><zyObject objNum="16" objType="box" objName="Box 3" top="152px" left="510px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" width="167px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="17" objType="text" objName="+" top="130px" left="530px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>+</text></zyObject><zyObject objNum="18" objType="text" objName="+" top="130px" left="561px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>+</text></zyObject><zyObject objNum="19" objType="text" objName="+" top="130px" left="591px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>+</text></zyObject><zyObject objNum="20" objType="text" objName="+" top="130px" left="631px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>+</text></zyObject><zyObject objNum="21" objType="text" objName="5" top="158px" left="582px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>5</text></zyObject><zyObject objNum="22" objType="text" objName="= 9.3 years" top="178px" left="590px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>= 9.3 years</text></zyObject><zyObject objNum="23" objType="box" objName="Box 4" top="114px" left="170px" opacity="0" useConstrainedProportions="false" width="50px" border-color="rgb(255, 211, 100)"></zyObject><zyObject objNum="24" objType="box" objName="Box 4" top="174px" left="170px" opacity="0" useConstrainedProportions="false" width="50px" border-color="rgb(255, 211, 100)"></zyObject><zyObject objNum="25" objType="box" objName="Box 4" top="201px" left="170px" opacity="0" useConstrainedProportions="false" width="50px" border-color="rgb(255, 211, 100)"></zyObject><zyObject objNum="26" objType="box" objName="Box 4" top="230px" left="150px" opacity="0" useConstrainedProportions="false" width="70px" border-color="rgb(30, 200, 30)"></zyObject><zyObject objNum="27" objType="box" objName="Box 4" top="259px" left="120px" opacity="0" useConstrainedProportions="false" border-color="rgb(249, 216, 188)"></zyObject><zyObject objNum="28" objType="text" objName="Continent" top="360px" left="450px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Continent</text></zyObject><zyObject objNum="29" objType="text" objName="Asia" top="388px" left="477px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' padding-left='3px' padding-right='3px' padding-top='3px' padding-bottom='3px' border-width='2px' border-style='solid' border-color='rgb(255, 211, 100)'><text>Asia</text></zyObject><zyObject objNum="30" objType="text" objName="Europe" top="418px" left="459px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' padding-left='3px' padding-right='3px' padding-top='3px' padding-bottom='3px' border-width='2px' border-style='solid' border-color='rgb(30, 200, 30)'><text>Europe</text></zyObject><zyObject objNum="31" objType="text" objName="North America" top="448px" left="416px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' padding-left='3px' padding-right='3px' padding-top='3px' padding-bottom='3px' border-width='2px' border-style='solid' border-color='rgb(249, 216, 188)'><text>North America</text></zyObject><zyObject objNum="32" objType="text" objName="Years" top="360px" left="587px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Years</text></zyObject><zyObject objNum="33" objType="text" objName="(4.7 + 8.5 + 5.7) / " top="390px" left="519px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>(4.7 + 8.5 + 5.7) / 3 = 6.3</text></zyObject><zyObject objNum="34" objType="text" objName="14.2" top="420px" left="590px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>14.2</text></zyObject><zyObject objNum="35" objType="text" objName="13.5" top="450px" left="591px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>13.5</text></zyObject><zyObject objNum="36" objType="box" objName="Box 2" top="143px" left="17px" opacity="0" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" width="464px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="37" objType="text" objName="Average education by" top="317px" left="415px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Average education by continent</text></zyObject><zyObject objNum="38" objType="box" objName="Box 7" top="382px" left="417px" opacity="0" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="1px" width="266px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="39" objType="box" objName="Box 6" top="99px" left="501px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="108px" width="184px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="40" objType="text" objName="Average education" top="89px" left="511px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Average education</text></zyObject><zyObject objNum="41" objType="box" objName="Box 5" top="63px" left="13px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="225px" width="475px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="42" objType="text" objName="Original dataset" top="53px" left="23px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Original dataset</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>The United Nations has several programs designed to increase access to education. One measure of educational access is the average years in school.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="42" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="8" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>GDP and EducationYears are unavailable for Brazil. Since data is missing, Brazil is filtered, or ignored, during data <!--manipulation-->exploration.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="36" timeLabel="0" opacity="50"></zyInstruction>
+<zyInstruction instrType="step"><text>The mean, or average, EducationYears for the five countries in the dataset with data available is (4.7 + 8.5 + 5.7 + 14.2 + 13.5) / 5 = 9.3 years.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="40" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="0" top="130" left="510"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0" top="130" left="540"></zyInstruction><zyInstruction instrType="fade" objNum="12" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="0" top="130" left="570"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="14" timeLabel="-" top="130" left="600"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="15" timeLabel="-" top="130" left="640"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>However, differences exist between countries, which affect access to education. Countries in the same continent or region are more likely to have similar education structures.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="9" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="27" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Grouping by continent highlights regional differences in education. Based on this data, students in Asia tend to spend less time in school than students in Europe and North America. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="37" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="7" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="28" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Step 1: A dataset appears with four features: Country, Continent, GDP, and EducationYears. The six countries in the rows of the dataset are Bangladesh, Brazil, China, India, Norway, and the United States.
+Step 2: The second row in the dataset contains Brazil and is covered with a partially opaque box.
+Step 3: A box appears containing the average education years for the five remaining countries.
+Step 4: A world map appears with countries shaded by continent. Each country is highlighted in the dataset with the corresponding color for each continent.
+Step 5: The mean education years for the three Asian countries (Bangladesh, China, and India) is 6.3. The mean education years for Europe (Norway) is 14.2 and for North America (United States) is 13.5.
+</zyAltDescription>
+</zyAnimator>
+
+
+
+
+<zyQSetMultipleChoice caption="Data exploration" id="851ffe7b-9acb-4ea7-bc0c-d7dd437477e5">
+<p>Refer to the following dataset.</p>
+<table class="dbTable">
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Drive</th>
+<th>EngineType</th>
+<th>Cylinders</th>
+<th>Liters</th>
+</tr>
+
+<tr>
+<td>Audi</td>
+<td>A4</td>
+<td>All</td>
+<td>Gas</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>BMW</td>
+<td>328Ci</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>Model 3</td>
+<td>All</td>
+<td>Electric</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Ford</td>
+<td>Mustang</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>8</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Rolls-Royce</td>
+<td>Ghost</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>12</td>
+<td>6.6</td>
+</tr>
+</table>
+
+
+<zyQ>
+<zyQText>Why is data <!--manipulation-->exploration an important part of data wrangling?</zyQText>
+<zyQChoice correct="true">
+<zyQAns>Data <!--manipulation-->exploration includes comparison of multiple groups.</zyQAns>
+<zyQExpl><!--Data manipulation is the process of organizing or subsetting a dataset, often for comparison purposes.-->Data exploration includes finding patterns and trends within a dataset, like comparing multiple groups. Ex: In the previous animation, subsetting the dataset by continent allowed for the comparison of  years in school by region.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Data <!--manipulation-->exploration results in a larger dataset.</zyQAns>
+<zyQExpl>Data exploration includes finding patterns and trends within a dataset, without adding new features or instances to the original data.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Data <!--manipulation-->exploration creates new features in a dataset.</zyQAns>
+<zyQExpl>New features are added to a dataset during the data enrichment step. Data exploration includes finding patterns and trends within a dataset's existing features.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Which research question requires <!--data manipulation-->splitting a dataset into groups to answer?</zyQText>
+<zyQChoice>
+<zyQAns>Is there a relationship between a car's gas mileage and engine size?</zyQAns>
+<zyQExpl>Gas mileage and engine size are both numerical features. The relationship between numerical features can be explored in a line or scatter plot, so <!--data manipulation-->splitting a dataset is not needed.</zyQExpl>
+</zyQChoice>
+<zyQChoice correct="true">
+<zyQAns>Is there a relationship between a car's gas mileage and drive type?</zyQAns>
+<zyQExpl>For each drive type, gas mileage may be described using a statistic like the mean or median.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Is there a relationship between a car's gas mileage and number of cylinders?</zyQAns>
+<zyQExpl>Gas mileage and number of cylinders are both numerical features. The relationship between numerical features can be explored using a line plot or scatter plot, so <!--data manipulation-->splitting a dataset is not needed.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Which feature could be used to group the dataset?</zyQText>
+<zyQChoice>
+<zyQAns>Manufacturer</zyQAns>
+<zyQExpl>Manufacturer is a categorical feature, but the dataset only contains 1-2 instances of each car manufacturer. Groups based on manufacturer would be too small to draw conclusions from.</zyQExpl>
+</zyQChoice>
+<zyQChoice correct="true">
+<zyQAns>Drive</zyQAns>
+<zyQExpl>Grouping the cars dataset based on drive would result in three subsets: all-wheel drive, front-wheel drive, and rear-wheel drive.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Liters</zyQAns>
+<zyQExpl>Liters is a numerical feature. Numerical features often have too many unique values to be useful for grouping. However, a filter could be applied to select cars with a certain number of liters. Ex: Liters \(\gt\)3.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+</zyQSetMultipleChoice>
+
+
+
+<zyHTML id="512f1a3d-936c-1c57-baa0-98b1ca4fabb6" subsection="true">
+<h3>Grouping data</h3>
+</zyHTML>
+
+<zyHTML id="a282e2e5-dda8-21c3-8888-2975a4e3717d">
+<p>
+<zyDefn>_Grouping_ is used to separate a dataframe into subsets based on levels of a categorical feature.</zyDefn> In some cases, a different analysis or model may be applied to each group. In other cases, grouping may be a temporary operation for calculating group sizes or descriptive statistics like group means. <zyDefn>A _frequency table_ is a table containing group sizes for a categorical feature.</zyDefn>
+</p>
+</zyHTML>
+
+
+
+<!-- Last modified Fri Sep 23 2022 10:16:47 GMT-0500 (Central Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="487cbd57-3e62-4238-86be-d9525b383871" caption="Data summaries using group, calculate, combine" height="582px" width="724px" selectedInstr="none" selectedObj="none" numObjsEverCreated="62" loadOnDemand="false">
+<zyObjects><zyObject objNum="29" objType="box" objName="Box 2" top="60px" left="442px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="426px" width="119px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="30" objType="box" objName="Box 2" top="60px" left="571px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="197px" width="137px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="31" objType="box" objName="Box 2" top="60px" left="20px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="331px" width="200px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="32" objType="box" objName="Box 2" top="60px" left="230px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="426px" width="202px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="33" objType="image" objName="Image 1" top="81px" left="24px" opacity="0" useConstrainedProportions="false" googleDriveFileID="1zJZFwP4YZaYvjdNIq89V5kQtEnmRvzSJ" height="294px" width="195px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="34" objType="image" objName="Image 2" top="91px" left="238px" opacity="0" useConstrainedProportions="false" googleDriveFileID="1R0T9x0LhHcxCaUrZvlX8tIDwt56G9LUe" height="397px" width="193px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="35" objType="text" objName="Original dataset" top="50px" left="30px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Original dataset</text></zyObject><zyObject objNum="36" objType="text" objName="Group the datasts" top="50px" left="240px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Group the dataset</text></zyObject><zyObject objNum="37" objType="text" objName="Apply the
+mean" top="50px" left="452px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Calculate the
+mean</text></zyObject><zyObject objNum="38" objType="text" objName="Apply the mean" top="50px" left="581px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Combine the
+means</text></zyObject><zyObject objNum="39" objType="text" objName="(2.3 + 5.1 + 9.3)" top="140px" left="450px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>(2.3 + 5.1 + 9.3)</text></zyObject><zyObject objNum="40" objType="text" objName="(7.8 + 13.5 + 8.9)" top="274px" left="450px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>(7.8 + 13.5 + 8.9)</text></zyObject><zyObject objNum="41" objType="text" objName="(4.7 + 8.5 + 5.7)" top="410px" left="450px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>(4.7 + 8.5 + 5.7)</text></zyObject><zyObject objNum="42" objType="text" objName="= 5.6" top="192px" left="500px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>= 5.6</text></zyObject><zyObject objNum="43" objType="text" objName="5.6" top="149px" left="672px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>5.6</text></zyObject><zyObject objNum="44" objType="text" objName="= 10.1" top="326px" left="500px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>= 10.1</text></zyObject><zyObject objNum="45" objType="text" objName="10.1" top="179px" left="665px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>10.1</text></zyObject><zyObject objNum="46" objType="text" objName="= 6.3" top="462px" left="500px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>= 6.3</text></zyObject><zyObject objNum="47" objType="text" objName="6.3" top="209px" left="672px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>6.3</text></zyObject><zyObject objNum="48" objType="box" objName="Box 3" top="162px" left="450px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="49" objType="box" objName="Box 3" top="296px" left="450px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" width="105px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="50" objType="box" objName="Box 3" top="432px" left="450px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="51" objType="text" objName="3" top="167px" left="490px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>3</text></zyObject><zyObject objNum="52" objType="text" objName="3" top="301px" left="490px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>3</text></zyObject><zyObject objNum="53" objType="text" objName="3" top="437px" left="490px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>3</text></zyObject><zyObject objNum="54" objType="text" objName="Continent" top="119px" left="586px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Continent</text></zyObject><zyObject objNum="55" objType="text" objName="Africa" top="149px" left="609px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Africa</text></zyObject><zyObject objNum="56" objType="text" objName="Africa" top="129px" left="326px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Africa</text></zyObject><zyObject objNum="57" objType="text" objName="Americas" top="179px" left="586px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Americas</text></zyObject><zyObject objNum="58" objType="text" objName="Americas" top="259px" left="298px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Americas</text></zyObject><zyObject objNum="59" objType="text" objName="Asia" top="209px" left="617px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Asia</text></zyObject><zyObject objNum="60" objType="text" objName="Asia" top="401px" left="346px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Asia</text></zyObject><zyObject objNum="61" objType="text" objName="Years" top="119px" left="656px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Years</text></zyObject><zyObject objNum="62" objType="box" objName="Box 1" top="142px" left="585px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" width="110px" border-width="0px" border-color="transparent"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A data scientist would like to compare the mean years of schooling (Years) for each continent.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="35" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>The dataset is grouped into three subsets: one subset for Africa, one subset for the Americas, and one subset Asia.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="36" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>After grouping, the mean is calculated for each subset.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="37" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="56" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="56" timeLabel="-" top="120" left="450"></zyInstruction><zyInstruction instrType="fade" objNum="58" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="58" timeLabel="-" top="250" left="450"></zyInstruction><zyInstruction instrType="fade" objNum="60" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="60" timeLabel="-" top="390" left="450"></zyInstruction><zyInstruction instrType="fade" objNum="51" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="48" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="52" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="49" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="44" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="53" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="50" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>Means for each continent are combined into a single table. Based on the table, countries in Africa have the lowest mean years in school, then Asia, then the Americas.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="38" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="61" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="54" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="62" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="55" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="57" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="59" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="47" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Step 1: A dataset appears containing three columns: Country, Continent, and Years.
+Step 2: The dataset is separated into three smaller datasets: one containing all countries in Africa, one containing all countries in the Americas, and one containing all countries in Asia.
+Step 3: The mean number of years in school is calculated for the three smaller datasets.
+Step 4: Means move into a single table.</zyAltDescription>
+</zyAnimator>
+
+
+
+
+<zyQSetMultipleChoice caption="Grouping data" id="4b772ea6-cc5d-44c2-8270-23254d6b9296">
+<p>Refer to the following dataset. Suppose Drive is used as a grouping feature.</p>
+<table class="dbTable">
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Drive</th>
+<th>EngineType</th>
+<th>Cylinders</th>
+<th>Liters</th>
+</tr>
+
+<tr>
+<td>Audi</td>
+<td>A4</td>
+<td>All</td>
+<td>Gas</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>BMW</td>
+<td>328Ci</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>Model 3</td>
+<td>All</td>
+<td>Electric</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Ford</td>
+<td>Mustang</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>8</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Rolls-Royce</td>
+<td>Ghost</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>12</td>
+<td>6.6</td>
+</tr>
+</table>
+
+<zyQ>
+<zyQText>Calculate the group size for rear-wheel drive cars.</zyQText>
+<zyQChoice>
+<zyQAns>1</zyQAns>
+<zyQExpl>One car in the dataset is front-wheel drive (Drive="Front"): the Chevrolet Malibu. How many cars have Drive="Rear"?</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>2</zyQAns>
+<zyQExpl>Two cars in the dataset are all-wheel drive (Drive="All"): the Audi A4 and the Tesla Model 3. How many cars have Drive="Rear"?</zyQExpl>
+</zyQChoice>
+<zyQChoice correct="true">
+<zyQAns>3</zyQAns>
+<zyQExpl>Three cars in the dataset are rear-wheel drive: the BMW 328Ci, the Ford Mustang, and the Rolls-Royce Ghost.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>A table containing group size for rear-wheel drive cars is a _____ table.</zyQText>
+<zyQChoice  correct="true">
+<zyQAns>frequency</zyQAns>
+<zyQExpl>Frequency tables contain the frequencies, or counts, of each level of a categorical feature.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>size</zyQAns>
+<zyQExpl>Another term for the number of instances in a dataset is frequencies.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>count</zyQAns>
+<zyQExpl>Another term for the number of instances in a dataset is frequencies.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+
+<zyQ>
+<zyQText>Calculate the mean number of liters for rear-wheel drive cars.</zyQText>
+<zyQChoice>
+<zyQAns>4.2</zyQAns>
+<zyQExpl>The mean number of liters for all-gas cars in the dataset is (2+3.6+3.6+5+6.6)/5 = 4.2 liters. But, only rear-wheel drive cars should be used to calculate the group mean.</zyQExpl>
+</zyQChoice>
+<zyQChoice correct="true">
+<zyQAns>5.1</zyQAns>
+<zyQExpl>The mean number of liters for rear-wheel drive cars is (3.6+5+6.6)/3 = 5.1 liters.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>NaN</zyQAns>
+<zyQExpl>The Tesla Model 3 does not have cylinders, since the Model 3 is an electric car. But, the Model 3 is not in the rear-wheel drive group, so the missing value does not affect the group mean.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+</zyQSetMultipleChoice>
+
+
+
+<zyHTML id="318a236e-bd37-82a1-915d-8fb2c28daebb" subsection="true">
+<h3>Pivot tables</h3>
+</zyHTML>
+
+<zyHTML id="ef28b338-3a5e-3baa-a672-21da9efa023c">
+<p>
+<zyDefn>A _pivot table_ calculates and displays descriptive statistics after grouping based on values of two categorical features.</zyDefn> One categorical feature is assigned to the pivot table's rows, and another categorical feature is assigned to the columns. <zyDefn>A _contingency table_ is a special case of a pivot table in which the descriptive statistic is the number of instances in each combination of categorical features.</zyDefn>
+</p>
+</zyHTML>
+
+
+
+<!-- Last modified Thu Sep 22 2022 10:03:59 GMT-0500 (Central Daylight Time) with version 2.19.0.1 -->
+<zyAnimator id="64a79975-5617-4a0c-9e61-7aed00ed8026" caption="Pivot tables" height="598px" width="724px" selectedInstr="50" selectedObj="none" numObjsEverCreated="89" loadOnDemand="false">
+<zyObjects><zyObject objNum="13" objType="box" objName="Box 2" top="60px" left="354px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="225px" width="352px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="14" objType="box" objName="Box 2" top="60px" left="24px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="370px" width="309px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="15" objType="box" objName="Box 2" top="305px" left="354px" opacity="0" border-radius="10px" useConstrainedProportions="false" height="228px" width="352px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="16" objType="image" objName="Image 1" top="85px" left="33px" opacity="0" useConstrainedProportions="false" googleDriveFileID="1LXWACRZCO0rJq3srCtQldQssFnjki9XO" height="330px" width="287px" border-width="0px" border-style="" border-color=""></zyObject><zyObject objNum="17" objType="box" objName="Box 1" top="85px" left="217px" opacity="0" useConstrainedProportions="false" height="30px" width="113px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="18" objType="box" objName="Box 1" top="85px" left="107px" opacity="0" useConstrainedProportions="false" height="30px" width="66px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="21" objType="text" objName="Original dataset" top="50px" left="34px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Original dataset</text></zyObject><zyObject objNum="22" objType="text" objName="Pivot table with sum" top="50px" left="364px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Pivot table with number of instances</text></zyObject><zyObject objNum="23" objType="text" objName="Pivot table with mea" top="295px" left="364px" opacity="0" border-radius="10px" background-color="rgb(255, 211, 100)" color='rgb(51, 51, 51)' font-size='16px' font-weight='400' font-family='arial, sans-serif' border-width='2px' border-style='solid' border-color='rgb(51, 51, 51)'><text>Pivot table with mean years in school</text></zyObject><zyObject objNum="24" objType="text" objName="Africa" top="140px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Africa</text></zyObject><zyObject objNum="25" objType="text" objName="Africa" top="385px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Africa</text></zyObject><zyObject objNum="26" objType="text" objName="Americas" top="170px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Americas</text></zyObject><zyObject objNum="27" objType="text" objName="Americas" top="415px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Americas</text></zyObject><zyObject objNum="28" objType="text" objName="Asia" top="200px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Asia</text></zyObject><zyObject objNum="29" objType="text" objName="Asia" top="445px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Asia</text></zyObject><zyObject objNum="30" objType="text" objName="Europe" top="230px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Europe</text></zyObject><zyObject objNum="31" objType="text" objName="Europe" top="475px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Europe</text></zyObject><zyObject objNum="32" objType="text" objName="Oceania" top="260px" left="363px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Oceania</text></zyObject><zyObject objNum="33" objType="text" objName="Oceania" top="505px" left="363px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Oceania</text></zyObject><zyObject objNum="34" objType="text" objName="Continent" top="110px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Continent</text></zyObject><zyObject objNum="35" objType="text" objName="Continent" top="355px" left="364px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Continent</text></zyObject><zyObject objNum="36" objType="text" objName="Internet access" top="83px" left="514px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Internet access</text></zyObject><zyObject objNum="37" objType="text" objName="Internet access" top="328px" left="514px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Internet access</text></zyObject><zyObject objNum="38" objType="text" objName="Low" top="110px" left="468px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Low</text></zyObject><zyObject objNum="39" objType="text" objName="Low" top="110px" left="514px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Moderate</text></zyObject><zyObject objNum="40" objType="text" objName="Low" top="110px" left="593px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>High</text></zyObject><zyObject objNum="41" objType="text" objName="Low" top="110px" left="637px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Very high</text></zyObject><zyObject objNum="42" objType="text" objName="Low" top="355px" left="468px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Low</text></zyObject><zyObject objNum="43" objType="text" objName="Low" top="355px" left="514px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Moderate</text></zyObject><zyObject objNum="44" objType="text" objName="Low" top="355px" left="593px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>High</text></zyObject><zyObject objNum="45" objType="text" objName="Low" top="355px" left="637px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Very high</text></zyObject><zyObject objNum="46" objType="box" objName="Box 3" top="135px" left="364px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" width="341px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="47" objType="box" objName="Box 3" top="380px" left="364px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="1px" width="341px" border-width="0px" border-color="rgba(0, 0, 0, 0)"></zyObject><zyObject objNum="48" objType="box" objName="Box 4" top="105px" left="450px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="175px" width="1px" border-width="0px" border-color="transparent"></zyObject><zyObject objNum="49" objType="box" objName="Box 4" top="350px" left="450px" opacity="0" background-color="rgb(51, 51, 51)" useConstrainedProportions="false" height="177px" width="1px" border-width="0px" border-color="rgba(0, 0, 0, 0)"></zyObject><zyObject objNum="50" objType="text" objName="36" top="140px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>36</text></zyObject><zyObject objNum="51" objType="text" objName="37" top="385px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>4.8</text></zyObject><zyObject objNum="52" objType="text" objName="0" top="170px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>7</text></zyObject><zyObject objNum="53" objType="text" objName="8" top="140px" left="538px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>8</text></zyObject><zyObject objNum="54" objType="text" objName="7.5" top="385px" left="533px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>7.5</text></zyObject><zyObject objNum="55" objType="text" objName="10" top="170px" left="533px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>10</text></zyObject><zyObject objNum="56" objType="text" objName="9.2" top="415px" left="533px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>9.2</text></zyObject><zyObject objNum="57" objType="text" objName="1" top="140px" left="603px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>1</text></zyObject><zyObject objNum="58" objType="text" objName="9.5" top="385px" left="605px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>9.5</text></zyObject><zyObject objNum="59" objType="text" objName="8" top="170px" left="603px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>8</text></zyObject><zyObject objNum="60" objType="text" objName="0" top="140px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>0</text></zyObject><zyObject objNum="61" objType="text" objName="0" top="170px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>1</text></zyObject><zyObject objNum="62" objType="text" objName="0" top="415px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>7.3</text></zyObject><zyObject objNum="63" objType="text" objName="9.7" top="415px" left="605px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>9.7</text></zyObject><zyObject objNum="64" objType="text" objName="--" top="385px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>--</text></zyObject><zyObject objNum="65" objType="text" objName="0" top="415px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>13.3</text></zyObject><zyObject objNum="66" objType="text" objName="13" top="200px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>13</text></zyObject><zyObject objNum="67" objType="text" objName="6.3" top="445px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>6.3</text></zyObject><zyObject objNum="68" objType="text" objName="9" top="230px" left="475px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>0</text></zyObject><zyObject objNum="69" objType="text" objName="9" top="260px" left="475px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>1</text></zyObject><zyObject objNum="70" objType="text" objName="9" top="200px" left="538px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>9</text></zyObject><zyObject objNum="71" objType="text" objName="9" top="230px" left="533px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>3</text></zyObject><zyObject objNum="72" objType="text" objName="9" top="260px" left="538px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>1</text></zyObject><zyObject objNum="73" objType="text" objName="10" top="200px" left="596px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>10</text></zyObject><zyObject objNum="74" objType="text" objName="10.5" top="445px" left="599px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>10.5</text></zyObject><zyObject objNum="75" objType="text" objName="9" top="230px" left="598px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>26</text></zyObject><zyObject objNum="76" objType="text" objName="9" top="260px" left="603px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>2</text></zyObject><zyObject objNum="77" objType="text" objName="8" top="200px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>8</text></zyObject><zyObject objNum="78" objType="text" objName="9" top="230px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>7</text></zyObject><zyObject objNum="79" objType="text" objName="9" top="260px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>0</text></zyObject><zyObject objNum="80" objType="text" objName="9" top="475px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>--</text></zyObject><zyObject objNum="81" objType="text" objName="9" top="505px" left="470px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>7.9</text></zyObject><zyObject objNum="82" objType="text" objName="9.6" top="445px" left="533px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>9.6</text></zyObject><zyObject objNum="83" objType="text" objName="9" top="475px" left="530px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>11.0</text></zyObject><zyObject objNum="84" objType="text" objName="9" top="505px" left="530px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>10.8</text></zyObject><zyObject objNum="85" objType="text" objName="9" top="475px" left="600px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>11.6</text></zyObject><zyObject objNum="86" objType="text" objName="9" top="505px" left="600px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>12.7</text></zyObject><zyObject objNum="87" objType="text" objName="10.1" top="445px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>10.1</text></zyObject><zyObject objNum="88" objType="text" objName="9" top="475px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>12.8</text></zyObject><zyObject objNum="89" objType="text" objName="9" top="505px" left="669px" opacity="0" color='rgb(51, 51, 51)' font-weight='400' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>--</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Pivot tables provide the number of instances that share a combination of two categorical features. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="21" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="0" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>The row feature&apos;s unique values are listed on the pivot table&apos;s rows.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="18" timeLabel="0" height="328" width="66"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="18" timeLabel="0" top="103" left="361"></zyInstruction><zyInstruction instrType="resize" objNum="18" timeLabel="-" height="179" width="78"></zyInstruction><zyInstruction instrType="fade" objNum="34" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="32" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="30" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="28" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>The column feature&apos;s unique values are listed on the pivot table&apos;s columns.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="17" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="17" timeLabel="0" height="329" width="113"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="66" left="459"></zyInstruction><zyInstruction instrType="resize" objNum="17" timeLabel="-" height="62" width="239"></zyInstruction><zyInstruction instrType="fade" objNum="41" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="40" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="39" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="38" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="36" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="step"><text>A descriptive statistic like the number of instances is added to each row/column combination. Ex: 26 European countries have high internet access. 13 Asian countries have low internet access.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="79" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="78" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="77" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="76" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="75" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="73" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="72" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="71" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="70" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="69" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="68" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="66" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="61" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="60" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="59" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="57" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="55" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="53" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="52" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="50" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="48" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="46" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>Pivot tables may contain descriptive statistics for additional features. Ex: The mean years in school for European countries with high internet access is 11.6 years, and the mean for Asian countries with low internet access is 6.3 years.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="89" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="88" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="87" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="86" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="85" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="84" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="83" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="82" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="81" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="80" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="74" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="67" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="65" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="64" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="63" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="62" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="58" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="56" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="54" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="51" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="49" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="47" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="45" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="44" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="43" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="42" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="37" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="35" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="33" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="31" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="27" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="100"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Step 1: A dataset with five features: Country, Continent, Years, and internet access.
+Step 2: The column containing Continent is highlighted. Continent has five unique values: Africa, Americas, Asia, Europe, and Oceania.
+Step 3: The column containing internet access is highlighted. Internet access has four unique values: Low, Moderate, High, Very high.
+Step 4: A pivot table with five rows (Africa, Americas, Asia, Europe, and Oceania) and four columns (Low, Moderate, High, Very high) appears. Values in the table describe the number of instances in each group.
+Step 5: A second pivot table with the same row/column structure appears. Values in the table describe the mean years in school in each group.</zyAltDescription>
+</zyAnimator>
+
+<!--<zyEnum id="09441c6f-675a-2b25-7434-26101c5d061e" caption="Pivot table"  type="zyTool"> 
+
+Data analysis software such as Tableau or Excel often include interfaces for creating pivot tables. Ex: To re-create the pivot tables from the previous animation:
+
+<ul>
+<li>Click the "Columns" button to the right of the dataframe. Click the button to enable "Pivot Mode".</li>
+<li>Click and drag "Continent" to the "Row Groups" section.</li>
+<li>Click and drag "Internet access" to the "Column Labels" section.</li>
+<li>Click and drag "Years" in school to the "Values" section. By default, the sum of all values in each group is calculated. Click "sum(Years)" and change this to "count(Years)" or "avg(Years)".</li>
+</ul>
+
+<iframe src="https://zybooks-authored-str-datasciencefoundationscountry-manip-5i742w.streamlit.app/?embedded=true" width="800" height="600" allowfullscreen="true" style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+</zyEnum>
+-->
+
+
+<!-- To update an app: Use the streamlit builder. -->
+<zyTool name="StreamlitApp" caption="Pivot table" id="b15fb099-5277-4f52-b4a5-959aee401e72" activity_type="tinker" edited-last="Mon May 05 2025 09:46:45 GMT-0500 (Central Daylight Time)">
+<zyInstructions>Data analysis software such as Tableau or Excel often include interfaces for creating pivot tables. Ex: To re-create the pivot tables from the previous animation:
+
+<ul>
+<li>Click the "Columns" button to the right of the dataframe. Click the button to enable "Pivot Mode".</li>
+<li>Click and drag "Continent" to the "Row Groups" section.</li>
+<li>Click and drag "Internet access" to the "Column Labels" section.</li>
+<li>Click and drag "Years" in school to the "Values" section. By default, the sum of all values in each group is calculated. Click "sum(Years)" and change this to "count(Years)" or "avg(Years)".</li>
+</ul></zyInstructions>
+<zyOptions type="dict"><height type="number">550</height><code type="string">import pandas as pd
+import streamlit as st
+from st_aggrid import AgGrid, GridOptionsBuilder, GridOptionsBuilder, ColumnsAutoSizeMode
+from st_aggrid.shared import GridUpdateMode
+
+st.set_page_config(
+    layout=&quot;centered&quot;
+)
+
+hide = &quot;&quot;&quot;
+        &lt;style&gt;
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        body {overflow: hidden;}
+        div.block-container {padding-top:1rem;}
+        div.block-container {padding-bottom:1rem;}
+        &lt;/style&gt;
+        &quot;&quot;&quot;
+
+st.markdown(hide, unsafe_allow_html=True)
+
+# st.header(&quot;Manipulating the country dataset&quot;)
+# instructions = &quot;Clicking Filters &quot;
+# col_ins = &quot;Click Columns to display specific columns in the country dataset.&quot;
+# row_ins = &quot;Click Filters to display rows that satisfy a specific condition. &quot;
+# row_ex1 = &quot;Ex: Clicking Population and selecting less than and typing 1000000 &quot;
+# row_ex2 = &quot;returns rows where the population column is less than 1000000.&quot;
+# piv1 = &quot;Toggling Pivot Mode under Columns calculates various summary &quot;
+# piv2 = &quot;statistics such as average population of countries in each continent.&quot;
+
+# st.write(row_ins + row_ex1 + row_ex2)
+# st.write(col_ins)
+# st.write(piv1 + piv2)
+
+@st.cache_data
+def read_data(URL):
+   return pd.read_csv(URL)
+
+
+def aggrid_interactive_table(df: pd.DataFrame):
+    options = GridOptionsBuilder.from_dataframe(
+        df, enableRowGroup=True, enableValue=True, enablePivot=True
+    )
+
+    options.configure_columns([&quot;Years&quot;,&quot;Fertility&quot;,&quot;Emissions&quot;,&quot;Internet&quot;], type=[&quot;numericColumn&quot;,&quot;numberColumnFilter&quot;,&quot;customNumericFormat&quot;], precision=1)
+    options.configure_side_bar()
+    
+    options.configure_pagination(paginationAutoPageSize=True)
+
+
+    options.configure_selection(&quot;single&quot;)
+    selection = AgGrid(
+        df,
+        enable_enterprise_modules=True,
+        height=600,
+        gridOptions=options.build(),
+        theme=&quot;alpine&quot;,
+        update_mode=GridUpdateMode.MODEL_CHANGED,
+        columns_auto_size_mode=ColumnsAutoSizeMode.FIT_CONTENTS
+    )
+
+    return selection
+
+
+country = read_data(
+    &quot;https://static-resources.zybooks.com/DataScience/country_complete.csv&quot;
+)
+
+selection = aggrid_interactive_table(df=country)</code><guid type="string">b15fb099-5277-4f52-b4a5-959aee401e72</guid><streamlit_app_id type="number">533</streamlit_app_id></zyOptions>
+
+</zyTool>
+
+
+
+
+
+
+<zyQSetMultipleChoice caption="Pivot table" id="5a3c08d3-69c0-4983-96ad-8b68a937527b">
+<p>Consider the cars dataset.</p>
+<table class="dbTable">
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th>Drive</th>
+<th>EngineType</th>
+<th>Cylinders</th>
+<th>Liters</th>
+</tr>
+
+<tr>
+<td>Audi</td>
+<td>A4</td>
+<td>All</td>
+<td>Gas</td>
+<td>4</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>BMW</td>
+<td>328Ci</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>Model 3</td>
+<td>All</td>
+<td>Electric</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+
+<tr>
+<td>Chevrolet</td>
+<td>Malibu</td>
+<td>Front</td>
+<td>Gas</td>
+<td>6</td>
+<td>3.6</td>
+</tr>
+
+<tr>
+<td>Ford</td>
+<td>Mustang</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>8</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Rolls-Royce</td>
+<td>Ghost</td>
+<td>Rear</td>
+<td>Gas</td>
+<td>12</td>
+<td>6.6</td>
+</tr>
+</table>
+
+<p></p><p>The pivot table below was created from the cars dataset.</p>
+
+<table class="dbTable">
+<tr>
+<th></th>
+<th>All</th>
+<th>Front</th>
+<th>Rear</th>
+</tr>
+
+<tr>
+<td>Electric</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Gas</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+
+</table>
+
+<zyQ>
+<zyQText>Which is the row feature?</zyQText>
+<zyQChoice>
+<zyQAns>Drive</zyQAns>
+<zyQExpl>The row labels in the pivot table are Electric and Gas. Which feature contains these levels?</zyQExpl>
+</zyQChoice>
+<zyQChoice correct="true">
+<zyQAns>EngineType</zyQAns>
+<zyQExpl>EngineType has two levels: Electric and Gas. Each level becomes a row in the pivot table.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Cylinders</zyQAns>
+<zyQExpl>The row labels in the pivot table are Electric and Gas. Which feature contains these levels?</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Which is the column feature?</zyQText>
+<zyQChoice correct="true">
+<zyQAns>Drive</zyQAns>
+<zyQExpl>Drive has three levels: All, Front, and Rear. Each level becomes a column in the pivot table.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>EngineType</zyQAns>
+<zyQExpl>The column labels in the pivot table are All, Front, and Rear. Which feature contains these levels?</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Cylinders</zyQAns>
+<zyQExpl>The column labels in the pivot table are All, Front, and Rear. Which feature contains these levels?</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>What are the values in the pivot table?</zyQText>
+<zyQChoice correct="true">
+<zyQAns>Group sizes</zyQAns>
+<zyQExpl>This pivot table lists the number of instances in each combination of EngineType and Drive. A pivot table that gives group sizes is also called a contingency table. </zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Group means for cylinder</zyQAns>
+<zyQExpl>For cars with EngineType=Gas and Drive=Rear, the cylinder values are 6, 8, and 12. The value in the pivot table is 3, which is less than all cylinder values. So, 3 cannot be the group mean for cylinder.</zyQExpl>
+</zyQChoice>
+<zyQChoice>
+<zyQAns>Group medians for cylinder</zyQAns>
+<zyQExpl>For cars with EngineType=Gas and Drive=Rear, the cylinder values are 6, 8, and 12. The value in the pivot table is 3, which is less than all cylinder values. So, 3 cannot be the group median for cylinder.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+</zyQSetMultipleChoice>
+
+
+
+<zyVersion version='python'>
+<zyHTML id="d1765b92-facf-aaa8-472a-27f2191390dc" subsection="true">
+<h3>Data exploration in Python</h3>
+</zyHTML>
+
+<zyHTML id="73b9c6de-6ccd-b267-512a-4f85e605c341">
+
+<p>
+The <zyICode>pandas</zyICode> package contains two useful methods for data <!--manipulation-->exploration. <zyICode>df.groupby()</zyICode> splits a dataframe <zyICode>df</zyICode>  into subsets, and <zyICode>df.pivot_table()</zyICode> creates pivot tables based on two categorical features. Both <zyICode>df.groupby()</zyICode> and <zyICode>df.pivot_table()</zyICode> can be combined with <zyICode>pandas</zyICode> descriptive statistics methods.
+</p>
+
+<p>
+<zyICode>df.groupby()</zyICode> sets the grouping feature using the <zyICode>by</zyICode> parameter. Missing values for the grouping feature can be removed by setting <zyICode>dropna=True</zyICode> or grouped into a separate category by setting <zyICode>dropna=False</zyICode>. Additional parameters for <zyICode>df.groupby()</zyICode> can be found in the <zyLink link="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html">group by documentation</zyLink>.
+</p>
+
+<p>
+<zyICode>df.pivot_table()</zyICode> takes several parameters. The <zyICode>value</zyICode> specifies the values in the pivot table's elements. The feature in the pivot table's rows  is specified using <zyICode>index</zyICode> and the feature in the pivot table's columns is <zyICode>columns</zyICode>. <zyICode>aggfunc</zyICode> specifies a function to apply to the values in each row/column combination within the pivot table. The default aggregate function is <zyICode>np.mean</zyICode>.
+</p>
+</zyHTML>
+
+
+<zyStudio id="6d99c726-dfe1-c34b-8c7a-85ed70e297ed" caption="Data exploration with Python" activity_type="tinker">
+<zyInstructions>
+<p>The Python code below imports the country dataset and explores the data using <zyICode>pandas</zyICode> functions and methods.</p>
+<ul> 
+<li>Click the double-right arrow to restart the kernel and run all cells.</li>
+<li>Examine the code below.</li>
+<li>Modify the code to explore different features and descriptive statistics.</li>
+</ul>
+</zyInstructions>
+</zyStudio>
+
+
+
+<zyQSetShortAnswer caption="Data exploration in Python" id="d41e3f6c-a724-44b6-bbf7-74865b73b363">
+
+<zyQ>
+<zyQText>Write the code that calculates the median for numerical features in the <zyICode>cars</zyICode> dataset based on the drive type (<zyICode>Drive</zyICode>).</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50">cars.groupby(by=['Drive']).median()</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50" preferred="true">cars.groupby(by=["Drive"]).median()</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50">cars.groupby(by=["Drive"]).median(numeric_only=True)</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50">cars.groupby(by=['Drive']).median(numeric_only=True)</zyQAns>
+<zyQExpl><zyICode>df.groupby()</zyICode> groups a dataset by levels of a categorical feature. Once the dataset is grouped, the <zyICode>.median()</zyICode> method calculates the median. Other useful methods include <zyICode>.mean()</zyICode> and <zyICode>.size()</zyICode>.</zyQExpl>
+<zyQHint><zyICode>df.groupby()</zyICode> groups a dataset by levels of a categorical feature.</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Write the code that creates a pivot table containing the median miles per gallon (<zyICode>MPG</zyICode>) for the <zyICode>cars</zyICode> dataset with <zyICode>Drive</zyICode> on the rows and <zyICode>EngineType</zyICode> on the columns.</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50">cars.pivot_table(values='MPG', index='Drive', columns='EngineType', aggfunc=np.median)</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50" preferred="true" >cars.pivot_table(values="MPG", index="Drive", columns="EngineType", aggfunc=np.median)</zyQAns>
+<zyQExpl><zyICode>df.pivot_table()</zyICode> requires four parameters: <zyICode>values</zyICode> sets the feature in the pivot table's elements, <zyICode>index</zyICode> sets the feature on the rows, <zyICode>columns</zyICode> sets the feature on the columns, and <zyICode>aggfunc</zyICode> sets the function to apply within the table.</zyQExpl>
+<zyQHint><zyICode>df.pivot_table()</zyICode>creates a pivot table for a dataframe, <zyICode>df</zyICode>.</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Write the code that creates a contingency table for the <zyICode>cars</zyICode> dataset with <zyICode>Drive</zyICode> on the rows and <zyICode>EngineType</zyICode> on the columns.</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50">cars.pivot_table(values='MPG', index='Drive', columns='EngineType', aggfunc=np.size)</zyQAns>
+<zyQAns obeyspace="false" obeycase="true" lines="2" columns="50" preferred="true" >cars.pivot_table(values="MPG", index="Drive", columns="EngineType", aggfunc=np.size)</zyQAns>
+<zyQExpl>In <zyICode>df.pivot_table()</zyICode>, setting <zyICode>aggfunc=np.size</zyICode> aggregates the group sizes in a contingency table.</zyQExpl>
+<zyQHint>Contingency tables are a special case of a pivot table with group sizes in the table elements.</zyQHint>
+</zyQ>
+
+</zyQSetShortAnswer>
+
+</zyVersion>
+
+
+</tr>
+
+<tr>
+<td><zyICode>mad()</zyICode></td>
+<td>Mean absolute deviation</td>
+</tr>
+
+<tr>
+<td><zyICode>min()</zyICode></td>
+<td>Minimum</td>
+</tr>
+
+<tr>
+<td><zyICode>max()</zyICode></td>
+<td>Maximum</td>
+</tr>
+
+<tr>
+<td><zyICode>n()</zyICode></td>
+<td>Sample size, n</td>
+</tr>
+
+<tr>
+<td><zyICode>n_distinct()</zyICode></td>
+<td>Number of unique or distinct instances</td>
+</tr>
+</table>
+</zyTable>
+
+
+
+
+<zyStudio id="f87a3bc8-656c-525b-cc88-0378411e5817" caption="Data exploration with R" activity_type="tinker">
+<zyInstructions>
+<p>The R code below imports the country dataset, and explores the data using <zyICode>dplyr</zyICode>.</p>
+<ul> 
+<li>Click the double-right arrow to restart the kernel and run all cells.</li>
+<li>Examine the code below.</li>
+<li>Modify the code to explore different features and descriptive statistics.</li>
+</ul>
+<p>Some <zyICode>dplyr</zyICode> functions, like <zyICode>summarize()</zyICode>, return status messages or suggestions.</p>
+<p>Ex: <zyICode>`summarise()` has grouped output by 'Continent'.  You can override using 
+the `.groups` argument.</zyICode> is not actually an error.
+</p>
+</zyInstructions>
+</zyStudio>
+
+
+
+
+<!--
+<zyAside type="elaboration" name="Notebook link" id="45e0f73e-4486-9219-beba-1372d1ee0b9b"> 
+<zyLink link="https://drive.google.com/file/d/1YpQpX4Vc_bADP2lo4AvRriV_xlApgXLV/view?usp=sharing">Manipulating data in R</zyLink>
+</zyAside>
+-->
+
+<zyQSetShortAnswer caption="Data exploration in R" id="c78cbcd9-9d87-4e03-b62d-15437c9cc798">
+
+<zyQ>
+<zyQText><p>Complete the code to calculate a frequency table for the <zyICode>cars</zyICode> dataset based on the drive type (<zyICode>Drive</zyICode>).</p>
+<zyCode language='r'>
+cars |>
+     group_by(_____) |>
+     summarize(n = n())
+</zyCode>
+</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">Drive</zyQAns>
+<zyQExpl><zyICode>group_by(Drive)</zyICode> creates subsets of the <zyICode>cars</zyICode> dataset. Each subset contains all instances with the same value of <zyICode>Drive</zyICode>.</zyQExpl>
+<zyQHint>The grouping feature is specified in the <zyICode>group_by()</zyICode> function.</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText><p>Complete the code to calculate the median miles per gallon (<zyICode>MPG</zyICode>) for the <zyICode>cars</zyICode> dataset based on the drive type (<zyICode>Drive</zyICode>).</p>
+<zyCode language='r'>
+cars |>
+     group_by(Drive) |>
+     summarize(median_MPG = _____)
+</zyCode></zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">median(MPG)</zyQAns>
+<zyQExpl><zyICode>median(MPG)</zyICode> calculates the median value of <zyICode>MPG</zyICode>. Since the <zyICode>summarize()</zyICode> function comes after the <zyICode>group_by()</zyICode> function, medians will be calculated for each level of <zyICode>Drive</zyICode>.</zyQExpl>
+<zyQHint><zyICode>median()</zyICode> is the R function for calculating the median. Since the <zyICode>cars</zyICode> dataset has already been specified with the pipe operator, only the feature name is needed within <zyICode>median()</zyICode>.</zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText><p>Complete the code to calculate a contingency table for the <zyICode>cars</zyICode> dataset with <zyICode>Drive</zyICode> on the rows and <zyICode>EngineType</zyICode> on the columns.</p>
+<zyCode language='r'>
+cars |>
+     group_by(Drive, EngineType) |>
+     summarize(n = n()) |>
+     spread(_____)
+</zyCode>
+</zyQText>
+<zyQAns obeyspace="false" obeycase="true" lines="1" columns="20">EngineType, n</zyQAns>
+<zyQExpl><zyICode>spread(EngineType, n)</zyICode> will move the values of <zyICode>EngineType</zyICode> to the columns. Since <zyICode>n</zyICode> represents the size of each group, <zyICode>n</zyICode> fills in the values of the pivot table.</zyQExpl>
+<zyQHint>The first argument in <zyICode>spread()</zyICode> is the feature to move to the columns, and the second argument fills in values of the table.</zyQHint>
+</zyQ>
+
+</zyQSetShortAnswer>
+
+
+
+</zyVersion>
+
+
+<zypInfo person="Sabrina" date="09/29/22" minutes="13" status="SpecReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="10/25/22" minutes="45" status="CodeDoing"></zypInfo>
+<zypInfo person="Maya" date="10/25/22" minutes="110" status="CodeDoing"></zypInfo>
+<zypInfo person="Sabrina" date="10/26/22" minutes="29" status="CodeReviewing"></zypInfo>
+<zypInfo person="Maya" date="10/26/22" minutes="45" status="CodeReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="10/26/22" minutes="10" status="CodeReviewing"></zypInfo>
+<zypInfo person="Maya" date="10/25/22" minutes="20" status="CodeDoing"></zypInfo>
+<zypInfo person="Fay" date="11/01/22" minutes="20" status="QADoing"></zypInfo>
+<zypInfo person="Maya" date="11/01/22" minutes="5" status="QADoing"></zypInfo>
+<zypInfo person="Fay" date="11/01/22" minutes="2" status="QADoing"></zypInfo>
+<zypInfo person="Fay" date="11/03/22" minutes="2" status="QADone"></zypInfo>
+<zyTool name="ProgressionPlayerInteractiveAndAccessible" caption="Discovering data" id="11ba6813-175f-4265-bf22-62bd2cae5109" challenge="true" parts="2" edited-last="Tue Nov 01 2022 10:02:15 GMT-0700 (Pacific Daylight Time)" image-ids="">
+<zyInstructions></zyInstructions><zyOptions><progression type="dict">
+<code type="string"></code>
+<elements type="list"><item type="dict"><id type="string">5</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">Object 6: Shortanswer</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><width type="string">95px</width><top type="string">426px</top><left type="string">25px</left></style><type type="string">shortanswer</type><ariaLabel type="string">Mean price</ariaLabel><assessmentMethod type="string">numericalMatch</assessmentMethod><assessmentProperties type="dict"><tolerancePercentage type="string">0</tolerancePercentage></assessmentProperties><correctAnswers type="list"><item type="string">${mean_price_2}</item></correctAnswers><placeholder type="string"></placeholder></item><item type="dict"><id type="string">6</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">Object 7: Text</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><padding type="string">0px</padding><border type="string">2px solid rgba(0, 0, 0, 0)</border><color type="string">zyante-black</color><top type="string">395px</top><left type="string">0px</left></style><type type="string">text</type><ariaHidden type="boolean">true</ariaHidden><text type="string">add text</text></item><item type="dict"><id type="string">3</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">Object 4: Shortanswer</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><width type="string">95px</width><top type="string">340px</top><left type="string">25px</left></style><type type="string">shortanswer</type><ariaLabel type="string">Mean price</ariaLabel><assessmentMethod type="string">numericalMatch</assessmentMethod><assessmentProperties type="dict"><tolerancePercentage type="string">0</tolerancePercentage></assessmentProperties><correctAnswers type="list"><item type="string">${mean_price_1}</item></correctAnswers><placeholder type="string">Ex: 100000</placeholder></item><item type="dict"><id type="string">1</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">Object 2: Text</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><padding type="string">0px</padding><border type="string">2px solid rgba(0, 0, 0, 0)</border><color type="string">zyante-black</color><top type="string">311px</top><left type="string">0px</left></style><type type="string">text</type><ariaHidden type="boolean">true</ariaHidden><text type="string">add text</text></item><item type="dict"><id type="string">7</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">true</isSelected><name type="string">Object 8: Table</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><height type="string">4px</height><font-size type="string">16px</font-size><width type="string">4px</width><top type="string">87px</top><left type="string">25px</left></style><type type="string">table</type><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item></tableData><ariaHidden type="boolean">false</ariaHidden><equalHeightRows type="boolean">false</equalHeightRows><isFirstColumnHeader type="boolean">false</isFirstColumnHeader><isFirstRowHeader type="boolean">false</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet></item><item type="dict"><id type="string">2</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">Object 3: Table</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><height type="string">4px</height><font-size type="string">16px</font-size><width type="string">4px</width><top type="string">71px</top><left type="string">268px</left></style><type type="string">table</type><tableData type="list"><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item><item type="list"><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item><item type="dict"><content type="string"></content><style type="dict"><width type="string">auto</width></style></item></item></tableData><ariaHidden type="boolean">false</ariaHidden><equalHeightRows type="boolean">false</equalHeightRows><isFirstColumnHeader type="boolean">false</isFirstColumnHeader><isFirstRowHeader type="boolean">false</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet></item><item type="dict"><id type="string">0</id><isInEditMode type="boolean">false</isInEditMode><isSelected type="boolean">false</isSelected><name type="string">Object 1: Text</name><style type="dict"><opacity type="number">1</opacity><border-radius type="number">0</border-radius><transform type="string">rotate(0deg)</transform><font-size type="string">16px</font-size><padding type="string">0px</padding><border type="string">2px solid rgba(0, 0, 0, 0)</border><color type="string">zyante-black</color><top type="string">0px</top><left type="string">1px</left></style><type type="string">text</type><ariaHidden type="boolean">false</ariaHidden><text type="string">A data scientist working for a financial company collected a sample of 76 recent home sales. The dataset contains the sales price of each home in dollars, the number of bedrooms/bathrooms, number of garage stalls, and school district.</text></item></elements><levels type="list"><item type="dict">
+<code type="string">bathroom_table = [  
+    ['1 bathroom', 292500],
+    ['1.5 bathrooms', 307900],
+    ['2 bathrooms', 270700],
+    ['2.5 bathrooms', 274500],
+    ['3 bathrooms', 307700],
+    ['3.5 bathrooms', 324600]
+]
+
+bedroom_table = [
+    ['2 bedrooms', 329600],
+    ['3 bedrooms', 297300],
+    ['4 bedrooms', 266600],
+    ['5 bedrooms', 259500],
+    ['6 bedrooms', 252500]
+]
+
+garage_table = [ 
+    ['No garage', 246500],
+    ['1-car garage', 260600],
+    ['2-car garage', 299600],
+    ['3-car garage', 319500]
+]
+
+table = pick_from([bathroom_table, bedroom_table, garage_table])
+table_with_header = [['Group', 'Mean price ($)']] + table
+
+group1_data, group2_data = random.sample(table, 2)
+
+group1, mean_price_1 = group1_data
+group2, mean_price_2 = group2_data
+
+group1 = group1.lower()
+group2 = group2.lower()
+
+if table == garage_table:
+    if '-' in group1:
+        group1 = 'a {}'.format(group1)
+    if '-' in group2:
+        group2 = 'a {}'.format(group2)
+
+row1 = table.index(group1_data) + 1
+row2 = table.index(group2_data) + 1
+
+explanation = 'Expected: {}, {}\n\n'.format(mean_price_1, mean_price_2)
+explanation += 'Homes with {0} are in row {1} of the table. In row {1}, the mean price is ${2}.\n'.format(group1, row1, mean_price_1)
+explanation += 'Homes with {0} are in row {1} of the table. In row {1}, the mean price is ${2}.'.format(group2, row2, mean_price_2)</code>
+<elementVariants type="list"></elementVariants><questions type="list"><item type="dict">
+<code type="string"></code>
+<elementVariants type="list"><item type="dict"><id type="string">1</id><text type="string">What is the mean price of homes with ${group1}?</text></item><item type="dict"><id type="string">2</id><equalHeightRows type="boolean">false</equalHeightRows><isFirstColumnHeader type="boolean">false</isFirstColumnHeader><isFirstRowHeader type="boolean">true</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableData type="dict"><data type="string">${table_with_header}</data></tableData></item><item type="dict"><id type="string">6</id><text type="string">What is the mean price of homes with ${group2}?</text></item><item type="dict"><id type="string">3</id><ariaLabel type="string">What is the mean price of homes with ${group1}?</ariaLabel><correctAnswers type="list"><item type="string">${mean_price_1}</item></correctAnswers><placeholder type="string">Ex: 100000</placeholder></item><item type="dict"><id type="string">5</id><ariaLabel type="string">What is the mean price of homes with ${group2}?</ariaLabel><correctAnswers type="list"><item type="string">${mean_price_2}</item></correctAnswers><placeholder type="string"></placeholder></item></elementVariants>
+<explanation type="string"></explanation>
+<height type="string"></height><isSelected type="boolean">false</isSelected><name type="string">Question a</name><usedElements type="list"></usedElements><width type="string"></width></item></questions>
+<explanation type="string">${explanation}</explanation>
+<height type="string"></height><isCollapsed type="boolean">true</isCollapsed><isSelected type="boolean">false</isSelected><name type="string">Level 1</name><usedElements type="list"><item type="string">0</item><item type="string">1</item><item type="string">2</item><item type="string">3</item><item type="string">5</item><item type="string">6</item></usedElements><width type="string"></width></item><item type="dict">
+<code type="string">bedroom_bathroom_table = [    
+    ['', '1 bathroom', '1.5 bathrooms', '2 bathrooms', '2.5 bathrooms', '3 bathrooms', '3.5 bathrooms'],
+    ['2 bedrooms', 350000, 'NA', 339900, 'NA', 299000, 'NA'],
+    ['3 bedrooms', 235000, 361700, 290100, 279200, 300200, 340000],
+    ['4 bedrooms', 'NA', 227300, 252000, 253900, 317500, 285000],
+    ['5 bedrooms', 'NA', 'NA', 192000, 'NA', 304500, 'NA'],
+    ['6 bedrooms', 'NA', 'NA', 252500, 'NA', 'NA', 'NA']
+]
+
+bedroom_garage_table = [  
+    ['', 'No garage', '1-car garage', '2-car garage', '3-car garage'],
+    ['2 bedrooms', 'NA', 350000, 'NA', 319500],
+    ['3 bedrooms', 209700, 292500, 305900, 'NA'],
+    ['4 bedrooms', 276000, 216800, 281000, 'NA'],
+    ['5 bedrooms', 227000, 199000, 322300, 'NA'],
+    ['6 bedrooms', 252500, 'NA', 'NA', 'NA']
+]
+
+garage_bathroom_table = [
+    ['', '1 bathroom', '1.5 bathrooms', '2 bathrooms', '2.5 bathrooms', '3 bathrooms', '3.5 bathrooms'],
+    ['No garage', 'NA', 215000, 228200, 189500, 328500, 285000],
+    ['1-car garage', 292500, 312500, 220300, 269100, 'NA', 'NA'],
+    ['2-car garage', 'NA', 349800, 291600, 284200, 304500, 330800],
+    ['3-car garage', 'NA', 'NA', 339900, 'NA', 299000, 'NA']
+]
+
+
+table = pick_from([bedroom_bathroom_table, bedroom_garage_table, garage_bathroom_table])
+num_rows = len(table)
+num_columns = len(table[0])
+
+while True:
+   row_1 = pick_from_range(1, num_rows - 1)
+   column_1 = pick_from_range(1, num_columns - 1)
+   mean_price_1 = table[row_1][column_1]
+
+   row_2 = pick_from_range(1, num_rows - 1)
+   column_2 = pick_from_range(1, num_columns - 1)
+   mean_price_2 = table[row_2][column_2]
+
+   if (mean_price_1 != 'NA') and (mean_price_2 != 'NA') and ([row_1, column_1] != [row_2, column_2]):
+      break
+        
+labels = {
+    'row_1': table[row_1][0],
+    'column_1': table[0][column_1],
+    'row_2': table[row_2][0],
+    'column_2': table[0][column_2]
+}
+
+row_1_label, column_1_label, row_2_label, column_2_label = labels.values()
+
+for label in labels:
+    labels[label] = labels[label].lower()
+    if '-' in labels[label]:
+        labels[label] = 'a {}'.format(labels[label])
+        
+row_1_label_sa, column_1_label_sa, row_2_label_sa, column_2_label_sa = labels.values()
+
+explanation = 'Expected: {}, {}\n\n'.format(mean_price_1, mean_price_2)
+explanation += 'Each cell inside the pivot table gives the mean sales price for houses with a particular row/column combination.'
+explanation += ' Missing values, or NAs, in the pivot table denote combinations with no houses.'
+explanation += '\n\n{} is in row {} of the table and {} is in column {}, so the mean sales price is ${}.'.format(row_1_label, row_1, column_1_label, column_1, mean_price_1)
+explanation += '\n\n{} is in row {} of the table and {} is in column {}, so the mean sales price is ${}.'.format(row_2_label, row_2, column_2_label, column_2, mean_price_2)</code>
+<elementVariants type="list"></elementVariants><questions type="list"><item type="dict">
+<code type="string"></code>
+<elementVariants type="list"><item type="dict"><id type="string">1</id><text type="string">What is the mean price of homes with ${row_1_label_sa} and ${column_1_label_sa}?</text></item><item type="dict"><id type="string">6</id><text type="string">What is the mean price of homes with ${row_2_label_sa} and ${column_2_label_sa}?</text></item><item type="dict"><id type="string">7</id><equalHeightRows type="boolean">false</equalHeightRows><isFirstColumnHeader type="boolean">true</isFirstColumnHeader><isFirstRowHeader type="boolean">true</isFirstRowHeader><isSpreadsheet type="boolean">false</isSpreadsheet><tableData type="dict"><data type="string">${table}</data></tableData></item><item type="dict"><id type="string">3</id><ariaLabel type="string">What is the mean price of homes with ${row_1_label_sa} and ${column_1_label_sa}?</ariaLabel><correctAnswers type="list"><item type="string">${mean_price_1}</item></correctAnswers><placeholder type="string">Ex: 100000</placeholder></item><item type="dict"><id type="string">5</id><ariaLabel type="string">What is the mean price of homes with ${row_2_label_sa} and ${column_2_label_sa}?</ariaLabel><correctAnswers type="list"><item type="string">${mean_price_2}</item></correctAnswers><placeholder type="string"></placeholder></item></elementVariants>
+<explanation type="string"></explanation>
+<height type="string"></height><isSelected type="boolean">true</isSelected><name type="string">Question a</name><usedElements type="list"></usedElements><width type="string"></width></item></questions>
+<explanation type="string">${explanation}</explanation>
+<height type="string"></height><isCollapsed type="boolean">true</isCollapsed><isSelected type="boolean">true</isSelected><name type="string">Level 2</name><usedElements type="list"><item type="string">0</item><item type="string">1</item><item type="string">3</item><item type="string">5</item><item type="string">6</item><item type="string">7</item></usedElements><width type="string"></width></item></levels>
+<explanation type="string"></explanation>
+<height type="string">465px</height><width type="string">769px</width><isExam type="boolean">false</isExam></progression></zyOptions><zyAltDescription></zyAltDescription></zyTool>
+
+
+
+<zyVersion version="python">
+
+<zypInfo person="Sabrina" date="09/27/22" minutes="10" status="SpecReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="11/15/22" minutes="15" status="CodeDoing"></zypInfo>
+<zypInfo person="Maya" date="11/15/22" minutes="40" status="CodeDoing"></zypInfo>
+<zypInfo person="Sabrina" date="11/15/22" minutes="13" status="CodeReviewing"></zypInfo>
+<zypInfo person="Maya" date="11/15/22" minutes="5" status="CodeReviewing"></zypInfo>
+<zypInfo person="Fay" date="11/18/22" minutes="15" status="QADoing"></zypInfo>
+<zypInfo person="Maya" date="11/18/22" minutes="5" status="QADoing"></zypInfo>
+<zypInfo person="Fay" date="11/21/22" minutes="2" status="QADone"></zypInfo>
+<zypInfo person="Amanda" date="5/27/25" minutes="60" status="CodeDoing"></zypInfo>
+<zypInfo person="Stephanie" date="6/16/25" minutes="20" status="QADoing"></zypInfo>
+<zypInfo person="Amanda" date="6/17/25" minutes="5" status="QADoing"></zypInfo>
+<zypInfo person="Stephanie" date="6/17/25" minutes="10" status="QADoing"></zypInfo>
+<zypInfo person="Amanda" date="6/17/25" minutes="5" status="QADoing"></zypInfo>
+<zypInfo person="Stephanie" date="6/17/25" minutes="3" status="QADone"></zypInfo>
+
+
+<zyTool name="CodeWriting" caption="Exploring data using pandas" id="9bc13c67-3341-494b-a95c-00d41233e3de" parts="2" challenge="true" edited-last="Tue Jun 17 2025 06:14:30 GMT-0500 (Central Daylight Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+features = [&apos;Total_Credit_Cards&apos;, &apos;Total_Visits_Bank&apos;, &apos;Total_Visits_Online&apos;, &apos;Total_Calls_Made&apos;]
+
+credit_card_dataset = {
+    &apos;column_names&apos; : [&apos;Sl_No&apos;, &apos;Customer Key&apos;, &apos;Avg_Credit_Limit&apos;, &apos;Total_Credit_Cards&apos;, &apos;Total_Visits_Bank&apos;, &apos;Total_Visits_Online&apos;, &apos;Total_Calls_Made&apos;],
+    &apos;data&apos; : [
+        [ 1, 87073, 100000, 2, 1, 1, 0 ],
+        [ 2, 38414, 50000, 3, 0, 10, 9 ],
+        [ 3, 17341, 50000, 7, 1, 3, 4 ],
+        [ 4, 40496, 30000, 5, 1, 1, 4 ],
+        [ 5, 47437, 100000, 6, 0, 12, 3 ],
+        [ 6, 58634, 20000, 3, 0, 1, 8 ],
+        [ 7, 48370, 100000, 5, 0, 11, 2 ],
+        [ 8, 37376, 15000, 3, 0, 1, 1 ],
+        [ 9, 82490, 5000, 2, 0, 2, 2 ],
+        [ 10, 44770, 3000, 4, 0, 1, 7 ],
+        [ 11, 52741, 10000, 4, 0, 5, 5 ],
+        [ 12, 52326, 13000, 3, 0, 2, 7 ],
+        [ 13, 92503, 11000, 1, 2, 5, 9 ],
+        [ 14, 25084, 9000, 1, 1, 5, 6 ],
+        [ 15, 68517, 6000, 2, 2, 4, 6 ],
+        [ 16, 55196, 8000, 2, 0, 5, 7 ],
+        [ 17, 62617, 15000, 2, 1, 2, 4 ],
+        [ 18, 96463, 8000, 2, 0, 3, 4 ],
+        [ 19, 39137, 11000, 2, 2, 2, 7 ],
+        [ 20, 14309, 19000, 4, 1, 5, 8 ],
+        [ 21, 29794, 5000, 3, 2, 5, 5 ],
+        [ 22, 87241, 16000, 2, 0, 3, 7 ],
+        [ 23, 30507, 6000, 4, 1, 4, 6 ],
+        [ 24, 61061, 9000, 1, 1, 3, 4 ],
+        [ 25, 24001, 8000, 2, 0, 2, 10 ],
+        [ 26, 68067, 18000, 1, 1, 5, 10 ],
+        [ 27, 65034, 16000, 3, 0, 5, 9 ],
+        [ 28, 14854, 9000, 2, 2, 2, 10 ],
+        [ 29, 81130, 5000, 2, 0, 4, 6 ],
+        [ 30, 29112, 8000, 4, 0, 4, 7 ],
+        [ 31, 13999, 16000, 3, 1, 5, 4 ],
+        [ 32, 32550, 11000, 3, 1, 5, 6 ],
+        [ 33, 82164, 6000, 1, 0, 5, 10 ],
+        [ 34, 61517, 16000, 1, 0, 5, 6 ],
+        [ 35, 28254, 8000, 4, 1, 3, 10 ],
+        [ 36, 30888, 19000, 2, 0, 4, 4 ],
+        [ 37, 46388, 9000, 3, 1, 4, 10 ],
+        [ 38, 74126, 17000, 2, 0, 4, 6 ],
+        [ 39, 52142, 13000, 4, 1, 3, 10 ],
+        [ 40, 37659, 10000, 2, 2, 4, 9 ],
+        [ 41, 83132, 19000, 4, 2, 5, 9 ],
+        [ 42, 20119, 10000, 1, 1, 2, 7 ],
+        [ 43, 52363, 16000, 4, 2, 3, 4 ],
+        [ 44, 50769, 20000, 2, 0, 4, 4 ],
+        [ 45, 68502, 11000, 4, 2, 4, 5 ],
+        [ 46, 99026, 14000, 4, 1, 4, 9 ],
+        [ 47, 83326, 5000, 1, 2, 2, 5 ],
+        [ 48, 62040, 11000, 1, 2, 2, 6 ],
+        [ 49, 37252, 6000, 4, 0, 2, 8 ],
+        [ 50, 74625, 14000, 3, 2, 2, 6 ],
+        [ 51, 51182, 13000, 1, 0, 5, 9 ],
+        [ 52, 60301, 6000, 2, 1, 5, 5 ],
+        [ 53, 96386, 17000, 2, 1, 5, 8 ],
+        [ 54, 43886, 9000, 3, 0, 5, 9 ],
+        [ 55, 78503, 14000, 2, 0, 4, 9 ],
+        [ 56, 68419, 6000, 1, 2, 2, 4 ],
+        [ 57, 32828, 6000, 1, 0, 2, 5 ],
+        [ 58, 17937, 6000, 2, 0, 2, 10 ],
+        [ 59, 71632, 9000, 1, 0, 4, 7 ],
+        [ 60, 81566, 19000, 4, 1, 4, 9 ],
+        [ 61, 29759, 20000, 4, 1, 4, 7 ],
+        [ 62, 36929, 18000, 1, 2, 2, 9 ],
+        [ 63, 70248, 5000, 1, 0, 2, 4 ],
+        [ 64, 91673, 14000, 3, 0, 4, 6 ],
+        [ 65, 61355, 12000, 1, 0, 5, 9 ],
+        [ 66, 60403, 16000, 1, 1, 4, 4 ],
+        [ 67, 85868, 19000, 2, 0, 3, 6 ],
+        [ 68, 76205, 9000, 4, 2, 2, 6 ],
+        [ 69, 66524, 7000, 1, 2, 4, 10 ],
+        [ 70, 69214, 20000, 1, 2, 3, 7 ],
+        [ 71, 21976, 14000, 1, 2, 4, 7 ],
+        [ 72, 35149, 6000, 3, 2, 2, 7 ],
+        [ 73, 27120, 11000, 3, 1, 2, 6 ],
+        [ 74, 18821, 19000, 3, 1, 3, 6 ],
+        [ 75, 33187, 7000, 2, 0, 5, 8 ],
+        [ 76, 93482, 16000, 3, 1, 4, 6 ],
+        [ 77, 90168, 17000, 1, 2, 4, 6 ],
+        [ 78, 71881, 13000, 3, 1, 4, 4 ],
+        [ 79, 59656, 6000, 2, 0, 4, 10 ],
+        [ 80, 12026, 15000, 1, 1, 2, 7 ],
+        [ 81, 99589, 20000, 2, 2, 4, 8 ],
+        [ 82, 38970, 7000, 3, 1, 5, 5 ],
+        [ 83, 57990, 13000, 1, 1, 2, 5 ],
+        [ 84, 39447, 13000, 3, 1, 4, 6 ],
+        [ 85, 79694, 9000, 3, 2, 4, 5 ],
+        [ 86, 79403, 10000, 1, 1, 4, 5 ],
+        [ 87, 47296, 6000, 4, 1, 3, 7 ],
+        [ 88, 37559, 5000, 4, 1, 2, 5 ],
+        [ 89, 38165, 8000, 1, 1, 4, 8 ],
+        [ 90, 49198, 7000, 4, 2, 4, 8 ],
+        [ 91, 18007, 13000, 2, 1, 4, 6 ],
+        [ 92, 59619, 13000, 1, 1, 2, 10 ],
+        [ 93, 37016, 5000, 1, 1, 4, 6 ],
+        [ 94, 91099, 8000, 1, 2, 5, 7 ],
+        [ 95, 74704, 20000, 2, 2, 4, 4 ],
+        [ 96, 25742, 5000, 1, 2, 5, 7 ],
+        [ 97, 11937, 18000, 3, 2, 3, 6 ],
+        [ 98, 52736, 15000, 2, 0, 5, 4 ],
+        [ 99, 88338, 13000, 1, 1, 4, 9 ],
+        [ 100, 18916, 5000, 2, 1, 4, 6 ],
+        [ 101, 92501, 11000, 1, 0, 5, 6 ],
+        [ 102, 96213, 11000, 1, 1, 5, 9 ],
+        [ 103, 26599, 10000, 4, 1, 5, 10 ],
+        [ 104, 73007, 13000, 1, 0, 3, 7 ],
+        [ 105, 97935, 17000, 2, 1, 2, 10 ],
+        [ 106, 26089, 12000, 2, 1, 4, 9 ],
+        [ 107, 14946, 20000, 2, 1, 5, 5 ],
+        [ 108, 74795, 5000, 2, 2, 2, 6 ],
+        [ 109, 73435, 8000, 3, 2, 2, 6 ],
+        [ 110, 41634, 18000, 4, 2, 3, 8 ],
+        [ 111, 84069, 15000, 4, 2, 3, 5 ],
+        [ 112, 83244, 12000, 2, 0, 4, 9 ],
+        [ 113, 87291, 18000, 4, 1, 3, 10 ],
+        [ 114, 18086, 7000, 4, 1, 2, 4 ],
+        [ 115, 33369, 18000, 4, 0, 3, 6 ],
+        [ 116, 15310, 7000, 2, 2, 3, 7 ],
+        [ 117, 98499, 18000, 1, 0, 2, 7 ],
+        [ 118, 35256, 17000, 4, 0, 4, 7 ],
+        [ 119, 89007, 14000, 3, 1, 4, 5 ],
+        [ 120, 93997, 9000, 3, 0, 4, 9 ],
+        [ 121, 16577, 10000, 4, 2, 4, 6 ],
+        [ 122, 25440, 13000, 3, 0, 5, 10 ],
+        [ 123, 81116, 10000, 2, 2, 2, 4 ],
+        [ 124, 63663, 17000, 1, 1, 4, 8 ],
+        [ 125, 69811, 5000, 2, 2, 3, 7 ],
+        [ 126, 36111, 14000, 2, 1, 5, 5 ],
+        [ 127, 39454, 20000, 4, 1, 4, 9 ],
+        [ 128, 70199, 6000, 3, 2, 3, 9 ],
+        [ 129, 11602, 8000, 4, 1, 5, 4 ],
+        [ 130, 49697, 9000, 3, 1, 4, 6 ],
+        [ 131, 28701, 18000, 3, 1, 5, 6 ],
+        [ 132, 61627, 9000, 3, 0, 2, 5 ],
+        [ 133, 34103, 12000, 4, 0, 2, 6 ],
+        [ 134, 14248, 10000, 3, 1, 5, 9 ],
+        [ 135, 31256, 13000, 4, 1, 5, 7 ],
+        [ 136, 45583, 15000, 3, 2, 3, 6 ],
+        [ 137, 52750, 17000, 3, 0, 2, 8 ],
+        [ 138, 95507, 15000, 2, 0, 5, 8 ],
+        [ 139, 23743, 15000, 1, 1, 5, 9 ],
+        [ 140, 53410, 19000, 1, 0, 3, 10 ],
+        [ 141, 53898, 14000, 3, 0, 2, 8 ],
+        [ 142, 66200, 16000, 2, 0, 4, 5 ],
+        [ 143, 58389, 9000, 4, 1, 4, 8 ],
+        [ 144, 61347, 9000, 2, 1, 5, 4 ],
+        [ 145, 59151, 10000, 4, 2, 4, 8 ],
+        [ 146, 37802, 13000, 3, 0, 4, 4 ],
+        [ 147, 60475, 13000, 2, 1, 3, 9 ],
+        [ 148, 95489, 5000, 2, 2, 5, 6 ],
+        [ 149, 77758, 7000, 1, 2, 2, 10 ],
+        [ 150, 23768, 14000, 2, 1, 2, 7 ],
+        [ 151, 87471, 11000, 3, 2, 2, 9 ],
+        [ 152, 85707, 19000, 1, 1, 4, 4 ],
+        [ 153, 97951, 15000, 3, 2, 2, 6 ],
+        [ 154, 54785, 7000, 4, 0, 4, 6 ],
+        [ 155, 97011, 8000, 4, 2, 3, 10 ],
+        [ 156, 35103, 19000, 1, 1, 4, 5 ],
+        [ 157, 18564, 12000, 3, 2, 5, 7 ],
+        [ 158, 61009, 17000, 1, 2, 5, 8 ],
+        [ 159, 24054, 10000, 3, 2, 5, 9 ],
+        [ 160, 63751, 8000, 1, 2, 2, 4 ],
+        [ 161, 52758, 7000, 1, 0, 3, 10 ],
+        [ 162, 78473, 8000, 3, 2, 5, 5 ],
+        [ 163, 80457, 8000, 2, 0, 3, 4 ],
+        [ 164, 59783, 16000, 3, 0, 5, 10 ],
+        [ 165, 64241, 13000, 4, 0, 4, 8 ],
+        [ 166, 32374, 14000, 1, 0, 4, 9 ],
+        [ 167, 97536, 13000, 4, 0, 4, 7 ],
+        [ 168, 33110, 15000, 4, 2, 3, 6 ],
+        [ 169, 36978, 9000, 1, 1, 4, 9 ],
+        [ 170, 54281, 14000, 3, 1, 4, 7 ],
+        [ 171, 98602, 7000, 2, 1, 2, 8 ],
+        [ 172, 97687, 6000, 2, 2, 3, 7 ],
+        [ 173, 28842, 20000, 2, 0, 5, 6 ],
+        [ 174, 38410, 9000, 2, 1, 5, 8 ],
+        [ 175, 38261, 17000, 4, 1, 2, 7 ],
+        [ 176, 20524, 6000, 1, 0, 2, 5 ],
+        [ 177, 37671, 11000, 2, 2, 2, 5 ],
+        [ 178, 25330, 14000, 3, 0, 4, 8 ],
+        [ 179, 41787, 6000, 1, 1, 4, 7 ],
+        [ 180, 11412, 19000, 2, 2, 3, 4 ],
+        [ 181, 55892, 10000, 1, 0, 3, 5 ],
+        [ 182, 95495, 13000, 3, 0, 2, 10 ],
+        [ 183, 41946, 11000, 3, 0, 3, 7 ],
+        [ 184, 86410, 16000, 1, 2, 5, 8 ],
+        [ 185, 76718, 14000, 4, 0, 2, 4 ],
+        [ 186, 98969, 18000, 3, 0, 4, 4 ],
+        [ 187, 77143, 9000, 1, 2, 2, 6 ],
+        [ 188, 38205, 16000, 2, 2, 3, 8 ],
+        [ 189, 53851, 17000, 2, 0, 3, 5 ],
+        [ 190, 52783, 6000, 3, 2, 3, 5 ],
+        [ 191, 63405, 20000, 3, 0, 4, 10 ],
+        [ 192, 48510, 10000, 2, 1, 3, 6 ],
+        [ 193, 97463, 20000, 3, 0, 3, 5 ],
+        [ 194, 18145, 6000, 2, 2, 5, 8 ],
+        [ 195, 14398, 12000, 2, 0, 4, 4 ],
+        [ 196, 98288, 8000, 2, 1, 4, 8 ],
+        [ 197, 69704, 14000, 2, 0, 2, 8 ],
+        [ 198, 29058, 12000, 1, 1, 2, 7 ],
+        [ 199, 15546, 19000, 1, 1, 4, 7 ],
+        [ 200, 16715, 7000, 4, 2, 4, 9 ],
+        [ 201, 87350, 8000, 3, 0, 2, 9 ],
+        [ 202, 13215, 11000, 1, 0, 3, 8 ],
+        [ 203, 20593, 5000, 1, 0, 3, 8 ],
+        [ 204, 56624, 9000, 2, 0, 3, 7 ],
+        [ 205, 33317, 17000, 2, 2, 5, 5 ],
+        [ 206, 99596, 17000, 1, 0, 5, 5 ],
+        [ 207, 72430, 17000, 2, 1, 2, 4 ],
+        [ 208, 16676, 19000, 4, 2, 4, 4 ],
+        [ 209, 40486, 11000, 2, 0, 3, 9 ],
+        [ 210, 90958, 9000, 1, 0, 2, 9 ],
+        [ 211, 67212, 16000, 4, 1, 4, 6 ],
+        [ 212, 44226, 10000, 3, 1, 5, 4 ],
+        [ 213, 94251, 10000, 3, 1, 3, 4 ],
+        [ 214, 61776, 8000, 1, 0, 2, 10 ],
+        [ 215, 55275, 15000, 4, 1, 4, 9 ],
+        [ 216, 18609, 8000, 4, 0, 4, 7 ],
+        [ 217, 54477, 11000, 3, 1, 5, 4 ],
+        [ 218, 12122, 11000, 4, 0, 2, 5 ],
+        [ 219, 28208, 19000, 3, 1, 5, 7 ],
+        [ 220, 68003, 13000, 2, 1, 5, 8 ],
+        [ 221, 79632, 8000, 1, 0, 3, 10 ],
+        [ 222, 73811, 7000, 2, 2, 5, 6 ],
+        [ 223, 72892, 20000, 4, 1, 3, 10 ],
+        [ 224, 51773, 20000, 2, 2, 4, 10 ],
+        [ 225, 96163, 12000, 4, 1, 5, 9 ],
+        [ 226, 61234, 16000, 4, 1, 2, 5 ],
+        [ 227, 55849, 8000, 1, 2, 4, 8 ],
+        [ 228, 56156, 8000, 2, 2, 3, 8 ],
+        [ 229, 54838, 10000, 7, 2, 0, 0 ],
+        [ 230, 35254, 8000, 7, 2, 1, 4 ],
+        [ 231, 46635, 17000, 4, 5, 0, 2 ],
+        [ 232, 97825, 19000, 6, 3, 2, 3 ],
+        [ 233, 83125, 20000, 5, 4, 1, 0 ],
+        [ 234, 35483, 13000, 7, 2, 1, 0 ],
+        [ 235, 15129, 16000, 6, 5, 0, 4 ],
+        [ 236, 83290, 13000, 7, 4, 0, 0 ],
+        [ 237, 56486, 8000, 7, 5, 2, 3 ],
+        [ 238, 31903, 8000, 6, 4, 0, 4 ],
+        [ 239, 45909, 19000, 5, 2, 2, 0 ],
+        [ 240, 14263, 16000, 5, 2, 0, 0 ],
+        [ 241, 46813, 20000, 4, 2, 2, 1 ],
+        [ 242, 81878, 10000, 4, 5, 1, 3 ],
+        [ 243, 35549, 8000, 4, 3, 2, 4 ],
+        [ 244, 85799, 12000, 6, 4, 2, 1 ],
+        [ 245, 39122, 5000, 7, 3, 2, 4 ],
+        [ 246, 81531, 10000, 4, 2, 1, 0 ],
+        [ 247, 69965, 7000, 4, 5, 0, 1 ],
+        [ 248, 18595, 19000, 7, 3, 1, 2 ],
+        [ 249, 44398, 11000, 6, 5, 1, 0 ],
+        [ 250, 32352, 9000, 6, 5, 2, 0 ],
+        [ 251, 40898, 18000, 6, 3, 1, 4 ],
+        [ 252, 27101, 18000, 6, 2, 1, 2 ],
+        [ 253, 33457, 9000, 4, 5, 0, 4 ],
+        [ 254, 45088, 18000, 6, 2, 1, 4 ],
+        [ 255, 23302, 16000, 4, 3, 1, 0 ],
+        [ 256, 27408, 7000, 5, 5, 2, 3 ],
+        [ 257, 65372, 13000, 7, 3, 1, 4 ],
+        [ 258, 21531, 10000, 6, 4, 2, 3 ],
+        [ 259, 56843, 12000, 6, 3, 2, 1 ],
+        [ 260, 17165, 6000, 4, 4, 1, 4 ],
+        [ 261, 89328, 15000, 4, 5, 1, 0 ],
+        [ 262, 20072, 18000, 5, 3, 0, 4 ],
+        [ 263, 71402, 14000, 5, 4, 2, 1 ],
+        [ 264, 47496, 14000, 4, 2, 0, 0 ],
+        [ 265, 24808, 17000, 4, 4, 1, 2 ],
+        [ 266, 17036, 9000, 7, 4, 2, 1 ],
+        [ 267, 67193, 20000, 7, 5, 0, 0 ],
+        [ 268, 34423, 15000, 6, 4, 0, 1 ],
+        [ 269, 97109, 17000, 6, 5, 0, 0 ],
+        [ 270, 55382, 16000, 5, 5, 1, 2 ],
+        [ 271, 51811, 10000, 4, 5, 2, 1 ],
+        [ 272, 53936, 7000, 7, 2, 0, 4 ],
+        [ 273, 66504, 17000, 6, 2, 2, 4 ],
+        [ 274, 53207, 18000, 6, 5, 2, 1 ],
+        [ 275, 18514, 10000, 5, 5, 1, 3 ],
+        [ 276, 51319, 16000, 6, 2, 1, 3 ],
+        [ 277, 36340, 15000, 4, 5, 2, 0 ],
+        [ 278, 36934, 17000, 4, 5, 0, 4 ],
+        [ 279, 95925, 10000, 7, 4, 2, 4 ],
+        [ 280, 49771, 6000, 6, 5, 2, 1 ],
+        [ 281, 22919, 7000, 6, 4, 1, 2 ],
+        [ 282, 21233, 14000, 7, 2, 0, 0 ],
+        [ 283, 74544, 6000, 6, 3, 1, 1 ],
+        [ 284, 52025, 7000, 4, 3, 1, 0 ],
+        [ 285, 45652, 12000, 7, 2, 1, 2 ],
+        [ 286, 73952, 11000, 5, 5, 2, 4 ],
+        [ 287, 49418, 8000, 4, 5, 0, 0 ],
+        [ 288, 77026, 19000, 7, 2, 0, 1 ],
+        [ 289, 49331, 7000, 5, 2, 2, 4 ],
+        [ 290, 75775, 7000, 6, 5, 2, 2 ],
+        [ 291, 54906, 18000, 6, 3, 1, 0 ],
+        [ 292, 94666, 5000, 7, 3, 2, 2 ],
+        [ 293, 11698, 17000, 4, 3, 0, 4 ],
+        [ 294, 34677, 6000, 5, 2, 1, 0 ],
+        [ 295, 95610, 7000, 6, 5, 2, 3 ],
+        [ 296, 41380, 10000, 6, 4, 2, 3 ],
+        [ 297, 38033, 11000, 4, 4, 0, 2 ],
+        [ 298, 85337, 7000, 7, 4, 0, 0 ],
+        [ 299, 38994, 12000, 6, 5, 0, 2 ],
+        [ 300, 67911, 9000, 6, 5, 2, 3 ],
+        [ 301, 92956, 15000, 6, 5, 0, 0 ],
+        [ 302, 77641, 8000, 6, 4, 2, 4 ],
+        [ 303, 57565, 17000, 4, 2, 2, 2 ],
+        [ 304, 53814, 13000, 4, 5, 2, 2 ],
+        [ 305, 30712, 16000, 4, 4, 2, 4 ],
+        [ 306, 19785, 19000, 6, 5, 1, 4 ],
+        [ 307, 31384, 19000, 6, 3, 0, 0 ],
+        [ 308, 16374, 8000, 5, 3, 2, 1 ],
+        [ 309, 50878, 10000, 4, 5, 0, 3 ],
+        [ 310, 78002, 14000, 6, 5, 2, 3 ],
+        [ 311, 83459, 5000, 4, 5, 0, 1 ],
+        [ 312, 91987, 10000, 6, 3, 0, 0 ],
+        [ 313, 51552, 5000, 7, 3, 1, 4 ],
+        [ 314, 72156, 7000, 4, 2, 2, 4 ],
+        [ 315, 24998, 12000, 7, 3, 1, 2 ],
+        [ 316, 45673, 19000, 4, 3, 1, 3 ],
+        [ 317, 11596, 18000, 6, 4, 0, 2 ],
+        [ 318, 87485, 5000, 5, 5, 0, 4 ],
+        [ 319, 28414, 14000, 6, 4, 0, 3 ],
+        [ 320, 81863, 8000, 6, 2, 0, 3 ],
+        [ 321, 33240, 12000, 6, 5, 2, 1 ],
+        [ 322, 11466, 9000, 7, 5, 0, 0 ],
+        [ 323, 23881, 8000, 6, 3, 1, 2 ],
+        [ 324, 44645, 6000, 4, 2, 2, 2 ],
+        [ 325, 49844, 9000, 4, 5, 0, 4 ],
+        [ 326, 92782, 14000, 4, 4, 2, 3 ],
+        [ 327, 22824, 6000, 4, 4, 2, 3 ],
+        [ 328, 26767, 11000, 5, 5, 1, 1 ],
+        [ 329, 26678, 14000, 4, 4, 2, 1 ],
+        [ 330, 50412, 5000, 7, 4, 2, 4 ],
+        [ 331, 17933, 19000, 6, 3, 1, 2 ],
+        [ 332, 34495, 18000, 6, 5, 2, 0 ],
+        [ 333, 47437, 17000, 7, 3, 1, 0 ],
+        [ 334, 22610, 15000, 5, 4, 2, 2 ],
+        [ 335, 41159, 8000, 7, 4, 2, 0 ],
+        [ 336, 64672, 19000, 6, 5, 2, 0 ],
+        [ 337, 62483, 12000, 4, 4, 2, 1 ],
+        [ 338, 85614, 6000, 7, 2, 0, 4 ],
+        [ 339, 96548, 20000, 6, 2, 0, 1 ],
+        [ 340, 19137, 10000, 6, 3, 1, 1 ],
+        [ 341, 69028, 7000, 6, 3, 1, 1 ],
+        [ 342, 70779, 18000, 4, 3, 2, 0 ],
+        [ 343, 38244, 9000, 6, 4, 2, 3 ],
+        [ 344, 67046, 6000, 5, 3, 2, 4 ],
+        [ 345, 64897, 16000, 5, 2, 2, 1 ],
+        [ 346, 46223, 14000, 7, 4, 2, 1 ],
+        [ 347, 36628, 19000, 6, 3, 0, 1 ],
+        [ 348, 17565, 5000, 6, 2, 0, 3 ],
+        [ 349, 77381, 18000, 4, 4, 2, 3 ],
+        [ 350, 11799, 11000, 7, 3, 2, 3 ],
+        [ 351, 81940, 11000, 5, 2, 0, 2 ],
+        [ 352, 66706, 12000, 7, 2, 0, 1 ],
+        [ 353, 87838, 15000, 5, 2, 0, 0 ],
+        [ 354, 94437, 9000, 5, 4, 1, 3 ],
+        [ 355, 33790, 9000, 7, 4, 0, 2 ],
+        [ 356, 44402, 10000, 5, 5, 1, 4 ],
+        [ 357, 29886, 16000, 6, 5, 1, 1 ],
+        [ 358, 66804, 7000, 4, 4, 2, 2 ],
+        [ 359, 47866, 9000, 5, 2, 2, 0 ],
+        [ 360, 61996, 8000, 4, 2, 0, 2 ],
+        [ 361, 15318, 14000, 6, 3, 0, 1 ],
+        [ 362, 89635, 18000, 6, 3, 1, 4 ],
+        [ 363, 71681, 20000, 5, 5, 2, 1 ],
+        [ 364, 71862, 6000, 5, 2, 0, 1 ],
+        [ 365, 96186, 13000, 6, 4, 2, 3 ],
+        [ 366, 22348, 13000, 7, 5, 0, 2 ],
+        [ 367, 36243, 17000, 7, 5, 0, 3 ],
+        [ 368, 88807, 8000, 4, 3, 2, 1 ],
+        [ 369, 82376, 20000, 4, 3, 0, 3 ],
+        [ 370, 98126, 19000, 6, 4, 1, 3 ],
+        [ 371, 80347, 11000, 5, 3, 2, 3 ],
+        [ 372, 17649, 6000, 5, 2, 2, 1 ],
+        [ 373, 62807, 17000, 6, 5, 1, 1 ],
+        [ 374, 92522, 6000, 4, 5, 0, 1 ],
+        [ 375, 57459, 18000, 6, 5, 0, 4 ],
+        [ 376, 44579, 16000, 6, 3, 1, 3 ],
+        [ 377, 45476, 13000, 5, 4, 1, 2 ],
+        [ 378, 61994, 19000, 5, 2, 0, 4 ],
+        [ 379, 11398, 12000, 6, 5, 2, 1 ],
+        [ 380, 24702, 6000, 7, 2, 0, 3 ],
+        [ 381, 27824, 13000, 7, 2, 0, 4 ],
+        [ 382, 45878, 19000, 4, 2, 0, 1 ],
+        [ 383, 72431, 6000, 6, 3, 2, 3 ],
+        [ 384, 19215, 18000, 5, 3, 1, 3 ],
+        [ 385, 23409, 8000, 4, 4, 0, 0 ],
+        [ 386, 16418, 8000, 7, 4, 2, 0 ],
+        [ 387, 85122, 18000, 5, 2, 2, 2 ],
+        [ 388, 55060, 8000, 7, 3, 0, 3 ],
+        [ 389, 55478, 12000, 5, 4, 2, 1 ],
+        [ 390, 65574, 11000, 4, 5, 0, 3 ],
+        [ 391, 31113, 11000, 4, 2, 0, 4 ],
+        [ 392, 96929, 13000, 4, 5, 0, 0 ],
+        [ 393, 78912, 6000, 4, 4, 0, 0 ],
+        [ 394, 68439, 20000, 4, 2, 0, 1 ],
+        [ 395, 62864, 13000, 7, 4, 0, 1 ],
+        [ 396, 31515, 5000, 4, 5, 0, 1 ],
+        [ 397, 77954, 73000, 6, 4, 2, 0 ],
+        [ 398, 88207, 49000, 5, 3, 2, 0 ],
+        [ 399, 96929, 67000, 6, 2, 2, 2 ],
+        [ 400, 78618, 61000, 7, 3, 0, 1 ],
+        [ 401, 31551, 75000, 7, 3, 2, 4 ],
+        [ 402, 75792, 48000, 4, 4, 0, 3 ],
+        [ 403, 29864, 56000, 4, 2, 0, 2 ],
+        [ 404, 45440, 72000, 4, 3, 2, 1 ],
+        [ 405, 97954, 70000, 7, 2, 0, 4 ],
+        [ 406, 90189, 51000, 7, 3, 0, 4 ],
+        [ 407, 55090, 73000, 6, 2, 0, 2 ],
+        [ 408, 17703, 50000, 5, 4, 0, 1 ],
+        [ 409, 33991, 49000, 5, 3, 0, 1 ],
+        [ 410, 88884, 69000, 7, 2, 2, 2 ],
+        [ 411, 45808, 40000, 5, 2, 2, 2 ],
+        [ 412, 50706, 44000, 4, 5, 0, 2 ],
+        [ 413, 92140, 31000, 6, 5, 2, 1 ],
+        [ 414, 88123, 37000, 7, 5, 0, 1 ],
+        [ 415, 53932, 65000, 4, 3, 0, 3 ],
+        [ 416, 65908, 48000, 7, 3, 2, 3 ],
+        [ 417, 25321, 46000, 5, 2, 2, 3 ],
+        [ 418, 87456, 61000, 5, 5, 1, 4 ],
+        [ 419, 48602, 74000, 5, 2, 0, 0 ],
+        [ 420, 97530, 58000, 6, 4, 0, 1 ],
+        [ 421, 48657, 39000, 5, 3, 2, 2 ],
+        [ 422, 76209, 70000, 5, 5, 0, 4 ],
+        [ 423, 49913, 56000, 6, 3, 1, 0 ],
+        [ 424, 53002, 52000, 5, 3, 0, 3 ],
+        [ 425, 61122, 33000, 5, 4, 2, 0 ],
+        [ 426, 82807, 47000, 6, 2, 0, 4 ],
+        [ 427, 93496, 71000, 7, 2, 0, 2 ],
+        [ 428, 64519, 50000, 7, 5, 2, 2 ],
+        [ 429, 31950, 56000, 4, 4, 0, 3 ],
+        [ 430, 23110, 41000, 4, 4, 1, 0 ],
+        [ 431, 96297, 71000, 6, 4, 0, 0 ],
+        [ 432, 28408, 72000, 6, 5, 2, 3 ],
+        [ 433, 37252, 59000, 6, 2, 1, 2 ],
+        [ 434, 41287, 64000, 6, 3, 2, 3 ],
+        [ 435, 52460, 45000, 4, 2, 1, 2 ],
+        [ 436, 26604, 74000, 4, 5, 0, 3 ],
+        [ 437, 58019, 73000, 4, 2, 1, 1 ],
+        [ 438, 87219, 54000, 6, 3, 0, 2 ],
+        [ 439, 36839, 31000, 7, 2, 1, 4 ],
+        [ 440, 12663, 66000, 7, 4, 0, 3 ],
+        [ 441, 48667, 50000, 5, 3, 0, 3 ],
+        [ 442, 42887, 27000, 6, 2, 1, 3 ],
+        [ 443, 14439, 51000, 4, 3, 0, 3 ],
+        [ 444, 60851, 65000, 6, 5, 2, 3 ],
+        [ 445, 41266, 67000, 6, 5, 2, 0 ],
+        [ 446, 37438, 43000, 7, 5, 0, 4 ],
+        [ 447, 65747, 70000, 5, 4, 0, 2 ],
+        [ 448, 81166, 61000, 5, 2, 2, 1 ],
+        [ 449, 20570, 31000, 4, 4, 2, 1 ],
+        [ 450, 14816, 36000, 4, 3, 2, 3 ],
+        [ 451, 11265, 51000, 7, 3, 2, 0 ],
+        [ 452, 24980, 36000, 4, 4, 2, 2 ],
+        [ 453, 37934, 50000, 5, 4, 2, 3 ],
+        [ 454, 70707, 74000, 4, 4, 0, 3 ],
+        [ 455, 84351, 25000, 4, 3, 0, 2 ],
+        [ 456, 89446, 47000, 6, 2, 0, 4 ],
+        [ 457, 17325, 41000, 6, 5, 2, 3 ],
+        [ 458, 64774, 57000, 5, 2, 0, 4 ],
+        [ 459, 53166, 67000, 7, 2, 1, 3 ],
+        [ 460, 45341, 74000, 7, 4, 2, 4 ],
+        [ 461, 94595, 26000, 6, 4, 2, 3 ],
+        [ 462, 55170, 38000, 4, 4, 2, 3 ],
+        [ 463, 92489, 75000, 4, 4, 0, 1 ],
+        [ 464, 92933, 38000, 4, 5, 1, 4 ],
+        [ 465, 36504, 52000, 4, 2, 1, 2 ],
+        [ 466, 40508, 48000, 5, 5, 0, 2 ],
+        [ 467, 15798, 70000, 6, 2, 0, 3 ],
+        [ 468, 70101, 36000, 4, 4, 2, 1 ],
+        [ 469, 77613, 36000, 5, 5, 0, 4 ],
+        [ 470, 84360, 66000, 6, 2, 1, 1 ],
+        [ 471, 48402, 37000, 5, 5, 1, 4 ],
+        [ 472, 46776, 48000, 6, 3, 2, 2 ],
+        [ 473, 67258, 35000, 6, 3, 1, 4 ],
+        [ 474, 44804, 26000, 6, 3, 1, 2 ],
+        [ 475, 29919, 38000, 4, 3, 1, 4 ],
+        [ 476, 65781, 45000, 5, 5, 2, 2 ],
+        [ 477, 12456, 70000, 6, 5, 0, 4 ],
+        [ 478, 62649, 51000, 7, 5, 2, 4 ],
+        [ 479, 74446, 34000, 6, 3, 2, 1 ],
+        [ 480, 36632, 47000, 7, 3, 2, 2 ],
+        [ 481, 76024, 47000, 6, 2, 0, 0 ],
+        [ 482, 75065, 30000, 7, 3, 1, 0 ],
+        [ 483, 51682, 74000, 4, 2, 0, 4 ],
+        [ 484, 18397, 30000, 5, 4, 1, 1 ],
+        [ 485, 29102, 28000, 5, 4, 1, 1 ],
+        [ 486, 56367, 58000, 7, 3, 2, 1 ],
+        [ 487, 95147, 64000, 4, 2, 2, 2 ],
+        [ 488, 44379, 39000, 7, 5, 2, 1 ],
+        [ 489, 76957, 44000, 6, 4, 0, 2 ],
+        [ 490, 42921, 50000, 7, 5, 2, 1 ],
+        [ 491, 23102, 65000, 4, 2, 0, 0 ],
+        [ 492, 61324, 63000, 4, 5, 0, 0 ],
+        [ 493, 49690, 50000, 6, 4, 2, 0 ],
+        [ 494, 20043, 35000, 6, 2, 1, 4 ],
+        [ 495, 44144, 29000, 4, 3, 0, 1 ],
+        [ 496, 53552, 56000, 7, 3, 0, 3 ],
+        [ 497, 62530, 49000, 5, 3, 2, 3 ],
+        [ 498, 41741, 52000, 4, 2, 1, 2 ],
+        [ 499, 22842, 31000, 4, 4, 1, 0 ],
+        [ 500, 65825, 68000, 6, 4, 2, 2 ],
+        [ 501, 77826, 41000, 5, 4, 0, 4 ],
+        [ 502, 61216, 38000, 6, 3, 1, 0 ],
+        [ 503, 83192, 54000, 6, 2, 2, 4 ],
+        [ 504, 82023, 70000, 6, 3, 0, 0 ],
+        [ 505, 73000, 34000, 6, 5, 1, 0 ],
+        [ 506, 64550, 68000, 5, 2, 0, 2 ],
+        [ 507, 90131, 26000, 6, 5, 2, 3 ],
+        [ 508, 17382, 42000, 6, 3, 2, 0 ],
+        [ 509, 27117, 59000, 7, 2, 0, 3 ],
+        [ 510, 94529, 30000, 4, 4, 2, 1 ],
+        [ 511, 21717, 33000, 6, 2, 2, 2 ],
+        [ 512, 81910, 49000, 6, 2, 0, 2 ],
+        [ 513, 76492, 62000, 6, 2, 1, 3 ],
+        [ 514, 43000, 40000, 5, 3, 1, 4 ],
+        [ 515, 48692, 30000, 5, 2, 2, 3 ],
+        [ 516, 27476, 37000, 4, 4, 2, 2 ],
+        [ 517, 15086, 32000, 7, 4, 0, 3 ],
+        [ 518, 43034, 62000, 4, 2, 2, 3 ],
+        [ 519, 99131, 36000, 7, 4, 0, 2 ],
+        [ 520, 13140, 57000, 7, 2, 0, 0 ],
+        [ 521, 99437, 39000, 6, 4, 0, 4 ],
+        [ 522, 91242, 70000, 4, 3, 2, 2 ],
+        [ 523, 39285, 36000, 7, 5, 0, 0 ],
+        [ 524, 63710, 69000, 6, 3, 0, 2 ],
+        [ 525, 90860, 59000, 7, 3, 2, 4 ],
+        [ 526, 35585, 71000, 5, 4, 1, 0 ],
+        [ 527, 58708, 29000, 4, 2, 2, 3 ],
+        [ 528, 57451, 37000, 5, 2, 1, 3 ],
+        [ 529, 69868, 34000, 4, 3, 0, 1 ],
+        [ 530, 43679, 34000, 6, 3, 2, 4 ],
+        [ 531, 30256, 38000, 4, 3, 0, 0 ],
+        [ 532, 26334, 32000, 4, 3, 2, 2 ],
+        [ 533, 47848, 48000, 4, 3, 2, 2 ],
+        [ 534, 17377, 36000, 6, 3, 0, 3 ],
+        [ 535, 39644, 56000, 6, 4, 0, 3 ],
+        [ 536, 29176, 28000, 4, 5, 1, 3 ],
+        [ 537, 55706, 48000, 4, 4, 1, 0 ],
+        [ 538, 51771, 68000, 7, 3, 1, 4 ],
+        [ 539, 83585, 74000, 7, 4, 1, 3 ],
+        [ 540, 51867, 70000, 4, 4, 1, 0 ],
+        [ 541, 68040, 45000, 7, 2, 0, 3 ],
+        [ 542, 50706, 60000, 7, 5, 2, 2 ],
+        [ 543, 75417, 47000, 5, 5, 1, 2 ],
+        [ 544, 34775, 60000, 5, 2, 1, 0 ],
+        [ 545, 85645, 54000, 6, 3, 1, 2 ],
+        [ 546, 83545, 28000, 7, 5, 0, 4 ],
+        [ 547, 44157, 68000, 7, 2, 1, 4 ],
+        [ 548, 38125, 26000, 4, 5, 2, 4 ],
+        [ 549, 75398, 56000, 4, 3, 0, 4 ],
+        [ 550, 90999, 39000, 7, 5, 2, 3 ],
+        [ 551, 70376, 59000, 7, 5, 2, 3 ],
+        [ 552, 33295, 37000, 7, 2, 1, 1 ],
+        [ 553, 80942, 65000, 7, 3, 2, 1 ],
+        [ 554, 26493, 41000, 7, 4, 1, 3 ],
+        [ 555, 97850, 33000, 5, 2, 2, 0 ],
+        [ 556, 43841, 52000, 4, 5, 0, 4 ],
+        [ 557, 79885, 60000, 4, 5, 0, 4 ],
+        [ 558, 59316, 62000, 7, 4, 1, 4 ],
+        [ 559, 83466, 40000, 6, 5, 1, 2 ],
+        [ 560, 81510, 41000, 7, 5, 2, 3 ],
+        [ 561, 35268, 46000, 6, 3, 1, 0 ],
+        [ 562, 11734, 29000, 7, 5, 0, 2 ],
+        [ 563, 88411, 56000, 7, 3, 0, 1 ],
+        [ 564, 96269, 69000, 5, 4, 1, 0 ],
+        [ 565, 87683, 36000, 7, 4, 0, 0 ],
+        [ 566, 26063, 69000, 6, 5, 0, 1 ],
+        [ 567, 42479, 38000, 6, 5, 0, 1 ],
+        [ 568, 58116, 29000, 7, 3, 1, 1 ],
+        [ 569, 67282, 58000, 6, 5, 1, 0 ],
+        [ 570, 84888, 72000, 6, 4, 1, 0 ],
+        [ 571, 75366, 64000, 4, 2, 1, 1 ],
+        [ 572, 14377, 36000, 7, 2, 0, 4 ],
+        [ 573, 59074, 71000, 7, 4, 0, 2 ],
+        [ 574, 96534, 66000, 7, 2, 2, 3 ],
+        [ 575, 31870, 70000, 4, 3, 2, 0 ],
+        [ 576, 24748, 73000, 5, 3, 0, 4 ],
+        [ 577, 68920, 30000, 6, 3, 1, 1 ],
+        [ 578, 67637, 44000, 5, 3, 0, 4 ],
+        [ 579, 60839, 39000, 7, 5, 0, 3 ],
+        [ 580, 59170, 65000, 4, 3, 0, 0 ],
+        [ 581, 90586, 52000, 4, 5, 2, 1 ],
+        [ 582, 56270, 26000, 6, 5, 1, 4 ],
+        [ 583, 87670, 68000, 6, 5, 1, 0 ],
+        [ 584, 47703, 52000, 6, 2, 0, 0 ],
+        [ 585, 35421, 34000, 6, 4, 1, 3 ],
+        [ 586, 58511, 39000, 7, 4, 0, 4 ],
+        [ 587, 76398, 31000, 7, 3, 0, 2 ],
+        [ 588, 93310, 70000, 4, 3, 0, 4 ],
+        [ 589, 36836, 55000, 4, 3, 1, 0 ],
+        [ 590, 46373, 29000, 4, 5, 0, 2 ],
+        [ 591, 94700, 36000, 6, 2, 2, 3 ],
+        [ 592, 67860, 68000, 5, 2, 1, 4 ],
+        [ 593, 99473, 54000, 5, 4, 2, 1 ],
+        [ 594, 68862, 66000, 4, 5, 1, 1 ],
+        [ 595, 93381, 60000, 4, 2, 1, 4 ],
+        [ 596, 46548, 41000, 7, 4, 2, 2 ],
+        [ 597, 74083, 42000, 6, 4, 2, 0 ],
+        [ 598, 48660, 38000, 7, 5, 2, 1 ],
+        [ 599, 13720, 64000, 5, 4, 1, 2 ],
+        [ 600, 72339, 57000, 6, 2, 2, 0 ],
+        [ 601, 99284, 68000, 7, 5, 0, 0 ],
+        [ 602, 47198, 33000, 5, 4, 0, 2 ],
+        [ 603, 67415, 37000, 7, 4, 0, 1 ],
+        [ 604, 44403, 60000, 6, 3, 2, 3 ],
+        [ 605, 58276, 27000, 7, 3, 0, 2 ],
+        [ 606, 85234, 36000, 5, 2, 2, 3 ],
+        [ 607, 31948, 63000, 5, 3, 1, 3 ],
+        [ 608, 90191, 34000, 6, 3, 1, 0 ],
+        [ 609, 49341, 47000, 4, 4, 1, 0 ],
+        [ 610, 11562, 38000, 4, 3, 2, 0 ],
+        [ 611, 16253, 39000, 7, 2, 1, 0 ],
+        [ 612, 80623, 46000, 7, 4, 1, 3 ],
+        [ 613, 94391, 157000, 9, 1, 14, 1 ],
+        [ 614, 50598, 94000, 9, 1, 11, 0 ],
+        [ 615, 40019, 163000, 8, 1, 7, 1 ],
+        [ 616, 77910, 131000, 9, 1, 10, 1 ],
+        [ 617, 89832, 96000, 10, 1, 11, 2 ],
+        [ 618, 98216, 136000, 8, 0, 13, 0 ],
+        [ 619, 54495, 121000, 7, 0, 13, 2 ],
+        [ 620, 47650, 158000, 7, 0, 13, 0 ],
+        [ 621, 32107, 108000, 10, 0, 15, 1 ],
+        [ 622, 84192, 166000, 9, 1, 12, 2 ],
+        [ 623, 53916, 176000, 10, 1, 15, 2 ],
+        [ 624, 32584, 166000, 10, 0, 7, 0 ],
+        [ 625, 97285, 178000, 7, 0, 11, 0 ],
+        [ 626, 20337, 91000, 8, 1, 6, 1 ],
+        [ 627, 15585, 156000, 9, 1, 10, 2 ],
+        [ 628, 20620, 146000, 10, 0, 12, 1 ],
+        [ 629, 75009, 84000, 9, 1, 15, 0 ],
+        [ 630, 76203, 155000, 8, 0, 7, 2 ],
+        [ 631, 33837, 200000, 10, 0, 13, 0 ],
+        [ 632, 14916, 195000, 8, 0, 15, 0 ],
+        [ 633, 97935, 187000, 7, 1, 7, 0 ],
+        [ 634, 16180, 163000, 7, 1, 10, 1 ],
+        [ 635, 49493, 106000, 8, 0, 8, 1 ],
+        [ 636, 70974, 114000, 10, 1, 7, 2 ],
+        [ 637, 40217, 126000, 10, 1, 8, 0 ],
+        [ 638, 88442, 173000, 9, 1, 11, 0 ],
+        [ 639, 17538, 153000, 8, 1, 7, 1 ],
+        [ 640, 90839, 184000, 7, 1, 15, 2 ],
+        [ 641, 99843, 123000, 8, 1, 15, 2 ],
+        [ 642, 27212, 144000, 10, 0, 10, 2 ],
+        [ 643, 91575, 97000, 10, 1, 9, 2 ],
+        [ 644, 60190, 98000, 9, 0, 8, 2 ],
+        [ 645, 18519, 127000, 10, 1, 15, 1 ],
+        [ 646, 48762, 171000, 10, 0, 15, 0 ],
+        [ 647, 58392, 186000, 7, 0, 8, 1 ],
+        [ 648, 79953, 183000, 9, 0, 9, 2 ],
+        [ 649, 13315, 111000, 8, 1, 7, 0 ],
+        [ 650, 30570, 112000, 10, 1, 8, 1 ],
+        [ 651, 78996, 195000, 10, 1, 12, 2 ],
+        [ 652, 78404, 132000, 9, 1, 12, 2 ],
+        [ 653, 28525, 156000, 8, 1, 8, 0 ],
+        [ 654, 51826, 95000, 10, 0, 15, 1 ],
+        [ 655, 65750, 172000, 10, 1, 9, 1 ],
+        [ 656, 51108, 99000, 10, 1, 10, 0 ],
+        [ 657, 60732, 84000, 10, 1, 13, 2 ],
+        [ 658, 53834, 145000, 8, 1, 9, 1 ],
+        [ 659, 80655, 172000, 10, 1, 15, 0 ],
+        [ 660, 80150, 167000, 9, 0, 12, 2 ]]
+}
+
+data = credit_card_dataset[&apos;data&apos;]
+col_names = credit_card_dataset[&apos;column_names&apos;]
+
+
+def make_csv_content(cols, num_rows=50):
+    col_indices = [col_names.index(col) for col in cols]
+    all_data = [[row[i] for i in col_indices] for row in data]
+
+    selected_data = random.sample(all_data, 50)
+
+    csv_lines = [&apos;,&apos;.join(cols)] # First row containing column names
+    csv_lines += [&apos;,&apos;.join(map(str, row)) for row in selected_data]
+
+    return &apos;\n&apos;.join(csv_lines)</global><language type="string">python3</language><languageOption type="string">Python 3.12</languageOption><levels type="list"><li type="dict">
+<explanation type="string">`df.groupby()` splits a dataset into groups based on levels of a categorical feature. A frequency table prints the counts of a feature, so `.size()` is used to calculate the number of instances in each group.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages and functions
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv(&quot;credit_card.csv&quot;)
+
+# Create a frequency table for ${meaningful.feature}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">freqTable = df.groupby(by=[&quot;${meaningful.feature}&quot;]).size()</solution><template type="string"># Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Print frequency table
+print(freqTable)</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.py</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.csv_content}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">credit_card.csv</name></li></files><prompt type="string">This dataset contains information on credit card customers, such as the customer&apos;s average credit limit, number of credit cards, number of physical visits to the bank, and number of visits to the bank&apos;s website.
+
+- Use a `pandas` method to create a frequency table for `${meaningful.feature}`.
+- Assign the table to `freqTable`.
+
+The code provided contains all imports, loads the dataset, and prints the frequency table.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {
+        &apos;csv_content&apos;: make_csv_content(features)
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {
+        &apos;feature&apos;: pick_from(features)    
+    }</meaningful><setup type="string">features = [&apos;Total_Credit_Cards&apos;, &apos;Total_Visits_Bank&apos;, &apos;Total_Visits_Online&apos;, &apos;Total_Calls_Made&apos;]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">`df.pivot_table()` splits a dataset into groups based on levels of two categorical features. `index` specifies the feature on the pivot table&apos;s rows and `columns` specifies the feature on the pivot table&apos;s columns. A contingency table prints the counts of each combination of features, so `aggfunc=np.size` is used to calculate the number of instances in each group.
+</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import packages and functions
+import pandas as pd
+import numpy as np
+
+# Load the dataset
+df = pd.read_csv(&quot;credit_card.csv&quot;)
+
+# Create a contingency table for ${meaningful.feature1} and ${meaningful.feature2}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">contingencyTable = df.pivot_table(values=&quot;Customer Key&quot;, 
+                                  index=&quot;${meaningful.feature1}&quot;, 
+                                  columns=&quot;${meaningful.feature2}&quot;, aggfunc=np.size)</solution><template type="string"># Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Print contingency table
+print(contingencyTable)</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.py</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.csv_content}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">credit_card.csv</name></li></files><prompt type="string">This dataset contains information on credit card customers, such as the customer&apos;s average credit limit, number of credit cards, number of physical visits to the bank, and number of visits to the bank&apos;s website.
+
+- Use a `pandas` method to calculate a contingency table with `${meaningful.feature1}` on the rows, `${meaningful.feature2}` on the columns, and `Customer Key` as the values.
+- Assign the table to `contingencyTable`.
+
+The code provided contains all imports, loads the dataset, and prints the contingency table.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    columns = [&apos;Customer Key&apos;] + features
+
+    return {
+        &apos;csv_content&apos;: make_csv_content(columns)
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    feature1, feature2 = random.sample(features, 2)
+    return {
+        &apos;feature1&apos;: feature1,
+        &apos;feature2&apos;: feature2
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+</zyVersion>
+
+<zypInfo person="Laurence" date="01/20/23" minutes="200" status="CodeDoing"></zypInfo>
+<zypInfo person="Brock" date="01/24/23" minutes="40" status="CodeReviewing"></zypInfo>
+<zypInfo person="Laurence" date="01/24/23" minutes="25" status="CodeReviewing"></zypInfo>
+<zypInfo person="Brock" date="01/25/23" minutes="10" status="CodeReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="01/27/23" minutes="10" status="QADoing"></zypInfo>
+<zypInfo person="Laurence" date="01/27/23" minutes="25" status="QADoing"></zypInfo>
+<zyVersion version="python">
+
+<zyTool name="CodeWriting" caption="Exploring data using pandas" id="9bc13c67-3341-494b-a95c-00d41233e3de" parts="2" challenge="true" edited-last="Tue Jun 17 2025 06:14:30 GMT-0500 (Central Daylight Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+features = ['Total_Credit_Cards', 'Total_visits_bank', 'Total_visits_online', 'Total_calls_made']
+
+credit_card_dataset = {
+    'column_names' : [ 'Sl_No', 'Customer Key', 'Avg_Credit_Limit', 'Total_Credit_Cards', 'Total_visits_bank', 'Total_visits_online', 'Total_calls_made' ],
+    'data' : [
+        [ 1, 87073, 100000, 2, 1, 1, 0 ],
+        [ 2, 38414, 50000, 3, 0, 10, 9 ],
+        [ 3, 17341, 50000, 7, 1, 3, 4 ],
+        [ 4, 40496, 30000, 5, 1, 1, 4 ],
+        [ 5, 47437, 100000, 6, 0, 12, 3 ],
+        [ 6, 58634, 20000, 3, 0, 1, 8 ],
+        [ 7, 48370, 100000, 5, 0, 11, 2 ],
+        [ 8, 37376, 15000, 3, 0, 1, 1 ],
+        [ 9, 82490, 5000, 2, 0, 2, 2 ],
+        [ 10, 44770, 3000, 4, 0, 1, 7 ],
+        [ 11, 52741, 10000, 4, 0, 5, 5 ],
+        [ 12, 52326, 13000, 3, 0, 2, 7 ],
+        [ 13, 92503, 11000, 1, 2, 5, 9 ],
+        [ 14, 25084, 9000, 1, 1, 5, 6 ],
+        [ 15, 68517, 6000, 2, 2, 4, 6 ],
+        [ 16, 55196, 8000, 2, 0, 5, 7 ],
+        [ 17, 62617, 15000, 2, 1, 2, 4 ],
+        [ 18, 96463, 8000, 2, 0, 3, 4 ],
+        [ 19, 39137, 11000, 2, 2, 2, 7 ],
+        [ 20, 14309, 19000, 4, 1, 5, 8 ],
+        [ 21, 29794, 5000, 3, 2, 5, 5 ],
+        [ 22, 87241, 16000, 2, 0, 3, 7 ],
+        [ 23, 30507, 6000, 4, 1, 4, 6 ],
+        [ 24, 61061, 9000, 1, 1, 3, 4 ],
+        [ 25, 24001, 8000, 2, 0, 2, 10 ],
+        [ 26, 68067, 18000, 1, 1, 5, 10 ],
+        [ 27, 65034, 16000, 3, 0, 5, 9 ],
+        [ 28, 14854, 9000, 2, 2, 2, 10 ],
+        [ 29, 81130, 5000, 2, 0, 4, 6 ],
+        [ 30, 29112, 8000, 4, 0, 4, 7 ],
+        [ 31, 13999, 16000, 3, 1, 5, 4 ],
+        [ 32, 32550, 11000, 3, 1, 5, 6 ],
+        [ 33, 82164, 6000, 1, 0, 5, 10 ],
+        [ 34, 61517, 16000, 1, 0, 5, 6 ],
+        [ 35, 28254, 8000, 4, 1, 3, 10 ],
+        [ 36, 30888, 19000, 2, 0, 4, 4 ],
+        [ 37, 46388, 9000, 3, 1, 4, 10 ],
+        [ 38, 74126, 17000, 2, 0, 4, 6 ],
+        [ 39, 52142, 13000, 4, 1, 3, 10 ],
+        [ 40, 37659, 10000, 2, 2, 4, 9 ],
+        [ 41, 83132, 19000, 4, 2, 5, 9 ],
+        [ 42, 20119, 10000, 1, 1, 2, 7 ],
+        [ 43, 52363, 16000, 4, 2, 3, 4 ],
+        [ 44, 50769, 20000, 2, 0, 4, 4 ],
+        [ 45, 68502, 11000, 4, 2, 4, 5 ],
+        [ 46, 99026, 14000, 4, 1, 4, 9 ],
+        [ 47, 83326, 5000, 1, 2, 2, 5 ],
+        [ 48, 62040, 11000, 1, 2, 2, 6 ],
+        [ 49, 37252, 6000, 4, 0, 2, 8 ],
+        [ 50, 74625, 14000, 3, 2, 2, 6 ],
+        [ 51, 51182, 13000, 1, 0, 5, 9 ],
+        [ 52, 60301, 6000, 2, 1, 5, 5 ],
+        [ 53, 96386, 17000, 2, 1, 5, 8 ],
+        [ 54, 43886, 9000, 3, 0, 5, 9 ],
+        [ 55, 78503, 14000, 2, 0, 4, 9 ],
+        [ 56, 68419, 6000, 1, 2, 2, 4 ],
+        [ 57, 32828, 6000, 1, 0, 2, 5 ],
+        [ 58, 17937, 6000, 2, 0, 2, 10 ],
+        [ 59, 71632, 9000, 1, 0, 4, 7 ],
+        [ 60, 81566, 19000, 4, 1, 4, 9 ],
+        [ 61, 29759, 20000, 4, 1, 4, 7 ],
+        [ 62, 36929, 18000, 1, 2, 2, 9 ],
+        [ 63, 70248, 5000, 1, 0, 2, 4 ],
+        [ 64, 91673, 14000, 3, 0, 4, 6 ],
+        [ 65, 61355, 12000, 1, 0, 5, 9 ],
+        [ 66, 60403, 16000, 1, 1, 4, 4 ],
+        [ 67, 85868, 19000, 2, 0, 3, 6 ],
+        [ 68, 76205, 9000, 4, 2, 2, 6 ],
+        [ 69, 66524, 7000, 1, 2, 4, 10 ],
+        [ 70, 69214, 20000, 1, 2, 3, 7 ],
+        [ 71, 21976, 14000, 1, 2, 4, 7 ],
+        [ 72, 35149, 6000, 3, 2, 2, 7 ],
+        [ 73, 27120, 11000, 3, 1, 2, 6 ],
+        [ 74, 18821, 19000, 3, 1, 3, 6 ],
+        [ 75, 33187, 7000, 2, 0, 5, 8 ],
+        [ 76, 93482, 16000, 3, 1, 4, 6 ],
+        [ 77, 90168, 17000, 1, 2, 4, 6 ],
+        [ 78, 71881, 13000, 3, 1, 4, 4 ],
+        [ 79, 59656, 6000, 2, 0, 4, 10 ],
+        [ 80, 12026, 15000, 1, 1, 2, 7 ],
+        [ 81, 99589, 20000, 2, 2, 4, 8 ],
+        [ 82, 38970, 7000, 3, 1, 5, 5 ],
+        [ 83, 57990, 13000, 1, 1, 2, 5 ],
+        [ 84, 39447, 13000, 3, 1, 4, 6 ],
+        [ 85, 79694, 9000, 3, 2, 4, 5 ],
+        [ 86, 79403, 10000, 1, 1, 4, 5 ],
+        [ 87, 47296, 6000, 4, 1, 3, 7 ],
+        [ 88, 37559, 5000, 4, 1, 2, 5 ],
+        [ 89, 38165, 8000, 1, 1, 4, 8 ],
+        [ 90, 49198, 7000, 4, 2, 4, 8 ],
+        [ 91, 18007, 13000, 2, 1, 4, 6 ],
+        [ 92, 59619, 13000, 1, 1, 2, 10 ],
+        [ 93, 37016, 5000, 1, 1, 4, 6 ],
+        [ 94, 91099, 8000, 1, 2, 5, 7 ],
+        [ 95, 74704, 20000, 2, 2, 4, 4 ],
+        [ 96, 25742, 5000, 1, 2, 5, 7 ],
+        [ 97, 11937, 18000, 3, 2, 3, 6 ],
+        [ 98, 52736, 15000, 2, 0, 5, 4 ],
+        [ 99, 88338, 13000, 1, 1, 4, 9 ],
+        [ 100, 18916, 5000, 2, 1, 4, 6 ],
+        [ 101, 92501, 11000, 1, 0, 5, 6 ],
+        [ 102, 96213, 11000, 1, 1, 5, 9 ],
+        [ 103, 26599, 10000, 4, 1, 5, 10 ],
+        [ 104, 73007, 13000, 1, 0, 3, 7 ],
+        [ 105, 97935, 17000, 2, 1, 2, 10 ],
+        [ 106, 26089, 12000, 2, 1, 4, 9 ],
+        [ 107, 14946, 20000, 2, 1, 5, 5 ],
+        [ 108, 74795, 5000, 2, 2, 2, 6 ],
+        [ 109, 73435, 8000, 3, 2, 2, 6 ],
+        [ 110, 41634, 18000, 4, 2, 3, 8 ],
+        [ 111, 84069, 15000, 4, 2, 3, 5 ],
+        [ 112, 83244, 12000, 2, 0, 4, 9 ],
+        [ 113, 87291, 18000, 4, 1, 3, 10 ],
+        [ 114, 18086, 7000, 4, 1, 2, 4 ],
+        [ 115, 33369, 18000, 4, 0, 3, 6 ],
+        [ 116, 15310, 7000, 2, 2, 3, 7 ],
+        [ 117, 98499, 18000, 1, 0, 2, 7 ],
+        [ 118, 35256, 17000, 4, 0, 4, 7 ],
+        [ 119, 89007, 14000, 3, 1, 4, 5 ],
+        [ 120, 93997, 9000, 3, 0, 4, 9 ],
+        [ 121, 16577, 10000, 4, 2, 4, 6 ],
+        [ 122, 25440, 13000, 3, 0, 5, 10 ],
+        [ 123, 81116, 10000, 2, 2, 2, 4 ],
+        [ 124, 63663, 17000, 1, 1, 4, 8 ],
+        [ 125, 69811, 5000, 2, 2, 3, 7 ],
+        [ 126, 36111, 14000, 2, 1, 5, 5 ],
+        [ 127, 39454, 20000, 4, 1, 4, 9 ],
+        [ 128, 70199, 6000, 3, 2, 3, 9 ],
+        [ 129, 11602, 8000, 4, 1, 5, 4 ],
+        [ 130, 49697, 9000, 3, 1, 4, 6 ],
+        [ 131, 28701, 18000, 3, 1, 5, 6 ],
+        [ 132, 61627, 9000, 3, 0, 2, 5 ],
+        [ 133, 34103, 12000, 4, 0, 2, 6 ],
+        [ 134, 14248, 10000, 3, 1, 5, 9 ],
+        [ 135, 31256, 13000, 4, 1, 5, 7 ],
+        [ 136, 45583, 15000, 3, 2, 3, 6 ],
+        [ 137, 52750, 17000, 3, 0, 2, 8 ],
+        [ 138, 95507, 15000, 2, 0, 5, 8 ],
+        [ 139, 23743, 15000, 1, 1, 5, 9 ],
+        [ 140, 53410, 19000, 1, 0, 3, 10 ],
+        [ 141, 53898, 14000, 3, 0, 2, 8 ],
+        [ 142, 66200, 16000, 2, 0, 4, 5 ],
+        [ 143, 58389, 9000, 4, 1, 4, 8 ],
+        [ 144, 61347, 9000, 2, 1, 5, 4 ],
+        [ 145, 59151, 10000, 4, 2, 4, 8 ],
+        [ 146, 37802, 13000, 3, 0, 4, 4 ],
+        [ 147, 60475, 13000, 2, 1, 3, 9 ],
+        [ 148, 95489, 5000, 2, 2, 5, 6 ],
+        [ 149, 77758, 7000, 1, 2, 2, 10 ],
+        [ 150, 23768, 14000, 2, 1, 2, 7 ],
+        [ 151, 87471, 11000, 3, 2, 2, 9 ],
+        [ 152, 85707, 19000, 1, 1, 4, 4 ],
+        [ 153, 97951, 15000, 3, 2, 2, 6 ],
+        [ 154, 54785, 7000, 4, 0, 4, 6 ],
+        [ 155, 97011, 8000, 4, 2, 3, 10 ],
+        [ 156, 35103, 19000, 1, 1, 4, 5 ],
+        [ 157, 18564, 12000, 3, 2, 5, 7 ],
+        [ 158, 61009, 17000, 1, 2, 5, 8 ],
+        [ 159, 24054, 10000, 3, 2, 5, 9 ],
+        [ 160, 63751, 8000, 1, 2, 2, 4 ],
+        [ 161, 52758, 7000, 1, 0, 3, 10 ],
+        [ 162, 78473, 8000, 3, 2, 5, 5 ],
+        [ 163, 80457, 8000, 2, 0, 3, 4 ],
+        [ 164, 59783, 16000, 3, 0, 5, 10 ],
+        [ 165, 64241, 13000, 4, 0, 4, 8 ],
+        [ 166, 32374, 14000, 1, 0, 4, 9 ],
+        [ 167, 97536, 13000, 4, 0, 4, 7 ],
+        [ 168, 33110, 15000, 4, 2, 3, 6 ],
+        [ 169, 36978, 9000, 1, 1, 4, 9 ],
+        [ 170, 54281, 14000, 3, 1, 4, 7 ],
+        [ 171, 98602, 7000, 2, 1, 2, 8 ],
+        [ 172, 97687, 6000, 2, 2, 3, 7 ],
+        [ 173, 28842, 20000, 2, 0, 5, 6 ],
+        [ 174, 38410, 9000, 2, 1, 5, 8 ],
+        [ 175, 38261, 17000, 4, 1, 2, 7 ],
+        [ 176, 20524, 6000, 1, 0, 2, 5 ],
+        [ 177, 37671, 11000, 2, 2, 2, 5 ],
+        [ 178, 25330, 14000, 3, 0, 4, 8 ],
+        [ 179, 41787, 6000, 1, 1, 4, 7 ],
+        [ 180, 11412, 19000, 2, 2, 3, 4 ],
+        [ 181, 55892, 10000, 1, 0, 3, 5 ],
+        [ 182, 95495, 13000, 3, 0, 2, 10 ],
+        [ 183, 41946, 11000, 3, 0, 3, 7 ],
+        [ 184, 86410, 16000, 1, 2, 5, 8 ],
+        [ 185, 76718, 14000, 4, 0, 2, 4 ],
+        [ 186, 98969, 18000, 3, 0, 4, 4 ],
+        [ 187, 77143, 9000, 1, 2, 2, 6 ],
+        [ 188, 38205, 16000, 2, 2, 3, 8 ],
+        [ 189, 53851, 17000, 2, 0, 3, 5 ],
+        [ 190, 52783, 6000, 3, 2, 3, 5 ],
+        [ 191, 63405, 20000, 3, 0, 4, 10 ],
+        [ 192, 48510, 10000, 2, 1, 3, 6 ],
+        [ 193, 97463, 20000, 3, 0, 3, 5 ],
+        [ 194, 18145, 6000, 2, 2, 5, 8 ],
+        [ 195, 14398, 12000, 2, 0, 4, 4 ],
+        [ 196, 98288, 8000, 2, 1, 4, 8 ],
+        [ 197, 69704, 14000, 2, 0, 2, 8 ],
+        [ 198, 29058, 12000, 1, 1, 2, 7 ],
+        [ 199, 15546, 19000, 1, 1, 4, 7 ],
+        [ 200, 16715, 7000, 4, 2, 4, 9 ],
+        [ 201, 87350, 8000, 3, 0, 2, 9 ],
+        [ 202, 13215, 11000, 1, 0, 3, 8 ],
+        [ 203, 20593, 5000, 1, 0, 3, 8 ],
+        [ 204, 56624, 9000, 2, 0, 3, 7 ],
+        [ 205, 33317, 17000, 2, 2, 5, 5 ],
+        [ 206, 99596, 17000, 1, 0, 5, 5 ],
+        [ 207, 72430, 17000, 2, 1, 2, 4 ],
+        [ 208, 16676, 19000, 4, 2, 4, 4 ],
+        [ 209, 40486, 11000, 2, 0, 3, 9 ],
+        [ 210, 90958, 9000, 1, 0, 2, 9 ],
+        [ 211, 67212, 16000, 4, 1, 4, 6 ],
+        [ 212, 44226, 10000, 3, 1, 5, 4 ],
+        [ 213, 94251, 10000, 3, 1, 3, 4 ],
+        [ 214, 61776, 8000, 1, 0, 2, 10 ],
+        [ 215, 55275, 15000, 4, 1, 4, 9 ],
+        [ 216, 18609, 8000, 4, 0, 4, 7 ],
+        [ 217, 54477, 11000, 3, 1, 5, 4 ],
+        [ 218, 12122, 11000, 4, 0, 2, 5 ],
+        [ 219, 28208, 19000, 3, 1, 5, 7 ],
+        [ 220, 68003, 13000, 2, 1, 5, 8 ],
+        [ 221, 79632, 8000, 1, 0, 3, 10 ],
+        [ 222, 73811, 7000, 2, 2, 5, 6 ],
+        [ 223, 72892, 20000, 4, 1, 3, 10 ],
+        [ 224, 51773, 20000, 2, 2, 4, 10 ],
+        [ 225, 96163, 12000, 4, 1, 5, 9 ],
+        [ 226, 61234, 16000, 4, 1, 2, 5 ],
+        [ 227, 55849, 8000, 1, 2, 4, 8 ],
+        [ 228, 56156, 8000, 2, 2, 3, 8 ],
+        [ 229, 54838, 10000, 7, 2, 0, 0 ],
+        [ 230, 35254, 8000, 7, 2, 1, 4 ],
+        [ 231, 46635, 17000, 4, 5, 0, 2 ],
+        [ 232, 97825, 19000, 6, 3, 2, 3 ],
+        [ 233, 83125, 20000, 5, 4, 1, 0 ],
+        [ 234, 35483, 13000, 7, 2, 1, 0 ],
+        [ 235, 15129, 16000, 6, 5, 0, 4 ],
+        [ 236, 83290, 13000, 7, 4, 0, 0 ],
+        [ 237, 56486, 8000, 7, 5, 2, 3 ],
+        [ 238, 31903, 8000, 6, 4, 0, 4 ],
+        [ 239, 45909, 19000, 5, 2, 2, 0 ],
+        [ 240, 14263, 16000, 5, 2, 0, 0 ],
+        [ 241, 46813, 20000, 4, 2, 2, 1 ],
+        [ 242, 81878, 10000, 4, 5, 1, 3 ],
+        [ 243, 35549, 8000, 4, 3, 2, 4 ],
+        [ 244, 85799, 12000, 6, 4, 2, 1 ],
+        [ 245, 39122, 5000, 7, 3, 2, 4 ],
+        [ 246, 81531, 10000, 4, 2, 1, 0 ],
+        [ 247, 69965, 7000, 4, 5, 0, 1 ],
+        [ 248, 18595, 19000, 7, 3, 1, 2 ],
+        [ 249, 44398, 11000, 6, 5, 1, 0 ],
+        [ 250, 32352, 9000, 6, 5, 2, 0 ],
+        [ 251, 40898, 18000, 6, 3, 1, 4 ],
+        [ 252, 27101, 18000, 6, 2, 1, 2 ],
+        [ 253, 33457, 9000, 4, 5, 0, 4 ],
+        [ 254, 45088, 18000, 6, 2, 1, 4 ],
+        [ 255, 23302, 16000, 4, 3, 1, 0 ],
+        [ 256, 27408, 7000, 5, 5, 2, 3 ],
+        [ 257, 65372, 13000, 7, 3, 1, 4 ],
+        [ 258, 21531, 10000, 6, 4, 2, 3 ],
+        [ 259, 56843, 12000, 6, 3, 2, 1 ],
+        [ 260, 17165, 6000, 4, 4, 1, 4 ],
+        [ 261, 89328, 15000, 4, 5, 1, 0 ],
+        [ 262, 20072, 18000, 5, 3, 0, 4 ],
+        [ 263, 71402, 14000, 5, 4, 2, 1 ],
+        [ 264, 47496, 14000, 4, 2, 0, 0 ],
+        [ 265, 24808, 17000, 4, 4, 1, 2 ],
+        [ 266, 17036, 9000, 7, 4, 2, 1 ],
+        [ 267, 67193, 20000, 7, 5, 0, 0 ],
+        [ 268, 34423, 15000, 6, 4, 0, 1 ],
+        [ 269, 97109, 17000, 6, 5, 0, 0 ],
+        [ 270, 55382, 16000, 5, 5, 1, 2 ],
+        [ 271, 51811, 10000, 4, 5, 2, 1 ],
+        [ 272, 53936, 7000, 7, 2, 0, 4 ],
+        [ 273, 66504, 17000, 6, 2, 2, 4 ],
+        [ 274, 53207, 18000, 6, 5, 2, 1 ],
+        [ 275, 18514, 10000, 5, 5, 1, 3 ],
+        [ 276, 51319, 16000, 6, 2, 1, 3 ],
+        [ 277, 36340, 15000, 4, 5, 2, 0 ],
+        [ 278, 36934, 17000, 4, 5, 0, 4 ],
+        [ 279, 95925, 10000, 7, 4, 2, 4 ],
+        [ 280, 49771, 6000, 6, 5, 2, 1 ],
+        [ 281, 22919, 7000, 6, 4, 1, 2 ],
+        [ 282, 21233, 14000, 7, 2, 0, 0 ],
+        [ 283, 74544, 6000, 6, 3, 1, 1 ],
+        [ 284, 52025, 7000, 4, 3, 1, 0 ],
+        [ 285, 45652, 12000, 7, 2, 1, 2 ],
+        [ 286, 73952, 11000, 5, 5, 2, 4 ],
+        [ 287, 49418, 8000, 4, 5, 0, 0 ],
+        [ 288, 77026, 19000, 7, 2, 0, 1 ],
+        [ 289, 49331, 7000, 5, 2, 2, 4 ],
+        [ 290, 75775, 7000, 6, 5, 2, 2 ],
+        [ 291, 54906, 18000, 6, 3, 1, 0 ],
+        [ 292, 94666, 5000, 7, 3, 2, 2 ],
+        [ 293, 11698, 17000, 4, 3, 0, 4 ],
+        [ 294, 34677, 6000, 5, 2, 1, 0 ],
+        [ 295, 95610, 7000, 6, 5, 2, 3 ],
+        [ 296, 41380, 10000, 6, 4, 2, 3 ],
+        [ 297, 38033, 11000, 4, 4, 0, 2 ],
+        [ 298, 85337, 7000, 7, 4, 0, 0 ],
+        [ 299, 38994, 12000, 6, 5, 0, 2 ],
+        [ 300, 67911, 9000, 6, 5, 2, 3 ],
+        [ 301, 92956, 15000, 6, 5, 0, 0 ],
+        [ 302, 77641, 8000, 6, 4, 2, 4 ],
+        [ 303, 57565, 17000, 4, 2, 2, 2 ],
+        [ 304, 53814, 13000, 4, 5, 2, 2 ],
+        [ 305, 30712, 16000, 4, 4, 2, 4 ],
+        [ 306, 19785, 19000, 6, 5, 1, 4 ],
+        [ 307, 31384, 19000, 6, 3, 0, 0 ],
+        [ 308, 16374, 8000, 5, 3, 2, 1 ],
+        [ 309, 50878, 10000, 4, 5, 0, 3 ],
+        [ 310, 78002, 14000, 6, 5, 2, 3 ],
+        [ 311, 83459, 5000, 4, 5, 0, 1 ],
+        [ 312, 91987, 10000, 6, 3, 0, 0 ],
+        [ 313, 51552, 5000, 7, 3, 1, 4 ],
+        [ 314, 72156, 7000, 4, 2, 2, 4 ],
+        [ 315, 24998, 12000, 7, 3, 1, 2 ],
+        [ 316, 45673, 19000, 4, 3, 1, 3 ],
+        [ 317, 11596, 18000, 6, 4, 0, 2 ],
+        [ 318, 87485, 5000, 5, 5, 0, 4 ],
+        [ 319, 28414, 14000, 6, 4, 0, 3 ],
+        [ 320, 81863, 8000, 6, 2, 0, 3 ],
+        [ 321, 33240, 12000, 6, 5, 2, 1 ],
+        [ 322, 11466, 9000, 7, 5, 0, 0 ],
+        [ 323, 23881, 8000, 6, 3, 1, 2 ],
+        [ 324, 44645, 6000, 4, 2, 2, 2 ],
+        [ 325, 49844, 9000, 4, 5, 0, 4 ],
+        [ 326, 92782, 14000, 4, 4, 2, 3 ],
+        [ 327, 22824, 6000, 4, 4, 2, 3 ],
+        [ 328, 26767, 11000, 5, 5, 1, 1 ],
+        [ 329, 26678, 14000, 4, 4, 2, 1 ],
+        [ 330, 50412, 5000, 7, 4, 2, 4 ],
+        [ 331, 17933, 19000, 6, 3, 1, 2 ],
+        [ 332, 34495, 18000, 6, 5, 2, 0 ],
+        [ 333, 47437, 17000, 7, 3, 1, 0 ],
+        [ 334, 22610, 15000, 5, 4, 2, 2 ],
+        [ 335, 41159, 8000, 7, 4, 2, 0 ],
+        [ 336, 64672, 19000, 6, 5, 2, 0 ],
+        [ 337, 62483, 12000, 4, 4, 2, 1 ],
+        [ 338, 85614, 6000, 7, 2, 0, 4 ],
+        [ 339, 96548, 20000, 6, 2, 0, 1 ],
+        [ 340, 19137, 10000, 6, 3, 1, 1 ],
+        [ 341, 69028, 7000, 6, 3, 1, 1 ],
+        [ 342, 70779, 18000, 4, 3, 2, 0 ],
+        [ 343, 38244, 9000, 6, 4, 2, 3 ],
+        [ 344, 67046, 6000, 5, 3, 2, 4 ],
+        [ 345, 64897, 16000, 5, 2, 2, 1 ],
+        [ 346, 46223, 14000, 7, 4, 2, 1 ],
+        [ 347, 36628, 19000, 6, 3, 0, 1 ],
+        [ 348, 17565, 5000, 6, 2, 0, 3 ],
+        [ 349, 77381, 18000, 4, 4, 2, 3 ],
+        [ 350, 11799, 11000, 7, 3, 2, 3 ],
+        [ 351, 81940, 11000, 5, 2, 0, 2 ],
+        [ 352, 66706, 12000, 7, 2, 0, 1 ],
+        [ 353, 87838, 15000, 5, 2, 0, 0 ],
+        [ 354, 94437, 9000, 5, 4, 1, 3 ],
+        [ 355, 33790, 9000, 7, 4, 0, 2 ],
+        [ 356, 44402, 10000, 5, 5, 1, 4 ],
+        [ 357, 29886, 16000, 6, 5, 1, 1 ],
+        [ 358, 66804, 7000, 4, 4, 2, 2 ],
+        [ 359, 47866, 9000, 5, 2, 2, 0 ],
+        [ 360, 61996, 8000, 4, 2, 0, 2 ],
+        [ 361, 15318, 14000, 6, 3, 0, 1 ],
+        [ 362, 89635, 18000, 6, 3, 1, 4 ],
+        [ 363, 71681, 20000, 5, 5, 2, 1 ],
+        [ 364, 71862, 6000, 5, 2, 0, 1 ],
+        [ 365, 96186, 13000, 6, 4, 2, 3 ],
+        [ 366, 22348, 13000, 7, 5, 0, 2 ],
+        [ 367, 36243, 17000, 7, 5, 0, 3 ],
+        [ 368, 88807, 8000, 4, 3, 2, 1 ],
+        [ 369, 82376, 20000, 4, 3, 0, 3 ],
+        [ 370, 98126, 19000, 6, 4, 1, 3 ],
+        [ 371, 80347, 11000, 5, 3, 2, 3 ],
+        [ 372, 17649, 6000, 5, 2, 2, 1 ],
+        [ 373, 62807, 17000, 6, 5, 1, 1 ],
+        [ 374, 92522, 6000, 4, 5, 0, 1 ],
+        [ 375, 57459, 18000, 6, 5, 0, 4 ],
+        [ 376, 44579, 16000, 6, 3, 1, 3 ],
+        [ 377, 45476, 13000, 5, 4, 1, 2 ],
+        [ 378, 61994, 19000, 5, 2, 0, 4 ],
+        [ 379, 11398, 12000, 6, 5, 2, 1 ],
+        [ 380, 24702, 6000, 7, 2, 0, 3 ],
+        [ 381, 27824, 13000, 7, 2, 0, 4 ],
+        [ 382, 45878, 19000, 4, 2, 0, 1 ],
+        [ 383, 72431, 6000, 6, 3, 2, 3 ],
+        [ 384, 19215, 18000, 5, 3, 1, 3 ],
+        [ 385, 23409, 8000, 4, 4, 0, 0 ],
+        [ 386, 16418, 8000, 7, 4, 2, 0 ],
+        [ 387, 85122, 18000, 5, 2, 2, 2 ],
+        [ 388, 55060, 8000, 7, 3, 0, 3 ],
+        [ 389, 55478, 12000, 5, 4, 2, 1 ],
+        [ 390, 65574, 11000, 4, 5, 0, 3 ],
+        [ 391, 31113, 11000, 4, 2, 0, 4 ],
+        [ 392, 96929, 13000, 4, 5, 0, 0 ],
+        [ 393, 78912, 6000, 4, 4, 0, 0 ],
+        [ 394, 68439, 20000, 4, 2, 0, 1 ],
+        [ 395, 62864, 13000, 7, 4, 0, 1 ],
+        [ 396, 31515, 5000, 4, 5, 0, 1 ],
+        [ 397, 77954, 73000, 6, 4, 2, 0 ],
+        [ 398, 88207, 49000, 5, 3, 2, 0 ],
+        [ 399, 96929, 67000, 6, 2, 2, 2 ],
+        [ 400, 78618, 61000, 7, 3, 0, 1 ],
+        [ 401, 31551, 75000, 7, 3, 2, 4 ],
+        [ 402, 75792, 48000, 4, 4, 0, 3 ],
+        [ 403, 29864, 56000, 4, 2, 0, 2 ],
+        [ 404, 45440, 72000, 4, 3, 2, 1 ],
+        [ 405, 97954, 70000, 7, 2, 0, 4 ],
+        [ 406, 90189, 51000, 7, 3, 0, 4 ],
+        [ 407, 55090, 73000, 6, 2, 0, 2 ],
+        [ 408, 17703, 50000, 5, 4, 0, 1 ],
+        [ 409, 33991, 49000, 5, 3, 0, 1 ],
+        [ 410, 88884, 69000, 7, 2, 2, 2 ],
+        [ 411, 45808, 40000, 5, 2, 2, 2 ],
+        [ 412, 50706, 44000, 4, 5, 0, 2 ],
+        [ 413, 92140, 31000, 6, 5, 2, 1 ],
+        [ 414, 88123, 37000, 7, 5, 0, 1 ],
+        [ 415, 53932, 65000, 4, 3, 0, 3 ],
+        [ 416, 65908, 48000, 7, 3, 2, 3 ],
+        [ 417, 25321, 46000, 5, 2, 2, 3 ],
+        [ 418, 87456, 61000, 5, 5, 1, 4 ],
+        [ 419, 48602, 74000, 5, 2, 0, 0 ],
+        [ 420, 97530, 58000, 6, 4, 0, 1 ],
+        [ 421, 48657, 39000, 5, 3, 2, 2 ],
+        [ 422, 76209, 70000, 5, 5, 0, 4 ],
+        [ 423, 49913, 56000, 6, 3, 1, 0 ],
+        [ 424, 53002, 52000, 5, 3, 0, 3 ],
+        [ 425, 61122, 33000, 5, 4, 2, 0 ],
+        [ 426, 82807, 47000, 6, 2, 0, 4 ],
+        [ 427, 93496, 71000, 7, 2, 0, 2 ],
+        [ 428, 64519, 50000, 7, 5, 2, 2 ],
+        [ 429, 31950, 56000, 4, 4, 0, 3 ],
+        [ 430, 23110, 41000, 4, 4, 1, 0 ],
+        [ 431, 96297, 71000, 6, 4, 0, 0 ],
+        [ 432, 28408, 72000, 6, 5, 2, 3 ],
+        [ 433, 37252, 59000, 6, 2, 1, 2 ],
+        [ 434, 41287, 64000, 6, 3, 2, 3 ],
+        [ 435, 52460, 45000, 4, 2, 1, 2 ],
+        [ 436, 26604, 74000, 4, 5, 0, 3 ],
+        [ 437, 58019, 73000, 4, 2, 1, 1 ],
+        [ 438, 87219, 54000, 6, 3, 0, 2 ],
+        [ 439, 36839, 31000, 7, 2, 1, 4 ],
+        [ 440, 12663, 66000, 7, 4, 0, 3 ],
+        [ 441, 48667, 50000, 5, 3, 0, 3 ],
+        [ 442, 42887, 27000, 6, 2, 1, 3 ],
+        [ 443, 14439, 51000, 4, 3, 0, 3 ],
+        [ 444, 60851, 65000, 6, 5, 2, 3 ],
+        [ 445, 41266, 67000, 6, 5, 2, 0 ],
+        [ 446, 37438, 43000, 7, 5, 0, 4 ],
+        [ 447, 65747, 70000, 5, 4, 0, 2 ],
+        [ 448, 81166, 61000, 5, 2, 2, 1 ],
+        [ 449, 20570, 31000, 4, 4, 2, 1 ],
+        [ 450, 14816, 36000, 4, 3, 2, 3 ],
+        [ 451, 11265, 51000, 7, 3, 2, 0 ],
+        [ 452, 24980, 36000, 4, 4, 2, 2 ],
+        [ 453, 37934, 50000, 5, 4, 2, 3 ],
+        [ 454, 70707, 74000, 4, 4, 0, 3 ],
+        [ 455, 84351, 25000, 4, 3, 0, 2 ],
+        [ 456, 89446, 47000, 6, 2, 0, 4 ],
+        [ 457, 17325, 41000, 6, 5, 2, 3 ],
+        [ 458, 64774, 57000, 5, 2, 0, 4 ],
+        [ 459, 53166, 67000, 7, 2, 1, 3 ],
+        [ 460, 45341, 74000, 7, 4, 2, 4 ],
+        [ 461, 94595, 26000, 6, 4, 2, 3 ],
+        [ 462, 55170, 38000, 4, 4, 2, 3 ],
+        [ 463, 92489, 75000, 4, 4, 0, 1 ],
+        [ 464, 92933, 38000, 4, 5, 1, 4 ],
+        [ 465, 36504, 52000, 4, 2, 1, 2 ],
+        [ 466, 40508, 48000, 5, 5, 0, 2 ],
+        [ 467, 15798, 70000, 6, 2, 0, 3 ],
+        [ 468, 70101, 36000, 4, 4, 2, 1 ],
+        [ 469, 77613, 36000, 5, 5, 0, 4 ],
+        [ 470, 84360, 66000, 6, 2, 1, 1 ],
+        [ 471, 48402, 37000, 5, 5, 1, 4 ],
+        [ 472, 46776, 48000, 6, 3, 2, 2 ],
+        [ 473, 67258, 35000, 6, 3, 1, 4 ],
+        [ 474, 44804, 26000, 6, 3, 1, 2 ],
+        [ 475, 29919, 38000, 4, 3, 1, 4 ],
+        [ 476, 65781, 45000, 5, 5, 2, 2 ],
+        [ 477, 12456, 70000, 6, 5, 0, 4 ],
+        [ 478, 62649, 51000, 7, 5, 2, 4 ],
+        [ 479, 74446, 34000, 6, 3, 2, 1 ],
+        [ 480, 36632, 47000, 7, 3, 2, 2 ],
+        [ 481, 76024, 47000, 6, 2, 0, 0 ],
+        [ 482, 75065, 30000, 7, 3, 1, 0 ],
+        [ 483, 51682, 74000, 4, 2, 0, 4 ],
+        [ 484, 18397, 30000, 5, 4, 1, 1 ],
+        [ 485, 29102, 28000, 5, 4, 1, 1 ],
+        [ 486, 56367, 58000, 7, 3, 2, 1 ],
+        [ 487, 95147, 64000, 4, 2, 2, 2 ],
+        [ 488, 44379, 39000, 7, 5, 2, 1 ],
+        [ 489, 76957, 44000, 6, 4, 0, 2 ],
+        [ 490, 42921, 50000, 7, 5, 2, 1 ],
+        [ 491, 23102, 65000, 4, 2, 0, 0 ],
+        [ 492, 61324, 63000, 4, 5, 0, 0 ],
+        [ 493, 49690, 50000, 6, 4, 2, 0 ],
+        [ 494, 20043, 35000, 6, 2, 1, 4 ],
+        [ 495, 44144, 29000, 4, 3, 0, 1 ],
+        [ 496, 53552, 56000, 7, 3, 0, 3 ],
+        [ 497, 62530, 49000, 5, 3, 2, 3 ],
+        [ 498, 41741, 52000, 4, 2, 1, 2 ],
+        [ 499, 22842, 31000, 4, 4, 1, 0 ],
+        [ 500, 65825, 68000, 6, 4, 2, 2 ],
+        [ 501, 77826, 41000, 5, 4, 0, 4 ],
+        [ 502, 61216, 38000, 6, 3, 1, 0 ],
+        [ 503, 83192, 54000, 6, 2, 2, 4 ],
+        [ 504, 82023, 70000, 6, 3, 0, 0 ],
+        [ 505, 73000, 34000, 6, 5, 1, 0 ],
+        [ 506, 64550, 68000, 5, 2, 0, 2 ],
+        [ 507, 90131, 26000, 6, 5, 2, 3 ],
+        [ 508, 17382, 42000, 6, 3, 2, 0 ],
+        [ 509, 27117, 59000, 7, 2, 0, 3 ],
+        [ 510, 94529, 30000, 4, 4, 2, 1 ],
+        [ 511, 21717, 33000, 6, 2, 2, 2 ],
+        [ 512, 81910, 49000, 6, 2, 0, 2 ],
+        [ 513, 76492, 62000, 6, 2, 1, 3 ],
+        [ 514, 43000, 40000, 5, 3, 1, 4 ],
+        [ 515, 48692, 30000, 5, 2, 2, 3 ],
+        [ 516, 27476, 37000, 4, 4, 2, 2 ],
+        [ 517, 15086, 32000, 7, 4, 0, 3 ],
+        [ 518, 43034, 62000, 4, 2, 2, 3 ],
+        [ 519, 99131, 36000, 7, 4, 0, 2 ],
+        [ 520, 13140, 57000, 7, 2, 0, 0 ],
+        [ 521, 99437, 39000, 6, 4, 0, 4 ],
+        [ 522, 91242, 70000, 4, 3, 2, 2 ],
+        [ 523, 39285, 36000, 7, 5, 0, 0 ],
+        [ 524, 63710, 69000, 6, 3, 0, 2 ],
+        [ 525, 90860, 59000, 7, 3, 2, 4 ],
+        [ 526, 35585, 71000, 5, 4, 1, 0 ],
+        [ 527, 58708, 29000, 4, 2, 2, 3 ],
+        [ 528, 57451, 37000, 5, 2, 1, 3 ],
+        [ 529, 69868, 34000, 4, 3, 0, 1 ],
+        [ 530, 43679, 34000, 6, 3, 2, 4 ],
+        [ 531, 30256, 38000, 4, 3, 0, 0 ],
+        [ 532, 26334, 32000, 4, 3, 2, 2 ],
+        [ 533, 47848, 48000, 4, 3, 2, 2 ],
+        [ 534, 17377, 36000, 6, 3, 0, 3 ],
+        [ 535, 39644, 56000, 6, 4, 0, 3 ],
+        [ 536, 29176, 28000, 4, 5, 1, 3 ],
+        [ 537, 55706, 48000, 4, 4, 1, 0 ],
+        [ 538, 51771, 68000, 7, 3, 1, 4 ],
+        [ 539, 83585, 74000, 7, 4, 1, 3 ],
+        [ 540, 51867, 70000, 4, 4, 1, 0 ],
+        [ 541, 68040, 45000, 7, 2, 0, 3 ],
+        [ 542, 50706, 60000, 7, 5, 2, 2 ],
+        [ 543, 75417, 47000, 5, 5, 1, 2 ],
+        [ 544, 34775, 60000, 5, 2, 1, 0 ],
+        [ 545, 85645, 54000, 6, 3, 1, 2 ],
+        [ 546, 83545, 28000, 7, 5, 0, 4 ],
+        [ 547, 44157, 68000, 7, 2, 1, 4 ],
+        [ 548, 38125, 26000, 4, 5, 2, 4 ],
+        [ 549, 75398, 56000, 4, 3, 0, 4 ],
+        [ 550, 90999, 39000, 7, 5, 2, 3 ],
+        [ 551, 70376, 59000, 7, 5, 2, 3 ],
+        [ 552, 33295, 37000, 7, 2, 1, 1 ],
+        [ 553, 80942, 65000, 7, 3, 2, 1 ],
+        [ 554, 26493, 41000, 7, 4, 1, 3 ],
+        [ 555, 97850, 33000, 5, 2, 2, 0 ],
+        [ 556, 43841, 52000, 4, 5, 0, 4 ],
+        [ 557, 79885, 60000, 4, 5, 0, 4 ],
+        [ 558, 59316, 62000, 7, 4, 1, 4 ],
+        [ 559, 83466, 40000, 6, 5, 1, 2 ],
+        [ 560, 81510, 41000, 7, 5, 2, 3 ],
+        [ 561, 35268, 46000, 6, 3, 1, 0 ],
+        [ 562, 11734, 29000, 7, 5, 0, 2 ],
+        [ 563, 88411, 56000, 7, 3, 0, 1 ],
+        [ 564, 96269, 69000, 5, 4, 1, 0 ],
+        [ 565, 87683, 36000, 7, 4, 0, 0 ],
+        [ 566, 26063, 69000, 6, 5, 0, 1 ],
+        [ 567, 42479, 38000, 6, 5, 0, 1 ],
+        [ 568, 58116, 29000, 7, 3, 1, 1 ],
+        [ 569, 67282, 58000, 6, 5, 1, 0 ],
+        [ 570, 84888, 72000, 6, 4, 1, 0 ],
+        [ 571, 75366, 64000, 4, 2, 1, 1 ],
+        [ 572, 14377, 36000, 7, 2, 0, 4 ],
+        [ 573, 59074, 71000, 7, 4, 0, 2 ],
+        [ 574, 96534, 66000, 7, 2, 2, 3 ],
+        [ 575, 31870, 70000, 4, 3, 2, 0 ],
+        [ 576, 24748, 73000, 5, 3, 0, 4 ],
+        [ 577, 68920, 30000, 6, 3, 1, 1 ],
+        [ 578, 67637, 44000, 5, 3, 0, 4 ],
+        [ 579, 60839, 39000, 7, 5, 0, 3 ],
+        [ 580, 59170, 65000, 4, 3, 0, 0 ],
+        [ 581, 90586, 52000, 4, 5, 2, 1 ],
+        [ 582, 56270, 26000, 6, 5, 1, 4 ],
+        [ 583, 87670, 68000, 6, 5, 1, 0 ],
+        [ 584, 47703, 52000, 6, 2, 0, 0 ],
+        [ 585, 35421, 34000, 6, 4, 1, 3 ],
+        [ 586, 58511, 39000, 7, 4, 0, 4 ],
+        [ 587, 76398, 31000, 7, 3, 0, 2 ],
+        [ 588, 93310, 70000, 4, 3, 0, 4 ],
+        [ 589, 36836, 55000, 4, 3, 1, 0 ],
+        [ 590, 46373, 29000, 4, 5, 0, 2 ],
+        [ 591, 94700, 36000, 6, 2, 2, 3 ],
+        [ 592, 67860, 68000, 5, 2, 1, 4 ],
+        [ 593, 99473, 54000, 5, 4, 2, 1 ],
+        [ 594, 68862, 66000, 4, 5, 1, 1 ],
+        [ 595, 93381, 60000, 4, 2, 1, 4 ],
+        [ 596, 46548, 41000, 7, 4, 2, 2 ],
+        [ 597, 74083, 42000, 6, 4, 2, 0 ],
+        [ 598, 48660, 38000, 7, 5, 2, 1 ],
+        [ 599, 13720, 64000, 5, 4, 1, 2 ],
+        [ 600, 72339, 57000, 6, 2, 2, 0 ],
+        [ 601, 99284, 68000, 7, 5, 0, 0 ],
+        [ 602, 47198, 33000, 5, 4, 0, 2 ],
+        [ 603, 67415, 37000, 7, 4, 0, 1 ],
+        [ 604, 44403, 60000, 6, 3, 2, 3 ],
+        [ 605, 58276, 27000, 7, 3, 0, 2 ],
+        [ 606, 85234, 36000, 5, 2, 2, 3 ],
+        [ 607, 31948, 63000, 5, 3, 1, 3 ],
+        [ 608, 90191, 34000, 6, 3, 1, 0 ],
+        [ 609, 49341, 47000, 4, 4, 1, 0 ],
+        [ 610, 11562, 38000, 4, 3, 2, 0 ],
+        [ 611, 16253, 39000, 7, 2, 1, 0 ],
+        [ 612, 80623, 46000, 7, 4, 1, 3 ],
+        [ 613, 94391, 157000, 9, 1, 14, 1 ],
+        [ 614, 50598, 94000, 9, 1, 11, 0 ],
+        [ 615, 40019, 163000, 8, 1, 7, 1 ],
+        [ 616, 77910, 131000, 9, 1, 10, 1 ],
+        [ 617, 89832, 96000, 10, 1, 11, 2 ],
+        [ 618, 98216, 136000, 8, 0, 13, 0 ],
+        [ 619, 54495, 121000, 7, 0, 13, 2 ],
+        [ 620, 47650, 158000, 7, 0, 13, 0 ],
+        [ 621, 32107, 108000, 10, 0, 15, 1 ],
+        [ 622, 84192, 166000, 9, 1, 12, 2 ],
+        [ 623, 53916, 176000, 10, 1, 15, 2 ],
+        [ 624, 32584, 166000, 10, 0, 7, 0 ],
+        [ 625, 97285, 178000, 7, 0, 11, 0 ],
+        [ 626, 20337, 91000, 8, 1, 6, 1 ],
+        [ 627, 15585, 156000, 9, 1, 10, 2 ],
+        [ 628, 20620, 146000, 10, 0, 12, 1 ],
+        [ 629, 75009, 84000, 9, 1, 15, 0 ],
+        [ 630, 76203, 155000, 8, 0, 7, 2 ],
+        [ 631, 33837, 200000, 10, 0, 13, 0 ],
+        [ 632, 14916, 195000, 8, 0, 15, 0 ],
+        [ 633, 97935, 187000, 7, 1, 7, 0 ],
+        [ 634, 16180, 163000, 7, 1, 10, 1 ],
+        [ 635, 49493, 106000, 8, 0, 8, 1 ],
+        [ 636, 70974, 114000, 10, 1, 7, 2 ],
+        [ 637, 40217, 126000, 10, 1, 8, 0 ],
+        [ 638, 88442, 173000, 9, 1, 11, 0 ],
+        [ 639, 17538, 153000, 8, 1, 7, 1 ],
+        [ 640, 90839, 184000, 7, 1, 15, 2 ],
+        [ 641, 99843, 123000, 8, 1, 15, 2 ],
+        [ 642, 27212, 144000, 10, 0, 10, 2 ],
+        [ 643, 91575, 97000, 10, 1, 9, 2 ],
+        [ 644, 60190, 98000, 9, 0, 8, 2 ],
+        [ 645, 18519, 127000, 10, 1, 15, 1 ],
+        [ 646, 48762, 171000, 10, 0, 15, 0 ],
+        [ 647, 58392, 186000, 7, 0, 8, 1 ],
+        [ 648, 79953, 183000, 9, 0, 9, 2 ],
+        [ 649, 13315, 111000, 8, 1, 7, 0 ],
+        [ 650, 30570, 112000, 10, 1, 8, 1 ],
+        [ 651, 78996, 195000, 10, 1, 12, 2 ],
+        [ 652, 78404, 132000, 9, 1, 12, 2 ],
+        [ 653, 28525, 156000, 8, 1, 8, 0 ],
+        [ 654, 51826, 95000, 10, 0, 15, 1 ],
+        [ 655, 65750, 172000, 10, 1, 9, 1 ],
+        [ 656, 51108, 99000, 10, 1, 10, 0 ],
+        [ 657, 60732, 84000, 10, 1, 13, 2 ],
+        [ 658, 53834, 145000, 8, 1, 9, 1 ],
+        [ 659, 80655, 172000, 10, 1, 15, 0 ],
+        [ 660, 80150, 167000, 9, 0, 12, 2 ]]
+}
+
+data = credit_card_dataset['data']
+col_names = credit_card_dataset['column_names']
+
+
+def make_csv_content(cols, num_rows=50):
+    col_indices = [col_names.index(col) for col in cols]
+    all_data = [[row[i] for i in col_indices] for row in data]
+
+    selected_data = random.sample(all_data, 50)
+
+    csv_lines = [','.join(cols)] # First row containing column names
+    csv_lines += [','.join(map(str, row)) for row in selected_data]
+
+    return '\n'.join(csv_lines)</global><language type="string">r</language><levels type="list"><li type="dict">
+<explanation type="string">`group_by(${meaningful.feature})` groups a dataframe based on the unique values of `${meaningful.feature}`. `summarize(n=n())` counts the number of instances in each group, and assigns the resulting counts to a column labeled `n`.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import the tidyverse
+suppressPackageStartupMessages(library(dplyr))
+
+# Load the dataset
+df &lt;- read.csv("credit_card.csv")
+
+# Create a frequency table for ${meaningful.feature}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">freqTable &lt;- df |&gt; 
+    group_by(${meaningful.feature}) |&gt; 
+    summarize(n=n())</solution><template type="string"># Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Display frequency table
+freqTable</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Untitled.R</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.csv_content}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">credit_card.csv</name></li></files><prompt type="string">This dataset contains information on credit card customers, such as the customer's average credit limit, number of credit cards, number of physical visits to the bank, and number of visits to the bank's website.
+
+- Use `dplyr` functions to create a frequency table for `${meaningful.feature}`. Label the frequencies as `n`.
+- Assign the table to `freqTable`.
+
+The code provided contains all imports, loads the dataset, and prints the table.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {
+        'csv_content': make_csv_content(features)
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {
+        'feature': pick_from(features)    
+    }</meaningful><setup type="string">features = ['Total_Credit_Cards', 'Total_visits_bank', 'Total_visits_online', 'Total_calls_made']</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">`group_by(${meaningful.feature1}, ${meaningful.feature2})` groups a dataframe based on the unique combinations of `${meaningful.feature1}` and `${meaningful.feature2}`. 
+
+`summarize(n=n())` counts the number of instances in each combination, and assigns the resulting counts to a column labeled `n`.
+
+
+After applying `summarize(n=n())`, three columns exist: `${meaningful.feature1}`, `${meaningful.feature2}`, and n. Using `spread(${meaningful.feature2}, n)` rearranges the table to move `${meaningful.feature2}` along the columns.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string"># Import the tidyverse
+suppressPackageStartupMessages(library(tidyverse))
+
+# Load the dataset
+df &lt;- read.csv("credit_card.csv")
+
+# Suppresses message "summarize() has grouped output by '${meaningful.feature1}'"
+options(dplyr.summarise.inform = FALSE)
+
+# Create a contingency table for ${meaningful.feature1} and ${meaningful.feature2}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">contingencyTable &lt;- df |&gt; 
+    group_by(${meaningful.feature1}, ${meaningful.feature2}) |&gt; 
+    summarize(n=n()) |&gt;
+    spread(${meaningful.feature2}, n)</solution><template type="string"># Your code goes here</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+
+# Display contingency table
+contingencyTable</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Untitled.R</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.csv_content}</template></li></content><hide type="boolean">false</hide><input type="boolean">true</input><main type="boolean">false</main><name type="string">credit_card.csv</name></li></files><prompt type="string">This dataset contains information on credit card customers, such as the customer's average credit limit, number of credit cards, number of physical visits to the bank, and number of visits to the bank's website.
+
+- Use `dplyr` functions to calculate a contingency table with `${meaningful.feature1}` on the rows and `${meaningful.feature2}` on the columns. Label the counts as `n`.
+- Assign the table to `contingencyTable`.
+
+
+The code provided contains all imports, loads the dataset, and prints the resulting table.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    columns = ['Customer Key'] + features
+
+    return {
+        'csv_content': make_csv_content(columns)
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    feature1, feature2 = random.sample(features, 2)
+    return {
+        'feature1': feature1,
+        'feature2': feature2
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+
+
+</zyVersion>
+</zySection>

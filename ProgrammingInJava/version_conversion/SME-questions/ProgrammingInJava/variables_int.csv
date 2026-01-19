@@ -1,0 +1,40 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhat is y after executing the statements?\n```text\nx = 5;
+y = x + 1;
+y = y * 2;\n```",12,5,6,8,12,,,,,,
+"\nWhat is y after executing the statements?\n```text\nx = 4;
+y = x + 1;
+x = 3;
+y = y * 2;\n```",10,6,8,10,12,,,,,,
+\nWhat does the compiler do upon reaching this variable declaration?\n```text\nint x;\n```,Allocates a memory location for x,Allocates a memory location for x,Initializes x with the value -1,Converts variable x from a double to an integer,Increments x's value by 1,,,,,,
+\nWhat does the compiler do upon reaching this variable declaration?\n```text\nint x;\n```,Allocates a memory location for x,Allocates a memory location for x,Initializes x with the value -1,Converts variable x from a double to an integer,Increments x's value by 1,,,,,,
+Which is true?,Variables must be declared before being assigned a value or read,A programmer declaring a variable just needs to provide the name,The compiler designates a new memory location for a variable the first time a value is assigned,Variables must be declared before being assigned a value or read,"Every time a new value is assigned to a variable, the compiler designates a new memory location",,,,,,
+Which is correct?,"\n```c\nint main(void) {
+   int pkgHeight;
+   int pkgLength;
+   int pkgWidth;
+   int pkgVol;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}\n```","\n```c\nint main(void) {
+   pkgHeight;
+   pkgLength;
+   pkgWidth;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}\n```","\n```c\nint main(void) {
+   int pkgHeight = 2;
+   int pkgLength = 3;
+   int pkgWidth = 5;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}\n```","\n```c\nint main(void) {
+   pkgHeight = 2;
+   pkgLength = 3;
+   pkgWidth = 5;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}\n```","\n```c\nint main(void) {
+   int pkgHeight;
+   int pkgLength;
+   int pkgWidth;
+   int pkgVol;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}\n```",,,,,,
+Which is correct?,\n`int changeAmt = -321;`,\n`int area = 3.2;`,\n`500 = int distance;`,\n`int changeAmt = -321;`,\n`212 = length;`,,,,,,

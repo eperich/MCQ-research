@@ -1,0 +1,6 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+Which statement assigns the string variable airport_code with the value JFK?,"```python\nairport_code = ""JFK""\n```","```python\nairport_code = ""JFK""\n```",```python\nairport_code = JFK\n```,"```python\n""JFK"" = airport_code\n```","```python\nJFK = ""airport_code""\n```",,,,,,
+"\nWhat is displayed when the following code is executed?\n```python\nempty_string = """"
+print(len(empty_string))\n```",0,"""empty""",1,0,"""0""",,,,,,
+"If text_line = ""one fish two fish"", what is the value of text_line[6]?","""s""",""" ""","""h""","""i""","""s""",,,,,,
+"Which of the following statements produces an error? Assume string_1 = ""abc"" and string_2 = ""123"".","```python\nstring_1[1] = ""B""\n```",```python\nstring_2 = string_1\n```,"```python\nstring_1 = string_2 + ""456""\n```",```python\nprint(string_1 + string_2)\n```,"```python\nstring_1[1] = ""B""\n```",,,,,,

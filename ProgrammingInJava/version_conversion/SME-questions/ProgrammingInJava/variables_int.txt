@@ -1,0 +1,138 @@
+<question xsi:type='MultipleChoiceQuestion' guid='ce1b8f7a-2c59-3870-3723-49512dbcc32a' subjects='cpp, java'>
+<instructions>
+<p>What is y after executing the statements?</p>
+<codeBlock language='text'>
+x = 5;
+y = x + 1;
+y = y * 2;</codeBlock>
+</instructions>
+
+<choices>
+<choice>5 </choice>
+<choice>6 </choice>
+<choice>8 </choice>
+<choice correct='true'>12 </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='436b2b18-03b9-abd4-a94e-0688db627d8d' subjects='cpp, java'>
+<instructions>
+<p>What is y after executing the statements?</p>
+<codeBlock language='text'>
+x = 4;
+y = x + 1;
+x = 3;
+y = y * 2;</codeBlock>
+</instructions>
+
+<choices>
+<choice>6 </choice>
+<choice>8 </choice>
+<choice correct='true'>10 </choice>
+<choice>12 </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='a6380d35-96de-429a-302b-3a0cb2298262' subjects='cpp, java'>
+<instructions>
+<p>What does the compiler do upon reaching this variable declaration? </p>
+<codeBlock language='text'>
+int x;</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>Allocates a memory location for x </choice>
+<choice>Initializes x with the value -1 </choice>
+<choice>Converts variable x from a double to an integer </choice>
+<choice>Increments x's value by 1 </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='fe12fc59-15db-9028-a7c7-72fb3960335e' subjects='c'>
+<instructions>
+<p>What does the compiler do upon reaching this variable declaration?</p> 
+<codeBlock language='text'>
+int x;
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'> Allocates a memory location for x</choice>
+<choice> Initializes x with the value -1</choice>
+<choice> Converts variable x from a double to an integer</choice>
+<choice> Increments x's value by 1</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='600a935b-ca59-dfc2-c6b5-0899c17d5222' subjects='c'>
+<instructions>
+Which is true?
+</instructions>
+
+<choices>
+<choice> A programmer declaring a variable just needs to provide the name </choice>
+<choice> The compiler designates a new memory location for a variable the first time a value is assigned</choice>
+<choice correct='true'> Variables must be declared before being assigned a value or read</choice>
+<choice> Every time a new value is assigned to a variable, the compiler designates a new memory location</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='c32ba96a-47c3-3c75-9b98-571d42e68b00' subjects='c'>
+<instructions>
+Which is correct?
+</instructions>
+
+<choices>
+<choice> <codeBlock language='c'>
+int main(void) {
+   pkgHeight;
+   pkgLength;
+   pkgWidth;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}
+</codeBlock></choice>
+<choice> <codeBlock language='c'>
+int main(void) {
+   int pkgHeight = 2;
+   int pkgLength = 3;
+   int pkgWidth = 5;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}
+</codeBlock></choice>
+<choice> <codeBlock language='c'>
+int main(void) {
+   pkgHeight = 2;
+   pkgLength = 3;
+   pkgWidth = 5;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}
+</codeBlock></choice>
+<choice correct='true'> <codeBlock language='c'>
+int main(void) {
+   int pkgHeight;
+   int pkgLength;
+   int pkgWidth;
+   int pkgVol;
+   pkgVol = pkgHeight * pkgLength * pkgWidth;
+}
+</codeBlock></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='78a1c3c8-11b7-2299-2158-ca3144847865' subjects='c'>
+<instructions>
+Which is correct?
+</instructions>
+
+<choices>
+<choice> <code>int area = 3.2;</code></choice>
+<choice> <code>500 = int distance;</code></choice>
+<choice correct='true'> <code>int changeAmt = -321;</code></choice>
+<choice> <code>212 = length;</code></choice>
+</choices>
+</question>

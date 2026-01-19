@@ -1,0 +1,42 @@
+<question xsi:type='MultipleChoiceQuestion' guid='622f8760-d4b1-4841-82d6-ce3f8b668c45'>
+<instructions>
+What type of professional typically develops websites?
+</instructions>
+<choices>
+<choice correct='true'>Computer scientist</choice>
+<choice>Statistician</choice>
+
+<choice>Data scientist</choice>
+<choice>All three professions commonly develop websites</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='2c299463-7b38-43ed-8211-19a0a3fe9d64'>
+<instructions>
+Which two programming languages had the most influence in opening the field of data science?
+</instructions>
+
+<choices>
+<choice>C++ and JavaScript</choice>
+<choice>CSS and NoSQL</choice>
+<choice correct='true'>Python and R</choice>
+<choice>C# and SQL</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='f62a465f-fde6-42de-9ced-44102c822145'>
+<instructions>
+Which technique in data science can be used to program chatbots that can simulate human conversation?
+</instructions>
+
+<choices>
+<choice>Statistics</choice>
+<choice>Machine learning</choice>
+<choice correct='true'>Artificial intelligence</choice>
+<choice>Computer science</choice>
+</choices>
+</question>

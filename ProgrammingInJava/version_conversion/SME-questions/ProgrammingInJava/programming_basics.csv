@@ -1,0 +1,6 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nWhich of the following statements is false?,Each statement ends with a period.,Program execution begins at main().,A program executes one statement at a time.,Each statement ends with a period.,An output statement outputs a value to the screen.,,,,,,
+\nChoose the statement(s) that generate(s) this output:\nI wish\nyou were here,"```java\nSystem.out.println(""I wish"");
+System.out.println(""you were here"");\n```","```java\nSystem.out.println(""I wish"" + ""you were here"");\n```","```java\nSystem.out.println(""I wish"");
+System.out.println(""you were here"");\n```","```java\nSystem.out.print(""I wish"");
+System.out.println(""you were here"");\n```","```java\nSystem.out.print(""I wish"" + ln + ""you were here"");\n```",,,,,,

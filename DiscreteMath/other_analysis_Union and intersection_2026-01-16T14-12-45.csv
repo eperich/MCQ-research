@@ -1,0 +1,704 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,9,1,4
+2,9,0,3
+3,9,0,3
+4,9,0,4
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,3,10,81
+1,3,2,10,81
+1,4,2,10,81
+2,3,3,7,81
+2,4,2,7,81
+3,4,3,7,81
+
+Summary
+Total Comparisons,630
+Duplicates (≥85%),16
+Similar (70-85%),65
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q2,The union \(A \cup B\) includes _____.,2,2,0.965,duplicate
+q2,The union \(A \cup B\) includes _____.,2,2,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.961,duplicate
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.957,duplicate
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.953,duplicate
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.952,duplicate
+q2,The union \(A \cup B\) includes _____.,2,2,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.929,duplicate
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.923,duplicate
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.914,duplicate
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.901,duplicate
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.897,duplicate
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.883,duplicate
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.878,duplicate
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,0.861,duplicate
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.859,duplicate
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.853,duplicate
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q2,The union \(A \cup B\) includes _____.,2,2,0.851,duplicate
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.848,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.833,similar
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.833,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q3,The union \(A \cup B\) includes elements that are _____.,1,3,0.83,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.829,similar
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.829,similar
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.829,similar
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.825,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,0.82,similar
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.818,similar
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.818,similar
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.816,similar
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.814,similar
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.814,similar
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.812,similar
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.81,similar
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.807,similar
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.807,similar
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.803,similar
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q2,The union \(A \cup B\) includes _____.,2,2,0.801,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q2,The union \(A \cup B\) includes _____.,2,2,0.799,similar
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.799,similar
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.796,similar
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.791,similar
+q2,The union \(A \cup B\) includes _____.,2,2,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.788,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.787,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.786,similar
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.785,similar
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.778,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.772,similar
+q2,The union \(A \cup B\) includes _____.,2,2,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.772,similar
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.772,similar
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.771,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.767,similar
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.766,similar
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.764,similar
+q2,The union \(A \cup B\) includes _____.,2,2,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.763,similar
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.76,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.759,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.753,similar
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.75,similar
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.746,similar
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.746,similar
+q2,The union \(A \cup B\) includes _____.,2,2,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.74,similar
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.737,similar
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.736,similar
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.735,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.731,similar
+q2,The union \(A \cup B\) includes _____.,2,2,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.731,similar
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.727,similar
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,0.726,similar
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.725,similar
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.723,similar
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.72,similar
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.719,similar
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.719,similar
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.718,similar
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.709,similar
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.709,similar
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,0.702,similar
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.702,similar
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.702,similar
+q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.702,similar
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.701,similar
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.701,similar
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.7,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.698,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.696,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,0.696,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.696,low
+q2,The union \(A \cup B\) includes _____.,2,2,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.691,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.689,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.687,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.686,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.686,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.686,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.682,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.682,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.681,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.679,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.678,low
+q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.678,low
+q2,The union \(A \cup B\) includes _____.,2,2,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.677,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.676,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.676,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.674,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,0.673,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.672,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.671,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.669,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.668,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.667,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q2,The union \(A \cup B\) includes _____.,2,2,0.665,low
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.665,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q2,The union \(A \cup B\) includes _____.,2,2,0.664,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.664,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.663,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,0.662,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.662,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.662,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.661,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.661,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.66,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.659,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.657,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.657,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.654,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.654,low
+q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.654,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.653,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.653,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.652,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.652,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.651,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.651,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.65,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.649,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.649,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.649,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.648,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.647,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.646,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.646,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.645,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.644,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.643,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.642,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.641,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.641,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.641,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.641,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.64,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.64,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.639,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.636,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.634,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.633,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.632,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,0.632,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.632,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.632,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.631,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.631,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.63,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.629,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.628,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.628,low
+q2,The union \(A \cup B\) includes _____.,2,2,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.628,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,0.626,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.625,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.625,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.624,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.624,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.624,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.624,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.623,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.623,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.623,low
+q2,The union \(A \cup B\) includes _____.,2,2,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.623,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.622,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.621,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.621,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.621,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.62,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.619,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.618,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.615,low
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.615,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,0.614,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,0.614,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.614,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.613,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.613,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.612,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.611,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.611,low
+q2,The union \(A \cup B\) includes _____.,2,2,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.611,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.61,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.61,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.61,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.609,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.609,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.609,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.609,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.608,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.607,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.607,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.607,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.605,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.605,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.604,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.604,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.604,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q2,The union \(A \cup B\) includes _____.,2,2,0.603,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.602,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.601,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.601,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.601,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,0.6,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.6,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q3,The union \(A \cup B\) includes elements that are _____.,1,3,0.599,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.599,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.599,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q2,The union \(A \cup B\) includes _____.,2,2,0.598,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.598,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.598,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.598,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.598,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.597,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.596,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.595,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.594,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.593,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.592,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.592,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.591,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,0.59,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.59,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.59,low
+q2,The union \(A \cup B\) includes _____.,2,2,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.589,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,0.588,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.588,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q2,The union \(A \cup B\) includes _____.,2,2,0.588,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.588,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.587,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.587,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.586,low
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.586,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.585,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.584,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,0.584,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.584,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.583,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.583,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.583,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.583,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.583,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.582,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.581,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.58,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.579,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.578,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.578,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.577,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.576,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.575,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.574,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.574,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.574,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.574,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.573,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.573,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.573,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.573,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.572,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.572,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,0.572,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.572,low
+q2,The union \(A \cup B\) includes _____.,2,2,q9,Which statement best describes the difference between union and intersection?,2,9,0.572,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.572,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.57,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.57,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.569,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.569,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.568,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.568,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.568,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.567,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.567,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.566,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.566,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.566,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.565,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q2,The union \(A \cup B\) includes _____.,2,2,0.565,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.565,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.565,low
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.564,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.563,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.563,low
+q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.563,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.562,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.561,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.56,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.56,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.56,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.559,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.559,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q9,Which statement best describes the difference between union and intersection?,2,9,0.558,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.558,low
+q2,The union \(A \cup B\) includes _____.,2,2,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.558,low
+q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.557,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.555,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.554,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.554,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.553,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.553,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.553,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.552,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.551,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,0.55,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.55,low
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.55,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.549,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.549,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q9,Which statement best describes the difference between union and intersection?,2,9,0.548,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.548,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.548,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.546,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.546,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.546,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.546,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.546,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.546,low
+q2,The union \(A \cup B\) includes _____.,2,2,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.545,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.545,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,0.544,low
+q2,The union \(A \cup B\) includes _____.,2,2,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.544,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.544,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.544,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.543,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.541,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.541,low
+q2,The union \(A \cup B\) includes _____.,2,2,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.54,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.539,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.539,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.537,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,0.537,low
+q2,The union \(A \cup B\) includes _____.,2,2,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.537,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.537,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.536,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.536,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.536,low
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.536,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.534,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.533,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.533,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.533,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.532,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.532,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.531,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.531,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.531,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.531,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.531,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.529,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.529,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.528,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.528,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.528,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.527,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.527,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.526,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.526,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.525,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.525,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.525,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.524,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.523,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.523,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.523,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.522,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.522,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.522,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.521,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.521,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q9,Which statement best describes the difference between union and intersection?,2,9,0.52,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.52,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.52,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.52,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.519,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.518,low
+q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.518,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.517,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.517,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.517,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.517,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.516,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.516,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.515,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.514,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.512,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.51,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q9,Which statement best describes the difference between union and intersection?,2,9,0.509,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.508,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.507,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.507,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.507,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.506,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.505,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.505,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.505,low
+q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.505,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q9,Which statement best describes the difference between union and intersection?,2,9,0.503,low
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.503,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.502,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.502,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.502,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.502,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.5,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.499,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.499,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.499,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.498,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.498,low
+q2,The union \(A \cup B\) includes _____.,2,2,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.497,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.497,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.496,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.496,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.495,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.495,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.495,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q9,Which statement best describes the difference between union and intersection?,2,9,0.494,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,0.494,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.494,low
+q2,The union \(A \cup B\) includes _____.,2,2,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.493,low
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.493,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.492,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.492,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.492,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.492,low
+q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.491,low
+q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.491,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.49,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.49,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.49,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.489,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q1,The set \(A \cap B\) contains elements that are in _____.,2,1,0.488,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.488,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,0.488,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.487,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.487,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.486,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.486,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.486,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.485,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.484,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.484,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.481,low
+q2,The union \(A \cup B\) includes _____.,2,2,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.481,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.48,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q9,Which statement best describes the difference between union and intersection?,2,9,0.48,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.48,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.48,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.479,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.479,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.478,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.478,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.478,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.478,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.476,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.476,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.476,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.475,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q9,Which statement best describes the difference between union and intersection?,2,9,0.475,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,0.474,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.474,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.473,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.473,low
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.473,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.472,low
+q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.472,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.471,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.471,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.47,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.47,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.47,low
+q2,The union \(A \cup B\) includes _____.,2,2,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.47,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.469,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,0.469,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.468,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.468,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.468,low
+q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.468,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.467,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.467,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q8,The union \(A \cup B\) of finite sets is always _____.,2,8,0.467,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.467,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.466,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.466,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.465,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.464,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.464,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.463,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.462,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.46,low
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.46,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,0.459,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.459,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.459,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.458,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,0.457,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.454,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.454,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,0.453,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.452,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.452,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.45,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.449,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,0.448,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q9,Which statement best describes the difference between union and intersection?,2,9,0.448,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.448,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.447,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.447,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.446,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.446,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.446,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.445,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.444,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.444,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.443,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.443,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,0.441,low
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,7,q9,Which statement best describes the difference between union and intersection?,2,9,0.441,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q9,Which statement best describes the difference between union and intersection?,2,9,0.44,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.44,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.44,low
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.44,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.439,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.438,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.438,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.437,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.437,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.437,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.437,low
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.437,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.435,low
+q8,The union \(A \cup B\) of finite sets is always _____.,2,8,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.434,low
+q2,The union \(A \cup B\) includes _____.,2,2,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.432,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.431,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.431,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,0.431,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.43,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.43,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.429,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.429,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.429,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.427,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.427,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.427,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.427,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.423,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.423,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.423,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.421,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.42,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.42,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.42,low
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,1,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.42,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.418,low
+q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.413,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,6,0.412,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.41,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,0.409,low
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.409,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.408,low
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,6,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.405,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.403,low
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.402,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.401,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,0.401,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.4,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.397,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.397,low
+q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.396,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,6,0.394,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.394,low
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,5,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.393,low
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,5,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.392,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.389,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.389,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.388,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.387,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.387,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.386,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.38,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.379,low
+q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.379,low
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,1,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.378,low
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,7,q9,Which statement best describes the difference between union and intersection?,2,9,0.377,low
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,1,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.376,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,7,0.375,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,4,0.371,low
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,q9,The intersection \(A \cap (B \cup C)\) means:,4,9,0.371,low
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,5,q9,Which statement best describes the difference between union and intersection?,2,9,0.37,low
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,4,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.369,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.368,low
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,6,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.367,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.367,low
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.363,low
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,5,0.363,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,0.361,low
+q1,The set \(A \cap B\) contains elements that are in _____.,2,1,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.358,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q9,Which statement best describes the difference between union and intersection?,2,9,0.355,low
+q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.355,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.349,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.349,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.337,low
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,4,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.331,low
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,4,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.325,low
+q3,The union \(A \cup B\) includes elements that are _____.,1,3,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.323,low
+q2,The union \(A \cup B\) includes _____.,2,2,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.323,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,7,0.32,low
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,2,q9,Which statement best describes the difference between union and intersection?,2,9,0.319,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.317,low
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,2,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.317,low
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,2,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.315,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,0.311,low
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,8,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.309,low
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,q9,A Venn diagram shading the overlap of two sets represents the _____.,3,9,0.306,low
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,8,0.304,low
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,8,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.301,low
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,9,q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,3,0.253,low
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,3,q9,Which statement best describes the difference between union and intersection?,2,9,0.251,low
+q9,Which statement best describes the difference between union and intersection?,2,9,q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,3,0.187,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Perform the intersection and union operations using appropriate notation and terminology  
+Perform a combination of set operations involving unions and intersections  
+Apply set intersection and union operations to both finite and infinite sets  
+Find and interpret the union and intersection of a sequence of sets using notation  
+Use Venn diagrams to represent and analyze set operations and their combinations"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,The intersection \(A \cap B\) contains elements that are _____.,1,yes,"This question assesses understanding of the intersection operation using appropriate terminology, aligning with the first learning objective."
+q2,"If \(A = \{2,4,6\}\) and \(B = \{3,6,9\}\), then \(A \cap B = \{ \; \; \; \; \; \}\).",1,yes,"This question requires performing an intersection operation on finite sets, addressing the second and third learning objectives."
+q3,The union \(A \cup B\) includes elements that are _____.,1,yes,"This question tests knowledge of the union operation and its terminology, matching the first learning objective."
+q4,"For sets \(A\) and \(B\), what does \(A \cup B\) represent?",1,yes,"This question evaluates understanding of the union operation and its meaning, related to the first learning objective."
+q5,The set \( \bigcap_{i=1}^n A_i \) denotes the intersection of _____.,1,yes,"This question assesses interpretation of intersection notation over a sequence of sets, aligning with the fourth learning objective."
+q6,Which is true about \(A \cup (B \cap C)\) compared to \((A \cup B) \cap C\)?,1,yes,"This question involves comparing combined set operations with unions and intersections, addressing the second learning objective."
+q7,"If \(A = \{1,2,3\}\), \(B = \{3,4,5\}\), and \(C = \{2,3,6\}\), what is \(A \cup (B \cap C)\)?",1,yes,"This question requires performing a combination of union and intersection operations on finite sets, matching the second and third learning objectives."
+q8,The associative law for union states that \(A \cup B \cup C\) means:,1,yes,"This question tests understanding of the associative law for union, which relates to notation and terminology in set operations, aligning with the first learning objective."
+q9,"In a Venn diagram, the shaded area for \(A \cap B\) is the region where:",1,yes,"This question assesses the use of Venn diagrams to represent the intersection of sets, directly addressing the fifth learning objective."
+q1,The set \(A \cap B\) contains elements that are in _____.,2,yes,"This question evaluates understanding of the intersection operation and its terminology, consistent with the first learning objective."
+q2,The union \(A \cup B\) includes _____.,2,yes,"This question tests knowledge of the union operation and its terminology, related to the first learning objective."
+q3,"If \(A\) is all multiples of 2, and \(B\) all multiples of 3, \(A \cap B\) is the set of multiples of _____.",2,yes,"This question applies intersection operations to infinite sets (multiples), addressing the third learning objective."
+q4,The associative law for union means \(A \cup (B \cup C)\) equals _____.,2,yes,"This question assesses understanding of the associative law for union notation, aligning with the first learning objective."
+q5,The expression \(\bigcap_{i=1}^n A_i\) means the set of elements that are in _____.,2,yes,"This question evaluates interpretation of intersection notation over a sequence of sets, matching the fourth learning objective."
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____.,2,yes,"This question assesses understanding of union notation over a sequence of sets, related to the fourth learning objective."
+q7,"Consider sets \(A = \{1,2,4\}\), \(B = \{2,4,7\}\), and \(C = \{2,3,5\}\). The set \(A \cup (B \cap C)\) contains which element(s)?",2,yes,"This question requires performing combined union and intersection operations on finite sets, addressing the second and third learning objectives."
+q8,The union \(A \cup B\) of finite sets is always _____.,2,yes,"This question applies union operation properties to finite sets, aligning with the third learning objective."
+q9,Which statement best describes the difference between union and intersection?,2,yes,"This question tests understanding and interpretation of union and intersection operations, consistent with the first and fifth learning objectives."
+q1,The intersection \(A \cap B\) consists of elements that are in _____.,3,yes,"This question assesses understanding of the intersection operation and its terminology, matching the first learning objective."
+q2,The union \(A \cup B\) contains all elements that are in _____.,3,yes,"This question evaluates knowledge of the union operation and its terminology, related to the first learning objective."
+q3,"If \(A\) = multiples of 2 and \(B\) = multiples of 3, then \(A \cap B\) is multiples of _____.",3,yes,"This question applies intersection operations to infinite sets, addressing the third learning objective."
+q4,The expression \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because _____.,3,yes,"This question involves understanding how combined union and intersection operations differ, aligning with the second learning objective."
+q5,"The notation \(\bigcap_{i=1}^n A_i\) means the _____ of sets \(A_1, A_2, \ldots, A_n\).",3,yes,"This question tests knowledge of intersection notation for sequences of sets, matching the fourth learning objective."
+q6,The union \(\bigcup_{i=1}^n A_i\) contains elements that are in _____ of the sets \(A_i\).,3,yes,"This question assesses understanding of union notation for sequences of sets, related to the fourth learning objective."
+q7,"The set \(C \cup D\), where \(C\) is evens and \(D\) is odds, equals _____.",3,yes,"This question applies union operation to infinite sets (evens and odds), addressing the third learning objective."
+q8,Which set operation is used to find elements common to all sets in a sequence?,3,yes,"This question tests knowledge of the set operation used to find common elements in sequences, aligning with the fourth learning objective."
+q9,A Venn diagram shading the overlap of two sets represents the _____.,3,yes,"This question assesses use of Venn diagrams to represent intersections, directly addressing the fifth learning objective."
+q1,The intersection \(A \cap B\) contains elements that are in _____ sets.,4,yes,"This question evaluates understanding of the intersection operation and its terminology, consistent with the first learning objective."
+q2,The union \(A \cup B\) includes all elements that are in _____.,4,yes,"This question tests knowledge of the union operation and its terminology, related to the first learning objective."
+q3,"For infinite sets, the intersection of multiples of 2 and multiples of 3 is the set of multiples of _____.",4,yes,"This question applies intersection operations to infinite sets, addressing the third learning objective."
+q4,"Which notation represents the union of a sequence of sets \(A_1, A_2, \ldots, A_n\)?",4,yes,"This question assesses notation for union of sequences of sets, matching the fourth learning objective."
+q5,The set \(A \cup (B \cap C)\) differs from \((A \cup B) \cap C\) because:,4,yes,"This question involves understanding how parentheses affect combined union and intersection operations, aligning with the second learning objective."
+q6,The expression \(A \cap B \cap C \cap D\) is well-defined because:,4,yes,"This question tests understanding of associativity in intersection operations, related to the first learning objective."
+q7,The union of the set of even integers \(C\) and odd integers \(D\) equals:,4,yes,"This question applies union operation to infinite sets (evens and odds), addressing the third learning objective."
+q8,"In the example where students skip finals if they got an A on midterm 1 or 2, the set of eligible students is \(A \cup B\) because it contains students who received an A on:",4,yes,"This question applies union operation in a real-world context, interpreting union notation, consistent with the first and fifth learning objectives."
+q9,The intersection \(A \cap (B \cup C)\) means:,4,yes,"This question evaluates interpretation of combined union and intersection operations, aligning with the second and fifth learning objectives."

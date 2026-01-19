@@ -1,0 +1,9 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhat will a compiler do for the following code?\n```java\n/* 
+   numItems = 2;  /* Total items to buy */
+   rate = 0.5;
+*/\n```",Generate an error.,"Ignore numItems = 2, but generate code for rate = 0.5.","Generate code for numItems = 2, but ignore rate = 0.5.",Ignore both statements.,Generate an error.,,,,,,
+\nWhich is true for comments?,The compiler does not generate machine code for comments.,The compiler converts comments into a series of machine instructions.,The compiler translates comments into ASCII values.,The compiler allocates memory for comments along with for variables.,The compiler does not generate machine code for comments.,,,,,,
+"\nWhat will a compiler do for the following three lines of code?\n```cpp\n// x = 2;  // width
+// y = 0.5
+// z = x * y;  Total area\n```",Ignore all three lines,Yield an error for line 1 (x = ...),Yield an error for line 2 (y = ...),Yield an error for line 3 (z = ...),Ignore all three lines,,,,,,

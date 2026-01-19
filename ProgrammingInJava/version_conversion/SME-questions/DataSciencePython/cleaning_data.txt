@@ -1,0 +1,121 @@
+<question xsi:type='MultipleChoiceQuestion' guid='4908a7e0-8b30-4625-a137-271994009713'>
+<instructions>
+<p>Which of the following types of data is not considered dirty data?</p>
+</instructions>
+
+<choices>
+<choice>Missing data</choice>
+<choice>Outlier data</choice>
+<choice correct='true'>Standardized data</choice>
+<choice>Duplicate data</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='51a91ef8-f5e9-4c00-b91d-e0539bcd626a'>
+<instructions>
+<p>The following table gives a sample of 7 patients out of 200 involved in a health study. Which instance is an outlier?</p>
+<image width="450" guid="43b990c6-d7ef-4352-81df-03da743afff2" alt="7 instances from a dataset that gives age, sex, BP, cholesterol, Potassium, and Drug type:
+    Age Sex    BP Cholesterol  Potassium   Drug
+1     47   M   LOW        HIGH     13.093  drugC
+2     47   M   LOW        HIGH     10.114  drugC
+7     41   M   LOW        HIGH     11.037  drugC
+10    47   F   LOW        HIGH     11.767  drugC
+17    43   M  HIGH        HIGH     13.972  drugA
+18    23   M   LOW        HIGH      7.298  drugC
+31    74   M  HIGH        HIGH      9.567  drugB
+">
+
+</image>
+</instructions>
+
+<choices>
+<choice>1</choice>
+<choice>7</choice>
+<choice>17</choice>
+<choice correct='true'>31</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='781ea258-e2c9-422f-93bc-6ef99f93bd2d'>
+<instructions>
+<p>A data scientist has a dataset that gives information on different states. Features for a few states are missing, so the data scientist replaces the unknown instances with data from a previous study. What type of imputation is the data scientist using?</p>
+</instructions>
+
+<choices>
+<choice>Hot-deck imputation</choice>
+<choice correct='true'>Cold-deck imputation</choice>
+<choice>Mean imputation</choice>
+<choice>Regression imputation</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='f1871654-9982-47cb-b3e5-5adc4e58841c'>
+<instructions>
+<p>The following dataset gives features for different types of Audi vehicles.</p>
+<image width="400" guid="2e605a33-77b8-4298-b831-4a49bfd39878" alt="
+                           Name  Cmpg  Hmpg  Eng  Cyl   Vol Drive Class
+7             Audi A3 Quattro 2L    21    28  2.0    4  1.09     A    SW
+8                     Audi A4 2L    22    30  2.0    4  1.03     F    CO
+9       Audi A4 Avant Quattro 2L    21    29  2.0    4  1.18     A    SW
+10            Audi A4 Quattro 2L    21    29  2.0    4  1.03     A    CO
+11          Audi A5 Cabriolet 2L    22    30  2.0    4  0.91     F    SC
+12  Audi A5 Cabriolet Quattro 2L    21    29  2.0    4  0.91     A    SC
+13            Audi A5 Quattro 2L    21    29  2.0    4  0.96     A    SC
+14                  Audi A6 3.2L    21    30  3.2    6   NaN     F    MI
+15      Audi A6 Avant Quattro 3L    18    26  3.0    6  1.33     A    SW
+">
+
+</image>
+<p>From the dataset, the following regression model is determined.</p>
+<p><code>Vol = 2.63 + 0.02 * Cmpg - 0.07 * Hmpg</code>.</p>
+<p>Using regression imputation, what is the Vol value for the Audi A6 3.2L?</p>
+</instructions>
+
+<choices>
+<choice>1.06</choice>
+<choice>0.91</choice>
+<choice>5.15</choice>
+<choice correct='true'>0.95</choice>
+</choices>
+</question>
+
+
+<question subjects='python' xsi:type='MultipleChoiceQuestion' guid='0ffe9c9e-c0b0-48a1-9e90-c1ee5d84da9d'>
+<instructions>
+<p>The following dataset is called <code>sample_cars</code>.</p>
+<image width="400" guid="ae86b9a2-7930-463d-8a15-b31c5a0da73d" alt="
+                           Name  Cmpg  Hmpg  Eng  Cyl   Vol Drive Class
+7             Audi A3 Quattro 2L    21    28  2.0    4  1.09     A    SW
+8                     Audi A4 2L    22    30  2.0    4  1.03     F    CO
+9       Audi A4 Avant Quattro 2L    21    29  2.0    4  1.18     A    SW
+10            Audi A4 Quattro 2L    21    29  2.0    4  1.03     A    CO
+11          Audi A5 Cabriolet 2L    22    30  2.0    4  0.91     F    SC
+12  Audi A5 Cabriolet Quattro 2L    21    29  2.0    4  0.91     A    SC
+13            Audi A5 Quattro 2L    21    29  2.0    4  0.96     A    SC
+14                  Audi A6 3.2L    21    30  3.2    6   NaN     F    MI
+15      Audi A6 Avant Quattro 3L    18    26  3.0    6  1.33     A    SW
+">
+
+</image>
+<p>What Python code could be used to create a dataset of the same name that only includes the features that are numerical?</p>
+</instructions>
+
+<choices>
+<choice>
+<code>sample_cars = sample_cars.replace(["Name", "Drive", "Class"], axis=0)</code>
+</choice>
+<choice>
+<code>sample_cars = sample_cars.replace(["Name", "Drive", "Class"], axis=1)</code>
+</choice>
+<choice>
+<code>sample_cars = sample_cars.drop(["Name", "Drive", "Class"], axis=0)</code>
+</choice>
+<choice correct='true'>
+<code>sample_cars = sample_cars.drop(["Name", "Drive", "Class"], axis=1)</code>
+</choice>
+</choices>
+</question>

@@ -1,0 +1,57 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='4c85b72b-116d-93ee-5fd8-2dc8a2754d13'>
+<instructions>
+Which of the following is not a valid expression? Assume x and y are integer variables.
+</instructions>
+
+<choices>
+<choice>x / (y * 7)</choice>
+<choice>y / x * 2</choice>
+<choice correct='true'>2x + 3y</choice>
+<choice>(x - 3*y)</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='e8615d44-0da3-739e-73bf-53de3969a57d'>
+<instructions>
+According to Python's precedence rules, which of the following operators has the highest precedence?
+</instructions>
+
+<choices>
+<choice>subtraction -</choice>
+<choice correct='true'>unary -</choice>
+<choice>*</choice>
+<choice>+</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='99ee7ed2-7188-28ce-ee59-da9169f9fa23'>
+<instructions>
+<p>Which expression using parentheses is equivalent to the following expression:</p>
+<line>x - y * -z / 3</line>
+</instructions>
+
+<choices>
+<choice>(x - y) * ((-z) / 3))</choice>
+<choice correct='true'>x - ((y * (-z)) / 3)</choice>
+<choice>x - (y * ((-z) / 3))</choice>
+<choice>(x - (y * (-z))) / 3</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='fc41aa67-eae1-cd6c-81c7-ab94206c7617'>
+<instructions>
+<p>The formula for calculating the amount of interest charged on a loan is:</p>
+<line>interest = [principal x rate of interest] x time</line>
+<p>Which Python statement correctly performs the interest calculation?</p>
+</instructions>
+
+<choices>
+<choice>interest = [principal * rate_of_interest] * time</choice>
+<choice>interest = principal * rate of interest * time</choice>
+<choice>interest = principal x rate_of_interest x time</choice>
+<choice correct='true'>interest = (principal * rate_of_interest) * time</choice>
+</choices>
+</question>

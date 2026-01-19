@@ -1,0 +1,293 @@
+<zySection title="Identifiers" shorttitle="Identifiers" id="7c4bdcb4-980f-b3f3-12ee-e0ca4f3ea48e" depend="c09a9fd3-a837-4b30-958b-4d219d87c51c">
+<zypInfo person="Alex" date="03/20/14" hwStatus="-" Status="2"> ready for second review </zypInfo>
+<zypInfo person="Susan" date="4/10/14" Status="3">Second review done.</zypInfo>
+<zypInfo person="Nicole" date="03/20/17" minutes="10"> Cleaned up gdocs in preparation for a new release.  </zypInfo> 
+<zypInfo person="Susan" date="05/30/17" minutes="150" status="Draft1Done">Completed revision pass for C++. Needs check. Also updated for C and Java version. </zypInfo> 
+<zypInfo person="Roman" date="5/30/17" minutes="10" status="Rev1Done">Reviewed the C++ revisions</zypInfo>
+<zypInfo person="Susan" date="6/07/17" minutes="60" status="Rev1Done">Checked style. Reformatted keyword tables.</zypInfo>
+<zypInfo person="Amanda" date="6/23/17" minutes="240" status="Rev2Done"></zypInfo>
+<zypInfo person="Annie" date="08/28/23" minutes="60" status="Rev2Done">Revised offensive feedback for PA</zypInfo>
+<zypInfo person="LukeM" date="10/6/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<zyAside type="bordered" name="" id="aade1fef-e051-4fb8-b0ec-11c45de46c53">
+Learn to:
+<ul>
+<li>Define what an identifier is.</li> <!-- C: SS1, SS2, TB2 --> <!-- CppJava: SS1, SS2, TB1, TB2 -->
+<li>Differentiate between valid and invalid identifiers based on given rules.</li> <!-- CCppJava: SS1, SS2, TB1 -->
+<li>Recognize reserved words and understand why they cannot be used as identifiers.</li> <!-- C: SS1, SS2, TB2 --> <!-- CppJava: SS1, SS2 -->
+<li>Correctly use naming conventions and style guidelines for identifiers.</li> <!-- C: SS2, TB3, TB4 --> <!-- CppJava: SS2 -->
+</ul>
+</zyAside>
+
+
+<zyHTML id="c2c48894-0ec1-fb3e-529c-4e266ada333c" subsection="true" caption="Rules">
+<h3>Rules for identifiers</h3>
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyHTML id="1e05b2ff-8656-45e1-a737-e23283e1c18e">
+<p><zyDefn> A name created by a programmer for an item like a variable or method is called an _identifier_.</zyDefn>
+An identifier must: 
+<ul>
+<li>be a sequence of letters (a-z, A-Z), underscore (_), dollar signs ($), and digits (0-9) </li>
+<li> start with a letter, underscore, or dollar sign </li>
+</ul>
+Note that "_", called an <zyDefn>underscore</zyDefn>, and "$", called a dollar sign or currency symbol, are considered to be letters. <zyGoodPractice id="90cdd721-7628-7966-1159-63d12eed54d1"> A good practice followed by many Java programmers is to not use _ or $ in programmer-created identifiers. </zyGoodPractice></p> 
+</zyHTML>
+</zyVersion>
+
+
+
+<zyHTML id="adbc3ccb-faba-45db-b0bc-2ce0b531aee7">
+<p><zyDefn> Identifiers are _case sensitive_, meaning upper and lower case letters differ.</zyDefn>  So numCats  and NumCats are different.</p> 
+
+<p> <zyDefn> A _reserved word_ is a word that is part of the language, like int, short, or double.</zyDefn> <zyDefn>A reserved word is also known as a _keyword_.</zyDefn> A programmer cannot use a reserved word as an identifier.  Many language editors will automatically color a program's reserved words. A list of reserved words appears at the end of this section.</p> 
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyTool name="identifierValidator" id="23d7c8e5-23e2-d45e-7189-5c3031f03251" caption="Identifier validator." >
+<zyInstructions>Check if the following identifiers are valid: c, cat, n1m1, short1,  _hello, 42c, hi there, and cat! 
+(Note: Doesn't consider library items.)</zyInstructions>
+ <zyOptions>
+  <lang>java</lang>
+ </zyOptions>
+<zyAltDescription>
+Answer: The following are valid identifiers: c, cat, Cat, n1m1, short1, and _hello. Note that cat and Cat are different identifiers. The following are invalid identifiers: 42c (starts with a digit), hi there (has a disallowed symbol: space), and cat! (has a disallowed symbol: !).
+</zyAltDescription>
+</zyTool>
+</zyVersion>
+
+
+
+<zyQSetTF caption="Valid identifiers." id="4efdb4ca-c9ac-ada4-d85c-848e119b782b" truelabel="Valid" falselabel="Invalid">
+<p>Which are valid identifiers?</p>
+
+<zyQ>
+<zyQtext correct="Valid">numCars </zyQtext>
+<zyQexpl>Letters are always valid (upper or lower case). </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid">num_Cars1 </zyQtext>
+<zyQexpl>An underscore is treated as a letter. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid">_numCars </zyQtext>
+<zyQexpl>The underscore can be in the first position just like any other letter. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid">___numCars </zyQtext>
+<zyQexpl>Two or more underscores may look strange, but the underscore is just like any other letter and can be repeated. However, convention is to not use more than one underscore. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Invalid">3rdPlace </zyQtext>
+<zyQexpl>Identifiers must start with a letter. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid">thirdPlace_ </zyQtext>
+<zyQexpl>Ending with an underscore is okay. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Invalid">thirdPlace! </zyQtext>
+<zyQexpl>"!" is not allowed. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Invalid">short</zyQtext>
+<zyQexpl>"short" is a language keyword so it can't be used as an identifier. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Invalid">very tall</zyQtext>
+<zyQexpl>Spaces are not allowed. Instead, an underscore can be used (very_tall) or the words can be abutted (veryTall). </zyQexpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="d4caafbd-23dc-d1aa-f420-e4c83b49cf83" subsection="true" caption="">
+<h3>Style guidelines for identifiers</h3>
+</zyHTML>
+
+
+<zyHTML id="b845b5f6-1d6f-8e8c-2540-e4db0ebbec98" caption="">
+<p>While various (crazy-looking) identifiers may be valid,  programmers may follow identifier <zyDefn>naming conventions</zyDefn> (style) defined by their company, team, teacher, etc. Two common conventions  for naming variables are:
+<ul>
+<li> Camel case: <zyDefn>_Lower camel case_ abuts multiple words, capitalizing each word except the first, as in numApples or peopleOnBus.</zyDefn> </li>
+<li> Underscore separated: Words are lowercase and separated by an underscore, as in num_apples or people_on_bus. </li> 
+</ul></p>
+
+<p>Neither convention is better. The key is to be consistent so code is easier to read and maintain.</p>
+</zyHTML>
+
+
+
+<zyHTML id="d76b5e07-4d6e-4a40-b3dc-30f84040e7b8">
+<p><zyGoodPractice id="c38dce17-d959-49a6-d42f-6c209289deaf">Good practice is to create meaningful identifier names that self-describe an item's purpose.</zyGoodPractice> <zyGoodPractice id="8496bdf8-9666-24b4-2a3e-ea817c4b1211">Good practice minimizes use of abbreviations in identifiers except for well-known ones like num in numPassengers.</zyGoodPractice> Programmers must strive to find a balance. Abbreviations make programs harder to read and can lead to confusion. Long variable names, such as averageAgeOfUclaGraduateStudent may be meaningful, but can make subsequent statements too long and thus hard to read. </p> 
+</zyHTML>
+
+
+
+<zyQSetMultipleChoice caption= "Meaningful identifiers." id="5e88b5a3-4994-7b31-fc67-dcb9af663765"> 
+<p>Choose the "best" identifier for a variable with the stated purpose, given the above discussion. </p>
+
+<zyQ>
+<zyQText>The number of students attending UCLA</zyQText>
+<zyQChoice>
+<zyQAns> num </zyQAns>
+<zyQExpl><!-- Horrible name, could represent almost anything. --> This variable name would be more informative if the meaning of the number is also included.   </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> numStdsUcla</zyQAns>
+<zyQExpl><!-- Avoid non-standard abbreviations; Stds can be short for many things. -->  "Stds" is an unclear abbreviation. Using "Students" is more precise than "Stds", but not too long.
+ </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> numStudentsUcla </zyQAns>
+<zyQExpl><!-- Ucla is likely a well-known abbreviation, so shouldn't cause a problem. --> This variable name is a good balance between clarity and length.
+ </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> numberOfStudentsAttendingUcla </zyQAns>
+<zyQExpl><!-- Getting long, may make subsequent statements harder to read. --> Some parts of this variable name can be abbreviated to shorten the overall name.
+  </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>The size of an LCD monitor</zyQText>
+<zyQChoice>
+<zyQAns> size </zyQAns>
+<zyQExpl><!-- Size of what? --> This variable name would be more informative if the object to which the size refers is also included.  </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> sizeLcdMonitor</zyQAns>
+<zyQExpl><!-- Lcd is abbreviated but may be OK. --> This variable name is a good balance between clarity and length.
+ </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> s </zyQAns>
+<zyQExpl><!-- You must have selected this just to see what we would say. That is a horribly unmeaningful variable name. --> Single-letter variable names are imprecise. Except for loop variables, single-letter variable names should be avoided.
+ </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> sizeLcdMtr</zyQAns>
+<zyQExpl><!-- Size of an LCD meter? An LCD motor? And LCD mother? --> "Mtr" is an unclear abbreviation. "Monitor" is preferable.
+ </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>The number of jelly beans in a jar</zyQText>
+<zyQChoice>
+<zyQAns> numberOfJellyBeansInTheJar </zyQAns>
+<zyQExpl><!-- Quite long, may make subsequent statements harder to read. --> Some parts of this variable name can be abbreviated to shorten the overall name.
+  </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> jellyBeansInJar </zyQAns>
+<zyQExpl><!-- Looks OK. Could start with num, but should be fine as is. --> This is the best alternative. However, this variable name could also represent a true or false value indicating whether there are jelly beans in the jar.
+  </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> nmJlyBnsInJr</zyQAns>
+<zyQExpl><!-- Good luck to the programmer trying to remember how to type that variable in subsequent statements. --> All four abbreviations in this variable name are confusing. "nm", Jly", Bns", "Jr" may each have multiple meanings. Furthermore, this variable name is hard to remember and easy to misspell.
+</zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+
+
+
+<zyAside type="elaboration" name="zyBook's naming conventions" id="de3ecdea-8f67-ecf3-9eba-d9a192c70a29">
+<p> <zyVersion version="java">Lower camel case is used for variable naming, which is a common Java naming convention. </zyVersion>  <zyGoodPractice id="3e5d65b7-68b2-351d-5e14-4cb3b90921e7"> This material strives to follow another good practice of using two or more words per variable such as numStudents rather than just students,  to provide meaningfulness, to make variables more recognizable when variable names appear in writing like in this text or in a comment, and to reduce conflicts with reserved words or other already-defined identifiers.</zyGoodPractice></p> 
+</zyAside>
+
+
+
+<zyVersion version="java">
+<zyTable caption="Java reserved words / keywords." id="53231004-c636-afc8-b992-baa79eb185bd">
+<table>
+<tr>
+<td style="width:30%; vertical-align:top">
+abstract <br />
+assert <br />
+boolean <br />
+break <br />
+byte <br />
+case <br />
+catch <br />
+char <br />
+class <br />
+const <br />
+continue <br />
+default <br />
+do <br />
+double <br />
+else <br />
+enum <br />
+extends 
+</td>
+
+<td style="width:30%; vertical-align:top">
+final <br />
+finally <br />
+float <br />
+for <br />
+goto <br />
+if <br />
+implements <br />
+import <br />
+instanceof <br />
+int <br />
+interface <br />
+long  <br />
+native <br />
+new <br />
+package <br />
+private <br />
+protected 
+</td>
+
+<td style="width:30%; vertical-align:top">
+public <br />
+return <br />
+short <br />
+static <br />
+strictfp <br />
+super <br />
+switch <br />
+synchronized <br />
+this <br />
+throw <br />
+throws <br />
+transient <br />
+try <br />
+void <br />
+volatile <br />
+while
+</td>
+</tr>
+</table>
+
+<p><br />The words "true", "false", and "null" are also reserved, and used for literals.</p> 
+</zyTable> 
+</zyVersion>
+
+</zySection>

@@ -1,0 +1,566 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,8,0,2
+2,8,0,1
+3,8,0,2
+4,8,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,4,64
+1,3,1,8,64
+1,4,1,7,64
+2,3,4,6,64
+2,4,2,4,64
+3,4,2,4,64
+
+Summary
+Total Comparisons,496
+Duplicates (≥85%),11
+Similar (70-85%),39
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.97,duplicate
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.936,duplicate
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.919,duplicate
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.912,duplicate
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.91,duplicate
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.889,duplicate
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.886,duplicate
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.878,duplicate
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.866,duplicate
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.86,duplicate
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.859,duplicate
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.849,similar
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.846,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.845,similar
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.845,similar
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.823,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.817,similar
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.816,similar
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.814,similar
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.811,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,0.809,similar
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.809,similar
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.807,similar
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.802,similar
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.8,similar
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.792,similar
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.789,similar
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.786,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.777,similar
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.769,similar
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.767,similar
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.767,similar
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.764,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.762,similar
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.761,similar
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.754,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.744,similar
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.73,similar
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.727,similar
+q3,Which property describes a sequence where each term is strictly less than the next?,4,3,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.727,similar
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.718,similar
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.717,similar
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.717,similar
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,0.716,similar
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.715,similar
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.708,similar
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.704,similar
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.703,similar
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.702,similar
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.701,similar
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.697,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.693,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.693,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.693,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.688,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.687,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.686,low
+q3,Which property describes a sequence where each term is strictly less than the next?,4,3,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.685,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.684,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.684,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.684,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,0.683,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.683,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.681,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.681,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.68,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.678,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.671,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,0.669,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.669,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.668,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.668,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.667,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.667,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.665,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.662,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.659,low
+q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.657,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.656,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.653,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.646,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.645,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.644,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.644,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.642,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.641,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.638,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.635,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.635,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.632,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.63,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.627,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.625,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.624,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.621,low
+q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.621,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.62,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.619,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.619,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.615,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.614,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.613,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.612,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.612,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.611,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.609,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.608,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.605,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.605,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,0.604,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.604,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.604,low
+q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.604,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.603,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.601,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.601,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.6,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.6,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.599,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.598,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.596,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.596,low
+q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.595,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.592,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.591,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.591,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.59,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.589,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.587,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.587,low
+q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.586,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.584,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.584,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.583,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.583,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.583,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.583,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.58,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.58,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.579,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.579,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.577,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.577,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.576,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.575,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.575,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.574,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.573,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.572,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.57,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.57,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.57,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.568,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.567,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.567,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.566,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.565,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.563,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.558,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.557,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.556,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.554,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.553,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.551,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.551,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,0.547,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.547,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.545,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.545,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.545,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.544,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.542,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.542,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.542,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.541,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,0.537,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,0.537,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.537,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.536,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.535,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.535,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.534,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.531,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.531,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.531,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.53,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.528,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.528,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.528,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.528,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.527,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.526,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.526,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.526,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.523,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.523,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.523,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.522,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.522,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,0.522,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.522,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.521,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.52,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.52,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.519,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.518,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.517,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.516,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.516,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.514,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.513,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.513,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.512,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.512,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.511,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.511,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.51,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.51,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.51,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.509,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.508,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.507,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.507,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.507,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.506,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.506,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.506,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.502,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.501,low
+q3,Which property describes a sequence where each term is strictly less than the next?,4,3,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.501,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.5,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.5,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.499,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.498,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.497,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.497,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.497,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.497,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.497,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.496,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.496,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.495,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.493,low
+q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.493,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.492,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.492,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,0.491,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.49,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.49,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.489,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.488,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.487,low
+q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.486,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.484,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.482,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.481,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.48,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.48,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.48,low
+q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.48,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.479,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.479,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.478,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.477,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.477,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.477,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.477,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.476,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.475,low
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.475,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.474,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.472,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.471,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.471,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.471,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.471,low
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.47,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.469,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.468,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.464,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.464,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.464,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.463,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.463,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.463,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.462,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.462,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.459,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.459,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,0.458,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.458,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.458,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.457,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.457,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.456,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,0.455,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.454,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.454,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.454,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.454,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.454,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.452,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.452,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.451,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.451,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.45,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.449,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.448,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.448,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.448,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.448,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.447,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.447,low
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.447,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.446,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.446,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.446,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,0.445,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.445,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.443,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.442,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.441,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.441,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.441,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.44,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.44,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.438,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.436,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.436,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.435,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.435,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.434,low
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.434,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.433,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.433,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,0.432,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.432,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.432,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.432,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.431,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,0.43,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.429,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.429,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.428,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.428,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.428,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.428,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.427,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.427,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.426,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.426,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.426,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.425,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.424,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.422,low
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.421,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.42,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.42,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.42,low
+q3,Which property describes a sequence where each term is strictly less than the next?,4,3,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.42,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.415,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,0.414,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.414,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.414,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.414,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.413,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.412,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.412,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.412,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.411,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.41,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.41,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.41,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.409,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.408,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.408,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.408,low
+q3,Which property describes a sequence where each term is strictly less than the next?,4,3,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.408,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.406,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.405,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.405,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.405,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.404,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,4,0.404,low
+q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.404,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.403,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.402,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.402,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.401,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.401,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,0.4,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,0.399,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.398,low
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.398,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.397,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.397,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.396,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,0.396,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.396,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.395,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.395,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.394,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.394,low
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.392,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.391,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.389,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.388,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.388,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.385,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.385,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.384,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.383,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.383,low
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,5,0.382,low
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.382,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.381,low
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,2,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.379,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.378,low
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.378,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.377,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.377,low
+q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.376,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.375,low
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.374,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.373,low
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.372,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.371,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.371,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.371,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.369,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,6,0.369,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.369,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,0.368,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,6,0.363,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.361,low
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,2,q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,0.36,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.356,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.356,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.354,low
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.353,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,8,0.352,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.352,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.352,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.349,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.349,low
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.348,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.347,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.347,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,0.345,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,0.343,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,0.343,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.343,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.342,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.341,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,6,0.337,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.336,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.333,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.332,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q8,"The sequence \(2, 4, 4, 6\) is _____.",3,8,0.332,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.33,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,7,0.329,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.328,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q5,"In an arithmetic sequence, what operation produces each term after the first?",4,5,0.325,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.324,low
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,7,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.323,low
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,3,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.322,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.321,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.319,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,4,0.319,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.318,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.316,low
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,5,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.316,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.315,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.315,low
+q1,A sequence is called _____ if each term is less than the next term.,1,1,q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,0.313,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q3,Which property describes a sequence where each term is strictly less than the next?,4,3,0.312,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q2,Which term describes a sequence where each term is strictly less than the next?,3,2,0.311,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.31,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,4,0.309,low
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,5,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.309,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.309,low
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,3,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.305,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.303,low
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,8,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.301,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q2,What is the initial term in a finite sequence with initial index \(m\)?,4,2,0.301,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,7,0.293,low
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,4,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.292,low
+q2,Which term describes a sequence where each term is strictly less than the next?,3,2,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.286,low
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,6,q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,0.282,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,7,0.28,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,0.271,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,0.257,low
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,8,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.257,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,1,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.243,low
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,1,q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,0.232,low
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,3,q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,1,0.231,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use terminology and notation associated with finite and infinite sequences  
+Identify terms and indices in a given sequence  
+Determine whether a sequence is increasing, nondecreasing, decreasing, or nonincreasing  
+Calculate specific terms in geometric sequences using the common ratio  
+Calculate specific terms in arithmetic sequences using the common difference"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A sequence is called _____ if each term is less than the next term.,1,yes,"This question assesses the ability to identify terms and indices in a sequence by defining an increasing sequence, aligning with learning objective 2 and 3."
+q2,Which condition makes a geometric sequence increasing when the initial term \(a > 0\)?,1,yes,"This question evaluates understanding of geometric sequences and conditions for increasing behavior, relating to learning objectives 3 and 4."
+q3,How is the next term in an arithmetic sequence calculated from the previous term?,1,yes,"This question tests knowledge of how to calculate terms in arithmetic sequences using the common difference, matching learning objective 5."
+q4,Fill in the blank: The final term in a finite sequence with initial index \(m\) and length \(n\) has index _____.,1,yes,"This question assesses understanding of sequence notation and indexing, directly linked to learning objective 2."
+q5,"A sequence is nonincreasing if for every consecutive terms \(a_k\) and \(a_{k+1}\), the relationship is:",1,yes,"This question evaluates the ability to identify sequence behavior (nonincreasing) using term relationships, aligned with learning objective 3."
+q6,What is the explicit formula for the \(k\)th term of a geometric sequence with initial term \(a\) and common ratio \(r\)?,1,yes,"This question tests knowledge of the explicit formula for geometric sequences, related to learning objective 4."
+q7,Which of the following sequences is both nondecreasing and nonincreasing?,1,yes,"This question assesses understanding of sequence behavior classifications (nondecreasing and nonincreasing), linked to learning objective 3."
+q8,"For an arithmetic sequence starting at 5 with common difference \(-3\), what is the 4th term?",1,yes,"This question requires calculating a specific term in an arithmetic sequence using the common difference, matching learning objective 5."
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,2,yes,"This question tests understanding of sequence domain and terminology, aligned with learning objective 1."
+q2,What term describes a sequence where each term is found by multiplying the previous term by a fixed number?,2,yes,"This question assesses terminology related to geometric sequences, matching learning objective 1."
+q3,A sequence where each term is greater than or equal to the previous term is called _____.,2,yes,"This question evaluates understanding of sequence behavior (nondecreasing), linked to learning objective 3."
+q4,"If a sequence has initial term \(a_0 = 3\) and common difference \(d = -2\), what is \(a_2\)?",2,yes,"This question requires calculation of a specific term in an arithmetic sequence using the common difference, matching learning objective 5."
+q5,The explicit formula for an arithmetic sequence with initial term \(t_0\) and common difference \(d\) is:,2,yes,"This question tests knowledge of the explicit formula for arithmetic sequences, related to learning objective 5."
+q6,Which condition makes a geometric sequence \(\{a \cdot r^k\}\) increasing when \(a > 0\)?,2,yes,"This question evaluates conditions for a geometric sequence to be increasing, linked to learning objectives 3 and 4."
+q7,A sequence defined by \(a_n = \frac{1}{n}\) for \(n \ge 1\) is:,2,yes,"This question assesses understanding of sequence behavior classifications, aligned with learning objective 3."
+q8,"What is the common ratio of the geometric sequence \(3, 6, 12, \ldots\)?",2,yes,"This question tests calculation of the common ratio in a geometric sequence, matching learning objective 4."
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,3,yes,"This question assesses terminology related to sequences and their domain, aligned with learning objective 1."
+q2,Which term describes a sequence where each term is strictly less than the next?,3,yes,"This question evaluates understanding of sequence behavior (increasing), linked to learning objective 3."
+q3,"What is the common ratio in the geometric sequence \(3, 9, 27, \ldots\)?",3,yes,"This question tests calculation of the common ratio in a geometric sequence, matching learning objective 4."
+q4,The explicit formula \(a_n = a + dn\) defines a/an _____ sequence.,3,yes,"This question assesses knowledge of the explicit formula for arithmetic sequences, related to learning objective 5."
+q5,A sequence with an initial term of 5 and common difference -2 starts as:,3,yes,"This question requires understanding of arithmetic sequences and common difference to identify sequence terms, matching learning objective 5."
+q6,"For a geometric sequence \(s_k = a \cdot r^k\) with \(a > 0\), when is the sequence decreasing?",3,yes,"This question evaluates conditions for a geometric sequence to be decreasing, linked to learning objectives 3 and 4."
+q7,"A sequence is _____ if for every consecutive index \(k\), \(a_k \ge a_{k+1}\).",3,yes,"This question assesses understanding of sequence behavior (nonincreasing), aligned with learning objective 3."
+q8,"The sequence \(2, 4, 4, 6\) is _____.",3,yes,"This question tests classification of sequence behavior, matching learning objective 3."
+q1,A sequence is called _____ if its domain is a set of consecutive integers.,4,yes,"This question evaluates terminology related to sequences and their domain, aligned with learning objective 1."
+q2,What is the initial term in a finite sequence with initial index \(m\)?,4,yes,"This question assesses understanding of sequence notation and indexing, directly linked to learning objective 2."
+q3,Which property describes a sequence where each term is strictly less than the next?,4,yes,"This question evaluates understanding of sequence behavior (increasing), linked to learning objective 3."
+q4,A geometric sequence has initial term 3 and common ratio \(\frac{1}{3}\). What is the third term?,4,yes,"This question requires calculation of a specific term in a geometric sequence using the common ratio, matching learning objective 4."
+q5,"In an arithmetic sequence, what operation produces each term after the first?",4,yes,"This question tests knowledge of how to calculate terms in arithmetic sequences using the common difference, matching learning objective 5."
+q6,"If an arithmetic sequence has a negative common difference, the sequence is:",4,yes,"This question assesses understanding of sequence behavior when the common difference is negative, linked to learning objective 3."
+q7,"Which of the following is *not* a possible property of the sequence \(2, 4, 4, 6\)?",4,yes,"This question evaluates classification of sequence behavior, aligned with learning objective 3."
+q8,"For a geometric sequence with positive initial term \(a\), which condition on the common ratio \(r\) makes the sequence increasing?",4,yes,"This question tests conditions for a geometric sequence to be increasing, related to learning objectives 3 and 4."

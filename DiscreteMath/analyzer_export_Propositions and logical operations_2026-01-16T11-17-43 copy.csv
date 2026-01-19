@@ -1,0 +1,12 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+A _proposition_ is a statement that is _____.,either true or false,sometimes true and sometimes false,always true,either true or false,neither true nor false,,,,,,
+Which sentence is a proposition?,The sky is blue.,Close the window.,What time is it?,The sky is blue.,Please sit down.,,,,,,
+The conjunction \(p \land q\) is true only when _____.,both \(p\) and \(q\) are true,either \(p\) or \(q\) is true,both \(p\) and \(q\) are true,\(p\) is true and \(q\) is false,both \(p\) and \(q\) are false,,,,,,
+The truth table for \(p \lor q\) shows \(p \lor q\) is false when _____.,both \(p\) and \(q\) are false,\(p\) and \(q\) are both true,exactly one of \(p\) or \(q\) is true,\(p\) is true and \(q\) is false,both \(p\) and \(q\) are false,,,,,,
+The exclusive or \(p \oplus q\) is true when _____.,exactly one of \(p\) or \(q\) is true,both \(p\) and \(q\) are true,both \(p\) and \(q\) are false,exactly one of \(p\) or \(q\) is true,neither \(p\) nor \(q\) is true,,,,,,
+The negation \(\neg p\) has the truth value _____ of proposition \(p\).,opposite of,the same as,opposite of,sometimes equal to,unrelated to,,,,,,
+The compound proposition \(p \land q\) means:,\(p\) and \(q\) are both true,\(p\) or \(q\) is true,\(p\) and \(q\) are both true,not \(p\) and not \(q\),either \(p\) or \(q\) but not both,,,,,,
+"If \(p\) is true and \(q\) is false, what is \(p \lor q\)?",True,True,False,Unknown,Cannot be determined,,,,,,
+Which logical operation reverses the truth value of a proposition?,negation,conjunction,disjunction,negation,exclusive or,,,,,,
+Under what condition do \(p \oplus q\) and \(p \lor q\) differ in truth value?,\(p = q = T\),\(p = q = F\),"\(p = T, q = F\)","\(p = F, q = T\)",\(p = q = T\),,,,,,
+A _proposition_ is a statement that is _____.,either true or false,true only,false only,either true or false,neither true nor false,,,,,,

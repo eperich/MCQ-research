@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+Why use a double variable instead of an int to store 98.6 degrees temperature?,Double variables store numbers with decimals,Double variables use less memory,Int variables can only store negative numbers,Double variables store numbers with decimals,Int variables can only store zero or positive numbers,,,,,,
+What is the result of dividing a nonzero double by 0.0 in Java?,Infinity or -Infinity depending on signs,Zero,NaN (Not a Number),An error is thrown,Infinity or -Infinity depending on signs,,,,,,
+Which Java statement correctly outputs a double variable myFloat to two decimal places?,"System.out.printf(""%.2f"", myFloat);","System.out.println(""%.2f"", myFloat);","System.out.printf(""%.2f"", myFloat);","System.out.format(""%2f"", myFloat);","System.out.print(""%.2f"", myFloat);",,,,,,
+Why should a floating-point literal include a digit before the decimal point?,To indicate it is a negative number,To ensure it is stored as an integer,To prevent confusion with integer literals,To avoid syntax errors in code,To indicate it is a negative number,,,,,,
+What does dividing a nonzero double by 0.0 produce in Java?,Positive or negative infinity,Zero,Not a number (NaN),Positive or negative infinity,An exception error,,,,,,
+Which variable type is best for storing the average number of kids per household?,double,int,boolean,double,char,,,,,,
+Why should a double variable be used instead of an int for temperature values?,Because temperature can have fractional parts,Because temperature is always positive,Because temperature values are counted items,Because temperature can have fractional parts,Because int variables use more memory,,,,,,
+What does dividing a nonzero double by 0.0 produce in Java?,Positive or negative infinity,A runtime error,Not a number (NaN),Positive or negative infinity,Zero,,,,,,
+Which printf format specifier outputs a double with three digits after the decimal?,%.3f,%3f,%.3f,%f.3,%.f3,,,,,,
+Why should floating-point literals include a digit before the decimal point?,To avoid confusing .5 with 5,To allow only integer values to be used,To make the decimal point float in the number,To avoid confusing .5 with 5,To increase the precision of the number,,,,,,
+What happens when a nonzero floating-point number is divided by zero in Java?,The result is infinity or -infinity depending on signs,The program crashes with an error,The result is zero,The result is NaN (not a number),The result is infinity or -infinity depending on signs,,,,,,
+Which variable type is best for storing a measurement with fractional values?,double,int,double,boolean,char,,,,,,

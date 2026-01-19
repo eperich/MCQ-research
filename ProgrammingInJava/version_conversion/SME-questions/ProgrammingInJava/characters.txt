@@ -1,0 +1,58 @@
+<question xsi:type='MultipleChoiceQuestion' guid='e4ddd257-9dd6-78e6-bbb8-31b87403bac5' subjects='c, cpp, java'>
+<instructions>
+<p>myChar is a character variable and is the only declared variable. Which assignment is valid? </p>
+</instructions>
+
+<choices>
+<choice correct='true'>myChar = 't'; </choice>
+<choice> myChar = "t"; </choice>
+<choice>myChar = t; </choice>
+<choice>myChar = 'tx'; </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='840bc20f-4f3d-7dac-e942-ecbe7d6d8dd0' subjects='c, cpp, java'>
+<instructions>
+<p>A character variable's value is stored in memory as _____ . </p>
+</instructions>
+
+<choices>
+<choice>a graphical symbol </choice>
+<choice>a string </choice>
+<choice>a floating-point value </choice>
+<choice correct='true'>an integer value</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='ca67af2b-8499-6621-aeb5-df736631abb1' subjects='c, cpp, java'>
+<instructions>
+<p>What is myChar assigned with? </p>
+<codeBlock language='text'>
+char myChar;
+myChar = '\'';
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>A backslash: \ </choice>
+<choice>A double-quote:  " </choice>
+<choice correct='true'>A single-quote:  ' </choice>
+<choice>A backslash and double-quote:  \" </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='b195950c-4221-9d4b-20ba-8cbfc4305b69' subjects='c, cpp, java'>
+<instructions>
+<p>Given char x and char z, which assigns x with the character value held in z? </p>
+</instructions>
+
+<choices>
+<choice>x = 'z'; </choice>
+<choice>x = "z"; </choice>
+<choice correct='true'>x = z; </choice>
+<choice>'x' = 'z';</choice>
+</choices>
+</question>

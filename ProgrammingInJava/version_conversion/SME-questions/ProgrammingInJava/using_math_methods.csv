@@ -1,0 +1,11 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhat is the ending value of z?\n```text\nx = 0;
+y = 3;
+z = Math.pow(x + 2, y);\n```",8.0,0.0,4.0,8.0,Error: Cannot have an expression within a method call,,,,,,
+"\nWhat is the ending value of y? Math.sqrt(u) returns the square root of u. Math.pow(u, v) returns u raised to the power of v.\n```text\nx = 9.0;
+y = 4.0;
+y = Math.pow(Math.sqrt(x), Math.sqrt(y));\n```",9.0,8.0,9.0,6561.0,Error: The sqrt methods cannot appear in the call to the pow method,,,,,,
+"\nWhat is the ending value of y? Math.pow(u, v) returns u raised to the power of v.\n```text\nx = 2.0;
+y = 3.0;
+y = Math.pow(Math.pow(x, y)) + 1.0;\n```",Error: The compiler complains about calling pow without the correct number of arguments,8.0,9.0,65.0,Error: The compiler complains about calling pow without the correct number of arguments,,,,,,
+"\nGiven function Multiply(u, v) that returns u * v, and Add(u, v) that returns u + v, which expression corresponds to:\nAdd(Multiply(x, Add(y, z)), w)",(x * (y + z)) + w,(x * (y + z)) + w,(x + (y + z) * w),((x * y) + z) + w,(x * (y + z) * w),,,,,,

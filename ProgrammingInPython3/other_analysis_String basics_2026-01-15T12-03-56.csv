@@ -1,0 +1,174 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,0,16
+1,3,0,1,16
+1,4,0,1,16
+2,3,0,1,16
+2,4,0,1,16
+3,4,0,2,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),0
+Similar (70-85%),6
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,Why are strings considered immutable in Python?,2,2,q3,Why are strings in Python considered immutable?,3,3,0.845,similar
+q1,What does the len() function return when used on a string variable?,3,1,q1,What does the len() function return when called on a string?,4,1,0.823,similar
+q2,How does Python access the last character of a string s?,1,2,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.782,similar
+q1,What is the index of the first character in a string?,2,1,q2,Which index refers to the last character in a Python string?,4,2,0.773,similar
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.745,similar
+q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,q4,What is the result of concatenating two strings with the + operator?,4,4,0.719,similar
+q2,Why are strings considered immutable in Python?,2,2,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.687,low
+q3,Why are strings in Python considered immutable?,3,3,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.648,low
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,q2,Which index refers to the last character in a Python string?,4,2,0.615,low
+q1,What function returns the number of characters in a string?,1,1,q1,What does the len() function return when used on a string variable?,3,1,0.6,low
+q1,What function returns the number of characters in a string?,1,1,q1,What does the len() function return when called on a string?,4,1,0.599,low
+q2,How does Python access the last character of a string s?,1,2,q2,Which index refers to the last character in a Python string?,4,2,0.583,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q4,What is the result of concatenating two strings with the + operator?,4,4,0.563,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q2,Why are strings considered immutable in Python?,2,2,0.54,low
+q1,What is the index of the first character in a string?,2,1,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.529,low
+q4,"What does len(""Python"") return?",2,4,q1,What does the len() function return when called on a string?,4,1,0.527,low
+q2,Which index refers to the last character in a Python string?,4,2,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.514,low
+q1,What is the index of the first character in a string?,2,1,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.507,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q3,Why are strings in Python considered immutable?,3,3,0.504,low
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,q1,What does the len() function return when called on a string?,4,1,0.503,low
+q4,"What does len(""Python"") return?",2,4,q1,What does the len() function return when used on a string variable?,3,1,0.5,low
+q1,What does the len() function return when called on a string?,4,1,q2,Which index refers to the last character in a Python string?,4,2,0.496,low
+q2,How does Python access the last character of a string s?,1,2,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.47,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.468,low
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.467,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q4,What is the result of concatenating two strings with the + operator?,4,4,0.457,low
+q4,"What does len(""Python"") return?",2,4,q2,Which index refers to the last character in a Python string?,4,2,0.45,low
+q2,How does Python access the last character of a string s?,1,2,q1,What does the len() function return when called on a string?,4,1,0.445,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q1,What does the len() function return when called on a string?,4,1,0.445,low
+q1,What is the index of the first character in a string?,2,1,q1,What does the len() function return when called on a string?,4,1,0.438,low
+q1,What does the len() function return when used on a string variable?,3,1,q2,Which index refers to the last character in a Python string?,4,2,0.438,low
+q3,Why are strings in Python considered immutable?,3,3,q2,Which index refers to the last character in a Python string?,4,2,0.438,low
+q1,What function returns the number of characters in a string?,1,1,q2,Which index refers to the last character in a Python string?,4,2,0.421,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.42,low
+q1,What does the len() function return when used on a string variable?,3,1,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.419,low
+q2,Why are strings considered immutable in Python?,2,2,q2,Which index refers to the last character in a Python string?,4,2,0.416,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.415,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.414,low
+q1,What is the index of the first character in a string?,2,1,q1,What does the len() function return when used on a string variable?,3,1,0.412,low
+q2,How does Python access the last character of a string s?,1,2,q1,What is the index of the first character in a string?,2,1,0.396,low
+q2,How does Python access the last character of a string s?,1,2,q4,"What does len(""Python"") return?",2,4,0.395,low
+q1,What is the index of the first character in a string?,2,1,q2,Why are strings considered immutable in Python?,2,2,0.392,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q3,Which expression concatenates two strings first and last with a space in between?,2,3,0.389,low
+q4,"What does len(""Python"") return?",2,4,q3,Why are strings in Python considered immutable?,3,3,0.389,low
+q2,How does Python access the last character of a string s?,1,2,q3,Why are strings in Python considered immutable?,3,3,0.386,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q1,What is the index of the first character in a string?,2,1,0.384,low
+q1,What function returns the number of characters in a string?,1,1,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.372,low
+q1,What is the index of the first character in a string?,2,1,q4,"What does len(""Python"") return?",2,4,0.364,low
+q1,What function returns the number of characters in a string?,1,1,q1,What is the index of the first character in a string?,2,1,0.363,low
+q2,Why are strings considered immutable in Python?,2,2,q4,"What does len(""Python"") return?",2,4,0.36,low
+q1,What is the index of the first character in a string?,2,1,q3,Why are strings in Python considered immutable?,3,3,0.356,low
+q2,How does Python access the last character of a string s?,1,2,q1,What does the len() function return when used on a string variable?,3,1,0.354,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.353,low
+q2,How does Python access the last character of a string s?,1,2,q3,Which expression concatenates two strings first and last with a space in between?,2,3,0.352,low
+q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.349,low
+q1,What function returns the number of characters in a string?,1,1,q4,"What does len(""Python"") return?",2,4,0.348,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q2,Which index refers to the last character in a Python string?,4,2,0.347,low
+q1,What does the len() function return when used on a string variable?,3,1,q3,Why are strings in Python considered immutable?,3,3,0.347,low
+q2,Why are strings considered immutable in Python?,2,2,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.345,low
+q3,Why are strings in Python considered immutable?,3,3,q1,What does the len() function return when called on a string?,4,1,0.34,low
+q4,"What does len(""Python"") return?",2,4,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.331,low
+q4,"What does len(""Python"") return?",2,4,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.331,low
+q2,How does Python access the last character of a string s?,1,2,q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,0.33,low
+q1,What does the len() function return when used on a string variable?,3,1,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.33,low
+q2,How does Python access the last character of a string s?,1,2,q2,Why are strings considered immutable in Python?,2,2,0.325,low
+q3,Why are strings in Python considered immutable?,3,3,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.319,low
+q1,What does the len() function return when called on a string?,4,1,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.316,low
+q1,What function returns the number of characters in a string?,1,1,q3,Why are strings in Python considered immutable?,3,3,0.315,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q1,What does the len() function return when used on a string variable?,3,1,0.314,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q4,"What does len(""Python"") return?",2,4,0.31,low
+q1,What function returns the number of characters in a string?,1,1,q2,How does Python access the last character of a string s?,1,2,0.302,low
+q1,What does the len() function return when called on a string?,4,1,q4,What is the result of concatenating two strings with the + operator?,4,4,0.302,low
+q1,What does the len() function return when used on a string variable?,3,1,q4,What is the result of concatenating two strings with the + operator?,4,4,0.3,low
+q1,What does the len() function return when used on a string variable?,3,1,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.294,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q4,What is the result of concatenating two strings with the + operator?,4,4,0.292,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q1,What does the len() function return when called on a string?,4,1,0.288,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q2,Which index refers to the last character in a Python string?,4,2,0.286,low
+q2,Why are strings considered immutable in Python?,2,2,q1,What does the len() function return when used on a string variable?,3,1,0.284,low
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,q3,Why are strings in Python considered immutable?,3,3,0.282,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q1,What does the len() function return when used on a string variable?,3,1,0.281,low
+q1,What function returns the number of characters in a string?,1,1,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.277,low
+q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,q4,What is the result of concatenating two strings with the + operator?,4,4,0.277,low
+q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,q1,What does the len() function return when called on a string?,4,1,0.273,low
+q2,Why are strings considered immutable in Python?,2,2,q1,What does the len() function return when called on a string?,4,1,0.269,low
+q2,Why are strings considered immutable in Python?,2,2,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.268,low
+q2,How does Python access the last character of a string s?,1,2,q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,0.261,low
+q2,Why are strings considered immutable in Python?,2,2,q4,What is the result of concatenating two strings with the + operator?,4,4,0.25,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q2,Why are strings considered immutable in Python?,2,2,0.248,low
+q3,Why are strings in Python considered immutable?,3,3,q4,What is the result of concatenating two strings with the + operator?,4,4,0.248,low
+q1,What function returns the number of characters in a string?,1,1,q2,Why are strings considered immutable in Python?,2,2,0.247,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q4,"What does len(""Python"") return?",2,4,0.239,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q3,Which expression concatenates two strings first and last with a space in between?,2,3,0.238,low
+q1,What is the index of the first character in a string?,2,1,q3,Which expression concatenates two strings first and last with a space in between?,2,3,0.237,low
+q1,What function returns the number of characters in a string?,1,1,q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,0.231,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q3,Why are strings in Python considered immutable?,3,3,0.23,low
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.226,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.224,low
+q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,q2,Which index refers to the last character in a Python string?,4,2,0.219,low
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,q4,What is the result of concatenating two strings with the + operator?,4,4,0.217,low
+q1,What function returns the number of characters in a string?,1,1,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.206,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q1,What does the len() function return when called on a string?,4,1,0.205,low
+q1,What function returns the number of characters in a string?,1,1,q4,What is the result of concatenating two strings with the + operator?,4,4,0.203,low
+q1,What is the index of the first character in a string?,2,1,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.198,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,3,0.198,low
+q2,Which index refers to the last character in a Python string?,4,2,q4,What is the result of concatenating two strings with the + operator?,4,4,0.197,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q2,Which of the following indexing expressions accesses the last character in a string s?,3,2,0.193,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q2,Which index refers to the last character in a Python string?,4,2,0.189,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q1,What does the len() function return when used on a string variable?,3,1,0.186,low
+q2,How does Python access the last character of a string s?,1,2,q4,What is the result of concatenating two strings with the + operator?,4,4,0.18,low
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,3,q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,0.179,low
+q4,"What does len(""Python"") return?",2,4,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.178,low
+q1,What is the index of the first character in a string?,2,1,q4,What is the result of concatenating two strings with the + operator?,4,4,0.175,low
+q1,What function returns the number of characters in a string?,1,1,q3,Which expression concatenates two strings first and last with a space in between?,2,3,0.172,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q3,Why are strings in Python considered immutable?,3,3,0.171,low
+q3,Which expression concatenates two strings first and last with a space in between?,2,3,q4,"What does len(""Python"") return?",2,4,0.169,low
+q4,"What does len(""Python"") return?",2,4,q4,What is the result of concatenating two strings with the + operator?,4,4,0.168,low
+q2,Why are strings considered immutable in Python?,2,2,q3,Which expression concatenates two strings first and last with a space in between?,2,3,0.166,low
+q2,How does Python access the last character of a string s?,1,2,q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,4,0.154,low
+q1,What function returns the number of characters in a string?,1,1,q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,0.13,low
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,4,q1,What is the index of the first character in a string?,2,1,0.115,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Create string variables and assign values using string literals.  
+Use len() to determine the length of a string.  
+Access individual characters in a string using positive and negative indices.  
+Explain why strings are immutable and cannot be modified by index assignment.  
+Concatenate strings to create new string values."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What function returns the number of characters in a string?,1,yes,"Yes, the question directly assesses the learning objective of using len() to determine the length of a string, as it specifically asks for the function that returns the number of characters in a string."
+q2,How does Python access the last character of a string s?,1,yes,"Yes, this question directly assesses the learning objective of accessing individual characters in a string using positive and negative indices, specifically testing the understanding of negative indexing."
+q3,"Why is the statement s[2] = ""a"" invalid for a string s?",1,yes,"Yes, the question directly assesses the learning objective of explaining why strings are immutable and cannot be modified by index assignment."
+q4,"What is the result of concatenating ""Data"" + ""Science"" in Python?",1,yes,"Yes, this question directly assesses the learning objective of concatenating strings to create new string values, as it requires the student to understand the result of combining two string literals."
+q1,What is the index of the first character in a string?,2,yes,"Yes, the question directly assesses the learning objective of accessing individual characters in a string using positive and negative indices, as it tests the understanding of string indexing."
+q2,Why are strings considered immutable in Python?,2,yes,"Yes, the question directly assesses the learning objective of explaining why strings are immutable and cannot be modified by index assignment."
+q3,Which expression concatenates two strings first and last with a space in between?,2,yes,"Yes, the question directly assesses the learning objective of concatenating strings to create new string values, as it requires the student to identify the correct expression that combines two strings with a space."
+q4,"What does len(""Python"") return?",2,yes,"Yes, this question directly assesses the learning objective of using len() to determine the length of a string, as it requires the student to apply the len() function to a string literal."
+q1,What does the len() function return when used on a string variable?,3,yes,"Yes, the question directly assesses the learning objective of using len() to determine the length of a string, as it specifically asks what the len() function returns when applied to a string variable."
+q2,Which of the following indexing expressions accesses the last character in a string s?,3,yes,"Yes, this question directly assesses the learning objective of accessing individual characters in a string using positive and negative indices, specifically through the use of the negative index to access the last character."
+q3,Why are strings in Python considered immutable?,3,yes,"Yes, the question directly assesses the learning objective of explaining why strings are immutable and cannot be modified by index assignment."
+q4,"What happens when two strings, a and b, are concatenated with a + operator?",3,yes,"Yes, this question directly assesses the learning objective of concatenating strings to create new string values, as it specifically addresses the outcome of using the + operator for string concatenation."
+q1,What does the len() function return when called on a string?,4,yes,"Yes, the question directly assesses the learning objective of using len() to determine the length of a string, as it specifically asks what the len() function returns when called on a string."
+q2,Which index refers to the last character in a Python string?,4,yes,"Yes, the question assesses the learning objective of accessing individual characters in a string using positive and negative indices, specifically focusing on the use of negative indexing to refer to the last character."
+q3,"Why can’t a character in a string be changed by assigning to an index, like s[2] = ""A""?",4,yes,"Yes, the question directly assesses the learning objective of explaining why strings are immutable and cannot be modified by index assignment."
+q4,What is the result of concatenating two strings with the + operator?,4,yes,"Yes, the question directly assesses the learning objective of concatenating strings to create new string values, as it specifically asks about the result of using the + operator for string concatenation."

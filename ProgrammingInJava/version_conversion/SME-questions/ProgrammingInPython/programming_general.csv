@@ -1,0 +1,10 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"Basic instruction types are input, process, and _____.",output,output,memory,calculation,assignment,,,,,,
+"In an instruction like: z = x + y, the symbols x, y, and z are examples of _____.",variables,output,visibles,variables,instructions,,,,,,
+"\nConsider the following program:\n```python\nt = 15
+t = t * 2
+t = t + 1
+t = t - 4
+put t\n```\nWhat does the program produce as output?",27,11,27,12,15,,,,,,
+Which symbol represents the multiplication operation in programming?,*,.,*,x,( ),,,,,,
+A sequence of instructions that solves a problem is called _____.,an algorithm,an algorithm,a process,an allegory,turtle graphics,,,,,,

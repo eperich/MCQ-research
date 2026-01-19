@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+15 _____ 3 = 5.0,/,%,^,/,//,,,,,,
+15 _____ 3 = 0,%,%,/,//,*,,,,,,
+Which expression gives the number of whole minutes that corresponds to some number of seconds?,seconds // 60,seconds % 60,seconds / 60,seconds * 60,seconds // 60,,,,,,
+What is the value of 11 // 2?,5,5,6,0,-5,,,,,,

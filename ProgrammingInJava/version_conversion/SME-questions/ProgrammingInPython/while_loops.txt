@@ -1,0 +1,138 @@
+<question xsi:type='MultipleChoiceQuestion' guid='2c945d06-7e86-d2eb-5a2b-cda461baa21a' subjects='python3'>
+<instructions>
+<p>Which input value causes "Goodbye" to be output next? </p>
+<codeBlock language='python'>
+x = int(input())
+while x >= 0:
+    # Do something
+    x = int(input())
+print("Goodbye")
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>-1 </choice>
+<choice>0 </choice>
+<choice>1 </choice>
+<choice>No such value </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='335f6c52-9669-2a14-7d17-cdd68b683985' subjects='python3'>
+<instructions>
+<p>Which input for variable c causes "Done" to be output next? </p>
+<codeBlock language='python'>
+c = "y"
+while c == "y":
+    # Do something
+    print("Enter y to continue, n to quit: ", end=" ")
+    c = input()
+print("Done");
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>"y" only </choice>
+<choice>"n" only </choice>
+<choice correct='true'>Any value other than "y" </choice>
+<choice>No such value (infinite loop) </choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='7d7ee9ce-73f6-c5d8-1d7a-97a3bd85e9ca'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+count = 0
+while count &lt; 3:
+     print("loop")
+count = count + 1
+print(f"Final value of count: {count}")
+</codeBlock>
+</instructions>
+
+
+<choices>
+<choice>Prints "loop" once, then "Final value of count: 1"</choice>
+<choice>Prints "loop" three times, then "Final value of count: 3"</choice>
+<choice>Prints "loop" three times, then "Final value of count: 4"</choice>
+<choice correct='true'>Prints "loop" forever (infinite loop)</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='0e3b83e3-9f6a-a8e4-73bc-07b48bbc78f7'>
+<instructions>
+<line>What initial value of x will cause an infinite loop?</line>
+<codeBlock language='python'>
+x = int(input())
+while x != 0:
+    x = x - 2
+    print(x)
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>0</choice>
+<choice>2</choice>
+<choice>4</choice>
+<choice correct='true'>7</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='802796a4-f8d3-1909-f333-95f873fc9a49'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+x = 18
+while x % 3 == 0:
+    print(x, end=" ")
+    x = x // 3
+</codeBlock>
+</instructions>
+
+<choices>
+<choice>6</choice>
+<choice>6 2</choice>
+<choice correct='true'>18 6</choice>
+<choice>18 6 2</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='1a6ec87d-d92a-e4c7-b2ae-29b4190eb573'>
+<instructions>
+<line>What is the output?</line>
+<codeBlock language='python'>
+my_list = [3, 7, 0, 2, -1, 8]
+index = 0
+while my_list[index] &gt; 0:
+    print(my_list[index], end=" ")
+    index += 1
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>3 7</choice>
+<choice>3 7 0</choice>
+<choice>3 7 0 2</choice>
+<choice>3 7 0 2 -1</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='d31d2e47-9189-77d9-bca5-e87d69dd125e' subjects='python3'>
+<instructions>
+<p>Which is an <i>essential</i> feature of a while loop having the following form? </p>
+<codeBlock language='text'>
+while loop_expression:
+   loop_body
+</codeBlock>
+</instructions>
+
+<choices>
+<choice correct='true'>The loop_expression should be affected by the loop_body </choice>
+<choice>The loop_expression should not be affected by the loop_body </choice>
+<choice>The loop_body should get user input </choice>
+<choice>The loop_body should update at least two variables </choice>
+</choices>
+</question>

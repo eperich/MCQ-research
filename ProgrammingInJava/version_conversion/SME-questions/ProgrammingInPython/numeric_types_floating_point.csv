@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What is the name of the data type used for floating point numbers?,float,float,decimal,non_integer,floating_point,,,,,,
+Which of the following data values is best represented with a floating point variable?,The speed of a snail.,The number of pets in a house.,The number of acorns in a tree.,The number of children in a classroom.,The speed of a snail.,,,,,,
+"In Python, which of the following literals is shown in valid scientific notation?",3.0004e-12,3.0004e-12,17.012s14,0.003x10^-5,e12f3.04,,,,,,
+Assigning a value to a floating point variable that is too large for the computer to represent is a condition called _____ .,overflow,bit error,overflow,overcapacity,system error,,,,,,

@@ -1,0 +1,44 @@
+<question xsi:type='MultipleChoiceQuestion' guid='02b6bb4d-6a56-23b9-c7ae-769b33d727c7' subjects='c, cpp, java'>
+<instructions>
+<p>What is the ending value of x? </p>
+
+<codeBlock language='text'>
+int y = 6;
+int x = (4 / 2) * y + 8;</codeBlock>
+</instructions>
+
+<choices>
+
+<choice>8 </choice>
+<choice correct='true'>20 </choice>
+<choice>28</choice>
+<choice>32</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='58e3352c-e239-a451-9331-b244b214c94c' subjects='c, cpp, java'>
+<instructions>
+<p>Which expression doubles x?  </p>
+</instructions>
+
+<choices>
+<choice>x += 2; </choice>
+<choice correct='true'>x *= 2; </choice>
+<choice>x *= x; </choice>
+<choice>x *= x * 2; </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='6f66cb7c-6e45-f8cd-3591-7d7fbaa71e38' subjects='c'>
+<instructions>
+Which is a valid compound operator?
+</instructions>
+
+<choices>
+<choice> $=</choice>
+<choice correct='true'> %=</choice>
+<choice> !=</choice>
+<choice> ?=</choice>
+</choices>
+</question>

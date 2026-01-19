@@ -1,0 +1,10 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhat is y after executing the statements?\n```c\nx = 5;
+y = x + 1;
+y = y * 2;\n```",12,5,6,8,12,,,,,,
+"\nWhat is y after executing the statements?\n```c\nx = 4;
+y = x + 1;
+x = 3;
+y = y * 2;\n```",10,6,8,10,12,,,,,,
+"Which statement is incrementing the integer x, where y is also an integer?",\n`x = x + 1;`,\n`x = x - 1;`,\n`x = x + 1;`,\n`y = x + 1;`,\n`y = x - 1;`,,,,,,
+What is the purpose of a variable?,To hold a value,To assign values,To perform calculations,To hold a value,To hold a constant value,,,,,,

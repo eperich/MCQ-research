@@ -1,0 +1,116 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,3,0,0
+2,3,0,0
+3,3,0,0
+4,3,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,2,9
+1,3,0,2,9
+1,4,1,1,9
+2,3,2,1,9
+2,4,2,1,9
+3,4,3,0,9
+
+Summary
+Total Comparisons,66
+Duplicates (≥85%),8
+Similar (70-85%),7
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.955,duplicate
+q1,Why use constant variables instead of literal numbers in code?,2,1,q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,0.949,duplicate
+q1,Why use constant variables instead of literal numbers in code?,2,1,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.922,duplicate
+q2,Which keyword declares a constant variable in Java?,1,2,q2,Which keyword declares a constant variable in Java?,4,2,0.911,duplicate
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q2,Which keyword declares a constant variable in Java?,4,2,0.897,duplicate
+q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,q2,Which keyword declares a constant variable in Java?,4,2,0.894,duplicate
+q3,What happens if a program tries to assign a new value to a constant variable?,2,3,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.889,duplicate
+q3,What happens if a program tries to assign a new value to a constant variable?,3,3,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.875,duplicate
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.849,similar
+q3,What happens if a program tries to assign a new value to a constant variable?,2,3,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.844,similar
+q2,Which keyword declares a constant variable in Java?,1,2,q2,A constant variable is declared using the keyword _____ in Java.,2,2,0.83,similar
+q2,Which keyword declares a constant variable in Java?,1,2,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.793,similar
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q1,Why use constant variables instead of literal numbers in code?,2,1,0.73,similar
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.729,similar
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,0.705,similar
+q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.584,low
+q3,What happens if a program tries to assign a new value to a constant variable?,3,3,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.576,low
+q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.568,low
+q3,What happens if a program tries to assign a new value to a constant variable?,2,3,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.566,low
+q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.561,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.555,low
+q3,What happens if a program tries to assign a new value to a constant variable?,2,3,q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,0.555,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.553,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q2,Which keyword declares a constant variable in Java?,1,2,0.551,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q2,A constant variable is declared using the keyword _____ in Java.,2,2,0.538,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q2,Which keyword declares a constant variable in Java?,4,2,0.532,low
+q1,Why use constant variables instead of literal numbers in code?,2,1,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.53,low
+q1,Why use constant variables instead of literal numbers in code?,2,1,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.527,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q3,What happens if a program tries to assign a new value to a constant variable?,2,3,0.523,low
+q1,Why use constant variables instead of literal numbers in code?,2,1,q3,What happens if a program tries to assign a new value to a constant variable?,2,3,0.493,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.489,low
+q2,Which keyword declares a constant variable in Java?,1,2,q1,Why use constant variables instead of literal numbers in code?,2,1,0.489,low
+q2,Which keyword declares a constant variable in Java?,1,2,q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,0.488,low
+q2,Which keyword declares a constant variable in Java?,1,2,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.482,low
+q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,q2,Which keyword declares a constant variable in Java?,4,2,0.48,low
+q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,q2,Which keyword declares a constant variable in Java?,4,2,0.477,low
+q2,Which keyword declares a constant variable in Java?,1,2,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.476,low
+q1,Why use constant variables instead of literal numbers in code?,2,1,q2,A constant variable is declared using the keyword _____ in Java.,2,2,0.476,low
+q1,Why use constant variables instead of literal numbers in code?,2,1,q2,Which keyword declares a constant variable in Java?,4,2,0.473,low
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,0.472,low
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.472,low
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.469,low
+q3,What happens if a program tries to assign a new value to a constant variable?,3,3,q2,Which keyword declares a constant variable in Java?,4,2,0.46,low
+q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.453,low
+q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.452,low
+q1,Why use constant variables instead of literal numbers in code?,2,1,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.451,low
+q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.45,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q1,Why use constant variables instead of literal numbers in code?,2,1,0.449,low
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.441,low
+q2,Which keyword declares a constant variable in Java?,1,2,q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,0.44,low
+q2,A constant variable is declared using the keyword _____ in Java.,2,2,q3,What happens if a program tries to assign a new value to a constant variable?,2,3,0.44,low
+q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.435,low
+q3,What happens if a program tries to assign a new value to a constant variable?,2,3,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.431,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q2,A constant variable is declared using the keyword _____ in Java.,2,2,0.429,low
+q2,Which keyword declares a constant variable in Java?,1,2,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.426,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q1,Why should programmers use constant variables instead of literal numbers in code?,3,1,0.426,low
+q1,What is the main benefit of declaring a variable as a constant?,1,1,q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,0.422,low
+q2,Which keyword declares a constant variable in Java?,1,2,q3,What happens if a program tries to assign a new value to a constant variable?,2,3,0.422,low
+q3,What happens if a program tries to assign a new value to a constant variable?,2,3,q2,Which keyword declares a constant variable in Java?,4,2,0.419,low
+q2,Which keyword declares a constant variable in Java?,4,2,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.418,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q2,Which keyword declares a constant variable in Java?,4,2,0.392,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q1,Why should programmers use constant variables instead of literal numbers in code?,4,1,0.387,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,2,0.356,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q3,What happens if a program tries to assign a new value to a constant variable?,4,3,0.343,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q3,What happens if a program tries to assign a new value to a constant variable?,3,3,0.339,low
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,3,q3,What happens if a program tries to assign a new value to a constant variable?,2,3,0.289,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"- Define constant variables and identify important use cases for their use.  
+- Apply constant variables correctly in expressions and understand their behavior in assignment statements.  
+- Analyze and correct code snippets to ensure proper use of constant variables.  
+- Understand the benefits of using constant variables for improving code readability and maintainability.  
+- Declare and initialize constant variables in code, following naming conventions and language-specific syntax."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the main benefit of declaring a variable as a constant?,1,yes,"This question assesses understanding of the benefits of using constant variables for improving code readability and preventing accidental changes, aligning with learning objective 4."
+q2,Which keyword declares a constant variable in Java?,1,yes,"This question evaluates knowledge of declaring constant variables in Java, directly related to learning objective 5."
+q3,"If a constant variable named MAX_SPEED is declared, what is the best naming practice?",1,yes,"This question tests knowledge of naming conventions for constant variables, which is part of learning objective 5."
+q1,Why use constant variables instead of literal numbers in code?,2,yes,"This question assesses understanding of why constant variables are used instead of literals, relating to learning objective 4."
+q2,A constant variable is declared using the keyword _____ in Java.,2,yes,"This question evaluates the ability to declare constant variables using the correct keyword in Java, aligned with learning objective 5."
+q3,What happens if a program tries to assign a new value to a constant variable?,2,yes,"This question tests understanding of the behavior of constant variables in assignment statements, corresponding to learning objective 2."
+q1,Why should programmers use constant variables instead of literal numbers in code?,3,yes,"This question assesses the benefits of using constant variables over literals, linked to learning objective 4."
+q2,Which keyword in Java declares a variable whose value cannot be changed after initialization?,3,yes,"This question evaluates knowledge of the keyword for declaring constants in Java, related to learning objective 5."
+q3,What happens if a program tries to assign a new value to a constant variable?,3,yes,"This question tests understanding of the behavior when assigning new values to constants, aligned with learning objective 2."
+q1,Why should programmers use constant variables instead of literal numbers in code?,4,yes,"This question assesses the benefits of using constant variables for readability and preventing unintentional changes, matching learning objective 4."
+q2,Which keyword declares a constant variable in Java?,4,yes,"This question evaluates knowledge of the Java keyword for constants, related to learning objective 5."
+q3,What happens if a program tries to assign a new value to a constant variable?,4,yes,"This question tests understanding of assignment behavior with constant variables, corresponding to learning objective 2."

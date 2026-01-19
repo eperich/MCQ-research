@@ -1,0 +1,74 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,2,0,0
+2,2,0,0
+3,2,0,0
+4,2,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,0,4
+1,3,1,1,4
+1,4,1,0,4
+2,3,0,0,4
+2,4,0,1,4
+3,4,1,0,4
+
+Summary
+Total Comparisons,28
+Duplicates (≥85%),3
+Similar (70-85%),2
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,Why should a single space be included around arithmetic operators in code?,3,1,q1,Why should a single space be used around operators in arithmetic expressions?,4,1,0.917,duplicate
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q1,Why should a single space be used around operators in arithmetic expressions?,4,1,0.891,duplicate
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q1,Why should a single space be included around arithmetic operators in code?,3,1,0.888,duplicate
+q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,q1,Why should a single space be used around operators in arithmetic expressions?,4,1,0.742,similar
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,0.727,similar
+q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,q1,Why should a single space be included around arithmetic operators in code?,3,1,0.698,low
+q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,0.681,low
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,0.677,low
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.667,low
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,0.615,low
+q2,Why are commas not allowed in integer literals in code?,2,2,q1,Why should a single space be included around arithmetic operators in code?,3,1,0.592,low
+q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.588,low
+q2,Why are commas not allowed in integer literals in code?,2,2,q1,Why should a single space be used around operators in arithmetic expressions?,4,1,0.573,low
+q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.562,low
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q2,Why are commas not allowed in integer literals in code?,2,2,0.544,low
+q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,1,q2,Why are commas not allowed in integer literals in code?,2,2,0.534,low
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,0.476,low
+q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,q1,Why should a single space be used around operators in arithmetic expressions?,4,1,0.471,low
+q1,Why should a single space be included around arithmetic operators in code?,3,1,q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,0.454,low
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.44,low
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,q1,Why should a single space be used around operators in arithmetic expressions?,4,1,0.431,low
+q2,Why are commas not allowed in integer literals in code?,2,2,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.42,low
+q1,Why should a single space be used around operators in arithmetic expressions?,4,1,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.42,low
+q1,Why should a single space be included around arithmetic operators in code?,3,1,q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,2,0.418,low
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,1,q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,0.415,low
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,q1,Why should a single space be included around arithmetic operators in code?,3,1,0.406,low
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,2,q2,Why are commas not allowed in integer literals in code?,2,2,0.337,low
+q2,Why are commas not allowed in integer literals in code?,2,2,q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,2,0.321,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"- Apply proper spacing around arithmetic operators to enhance code readability  
+- Use compound assignment operators (e.g., +=, -=, *=, /=) to simplify arithmetic expressions  
+- Understand and correctly write arithmetic expressions involving integers, respecting operator precedence  
+- Avoid using commas in integer literals when declaring or assigning numerical values  
+- Break down complex arithmetic expressions into simpler statements to improve code clarity and maintainability"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Why is it good practice to include a single space around operators in arithmetic expressions?,1,yes,This question assesses the objective about applying proper spacing around arithmetic operators to enhance code readability.
+q2,"What does the compound operator ""+="" do in the statement ""numAtoms += 5;""?",1,yes,This question evaluates the use of compound assignment operators to simplify arithmetic expressions.
+q1,What is the purpose of using compound operators like += in arithmetic expressions?,2,yes,"This question tests understanding of the purpose of compound operators, aligning with the objective about using compound assignment operators."
+q2,Why are commas not allowed in integer literals in code?,2,yes,This question directly addresses the objective about avoiding commas in integer literals when declaring or assigning numerical values.
+q1,Why should a single space be included around arithmetic operators in code?,3,yes,This question again assesses the importance of spacing around arithmetic operators for code readability.
+q2,"What does the compound operator ""+="" do in the statement ""x += 3;""?",3,yes,"This question evaluates understanding of the compound assignment operator ""+="", matching the objective on using compound assignment operators."
+q1,Why should a single space be used around operators in arithmetic expressions?,4,yes,This question tests the objective about applying proper spacing around arithmetic operators to improve code readability.
+q2,Which compound operator correctly rewrites this statement? numCount = numCount + 7;,4,yes,"This question assesses the ability to rewrite arithmetic expressions using compound assignment operators, aligning with the objective to use compound assignment operators to simplify expressions."

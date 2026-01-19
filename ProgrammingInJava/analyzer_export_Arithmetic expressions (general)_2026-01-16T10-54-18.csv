@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What does an expression in programming always produce?,A value,A variable name,A value,A comment,A data type,,,,,,
+"In the expression y = 3 + 2 * x, which operation is performed first?",Multiplication of 2 * x,Addition of 3 + 2,Multiplication of 2 * x,Assignment of y,Evaluation from right to left,,,,,,
+"In programming, the symbol for multiplication is _____.",·,x,*,×,·,,,,,,
+What does an expression in programming always produce?,A value,A syntax error,A value,A variable name,A comment,,,,,,
+Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,Division (/),Addition (+),Multiplication (*),Division (/),Parentheses ( ),,,,,,
+"In programming, the multiplication symbol is written as _____ instead of ×.",-,x,*,/,-,,,,,,
+What does an expression in programming always produce?,A value,A variable name,A value,A comment,A function call,,,,,,
+Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,Division (/),Multiplication (*),Addition (+),Division (/),Parentheses ( ),,,,,,
+"In programming, the multiplication symbol is written as _____ instead of ×.",/,x,*,·,/,,,,,,
+An _expression_ in programming always evaluates to a/an _____.,value,operator,variable,value,literal,,,,,,
+Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,/,+,*,/,-,,,,,,
+The programming operator for multiplication is _____.,x,x,*,&,×,,,,,,

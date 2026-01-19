@@ -1,0 +1,174 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,1,16
+1,3,0,1,16
+1,4,0,0,16
+2,3,1,1,16
+2,4,1,0,16
+3,4,1,0,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),3
+Similar (70-85%),3
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,Why is Python popular for data science?,2,1,q1,Why is Python popular for data science?,4,1,0.932,duplicate
+q1,Why is Python popular for data science?,2,1,q1,Why is Python popular for data science?,3,1,0.919,duplicate
+q1,Why is Python popular for data science?,3,1,q1,Why is Python popular for data science?,4,1,0.913,duplicate
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.84,similar
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.831,similar
+q4,"In Jupyter notebooks, what is a cell?",1,4,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.727,similar
+q4,"In Jupyter notebooks, what is a cell?",1,4,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.69,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q3,"In Python, a variable is created by using _____.",3,3,0.673,low
+q2,A variable in Python is best defined as _____.,2,2,q2,"In Python, an expression is a line of code that _____.",4,2,0.673,low
+q2,A variable in Python is best defined as _____.,2,2,q3,What is a parameter in a Python function?,4,3,0.622,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.604,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q1,Why is Python popular for data science?,3,1,0.587,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q1,Why is Python popular for data science?,4,1,0.578,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q1,Why is Python popular for data science?,2,1,0.556,low
+q2,A variable in Python is best defined as _____.,2,2,q3,"In Python, a variable is created by using _____.",3,3,0.54,low
+q3,"In Python, a variable is created by using _____.",3,3,q2,"In Python, an expression is a line of code that _____.",4,2,0.53,low
+q1,Why is Python popular for data science?,2,1,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.525,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.503,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q3,What is the role of the Python interpreter?,2,3,0.502,low
+q3,What is the role of the Python interpreter?,2,3,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.5,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q2,"In Python, an expression is a line of code that _____.",4,2,0.496,low
+q1,Why is Python popular for data science?,3,1,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.495,low
+q3,What is the role of the Python interpreter?,2,3,q1,Why is Python popular for data science?,3,1,0.494,low
+q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.494,low
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,q1,Why is Python popular for data science?,4,1,0.487,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q2,A variable in Python is best defined as _____.,2,2,0.485,low
+q3,What is the role of the Python interpreter?,2,3,q2,"In Python, an expression is a line of code that _____.",4,2,0.483,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q1,Why is Python popular for data science?,2,1,0.476,low
+q1,Why is Python popular for data science?,2,1,q3,What is the role of the Python interpreter?,2,3,0.474,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q3,What is the role of the Python interpreter?,2,3,0.473,low
+q3,What is the role of the Python interpreter?,2,3,q1,Why is Python popular for data science?,4,1,0.473,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q2,A variable in Python is best defined as _____.,2,2,0.457,low
+q2,A variable in Python is best defined as _____.,2,2,q3,What is the role of the Python interpreter?,2,3,0.455,low
+q2,"In Python, an expression is a line of code that _____.",4,2,q3,What is a parameter in a Python function?,4,3,0.449,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q1,Why is Python popular for data science?,4,1,0.445,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q2,A variable in Python is best defined as _____.,2,2,0.445,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q3,What is the role of the Python interpreter?,2,3,0.445,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q1,Why is Python popular for data science?,3,1,0.443,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q2,"In Python, an expression is a line of code that _____.",4,2,0.434,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q3,What is the main advantage of using functions in Python for data science?,1,3,0.416,low
+q3,What is the role of the Python interpreter?,2,3,q3,"In Python, a variable is created by using _____.",3,3,0.408,low
+q2,A variable in Python is best defined as _____.,2,2,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.4,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q3,What is a parameter in a Python function?,4,3,0.386,low
+q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,q2,"In Python, an expression is a line of code that _____.",4,2,0.379,low
+q3,What is the role of the Python interpreter?,2,3,q3,What is a parameter in a Python function?,4,3,0.378,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q1,Why is Python popular for data science?,3,1,0.377,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q2,"In Python, an expression is a line of code that _____.",4,2,0.377,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q3,What is a parameter in a Python function?,4,3,0.375,low
+q3,What is the role of the Python interpreter?,2,3,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.367,low
+q2,A variable in Python is best defined as _____.,2,2,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.362,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q1,Why is Python popular for data science?,2,1,0.358,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q2,"In Python, an expression is a line of code that _____.",4,2,0.358,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q1,Why is Python popular for data science?,2,1,0.354,low
+q3,What is the role of the Python interpreter?,2,3,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.354,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q1,Why is Python popular for data science?,4,1,0.351,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q1,Why is Python popular for data science?,4,1,0.351,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.347,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q3,What is the role of the Python interpreter?,2,3,0.346,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q1,Why is Python popular for data science?,3,1,0.345,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q3,What is the main advantage of using functions in Python for data science?,1,3,0.336,low
+q3,What is the role of the Python interpreter?,2,3,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.336,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q4,"In Jupyter notebooks, what is a cell?",1,4,0.332,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q3,What is a parameter in a Python function?,4,3,0.324,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,0.32,low
+q3,"In Python, a variable is created by using _____.",3,3,q3,What is a parameter in a Python function?,4,3,0.309,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q3,"In Python, a variable is created by using _____.",3,3,0.307,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.297,low
+q1,Why is Python popular for data science?,2,1,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.297,low
+q2,A variable in Python is best defined as _____.,2,2,q1,Why is Python popular for data science?,3,1,0.293,low
+q1,Why is Python popular for data science?,3,1,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.293,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q4,"In Jupyter notebooks, what is a cell?",1,4,0.292,low
+q1,Why is Python popular for data science?,2,1,q3,"In Python, a variable is created by using _____.",3,3,0.291,low
+q1,Why is Python popular for data science?,3,1,q2,"In Python, an expression is a line of code that _____.",4,2,0.29,low
+q1,Why is Python popular for data science?,4,1,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.286,low
+q2,"In Python, an expression is a line of code that _____.",4,2,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.281,low
+q2,A variable in Python is best defined as _____.,2,2,q1,Why is Python popular for data science?,4,1,0.28,low
+q1,Why is Python popular for data science?,2,1,q2,"In Python, an expression is a line of code that _____.",4,2,0.277,low
+q2,A variable in Python is best defined as _____.,2,2,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.277,low
+q1,Why is Python popular for data science?,4,1,q2,"In Python, an expression is a line of code that _____.",4,2,0.277,low
+q2,A variable in Python is best defined as _____.,2,2,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.274,low
+q1,Why is Python popular for data science?,2,1,q2,A variable in Python is best defined as _____.,2,2,0.27,low
+q1,Why is Python popular for data science?,3,1,q3,"In Python, a variable is created by using _____.",3,3,0.269,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q3,"In Python, a variable is created by using _____.",3,3,0.268,low
+q3,"In Python, a variable is created by using _____.",3,3,q1,Why is Python popular for data science?,4,1,0.268,low
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,q3,"In Python, a variable is created by using _____.",3,3,0.266,low
+q1,Why is Python popular for data science?,3,1,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.264,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.263,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q3,What is a parameter in a Python function?,4,3,0.261,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.259,low
+q1,Why is Python popular for data science?,4,1,q3,What is a parameter in a Python function?,4,3,0.257,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q3,"In Python, a variable is created by using _____.",3,3,0.255,low
+q1,Why is Python popular for data science?,3,1,q3,What is a parameter in a Python function?,4,3,0.249,low
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,q3,What is a parameter in a Python function?,4,3,0.248,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.243,low
+q1,Why is Python popular for data science?,2,1,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.242,low
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,q2,"In Python, an expression is a line of code that _____.",4,2,0.242,low
+q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,q1,Why is Python popular for data science?,4,1,0.24,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q2,A variable in Python is best defined as _____.,2,2,0.239,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q2,"In Python, an expression is a line of code that _____.",4,2,0.239,low
+q3,What is the main advantage of using functions in Python for data science?,1,3,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.235,low
+q1,Why is Python popular for data science?,2,1,q3,What is a parameter in a Python function?,4,3,0.233,low
+q3,"In Python, a variable is created by using _____.",3,3,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.232,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q1,Why is Python popular for data science?,3,1,0.228,low
+q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,q3,What is a parameter in a Python function?,4,3,0.227,low
+q4,"In Jupyter notebooks, what is a cell?",1,4,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.223,low
+q3,"In Python, a variable is created by using _____.",3,3,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.223,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q3,"In Python, a variable is created by using _____.",3,3,0.221,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q3,What is a parameter in a Python function?,4,3,0.221,low
+q3,What is a parameter in a Python function?,4,3,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.216,low
+q1,Why is Python popular for data science?,2,1,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.208,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q4,"In Jupyter notebooks, what is a cell?",1,4,0.206,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q1,Why is Python popular for data science?,4,1,0.205,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.187,low
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.18,low
+q1,What does the equal sign (=) do in Python programming?,1,1,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.179,low
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,0.177,low
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,2,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.168,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,4,0.151,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,4,0.145,low
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,2,q4,"In Jupyter notebooks, what does the Run button do?",4,4,0.135,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Compare advantages and disadvantages of Python for data science  
+Define programs, variables, and expressions in Python  
+Explain functions and their components including parameters, arguments, and return values  
+Use the Jupyter notebook interface to write, run, and organize code cells  
+Modify and manage Jupyter notebooks within an interactive learning environment"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the equal sign (=) do in Python programming?,1,yes,"This question assesses understanding of variables and expressions in Python, aligning with the objective to define variables and expressions."
+q2,Why is Python 3.0 not backward compatible with Python 2.7?,1,yes,"This question evaluates knowledge of Python's advantages and disadvantages, specifically syntax changes, relating to comparing Python versions for data science."
+q3,What is the main advantage of using functions in Python for data science?,1,yes,"This question addresses the purpose and advantage of functions in Python, matching the objective about explaining functions and their components."
+q4,"In Jupyter notebooks, what is a cell?",1,yes,"This question tests knowledge of the Jupyter notebook interface, specifically what a cell is, aligning with the objective to use the Jupyter notebook interface."
+q1,Why is Python popular for data science?,2,yes,"This question assesses understanding of Python's advantages for data science, directly related to comparing advantages and disadvantages of Python."
+q2,A variable in Python is best defined as _____.,2,yes,"This question defines what a variable is in Python, matching the objective to define variables."
+q3,What is the role of the Python interpreter?,2,no,"This question focuses on the role of the Python interpreter, which is not explicitly covered in the stated learning objectives."
+q4,"In a Jupyter notebook, a small segment of code or output is called a _____.",2,yes,"This question tests knowledge of Jupyter notebook terminology, specifically what a cell is, aligning with the objective to use the Jupyter notebook interface."
+q1,Why is Python popular for data science?,3,yes,"This question assesses understanding of Python's popularity and advantages for data science, matching the objective about comparing advantages and disadvantages."
+q2,Python 3.0 is not backward compatible with Python 2.7 because _____.,3,yes,"This question evaluates understanding of Python 3.0's syntax changes and backward compatibility, relating to comparing Python versions for data science."
+q3,"In Python, a variable is created by using _____.",3,yes,"This question tests knowledge of variable creation in Python, aligning with the objective to define variables and expressions."
+q4,"In Jupyter notebooks, small segments of code or output are called _____.",3,yes,"This question assesses understanding of Jupyter notebook structure, specifically the term ""cells,"" matching the objective to use the Jupyter notebook interface."
+q1,Why is Python popular for data science?,4,yes,"This question evaluates knowledge of Python's advantages for data science, including learning resources, aligning with the objective to compare advantages and disadvantages."
+q2,"In Python, an expression is a line of code that _____.",4,yes,"This question tests understanding of expressions in Python, directly matching the objective to define expressions."
+q3,What is a parameter in a Python function?,4,yes,"This question assesses knowledge of function components, specifically parameters, aligning with the objective to explain functions and their components."
+q4,"In Jupyter notebooks, what does the Run button do?",4,yes,"This question tests understanding of managing and modifying Jupyter notebooks, specifically the Run button's function, matching the objective to modify and manage notebooks."

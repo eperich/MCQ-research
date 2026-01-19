@@ -1,0 +1,40 @@
+<question xsi:type='MultipleChoiceQuestion' guid='513bd6ba-3997-c5d4-b252-cb86c925a321'>
+<instructions>
+<p>Given a list of syntax errors from a compiler, a programmer should focus attention on which error(s), before recompiling?</p>
+</instructions>
+
+<choices>
+<choice>All the errors </choice>
+<choice correct='true'>The first error only </choice>
+<choice>The middle error only </choice>
+<choice>The last error only </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='4b5ad13a-06b1-42e4-c4c8-203ca1989d72'>
+<instructions>
+<p>If a program compiles without errors, the program is free from _____. </p>
+</instructions>
+
+<choices>
+<choice correct='true'>syntax errors </choice>
+<choice>logic errors </choice>
+<choice>runtime errors </choice>
+<choice>semantic errors </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='887b8c69-4a7f-89e5-16ac-cd7e670a9f3d'>
+<instructions>
+<p>A program should compute two times x. Which statement has a logic error? </p>
+</instructions>
+
+<choices>
+<choice>y = x + x; </choice>
+<choice>y = 2 * x; </choice>
+<choice correct='true'>y = x * x; </choice>
+<choice>y = x * 2; </choice>
+</choices>
+</question>

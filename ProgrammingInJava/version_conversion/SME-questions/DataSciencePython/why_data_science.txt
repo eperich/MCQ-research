@@ -1,0 +1,42 @@
+<question xsi:type='MultipleChoiceQuestion' guid='764b5981-7dc0-4fc7-ad3b-b16a503d6983'>
+<instructions>
+What are the three V's of big data?
+</instructions>
+
+<choices>
+<choice>Velocity, variety, verification</choice>
+<choice>Verification, volume, vehemence</choice>
+<choice correct='true'>Volume, velocity, variety</choice>
+<choice>Vision, versatility, vehemence</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='10a1bb37-3a84-4db6-a50e-ae371e6bf993'>
+<instructions>
+Over time, the volume of global data has ______.
+</instructions>
+
+<choices>
+<choice>decreased</choice>
+<choice>stayed about the same</choice>
+<choice>increased somewhat</choice>
+<choice correct='true'>increased exponentially</choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='24eb85a3-51b5-4fa9-bed4-2fdb0e0eae62'>
+<instructions>
+Which of the following is an advantage of using coding for data science projects instead of software?
+</instructions>
+
+<choices>
+<choice>Code is more transparent than closed-source software.</choice>
+<choice>Updating and re-running analyses is generally faster using a programming language.</choice>
+<choice>Code from programming languages is easier for data scientists to share with other people in the field.</choice>
+<choice correct='true'>All of the above</choice>
+</choices>
+</question>

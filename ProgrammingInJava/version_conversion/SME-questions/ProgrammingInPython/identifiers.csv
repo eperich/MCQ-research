@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+Which of the following symbols can be used as part of an identifier?,_ (underscore),@,$,&,_ (underscore),,,,,,
+A language is called _____ when upper case letters in identifiers are considered different from lower case letters.,case sensitive,unambiguous,case sensitive,case strict,camel case,,,,,,
+A _____ is a word that is part of the Python language and can't be used as a variable name.,keyword,keyword,special token,syntax symbol,stylized word,,,,,,
+Which of the following identifiers is valid?,max_age,max_age,32area,transfer$,True,,,,,,

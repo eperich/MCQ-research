@@ -1,0 +1,7 @@
+Discipline,Source,Total_Questions,Acceptable_Questions,Unacceptable_Questions,Acceptance_Rate_%,Average_Failures
+Data Science,AI,263,224,39,85.17,0.62
+Data Science,SME,66,54,12,81.82,0.83
+Computer Science,AI,458,402,56,87.77,0.64
+Computer Science,SME,124,104,20,83.87,0.72
+Discrete Mathematics,AI,528,418,110,79.17,0.84
+Discrete Mathematics,SME,132,105,27,79.55,0.82

@@ -1,0 +1,142 @@
+<question xsi:type='MultipleChoiceQuestion' guid='a5af4d6b-2aa7-e098-e9d8-a3b44b907695'>
+<instructions>
+<line> Select the set that is equal to: </line>
+<line><ilatex>\{3, 5, 7, 9, 11, 13\} </ilatex></line> 
+</instructions>
+
+<choices>
+<choice><ilatex>\{ x \in \mathbb{Z}: 3 &lt; x &lt; 14\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{R}: 3 \le x &lt; 14\}</ilatex></choice>
+<choice correct='true'><ilatex>\{ x \in \mathbb{Z}: x ~\mbox{is odd and}~ 3 \le x \le 14\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}: x ~\mbox{is  prime and}~ 3 \le x &lt; 14\}</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='a625abb7-09bc-4a53-bd4d-444b857659ad'>
+<instructions>
+<line>Select the <i>false</i> statement.</line>
+</instructions>
+
+<choices>
+<choice><ilatex>\mathbb{Z} \subset  \mathbb{R}</ilatex></choice>
+<choice><ilatex>\mathbb{Z}^+ \subseteq \mathbb{N}</ilatex></choice>
+<choice correct='true'><ilatex>\mathbb{Z} \subset  \mathbb{R}^+</ilatex></choice>
+<choice><ilatex>\mathbb{Z} \subseteq  \mathbb{R}</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='75821484-ca6a-d162-7637-26587ab6296e'>
+<instructions>
+<line>Use the definitions below to select the <i>true</i> statement. </line>
+<line><ilatex>A =  \{ x \in \mathbb{Z}: x ~\mbox{is even}\}</ilatex></line> 
+<line><ilatex>B =  \{ x \in \mathbb{Z}: -4 &lt; x &lt; 17\}</ilatex></line> 
+</instructions>
+
+<choices>
+<choice><ilatex>A</ilatex> is finite. </choice>
+<choice><ilatex>B \subseteq A</ilatex></choice>
+<choice><ilatex>A \subset A</ilatex></choice>
+<choice correct='true'><ilatex>\emptyset \subset B</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='0b714c71-6164-a817-4379-79cf9502d6b0'>
+<instructions>
+<line>Use the definition below to select the <i>false</i> statement. </line>
+<line><ilatex>A =  \{ x \in \mathbb{Z}: x~\mbox{ is even and}~4 &lt; x &lt; 17\}</ilatex></line> 
+</instructions>
+
+<choices>
+<choice><ilatex>4 \notin A</ilatex></choice>
+<choice><ilatex>6 \in A</ilatex></choice>
+<choice><ilatex>17 \notin A</ilatex></choice>
+<choice correct='true'><ilatex>|A| = 7</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='60c76dc2-65ad-49a3-9e52-93c7e91c0f61'>
+<instructions>
+<line>Use the definition below to select the <i>true</i> statement. </line>
+<line><ilatex>A =  \{ x \in \mathbb{Z}: x~\mbox{ is odd and}~-4 &lt; x &lt; 8\}</ilatex></line> 
+<line><ilatex>B =  \{-3, -1, 1, 3, 5, 7\}</ilatex></line>
+</instructions>
+
+<choices>
+<choice><ilatex>A \subset B</ilatex></choice>
+<choice><ilatex>B \subset A</ilatex></choice>
+<choice correct='true'><ilatex>A \subseteq B</ilatex></choice>
+<choice><ilatex>A</ilatex> is infinite.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='c2564d29-45c9-4c89-aefc-8db122a1c390'>
+<instructions>
+<line> Select the set that is equal to <ilatex>\{1, 2, 3, 4\}</ilatex>. </line>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\{ x \in \mathbb{Z}^+: -3 &lt; x &lt; 5\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{R}^+: -3 &lt; x &lt; 5\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}: -3 &lt; x &lt; 5\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{R}: -3 &lt; x &lt; 5\}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='132a1e97-be09-4e95-bb60-7ce42a2e1bf4'>
+<instructions>
+<line>Use the definition below to select the <i>false</i> statement. </line>
+<line><ilatex>A =  \{ x \in \mathbb{Z}: x~\mbox{ is even and}~-4 &lt; x &lt; 17\}</ilatex></line> 
+</instructions>
+
+<choices>
+<choice><ilatex>A \subset \mathbb{Z}</ilatex></choice>
+<choice correct='true'><ilatex>A \subset \mathbb{Z}^+</ilatex></choice>
+<choice><ilatex>|A|=10</ilatex></choice>
+<choice><ilatex>0 \in A</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='d878f12c-0780-4c32-9a6c-fed58d21f166'>
+<instructions>
+Select the set that is <i>not</i> equal to <ilatex>\{-4, -3, -2, -1, 0\}</ilatex>.
+</instructions>
+
+<choices>
+<choice><ilatex>\{0, -4, -3, -2, -1\}</ilatex></choice>
+<choice correct='true'><ilatex>\{ x \in \mathbb{Z}: x &lt; 0 ~\mbox{and}~ x^2 \le 2\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}: x \le 0 ~\mbox{and}~ x^2 \le 16\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}: x \le 0 ~\mbox{and}~ |x| &lt;  5\}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='4eda9f2c-d6e0-4f07-853b-787b2cf61773'>
+<instructions>
+Select the infinite set.
+</instructions>
+
+<choices>
+<choice><ilatex>\emptyset</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}^+: x &lt; 300\}</ilatex></choice>
+<choice correct='true'><ilatex>\{ x \in \mathbb{Z}^+: x &gt; 300\}</ilatex></choice>
+<choice><ilatex>\{ x \in \mathbb{Z}: x^2 \le 300\}</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='22f65476-ec5d-406c-90f0-d6e8d5e67b81'>
+<instructions>
+<line>Use the definitions below to select the <i>true</i> statement. </line>
+<line><ilatex>A =  \{ x \in \mathbb{Z}: x~\mbox{ is even and}~-4 &lt; x &lt; 17\}</ilatex></line> 
+<line><ilatex>B =  \{ x \in \mathbb{Z}: x &lt; 9\}</ilatex></line> 
+</instructions>
+
+<choices>
+<choice><ilatex>5 \in A</ilatex> and <ilatex>5 \in B</ilatex></choice>
+<choice><ilatex>5 \in A</ilatex> and <ilatex>5 \not\in B</ilatex></choice>
+<choice correct='true'><ilatex>5  \not\in A</ilatex> and <ilatex>5 \in B</ilatex></choice>
+<choice><ilatex>5  \not\in A</ilatex> and <ilatex>5  \not\in B</ilatex></choice>
+</choices>
+</question>

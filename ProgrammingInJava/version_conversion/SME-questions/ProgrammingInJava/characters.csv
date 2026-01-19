@@ -1,0 +1,6 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nmyChar is a character variable and is the only declared variable. Which assignment is valid?,myChar = 't';,myChar = 't';,"myChar = ""t"";",myChar = t;,myChar = 'tx';,,,,,,
+\nA character variable's value is stored in memory as _____ .,an integer value,a graphical symbol,a string,a floating-point value,an integer value,,,,,,
+"\nWhat is myChar assigned with?\n```text\nchar myChar;
+myChar = '\'';\n```",A single-quote:  ',A backslash: \,"A double-quote:  """,A single-quote:  ',"A backslash and double-quote:  \""",,,,,,
+"\nGiven char x and char z, which assigns x with the character value held in z?",x = z;,x = 'z';,"x = ""z"";",x = z;,'x' = 'z';,,,,,,

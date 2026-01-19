@@ -1,0 +1,54 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='dd87282a-9de0-e174-44bc-f97e47b459e1'>
+<instructions>
+Which of the following symbols can be used as part of an identifier?
+</instructions>
+
+<choices>
+<choice>@</choice>
+<choice>$</choice>
+<choice>&amp;</choice>
+<choice correct='true'>_ (underscore)</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='e591a928-1e85-5ab3-54af-52bf4b91ea7a'>
+<instructions>
+A language is called _____ when upper case letters in identifiers are considered different from lower case letters.
+</instructions>
+
+<choices>
+<choice>unambiguous</choice>
+<choice correct='true'>case sensitive</choice>
+<choice>case strict</choice>
+<choice>camel case</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='c97cc557-31ba-72ee-cb41-c4b549282bd2'>
+<instructions>
+A _____ is a word that is part of the Python language and can't be used as a variable name.
+</instructions>
+
+<choices>
+<choice correct='true'>keyword</choice>
+<choice>special token</choice>
+<choice>syntax symbol</choice>
+<choice>stylized word</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='73360a9b-e5d5-eb78-c128-49a374b214e2'>
+<instructions>
+ Which of the following identifiers is valid?
+</instructions>
+
+<choices>
+<choice correct='true'>max_age</choice>
+<choice>32area</choice>
+<choice>transfer$</choice>
+<choice>True</choice>
+</choices>
+</question>

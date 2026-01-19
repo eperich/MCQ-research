@@ -1,0 +1,115 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,3,0,0
+2,3,0,0
+3,3,0,0
+4,3,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,1,9
+1,3,2,0,9
+1,4,0,1,9
+2,3,3,0,9
+2,4,1,1,9
+3,4,1,1,9
+
+Summary
+Total Comparisons,66
+Duplicates (≥85%),8
+Similar (70-85%),4
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.996,duplicate
+q1,What does an expression in programming always produce?,1,1,q1,What does an expression in programming always produce?,3,1,0.933,duplicate
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.933,duplicate
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.932,duplicate
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.931,duplicate
+q3,"In programming, the symbol for multiplication is _____.",1,3,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.922,duplicate
+q1,What does an expression in programming always produce?,1,1,q1,What does an expression in programming always produce?,2,1,0.889,duplicate
+q1,What does an expression in programming always produce?,2,1,q1,What does an expression in programming always produce?,3,1,0.889,duplicate
+q3,"In programming, the symbol for multiplication is _____.",1,3,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,0.845,similar
+q3,"In programming, the symbol for multiplication is _____.",1,3,q3,The programming operator for multiplication is _____.,4,3,0.829,similar
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,q3,The programming operator for multiplication is _____.,4,3,0.781,similar
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,q3,The programming operator for multiplication is _____.,4,3,0.752,similar
+q1,What does an expression in programming always produce?,1,1,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.673,low
+q1,What does an expression in programming always produce?,2,1,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.658,low
+q1,What does an expression in programming always produce?,3,1,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.655,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q3,The programming operator for multiplication is _____.,4,3,0.625,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,q3,The programming operator for multiplication is _____.,4,3,0.622,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,0.614,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.613,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,q3,The programming operator for multiplication is _____.,4,3,0.6,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.576,low
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.562,low
+q3,"In programming, the symbol for multiplication is _____.",1,3,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,0.557,low
+q3,"In programming, the symbol for multiplication is _____.",1,3,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.557,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,0.556,low
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.556,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.549,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.549,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q3,The programming operator for multiplication is _____.,4,3,0.543,low
+q3,"In programming, the symbol for multiplication is _____.",1,3,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.527,low
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.525,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q3,"In programming, the symbol for multiplication is _____.",1,3,0.524,low
+q3,"In programming, the symbol for multiplication is _____.",1,3,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.52,low
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.504,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,0.498,low
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.494,low
+q1,An _expression_ in programming always evaluates to a/an _____.,4,1,q3,The programming operator for multiplication is _____.,4,3,0.489,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.487,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.479,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.461,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q1,An _expression_ in programming always evaluates to a/an _____.,4,1,0.456,low
+q1,An _expression_ in programming always evaluates to a/an _____.,4,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.447,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q1,What does an expression in programming always produce?,3,1,0.432,low
+q1,What does an expression in programming always produce?,1,1,q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,0.422,low
+q1,What does an expression in programming always produce?,1,1,q3,"In programming, the symbol for multiplication is _____.",1,3,0.414,low
+q3,"In programming, the symbol for multiplication is _____.",1,3,q1,What does an expression in programming always produce?,3,1,0.412,low
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,2,q1,What does an expression in programming always produce?,2,1,0.398,low
+q3,"In programming, the symbol for multiplication is _____.",1,3,q1,What does an expression in programming always produce?,2,1,0.394,low
+q1,What does an expression in programming always produce?,2,1,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,0.39,low
+q1,What does an expression in programming always produce?,1,1,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,0.387,low
+q1,What does an expression in programming always produce?,3,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.386,low
+q1,What does an expression in programming always produce?,1,1,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.384,low
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,3,q1,What does an expression in programming always produce?,3,1,0.384,low
+q1,What does an expression in programming always produce?,3,1,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.384,low
+q1,What does an expression in programming always produce?,2,1,q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,3,0.381,low
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,q1,What does an expression in programming always produce?,3,1,0.381,low
+q1,What does an expression in programming always produce?,1,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.372,low
+q1,What does an expression in programming always produce?,1,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,0.365,low
+q1,What does an expression in programming always produce?,3,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.362,low
+q1,What does an expression in programming always produce?,2,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,2,0.357,low
+q1,What does an expression in programming always produce?,1,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.356,low
+q1,What does an expression in programming always produce?,1,1,q3,The programming operator for multiplication is _____.,4,3,0.355,low
+q1,What does an expression in programming always produce?,2,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,2,0.351,low
+q1,What does an expression in programming always produce?,3,1,q3,The programming operator for multiplication is _____.,4,3,0.35,low
+q1,What does an expression in programming always produce?,2,1,q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,2,0.341,low
+q1,What does an expression in programming always produce?,2,1,q3,The programming operator for multiplication is _____.,4,3,0.322,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Identify and define key programming concepts such as expressions, literals, and operators.  
+Apply arithmetic operators correctly in expressions.  
+Evaluate expressions using standard precedence rules and parentheses to ensure correct order of operations.  
+Translate mathematical expressions into programming notation, adhering to syntax rules."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does an expression in programming always produce?,1,yes,"Yes, the question directly assesses the learning objective of identifying and defining key programming concepts, as it requires understanding what an expression produces in programming."
+q2,"In the expression y = 3 + 2 * x, which operation is performed first?",1,yes,"Yes, the question assesses the learning objective of evaluating expressions using standard precedence rules, as it requires understanding which operation is performed first in the given expression."
+q3,"In programming, the symbol for multiplication is _____.",1,yes,"Yes, this question directly assesses the learning objective of identifying and defining key programming concepts, specifically the correct symbol for multiplication in programming notation."
+q1,What does an expression in programming always produce?,2,yes,"Yes, the question assesses the learning objective of identifying and defining key programming concepts, specifically the concept of expressions, as it requires understanding what an expression produces in programming."
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,2,yes,"Yes, the question assesses the learning objective of evaluating expressions using standard precedence rules and parentheses to ensure correct order of operations, as it requires understanding how parentheses affect operator precedence."
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",2,yes,"Yes, this question assesses the learning objective of identifying and defining key programming concepts, specifically the correct notation for operators in programming."
+q1,What does an expression in programming always produce?,3,yes,"Yes, the question directly assesses the learning objective of identifying and defining key programming concepts, as it requires understanding what an expression produces in programming."
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,yes,"Yes, this question assesses the learning objective of evaluating expressions using standard precedence rules and parentheses to ensure correct order of operations, as it requires understanding the precedence of operators in the given expression."
+q3,"In programming, the multiplication symbol is written as _____ instead of ×.",3,yes,"Yes, this question assesses the learning objective of identifying and defining key programming concepts, specifically the syntax for operators, as it requires knowledge of how multiplication is represented in programming."
+q1,An _expression_ in programming always evaluates to a/an _____.,4,yes,"Yes, this question directly assesses the first learning objective by requiring the identification and definition of the key programming concept of an expression, which is fundamental to understanding programming concepts."
+q2,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,4,yes,"Yes, this question directly assesses the learning objective of evaluating expressions using standard precedence rules, as it requires understanding which operator takes precedence in a given expression."
+q3,The programming operator for multiplication is _____.,4,yes,"Yes, this question directly assesses the learning objective of identifying and defining key programming concepts, specifically operators, by asking for the correct operator for multiplication."

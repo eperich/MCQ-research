@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nGiven only int variables a and b, which is a valid expression?",a + -2,4a + 3,a + ab,a + -2,2 x 3,,,,,,
+\nWhich expression is evaluated first?\nw = y + 2 + 3 * x + z;,3 * x,y + 2,2 + 3,3 * x,x + z,,,,,,
+\nWhat is the ending value of x?\nx = 160 / 20 / 4;,2,2,16,32,No value; runtime error,,,,,,
+"Which changes the value of m, where m = x * y + z / -8 % 9 + w?",m = (x * y) + z / (-8 % 9 + w),m = x * y + ((z / -8) % 9) + w,m = x * y + (z / -8 % 9) + w,m = ((x * y) + (z / -8) % 9) + w,m = (x * y) + z / (-8 % 9 + w),,,,,,

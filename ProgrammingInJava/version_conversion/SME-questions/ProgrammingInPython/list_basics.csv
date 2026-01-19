@@ -1,0 +1,10 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+"\nWhich of the following statements about my_list is false?\n```python\nmy_list = [""JFK"", ""LAX"", ""MIA""]\n```","The element at index 1 is ""JFK""","The element at index 1 is ""JFK""",The list has a length of 3,The list elements are all strings,The index of the last item in the list is 2,,,,,,
+Which of the following assignment statements creates a list with 4 integer elements?,"```python\nmy_list = [7, 2, -8, 16]\n```","```python\nmy_list = [7, 2, -8, 16]\n```",```python\nmy_list = [4]\n```,"```python\nmy_list = [""1"", ""2"", ""3"", ""4""]\n```",```python\nmy_list = integer(4)\n```,,,,,,
+"\nWhat is the output?\n```python\nmy_list = [2, 8, 3, 1, 18, 5]
+print(my_list[3] + my_list[1] * 2)\n```",17,7,10,17,18,,,,,,
+Which statement removes the last element of my_list?,```python\nmy_list.pop(len(my_list)-1)\n```,```python\nmy_list.pop(len(my_list)\n```,```python\nmy_list.pop(len(my_list)-1)\n```,```python\nmy_list.remove(len(my_list))\n```,```python\nmy_list.remove(len(my_list)-1)\n```,,,,,,
+Which method call returns the number of elements in my_list?,len(my_list),len(my_list),size(my_list),my_list.count(),my_list.size(),,,,,,
+"\nWhat are the contents of names_list after the following code is executed?\n```python\nnames_list = [""one"", ""two"", ""three""]
+digits_list = [""1"", ""2"", ""3""]
+names_list = names_list + digits_list\n```","[""one"", ""two"", ""three"", ""1"", ""2"", ""3""]","[""1one"", ""2two"", ""3three""]","[""two"", ""four"", ""six""]","[""one"", ""two"", ""three"", ""1"", ""2"", ""3""]","[""1"", ""2"", ""3"", ""one"", ""two"", ""three""]",,,,,,

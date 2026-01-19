@@ -1,0 +1,113 @@
+<question xsi:type='MultipleChoiceQuestion' guid='df032ed9-8ab7-dcd4-2394-925ea716c474'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of all integers. Select the <i>false</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\forall x \, (x^2 \neq 5)</ilatex></choice>
+<choice><ilatex>\forall x \, (x^2 \ge x)</ilatex></choice>
+<choice correct='true'><ilatex>\forall x \, (x^2 &gt; x)</ilatex></choice>
+<choice><ilatex>\exists x \, (\sqrt{x} = x)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='1551b39e-10c9-4394-c3ba-5979ba8bd61b'>
+<instructions>
+<p>The domain for variable <ilatex>x</ilatex> is the set of all integers. Select the <i>true</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (3x = 1)</ilatex></choice>
+<choice correct='true'><ilatex>\exists x \, (x^2 &lt; 1)</ilatex></choice>
+<choice><ilatex>\forall x \, (x^2 = 1)</ilatex></choice>
+<choice><ilatex>\exists x \, (x^2 &lt; 0)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='34ff888b-4c7b-c367-25d5-52a715585c32'>
+<instructions>
+<p> The predicate <ilatex>T</ilatex> is defined as:</p>
+<line><ilatex>T(x, y, z){:}~(x+y)^2 = z</ilatex></line>
+<p>Select the <i>true</i> proposition.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>T(4, 1, 5)</ilatex></choice>
+<choice correct='true'><ilatex>T(4, 1, 25)</ilatex> </choice>
+<choice><ilatex>T(1, 1, 1)</ilatex> </choice>
+<choice><ilatex>T(4, 0, 2)</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='9b89871d-3d5e-4ae9-a946-80129a32d52a'>
+<instructions>
+<p>The domain for variable <ilatex>x</ilatex> is the set of positive real numbers. 
+Select the statement that correctly describes the proposition <ilatex>\forall x  \, (x^2 \ge x)</ilatex>.</p>
+</instructions>
+
+<choices>
+<choice>The proposition is true.</choice>
+<choice correct='true'>The proposition is false, and <ilatex>x = \frac{1}{2}</ilatex> is a counterexample. </choice>
+<choice>The proposition is false, and <ilatex>x = 1</ilatex> is a counterexample. </choice>
+<choice>The proposition is false, and <ilatex>x = -1</ilatex> is a counterexample.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='755d2f43-f5e9-4171-a877-1ff7b02b9f6d'>
+<instructions>
+<p>The domain for variable <ilatex>x</ilatex> is the set of negative real numbers. Select the statement that correctly describes the proposition <ilatex>\exists x  \, (x^2 \le x)</ilatex>.</p>
+</instructions>
+
+<choices>
+<choice correct='true'>The proposition is false.</choice>
+<choice>The proposition is true, and <ilatex>x = -\frac{1}{2}</ilatex> is an example. </choice>
+<choice>The proposition is true, and <ilatex>x = 2</ilatex> is an example. </choice>
+<choice>The proposition is true, and <ilatex>x = -2</ilatex> an example.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='10f69ab5-976e-4a8d-935b-bdc7e7b49d99'>
+<instructions>
+<p> The predicate <ilatex>P</ilatex> and <ilatex>Q</ilatex> are defined as:</p>
+<line><ilatex>Q(x, y){:}~\frac{x+y}{2} = 4</ilatex></line>
+<line><ilatex>P(x, y, z){:}~\frac{x+y}{2} = z</ilatex></line>
+<p>The domain for all the variables is the set of real numbers. Select the <i>false</i> proposition.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>Q(4, 4)</ilatex></choice>
+<choice correct='true'><ilatex>P(0, 2, 2)</ilatex> </choice>
+<choice><ilatex>Q(0, 8)</ilatex> </choice>
+<choice><ilatex>P(-2, 2, 0)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='cb53bcbc-d5a5-42aa-8a59-1cd434378369'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of all real numbers. Select the <i>false</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\forall x \, (x^2 \ge 0)</ilatex></choice>
+<choice><ilatex>\exists x \, \left(\frac{x}{2} &gt; x\right)</ilatex></choice>
+<choice correct='true'><ilatex>\exists x \, (x^2 = -1)</ilatex></choice>
+<choice><ilatex>\exists x \, (x^2 = 3)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='e39488bf-ecbb-40f6-b8e4-d19cd4cc2127'>
+<instructions>
+<p>The domain for variable <ilatex>x</ilatex> is the set of all positive real numbers. Select the <i>true</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (3x = 0)</ilatex></choice>
+<choice correct='true'><ilatex>\forall x \, (x &lt; 2x)</ilatex></choice>
+<choice><ilatex>\forall x \, (x \neq 1)</ilatex></choice>
+<choice><ilatex>\exists x \, (x^2 \le 0)</ilatex></choice>
+</choices>
+</question>

@@ -1,0 +1,53 @@
+<question xsi:type='MultipleChoiceQuestion' guid='a16ea51e-97d6-a3b0-4c62-db245496146c' subjects='c, cpp, java'>
+<instructions>
+<p>Which is  not a valid identifier? </p>
+</instructions>
+
+<choices>
+<choice>firstName </choice>
+<choice>first_name </choice>
+<choice correct='true'>1stName </choice>
+<choice>name1 </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='4945e00b-cd0b-6c24-811b-a122ed97e3cc' subjects='c, cpp, java'>
+<instructions>
+<p>An identifier can _____ . </p>
+</instructions>
+
+<choices>
+<choice>be a reserved word </choice>
+<choice correct='true'>start with an underscore </choice>
+<choice>contain a period </choice>
+<choice>contain spaces </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='27dad75f-8178-e725-4c47-da6c1f4e27c5' subjects='c'>
+<instructions>
+Which identifier name shows good practice?
+</instructions>
+
+<choices>
+<choice> m_v</choice>
+<choice> revPhyMgt</choice>
+<choice> cost_of_shipping_furniture_crates_by_sea</choice>
+<choice correct='true'> sizeOfBox</choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='3f4fb653-9740-56b8-cd56-8516eae4cec2' subjects='c'>
+<instructions>
+Which variable naming convention is used for distanceFromSun?
+</instructions>
+
+<choices>
+<choice> snake case</choice>
+<choice> hill valley case</choice>
+<choice correct='true'> lower camel case</choice>
+<choice> varied capitalization case</choice>
+</choices>
+</question>

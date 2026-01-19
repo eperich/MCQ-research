@@ -1,0 +1,176 @@
+<question xsi:type='MultipleChoiceQuestion' guid='26759763-95a9-f311-4585-426b5d0b5bad'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of students in a class. Define the predicates: </p>
+<line><ilatex>S(x){:}~x</ilatex> studied for the test </line>
+<line><ilatex>A(x){:}~x</ilatex> received an A on the test </line>
+<p>Select the logical expression that is equivalent to:</p>
+<line>"Everyone who studied for the test received an A on the test." </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\forall x\, (A(x) \to S(x))</ilatex></choice>
+<choice correct='true'><ilatex>\forall x \, (S(x) \to A(x))</ilatex></choice>
+<choice><ilatex>\forall x \, (S(x) \wedge A(x))</ilatex></choice>
+<choice><ilatex>\forall x \, (S(x) \leftrightarrow A(x))</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='4b58a9e3-3239-6491-0e3c-769bc771b937'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of students in a class. Define the predicates:</p>
+<line> <ilatex>S(x){:}~x</ilatex> studied for the test </line>
+<line><ilatex>A(x){:}~x</ilatex> received an A on the test</line>
+<p> Select the logical expression that is equivalent to:</p>
+<line> "Someone who did not study for the test received an A on the test." </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (A(x) \to \neg S(x))</ilatex></choice>
+<choice><ilatex>\exists x\, (\neg S(x) \to A(x))</ilatex></choice>
+<choice correct='true'><ilatex>\exists x\,  (\neg S(x) \wedge A(x))</ilatex></choice>
+<choice><ilatex>\exists x\,  (\neg S(x) \leftrightarrow A(x))</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='9932b2ca-96d5-9345-4262-0dc42f3088e5'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set <ilatex>\{\text{Ann}, \text{Ben}, \text{Cam}, \text{Dave}\}</ilatex>. The table below gives the values of predicates <ilatex>P</ilatex> and <ilatex>Q</ilatex> for every element in the domain.</p>
+<table>
+<row><cell><ilatex>x</ilatex></cell><cell><ilatex>P(x)</ilatex></cell><cell><ilatex>Q(x)</ilatex></cell></row>
+<row><cell><ilatex>\text{Ann}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Ben}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Cam}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+<row><cell><ilatex>\text{Dave}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+</table>
+<p>Select the <i>true</i> statement.</p>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\forall x \, (Q(x) \to P(x))</ilatex></choice>
+<choice><ilatex>\forall x \, (P(x) \to Q(x))</ilatex></choice>
+<choice><ilatex>\forall x \, (P(x) \wedge Q(x))</ilatex></choice>
+<choice><ilatex>\forall x \, (P(x) \vee Q(x))</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='7ebd72d0-7552-27ab-0a2c-f3a78e7cd2f0'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set <ilatex>\{\text{Ann}, \text{Ben}, \text{Cam}, \text{Dave}\}</ilatex>. The table below gives the values of predicates <ilatex>P</ilatex> and <ilatex>Q</ilatex> for every element in the domain.</p>
+<table>
+<row><cell><ilatex>x</ilatex></cell><cell><ilatex>P(x)</ilatex></cell><cell><ilatex>Q(x)</ilatex></cell></row>
+<row><cell><ilatex>\text{Ann}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Ben}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Cam}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+<row><cell><ilatex>\text{Dave}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+</table>
+<p>Select the <i>false</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (P(x) \to Q(x))</ilatex></choice>
+<choice><ilatex>\exists x \, (P(x) \wedge Q(x))</ilatex></choice>
+<choice correct='true'><ilatex>\exists x \, (\neg P(x) \wedge Q(x))</ilatex></choice>
+<choice><ilatex>\exists x \, (P(x) \wedge \neg Q(x))</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='39656e1d-7ffe-465b-bdc7-191b50f8d316'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of applicants for employment. Define the predicates: </p>
+<line><ilatex>R(x){:}~x</ilatex> brought a resume to  the interview </line>
+<line><ilatex>N(x){:}~x</ilatex> arrived on time for the interview </line>
+<line><ilatex>J(x){:}~x</ilatex> got the job </line>
+<p>Select the logical expression that is equivalent to:</p>
+<line>"Someone got the job but did not come on time for the interview and did not bring a resume to the interview" </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (J(x) \wedge (\neg N(x) \vee \neg R(x)) )</ilatex></choice>
+<choice correct='true'><ilatex>\exists x \, (J(x) \wedge \neg N(x) \wedge \neg R(x) )</ilatex></choice>
+<choice><ilatex>\exists x \, (J(x) \to (\neg N(x) \vee \neg R(x)) )</ilatex></choice>
+<choice><ilatex>\exists x \, (J(x) \to (\neg N(x) \wedge \neg R(x)) )</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='bf20fbf0-ad5b-4f37-8335-c80b33bab5a3'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of applicants for employment. Define the predicates: </p>
+<line><ilatex>R(x){:}~x</ilatex> brought a resume to  the interview </line>
+<line><ilatex>N(x){:}~x</ilatex> arrived on time for the interview </line>
+<line><ilatex>J(x){:}~x</ilatex> got the job </line>
+<p>Select the logical expression that is equivalent to:</p>
+<line>"Every applicant who did not come  on time for the interview or did not bring a resume did not get the job." </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\forall x \, (\neg N(x) \to (\neg R(x) \wedge \neg J(x)) )</ilatex></choice>
+<choice correct='true'><ilatex>\forall x \, ((\neg N(x) \vee \neg R(x)) \to \neg J(x) )</ilatex></choice>
+<choice><ilatex>\forall x \, (\neg N(x) \wedge \neg R(x) \wedge \neg J(x) )</ilatex></choice>
+<choice><ilatex>\forall x \, ((\neg N(x) \vee \neg R(x)) \wedge \neg J(x) )</ilatex></choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='ef87dee3-f3e7-4c4d-bd12-410fc282b077'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set of applicants for employment. Define the predicates: </p>
+<line><ilatex>R(x){:}~x</ilatex> brought a resume to  the interview </line>
+<line><ilatex>N(x){:}~x</ilatex> arrived on time for the interview </line>
+<p>Select the logical expression that is equivalent to:</p>
+<line>"At least one person did not bring a resume, and at least one person did not come on time for the interview." </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (\neg R(x) \wedge \neg N(x))</ilatex></choice>
+<choice correct='true'><ilatex>\exists x \, \neg R(x) \wedge \exists x \, \neg N(x)</ilatex></choice>
+<choice><ilatex>\exists x \, (\neg R(x) \to \neg N(x))</ilatex></choice>
+<choice><ilatex>\exists x \, \neg R(x) \to \exists x \, \neg N(x)</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='ccc50f91-a1bd-4093-90a1-faf3c1821c65'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set <ilatex>\{\text{Zia}, \text{Han}, \text{Imani}, \text{Yoda}\}</ilatex>. The table below gives the values of predicates <ilatex>A</ilatex> and <ilatex>B</ilatex> for every element in the domain.</p>
+<table>
+<row><cell><ilatex>x</ilatex></cell><cell><ilatex>A(x)</ilatex></cell><cell><ilatex>B(x)</ilatex></cell></row>
+<row><cell><ilatex>\text{Zia}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Han}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Imani}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+<row><cell><ilatex>\text{Robin}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+</table>
+<p>Select the <i>false</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (A(x) \to B(x))</ilatex></choice>
+<choice><ilatex>\exists x \, ((x \neq \text{Imani}) \wedge A(x) \wedge B(x))</ilatex></choice>
+<choice><ilatex>\forall x \, ((x \neq \text{Zia}) \to (A(x) \vee B(x)))</ilatex></choice>
+<choice correct='true'><ilatex>\forall x \, (A(x) \to B(x))</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='7869e738-01d9-46cf-89c7-ff226d6b7367'>
+<instructions>
+<p> The domain for variable <ilatex>x</ilatex> is the set <ilatex>\{\text{Zia}, \text{Han}, \text{Imani}, \text{Robin}\}</ilatex>. The table below gives the values of predicates <ilatex>A</ilatex> and <ilatex>B</ilatex> for every element in the domain.</p>
+<table>
+<row><cell><ilatex>x</ilatex></cell><cell><ilatex>A(x)</ilatex></cell><cell><ilatex>B(x)</ilatex></cell></row>
+<row><cell><ilatex>\text{Zia}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Han}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{F}</ilatex></cell></row>
+<row><cell><ilatex>\text{Imani}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+<row><cell><ilatex>\text{Robin}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell><cell><ilatex>\text{T}</ilatex></cell></row>
+</table>
+<p>Select the <i>true</i> statement.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\exists x \, (\neg A(x) \wedge B(x))</ilatex></choice>
+<choice><ilatex>\exists x \, \neg(A(x) \vee \neg B(x))</ilatex></choice>
+<choice><ilatex>\forall x \, ((x \neq \text{Imani}) \wedge (A(x) \vee B(x)))</ilatex></choice>
+<choice correct='true'><ilatex>\forall x \, ((x \neq \text{Han}) \to (A(x) \leftrightarrow B(x)))</ilatex></choice>
+</choices>
+</question>

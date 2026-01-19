@@ -1,0 +1,70 @@
+<question xsi:type='MultipleChoiceQuestion' guid='f65dff83-d6d5-3b77-a8e1-1c551d157422' subjects='c, cpp, java'>
+<instructions>
+<p>Which assignments would yield a non-floating-point number for y?  </p>
+<line>y = 32.0 + (x / (z + 1.0)); </line>
+</instructions>
+
+<choices>
+<choice>x = 0.0; z = 1.0; </choice>
+<choice>x = -32.0; z = 1.0; </choice>
+<choice>x = 0.0; z = 0.0; </choice>
+<choice correct='true'>x = 1.0; z = -1.0; </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='1ecfc1c1-a10c-b977-bfa0-a35124eac755' subjects='c, cpp, java'>
+<instructions>
+<p>For which quantity is a double the best type? </p>
+</instructions>
+
+<choices>
+<choice>People in a household </choice>
+<choice>Boxes on a conveyor belt </choice>
+<choice>Planes above a city </choice>
+<choice correct='true'>Height of a building </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='08e592aa-e435-779c-018d-5861c743c773' subjects='c, cpp, java'>
+<instructions>
+<p>Which expression fails to compute the area of a triangle having base b and height h (area is one-half base time height)?</p>
+</instructions>
+
+<choices>
+<choice>(1.0 / 2.0 ) * b * h </choice>
+<choice correct='true'>(1 / 2) * b * h  </choice>
+<choice>(b * h) / 2.0 </choice>
+<choice>0.5 * b * h </choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='c2e18a52-7a7b-2da1-f684-53a1fd4458b2' subjects='c'>
+<instructions>
+<p>What is the output?</p>
+<codeBlock language='c'>
+#include &lt;stdio.h&gt;
+
+int main(void) {
+   double dividend = 0.0;
+   double divisor = 0.0;
+   printf("%lf\n", dividend / divisor);
+
+   dividend = 3.0;
+   printf("%lf\n", dividend / divisor);
+   return 0;
+}</codeBlock>
+</instructions>
+
+<choices>
+<choice> <line>inf</line>
+<line>nan</line></choice>
+<choice correct='true'> <line>nan</line>
+<line>inf</line></choice>
+<choice> <line>inf</line>
+<line>0.0</line></choice>
+<choice> <line>nan</line>
+<line>0.0</line></choice>
+</choices>
+</question>

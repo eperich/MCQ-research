@@ -1,0 +1,32 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback,implausible_distractors,none_of_the_above,all_of_the_above,fill_in_the_blank,true_or_false,absolute_terms,longest_answer_correct,negative_worded_stem,word_repeats_in_stem_and_correct_answer,avoid_logical_cues,lost_sequence,more_than_one_correct,complex_k_type,ambiguous_unclear_information,gratuitous_information_in_stem,avoid_convergence_cues,grammatical_cues_in_stem,vague_terms,unfocused_stem
+"\nWhich input value causes ""Goodbye"" to be output next?\n```python\nx = int(input())
+while x >= 0:
+    # Do something
+    x = int(input())
+print(""Goodbye"")\n```",-1,-1,0,1,No such value,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhich input for variable c causes ""Done"" to be output next?\n```python\nc = ""y""
+while c == ""y"":
+    # Do something
+    print(""Enter y to continue, n to quit: "", end="" "")
+    c = input()
+print(""Done"");\n```","Any value other than ""y""","""y"" only","""n"" only","Any value other than ""y""",No such value (infinite loop),,,,,,,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass
+"\nWhat is the output?\n```python\ncount = 0
+while count < 3:
+     print(""loop"")
+count = count + 1
+print(f""Final value of count: {count}"")\n```","Prints ""loop"" forever (infinite loop)","Prints ""loop"" once, then ""Final value of count: 1""","Prints ""loop"" three times, then ""Final value of count: 3""","Prints ""loop"" three times, then ""Final value of count: 4""","Prints ""loop"" forever (infinite loop)",,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhat initial value of x will cause an infinite loop?\n```python\nx = int(input())
+while x != 0:
+    x = x - 2
+    print(x)\n```",7,0,2,4,7,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+"\nWhat is the output?\n```python\nx = 18
+while x % 3 == 0:
+    print(x, end="" "")
+    x = x // 3\n```",18 6,6,6 2,18 6,18 6 2,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Fail,Pass,Pass,Pass
+"\nWhat is the output?\n```python\nmy_list = [3, 7, 0, 2, -1, 8]
+index = 0
+while my_list[index] > 0:
+    print(my_list[index], end="" "")
+    index += 1\n```",3 7,3 7,3 7 0,3 7 0 2,3 7 0 2 -1,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass
+"\nWhich is an\n<i>essential</i>\nfeature of a while loop having the following form?\n```text\nwhile loop_expression:
+   loop_body\n```",The loop_expression should be affected by the loop_body,The loop_expression should be affected by the loop_body,The loop_expression should not be affected by the loop_body,The loop_body should get user input,The loop_body should update at least two variables,,,,,,,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Fail,Pass,Pass,Pass

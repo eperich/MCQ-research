@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nWhich declaration assigns a variable with 5 such that the value can not be later changed?,const int NUM_ITEMS = 5;,const int = 5;,int numItems = 5;,int NUM_ITEMS = 5;,const int NUM_ITEMS = 5;,,,,,,
+\nWhich declaration assigns a variable with 5 such that the value can\n<i>not</i>\nbe later changed?,final int NUM_ITEMS = 5;,final int = 5;,int numItems = 5;,int NUM_ITEMS = 5;,final int NUM_ITEMS = 5;,,,,,,
+"\nFor an integer constant x, which statement will yield a compiler error?",x = y + 1;,w = x + 1;,x = y + 1;,y = x;,z = x + x;,,,,,,
+\nWhich is best declared as a constant?,The number of feet in a yard,The number of people in a car,The number of feet in a yard,The number of leaves on a tree,The number of insects in a room,,,,,,

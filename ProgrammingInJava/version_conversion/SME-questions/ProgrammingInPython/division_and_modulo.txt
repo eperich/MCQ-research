@@ -1,0 +1,55 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='be303656-5dc1-839c-9bcf-d7915e86bb47'>
+<instructions>
+15 _____ 3 = 5.0 
+
+</instructions>
+
+<choices>
+<choice>%</choice>
+<choice>^</choice>
+<choice correct='true'>/</choice>
+<choice>//</choice>
+</choices>
+</question>
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='5711beb8-db2b-ed61-47e8-3d7f69b87b2b'>
+<instructions>
+ 15 _____ 3 = 0 
+</instructions>
+
+<choices>
+<choice correct='true'>%</choice>
+<choice>/</choice>
+<choice>//</choice>
+<choice>*</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='9b74ef6d-fa18-ae3e-3419-056da9ec9b3e'>
+<instructions>
+Which expression gives the number of whole minutes that corresponds to some number of seconds?
+</instructions>
+
+<choices>
+<choice>seconds % 60</choice>
+<choice>seconds / 60</choice>
+<choice>seconds * 60</choice>
+<choice correct='true'>seconds // 60</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='5907379e-7964-bd89-b2c7-8fc928444be3'>
+<instructions>
+ What is the value of 11 // 2?
+</instructions>
+
+<choices>
+<choice correct='true'>5</choice>
+<choice>6</choice>
+<choice>0</choice>
+<choice>-5</choice>
+
+</choices>
+</question>

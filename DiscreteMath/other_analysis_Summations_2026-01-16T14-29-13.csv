@@ -1,0 +1,1029 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,11,0,2
+2,11,0,1
+3,11,0,2
+4,11,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,4,10,121
+1,3,4,5,121
+1,4,2,9,121
+2,3,4,6,121
+2,4,3,7,121
+3,4,2,6,121
+
+Summary
+Total Comparisons,946
+Duplicates (≥85%),19
+Similar (70-85%),49
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.996,duplicate
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.953,duplicate
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.949,duplicate
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.939,duplicate
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.919,duplicate
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.898,duplicate
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.897,duplicate
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.894,duplicate
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.893,duplicate
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.892,duplicate
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.892,duplicate
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.889,duplicate
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.886,duplicate
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.874,duplicate
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.873,duplicate
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.862,duplicate
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.859,duplicate
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.858,duplicate
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.854,duplicate
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.846,similar
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.838,similar
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.837,similar
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.834,similar
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.822,similar
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,0.809,similar
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.798,similar
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.798,similar
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.795,similar
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.791,similar
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.79,similar
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.79,similar
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.786,similar
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.784,similar
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.784,similar
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.78,similar
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.779,similar
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.778,similar
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.773,similar
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.772,similar
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.766,similar
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.763,similar
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.761,similar
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.761,similar
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.761,similar
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.76,similar
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.759,similar
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.749,similar
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.747,similar
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.742,similar
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.742,similar
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.739,similar
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.737,similar
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.737,similar
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.729,similar
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.727,similar
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.727,similar
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.724,similar
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.723,similar
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.723,similar
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.72,similar
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.716,similar
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.714,similar
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.714,similar
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.713,similar
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.713,similar
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.708,similar
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.706,similar
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.705,similar
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.7,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.697,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.693,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.687,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.685,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.685,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.681,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.681,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.681,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.679,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.679,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.678,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.677,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.676,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.676,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.674,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.672,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.671,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.67,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.67,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.669,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.665,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.665,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.663,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.66,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.66,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.659,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.657,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.657,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.657,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.656,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.655,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.655,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.654,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.651,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.649,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.648,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.648,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.647,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.644,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.644,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.643,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.643,low
+q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.641,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.639,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.638,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.636,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.636,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.635,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.635,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.634,low
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.634,low
+q7,Why can the index variable in a summation be replaced with another variable?,4,7,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.634,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.633,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.631,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.631,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.63,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.629,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,0.628,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.628,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.627,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.627,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.627,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.624,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.622,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.622,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.622,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.62,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.619,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.619,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.619,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.617,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.615,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.614,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.613,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.613,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.613,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.612,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.612,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.61,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.608,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.607,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.605,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.605,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.604,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.604,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.603,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.603,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.603,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.602,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.602,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.602,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.601,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.601,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.601,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.601,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.6,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.6,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.599,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.599,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.598,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.598,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.598,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.598,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.598,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.598,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.597,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.594,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.593,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.593,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.592,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.592,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.592,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.591,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.591,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.59,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.59,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.59,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,0.589,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.588,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.586,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.585,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.585,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.584,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.584,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.582,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.582,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.582,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.581,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.581,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.58,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.58,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.58,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.579,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.579,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.579,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.578,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.577,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.577,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.577,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.576,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.576,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.576,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.575,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.575,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.575,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.574,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.574,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.574,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.573,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.572,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.572,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.572,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.572,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.571,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.571,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.57,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.569,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.569,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.569,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.568,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.568,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.568,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.567,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.566,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.566,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.566,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.565,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.565,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.564,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.564,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.563,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.563,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.562,low
+q7,Why can the index variable in a summation be replaced with another variable?,4,7,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.561,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.56,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.56,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.56,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.559,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.559,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.559,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.559,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.559,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.558,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.558,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.557,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.556,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.556,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.556,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.555,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.554,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.554,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.554,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.554,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.554,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.554,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.553,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.551,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.55,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.55,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,0.549,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.549,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.549,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.549,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.549,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.548,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.548,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.547,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.544,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.544,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.543,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.542,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.542,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.542,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.542,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.54,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.54,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.54,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.54,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.539,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.538,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.538,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.537,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.537,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.536,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.536,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.535,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.535,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.535,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.535,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.534,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.534,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.532,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.531,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.531,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.531,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.531,low
+q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.531,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.53,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.53,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.528,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.528,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.528,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.526,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.526,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.525,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.525,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.525,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.525,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.525,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.524,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.523,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.522,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.521,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.521,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.521,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.521,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.52,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.52,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.52,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.519,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.519,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.518,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.518,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.517,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.517,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.517,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.517,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.517,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.516,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.515,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.515,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.515,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.514,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.514,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.514,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.514,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.513,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.512,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.511,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.511,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,0.51,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.51,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.51,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.51,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.51,low
+q7,Why can the index variable in a summation be replaced with another variable?,4,7,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.51,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.508,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.508,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.508,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.507,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.507,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.507,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.507,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.507,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.507,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.506,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.505,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.505,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.505,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.504,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.504,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.503,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.503,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.502,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.502,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.501,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.501,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.501,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.501,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.5,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.5,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.5,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.499,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.499,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.499,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.498,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.498,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.498,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.498,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.498,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.498,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.498,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.497,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,0.497,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.497,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.497,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.497,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,0.496,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.496,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.496,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.496,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.495,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.495,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.495,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.495,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.495,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.493,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.493,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,0.492,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.492,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.491,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.491,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.49,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.49,low
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.49,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.488,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.487,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.486,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.486,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,0.485,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,0.485,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,0.485,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.485,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.484,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.484,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.484,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.483,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.483,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.483,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,0.482,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.482,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.482,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.482,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.482,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.481,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.481,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.481,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.481,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.481,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.481,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.481,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.48,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.48,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.479,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.479,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.479,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.479,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.478,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.477,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.476,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.476,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.475,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.475,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.474,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.474,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.474,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.474,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.474,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.474,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.474,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.472,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.472,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.471,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.47,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.47,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.47,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,0.469,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.469,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.469,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.469,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.469,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.468,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.468,low
+q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.468,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.467,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.467,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.466,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.466,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.465,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.465,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.465,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.465,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.464,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.464,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.464,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.464,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.464,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.463,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.463,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.462,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.461,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.46,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.46,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.459,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.458,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.458,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.458,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.458,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.458,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.457,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.457,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.457,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.456,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.456,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.456,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.455,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.455,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.455,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.455,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.454,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.454,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.454,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.454,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.454,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.453,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.453,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.453,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.452,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.452,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.452,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.452,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.451,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.45,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.45,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.45,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.45,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.45,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.45,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.449,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.449,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.448,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.448,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.447,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.447,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.447,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.447,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.446,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.446,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.446,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.445,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.444,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.444,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.444,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.444,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,0.443,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.443,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.443,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.443,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.442,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.442,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.442,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.441,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.441,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.441,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.44,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.44,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.44,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.44,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.439,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.439,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.439,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.438,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.438,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.437,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.437,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.435,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.435,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.435,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.435,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.434,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.434,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.434,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.434,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.433,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.433,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.433,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.433,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.432,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.432,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.432,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.432,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.431,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.431,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.43,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.43,low
+q7,Why can the index variable in a summation be replaced with another variable?,4,7,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.43,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.429,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.429,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.429,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.429,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.429,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.429,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.428,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.428,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.428,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.428,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.427,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.427,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.427,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.427,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.426,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,0.426,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.426,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.426,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.425,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.424,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.424,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.424,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.423,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.423,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.423,low
+q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.423,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.422,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.422,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.422,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.421,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.421,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.421,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.42,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.42,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.42,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.419,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.418,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.418,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.418,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.417,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.417,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.417,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.416,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.416,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.415,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.415,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.415,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.415,low
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.415,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,0.414,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.414,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.414,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.414,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.414,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.413,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.413,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.413,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.412,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.412,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.412,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.412,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.412,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.411,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.411,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.411,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.411,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.411,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.41,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.41,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.41,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.41,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.41,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.409,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,0.408,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.408,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,0.407,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.407,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.407,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.407,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.407,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.407,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.406,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.406,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.405,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.405,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.404,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.403,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.403,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.403,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.403,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.402,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.402,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.402,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.401,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.401,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.401,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.4,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.4,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.4,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.399,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.398,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.398,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.398,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.398,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.398,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.398,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.397,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.396,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.396,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.395,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.395,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.395,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.395,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.394,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.394,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.394,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.394,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.394,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.393,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.393,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.393,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.392,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.391,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.391,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.391,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.39,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,0.389,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.389,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.389,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.388,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.388,low
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.388,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.387,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.387,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.387,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.386,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.385,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.385,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.384,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.384,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.384,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.384,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,0.384,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.384,low
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.384,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.381,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.381,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.381,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.381,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.381,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.38,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.38,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.38,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.38,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.379,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.379,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.378,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.377,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.377,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.376,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.376,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,0.375,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,0.375,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.375,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.375,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.375,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.375,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.374,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,0.374,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.374,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.373,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.373,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.373,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.372,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.372,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.371,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.371,low
+q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.371,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.37,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.369,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.369,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.369,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,0.368,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.368,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.368,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.368,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,0.367,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.366,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.365,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.365,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.365,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.365,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.365,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.364,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.364,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.364,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.364,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.364,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.363,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.362,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.361,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.36,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.359,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.359,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.358,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.358,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q9,Why can the index variable in summations be replaced without changing the sum?,1,9,0.358,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.358,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.357,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.356,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.356,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.356,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.355,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.354,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.353,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,0.353,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.353,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,0.352,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.352,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.352,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.351,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.351,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.351,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.35,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.349,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.348,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.348,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.347,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.347,low
+q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.347,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.346,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,0.346,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.346,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.346,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.345,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,0.345,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.345,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.344,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,0.344,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.341,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.341,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,0.34,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.34,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,0.339,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.339,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.339,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.339,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.339,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.338,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.337,low
+q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.337,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.336,low
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,7,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.336,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.336,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.335,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,0.334,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,0.332,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.332,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.332,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,0.331,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,4,0.331,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.33,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.329,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.329,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.329,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.328,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.327,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.327,low
+q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.326,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,0.325,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.325,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.325,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,0.324,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.323,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.323,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.322,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,0.321,low
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.321,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.32,low
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,10,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.32,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.32,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.317,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.317,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.317,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.316,low
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.316,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.315,low
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.315,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.314,low
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.313,low
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.312,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.311,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.31,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.31,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.309,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.309,low
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,8,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.309,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.308,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.306,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.305,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,11,0.305,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.304,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.304,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.303,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.302,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.301,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,0.298,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.297,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.296,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.294,low
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,2,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.294,low
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,11,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.294,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.293,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.293,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.292,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,0.292,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,0.29,low
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,4,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.288,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.287,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,0.286,low
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.286,low
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,11,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.283,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.283,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.279,low
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,7,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.277,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,0.275,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.272,low
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,1,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.271,low
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,5,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.271,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,9,0.271,low
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,1,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.27,low
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,9,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.268,low
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,6,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.266,low
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,8,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.264,low
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,2,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.263,low
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,3,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.262,low
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,3,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.262,low
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,3,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.262,low
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,6,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.257,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,8,0.256,low
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,10,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.255,low
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,8,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.25,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,4,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.247,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,0.245,low
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,4,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.241,low
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,7,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.239,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,6,0.237,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q7,Why can the index variable in a summation be replaced with another variable?,4,7,0.237,low
+q9,Why can the index variable in summations be replaced without changing the sum?,1,9,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.236,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,10,0.236,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,3,0.234,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,2,0.233,low
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,5,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.23,low
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,6,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.227,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,5,0.227,low
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,2,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.218,low
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,5,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.218,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,1,0.218,low
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,9,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.192,low
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,q11,Why are closed form expressions preferred over expanded summations?,4,11,0.191,low
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,1,q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,10,0.19,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use terminology and notation associated with summations  
+Calculate the value of a summation by expanding and evaluating terms  
+Manipulate summations by pulling out the last term and adjusting summation limits  
+Perform variable substitutions in summation indices and adjust limits accordingly  
+Apply closed-form formulas for sums of arithmetic and geometric sequences  
+Interpret and apply summations in real-world problem contexts"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Summation notation uses the symbol _____ to represent the sum of terms.,1,yes,"This question assesses the use of summation notation terminology, aligning with the first learning objective."
+q2,"In \(\sum_{i=s}^t a_i\), the variable \(i\) is called the _____.",1,yes,"This question evaluates knowledge of summation notation components, specifically the index variable, matching the first learning objective."
+q3,Pulling out the last term from \(\sum_{k=m}^n a_k\) results in _____.,1,yes,"This question tests the ability to manipulate summations by pulling out the last term and adjusting limits, directly addressing the third learning objective."
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), the new limits are _____.",1,yes,"This question assesses performing variable substitutions in summation indices and adjusting limits, corresponding to the fourth learning objective."
+q5,The closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\) is _____.,1,yes,"This question evaluates applying closed-form formulas for arithmetic sequences, aligning with the fifth learning objective."
+q6,"The closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a r^k\), where \(r \neq 1\), is _____.",1,yes,"This question tests applying closed-form formulas for geometric sequences, matching the fifth learning objective."
+q7,"If a summation includes the term for \(j=0\) and another does not, they are equal if _____.",1,yes,"This question involves interpreting summations and conditions for equality, relating to the sixth learning objective about real-world interpretation."
+q8,"In the substitution \(j = i + 2\), the term \(a_i = \frac{1}{i+3}\) becomes \(\frac{1}{\text{_____}}\).",1,yes,"This question assesses performing variable substitutions inside summation terms, linking to the fourth learning objective."
+q9,Why can the index variable in summations be replaced without changing the sum?,1,yes,"This question evaluates understanding of the arbitrary nature of index variables in summations, related to the first and fourth learning objectives."
+q10,"For the sum \(\sum_{j=0}^n (j+1)^2\), the expanded form is _____.",1,yes,"This question tests expanding and interpreting summations, addressing the second and sixth learning objectives."
+q11,"When pulling out the last term from \(\sum_{j=0}^{n+2} 2^{j-1}\), the new summation is _____.",1,yes,"This question assesses manipulating summations by pulling out the last term and adjusting limits, matching the third learning objective."
+q1,What does the lower limit in \(\sum_{i=s}^t a_i\) represent?,2,yes,"This question evaluates understanding of summation notation limits, related to the first learning objective."
+q2,"In \(\sum_{j=1}^4 j^3\), what is the expanded form?",2,yes,"This question tests expanding summations to calculate values, aligning with the second learning objective."
+q3,How can the last term be removed from \(\sum_{k=m}^n a_k\)?,2,yes,"This question assesses manipulating summations by removing the last term, corresponding to the third learning objective."
+q4,"If \(i = k + 2\), what is the new summation limits for \(\sum_{k=1}^n (k+2)^3\)?",2,yes,"This question evaluates variable substitution in summation indices and adjusting limits, matching the fourth learning objective."
+q5,Which closed form calculates \(\sum_{k=0}^{n-1} (a + kd)\) for an arithmetic sequence?,2,yes,"This question tests applying closed-form formulas for arithmetic sequences, aligning with the fifth learning objective."
+q6,What is the closed form for \(\sum_{k=0}^{n-1} a r^k\) with \(r \neq 1\)?,2,yes,"This question assesses applying closed-form formulas for geometric sequences, corresponding to the fifth learning objective."
+q7,Pulling out the last term of \(\sum_{i=1}^{15} i\) gives \(\sum_{i=1}^{_____} i + _____\).,2,yes,"This question involves pulling out the last term and adjusting summation limits, directly addressing the third learning objective."
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",2,yes,"This question evaluates adjusting summation limits after variable substitution, matching the fourth learning objective."
+q9,"Why can the index variable in summation notation be changed (e.g., \(j\) to \(k\)) without changing the sum’s value?",2,yes,"This question tests understanding of the arbitrary nature of index variables, related to the first and fourth learning objectives."
+q10,"What is the sum of the first 7 terms of the arithmetic sequence \(5, 8, 11, \ldots\) using the closed form?",2,yes,"This question assesses applying closed-form formulas to calculate sums in arithmetic sequences, aligning with the fifth learning objective."
+q11,What does the expression \(\sum_{k=0}^{n} (k^2-4k+1)\) become when the last term is pulled out?,2,yes,"This question evaluates manipulating summations by pulling out the last term, corresponding to the third learning objective."
+q1,What does the index variable represent in a summation \(\sum_{i=s}^t a_i\)?,3,yes,"This question tests understanding of the index variable in summations, related to the first learning objective."
+q2,What is the value of \(\sum_{j=1}^4 j^3\)?,3,yes,"This question assesses calculating the value of a summation by expansion, matching the second learning objective."
+q3,How can \(\sum_{k=m}^n a_k\) be expressed by pulling out the last term?,3,yes,"This question evaluates manipulating summations by pulling out the last term, addressing the third learning objective."
+q4,"When substituting \(i = k + 2\) in \(\sum_{k=1}^n (k+2)^3\), what is the new lower limit for \(i\)?",3,yes,"This question tests variable substitution in summation indices and adjusting limits, aligning with the fourth learning objective."
+q5,"If \(j = i + 2\), what is the expression for \(i\) in terms of \(j\)?",3,yes,"This question assesses performing variable substitutions and expressing indices accordingly, related to the fourth learning objective."
+q6,What is the closed form for the sum of an arithmetic sequence \(\sum_{k=0}^{n-1} (a + kd)\)?,3,yes,"This question evaluates applying closed-form formulas for arithmetic sequences, matching the fifth learning objective."
+q7,Which formula represents the closed form for the sum of a geometric sequence \(\sum_{k=0}^{n-1} a \cdot r^k\) with \(r \neq 1\)?,3,yes,"This question tests applying closed-form formulas for geometric sequences, corresponding to the fifth learning objective."
+q8,What is the sum \(\sum_{k=0}^4 2^k\)?,3,yes,"This question assesses calculating the value of a geometric summation, aligning with the second and fifth learning objectives."
+q9,Why are \(\sum_{j=0}^{100} j^3\) and \(\sum_{j=1}^{100} j^3\) equal?,3,yes,"This question evaluates interpreting summations and understanding term inclusion, related to the sixth learning objective."
+q10,How is the total sales projection after one year calculated if sales grow 10% monthly starting at 1000 widgets?,3,yes,"This question tests applying summations in a real-world context using closed-form formulas, matching the sixth learning objective."
+q11,"When changing the index variable from \(j\) to \(k\) using \(k = j -1\) in \(\sum_{j=1}^{17} 2^{j-1}\), what is the new summation?",3,yes,"This question assesses manipulating summations by changing index variables and adjusting limits, corresponding to the third and fourth learning objectives."
+q1,The symbol \(\Sigma\) in summation notation represents the _____ of terms.,4,yes,"This question evaluates understanding summation notation terminology, related to the first learning objective."
+q2,What is the upper limit in \(\sum_{i=3}^n a_i\)?,4,yes,"This question tests knowledge of summation notation limits, aligning with the first learning objective."
+q3,Pulling out the last term from \(\sum_{k=1}^n a_k\) creates which equivalent expression?,4,yes,"This question assesses manipulating summations by pulling out the last term, matching the third learning objective."
+q4,"If \(i = k + 2\), then the summation \(\sum_{k=1}^n (k+2)^3\) becomes",4,yes,"This question evaluates variable substitution in summation indices and adjusting limits, corresponding to the fourth learning objective."
+q5,The closed form for the sum of \(n\) terms of an arithmetic sequence with initial term \(a\) and difference \(d\) is:,4,yes,"This question tests applying closed-form formulas for arithmetic sequences, related to the fifth learning objective."
+q6,"In the geometric sum \(\sum_{k=0}^{n-1} a r^k\), what is the closed form expression?",4,yes,"This question assesses applying closed-form formulas for geometric sequences, aligning with the fifth learning objective."
+q7,Why can the index variable in a summation be replaced with another variable?,4,yes,"This question evaluates understanding the arbitrary nature of index variables in summations, matching the first and fourth learning objectives."
+q8,"When substituting \(j = i + 2\) in \(\sum_{i=3}^{21} \frac{1}{i+3}\), what is the new lower limit?",4,yes,"This question tests adjusting summation limits after variable substitution, corresponding to the fourth learning objective."
+q9,What happens to the summation limits when the index variable is changed by \(i = k + 2\)?,4,yes,"This question assesses understanding how summation limits change with index variable shifts, related to the fourth learning objective."
+q10,How does the term inside the summation change under variable substitution \(i = j - 2\) for \(\frac{1}{i+3}\)?,4,yes,"This question evaluates how terms inside summations change under variable substitution, aligning with the fourth learning objective."
+q11,Why are closed form expressions preferred over expanded summations?,4,yes,"This question tests understanding the advantage of closed-form expressions over expanded summations, matching the fifth and sixth learning objectives."

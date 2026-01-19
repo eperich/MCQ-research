@@ -1,0 +1,566 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,8,0,0
+2,8,0,4
+3,8,0,1
+4,8,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,6,64
+1,3,1,9,64
+1,4,2,4,64
+2,3,1,6,64
+2,4,2,11,64
+3,4,2,9,64
+
+Summary
+Total Comparisons,496
+Duplicates (≥85%),9
+Similar (70-85%),51
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.94,duplicate
+q6,The power set \(P(A)\) contains _____.,1,6,q3,The power set \(P(A)\) contains _____.,4,3,0.936,duplicate
+q4,The power set \(P(A)\) contains _____.,2,4,q3,The power set \(P(A)\) contains _____.,4,3,0.936,duplicate
+q6,The power set \(P(A)\) contains _____.,1,6,q4,The power set \(P(A)\) contains _____.,2,4,0.912,duplicate
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.886,duplicate
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.877,duplicate
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.87,duplicate
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.86,duplicate
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.852,duplicate
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.845,similar
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.837,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.836,similar
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.819,similar
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.815,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.815,similar
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.812,similar
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.808,similar
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.807,similar
+q4,The power set \(P(A)\) contains _____.,2,4,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.803,similar
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q3,The power set \(P(A)\) contains _____.,4,3,0.802,similar
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.801,similar
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.796,similar
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.795,similar
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.79,similar
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.789,similar
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.787,similar
+q6,The power set \(P(A)\) contains _____.,1,6,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.783,similar
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.779,similar
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.777,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.775,similar
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.773,similar
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.772,similar
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.772,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.768,similar
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.768,similar
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.757,similar
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.75,similar
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.745,similar
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.744,similar
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.743,similar
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.736,similar
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.736,similar
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.735,similar
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.733,similar
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.729,similar
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.724,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.723,similar
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.723,similar
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.72,similar
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.718,similar
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.718,similar
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.715,similar
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.711,similar
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.71,similar
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.706,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.705,similar
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.703,similar
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q3,The power set \(P(A)\) contains _____.,4,3,0.703,similar
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.702,similar
+q4,The power set \(P(A)\) contains _____.,2,4,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.701,similar
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.699,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.698,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.698,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.697,low
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.695,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q6,The power set \(P(A)\) contains _____.,1,6,0.692,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.691,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.691,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.69,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.689,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.689,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.688,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.687,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q4,The power set \(P(A)\) contains _____.,2,4,0.686,low
+q4,The power set \(P(A)\) contains _____.,2,4,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.686,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.685,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.685,low
+q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.685,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.68,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.68,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.68,low
+q6,The power set \(P(A)\) contains _____.,1,6,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.679,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.679,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.679,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q4,The power set \(P(A)\) contains _____.,2,4,0.677,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.675,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q3,The power set \(P(A)\) contains _____.,4,3,0.675,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.674,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.674,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.672,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.671,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.67,low
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.669,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.668,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.668,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.667,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,0.666,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.666,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.663,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.661,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.66,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.66,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.66,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.657,low
+q3,The power set \(P(A)\) contains _____.,4,3,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.657,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.656,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.655,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.655,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q3,The power set \(P(A)\) contains _____.,4,3,0.655,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.655,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.654,low
+q6,The power set \(P(A)\) contains _____.,1,6,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.653,low
+q6,The power set \(P(A)\) contains _____.,1,6,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.652,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.652,low
+q3,The power set \(P(A)\) contains _____.,4,3,q7,The empty set \(\emptyset\) is _____.,4,7,0.651,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.65,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.65,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.648,low
+q6,The power set \(P(A)\) contains _____.,1,6,q7,The empty set \(\emptyset\) is _____.,4,7,0.647,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.647,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.646,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q7,The empty set \(\emptyset\) is _____.,4,7,0.645,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.645,low
+q4,The power set \(P(A)\) contains _____.,2,4,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.645,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.645,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.645,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.644,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.643,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.642,low
+q3,The power set \(P(A)\) contains _____.,4,3,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.642,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.641,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q4,The power set \(P(A)\) contains _____.,2,4,0.64,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.64,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q3,The power set \(P(A)\) contains _____.,4,3,0.639,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.639,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.638,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.636,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.635,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.634,low
+q4,The power set \(P(A)\) contains _____.,2,4,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.632,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.632,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.63,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.63,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.63,low
+q4,The power set \(P(A)\) contains _____.,2,4,q7,The empty set \(\emptyset\) is _____.,4,7,0.63,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.629,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.628,low
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.628,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.626,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.625,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.624,low
+q4,The power set \(P(A)\) contains _____.,2,4,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.623,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.623,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.622,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.622,low
+q6,The power set \(P(A)\) contains _____.,1,6,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.619,low
+q6,The power set \(P(A)\) contains _____.,1,6,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.618,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.618,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q7,The empty set \(\emptyset\) is _____.,4,7,0.618,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.617,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.616,low
+q6,The power set \(P(A)\) contains _____.,1,6,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.616,low
+q6,The power set \(P(A)\) contains _____.,1,6,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.615,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.615,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.615,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.615,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.614,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.613,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.612,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.612,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.612,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q4,The power set \(P(A)\) contains _____.,2,4,0.611,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.61,low
+q6,The power set \(P(A)\) contains _____.,1,6,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.61,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.61,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.61,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.607,low
+q4,The power set \(P(A)\) contains _____.,2,4,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.607,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.605,low
+q4,The power set \(P(A)\) contains _____.,2,4,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.605,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.605,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.603,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q7,The empty set \(\emptyset\) is _____.,4,7,0.603,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.603,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.601,low
+q6,The power set \(P(A)\) contains _____.,1,6,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.601,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q3,The power set \(P(A)\) contains _____.,4,3,0.599,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.599,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.599,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.598,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.598,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.597,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.596,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.596,low
+q4,The power set \(P(A)\) contains _____.,2,4,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.595,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.594,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.594,low
+q6,The power set \(P(A)\) contains _____.,1,6,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.593,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.592,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q6,The power set \(P(A)\) contains _____.,1,6,0.592,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.592,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q3,The power set \(P(A)\) contains _____.,4,3,0.592,low
+q4,The power set \(P(A)\) contains _____.,2,4,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.591,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,0.59,low
+q4,The power set \(P(A)\) contains _____.,2,4,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.589,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.588,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q3,The power set \(P(A)\) contains _____.,4,3,0.588,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.588,low
+q6,The power set \(P(A)\) contains _____.,1,6,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.587,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.586,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.584,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q7,The empty set \(\emptyset\) is _____.,4,7,0.584,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.583,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q3,The power set \(P(A)\) contains _____.,4,3,0.583,low
+q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.583,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.582,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.582,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.581,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.58,low
+q4,The power set \(P(A)\) contains _____.,2,4,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.579,low
+q4,The power set \(P(A)\) contains _____.,2,4,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.578,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.576,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q6,The power set \(P(A)\) contains _____.,1,6,0.575,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.574,low
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,q3,The power set \(P(A)\) contains _____.,4,3,0.574,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.572,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.571,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.571,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.57,low
+q6,The power set \(P(A)\) contains _____.,1,6,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.57,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q4,The power set \(P(A)\) contains _____.,2,4,0.569,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.569,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.567,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.563,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q3,The power set \(P(A)\) contains _____.,4,3,0.563,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.559,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.559,low
+q6,The power set \(P(A)\) contains _____.,1,6,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.559,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q7,The empty set \(\emptyset\) is _____.,4,7,0.559,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.558,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.557,low
+q4,The power set \(P(A)\) contains _____.,2,4,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.556,low
+q6,The power set \(P(A)\) contains _____.,1,6,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.554,low
+q4,The power set \(P(A)\) contains _____.,2,4,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.554,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.553,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.553,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.553,low
+q3,The power set \(P(A)\) contains _____.,4,3,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.553,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.552,low
+q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.552,low
+q6,The power set \(P(A)\) contains _____.,1,6,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.551,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.55,low
+q6,The power set \(P(A)\) contains _____.,1,6,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.55,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.549,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.548,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q3,The power set \(P(A)\) contains _____.,4,3,0.548,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.548,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q7,The empty set \(\emptyset\) is _____.,4,7,0.547,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.546,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q3,The power set \(P(A)\) contains _____.,4,3,0.546,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.545,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,0.544,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.544,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.544,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.544,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q7,The empty set \(\emptyset\) is _____.,4,7,0.543,low
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.543,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q3,The power set \(P(A)\) contains _____.,4,3,0.542,low
+q6,The power set \(P(A)\) contains _____.,1,6,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.54,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.54,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q3,The power set \(P(A)\) contains _____.,4,3,0.539,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,0.538,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.537,low
+q6,The power set \(P(A)\) contains _____.,1,6,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.537,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q3,The power set \(P(A)\) contains _____.,4,3,0.537,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q3,The power set \(P(A)\) contains _____.,4,3,0.537,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.536,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.536,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.535,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q4,The power set \(P(A)\) contains _____.,2,4,0.534,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.533,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q4,The power set \(P(A)\) contains _____.,2,4,0.532,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,0.531,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.531,low
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q7,The empty set \(\emptyset\) is _____.,4,7,0.53,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.529,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q6,The power set \(P(A)\) contains _____.,1,6,0.529,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.529,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.529,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.529,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.527,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.527,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.526,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.524,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.524,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.523,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.522,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q3,The power set \(P(A)\) contains _____.,4,3,0.52,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.519,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.519,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q7,The empty set \(\emptyset\) is _____.,4,7,0.518,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.518,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.518,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.517,low
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.517,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.517,low
+q4,The power set \(P(A)\) contains _____.,2,4,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.516,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.515,low
+q6,The power set \(P(A)\) contains _____.,1,6,q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,0.514,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.512,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q7,The empty set \(\emptyset\) is _____.,4,7,0.511,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.511,low
+q6,The power set \(P(A)\) contains _____.,1,6,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.511,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.508,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.507,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.504,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,0.504,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.503,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.501,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.501,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q3,The power set \(P(A)\) contains _____.,4,3,0.5,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.5,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.499,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.497,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.497,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q3,The power set \(P(A)\) contains _____.,4,3,0.497,low
+q7,The empty set \(\emptyset\) is _____.,4,7,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.497,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.496,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.496,low
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.496,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.495,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.495,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q3,The power set \(P(A)\) contains _____.,4,3,0.495,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q6,The power set \(P(A)\) contains _____.,1,6,0.494,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.494,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.494,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.493,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.493,low
+q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,q7,The empty set \(\emptyset\) is _____.,4,7,0.493,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,0.492,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.488,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,0.486,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.485,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.484,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.484,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q4,The power set \(P(A)\) contains _____.,2,4,0.483,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,0.481,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.481,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.48,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q7,The empty set \(\emptyset\) is _____.,4,7,0.478,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.474,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q4,The power set \(P(A)\) contains _____.,2,4,0.473,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.473,low
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.47,low
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.47,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.469,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.465,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q7,The empty set \(\emptyset\) is _____.,4,7,0.465,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.464,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.462,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.462,low
+q6,The power set \(P(A)\) contains _____.,1,6,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.46,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q7,The empty set \(\emptyset\) is _____.,4,7,0.46,low
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.459,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.457,low
+q4,The power set \(P(A)\) contains _____.,2,4,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.457,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.457,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q4,The power set \(P(A)\) contains _____.,2,4,0.454,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.454,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,2,0.452,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.45,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,3,0.448,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,0.448,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.446,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.446,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q3,The power set \(P(A)\) contains _____.,4,3,0.445,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,0.444,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.444,low
+q3,The power set \(P(A)\) contains _____.,4,3,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.444,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q7,The empty set \(\emptyset\) is _____.,4,7,0.443,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.441,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.437,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q7,The empty set \(\emptyset\) is _____.,4,7,0.437,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.435,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.435,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q3,The power set \(P(A)\) contains _____.,4,3,0.433,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.432,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q7,The empty set \(\emptyset\) is _____.,4,7,0.432,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.431,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.431,low
+q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,q7,The empty set \(\emptyset\) is _____.,4,7,0.431,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.43,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q3,The power set \(P(A)\) contains _____.,4,3,0.43,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.428,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.428,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.427,low
+q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.427,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,4,0.423,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q7,The empty set \(\emptyset\) is _____.,4,7,0.422,low
+q6,The power set \(P(A)\) contains _____.,1,6,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.422,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.421,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.421,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.42,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.419,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.418,low
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.418,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,0.416,low
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,q7,The empty set \(\emptyset\) is _____.,4,7,0.416,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.415,low
+q4,The power set \(P(A)\) contains _____.,2,4,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.414,low
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.414,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.413,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.413,low
+q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,q7,The empty set \(\emptyset\) is _____.,4,7,0.412,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.409,low
+q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.409,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.407,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.407,low
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.406,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.404,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,7,0.403,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.403,low
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,q7,The empty set \(\emptyset\) is _____.,4,7,0.403,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.401,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.401,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.4,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,0.399,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.398,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.398,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.397,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.397,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.397,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.395,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.393,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.392,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.392,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.392,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.391,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.389,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.388,low
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,3,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.387,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.387,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.384,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.383,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.383,low
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.382,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.379,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.379,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.378,low
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,1,q7,The empty set \(\emptyset\) is _____.,4,7,0.378,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.376,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,1,0.375,low
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.373,low
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.372,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q7,The empty set \(\emptyset\) is _____.,4,7,0.369,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,4,0.368,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,0.368,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.366,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,0.365,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,2,0.362,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,8,0.356,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,0.355,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.351,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q7,The empty set \(\emptyset\) is _____.,4,7,0.349,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,5,0.346,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.346,low
+q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.346,low
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,6,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.344,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.342,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.339,low
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,3,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.338,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,1,0.337,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.336,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.333,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,0.332,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.329,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,0.326,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.324,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.323,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.323,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,0.321,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,0.32,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.317,low
+q1,The cardinality of a set containing elements that are sets is _____.,1,1,q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,8,0.316,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,2,0.296,low
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,8,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.294,low
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,5,0.294,low
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,2,q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,0.29,low
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,8,q7,The empty set \(\emptyset\) is _____.,4,7,0.289,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,6,0.286,low
+q4,How many elements does the power set of a set with 4 elements have?,3,4,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.278,low
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,5,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.277,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q7,The empty set \(\emptyset\) is _____.,4,7,0.275,low
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,5,q4,How many elements does the power set of a set with 4 elements have?,3,4,0.272,low
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,6,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.267,low
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,7,q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,7,0.228,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Differentiate between elements and subsets in sets that contain other sets as elements  
+Determine the cardinality of sets that include sets as elements  
+Construct and write out the power set of a given set  
+Understand and identify key properties of power sets, including their cardinality formula  
+Apply concepts of sets of sets and power sets to solve related problems and exercises"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,The cardinality of a set containing elements that are sets is _____.,1,yes,This question assesses determining the cardinality of sets that include sets as elements.
+q2,Which statement is true about the empty set \(\emptyset\) and \(\{\emptyset\}\)?,1,yes,This question evaluates differentiation between elements and subsets in sets containing other sets as elements.
+q3,"If \(A = \{1, 2, 3\}\), what is the cardinality of the power set \(P(A)\)?",1,yes,This question tests the ability to determine the cardinality of the power set of a given set.
+q4,"Which is a subset of \(A = \{2,3,5\}\) but not an element of \(A\)?",1,yes,This question assesses understanding of subsets versus elements in sets containing other sets.
+q5,"Given \(A = \{1, \{1\}, 2\}\), which is true?",1,yes,This question evaluates differentiation between elements and subsets in sets that contain sets as elements.
+q6,The power set \(P(A)\) contains _____.,1,yes,This question tests knowledge of the definition and properties of power sets.
+q7,"If \(|A| = n\), then \(|P(A)| = _____\).",1,yes,This question assesses understanding of the cardinality formula for power sets.
+q8,"For \(A = \{2, 3, 5, 7, 14\}\), which is correct?",1,yes,"This question evaluates application of concepts of sets of sets and power sets, including membership and cardinality."
+q1,A set containing the empty set \(\emptyset\) has cardinality _____.,2,yes,This question tests understanding of cardinality when sets contain the empty set as an element.
+q2,"Which is an element of the set \(A = \{ \{1, 2\}, \emptyset, \{1\} \}\)?",2,yes,This question assesses differentiation between elements and subsets in sets containing other sets.
+q3,"If \(B = \{2, \emptyset, \{1, 2\}\}\), which is a subset of \(B\)?",2,yes,This question evaluates identification of subsets of a set containing sets as elements.
+q4,The power set \(P(A)\) contains _____.,2,yes,This question tests understanding of the definition and properties of power sets.
+q5,"For a set \(A\) with 3 elements, \(|P(A)| = \) _____.",2,yes,This question assesses determining the cardinality of a power set for a given set size.
+q6,"Which statement is true about the set \(A = \{3, 4, \{3, 4\}\}\)?",2,yes,This question evaluates differentiation between elements and subsets in sets containing other sets.
+q7,"Given \(A = \{1, 2, 3\}\), which is NOT an element of \(P(A)\)?",2,yes,This question tests understanding of what constitutes elements of a power set.
+q8,The cardinality of the power set of a set with \(n\) elements is _____.,2,yes,This question assesses knowledge of the cardinality formula for power sets.
+q1,"What is the cardinality of the set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\)?",3,yes,This question evaluates determining the cardinality of a set containing sets as elements.
+q2,"Which statement is true about set \(A = \{ 3, 4, \{3, 4\}, \{1, 2, 3\}, 5 \}\)?",3,yes,This question tests differentiation between elements and subsets in sets containing other sets.
+q3,"The power set \(P(A)\) of \(A = \{1, 2, 3\}\) contains which of the following elements?",3,yes,This question assesses understanding of membership in power sets.
+q4,How many elements does the power set of a set with 4 elements have?,3,yes,This question tests determining the cardinality of power sets for given set sizes.
+q5,"Which of the following is a subset of \(A = \{2, 3, 5, 7, 14\}\) but not an element of \(A\)?",3,yes,This question evaluates understanding of subsets versus elements in sets containing other sets.
+q6,"If \(|A| = n\), what is the formula for the cardinality of the power set \(P(A)\)?",3,yes,This question assesses knowledge of the cardinality formula for power sets.
+q7,Which is true about the empty set \(\emptyset\) and the set \(\{\emptyset\}\)?,3,yes,This question tests understanding of the relationship between the empty set and the set containing the empty set.
+q8,"For \(A = \{a, b, c, d\}\), which of the following sets belongs to the power set \(P(A)\)?",3,yes,This question evaluates application of power set membership concepts.
+q1,"The set \(A = \{ \{1, 2\}, 1, 2, \{1, 2, 3\} \}\) has cardinality _____.",4,yes,This question assesses determining the cardinality of a set containing sets as elements.
+q2,"If \(A = \{1, 2, 3\}\), which condition means \( \{1, 2\} \in P(A) \)?",4,yes,This question tests understanding of the relationship between subsets and elements in power sets.
+q3,The power set \(P(A)\) contains _____.,4,yes,This question evaluates knowledge of the definition and properties of power sets.
+q4,"Which of the following is an element of the set \(A = \{3, 4, \{3,4\}, 5\}\)?",4,yes,This question assesses differentiation between elements and subsets in sets containing other sets.
+q5,"For any finite set \(A\) with \(|A|=n\), the cardinality of its power set \(P(A)\) is _____.",4,yes,This question tests knowledge of the cardinality formula for power sets.
+q6,"Given \(X = \{1, \{1\}, 2\}\), which is true?",4,yes,This question evaluates differentiation between elements and subsets in sets containing other sets.
+q7,The empty set \(\emptyset\) is _____.,4,yes,This question tests understanding of the empty set as a subset and element in sets and power sets.
+q8,"If \(A = \{a, b\}\), which is NOT in \(P(A)\)?",4,yes,This question assesses application of power set membership concepts.

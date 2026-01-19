@@ -1,0 +1,116 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,3,0,0
+2,3,0,0
+3,3,0,0
+4,3,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,0,9
+1,3,1,1,9
+1,4,1,0,9
+2,3,1,0,9
+2,4,1,1,9
+3,4,0,1,9
+
+Summary
+Total Comparisons,66
+Duplicates (≥85%),5
+Similar (70-85%),3
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.958,duplicate
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,0.923,duplicate
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.918,duplicate
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.878,duplicate
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.853,duplicate
+q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.804,similar
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.803,similar
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q1,Why should a double variable be used instead of an int for temperature values?,3,1,0.799,similar
+q3,Which variable type is best for storing the average number of kids per household?,2,3,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.691,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.64,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.613,low
+q1,Why should a double variable be used instead of an int for temperature values?,3,1,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.583,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q3,Which variable type is best for storing the average number of kids per household?,2,3,0.524,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q1,Why should a floating-point literal include a digit before the decimal point?,2,1,0.517,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.499,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.487,low
+q3,Which variable type is best for storing the average number of kids per household?,2,3,q1,Why should a double variable be used instead of an int for temperature values?,3,1,0.487,low
+q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.484,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,0.474,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q1,Why should a double variable be used instead of an int for temperature values?,3,1,0.471,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.47,low
+q1,Why should a double variable be used instead of an int for temperature values?,3,1,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.466,low
+q1,Why should floating-point literals include a digit before the decimal point?,4,1,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.462,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.461,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.458,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q1,Why should a floating-point literal include a digit before the decimal point?,2,1,0.456,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.446,low
+q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.44,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.439,low
+q1,Why should floating-point literals include a digit before the decimal point?,4,1,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.436,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,0.432,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.43,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,0.424,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,0.419,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.418,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.418,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,0.407,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q1,Why should a floating-point literal include a digit before the decimal point?,2,1,0.406,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,0.403,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.402,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.397,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.391,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.386,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.374,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.373,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.37,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q3,Which variable type is best for storing the average number of kids per household?,2,3,0.364,low
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,1,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.353,low
+q3,Which variable type is best for storing the average number of kids per household?,2,3,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.337,low
+q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,q3,Which variable type is best for storing a measurement with fractional values?,4,3,0.333,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.329,low
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,3,q1,Why should a double variable be used instead of an int for temperature values?,3,1,0.328,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.327,low
+q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.325,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q3,Which variable type is best for storing the average number of kids per household?,2,3,0.32,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q3,Which variable type is best for storing the average number of kids per household?,2,3,0.319,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.317,low
+q3,Which variable type is best for storing the average number of kids per household?,2,3,q1,Why should floating-point literals include a digit before the decimal point?,4,1,0.317,low
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,2,q1,Why should a double variable be used instead of an int for temperature values?,3,1,0.311,low
+q3,Which variable type is best for storing the average number of kids per household?,2,3,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.309,low
+q1,Why should a double variable be used instead of an int for temperature values?,3,1,q3,Which printf format specifier outputs a double with three digits after the decimal?,3,3,0.307,low
+q1,Why should a double variable be used instead of an int for temperature values?,3,1,q2,What does dividing a nonzero double by 0.0 produce in Java?,3,2,0.303,low
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,2,q1,Why should a double variable be used instead of an int for temperature values?,3,1,0.287,low
+q1,Why should a floating-point literal include a digit before the decimal point?,2,1,q3,Which variable type is best for storing the average number of kids per household?,2,3,0.281,low
+q3,Which variable type is best for storing the average number of kids per household?,2,3,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.256,low
+q1,Why should a double variable be used instead of an int for temperature values?,3,1,q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,2,0.249,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define and declare floating-point (double) variables in programming languages such as C, C++, and Java.  
+Select appropriate variable types (double vs. int) based on the nature of the data (measured values vs. countable quantities).  
+Explain how floating-point division by zero is handled, including the concepts of infinity and NaN (not a number).  
+Use programming techniques to control the number of decimal places displayed when outputting floating-point numbers.  
+Apply floating-point arithmetic correctly in practical coding problems, such as computing geometric volumes using double precision."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Why use a double variable instead of an int to store 98.6 degrees temperature?,1,yes,This question assesses the ability to select appropriate variable types (double vs. int) based on the nature of the data.
+q2,What is the result of dividing a nonzero double by 0.0 in Java?,1,yes,"This question evaluates understanding of how floating-point division by zero is handled, including infinity and NaN concepts."
+q3,Which Java statement correctly outputs a double variable myFloat to two decimal places?,1,yes,This question tests the use of programming techniques to control the number of decimal places displayed when outputting floating-point numbers.
+q1,Why should a floating-point literal include a digit before the decimal point?,2,no,"This question addresses syntax rules for floating-point literals, which is not explicitly covered in the learning objectives."
+q2,What does dividing a nonzero double by 0.0 produce in Java?,2,yes,"This question assesses knowledge of floating-point division by zero behavior in Java, including infinity and NaN."
+q3,Which variable type is best for storing the average number of kids per household?,2,yes,This question evaluates selecting appropriate variable types (double vs. int) based on the nature of the data.
+q1,Why should a double variable be used instead of an int for temperature values?,3,yes,"This question tests understanding of why double variables are used for fractional values, aligning with selecting variable types."
+q2,What does dividing a nonzero double by 0.0 produce in Java?,3,yes,This question assesses understanding of floating-point division by zero and its results in Java.
+q3,Which printf format specifier outputs a double with three digits after the decimal?,3,yes,This question evaluates knowledge of formatting floating-point output to a specific number of decimal places.
+q1,Why should floating-point literals include a digit before the decimal point?,4,no,This question concerns floating-point literal syntax details not explicitly covered in the learning objectives.
+q2,What happens when a nonzero floating-point number is divided by zero in Java?,4,yes,This question tests understanding of floating-point division by zero and the resulting values or errors.
+q3,Which variable type is best for storing a measurement with fractional values?,4,yes,"This question assesses selecting appropriate variable types for fractional measurements, aligning with the learning objectives."

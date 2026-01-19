@@ -1,0 +1,4 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+\nA sequence of instructions that solves a problem is called a(n) _____ .,algorithm,instruction,process,algorithm,variable,,,,,,
+"\nIn an instruction like: z = x + y, the symbols x, y, and z are examples of _____.",variables,output,visibles,variables,instructions,,,,,,
+\nWhich is an example of a process?,x + y,int,"y, 10",15,x + y,,,,,,

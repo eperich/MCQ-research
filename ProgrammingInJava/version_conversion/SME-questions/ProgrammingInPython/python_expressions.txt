@@ -1,0 +1,40 @@
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='8ab9596b-8d3c-7594-d870-97e79c299a1f'>
+<instructions>
+The operator *= is called a(n) _____ operator.
+</instructions>
+
+<choices>
+<choice>double</choice>
+<choice correct='true'>compound</choice>
+<choice>increment</choice>
+<choice>multiple assignment</choice>
+</choices>
+</question>
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='10722f51-c693-fdba-5295-156750718bce'>
+<instructions>
+<p>Which statement is equivalent to the following assignment?</p>
+<line>x -= 2 + y</line>
+</instructions>
+
+<choices>
+<choice>x = 2 + y - x</choice>
+<choice>x = -(2 + y)</choice>
+<choice correct='true'>x = x - (2 + y)</choice>
+<choice>x = x - 2 + y</choice>
+</choices>
+</question>
+
+
+<question subjects='python3' xsi:type='MultipleChoiceQuestion' guid='3c1b614d-bc97-15cc-f95e-a658aa4ed8f5'>
+<instructions>
+Which floating-point literal correctly represents the scientific notation value: 2.3 x 10^7?
+
+</instructions>
+
+<choices>
+<choice correct='true'>2.3e7</choice>
+<choice>2.3*10e7</choice>
+<choice>2.3e10^7</choice>
+<choice>2.3xe7</choice>
+</choices>
+</question>

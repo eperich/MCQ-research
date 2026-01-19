@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+A dataset consists of _____ and _____.,features; instances,servers; storage,features; instances,algorithms; models,computers; databases,,,,,,
+"Big data's ""velocity"" refers to _____.",the speed of data creation and update,the size of the dataset,the speed of data creation and update,the variety of data types,the complexity of data models,,,,,,
+Data scientists handle big data variety by _____.,using methods from multiple disciplines,ignoring unfamiliar data types,analyzing only tabular data,using methods from multiple disciplines,storing all data in one format,,,,,,
+"A _____ is an individual data point in a dataset, while a feature is a characteristic measured on it.",instance,feature,dataset,instance,variable,,,,,,
+Big data's _____ refers to the speed at which data is created and updated in real time.,velocity,volume,variety,velocity,validity,,,,,,
+Data scientists handle variety in big data by using tools from _____ disciplines.,multiple,a single,multiple,unrelated,outdated,,,,,,
+A _____ is a characteristic measured on each instance in a dataset.,feature,dataset,instance,feature,observation,,,,,,
+"Which ""V"" of big data describes the fast rate at which data is created and updated?",Velocity,Volume,Variety,Velocity,Veracity,,,,,,
+Cloud-based storage makes big data more manageable by _____.,spreading dataset portions across different servers,saving the entire dataset locally,spreading dataset portions across different servers,compressing all data into one file,analyzing data without storage,,,,,,
+What term describes a dataset's individual measured characteristic?,Feature,Instance,Dataset,Feature,Observation,,,,,,
+Why do data scientists use cloud-based storage for big data?,To spread dataset portions across multiple servers,To analyze data faster on personal computers,To spread dataset portions across multiple servers,To keep all data on one local machine,To avoid using programming languages,,,,,,
+How do data scientists handle the variety of big data formats?,By using tools from multiple disciplines,By ignoring unfamiliar data types,By using tools from multiple disciplines,By only analyzing tabular data,By specializing in one data type,,,,,,

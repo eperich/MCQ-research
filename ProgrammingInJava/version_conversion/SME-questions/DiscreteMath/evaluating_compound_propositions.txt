@@ -1,0 +1,170 @@
+<question xsi:type='MultipleChoiceQuestion' guid='16e936fa-a49d-5a63-8e90-331e33854bca'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{F}</ilatex>, and <ilatex>r = \text{T}</ilatex>.</line>
+<line>Select the expression that evaluates to <i>false</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>p \vee \neg q</ilatex></choice>
+<choice><ilatex>p \vee q \vee r</ilatex></choice>
+<choice correct='true'><ilatex>\neg (p \wedge \neg q)</ilatex></choice>
+<choice><ilatex>\neg(p \wedge q \wedge r)</ilatex></choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='f5a4cca0-9b77-6972-89e1-8f4e97a1071b'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{F}</ilatex>, and <ilatex>r = \text{F}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>true</i>. </line>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\neg (q \vee r \vee \neg p)</ilatex></choice>
+<choice><ilatex>(q \vee  r) \wedge p</ilatex></choice>
+<choice><ilatex>r \vee q \vee \neg p</ilatex></choice>
+<choice><ilatex>(p \vee r) \wedge (q \vee \neg p)</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='41240763-35a8-0673-5332-6ab93ab85b68'>
+<instructions>
+<p> The propositional variables <ilatex>f</ilatex>, <ilatex>h</ilatex>, and <ilatex>p</ilatex> represent the propositions:</p>
+<line><ilatex>f{:}</ilatex> The student got an A on the final. </line>
+<line><ilatex>h{:}</ilatex> The student turned in all the homework.</line>
+<line><ilatex>p{:}</ilatex> The student is on academic probation </line>
+<p>Select the logical expression that represents the statement: 
+"The student is not on academic probation and the student got an A on the final or turned in all the homework." </p>
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>\neg p \wedge (f \vee h)</ilatex></choice>
+<choice><ilatex>(\neg p \wedge f) \vee h</ilatex></choice>
+<choice><ilatex>\neg p \wedge f \wedge h</ilatex></choice>
+<choice><ilatex>\neg (p \wedge f ) \vee h</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='d86785fa-c13f-46dd-83e3-05c0ee60b53c'>
+<instructions>
+<line> <ilatex>p = \text{T}</ilatex>, <ilatex>q = \text{T}</ilatex>, and <ilatex>r = \text{F}</ilatex>.</line>
+<line>Select the expression that evaluates to <i>false</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\neg r \vee (p \wedge q)</ilatex></choice>
+<choice><ilatex>q \wedge \neg r</ilatex></choice>
+<choice><ilatex>\neg(p \wedge r) \vee r</ilatex></choice>
+<choice correct='true'><ilatex>\neg(p \vee q \vee r)</ilatex></choice>
+</choices>
+</question>
+
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='f71d2404-368f-44e2-b63c-711791243be8'>
+<instructions>
+<line> <ilatex>p = \text{F}</ilatex>, <ilatex>q = \text{T}</ilatex>, and <ilatex>r = \text{T}</ilatex>. </line>
+<line>Select the expression that evaluates to <i>true</i>. </line>
+</instructions>
+
+<choices>
+<choice><ilatex>\neg (q \vee r)</ilatex></choice>
+<choice correct='true'><ilatex>(\neg p \wedge r) \vee q</ilatex></choice>
+<choice><ilatex>(\neg q \vee r) \wedge p</ilatex></choice>
+<choice><ilatex>p \vee \neg q \vee \neg r</ilatex></choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='b99a3d53-c376-4430-ac5c-22cd466b58f1'>
+<instructions>
+<p> The propositional variables <ilatex>f</ilatex>, <ilatex>h</ilatex>, and <ilatex>p</ilatex> represent the propositions:</p>
+<line><ilatex>f{:}</ilatex> The student got an A on the final. </line>
+<line><ilatex>h{:}</ilatex> The student turned in all the homework.</line>
+<line><ilatex>p{:}</ilatex> The student is on academic probation </line>
+<p>Select the logical expression that represents the statement: "The student is on academic probation 
+and did not turn in all the homework but still got an A on the final." </p>
+</instructions>
+
+<choices>
+<choice><ilatex>p \wedge h \wedge \neg f</ilatex></choice>
+<choice><ilatex>(p \wedge \neg h) \vee f</ilatex></choice>
+<choice correct='true'><ilatex>p \wedge \neg h \wedge f</ilatex></choice>
+<choice><ilatex>(p \wedge h) \vee \neg f</ilatex></choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='bea0f4ca-ed29-4196-8de9-e9a2b95d3ed2'>
+<instructions>
+<p> Indicate how the missing items in the truth table below should be filled in:</p>
+
+<table>
+<row>
+<cell><ilatex> p </ilatex></cell> 
+<cell><ilatex> q </ilatex></cell> 
+<cell><ilatex>¬q ∨ p</ilatex></cell>
+</row>
+
+<row>
+<cell><ilatex> \text{T} </ilatex></cell>
+<cell><ilatex> \text{T} </ilatex></cell> 
+<cell><ilatex> \text{T}</ilatex></cell>
+</row>
+
+<row>
+<cell><ilatex> \text{T} </ilatex></cell>
+<cell><ilatex> \text{F} </ilatex></cell> 
+<cell><ilatex>(A)</ilatex> </cell>
+</row>
+
+<row>
+<cell><ilatex> \text{F} </ilatex></cell>
+<cell><ilatex>(B)</ilatex></cell> 
+<cell><ilatex> \text{F}  </ilatex></cell> 
+</row>
+
+<row>
+<cell><ilatex> \text{F}</ilatex></cell>
+<cell><ilatex> \text{F} </ilatex></cell> 
+<cell><ilatex> \text{T}  </ilatex></cell> 
+</row>
+</table>
+
+
+</instructions>
+
+<choices>
+<choice correct='true'><ilatex>(A){:}~\text{T}</ilatex>, and <ilatex>(B){:}~\text{T}</ilatex>.</choice>
+<choice><ilatex>(A){:}~\text{T}</ilatex>, and <ilatex>(B){:}~\text{F}</ilatex>.</choice>
+<choice><ilatex>(A){:}~\text{F}</ilatex>, and <ilatex>(B){:}~\text{T}</ilatex>.</choice>
+<choice><ilatex>(A){:}~\text{F}</ilatex>, and <ilatex>(B){:}~\text{F}</ilatex>.</choice>
+</choices>
+</question>
+
+<question xsi:type='MultipleChoiceQuestion' guid='ae18e25f-499f-4193-b181-7f96202df7c4'>
+<instructions>
+<p>The column labels for a truth table for compound proposition <ilatex>(p ∧ q) ∧ (¬r ∧ ¬w)</ilatex>  are shown below.</p>
+<table>
+<row>
+<cell><ilatex> p </ilatex></cell> 
+<cell><ilatex> q </ilatex></cell> 
+<cell><ilatex> r </ilatex></cell> 
+<cell><ilatex> w</ilatex></cell> 
+<cell><ilatex> (p ∧ q) ∨ (¬r ∧ ¬w) </ilatex></cell>
+</row>
+</table>
+<p>What are the correct truth values for the fifth row of the truth table? The labels do <i>not</i> count as a row, so the first row is 
+<ilatex>\text{TTTTT}</ilatex>.</p>
+</instructions>
+
+<choices>
+<choice><ilatex>\text{TFTFT}</ilatex></choice>
+<choice><ilatex>\text{TTFFF}</ilatex></choice>
+<choice><ilatex>\text{TFTFF}</ilatex></choice>
+<choice correct='true'><ilatex>\text{TFTTF}</ilatex></choice>
+
+
+</choices>
+</question>

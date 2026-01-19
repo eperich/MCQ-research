@@ -1,0 +1,54 @@
+<question xsi:type='MultipleChoiceQuestion' guid='e78c8ee8-e2c1-455f-1aa8-e99ac9dcab22' subjects='c, cpp'>
+<instructions>
+<p>Which declaration assigns a variable with 5 such that the value can not be later changed? </p>
+</instructions>
+
+<choices>
+<choice>const int = 5; </choice>
+<choice>int numItems = 5; </choice>
+<choice>int NUM_ITEMS = 5; </choice>
+<choice correct='true'>const int NUM_ITEMS = 5; </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='108262d5-ce5c-b57b-9f91-8c77a44ad665' subjects='java'>
+<instructions>
+<p>Which declaration assigns a variable with 5 such that the value can <i>not</i> be later changed? </p>
+</instructions>
+
+<choices>
+<choice>final int = 5; </choice>
+<choice>int numItems = 5; </choice>
+<choice>int NUM_ITEMS = 5; </choice>
+<choice correct='true'>final int NUM_ITEMS = 5; </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='395ba133-1506-edeb-1497-c6584a4ad36a' subjects='c, cpp, java'>
+<instructions>
+<p>For an integer constant x, which statement will yield a compiler error? </p>
+</instructions>
+
+<choices>
+<choice>w = x + 1; </choice>
+<choice correct='true'>x = y + 1; </choice>
+<choice>y = x; </choice>
+<choice>z = x + x; </choice>
+</choices>
+</question>
+
+
+<question xsi:type='MultipleChoiceQuestion' guid='32b5512d-7e31-5c78-d434-7adf35c0f5c1' subjects='c, cpp, java'>
+<instructions>
+<p>Which is best declared as a constant? </p>
+</instructions>
+
+<choices>
+<choice>The number of people in a car </choice>
+<choice correct='true'>The number of feet in a yard </choice>
+<choice>The number of leaves on a tree </choice>
+<choice>The number of insects in a room </choice>
+</choices>
+</question>

@@ -1,0 +1,1864 @@
+<zySection title="Arithmetic expressions (int)" shorttitle="Arithmetic expressions (int)" id="c1e19833-63f0-7b96-b1ec-19e416fc67e8" depend="7687304d-2199-d2b5-65ed-e1b4c5f37aae">
+<zypInfo person="Frank" date="5/30/17" minutes="60" status="Draft1Doing">Moved most stuff out to other sections. Needs some more meat; maybe common errors at the end (instead of just no-commas)</zypInfo>
+<zypInfo person="Susan" date="05/30/17" minutes="20" status="Rev1Doing">Reviewed C++ updates. NEEDS to be converted to C and Java.</zypInfo> 
+<zypInfo person="Susan" date="6/07/17" minutes="40" status="Rev1Doing">Converted to C and Java. Checked style. C and Java needs review. </zypInfo>
+<zypInfo person="Roman" date="6/15/17" minutes="10" status="Rev1Done"></zypInfo>
+<zypInfo person="Amanda" date="6/26/17" minutes="240" status="Rev2Done"></zypInfo>
+<zypInfo person="Aubrey" date="11/03/20" minutes="10">non-bug feedback</zypInfo>
+<zypInfo person="Kenny" date="1/10/23" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Aubrey" date="01/26/23" minutes="10" status="BugFix">added note to codewriting CA</zypInfo>
+<zypInfo person="DanO" date="02/15/24" minutes="30" status="BugFix"></zypInfo>
+<zypInfo person="LukeM" date="10/20/25" minutes="" status="Update">Added LOs</zypInfo>
+
+
+<zyAside type="bordered" name="" id="46355a95-4e86-447d-a229-e10fee6e3c60">
+Learn to:
+<ul>
+<li>Apply proper spacing around operators to improve code readability.</li> <!-- SS2, CA2 (1-2) -->
+<li>Use compound operators to simplify arithmetic operations.</li> <!-- C: SS3, CA1 (L3-4), CA2 (L1), TB2, TB3 --> <!-- CppJava: SS3, CA1 (L3-4), CA2 (L1), TB2 -->
+<li>Omit commas when declaring numerical values.</li> <!-- SS4 -->
+</ul>
+</zyAside>
+
+
+<zyHTML id="15bf41f7-9809-aa42-dbf7-b302d5b5d69e" caption="">
+<p>Below is a simple program that includes an expression involving integers. </p>
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyFigure caption="Expressions examples: Leasing cost." id="ebaf62c9-c4d6-8b3c-c1fc-908c47bad829" type="CodeConsole">
+<zyCode language="java" highlight="25"> 
+import java.util.Scanner;
+
+/* Computes the total cost of leasing a car given the down payment,
+   monthly rate, and number of months 
+*/
+
+public class CarLeaseCost {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int downPayment; 
+      int paymentPerMonth; 
+      int numMonths;
+      int totalCost; // Computed total cost to be output
+
+        
+      System.out.print("Enter down payment: ");
+      downPayment = scnr.nextInt();
+
+      System.out.print("Enter monthly payment: ");
+      paymentPerMonth = scnr.nextInt();
+
+      System.out.print("Enter number of months: ");
+      numMonths = scnr.nextInt();
+        
+      totalCost = downPayment + (paymentPerMonth * numMonths);
+        
+      System.out.println("Total cost: " + totalCost);
+   }
+}
+</zyCode>
+<zyConsole>
+Enter down payment: 500
+Enter monthly payment: 300
+Enter number of months: 60
+Total cost: 18500
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyQSetTF caption="Simple program with an arithmetic expression. " id="ce5b2199-5041-424e-b30d-f08625478c11">
+<p>Consider the example above. </p>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">Would removing the parentheses as below have yielded the same result?<br />
+<zyCode nobox="true">downPayment + paymentPerMonth * numMonths;</zyCode></zyQText>
+<zyQExpl>The * would still be evaluated first, because * has higher precedence than +. But using parentheses makes the programmer's intent more clear to people reading the program.  
+</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">Would using two assignment statements as below have yielded the same result? Assume this declaration exists: int totalMonthly<br />
+<zyCode nobox="true">totalMonthly = paymentPerMonth * numMonths;
+totalCost = downPayment + totalMonthly;</zyCode></zyQText>
+<zyQExpl>The evaluation is ultimately the same, yielding the same result. Breaking larger expressions into multiple assignments with smaller expressions can sometimes improve code readability.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="785996a2-1284-5e9d-18b4-14d30bad0744" subsection="true" caption="Style: Single space around operators">
+<h3>Style: Single space around operators</h3>
+</zyHTML>
+
+
+<zyHTML id="f94a9f4e-c194-40cf-9018-fda472721d1e">
+<p><zyGoodPractice id="31a01d8c-5125-6e7f-06e5-6178616f1a21"> A good practice is to include a single space around operators for readability, as in numItems + 2, rather than numItems+2.</zyGoodPractice> An exception is minus used as negative, as in: xCoord = -yCoord. <zyDefn> Minus (-) used as negative is known as _unary minus_.</zyDefn></p>
+</zyHTML>
+
+
+
+<zyQSetShortAnswer caption="Single space around operators." id="569ddcd8-8ec8-16fa-946f-ab14541694f3">
+<p>Retype each statement to follow the good practice of a single space around operators. </p>
+<p>Note: If an answer is marked wrong, something differs in the spacing, spelling, capitalization, etc. This activity emphasizes the importance of such details.</p>
+
+<zyQ>
+<zyQText><zyICode>housesCity = housesBlock *10; </zyICode></zyQText>
+<zyQAns columns="30"  obeycase="true" obeyspace="true">housesCity = housesBlock * 10;</zyQAns>
+<zyQHint>Add single space before and after *. Make sure there are no extra spaces before or after the statement itself, e.g. spaces after the semicolon.</zyQHint>
+<zyQExpl>The spaces ensure the operator is clearly visible. Note that a semicolon (;) is not an operator and should not be preceded by a space.</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText><zyICode>tot = num1+num2+2;</zyICode></zyQText>
+<zyQAns columns="30"  obeycase="true" obeyspace="true">tot = num1 + num2 + 2;</zyQAns>
+<zyQHint>Add single space before and after each +.</zyQHint>
+<zyQExpl>The spaces reduce human reader confusion with num2 and 2.</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText><zyICode>numBalls=numBalls+1;</zyICode></zyQText>
+<zyQAns columns="30"  obeycase="true" obeyspace="true">numBalls = numBalls + 1;</zyQAns>
+<zyQHint>Add single space before and after the +, AND the =.</zyQHint>
+<zyQExpl>The spaces around the = ensure the assignment is clearly visible.</zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText><zyICode>numEntries = (userVal+1)*2;</zyICode></zyQText>
+<zyQAns columns="30"  obeycase="true" obeyspace="true">numEntries = (userVal + 1) * 2;</zyQAns>
+<zyQHint>Add single space before and after the +, AND the *. Don't forget the space before the *.</zyQHint>
+<zyQExpl>The spaces may lead to more readable expressions.</zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+<zyHTML id="22da8f5c-1eac-39e0-8479-ea2672b6c64c" subsection="true" caption="Compound operators">
+<h3>Compound operators</h3>
+</zyHTML>
+
+
+<zyHTML id="3b327643-f985-c655-aae0-c75c27bcbcb8" caption="Compound operators">
+<p><zyDefn>Special operators called _compound operators_ provide  a shorthand way to update a variable, such as userAge _+=_ 1 being shorthand for userAge = userAge + 1. Other compound operators include _-=_, _*=_, _/=_, and _%=_. </zyDefn></p>  
+</zyHTML>
+
+
+
+<zyQSetShortAnswer caption="Compound operators." id="38e59b70-eb95-fe73-1cba-cd4b6bdba171">
+<zyQ>
+<zyQtext>numAtoms is initially 7. What is numAtoms after: numAtoms += 5?  </zyQtext>
+<zyQans>12</zyQans>
+<zyQhint>Same as numAtoms = numAtoms + 5. </zyQhint>
+<zyQexpl>Same as numAtoms = numAtoms + 5, so 7 + 5 is 12. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext>numAtoms is initially 7. What is numAtoms after: numAtoms *= 2?  </zyQtext>
+<zyQans honeypot="true">     14     </zyQans>
+<zyQhint>Same as numAtoms = numAtoms * 2. </zyQhint>
+<zyQexpl>Same as numAtoms = numAtoms  * 2, so 7 * 2 is 14. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext>Rewrite the statement using only a compound operator. If the statement can't be rewritten using only a compound operator, type: Not possible<br/><br/>
+<zyICode>carCount = carCount / 2;</zyICode></zyQtext>
+<zyQans obeycase="true">carCount /= 2;</zyQans>
+<zyQhint>carCount /= ?;</zyQhint>
+<zyQexpl>carCount /= 2 is same as carCount = carCount / 2. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext>Rewrite the statement using only a compound operator.  If the statement can't be rewritten using only a compound operator, type: Not possible<br/><br/>
+<zyICode>numItems = boxCount + 1;</zyICode></zyQtext>
+<zyQans>Not possible</zyQans>
+<zyQhint>Compound operator requires: var = var + 1, where var is the same variable. But the variables are not the same on both sides of the =.   </zyQhint>
+<zyQexpl> A compound operator is shorthand for when a variable is being updated, not for a more general assignment. Both sides must thus have the same variable, but here the variables are different (numItems and boxCount). </zyQexpl>
+</zyQ>
+</zyQSetShortAnswer> 
+
+
+
+<zyHTML id="fd1b4e4e-0cfd-12bd-42db-167a4f1ec74e" subsection="true" caption="No commas allowed">
+<h3>No commas allowed</h3>
+</zyHTML>
+
+
+<zyHTML id="97e18b25-feea-43c7-8034-836830dc8056">
+<p>Commas are not allowed in an integer literal. So 1,333,555 is written as 1333555.</p> 
+</zyHTML>
+
+
+
+<zyQSetTF caption="Expression in statements." id="8b3566db-8096-4cf4-806b-a4d065e81bdf">
+<zyQ>
+<zyQText correct="Yes" truelabel="Yes" falselabel="No">Is the following an error? Suppose an int's maximum value is 2,147,483,647.<br/>
+<zyCode nobox="true">int numYears;
+numYears = 1,999,999,999;</zyCode></zyQText>
+<zyQExpl>Commas aren't allowed in an integer literal. The correct statement is <zyICode>numYears = 1999999999;</zyICode>
+
+</zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+<zypInfo person="Aubrey" date="07/16/20" minutes="20" status="CodeDoing"></zypInfo>
+<zypInfo person="Alex" date="07/16/20" minutes="15" status="CodeReviewing"></zypInfo>
+<zypInfo person="Aubrey" date="07/17/20" minutes="15" status="CodeReviewing"></zypInfo>
+<zypInfo person="Aubrey" date="07/17/20" minutes="1" status="CodeDone"></zypInfo>
+<zypInfo person="Liam" date="07/19/20" minutes="15" status="QADoing"></zypInfo>
+<zypInfo person="Aubrey" date="07/19/20" minutes="15" status="QADoing"></zypInfo>
+<zyVersion version="java">
+
+<zypInfo person="Aubrey" date="05/11/20" status="SpecDoing" minutes="120"></zypInfo>
+<zypInfo person="Aubrey" date="05/16/20" status="SpecDoing" minutes="20"></zypInfo>
+<zypInfo person="Aubrey" date="05/18/20" status="SpecDoing" minutes="15"></zypInfo>
+<zypInfo person="Fay" date="05/19/20" status="SpecReviewing" minutes="15"></zypInfo>
+<zypInfo person="Aubrey" date="05/19/20" status="SpecReviewing" minutes="15"></zypInfo>
+<zypInfo person="Fay" date="05/19/20" status="SpecReviewing" minutes="10"></zypInfo>
+<zypInfo person="Aubrey" date="05/19/20" status="SpecReviewing" minutes="5"></zypInfo>
+<zypInfo person="Fay" date="05/20/20" status="SpecReviewing" minutes="15"></zypInfo>
+<zypInfo person="Aubrey" date="06/25/20" status="SpecReviewing" minutes="10"></zypInfo>
+<zypInfo person="Fay" date="06/29/20" status="SpecReviewing" minutes="5"></zypInfo>
+<zypInfo person="Aubrey" date="07/01/20" status="SpecDone" minutes="5"></zypInfo>
+<zypInfo person="Aubrey" date="07/01/20" status="CodeDoing" minutes="120"></zypInfo>
+<zypInfo person="Fay" date="07/02/20" minutes="10" status="CodeReviewing"></zypInfo>
+<zypInfo person="Fay" date="07/06/20" minutes="2" status="CodeDone"></zypInfo>
+<zypInfo person="Ginny" date="07/06/20" minutes="15" status="QADoing"></zypInfo>
+<zypInfo person="Aubrey" date="07/14/20" minutes="15" status="QADoing"></zypInfo>
+<zypInfo person="Ginny" date="07/14/20" minutes="5" status="QADoing"></zypInfo>
+<zypInfo person="Aubrey" date="07/14/20" minutes="10" status="QADoing"></zypInfo>
+<zypInfo person="Aubrey" date="07/16/20" minutes="5" status="QADone"></zypInfo>
+<zyVersion version="java">
+<zyTool name='codeOutput' caption='Calculate the values of the integer expressions. ' id='57c4ec8e-8447-4db5-8b02-b1cf04f24609' parts='4' challenge='true'>
+<zyOptions>
+<language>java</language>
+<levels type='list'>
+<level type='dict'>
+    <explanation>The' ${op}' operator performs ${op_word}, so y is assigned with ${result}, the value of ${op_phrase}.</explanation>
+    <template>public class MathOperations {
+   public static void main(String[] args) {
+      int x;
+      int y;
+   
+      x = ${val1};
+      y = x ${op} ${val2};  
+      System.out.println(y);
+   }
+}</template>
+    <parameters unescape-html='true'>
+#integers and operators (only use division if result is a whole number)
+val1 = pick_from_range(1, 10)
+val2 = pick_from_range(1, 10, [val1])
+op = pick_from(['+', '-', '*', '/'])
+if op == '/':
+    while (val1 &lt; val2) or (val1 % val2 != 0):
+        val1 = random.choice(range(1,10))
+        val2 = random.choice(range(1,10))
+    op_word = 'division'
+    op_phrase = str(val1) +  ' divided by ' + str(val2)
+    result = val1 / val2;
+elif op == '+':
+    op_word = 'addition'
+    op_phrase = str(val1) + ' added to ' + str(val2)
+    result = val1 + val2;
+elif op == '-':
+    op_word = 'subtraction'
+    op_phrase = str(val2) + ' subtracted from ' + str(val1)
+    result = val1 - val2;
+else:
+    op_word = 'multiplication'
+    op_phrase = str(val1) + ' multiplied by ' + str(val2)
+    result = val1 * val2;
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;z = (${val1} ${op1} (x ${op2} ${val2})) ${op3} y;&lt;/code&gt; resolves to &lt;code&gt;z = (${val1} ${op1} (${x_val} ${op2} ${val2})) ${op3} ${y_val};&lt;/code&gt;
+&lt;code&gt;z = (${val1} ${op1} (${res1})) ${op3} ${y_val};&lt;/code&gt;
+&lt;code&gt;z = (${res2}) ${op3} ${y_val};&lt;/code&gt;
+&lt;code&gt;z = ${res3};&lt;/code&gt;</explanation>
+    <template>public class MathOperations {
+   public static void main(String[] args) {
+      int x;
+      int y;
+      int z;
+
+      x = ${x_val};
+      y = ${y_val};
+      z = (${val1} ${op1} (x ${op2} ${val2})) ${op3} y;
+      System.out.println(z);
+   }
+}</template>
+    <parameters unescape-html='true'>
+#order of x and y assignment statements
+#integers and operators (only use division if result is a whole number)
+import operator
+ops = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.div}
+x_val, y_val, val1, val2 = random.sample(range(1,10), 4)
+op1 = pick_from(['+', '-', '*', '*']) #give slight advantage to *
+op2 = pick_from(['+', '-', '/'])
+op3 = pick_from(['+', '-'])
+if op2 == '/':
+    while (x_val &lt; val2) or (x_val % val2 != 0):
+        x_val, val2 = random.sample(range(1,10), 2)
+res1 = ops[op2](x_val, val2)
+res2 = ops[op1](val1, res1)
+res3 = ops[op3](res2, y_val)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;x ${symbol}= ${val2}&lt;/code&gt; can be rewritten as &lt;code&gt;x = x ${symbol} ${val2}&lt;/code&gt;, which resolves to &lt;code&gt;x = ${expression}&lt;/code&gt;, so the value ${result} is assigned to x.</explanation>
+    <template>public class MathOperations {
+   public static void main(String[] args) {
+      int x;
+
+      x = ${val1};
+      x ${symbol}= ${val2};
+      System.out.println(x);
+   }
+}</template>
+    <parameters>
+val1, val2 = random.sample(range(1,10), 2)
+ops = [
+    (lambda a, b: a + b, '+'),
+    (lambda a, b: a - b, '-'),
+    (lambda a, b: a * b, '*')
+]
+# Randomly select an operator
+op, symbol = random.choice(ops)
+
+expression = '{} {} {}'.format(val1, symbol, val2)
+
+result = op(val1, val2)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;x += (${val3} ${op1} y);&lt;/code&gt; can be rewritten as &lt;code&gt;x = x + (${val3} ${op1} y);&lt;/code&gt;, which resolves to &lt;code&gt;x = ${val1} + (${val3} ${op1} ${val2});&lt;/code&gt;, so the value ${result} is assigned to x.
+&lt;code&gt;y = ${val4};&lt;/code&gt; is performed after the value ${result} is assigned to x, so &lt;code&gt;y = ${val4};&lt;/code&gt; does not affect the value assigned to x.</explanation>
+    <template>public class MathOperations {
+   public static void main(String[] args) {
+      int x;
+      int y;
+
+      x = ${val1};
+      y = ${val2};
+      x += (${val3} ${op1} y);
+      y = ${val4};
+      System.out.println(x);
+      System.out.println(y);
+   }
+}</template>
+    <parameters>
+import operator
+ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+val1, val2, val3, val4 = random.sample(range(1,10), 4)
+op1 = random.choice(['+', '-', '*'])
+tmp = ops[op1](val3, val2)
+result = val1 + tmp
+    </parameters>
+</level>
+</levels>
+</zyOptions>
+</zyTool>
+</zyVersion>
+
+<zypInfo person="Jamie" date="06/23/22" minutes="379" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="06/24/22" minutes="60" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="06/24/22" minutes="18" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="06/29/22" minutes="40" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="06/29/22" minutes="10" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/07/22" minutes="14" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="07/07/22" minutes="32" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/07/22" minutes="5" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="07/15/22" minutes="744" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="07/18/22" minutes="30" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="07/18/22" minutes="48" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="07/19/22" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/20/22" minutes="28" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="07/21/22" minutes="21" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/21/22" minutes="6" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="07/21/22" minutes="3" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="24" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="10" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="22" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="45" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="5" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/09/22" minutes="8" status="QADoing">Golden_CA_development</zypInfo>
+
+<zyVersion version="java">
+</zyVersion>
+
+<zypInfo person="Amanda" date="07/29/22" minutes="20" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="08/01/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="90" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="82" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/02/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="77" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="35" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/04/22" minutes="16" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="40" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="31" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/08/22" minutes="6" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/09/22" minutes="9" status="QADoing">Golden_CA_development</zypInfo>
+
+<zyVersion version="java">
+<zypInfo person="Nicole Collins" date="12/05/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Nicole Collins" date="12/12/23" minutes="10" status="QADone">Golden_CA_development Java</zypInfo>
+using namespace std;
+
+int main() {
+${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.res_var} ${distractor.assign} ${distractor.equation};</solution><template type="string">
+   /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   cout &lt;&lt; "${distractor.footer}: " &lt;&lt; ${distractor.res_var} &lt;&lt; endl;
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li></files><prompt type="string">&lt;p&gt;${distractor.prompt}&lt;/p&gt;
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`
+${distractor.note}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    choice = meaningful_permutation['choice']
+    if choice == 'dimension':
+        dimension = meaningful_permutation['dimension']
+        shape = meaningful_permutation['shape']
+        return make_dimension_distractor(dimension, shape)
+    else:
+        compound = meaningful_permutation['compound']
+        return make_compound_distractor(compound)</distractor><meaningful type="string">def make_meaningful_permutation():
+    choice = pick_from(['dimension', 'compound'])
+    if choice == 'dimension':
+        dimension = pick_from(dimension_dict_dict_dict.keys())
+        return {'choice': choice, 'dimension': dimension, 'shape': pick_from(dimension_dict_dict_dict[dimension].keys())}
+    else:
+        return {'choice': choice, 'compound': pick_from(compound_dict_dict.keys())}
+</meaningful><setup type="string">dimension_dict_dict_dict = {
+    'volume': {
+        'box': {
+            'equation_fstr': '{} * {} * {}', 
+            'res_var': 'boxVolume', 
+            'note_fstr': 'multiplying {}.', 
+            'explanation': 'multiplied together', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: ex_in_list[0] * ex_in_list[1] * ex_in_list[2], 
+        }, 
+        'wedge': {
+            'equation_fstr': '({} * {} * {}) / 2', 
+            'res_var': 'wedgeVolume', 
+            'note_fstr': 'dividing the product of {} by 2.', 
+            'explanation': 'multiplied together then divided by 2', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: not integer % 2, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1] * ex_in_list[2]) / 2, 
+        }, 
+        'pyramid': {
+            'equation_fstr': '({} * {} * {}) / 3', 
+            'res_var': 'pyramidVolume', 
+            'note_fstr': 'dividing the product of {} by 3.', 
+            'explanation': 'multiplied together then divided by 3', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: not integer % 3, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1] * ex_in_list[2]) / 3, 
+        }, 
+    }, 
+    'area': {
+        'rectangle': {
+            'equation_fstr': '{} * {}', 
+            'res_var': 'recArea', 
+            'note_fstr': 'multiplying {}.', 
+            'explanation': 'multiplied together', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: ex_in_list[0] * ex_in_list[1], 
+        }, 
+        'triangle': {
+            'equation_fstr': '({} * {}) / 2', 
+            'res_var': 'triArea', 
+            'note_fstr': 'dividing the product of {} by 2.', 
+            'explanation': 'multiplied together then divided by 2', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: not integer % 2, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1]) / 2, 
+        }, 
+    }, 
+    'perimeter': {
+        'rectangle': {
+            'equation_fstr': '2 * ({} + {})', 
+            'res_var': 'recPerimeter', 
+            'note_fstr': 'multiplying the sum of {} by 2.', 
+            'explanation': 'added together then multiplied by 2', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: 2 * sum(ex_in_list), 
+        }, 
+        'triangle': {
+            'equation_fstr': '{} + {} + {}', 
+            'res_var': 'triPerimeter', 
+            'note_fstr': 'adding all three sides together.', 
+            'explanation': 'added together', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: sum(ex_in_list), 
+        }, 
+    }, 
+}
+
+compound_dict_dict = {
+    'plus': {
+        'op': '+',
+        'func': lambda value, constant: value + constant,
+        'equation_fstr': '{} + {}',
+        'describe': 'plus',
+    },
+    'minus': {
+        'op': '-',
+        'func': lambda value, constant: value - constant,
+        'equation_fstr': '{} - {}',
+        'describe': 'minus',
+    },
+    'multiply': {
+        'op': '*',
+        'func': lambda value, constant: value * constant,
+        'equation_fstr': '{} * {}',
+        'describe': 'multiplied by',
+    },
+    'divide': {
+        'op': '/',
+        'func': lambda value, constant: value // constant,
+        'equation_fstr': '{} / {}',
+        'describe': 'divided by',
+    },
+}
+
+item_names = ['apple', 'orange', 'banana', 'pear', 'kiwi', 'lemon', 'cabbage', 
+    'carrot', 'onion', 'lime', 'cucumber', 'apricot', 'coconut', 'pumpkin', 
+    'bagel', 'cheesecake', 'egg', 'muffin', 'pancake', 'omelette', 'pie', 
+    'pizza', 'lobster', 'meatball', 'burger', 'cake', 'popsicle', 'cupcake']
+
+
+def make_dimension_distractor(dimension, shape):
+    shape_dict = dimension_dict_dict_dict[dimension][shape]
+    num_vars = shape_dict['num_vars']
+    bool_func = shape_dict['bool_func']
+    
+    var_list = ['height', 'length', 'width']
+    prop_list = ['the height', 'the length', 'the width']
+    respect = ', respectively'
+    if dimension == 'area' and shape == 'triangle':
+        var_list = ['height', 'base', 'width']
+        prop_list = ['the height', 'the base', 'the width']
+    elif dimension == 'perimeter' and shape == 'triangle':
+        var_list = ['sideA', 'sideB', 'sideC']
+        prop_list = ['the lengths of the three sides']
+        respect = ''
+    
+    ex_in_list = random.sample(data_list, num_vars)
+    props_in_sentence = make_words_from_list(prop_list[: num_vars])
+    vars_in_sentence = make_words_from_list(var_list[: num_vars])
+    res_var = shape_dict['res_var']
+    
+    prompt = "Integer variables {0} are read from input, representing {1} of a {2}{3}. Assign {4} with the {5} of the {2}.".format(
+        vars_in_sentence, props_in_sentence, shape, respect, res_var, dimension)
+    
+    explanation = "Integer variables {0} are {1} to compute the {2}'s {3}. The result is assigned to {4}.".format(
+        vars_in_sentence, shape_dict['explanation'], shape, dimension, res_var)
+    
+    prefix = '\tint {0};\n\tint {1};\n\tint {2};\n\n\tcin &gt;&gt; {0};\n\tcin &gt;&gt; {1};\n'.format(var_list[0], var_list[1], res_var)
+    if num_vars == 3:
+        prefix = '\tint {0};\n\tint {1};\n\tint {2};\n\tint {3};\n\n\tcin &gt;&gt; {0};\n\tcin &gt;&gt; {1};\n\tcin &gt;&gt; {2};\n'.format(var_list[0], var_list[1], var_list[2], res_var)
+    footer = dimension.capitalize()
+    
+    return {
+        'prompt': prompt,
+        'prefix': prefix,
+        'assign': '=',
+        'equation': shape_dict['equation_fstr'].format(*var_list),
+        'res_var': res_var,
+        'note': '&lt;p&gt;Note: The {} of a {} is calculated by {}&lt;/p&gt;'.format(dimension, shape, shape_dict['note_fstr'].format(props_in_sentence)),
+        'explanation': explanation,
+        'example_in': ' '.join(map(str, ex_in_list)),
+        'example_out': '{}: {}'.format(footer, shape_dict['func'](ex_in_list)),
+        'footer': footer,
+        'num_vars': num_vars,
+        'ex_in_list': ex_in_list,
+        'data_list': data_list,
+    }
+
+
+def make_compound_distractor(compound):
+    compound_dict = compound_dict_dict[compound]
+    op = compound_dict['op']
+    num_vars = 1
+    constant = pick_from_range(2, 11)
+    item_data_list = list(range(20, 51))
+    
+    # Use smaller data for example in
+    # For divide, make sure data is divisible by constant
+    ex_in_list = [pick_from_range(1, 10)]
+    if compound == 'minus':
+        ex_in_list = [pick_from_range(1, 10) + constant]
+    if compound == 'divide':
+        ex_in_list = [pick_from_range(1, 10) * constant]
+        item_data_list = [x * constant for x in range(20, 51)]
+
+    item = pick_from(item_names)
+    quantifier = pick_from(['quantity', 'count'])
+    res_var = '{}s{}'.format(item, quantifier.capitalize())
+    header = 'Initial number of {}s'.format(item)
+    footer = 'Updated number of {}s'.format(item)
+    
+    prompt = 'Assign {0} with the current value of {0} {1} {2}.'.format(res_var, compound_dict['describe'], constant)
+    explanation = "The {0}= operator may be used with {1} on the left and value {2} on the right to update {1} with {1}'s current value {3} {2}.".format(op, res_var, constant, compound_dict['describe'])
+    
+    prefix = '\tint {0};\n\n\tcin &gt;&gt; {0};\n\n\tcout &lt;&lt; "{1}: " &lt;&lt; {0} &lt;&lt; endl;\n'.format(res_var, header)
+    
+    return {
+        'prompt': prompt,
+        'prefix': prefix,
+        'assign': '{}='.format(op),
+        'equation': str(constant),
+        'res_var': res_var,
+        'note': '',
+        'explanation': explanation,
+        'example_in': ex_in_list[0],
+        'example_out': '{}: {}\n{}: {}'.format(header, ex_in_list[0], footer, compound_dict['func'](ex_in_list[0], constant)),
+        'footer': footer,
+        'num_vars': num_vars,
+        'ex_in_list': ex_in_list,
+        'data_list': item_data_list,
+    }</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(distractor_permutation['data_list'], distractor_permutation['ex_in_list'], 5)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test5}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test6}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explanation}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+   ${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+   /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   cout &lt;&lt; "${distractor.scenario_cap}: " &lt;&lt; ${distractor.res_var} &lt;&lt; endl;
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li></files><prompt type="string">Assume that ${distractor.prompt}. Given variables ${distractor.obj_sent} read from input, compute the ${distractor.total_avg} ${meaningful.scenario} of all the ${distractor.plural_nouns}, and assign ${distractor.res_var} with the result.
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation['scenario']
+    is_avg = meaningful_permutation['is_avg']
+    category = pick_from(scenario_dict_dict[scenario].keys())
+    
+    res_var = '{}{}'.format('average' if is_avg else pick_from(['total', 'combined']), scenario.capitalize())
+    inter_var = 'sum{}'.format(scenario.capitalize())
+    
+    scen_verb = 'cost' if scenario == 'cost' else 'weigh'
+    scen_noun = 'dollars' if scenario == 'cost' else 'pounds'
+    val_var_post = pick_from(['Price', 'Cost']) if scenario == 'cost' else pick_from(['Weight', 'Pounds'])
+    cat = 'animal' if scenario == 'weight' else category
+    
+    num_inputs = pick_from_range(2, 3)
+    singular_noun_list = random.sample(scenario_dict_dict[scenario][category][: -1], num_inputs)
+    plural_noun_list = [singular_to_plural(singular_noun) for singular_noun in singular_noun_list]
+    plural_noun_desc_list = [
+        'a box of {}'.format(plural_noun) if category == 'fruit' else plural_noun 
+        for plural_noun in plural_noun_list
+    ]
+    var_list = [
+        'numBox{}'.format(plural_noun.capitalize()) if category == 'fruit' else 'num{}'.format(plural_noun.capitalize()) 
+        for plural_noun in plural_noun_list
+    ]
+    weight_var_list = ['{}{}'.format(singular_noun, val_var_post) for singular_noun in singular_noun_list]
+    
+    weight_list = random.sample(list(range(*scenario_dict_dict[scenario][category][-1])), num_inputs)
+    ex_in_list = [pick_from(list(range(*range_list))) for range_list in [[2, 10], [10, 20], [20, 40]][: num_inputs]]
+    example_in = ' '.join(map(str, ex_in_list))
+    
+    prompt = make_words_from_list(
+        ['{} {} {} {} each'.format(plural_noun_desc, scen_verb, weight, scen_noun) 
+        for plural_noun_desc, weight in zip(plural_noun_desc_list, weight_list)]
+    )
+    
+    prefix = '{}\n\t{}\n\tint {};{}\n\n\t{}'.format(
+        '\n\t'.join(['int {} = {};'.format(weight_var, w) for weight_var, w in zip(weight_var_list, weight_list)]), 
+        '\n\t'.join(['int {};'.format(var) for var in var_list]), res_var, 
+        '\n\tint {};'.format(inter_var) if is_avg else '', 
+        '\n\t'.join(['cin &gt;&gt; {};'.format(var) for var in var_list]), 
+    )
+    
+    scenario_cap = 'Average {}'.format(scenario) if is_avg else scenario.capitalize()
+    
+    calc_list = [
+        '- &lt;span style="white-space:nowrap"&gt;{} * {}&lt;/span&gt; calculates the total {} of the {}.'\
+        .format(var_list[i], weight_var_list[i], scenario, plural_noun_list[i]) 
+        for i in range(num_inputs)
+    ]
+    mult_list = ['({} * {})'.format(var, weight_var) for var, weight_var in zip(var_list, weight_var_list)]
+    str_mult_list = ['&lt;span style="white-space:nowrap"&gt;{}&lt;/span&gt;'.format(mult) for mult in mult_list]
+    int_mult_list = [
+        '&lt;span style="white-space:nowrap"&gt;{}&lt;/span&gt;'\
+        .format(mult_list[i].replace(var_list[i], str(ex_in_list[i])).replace(weight_var_list[i], str(weight_list[i]))) 
+        for i in range(num_inputs)
+    ]
+    
+    ex_out = sum([(ex_in * weight) for ex_in, weight in zip(ex_in_list, weight_list)])
+    solution = '{} = {};'.format(res_var, ' + '.join(mult_list))
+    explanation = 'The total {} of each kind of {} is computed as follows:\n{}\n\n'\
+                    'Thus, {} is the sum of {}.\n\nEx: For input `{}`, {} yields {}.'.format(
+                        scenario, cat, '\n'.join(calc_list), res_var, make_words_from_list(str_mult_list), 
+                        example_in, ' + '.join(int_mult_list), ex_out
+                    )
+    if is_avg:
+        ex_out //= sum(ex_in_list)
+        
+        solution = '{} = {};'.format(inter_var, ' + '.join(mult_list))
+        solution += '\n{} = {} / ({});'.format(res_var, inter_var, ' + '.join(var_list))
+        
+        explanation = '{0} is the sum of all the weights divided by the number of animals. '\
+                    'Thus, {0} is the sum of {1} divided by &lt;span style="white-space:nowrap"&gt;({2}).&lt;/span&gt;\n\n'\
+                    'Ex: For input `{3}`, '\
+                    '&lt;span style="white-space:nowrap"&gt;({4}) / {5}&lt;/span&gt; yields {6}.'\
+                    .format(res_var, make_words_from_list(str_mult_list), ' + '.join(var_list), example_in, 
+                            ' + '.join(int_mult_list), sum(ex_in_list), ex_out)
+    
+    return {
+        'category': category,
+        'is_avg': is_avg,
+        'prompt': prompt,
+        'obj_sent': make_words_from_list(var_list),
+        'total_avg': 'average' if is_avg else 'total',
+        'res_var': res_var,
+        'ex_in_list': ex_in_list,
+        'example_in': example_in,
+        'example_out': '{}: {}'.format(scenario_cap, ex_out),
+        'prefix': prefix,
+        'solution': solution,
+        'scenario_cap': scenario_cap,
+        'explanation': explanation,
+        'plural_nouns': make_words_from_list(plural_noun_list),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    scenario = pick_from(scenario_dict_dict.keys())
+    
+    is_avg = False
+    if scenario == 'weight':
+        is_avg = pick_from([True, False])
+    
+    return {'scenario': scenario, 'is_avg': is_avg}</meaningful><setup type="string">scenario_dict_dict = {
+    'cost': {
+        'food': ['taco', 'burger', 'pizza', 'burrito', 'enchilada', 'salad', 'pasta', [6, 11]],
+        'fruit': ['apple', 'banana', 'grape', 'plum', 'pear', 'apricot', 'orange', 'lemon', 'lime', [6, 11]],
+    }, 
+    'weight': {
+        'extra small animal': ['duck', 'owl', 'rabbit', 'stork', [2, 10]],
+        'small animal': ['vulture', 'eagle', 'cobra', 'fox', 'dog', [10, 15]],
+        'medium animal': ['turtle', 'goat', 'penguin', 'cheetah', 'kangaroo', 'deer', [50, 100]],
+        'big animal': ['cougar', 'bear', 'pig', 'llama', 'lion', 'tiger', [150, 500]],
+        'extra big animal': ['bison', 'cows', 'elk', 'horse', 'zebra', 'yak', [600, 1000]], 
+    }, 
+}
+
+exception_dict = {'fox': 'foxes', 'deer': 'deer', 'bison': 'bison', 'elk': 'elk'}
+
+
+def singular_to_plural(singular):
+    plural = '{}s'.format(singular)
+    
+    if singular in exception_dict.keys():
+        plural = exception_dict[singular]
+    elif singular[-1].lower() == 'y':
+        plural = '{}ies'.format(singular[: -1])
+    elif singular[-1].lower() == 's':
+        plural = singular
+    
+    return plural</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(data_list, distractor_permutation['ex_in_list'], 5)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test5}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test6}</stdin></li></tests></li></levels></zyOptions></zyTool>
+
+</zyVersion>
+
+<zypInfo person="Amanda" date="07/29/22" minutes="20" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="08/01/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="90" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="82" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/02/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="77" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="35" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/04/22" minutes="16" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="40" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="31" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/08/22" minutes="6" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/09/22" minutes="9" status="QADoing">Golden_CA_development</zypInfo>
+
+<zyVersion version="java">
+<zypInfo person="Nicole Collins" date="12/05/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Nicole Collins" date="12/12/23" minutes="10" status="QADone">Golden_CA_development Java</zypInfo>
+
+<zyTool name="CodeWriting" caption="Arithmetic expressions (int)" id="d32f6173-dce7-8c71-dade-215728c5a6d9" parts="2" challenge="true" edited-last="Tue Dec 12 2023 16:56:02 GMT-0500 (Eastern Standard Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+data_list = list(range(2, 21))
+
+
+# Given a list, return a string with each list element separated by a comma. (From Progression Builder)
+def make_words_from_list(lst, conjunction='and'):
+    strs = [str(item) for item in lst]
+    if len(lst) == 0:
+        return ''
+    elif len(lst) == 1:
+        return strs[0]
+    elif len(lst) == 2:
+        return '{} {} {}'.format(strs[0], conjunction, strs[1])
+    else:
+        return ', '.join(strs[:-1]) + ', {} {}'.format(conjunction, strs[-1])
+
+
+def get_test_dict(lst, ex_in_list, num_tests):
+    test_list_list = [([-1] * len(ex_in_list)) for _ in range(num_tests)]
+    for i in range(len(test_list_list)):
+        for j in range(len(test_list_list[i])):
+            test_list_list[i][j] = pick_from(lst, sum(test_list_list, [])+ex_in_list)
+    
+    return dict(
+        zip(
+            ['test{}'.format(i + 2) for i in range(num_tests)], 
+            [' '.join(map(str, test_list)) for test_list in test_list_list], 
+        )
+    )</global><language type="string">java</language><levels type="list"><li type="dict">
+<explanation type="string">&lt;p&gt;${distractor.explanation}&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.res_var} ${distractor.assign} ${distractor.equation};</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.println("${distractor.footer}: " + ${distractor.res_var});
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">&lt;p&gt;${distractor.prompt}&lt;/p&gt;
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`
+${distractor.note}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    choice = meaningful_permutation['choice']
+    if choice == 'dimension':
+        dimension = meaningful_permutation['dimension']
+        shape = meaningful_permutation['shape']
+        return make_dimension_distractor(dimension, shape)
+    else:
+        compound = meaningful_permutation['compound']
+        return make_compound_distractor(compound)</distractor><meaningful type="string">def make_meaningful_permutation():
+    choice = pick_from(['dimension', 'compound'])
+    if choice == 'dimension':
+        dimension = pick_from(dimension_dict_dict_dict.keys())
+        return {'choice': choice, 'dimension': dimension, 'shape': pick_from(dimension_dict_dict_dict[dimension].keys())}
+    else:
+        return {'choice': choice, 'compound': pick_from(compound_dict_dict.keys())}</meaningful><setup type="string">dimension_dict_dict_dict = {
+    'volume': {
+        'box': {
+            'equation_fstr': '{} * {} * {}', 
+            'res_var': 'boxVolume', 
+            'note_fstr': 'multiplying {}.', 
+            'explanation': 'multiplied together', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: ex_in_list[0] * ex_in_list[1] * ex_in_list[2], 
+        }, 
+        'wedge': {
+            'equation_fstr': '({} * {} * {}) / 2', 
+            'res_var': 'wedgeVolume', 
+            'note_fstr': 'dividing the product of {} by 2.', 
+            'explanation': 'multiplied together then divided by 2', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: not integer % 2, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1] * ex_in_list[2]) / 2, 
+        }, 
+        'pyramid': {
+            'equation_fstr': '({} * {} * {}) / 3', 
+            'res_var': 'pyramidVolume', 
+            'note_fstr': 'dividing the product of {} by 3.', 
+            'explanation': 'multiplied together then divided by 3', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: not integer % 3, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1] * ex_in_list[2]) / 3, 
+        }, 
+    }, 
+    'area': {
+        'rectangle': {
+            'equation_fstr': '{} * {}', 
+            'res_var': 'recArea', 
+            'note_fstr': 'multiplying {}.', 
+            'explanation': 'multiplied together', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: ex_in_list[0] * ex_in_list[1], 
+        }, 
+        'triangle': {
+            'equation_fstr': '({} * {}) / 2', 
+            'res_var': 'triArea', 
+            'note_fstr': 'dividing the product of {} by 2.', 
+            'explanation': 'multiplied together then divided by 2', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: not integer % 2, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1]) / 2, 
+        }, 
+    }, 
+    'perimeter': {
+        'rectangle': {
+            'equation_fstr': '2 * ({} + {})', 
+            'res_var': 'recPerimeter', 
+            'note_fstr': 'multiplying the sum of {} by 2.', 
+            'explanation': 'added together then multiplied by 2', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: 2 * sum(ex_in_list), 
+        }, 
+        'triangle': {
+            'equation_fstr': '{} + {} + {}', 
+            'res_var': 'triPerimeter', 
+            'note_fstr': 'adding all three sides together.', 
+            'explanation': 'added together', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: sum(ex_in_list), 
+        }, 
+    }, 
+}
+
+compound_dict_dict = {
+    'plus': {
+        'op': '+',
+        'func': lambda value, constant: value + constant,
+        'equation_fstr': '{} + {}',
+        'describe': 'plus',
+    },
+    'minus': {
+        'op': '-',
+        'func': lambda value, constant: value - constant,
+        'equation_fstr': '{} - {}',
+        'describe': 'minus',
+    },
+    'multiply': {
+        'op': '*',
+        'func': lambda value, constant: value * constant,
+        'equation_fstr': '{} * {}',
+        'describe': 'multiplied by',
+    },
+    'divide': {
+        'op': '/',
+        'func': lambda value, constant: value // constant,
+        'equation_fstr': '{} / {}',
+        'describe': 'divided by',
+    },
+}
+
+item_names = ['apple', 'orange', 'banana', 'pear', 'kiwi', 'lemon', 'cabbage', 
+    'carrot', 'onion', 'lime', 'cucumber', 'apricot', 'coconut', 'pumpkin', 
+    'bagel', 'cheesecake', 'egg', 'muffin', 'pancake', 'omelette', 'pie', 
+    'pizza', 'lobster', 'meatball', 'burger', 'cake', 'popsicle', 'cupcake']
+
+
+def make_dimension_distractor(dimension, shape):
+    shape_dict = dimension_dict_dict_dict[dimension][shape]
+    num_vars = shape_dict['num_vars']
+    bool_func = shape_dict['bool_func']
+    
+    var_list = ['height', 'length', 'width']
+    prop_list = ['the height', 'the length', 'the width']
+    respect = ', respectively'
+    if dimension == 'area' and shape == 'triangle':
+        var_list = ['height', 'base', 'width']
+        prop_list = ['the height', 'the base', 'the width']
+    elif dimension == 'perimeter' and shape == 'triangle':
+        var_list = ['sideA', 'sideB', 'sideC']
+        prop_list = ['the lengths of the three sides']
+        respect = ''
+    
+    ex_in_list = random.sample(data_list, num_vars)
+    props_in_sentence = make_words_from_list(prop_list[: num_vars])
+    vars_in_sentence = make_words_from_list(var_list[: num_vars])
+    res_var = shape_dict['res_var']
+    
+    prompt = "Integer variables {0} are read from input, representing {1} of a {2}{3}. Assign {4} with the {5} of the {2}.".format(
+        vars_in_sentence, props_in_sentence, shape, respect, res_var, dimension)
+    
+    explanation = "Integer variables {0} are {1} to compute the {2}'s {3}. The result is assigned to {4}.".format(
+        vars_in_sentence, shape_dict['explanation'], shape, dimension, res_var)
+    prefix = '\t\tint {0};\n\t\tint {1};\n\t\tint {2};\n\n\t\t{0} = scnr.nextInt();\n\t\t{1} = scnr.nextInt();'.format(var_list[0], var_list[1], res_var)
+    if num_vars == 3:
+        prefix = '\t\tint {0};\n\t\tint {1};\n\t\tint {2};\n\t\tint {3};\n\n\t\t{0} = scnr.nextInt();\n\t\t{1} = scnr.nextInt();\n\t\t{2} = scnr.nextInt();'.format(var_list[0], var_list[1], var_list[2], res_var)
+    footer = dimension.capitalize()
+    
+    return {
+        'prompt': prompt,
+        'prefix': prefix,
+        'assign': '=',
+        'equation': shape_dict['equation_fstr'].format(*var_list),
+        'res_var': res_var,
+        'note': '&lt;p&gt;Note: The {} of a {} is calculated by {}&lt;/p&gt;'.format(dimension, shape, shape_dict['note_fstr'].format(props_in_sentence)),
+        'explanation': explanation,
+        'example_in': ' '.join(map(str, ex_in_list)),
+        'example_out': '{}: {}'.format(footer, shape_dict['func'](ex_in_list)),
+        'footer': footer,
+        'num_vars': num_vars,
+        'ex_in_list': ex_in_list,
+        'class_var': '{}{}'.format(shape.capitalize(), pick_from([dimension.capitalize(), 'Measurements'])),
+        'data_list': data_list,
+    }
+
+
+def make_compound_distractor(compound):
+    compound_dict = compound_dict_dict[compound]
+    op = compound_dict['op']
+    num_vars = 1
+    constant = pick_from_range(2, 11)
+    item_data_list = list(range(20, 51))
+    
+    # Use smaller data for example in
+    # For divide, make sure data is divisible by constant
+    ex_in_list = [pick_from_range(1, 10)]
+    if compound == 'minus':
+        ex_in_list = [pick_from_range(1, 10) + constant]
+    if compound == 'divide':
+        ex_in_list = [pick_from_range(1, 10) * constant]
+        item_data_list = [x * constant for x in range(20, 51)]
+
+    item = pick_from(item_names)
+    quantifier = pick_from(['quantity', 'count'])
+    res_var = '{}s{}'.format(item, quantifier.capitalize())
+    header = 'Initial number of {}s'.format(item)
+    footer = 'Updated number of {}s'.format(item)
+    
+    prompt = 'Assign {0} with the current value of {0} {1} {2}.'.format(res_var, compound_dict['describe'], constant)
+    explanation = "The {0}= operator may be used with {1} on the left and value {2} on the right to update {1} with {1}'s current value {3} {2}.".format(op, res_var, constant, compound_dict['describe'])
+    
+    prefix = '\t\tint {0};\n\n\t\t{0} = scnr.nextInt();\n\n\t\tSystem.out.println("{1}: " + {0});'.format(res_var, header)
+    
+    return {
+        'prompt': prompt,
+        'prefix': prefix,
+        'assign': '{}='.format(op),
+        'equation': str(constant),
+        'res_var': res_var,
+        'note': '',
+        'explanation': explanation,
+        'example_in': ex_in_list[0],
+        'example_out': '{}: {}\n{}: {}'.format(header, ex_in_list[0], footer, compound_dict['func'](ex_in_list[0], constant)),
+        'footer': footer,
+        'num_vars': num_vars,
+        'ex_in_list': ex_in_list,
+        'class_var': '{}s'.format(item.capitalize()),
+        'data_list': item_data_list,
+    }</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(distractor_permutation['data_list'], distractor_permutation['ex_in_list'], 5)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test5}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test6}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explanation}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      ${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      System.out.println("${distractor.scenario_cap}: " + ${distractor.res_var});
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">Assume that ${distractor.prompt}. Given variables ${distractor.obj_sent} read from input, compute the ${distractor.total_avg} ${meaningful.scenario} of all the ${distractor.plural_nouns}, and assign ${distractor.res_var} with the result.
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation['scenario']
+    is_avg = meaningful_permutation['is_avg']
+    category = pick_from(scenario_dict_dict[scenario].keys())
+    
+    res_var = '{}{}'.format('average' if is_avg else pick_from(['total', 'combined']), scenario.capitalize())
+    inter_var = 'sum{}'.format(scenario.capitalize())
+    
+    scen_verb = 'cost' if scenario == 'cost' else 'weigh'
+    scen_noun = 'dollars' if scenario == 'cost' else 'pounds'
+    val_var_post = pick_from(['Price', 'Cost']) if scenario == 'cost' else pick_from(['Weight', 'Pounds'])
+    cat = 'animal' if scenario == 'weight' else category
+    
+    num_inputs = pick_from_range(2, 3)
+    singular_noun_list = random.sample(scenario_dict_dict[scenario][category][: -1], num_inputs)
+    plural_noun_list = [singular_to_plural(singular_noun) for singular_noun in singular_noun_list]
+    plural_noun_desc_list = [
+        'a box of {}'.format(plural_noun) if category == 'fruit' else plural_noun 
+        for plural_noun in plural_noun_list
+    ]
+    var_list = [
+        'numBox{}'.format(plural_noun.capitalize()) if category == 'fruit' else 'num{}'.format(plural_noun.capitalize()) 
+        for plural_noun in plural_noun_list
+    ]
+    weight_var_list = ['{}{}'.format(singular_noun, val_var_post) for singular_noun in singular_noun_list]
+    
+    weight_list = random.sample(list(range(*scenario_dict_dict[scenario][category][-1])), num_inputs)
+    ex_in_list = [pick_from(list(range(*range_list))) for range_list in [[2, 10], [10, 20], [20, 40]][: num_inputs]]
+    example_in = ' '.join(map(str, ex_in_list))
+    
+    prompt = make_words_from_list(
+        ['{} {} {} {} each'.format(plural_noun_desc, scen_verb, weight, scen_noun) 
+        for plural_noun_desc, weight in zip(plural_noun_desc_list, weight_list)]
+    )
+    
+    prefix = '{}\n\t\t{}\n\t\tint {};{}\n\n\t\t{}'.format(
+        '\n\t\t'.join(['int {} = {};'.format(weight_var, w) for weight_var, w in zip(weight_var_list, weight_list)]), 
+        '\n\t\t'.join(['int {};'.format(var) for var in var_list]), res_var, 
+        '\n\t\tint {};'.format(inter_var) if is_avg else '', 
+        '\n\t\t'.join(['{} = scnr.nextInt();'.format(var) for var in var_list]), 
+    )
+    
+    scenario_cap = 'Average {}'.format(scenario) if is_avg else scenario.capitalize()
+    
+    calc_list = [
+        '- &lt;span style="white-space:nowrap"&gt;{} * {}&lt;/span&gt; calculates the total {} of the {}.'\
+        .format(var_list[i], weight_var_list[i], scenario, plural_noun_list[i]) 
+        for i in range(num_inputs)
+    ]
+    mult_list = ['({} * {})'.format(var, weight_var) for var, weight_var in zip(var_list, weight_var_list)]
+    str_mult_list = ['&lt;span style="white-space:nowrap"&gt;{}&lt;/span&gt;'.format(mult) for mult in mult_list]
+    int_mult_list = [
+        '&lt;span style="white-space:nowrap"&gt;{}&lt;/span&gt;'\
+        .format(mult_list[i].replace(var_list[i], str(ex_in_list[i])).replace(weight_var_list[i], str(weight_list[i]))) 
+        for i in range(num_inputs)
+    ]
+    
+    ex_out = sum([(ex_in * weight) for ex_in, weight in zip(ex_in_list, weight_list)])
+    solution = '{} = {};'.format(res_var, ' + '.join(mult_list))
+    explanation = 'The total {} of each kind of {} is computed as follows:\n{}\n\n'\
+                    'Thus, {} is the sum of {}.\n\nEx: For input `{}`, {} yields {}.'.format(
+                        scenario, cat, '\n'.join(calc_list), res_var, make_words_from_list(str_mult_list), 
+                        example_in, ' + '.join(int_mult_list), ex_out
+                    )
+    if is_avg:
+        ex_out //= sum(ex_in_list)
+        
+        solution = '{} = {};'.format(inter_var, ' + '.join(mult_list))
+        solution += '\n{} = {} / ({});'.format(res_var, inter_var, ' + '.join(var_list))
+        
+        explanation = '{0} is the sum of all the weights divided by the number of animals. '\
+                    'Thus, {0} is the sum of {1} divided by &lt;span style="white-space:nowrap"&gt;({2}).&lt;/span&gt;\n\n'\
+                    'Ex: For input `{3}`, '\
+                    '&lt;span style="white-space:nowrap"&gt;({4}) / {5}&lt;/span&gt; yields {6}.'\
+                    .format(res_var, make_words_from_list(str_mult_list), ' + '.join(var_list), example_in, 
+                            ' + '.join(int_mult_list), sum(ex_in_list), ex_out)
+    
+    return {
+        'class_var': '{}{}'.format('Food' if scenario == 'cost' else 'Animal', scenario.capitalize()),
+        'category': category,
+        'is_avg': is_avg,
+        'prompt': prompt,
+        'obj_sent': make_words_from_list(var_list),
+        'total_avg': 'average' if is_avg else 'total',
+        'res_var': res_var,
+        'ex_in_list': ex_in_list,
+        'example_in': example_in,
+        'example_out': '{}: {}'.format(scenario_cap, ex_out),
+        'prefix': prefix,
+        'solution': solution,
+        'scenario_cap': scenario_cap,
+        'explanation': explanation,
+        'plural_nouns': make_words_from_list(plural_noun_list),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    scenario = pick_from(scenario_dict_dict.keys())
+    
+    is_avg = False
+    if scenario == 'weight':
+        is_avg = pick_from([True, False])
+    
+    return {'scenario': scenario, 'is_avg': is_avg}</meaningful><setup type="string">scenario_dict_dict = {
+    'cost': {
+        'food': ['taco', 'burger', 'pizza', 'burrito', 'enchilada', 'salad', 'pasta', [6, 11]],
+        'fruit': ['apple', 'banana', 'grape', 'plum', 'pear', 'apricot', 'orange', 'lemon', 'lime', [6, 11]],
+    }, 
+    'weight': {
+        'extra_small_animals': ['duck', 'owl', 'rabbit', 'stork', [2, 10]],
+        'small_animals': ['vulture', 'eagle', 'cobra', 'fox', 'dog', [10, 15]],
+        'medium_animals': ['turtle', 'goat', 'penguin', 'cheetah', 'kangaroo', 'deer', [50, 100]],
+        'big_animals': ['cougar', 'bear', 'pig', 'llama', 'lion', 'tiger', [150, 500]],
+        'extra_big_animals': ['bison', 'cows', 'elk', 'horse', 'zebra', 'yak', [600, 1000]], 
+    }, 
+}
+
+exception_dict = {'fox': 'foxes', 'deer': 'deer', 'bison': 'bison', 'elk': 'elk'}
+
+
+def singular_to_plural(singular):
+    plural = '{}s'.format(singular)
+    
+    if singular in exception_dict.keys():
+        plural = exception_dict[singular]
+    elif singular[-1].lower() == 'y':
+        plural = '{}ies'.format(singular[: -1])
+    elif singular[-1].lower() == 's':
+        plural = singular
+    
+    return plural</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(data_list, distractor_permutation['ex_in_list'], 5)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test5}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test6}</stdin></li></tests></li></levels></zyOptions></zyTool>
+
+</zyVersion>
+
+
+
+<zypInfo person="Fay" date="01/27/25" minutes="30" status="CodeDoing"></zypInfo>
+<zypInfo person="DNorment" date="01/31/25" minutes="20" status="CodeDone"></zypInfo>
+<zypInfo person="Sabrina" date="3/10/25" minutes="14" status="QADoing"></zypInfo>
+<zypInfo person="Stephanie" date="3/11/25" minutes="53" status="QADone"></zypInfo>
+
+
+
+<zypInfo person="Arash" date="7/30/14" hkStatus="Rev2Done"> Alex addressed comments </zypInfo>
+<zypInfo person="Susan" date="01/02/15">Updated per Frank's comments: check output not variable value </zypInfo>
+<zypInfo  person="Sarah" date="1/21/15">Reset totalCost to 0 in second test so students can use +=</zypInfo>
+<zypInfo person="Vanessa/Kevin" date="7/11/18">  Changed magic numbers to input. </zypInfo>
+<!--zyHomeworkProblem id="d5d937c3-99e5-4448-11d6-a197731aa27e" language="c" caption="Total cost." author="FV/AE/RL/SL/RS">
+    <template unescape-html='true'>#include &lt;stdio.h&gt;
+
+int main(void) {
+   int x;
+   int y;
+   
+   x = ${val1};
+   y = x ${op} ${val2};  
+
+   printf("%d\n", y);
+   
+   return 0;
+}</template>
+    <parameters unescape-html='true'>
+#integers and operators (only use division if result is a whole number)
+val1 = pick_from_range(1, 10)
+val2 = pick_from_range(1, 10, [val1])
+op = pick_from(['+', '-', '*', '/'])
+if op == '/':
+    while (val1 &lt; val2) or (val1 % val2 != 0):
+        val1 = random.choice(range(1,10))
+        val2 = random.choice(range(1,10))
+    op_word = 'division'
+    op_phrase = str(val1) +  ' divided by ' + str(val2)
+    result = val1 / val2;
+elif op == '+':
+    op_word = 'addition'
+    op_phrase = str(val1) + ' added to ' + str(val2)
+    result = val1 + val2;
+elif op == '-':
+    op_word = 'subtraction'
+    op_phrase = str(val2) + ' subtracted from ' + str(val1)
+    result = val1 - val2;
+else:
+    op_word = 'multiplication'
+    op_phrase = str(val1) + ' multiplied by ' + str(val2)
+    result = val1 * val2;
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;z = (${val1} ${op1} (x ${op2} ${val2})) ${op3} y&lt;/code&gt; resolves to &lt;code&gt;z = (${val1} ${op1} (${x_val} ${op2} ${val2})) ${op3} ${y_val}&lt;/code&gt;
+&lt;code&gt;z = (${val1} ${op1} (${res1})) ${op3} ${y_val}&lt;/code&gt;
+&lt;code&gt;z = (${res2}) ${op3} ${y_val}&lt;/code&gt;
+&lt;code&gt;z = ${res3}&lt;/code&gt;</explanation>
+    <template unescape-html='true'>#include &lt;stdio.h&gt;
+
+int main(void) {
+   int x;
+   int y;
+   int z;
+
+   x = ${x_val};
+   y = ${y_val};
+   z = (${val1} ${op1} (x ${op2} ${val2})) ${op3} y;
+
+   printf("%d\n", z);
+   
+   return 0;
+}</template>
+    <parameters unescape-html='true'>
+#order of x and y assignment statements
+#integers and operators (only use division if result is a whole number)
+import operator
+ops = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.div}
+x_val, y_val, val1, val2 = random.sample(range(1,10), 4)
+op1 = pick_from(['+', '-', '*', '*']) #give slight advantage to *
+op2 = pick_from(['+', '-', '/'])
+op3 = pick_from(['+', '-'])
+if op2 == '/':
+    while (x_val &lt; val2) or (x_val % val2 != 0):
+        x_val, val2 = random.sample(range(1,10), 2)
+res1 = ops[op2](x_val, val2)
+res2 = ops[op1](val1, res1)
+res3 = ops[op3](res2, y_val)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;x ${symbol}= ${val2}&lt;/code&gt; can be rewritten as &lt;code&gt;x = x ${symbol} ${val2}&lt;/code&gt;, which resolves to &lt;code&gt;x = ${expression}&lt;/code&gt;, so the value ${result} is assigned to x.</explanation>
+    <template unescape-html='true'>#include &lt;stdio.h&gt;
+
+int main(void) {
+   int x;
+
+   x = ${val1};
+   x ${symbol}= ${val2};
+
+   printf("%d\n", x);
+   
+   return 0;
+}</template>
+    <parameters>
+val1, val2 = random.sample(range(1,10), 2)
+ops = [
+    (lambda a, b: a + b, '+'),
+    (lambda a, b: a - b, '-'),
+    (lambda a, b: a * b, '*')
+]
+# Randomly select an operator
+op, symbol = random.choice(ops)
+
+expression = '{} {} {}'.format(val1, symbol, val2)
+
+result = op(val1, val2)
+    </parameters>
+</level>
+<level type='dict'>
+    <explanation unescape-html='true'>&lt;code&gt;x += (${val3} ${op1} y)&lt;/code&gt; can be rewritten as &lt;code&gt;x = x + (${val3} ${op1} y)&lt;/code&gt;, which resolves to &lt;code&gt;x = ${val1} + (${val3} ${op1} ${val2})&lt;/code&gt;, so the value ${result} is assigned to x.
+&lt;code&gt;y = ${val4}&lt;/code&gt; is performed after the value ${result} is assigned to x, so &lt;code&gt;y = ${val4}&lt;/code&gt; does not affect the value assigned to x.</explanation>
+    <template unescape-html='true'>#include &lt;stdio.h&gt;
+
+int main(void) {
+   int x;
+   int y;
+
+   x = ${val1};
+   y = ${val2};
+   x += (${val3} ${op1} y);
+   y = ${val4};
+
+   printf("%d\n", x);
+   printf("%d\n", y);
+   
+   return 0;
+}</template>
+    <parameters>
+import operator
+ops = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+val1, val2, val3, val4 = random.sample(range(1,10), 4)
+op1 = random.choice(['+', '-', '*'])
+tmp = ops[op1](val3, val2)
+result = val1 + tmp
+    </parameters>
+</level>
+</levels>
+</zyOptions>
+</zyTool>
+
+<zypInfo person="Annie" date="07/18/23" minutes="90" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/20/23" minutes="15" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="07/24/23" minutes="40" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="07/24/23" minutes="4" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Collins" date="07/27/23" minutes="25" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="07/31/23" minutes="15" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Collins" date="07/31/23" minutes="8" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="07/31/23" minutes="10" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="11/06/23" minutes="455" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="11/07/23" minutes="30" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="11/07/23" minutes="55" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="11/08/23" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="11/08/23" minutes="15" status="CodeDone"></zypInfo>
+<zypInfo person="Nicole Collins" date="12/05/23" minutes="20" status="QADoing">Golden_CA_development C</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development C</zypInfo>
+<zypInfo person="Annie" date="12/12/23" minutes="15" status="QADoing">Golden_CA_development C</zypInfo>
+<zypInfo person="Nicole Collins" date="12/12/23" minutes="10" status="QADone">Golden_CA_development C</zypInfo>
+
+<zyTool name="CodeWriting" caption="Arithmetic expressions (int)" id="842cea01-a2f8-4674-bf63-fd5c1af3ffbe" parts="2" challenge="true" edited-last="Tue Dec 12 2023 16:49:49 GMT-0500 (Eastern Standard Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+data_list = list(range(2, 21))
+
+
+# Given a list, return a string with each list element separated by a comma. (From Progression Builder)
+def make_words_from_list(lst, conjunction='and'):
+    strs = [str(item) for item in lst]
+    if len(lst) == 0:
+        return ''
+    elif len(lst) == 1:
+        return strs[0]
+    elif len(lst) == 2:
+        return '{} {} {}'.format(strs[0], conjunction, strs[1])
+    else:
+        return ', '.join(strs[:-1]) + ', {} {}'.format(conjunction, strs[-1])
+
+
+def get_test_dict(lst, ex_in_list, num_tests):
+    test_list_list = [([-1] * len(ex_in_list)) for _ in range(num_tests)]
+    for i in range(len(test_list_list)):
+        for j in range(len(test_list_list[i])):
+            test_list_list[i][j] = pick_from(lst, sum(test_list_list, [])+ex_in_list)
+    
+    return dict(
+        zip(
+            ['test{}'.format(i + 2) for i in range(num_tests)], 
+            [' '.join(map(str, test_list)) for test_list in test_list_list], 
+        )
+    )</global><language type="string">c</language><levels type="list"><li type="dict">
+<explanation type="string">&lt;p&gt;${distractor.explanation}&lt;/p&gt;</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &lt;stdio.h&gt;
+
+int main(void) {
+${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.res_var} ${distractor.assign} ${distractor.equation};</solution><template type="string">
+   /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   printf("${distractor.footer}: %d\n", ${distractor.res_var});
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.c</name></li></files><prompt type="string">&lt;p&gt;${distractor.prompt}&lt;/p&gt;
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`
+${distractor.note}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    choice = meaningful_permutation['choice']
+    if choice == 'dimension':
+        dimension = meaningful_permutation['dimension']
+        shape = meaningful_permutation['shape']
+        return make_dimension_distractor(dimension, shape)
+    else:
+        compound = meaningful_permutation['compound']
+        return make_compound_distractor(compound)</distractor><meaningful type="string">def make_meaningful_permutation():
+    choice = pick_from(['dimension', 'compound'])
+    if choice == 'dimension':
+        dimension = pick_from(dimension_dict_dict_dict.keys())
+        return {'choice': choice, 'dimension': dimension, 'shape': pick_from(dimension_dict_dict_dict[dimension].keys())}
+    else:
+        return {'choice': choice, 'compound': pick_from(compound_dict_dict.keys())}
+</meaningful><setup type="string">dimension_dict_dict_dict = {
+    'volume': {
+        'box': {
+            'equation_fstr': '{} * {} * {}', 
+            'res_var': 'boxVolume', 
+            'note_fstr': 'multiplying {}.', 
+            'explanation': 'multiplied together', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: ex_in_list[0] * ex_in_list[1] * ex_in_list[2], 
+        }, 
+        'wedge': {
+            'equation_fstr': '({} * {} * {}) / 2', 
+            'res_var': 'wedgeVolume', 
+            'note_fstr': 'dividing the product of {} by 2.', 
+            'explanation': 'multiplied together then divided by 2', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: not integer % 2, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1] * ex_in_list[2]) / 2, 
+        }, 
+        'pyramid': {
+            'equation_fstr': '({} * {} * {}) / 3', 
+            'res_var': 'pyramidVolume', 
+            'note_fstr': 'dividing the product of {} by 3.', 
+            'explanation': 'multiplied together then divided by 3', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: not integer % 3, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1] * ex_in_list[2]) / 3, 
+        }, 
+    }, 
+    'area': {
+        'rectangle': {
+            'equation_fstr': '{} * {}', 
+            'res_var': 'recArea', 
+            'note_fstr': 'multiplying {}.', 
+            'explanation': 'multiplied together', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: ex_in_list[0] * ex_in_list[1], 
+        }, 
+        'triangle': {
+            'equation_fstr': '({} * {}) / 2', 
+            'res_var': 'triArea', 
+            'note_fstr': 'dividing the product of {} by 2.', 
+            'explanation': 'multiplied together then divided by 2', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: not integer % 2, 
+            'func': lambda ex_in_list: (ex_in_list[0] * ex_in_list[1]) / 2, 
+        }, 
+    }, 
+    'perimeter': {
+        'rectangle': {
+            'equation_fstr': '2 * ({} + {})', 
+            'res_var': 'recPerimeter', 
+            'note_fstr': 'multiplying the sum of {} by 2.', 
+            'explanation': 'added together then multiplied by 2', 
+            'num_vars': 2, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: 2 * sum(ex_in_list), 
+        }, 
+        'triangle': {
+            'equation_fstr': '{} + {} + {}', 
+            'res_var': 'triPerimeter', 
+            'note_fstr': 'adding all three sides together.', 
+            'explanation': 'added together', 
+            'num_vars': 3, 
+            'bool_func': lambda integer: True, 
+            'func': lambda ex_in_list: sum(ex_in_list), 
+        }, 
+    }, 
+}
+
+compound_dict_dict = {
+    'plus': {
+        'op': '+',
+        'func': lambda value, constant: value + constant,
+        'equation_fstr': '{} + {}',
+        'describe': 'plus',
+    },
+    'minus': {
+        'op': '-',
+        'func': lambda value, constant: value - constant,
+        'equation_fstr': '{} - {}',
+        'describe': 'minus',
+    },
+    'multiply': {
+        'op': '*',
+        'func': lambda value, constant: value * constant,
+        'equation_fstr': '{} * {}',
+        'describe': 'multiplied by',
+    },
+    'divide': {
+        'op': '/',
+        'func': lambda value, constant: value // constant,
+        'equation_fstr': '{} / {}',
+        'describe': 'divided by',
+    },
+}
+
+item_names = ['apple', 'orange', 'banana', 'pear', 'kiwi', 'lemon', 'cabbage', 
+    'carrot', 'onion', 'lime', 'cucumber', 'apricot', 'coconut', 'pumpkin', 
+    'bagel', 'cheesecake', 'egg', 'muffin', 'pancake', 'omelette', 'pie', 
+    'pizza', 'lobster', 'meatball', 'burger', 'cake', 'popsicle', 'cupcake']
+
+
+def make_dimension_distractor(dimension, shape):
+    shape_dict = dimension_dict_dict_dict[dimension][shape]
+    num_vars = shape_dict['num_vars']
+    bool_func = shape_dict['bool_func']
+    
+    var_list = ['height', 'length', 'width']
+    prop_list = ['the height', 'the length', 'the width']
+    respect = ', respectively'
+    if dimension == 'area' and shape == 'triangle':
+        var_list = ['height', 'base', 'width']
+        prop_list = ['the height', 'the base', 'the width']
+    elif dimension == 'perimeter' and shape == 'triangle':
+        var_list = ['sideA', 'sideB', 'sideC']
+        prop_list = ['the lengths of the three sides']
+        respect = ''
+    
+    ex_in_list = random.sample(data_list, num_vars)
+    props_in_sentence = make_words_from_list(prop_list[: num_vars])
+    vars_in_sentence = make_words_from_list(var_list[: num_vars])
+    res_var = shape_dict['res_var']
+    
+    prompt = "Integer variables {0} are read from input, representing {1} of a {2}{3}. Assign {4} with the {5} of the {2}.".format(
+        vars_in_sentence, props_in_sentence, shape, respect, res_var, dimension)
+    
+    explanation = "Integer variables {0} are {1} to compute the {2}'s {3}. The result is assigned to {4}.".format(
+        vars_in_sentence, shape_dict['explanation'], shape, dimension, res_var)
+    
+    prefix = '\tint {0};\n\tint {1};\n\tint {2};\n\n\tscanf("%d", &amp;{0});\n\tscanf("%d", &amp;{1});\n'.format(var_list[0], var_list[1], res_var)
+    if num_vars == 3:
+        prefix = '\tint {0};\n\tint {1};\n\tint {2};\n\tint {3};\n\n\tscanf("%d", &amp;{0});\n\tscanf("%d", &amp;{1});\n\tscanf("%d", &amp;{2});\n'.format(var_list[0], var_list[1], var_list[2], res_var)
+    footer = dimension.capitalize()
+    
+    return {
+        'prompt': prompt,
+        'prefix': prefix,
+        'assign': '=',
+        'equation': shape_dict['equation_fstr'].format(*var_list),
+        'res_var': res_var,
+        'note': '&lt;p&gt;Note: The {} of a {} is calculated by {}&lt;/p&gt;'.format(dimension, shape, shape_dict['note_fstr'].format(props_in_sentence)),
+        'explanation': explanation,
+        'example_in': ' '.join(map(str, ex_in_list)),
+        'example_out': '{}: {}'.format(footer, shape_dict['func'](ex_in_list)),
+        'footer': footer,
+        'num_vars': num_vars,
+        'ex_in_list': ex_in_list,
+        'data_list': data_list,
+    }
+
+
+def make_compound_distractor(compound):
+    compound_dict = compound_dict_dict[compound]
+    op = compound_dict['op']
+    num_vars = 1
+    constant = pick_from_range(2, 11)
+    item_data_list = list(range(20, 51))
+    
+    # Use smaller data for example in
+    # For divide, make sure data is divisible by constant
+    ex_in_list = [pick_from_range(1, 10)]
+    if compound == 'minus':
+        ex_in_list = [pick_from_range(1, 10) + constant]
+    if compound == 'divide':
+        ex_in_list = [pick_from_range(1, 10) * constant]
+        item_data_list = [x * constant for x in range(20, 51)]
+
+    item = pick_from(item_names)
+    quantifier = pick_from(['quantity', 'count'])
+    res_var = '{}s{}'.format(item, quantifier.capitalize())
+    header = 'Initial number of {}s'.format(item)
+    footer = 'Updated number of {}s'.format(item)
+    
+    prompt = 'Assign {0} with the current value of {0} {1} {2}.'.format(res_var, compound_dict['describe'], constant)
+    explanation = "The {0}= operator may be used with {1} on the left and value {2} on the right to update {1} with {1}'s current value {3} {2}.".format(op, res_var, constant, compound_dict['describe'])
+    
+    prefix = '\tint {0};\n\n\tscanf("%d", &amp;{0});\n\n\tprintf("{1}: %d\\n", {0});\n'.format(res_var, header)
+    
+    return {
+        'prompt': prompt,
+        'prefix': prefix,
+        'assign': '{}='.format(op),
+        'equation': str(constant),
+        'res_var': res_var,
+        'note': '',
+        'explanation': explanation,
+        'example_in': ex_in_list[0],
+        'example_out': '{}: {}\n{}: {}'.format(header, ex_in_list[0], footer, compound_dict['func'](ex_in_list[0], constant)),
+        'footer': footer,
+        'num_vars': num_vars,
+        'ex_in_list': ex_in_list,
+        'data_list': item_data_list,
+    }</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(distractor_permutation['data_list'], distractor_permutation['ex_in_list'], 5)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test5}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test6}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explanation}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &lt;stdio.h&gt;
+
+int main(void) {
+   ${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+   /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   printf("${distractor.scenario_cap}: %d\n", ${distractor.res_var});
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.c</name></li></files><prompt type="string">Assume that ${distractor.prompt}. Given variables ${distractor.obj_sent} read from input, compute the ${distractor.total_avg} ${meaningful.scenario} of all the ${distractor.plural_nouns}, and assign ${distractor.res_var} with the result.
+
+Ex: If the input is `${distractor.example_in}`, then the output is:
+
+`${distractor.example_out}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation['scenario']
+    is_avg = meaningful_permutation['is_avg']
+    category = pick_from(scenario_dict_dict[scenario].keys())
+    
+    res_var = '{}{}'.format('average' if is_avg else pick_from(['total', 'combined']), scenario.capitalize())
+    inter_var = 'sum{}'.format(scenario.capitalize())
+    
+    scen_verb = 'cost' if scenario == 'cost' else 'weigh'
+    scen_noun = 'dollars' if scenario == 'cost' else 'pounds'
+    val_var_post = pick_from(['Price', 'Cost']) if scenario == 'cost' else pick_from(['Weight', 'Pounds'])
+    cat = 'animal' if scenario == 'weight' else category
+    
+    num_inputs = pick_from_range(2, 3)
+    singular_noun_list = random.sample(scenario_dict_dict[scenario][category][: -1], num_inputs)
+    plural_noun_list = [singular_to_plural(singular_noun) for singular_noun in singular_noun_list]
+    plural_noun_desc_list = [
+        'a box of {}'.format(plural_noun) if category == 'fruit' else plural_noun 
+        for plural_noun in plural_noun_list
+    ]
+    var_list = [
+        'numBox{}'.format(plural_noun.capitalize()) if category == 'fruit' else 'num{}'.format(plural_noun.capitalize()) 
+        for plural_noun in plural_noun_list
+    ]
+    weight_var_list = ['{}{}'.format(singular_noun, val_var_post) for singular_noun in singular_noun_list]
+    
+    weight_list = random.sample(list(range(*scenario_dict_dict[scenario][category][-1])), num_inputs)
+    ex_in_list = [pick_from(list(range(*range_list))) for range_list in [[2, 10], [10, 20], [20, 40]][: num_inputs]]
+    example_in = ' '.join(map(str, ex_in_list))
+    
+    prompt = make_words_from_list(
+        ['{} {} {} {} each'.format(plural_noun_desc, scen_verb, weight, scen_noun) 
+        for plural_noun_desc, weight in zip(plural_noun_desc_list, weight_list)]
+    )
+    
+    prefix = '{}\n\t{}\n\tint {};{}\n\n\t{}'.format(
+        '\n\t'.join(['int {} = {};'.format(weight_var, w) for weight_var, w in zip(weight_var_list, weight_list)]), 
+        '\n\t'.join(['int {};'.format(var) for var in var_list]), res_var, 
+        '\n\tint {};'.format(inter_var) if is_avg else '', 
+        '\n\t'.join(['scanf("%d", &amp;{});'.format(var) for var in var_list]), 
+    )
+    
+    scenario_cap = 'Average {}'.format(scenario) if is_avg else scenario.capitalize()
+    
+    calc_list = [
+        '- &lt;span style="white-space:nowrap"&gt;{} * {}&lt;/span&gt; calculates the total {} of the {}.'\
+        .format(var_list[i], weight_var_list[i], scenario, plural_noun_list[i]) 
+        for i in range(num_inputs)
+    ]
+    mult_list = ['({} * {})'.format(var, weight_var) for var, weight_var in zip(var_list, weight_var_list)]
+    str_mult_list = ['&lt;span style="white-space:nowrap"&gt;{}&lt;/span&gt;'.format(mult) for mult in mult_list]
+    int_mult_list = [
+        '&lt;span style="white-space:nowrap"&gt;{}&lt;/span&gt;'\
+        .format(mult_list[i].replace(var_list[i], str(ex_in_list[i])).replace(weight_var_list[i], str(weight_list[i]))) 
+        for i in range(num_inputs)
+    ]
+    
+    ex_out = sum([(ex_in * weight) for ex_in, weight in zip(ex_in_list, weight_list)])
+    solution = '{} = {};'.format(res_var, ' + '.join(mult_list))
+    explanation = 'The total {} of each kind of {} is computed as follows:\n{}\n\n'\
+                    'Thus, {} is the sum of {}.\n\nEx: For input `{}`, {} yields {}.'.format(
+                        scenario, cat, '\n'.join(calc_list), res_var, make_words_from_list(str_mult_list), 
+                        example_in, ' + '.join(int_mult_list), ex_out
+                    )
+    if is_avg:
+        ex_out //= sum(ex_in_list)
+        
+        solution = '{} = {};'.format(inter_var, ' + '.join(mult_list))
+        solution += '\n{} = {} / ({});'.format(res_var, inter_var, ' + '.join(var_list))
+        
+        explanation = '{0} is the sum of all the weights divided by the number of animals. '\
+                    'Thus, {0} is the sum of {1} divided by &lt;span style="white-space:nowrap"&gt;({2}).&lt;/span&gt;\n\n'\
+                    'Ex: For input `{3}`, '\
+                    '&lt;span style="white-space:nowrap"&gt;({4}) / {5}&lt;/span&gt; yields {6}.'\
+                    .format(res_var, make_words_from_list(str_mult_list), ' + '.join(var_list), example_in, 
+                            ' + '.join(int_mult_list), sum(ex_in_list), ex_out)
+    
+    return {
+        'category': category,
+        'is_avg': is_avg,
+        'prompt': prompt,
+        'obj_sent': make_words_from_list(var_list),
+        'total_avg': 'average' if is_avg else 'total',
+        'res_var': res_var,
+        'ex_in_list': ex_in_list,
+        'example_in': example_in,
+        'example_out': '{}: {}'.format(scenario_cap, ex_out),
+        'prefix': prefix,
+        'solution': solution,
+        'scenario_cap': scenario_cap,
+        'explanation': explanation,
+        'plural_nouns': make_words_from_list(plural_noun_list),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    scenario = pick_from(scenario_dict_dict.keys())
+    
+    is_avg = False
+    if scenario == 'weight':
+        is_avg = pick_from([True, False])
+    
+    return {'scenario': scenario, 'is_avg': is_avg}</meaningful><setup type="string">scenario_dict_dict = {
+    'cost': {
+        'food': ['taco', 'burger', 'pizza', 'burrito', 'enchilada', 'salad', 'pasta', [6, 11]],
+        'fruit': ['apple', 'banana', 'grape', 'plum', 'pear', 'apricot', 'orange', 'lemon', 'lime', [6, 11]],
+    }, 
+    'weight': {
+        'extra small animal': ['duck', 'owl', 'rabbit', 'stork', [2, 10]],
+        'small animal': ['vulture', 'eagle', 'cobra', 'fox', 'dog', [10, 15]],
+        'medium animal': ['turtle', 'goat', 'penguin', 'cheetah', 'kangaroo', 'deer', [50, 100]],
+        'big animal': ['cougar', 'bear', 'pig', 'llama', 'lion', 'tiger', [150, 500]],
+        'extra big animal': ['bison', 'cows', 'elk', 'horse', 'zebra', 'yak', [600, 1000]], 
+    }, 
+}
+
+exception_dict = {'fox': 'foxes', 'deer': 'deer', 'bison': 'bison', 'elk': 'elk'}
+
+
+def singular_to_plural(singular):
+    plural = '{}s'.format(singular)
+    
+    if singular in exception_dict.keys():
+        plural = exception_dict[singular]
+    elif singular[-1].lower() == 'y':
+        plural = '{}ies'.format(singular[: -1])
+    elif singular[-1].lower() == 's':
+        plural = singular
+    
+    return plural</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return get_test_dict(data_list, distractor_permutation['ex_in_list'], 5)</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.example_in}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test4}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test5}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test6}</stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+</zyVersion>
+
+
+
+<zypInfo person="Arash" date="7/30/14" hkStatus="Rev2Done"> Alex addressed comments </zypInfo>
+<zypInfo person="Susan" date="01/02/15">Updated per Frank's comments: check output not variable value </zypInfo>
+<zypInfo  person="Sarah" date="1/21/15">Reset totalCost to 0 in second test so students can use +=</zypInfo>
+<zypInfo person="Vanessa/Kevin" date="7/11/18">  Changed magic numbers to input. </zypInfo>
+<!--zyHomeworkProblem id="d5d937c3-99e5-4448-11d6-a197731aa27e" language="c" caption="Total cost." author="FV/AE/RL/SL/RS">
+
+<zyInstructions>
+A drink costs 2 dollars. A taco costs 3 dollars. Given the number of each (read from input in the code below), compute total cost and assign totalCost with the result. Ex: 4 drinks and 6 tacos yields totalCost of 26.
+<!-- <br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 4 and 6, and then with the inputs 2 and 8. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyInput>
+4 6
+2 8
+</zyInput>
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   int numDrinks;
+   int numTacos;
+   int totalCost;
+   
+   scanf("%d", &numDrinks);
+   scanf("%d", &numTacos);
+   <STUDENT CODE>
+
+   printf("Total cost: %d\n", totalCost);
+
+   return 0;
+}
+</zyStudentProgram>
+
+
+<zySolution>
+totalCost = (numDrinks * 2) + (numTacos * 3);
+</zySolution>
+
+<zyTestVectors>
+#include <stdio.h>
+int main(void) {
+   int numDrinks;
+   int numTacos;
+   int totalCost;
+
+   scanf("%d", &numDrinks);
+   scanf("%d", &numTacos);
+   {
+      <STUDENT CODE>
+   }
+   printf("Total cost: %d\n", totalCost);
+   zyAssertOutput("Total cost: 26\n", "Testing with 4 drinks and 6 tacos", 
+                  false, false, false, false);
+
+   scanf("%d", &numDrinks);
+   scanf("%d", &numTacos);
+   totalCost = 0;
+   {
+      <STUDENT CODE>
+   }
+   printf("Total cost: %d\n", totalCost);
+   zyAssertOutput("Total cost: 28\n", "Testing with 2 drinks and 8 tacos", 
+                  false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem-->
+
+</zySection> 
+
+
+

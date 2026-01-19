@@ -1,0 +1,14 @@
+<question xsi:type='MultipleChoiceQuestion' guid='d1876de8-9f2b-4561-be14-ac9a1e2042ea' subjects='cpp, java'>
+<instructions>
+<p>Three sock types A, B, C exist in a drawer. Pulled socks are kept and not returned. Which is true?</p>
+</instructions>
+
+<choices>
+<choice>If the first two pulls are different socks, only one more pull is needed for a match.</choice>
+<choice correct='true'>If the first three pulls are different socks, only one more pull is needed for a match.</choice>
+<choice>If the first two pulls are different socks, at least two more pulls are needed for a match.</choice>
+<choice>If the first three pulls are different socks, at least two more pulls are needed for a match.</choice>
+
+
+</choices>
+</question>

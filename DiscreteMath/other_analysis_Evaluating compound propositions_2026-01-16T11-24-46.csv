@@ -1,0 +1,566 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,8,1,1
+2,8,0,1
+3,8,0,0
+4,8,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,6,64
+1,3,3,5,64
+1,4,3,4,64
+2,3,0,10,64
+2,4,1,6,64
+3,4,4,3,64
+
+Summary
+Total Comparisons,496
+Duplicates (≥85%),14
+Similar (70-85%),37
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.952,duplicate
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q4,"In a truth table for three variables, how many rows are there?",2,4,0.948,duplicate
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.942,duplicate
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.919,duplicate
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.894,duplicate
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.893,duplicate
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.892,duplicate
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,0.886,duplicate
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.882,duplicate
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.874,duplicate
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.867,duplicate
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.856,duplicate
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.853,duplicate
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.85,duplicate
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.824,similar
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.822,similar
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.822,similar
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.811,similar
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.805,similar
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.801,similar
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.798,similar
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.797,similar
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.797,similar
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.788,similar
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,0.787,similar
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.787,similar
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.777,similar
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.775,similar
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.773,similar
+q4,"In a truth table for three variables, how many rows are there?",2,4,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.768,similar
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.767,similar
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.765,similar
+q4,"In a truth table for three variables, how many rows are there?",2,4,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.765,similar
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.765,similar
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.764,similar
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.763,similar
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q4,"In a truth table for three variables, how many rows are there?",2,4,0.762,similar
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.757,similar
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.755,similar
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.754,similar
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.752,similar
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.747,similar
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.742,similar
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.736,similar
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.735,similar
+q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.728,similar
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.725,similar
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.72,similar
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.717,similar
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.716,similar
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.7,similar
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.699,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.698,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.693,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,0.686,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.684,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.684,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.681,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.681,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.68,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.677,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.677,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.677,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.674,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.674,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.674,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.672,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.672,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.67,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.666,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,0.664,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.664,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.657,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q4,"In a truth table for three variables, how many rows are there?",2,4,0.657,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.653,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.653,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.646,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.643,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.641,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,0.639,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.638,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.63,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.628,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.627,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.627,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.626,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q4,"In a truth table for three variables, how many rows are there?",2,4,0.623,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.621,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.621,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.62,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,0.618,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.618,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.614,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.614,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.61,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.61,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.609,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.602,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.601,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.6,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.599,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.595,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.594,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.594,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.593,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.586,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.585,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.582,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.582,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.581,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.58,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.579,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.577,low
+q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.577,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.574,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,0.573,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.572,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.568,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.567,low
+q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.567,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.565,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.563,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.562,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.561,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.561,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.56,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.559,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.558,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.557,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.556,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.555,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.555,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.554,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.553,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.552,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.552,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,0.551,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.551,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.551,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.55,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.55,low
+q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.55,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.548,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.548,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.547,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.547,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.544,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.543,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.543,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.541,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.54,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.539,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.539,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.538,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.538,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.537,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.536,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.535,low
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.534,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.533,low
+q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.531,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.53,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.528,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.527,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.527,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.526,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.524,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.524,low
+q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.524,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.523,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.522,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.522,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.522,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.521,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.52,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.519,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.518,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.518,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.517,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.517,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.516,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.515,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.514,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.514,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.513,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.513,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.512,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.51,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.508,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.508,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.508,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.507,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.507,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.507,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.506,low
+q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.506,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.505,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.505,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.504,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.504,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.503,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.503,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.502,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.501,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.501,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.501,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.501,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.498,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.497,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.496,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.496,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.494,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.493,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.491,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.49,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.49,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.49,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.488,low
+q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.488,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.486,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.485,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.484,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.481,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.481,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.481,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.479,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.478,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.477,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.476,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.475,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.475,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.474,low
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.474,low
+q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.472,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.47,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.469,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.469,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.467,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.467,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.465,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.465,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.465,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,0.464,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.463,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.462,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.461,low
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.461,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.458,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.456,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.455,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.454,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.452,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.452,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.45,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.45,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.447,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.445,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.444,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.441,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.437,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.436,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.436,low
+q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.435,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.429,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.428,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.427,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.424,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.423,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.423,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.422,low
+q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.421,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.42,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.419,low
+q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.419,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.418,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.418,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.417,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.417,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.416,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.415,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.415,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.415,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.415,low
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.414,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.413,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.413,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.41,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.41,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.41,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.409,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.409,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.408,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.406,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.406,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.406,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.405,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.402,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.401,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.4,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.397,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.396,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.396,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.396,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.395,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.395,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.394,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.393,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.392,low
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.39,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.389,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.389,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.389,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.386,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.383,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.383,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.38,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.38,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.378,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.378,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.377,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.375,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.375,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.374,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.374,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.372,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.369,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,1,0.369,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.369,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.368,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.367,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.366,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.364,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.364,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.363,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,0.363,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.362,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.362,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.361,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.36,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.359,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.357,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.357,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.354,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,8,0.353,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.353,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.352,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.352,low
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.351,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.349,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.349,low
+q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.349,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,0.348,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.348,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.348,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.348,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.347,low
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.347,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.345,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.345,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.345,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,0.344,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.344,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,0.344,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.344,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.343,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.342,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.341,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.34,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,0.339,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.339,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.338,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.337,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.337,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.335,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.334,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.334,low
+q6,What is the order of operations for compound propositions without parentheses?,3,6,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.334,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,5,0.333,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.332,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.332,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.332,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.329,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.328,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.327,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.327,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.326,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.326,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.324,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.323,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.323,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.322,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.321,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.32,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.32,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.318,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.317,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.317,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.316,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.316,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.316,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,0.315,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,0.313,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.312,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q4,"In a truth table for three variables, how many rows are there?",2,4,0.31,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.31,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.309,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.309,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.308,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,0.307,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.307,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.307,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.307,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.303,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.302,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.299,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.299,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.299,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.298,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.297,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.297,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.296,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,0.295,low
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.294,low
+q1,What is the order of operations without parentheses in logical expressions?,1,1,q2,"In a truth table with three variables, how many rows should it have?",1,2,0.293,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.292,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.292,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.291,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q1,What is the correct order of operations in a compound proposition without parentheses?,4,1,0.29,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.29,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,0.29,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.289,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.289,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.289,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q6,What is the order of operations for compound propositions without parentheses?,3,6,0.288,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.288,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.288,low
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,6,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.288,low
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.288,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.286,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,0.286,low
+q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.286,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,0.285,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.285,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.284,low
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.284,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.283,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.282,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.279,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,8,0.279,low
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.278,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.277,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.275,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,4,0.272,low
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,7,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.271,low
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,q4,"In a truth table for three variables, how many rows are there?",2,4,0.27,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,6,0.269,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.268,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.268,low
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,5,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.266,low
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,q4,"In a truth table for three variables, how many rows are there?",2,4,0.264,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.264,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.263,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.263,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,0.263,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.262,low
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,7,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.261,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,1,0.258,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q2,Which logical operator is applied first in a compound proposition without parentheses?,2,2,0.257,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.254,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,2,0.249,low
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,6,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.249,low
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,3,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.248,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q8,Why is it good practice to use parentheses in compound propositions?,1,8,0.247,low
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,q4,"In a truth table for three variables, how many rows are there?",2,4,0.244,low
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,5,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.24,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,4,0.239,low
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.237,low
+q8,Why is it good practice to use parentheses in compound propositions?,1,8,q4,"In a truth table for three variables, how many rows are there?",2,4,0.236,low
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,q4,"In a truth table for three variables, how many rows are there?",2,4,0.236,low
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,q4,"In a truth table for three variables, how many rows are there?",2,4,0.234,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q3,The expression \(p \lor q \land r\) is equivalent to:,2,3,0.232,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.232,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,4,0.231,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,5,0.231,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q3,The compound proposition \(p \lor q \land r\) should be read as:,3,3,0.227,low
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.227,low
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,0.225,low
+q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,3,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.224,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.214,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.213,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,8,0.211,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,2,0.206,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.204,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,7,0.192,low
+q2,"In a truth table with three variables, how many rows should it have?",1,2,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.186,low
+q4,"In a truth table for three variables, how many rows are there?",2,4,q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,7,0.186,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Determine truth values of compound propositions given truth values of their variables  
+Construct and complete truth tables for compound propositions with two to four variables  
+Use intermediate columns in truth tables to evaluate complex compound propositions step-by-step  
+Apply the order of operations for logical operators: negation, conjunction, and disjunction when evaluating compound propositions  
+Translate English statements into symbolic logical expressions using propositional variables and logical operators"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the order of operations without parentheses in logical expressions?,1,yes,"This question assesses knowledge of the order of operations for logical operators, directly related to learning objective 4."
+q2,"In a truth table with three variables, how many rows should it have?",1,yes,"This question evaluates understanding of the size of truth tables based on variables, aligning with learning objective 2."
+q3,"When filling a truth table column for the rightmost variable, what is the pattern of truth values?",1,yes,"This question tests knowledge of truth value patterns in truth tables, supporting learning objective 2."
+q4,Which operation is evaluated first in the compound proposition \(p \lor \neg q \land r\) without parentheses?,1,yes,"This question assesses applying order of operations in evaluating compound propositions, matching learning objective 4."
+q5,"The compound proposition \(p \land \neg (q \lor r)\) evaluates to false when \(p\) is true, \(q\) is false, and \(r\) is true because:",1,yes,"This question requires determining truth values of a compound proposition given variable values, related to learning objective 1."
+q6,"In a truth table, how are the values filled in the second-rightmost variable column for three variables?",1,yes,"This question evaluates how truth values are filled in truth tables for variables, linked to learning objective 2."
+q7,What is the number of rows in a truth table for a proposition with four propositional variables?,1,yes,"This question tests knowledge of the number of rows in truth tables for multiple variables, aligned with learning objective 2."
+q8,Why is it good practice to use parentheses in compound propositions?,1,yes,"This question assesses understanding of the use of parentheses to specify order of operations, connected to learning objective 4."
+q1,What is the order of operations in evaluating \(p \lor \neg q \land r\) without parentheses?,2,yes,"This question again tests knowledge of order of operations in logical expressions, related to learning objective 4."
+q2,Which logical operator is applied first in a compound proposition without parentheses?,2,yes,"This question evaluates which logical operator is applied first, assessing order of operations per learning objective 4."
+q3,The expression \(p \lor q \land r\) is equivalent to:,2,yes,"This question assesses understanding of equivalences and order of operations in compound propositions, related to learning objectives 1 and 4."
+q4,"In a truth table for three variables, how many rows are there?",2,yes,"This question tests knowledge of the number of rows in a truth table for three variables, aligned with learning objective 2."
+q5,"In filling a truth table, how are the truth values arranged in the column for the rightmost variable?",2,yes,"This question evaluates the pattern of truth values in the rightmost variable column of a truth table, supporting learning objective 2."
+q6,How is the truth value of a compound proposition determined using intermediate columns?,2,yes,"This question assesses the use of intermediate columns to evaluate complex propositions step-by-step, directly related to learning objective 3."
+q7,Fill in the blank: A truth table for a compound proposition with \(n\) variables has _____ rows.,2,yes,"This question tests understanding of the formula for the number of rows in truth tables, aligned with learning objective 2."
+q8,"Which of the following is the correct symbolic translation of ""It is not true that it is windy or cold""?",2,yes,"This question evaluates translation of English statements into symbolic logic expressions, matching learning objective 5."
+q1,"How many rows are in a truth table for a compound proposition with variables \(p\), \(q\), and \(r\)?",3,yes,"This question tests knowledge of the number of rows in a truth table for three variables, related to learning objective 2."
+q2,Which logical operator is applied first when evaluating \(p \lor \neg q \land r\) without parentheses?,3,yes,"This question assesses which logical operator is applied first in evaluation, linked to learning objective 4."
+q3,The compound proposition \(p \lor q \land r\) should be read as:,3,yes,"This question evaluates correct reading and interpretation of compound propositions, related to learning objectives 1 and 4."
+q4,What is the truth value of \(\neg (p \land \neg r)\) when \(p\) is true and \(r\) is false?,3,yes,"This question requires determining the truth value of a compound proposition given variable values, aligned with learning objective 1."
+q5,"When filling in the variable columns of a truth table, the pattern for the rightmost variable column is:",3,yes,"This question tests knowledge of truth value patterns in truth tables for variables, supporting learning objective 2."
+q6,What is the order of operations for compound propositions without parentheses?,3,yes,"This question assesses understanding of the order of operations for logical operators, matching learning objective 4."
+q7,"Which is a correct English translation of the proposition \(p \land \neg q\) given \(p\): It is windy, \(q\): It is cold?",3,yes,"This question evaluates translation of symbolic logic into English statements, related to learning objective 5."
+q8,Why are intermediate columns used when filling out truth tables for complex propositions?,3,yes,"This question assesses the purpose of intermediate columns in truth tables, directly linked to learning objective 3."
+q1,What is the correct order of operations in a compound proposition without parentheses?,4,yes,"This question tests knowledge of the correct order of operations in compound propositions, aligned with learning objective 4."
+q2,"When evaluating \(p \lor \neg q \land r\), which operation is applied first?",4,yes,"This question evaluates which operation is applied first in evaluating a compound proposition, related to learning objective 4."
+q3,A truth table for a compound proposition with 4 variables has _____ rows.,4,yes,"This question tests knowledge of the number of rows in a truth table for four variables, supporting learning objective 2."
+q4,"In a truth table, the rightmost variable column alternates truth values in what pattern?",4,yes,"This question assesses understanding of truth value patterns in the rightmost variable column, linked to learning objective 2."
+q5,How many rows are in a truth table for the proposition \((p \land q) \lor (\neg r \land \neg w)\)?,4,yes,"This question evaluates the number of rows in a truth table for a compound proposition with four variables, aligned with learning objective 2."
+q6,Why are intermediate columns used when filling out truth tables for compound propositions?,4,yes,"This question assesses the use of intermediate columns to simplify evaluation of complex expressions, directly related to learning objective 3."
+q7,"Translate into logic: ""It is not true that I am going to a movie and the party tonight.""",4,yes,"This question tests translation of English statements into symbolic logic expressions, matching learning objective 5."
+q8,"When filling a truth table for \(p \land \neg q\), if \(p = \text{T}\) and \(q = \text{F}\), the value is:",4,yes,"This question requires determining the truth value of a compound proposition given variable values, related to learning objective 1."

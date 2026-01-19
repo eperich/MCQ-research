@@ -1,0 +1,5 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+A program that has source-code available for download and edit is _____.,open source,expensive,backward compatible,open source,proprietary,,,,,,
+The _____ executes code written in the Python programming language.,Python interpreter,IDE,Jupyter notebook,program,Python interpreter,,,,,,
+"In the code below,\n`data`\nis an example of a/an _____.\n```python\nscatterplot(data=hawks, x=""wingLength"", y=""weight"")\n```",parameter,argument,function,parameter,return,,,,,,
+"Jupyter is convenient for testing, presenting, and sharing code, because ______ contain code, output, and text all in one place.",notebooks,documents,notebooks,scripts,web pages,,,,,,

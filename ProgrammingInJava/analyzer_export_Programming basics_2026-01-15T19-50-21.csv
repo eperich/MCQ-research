@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What does the statement int wage; do in a Java program?,It creates a variable named wage to hold an integer value.,It outputs the value of wage.,It assigns 20 to wage.,It creates a variable named wage to hold an integer value.,It gets input from the user and stores in wage.,,,,,,
+Which symbol ends a Java statement?,Semicolon (;),Period (.),Semicolon (;),Colon (:),"Comma (,)",,,,,,
+How does System.out.println differ from System.out.print in Java output?,println outputs a newline after printing; print does not.,"println outputs without quotes, print outputs with quotes.",println outputs a newline after printing; print does not.,println prints variables only; print prints text only.,println needs parentheses; print does not.,,,,,,
+A Java program starts executing statements inside the _____ method.,main,print,main,input,start,,,,,,
+Which symbol ends each Java statement?,Semicolon ;,Colon :,Period .,Semicolon ;,"Comma ,",,,,,,
+"In Java, which statement correctly gets an integer input into variable x using Scanner scnr?",x = scnr.nextInt();,x = scnr.nextInt();,scnr.nextInt(x);,x = scnr.nextInt;,scnr.nextInt();,,,,,,
+What symbol marks the end of each statement in Java?,Semicolon ;,Period .,"Comma ,",Semicolon ;,Colon :,,,,,,
+Which method reads an integer input from the keyboard using a Scanner object named scnr?,scnr.nextInt(),scnr.getInt(),scnr.nextInt(),scnr.inputInt(),scnr.readInt(),,,,,,
+"In Java, what is the difference between System.out.print() and System.out.println()?",print() outputs on the same line; println() outputs then moves to next line,print() outputs variables only; println() outputs text only,print() ends with a newline; println() does not,print() outputs on the same line; println() outputs then moves to next line,print() is for input; println() is for output,,,,,,
+What does the statement int wage; do in a Java program?,Creates a variable named wage to hold a value,Outputs the value of wage,Assigns 20 to wage,Creates a variable named wage to hold a value,Gets input from the user for wage,,,,,,
+Which statement correctly reads an integer input into variable numCars using Scanner scnr?,numCars = scnr.nextInt();,scnr.nextInt(numCars);,numCars = scnr.nextInt();,numCars = scnr.nextInt;,numCars = nextInt();,,,,,,
+What is the difference between System.out.print() and System.out.println()?,println() outputs and then moves to a new line; print() does not,print() starts a new output line; println() does not,println() outputs text only; print() outputs variables only,println() outputs and then moves to a new line; print() does not,print() requires parentheses; println() does not,,,,,,

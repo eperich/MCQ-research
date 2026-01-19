@@ -1,0 +1,444 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,7,0,2
+2,7,0,4
+3,7,0,4
+4,7,0,7
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,12,49
+1,3,1,12,49
+1,4,2,8,49
+2,3,0,13,49
+2,4,3,16,49
+3,4,0,12,49
+
+Summary
+Total Comparisons,378
+Duplicates (≥85%),8
+Similar (70-85%),90
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What does the base case prove in a mathematical induction proof?,1,1,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.942,duplicate
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.924,duplicate
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.904,duplicate
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.891,duplicate
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q3,The inductive hypothesis in an inductive proof is:,3,3,0.889,duplicate
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.886,duplicate
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.875,duplicate
+q1,What does the base case prove in a mathematical induction proof?,1,1,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.854,duplicate
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.85,similar
+q2,"In the inductive step, what must be shown?",3,2,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.849,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q1,What does the base case in an inductive proof establish?,3,1,0.842,similar
+q1,What does the base case in an inductive proof establish?,3,1,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.84,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q1,What does the base case in an inductive proof establish?,3,1,0.823,similar
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.823,similar
+q2,"In the inductive step, what must be shown?",3,2,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.823,similar
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q2,"In the inductive step, what must be shown?",3,2,0.822,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q2,"In the inductive step, what must be shown?",3,2,0.818,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q3,The inductive hypothesis in an inductive proof is:,3,3,0.817,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.811,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q2,"In the inductive step, what must be shown?",3,2,0.809,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.807,similar
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.807,similar
+q1,What does the base case prove in a proof by mathematical induction?,4,1,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.807,similar
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.805,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.803,similar
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.802,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.8,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q6,What is the first step in writing a proof by induction?,4,6,0.8,similar
+q2,"In the inductive step, what must be shown?",3,2,q3,The inductive hypothesis in an inductive proof is:,3,3,0.8,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.795,similar
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.791,similar
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.791,similar
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q2,"In the inductive step, what must be shown?",3,2,0.789,similar
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.787,similar
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.784,similar
+q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.784,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.781,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,0.777,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.775,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.774,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.769,similar
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.767,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.765,similar
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.765,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q1,What does the base case in an inductive proof establish?,3,1,0.764,similar
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q1,What does the base case in an inductive proof establish?,3,1,0.762,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q6,What is the first step in writing a proof by induction?,4,6,0.761,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.76,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.76,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q1,What does the base case in an inductive proof establish?,3,1,0.758,similar
+q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.757,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.755,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.753,similar
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.753,similar
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.752,similar
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.75,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.75,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.75,similar
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.749,similar
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.748,similar
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q1,What does the base case in an inductive proof establish?,3,1,0.747,similar
+q3,The inductive hypothesis in an inductive proof is:,3,3,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.747,similar
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.746,similar
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.739,similar
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.738,similar
+q1,What does the base case prove in a proof by mathematical induction?,4,1,q6,What is the first step in writing a proof by induction?,4,6,0.737,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.73,similar
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.73,similar
+q3,The inductive hypothesis in an inductive proof is:,3,3,q6,What is the first step in writing a proof by induction?,4,6,0.73,similar
+q1,What does the base case in an inductive proof establish?,3,1,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.729,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,0.727,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.726,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q3,The inductive hypothesis in an inductive proof is:,3,3,0.724,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q2,"In the inductive step, what must be shown?",3,2,0.724,similar
+q2,"In the inductive step, what must be shown?",3,2,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.723,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q6,What is the first step in writing a proof by induction?,4,6,0.722,similar
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.722,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.722,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q1,What does the base case in an inductive proof establish?,3,1,0.72,similar
+q1,What does the base case in an inductive proof establish?,3,1,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.72,similar
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.719,similar
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.718,similar
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.718,similar
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.718,similar
+q1,What does the base case prove in a proof by mathematical induction?,4,1,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.718,similar
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.714,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.713,similar
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.713,similar
+q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,q6,What is the first step in writing a proof by induction?,4,6,0.711,similar
+q1,What does the base case prove in a mathematical induction proof?,1,1,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.706,similar
+q1,What does the base case in an inductive proof establish?,3,1,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.706,similar
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q6,What is the first step in writing a proof by induction?,4,6,0.703,similar
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.702,similar
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.702,similar
+q6,What is the first step in writing a proof by induction?,4,6,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.702,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.7,similar
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.7,similar
+q2,"In the inductive step, what must be shown?",3,2,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.7,similar
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.698,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.698,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.697,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.696,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.695,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,0.694,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.693,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.692,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.691,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.691,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.691,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.689,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q3,The inductive hypothesis in an inductive proof is:,3,3,0.687,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.687,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.687,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q3,The inductive hypothesis in an inductive proof is:,3,3,0.686,low
+q1,What does the base case in an inductive proof establish?,3,1,q6,What is the first step in writing a proof by induction?,4,6,0.686,low
+q2,"In the inductive step, what must be shown?",3,2,q6,What is the first step in writing a proof by induction?,4,6,0.686,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.685,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q1,What does the base case in an inductive proof establish?,3,1,0.684,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.684,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.684,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.683,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.683,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.682,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q1,What does the base case in an inductive proof establish?,3,1,0.681,low
+q2,"In the inductive step, what must be shown?",3,2,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.681,low
+q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,q6,What is the first step in writing a proof by induction?,4,6,0.68,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.679,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.678,low
+q1,What does the base case in an inductive proof establish?,3,1,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.678,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.677,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.676,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.674,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.673,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,0.673,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q3,The inductive hypothesis in an inductive proof is:,3,3,0.673,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.673,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.673,low
+q1,What does the base case in an inductive proof establish?,3,1,q2,"In the inductive step, what must be shown?",3,2,0.673,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,0.671,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q6,What is the first step in writing a proof by induction?,4,6,0.671,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.67,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.667,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.666,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.666,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.665,low
+q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.665,low
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q6,What is the first step in writing a proof by induction?,4,6,0.663,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q6,What is the first step in writing a proof by induction?,4,6,0.661,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.661,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.661,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.66,low
+q1,What does the base case prove in a proof by mathematical induction?,4,1,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.659,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.658,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.657,low
+q2,"In the inductive step, what must be shown?",3,2,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.657,low
+q2,"In the inductive step, what must be shown?",3,2,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.655,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.654,low
+q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,q6,What is the first step in writing a proof by induction?,4,6,0.653,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.652,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.649,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q3,What is called the inductive hypothesis in an inductive proof?,2,3,0.649,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q2,"In the inductive step, what must be shown to prove the theorem?",2,2,0.649,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.648,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,0.647,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.647,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.647,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.647,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.647,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.645,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.645,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.641,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,0.64,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q6,What is the first step in writing a proof by induction?,4,6,0.64,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q2,"In the inductive step, what must be shown?",3,2,0.639,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.636,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.635,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q6,What is the first step in writing a proof by induction?,4,6,0.635,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.634,low
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.634,low
+q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.634,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.633,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.63,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.629,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.629,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,0.628,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,0.627,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q6,What is the first step in writing a proof by induction?,4,6,0.627,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q6,What is the first step in writing a proof by induction?,4,6,0.627,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.627,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.627,low
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.627,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q2,"In the inductive step, what must be shown?",3,2,0.625,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,0.623,low
+q1,What does the base case in an inductive proof establish?,3,1,q3,The inductive hypothesis in an inductive proof is:,3,3,0.623,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q2,"In the inductive step, what must be shown?",3,2,0.622,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.622,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.622,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q6,What is the first step in writing a proof by induction?,4,6,0.621,low
+q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.621,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.62,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q1,What does the base case in an inductive proof establish?,3,1,0.62,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.62,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.619,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.619,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q6,What is the first step in writing a proof by induction?,4,6,0.619,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.618,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.617,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q3,The inductive hypothesis in an inductive proof is:,3,3,0.617,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.617,low
+q1,What does the base case in an inductive proof establish?,3,1,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.616,low
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.615,low
+q1,What does the base case in an inductive proof establish?,3,1,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.614,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q2,"In the inductive step, what must be shown?",3,2,0.613,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.613,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.612,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q6,What is the first step in writing a proof by induction?,4,6,0.61,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.61,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,0.609,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.608,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q6,What is the first step in writing a proof by induction?,4,6,0.608,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.607,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.607,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.606,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q2,"In the inductive step, what must be shown?",3,2,0.606,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,0.605,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.604,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.603,low
+q1,What does the base case prove in a proof by mathematical induction?,4,1,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.603,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q2,"In the inductive step, what must be shown?",3,2,0.6,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.599,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.597,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,0.597,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.597,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.597,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.595,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,0.593,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.593,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,0.592,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.59,low
+q2,"In the inductive step, what must be shown?",3,2,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.59,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,0.588,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.585,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q2,"In the inductive step, what must be shown?",3,2,0.584,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q1,What does the base case in an inductive proof establish?,3,1,0.584,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.584,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.583,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.583,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.582,low
+q1,What does the base case in an inductive proof establish?,3,1,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.578,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.576,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q1,What does the base case in an inductive proof establish?,3,1,0.572,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.572,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.572,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.57,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.568,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q3,The inductive hypothesis in an inductive proof is:,3,3,0.567,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.567,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.566,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.565,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.565,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q3,The inductive hypothesis in an inductive proof is:,3,3,0.564,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.562,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q1,What does the base case prove in a proof by mathematical induction?,2,1,0.56,low
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.555,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.551,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.55,low
+q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.55,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q3,The inductive hypothesis in an inductive proof is:,3,3,0.542,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q2,"In the inductive step, what must be shown?",3,2,0.542,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,0.541,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.54,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q3,The inductive hypothesis in an inductive proof is:,3,3,0.54,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.54,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.538,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.536,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.534,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.532,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,0.528,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.527,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.527,low
+q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.525,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q3,The inductive hypothesis in an inductive proof is:,3,3,0.524,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q3,The inductive hypothesis in an inductive proof is:,3,3,0.522,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.521,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,0.519,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,0.517,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,0.517,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.516,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.514,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.512,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.506,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.506,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.504,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.504,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.503,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.502,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.5,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q2,"In the inductive step, what must be shown?",3,2,0.5,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.498,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.496,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.496,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.495,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q1,What does the base case in an inductive proof establish?,3,1,0.494,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.493,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.489,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.489,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.488,low
+q2,"In the inductive step, what must be shown?",3,2,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.487,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.482,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.481,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.474,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.474,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.472,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.472,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.472,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.471,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q6,What is the first step in writing a proof by induction?,4,6,0.471,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,0.469,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.464,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.463,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.462,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.462,low
+q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.462,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.459,low
+q3,The inductive hypothesis in an inductive proof is:,3,3,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.459,low
+q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.459,low
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,3,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.458,low
+q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.456,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q3,The inductive hypothesis in an inductive proof is:,3,3,0.455,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.454,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.452,low
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,6,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.449,low
+q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,q6,What is the first step in writing a proof by induction?,4,6,0.448,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.447,low
+q1,What does the base case prove in a proof by mathematical induction?,4,1,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.445,low
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,4,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.442,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,7,0.442,low
+q6,Why is the inductive step considered an infinite sequence of implications?,3,6,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.44,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,5,0.438,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q6,What is the first step in writing a proof by induction?,4,6,0.435,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.435,low
+q2,"In the inductive step, what must be shown?",3,2,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.43,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q6,Why is the inductive step considered an infinite sequence of implications?,3,6,0.43,low
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.426,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.425,low
+q3,What is called the inductive hypothesis in an inductive proof?,2,3,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.419,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q1,What does the base case prove in a proof by mathematical induction?,4,1,0.414,low
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,7,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.41,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,7,0.4,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,0.399,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.398,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.397,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,2,0.393,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,3,0.391,low
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,q6,What is the first step in writing a proof by induction?,4,6,0.384,low
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,2,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.378,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.378,low
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,5,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.375,low
+q1,What does the base case in an inductive proof establish?,3,1,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.375,low
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,5,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.373,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.367,low
+q2,"In the inductive step, what must be shown to prove the theorem?",2,2,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.365,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.354,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.354,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q1,What does the base case in an inductive proof establish?,3,1,0.347,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.345,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q4,The principle of mathematical induction allows proving a statement for:,3,4,0.341,low
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,7,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.34,low
+q1,What does the base case in an inductive proof establish?,3,1,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.335,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.332,low
+q4,The principle of mathematical induction allows proving a statement for:,3,4,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.332,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,5,0.328,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.324,low
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,q6,Why does mathematical induction require both the base case and the inductive step?,2,6,0.323,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,4,0.32,low
+q1,What does the base case prove in a proof by mathematical induction?,2,1,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.319,low
+q6,Why does mathematical induction require both the base case and the inductive step?,2,6,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.311,low
+q1,What does the base case prove in a mathematical induction proof?,1,1,q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,4,0.302,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use terminology associated with mathematical induction  
+Identify the components of an inductive proof, including the base case and inductive step  
+Understand the structure and format of inductive proofs  
+Write and construct inductive proofs for theorems involving summations and algebraic inequalities  
+Apply mathematical induction to prove identities and inequalities for sequences and series"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the base case prove in a mathematical induction proof?,1,yes,"This question assesses knowledge of the base case component in an inductive proof, aligning with learning objective 2."
+q2,"In the inductive step, what is assumed to prove the statement for \(k+1\)?",1,yes,"This question evaluates understanding of the inductive step assumption, directly related to learning objective 2."
+q3,The inductive hypothesis in the statement “\(S(k)\) implies \(S(k+1)\)” is:,1,yes,"This question tests identification of the inductive hypothesis, part of the components of an inductive proof in learning objective 2."
+q4,"If a theorem claims \(P(n)\) is true for all positive integers \(n\), what is typically the base case?",1,yes,"This question checks understanding of the typical base case in induction, linked to learning objective 2."
+q5,What does the principle of mathematical induction guarantee if the base case and inductive step hold?,1,yes,"This question assesses comprehension of the principle of mathematical induction and its guarantee, related to learning objective 1 and 2."
+q6,"In an inductive proof of a summation formula, what is the purpose of expressing \(P(k+1)\)?",1,yes,"This question evaluates the purpose of expressing \(P(k+1)\) in summation proofs, aligning with learning objectives 3 and 4."
+q7,Why might the base case start at a value \(c\) other than 1 in some induction proofs?,1,yes,"This question addresses why the base case might start at a value other than 1, related to understanding the structure of inductive proofs in learning objective 3."
+q1,What does the base case prove in a proof by mathematical induction?,2,yes,"This question assesses the role of the base case in induction, matching learning objective 2."
+q2,"In the inductive step, what must be shown to prove the theorem?",2,yes,"This question evaluates what must be shown in the inductive step, aligned with learning objective 2."
+q3,What is called the inductive hypothesis in an inductive proof?,2,yes,"This question tests identification of the inductive hypothesis, part of learning objective 2."
+q4,Which expression represents \(P(k+1)\) if \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\)?,2,yes,"This question assesses understanding of expressing \(P(k+1)\) in a summation formula, related to learning objectives 3 and 4."
+q5,"In the example with Amal's wishes, what does the inductive step illustrate?",2,yes,"This question evaluates the inductive step illustration in a specific example, linked to learning objectives 2 and 5."
+q6,Why does mathematical induction require both the base case and the inductive step?,2,yes,"This question assesses why both base case and inductive step are required, related to learning objectives 1 and 2."
+q7,"The principle of mathematical induction states that if \(S(1)\) is true and \(S(k)\) implies \(S(k+1)\), then:",2,yes,"This question tests understanding of the principle of mathematical induction, matching learning objective 1."
+q1,What does the base case in an inductive proof establish?,3,yes,"This question evaluates what the base case establishes in induction, aligned with learning objective 2."
+q2,"In the inductive step, what must be shown?",3,yes,"This question assesses what must be shown in the inductive step, related to learning objective 2."
+q3,The inductive hypothesis in an inductive proof is:,3,yes,"This question tests identification of the inductive hypothesis, part of learning objective 2."
+q4,The principle of mathematical induction allows proving a statement for:,3,yes,"This question evaluates understanding of the scope of induction proofs, linked to learning objective 3."
+q5,"In the example \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is \(P(3)\)?",3,yes,"This question assesses ability to write and interpret inductive statements involving summations, related to learning objective 4."
+q6,Why is the inductive step considered an infinite sequence of implications?,3,yes,"This question tests understanding of the inductive step as an infinite sequence of implications, aligned with learning objective 3."
+q7,"When the base case is for \(n = c\) where \(c > 1\), what changes in the proof?",3,yes,"This question evaluates understanding of changes when the base case starts at \(n=c > 1\), related to learning objective 3."
+q1,What does the base case prove in a proof by mathematical induction?,4,yes,"This question assesses the role of the base case in induction, matching learning objective 2."
+q2,"In the inductive step, what must be shown to prove a statement for all positive integers?",4,yes,"This question evaluates what must be shown in the inductive step for all positive integers, related to learning objective 2."
+q3,The assumption that \(P(k)\) is true in the inductive step is called the _____.,4,yes,"This question tests identification of the inductive hypothesis, part of learning objective 2."
+q4,"In the formula \(P(n): \sum_{j=1}^n j = \frac{n(n+1)}{2}\), what is the expression for \(P(k+1)\)?",4,yes,"This question assesses expressing \(P(k+1)\) in a summation formula, linked to learning objectives 3 and 4."
+q5,Why is the principle of mathematical induction valid for proving statements about positive integers?,4,yes,"This question evaluates why induction is valid for positive integers, related to learning objectives 1 and 2."
+q6,What is the first step in writing a proof by induction?,4,yes,"This question assesses knowledge of the first step in writing an inductive proof, aligned with learning objective 3."
+q7,"In proving inequalities by induction, the inductive step must show that if the inequality holds for \(k\), then it also holds for _____.",4,yes,"This question tests applying induction to inequalities, matching learning objective 5."

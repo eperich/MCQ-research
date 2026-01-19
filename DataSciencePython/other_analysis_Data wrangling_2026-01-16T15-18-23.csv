@@ -1,0 +1,174 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,4,0,0
+2,4,0,0
+3,4,0,0
+4,4,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,2,16
+1,3,2,2,16
+1,4,2,1,16
+2,3,2,1,16
+2,4,3,0,16
+3,4,2,2,16
+
+Summary
+Total Comparisons,120
+Duplicates (≥85%),12
+Similar (70-85%),8
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.968,duplicate
+q3,How does ETL differ from data wrangling in typical usage?,3,3,q3,How does ETL differ from data wrangling?,4,3,0.955,duplicate
+q3,How does ETL differ from data wrangling?,2,3,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.952,duplicate
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q3,How does ETL differ from data wrangling?,4,3,0.95,duplicate
+q3,How does ETL differ from data wrangling?,2,3,q3,How does ETL differ from data wrangling?,4,3,0.942,duplicate
+q2,Which step in data wrangling standardizes formats and units?,2,2,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.94,duplicate
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q3,How does ETL differ from data wrangling?,2,3,0.939,duplicate
+q4,"In pandas, which method imports data from a CSV file?",1,4,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.914,duplicate
+q2,Which data wrangling step standardizes feature formats and units?,3,2,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.911,duplicate
+q2,Which step in data wrangling standardizes formats and units?,2,2,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.902,duplicate
+q1,Data wrangling primarily exists to _____.,2,1,q1,Data wrangling primarily exists to _____.,4,1,0.875,duplicate
+q4,"In pandas, which method imports data from a CSV file?",1,4,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.863,duplicate
+q1,Data wrangling is primarily performed to _____.,1,1,q1,Data wrangling primarily exists to _____.,4,1,0.816,similar
+q1,Data wrangling is primarily performed to _____.,1,1,q1,Data wrangling primarily exists to _____.,2,1,0.806,similar
+q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.804,similar
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q2,Which step in data wrangling standardizes formats and units?,2,2,0.775,similar
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.773,similar
+q1,What is the primary purpose of data wrangling?,3,1,q1,Data wrangling primarily exists to _____.,4,1,0.748,similar
+q1,Data wrangling primarily exists to _____.,2,1,q1,What is the primary purpose of data wrangling?,3,1,0.74,similar
+q1,Data wrangling is primarily performed to _____.,1,1,q1,What is the primary purpose of data wrangling?,3,1,0.732,similar
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.691,low
+q1,Data wrangling primarily exists to _____.,4,1,q3,How does ETL differ from data wrangling?,4,3,0.643,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q1,Data wrangling primarily exists to _____.,4,1,0.633,low
+q3,How does ETL differ from data wrangling?,2,3,q1,Data wrangling primarily exists to _____.,4,1,0.619,low
+q3,How does ETL differ from data wrangling in typical usage?,3,3,q1,Data wrangling primarily exists to _____.,4,1,0.614,low
+q1,Data wrangling primarily exists to _____.,2,1,q3,How does ETL differ from data wrangling?,4,3,0.606,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q1,Data wrangling primarily exists to _____.,2,1,0.582,low
+q1,What is the primary purpose of data wrangling?,3,1,q3,How does ETL differ from data wrangling?,4,3,0.575,low
+q1,Data wrangling primarily exists to _____.,2,1,q3,How does ETL differ from data wrangling?,2,3,0.568,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q1,What is the primary purpose of data wrangling?,3,1,0.562,low
+q1,Data wrangling primarily exists to _____.,2,1,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.56,low
+q1,What is the primary purpose of data wrangling?,3,1,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.555,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q1,Data wrangling primarily exists to _____.,4,1,0.548,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q1,Data wrangling primarily exists to _____.,2,1,0.546,low
+q3,How does ETL differ from data wrangling?,2,3,q1,What is the primary purpose of data wrangling?,3,1,0.54,low
+q1,Data wrangling is primarily performed to _____.,1,1,q3,How does ETL differ from data wrangling?,4,3,0.519,low
+q1,Data wrangling primarily exists to _____.,2,1,q2,Which step in data wrangling standardizes formats and units?,2,2,0.514,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q1,Data wrangling primarily exists to _____.,4,1,0.511,low
+q1,Data wrangling primarily exists to _____.,2,1,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.509,low
+q2,Which data wrangling step standardizes feature formats and units?,3,2,q1,Data wrangling primarily exists to _____.,4,1,0.508,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q3,How does ETL differ from data wrangling?,2,3,0.5,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q1,What is the primary purpose of data wrangling?,3,1,0.499,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q2,Which step in data wrangling standardizes formats and units?,2,2,0.496,low
+q1,Data wrangling is primarily performed to _____.,1,1,q3,How does ETL differ from data wrangling in typical usage?,1,3,0.492,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q3,How does ETL differ from data wrangling?,4,3,0.492,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.492,low
+q1,What is the primary purpose of data wrangling?,3,1,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.491,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q3,How does ETL differ from data wrangling?,4,3,0.489,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q3,How does ETL differ from data wrangling?,2,3,0.488,low
+q1,Data wrangling is primarily performed to _____.,1,1,q2,Which step in data wrangling standardizes formats and units?,2,2,0.487,low
+q1,Data wrangling is primarily performed to _____.,1,1,q3,How does ETL differ from data wrangling?,2,3,0.487,low
+q3,How does ETL differ from data wrangling?,2,3,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.483,low
+q1,Data wrangling is primarily performed to _____.,1,1,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.482,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q1,What is the primary purpose of data wrangling?,3,1,0.481,low
+q1,Data wrangling is primarily performed to _____.,1,1,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.48,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.474,low
+q1,Data wrangling is primarily performed to _____.,1,1,q2,Which data wrangling step involves removing or replacing missing values?,1,2,0.473,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.472,low
+q2,Which data wrangling step standardizes feature formats and units?,3,2,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.472,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q3,How does ETL differ from data wrangling in typical usage?,1,3,0.47,low
+q2,Which data wrangling step standardizes feature formats and units?,3,2,q3,How does ETL differ from data wrangling?,4,3,0.47,low
+q1,Data wrangling primarily exists to _____.,2,1,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.469,low
+q1,Data wrangling primarily exists to _____.,4,1,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.464,low
+q1,What is the primary purpose of data wrangling?,3,1,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.451,low
+q1,Data wrangling is primarily performed to _____.,1,1,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.441,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.437,low
+q3,How does ETL differ from data wrangling?,2,3,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.435,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.429,low
+q2,Which step in data wrangling standardizes feature formats and units?,4,2,q3,How does ETL differ from data wrangling?,4,3,0.427,low
+q3,How does ETL differ from data wrangling in typical usage?,3,3,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.425,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q4,"In pandas, what does the DataFrame index represent?",2,4,0.405,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.389,low
+q1,Data wrangling primarily exists to _____.,2,1,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.351,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q1,Data wrangling primarily exists to _____.,2,1,0.341,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q1,Data wrangling primarily exists to _____.,4,1,0.326,low
+q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,q1,Data wrangling primarily exists to _____.,4,1,0.324,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.318,low
+q1,Data wrangling primarily exists to _____.,2,1,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.312,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q1,What is the primary purpose of data wrangling?,3,1,0.307,low
+q1,What is the primary purpose of data wrangling?,3,1,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.301,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q4,"In pandas, which method imports data from a CSV file?",1,4,0.295,low
+q1,Data wrangling primarily exists to _____.,4,1,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.295,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q1,What is the primary purpose of data wrangling?,3,1,0.283,low
+q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,q3,How does ETL differ from data wrangling?,4,3,0.282,low
+q1,Data wrangling is primarily performed to _____.,1,1,q4,"In pandas, which method imports data from a CSV file?",1,4,0.274,low
+q1,Data wrangling is primarily performed to _____.,1,1,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.274,low
+q1,What is the primary purpose of data wrangling?,3,1,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.272,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.271,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.269,low
+q3,How does ETL differ from data wrangling in typical usage?,3,3,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.268,low
+q1,Data wrangling is primarily performed to _____.,1,1,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.266,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q3,How does ETL differ from data wrangling?,4,3,0.266,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q2,Which data wrangling step standardizes feature formats and units?,3,2,0.265,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q4,"In pandas, which method imports data from a CSV file?",1,4,0.262,low
+q2,Which data wrangling step standardizes feature formats and units?,3,2,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.257,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.256,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.255,low
+q2,Which data wrangling step standardizes feature formats and units?,3,2,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.253,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.25,low
+q3,How does ETL differ from data wrangling?,2,3,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.25,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q2,Which step in data wrangling standardizes formats and units?,2,2,0.249,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q3,How does ETL differ from data wrangling?,2,3,0.246,low
+q3,How does ETL differ from data wrangling?,4,3,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.243,low
+q3,How does ETL differ from data wrangling in typical usage?,1,3,q4,"In pandas, what does the DataFrame index represent?",2,4,0.24,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q4,"In pandas, what does the DataFrame index represent?",2,4,0.236,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,0.236,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q1,Data wrangling primarily exists to _____.,4,1,0.234,low
+q2,Which step in data wrangling standardizes formats and units?,2,2,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.233,low
+q1,Data wrangling primarily exists to _____.,2,1,q4,"In pandas, what does the DataFrame index represent?",2,4,0.232,low
+q4,"In pandas, which method imports data from a CSV file?",1,4,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.228,low
+q3,How does ETL differ from data wrangling in typical usage?,3,3,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.228,low
+q1,Data wrangling is primarily performed to _____.,1,1,q4,"In pandas, what does the DataFrame index represent?",2,4,0.223,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q3,How does ETL differ from data wrangling?,4,3,0.223,low
+q2,Which step in data wrangling standardizes feature formats and units?,4,2,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.223,low
+q3,How does ETL differ from data wrangling?,2,3,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.221,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,4,0.22,low
+q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,4,q2,Which step in data wrangling standardizes feature formats and units?,4,2,0.22,low
+q3,How does ETL differ from data wrangling?,2,3,q4,"In pandas, what does the DataFrame index represent?",2,4,0.209,low
+q4,"In pandas, what does the DataFrame index represent?",2,4,q3,How does ETL differ from data wrangling in typical usage?,3,3,0.209,low
+q2,Which data wrangling step involves removing or replacing missing values?,1,2,q4,"In pandas, what does the DataFrame index represent?",2,4,0.207,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define data wrangling and describe its purpose in data analysis  
+List and explain the six steps of the data wrangling process  
+Compare and contrast data wrangling with the ETL (Extract, Transform, Load) process  
+Use pandas in Python to construct and manipulate dataframes for data wrangling tasks  
+Apply key dplyr functions in R for data wrangling on tidy dataframes"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Data wrangling is primarily performed to _____.,1,yes,"This question assesses the definition and purpose of data wrangling, directly addressing the first learning objective."
+q2,Which data wrangling step involves removing or replacing missing values?,1,yes,"This question evaluates knowledge of the specific data wrangling step involving cleaning, which relates to the second learning objective."
+q3,How does ETL differ from data wrangling in typical usage?,1,yes,"This question compares data wrangling with ETL, directly addressing the third learning objective."
+q4,"In pandas, which method imports data from a CSV file?",1,yes,"This question tests the use of pandas in Python to import data, aligning with the fourth learning objective."
+q1,Data wrangling primarily exists to _____.,2,yes,"This question assesses the primary purpose of data wrangling, linked to the first learning objective."
+q2,Which step in data wrangling standardizes formats and units?,2,yes,"This question evaluates understanding of the data wrangling step that standardizes formats and units, related to the second learning objective."
+q3,How does ETL differ from data wrangling?,2,yes,"This question compares ETL and data wrangling processes, addressing the third learning objective."
+q4,"In pandas, what does the DataFrame index represent?",2,no,"This question focuses on pandas DataFrame index concepts, which is not explicitly covered in the learning objectives."
+q1,What is the primary purpose of data wrangling?,3,yes,"This question assesses the primary purpose of data wrangling, aligned with the first learning objective."
+q2,Which data wrangling step standardizes feature formats and units?,3,yes,"This question tests knowledge of the data wrangling step for standardizing formats and units, related to the second learning objective."
+q3,How does ETL differ from data wrangling in typical usage?,3,yes,"This question compares ETL and data wrangling, addressing the third learning objective."
+q4,"In pandas, which method loads data from a CSV file into a dataframe?",3,yes,"This question assesses pandas method for loading CSV data into a dataframe, aligned with the fourth learning objective."
+q1,Data wrangling primarily exists to _____.,4,yes,"This question evaluates the primary purpose of data wrangling, linked to the first learning objective."
+q2,Which step in data wrangling standardizes feature formats and units?,4,yes,"This question tests understanding of the data wrangling step that standardizes formats and units, related to the second learning objective."
+q3,How does ETL differ from data wrangling?,4,yes,"This question compares ETL and data wrangling, addressing the third learning objective."
+q4,"In pandas, which method imports data from a CSV file into a dataframe?",4,yes,"This question assesses the pandas method for importing CSV data, aligned with the fourth learning objective."

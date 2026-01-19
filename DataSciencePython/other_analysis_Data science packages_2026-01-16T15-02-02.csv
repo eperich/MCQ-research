@@ -1,0 +1,248 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,5,0,0
+2,5,0,0
+3,5,0,0
+4,5,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,2,25
+1,3,2,0,25
+1,4,3,2,25
+2,3,1,1,25
+2,4,1,2,25
+3,4,2,1,25
+
+Summary
+Total Comparisons,190
+Duplicates (≥85%),10
+Similar (70-85%),8
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,Which command imports the function read_csv from pandas?,1,2,q4,Which command imports the function read_csv from the pandas package?,3,4,0.985,duplicate
+q2,Which command imports the function read_csv from pandas?,1,2,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.963,duplicate
+q4,Which command imports the function read_csv from the pandas package?,3,4,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.962,duplicate
+q4,Which package is best for creating data visualizations in Python?,1,4,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.908,duplicate
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.906,duplicate
+q4,Which package is best for creating data visualizations in Python?,1,4,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.891,duplicate
+q4,Which package is best for creating data visualizations in Python?,1,4,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.885,duplicate
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.882,duplicate
+q5,Which Python package is best suited to create and customize data visualizations?,3,5,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.871,duplicate
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.864,duplicate
+q1,What is the purpose of aliasing a Python package during import?,2,1,q5,Why do users use aliases when importing packages in Python?,4,5,0.825,similar
+q5,Why use an alias when importing a package?,1,5,q5,Why do users use aliases when importing packages in Python?,4,5,0.824,similar
+q5,Why use an alias when importing a package?,1,5,q1,What is the purpose of aliasing a Python package during import?,2,1,0.823,similar
+q3,The role of a package manager is to _____.,1,3,q2,A package manager is used to _____.,2,2,0.81,similar
+q3,The role of a package manager is to _____.,1,3,q3,What is the role of a package manager like pip in Python?,4,3,0.769,similar
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q3,What is the role of a package manager like pip in Python?,4,3,0.763,similar
+q2,A package manager is used to _____.,2,2,q3,What is the role of a package manager like pip in Python?,4,3,0.716,similar
+q2,A package manager is used to _____.,2,2,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.705,similar
+q3,The role of a package manager is to _____.,1,3,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.643,low
+q1,What does a Python package primarily provide?,3,1,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.623,low
+q1,What does a Python package primarily provide?,3,1,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.623,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q1,What does a Python package primarily provide?,3,1,0.616,low
+q1,What does a Python package primarily provide?,3,1,q3,What is the role of a package manager like pip in Python?,4,3,0.601,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q2,How does the Python interpreter find a package during import?,3,2,0.59,low
+q2,A package manager is used to _____.,2,2,q1,What does a Python package primarily provide?,3,1,0.587,low
+q3,The role of a package manager is to _____.,1,3,q1,What does a Python package primarily provide?,3,1,0.575,low
+q2,A package manager is used to _____.,2,2,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.57,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q2,A package manager is used to _____.,2,2,0.566,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q3,What is the role of a package manager like pip in Python?,4,3,0.551,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q4,Which command imports the function read_csv from the pandas package?,3,4,0.543,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.539,low
+q2,Which command imports the function read_csv from pandas?,1,2,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.538,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q5,Why do users use aliases when importing packages in Python?,4,5,0.53,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.526,low
+q2,A package manager is used to _____.,2,2,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.524,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q1,What does a Python package primarily provide?,3,1,0.522,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.517,low
+q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,q3,What is the role of a package manager like pip in Python?,4,3,0.512,low
+q3,The role of a package manager is to _____.,1,3,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.509,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q3,The role of a package manager is to _____.,1,3,0.505,low
+q3,The role of a package manager is to _____.,1,3,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.501,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.497,low
+q2,How does the Python interpreter find a package during import?,3,2,q3,What is the role of a package manager like pip in Python?,4,3,0.492,low
+q1,What does a Python package primarily provide?,3,1,q2,How does the Python interpreter find a package during import?,3,2,0.491,low
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.479,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q3,What is the role of a package manager like pip in Python?,4,3,0.473,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q2,How does the Python interpreter find a package during import?,3,2,0.473,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.468,low
+q2,How does the Python interpreter find a package during import?,3,2,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.467,low
+q2,How does the Python interpreter find a package during import?,3,2,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.463,low
+q1,What does a Python package primarily provide?,3,1,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.461,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q2,A package manager is used to _____.,2,2,0.457,low
+q5,Why use an alias when importing a package?,1,5,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.451,low
+q2,A package manager is used to _____.,2,2,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.45,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q1,What does a Python package primarily provide?,3,1,0.448,low
+q1,What does a Python package primarily provide?,3,1,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.447,low
+q2,A package manager is used to _____.,2,2,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.446,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.445,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q2,A package manager is used to _____.,2,2,0.441,low
+q2,A package manager is used to _____.,2,2,q2,How does the Python interpreter find a package during import?,3,2,0.436,low
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q5,Why do users use aliases when importing packages in Python?,4,5,0.436,low
+q2,How does the Python interpreter find a package during import?,3,2,q5,Why do users use aliases when importing packages in Python?,4,5,0.433,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.429,low
+q3,The role of a package manager is to _____.,1,3,q2,How does the Python interpreter find a package during import?,3,2,0.428,low
+q2,A package manager is used to _____.,2,2,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.426,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q3,What is the role of a package manager like pip in Python?,4,3,0.425,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q1,What does a Python package primarily provide?,3,1,0.421,low
+q2,How does the Python interpreter find a package during import?,3,2,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.42,low
+q3,The role of a package manager is to _____.,1,3,q1,What is the purpose of aliasing a Python package during import?,2,1,0.419,low
+q2,A package manager is used to _____.,2,2,q5,Why do users use aliases when importing packages in Python?,4,5,0.417,low
+q2,How does the Python interpreter find a package during import?,3,2,q4,Which command imports the function read_csv from the pandas package?,3,4,0.412,low
+q5,Why use an alias when importing a package?,1,5,q2,A package manager is used to _____.,2,2,0.407,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q1,What does a Python package primarily provide?,3,1,0.405,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q2,How does the Python interpreter find a package during import?,3,2,0.4,low
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.397,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.396,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.395,low
+q3,What is the role of a package manager like pip in Python?,4,3,q5,Why do users use aliases when importing packages in Python?,4,5,0.394,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.393,low
+q2,Which command imports the function read_csv from pandas?,1,2,q2,How does the Python interpreter find a package during import?,3,2,0.392,low
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.39,low
+q5,Why use an alias when importing a package?,1,5,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.383,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q4,Which command imports the function read_csv from the pandas package?,3,4,0.377,low
+q1,What does a Python package primarily provide?,3,1,q5,Why do users use aliases when importing packages in Python?,4,5,0.377,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q1,What is the purpose of aliasing a Python package during import?,2,1,0.374,low
+q3,What is the role of a package manager like pip in Python?,4,3,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.372,low
+q2,Which command imports the function read_csv from pandas?,1,2,q1,What is the purpose of aliasing a Python package during import?,2,1,0.369,low
+q3,The role of a package manager is to _____.,1,3,q5,Why do users use aliases when importing packages in Python?,4,5,0.366,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q3,What is the role of a package manager like pip in Python?,4,3,0.362,low
+q5,Which Python package is best suited to create and customize data visualizations?,3,5,q3,What is the role of a package manager like pip in Python?,4,3,0.359,low
+q2,Which command imports the function read_csv directly from the pandas package?,4,2,q5,Why do users use aliases when importing packages in Python?,4,5,0.357,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.351,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.349,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.345,low
+q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,q5,Why do users use aliases when importing packages in Python?,4,5,0.345,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.344,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.344,low
+q5,Why use an alias when importing a package?,1,5,q2,How does the Python interpreter find a package during import?,3,2,0.342,low
+q3,The role of a package manager is to _____.,1,3,q5,Why use an alias when importing a package?,1,5,0.338,low
+q5,Why use an alias when importing a package?,1,5,q3,What is the role of a package manager like pip in Python?,4,3,0.338,low
+q4,Which command imports the function read_csv from the pandas package?,3,4,q5,Why do users use aliases when importing packages in Python?,4,5,0.338,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q4,Which package is best for creating data visualizations in Python?,1,4,0.337,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.336,low
+q2,Which command imports the function read_csv from pandas?,1,2,q4,Which package is best for creating data visualizations in Python?,1,4,0.336,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.336,low
+q2,Which command imports the function read_csv from pandas?,1,2,q5,Why do users use aliases when importing packages in Python?,4,5,0.335,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q5,Why do users use aliases when importing packages in Python?,4,5,0.335,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.334,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.334,low
+q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.333,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q4,Which command imports the function read_csv from the pandas package?,3,4,0.331,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.329,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q5,Why do users use aliases when importing packages in Python?,4,5,0.327,low
+q2,Which command imports the function read_csv from pandas?,1,2,q4,Why must some packages be installed separately from the Python interpreter?,2,4,0.326,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q2,How does the Python interpreter find a package during import?,3,2,0.324,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q4,Which command imports the function read_csv from the pandas package?,3,4,0.322,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.322,low
+q5,Which Python package is best suited to create and customize data visualizations?,3,5,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.322,low
+q4,Why must some packages be installed separately from the Python interpreter?,2,4,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.32,low
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.319,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.318,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q3,What is the role of a package manager like pip in Python?,4,3,0.317,low
+q2,Which command imports the function read_csv directly from the pandas package?,4,2,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.314,low
+q5,Why use an alias when importing a package?,1,5,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.313,low
+q2,Which command imports the function read_csv from pandas?,1,2,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.312,low
+q3,The role of a package manager is to _____.,1,3,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.311,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.311,low
+q3,The role of a package manager is to _____.,1,3,q4,Which package is best for creating data visualizations in Python?,1,4,0.309,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q4,Which command imports the function read_csv from the pandas package?,3,4,0.309,low
+q2,Which command imports the function read_csv from pandas?,1,2,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.307,low
+q3,The role of a package manager is to _____.,1,3,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.306,low
+q1,What does a Python package primarily provide?,3,1,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.306,low
+q4,Which command imports the function read_csv from the pandas package?,3,4,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.301,low
+q2,Which command imports the function read_csv directly from the pandas package?,4,2,q3,What is the role of a package manager like pip in Python?,4,3,0.3,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.298,low
+q5,Why use an alias when importing a package?,1,5,q4,Which command imports the function read_csv from the pandas package?,3,4,0.296,low
+q2,How does the Python interpreter find a package during import?,3,2,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.295,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q2,How does the Python interpreter find a package during import?,3,2,0.293,low
+q5,Why use an alias when importing a package?,1,5,q1,What does a Python package primarily provide?,3,1,0.291,low
+q3,What is the main purpose of a package manager like pip or conda?,3,3,q4,Which command imports the function read_csv from the pandas package?,3,4,0.291,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.289,low
+q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,q5,Why do users use aliases when importing packages in Python?,4,5,0.289,low
+q2,Which command imports the function read_csv from pandas?,1,2,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.287,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q5,Why do users use aliases when importing packages in Python?,4,5,0.287,low
+q5,Which Python package is best suited to create and customize data visualizations?,3,5,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.287,low
+q2,Which command imports the function read_csv from pandas?,1,2,q5,Why use an alias when importing a package?,1,5,0.285,low
+q2,Which command imports the function read_csv from pandas?,1,2,q3,What is the role of a package manager like pip in Python?,4,3,0.285,low
+q1,What does a Python package primarily provide?,3,1,q4,Which command imports the function read_csv from the pandas package?,3,4,0.285,low
+q4,Which command imports the function read_csv from the pandas package?,3,4,q3,What is the role of a package manager like pip in Python?,4,3,0.285,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q5,Why do users use aliases when importing packages in Python?,4,5,0.284,low
+q2,How does the Python interpreter find a package during import?,3,2,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.283,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.281,low
+q3,The role of a package manager is to _____.,1,3,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.279,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.279,low
+q4,Which command imports the function read_csv from the pandas package?,3,4,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.279,low
+q2,Which command imports the function read_csv from pandas?,1,2,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.278,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q1,What is the purpose of aliasing a Python package during import?,2,1,0.278,low
+q4,Which command imports the function read_csv from the pandas package?,3,4,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.278,low
+q2,Which command imports the function read_csv from pandas?,1,2,q1,What does a Python package primarily provide?,3,1,0.276,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.273,low
+q2,A package manager is used to _____.,2,2,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.272,low
+q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.268,low
+q5,Which Python package is best suited to create and customize data visualizations?,3,5,q5,Why do users use aliases when importing packages in Python?,4,5,0.266,low
+q2,Which command imports the function read_csv from pandas?,1,2,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.265,low
+q1,What is the purpose of aliasing a Python package during import?,2,1,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.265,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.263,low
+q2,A package manager is used to _____.,2,2,q4,Which command imports the function read_csv from the pandas package?,3,4,0.262,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q1,What does a Python package primarily provide?,3,1,0.262,low
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,q2,How does the Python interpreter find a package during import?,3,2,0.262,low
+q5,Why use an alias when importing a package?,1,5,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.258,low
+q2,Which command imports the function read_csv from pandas?,1,2,q2,A package manager is used to _____.,2,2,0.256,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.255,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q4,Which command imports the function read_csv from the pandas package?,3,4,0.253,low
+q3,The role of a package manager is to _____.,1,3,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.251,low
+q5,Why use an alias when importing a package?,1,5,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.251,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q5,Why use an alias when importing a package?,1,5,0.248,low
+q3,The role of a package manager is to _____.,1,3,q4,Which command imports the function read_csv from the pandas package?,3,4,0.247,low
+q2,Which command imports the function read_csv from pandas?,1,2,q3,The role of a package manager is to _____.,1,3,0.245,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q2,Which command imports the function read_csv directly from the pandas package?,4,2,0.24,low
+q2,A package manager is used to _____.,2,2,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.239,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q2,Which command imports the function read_csv from pandas?,1,2,0.238,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q3,What is the main purpose of a package manager like pip or conda?,3,3,0.237,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,1,0.225,low
+q3,The role of a package manager is to _____.,1,3,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.217,low
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,q3,What is the role of a package manager like pip in Python?,4,3,0.217,low
+q5,Why use an alias when importing a package?,1,5,q4,Which package is best suited for creating advanced data visualizations in Python?,4,4,0.215,low
+q5,Why use an alias when importing a package?,1,5,q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,5,0.212,low
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,1,q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,3,0.207,low
+q4,Which package is best for creating data visualizations in Python?,1,4,q5,Why use an alias when importing a package?,1,5,0.192,low
+q5,Why use an alias when importing a package?,1,5,q5,Which Python package is best suited to create and customize data visualizations?,3,5,0.17,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use Jupyter to import a package in Python.  
+Explain how to install a Python package.  
+Identify and compare common data science packages for Python.  
+Understand how Python loads packages and accesses functions within them.  
+Recognize the role of package managers and dependencies in Python package installation."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,"A Python _____ is a collection of related functions, classes, and objects.",1,yes,"This question assesses understanding of what a Python package is, aligning with learning objectives about packages and modules."
+q2,Which command imports the function read_csv from pandas?,1,yes,"This question evaluates the ability to import a function from a package in Python, directly related to using Jupyter to import packages."
+q3,The role of a package manager is to _____.,1,yes,"This question tests knowledge of the role of package managers, matching the learning objective about package managers and dependencies."
+q4,Which package is best for creating data visualizations in Python?,1,yes,"This question assesses identification of common data science packages for Python, directly linked to comparing data science packages."
+q5,Why use an alias when importing a package?,1,yes,"This question evaluates understanding of why aliases are used when importing packages, which relates to how Python loads packages and accesses functions."
+q1,What is the purpose of aliasing a Python package during import?,2,yes,"This question tests understanding of aliasing packages during import, connected to how Python loads packages and accesses functions."
+q2,A package manager is used to _____.,2,yes,"This question assesses the role of package managers in Python, aligning with the learning objective about package managers and dependencies."
+q3,Which command imports only the function StandardScaler from sklearn.preprocessing?,2,yes,"This question evaluates the ability to import specific functions from packages, related to using Jupyter to import packages and understanding package loading."
+q4,Why must some packages be installed separately from the Python interpreter?,2,yes,"This question tests understanding of why some packages must be installed separately, which relates to installing Python packages and package managers."
+q5,Which package is best for creating customized data visualizations using pandas DataFrames?,2,yes,"This question assesses knowledge of data visualization packages, linked to identifying and comparing common data science packages."
+q1,What does a Python package primarily provide?,3,yes,"This question evaluates understanding of what a Python package provides, aligned with learning objectives about packages and modules."
+q2,How does the Python interpreter find a package during import?,3,yes,"This question tests understanding of how Python finds packages during import, related to how Python loads packages and accesses functions."
+q3,What is the main purpose of a package manager like pip or conda?,3,yes,"This question assesses the main purpose of package managers, directly matching the learning objective about package managers and dependencies."
+q4,Which command imports the function read_csv from the pandas package?,3,yes,"This question evaluates the ability to import a function from a package, related to using Jupyter to import packages."
+q5,Which Python package is best suited to create and customize data visualizations?,3,yes,"This question tests knowledge of packages suited for data visualization, linked to identifying and comparing common data science packages."
+q1,A Python _____ is a collection of related functions and classes extending Python's capabilities.,4,yes,"This question assesses understanding of what a Python package is, aligned with learning objectives about packages and modules."
+q2,Which command imports the function read_csv directly from the pandas package?,4,yes,"This question evaluates the correct syntax for importing a function from a package, related to using Jupyter to import packages."
+q3,What is the role of a package manager like pip in Python?,4,yes,"This question tests the role of package managers like pip, matching the learning objective about package managers and dependencies."
+q4,Which package is best suited for creating advanced data visualizations in Python?,4,yes,"This question assesses identification of packages for advanced data visualization, linked to comparing common data science packages."
+q5,Why do users use aliases when importing packages in Python?,4,yes,"This question evaluates understanding of why aliases are used when importing packages, related to how Python loads packages and accesses functions."
