@@ -1,8 +1,8 @@
 Criterion,AI_Failures,AI_Total,AI_Failure_Rate_%,SME_Failures,SME_Total,SME_Failure_Rate_%,Difference_%
 Longest Answer Correct,175,1249,14.01,6,322,1.86,12.15
-Absolute Terms,128,1249,10.25,6,322,1.86,8.38
+Absolute Terms,127,1249,10.17,6,322,1.86,8.3
 Avoid Convergence Cues,112,1249,8.97,62,322,19.25,-10.29
-Word Repeats In Stem And Correct Answer,81,1249,6.49,4,322,1.24,5.24
+Word Repeats In Stem And Correct Answer,82,1249,6.57,4,322,1.24,5.32
 Implausible Distractors,70,1249,5.6,7,322,2.17,3.43
 Complex K Type,69,1249,5.52,62,322,19.25,-13.73
 Negative Worded Stem,58,1249,4.64,35,322,10.87,-6.23

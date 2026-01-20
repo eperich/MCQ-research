@@ -34,14 +34,23 @@ COLORS = {
 }
 
 # Ensure high contrast for accessibility
+# Publication-quality settings
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
 plt.rcParams['axes.edgecolor'] = '#000000'
 plt.rcParams['axes.labelcolor'] = '#000000'
 plt.rcParams['text.color'] = '#000000'
 plt.rcParams['xtick.color'] = '#000000'
 plt.rcParams['ytick.color'] = '#000000'
-plt.rcParams['font.size'] = 11
-plt.rcParams['axes.labelsize'] = 12
-plt.rcParams['axes.titlesize'] = 14
+plt.rcParams['font.size'] = 10
+plt.rcParams['axes.labelsize'] = 11
+plt.rcParams['axes.titlesize'] = 12
+plt.rcParams['axes.linewidth'] = 1.0
+plt.rcParams['xtick.major.width'] = 1.0
+plt.rcParams['ytick.major.width'] = 1.0
+plt.rcParams['legend.frameon'] = True
+plt.rcParams['legend.framealpha'] = 1.0
+plt.rcParams['legend.edgecolor'] = '#000000'
 
 class PromptConsistencyAnalyzer:
     """Analyze prompt consistency and within-run duplicate/similar question detection.
@@ -187,6 +196,96 @@ class PromptConsistencyAnalyzer:
             print(f"  Error reading {filepath.name}: {e}")
             return None
     
+    def export_data_tables(self, output_dir=None):
+        """Export all calculated data to CSV files for review."""
+        if output_dir is None:
+            output_dir = self.base_path
+        else:
+            output_dir = Path(output_dir)
+        
+        print("\n=== Exporting Data Tables ===")
+        
+        # 1. Overall summary statistics
+        overall_stats = {
+            'Total_Topics': len(self.data),
+            'Topics_With_Duplicates': self.data['has_within_run_duplicates'].sum(),
+            'Topics_With_Similar': self.data['has_within_run_similar'].sum(),
+            'Percent_With_Duplicates': round(self.data['has_within_run_duplicates'].sum() / len(self.data) * 100, 2),
+            'Percent_With_Similar': round(self.data['has_within_run_similar'].sum() / len(self.data) * 100, 2),
+            'Avg_Cross_Run_Consistency_%': round(self.data['cross_run_consistency_pct'].mean(), 2),
+            'Median_Cross_Run_Consistency_%': round(self.data['cross_run_consistency_pct'].median(), 2)
+        }
+        overall_df = pd.DataFrame([overall_stats])
+        overall_df.to_csv(output_dir / 'consistency_table_overall_summary.csv', index=False)
+        print("✓ Saved consistency_table_overall_summary.csv")
+        
+        # 2. Statistics by discipline
+        discipline_stats = []
+        for discipline in self.data['discipline'].unique():
+            disc_data = self.data[self.data['discipline'] == discipline]
+            discipline_stats.append({
+                'Discipline': discipline,
+                'Total_Topics': len(disc_data),
+                'Topics_With_Duplicates': disc_data['has_within_run_duplicates'].sum(),
+                'Topics_With_Similar': disc_data['has_within_run_similar'].sum(),
+                'Percent_With_Duplicates': round(disc_data['has_within_run_duplicates'].sum() / len(disc_data) * 100, 2),
+                'Percent_With_Similar': round(disc_data['has_within_run_similar'].sum() / len(disc_data) * 100, 2),
+                'Avg_Cross_Run_Consistency_%': round(disc_data['cross_run_consistency_pct'].mean(), 2),
+                'Median_Cross_Run_Consistency_%': round(disc_data['cross_run_consistency_pct'].median(), 2),
+                'Min_Cross_Run_Consistency_%': round(disc_data['cross_run_consistency_pct'].min(), 2),
+                'Max_Cross_Run_Consistency_%': round(disc_data['cross_run_consistency_pct'].max(), 2)
+            })
+        
+        discipline_df = pd.DataFrame(discipline_stats)
+        discipline_df.to_csv(output_dir / 'consistency_table_by_discipline.csv', index=False)
+        print("✓ Saved consistency_table_by_discipline.csv")
+        
+        # 3. Detailed by topic
+        topic_details = self.data[['discipline', 'topic', 'has_within_run_duplicates', 
+                                    'has_within_run_similar', 'within_run_duplicates',
+                                    'within_run_similar', 'cross_run_consistency_pct',
+                                    'cross_run_duplicate_pct', 'cross_run_similar_pct']].copy()
+        topic_details.columns = ['Discipline', 'Topic', 'Has_Duplicates', 'Has_Similar', 
+                                'Duplicate_Count', 'Similar_Count', 'Cross_Run_Consistency_%',
+                                'Cross_Run_Duplicate_%', 'Cross_Run_Similar_%']
+        topic_details = topic_details.sort_values(['Discipline', 'Topic'])
+        topic_details.to_csv(output_dir / 'consistency_table_by_topic.csv', index=False)
+        print("✓ Saved consistency_table_by_topic.csv")
+        
+        # 4. Topics with within-run problems
+        problem_topics = self.data[
+            (self.data['has_within_run_duplicates']) | (self.data['has_within_run_similar'])
+        ].copy()
+        problem_topics = problem_topics[['discipline', 'topic', 'within_run_duplicates',
+                                        'within_run_similar', 'runs_with_duplicates',
+                                        'runs_with_similar', 'cross_run_consistency_pct']]
+        problem_topics.columns = ['Discipline', 'Topic', 'Duplicate_Count', 'Similar_Count',
+                                  'Runs_With_Duplicates', 'Runs_With_Similar', 
+                                  'Cross_Run_Consistency_%']
+        problem_topics = problem_topics.sort_values('Duplicate_Count', ascending=False)
+        problem_topics.to_csv(output_dir / 'consistency_table_problem_topics.csv', index=False)
+        print("✓ Saved consistency_table_problem_topics.csv")
+        
+        # 5. Cross-run consistency rankings
+        consistency_rankings = self.data[['discipline', 'topic', 'cross_run_consistency_pct',
+                                         'cross_run_duplicate_pct', 'cross_run_similar_pct',
+                                         'cross_run_comparisons']].copy()
+        consistency_rankings.columns = ['Discipline', 'Topic', 'Consistency_%', 'Duplicate_%',
+                                       'Similar_%', 'Total_Comparisons']
+        consistency_rankings = consistency_rankings.sort_values('Consistency_%', ascending=False)
+        consistency_rankings.to_csv(output_dir / 'consistency_table_cross_run_rankings.csv', index=False)
+        print("✓ Saved consistency_table_cross_run_rankings.csv")
+        
+        print("\n✓ All data tables exported")
+        
+        return {
+            'overall': overall_df,
+            'by_discipline': discipline_df,
+            'by_topic': topic_details,
+            'problem_topics': problem_topics,
+            'consistency_rankings': consistency_rankings
+        }
+    
     def create_static_visualizations(self, output_dir=None):
         """Create all static visualizations."""
         if output_dir is None:
@@ -283,10 +382,11 @@ class PromptConsistencyAnalyzer:
         
         plt.tight_layout()
         filename = 'within_run_duplicates_and_similar.png'
-        plt.savefig(output_dir / filename, dpi=300, bbox_inches='tight')
-        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight')
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
     
     def _create_cross_run_consistency(self, output_dir):
         """Visualize cross-run consistency."""
@@ -365,10 +465,11 @@ class PromptConsistencyAnalyzer:
         
         plt.tight_layout()
         filename = 'cross_run_consistency.png'
-        plt.savefig(output_dir / filename, dpi=300, bbox_inches='tight')
-        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight')
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
     
     def _create_discipline_comparison(self, output_dir):
         """Create comprehensive discipline comparison."""
@@ -475,10 +576,11 @@ class PromptConsistencyAnalyzer:
         
         plt.tight_layout()
         filename = 'discipline_comparison.png'
-        plt.savefig(output_dir / filename, dpi=300, bbox_inches='tight')
-        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight')
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
     
     def create_interactive_dashboard(self, output_dir=None):
         """Create interactive Plotly dashboard."""
@@ -703,7 +805,7 @@ def main():
     analyzer = PromptConsistencyAnalyzer(base_path)
     
     # Load data
-    print("\n[1/3] Loading data from all disciplines...")
+    print("\n[1/4] Loading data from all disciplines...")
     data = analyzer.load_all_files()
     
     if data is None or len(data) == 0:
@@ -730,22 +832,53 @@ def main():
         print(f"    - Avg cross-run consistency: {disc_data['cross_run_consistency_pct'].mean():.1f}%")
     
     # Create visualizations
-    print(f"\n[2/3] Generating static visualizations...")
+    print(f"\n[2/4] Exporting data tables...")
+    tables = analyzer.export_data_tables()
+    
+    print(f"\n[3/4] Generating static visualizations...")
     analyzer.create_static_visualizations()
     
-    print(f"\n[3/3] Generating interactive dashboard...")
+    print(f"\n[4/4] Generating interactive dashboard...")
     analyzer.create_interactive_dashboard()
+    
+    # Print tables to console for easy viewing
+    print("\n" + "=" * 70)
+    print("DATA TABLES")
+    print("=" * 70)
+    
+    print("\n1. OVERALL SUMMARY")
+    print(tables['overall'].to_string(index=False))
+    
+    print("\n\n2. STATISTICS BY DISCIPLINE")
+    print(tables['by_discipline'].to_string(index=False))
+    
+    print("\n\n3. TOPICS WITH PROBLEMS (Duplicates or Similar)")
+    if len(tables['problem_topics']) > 0:
+        print(tables['problem_topics'].head(15).to_string(index=False))
+    else:
+        print("No topics with problems!")
+    
+    print("\n\n4. TOP 10 MOST CONSISTENT TOPICS (Cross-Run)")
+    print(tables['consistency_rankings'].head(10).to_string(index=False))
+    
+    print("\n\n5. BOTTOM 10 LEAST CONSISTENT TOPICS (Cross-Run)")
+    print(tables['consistency_rankings'].tail(10).to_string(index=False))
     
     print("\n" + "=" * 70)
     print("✓ Analysis complete!")
     print("=" * 70)
     print("\nGenerated files:")
-    print("  Static (PNG/PDF):")
-    print("    - within_run_duplicates_and_similar.png/pdf")
-    print("    - cross_run_consistency.png/pdf")
-    print("    - discipline_comparison.png/pdf")
-    print("  Interactive (HTML):")
+    print("  Visualizations:")
+    print("    - within_run_duplicates_and_similar.png/pdf/eps")
+    print("    - cross_run_consistency.png/pdf/eps")
+    print("    - discipline_comparison.png/pdf/eps")
     print("    - prompt_consistency_dashboard.html")
+    print("  Data Tables:")
+    print("    - consistency_table_overall_summary.csv")
+    print("    - consistency_table_by_discipline.csv")
+    print("    - consistency_table_by_topic.csv")
+    print("    - consistency_table_problem_topics.csv")
+    print("    - consistency_table_cross_run_rankings.csv")
     print(f"\nAll files saved to: {base_path}")
 
 

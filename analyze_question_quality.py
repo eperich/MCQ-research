@@ -30,14 +30,23 @@ COLORS = {
     'discipline3': '#D62828',     # Deep red - Discrete Math
 }
 
+# Publication-quality settings
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = ['Arial', 'Helvetica', 'DejaVu Sans']
 plt.rcParams['axes.edgecolor'] = '#000000'
 plt.rcParams['axes.labelcolor'] = '#000000'
 plt.rcParams['text.color'] = '#000000'
 plt.rcParams['xtick.color'] = '#000000'
 plt.rcParams['ytick.color'] = '#000000'
-plt.rcParams['font.size'] = 11
-plt.rcParams['axes.labelsize'] = 12
-plt.rcParams['axes.titlesize'] = 14
+plt.rcParams['font.size'] = 10
+plt.rcParams['axes.labelsize'] = 11
+plt.rcParams['axes.titlesize'] = 12
+plt.rcParams['axes.linewidth'] = 1.0
+plt.rcParams['xtick.major.width'] = 1.0
+plt.rcParams['ytick.major.width'] = 1.0
+plt.rcParams['legend.frameon'] = True
+plt.rcParams['legend.framealpha'] = 1.0
+plt.rcParams['legend.edgecolor'] = '#000000'
 
 # SAQUET criteria columns (18 total - excluding fill_in_the_blank)
 CRITERIA_COLUMNS = [
@@ -322,50 +331,56 @@ class QuestionQualityAnalyzer:
     
     def _create_overall_quality_comparison(self, output_dir):
         """Compare AI vs SME overall quality."""
-        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 12))
+        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 9))
         
         # 1. Acceptance rate comparison
         ai_acceptable = (self.ai_data['quality'] == 'Acceptable').sum() / len(self.ai_data) * 100
         sme_acceptable = (self.sme_data['quality'] == 'Acceptable').sum() / len(self.sme_data) * 100
         
         bars = ax1.bar(['AI-Generated', 'SME-Written'], [ai_acceptable, sme_acceptable],
-                      color=[COLORS['ai'], COLORS['sme']], edgecolor='black', linewidth=1.5)
-        ax1.set_ylabel('Acceptance Rate (%)', fontweight='bold', fontsize=13)
+                      color=[COLORS['ai'], COLORS['sme']], edgecolor='black', linewidth=1)
+        ax1.set_ylabel('Acceptance Rate (%)', fontsize=11)
         ax1.set_title('Question Acceptance Rate: AI vs SME\n(0-1 failures = Acceptable)',
-                     fontweight='bold', fontsize=14, pad=20)
-        ax1.set_ylim([0, 100])
-        ax1.grid(axis='y', alpha=0.3, linestyle='--')
+                     fontsize=12, pad=15)
+        ax1.set_ylim([0, 105])
+        ax1.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
         
         for bar, val in zip(bars, [ai_acceptable, sme_acceptable]):
             height = bar.get_height()
-            ax1.text(bar.get_x() + bar.get_width()/2., height + 2,
-                    f'{val:.1f}%', ha='center', va='bottom', fontweight='bold', fontsize=12)
+            ax1.text(bar.get_x() + bar.get_width()/2., height + 1,
+                    f'{val:.1f}%', ha='center', va='bottom', fontsize=10)
         
         # 2. Distribution of failure counts - AI
         ai_failure_dist = self.ai_data['failure_count'].value_counts().sort_index()
         ax2.bar(ai_failure_dist.index, ai_failure_dist.values, 
-               color=COLORS['ai'], edgecolor='black', linewidth=1.5, alpha=0.7)
-        ax2.axvline(x=1.5, color=COLORS['unacceptable'], linestyle='--', linewidth=2, 
-                   label='Acceptable/Unacceptable Threshold')
-        ax2.set_xlabel('Number of Failures', fontweight='bold', fontsize=12)
-        ax2.set_ylabel('Number of Questions', fontweight='bold', fontsize=12)
+               color=COLORS['ai'], edgecolor='black', linewidth=1, alpha=0.8)
+        ax2.axvline(x=1.5, color=COLORS['unacceptable'], linestyle='--', linewidth=1.5, 
+                   label='Threshold (1 failure)')
+        ax2.set_xlabel('Number of Failures', fontsize=11)
+        ax2.set_ylabel('Number of Questions', fontsize=11)
         ax2.set_title('AI-Generated Questions: Failure Distribution',
-                     fontweight='bold', fontsize=14, pad=15)
-        ax2.legend(frameon=True, edgecolor='black')
-        ax2.grid(axis='y', alpha=0.3, linestyle='--')
+                     fontsize=12, pad=15)
+        ax2.legend(frameon=True, fontsize=9)
+        ax2.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['right'].set_visible(False)
         
         # 3. Distribution of failure counts - SME
         sme_failure_dist = self.sme_data['failure_count'].value_counts().sort_index()
         ax3.bar(sme_failure_dist.index, sme_failure_dist.values,
-               color=COLORS['sme'], edgecolor='black', linewidth=1.5, alpha=0.7)
-        ax3.axvline(x=1.5, color=COLORS['unacceptable'], linestyle='--', linewidth=2,
-                   label='Acceptable/Unacceptable Threshold')
-        ax3.set_xlabel('Number of Failures', fontweight='bold', fontsize=12)
-        ax3.set_ylabel('Number of Questions', fontweight='bold', fontsize=12)
+               color=COLORS['sme'], edgecolor='black', linewidth=1, alpha=0.8)
+        ax3.axvline(x=1.5, color=COLORS['unacceptable'], linestyle='--', linewidth=1.5,
+                   label='Threshold (1 failure)')
+        ax3.set_xlabel('Number of Failures', fontsize=11)
+        ax3.set_ylabel('Number of Questions', fontsize=11)
         ax3.set_title('SME-Written Questions: Failure Distribution',
-                     fontweight='bold', fontsize=14, pad=15)
-        ax3.legend(frameon=True, edgecolor='black')
-        ax3.grid(axis='y', alpha=0.3, linestyle='--')
+                     fontsize=12, pad=15)
+        ax3.legend(frameon=True, fontsize=9)
+        ax3.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax3.spines['top'].set_visible(False)
+        ax3.spines['right'].set_visible(False)
         
         # 4. Comparison table
         comparison_data = [
@@ -384,38 +399,38 @@ class QuestionQualityAnalyzer:
         ax4.axis('tight')
         ax4.axis('off')
         table = ax4.table(cellText=comparison_data,
-                         colLabels=['Source', 'Total Questions', 'Acceptable', 'Unacceptable', 
-                                   'Acceptance Rate', 'Avg Failures'],
+                         colLabels=['Source', 'Total', 'Acceptable', 'Unacceptable', 
+                                   'Accept. Rate', 'Avg Fail.'],
                          cellLoc='center',
                          loc='center',
-                         colWidths=[0.2, 0.18, 0.15, 0.15, 0.17, 0.15])
+                         colWidths=[0.2, 0.15, 0.15, 0.15, 0.17, 0.15])
         table.auto_set_font_size(False)
-        table.set_fontsize(11)
-        table.scale(1, 2.5)
+        table.set_fontsize(9)
+        table.scale(1, 2.2)
         
         # Style header
         for i in range(6):
-            table[(0, i)].set_facecolor(COLORS['ai'])
+            table[(0, i)].set_facecolor('#666666')
             table[(0, i)].set_text_props(weight='bold', color='white')
         
         # Style data rows
         for i in range(1, 3):
-            color = COLORS['ai'] if i == 1 else COLORS['sme']
             for j in range(6):
-                table[(i, j)].set_facecolor('#E3F2FD' if i % 2 == 1 else '#F3E5F5')
+                table[(i, j)].set_facecolor('#f0f0f0' if i % 2 == 1 else 'white')
                 table[(i, j)].set_edgecolor('black')
-                table[(i, j)].set_linewidth(1.5)
+                table[(i, j)].set_linewidth(0.5)
         
-        plt.tight_layout()
+        plt.tight_layout(pad=2.0)
         filename = 'quality_comparison_ai_vs_sme.png'
-        plt.savefig(output_dir / filename, dpi=300, bbox_inches='tight')
-        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight')
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
     
     def _create_discipline_comparison(self, output_dir):
         """Compare quality across disciplines."""
-        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 12))
+        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 9))
         
         # Combine AI and SME data for discipline analysis
         all_data = pd.concat([self.ai_data, self.sme_data], ignore_index=True)
@@ -430,26 +445,28 @@ class QuestionQualityAnalyzer:
         width = 0.35
         
         bars1 = ax1.bar(x - width/2, discipline_source['AI'], width,
-                       label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1.5)
+                       label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1)
         bars2 = ax1.bar(x + width/2, discipline_source['SME'], width,
-                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1.5)
+                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1)
         
-        ax1.set_ylabel('Acceptance Rate (%)', fontweight='bold', fontsize=12)
+        ax1.set_ylabel('Acceptance Rate (%)', fontsize=11)
         ax1.set_title('Question Acceptance Rate by Discipline',
-                     fontweight='bold', fontsize=14, pad=15)
+                     fontsize=12, pad=15)
         ax1.set_xticks(x)
-        ax1.set_xticklabels(discipline_source.index, fontsize=11)
-        ax1.legend(frameon=True, edgecolor='black')
+        ax1.set_xticklabels(discipline_source.index, fontsize=10)
+        ax1.legend(frameon=True, fontsize=9)
         ax1.set_ylim([0, 100])
-        ax1.grid(axis='y', alpha=0.3, linestyle='--')
+        ax1.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
         
         # Add value labels
         for bars in [bars1, bars2]:
             for bar in bars:
                 height = bar.get_height()
                 if height > 0:
-                    ax1.text(bar.get_x() + bar.get_width()/2., height + 2,
-                            f'{height:.1f}%', ha='center', va='bottom', fontsize=9, fontweight='bold')
+                    ax1.text(bar.get_x() + bar.get_width()/2., height + 1.5,
+                            f'{height:.1f}', ha='center', va='bottom', fontsize=8)
         
         # 2. AI quality by discipline
         ai_by_disc = self.ai_data.groupby('discipline')['quality'].apply(
@@ -458,17 +475,19 @@ class QuestionQualityAnalyzer:
         
         colors_ai = [COLORS['discipline1'], COLORS['discipline2'], COLORS['discipline3']]
         bars = ax2.barh(ai_by_disc.index, ai_by_disc.values,
-                       color=colors_ai[:len(ai_by_disc)], edgecolor='black', linewidth=1.5)
-        ax2.set_xlabel('Acceptance Rate (%)', fontweight='bold', fontsize=12)
-        ax2.set_title('AI-Generated Questions: Quality by Discipline',
-                     fontweight='bold', fontsize=14, pad=15)
+                       color=colors_ai[:len(ai_by_disc)], edgecolor='black', linewidth=1)
+        ax2.set_xlabel('Acceptance Rate (%)', fontsize=11)
+        ax2.set_title('AI-Generated Questions by Discipline',
+                     fontsize=12, pad=15)
         ax2.set_xlim([0, 100])
-        ax2.grid(axis='x', alpha=0.3, linestyle='--')
+        ax2.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['right'].set_visible(False)
         
         for bar, val in zip(bars, ai_by_disc.values):
             width = bar.get_width()
-            ax2.text(width + 2, bar.get_y() + bar.get_height()/2.,
-                    f'{val:.1f}%', ha='left', va='center', fontweight='bold', fontsize=11)
+            ax2.text(width + 1.5, bar.get_y() + bar.get_height()/2.,
+                    f'{val:.1f}', ha='left', va='center', fontsize=9)
         
         # 3. SME quality by discipline
         sme_by_disc = self.sme_data.groupby('discipline')['quality'].apply(
@@ -476,17 +495,19 @@ class QuestionQualityAnalyzer:
         ).sort_values(ascending=True)
         
         bars = ax3.barh(sme_by_disc.index, sme_by_disc.values,
-                       color=colors_ai[:len(sme_by_disc)], edgecolor='black', linewidth=1.5)
-        ax3.set_xlabel('Acceptance Rate (%)', fontweight='bold', fontsize=12)
-        ax3.set_title('SME-Written Questions: Quality by Discipline',
-                     fontweight='bold', fontsize=14, pad=15)
+                       color=colors_ai[:len(sme_by_disc)], edgecolor='black', linewidth=1)
+        ax3.set_xlabel('Acceptance Rate (%)', fontsize=11)
+        ax3.set_title('SME-Written Questions by Discipline',
+                     fontsize=12, pad=15)
         ax3.set_xlim([0, 100])
-        ax3.grid(axis='x', alpha=0.3, linestyle='--')
+        ax3.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax3.spines['top'].set_visible(False)
+        ax3.spines['right'].set_visible(False)
         
         for bar, val in zip(bars, sme_by_disc.values):
             width = bar.get_width()
-            ax3.text(width + 2, bar.get_y() + bar.get_height()/2.,
-                    f'{val:.1f}%', ha='left', va='center', fontweight='bold', fontsize=11)
+            ax3.text(width + 1.5, bar.get_y() + bar.get_height()/2.,
+                    f'{val:.1f}', ha='left', va='center', fontsize=9)
         
         # 4. Average failures by discipline
         avg_failures = all_data.groupby(['discipline', 'source'])['failure_count'].mean().unstack()
@@ -494,29 +515,32 @@ class QuestionQualityAnalyzer:
         x = np.arange(len(avg_failures))
         bar_width = 0.35
         bars1 = ax4.bar(x - bar_width/2, avg_failures['AI'], bar_width,
-                       label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1.5)
+                       label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1)
         bars2 = ax4.bar(x + bar_width/2, avg_failures['SME'], bar_width,
-                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1.5)
+                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1)
         
-        ax4.set_ylabel('Average Number of Failures', fontweight='bold', fontsize=12)
+        ax4.set_ylabel('Average Number of Failures', fontsize=11)
         ax4.set_title('Average Failures per Question by Discipline',
-                     fontweight='bold', fontsize=14, pad=15)
+                     fontsize=12, pad=15)
         ax4.set_xticks(x)
-        ax4.set_xticklabels(avg_failures.index, fontsize=11)
-        ax4.legend(frameon=True, edgecolor='black')
-        ax4.axhline(y=1.5, color=COLORS['unacceptable'], linestyle='--', linewidth=2, alpha=0.5)
-        ax4.grid(axis='y', alpha=0.3, linestyle='--')
+        ax4.set_xticklabels(avg_failures.index, fontsize=10)
+        ax4.legend(frameon=True, fontsize=9)
+        ax4.axhline(y=1.5, color=COLORS['unacceptable'], linestyle='--', linewidth=1.5, alpha=0.6, label='Threshold')
+        ax4.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax4.spines['top'].set_visible(False)
+        ax4.spines['right'].set_visible(False)
         
-        plt.tight_layout()
+        plt.tight_layout(pad=2.0)
         filename = 'quality_by_discipline.png'
-        plt.savefig(output_dir / filename, dpi=300, bbox_inches='tight')
-        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight')
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
     
     def _create_failure_analysis(self, output_dir):
         """Analyze which criteria fail most often."""
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 8))
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
         
         # Count failures for each criterion
         ai_failures = {}
@@ -536,39 +560,44 @@ class QuestionQualityAnalyzer:
         
         # AI failures
         y = np.arange(len(criteria_names))
-        bars = ax1.barh(y, ai_vals, color=COLORS['ai'], edgecolor='black', linewidth=1)
+        bars = ax1.barh(y, ai_vals, color=COLORS['ai'], edgecolor='black', linewidth=0.5)
         ax1.set_yticks(y)
-        ax1.set_yticklabels(criteria_names, fontsize=9)
-        ax1.set_xlabel('Number of Failures', fontweight='bold', fontsize=12)
+        ax1.set_yticklabels(criteria_names, fontsize=8)
+        ax1.set_xlabel('Number of Failures', fontsize=11)
         ax1.set_title('AI-Generated Questions: Failures by Criterion',
-                     fontweight='bold', fontsize=14, pad=15)
-        ax1.grid(axis='x', alpha=0.3, linestyle='--')
+                     fontsize=12, pad=15)
+        ax1.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
         
         for bar, val in zip(bars, ai_vals):
             if val > 0:
-                ax1.text(val + max(ai_vals)*0.01, bar.get_y() + bar.get_height()/2.,
-                        f'{val}', ha='left', va='center', fontsize=9)
+                ax1.text(val + max(ai_vals)*0.015, bar.get_y() + bar.get_height()/2.,
+                        f'{val}', ha='left', va='center', fontsize=8)
         
         # SME failures
-        bars = ax2.barh(y, sme_vals, color=COLORS['sme'], edgecolor='black', linewidth=1)
+        bars = ax2.barh(y, sme_vals, color=COLORS['sme'], edgecolor='black', linewidth=0.5)
         ax2.set_yticks(y)
-        ax2.set_yticklabels(criteria_names, fontsize=9)
-        ax2.set_xlabel('Number of Failures', fontweight='bold', fontsize=12)
+        ax2.set_yticklabels(criteria_names, fontsize=8)
+        ax2.set_xlabel('Number of Failures', fontsize=11)
         ax2.set_title('SME-Written Questions: Failures by Criterion',
-                     fontweight='bold', fontsize=14, pad=15)
-        ax2.grid(axis='x', alpha=0.3, linestyle='--')
+                     fontsize=12, pad=15)
+        ax2.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['right'].set_visible(False)
         
         for bar, val in zip(bars, sme_vals):
             if val > 0:
-                ax2.text(val + max(sme_vals)*0.01, bar.get_y() + bar.get_height()/2.,
-                        f'{val}', ha='left', va='center', fontsize=9)
+                ax2.text(val + max(sme_vals)*0.015, bar.get_y() + bar.get_height()/2.,
+                        f'{val}', ha='left', va='center', fontsize=8)
         
-        plt.tight_layout()
+        plt.tight_layout(pad=2.0)
         filename = 'failure_by_criterion.png'
-        plt.savefig(output_dir / filename, dpi=300, bbox_inches='tight')
-        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight')
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
     
     def _create_interactive_dashboard(self, output_dir):
         """Create interactive Plotly dashboard."""

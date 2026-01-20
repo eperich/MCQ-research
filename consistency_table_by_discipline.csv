@@ -1,0 +1,4 @@
+Discipline,Total_Topics,Topics_With_Duplicates,Topics_With_Similar,Percent_With_Duplicates,Percent_With_Similar,Avg_Cross_Run_Consistency_%,Median_Cross_Run_Consistency_%,Min_Cross_Run_Consistency_%,Max_Cross_Run_Consistency_%
+Data Science,15,0,3,0.0,20.0,13.06,12.0,6.25,24.07
+Computer Science,30,0,6,0.0,20.0,17.3,15.74,5.47,50.0
+Discrete Mathematics,15,6,15,40.0,100.0,16.42,14.06,5.5,41.67

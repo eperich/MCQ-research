@@ -1,8 +1,8 @@
 Source,Number_of_Failures,Number_of_Questions,Percentage_%
-AI,0,613,49.08
-AI,1,431,34.51
-AI,2,159,12.73
-AI,3,36,2.88
+AI,0,612,49.0
+AI,1,432,34.59
+AI,2,160,12.81
+AI,3,35,2.8
 AI,4,9,0.72
 AI,5,1,0.08
 SME,0,151,46.89

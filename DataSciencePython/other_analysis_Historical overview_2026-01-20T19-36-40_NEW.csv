@@ -1,0 +1,116 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,3,0,0
+2,3,0,0
+3,3,0,0
+4,3,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,1,9
+1,3,1,1,9
+1,4,1,2,9
+2,3,1,0,9
+2,4,1,1,9
+3,4,2,1,9
+
+Summary
+Total Comparisons,66
+Duplicates (≥85%),7
+Similar (70-85%),6
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,1,duplicate
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,1,duplicate
+q2,"The phrase ""data science"" was first introduced in the _____.",3,2,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,1,duplicate
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q2,"The phrase ""data science"" was first introduced in the _____.",2,2,0.969,duplicate
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,0.969,duplicate
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.969,duplicate
+q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.943,duplicate
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.786,similar
+q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.738,similar
+q1,What is the main focus of data science as a field?,2,1,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.719,similar
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q1,What is the main focus of data science as a field?,2,1,0.718,similar
+q3,Which method discipline includes clustering and decision trees?,1,3,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.712,similar
+q3,Which method discipline includes clustering and decision trees?,1,3,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.706,similar
+q1,Data science is an interdisciplinary field focused on _____.,4,1,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.632,low
+q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.628,low
+q1,What is the main focus of data science as a field?,2,1,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.625,low
+q1,What is the main focus of data science as a field?,2,1,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.61,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q3,Which method is primarily associated with artificial intelligence in data science?,2,3,0.609,low
+q1,What is the main focus of data science as a field?,2,1,q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,0.589,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.581,low
+q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.574,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,0.571,low
+q3,Which method is primarily associated with artificial intelligence in data science?,2,3,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.569,low
+q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.563,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.553,low
+q3,Which method is primarily associated with artificial intelligence in data science?,2,3,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.518,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,0.479,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.473,low
+q1,What is the main focus of data science as a field?,2,1,q3,Which method is primarily associated with artificial intelligence in data science?,2,3,0.466,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q3,Which method is primarily associated with artificial intelligence in data science?,2,3,0.458,low
+q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,0.455,low
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,0.454,low
+q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.454,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.451,low
+q2,"The phrase ""data science"" was first introduced in the _____.",3,2,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.45,low
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.448,low
+q1,Data science is an interdisciplinary field focused on _____.,4,1,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.448,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,0.447,low
+q3,Which method is primarily associated with artificial intelligence in data science?,2,3,q1,Data science is an interdisciplinary field focused on _____.,4,1,0.442,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q3,Which method discipline includes clustering and decision trees?,1,3,0.435,low
+q3,Which method is primarily associated with artificial intelligence in data science?,2,3,q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,1,0.429,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.424,low
+q2,"The phrase ""data science"" was first introduced in the _____.",3,2,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.418,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q1,What is the main focus of data science as a field?,2,1,0.416,low
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.416,low
+q2,"The phrase ""data science"" was first introduced in the _____.",4,2,q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,3,0.416,low
+q1,What is the main focus of data science as a field?,2,1,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,0.405,low
+q1,What is the main focus of data science as a field?,2,1,q2,"The phrase ""data science"" was first introduced in the _____.",2,2,0.404,low
+q1,What is the main focus of data science as a field?,2,1,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.404,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q1,What is the main focus of data science as a field?,2,1,0.402,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.387,low
+q2,"The phrase ""data science"" was first introduced in the _____.",3,2,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.383,low
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,0.381,low
+q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,3,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.381,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q2,"The term ""data science"" was first introduced in the _____.",1,2,0.369,low
+q3,Which method is primarily associated with artificial intelligence in data science?,2,3,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,0.365,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,0.364,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q2,"The phrase ""data science"" was first introduced in the _____.",2,2,0.362,low
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,1,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.362,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q3,Which method is primarily associated with artificial intelligence in data science?,2,3,0.362,low
+q2,"The phrase ""data science"" was first introduced in the _____.",2,2,q3,Which method is primarily associated with artificial intelligence in data science?,2,3,0.362,low
+q3,Which method is primarily associated with artificial intelligence in data science?,2,3,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.362,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q2,"The phrase ""data science"" was first introduced in the _____.",3,2,0.33,low
+q2,"The term ""data science"" was first introduced in the _____.",1,2,q3,Which method discipline includes clustering and decision trees?,1,3,0.328,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q2,"The phrase ""data science"" was first introduced in the _____.",2,2,0.327,low
+q3,Which method discipline includes clustering and decision trees?,1,3,q2,"The phrase ""data science"" was first introduced in the _____.",4,2,0.327,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define data science and explain its interdisciplinary nature involving computer science and statistics.  
+Compare and contrast the roles and tasks of data scientists, computer scientists, and statisticians.  
+Identify key historical milestones and developments in the evolution of data science from the 1960s to the present.  
+Describe the emergence and impact of programming languages and software tools that advanced data science.  
+Recognize current and emerging methods in data science, including statistics, machine learning, and artificial intelligence."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Data science primarily focuses on _____ to discover patterns and relationships.,1,yes,"This question assesses the understanding of the primary focus of data science, aligning with the objective to define data science and its interdisciplinary nature."
+q2,"The term ""data science"" was first introduced in the _____.",1,yes,This question evaluates knowledge of a key historical milestone in the evolution of data science.
+q3,Which method discipline includes clustering and decision trees?,1,yes,"This question tests recognition of current and emerging methods in data science, including machine learning and artificial intelligence."
+q1,What is the main focus of data science as a field?,2,yes,"This question assesses the main focus of data science, directly related to defining data science and its interdisciplinary nature."
+q2,"The phrase ""data science"" was first introduced in the _____.",2,yes,"This question addresses the historical introduction of the term ""data science,"" aligning with the objective about key historical milestones."
+q3,Which method is primarily associated with artificial intelligence in data science?,2,yes,"This question evaluates understanding of methods associated with artificial intelligence in data science, matching the objective on current and emerging methods."
+q1,Data science is best described as a/an _____ field that uses data to discover patterns.,3,yes,"This question assesses the interdisciplinary nature of data science, directly linked to defining data science and its interdisciplinary nature."
+q2,"The phrase ""data science"" was first introduced in the _____.",3,yes,"This question tests knowledge of the historical introduction of the term ""data science,"" related to key historical milestones."
+q3,Which discipline focuses on designing experiments and deriving new models to analyze data?,3,yes,"This question evaluates understanding of the roles and tasks of statisticians, aligning with comparing and contrasting roles in data science."
+q1,Data science is an interdisciplinary field focused on _____.,4,yes,"This question assesses the interdisciplinary focus of data science, related to defining data science and its interdisciplinary nature."
+q2,"The phrase ""data science"" was first introduced in the _____.",4,yes,"This question addresses the historical introduction of the term ""data science,"" aligning with key historical milestones."
+q3,Which discipline primarily designs experiments and derives new models for data analysis?,4,yes,"This question tests knowledge of the role of statisticians in designing experiments and models, related to comparing roles and tasks."

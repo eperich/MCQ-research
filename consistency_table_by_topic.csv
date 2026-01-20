@@ -1,0 +1,61 @@
+Discipline,Topic,Has_Duplicates,Has_Similar,Duplicate_Count,Similar_Count,Cross_Run_Consistency_%,Cross_Run_Duplicate_%,Cross_Run_Similar_%
+Computer Science,Arithmetic expressions,False,False,0,0,13.541666666666666,10.416666666666668,3.125
+Computer Science,Arithmetic expressions (general),False,False,0,0,22.22222222222222,14.814814814814813,7.4074074074074066
+Computer Science,Arithmetic expressions (int),False,False,0,0,20.833333333333336,12.5,8.333333333333332
+Computer Science,Characters,False,False,0,0,12.5,5.208333333333334,7.291666666666667
+Computer Science,Comments and whitespace,False,False,0,0,16.666666666666664,16.666666666666664,0.0
+Computer Science,Constant variables,False,False,0,0,27.77777777777778,14.814814814814813,12.962962962962962
+Computer Science,Detecting equal values with branches,False,True,0,1,18.75,3.125,15.625
+Computer Science,Division and modulo,False,False,0,0,14.583333333333334,2.083333333333333,12.5
+Computer Science,Errors,False,False,0,0,16.666666666666664,6.25,10.416666666666668
+Computer Science,Errors and warnings,False,False,0,0,24.074074074074073,7.4074074074074066,16.666666666666664
+Computer Science,Floating-point,False,False,0,0,11.458333333333332,6.25,5.208333333333334
+Computer Science,Floating-point (double),False,False,0,0,14.814814814814813,9.25925925925926,5.555555555555555
+Computer Science,Function basics,False,False,0,0,5.46875,2.34375,3.125
+Computer Science,Identifiers,False,False,0,0,50.0,20.833333333333336,29.166666666666668
+Computer Science,Identifiers,False,True,0,2,18.75,6.25,12.5
+Computer Science,Input_Output,False,True,0,1,7.4074074074074066,3.2407407407407405,4.166666666666666
+Computer Science,List basics,False,False,0,0,5.555555555555555,1.3888888888888888,4.166666666666666
+Computer Science,Math methods,False,False,0,0,12.5,5.208333333333334,7.291666666666667
+Computer Science,Problem solving,False,False,0,0,33.33333333333333,33.33333333333333,0.0
+Computer Science,Programming (general),False,False,0,0,11.11111111111111,3.7037037037037033,7.4074074074074066
+Computer Science,Programming (general),False,False,0,0,7.333333333333333,2.666666666666667,4.666666666666667
+Computer Science,Programming basics,False,False,0,0,16.666666666666664,11.11111111111111,5.555555555555555
+Computer Science,Programming using Python,False,False,0,0,16.666666666666664,3.125,13.541666666666666
+Computer Science,Python expressions,False,False,0,0,14.583333333333334,2.083333333333333,12.5
+Computer Science,String basics,False,False,0,0,6.25,0.0,6.25
+Computer Science,Strings,False,True,0,4,40.74074074074074,20.37037037037037,20.37037037037037
+Computer Science,Variables (int),False,False,0,0,18.51851851851852,1.8518518518518516,16.666666666666664
+Computer Science,Variables and assignments,False,False,0,0,16.666666666666664,10.416666666666668,6.25
+Computer Science,Variables and assignments (general),False,True,0,1,11.458333333333332,2.083333333333333,9.375
+Computer Science,While loops,False,True,0,3,12.244897959183673,2.380952380952381,9.863945578231291
+Data Science,Careers in data science,False,True,0,1,20.37037037037037,9.25925925925926,11.11111111111111
+Data Science,Cleaning data,False,False,0,0,12.666666666666668,4.0,8.666666666666668
+Data Science,Data science lifecycle,False,False,0,0,9.375,2.083333333333333,7.291666666666667
+Data Science,Data science packages,False,False,0,0,12.0,6.666666666666667,5.333333333333334
+Data Science,Data wrangling,False,False,0,0,20.833333333333336,12.5,8.333333333333332
+Data Science,Ethics in data science,False,False,0,0,10.416666666666668,5.208333333333334,5.208333333333334
+Data Science,Exploring data,False,False,0,0,9.25925925925926,3.7037037037037033,5.555555555555555
+Data Science,Historical overview_2026-01-20T19-36-40,False,False,0,0,24.074074074074073,12.962962962962962,11.11111111111111
+Data Science,NumPy package,False,False,0,0,8.0,3.3333333333333335,4.666666666666667
+Data Science,Programming with Python and Jupyter,False,False,0,0,6.25,3.125,3.125
+Data Science,Python data types,False,True,0,2,12.0,4.666666666666667,7.333333333333333
+Data Science,Python functions,False,False,0,0,10.666666666666668,3.3333333333333335,7.333333333333333
+Data Science,Why data science_,False,False,0,0,16.666666666666664,1.8518518518518516,14.814814814814813
+Data Science,matplotlib package,False,False,0,0,8.0,3.3333333333333335,4.666666666666667
+Data Science,pandas package,False,True,0,1,15.333333333333332,4.0,11.333333333333332
+Discrete Mathematics,Conditional statements,True,True,2,24,16.087962962962962,4.976851851851852,11.11111111111111
+Discrete Mathematics,Evaluating compound propositions,True,True,1,3,12.239583333333332,3.3854166666666665,8.854166666666668
+Discrete Mathematics,Laws of propositional  logic,True,True,3,33,41.66666666666667,4.947916666666666,36.71875
+Discrete Mathematics,Logical equivalence,True,True,3,30,22.58953168044077,4.958677685950414,17.63085399449036
+Discrete Mathematics,Mathematical induction,False,True,0,17,27.55102040816326,2.7210884353741496,24.829931972789115
+Discrete Mathematics,More inductive proofs,False,True,0,1,14.814814814814813,3.2407407407407405,11.574074074074074
+Discrete Mathematics,Predicates and quantifiers,True,True,1,16,20.052083333333336,2.864583333333333,17.1875
+Discrete Mathematics,Propositions and logical operations,False,True,0,21,18.333333333333332,4.5,13.833333333333334
+Discrete Mathematics,Quantified statements,False,True,0,11,8.641975308641975,0.411522633744856,8.23045267489712
+Discrete Mathematics,Recurrence relations,False,True,0,2,11.224489795918368,2.7210884353741496,8.503401360544217
+Discrete Mathematics,Sequences,False,True,0,6,11.458333333333332,2.864583333333333,8.59375
+Discrete Mathematics,Sets and subsets,False,True,0,3,5.5,1.3333333333333335,4.166666666666666
+Discrete Mathematics,Sets of sets,False,True,0,6,14.0625,2.34375,11.71875
+Discrete Mathematics,Summations,False,True,0,6,8.539944903581267,2.6170798898071626,5.922865013774105
+Discrete Mathematics,Union and intersection,True,True,1,14,13.580246913580247,3.0864197530864197,10.493827160493826
