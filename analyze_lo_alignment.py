@@ -265,10 +265,7 @@ class LOAlignmentAnalyzer:
         
         print("\n=== Creating Visualizations ===")
         
-        # 1. Overall alignment by discipline
-        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 9))
-        
-        # Subplot 1: Alignment rate by discipline
+        # Calculate discipline summary
         discipline_summary = self.alignment_data.groupby('discipline').agg({
             'is_aligned': ['sum', 'count']
         }).reset_index()
@@ -276,6 +273,9 @@ class LOAlignmentAnalyzer:
         discipline_summary['Not_Aligned'] = discipline_summary['Total'] - discipline_summary['Aligned']
         discipline_summary['Alignment_Rate'] = (discipline_summary['Aligned'] / 
                                                 discipline_summary['Total'] * 100)
+        
+        # 1. Alignment counts by discipline
+        fig1, ax1 = plt.subplots(1, 1, figsize=(10, 6))
         
         x = np.arange(len(discipline_summary))
         width = 0.35
@@ -302,7 +302,16 @@ class LOAlignmentAnalyzer:
                     ax1.text(bar.get_x() + bar.get_width()/2., height + 2,
                             f'{int(height)}', ha='center', va='bottom', fontsize=8)
         
-        # Subplot 2: Alignment rates as percentages
+        plt.tight_layout()
+        filename = 'lo_alignment_by_discipline.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 2. Alignment rates as percentages
+        fig2, ax2 = plt.subplots(1, 1, figsize=(10, 6))
         bars = ax2.bar(discipline_summary['Discipline'], discipline_summary['Alignment_Rate'],
                       color=COLORS['aligned'], edgecolor='black', linewidth=1)
         ax2.set_ylabel('Alignment Rate (%)', fontsize=11)
@@ -317,7 +326,16 @@ class LOAlignmentAnalyzer:
             ax2.text(bar.get_x() + bar.get_width()/2., height + 1,
                     f'{val:.1f}%', ha='center', va='bottom', fontsize=9)
         
-        # Subplot 3: Topics with lowest alignment
+        plt.tight_layout()
+        filename = 'lo_alignment_rate_by_discipline.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 3. Topics with lowest alignment
+        fig3, ax3 = plt.subplots(1, 1, figsize=(8, 8))
         topic_alignment = self.alignment_data.groupby(['discipline', 'topic']).agg({
             'is_aligned': ['sum', 'count']
         }).reset_index()
@@ -345,7 +363,16 @@ class LOAlignmentAnalyzer:
             ax3.text(width + 1.5, bar.get_y() + bar.get_height()/2.,
                     f'{val:.0f}%', ha='left', va='center', fontsize=8)
         
-        # Subplot 4: Summary table
+        plt.tight_layout()
+        filename = 'lo_alignment_lowest_topics.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 4. Summary table
+        fig4, ax4 = plt.subplots(1, 1, figsize=(8, 4))
         summary_data = [
             ['Total Questions', len(self.alignment_data)],
             ['Aligned', self.alignment_data['is_aligned'].sum()],
@@ -374,8 +401,8 @@ class LOAlignmentAnalyzer:
                 table[(i, j)].set_edgecolor('black')
                 table[(i, j)].set_linewidth(0.5)
         
-        plt.tight_layout(pad=2.0)
-        filename = 'lo_alignment_summary.png'
+        plt.tight_layout()
+        filename = 'lo_alignment_summary_table.png'
         plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')

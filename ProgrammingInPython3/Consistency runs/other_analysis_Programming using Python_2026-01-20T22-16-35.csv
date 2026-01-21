@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,0
+2,10,0,0
+3,10,0,1
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,3,6,100
+1,3,4,7,100
+1,4,2,6,100
+2,3,4,5,100
+2,4,3,5,100
+3,4,3,7,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),19
+Similar (70-85%),37
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.967,duplicate
+q7,Why are comments used in Python code?,2,7,q7,Why are comments used in Python programs?,4,7,0.967,duplicate
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.957,duplicate
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.949,duplicate
+q8,Why are comments used in Python programs?,3,8,q7,Why are comments used in Python programs?,4,7,0.949,duplicate
+q7,Why are comments used in Python code?,2,7,q8,Why are comments used in Python programs?,3,8,0.947,duplicate
+q8,Why are comments used in Python code?,1,8,q7,Why are comments used in Python code?,2,7,0.945,duplicate
+q8,Why are comments used in Python code?,1,8,q8,Why are comments used in Python programs?,3,8,0.939,duplicate
+q8,Why are comments used in Python code?,1,8,q7,Why are comments used in Python programs?,4,7,0.937,duplicate
+q4,What symbol is used for assignment in Python?,3,4,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.914,duplicate
+q1,What does the Python interpreter do?,2,1,q1,What does the Python interpreter do?,3,1,0.903,duplicate
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.899,duplicate
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.881,duplicate
+q9,How does the Python interpreter execute code from a file?,1,9,q9,How does the Python interpreter execute code saved in a file?,3,9,0.876,duplicate
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q4,What symbol is used for assignment in Python?,3,4,0.871,duplicate
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.862,duplicate
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q4,What symbol is used for assignment in Python?,3,4,0.862,duplicate
+q2,What is the role of the interactive interpreter?,1,2,q2,What is the role of the interactive interpreter in Python?,3,2,0.86,duplicate
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.853,duplicate
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.841,similar
+q1,What does the Python interpreter do?,1,1,q1,What does the Python interpreter do?,3,1,0.84,similar
+q3,"In Python, a variable is used to _____.",2,3,q3,"In Python, a variable is used to _____.",3,3,0.836,similar
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.832,similar
+q5,What does the print() function do?,1,5,q5,What does the print() function do in Python?,4,5,0.831,similar
+q3,"In Python, what is a variable?",1,3,q3,"In Python, a variable is used to _____.",2,3,0.828,similar
+q3,"In Python, what is a variable?",1,3,q3,Which of the following best defines a variable in Python?,4,3,0.817,similar
+q6,What is an expression in Python?,1,6,q4,An expression in Python is best described as _____.,2,4,0.812,similar
+q6,The print() function in Python is used to _____.,2,6,q5,What is the purpose of the print() function in Python?,3,5,0.812,similar
+q1,What does the Python interpreter do?,1,1,q1,What does the Python interpreter do?,2,1,0.793,similar
+q5,What is the purpose of the print() function in Python?,3,5,q5,What does the print() function do in Python?,4,5,0.783,similar
+q6,The print() function in Python is used to _____.,2,6,q5,What does the print() function do in Python?,4,5,0.78,similar
+q1,What does the Python interpreter do?,2,1,q2,What is the role of the interactive interpreter in Python?,3,2,0.776,similar
+q3,"In Python, a variable is used to _____.",2,3,q3,Which of the following best defines a variable in Python?,4,3,0.764,similar
+q4,An expression in Python is best described as _____.,2,4,q6,Which of the following best describes a Python expression?,3,6,0.764,similar
+q3,"In Python, a variable is used to _____.",3,3,q3,Which of the following best defines a variable in Python?,4,3,0.758,similar
+q2,What is the role of the interactive interpreter?,1,2,q2,The purpose of the interactive interpreter is to _____.,2,2,0.756,similar
+q3,"In Python, what is a variable?",1,3,q3,"In Python, a variable is used to _____.",3,3,0.755,similar
+q1,What does the Python interpreter do?,2,1,q1,What is the role of the Python interpreter?,4,1,0.754,similar
+q5,What does the print() function do?,1,5,q5,What is the purpose of the print() function in Python?,3,5,0.747,similar
+q2,What is the role of the interactive interpreter?,1,2,q8,How does the interactive interpreter execute code?,4,8,0.739,similar
+q1,What does the Python interpreter do?,3,1,q2,What is the role of the interactive interpreter in Python?,3,2,0.739,similar
+q2,What is the role of the interactive interpreter in Python?,3,2,q8,How does the interactive interpreter execute code?,4,8,0.735,similar
+q2,What is the role of the interactive interpreter?,1,2,q1,What is the role of the Python interpreter?,4,1,0.734,similar
+q1,What does the Python interpreter do?,3,1,q1,What is the role of the Python interpreter?,4,1,0.734,similar
+q6,What is an expression in Python?,1,6,q6,Which of the following best describes a Python expression?,3,6,0.732,similar
+q2,What is the role of the interactive interpreter in Python?,3,2,q1,What is the role of the Python interpreter?,4,1,0.728,similar
+q2,What is the role of the interactive interpreter?,1,2,q1,What does the Python interpreter do?,2,1,0.726,similar
+q2,The purpose of the interactive interpreter is to _____.,2,2,q2,What is the role of the interactive interpreter in Python?,3,2,0.721,similar
+q9,How does the Python interpreter execute code saved in a file?,3,9,q10,How does a Python program typically run for multi-line code?,4,10,0.716,similar
+q6,What is an expression in Python?,1,6,q9,What is a Python statement?,4,9,0.711,similar
+q4,An expression in Python is best described as _____.,2,4,q9,What is a Python statement?,4,9,0.711,similar
+q5,What does the print() function do?,1,5,q6,The print() function in Python is used to _____.,2,6,0.71,similar
+q10,What happens when a variable is assigned a new value?,1,10,q10,What happens if a variable is assigned a new value in Python?,3,10,0.71,similar
+q6,Which of the following best describes a Python expression?,3,6,q9,What is a Python statement?,4,9,0.709,similar
+q2,What is the role of the interactive interpreter?,1,2,q1,What does the Python interpreter do?,3,1,0.707,similar
+q2,The purpose of the interactive interpreter is to _____.,2,2,q8,How does the interactive interpreter execute code?,4,8,0.703,similar
+q9,How does the Python interpreter execute code from a file?,1,9,q10,How does a Python program typically run for multi-line code?,4,10,0.697,low
+q4,An expression in Python is best described as _____.,2,4,q3,Which of the following best defines a variable in Python?,4,3,0.692,low
+q8,How does the interactive interpreter execute code?,4,8,q10,How does a Python program typically run for multi-line code?,4,10,0.689,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q2,What is the role of the interactive interpreter in Python?,3,2,0.688,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q8,How does the interactive interpreter execute code?,4,8,0.687,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q10,How does a Python program typically run for multi-line code?,4,10,0.68,low
+q1,What does the Python interpreter do?,1,1,q1,What is the role of the Python interpreter?,4,1,0.678,low
+q3,"In Python, what is a variable?",1,3,q9,What is a Python statement?,4,9,0.678,low
+q1,What does the Python interpreter do?,1,1,q2,What is the role of the interactive interpreter in Python?,3,2,0.677,low
+q6,Which of the following best describes a Python expression?,3,6,q3,Which of the following best defines a variable in Python?,4,3,0.675,low
+q3,"In Python, a variable is used to _____.",2,3,q8,Why are comments used in Python programs?,3,8,0.67,low
+q9,How does the Python interpreter execute code from a file?,1,9,q8,How does the interactive interpreter execute code?,4,8,0.667,low
+q9,How does the Python interpreter execute code from a file?,1,9,q2,What is the role of the interactive interpreter in Python?,3,2,0.665,low
+q3,"In Python, a variable is used to _____.",3,3,q8,Why are comments used in Python programs?,3,8,0.665,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q6,Which of the following is a Python expression?,4,6,0.66,low
+q3,Which of the following best defines a variable in Python?,4,3,q9,What is a Python statement?,4,9,0.658,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q10,How does a Python program typically run for multi-line code?,4,10,0.652,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q9,How does the Python interpreter execute code saved in a file?,3,9,0.652,low
+q3,"In Python, a variable is used to _____.",2,3,q7,Why are comments used in Python code?,2,7,0.648,low
+q6,Which of the following best describes a Python expression?,3,6,q10,How does a Python program typically run for multi-line code?,4,10,0.648,low
+q8,Why are comments used in Python code?,1,8,q3,"In Python, a variable is used to _____.",2,3,0.647,low
+q3,"In Python, a variable is used to _____.",3,3,q9,What is a Python statement?,4,9,0.644,low
+q7,Why are comments used in Python programs?,4,7,q9,What is a Python statement?,4,9,0.64,low
+q1,What does the Python interpreter do?,1,1,q2,What is the role of the interactive interpreter?,1,2,0.636,low
+q3,"In Python, what is a variable?",1,3,q6,What is an expression in Python?,1,6,0.636,low
+q1,What does the Python interpreter do?,2,1,q10,How does a Python program typically run for multi-line code?,4,10,0.634,low
+q1,What does the Python interpreter do?,2,1,q8,How does the interactive interpreter execute code?,4,8,0.632,low
+q4,An expression in Python is best described as _____.,2,4,q3,"In Python, a variable is used to _____.",3,3,0.632,low
+q7,Why are comments used in Python code?,2,7,q9,What is a Python statement?,4,9,0.632,low
+q2,What is the role of the interactive interpreter?,1,2,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.631,low
+q7,Why are comments used in Python code?,2,7,q3,"In Python, a variable is used to _____.",3,3,0.631,low
+q8,Why are comments used in Python programs?,3,8,q3,Which of the following best defines a variable in Python?,4,3,0.63,low
+q9,How does the Python interpreter execute code from a file?,1,9,q1,What does the Python interpreter do?,2,1,0.629,low
+q8,Why are comments used in Python programs?,3,8,q9,What is a Python statement?,4,9,0.629,low
+q8,Why are comments used in Python code?,1,8,q3,"In Python, a variable is used to _____.",3,3,0.627,low
+q3,"In Python, a variable is used to _____.",3,3,q7,Why are comments used in Python programs?,4,7,0.627,low
+q3,"In Python, what is a variable?",1,3,q4,An expression in Python is best described as _____.,2,4,0.626,low
+q3,"In Python, a variable is used to _____.",2,3,q7,Why are comments used in Python programs?,4,7,0.626,low
+q2,What is the role of the interactive interpreter?,1,2,q10,How does a Python program typically run for multi-line code?,4,10,0.625,low
+q1,What does the Python interpreter do?,2,1,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.625,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.623,low
+q1,What does the Python interpreter do?,2,1,q6,The print() function in Python is used to _____.,2,6,0.622,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q3,Which of the following best defines a variable in Python?,4,3,0.621,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q8,How does the interactive interpreter execute code?,4,8,0.621,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.618,low
+q3,"In Python, a variable is used to _____.",3,3,q6,Which of the following best describes a Python expression?,3,6,0.618,low
+q1,What does the Python interpreter do?,2,1,q9,How does the Python interpreter execute code saved in a file?,3,9,0.614,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q1,What is the role of the Python interpreter?,4,1,0.614,low
+q4,An expression in Python is best described as _____.,2,4,q10,How does a Python program typically run for multi-line code?,4,10,0.614,low
+q3,"In Python, what is a variable?",1,3,q6,Which of the following best describes a Python expression?,3,6,0.613,low
+q5,What does the print() function do in Python?,4,5,q9,What is a Python statement?,4,9,0.613,low
+q1,What does the Python interpreter do?,1,1,q9,How does the Python interpreter execute code from a file?,1,9,0.612,low
+q9,How does the Python interpreter execute code from a file?,1,9,q1,What does the Python interpreter do?,3,1,0.612,low
+q1,What does the Python interpreter do?,3,1,q8,How does the interactive interpreter execute code?,4,8,0.612,low
+q1,What does the Python interpreter do?,3,1,q10,How does a Python program typically run for multi-line code?,4,10,0.609,low
+q3,Which of the following best defines a variable in Python?,4,3,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.609,low
+q3,"In Python, what is a variable?",1,3,q8,Why are comments used in Python programs?,3,8,0.608,low
+q1,What does the Python interpreter do?,2,1,q9,What is a Python statement?,4,9,0.608,low
+q6,Which of the following best describes a Python expression?,3,6,q7,Why are comments used in Python programs?,4,7,0.608,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q3,Which of the following best defines a variable in Python?,4,3,0.607,low
+q8,Why are comments used in Python code?,1,8,q9,What is a Python statement?,4,9,0.604,low
+q1,What does the Python interpreter do?,2,1,q5,What does the print() function do in Python?,4,5,0.604,low
+q9,What is a Python statement?,4,9,q10,How does a Python program typically run for multi-line code?,4,10,0.602,low
+q6,What is an expression in Python?,1,6,q10,How does a Python program typically run for multi-line code?,4,10,0.601,low
+q3,"In Python, a variable is used to _____.",2,3,q6,The print() function in Python is used to _____.,2,6,0.601,low
+q6,Which of the following best describes a Python expression?,3,6,q8,Why are comments used in Python programs?,3,8,0.601,low
+q1,What is the role of the Python interpreter?,4,1,q8,How does the interactive interpreter execute code?,4,8,0.601,low
+q3,"In Python, what is a variable?",1,3,q8,Why are comments used in Python code?,1,8,0.6,low
+q6,What is an expression in Python?,1,6,q3,Which of the following best defines a variable in Python?,4,3,0.6,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q1,What does the Python interpreter do?,3,1,0.6,low
+q2,What is the role of the interactive interpreter?,1,2,q9,How does the Python interpreter execute code from a file?,1,9,0.598,low
+q3,"In Python, a variable is used to _____.",2,3,q5,What is the purpose of the print() function in Python?,3,5,0.598,low
+q1,What does the Python interpreter do?,3,1,q9,How does the Python interpreter execute code saved in a file?,3,9,0.598,low
+q3,"In Python, a variable is used to _____.",2,3,q9,What is a Python statement?,4,9,0.597,low
+q8,Why are comments used in Python code?,1,8,q3,Which of the following best defines a variable in Python?,4,3,0.595,low
+q3,Which of the following best defines a variable in Python?,4,3,q7,Why are comments used in Python programs?,4,7,0.595,low
+q4,An expression in Python is best described as _____.,2,4,q7,Why are comments used in Python programs?,4,7,0.593,low
+q7,Why are comments used in Python code?,2,7,q3,Which of the following best defines a variable in Python?,4,3,0.593,low
+q6,What is an expression in Python?,1,6,q8,Why are comments used in Python code?,1,8,0.59,low
+q3,"In Python, a variable is used to _____.",2,3,q6,Which of the following best describes a Python expression?,3,6,0.59,low
+q6,What is an expression in Python?,1,6,q7,Why are comments used in Python programs?,4,7,0.589,low
+q1,What does the Python interpreter do?,2,1,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.589,low
+q7,Why are comments used in Python programs?,4,7,q10,How does a Python program typically run for multi-line code?,4,10,0.589,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.588,low
+q8,Why are comments used in Python code?,1,8,q5,What is the purpose of the print() function in Python?,3,5,0.587,low
+q3,"In Python, what is a variable?",1,3,q7,Why are comments used in Python code?,2,7,0.585,low
+q1,What does the Python interpreter do?,2,1,q6,Which of the following best describes a Python expression?,3,6,0.585,low
+q6,What is an expression in Python?,1,6,q7,Why are comments used in Python code?,2,7,0.584,low
+q8,Why are comments used in Python code?,1,8,q6,Which of the following best describes a Python expression?,3,6,0.584,low
+q6,The print() function in Python is used to _____.,2,6,q1,What does the Python interpreter do?,3,1,0.584,low
+q1,What does the Python interpreter do?,2,1,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.582,low
+q3,"In Python, a variable is used to _____.",2,3,q4,An expression in Python is best described as _____.,2,4,0.582,low
+q4,An expression in Python is best described as _____.,2,4,q7,Why are comments used in Python code?,2,7,0.58,low
+q7,Why are comments used in Python code?,2,7,q5,What is the purpose of the print() function in Python?,3,5,0.58,low
+q7,Why are comments used in Python code?,2,7,q6,Which of the following best describes a Python expression?,3,6,0.579,low
+q1,What does the Python interpreter do?,1,1,q9,How does the Python interpreter execute code saved in a file?,3,9,0.577,low
+q2,What is the role of the interactive interpreter?,1,2,q9,How does the Python interpreter execute code saved in a file?,3,9,0.576,low
+q2,What is the role of the interactive interpreter?,1,2,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.576,low
+q5,What is the purpose of the print() function in Python?,3,5,q7,Why are comments used in Python programs?,4,7,0.575,low
+q3,"In Python, a variable is used to _____.",2,3,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.574,low
+q4,An expression in Python is best described as _____.,2,4,q8,Why are comments used in Python programs?,3,8,0.574,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q5,What does the print() function do in Python?,4,5,0.574,low
+q1,What does the Python interpreter do?,1,1,q8,How does the interactive interpreter execute code?,4,8,0.573,low
+q6,The print() function in Python is used to _____.,2,6,q9,What is a Python statement?,4,9,0.573,low
+q1,What does the Python interpreter do?,1,1,q10,How does a Python program typically run for multi-line code?,4,10,0.572,low
+q3,"In Python, what is a variable?",1,3,q5,What is the purpose of the print() function in Python?,3,5,0.571,low
+q5,What is the purpose of the print() function in Python?,3,5,q8,Why are comments used in Python programs?,3,8,0.571,low
+q3,"In Python, what is a variable?",1,3,q7,Why are comments used in Python programs?,4,7,0.57,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q3,"In Python, a variable is used to _____.",2,3,0.57,low
+q7,Why are comments used in Python code?,2,7,q10,How does a Python program typically run for multi-line code?,4,10,0.57,low
+q5,What does the print() function do in Python?,4,5,q7,Why are comments used in Python programs?,4,7,0.57,low
+q1,What does the Python interpreter do?,2,1,q2,The purpose of the interactive interpreter is to _____.,2,2,0.569,low
+q1,What does the Python interpreter do?,2,1,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.569,low
+q8,Why are comments used in Python code?,1,8,q4,An expression in Python is best described as _____.,2,4,0.568,low
+q3,"In Python, a variable is used to _____.",2,3,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.567,low
+q6,What is an expression in Python?,1,6,q8,Why are comments used in Python programs?,3,8,0.566,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.565,low
+q7,Why are comments used in Python code?,2,7,q5,What does the print() function do in Python?,4,5,0.565,low
+q2,What is the role of the interactive interpreter?,1,2,q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,0.564,low
+q8,Why are comments used in Python code?,1,8,q5,What does the print() function do in Python?,4,5,0.564,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q2,The purpose of the interactive interpreter is to _____.,2,2,0.563,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q2,What is the role of the interactive interpreter in Python?,3,2,0.563,low
+q8,Why are comments used in Python programs?,3,8,q10,How does a Python program typically run for multi-line code?,4,10,0.563,low
+q6,What is an expression in Python?,1,6,q5,What does the print() function do in Python?,4,5,0.561,low
+q4,An expression in Python is best described as _____.,2,4,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.559,low
+q6,The print() function in Python is used to _____.,2,6,q3,"In Python, a variable is used to _____.",3,3,0.559,low
+q6,The print() function in Python is used to _____.,2,6,q2,What is the role of the interactive interpreter in Python?,3,2,0.558,low
+q8,Why are comments used in Python code?,1,8,q10,How does a Python program typically run for multi-line code?,4,10,0.557,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q2,What is the role of the interactive interpreter in Python?,3,2,0.556,low
+q5,What is the purpose of the print() function in Python?,3,5,q9,What is a Python statement?,4,9,0.554,low
+q3,"In Python, a variable is used to _____.",3,3,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.553,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q1,What is the role of the Python interpreter?,4,1,0.552,low
+q1,What does the Python interpreter do?,3,1,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.552,low
+q1,What does the Python interpreter do?,3,1,q9,What is a Python statement?,4,9,0.552,low
+q1,What is the role of the Python interpreter?,4,1,q10,How does a Python program typically run for multi-line code?,4,10,0.552,low
+q1,What does the Python interpreter do?,1,1,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.551,low
+q1,What does the Python interpreter do?,2,1,q7,Why are comments used in Python programs?,4,7,0.551,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q9,How does the Python interpreter execute code saved in a file?,3,9,0.551,low
+q2,What is the role of the interactive interpreter?,1,2,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.55,low
+q5,What does the print() function do?,1,5,q7,Why are comments used in Python code?,2,7,0.55,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q3,"In Python, a variable is used to _____.",3,3,0.55,low
+q3,"In Python, what is a variable?",1,3,q4,What symbol is used to assign a value to a variable in Python?,1,4,0.549,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q1,What does the Python interpreter do?,3,1,0.548,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q3,"In Python, a variable is used to _____.",3,3,0.547,low
+q6,What is an expression in Python?,1,6,q3,"In Python, a variable is used to _____.",3,3,0.547,low
+q6,Which of the following best describes a Python expression?,3,6,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.547,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q8,How does the interactive interpreter execute code?,4,8,0.545,low
+q8,Why are comments used in Python programs?,3,8,q5,What does the print() function do in Python?,4,5,0.544,low
+q1,What does the Python interpreter do?,3,1,q5,What does the print() function do in Python?,4,5,0.543,low
+q2,What is the role of the interactive interpreter?,1,2,q6,The print() function in Python is used to _____.,2,6,0.542,low
+q3,"In Python, what is a variable?",1,3,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.542,low
+q8,Why are comments used in Python code?,1,8,q1,What does the Python interpreter do?,2,1,0.542,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q10,How does a Python program typically run for multi-line code?,4,10,0.542,low
+q9,How does the Python interpreter execute code from a file?,1,9,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.541,low
+q6,The print() function in Python is used to _____.,2,6,q6,Which of the following best describes a Python expression?,3,6,0.541,low
+q6,What is an expression in Python?,1,6,q1,What does the Python interpreter do?,2,1,0.539,low
+q6,The print() function in Python is used to _____.,2,6,q1,What is the role of the Python interpreter?,4,1,0.539,low
+q2,What is the role of the interactive interpreter?,1,2,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.538,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q6,Which of the following best describes a Python expression?,3,6,0.538,low
+q1,What does the Python interpreter do?,2,1,q4,An expression in Python is best described as _____.,2,4,0.537,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q10,How does a Python program typically run for multi-line code?,4,10,0.537,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q9,What is a Python statement?,4,9,0.537,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q10,How does a Python program typically run for multi-line code?,4,10,0.536,low
+q1,What does the Python interpreter do?,2,1,q7,Why are comments used in Python code?,2,7,0.535,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q1,What does the Python interpreter do?,3,1,0.535,low
+q1,What does the Python interpreter do?,1,1,q3,"In Python, a variable is used to _____.",3,3,0.534,low
+q1,What does the Python interpreter do?,1,1,q9,What is a Python statement?,4,9,0.534,low
+q3,"In Python, what is a variable?",1,3,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.534,low
+q1,What does the Python interpreter do?,3,1,q6,Which of the following best describes a Python expression?,3,6,0.533,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q6,Which of the following best describes a Python expression?,3,6,0.532,low
+q3,"In Python, a variable is used to _____.",2,3,q5,What does the print() function do in Python?,4,5,0.532,low
+q3,"In Python, a variable is used to _____.",3,3,q5,What is the purpose of the print() function in Python?,3,5,0.531,low
+q1,What does the Python interpreter do?,3,1,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.53,low
+q6,What is an expression in Python?,1,6,q3,"In Python, a variable is used to _____.",2,3,0.529,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q3,"In Python, a variable is used to _____.",3,3,0.528,low
+q1,What does the Python interpreter do?,1,1,q6,The print() function in Python is used to _____.,2,6,0.527,low
+q5,What does the print() function do?,1,5,q9,What is a Python statement?,4,9,0.527,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.527,low
+q3,Which of the following best defines a variable in Python?,4,3,q10,How does a Python program typically run for multi-line code?,4,10,0.527,low
+q1,What does the Python interpreter do?,1,1,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.526,low
+q3,"In Python, what is a variable?",1,3,q10,What happens if a variable is assigned a new value in Python?,3,10,0.525,low
+q5,What does the print() function do?,1,5,q8,Why are comments used in Python code?,1,8,0.525,low
+q5,What does the print() function do?,1,5,q3,"In Python, a variable is used to _____.",2,3,0.525,low
+q3,"In Python, a variable is used to _____.",3,3,q10,How does a Python program typically run for multi-line code?,4,10,0.525,low
+q1,What does the Python interpreter do?,1,1,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.523,low
+q3,"In Python, what is a variable?",1,3,q5,What does the print() function do in Python?,4,5,0.523,low
+q6,The print() function in Python is used to _____.,2,6,q7,Why are comments used in Python programs?,4,7,0.522,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.522,low
+q3,"In Python, a variable is used to _____.",3,3,q5,What does the print() function do in Python?,4,5,0.521,low
+q5,What does the print() function do?,1,5,q7,Why are comments used in Python programs?,4,7,0.52,low
+q6,What is an expression in Python?,1,6,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.52,low
+q1,What does the Python interpreter do?,3,1,q7,Why are comments used in Python programs?,4,7,0.519,low
+q5,What is the purpose of the print() function in Python?,3,5,q6,Which of the following best describes a Python expression?,3,6,0.519,low
+q6,Which of the following best describes a Python expression?,3,6,q5,What does the print() function do in Python?,4,5,0.519,low
+q3,"In Python, what is a variable?",1,3,q5,What does the print() function do?,1,5,0.517,low
+q8,Why are comments used in Python code?,1,8,q1,What does the Python interpreter do?,3,1,0.517,low
+q1,What does the Python interpreter do?,1,1,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.516,low
+q1,What does the Python interpreter do?,2,1,q8,Why are comments used in Python programs?,3,8,0.516,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.516,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q6,Which of the following best describes a Python expression?,3,6,0.516,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q7,Why are comments used in Python programs?,4,7,0.516,low
+q1,What does the Python interpreter do?,2,1,q5,What is the purpose of the print() function in Python?,3,5,0.515,low
+q1,What does the Python interpreter do?,1,1,q8,Why are comments used in Python code?,1,8,0.514,low
+q1,What does the Python interpreter do?,1,1,q6,Which of the following best describes a Python expression?,3,6,0.514,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q10,How does a Python program typically run for multi-line code?,4,10,0.514,low
+q4,What symbol is used in Python to assign a value to a variable?,4,4,q9,What is a Python statement?,4,9,0.514,low
+q6,The print() function in Python is used to _____.,2,6,q7,Why are comments used in Python code?,2,7,0.513,low
+q6,What is an expression in Python?,1,6,q1,What does the Python interpreter do?,3,1,0.512,low
+q8,Why are comments used in Python code?,1,8,q6,The print() function in Python is used to _____.,2,6,0.512,low
+q4,An expression in Python is best described as _____.,2,4,q5,What does the print() function do in Python?,4,5,0.512,low
+q1,What is the role of the Python interpreter?,4,1,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.512,low
+q3,"In Python, what is a variable?",1,3,q6,The print() function in Python is used to _____.,2,6,0.511,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q9,What is a Python statement?,4,9,0.511,low
+q1,What does the Python interpreter do?,1,1,q5,What does the print() function do in Python?,4,5,0.51,low
+q2,What is the role of the interactive interpreter?,1,2,q7,Why are comments used in Python programs?,4,7,0.508,low
+q6,What is an expression in Python?,1,6,q6,The print() function in Python is used to _____.,2,6,0.508,low
+q5,What does the print() function do?,1,5,q8,Why are comments used in Python programs?,3,8,0.506,low
+q2,What is the role of the interactive interpreter?,1,2,q8,Why are comments used in Python code?,1,8,0.505,low
+q9,How does the Python interpreter execute code from a file?,1,9,q6,Which of the following best describes a Python expression?,3,6,0.505,low
+q4,An expression in Python is best described as _____.,2,4,q1,What does the Python interpreter do?,3,1,0.505,low
+q9,How does the Python interpreter execute code from a file?,1,9,q1,What is the role of the Python interpreter?,4,1,0.504,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.504,low
+q5,What does the print() function do in Python?,4,5,q10,How does a Python program typically run for multi-line code?,4,10,0.504,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q1,What does the Python interpreter do?,2,1,0.503,low
+q3,"In Python, a variable is used to _____.",2,3,q10,What happens if a variable is assigned a new value in Python?,3,10,0.503,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q6,Which of the following best describes a Python expression?,3,6,0.503,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q9,What is a Python statement?,4,9,0.503,low
+q1,What does the Python interpreter do?,1,1,q2,The purpose of the interactive interpreter is to _____.,2,2,0.502,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q8,How does the interactive interpreter execute code?,4,8,0.502,low
+q1,What does the Python interpreter do?,1,1,q8,Why are comments used in Python programs?,3,8,0.501,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q9,What is a Python statement?,4,9,0.501,low
+q4,An expression in Python is best described as _____.,2,4,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.5,low
+q7,Why are comments used in Python code?,2,7,q1,What does the Python interpreter do?,3,1,0.5,low
+q1,What is the role of the Python interpreter?,4,1,q7,Why are comments used in Python programs?,4,7,0.5,low
+q6,Which of the following best describes a Python expression?,3,6,q8,How does the interactive interpreter execute code?,4,8,0.499,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q1,What is the role of the Python interpreter?,4,1,0.499,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q3,Which of the following best defines a variable in Python?,4,3,0.499,low
+q8,Why are comments used in Python code?,1,8,q1,What is the role of the Python interpreter?,4,1,0.498,low
+q1,What does the Python interpreter do?,2,1,q3,"In Python, a variable is used to _____.",3,3,0.498,low
+q4,An expression in Python is best described as _____.,2,4,q2,What is the role of the interactive interpreter in Python?,3,2,0.498,low
+q6,The print() function in Python is used to _____.,2,6,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.498,low
+q6,What is an expression in Python?,1,6,q5,What is the purpose of the print() function in Python?,3,5,0.497,low
+q6,Which of the following best describes a Python expression?,3,6,q9,How does the Python interpreter execute code saved in a file?,3,9,0.497,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q9,What is a Python statement?,4,9,0.496,low
+q1,What does the Python interpreter do?,1,1,q3,"In Python, what is a variable?",1,3,0.495,low
+q1,What does the Python interpreter do?,1,1,q7,Why are comments used in Python code?,2,7,0.495,low
+q4,What symbol is used for assignment in Python?,3,4,q3,Which of the following best defines a variable in Python?,4,3,0.495,low
+q1,What does the Python interpreter do?,1,1,q6,What is an expression in Python?,1,6,0.494,low
+q1,What does the Python interpreter do?,1,1,q7,Why are comments used in Python programs?,4,7,0.494,low
+q5,What does the print() function do?,1,5,q3,"In Python, a variable is used to _____.",3,3,0.494,low
+q4,An expression in Python is best described as _____.,2,4,q6,The print() function in Python is used to _____.,2,6,0.494,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q6,Which of the following best describes a Python expression?,3,6,0.492,low
+q1,What does the Python interpreter do?,3,1,q8,Why are comments used in Python programs?,3,8,0.492,low
+q5,What is the purpose of the print() function in Python?,3,5,q1,What is the role of the Python interpreter?,4,1,0.492,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q9,What is a Python statement?,4,9,0.491,low
+q8,Why are comments used in Python code?,1,8,q2,What is the role of the interactive interpreter in Python?,3,2,0.49,low
+q4,An expression in Python is best described as _____.,2,4,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.49,low
+q5,What is the purpose of the print() function in Python?,3,5,q3,Which of the following best defines a variable in Python?,4,3,0.489,low
+q4,An expression in Python is best described as _____.,2,4,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.488,low
+q6,The print() function in Python is used to _____.,2,6,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.488,low
+q7,Why are comments used in Python code?,2,7,q2,What is the role of the interactive interpreter in Python?,3,2,0.488,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q8,Why are comments used in Python programs?,3,8,0.488,low
+q4,What symbol is used for assignment in Python?,3,4,q6,Which of the following best describes a Python expression?,3,6,0.488,low
+q2,What is the role of the interactive interpreter?,1,2,q5,What does the print() function do in Python?,4,5,0.487,low
+q3,"In Python, what is a variable?",1,3,q1,What does the Python interpreter do?,2,1,0.486,low
+q6,What is an expression in Python?,1,6,q2,What is the role of the interactive interpreter in Python?,3,2,0.486,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.486,low
+q1,What does the Python interpreter do?,1,1,q4,An expression in Python is best described as _____.,2,4,0.485,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q8,How does the interactive interpreter execute code?,4,8,0.485,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q4,An expression in Python is best described as _____.,2,4,0.483,low
+q9,How does the Python interpreter execute code from a file?,1,9,q9,What is a Python statement?,4,9,0.483,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q7,Why are comments used in Python programs?,4,7,0.482,low
+q6,Which of the following best describes a Python expression?,3,6,q1,What is the role of the Python interpreter?,4,1,0.482,low
+q8,Why are comments used in Python programs?,3,8,q1,What is the role of the Python interpreter?,4,1,0.482,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q9,What is a Python statement?,4,9,0.482,low
+q6,What is an expression in Python?,1,6,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.48,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.48,low
+q6,The print() function in Python is used to _____.,2,6,q8,Why are comments used in Python programs?,3,8,0.48,low
+q3,"In Python, a variable is used to _____.",3,3,q10,What happens if a variable is assigned a new value in Python?,3,10,0.48,low
+q9,How does the Python interpreter execute code from a file?,1,9,q5,What does the print() function do in Python?,4,5,0.479,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q6,The print() function in Python is used to _____.,2,6,0.479,low
+q6,Which of the following best describes a Python expression?,3,6,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.479,low
+q7,Why are comments used in Python code?,2,7,q1,What is the role of the Python interpreter?,4,1,0.478,low
+q1,What does the Python interpreter do?,1,1,q3,"In Python, a variable is used to _____.",2,3,0.477,low
+q1,What is the role of the Python interpreter?,4,1,q9,What is a Python statement?,4,9,0.476,low
+q6,The print() function in Python is used to _____.,2,6,q10,How does a Python program typically run for multi-line code?,4,10,0.475,low
+q9,How does the Python interpreter execute code from a file?,1,9,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.474,low
+q6,The print() function in Python is used to _____.,2,6,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.474,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q3,"In Python, a variable is used to _____.",3,3,0.474,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q7,Why are comments used in Python programs?,4,7,0.474,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q9,What is a Python statement?,4,9,0.474,low
+q1,What is the role of the Python interpreter?,4,1,q5,What does the print() function do in Python?,4,5,0.474,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q1,What is the role of the Python interpreter?,4,1,0.473,low
+q6,What is an expression in Python?,1,6,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.472,low
+q1,What does the Python interpreter do?,2,1,q3,"In Python, a variable is used to _____.",2,3,0.472,low
+q2,What is the role of the interactive interpreter?,1,2,q7,Why are comments used in Python code?,2,7,0.471,low
+q1,What does the Python interpreter do?,3,1,q5,What is the purpose of the print() function in Python?,3,5,0.471,low
+q3,"In Python, a variable is used to _____.",3,3,q1,What is the role of the Python interpreter?,4,1,0.471,low
+q3,Which of the following best defines a variable in Python?,4,3,q5,What does the print() function do in Python?,4,5,0.471,low
+q2,What is the role of the interactive interpreter?,1,2,q6,Which of the following best describes a Python expression?,3,6,0.47,low
+q9,How does the Python interpreter execute code from a file?,1,9,q2,The purpose of the interactive interpreter is to _____.,2,2,0.47,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q1,What is the role of the Python interpreter?,4,1,0.47,low
+q4,An expression in Python is best described as _____.,2,4,q6,Which of the following is a Python expression?,4,6,0.469,low
+q1,What does the Python interpreter do?,3,1,q3,"In Python, a variable is used to _____.",3,3,0.468,low
+q1,What does the Python interpreter do?,1,1,q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,0.467,low
+q2,What is the role of the interactive interpreter?,1,2,q8,Why are comments used in Python programs?,3,8,0.466,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q1,What does the Python interpreter do?,3,1,0.466,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q7,Why are comments used in Python programs?,4,7,0.466,low
+q5,What does the print() function do?,1,5,q6,What is an expression in Python?,1,6,0.465,low
+q6,What is an expression in Python?,1,6,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.465,low
+q9,How does the Python interpreter execute code from a file?,1,9,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.465,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q7,Why are comments used in Python programs?,4,7,0.465,low
+q6,Which of the following best describes a Python expression?,3,6,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.464,low
+q6,What is an expression in Python?,1,6,q9,How does the Python interpreter execute code from a file?,1,9,0.463,low
+q9,How does the Python interpreter execute code from a file?,1,9,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.463,low
+q6,The print() function in Python is used to _____.,2,6,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.463,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q9,How does the Python interpreter execute code saved in a file?,3,9,0.463,low
+q7,Why are comments used in Python code?,2,7,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.462,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q3,Which of the following best defines a variable in Python?,4,3,0.462,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q8,How does the interactive interpreter execute code?,4,8,0.462,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q5,What does the print() function do in Python?,4,5,0.462,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q9,How does the Python interpreter execute code saved in a file?,3,9,0.461,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q6,What is an expression in Python?,1,6,0.46,low
+q6,What is an expression in Python?,1,6,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.46,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q5,What does the print() function do in Python?,4,5,0.46,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.459,low
+q6,The print() function in Python is used to _____.,2,6,q3,Which of the following best defines a variable in Python?,4,3,0.458,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q5,What does the print() function do in Python?,4,5,0.458,low
+q3,"In Python, what is a variable?",1,3,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.457,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q5,What is the purpose of the print() function in Python?,3,5,0.457,low
+q5,What does the print() function do?,1,5,q1,What does the Python interpreter do?,2,1,0.457,low
+q3,"In Python, a variable is used to _____.",2,3,q10,How does a Python program typically run for multi-line code?,4,10,0.457,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.457,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q3,Which of the following best defines a variable in Python?,4,3,0.457,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q6,The print() function in Python is used to _____.,2,6,0.456,low
+q4,An expression in Python is best described as _____.,2,4,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.456,low
+q4,An expression in Python is best described as _____.,2,4,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.456,low
+q2,What is the role of the interactive interpreter?,1,2,q3,"In Python, a variable is used to _____.",3,3,0.455,low
+q6,The print() function in Python is used to _____.,2,6,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.455,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q7,Why are comments used in Python programs?,4,7,0.455,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q3,Which of the following best defines a variable in Python?,4,3,0.455,low
+q6,What is an expression in Python?,1,6,q1,What is the role of the Python interpreter?,4,1,0.454,low
+q4,An expression in Python is best described as _____.,2,4,q5,What is the purpose of the print() function in Python?,3,5,0.454,low
+q2,What is the role of the interactive interpreter?,1,2,q9,What is a Python statement?,4,9,0.453,low
+q3,"In Python, what is a variable?",1,3,q10,How does a Python program typically run for multi-line code?,4,10,0.453,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q8,Why are comments used in Python programs?,3,8,0.453,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.452,low
+q1,What does the Python interpreter do?,1,1,q5,What is the purpose of the print() function in Python?,3,5,0.451,low
+q8,Why are comments used in Python code?,1,8,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.451,low
+q7,Why are comments used in Python code?,2,7,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.451,low
+q1,What does the Python interpreter do?,1,1,q3,Which of the following best defines a variable in Python?,4,3,0.45,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q10,What happens if a variable is assigned a new value in Python?,3,10,0.45,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q8,Why are comments used in Python programs?,3,8,0.45,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q7,Why are comments used in Python programs?,4,7,0.45,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q5,What does the print() function do in Python?,4,5,0.45,low
+q3,"In Python, what is a variable?",1,3,q1,What does the Python interpreter do?,3,1,0.449,low
+q8,Why are comments used in Python code?,1,8,q2,The purpose of the interactive interpreter is to _____.,2,2,0.449,low
+q9,How does the Python interpreter execute code from a file?,1,9,q3,"In Python, a variable is used to _____.",3,3,0.449,low
+q4,An expression in Python is best described as _____.,2,4,q1,What is the role of the Python interpreter?,4,1,0.449,low
+q6,Which of the following best describes a Python expression?,3,6,q6,Which of the following is a Python expression?,4,6,0.449,low
+q6,What is an expression in Python?,1,6,q6,Which of the following is a Python expression?,4,6,0.448,low
+q3,"In Python, a variable is used to _____.",2,3,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.448,low
+q7,Why are comments used in Python code?,2,7,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.448,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q9,How does the Python interpreter execute code saved in a file?,3,9,0.448,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q10,How does a Python program typically run for multi-line code?,4,10,0.447,low
+q9,How does the Python interpreter execute code from a file?,1,9,q4,An expression in Python is best described as _____.,2,4,0.447,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q5,What is the purpose of the print() function in Python?,3,5,0.447,low
+q3,"In Python, a variable is used to _____.",2,3,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.446,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q6,The print() function in Python is used to _____.,2,6,0.446,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q10,What happens if a variable is assigned a new value in Python?,3,10,0.446,low
+q5,What is the purpose of the print() function in Python?,3,5,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.446,low
+q8,Why are comments used in Python code?,1,8,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.445,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q8,Why are comments used in Python programs?,3,8,0.445,low
+q4,What symbol is used in Python to assign a value to a variable?,4,4,q7,Why are comments used in Python programs?,4,7,0.445,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.444,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q5,What is the purpose of the print() function in Python?,3,5,0.444,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q8,Why are comments used in Python code?,1,8,0.443,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.443,low
+q8,Why are comments used in Python code?,1,8,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.442,low
+q8,Why are comments used in Python code?,1,8,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.442,low
+q1,What does the Python interpreter do?,2,1,q3,Which of the following best defines a variable in Python?,4,3,0.442,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.442,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q8,Why are comments used in Python programs?,3,8,0.441,low
+q3,"In Python, a variable is used to _____.",3,3,q9,How does the Python interpreter execute code saved in a file?,3,9,0.441,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q7,Why are comments used in Python programs?,4,7,0.44,low
+q8,Why are comments used in Python code?,1,8,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.44,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q7,Why are comments used in Python code?,2,7,0.439,low
+q2,What is the role of the interactive interpreter?,1,2,q6,What is an expression in Python?,1,6,0.438,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.438,low
+q3,"In Python, a variable is used to _____.",2,3,q1,What does the Python interpreter do?,3,1,0.437,low
+q2,What is the role of the interactive interpreter?,1,2,q4,An expression in Python is best described as _____.,2,4,0.436,low
+q5,What does the print() function do?,1,5,q3,Which of the following best defines a variable in Python?,4,3,0.436,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q3,"In Python, a variable is used to _____.",3,3,0.436,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q8,Why are comments used in Python programs?,3,8,0.435,low
+q4,An expression in Python is best described as _____.,2,4,q4,What symbol is used for assignment in Python?,3,4,0.435,low
+q4,An expression in Python is best described as _____.,2,4,q9,How does the Python interpreter execute code saved in a file?,3,9,0.435,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q7,Why are comments used in Python code?,2,7,0.434,low
+q2,What is the role of the interactive interpreter?,1,2,q5,What is the purpose of the print() function in Python?,3,5,0.433,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q7,Why are comments used in Python code?,2,7,0.433,low
+q5,What does the print() function do?,1,5,q6,Which of the following best describes a Python expression?,3,6,0.433,low
+q6,What is an expression in Python?,1,6,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.433,low
+q3,"In Python, a variable is used to _____.",2,3,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.433,low
+q4,An expression in Python is best described as _____.,2,4,q8,How does the interactive interpreter execute code?,4,8,0.433,low
+q5,What is the purpose of the print() function in Python?,3,5,q10,What happens if a variable is assigned a new value in Python?,3,10,0.433,low
+q8,Why are comments used in Python programs?,3,8,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.433,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q3,"In Python, a variable is used to _____.",3,3,0.432,low
+q8,Why are comments used in Python programs?,3,8,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.432,low
+q5,What does the print() function do in Python?,4,5,q8,How does the interactive interpreter execute code?,4,8,0.432,low
+q3,"In Python, a variable is used to _____.",3,3,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.431,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q7,Why are comments used in Python programs?,4,7,0.431,low
+q7,Why are comments used in Python programs?,4,7,q8,How does the interactive interpreter execute code?,4,8,0.431,low
+q7,Why are comments used in Python code?,2,7,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.43,low
+q3,"In Python, what is a variable?",1,3,q2,What is the role of the interactive interpreter in Python?,3,2,0.429,low
+q7,Why are comments used in Python code?,2,7,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.429,low
+q9,How does the Python interpreter execute code from a file?,1,9,q6,The print() function in Python is used to _____.,2,6,0.428,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q8,Why are comments used in Python programs?,3,8,0.427,low
+q6,What is an expression in Python?,1,6,q9,How does the Python interpreter execute code saved in a file?,3,9,0.426,low
+q8,Why are comments used in Python code?,1,8,q9,How does the Python interpreter execute code from a file?,1,9,0.426,low
+q3,"In Python, a variable is used to _____.",3,3,q4,What symbol is used for assignment in Python?,3,4,0.426,low
+q3,"In Python, what is a variable?",1,3,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.425,low
+q9,How does the Python interpreter execute code from a file?,1,9,q7,Why are comments used in Python programs?,4,7,0.425,low
+q4,What symbol is used for assignment in Python?,3,4,q9,What is a Python statement?,4,9,0.425,low
+q3,"In Python, what is a variable?",1,3,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.423,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q9,How does the Python interpreter execute code from a file?,1,9,0.423,low
+q6,Which of the following best describes a Python expression?,3,6,q10,What happens if a variable is assigned a new value in Python?,3,10,0.423,low
+q3,"In Python, a variable is used to _____.",3,3,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.422,low
+q3,"In Python, what is a variable?",1,3,q9,How does the Python interpreter execute code from a file?,1,9,0.421,low
+q8,Why are comments used in Python code?,1,8,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.421,low
+q3,"In Python, a variable is used to _____.",2,3,q4,What symbol is used for assignment in Python?,3,4,0.421,low
+q6,The print() function in Python is used to _____.,2,6,q9,How does the Python interpreter execute code saved in a file?,3,9,0.42,low
+q8,Why are comments used in Python code?,1,8,q9,How does the Python interpreter execute code saved in a file?,3,9,0.419,low
+q5,What does the print() function do?,1,5,q2,What is the role of the interactive interpreter in Python?,3,2,0.418,low
+q8,Why are comments used in Python code?,1,8,q8,How does the interactive interpreter execute code?,4,8,0.418,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.418,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.417,low
+q8,How does the interactive interpreter execute code?,4,8,q9,What is a Python statement?,4,9,0.417,low
+q3,"In Python, what is a variable?",1,3,q1,What is the role of the Python interpreter?,4,1,0.416,low
+q1,What does the Python interpreter do?,3,1,q3,Which of the following best defines a variable in Python?,4,3,0.416,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.415,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q5,What does the print() function do in Python?,4,5,0.415,low
+q8,Why are comments used in Python programs?,3,8,q9,How does the Python interpreter execute code saved in a file?,3,9,0.414,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q1,What is the role of the Python interpreter?,4,1,0.413,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q9,How does the Python interpreter execute code saved in a file?,3,9,0.412,low
+q6,Which of the following is a Python expression?,4,6,q9,What is a Python statement?,4,9,0.412,low
+q2,What is the role of the interactive interpreter?,1,2,q5,What does the print() function do?,1,5,0.411,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.411,low
+q5,What does the print() function do?,1,5,q8,How does the interactive interpreter execute code?,4,8,0.411,low
+q6,What is an expression in Python?,1,6,q4,What symbol is used for assignment in Python?,3,4,0.411,low
+q7,Why are comments used in Python code?,2,7,q9,How does the Python interpreter execute code saved in a file?,3,9,0.411,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q4,What symbol is used for assignment in Python?,3,4,0.411,low
+q8,Why are comments used in Python programs?,3,8,q8,How does the interactive interpreter execute code?,4,8,0.411,low
+q7,Why are comments used in Python code?,2,7,q8,How does the interactive interpreter execute code?,4,8,0.41,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q3,Which of the following best defines a variable in Python?,4,3,0.41,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q3,Which of the following best defines a variable in Python?,4,3,0.41,low
+q1,What does the Python interpreter do?,1,1,q5,What does the print() function do?,1,5,0.409,low
+q3,"In Python, a variable is used to _____.",2,3,q1,What is the role of the Python interpreter?,4,1,0.409,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q9,What is a Python statement?,4,9,0.409,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q3,Which of the following best defines a variable in Python?,4,3,0.409,low
+q9,How does the Python interpreter execute code from a file?,1,9,q3,Which of the following best defines a variable in Python?,4,3,0.408,low
+q3,"In Python, a variable is used to _____.",2,3,q2,What is the role of the interactive interpreter in Python?,3,2,0.408,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q5,What is the purpose of the print() function in Python?,3,5,0.408,low
+q5,What does the print() function do?,1,5,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.407,low
+q1,What does the Python interpreter do?,1,1,q10,What happens if a variable is assigned a new value in Python?,3,10,0.406,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q6,Which of the following best describes a Python expression?,3,6,0.405,low
+q5,What is the purpose of the print() function in Python?,3,5,q10,How does a Python program typically run for multi-line code?,4,10,0.403,low
+q5,What does the print() function do?,1,5,q1,What does the Python interpreter do?,3,1,0.402,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q7,Why are comments used in Python programs?,4,7,0.402,low
+q1,What does the Python interpreter do?,2,1,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.402,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q3,"In Python, a variable is used to _____.",3,3,0.402,low
+q4,What symbol is used for assignment in Python?,3,4,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.402,low
+q3,"In Python, what is a variable?",1,3,q10,What happens when a variable is assigned a new value?,1,10,0.401,low
+q6,What is an expression in Python?,1,6,q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,0.401,low
+q9,How does the Python interpreter execute code from a file?,1,9,q7,Why are comments used in Python code?,2,7,0.401,low
+q9,How does the Python interpreter execute code from a file?,1,9,q8,Why are comments used in Python programs?,3,8,0.401,low
+q10,What happens when a variable is assigned a new value?,1,10,q3,"In Python, a variable is used to _____.",2,3,0.401,low
+q5,What does the print() function do?,1,5,q10,What happens when a variable is assigned a new value?,1,10,0.399,low
+q2,What is the role of the interactive interpreter?,1,2,q3,"In Python, what is a variable?",1,3,0.398,low
+q3,"In Python, a variable is used to _____.",3,3,q8,How does the interactive interpreter execute code?,4,8,0.398,low
+q4,What symbol is used in Python to assign a value to a variable?,4,4,q10,How does a Python program typically run for multi-line code?,4,10,0.398,low
+q2,What is the role of the interactive interpreter?,1,2,q3,"In Python, a variable is used to _____.",2,3,0.397,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q1,What does the Python interpreter do?,2,1,0.396,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q4,An expression in Python is best described as _____.,2,4,0.396,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q5,What is the purpose of the print() function in Python?,3,5,0.396,low
+q10,What happens when a variable is assigned a new value?,1,10,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.395,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q5,What does the print() function do in Python?,4,5,0.395,low
+q4,What symbol is used in Python to assign a value to a variable?,4,4,q5,What does the print() function do in Python?,4,5,0.395,low
+q6,Which of the following is a Python expression?,4,6,q7,Why are comments used in Python programs?,4,7,0.395,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q5,What does the print() function do in Python?,4,5,0.394,low
+q5,What does the print() function do?,1,5,q4,An expression in Python is best described as _____.,2,4,0.394,low
+q7,Why are comments used in Python code?,2,7,q6,Which of the following is a Python expression?,4,6,0.394,low
+q4,What symbol is used for assignment in Python?,3,4,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.394,low
+q1,What is the role of the Python interpreter?,4,1,q3,Which of the following best defines a variable in Python?,4,3,0.394,low
+q3,"In Python, what is a variable?",1,3,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.393,low
+q3,Which of the following best defines a variable in Python?,4,3,q8,How does the interactive interpreter execute code?,4,8,0.392,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q5,What does the print() function do in Python?,4,5,0.39,low
+q8,Why are comments used in Python code?,1,8,q6,Which of the following is a Python expression?,4,6,0.39,low
+q10,What happens when a variable is assigned a new value?,1,10,q3,Which of the following best defines a variable in Python?,4,3,0.39,low
+q3,"In Python, a variable is used to _____.",2,3,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.39,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q10,How does a Python program typically run for multi-line code?,4,10,0.389,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q7,Why are comments used in Python code?,2,7,0.389,low
+q6,The print() function in Python is used to _____.,2,6,q4,What symbol is used for assignment in Python?,3,4,0.389,low
+q3,Which of the following best defines a variable in Python?,4,3,q6,Which of the following is a Python expression?,4,6,0.389,low
+q5,What does the print() function do?,1,5,q2,The purpose of the interactive interpreter is to _____.,2,2,0.388,low
+q6,The print() function in Python is used to _____.,2,6,q8,How does the interactive interpreter execute code?,4,8,0.388,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q10,How does a Python program typically run for multi-line code?,4,10,0.387,low
+q8,Why are comments used in Python programs?,3,8,q6,Which of the following is a Python expression?,4,6,0.387,low
+q10,What happens when a variable is assigned a new value?,1,10,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.386,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.386,low
+q2,What is the role of the interactive interpreter?,1,2,q3,Which of the following best defines a variable in Python?,4,3,0.385,low
+q3,"In Python, a variable is used to _____.",2,3,q6,Which of the following is a Python expression?,4,6,0.385,low
+q8,Why are comments used in Python programs?,3,8,q10,What happens if a variable is assigned a new value in Python?,3,10,0.385,low
+q6,What is an expression in Python?,1,6,q8,How does the interactive interpreter execute code?,4,8,0.384,low
+q3,"In Python, what is a variable?",1,3,q4,What symbol is used for assignment in Python?,3,4,0.383,low
+q1,What does the Python interpreter do?,2,1,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.383,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q8,Why are comments used in Python code?,1,8,0.382,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q8,Why are comments used in Python programs?,3,8,0.382,low
+q10,What happens when a variable is assigned a new value?,1,10,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.382,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q9,What is a Python statement?,4,9,0.381,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q6,Which of the following is a Python expression?,4,6,0.381,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q5,What does the print() function do in Python?,4,5,0.381,low
+q4,What symbol is used for assignment in Python?,3,4,q7,Why are comments used in Python programs?,4,7,0.38,low
+q5,What does the print() function do?,1,5,q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,0.379,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q5,What does the print() function do in Python?,4,5,0.379,low
+q10,What happens when a variable is assigned a new value?,1,10,q3,"In Python, a variable is used to _____.",3,3,0.378,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.377,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q3,"In Python, a variable is used to _____.",2,3,0.377,low
+q5,What does the print() function do?,1,5,q10,How does a Python program typically run for multi-line code?,4,10,0.376,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q3,Which of the following best defines a variable in Python?,4,3,0.376,low
+q3,"In Python, a variable is used to _____.",2,3,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.375,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q6,Which of the following is a Python expression?,4,6,0.374,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q6,The print() function in Python is used to _____.,2,6,0.374,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q6,Which of the following best describes a Python expression?,3,6,0.374,low
+q1,What does the Python interpreter do?,3,1,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.374,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q6,Which of the following best describes a Python expression?,3,6,0.373,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.372,low
+q8,Why are comments used in Python code?,1,8,q4,What symbol is used for assignment in Python?,3,4,0.371,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q10,What happens when a variable is assigned a new value?,1,10,0.37,low
+q5,What is the purpose of the print() function in Python?,3,5,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.37,low
+q5,What does the print() function do in Python?,4,5,q6,Which of the following is a Python expression?,4,6,0.37,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q4,An expression in Python is best described as _____.,2,4,0.369,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.369,low
+q6,The print() function in Python is used to _____.,2,6,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.367,low
+q5,What is the purpose of the print() function in Python?,3,5,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.365,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q1,What does the Python interpreter do?,3,1,0.363,low
+q6,The print() function in Python is used to _____.,2,6,q6,Which of the following is a Python expression?,4,6,0.363,low
+q3,"In Python, what is a variable?",1,3,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.362,low
+q9,How does the Python interpreter execute code from a file?,1,9,q3,"In Python, a variable is used to _____.",2,3,0.362,low
+q1,What does the Python interpreter do?,1,1,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.361,low
+q3,"In Python, what is a variable?",1,3,q6,Which of the following is a Python expression?,4,6,0.359,low
+q6,What is an expression in Python?,1,6,q2,The purpose of the interactive interpreter is to _____.,2,2,0.358,low
+q9,How does the Python interpreter execute code from a file?,1,9,q10,What happens if a variable is assigned a new value in Python?,3,10,0.358,low
+q3,"In Python, a variable is used to _____.",3,3,q6,Which of the following is a Python expression?,4,6,0.358,low
+q3,"In Python, what is a variable?",1,3,q9,How does the Python interpreter execute code saved in a file?,3,9,0.357,low
+q7,Why are comments used in Python code?,2,7,q4,What symbol is used for assignment in Python?,3,4,0.356,low
+q6,Which of the following is a Python expression?,4,6,q10,How does a Python program typically run for multi-line code?,4,10,0.356,low
+q4,What symbol is used for assignment in Python?,3,4,q10,What happens if a variable is assigned a new value in Python?,3,10,0.355,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.353,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q5,What is the purpose of the print() function in Python?,3,5,0.352,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q5,What does the print() function do?,1,5,0.351,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q9,What is a Python statement?,4,9,0.351,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q1,What does the Python interpreter do?,3,1,0.351,low
+q3,"In Python, what is a variable?",1,3,q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,0.35,low
+q5,What does the print() function do?,1,5,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.35,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q4,What symbol is used for assignment in Python?,3,4,0.35,low
+q5,What does the print() function do?,1,5,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.349,low
+q5,What does the print() function do?,1,5,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.349,low
+q1,What does the Python interpreter do?,1,1,q4,What symbol is used to assign a value to a variable in Python?,1,4,0.348,low
+q8,Why are comments used in Python code?,1,8,q10,What happens if a variable is assigned a new value in Python?,3,10,0.348,low
+q4,What symbol is used in Python to assign a value to a variable?,4,4,q6,Which of the following is a Python expression?,4,6,0.348,low
+q5,What does the print() function do?,1,5,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.347,low
+q10,What happens when a variable is assigned a new value?,1,10,q5,What is the purpose of the print() function in Python?,3,5,0.347,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q3,"In Python, a variable is used to _____.",3,3,0.346,low
+q4,What symbol is used for assignment in Python?,3,4,q5,What is the purpose of the print() function in Python?,3,5,0.346,low
+q4,What symbol is used for assignment in Python?,3,4,q8,Why are comments used in Python programs?,3,8,0.346,low
+q7,Why are comments used in Python code?,2,7,q10,What happens if a variable is assigned a new value in Python?,3,10,0.345,low
+q5,What is the purpose of the print() function in Python?,3,5,q6,Which of the following is a Python expression?,4,6,0.345,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q2,What is the role of the interactive interpreter in Python?,3,2,0.344,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q7,Why are comments used in Python programs?,4,7,0.344,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.343,low
+q4,What symbol is used for assignment in Python?,3,4,q10,How does a Python program typically run for multi-line code?,4,10,0.343,low
+q1,What does the Python interpreter do?,2,1,q4,What symbol is used for assignment in Python?,3,4,0.342,low
+q6,The print() function in Python is used to _____.,2,6,q10,What happens if a variable is assigned a new value in Python?,3,10,0.342,low
+q1,What does the Python interpreter do?,1,1,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.341,low
+q5,What does the print() function do?,1,5,q9,How does the Python interpreter execute code from a file?,1,9,0.341,low
+q3,"In Python, a variable is used to _____.",2,3,q9,How does the Python interpreter execute code saved in a file?,3,9,0.341,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q3,Which of the following best defines a variable in Python?,4,3,0.34,low
+q9,How does the Python interpreter execute code from a file?,1,9,q5,What is the purpose of the print() function in Python?,3,5,0.34,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,0.339,low
+q5,What does the print() function do?,1,5,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.339,low
+q5,What does the print() function do?,1,5,q10,What happens if a variable is assigned a new value in Python?,3,10,0.339,low
+q10,What happens when a variable is assigned a new value?,1,10,q6,Which of the following best describes a Python expression?,3,6,0.339,low
+q5,What does the print() function do?,1,5,q1,What is the role of the Python interpreter?,4,1,0.338,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q10,What happens if a variable is assigned a new value in Python?,3,10,0.338,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q1,What is the role of the Python interpreter?,4,1,0.337,low
+q5,What is the purpose of the print() function in Python?,3,5,q9,How does the Python interpreter execute code saved in a file?,3,9,0.336,low
+q1,What is the role of the Python interpreter?,4,1,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.334,low
+q3,"In Python, what is a variable?",1,3,q8,How does the interactive interpreter execute code?,4,8,0.332,low
+q1,What does the Python interpreter do?,2,1,q10,What happens if a variable is assigned a new value in Python?,3,10,0.33,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q4,What symbol is used for assignment in Python?,3,4,0.329,low
+q2,What is the role of the interactive interpreter?,1,2,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.327,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q5,What is the purpose of the print() function in Python?,3,5,0.327,low
+q1,What does the Python interpreter do?,3,1,q4,What symbol is used for assignment in Python?,3,4,0.326,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q2,What is the role of the interactive interpreter in Python?,3,2,0.325,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q8,Why are comments used in Python programs?,3,8,0.325,low
+q5,What does the print() function do?,1,5,q9,How does the Python interpreter execute code saved in a file?,3,9,0.321,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q3,"In Python, a variable is used to _____.",2,3,0.321,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q1,What is the role of the Python interpreter?,4,1,0.321,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q5,What does the print() function do in Python?,4,5,0.321,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q9,What is a Python statement?,4,9,0.321,low
+q4,What symbol is used for assignment in Python?,3,4,q6,Which of the following is a Python expression?,4,6,0.321,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q3,Which of the following best defines a variable in Python?,4,3,0.32,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.32,low
+q10,What happens when a variable is assigned a new value?,1,10,q8,Why are comments used in Python programs?,3,8,0.317,low
+q2,What is the role of the interactive interpreter?,1,2,q4,What symbol is used to assign a value to a variable in Python?,1,4,0.316,low
+q5,What does the print() function do?,1,5,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.316,low
+q9,How does the Python interpreter execute code from a file?,1,9,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.314,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q7,Why are comments used in Python programs?,4,7,0.314,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q9,How does the Python interpreter execute code from a file?,1,9,0.311,low
+q5,What does the print() function do?,1,5,q6,Which of the following is a Python expression?,4,6,0.31,low
+q5,What is the purpose of the print() function in Python?,3,5,q8,How does the interactive interpreter execute code?,4,8,0.31,low
+q10,What happens when a variable is assigned a new value?,1,10,q5,What does the print() function do in Python?,4,5,0.309,low
+q6,What is an expression in Python?,1,6,q10,What happens if a variable is assigned a new value in Python?,3,10,0.308,low
+q4,An expression in Python is best described as _____.,2,4,q10,What happens if a variable is assigned a new value in Python?,3,10,0.308,low
+q1,What does the Python interpreter do?,1,1,q4,What symbol is used for assignment in Python?,3,4,0.307,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.307,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.307,low
+q7,Why are comments used in Python code?,2,7,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.306,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q10,How does a Python program typically run for multi-line code?,4,10,0.306,low
+q10,What happens when a variable is assigned a new value?,1,10,q8,How does the interactive interpreter execute code?,4,8,0.304,low
+q1,What does the Python interpreter do?,3,1,q10,What happens if a variable is assigned a new value in Python?,3,10,0.304,low
+q2,What is the role of the interactive interpreter?,1,2,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.303,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q9,How does the Python interpreter execute code saved in a file?,3,9,0.303,low
+q10,What happens when a variable is assigned a new value?,1,10,q9,What is a Python statement?,4,9,0.303,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.303,low
+q8,Why are comments used in Python code?,1,8,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.301,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q4,What symbol is used in Python to assign a value to a variable?,4,4,0.301,low
+q10,What happens when a variable is assigned a new value?,1,10,q4,What symbol is used for assignment in Python?,3,4,0.299,low
+q3,"In Python, a variable is used to _____.",2,3,q8,How does the interactive interpreter execute code?,4,8,0.299,low
+q4,An expression in Python is best described as _____.,2,4,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.299,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q4,What symbol is used for assignment in Python?,3,4,0.299,low
+q1,What does the Python interpreter do?,2,1,q6,Which of the following is a Python expression?,4,6,0.298,low
+q10,What happens when a variable is assigned a new value?,1,10,q7,Why are comments used in Python programs?,4,7,0.297,low
+q4,What symbol is used for assignment in Python?,3,4,q5,What does the print() function do in Python?,4,5,0.297,low
+q4,What symbol is used in Python to assign a value to a variable?,4,4,q8,How does the interactive interpreter execute code?,4,8,0.297,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q6,Which of the following is a Python expression?,4,6,0.293,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q10,What happens if a variable is assigned a new value in Python?,3,10,0.293,low
+q1,What does the Python interpreter do?,3,1,q6,Which of the following is a Python expression?,4,6,0.291,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q5,What is the purpose of the print() function in Python?,3,5,0.287,low
+q9,How does the Python interpreter execute code from a file?,1,9,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.287,low
+q10,What happens when a variable is assigned a new value?,1,10,q7,Why are comments used in Python code?,2,7,0.287,low
+q2,What is the role of the interactive interpreter?,1,2,q4,What symbol is used for assignment in Python?,3,4,0.285,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q8,How does the interactive interpreter execute code?,4,8,0.284,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q6,Which of the following is a Python expression?,4,6,0.282,low
+q3,"In Python, what is a variable?",1,3,q2,The purpose of the interactive interpreter is to _____.,2,2,0.279,low
+q4,What symbol is used for assignment in Python?,3,4,q1,What is the role of the Python interpreter?,4,1,0.277,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q10,What happens if a variable is assigned a new value in Python?,3,10,0.275,low
+q8,Why are comments used in Python code?,1,8,q10,What happens when a variable is assigned a new value?,1,10,0.273,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q9,How does the Python interpreter execute code saved in a file?,3,9,0.273,low
+q4,What symbol is used to assign a value to a variable in Python?,1,4,q2,The purpose of the interactive interpreter is to _____.,2,2,0.272,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q5,What symbol is used to assign a value to a variable in Python?,2,5,0.272,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q4,What symbol is used for assignment in Python?,3,4,0.271,low
+q9,How does the Python interpreter execute code from a file?,1,9,q4,What symbol is used for assignment in Python?,3,4,0.27,low
+q4,What symbol is used for assignment in Python?,3,4,q9,How does the Python interpreter execute code saved in a file?,3,9,0.27,low
+q5,What symbol is used to assign a value to a variable in Python?,2,5,q8,How does the interactive interpreter execute code?,4,8,0.268,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q8,How does the interactive interpreter execute code?,4,8,0.268,low
+q10,What happens when a variable is assigned a new value?,1,10,q6,The print() function in Python is used to _____.,2,6,0.266,low
+q1,What does the Python interpreter do?,1,1,q6,Which of the following is a Python expression?,4,6,0.265,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q10,What happens when a variable is assigned a new value?,1,10,0.265,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q4,What symbol is used for assignment in Python?,3,4,0.263,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q8,How does the interactive interpreter execute code?,4,8,0.263,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q1,What is the role of the Python interpreter?,4,1,0.26,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q6,Which of the following is a Python expression?,4,6,0.258,low
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,q10,What happens if a variable is assigned a new value in Python?,3,10,0.257,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.255,low
+q10,What happens when a variable is assigned a new value?,1,10,q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,0.254,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q10,What happens if a variable is assigned a new value in Python?,3,10,0.254,low
+q1,What does the Python interpreter do?,1,1,q10,What happens when a variable is assigned a new value?,1,10,0.253,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.253,low
+q4,What symbol is used for assignment in Python?,3,4,q8,How does the interactive interpreter execute code?,4,8,0.252,low
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,q6,Which of the following is a Python expression?,4,6,0.249,low
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,9,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.242,low
+q2,What is the role of the interactive interpreter in Python?,3,2,q6,Which of the following is a Python expression?,4,6,0.242,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q10,How does a Python program typically run for multi-line code?,4,10,0.237,low
+q5,What does the print() function do?,1,5,q4,What symbol is used for assignment in Python?,3,4,0.236,low
+q1,What does the Python interpreter do?,2,1,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.233,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.232,low
+q9,How does the Python interpreter execute code saved in a file?,3,9,q6,Which of the following is a Python expression?,4,6,0.231,low
+q9,How does the Python interpreter execute code from a file?,1,9,q10,What happens when a variable is assigned a new value?,1,10,0.23,low
+q10,What happens when a variable is assigned a new value?,1,10,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.228,low
+q1,What does the Python interpreter do?,1,1,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.227,low
+q6,What is an expression in Python?,1,6,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.226,low
+q8,"When running longer Python programs, code is typically written in _____.",2,8,q10,What happens if a variable is assigned a new value in Python?,3,10,0.225,low
+q1,What is the role of the Python interpreter?,4,1,q6,Which of the following is a Python expression?,4,6,0.225,low
+q6,What is an expression in Python?,1,6,q10,What happens when a variable is assigned a new value?,1,10,0.224,low
+q10,What happens when a variable is assigned a new value?,1,10,q4,An expression in Python is best described as _____.,2,4,0.223,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.222,low
+q10,What happens when a variable is assigned a new value?,1,10,q10,How does a Python program typically run for multi-line code?,4,10,0.214,low
+q10,What happens when a variable is assigned a new value?,1,10,q1,What does the Python interpreter do?,2,1,0.21,low
+q9,How does the Python interpreter execute code from a file?,1,9,q6,Which of the following is a Python expression?,4,6,0.209,low
+q10,What happens when a variable is assigned a new value?,1,10,q9,How does the Python interpreter execute code saved in a file?,3,9,0.208,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q1,What does the Python interpreter do?,3,1,0.204,low
+q2,What is the role of the interactive interpreter?,1,2,q10,What happens if a variable is assigned a new value in Python?,3,10,0.203,low
+q2,What is the role of the interactive interpreter?,1,2,q6,Which of the following is a Python expression?,4,6,0.202,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q10,What happens if a variable is assigned a new value in Python?,3,10,0.201,low
+q10,What happens when a variable is assigned a new value?,1,10,q2,The purpose of the interactive interpreter is to _____.,2,2,0.2,low
+q10,What happens when a variable is assigned a new value?,1,10,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.194,low
+q2,What is the role of the interactive interpreter?,1,2,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.192,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,7,0.191,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q9,How does the Python interpreter execute code saved in a file?,3,9,0.19,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,2,0.19,low
+q9,How does the Python interpreter execute code from a file?,1,9,q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,0.189,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q2,What is the role of the interactive interpreter in Python?,3,2,0.176,low
+q10,What happens when a variable is assigned a new value?,1,10,q8,"When running longer Python programs, code is typically written in _____.",2,8,0.175,low
+q6,Which of the following is a Python expression?,4,6,q8,How does the interactive interpreter execute code?,4,8,0.175,low
+q10,What happens when a variable is assigned a new value?,1,10,q1,What does the Python interpreter do?,3,1,0.174,low
+q2,What is the role of the interactive interpreter?,1,2,q10,What happens when a variable is assigned a new value?,1,10,0.171,low
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,10,q1,What is the role of the Python interpreter?,4,1,0.171,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q6,Which of the following is a Python expression?,4,6,0.161,low
+q10,What happens when a variable is assigned a new value?,1,10,q2,What is the role of the interactive interpreter in Python?,3,2,0.159,low
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,7,q6,Which of the following is a Python expression?,4,6,0.158,low
+q10,What happens if a variable is assigned a new value in Python?,3,10,q6,Which of the following is a Python expression?,4,6,0.156,low
+q10,What happens when a variable is assigned a new value?,1,10,q1,What is the role of the Python interpreter?,4,1,0.151,low
+q2,The purpose of the interactive interpreter is to _____.,2,2,q10,What happens if a variable is assigned a new value in Python?,3,10,0.108,low
+q10,What happens when a variable is assigned a new value?,1,10,q6,Which of the following is a Python expression?,4,6,0.074,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Explain the purpose and function of the Python interpreter and interactive interpreter.  
+Define fundamental Python terms such as interpreter, code, line, and prompt.  
+Distinguish between code statements, expressions, variables, the print() function, and comments.  
+Write, modify, and execute simple Python programs using variables and expressions.  
+Understand how to run Python programs from files and interpret program output."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does the Python interpreter do?,1,yes,This question assesses understanding of the purpose and function of the Python interpreter.
+q2,What is the role of the interactive interpreter?,1,yes,This question evaluates knowledge of the role of the interactive interpreter.
+q3,"In Python, what is a variable?",1,yes,"This question tests the definition of a fundamental Python term, variable."
+q4,What symbol is used to assign a value to a variable in Python?,1,yes,"This question assesses knowledge of syntax related to variables, which supports writing and modifying Python programs."
+q5,What does the print() function do?,1,yes,This question evaluates understanding of the print() function and its role in output.
+q6,What is an expression in Python?,1,yes,This question tests understanding of what an expression is in Python.
+q7,"What does the prompt "">>>"" indicate in the interactive interpreter?",1,yes,"This question assesses knowledge of the prompt in the interactive interpreter, relating to its function."
+q8,Why are comments used in Python code?,1,yes,This question evaluates understanding of the purpose of comments in Python code.
+q9,How does the Python interpreter execute code from a file?,1,yes,This question tests understanding of how the Python interpreter runs code from files.
+q10,What happens when a variable is assigned a new value?,1,yes,This question assesses understanding of variable assignment and value replacement in Python programs.
+q1,What does the Python interpreter do?,2,yes,This question assesses the purpose and function of the Python interpreter.
+q2,The purpose of the interactive interpreter is to _____.,2,yes,This question evaluates the role of the interactive interpreter in executing code line-by-line.
+q3,"In Python, a variable is used to _____.",2,yes,This question tests the definition of a variable in Python.
+q4,An expression in Python is best described as _____.,2,yes,This question assesses understanding of what an expression is in Python.
+q5,What symbol is used to assign a value to a variable in Python?,2,yes,This question evaluates knowledge of the assignment operator used in Python.
+q6,The print() function in Python is used to _____.,2,yes,This question tests understanding of the print() function and its purpose.
+q7,Why are comments used in Python code?,2,yes,This question assesses the purpose of comments in Python code.
+q8,"When running longer Python programs, code is typically written in _____.",2,yes,This question evaluates understanding of running Python programs from files.
+q9,"What does the prompt "">>>"" in the Python interpreter indicate?",2,yes,"This question tests knowledge of the prompt "">>>"" in the interactive interpreter."
+q10,"After executing the assignment statement salary = wage * hours * weeks, the variable salary _____.",2,yes,This question assesses understanding of variable assignment and how values are stored.
+q1,What does the Python interpreter do?,3,yes,This question evaluates the purpose and function of the Python interpreter.
+q2,What is the role of the interactive interpreter in Python?,3,yes,This question tests understanding of the role of the interactive interpreter.
+q3,"In Python, a variable is used to _____.",3,yes,This question assesses the definition and purpose of variables in Python.
+q4,What symbol is used for assignment in Python?,3,yes,This question evaluates knowledge of the assignment symbol in Python.
+q5,What is the purpose of the print() function in Python?,3,yes,This question tests understanding of the print() function's purpose.
+q6,Which of the following best describes a Python expression?,3,yes,This question assesses understanding of what constitutes a Python expression.
+q7,"What does the prompt "">>>"" indicate in the Python interactive interpreter?",3,yes,"This question evaluates knowledge of the prompt "">>>"" in the interactive interpreter."
+q8,Why are comments used in Python programs?,3,yes,This question tests understanding of why comments are used in Python programs.
+q9,How does the Python interpreter execute code saved in a file?,3,yes,This question assesses knowledge of how the interpreter executes code saved in a file.
+q10,What happens if a variable is assigned a new value in Python?,3,yes,This question evaluates understanding of variable reassignment behavior in Python.
+q1,What is the role of the Python interpreter?,4,yes,This question tests understanding of the role of the Python interpreter.
+q2,"What does the prompt "">>> "" indicate in the interactive interpreter?",4,yes,"This question assesses knowledge of the prompt "">>>"" in the interactive interpreter."
+q3,Which of the following best defines a variable in Python?,4,yes,This question evaluates the definition of a variable in Python.
+q4,What symbol is used in Python to assign a value to a variable?,4,yes,This question tests knowledge of the assignment symbol in Python.
+q5,What does the print() function do in Python?,4,yes,This question assesses understanding of the print() function's purpose.
+q6,Which of the following is a Python expression?,4,yes,This question evaluates understanding of what constitutes a Python expression.
+q7,Why are comments used in Python programs?,4,yes,This question tests understanding of the purpose of comments in Python programs.
+q8,How does the interactive interpreter execute code?,4,yes,This question assesses knowledge of how the interactive interpreter executes code.
+q9,What is a Python statement?,4,yes,This question evaluates understanding of what a Python statement is.
+q10,How does a Python program typically run for multi-line code?,4,yes,This question tests understanding of how multi-line Python programs are typically run from files.

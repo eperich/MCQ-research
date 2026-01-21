@@ -1,0 +1,2450 @@
+<zySection title="Comments and whitespace" shorttitle="Comments and whitespace" id="0ad9e7c4-6b7a-17aa-b310-aa2ebb9ba2a5" depend="fb59cca6-9b78-8367-f4eb-1bdbfb9deef9">
+<zypInfo person="Alex" date="3/18/14"  hwStatus="-" Status="1"> Fix incomplete figures (1.5.4 - 1.5.9). Then NEEDS first review.  </zypInfo>
+<zypInfo person="Susan" date="4/07/14">First review done. (Question about animation spacing and Java var naming. Tested Fig 1.5.4 - 1.5.6. Finished/tested Fig 1.5.7 - 1.5.9) NEEDS final review.  </zypInfo>
+<zypInfo person="Arash" date="4/18/14" Status="3"> Second review complete. Comments for authors. </zypInfo>
+<zypInfo person="Alex" date="4/21/14" Status="3"> Addressed comments. </zypInfo>
+<zypInfo person="Nicole" date="03/17/17" minutes="5"> Cleaned up gdocs in preparation for a new release.  </zypInfo> 
+<zypInfo person="Roman" date="5/30/17" minutes="150" status="Draft1Done">Revision pass for all languages.</zypInfo>
+<zypInfo person="Susan" date="05/30/17" minutes="25" status="Rev1Done">Reviewed C++ updates only. Still needs conversion to Java and C.</zypInfo>
+<zypInfo person="Susan" date="05/06/17" minutes="60" status="Rev1Doing">Converted to Java and C. Needs check </zypInfo> 
+<zypInfo person="Roman" date="6/15/17" minutes="10" status="Rev1Done"></zypInfo>
+<zypInfo person="Amanda" date="6/22/17" minutes="120" status="Rev2Done"></zypInfo>
+<zypInfo person="Aubrey" date="03/05/20" minutes="10"> bug fix </zypInfo>
+<zypInfo person="James" date="04/15/20" minutes="5">Trello UWAghO1C bug fix </zypInfo>
+<zypInfo person="Aubrey" date="05/10/20" minutes="10"> bug fix </zypInfo>
+<zypInfo person="Aubrey" date="01/19/22" minutes="10"> changed 50 to 52 wks </zypInfo>
+<zypInfo person="LukeM" date="3/31/25" minutes="5" status="Update">Added alt text steps to animation "A compiler scans code line by line, left to right; whitespace is mostly irrelevant."</zypInfo>
+<zypInfo person="LukeM" date="9/19/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<!--<zyAside type="bordered" name="" id="6938efae-0df4-4eca-b594-456295a2d979">
+Learn to:
+<ul>
+<li>Identify and differentiate between single-line and multi-line comments.</li> <!-- SS1, CA1 (L1-2) -->
+<li>Evaluate code snippets for proper use of comments and whitespace.</li> <!-- SS1, SS2, TB1, TB3 -->
+<li>Apply proper whitespace conventions to enhance code readability.</li> <!-- SS2, CA1 (L1-2) -->
+<li>Analyze the impact of comments and whitespace on the compilation process.</li> <!-- SS3, TB1, TB2, TB3 -->
+</ul>
+</zyAside>-->
+
+
+<zyHTML id="8cee9911-9ab9-dd72-7ee0-a5eb70f1bbcb" subsection="true" caption="Comments">
+<h3>Comments</h3>
+</zyHTML>
+
+
+<zyHTML id="1601aed8-e727-4b83-8e34-9adaee3ee16d">
+<p><zyDefn>A _comment_  is text a programmer adds to code, to be read by humans to better understand the code but ignored by the compiler.</zyDefn> Two common kinds of comments exist: </p>
+
+<ul>
+<li><zyDefn>A _single-line comment_ starts with // and includes all the following text on that line.</zyDefn> Single-line comments commonly appear after a statement on the same line. </li>
+<li><zyDefn>A _multi-line comment_ starts with /* and ends with */, where all text between /* and */ is part of the comment.</zyDefn> <zyDefn> A multi-line comment is also known as a _block comment_.</zyDefn></li>
+</ul>
+</zyHTML>
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Comments example." id="a3c38dad-91c6-4c4a-6a7a-8239e5e0db79">
+<zyCode language="java" numbering="true">
+import java.util.Scanner;
+
+/*
+   This program calculates the amount of pasta to cook, given the
+   number of people eating.
+
+   Author: Andrea Giada
+   Date:   May 30, 2017
+*/
+
+public class PastaCalculator {
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      int numPeople;         // Number of people that will be eating
+      int totalOuncesPasta;  // Total ounces of pasta to serve numPeople
+
+      // Get number of people
+      System.out.println("Enter number of people: ");
+      numPeople = scnr.nextInt();
+
+      // Calculate and print total ounces of pasta
+      totalOuncesPasta = numPeople * 3;  // Typical ounces per person
+      System.out.println("Cook " + totalOuncesPasta + " ounces of pasta.");
+   }
+}
+</zyCode>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyQSetTF caption="Comments" id="13ff5b69-2485-deb1-8e61-c5ed2ee9a3b8">
+<p>Indicate which are valid comments. </p>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>// Get user input</zyCode></zyQtext>
+<zyQexpl>A standard single-line comment</zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>/* Get user input */</zyCode></zyQtext>
+<zyQexpl>A multi-line comment is allowed on a single line, but good practice is to use // for single-line comments, reserving /* */ for multi-line comments. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>/* Determine width and height,
+   calculate volume, 
+   and return volume squared.
+*/</zyCode></zyQtext>
+<zyQexpl>A typical multi-line comment.</zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>// Print "Hello" to the screen // </zyCode></zyQtext>
+<zyQexpl>The second // is ignored just like other text after the first //. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Invalid" truelabel="Valid" falselabel="Invalid">
+<zyCode>// Print "Hello"
+   Then print "Goodbye"
+   And finally return.
+//</zyCode></zyQtext>
+<zyQexpl>The first line's // only applies to the remainder of the line. The second and third lines would yield compiler errors. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>/*
+ * Author: Michelangelo
+ * Date: 2014
+ * Address: 111 Main St, Pacific Ocean
+ */</zyCode></zyQtext>
+<zyQexpl>Programmers commonly use single asterisks to make clear which lines are contained in the comment. Those single asterisks have no special meaning; they are just text within the /* ... */. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>// numKids = 2;  // Typical number </zyCode></zyQtext>
+<zyQexpl>The entire line after the first // is ignored. The numKids = 2 statement won't execute, but the code is valid. (Perhaps the programmer intentionally commented out the code for the moment). </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Valid" truelabel="Valid" falselabel="Invalid">
+<zyCode>/* 
+   numKids = 2;  // Typical number
+   numCars = 5; 
+*/ </zyCode></zyQtext>
+<zyQexpl>The programmer has likely temporarily "commented out" those two statements. The // within the /* .. */ will be ignored,  like the other text. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Invalid" truelabel="Valid" falselabel="Invalid">
+<zyCode>/* 
+   numKids = 2;  /* Typical number */
+   numCars = 5;
+*/</zyCode> </zyQtext>
+<zyQexpl>The first /* starts a multi-line comment. That comment ENDS at the */ on the SECOND line. The compiler will compile numCars = 5, then generate an error when reaching a */ that isn't ending a comment. Programmers use // when possible in part so that /* ... */ can be used to "comment out" code.   </zyQexpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyVersion version="java">
+<zyAside type="elaboration" name="JavaDoc comments" id="47fada94-da99-7246-75e5-9e6a61d787c3"> 
+<p> Java supports a third type of comment, known as a JavaDoc comment (discussed elsewhere), which is a specially formatted multi-line comment that can be converted to program documentation in HTML.</p> 
+</zyAside>
+</zyVersion>
+
+
+
+<zyHTML id="7514cabe-1a4f-c236-ccf7-8b3ea6c2d2ab" subsection="true" caption="Whitespace">
+<h3>Whitespace</h3>
+</zyHTML>
+
+
+<zyHTML id="63044e73-ae9b-41e0-8729-cda05db677ca">
+<p><zyDefn> _Whitespace_ refers to blank spaces (space and tab characters) between items within a statement and blank lines between statements (called newlines).</zyDefn> A compiler ignores most whitespace.  </p> 
+
+<p><zyGoodPractice id="de73e843-dbd0-ece5-36c2-cf59d5a4312a">Good practice is to deliberately and consistently use whitespace to make a program more readable.</zyGoodPractice> Programmers usually follow conventions defined by their company, team, instructor, etc., such as:</p>
+
+<ul>
+<li>Use blank lines to separate conceptually distinct statements. </li>
+<li>Indent lines the same amount.</li>
+<li>Align items to reduce visual clutter. </li>
+<li>Use a single space before and after any operators like =, +, *, or / to make statements more readable. </li>
+</ul>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Good use of whitespace." id="348cd661-75bf-d59b-23ab-c5488e51b56f">
+<zyCode language="java" numbering="true">
+import java.util.Scanner;
+
+public class WhitespaceEx {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int myFirstVar;    // Aligned comments yield less
+      int yetAnotherVar; // visual clutter
+      int thirdVar;
+
+      // Above blank line separates variable declarations from the rest
+      System.out.print("Enter a number: ");
+      myFirstVar = scnr.nextInt();
+
+      // Above blank line separates user input statements from the rest
+      yetAnotherVar = myFirstVar;        // Aligned = operators
+      thirdVar      = yetAnotherVar + 1; 
+      // Also notice the single-space on left and right of + and =
+      // (except when aligning the second = with the first =)
+
+      System.out.println("Final value is " + thirdVar); // Single-space on each side of +
+   }
+}
+</zyCode>
+</zyFigure>
+</zyVersion>
+
+
+<zyVersion version="java">
+<zyFigure caption="Bad use of whitespace." id="c2f4a11e-ca9c-fb43-2e3d-38c92a26d1bb">
+<zyCode language="java" numbering="true">
+import java.util.Scanner;
+public class PastaCalculator {
+public static void main (String [] args) {
+Scanner scnr = new Scanner(System.in);int numPeople;int totalOuncesPasta;
+System.out.println("Enter number of people:");
+numPeople = scnr.nextInt(); totalOuncesPasta = numPeople * 3; 
+System.out.println("Cook "+totalOuncesPasta+" ounces of pasta.");}}
+</zyCode>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyQSetTF caption="Whitespace" id="c306f9b3-8277-4970-ad3f-6d5b75fa7f6f">
+<p>Are the specified lines of code good or bad uses of whitespace?<br /> 
+
+<zyVersion version="java">
+<zyCode language="java" numbering="true">
+import java.util.Scanner;
+
+public class WhitespaceGoodAndBad {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int userAge;
+      int currentDecade;
+      int    nextDecade;
+      int nextMilestone;
+   
+      System.out.println("Enter your age: ");
+      userAge = scnr.nextInt();
+   
+      currentDecade=userAge/10;
+      nextDecade = currentDecade + 1;
+          nextMilestone = nextDecade * 10;
+      System.out.println("Next big birthday is at " + nextMilestone);
+   }
+}
+</zyCode>
+</zyVersion></p>
+
+<zyQ>
+<zyQText correct="Bad" truelabel="Good" falselabel="Bad"><!--<zyCode>int       nextDecade;</zyCode>-->
+Line 8</zyQText>
+<zyQExpl>The whitespace between int and nextDecade is unnecessary and yields less readable code.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Bad" truelabel="Good" falselabel="Bad"><!--<zyCode>currentDecade=userAge/10;</zyCode>-->
+Line 14</zyQText>
+<zyQExpl>Spaces before and after the = and / operators would make the statement more readable.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Good" truelabel="Good" falselabel="Bad"><!--<zyCode>nextDecade = currentDecade + 1;</zyCode>-->
+Line 15</zyQText>
+<zyQExpl>The statement is indented the same amount as the preceding lines, and a space is used before and after the = and + operators.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="Bad" truelabel="Good" falselabel="Bad"><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--><!--<zyCode>       nextMilestone = nextDecade * 10;</zyCode>-->
+Line 16</zyQText>
+<zyQExpl>The statement is not indented the same number of spaces as the other related lines of code. </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="d13e2374-9244-a5f6-d85a-ea649c6ed77a" subsection="true" caption="Compiling code with comments and whitespace">
+<h3>Compiling code with comments and whitespace</h3>
+</zyHTML>
+
+
+<zyHTML id="bec4a0ae-e029-f523-f268-948cc1605990" caption="A compiling processes code left to right and line by line">
+<p> The animation below provides a (simplified) demonstration of how a compiler processes code from left-to-right and line by line, finding each statement (and generating machine code using 0s and 1s) and ignoring whitespace and comments.</p>
+</zyHTML>
+
+
+
+<zyVersion version="java">
+<zyAnimator id="a96968ef-f187-437b-9da4-5fa0273f9a59" caption="A compiler scans code line-by-line, left-to-right; whitespace is mostly irrelevant." height="386px" width="468px" selectedInstr="none" selectedObj="12" numObjsEverCreated="24" loadOnDemand="false">
+<!-- Last modified Tue Jun 06 2017 12:49:45 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="4" objType="text" objName="printf(&quot;%d&quot;, 20 * 40" top="50px" left="18px" background-color="zyAnimator-light-blue" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">System.out.println(wage * 40 * 5<!-- 0 -->2);
+ 
+// 20 dollars/hr * 40 hrs/wk * 5<!-- 0 -->2 wks/year.
+ 
+System.out.println("Enter integer: ");
+ 
+userNum = scnr.nextInt();</zyCode></zyObject><zyObject objNum="5" objType="box" objName="Executable background" top="190px" left="18px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="122px" width="320px" border-width="0px" border-style="none"></zyObject><zyObject objNum="6" objType="triangle" objName="arrow head" top="175px" left="229px" background-color="zyAnimator-blue" transformDeg="270"></zyObject><zyObject objNum="7" objType="box" objName="arrow body" top="161px" left="233px" background-color="zyAnimator-blue" useConstrainedProportions="false" height="15px" width="2px" border-width="0px" border-style="none" border-color="zyAnimator-blue"></zyObject><zyObject objNum="8" objType="text" objName="Compiler" top="162px" left="162px" font-family='arial, sans-serif'><text>Compiler</text></zyObject><zyObject objNum="9" objType="text" objName="High-level program" top="70px" left="358px" font-family='arial, sans-serif' text-align='center'><text>High-level
+program</text></zyObject><zyObject objNum="10" objType="text" objName="myfile.c" top="106px" left="358px" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">MyFile.java</zyCode></zyObject><zyObject objNum="11" objType="text" objName="Executable program" top="214px" left="358px" font-family='arial, sans-serif' text-align='center'><text>Executable
+program</text></zyObject><zyObject objNum="12" objType="text" objName="myfile.exe" top="250px" left="357px" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">MyFile.class</zyCode></zyObject><zyObject objNum="13" objType="box" objName="Blue Code Highlight (HL)" top="53px" left="18px" opacity="0" useConstrainedProportions="false" height="16px" width="1px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="14" objType="box" objName="Blue Code Highlight (Exe)" top="56px" left="234px" opacity="0" useConstrainedProportions="false" height="31px" width="316px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="15" objType="text" objName="10110011011011110011" top="54px" left="234px" opacity="0" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">1011001101101111
+0011101011011101</zyCode></zyObject><zyObject objNum="16" objType="box" objName="Object 16: Box" top="80px" left="18px" opacity="0" useConstrainedProportions="false" height="16px" width="1px" border-color="zyAnimator-green"></zyObject><zyObject objNum="17" objType="box" objName="Object 17: Box" top="108px" left="18px" opacity="0" useConstrainedProportions="false" height="16px" width="1px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="18" objType="box" objName="Object 19: Box" top="108px" left="214px" opacity="0" useConstrainedProportions="false" height="31px" width="316px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="19" objType="text" objName="00000110110101111111" top="106px" left="214px" opacity="0" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">0000011011010111
+1111100011110100</zyCode></zyObject><zyObject objNum="20" objType="box" objName="Object 20: Box" top="137px" left="18px" opacity="0" useConstrainedProportions="false" height="16px" width="1px" border-color="zyAnimator-purple"></zyObject><zyObject objNum="21" objType="box" objName="Object 22: Box" top="136px" left="182px" opacity="0" useConstrainedProportions="false" height="31px" width="316px" border-color="zyAnimator-purple"></zyObject><zyObject objNum="22" objType="text" objName="10110110011110000110" top="134px" left="182px" opacity="0" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px'><zyCode language="c" snippet="true" nobox="true" zyanimator="true">1011011001111000
+0110101011101110</zyCode></zyObject><zyObject objNum="23" objType="box" objName="Object 23: Box" top="80px" left="18px" opacity="0" useConstrainedProportions="false" height="16px" width="316px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="24" objType="box" objName="Object 24: Box" top="82px" left="20px" opacity="0" background-color="zyAnimator-gray" useConstrainedProportions="false" height="16px" width="316px" border-width="0px" border-style="none" border-color="zyAnimator-purple"></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>The compiler converts a high level program into an executable program using Java bytecode.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="13" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="13" timeLabel="-" height="16" width="316"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="0.5" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="15" timeLabel="0" top="194" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="14" timeLabel="-" top="196" left="18"></zyInstruction>
+<zyInstruction instrType="step"><text>Comments do not generate machine code.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="16" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="16" timeLabel="-" height="16" width="316"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0.5" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="-" opacity="40"></zyInstruction>
+<zyInstruction instrType="step"><text>The compiler recognizes end of statement by semicolon &quot;;&quot;</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="17" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="17" timeLabel="-" height="16" width="316"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0.5" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="0" top="234" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="18" timeLabel="-" top="236" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="20" timeLabel="-" height="16" width="316"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="22" timeLabel="0" top="274" left="18"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="21" timeLabel="-" top="276" left="18"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following is shown at the top and labeled "High-level program" and "MyFile.java".
+
+System.out.println(wage * 40 * 50);
+// 20 dollars/hr * 40 hrs/wk * 50 wks/year.
+System.out.println("Enter integer: ");
+userNum = scnr.nextInt();
+
+This program passes through a compiler.
+
+The following is shown at the bottom and labeled "Executable program" and "MyFile.class".
+
+1011001101101111
+0011101011011101
+
+0000011011010111
+1111100011110100
+
+1011011001111000
+0110101011101110
+
+In step 1: The line first "System.out.println(wage * 40 * 50);" is converted to machine code 1011001101101111  0011101011011101 by the compiler.
+In step 2: The second line, which is a comment, does not generate any machine code.
+In step 3: The third line "System.out.println("Enter integer: ");" is converted to machine code 0000011011010111  1111100011110100. The fourth line "userNum = scnr.nextInt();" is converted to machine code 1011011001111000  0110101011101110.
+
+</zyAltDescription>
+</zyAnimator>
+</zyVersion>
+
+
+
+<zyQSetMultipleChoice caption="Compiling code with whitespace and comments" id="99729e4d-ad93-ab0d-6284-25696da57037">
+<zyQ>
+<zyQText>Spaces are always ignored by the compiler.</zyQText>
+<zyQChoice>
+<zyQAns>True</zyQAns>
+<zyQExpl>Not all spaces are ignored by the compiler. Ex: The spaces in a string literal like "Enter age: " will be printed if the string is output. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>False</zyQAns>
+<zyQExpl>Not all spaces are ignored by the compiler. Ex: The spaces in a string literal like "Enter age: " will be printed if the string is output. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>How many spaces will the compiler ignore in the code below?<br /><br />
+<zyCode>
+numToBuy = numNeeded - numInStock + 2;
+</zyCode>
+</zyQText>
+<zyQChoice>
+<zyQAns>3</zyQAns>
+<zyQExpl>A space appears before and after the =, -, and +, which is more than 3.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>6</zyQAns>
+<zyQExpl>The spaces before and after the =, -, and + are ignored by the compiler. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>7</zyQAns>
+<zyQExpl>The code only has 6 spaces, not 7.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>How many lines <!--of code -->will the compiler ignore in the code below?<br /><br />
+<zyCode>
+int userAge;
+int currentDecade;
+int nextDecade;
+int nextMilestone;
+   
+// FIXME: Get user age
+userAge = 29; // Testing with 29
+   
+currentDecade = userAge / 10;
+nextDecade = currentDecade + 1;
+nextMilestone = nextDecade * 10;
+</zyCode>
+</zyQText>
+<zyQChoice>
+<zyQAns>1</zyQAns>
+<zyQExpl>The line that only contains a comment is ignored, but there are 2 blank lines that are also ignored.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>2</zyQAns>
+<zyQExpl>The 2 blank lines will be ignored, but the compiler also ignores the line that only contains a comment.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>3</zyQAns>
+<zyQExpl>The compiler ignores the 2 blank lines and the line that only contains a comment.</zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+
+<zypInfo person="Annie" date="04/02/24" minutes="460" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Collins" date="04/03/24" minutes="180" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="04/10/24" minutes="150" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Collins" date="04/12/24" minutes="70" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="04/15/24" minutes="110" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Collins" date="04/15/24" minutes="30" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="04/15/24" minutes="60" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="04/16/24" minutes="180" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="04/17/24" minutes="20" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="04/18/24" minutes="120" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="04/18/24" minutes="20" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="04/18/24" minutes="15" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/05/24" minutes="752" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="05/06/24" minutes="65" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/06/24" minutes="30" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="05/07/24" minutes="33" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/12/24" minutes="550" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="05/13/24" minutes="22" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/15/24" minutes="47" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="05/16/24" minutes="6" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/16/24" minutes="5" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="05/28/24" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/29/24" minutes="34" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="05/30/24" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="05/31/24" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="06/03/24" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="06/04/24" minutes="33" status="QADoing">Golden_CA_development</zypInfo>
+
+
+<zypInfo person="Stephanie" date="03/04/25" minutes="40" status="CodeDoing">Golden_CA_development</zypInfo>
+from common_functions import pick_from, pick_from_range
+
+names = [
+    &apos;Abe&apos;, &apos;Ada&apos;, &apos;Ali&apos;, &apos;Amy&apos;, &apos;Ana&apos;, &apos;Ani&apos;, &apos;Ann&apos;, &apos;Ara&apos;, &apos;Ari&apos;, &apos;Ava&apos;,
+    &apos;Avi&apos;, &apos;Aya&apos;, &apos;Ben&apos;, &apos;Bly&apos;, &apos;Bob&apos;, &apos;Cal&apos;, &apos;Cam&apos;, &apos;Dan&apos;, &apos;Dax&apos;, &apos;Del&apos;,
+    &apos;Edd&apos;, &apos;Eli&apos;, &apos;Erl&apos;, &apos;Eve&apos;, &apos;Fay&apos;, &apos;Fin&apos;, &apos;Gil&apos;, &apos;Gio&apos;, &apos;Gus&apos;, &apos;Guy&apos;,
+    &apos;Hal&apos;, &apos;Han&apos;, &apos;Hud&apos;, &apos;Huy&apos;, &apos;Ian&apos;, &apos;Ike&apos;, &apos;Ina&apos;, &apos;Ira&apos;, &apos;Jan&apos;, &apos;Jay&apos;,
+    &apos;Jeb&apos;, &apos;Jen&apos;, &apos;Jim&apos;, &apos;Joe&apos;, &apos;Jon&apos;, &apos;Joy&apos;, &apos;Kai&apos;, &apos;Kay&apos;, &apos;Ken&apos;, &apos;Kim&apos;,
+    &apos;Kit&apos;, &apos;Lei&apos;, &apos;Leo&apos;, &apos;Lia&apos;, &apos;Lou&apos;, &apos;Mac&apos;, &apos;Mae&apos;, &apos;Mai&apos;, &apos;Max&apos;, &apos;May&apos;,
+    &apos;Meg&apos;, &apos;Mel&apos;, &apos;Moe&apos;, &apos;Mox&apos;, &apos;Ned&apos;, &apos;Nia&apos;, &apos;Oma&apos;, &apos;Pal&apos;, &apos;Pam&apos;, &apos;Pat&apos;,
+    &apos;Rae&apos;, &apos;Ray&apos;, &apos;Rob&apos;, &apos;Ron&apos;, &apos;Sal&apos;, &apos;Sam&apos;, &apos;Seb&apos;, &apos;Sid&apos;, &apos;Sue&apos;, &apos;Tad&apos;,
+    &apos;Taj&apos;, &apos;Tay&apos;, &apos;Ted&apos;, &apos;Tia&apos;, &apos;Tim&apos;, &apos;Tom&apos;, &apos;Uma&apos;, &apos;Val&apos;, &apos;Van&apos;, &apos;Vic&apos;,
+    &apos;Wes&apos;, &apos;Wyn&apos;, &apos;Xan&apos;, &apos;Xim&apos;, &apos;Xio&apos;, &apos;Yaz&apos;, &apos;Zak&apos;, &apos;Zel&apos;, &apos;Zia&apos;, &apos;Zoe&apos;,
+]
+
+states = [
+    &apos;Alabama&apos;, &apos;Alaska&apos;, &apos;Arizona&apos;, &apos;Arkansas&apos;, &apos;California&apos;, &apos;Colorado&apos;, &apos;Connecticut&apos;,
+    &apos;Delaware&apos;, &apos;Florida&apos;, &apos;Georgia&apos;, &apos;Hawaii&apos;, &apos;Idaho&apos;, &apos;Illinois&apos;, &apos;Indiana&apos;, &apos;Iowa&apos;, &apos;Kansas&apos;,
+    &apos;Kentucky&apos;, &apos;Louisiana&apos;, &apos;Maine&apos;, &apos;Maryland&apos;, &apos;Massachusetts&apos;, &apos;Michigan&apos;, &apos;Minnesota&apos;,
+    &apos;Mississippi&apos;, &apos;Missouri&apos;, &apos;Montana&apos;, &apos;Nebraska&apos;, &apos;Nevada&apos;, &apos;Ohio&apos;, &apos;Oklahoma&apos;, &apos;Oregon&apos;,
+    &apos;Pennsylvania&apos;, &apos;Tennessee&apos;, &apos;Texas&apos;, &apos;Utah&apos;, &apos;Vermont&apos;, &apos;Virginia&apos;,
+    &apos;Washington&apos;, &apos;Wisconsin&apos;, &apos;Wyoming&apos;,
+]
+
+foods = [
+    &apos;brownie&apos;, &apos;burger&apos;, &apos;burrito&apos;, &apos;cake&apos;, &apos;calzone&apos;, &apos;cannoli&apos;, &apos;cheesecake&apos;, &apos;churro&apos;, &apos;cobbler&apos;,
+    &apos;cookie&apos;, &apos;crepe&apos;, &apos;croissant&apos;, &apos;cupcake&apos;, &apos;donut&apos;, &apos;drink&apos;, &apos;eclair&apos;, &apos;ham&apos;, &apos;lobster&apos;,
+    &apos;lollipop&apos;, &apos;macaron&apos;, &apos;muffin&apos;, &apos;pancake&apos;, &apos;pasta&apos;, &apos;pie&apos;, &apos;pizza&apos;, &apos;popsicle&apos;, &apos;pudding&apos;, &apos;quesadilla&apos;,
+    &apos;quiche&apos;, &apos;salad&apos;, &apos;soup&apos;, &apos;steak&apos;, &apos;taco&apos;, &apos;tostada&apos;, &apos;wrap&apos;, &apos;yogurt&apos;,
+]</global><language type="string">cpp</language><levels type="list"><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &quot;testcode.h&quot;  // For testing purposes
+#include &lt;iostream&gt;
+using namespace std;
+
+${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">${distractor.placeholder}</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.postfix}
+   TestCode();  // For testing purposes
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">// Developed with the assistance of copilot.microsoft.com
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+#include &lt;cctype&gt;
+
+using namespace std;
+
+const bool DEBUG = false;
+
+#include &quot;setup${meaningful.setup}.h&quot;
+
+string Extract() {
+   string inputFileName = &quot;main.cpp&quot;;
+   string line;
+   string extractedSection = &quot;&quot;;
+   bool sectionStarted;
+
+   try {
+      // Open the input file
+      ifstream inputFile(inputFileName);
+      if (!inputFile.is_open()) 
+         return &quot;&quot;;
+
+      // Read the content line by line
+      sectionStarted = false;
+
+      while (getline(inputFile, line)) {
+         if (line.find(startMarker) != string::npos) {
+            sectionStarted = true;
+            extractedSection += line + &quot;\n&quot;; // Include the start marker line
+         } else if (sectionStarted) {
+            extractedSection += line + &quot;\n&quot;; // Include subsequent lines until the end marker
+            if (line.find(endMarker) != string::npos) {
+               int start = extractedSection.find(startMarker) + startMarker.length(); // remove startMarker
+               int end = extractedSection.find(endMarker);
+               extractedSection = extractedSection.substr(start, end - start); // remove endMarker
+               break; // End marker found, stop reading
+            }
+         }
+      }
+
+      // Close the input file
+      inputFile.close();
+
+      if (DEBUG) cout &lt;&lt; &quot;Section extracted: &quot; &lt;&lt; extractedSection &lt;&lt; endl;
+      
+   } catch (const exception&amp; e) {
+      // Do nothing
+   }
+
+   return extractedSection;
+}
+
+char mytolower(char c) { return tolower(c); }
+
+string StrToLower(string s) {
+   transform(s.begin(), s.end(), s.begin(), mytolower);
+   return s;
+}
+
+void Check(string dataRaw) {
+   string data = StrToLower(dataRaw); // Avoid case sensitivity
+   bool isOK = true;
+
+   int found[numTokens];
+
+
+   try {
+   
+      for (int i = 0; i &lt; numTokens; ++i) {
+         // Find the index of the n-th occurrence of a token
+         int pos = data.find(StrToLower(tokens[i]));  // First occurrence
+         for (int n = 1; n &lt; occurrence[i] &amp;&amp; pos != string::npos; ++n) {
+            pos = data.find(StrToLower(tokens[i]), pos + 1); // Next occurrence
+         }
+         found[i] = pos;
+      
+         if (DEBUG) cout &lt;&lt; &quot;Found &quot; &lt;&lt; tokens[i] &lt;&lt; &quot; at &quot; &lt;&lt; found[i] &lt;&lt; endl;
+      
+         if (found[i] == string::npos) {
+            cout &lt;&lt; &quot;ERROR! Missing text: &quot; &lt;&lt; tokens[i] &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+   
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check the order of the tokens
+      for (int i = 0; i &lt; numTokens - 1; ++i) {
+         if (found[i] &gt;= found[i + 1]) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; tokens[i] &lt;&lt; &quot; is not before &quot; &lt;&lt; tokens[i + 1] &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check the newline positions
+      for (int i = 0; i &lt; numNewlines; ++i) {
+         int start = newlines[i][0];
+         int end = newlines[i][1];
+         int startIndex = found[start];
+         int endIndex = found[end];
+         string segment = data.substr(startIndex, endIndex - startIndex);
+         int pos = segment.find(&quot;\n&quot;);
+         if (pos == string::npos) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; tokens[start] &lt;&lt; &quot; and &quot; &lt;&lt; tokens[end] &lt;&lt; &quot; are not on two separate lines&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+   
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check the indent positions
+      for (int i = 0; i &lt; numIndents; ++i) {
+         int end = indents[i];
+         int endIndex = found[end];
+         int startIndex = endIndex - 4 &gt;= 0 ? endIndex - 4 : 0; // 4 = 1 newline + 3 spaces in an indented level
+         string segment = data.substr(startIndex, endIndex - startIndex);
+         int pos = segment.find(&quot;\n   &quot;); // newline + 3 spaces
+         if (pos == string::npos) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; tokens[end] &lt;&lt; &quot; is not indented by 3 spaces&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check for strings to be avoided
+      for (int i = 0; i &lt; numAvoids; ++i) {
+         if (data.find(avoids[i]) != string::npos) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; avoids[i] &lt;&lt; &quot; should not be used&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+
+      if (!isOK) return; // Stop if previous test failed
+      
+      // Check that no newline exists before content
+      if (mustStartOnSameLine &amp;&amp; numTokens &gt; 0) {
+         int pos = data.find(StrToLower(tokens[numTokens - 1]));  // First occurrence
+         for (int i = 0; i &lt; pos; ++i) {
+            if (data[i] == &apos;\n&apos;) {
+               cout &lt;&lt; &quot;ERROR: Comment should not be on a separate line&quot; &lt;&lt; endl;
+               isOK = false;
+            }
+         }
+      }
+   }
+   catch (const exception&amp; e) {
+      cout &lt;&lt; &quot;ERROR found:&quot; &lt;&lt; dataRaw &lt;&lt; endl;
+   }
+}
+
+
+void TestCode() {
+   string s = Extract();
+   Check(s);
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">libtest.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __TEST__
+#define __TEST__
+
+void TestCode();
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP1__
+#define __SETUP1__
+#include &lt;string&gt;
+
+string startMarker = &quot;// Write a block comment below&quot;;  // not including newline
+string endMarker = &quot;int main() {&quot;;  // not including newline
+
+/* Expected tokens */
+const int numTokens = 8;
+const string tokens[numTokens] = {&quot;/*&quot;, &quot;Author&quot;, &quot;:&quot;, &quot;${distractor.name}&quot;, &quot;Date&quot;, &quot;:&quot;, &quot;${distractor.month}/${distractor.day}/${distractor.year}&quot;, &quot;*/&quot;};
+const int occurrence[numTokens] = {1, 1, 1, 1, 1, 2, 1, 1};  // 1 means first occurrence
+   
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+const int numNewlines = 3;
+const int newlines[numNewlines][2] = {{0, 1}, {3, 4}, {6, 7}};
+const bool mustStartOnSameLine = false;
+
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+const int numIndents = 0;
+const int indents[1] = {};
+
+/* Not expected */
+const int numAvoids = 1;
+const string avoids[numAvoids] = {&quot;//&quot;};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup1.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP2__
+#define __SETUP2__
+#include &lt;string&gt;
+
+string startMarker = &quot;${distractor.var2} = ${distractor.num1} * ${distractor.var1};&quot;;  // not including newline. 
+string endMarker = &quot;TestCode();&quot;; // not including newline.
+
+/* Expected tokens */
+const int numTokens = 5;
+const string tokens[numTokens] = {&quot;//&quot;, &quot;Converting&quot;, &quot;${distractor.var1}&quot;, &quot;to&quot;, &quot;${distractor.var2}&quot;};
+const int occurrence[numTokens] = {1, 1, 1, 1, 1};
+   
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+const int numNewlines = 0;
+const int newlines[0][2] = {};
+const bool mustStartOnSameLine = true;
+   
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+const int numIndents = 0;
+const int indents[0] = {};
+
+/* Not expected */
+const int numAvoids = 2;
+const string avoids[numAvoids] = {&quot;/*&quot;, &quot;*/&quot;};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup2.h</name></li></files><prompt type="string">${distractor.prompt}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    setup = meaningful_permutation[&apos;setup&apos;]
+    
+    scenario = pick_from([scenario_time, scenario_volume, scenario_box] if setup == 1 else [scenario_time, scenario_volume])    
+    var1, var2, num1, num2, comment = scenario
+    
+    comment = comment.format(var1, var2)
+    comment_noun = &apos;boxes&apos; if &apos;box&apos; in comment else var1
+    
+    if setup == 1:
+        prompt = &apos;Starting at line 6, write a block comment that has the following:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;First line: `/*`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Second line contains: `Author: {0}`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Third line contains: `Date: {1}/{2}/{3}`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Fourth line: `*/`&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not use `//`.&apos;.format(name, month, day, year)
+        
+        prefix = &apos;// Write a block comment below\n&apos;
+        
+        placeholder = &apos;\n\n\n&apos;
+        
+        solution = &apos;&apos;&apos;/*
+   Author: {0}
+   Date: {1}/{2}/{3}
+*/&apos;&apos;&apos;.format(name, month, day, year)
+        
+        postfix = &apos;\nint main() {\n\tint {2};\n\tint {1};\n\n\t{2} = {4};  // {4} {5} is given\n\t{1} = {3} * {2};  // {0}\n&apos;\
+            .format(comment, var2, var1, num1, num2, comment_noun)
+        
+        explain = &apos;A block comment starts with `/*` and ends with `*/`. All the text between `/*` and `*/` is part of the comment.&apos;
+        
+    else: # setup 2
+        prompt = &apos;On line 10, after the semicolon (;), write a single-line comment that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;uses: `//`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;contains the words: `{}`&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not use `/*` and `*/`.&apos;.format(comment)
+        
+        prefix = &apos;int main() {\n\tint {0};\n\tint {1};\n\n\t{0} = {3};  // {3} {0} is given\n\t{1} = {2} * {0};&apos;\
+            .format(var1, var2, num1, num2)
+        
+        placeholder = &apos;  &apos;
+        
+        solution = &apos;// {}&apos;.format(comment)
+        
+        postfix = &apos;\n&apos;
+        
+        explain = &apos;A single-line comment starts with `//`. All remaining text after `//` in the line is part of the comment.&apos;
+
+    return {
+            &apos;day&apos;: day,
+            &apos;explain&apos;: explain,
+            &apos;month&apos;: month,
+            &apos;name&apos;: name,
+            &apos;num1&apos;: num1,
+            &apos;num2&apos;: num2,
+            &apos;placeholder&apos;: placeholder,
+            &apos;postfix&apos;: postfix,
+            &apos;prefix&apos;: prefix,
+            &apos;prompt&apos;: prompt,
+            &apos;solution&apos;: solution,
+            &apos;var1&apos;: var1,
+            &apos;var2&apos;: var2,
+            &apos;year&apos;: year,
+        }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;setup&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">food = pick_from(foods)
+name = pick_from(names)
+month = pick_from([(&apos;0&apos; + str(pick_from_range(1, 9))), pick_from_range(10, 12)])
+day = pick_from([(&apos;0&apos; + str(pick_from_range(1, 9))), pick_from_range(10, 28)])
+year = pick_from_range(2000, 2024)
+
+
+comment1 = &apos;Converting {} to {}&apos;
+comment2 = &apos;Each box has a dozen {}s&apos;
+
+
+scenario_time = pick_from([
+        [&apos;hours&apos;, &apos;minutes&apos;, 60, pick_from_range(2, 10), comment1],
+        [&apos;minutes&apos;, &apos;seconds&apos;, 60, pick_from_range(2, 59), comment1],
+        [&apos;hours&apos;, &apos;seconds&apos;, 3600, pick_from_range(2, 10), comment1],
+        [&apos;weeks&apos;, &apos;days&apos;, 7, pick_from_range(2, 10, [7]), comment1],
+        [&apos;days&apos;, &apos;hours&apos;, 24, pick_from_range(2, 10), comment1],
+        [&apos;weeks&apos;, &apos;hours&apos;, 168, pick_from_range(2, 10), comment1],
+])
+
+scenario_volume = pick_from([
+        [&apos;gallons&apos;, &apos;cups&apos;, 16, pick_from_range(2, 10), comment1],
+        [&apos;gallons&apos;, &apos;quarts&apos;, 4, pick_from_range(2, 10, [4]), comment1],
+        [&apos;gallons&apos;, &apos;pints&apos;, 8, pick_from_range(2, 10, [8]), comment1],
+        [&apos;quarts&apos;, &apos;pints&apos;, 2, pick_from_range(3, 10), comment1],
+        [&apos;quarts&apos;, &apos;cups&apos;, 4, pick_from_range(2, 10, [4]), comment1],
+        [&apos;pints&apos;, &apos;cups&apos;, 2, pick_from_range(3, 10), comment1],
+        [&apos;teaspoons&apos;, &apos;milliliters&apos;, 5, pick_from_range(2, 10, [5]), comment1],
+        [&apos;tablespoons&apos;, &apos;milliliters&apos;, 15, pick_from_range(2, 10), comment1],
+])
+
+scenario_box = [&apos;totalBoxes&apos;, &apos;total{}s&apos;.format(food.capitalize()), 12, pick_from_range(2, 30, [12]), comment2.format(food)]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">Good programming practice is to put each statement on a separate line, indented by exactly three spaces at the start of the statement. ${distractor.explain}, and ends with a semicolon. No space exists before each semicolon.
+
+Ex:${distractor.solution_line1}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &quot;testcode.h&quot;  // For testing purposes
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">${distractor.placeholder}</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.postfix}
+   TestCode(${distractor.var1}, ${distractor.var2}, ${distractor.var3});  // For testing purposes
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">// Developed with the assistance of copilot.microsoft.com
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include &lt;algorithm&gt;
+#include &lt;cctype&gt;
+using namespace std;
+
+const bool DEBUG = false;
+
+#include &quot;setup${meaningful.setup}.h&quot;
+
+string Extract() {
+   string inputFileName = &quot;main.cpp&quot;;
+   string line;
+   string extractedSection = &quot;&quot;;
+   bool sectionStarted;
+
+   try {
+      // Open the input file
+      ifstream inputFile(inputFileName);
+      if (!inputFile.is_open()) 
+         return &quot;&quot;;
+
+      // Read the content line by line
+      sectionStarted = false;
+
+      while (getline(inputFile, line)) {
+         if (line.find(startMarker) != string::npos) {
+            sectionStarted = true;
+            extractedSection += line + &quot;\n&quot;; // Include the start marker line
+         } else if (sectionStarted) {
+            extractedSection += line + &quot;\n&quot;; // Include subsequent lines until the end marker
+            if (line.find(endMarker) != string::npos) {
+               int start = extractedSection.find(startMarker) + startMarker.length(); // remove startMarker
+               int end = extractedSection.find(endMarker);
+               extractedSection = extractedSection.substr(start, end - start); // remove endMarker
+               break; // End marker found, stop reading
+            }
+         }
+      }
+
+      // Close the input file
+      inputFile.close();
+
+      if (DEBUG) cout &lt;&lt; &quot;Section extracted: &quot; &lt;&lt; extractedSection &lt;&lt; endl;
+      
+   } catch (const exception&amp; e) {
+      // Do nothing
+   }
+
+   return extractedSection;
+}
+
+char mytolower(char c) { return tolower(c); }
+
+string StrToLower(string s) {
+   transform(s.begin(), s.end(), s.begin(), mytolower);
+   return s;
+}
+
+
+void Check(string dataRaw) {
+   string data = StrToLower(dataRaw); // Avoid case sensitivity
+   bool isOK = true;
+
+   int found[numTokens];
+
+   try {
+   
+      for (int i = 0; i &lt; numTokens; ++i) {
+         // Find the index of the n-th occurrence of a token
+         int pos = data.find(StrToLower(tokens[i]));  // First occurrence
+         for (int n = 1; n &lt; occurrence[i] &amp;&amp; pos != string::npos; ++n) {
+            pos = data.find(StrToLower(tokens[i]), pos + 1); // Next occurrence
+         }
+         found[i] = pos;
+      
+         if (DEBUG) cout &lt;&lt; &quot;Found &quot; &lt;&lt; tokens[i] &lt;&lt; &quot; at &quot; &lt;&lt; found[i] &lt;&lt; endl;
+      
+         if (found[i] == string::npos) {
+            cout &lt;&lt; &quot;ERROR! Expecting style to be: &quot; &lt;&lt; tokens[i] &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+   
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check the order of the tokens
+      for (int i = 0; i &lt; numTokens - 1; ++i) {
+         if (found[i] &gt;= found[i + 1]) {
+            cout &lt;&lt; &quot;ERROR:&quot; &lt;&lt; tokens[i] &lt;&lt; &quot; is not before &quot; &lt;&lt; tokens[i + 1] &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check the newline positions
+      for (int i = 0; i &lt; numNewlines; ++i) {
+         int start = newlines[i][0];
+         int end = newlines[i][1];
+         int startIndex = found[start];
+         int endIndex = found[end];
+         string segment = data.substr(startIndex, endIndex - startIndex);
+         int pos = segment.find(&quot;\n&quot;);
+         if (pos == string::npos) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; tokens[start] &lt;&lt; &quot; and &quot; &lt;&lt; tokens[end] &lt;&lt; &quot; are not on two separate lines&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+   
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check the indent positions
+      for (int i = 0; i &lt; numIndents; ++i) {
+         int end = indents[i];
+         int endIndex = found[end];
+         int startIndex = endIndex - 4 &gt;= 0 ? endIndex - 4 : 0; // 4 = 1 newline + 3 spaces in an indented level
+         string segment = data.substr(startIndex, endIndex - startIndex);
+         int pos = segment.find(&quot;\n   &quot;); // newline + 3 spaces
+         if (pos == string::npos) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; tokens[end] &lt;&lt; &quot; is not indented by 3 spaces&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+
+      if (!isOK) return; // Stop if previous test failed
+   
+      // Check for strings to be avoided
+      for (int i = 0; i &lt; numAvoids; ++i) {
+         if (data.find(avoids[i]) != string::npos) {
+            cout &lt;&lt; &quot;ERROR: &quot; &lt;&lt; avoids[i] &lt;&lt; &quot; should not be used&quot; &lt;&lt; endl;
+            isOK = false;
+         }
+      }
+   }
+   catch (const exception&amp; e) {
+      cout &lt;&lt; &quot;Error found:&quot; &lt;&lt; dataRaw &lt;&lt; endl;
+   }
+}
+
+
+void TestCode(int var1, int var2, int var3) {
+   if (var1 != VALUES[0]) {
+      cout &lt;&lt; &quot;Value of &quot; &lt;&lt; VARS[0] &lt;&lt; &quot; is incorrect&quot; &lt;&lt; endl;
+   }
+   if (var2 != VALUES[1]) {
+      cout &lt;&lt; &quot;Value of &quot; &lt;&lt; VARS[1] &lt;&lt; &quot; is incorrect&quot; &lt;&lt; endl;
+   }
+   if (var3 != VALUES[2]) {
+      cout &lt;&lt; &quot;Value of &quot; &lt;&lt; VARS[2] &lt;&lt; &quot; is incorrect&quot; &lt;&lt; endl;
+   }
+   
+   string s = Extract();
+   Check(s);
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">libtest.cpp</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __TEST__
+#define __TEST__
+
+void TestCode(int var1, int var2, int var3);
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP1__
+#define __SETUP1__
+#include &lt;string&gt;
+
+const int VALUES[3] = {${distractor.result1}, ${distractor.result2}, ${distractor.result3}};
+const string VARS[3] = {&quot;${distractor.var1}&quot;, &quot;${distractor.var2}&quot;, &quot;${distractor.var3}&quot;};
+
+string startMarker = &quot;int main() {&quot;;  // not including newline
+string endMarker = &quot;${distractor.var1} = ${distractor.num3};&quot;;  // not including newline.
+
+/* Expected tokens */
+const int numTokens = 3;
+const string tokens[numTokens] = {&quot;int ${distractor.var1};&quot;, &quot;int ${distractor.var2};&quot;, &quot;int ${distractor.var3};&quot;};
+const int occurrence[numTokens] = {1, 1, 1};
+
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+const int numNewlines = 0;
+const int newlines[numNewlines][2] = {};
+
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+const int numIndents = 3;
+const int indents[numIndents] = {0, 1, 2};
+
+/* Not expected */
+const int numAvoids = 0;
+const string avoids[numAvoids] = {};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup1.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP2__
+#define __SETUP2__
+#include &lt;string&gt;
+
+const int VALUES[3] = {${distractor.result1}, ${distractor.result2}, ${distractor.result3}};
+const string VARS[3] = {&quot;${distractor.var1}&quot;, &quot;${distractor.var2}&quot;, &quot;${distractor.var3}&quot;};
+
+string startMarker = &quot;int ${distractor.var3};&quot;;  // not including newline.
+string endMarker = &quot;TestCode(${distractor.var1}, ${distractor.var2}, ${distractor.var3});&quot;;  // not including newline.
+
+/* Expected tokens */
+const int numTokens = 3;
+const string tokens[numTokens] = {${distractor.string_tokens}};
+const int occurrence[numTokens] = {1, 1, 1};
+   
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+const int numNewlines = 0;
+const int newlines[numNewlines][2] = {};
+
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+const int numIndents = 3;
+const int indents[numIndents] = {0, 1, 2};
+
+/* Not expected */
+const int numAvoids = 0;
+const string avoids[numAvoids] = {};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup2.h</name></li></files><prompt type="string">${distractor.prompt}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    setup = meaningful_permutation[&apos;setup&apos;]    
+
+    food = pick_from(foods)
+    food_cap = food.capitalize()
+    noun = pick_from([&apos;tour&apos;, &apos;boat&apos;, &apos;table&apos;, &apos;room&apos;, &apos;trip&apos;])
+    noun_cap = noun.capitalize()
+    noun_total = &apos;total{}s&apos;.format(noun_cap)
+    
+    scenario_food = [&apos;totalBoxes&apos;, &apos;{}sPerBox&apos;.format(food), &apos;total{}s&apos;.format(food_cap), pick_from_range(2, 15), &apos;totalBoxes&apos;, pick_from_range(16, 30)]
+    scenario_cost = [noun_total, &apos;costPer{}&apos;.format(noun_cap), &apos;totalCost&apos;, pick_from_range(200, 400), noun_total, pick_from_range(2, 10)]
+
+    scenario = pick_from([scenario_measure, scenario_food, scenario_cost])
+    var1, var2, var3, num1, num2, num3 = scenario
+
+    result1 = num3
+    result2 = num1 * num3
+    result3 = num1 * num2 * num3
+    
+    prefix = postfix = string_tokens = &apos;&apos;
+    if setup == 1:
+        prompt = &apos;Align the code in line 7 so that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;each statement is on a separate line.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;each statement starts with exactly 3 spaces as indentation.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;each statement has exactly one space that separates `int` and the variable name.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;no space exists before each semicolon.&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not change the order of the statements.&apos;
+        placeholder = &apos;\nint{3}{0}{8};{4}int{5}{1}{9};{6}int{7}{2}{10};\n&apos;\
+            .format(var1, var2, var3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+        
+        solution = &apos;&apos;&apos;   int {0};
+   int {1};
+   int {2};&apos;&apos;&apos;.format(var1, var2, var3)
+        
+        solution_line1 = &apos;&lt;p&gt;&lt;pre&gt;   int {0};&lt;/pre&gt;&lt;/p&gt;&apos;.format(var1)
+        
+        postfix = &apos;\n\t{0} = {5};  // {5} {0} is given&apos;\
+            &apos;\n\t{1} = {3} * {0};  // Convert {0} to {1}&apos;\
+            &apos;\n\t{2} = {4} * {1};  // Convert {1} to {2}\n&apos;\
+            .format(var1, var2, var3, num1, num2, num3)
+
+        explain = &apos;Each statement starts with `int`, followed by one space, the variable name&apos;
+
+        if &apos;total&apos; in var1:
+            result2 = num1
+            result3 = num1 * num3
+                
+            if var1 == &apos;totalBoxes&apos;:
+                postfix = &apos;\n\t{0} = {5};  // {5} boxes are delivered\n\t{1} = {3};  // Each box has {3} {6}s\n\t{2} = {0} * {1};  // Total {6}s delivered\n&apos;\
+                    .format(var1, var2, var3, num1, num2, num3, food)
+            else:
+                postfix = &apos;\n\t{0} = {5};  // {5} {6}s are purchased\n\t{1} = {3};  // Each {6} costs {3} dollars\n\t{2} = {0} * {1};  // Total cost for all {6}s\n&apos;\
+                    .format(var1, var2, var3, num1, num2, num3, noun)
+    
+    else: # setup 2
+        prompt = &apos;Align the code in lines 10-12 so that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;each statement starts with exactly 3 spaces as indentation.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;exactly one space exists before and after each operator (`=` and `*`).&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;no space exists before each semicolon.&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not change the order of the statements. Do not align the = operators across multiple lines.&apos;
+        
+        prefix = &apos;\tint {0};\n\tint {1};\n\tint {2};\n&apos;.format(var1, var2, var3)
+        
+        placeholder = &apos;\n{13}{0}{6}={7}{5}{8}{11};{10}\n{11}{1}{9}={10}{3}{7}*{6}{0}{9}{12};{8}\n{12}{2}{7}={8}{4}{9}*{10}{1}{13};{6}\n&apos;\
+            .format(var1, var2, var3, num1, num2, num3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+        
+        solution = &apos;&apos;&apos;   {0} = {5};
+   {1} = {3} * {0};
+   {2} = {4} * {1};&apos;&apos;&apos;.format(var1, var2, var3, num1, num2, num3)
+        
+        solution_line1 = &apos;&lt;p&gt;&lt;pre&gt;   {0} = {1};&lt;/pre&gt;&lt;/p&gt;&apos;.format(var1, num3)
+        
+        string_tokens = &apos;&quot;{0} = {5};&quot;, &quot;{1} = {3} * {0};&quot;, &quot;{2} = {4} * {1};&quot;&apos;
+        
+        explain = &apos;Each statement has one space before and after each `=` and `*`&apos;
+        
+        if &apos;total&apos; in var1:
+            placeholder = &apos;\n{12}{0}{6}={7}{5}{8}{11};{10}\n{13}{1}{9}={10}{3}{7}{12};{8}\n{11}{2}{7}={8}{0}{9}*{10}{1}{13};{6}\n&apos;\
+                .format(var1, var2, var3, num1, num2, num3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+
+            solution = &apos;&apos;&apos;   {0} = {5};
+   {1} = {3};
+   {2} = {0} * {1};&apos;&apos;&apos;.format(var1, var2, var3, num1, num2, num3)
+
+            string_tokens = &apos;&quot;{0} = {5};&quot;, &quot;{1} = {3};&quot;, &quot;{2} = {0} * {1};&quot;&apos;
+            
+            result2 = num1
+            result3 = num1 * num3
+
+    return {
+        &apos;explain&apos;: explain,
+        &apos;num1&apos;: num1,
+        &apos;num2&apos;: num2,
+        &apos;num3&apos;: num3,
+        &apos;placeholder&apos;: placeholder,
+        &apos;postfix&apos;: postfix,
+        &apos;prefix&apos;: prefix,
+        &apos;prompt&apos;: prompt,
+        &apos;result1&apos;: result1,
+        &apos;result2&apos;: result2,
+        &apos;result3&apos;: result3,
+        &apos;setup&apos;: setup,
+        &apos;solution&apos;: solution,
+        &apos;solution_line1&apos;: solution_line1,
+        &apos;string_tokens&apos;: string_tokens.format(var1, var2, var3, num1, num2, num3),
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;setup&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">space_counts = random.sample(range(2, 10), 5)
+spaces1, spaces2, spaces3, spaces4, spaces5 = [&apos; &apos; * count for count in space_counts]
+spaces6, spaces7, spaces8 = random.sample([&apos;&apos;, &apos; &apos;, &apos;    &apos;], 3) # spaces before semicolons and indentations
+
+scenario_measure = pick_from([
+    [&apos;hours&apos;, &apos;minutes&apos;, &apos;seconds&apos;, 60, 60, pick_from_range(2, 10)],
+    [&apos;weeks&apos;, &apos;days&apos;, &apos;hours&apos;, 7, 24, pick_from_range(2, 10, [7])],
+    [&apos;kilometers&apos;, &apos;meters&apos;, &apos;centimeters&apos;, 1000, 100, pick_from_range(2, 10)],
+    [&apos;kilograms&apos;, &apos;grams&apos;, &apos;milligrams&apos;, 1000, 1000, pick_from_range(2, 10)],
+])</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+</zyVersion>
+
+
+
+<zypInfo person="Stephanie" date="03/04/25" minutes="40" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="03/06/25" minutes="30" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/06/25" minutes="10" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Maya" date="03/07/25" minutes="20" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="03/25/25" minutes="60" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/26/25" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="03/26/25" minutes="60" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="03/27/25" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="03/31/25" minutes="30" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="04/04/25" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="04/04/25" minutes="30" status="QADone">Golden_CA_development</zypInfo>
+
+
+<zypInfo person="Stephanie" date="04/23/25" minutes="180" status="CodeDoing">Golden_CA_development</zypInfo>
+from common_functions import pick_from, pick_from_range
+
+names = [
+    &apos;Abe&apos;, &apos;Ada&apos;, &apos;Ali&apos;, &apos;Amy&apos;, &apos;Ana&apos;, &apos;Ani&apos;, &apos;Ann&apos;, &apos;Ara&apos;, &apos;Ari&apos;, &apos;Ava&apos;,
+    &apos;Avi&apos;, &apos;Aya&apos;, &apos;Ben&apos;, &apos;Bly&apos;, &apos;Bob&apos;, &apos;Cal&apos;, &apos;Cam&apos;, &apos;Dan&apos;, &apos;Dax&apos;, &apos;Del&apos;,
+    &apos;Edd&apos;, &apos;Eli&apos;, &apos;Erl&apos;, &apos;Eve&apos;, &apos;Fay&apos;, &apos;Fin&apos;, &apos;Gil&apos;, &apos;Gio&apos;, &apos;Gus&apos;, &apos;Guy&apos;,
+    &apos;Hal&apos;, &apos;Han&apos;, &apos;Hud&apos;, &apos;Huy&apos;, &apos;Ian&apos;, &apos;Ike&apos;, &apos;Ina&apos;, &apos;Ira&apos;, &apos;Jan&apos;, &apos;Jay&apos;,
+    &apos;Jeb&apos;, &apos;Jen&apos;, &apos;Jim&apos;, &apos;Joe&apos;, &apos;Jon&apos;, &apos;Joy&apos;, &apos;Kai&apos;, &apos;Kay&apos;, &apos;Ken&apos;, &apos;Kim&apos;,
+    &apos;Kit&apos;, &apos;Lei&apos;, &apos;Leo&apos;, &apos;Lia&apos;, &apos;Lou&apos;, &apos;Mac&apos;, &apos;Mae&apos;, &apos;Mai&apos;, &apos;Max&apos;, &apos;May&apos;,
+    &apos;Meg&apos;, &apos;Mel&apos;, &apos;Moe&apos;, &apos;Mox&apos;, &apos;Ned&apos;, &apos;Nia&apos;, &apos;Oma&apos;, &apos;Pal&apos;, &apos;Pam&apos;, &apos;Pat&apos;,
+    &apos;Rae&apos;, &apos;Ray&apos;, &apos;Rob&apos;, &apos;Ron&apos;, &apos;Sal&apos;, &apos;Sam&apos;, &apos;Seb&apos;, &apos;Sid&apos;, &apos;Sue&apos;, &apos;Tad&apos;,
+    &apos;Taj&apos;, &apos;Tay&apos;, &apos;Ted&apos;, &apos;Tia&apos;, &apos;Tim&apos;, &apos;Tom&apos;, &apos;Uma&apos;, &apos;Val&apos;, &apos;Van&apos;, &apos;Vic&apos;,
+    &apos;Wes&apos;, &apos;Wyn&apos;, &apos;Xan&apos;, &apos;Xim&apos;, &apos;Xio&apos;, &apos;Yaz&apos;, &apos;Zak&apos;, &apos;Zel&apos;, &apos;Zia&apos;, &apos;Zoe&apos;,
+]
+
+states = [
+    &apos;Alabama&apos;, &apos;Alaska&apos;, &apos;Arizona&apos;, &apos;Arkansas&apos;, &apos;California&apos;, &apos;Colorado&apos;, &apos;Connecticut&apos;,
+    &apos;Delaware&apos;, &apos;Florida&apos;, &apos;Georgia&apos;, &apos;Hawaii&apos;, &apos;Idaho&apos;, &apos;Illinois&apos;, &apos;Indiana&apos;, &apos;Iowa&apos;, &apos;Kansas&apos;,
+    &apos;Kentucky&apos;, &apos;Louisiana&apos;, &apos;Maine&apos;, &apos;Maryland&apos;, &apos;Massachusetts&apos;, &apos;Michigan&apos;, &apos;Minnesota&apos;,
+    &apos;Mississippi&apos;, &apos;Missouri&apos;, &apos;Montana&apos;, &apos;Nebraska&apos;, &apos;Nevada&apos;, &apos;Ohio&apos;, &apos;Oklahoma&apos;, &apos;Oregon&apos;,
+    &apos;Pennsylvania&apos;, &apos;Tennessee&apos;, &apos;Texas&apos;, &apos;Utah&apos;, &apos;Vermont&apos;, &apos;Virginia&apos;,
+    &apos;Washington&apos;, &apos;Wisconsin&apos;, &apos;Wyoming&apos;,
+]
+
+foods = [
+    &apos;brownie&apos;, &apos;burger&apos;, &apos;burrito&apos;, &apos;cake&apos;, &apos;calzone&apos;, &apos;cannoli&apos;, &apos;cheesecake&apos;, &apos;churro&apos;, &apos;cobbler&apos;,
+    &apos;cookie&apos;, &apos;crepe&apos;, &apos;croissant&apos;, &apos;cupcake&apos;, &apos;donut&apos;, &apos;drink&apos;, &apos;eclair&apos;, &apos;ham&apos;, &apos;lobster&apos;,
+    &apos;lollipop&apos;, &apos;macaron&apos;, &apos;muffin&apos;, &apos;pancake&apos;, &apos;pasta&apos;, &apos;pie&apos;, &apos;pizza&apos;, &apos;popsicle&apos;, &apos;pudding&apos;, &apos;quesadilla&apos;,
+    &apos;quiche&apos;, &apos;salad&apos;, &apos;soup&apos;, &apos;steak&apos;, &apos;taco&apos;, &apos;tostada&apos;, &apos;wrap&apos;, &apos;yogurt&apos;,
+]</global><language type="string">c</language><levels type="list"><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &quot;testcode.h&quot;  // For testing purposes
+#include &lt;stdio.h&gt;
+
+${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">${distractor.placeholder}</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.postfix}
+   TestCode();  // For testing purposes
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.c</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">// Developed with the assistance of copilot.microsoft.com
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;ctype.h&gt;
+
+
+#define FALSE 0
+#define TRUE 1
+
+const int DEBUG = FALSE;
+
+#include &quot;setup${meaningful.setup}.h&quot;
+
+char* Extract() {
+   const char inputFileName[] = &quot;main.c&quot;;
+
+   FILE *inputFile;
+   char *line = NULL;
+   size_t len = 0;
+   ssize_t read;
+   int sectionStarted = 0;
+   char *extractedSection = NULL;
+   size_t extractedSize = 0;
+
+   // Open the input file
+   inputFile = fopen(inputFileName, &quot;r&quot;);
+   if (inputFile == NULL) 
+      return &quot;&quot;;
+
+   // Read the content line by line
+   while ((read = getline(&amp;line, &amp;len, inputFile)) != -1) {
+
+      if (strstr(line, startMarker) != NULL) {
+         sectionStarted = TRUE;
+         extractedSize += read;
+         extractedSection = realloc(extractedSection, extractedSize + 1);
+         strcat(extractedSection, line); // Include the start marker line
+      } else if (sectionStarted) {
+         extractedSize += read;
+         extractedSection = realloc(extractedSection, extractedSize + 1);
+         strcat(extractedSection, line); // Include subsequent lines until the end marker
+
+         if (strstr(line, endMarker) != NULL) {
+            char *start = strstr(extractedSection, startMarker) + strlen(startMarker); // remove startMarker
+            char *end = strstr(extractedSection, endMarker);
+            size_t sectionLength = end - start;
+            memmove(extractedSection, start, sectionLength);
+            extractedSection[sectionLength] = &apos;\0&apos;; // remove endMarker
+            break; // End marker found, stop reading
+         }
+      }
+   }
+
+   // Close the input file
+   fclose(inputFile);
+
+   if (line) free(line);
+
+   if (DEBUG) printf(&quot;Section extracted: %s\n&quot;, extractedSection);
+
+   return extractedSection;
+}
+
+// Need to free the memory after use
+char* StrToLower(char* s) {
+   size_t len = strlen(s);
+   char* result = (char*)malloc(len + 1); // Allocate memory for the result string
+
+   for (size_t i = 0; i &lt; len; ++i) {
+      result[i] = tolower(s[i]);
+   }
+   result[len] = &apos;\0&apos;; // Null-terminate the result string
+
+   return result;
+}
+
+
+void Check(char* data) {
+   int isOK = TRUE;
+   int found[numTokens];
+
+   // Check for tokens
+   for (int i = 0; i &lt; numTokens; ++i) {
+      char* token_lower = StrToLower(tokens[i]);
+
+      // Find the index of the n-th occurrence of a token
+      char* pos = strstr(data, token_lower);  // First occurrence
+
+      for (int n = 1; n &lt; occurrence[i] &amp;&amp; pos != NULL; ++n) {
+         pos = strstr(pos + 1, token_lower); // Next occurrence
+      }
+
+      found[i] = pos ? pos - data : -1;
+
+      if (DEBUG) printf(&quot;Found %s at %d\n&quot;, tokens[i], found[i]);
+
+      if (found[i] == -1) {
+         printf(&quot;ERROR! Missing text: %s\n&quot;, tokens[i]);
+         isOK = FALSE;
+      }
+
+      free(token_lower);
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check the order of the tokens
+   for (int i = 0; i &lt; numTokens - 1; ++i) {
+      if (found[i] &gt;= found[i + 1]) {
+         printf(&quot;ERROR: %s is not before %s\n&quot;, tokens[i], tokens[i + 1]);
+         isOK = FALSE;
+      }
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check the newline positions
+   for (int i = 0; i &lt; numNewlines; ++i) {
+      int start = newlines[i][0];
+      int end = newlines[i][1];
+      int startIndex = found[start];
+      int endIndex = found[end];
+      char* segment = strndup(data + startIndex, endIndex - startIndex);
+      char* pos = strchr(segment, &apos;\n&apos;);
+      if (pos == NULL) {
+         printf(&quot;ERROR: %s and %s are not on two separate lines\n&quot;, tokens[start], tokens[end]);
+         isOK = FALSE;
+      }
+      free(segment);
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check the indent positions
+   for (int i = 0; i &lt; numIndents; ++i) {
+      int end = indents[i];
+      int endIndex = found[end];
+      int startIndex = endIndex - 4 &gt;= 0 ? endIndex - 4 : 0; // 4 = 1 newline + 3 spaces in an indented level
+      char* segment = strndup(data + startIndex, endIndex - startIndex);
+      char* pos = strstr(segment, &quot;\n   &quot;); // newline + 3 spaces
+      if (pos == NULL) {
+          printf(&quot;ERROR: %s is not indented by 3 spaces\n&quot;, tokens[end]);
+          isOK = FALSE;
+      }
+      free(segment);
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check for strings to be avoided
+   for (int i = 0; i &lt; numAvoids; ++i) {
+      if (strstr(data, avoids[i]) != NULL) {
+         printf(&quot;ERROR: %s should not be used\n&quot;, avoids[i]);
+         isOK = FALSE;
+      }
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check that no newline exists before content
+   if (mustStartOnSameLine &amp;&amp; numTokens &gt; 0) {
+      char* token_lower = StrToLower(tokens[numTokens - 1]);
+      char* pos = strstr(data, token_lower);  // First occurrence
+
+      if (pos != NULL) {
+         int index = pos - data;
+         for (int i = 0; i &lt; index; ++i) {
+             if (data[i] == &apos;\n&apos;) {
+                 printf(&quot;ERROR: Comment should not be on a separate line\n&quot;);
+                 isOK = FALSE;
+                 break;
+             }
+         }
+      }
+      free(token_lower);
+   }
+}
+
+
+void TestCode() {
+   char* s = Extract();
+   char* data = StrToLower(s); // Avoid case sensitivity
+   Check(data);
+   free(s);
+   free(data);
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">libtest.c</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __TEST__
+#define __TEST__
+
+void TestCode();
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP1__
+#define __SETUP1__
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+
+const char startMarker[] = &quot;// Write a block comment below&quot;;  // not including newline
+const char endMarker[] = &quot;int main(void) {&quot;;  // not including newline
+
+/* Expected tokens */
+#define numTokens 8
+char tokens[numTokens][80] = {&quot;/*&quot;, &quot;Author&quot;, &quot;:&quot;, &quot;${distractor.name}&quot;, &quot;Date&quot;, &quot;:&quot;, &quot;${distractor.month}/${distractor.day}/${distractor.year}&quot;, &quot;*/&quot;};
+const int occurrence[numTokens] = {1, 1, 1, 1, 1, 2, 1, 1};  // 1 means first occurrence
+
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+#define numNewlines 3
+const int newlines[numNewlines][2] = {{0, 1}, {3, 4}, {6, 7}};
+const int mustStartOnSameLine = FALSE;
+
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+#define numIndents 0
+const int indents[numIndents] = {};
+
+/* Not expected */
+#define numAvoids 1
+const char avoids[numAvoids][80] = {&quot;//&quot;};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup1.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP2__
+#define __SETUP2__
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+
+const char startMarker[] = &quot;${distractor.var2} = ${distractor.num1} * ${distractor.var1};&quot;;  // not including newline. 
+const char endMarker[] = &quot;TestCode();&quot;; // not including newline.
+
+/* Expected tokens */
+#define numTokens 5
+char tokens[numTokens][80] = {&quot;//&quot;, &quot;Converting&quot;, &quot;${distractor.var1}&quot;, &quot;to&quot;, &quot;${distractor.var2}&quot;};
+const int occurrence[numTokens] = {1, 1, 1, 1, 1};
+   
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+#define numNewlines 0
+const int newlines[0][2] = {};
+const int mustStartOnSameLine = TRUE;
+   
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+#define numIndents 0
+const int indents[numIndents] = {};
+
+/* Not expected */
+#define numAvoids 2
+const char avoids[numAvoids][80] = {&quot;/*&quot;, &quot;*/&quot;};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup2.h</name></li></files><prompt type="string">${distractor.prompt}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    setup = meaningful_permutation[&apos;setup&apos;]
+    
+    scenario = pick_from([scenario_time, scenario_volume, scenario_box] if setup == 1 else [scenario_time, scenario_volume])    
+    var1, var2, num1, num2, comment = scenario
+    
+    comment = comment.format(var1, var2)
+    comment_noun = &apos;boxes&apos; if &apos;box&apos; in comment else var1
+    
+    if setup == 1:
+        prompt = &apos;Starting at line 5, write a block comment that has the following:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;First line: `/*`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Second line contains: `Author: {0}`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Third line contains: `Date: {1}/{2}/{3}`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Fourth line: `*/`&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not use `//`.&apos;.format(name, month, day, year)
+        prefix = &apos;// Write a block comment below\n&apos;
+        placeholder = &apos;\n\n\n&apos;
+        solution = &apos;&apos;&apos;/*
+   Author: {0}
+   Date: {1}/{2}/{3}
+*/&apos;&apos;&apos;.format(name, month, day, year)
+        postfix = &apos;\nint main(void) {\n\tint {2};\n\tint {1};\n\n\t{2} = {4};  // {4} {5} is given\n\t{1} = {3} * {2};  // {0}\n&apos;\
+            .format(comment, var2, var1, num1, num2, comment_noun)
+        explain = &apos;A block comment starts with `/*` and ends with `*/`. All the text between `/*` and `*/` is part of the comment.&apos;
+
+    else: # setup 2
+        prompt = &apos;On line 9, after the semicolon (;), write a single-line comment that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;uses: `//`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;contains the words: `{}`&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not use `/*` and `*/`.&apos;.format(comment)
+        prefix = &apos;int main(void) {\n\tint {0};\n\tint {1};\n\n\t{0} = {3};  // {3} {0} is given\n\t{1} = {2} * {0};&apos;\
+            .format(var1, var2, num1, num2)
+        placeholder = &apos;  &apos;
+        solution = &apos;// {}&apos;.format(comment)
+        postfix = &apos;\n&apos;
+        explain = &apos;A single-line comment starts with `//`. All remaining text after `//` in the line is part of the comment.&apos;
+
+    return {
+            &apos;day&apos;: day,
+            &apos;explain&apos;: explain,
+            &apos;month&apos;: month,
+            &apos;name&apos;: name,
+            &apos;num1&apos;: num1,
+            &apos;num2&apos;: num2,
+            &apos;placeholder&apos;: placeholder,
+            &apos;postfix&apos;: postfix,
+            &apos;prefix&apos;: prefix,
+            &apos;prompt&apos;: prompt,
+            &apos;solution&apos;: solution,
+            &apos;var1&apos;: var1,
+            &apos;var2&apos;: var2,
+            &apos;year&apos;: year,
+        }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;setup&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">food = pick_from(foods)
+name = pick_from(names)
+month = pick_from([(&apos;0&apos; + str(pick_from_range(1, 9))), pick_from_range(10, 12)])
+day = pick_from([(&apos;0&apos; + str(pick_from_range(1, 9))), pick_from_range(10, 28)])
+year = pick_from_range(2000, 2024)
+
+comment1 = &apos;Converting {} to {}&apos;
+comment2 = &apos;Each box has a dozen {}s&apos;
+
+scenario_time = pick_from([
+        [&apos;hours&apos;, &apos;minutes&apos;, 60, pick_from_range(2, 10), comment1],
+        [&apos;minutes&apos;, &apos;seconds&apos;, 60, pick_from_range(2, 59), comment1],
+        [&apos;hours&apos;, &apos;seconds&apos;, 3600, pick_from_range(2, 10), comment1],
+        [&apos;weeks&apos;, &apos;days&apos;, 7, pick_from_range(2, 10, [7]), comment1],
+        [&apos;days&apos;, &apos;hours&apos;, 24, pick_from_range(2, 10), comment1],
+        [&apos;weeks&apos;, &apos;hours&apos;, 168, pick_from_range(2, 10), comment1],
+])
+
+scenario_volume = pick_from([
+        [&apos;gallons&apos;, &apos;cups&apos;, 16, pick_from_range(2, 10), comment1],
+        [&apos;gallons&apos;, &apos;quarts&apos;, 4, pick_from_range(2, 10, [4]), comment1],
+        [&apos;gallons&apos;, &apos;pints&apos;, 8, pick_from_range(2, 10, [8]), comment1],
+        [&apos;quarts&apos;, &apos;pints&apos;, 2, pick_from_range(3, 10), comment1],
+        [&apos;quarts&apos;, &apos;cups&apos;, 4, pick_from_range(2, 10, [4]), comment1],
+        [&apos;pints&apos;, &apos;cups&apos;, 2, pick_from_range(3, 10), comment1],
+        [&apos;teaspoons&apos;, &apos;milliliters&apos;, 5, pick_from_range(2, 10, [5]), comment1],
+        [&apos;tablespoons&apos;, &apos;milliliters&apos;, 15, pick_from_range(2, 10), comment1],
+])
+
+scenario_box = [&apos;totalBoxes&apos;, &apos;total{}s&apos;.format(food.capitalize()), 12, pick_from_range(2, 30, [12]), comment2.format(food)]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">Good programming practice is to put each statement on a separate line, indented by exactly three spaces at the start of the statement. ${distractor.explain}, and ends with a semicolon. No space exists before each semicolon.
+
+Ex:${distractor.solution_line1}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#include &quot;testcode.h&quot;  // For testing purposes
+#include &lt;stdio.h&gt;
+
+int main(void) {
+${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">${distractor.placeholder}</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.postfix}
+   TestCode(${distractor.var1}, ${distractor.var2}, ${distractor.var3});  // For testing purposes
+
+   return 0;
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">main.c</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">// Developed with the assistance of copilot.microsoft.com
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;ctype.h&gt;
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+const int DEBUG = FALSE;
+
+#include &quot;setup${meaningful.setup}.h&quot;
+
+char* Extract() {
+   const char inputFileName[] = &quot;main.c&quot;;
+
+   FILE *inputFile;
+   char *line = NULL;
+   size_t len = 0;
+   ssize_t read;
+   int sectionStarted = 0;
+   char *extractedSection = NULL;
+   size_t extractedSize = 0;
+
+   // Open the input file
+   inputFile = fopen(inputFileName, &quot;r&quot;);
+   if (inputFile == NULL) 
+      return &quot;&quot;;
+
+   // Read the content line by line
+   while ((read = getline(&amp;line, &amp;len, inputFile)) != -1) {
+
+      if (strstr(line, startMarker) != NULL) {
+         sectionStarted = TRUE;
+         extractedSize += read;
+         extractedSection = realloc(extractedSection, extractedSize + 1);
+         strcat(extractedSection, line); // Include the start marker line
+      } else if (sectionStarted) {
+         extractedSize += read;
+         extractedSection = realloc(extractedSection, extractedSize + 1);
+         strcat(extractedSection, line); // Include subsequent lines until the end marker
+
+         if (strstr(line, endMarker) != NULL) {
+            char *start = strstr(extractedSection, startMarker) + strlen(startMarker); // remove startMarker
+            char *end = strstr(extractedSection, endMarker);
+            size_t sectionLength = end - start;
+            memmove(extractedSection, start, sectionLength);
+            extractedSection[sectionLength] = &apos;\0&apos;; // remove endMarker
+            break; // End marker found, stop reading
+         }
+      }
+   }
+
+   // Close the input file
+   fclose(inputFile);
+
+   if (line) free(line);
+
+   if (DEBUG) printf(&quot;Section extracted: %s\n&quot;, extractedSection);
+
+   return extractedSection;
+}
+
+// Need to free the memory after use
+char* StrToLower(char* s) {
+   size_t len = strlen(s);
+   char* result = (char*)malloc(len + 1); // Allocate memory for the result string
+
+   for (size_t i = 0; i &lt; len; ++i) {
+      result[i] = tolower(s[i]);
+   }
+   result[len] = &apos;\0&apos;; // Null-terminate the result string
+
+   return result;
+}
+
+
+void Check(char* data) {
+   int isOK = TRUE;
+   int found[numTokens];
+
+   // Check for tokens
+   for (int i = 0; i &lt; numTokens; ++i) {
+      char* token_lower = StrToLower(tokens[i]);
+
+      // Find the index of the n-th occurrence of a token
+      char* pos = strstr(data, token_lower);  // First occurrence
+
+      for (int n = 1; n &lt; occurrence[i] &amp;&amp; pos != NULL; ++n) {
+         pos = strstr(pos + 1, token_lower); // Next occurrence
+      }
+
+      found[i] = pos ? pos - data : -1;
+
+      if (DEBUG) printf(&quot;Found %s at %d\n&quot;, tokens[i], found[i]);
+
+      if (found[i] == -1) {
+         printf(&quot;ERROR! Missing text: %s\n&quot;, tokens[i]);
+         isOK = FALSE;
+      }
+
+      free(token_lower);
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check the order of the tokens
+   for (int i = 0; i &lt; numTokens - 1; ++i) {
+      if (found[i] &gt;= found[i + 1]) {
+         printf(&quot;ERROR: %s is not before %s\n&quot;, tokens[i], tokens[i + 1]);
+         isOK = FALSE;
+      }
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check the newline positions
+   for (int i = 0; i &lt; numNewlines; ++i) {
+      int start = newlines[i][0];
+      int end = newlines[i][1];
+      int startIndex = found[start];
+      int endIndex = found[end];
+      char* segment = strndup(data + startIndex, endIndex - startIndex);
+      char* pos = strchr(segment, &apos;\n&apos;);
+      if (pos == NULL) {
+         printf(&quot;ERROR: %s and %s are not on two separate lines\n&quot;, tokens[start], tokens[end]);
+         isOK = FALSE;
+      }
+      free(segment);
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check the indent positions
+   for (int i = 0; i &lt; numIndents; ++i) {
+      int end = indents[i];
+      int endIndex = found[end];
+      int startIndex = endIndex - 4 &gt;= 0 ? endIndex - 4 : 0; // 4 = 1 newline + 3 spaces in an indented level
+      char* segment = strndup(data + startIndex, endIndex - startIndex);
+      char* pos = strstr(segment, &quot;\n   &quot;); // newline + 3 spaces
+      if (pos == NULL) {
+          printf(&quot;ERROR: %s is not indented by 3 spaces\n&quot;, tokens[end]);
+          isOK = FALSE;
+      }
+      free(segment);
+   }
+   if (!isOK) return; // Stop if previous test failed
+
+
+   // Check for strings to be avoided
+   for (int i = 0; i &lt; numAvoids; ++i) {
+      if (strstr(data, avoids[i]) != NULL) {
+         printf(&quot;ERROR: %s should not be used\n&quot;, avoids[i]);
+         isOK = FALSE;
+      }
+   }
+   if (!isOK) return; // Stop if previous test failed
+}
+
+
+void TestCode(int var1, int var2, int var3) {
+   if (var1 != VALUES[0]) {
+      printf(&quot;Value of %s is incorrect\n&quot;, VARS[0]);
+   }
+   if (var2 != VALUES[1]) {
+      printf(&quot;Value of %s is incorrect\n&quot;, VARS[1]);
+   }
+   if (var3 != VALUES[2]) {
+      printf(&quot;Value of %s is incorrect\n&quot;, VARS[2]);
+   }
+
+   char* s = Extract();
+   char* data = StrToLower(s); // Avoid case sensitivity
+   Check(data);
+   free(s);
+   free(data);
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">libtest.c</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __TEST__
+#define __TEST__
+
+void TestCode(int var1, int var2, int var3);
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">testcode.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP1__
+#define __SETUP1__
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+const int VALUES[3] = {${distractor.result1}, ${distractor.result2}, ${distractor.result3}};
+const char VARS[3][80] = {&quot;${distractor.var1}&quot;, &quot;${distractor.var2}&quot;, &quot;${distractor.var3}&quot;};
+
+const char startMarker[] = &quot;int main(void) {&quot;;  // not including newline
+const char endMarker[] = &quot;${distractor.var1} = ${distractor.num3};&quot;;  // not including newline.
+
+/* Expected tokens */
+#define numTokens 3
+char tokens[numTokens][80] = {&quot;int ${distractor.var1};&quot;, &quot;int ${distractor.var2};&quot;, &quot;int ${distractor.var3};&quot;};
+const int occurrence[numTokens] = {1, 1, 1};
+
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+#define numNewlines 0
+const int newlines[numNewlines][2] = {};
+
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+#define numIndents 3
+const int indents[numIndents] = {0, 1, 2};
+
+/* Not expected */
+#define numAvoids 0
+const char avoids[numAvoids][80] = {};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup1.h</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">#ifndef __SETUP2__
+#define __SETUP2__
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+const int VALUES[3] = {${distractor.result1}, ${distractor.result2}, ${distractor.result3}};
+const char VARS[3][80] = {&quot;${distractor.var1}&quot;, &quot;${distractor.var2}&quot;, &quot;${distractor.var3}&quot;};
+
+const char startMarker[] = &quot;int ${distractor.var3};&quot;;  // not including newline.
+const char endMarker[] = &quot;TestCode(${distractor.var1}, ${distractor.var2}, ${distractor.var3});&quot;;  // not including newline.
+
+/* Expected tokens */
+#define numTokens 3
+char tokens[numTokens][80] = {${distractor.string_tokens}};
+const int occurrence[numTokens] = {1, 1, 1};
+   
+/* Expected positions of newlines with respect to tokens. Ex: {0, 1} means a newline is expected betwen token 0 and token 1 */
+#define numNewlines 0
+const int newlines[numNewlines][2] = {};
+
+/* Expected positions of indents with respect to tokens. Ex: {0} means expecting an indent before token 0  */
+#define numIndents 3
+const int indents[numIndents] = {0, 1, 2};
+
+/* Not expected */
+#define numAvoids 0
+const char avoids[numAvoids][80] = {};
+
+#endif</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">setup2.h</name></li></files><prompt type="string">${distractor.prompt}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    setup = meaningful_permutation[&apos;setup&apos;]    
+
+    food = pick_from(foods)
+    food_cap = food.capitalize()
+    noun = pick_from([&apos;tour&apos;, &apos;boat&apos;, &apos;table&apos;, &apos;room&apos;, &apos;trip&apos;])
+    noun_cap = noun.capitalize()
+    noun_total = &apos;total{}s&apos;.format(noun_cap)
+    
+    scenario_food = [&apos;totalBoxes&apos;, &apos;{}sPerBox&apos;.format(food), &apos;total{}s&apos;.format(food_cap), pick_from_range(2, 15), &apos;totalBoxes&apos;, pick_from_range(16, 30)]
+    scenario_cost = [noun_total, &apos;costPer{}&apos;.format(noun_cap), &apos;totalCost&apos;, pick_from_range(200, 400), noun_total, pick_from_range(2, 10)]
+
+    scenario = pick_from([scenario_measure, scenario_food, scenario_cost])
+    var1, var2, var3, num1, num2, num3 = scenario
+
+    result1 = num3
+    result2 = num1 * num3
+    result3 = num1 * num2 * num3
+    
+    prefix = postfix = string_tokens = &apos;&apos;
+    if setup == 1:
+        prompt = &apos;Align the code in line 6 so that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;each statement is on a separate line.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;each statement starts with exactly 3 spaces as indentation.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;each statement has exactly one space that separates `int` and the variable name.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;no space exists before each semicolon.&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not change the order of the statements.&apos;
+        placeholder = &apos;\nint{3}{0}{8};{4}int{5}{1}{9};{6}int{7}{2}{10};\n&apos;\
+            .format(var1, var2, var3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+        solution = &apos;&apos;&apos;   int {0};
+   int {1};
+   int {2};&apos;&apos;&apos;.format(var1, var2, var3)
+        solution_line1 = &apos;&lt;p&gt;&lt;pre&gt;   int {0};&lt;/pre&gt;&lt;/p&gt;&apos;.format(var1)
+        postfix = &apos;\n\t{0} = {5};  // {5} {0} is given&apos;\
+            &apos;\n\t{1} = {3} * {0};  // Convert {0} to {1}&apos;\
+            &apos;\n\t{2} = {4} * {1};  // Convert {1} to {2}\n&apos;\
+            .format(var1, var2, var3, num1, num2, num3)
+        explain = &apos;Each statement starts with `int`, followed by one space, the variable name&apos;
+
+        if &apos;total&apos; in var1:
+            result2 = num1
+            result3 = num1 * num3
+
+            if var1 == &apos;totalBoxes&apos;:
+                postfix = &apos;\n\t{0} = {5};  // {5} boxes are delivered\n\t{1} = {3};  // Each box has {3} {6}s\n\t{2} = {0} * {1};  // Total {6}s delivered\n&apos;\
+                    .format(var1, var2, var3, num1, num2, num3, food)
+            else:
+                postfix = &apos;\n\t{0} = {5};  // {5} {6}s are purchased\n\t{1} = {3};  // Each {6} costs {3} dollars\n\t{2} = {0} * {1};  // Total cost for all {6}s\n&apos;\
+                    .format(var1, var2, var3, num1, num2, num3, noun)
+
+    else: # setup 2
+        prompt = &apos;Align the code in lines 9-11 so that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;each statement starts with exactly 3 spaces as indentation.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;exactly one space exists before and after each operator (`=` and `*`).&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;no space exists before each semicolon.&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not change the order of the statements. Do not align the = operators across multiple lines.&apos;
+        prefix = &apos;\tint {0};\n\tint {1};\n\tint {2};\n&apos;.format(var1, var2, var3)
+        placeholder = &apos;\n{13}{0}{6}={7}{5}{8}{11};{10}\n{11}{1}{9}={10}{3}{7}*{6}{0}{9}{12};{8}\n{12}{2}{7}={8}{4}{9}*{10}{1}{13};{6}\n&apos;\
+            .format(var1, var2, var3, num1, num2, num3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+        solution = &apos;&apos;&apos;   {0} = {5};
+   {1} = {3} * {0};
+   {2} = {4} * {1};&apos;&apos;&apos;.format(var1, var2, var3, num1, num2, num3)
+        solution_line1 = &apos;&lt;p&gt;&lt;pre&gt;   {0} = {1};&lt;/pre&gt;&lt;/p&gt;&apos;.format(var1, num3)
+        string_tokens = &apos;&quot;{0} = {5};&quot;, &quot;{1} = {3} * {0};&quot;, &quot;{2} = {4} * {1};&quot;&apos;
+        explain = &apos;Each statement has one space before and after each `=` and `*`&apos;
+
+        if &apos;total&apos; in var1:
+            placeholder = &apos;\n{12}{0}{6}={7}{5}{8}{11};{10}\n{13}{1}{9}={10}{3}{7}{12};{8}\n{11}{2}{7}={8}{0}{9}*{10}{1}{13};{6}\n&apos;\
+                .format(var1, var2, var3, num1, num2, num3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+            solution = &apos;&apos;&apos;   {0} = {5};
+   {1} = {3};
+   {2} = {0} * {1};&apos;&apos;&apos;.format(var1, var2, var3, num1, num2, num3)
+            string_tokens = &apos;&quot;{0} = {5};&quot;, &quot;{1} = {3};&quot;, &quot;{2} = {0} * {1};&quot;&apos;
+            result2 = num1
+            result3 = num1 * num3
+
+    return {
+        &apos;explain&apos;: explain,
+        &apos;num1&apos;: num1,
+        &apos;num2&apos;: num2,
+        &apos;num3&apos;: num3,
+        &apos;placeholder&apos;: placeholder,
+        &apos;postfix&apos;: postfix,
+        &apos;prefix&apos;: prefix,
+        &apos;prompt&apos;: prompt,
+        &apos;result1&apos;: result1,
+        &apos;result2&apos;: result2,
+        &apos;result3&apos;: result3,
+        &apos;setup&apos;: setup,
+        &apos;solution&apos;: solution,
+        &apos;solution_line1&apos;: solution_line1,
+        &apos;string_tokens&apos;: string_tokens.format(var1, var2, var3, num1, num2, num3),
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;setup&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">space_counts = random.sample(range(2, 10), 5)
+spaces1, spaces2, spaces3, spaces4, spaces5 = [&apos; &apos; * count for count in space_counts]
+spaces6, spaces7, spaces8 = random.sample([&apos;&apos;, &apos; &apos;, &apos;    &apos;], 3) # spaces before semicolons and indentations
+
+scenario_measure = pick_from([
+    [&apos;hours&apos;, &apos;minutes&apos;, &apos;seconds&apos;, 60, 60, pick_from_range(2, 10)],
+    [&apos;weeks&apos;, &apos;days&apos;, &apos;hours&apos;, 7, 24, pick_from_range(2, 10, [7])],
+    [&apos;kilometers&apos;, &apos;meters&apos;, &apos;centimeters&apos;, 1000, 100, pick_from_range(2, 10)],
+    [&apos;kilograms&apos;, &apos;grams&apos;, &apos;milligrams&apos;, 1000, 1000, pick_from_range(2, 10)],
+])</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+</zyVersion>
+
+
+<zypInfo person="Stephanie" date="04/23/25" minutes="180" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="04/25/25" minutes="15" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="04/25/25" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="04/26/25" minutes="20" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="05/05/25" minutes="35" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/05/25" minutes="5" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Ron" date="05/06/25" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/06/25" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="05/07/25" minutes="75" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Stephanie" date="05/07/25" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Ron" date="05/07/25" minutes="5" status="QADone">Golden_CA_development</zypInfo>
+
+
+<zyVersion version="java">
+<zyTool name="CodeWriting" caption="Comments and whitespace" id="9a709675-4393-479b-b32b-e9e7e37abda3" parts="2" challenge="true" edited-last="Wed May 07 2025 12:58:09 GMT-0500 (Central Daylight Time)"><zyOptions type="dict"><global type="string">import random
+from common_functions import pick_from, pick_from_range
+
+class_postfix = pick_from([&apos;Details&apos;, &apos;Info&apos;, &apos;Data&apos;])
+
+names = [
+    &apos;Abe&apos;, &apos;Ada&apos;, &apos;Ali&apos;, &apos;Amy&apos;, &apos;Ana&apos;, &apos;Ani&apos;, &apos;Ann&apos;, &apos;Ara&apos;, &apos;Ari&apos;, &apos;Ava&apos;,
+    &apos;Avi&apos;, &apos;Aya&apos;, &apos;Ben&apos;, &apos;Bly&apos;, &apos;Bob&apos;, &apos;Cal&apos;, &apos;Cam&apos;, &apos;Dan&apos;, &apos;Dax&apos;, &apos;Del&apos;,
+    &apos;Edd&apos;, &apos;Eli&apos;, &apos;Erl&apos;, &apos;Eve&apos;, &apos;Fay&apos;, &apos;Fin&apos;, &apos;Gil&apos;, &apos;Gio&apos;, &apos;Gus&apos;, &apos;Guy&apos;,
+    &apos;Hal&apos;, &apos;Han&apos;, &apos;Hud&apos;, &apos;Huy&apos;, &apos;Ian&apos;, &apos;Ike&apos;, &apos;Ina&apos;, &apos;Ira&apos;, &apos;Jan&apos;, &apos;Jay&apos;,
+    &apos;Jeb&apos;, &apos;Jen&apos;, &apos;Jim&apos;, &apos;Joe&apos;, &apos;Jon&apos;, &apos;Joy&apos;, &apos;Kai&apos;, &apos;Kay&apos;, &apos;Ken&apos;, &apos;Kim&apos;,
+    &apos;Kit&apos;, &apos;Lei&apos;, &apos;Leo&apos;, &apos;Lia&apos;, &apos;Lou&apos;, &apos;Mac&apos;, &apos;Mae&apos;, &apos;Mai&apos;, &apos;Max&apos;, &apos;May&apos;,
+    &apos;Meg&apos;, &apos;Mel&apos;, &apos;Moe&apos;, &apos;Mox&apos;, &apos;Ned&apos;, &apos;Nia&apos;, &apos;Oma&apos;, &apos;Pal&apos;, &apos;Pam&apos;, &apos;Pat&apos;,
+    &apos;Rae&apos;, &apos;Ray&apos;, &apos;Rob&apos;, &apos;Ron&apos;, &apos;Sal&apos;, &apos;Sam&apos;, &apos;Seb&apos;, &apos;Sid&apos;, &apos;Sue&apos;, &apos;Tad&apos;,
+    &apos;Taj&apos;, &apos;Tay&apos;, &apos;Ted&apos;, &apos;Tia&apos;, &apos;Tim&apos;, &apos;Tom&apos;, &apos;Uma&apos;, &apos;Val&apos;, &apos;Van&apos;, &apos;Vic&apos;,
+    &apos;Wes&apos;, &apos;Wyn&apos;, &apos;Xan&apos;, &apos;Xim&apos;, &apos;Xio&apos;, &apos;Yaz&apos;, &apos;Zak&apos;, &apos;Zel&apos;, &apos;Zia&apos;, &apos;Zoe&apos;,
+]
+
+states = [
+    &apos;Alabama&apos;, &apos;Alaska&apos;, &apos;Arizona&apos;, &apos;Arkansas&apos;, &apos;California&apos;, &apos;Colorado&apos;, &apos;Connecticut&apos;,
+    &apos;Delaware&apos;, &apos;Florida&apos;, &apos;Georgia&apos;, &apos;Hawaii&apos;, &apos;Idaho&apos;, &apos;Illinois&apos;, &apos;Indiana&apos;, &apos;Iowa&apos;, &apos;Kansas&apos;,
+    &apos;Kentucky&apos;, &apos;Louisiana&apos;, &apos;Maine&apos;, &apos;Maryland&apos;, &apos;Massachusetts&apos;, &apos;Michigan&apos;, &apos;Minnesota&apos;,
+    &apos;Mississippi&apos;, &apos;Missouri&apos;, &apos;Montana&apos;, &apos;Nebraska&apos;, &apos;Nevada&apos;, &apos;Ohio&apos;, &apos;Oklahoma&apos;, &apos;Oregon&apos;,
+    &apos;Pennsylvania&apos;, &apos;Tennessee&apos;, &apos;Texas&apos;, &apos;Utah&apos;, &apos;Vermont&apos;, &apos;Virginia&apos;,
+    &apos;Washington&apos;, &apos;Wisconsin&apos;, &apos;Wyoming&apos;,
+]
+
+foods = [
+    &apos;brownie&apos;, &apos;burger&apos;, &apos;burrito&apos;, &apos;cake&apos;, &apos;calzone&apos;, &apos;cannoli&apos;, &apos;cheesecake&apos;, &apos;churro&apos;, &apos;cobbler&apos;,
+    &apos;cookie&apos;, &apos;crepe&apos;, &apos;croissant&apos;, &apos;cupcake&apos;, &apos;donut&apos;, &apos;drink&apos;, &apos;eclair&apos;, &apos;ham&apos;, &apos;lobster&apos;,
+    &apos;lollipop&apos;, &apos;macaron&apos;, &apos;muffin&apos;, &apos;pancake&apos;, &apos;pasta&apos;, &apos;pie&apos;, &apos;pizza&apos;, &apos;popsicle&apos;, &apos;pudding&apos;, &apos;quesadilla&apos;,
+    &apos;quiche&apos;, &apos;salad&apos;, &apos;soup&apos;, &apos;steak&apos;, &apos;taco&apos;, &apos;tostada&apos;, &apos;wrap&apos;, &apos;yogurt&apos;,
+]</global><language type="string">java</language><languageOption type="string"></languageOption><levels type="list"><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">${distractor.placeholder}</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.postfix}}
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">${distractor.class_var}.java</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">/* To implementer: Required fields are
+${meaningful.setup}
+${distractor.class_var}
+${distractor.name}
+${distractor.month}
+${distractor.day}
+${distractor.year}
+${distractor.var1}
+${distractor.var2}
+${distractor.num1}
+*/
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.StandardCharsets;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Driver {
+   String filePath = &quot;${distractor.class_var}.java&quot;;
+   int setup = ${meaningful.setup};
+   String startTag, endTag;
+   String fullMatch;
+   String token[];
+   String feedback[];
+   String exclude[];
+   String excludeFeedback[];
+   String expected[];
+   
+   private static final Boolean DEBUG = false;
+   
+   Driver() {
+      if (setup==1) {
+         String name = &quot;${distractor.name}&quot;;
+         String date = &quot;${distractor.month}/${distractor.day}/${distractor.year}&quot;;
+         startTag = &quot;// Write a block comment below&quot;;
+         endTag = &quot;public class ${distractor.class_var} {&quot;;
+         fullMatch = &quot;(/\\*)\\s*\\n\\s*(Author:)\\s+(&quot; + name + &quot;)\\s*\\n\\s*(Date:)\\s+(&quot; + date + &quot;)\\s*\\n\\s*(\\*/)&quot;;
+         token = new String[]{&quot;/\\*&quot;, &quot;Author:&quot;, name, &quot;Date:&quot;, date, &quot;\\*/&quot;};
+         feedback = new String[]{&quot;/*&quot;, &quot;Author:&quot;, name, &quot;Date:&quot;, date, &quot;*/&quot;};
+         exclude = new String[]{&quot;//&quot;};
+         excludeFeedback = new String[]{&quot;//&quot;};
+         expected = new String[]{&quot;/*&quot;, &quot;Author: &quot; + name, &quot;Date: &quot; + date, &quot;*/&quot;};
+      }
+      else {
+         String var1 = &quot;${distractor.var1}&quot;;
+         String var2 = &quot;${distractor.var2}&quot;;
+         startTag = &quot;${distractor.var2} = ${distractor.num1} * ${distractor.var1};&quot;;
+         endTag = &quot;}&quot;;
+         fullMatch = &quot;(//)\\s*(Converting)\\s+(&quot; + var1 + &quot;)\\s+(to)\\s+(&quot; + var2 + &quot;)\\s*\\n&quot;;
+         token = new String[]{&quot;//&quot;, &quot;Converting&quot;, var1, &quot;to&quot;, var2};
+         feedback = new String[]{&quot;//&quot;, &quot;Converting&quot;, var1, &quot;to&quot;, var2};
+         exclude = new String[]{&quot;/\\*&quot;, &quot;\\*/&quot;};
+         excludeFeedback = new String[]{&quot;/*&quot;, &quot;*/&quot;};
+         expected = new String[]{&quot;//&quot;, &quot;Converting &quot; + var1 + &quot; to &quot; + var2};
+      }
+   }
+   
+   void run() {
+      try {
+         String data = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
+         int startIndex = data.indexOf(startTag) + startTag.length();
+         int endIndex = data.indexOf(endTag);
+         
+         String testData = data.substring(startIndex, endIndex);
+         if (DEBUG) System.out.println(&quot;Testable content:\n&quot; + testData);
+         Pattern pattern = Pattern.compile(fullMatch, Pattern.MULTILINE);
+         Matcher matcher = pattern.matcher(testData);
+         if (!matcher.find()) {
+            Boolean allTokensFound = true;
+            Boolean allTokensOccurOnce = true;
+            Boolean correctlyOrdered = true;
+            Boolean reported = false;
+            int current = -1;
+            for (int index=0; index&lt;token.length; index++) {
+               Pattern subPattern = Pattern.compile(token[index]);
+               Matcher subMatcher = subPattern.matcher(testData);
+               int count = 0;
+               if (!subMatcher.find()) { // Token not found
+                  System.out.println(feedback[index] + &quot; not found&quot;);
+                  reported = true;
+                  allTokensFound = false;
+               }
+               else { // Token found. Check frequency and order
+                  if (subMatcher.start() &gt; current) {
+                     current = subMatcher.end();
+                  }
+                  else {
+                      correctlyOrdered = false;
+                  }
+                  // Check if token occurs more than once
+                  if (subMatcher.find()) {
+                     System.out.println(feedback[index] + &quot; occurs more than once&quot;);
+                     reported = true;
+                     allTokensOccurOnce = false;
+                  }
+               }
+            }
+            if (reported) return;
+            if (allTokensFound &amp;&amp; allTokensOccurOnce &amp;&amp; !correctlyOrdered) {
+               System.out.println(&quot;The comment may not be correctly ordered or formatted.&quot;);
+            }
+            else {
+               if (setup==1) {
+                  String nums[] = new String[]{&quot;First&quot;, &quot;Second&quot;, &quot;Third&quot;, &quot;Fourth&quot;};
+                  for (int j=0; j&lt;expected.length; j++) {
+                     System.out.println(nums[j] + &quot; line should have: &quot; + expected[j]);
+                  }
+               } else {
+                  System.out.println(&quot;Expecting: &quot; + expected[0] + &quot; &quot; + expected[1]);
+               }
+            }
+         }
+         else {
+            if (DEBUG) System.out.println(&quot;Perfect match: &quot; + matcher.group(0));
+         }
+
+         // Check for items not supposed to be used
+         for (int index=0; index&lt;exclude.length; index++) {
+            Pattern exPattern = Pattern.compile(exclude[index]);
+            Matcher exMatcher = exPattern.matcher(testData);
+            if (exMatcher.find()) {
+               System.out.println(excludeFeedback[index] + &quot; found&quot;);
+            }
+         }
+         
+      } catch (IOException e) {
+         if (DEBUG) e.printStackTrace();
+         System.out.println(&quot;Comment is not properly formatted&quot;);
+      }
+   }
+
+   public static void main(String[] args) {
+      ${distractor.class_var}.main(args);
+      new Driver().run();
+   }
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Driver.java</name></li></files><prompt type="string">${distractor.prompt}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    setup = meaningful_permutation[&apos;setup&apos;]
+    
+    scenario = pick_from([scenario_time, scenario_volume, scenario_box] if setup == 1 else [scenario_time, scenario_volume])    
+    var1, var2, num1, num2, comment, class_prefix = scenario
+    
+    comment = comment.format(var1, var2)
+    comment_noun = &apos;boxes&apos; if &apos;box&apos; in comment else var1
+    class_var = &apos;{}{}&apos;.format(class_prefix, class_postfix)
+    
+    if setup == 1:
+        prompt = &apos;Starting at line 2, write a block comment that has the following:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;First line: `/*`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Second line contains: `Author: {0}`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Third line contains: `Date: {1}/{2}/{3}`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;Fourth line ends with: `*/`&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not use `//`.&apos;.format(name, month, day, year)
+        
+        prefix = &apos;// Write a block comment below\n&apos;
+        
+        placeholder = &apos;\n\n\n&apos;
+        
+        solution = &apos;&apos;&apos;/*
+   Author: {0}
+   Date: {1}/{2}/{3}
+*/&apos;&apos;&apos;.format(name, month, day, year)
+        
+        postfix = &apos;\npublic class {6} {\n&apos;\
+                  &apos;\tpublic static void main(String[] args) {\n\t\tint {2};\n\t\tint {1};\n\n\t\t{2} = {4};&apos;\
+                  &apos;  // {4} {5} is given\n\t\t{1} = {3} * {2};  // {0}\n\t&apos;\
+                .format(comment, var2, var1, num1, num2, comment_noun, class_var)
+        
+        explain = &apos;A block comment starts with `/*` and ends with `*/`. All the text between `/*` and `*/` is part of the comment.&apos;
+        
+    else: # setup 2
+        prompt = &apos;On line 7, after the semicolon (;), write a single-line comment that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;uses: `//`&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;contains the words: `{}`&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not use `/*` and `*/`.&apos;.format(comment)
+        
+        prefix = &apos;public class {4} {\n&apos;\
+                 &apos;\tpublic static void main(String[] args) {\n\t\tint {0};\n\t\tint {1};\n\n\t\t{0} = {3};&apos;\
+                 &apos;  // {3} {0} is given\n\t\t{1} = {2} * {0};&apos;\
+                .format(var1, var2, num1, num2, class_var)
+        
+        placeholder = &apos;  &apos;
+        
+        solution = &apos;// {}&apos;.format(comment)
+        
+        postfix = &apos;\n\t&apos;
+        
+        explain = &apos;A single-line comment starts with `//`. All remaining text after `//` in the line is part of the comment.&apos;
+    
+    return {
+            &apos;class_var&apos;: class_var,
+            &apos;day&apos;: day,
+            &apos;explain&apos;: explain,
+            &apos;month&apos;: month,
+            &apos;name&apos;: name,
+            &apos;num1&apos;: num1,
+            &apos;num2&apos;: num2,
+            &apos;placeholder&apos;: placeholder,
+            &apos;postfix&apos;: postfix,
+            &apos;prefix&apos;: prefix,
+            &apos;prompt&apos;: prompt,
+            &apos;solution&apos;: solution,
+            &apos;var1&apos;: var1,
+            &apos;var2&apos;: var2,
+            &apos;year&apos;: year,
+        }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;setup&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">food = pick_from(foods)
+name = pick_from(names)
+month = pick_from([(&apos;0&apos; + str(pick_from_range(1, 9))), pick_from_range(10, 12)])
+day = pick_from([(&apos;0&apos; + str(pick_from_range(1, 9))), pick_from_range(10, 28)])
+year = pick_from_range(2000, 2024)
+
+comment1 = &apos;Converting {} to {}&apos;
+comment2 = &apos;Each box has a dozen {}s&apos;
+class_prefix1 = &apos;Time&apos;
+class_prefix2 = &apos;Volume&apos;
+class_prefix3 = food.capitalize()
+
+scenario_time = pick_from([
+        [&apos;hours&apos;, &apos;minutes&apos;, 60, pick_from_range(2, 10), comment1, class_prefix1],
+        [&apos;minutes&apos;, &apos;seconds&apos;, 60, pick_from_range(2, 59), comment1, class_prefix1],
+        [&apos;hours&apos;, &apos;seconds&apos;, 3600, pick_from_range(2, 10), comment1, class_prefix1],
+        [&apos;weeks&apos;, &apos;days&apos;, 7, pick_from_range(2, 10, [7]), comment1, class_prefix1],
+        [&apos;days&apos;, &apos;hours&apos;, 24, pick_from_range(2, 10), comment1, class_prefix1],
+        [&apos;weeks&apos;, &apos;hours&apos;, 168, pick_from_range(2, 10), comment1, class_prefix1],
+])
+
+scenario_volume = pick_from([
+        [&apos;gallons&apos;, &apos;cups&apos;, 16, pick_from_range(2, 10), comment1, class_prefix2],
+        [&apos;gallons&apos;, &apos;quarts&apos;, 4, pick_from_range(2, 10, [4]), comment1, class_prefix2],
+        [&apos;gallons&apos;, &apos;pints&apos;, 8, pick_from_range(2, 10, [8]), comment1, class_prefix2],
+        [&apos;quarts&apos;, &apos;pints&apos;, 2, pick_from_range(3, 10), comment1, class_prefix2],
+        [&apos;quarts&apos;, &apos;cups&apos;, 4, pick_from_range(2, 10, [4]), comment1, class_prefix2],
+        [&apos;pints&apos;, &apos;cups&apos;, 2, pick_from_range(3, 10), comment1, class_prefix2],
+        [&apos;teaspoons&apos;, &apos;milliliters&apos;, 5, pick_from_range(2, 10, [5]), comment1, class_prefix2],
+        [&apos;tablespoons&apos;, &apos;milliliters&apos;, 15, pick_from_range(2, 10), comment1, class_prefix2],
+])
+
+scenario_box = [&apos;totalBoxes&apos;, &apos;total{}s&apos;.format(food.capitalize()), 12, pick_from_range(2, 30, [12]), comment2.format(food), class_prefix3]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">Good programming practice is to put each statement on a separate line, indented by exactly six spaces at the start of the statement. ${distractor.explain}, and ends with a semicolon. No space exists before each semicolon.
+
+Ex:${distractor.solution_line1}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">public class ${distractor.class_var} {
+   public static void main(String[] args) {${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">${distractor.placeholder}</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">${distractor.postfix}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">false</main><name type="string">${distractor.class_var}.java</name></li><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">/* To implementer: Required fields are
+${meaningful.setup}
+${distractor.class_var}
+${distractor.var1}
+${distractor.var2}
+${distractor.var3}
+${distractor.num3}
+${distractor.string_tokens}
+*/
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.StandardCharsets;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Driver {
+   String filePath = &quot;${distractor.class_var}.java&quot;;
+   int setup = ${meaningful.setup};
+   String startTag, endTag;
+   String fullMatch;
+   String token[];
+   
+   private static final Boolean DEBUG = false;
+   
+   Driver() {
+      if (setup==1) {
+         // The following is only valid for setup=1. Ignore when setup=2.
+         String vars[] = new String[]{&quot;${distractor.var1}&quot;, &quot;${distractor.var2}&quot;, &quot;${distractor.var3}&quot;};
+         fullMatch = &quot;\\n      int ${distractor.var1};\\s*\\n      int ${distractor.var2};\\s*\\n      int ${distractor.var3};\\s*&quot;;
+         token = new String[]{&quot;int ${distractor.var1};&quot;, &quot;int ${distractor.var2};&quot;, &quot;int ${distractor.var3};&quot;};
+         startTag = &quot;public static void main (String [] args) {&quot;;
+         endTag = &quot;${distractor.var1} = ${distractor.num3};&quot;;
+      }
+      else {
+         // The following is only valid for setup=2. Ignore when setup=1.
+         String vars[] = new String[]{&quot;${distractor.var1}&quot;, &quot;${distractor.var2}&quot;, &quot;${distractor.var3}&quot;};
+         token = new String[]{${distractor.string_tokens}};
+         fullMatch = &quot;&quot;;
+         for (String t : token) {
+            fullMatch += &quot;\\n      &quot; + escape(t) + &quot;\\s*&quot;;
+         }
+         startTag = &quot;int ${distractor.var3};&quot;;
+         endTag = &quot;}&quot;;
+         
+      }
+   }
+   
+   String cleanComments(String data) {
+      String regex = &quot;//.*|/\\*([^*]|\\*(?!/))*\\*/&quot;;
+      return data.replaceAll(regex, &quot;&quot;);
+   }
+   
+   String escape(String plainText) {
+      return plainText.replace(&quot;*&quot;, &quot;\\*&quot;);
+   }
+   
+   void run() {
+      try {
+         String data = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
+         int startIndex = data.indexOf(startTag) + startTag.length();
+         int endIndex = data.indexOf(endTag);
+         
+         String testData = data.substring(startIndex, endIndex);
+         testData = cleanComments(testData);
+
+         if (DEBUG) System.out.println(&quot;Testable content:\n&quot; + testData);
+         Pattern pattern = Pattern.compile(fullMatch);
+         Matcher matcher = pattern.matcher(testData);
+         if (!matcher.find()) {
+            for (int index=0; index&lt;token.length; index++) {
+               Pattern subPattern = Pattern.compile(escape(token[index]));
+               Matcher subMatcher = subPattern.matcher(testData);
+               if (!subMatcher.find()) { // expected not found
+                  System.out.println(&quot;Error! Expecting style to be: &quot; + token[index]);
+               }
+               else {
+                  // Check indentation
+                  int indentEnd = subMatcher.start();
+                  int indentStart = indentEnd - 7;
+                  if (indentStart &lt; 0 || !testData.substring(indentStart, indentEnd).equals(&quot;\n      &quot;)) {
+                     System.out.println(token[index] + &quot; is not indented by 6 spaces&quot;);
+                  }
+               }
+            }
+         }
+         else {
+            if (DEBUG) System.out.println(&quot;Perfect match: &quot; + matcher.group(0));
+         }
+
+      } catch (IOException e) {
+         if (DEBUG) e.printStackTrace();
+         System.out.println(&quot;Code is not properly formatted.&quot;);
+      }
+   }
+
+   public static void main(String[] args) {
+      ${distractor.class_var}.main(args);
+      new Driver().run();
+   }
+}</template></li></content><hide type="boolean">true</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">Driver.java</name></li></files><prompt type="string">${distractor.prompt}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    setup = meaningful_permutation[&apos;setup&apos;]    
+
+    food = pick_from(foods)
+    food_cap = food.capitalize()
+    noun = pick_from([&apos;tour&apos;, &apos;boat&apos;, &apos;table&apos;, &apos;room&apos;, &apos;trip&apos;])
+    noun_cap = noun.capitalize()
+    noun_total = &apos;total{}s&apos;.format(noun_cap)
+    
+    scenario_food = [&apos;totalBoxes&apos;, &apos;{}sPerBox&apos;.format(food), &apos;total{}s&apos;.format(food_cap), pick_from_range(2, 15), &apos;totalBoxes&apos;, pick_from_range(16, 30), food_cap]
+    scenario_cost = [noun_total, &apos;costPer{}&apos;.format(noun_cap), &apos;totalCost&apos;, pick_from_range(200, 400), noun_total, pick_from_range(2, 10), noun_cap]
+
+    scenario = pick_from([scenario_measure, scenario_food, scenario_cost])
+    var1, var2, var3, num1, num2, num3, class_prefix = scenario
+
+    result1 = num3
+    result2 = num1 * num3
+    result3 = num1 * num2 * num3
+    
+    prefix = postfix = string_tokens = &apos;&apos;
+
+    if setup == 1:
+        prompt = &apos;Align the code in line 4 so that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;each statement is on a separate line.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;each statement starts with exactly 6 spaces as indentation.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;each statement has exactly one space that separates `int` and the variable name.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;no space exists before each semicolon.&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not change the order of the statements.&apos;
+        placeholder = &apos;\nint{3}{0}{8};{4}int{5}{1}{9};{6}int{7}{2}{10};\n&apos;\
+            .format(var1, var2, var3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+        
+        solution = &apos;&apos;&apos;      int {0};
+      int {1};
+      int {2};&apos;&apos;&apos;.format(var1, var2, var3)
+        
+        solution_line1 = &apos;&lt;p&gt;&lt;pre&gt;      int {0};&lt;/pre&gt;&lt;/p&gt;&apos;.format(var1)
+        
+        postfix = &apos;\n\n\t\t{0} = {5};  // {5} {0} is given&apos;\
+            &apos;\n\t\t{1} = {3} * {0};  // Convert {0} to {1}&apos;\
+            &apos;\n\t\t{2} = {4} * {1};  // Convert {1} to {2}&apos;\
+            .format(var1, var2, var3, num1, num2, num3)
+
+        explain = &apos;Each statement starts with `int`, followed by one space, the variable name&apos;
+
+        if &apos;total&apos; in var1:
+            result2 = num1
+            result3 = num1 * num3
+                
+            if var1 == &apos;totalBoxes&apos;:
+                postfix = &apos;\n\n\t\t{0} = {5};  // {5} boxes are delivered\n\t\t{1} = {3};  // Each box has {3} {6}s\n\t\t{2} = {0} * {1};  // Total {6}s delivered&apos;\
+                    .format(var1, var2, var3, num1, num2, num3, food)
+            else:
+                postfix = &apos;\n\n\t\t{0} = {5};  // {5} {6}s are purchased\n\t\t{1} = {3};  // Each {6} costs {3} dollars\n\t\t{2} = {0} * {1};  // Total cost for all {6}s&apos;\
+                    .format(var1, var2, var3, num1, num2, num3, noun)
+    
+    else: # setup 2
+        prompt = &apos;Align the code in lines 7-9 so that:&lt;ul&gt;&apos;\
+            &apos;&lt;li&gt;each statement starts with exactly 6 spaces as indentation.&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;exactly one space exists before and after each operator (`=` and `*`).&lt;/li&gt;&apos;\
+            &apos;&lt;li&gt;no space exists before each semicolon.&lt;/li&gt;&apos;\
+            &apos;&lt;/ul&gt;Do not change the order of the statements. Do not align the = operators across multiple lines.&apos;
+        
+        prefix = &apos;\n\t\tint {0};\n\t\tint {1};\n\t\tint {2};\n&apos;.format(var1, var2, var3)
+        
+        placeholder = &apos;{13}{0}{6}={7}{5}{8}{11};{10}\n{11}{1}{9}={10}{3}{7}*{6}{0}{9}{12};{8}\n{12}{2}{7}={8}{4}{9}*{10}{1}{13};{6}&apos;\
+            .format(var1, var2, var3, num1, num2, num3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+        
+        solution = &apos;&apos;&apos;      {0} = {5};
+      {1} = {3} * {0};
+      {2} = {4} * {1};&apos;&apos;&apos;.format(var1, var2, var3, num1, num2, num3)
+        
+        solution_line1 = &apos;&lt;p&gt;&lt;pre&gt;      {0} = {1};&lt;/pre&gt;&lt;/p&gt;&apos;.format(var1, num3)
+        
+        string_tokens = &apos;&quot;{0} = {5};&quot;, &quot;{1} = {3} * {0};&quot;, &quot;{2} = {4} * {1};&quot;&apos;
+        
+        explain = &apos;Each statement has one space before and after each `=` and `*`&apos;
+        
+        if &apos;total&apos; in var1:
+            placeholder = &apos;{12}{0}{6}={7}{5}{8}{11};{10}\n{13}{1}{9}={10}{3}{7}{12};{8}\n{11}{2}{7}={8}{0}{9}*{10}{1}{13};{6}&apos;\
+                .format(var1, var2, var3, num1, num2, num3, spaces1, spaces2, spaces3, spaces4, spaces5, spaces6, spaces7, spaces8)
+
+            solution = &apos;&apos;&apos;      {0} = {5};
+      {1} = {3};
+      {2} = {0} * {1};&apos;&apos;&apos;.format(var1, var2, var3, num1, num2, num3)
+
+            string_tokens = &apos;&quot;{0} = {5};&quot;, &quot;{1} = {3};&quot;, &quot;{2} = {0} * {1};&quot;&apos;
+            
+            result2 = num1
+            result3 = num1 * num3
+
+    return {
+        &apos;class_var&apos;: &apos;{}{}&apos;.format(class_prefix, class_postfix),
+        &apos;explain&apos;: explain,
+        &apos;num1&apos;: num1,
+        &apos;num2&apos;: num2,
+        &apos;num3&apos;: num3,
+        &apos;placeholder&apos;: placeholder,
+        &apos;postfix&apos;: postfix,
+        &apos;prefix&apos;: prefix,
+        &apos;prompt&apos;: prompt,
+        &apos;result1&apos;: result1,
+        &apos;result2&apos;: result2,
+        &apos;result3&apos;: result3,
+        &apos;setup&apos;: setup,
+        &apos;solution&apos;: solution,
+        &apos;solution_line1&apos;: solution_line1,
+        &apos;string_tokens&apos;: string_tokens.format(var1, var2, var3, num1, num2, num3),
+        &apos;var1&apos;: var1,
+        &apos;var2&apos;: var2,
+        &apos;var3&apos;: var3,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;setup&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">space_counts = random.sample(range(2, 10), 5)
+spaces1, spaces2, spaces3, spaces4, spaces5 = [&apos; &apos; * count for count in space_counts]
+spaces6, spaces7, spaces8 = random.sample([&apos;&apos;, &apos; &apos;, &apos;    &apos;], 3) # spaces before semicolons and indentations
+
+scenario_measure = pick_from([
+    [&apos;hours&apos;, &apos;minutes&apos;, &apos;seconds&apos;, 60, 60, pick_from_range(2, 10), &apos;Time&apos;],
+    [&apos;weeks&apos;, &apos;days&apos;, &apos;hours&apos;, 7, 24, pick_from_range(2, 10, [7]), &apos;Time&apos;],
+    [&apos;kilometers&apos;, &apos;meters&apos;, &apos;centimeters&apos;, 1000, 100, pick_from_range(2, 10), &apos;Length&apos;],
+    [&apos;kilograms&apos;, &apos;grams&apos;, &apos;milligrams&apos;, 1000, 1000, pick_from_range(2, 10), &apos;Weight&apos;],
+])</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li></levels></zyOptions></zyTool>
+
+
+
+</zyVersion>
+
+
+
+</zySection>

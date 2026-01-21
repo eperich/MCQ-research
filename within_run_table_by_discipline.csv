@@ -1,0 +1,4 @@
+Discipline,Total_Topics,Topics_With_Duplicates,Topics_With_Similar,Percent_With_Duplicates,Percent_With_Similar
+Computer Science,30,0,6,0.0,20.0
+Data Science,15,0,3,0.0,20.0
+Discrete Mathematics,15,6,15,40.0,100.0

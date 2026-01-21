@@ -1,0 +1,13 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+Why is it good practice to include a single space around operators in Python expressions?,It improves code readability for humans.,It prevents syntax errors during execution.,It makes expressions run faster.,It improves code readability for humans.,It changes operator precedence.,,,,,,
+Which compound operator updates the variable x by adding 5 to its current value?,x += 5,x = 5 + x,x += 5,x = 5 - x,x *= 5,,,,,,
+"What happens if an integer literal includes commas, like 1,000,000 in Python?",It causes a syntax error.,It is interpreted as one million.,It causes a syntax error.,It is converted to a floating-point number.,It is treated as a string.,,,,,,
+Why is it good practice to include a single space around operators in Python expressions?,It improves code readability,It increases execution speed,It changes the operation order,It improves code readability,It prevents syntax errors,,,,,,
+What does the compound operator += do in Python?,Adds a value to a variable and assigns the result,Multiplies a variable by a value,Adds a value to a variable and assigns the result,Assigns a value without changing the variable,Subtracts a value from a variable,,,,,,
+Which of the following integer assignments is correct in Python?,num_years = 2000000000,"num_years = 2,000,000,000",num_years = 2000000000,num_years = 2.000.000.000,"num_years = ""2000000000""",,,,,,
+"Why does Python not allow commas in integer literals like 1,000,000?",Commas make numbers hexadecimal,Commas cause syntax errors in numeric literals,Commas change the number's value,Commas are allowed only in floats,Commas make numbers hexadecimal,,,,,,
+What does the compound operator += do to a variable x?,Adds a value to x and updates x,Sets x to 1,Adds 1 to x,Adds a value to x and updates x,Multiplies x by a value,,,,,,
+Why is it good style to put a single space around operators in expressions?,It improves code readability,It improves code readability,It changes operator precedence,It avoids syntax errors,It increases execution speed,,,,,,
+Why should a single space be included around operators in Python expressions?,To improve code readability,To increase execution speed,To avoid syntax errors,To improve code readability,To allow multiple operations in one line,,,,,,
+Which compound operator updates a variable by multiplying it by a number?,*=,-=,*=,+=,/=,,,,,,
+"What happens if commas are used in an integer literal like 1,000,000 in Python?",It causes a syntax error,It is interpreted as a tuple,It causes a syntax error,It is automatically converted to an integer,It is treated as a float value,,,,,,

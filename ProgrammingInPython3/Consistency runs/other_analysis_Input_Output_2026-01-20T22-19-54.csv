@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,0
+2,10,0,0
+3,10,0,0
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,4,100
+1,3,0,4,100
+1,4,1,3,100
+2,3,1,1,100
+2,4,0,5,100
+3,4,0,6,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),3
+Similar (70-85%),23
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.92,duplicate
+q7,Which code correctly reads a string from user input into variable name?,1,7,q6,Which statement correctly reads a user input string into variable name?,4,6,0.909,duplicate
+q4,Which print statement keeps the output on the same line?,2,4,q3,Which print statement correctly keeps output on the same line?,3,3,0.909,duplicate
+q1,Which Python function outputs text or variable values to the screen?,1,1,q1,The Python function _____ outputs text to the console.,2,1,0.847,similar
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.837,similar
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q4,How does the print() function handle multiple values separated by commas?,4,4,0.829,similar
+q1,What does the print() function automatically add at the end of its output?,3,1,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.81,similar
+q5,The input() function in Python:,2,5,q3,What does the input() function do in a Python program?,4,3,0.8,similar
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.797,similar
+q10,Which escape sequence inserts a tab character in a string?,3,10,q2,Which escape sequence moves output to the next line in a string?,4,2,0.797,similar
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q4,Which print statement keeps the output on the same line?,2,4,0.776,similar
+q6,What type does input() return when reading user input?,1,6,q7,What type of value does input() return by default?,3,7,0.761,similar
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q5,Why is int() used on the result of input() when reading a number?,3,5,0.757,similar
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q4,How does the print() function handle multiple values separated by commas?,4,4,0.749,similar
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q6,Which statement correctly reads a user input string into variable name?,4,6,0.74,similar
+q5,How can multiple print() statements output on the same line?,1,5,q4,Which print statement keeps the output on the same line?,2,4,0.733,similar
+q7,Which code correctly reads a string from user input into variable name?,1,7,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.728,similar
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.725,similar
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.725,similar
+q7,What type of value does input() return by default?,3,7,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.721,similar
+q4,Which print statement keeps the output on the same line?,2,4,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.718,similar
+q5,How can multiple print() statements output on the same line?,1,5,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.716,similar
+q6,What type does input() return when reading user input?,1,6,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.714,similar
+q5,How can multiple print() statements output on the same line?,1,5,q3,Which print statement correctly keeps output on the same line?,3,3,0.706,similar
+q3,Which print statement correctly keeps output on the same line?,3,3,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.705,similar
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.702,similar
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q3,Which print statement correctly keeps output on the same line?,3,3,0.696,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q1,What does the print() function automatically add at the end of its output?,3,1,0.695,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.694,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q1,What does the print() function automatically add at the end of its output?,3,1,0.679,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q3,What does the input() function do in a Python program?,4,3,0.673,low
+q8,"Why use end="" "" in a print statement?",2,8,q1,What does the print() function automatically add at the end of its output?,3,1,0.67,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q8,"Why use end="" "" in a print statement?",2,8,0.669,low
+q4,How does the print() function handle multiple values separated by commas?,4,4,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.664,low
+q1,The Python function _____ outputs text to the console.,2,1,q3,What does the input() function do in a Python program?,4,3,0.66,low
+q5,How can multiple print() statements output on the same line?,1,5,q8,"Why use end="" "" in a print statement?",2,8,0.657,low
+q1,The Python function _____ outputs text to the console.,2,1,q5,The input() function in Python:,2,5,0.654,low
+q4,Which print statement keeps the output on the same line?,2,4,q8,"Why use end="" "" in a print statement?",2,8,0.649,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.649,low
+q8,"Why use end="" "" in a print statement?",2,8,q9,Why must strings in print() be enclosed in quotes?,3,9,0.649,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q8,"Why use end="" "" in a print statement?",2,8,0.635,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.634,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q2,Which escape sequence moves output to the next line in a string?,4,2,0.631,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.631,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q10,Which escape sequence inserts a tab character in a string?,3,10,0.63,low
+q2,The newline character in Python output is written as _____.,3,2,q2,Which escape sequence moves output to the next line in a string?,4,2,0.628,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.627,low
+q5,How can multiple print() statements output on the same line?,1,5,q4,How does the print() function handle multiple values separated by commas?,4,4,0.625,low
+q8,"Why use end="" "" in a print statement?",2,8,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.621,low
+q6,What type does input() return when reading user input?,1,6,q5,The input() function in Python:,2,5,0.619,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q2,The newline character in Python output is written as _____.,3,2,0.619,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q3,What does the input() function do in a Python program?,4,3,0.619,low
+q4,Which print statement keeps the output on the same line?,2,4,q1,What does the print() function automatically add at the end of its output?,3,1,0.618,low
+q8,"Why use end="" "" in a print statement?",2,8,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.613,low
+q6,What type does input() return when reading user input?,1,6,q5,Why is int() used on the result of input() when reading a number?,3,5,0.611,low
+q5,The input() function in Python:,2,5,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.611,low
+q8,"Why use end="" "" in a print statement?",2,8,q3,Which print statement correctly keeps output on the same line?,3,3,0.61,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.6,low
+q2,The newline character in Python output is written as _____.,3,2,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.598,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q2,The newline character in Python output is written as _____.,3,2,0.595,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q2,Which escape sequence moves output to the next line in a string?,4,2,0.593,low
+q4,Which print statement keeps the output on the same line?,2,4,q4,How does the print() function handle multiple values separated by commas?,4,4,0.593,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q4,Which print statement keeps the output on the same line?,2,4,0.59,low
+q5,How can multiple print() statements output on the same line?,1,5,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.588,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.587,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q4,"How does print(""Hello"", ""World"") format the output?",1,4,0.584,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.584,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q1,What does the print() function automatically add at the end of its output?,3,1,0.583,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.582,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.581,low
+q6,What type does input() return when reading user input?,1,6,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.581,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q4,Which print statement keeps the output on the same line?,2,4,0.581,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q3,What does the input() function do in a Python program?,4,3,0.579,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.578,low
+q4,Which print statement keeps the output on the same line?,2,4,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.577,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q5,The input() function in Python:,2,5,0.575,low
+q6,What type does input() return when reading user input?,1,6,q3,What does the input() function do in a Python program?,4,3,0.575,low
+q5,The input() function in Python:,2,5,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.575,low
+q5,The input() function in Python:,2,5,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.574,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.573,low
+q6,What type does input() return when reading user input?,1,6,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.567,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q3,Which print statement correctly keeps output on the same line?,3,3,0.566,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q3,What does the input() function do in a Python program?,4,3,0.566,low
+q5,How can multiple print() statements output on the same line?,1,5,q1,What does the print() function automatically add at the end of its output?,3,1,0.564,low
+q5,The input() function in Python:,2,5,q5,Why is int() used on the result of input() when reading a number?,3,5,0.564,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.563,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.562,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q3,What does the input() function do in a Python program?,4,3,0.562,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.562,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q4,How does the print() function handle multiple values separated by commas?,4,4,0.562,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.56,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q3,Which print statement correctly keeps output on the same line?,3,3,0.558,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.557,low
+q5,The input() function in Python:,2,5,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.557,low
+q2,The newline character in Python output is written as _____.,3,2,q10,Which escape sequence inserts a tab character in a string?,3,10,0.557,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q4,How does the print() function handle multiple values separated by commas?,4,4,0.557,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.557,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q4,Which print statement keeps the output on the same line?,2,4,0.555,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q5,Why is int() used on the result of input() when reading a number?,3,5,0.555,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.554,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q5,Why is int() used on the result of input() when reading a number?,3,5,0.553,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.552,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q5,How can multiple print() statements output on the same line?,1,5,0.551,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.551,low
+q6,What type does input() return when reading user input?,1,6,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.551,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.551,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.55,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q8,"Why use end="" "" in a print statement?",2,8,0.549,low
+q6,What type does input() return when reading user input?,1,6,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.547,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.547,low
+q4,Which print statement keeps the output on the same line?,2,4,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.547,low
+q5,The input() function in Python:,2,5,q6,Which statement correctly reads a user input string into variable name?,4,6,0.547,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q2,The newline character in Python output is written as _____.,3,2,0.546,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q2,Which escape sequence moves output to the next line in a string?,4,2,0.544,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q5,The input() function in Python:,2,5,0.543,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q4,How does the print() function handle multiple values separated by commas?,4,4,0.542,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.537,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.537,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q7,What type of value does input() return by default?,3,7,0.536,low
+q5,How can multiple print() statements output on the same line?,1,5,q1,The Python function _____ outputs text to the console.,2,1,0.534,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q5,The input() function in Python:,2,5,0.534,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q3,Which print statement correctly keeps output on the same line?,3,3,0.534,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q4,How does the print() function handle multiple values separated by commas?,4,4,0.533,low
+q5,How can multiple print() statements output on the same line?,1,5,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.533,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.533,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.53,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q10,Which escape sequence inserts a tab character in a string?,3,10,0.529,low
+q3,What does the input() function do in a Python program?,4,3,q6,Which statement correctly reads a user input string into variable name?,4,6,0.529,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q4,Which print statement keeps the output on the same line?,2,4,0.528,low
+q2,The newline character in Python output is written as _____.,3,2,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.526,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q9,Why must strings in print() be enclosed in quotes?,3,9,0.525,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.525,low
+q4,Which print statement keeps the output on the same line?,2,4,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.525,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q3,What does the input() function do in a Python program?,4,3,0.525,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.524,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q3,What does the input() function do in a Python program?,4,3,0.523,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.522,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q5,How can multiple print() statements output on the same line?,1,5,0.522,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.522,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q3,What does the input() function do in a Python program?,4,3,0.522,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.522,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q4,How does the print() function handle multiple values separated by commas?,4,4,0.522,low
+q6,What type does input() return when reading user input?,1,6,q7,Which code correctly reads a string from user input into variable name?,1,7,0.52,low
+q5,How can multiple print() statements output on the same line?,1,5,q9,Why must strings in print() be enclosed in quotes?,3,9,0.519,low
+q8,"Why use end="" "" in a print statement?",2,8,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.519,low
+q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.519,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q1,What does the print() function automatically add at the end of its output?,3,1,0.517,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q7,What type of value does input() return by default?,3,7,0.516,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.515,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.515,low
+q5,The input() function in Python:,2,5,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.514,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q10,Which escape sequence inserts a tab character in a string?,3,10,0.514,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q9,Why must strings in print() be enclosed in quotes?,3,9,0.513,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q3,Which print statement correctly keeps output on the same line?,3,3,0.513,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q2,The newline character in Python output is written as _____.,3,2,0.513,low
+q4,Which print statement keeps the output on the same line?,2,4,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.512,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.512,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q5,How can multiple print() statements output on the same line?,1,5,0.511,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.511,low
+q3,What does the input() function do in a Python program?,4,3,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.51,low
+q1,The Python function _____ outputs text to the console.,2,1,q4,Which print statement keeps the output on the same line?,2,4,0.507,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.506,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q6,Which statement correctly reads a user input string into variable name?,4,6,0.505,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q4,How does the print() function handle multiple values separated by commas?,4,4,0.505,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.504,low
+q3,What does the input() function do in a Python program?,4,3,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.504,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q7,What type of value does input() return by default?,3,7,0.503,low
+q5,How can multiple print() statements output on the same line?,1,5,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.502,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q1,What does the print() function automatically add at the end of its output?,3,1,0.502,low
+q2,The newline character in Python output is written as _____.,3,2,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.502,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.501,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.5,low
+q8,"Why use end="" "" in a print statement?",2,8,q2,Which escape sequence moves output to the next line in a string?,4,2,0.499,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.499,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.499,low
+q6,What type does input() return when reading user input?,1,6,q6,Which statement correctly reads a user input string into variable name?,4,6,0.498,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q1,What does the print() function automatically add at the end of its output?,3,1,0.498,low
+q1,The Python function _____ outputs text to the console.,2,1,q3,Which print statement correctly keeps output on the same line?,3,3,0.496,low
+q5,The input() function in Python:,2,5,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.495,low
+q8,"Why use end="" "" in a print statement?",2,8,q4,How does the print() function handle multiple values separated by commas?,4,4,0.495,low
+q4,Which print statement keeps the output on the same line?,2,4,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.494,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.493,low
+q5,How can multiple print() statements output on the same line?,1,5,q3,What does the input() function do in a Python program?,4,3,0.49,low
+q6,What type does input() return when reading user input?,1,6,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.488,low
+q7,What type of value does input() return by default?,3,7,q3,What does the input() function do in a Python program?,4,3,0.488,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q4,How does the print() function handle multiple values separated by commas?,4,4,0.487,low
+q8,"Why use end="" "" in a print statement?",2,8,q2,The newline character in Python output is written as _____.,3,2,0.487,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.486,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.485,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.485,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.484,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.484,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q4,Which print statement keeps the output on the same line?,2,4,0.483,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.483,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q9,Why must strings in print() be enclosed in quotes?,3,9,0.483,low
+q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.483,low
+q5,How can multiple print() statements output on the same line?,1,5,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.481,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.48,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.479,low
+q5,How can multiple print() statements output on the same line?,1,5,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.479,low
+q6,What type does input() return when reading user input?,1,6,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.479,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.478,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.478,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q4,Which print statement keeps the output on the same line?,2,4,0.478,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.478,low
+q5,How can multiple print() statements output on the same line?,1,5,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.477,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q6,Which statement correctly reads a user input string into variable name?,4,6,0.477,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q3,Which print statement correctly keeps output on the same line?,3,3,0.476,low
+q8,"Why use end="" "" in a print statement?",2,8,q10,Which escape sequence inserts a tab character in a string?,3,10,0.476,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q2,Which escape sequence moves output to the next line in a string?,4,2,0.476,low
+q4,Which print statement keeps the output on the same line?,2,4,q2,Which escape sequence moves output to the next line in a string?,4,2,0.475,low
+q5,How can multiple print() statements output on the same line?,1,5,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.474,low
+q6,Which statement correctly reads a user input string into variable name?,4,6,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.474,low
+q4,Which print statement keeps the output on the same line?,2,4,q9,Why must strings in print() be enclosed in quotes?,3,9,0.473,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q3,Which print statement correctly keeps output on the same line?,3,3,0.471,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.471,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.471,low
+q5,How can multiple print() statements output on the same line?,1,5,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.47,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q9,Why must strings in print() be enclosed in quotes?,3,9,0.47,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q5,Why is int() used on the result of input() when reading a number?,3,5,0.47,low
+q6,What type does input() return when reading user input?,1,6,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.469,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.469,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q4,How does the print() function handle multiple values separated by commas?,4,4,0.468,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.467,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q6,Which statement correctly reads a user input string into variable name?,4,6,0.465,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q3,Which print statement correctly keeps output on the same line?,3,3,0.465,low
+q2,The newline character in Python output is written as _____.,3,2,q3,Which print statement correctly keeps output on the same line?,3,3,0.465,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.464,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.464,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.463,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.463,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q3,Which print statement correctly keeps output on the same line?,3,3,0.463,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.462,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.46,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.457,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.457,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.456,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q9,Why must strings in print() be enclosed in quotes?,3,9,0.456,low
+q1,The Python function _____ outputs text to the console.,2,1,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.455,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.454,low
+q1,The Python function _____ outputs text to the console.,2,1,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.454,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q1,The Python function _____ outputs text to the console.,2,1,0.452,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q4,How does the print() function handle multiple values separated by commas?,4,4,0.452,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.452,low
+q1,The Python function _____ outputs text to the console.,2,1,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.451,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.45,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q9,Why must strings in print() be enclosed in quotes?,3,9,0.45,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q7,What type of value does input() return by default?,3,7,0.449,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.449,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q8,"Why use end="" "" in a print statement?",2,8,0.449,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.449,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.448,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q9,Why must strings in print() be enclosed in quotes?,3,9,0.448,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q5,Why is int() used on the result of input() when reading a number?,3,5,0.447,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q4,How does the print() function handle multiple values separated by commas?,4,4,0.447,low
+q4,How does the print() function handle multiple values separated by commas?,4,4,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.447,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.446,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q2,The newline character in Python output is written as _____.,3,2,0.445,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q2,The newline character in Python output is written as _____.,3,2,0.445,low
+q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.444,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.443,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q1,The Python function _____ outputs text to the console.,2,1,0.443,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.443,low
+q4,Which print statement keeps the output on the same line?,2,4,q2,The newline character in Python output is written as _____.,3,2,0.443,low
+q5,The input() function in Python:,2,5,q7,What type of value does input() return by default?,3,7,0.443,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q7,Which code correctly reads a string from user input into variable name?,1,7,0.442,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.442,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q6,Which statement correctly reads a user input string into variable name?,4,6,0.441,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q5,The input() function in Python:,2,5,0.441,low
+q1,The Python function _____ outputs text to the console.,2,1,q6,Which statement correctly reads a user input string into variable name?,4,6,0.441,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.44,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q9,Why must strings in print() be enclosed in quotes?,3,9,0.44,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.439,low
+q5,How can multiple print() statements output on the same line?,1,5,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.439,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q1,What does the print() function automatically add at the end of its output?,3,1,0.439,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q9,Why must strings in print() be enclosed in quotes?,3,9,0.439,low
+q5,How can multiple print() statements output on the same line?,1,5,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.438,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q2,Which escape sequence moves output to the next line in a string?,4,2,0.438,low
+q1,The Python function _____ outputs text to the console.,2,1,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.438,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q2,Which escape sequence moves output to the next line in a string?,4,2,0.437,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.437,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q8,"Why use end="" "" in a print statement?",2,8,0.436,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q3,What does the input() function do in a Python program?,4,3,0.436,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.435,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q6,What type does input() return when reading user input?,1,6,0.434,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q2,Which escape sequence moves output to the next line in a string?,4,2,0.434,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q8,"Why use end="" "" in a print statement?",2,8,0.433,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q1,The Python function _____ outputs text to the console.,2,1,0.433,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q4,How does the print() function handle multiple values separated by commas?,4,4,0.433,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q9,Why must strings in print() be enclosed in quotes?,3,9,0.433,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.432,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q3,What does the input() function do in a Python program?,4,3,0.432,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q1,The Python function _____ outputs text to the console.,2,1,0.432,low
+q8,"Why use end="" "" in a print statement?",2,8,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.431,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q8,"Why use end="" "" in a print statement?",2,8,0.43,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.429,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q5,Why is int() used on the result of input() when reading a number?,3,5,0.429,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q6,Which statement correctly reads a user input string into variable name?,4,6,0.429,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.428,low
+q4,Which print statement keeps the output on the same line?,2,4,q3,What does the input() function do in a Python program?,4,3,0.428,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.427,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.427,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.426,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.426,low
+q3,What does the input() function do in a Python program?,4,3,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.426,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.425,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.425,low
+q5,The input() function in Python:,2,5,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.425,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q7,What type of value does input() return by default?,3,7,0.425,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.424,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.422,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.421,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q9,Why must strings in print() be enclosed in quotes?,3,9,0.421,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.419,low
+q7,What type of value does input() return by default?,3,7,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.419,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.418,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q10,Which escape sequence inserts a tab character in a string?,3,10,0.418,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.418,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q4,How does the print() function handle multiple values separated by commas?,4,4,0.417,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q3,What does the input() function do in a Python program?,4,3,0.416,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q4,"How does print(""Hello"", ""World"") format the output?",1,4,0.415,low
+q2,The newline character in Python output is written as _____.,3,2,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.415,low
+q1,The Python function _____ outputs text to the console.,2,1,q2,The newline character in Python output is written as _____.,3,2,0.414,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.414,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q7,What type of value does input() return by default?,3,7,0.413,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.413,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q3,What does the input() function do in a Python program?,4,3,0.412,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q6,Which statement correctly reads a user input string into variable name?,4,6,0.411,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.41,low
+q1,The Python function _____ outputs text to the console.,2,1,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.41,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q2,Which escape sequence moves output to the next line in a string?,4,2,0.41,low
+q8,"Why use end="" "" in a print statement?",2,8,q3,What does the input() function do in a Python program?,4,3,0.409,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q1,What does the print() function automatically add at the end of its output?,3,1,0.408,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q3,What does the input() function do in a Python program?,4,3,0.406,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.406,low
+q1,The Python function _____ outputs text to the console.,2,1,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.405,low
+q5,How can multiple print() statements output on the same line?,1,5,q2,Which escape sequence moves output to the next line in a string?,4,2,0.4,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q10,Which escape sequence inserts a tab character in a string?,3,10,0.397,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q5,Why is int() used on the result of input() when reading a number?,3,5,0.395,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q3,What does the input() function do in a Python program?,4,3,0.395,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q4,How does the print() function handle multiple values separated by commas?,4,4,0.394,low
+q5,How can multiple print() statements output on the same line?,1,5,q2,The newline character in Python output is written as _____.,3,2,0.393,low
+q5,How can multiple print() statements output on the same line?,1,5,q5,The input() function in Python:,2,5,0.392,low
+q8,"Why use end="" "" in a print statement?",2,8,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.392,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.392,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q9,Why must strings in print() be enclosed in quotes?,3,9,0.389,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q2,The newline character in Python output is written as _____.,3,2,0.388,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.387,low
+q6,Which statement correctly reads a user input string into variable name?,4,6,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.387,low
+q7,What type of value does input() return by default?,3,7,q6,Which statement correctly reads a user input string into variable name?,4,6,0.386,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.385,low
+q1,The Python function _____ outputs text to the console.,2,1,q5,Why is int() used on the result of input() when reading a number?,3,5,0.385,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q7,What type of value does input() return by default?,3,7,0.384,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q10,Which escape sequence inserts a tab character in a string?,3,10,0.384,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.383,low
+q2,The newline character in Python output is written as _____.,3,2,q4,How does the print() function handle multiple values separated by commas?,4,4,0.383,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.382,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.382,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q9,Why must strings in print() be enclosed in quotes?,3,9,0.381,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.38,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q3,What does the input() function do in a Python program?,4,3,0.38,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.379,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q10,Which escape sequence inserts a tab character in a string?,3,10,0.378,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q3,What does the input() function do in a Python program?,4,3,0.378,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q1,The Python function _____ outputs text to the console.,2,1,0.377,low
+q8,"Why use end="" "" in a print statement?",2,8,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.377,low
+q1,The Python function _____ outputs text to the console.,2,1,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.376,low
+q1,The Python function _____ outputs text to the console.,2,1,q1,What does the print() function automatically add at the end of its output?,3,1,0.376,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q2,Which escape sequence moves output to the next line in a string?,4,2,0.376,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q9,Why must strings in print() be enclosed in quotes?,3,9,0.375,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.375,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q5,Why is int() used on the result of input() when reading a number?,3,5,0.374,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.374,low
+q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.372,low
+q5,How can multiple print() statements output on the same line?,1,5,q6,Which statement correctly reads a user input string into variable name?,4,6,0.371,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q7,What type of value does input() return by default?,3,7,0.371,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.369,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q3,What does the input() function do in a Python program?,4,3,0.369,low
+q5,The input() function in Python:,2,5,q2,The newline character in Python output is written as _____.,3,2,0.369,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.369,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.368,low
+q3,What does the input() function do in a Python program?,4,3,q4,How does the print() function handle multiple values separated by commas?,4,4,0.368,low
+q3,What does the input() function do in a Python program?,4,3,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.368,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.367,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q1,What does the print() function automatically add at the end of its output?,3,1,0.367,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.367,low
+q1,The Python function _____ outputs text to the console.,2,1,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.366,low
+q4,Which print statement keeps the output on the same line?,2,4,q10,Which escape sequence inserts a tab character in a string?,3,10,0.366,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q6,What type does input() return when reading user input?,1,6,0.365,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q9,Why must strings in print() be enclosed in quotes?,3,9,0.365,low
+q1,The Python function _____ outputs text to the console.,2,1,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.365,low
+q8,"Why use end="" "" in a print statement?",2,8,q5,Why is int() used on the result of input() when reading a number?,3,5,0.365,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q6,Which statement correctly reads a user input string into variable name?,4,6,0.364,low
+q3,What does the input() function do in a Python program?,4,3,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.364,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.362,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q8,"Why use end="" "" in a print statement?",2,8,0.361,low
+q5,The input() function in Python:,2,5,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.361,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.361,low
+q5,How can multiple print() statements output on the same line?,1,5,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.36,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q3,What does the input() function do in a Python program?,4,3,0.36,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,0.359,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.359,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.359,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.357,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.357,low
+q2,The newline character in Python output is written as _____.,3,2,q3,What does the input() function do in a Python program?,4,3,0.357,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q5,The input() function in Python:,2,5,0.356,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q3,What does the input() function do in a Python program?,4,3,0.354,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q4,How does the print() function handle multiple values separated by commas?,4,4,0.354,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.353,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.353,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.353,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.352,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q4,"How does print(""Hello"", ""World"") format the output?",1,4,0.352,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.352,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.351,low
+q7,What type of value does input() return by default?,3,7,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.35,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q5,The input() function in Python:,2,5,0.349,low
+q5,The input() function in Python:,2,5,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.349,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.348,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q6,Which statement correctly reads a user input string into variable name?,4,6,0.348,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.348,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q5,The input() function in Python:,2,5,0.348,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.347,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q7,What type of value does input() return by default?,3,7,0.347,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.347,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q2,The newline character in Python output is written as _____.,3,2,0.347,low
+q5,How can multiple print() statements output on the same line?,1,5,q7,Which code correctly reads a string from user input into variable name?,1,7,0.342,low
+q6,What type does input() return when reading user input?,1,6,q1,The Python function _____ outputs text to the console.,2,1,0.342,low
+q1,The Python function _____ outputs text to the console.,2,1,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.342,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q4,How does the print() function handle multiple values separated by commas?,4,4,0.341,low
+q4,Which print statement keeps the output on the same line?,2,4,q5,The input() function in Python:,2,5,0.341,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,0.34,low
+q5,The input() function in Python:,2,5,q3,Which print statement correctly keeps output on the same line?,3,3,0.339,low
+q1,The Python function _____ outputs text to the console.,2,1,q8,"Why use end="" "" in a print statement?",2,8,0.338,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.338,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q3,What does the input() function do in a Python program?,4,3,0.337,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.336,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.336,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.335,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.335,low
+q1,The Python function _____ outputs text to the console.,2,1,q4,How does the print() function handle multiple values separated by commas?,4,4,0.335,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.334,low
+q5,How can multiple print() statements output on the same line?,1,5,q5,Why is int() used on the result of input() when reading a number?,3,5,0.334,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q9,Why must strings in print() be enclosed in quotes?,3,9,0.333,low
+q1,The Python function _____ outputs text to the console.,2,1,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.333,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q3,What does the input() function do in a Python program?,4,3,0.333,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.332,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q2,The newline character in Python output is written as _____.,3,2,0.331,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q2,The newline character in Python output is written as _____.,3,2,0.331,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.331,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q3,What does the input() function do in a Python program?,4,3,0.331,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q5,The input() function in Python:,2,5,0.33,low
+q1,The Python function _____ outputs text to the console.,2,1,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.33,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q10,Which escape sequence inserts a tab character in a string?,3,10,0.33,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q6,Which statement correctly reads a user input string into variable name?,4,6,0.33,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q9,Why must strings in print() be enclosed in quotes?,3,9,0.33,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.329,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.329,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.329,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q2,Which escape sequence moves output to the next line in a string?,4,2,0.329,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q1,The Python function _____ outputs text to the console.,2,1,0.328,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q3,Which print statement correctly keeps output on the same line?,3,3,0.327,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.327,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q10,Which escape sequence inserts a tab character in a string?,3,10,0.327,low
+q7,What type of value does input() return by default?,3,7,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.327,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.325,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q6,Which statement correctly reads a user input string into variable name?,4,6,0.325,low
+q5,The input() function in Python:,2,5,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.323,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.321,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.321,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q5,The input() function in Python:,2,5,0.321,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.32,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q8,"Why use end="" "" in a print statement?",2,8,0.319,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.319,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.319,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q3,Which print statement correctly keeps output on the same line?,3,3,0.318,low
+q6,Which statement correctly reads a user input string into variable name?,4,6,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.318,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q4,Which print statement keeps the output on the same line?,2,4,0.317,low
+q5,The input() function in Python:,2,5,q1,What does the print() function automatically add at the end of its output?,3,1,0.317,low
+q1,The Python function _____ outputs text to the console.,2,1,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.316,low
+q1,The Python function _____ outputs text to the console.,2,1,q7,What type of value does input() return by default?,3,7,0.315,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.314,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.314,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.313,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.313,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.312,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.312,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.312,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.311,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q5,The input() function in Python:,2,5,0.311,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.311,low
+q4,Which print statement keeps the output on the same line?,2,4,q6,Which statement correctly reads a user input string into variable name?,4,6,0.311,low
+q6,What type does input() return when reading user input?,1,6,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.307,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.307,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q7,Which code correctly reads a string from user input into variable name?,1,7,0.304,low
+q1,The Python function _____ outputs text to the console.,2,1,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.304,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q6,Which statement correctly reads a user input string into variable name?,4,6,0.303,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q2,The newline character in Python output is written as _____.,3,2,0.303,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q1,What does the print() function automatically add at the end of its output?,3,1,0.302,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.302,low
+q1,The Python function _____ outputs text to the console.,2,1,q9,Why must strings in print() be enclosed in quotes?,3,9,0.301,low
+q1,The Python function _____ outputs text to the console.,2,1,q2,Which escape sequence moves output to the next line in a string?,4,2,0.301,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q1,The Python function _____ outputs text to the console.,2,1,0.3,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.3,low
+q5,The input() function in Python:,2,5,q4,How does the print() function handle multiple values separated by commas?,4,4,0.299,low
+q7,What type of value does input() return by default?,3,7,q4,How does the print() function handle multiple values separated by commas?,4,4,0.299,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q4,How does the print() function handle multiple values separated by commas?,4,4,0.299,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q2,Which escape sequence moves output to the next line in a string?,4,2,0.297,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,0.296,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q4,Which print statement keeps the output on the same line?,2,4,0.296,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.296,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q6,Which statement correctly reads a user input string into variable name?,4,6,0.296,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q10,Which escape sequence inserts a tab character in a string?,3,10,0.296,low
+q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,q6,Which statement correctly reads a user input string into variable name?,4,6,0.296,low
+q5,The input() function in Python:,2,5,q9,Why must strings in print() be enclosed in quotes?,3,9,0.295,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.294,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q7,What type of value does input() return by default?,3,7,0.294,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q8,Why use int(input()) instead of input() alone for numeric input?,1,8,0.293,low
+q5,The input() function in Python:,2,5,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.293,low
+q5,How can multiple print() statements output on the same line?,1,5,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.292,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q3,Which print statement correctly keeps output on the same line?,3,3,0.292,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q6,Which statement correctly reads a user input string into variable name?,4,6,0.292,low
+q5,The input() function in Python:,2,5,q8,"Why use end="" "" in a print statement?",2,8,0.292,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q5,Why is int() used on the result of input() when reading a number?,3,5,0.291,low
+q5,How can multiple print() statements output on the same line?,1,5,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.291,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q4,Which print statement keeps the output on the same line?,2,4,0.291,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.291,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.291,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.29,low
+q5,The input() function in Python:,2,5,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.29,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q2,Which escape sequence moves output to the next line in a string?,4,2,0.29,low
+q6,Which statement correctly reads a user input string into variable name?,4,6,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.289,low
+q2,The newline character in Python output is written as _____.,3,2,q9,Why must strings in print() be enclosed in quotes?,3,9,0.288,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.286,low
+q5,How can multiple print() statements output on the same line?,1,5,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.285,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.285,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.285,low
+q5,How can multiple print() statements output on the same line?,1,5,q10,Which escape sequence inserts a tab character in a string?,3,10,0.282,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q2,Which escape sequence moves output to the next line in a string?,4,2,0.282,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q9,Why must strings in print() be enclosed in quotes?,3,9,0.282,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.28,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q6,Which statement correctly reads a user input string into variable name?,4,6,0.279,low
+q1,The Python function _____ outputs text to the console.,2,1,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.279,low
+q6,What type does input() return when reading user input?,1,6,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.278,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.278,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q3,What does the input() function do in a Python program?,4,3,0.278,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.276,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q6,Which statement correctly reads a user input string into variable name?,4,6,0.275,low
+q4,How does the print() function handle multiple values separated by commas?,4,4,q6,Which statement correctly reads a user input string into variable name?,4,6,0.275,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.274,low
+q7,What type of value does input() return by default?,3,7,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.274,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q6,Which statement correctly reads a user input string into variable name?,4,6,0.274,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q7,Which code correctly reads a string from user input into variable name?,1,7,0.273,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q9,Why must strings in print() be enclosed in quotes?,3,9,0.273,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.272,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q5,Why is int() used on the result of input() when reading a number?,3,5,0.271,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q4,How does the print() function handle multiple values separated by commas?,4,4,0.271,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.27,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q6,Which statement correctly reads a user input string into variable name?,4,6,0.27,low
+q7,What type of value does input() return by default?,3,7,q9,Why must strings in print() be enclosed in quotes?,3,9,0.269,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.268,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q4,How does the print() function handle multiple values separated by commas?,4,4,0.268,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q6,Which statement correctly reads a user input string into variable name?,4,6,0.267,low
+q6,What type does input() return when reading user input?,1,6,q4,How does the print() function handle multiple values separated by commas?,4,4,0.267,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.267,low
+q4,Which print statement keeps the output on the same line?,2,4,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.267,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.267,low
+q6,What type does input() return when reading user input?,1,6,q9,Why must strings in print() be enclosed in quotes?,3,9,0.266,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.266,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.265,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.265,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.264,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.264,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q5,Why is int() used on the result of input() when reading a number?,3,5,0.264,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.264,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.263,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.263,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q2,The newline character in Python output is written as _____.,3,2,0.263,low
+q4,Which print statement keeps the output on the same line?,2,4,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.263,low
+q8,"Why use end="" "" in a print statement?",2,8,q6,Which statement correctly reads a user input string into variable name?,4,6,0.263,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q5,Why is int() used on the result of input() when reading a number?,3,5,0.26,low
+q5,How can multiple print() statements output on the same line?,1,5,q6,What type does input() return when reading user input?,1,6,0.26,low
+q5,The input() function in Python:,2,5,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.26,low
+q6,What type does input() return when reading user input?,1,6,q1,What does the print() function automatically add at the end of its output?,3,1,0.259,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.259,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.259,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q5,Why is int() used on the result of input() when reading a number?,3,5,0.259,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.259,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q5,How can multiple print() statements output on the same line?,1,5,0.258,low
+q2,The newline character in Python output is written as _____.,3,2,q6,Which statement correctly reads a user input string into variable name?,4,6,0.258,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.258,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.257,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.256,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q3,Which print statement correctly keeps output on the same line?,3,3,0.256,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q5,Why is int() used on the result of input() when reading a number?,3,5,0.256,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.256,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q4,How does the print() function handle multiple values separated by commas?,4,4,0.255,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q7,What type of value does input() return by default?,3,7,0.254,low
+q5,How can multiple print() statements output on the same line?,1,5,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.252,low
+q5,The input() function in Python:,2,5,q2,Which escape sequence moves output to the next line in a string?,4,2,0.252,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.252,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.251,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.251,low
+q4,How does the print() function handle multiple values separated by commas?,4,4,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.251,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q7,Which code correctly reads a string from user input into variable name?,1,7,0.25,low
+q5,How can multiple print() statements output on the same line?,1,5,q7,What type of value does input() return by default?,3,7,0.25,low
+q5,How can multiple print() statements output on the same line?,1,5,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.25,low
+q4,Which print statement keeps the output on the same line?,2,4,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.25,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.249,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.249,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.248,low
+q8,"Why use end="" "" in a print statement?",2,8,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.248,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.247,low
+q4,How does the print() function handle multiple values separated by commas?,4,4,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.247,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q5,Why is int() used on the result of input() when reading a number?,3,5,0.246,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q6,Which statement correctly reads a user input string into variable name?,4,6,0.246,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.246,low
+q6,What type does input() return when reading user input?,1,6,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.245,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.245,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.245,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.244,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q5,Why is int() used on the result of input() when reading a number?,3,5,0.244,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q8,"Why use end="" "" in a print statement?",2,8,0.243,low
+q4,Which print statement keeps the output on the same line?,2,4,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.243,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q2,The newline character in Python output is written as _____.,3,2,0.242,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.242,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.241,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.241,low
+q6,What type does input() return when reading user input?,1,6,q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,0.24,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.24,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q8,"Why use end="" "" in a print statement?",2,8,0.24,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.24,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.239,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.239,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q2,Which escape sequence moves output to the next line in a string?,4,2,0.239,low
+q4,Which print statement keeps the output on the same line?,2,4,q5,Why is int() used on the result of input() when reading a number?,3,5,0.239,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q3,Which print statement correctly keeps output on the same line?,3,3,0.239,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.239,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.239,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.238,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q4,How does the print() function handle multiple values separated by commas?,4,4,0.237,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.236,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.235,low
+q2,The newline character in Python output is written as _____.,3,2,q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,0.235,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q2,The newline character in Python output is written as _____.,3,2,0.234,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.233,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q2,Which escape sequence moves output to the next line in a string?,4,2,0.233,low
+q6,What type does input() return when reading user input?,1,6,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.232,low
+q2,The newline character in Python output is written as _____.,3,2,q5,Why is int() used on the result of input() when reading a number?,3,5,0.232,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.231,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.23,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.23,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.23,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.229,low
+q6,What type does input() return when reading user input?,1,6,q2,Which escape sequence moves output to the next line in a string?,4,2,0.229,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q2,Which escape sequence moves output to the next line in a string?,4,2,0.229,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q4,How does the print() function handle multiple values separated by commas?,4,4,0.229,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q6,Which statement correctly reads a user input string into variable name?,4,6,0.228,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q7,What type of value does input() return by default?,3,7,0.227,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q6,Which statement correctly reads a user input string into variable name?,4,6,0.226,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q9,"How does print(""A"", 1, ""B"") output?",2,9,0.225,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.224,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q7,What type of value does input() return by default?,3,7,0.224,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.224,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q5,Why is int() used on the result of input() when reading a number?,3,5,0.224,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.224,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.223,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q10,Which escape sequence inserts a tab character in a string?,3,10,0.222,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.222,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q7,What type of value does input() return by default?,3,7,0.222,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q1,What does the print() function automatically add at the end of its output?,3,1,0.221,low
+q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.221,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q6,What type does input() return when reading user input?,1,6,0.22,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q1,What does the print() function automatically add at the end of its output?,3,1,0.219,low
+q5,How can multiple print() statements output on the same line?,1,5,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.219,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,0.218,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q6,Which statement correctly reads a user input string into variable name?,4,6,0.218,low
+q2,The newline character in Python output is written as _____.,3,2,q4,How can a program read a user-entered string into a variable named user_input?,3,4,0.217,low
+q4,How can a program read a user-entered string into a variable named user_input?,3,4,q10,Which escape sequence inserts a tab character in a string?,3,10,0.217,low
+q7,Which code correctly reads a string from user input into variable name?,1,7,q10,Which escape sequence inserts a tab character in a string?,3,10,0.215,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.215,low
+q9,Why must strings in print() be enclosed in quotes?,3,9,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.215,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.214,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.214,low
+q6,What type does input() return when reading user input?,1,6,q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,0.213,low
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,9,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.213,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.213,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q7,What type of value does input() return by default?,3,7,0.212,low
+q8,How does the print function separate multiple values inside the parentheses?,3,8,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.212,low
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,q7,What type of value does input() return by default?,3,7,0.211,low
+q6,What type does input() return when reading user input?,1,6,q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,10,0.21,low
+q8,Why use int(input()) instead of input() alone for numeric input?,1,8,q10,Which escape sequence inserts a tab character in a string?,3,10,0.21,low
+q4,Which print statement keeps the output on the same line?,2,4,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.21,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q9,Why must strings in print() be enclosed in quotes?,3,9,0.21,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q7,What type of value does input() return by default?,3,7,0.208,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,0.208,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.208,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.208,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q6,What type does input() return when reading user input?,1,6,0.207,low
+q4,Which print statement keeps the output on the same line?,2,4,q7,What type of value does input() return by default?,3,7,0.207,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q2,Which escape sequence moves output to the next line in a string?,4,2,0.207,low
+q6,What type does input() return when reading user input?,1,6,q4,Which print statement keeps the output on the same line?,2,4,0.206,low
+q4,Which print statement keeps the output on the same line?,2,4,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.206,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.205,low
+q6,What type does input() return when reading user input?,1,6,q2,The newline character in Python output is written as _____.,3,2,0.204,low
+q6,What type does input() return when reading user input?,1,6,q3,Which print statement correctly keeps output on the same line?,3,3,0.204,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.204,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q3,What does the input() function do in a Python program?,4,3,0.204,low
+q8,"Why use end="" "" in a print statement?",2,8,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.203,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q8,"Why use end="" "" in a print statement?",2,8,0.201,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q8,How does the print function separate multiple values inside the parentheses?,3,8,0.2,low
+q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.2,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q4,How does the print() function handle multiple values separated by commas?,4,4,0.199,low
+q6,What type does input() return when reading user input?,1,6,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.197,low
+q6,What type does input() return when reading user input?,1,6,q10,Which escape sequence inserts a tab character in a string?,3,10,0.196,low
+q5,The input() function in Python:,2,5,q10,Which escape sequence inserts a tab character in a string?,3,10,0.196,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.195,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.194,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,0.192,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q2,Which escape sequence moves output to the next line in a string?,4,2,0.192,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.192,low
+q4,Which print statement keeps the output on the same line?,2,4,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.192,low
+q1,Which Python function outputs text or variable values to the screen?,1,1,q10,Which escape sequence inserts a tab character in a string?,3,10,0.191,low
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,2,q10,Which escape sequence inserts a tab character in a string?,3,10,0.191,low
+q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.191,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q2,Which escape sequence moves output to the next line in a string?,4,2,0.19,low
+q8,"Why use end="" "" in a print statement?",2,8,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.189,low
+q8,"Why use end="" "" in a print statement?",2,8,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.188,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q3,Which print statement correctly keeps output on the same line?,3,3,0.188,low
+q3,Which print statement correctly keeps output on the same line?,3,3,q7,What type of value does input() return by default?,3,7,0.188,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,0.187,low
+q4,How does the print() function handle multiple values separated by commas?,4,4,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.187,low
+q6,What type does input() return when reading user input?,1,6,q8,"Why use end="" "" in a print statement?",2,8,0.186,low
+q8,"Why use end="" "" in a print statement?",2,8,q7,What type of value does input() return by default?,3,7,0.185,low
+q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.185,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.184,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q2,Which escape sequence moves output to the next line in a string?,4,2,0.184,low
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,1,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.184,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q2,Which escape sequence moves output to the next line in a string?,4,2,0.183,low
+q2,The newline character in Python output is written as _____.,3,2,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.183,low
+q2,The newline character in Python output is written as _____.,3,2,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.183,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.182,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q7,What type of value does input() return by default?,3,7,0.182,low
+q1,The Python function _____ outputs text to the console.,2,1,q10,Which escape sequence inserts a tab character in a string?,3,10,0.181,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.178,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.177,low
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,3,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.175,low
+q7,What type of value does input() return by default?,3,7,q2,Which escape sequence moves output to the next line in a string?,4,2,0.175,low
+q2,The newline character in Python output is written as _____.,3,2,q7,What type of value does input() return by default?,3,7,0.174,low
+q5,Why is int() used on the result of input() when reading a number?,3,5,q10,Which escape sequence inserts a tab character in a string?,3,10,0.174,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.173,low
+q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.172,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.171,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.17,low
+q6,What type does input() return when reading user input?,1,6,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.169,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q10,Which escape sequence inserts a tab character in a string?,3,10,0.169,low
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,6,q1,What does the print() function automatically add at the end of its output?,3,1,0.168,low
+q6,What type does input() return when reading user input?,1,6,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.167,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q2,The newline character in Python output is written as _____.,3,2,0.167,low
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,3,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.166,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q1,What does the print() function automatically add at the end of its output?,3,1,0.164,low
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,6,q10,Which escape sequence inserts a tab character in a string?,3,10,0.164,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.162,low
+q2,The newline character in Python output is written as _____.,3,2,q5,"To convert the string ""123"" to the integer 123, which function is used?",4,5,0.16,low
+q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.16,low
+q1,What does the print() function automatically add at the end of its output?,3,1,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.153,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.152,low
+q8,"Why use end="" "" in a print statement?",2,8,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.15,low
+q9,"How does print(""A"", 1, ""B"") output?",2,9,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.149,low
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,2,q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,10,0.148,low
+q4,"How does print(""Hello"", ""World"") format the output?",1,4,q10,Which code reads an integer from user input and stores it in variable num?,2,10,0.146,low
+q10,Which escape sequence inserts a tab character in a string?,3,10,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.141,low
+q7,What type of value does input() return by default?,3,7,q10,Which escape sequence inserts a tab character in a string?,3,10,0.139,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q10,Which escape sequence inserts a tab character in a string?,3,10,0.138,low
+q10,Which code reads an integer from user input and stores it in variable num?,2,10,q2,Which escape sequence moves output to the next line in a string?,4,2,0.138,low
+q7,What type of value does input() return by default?,3,7,q7,How to keep output from multiple print() calls on the same line separated by a space?,4,7,0.138,low
+q2,Which escape sequence moves output to the next line in a string?,4,2,q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,9,0.137,low
+q7,What type of value does input() return by default?,3,7,q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,8,0.136,low
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,7,q10,Which escape sequence inserts a tab character in a string?,3,10,0.135,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use the print() function to output strings, integers, expressions, and variables.  
+Recognize that print() ends with a newline by default.  
+Modify print statements to create whitespace in the output, including spaces, tabs, and newlines.  
+Read string and integer values from user input and store them in variables.  
+Convert input strings to integers for use in calculations."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Which Python function outputs text or variable values to the screen?,1,yes,"This question assesses knowledge of the print() function to output values, directly related to the first learning objective."
+q2,"What is the type of value enclosed in quotes like ""Hello"" in Python?",1,no,"This question tests understanding of data types (string), which is not explicitly covered in the learning objectives."
+q3,"What does the newline character ""\n"" do in a string printed by print()?",1,yes,"This question evaluates understanding of the newline character ""\n"" in print output, matching the second and third learning objectives."
+q4,"How does print(""Hello"", ""World"") format the output?",1,yes,"This question checks how print() formats output with multiple arguments, relating to modifying print statements for whitespace."
+q5,How can multiple print() statements output on the same line?,1,yes,"This question assesses modifying print() to output on the same line using the end parameter, aligned with the third learning objective."
+q6,What type does input() return when reading user input?,1,yes,"This question tests knowledge that input() returns a string, related to reading user input and storing in variables."
+q7,Which code correctly reads a string from user input into variable name?,1,yes,"This question evaluates correct syntax for reading string input into a variable, matching the fourth learning objective."
+q8,Why use int(input()) instead of input() alone for numeric input?,1,yes,"This question assesses converting input strings to integers for calculations, directly related to the fifth learning objective."
+q9,"What is the output of the code: print(""A"", ""B"", ""C"")?",1,yes,"This question tests print() output formatting with multiple arguments, linked to modifying print statements for whitespace."
+q10,"Which of the following prints the string ""Score: "" followed by the variable score value?",1,yes,"This question checks combining strings and variables in print(), related to using print() with variables and strings."
+q1,The Python function _____ outputs text to the console.,2,yes,"This question assesses knowledge of the print() function outputting text, aligned with the first learning objective."
+q2,"What does the newline character ""\n"" do in a string printed by print()?",2,yes,"This question evaluates understanding of the newline character ""\n"" in print output, matching the second and third learning objectives."
+q3,"In Python, when multiple values are printed separated by commas, what separates them in the output?",2,yes,"This question tests how print() separates multiple values with spaces, related to modifying print statements for whitespace."
+q4,Which print statement keeps the output on the same line?,2,yes,"This question assesses keeping print output on the same line using end="" "", aligned with the third learning objective."
+q5,The input() function in Python:,2,yes,"This question tests understanding that input() reads user input as a string, related to reading input and storing in variables."
+q6,"To convert a string input ""123"" to an integer, use _____ in Python.",2,yes,"This question evaluates converting string input to integer using int(), matching the fifth learning objective."
+q7,What is the value of variable x after this code runs? x = input() (user types 45),2,yes,"This question assesses the data type returned by input(), related to reading input and storing in variables."
+q8,"Why use end="" "" in a print statement?",2,yes,"This question tests use of end="" "" in print() to control whitespace, aligned with the third learning objective."
+q9,"How does print(""A"", 1, ""B"") output?",2,yes,"This question evaluates print() output formatting with mixed data types and separators, related to modifying print statements."
+q10,Which code reads an integer from user input and stores it in variable num?,2,yes,"This question assesses reading integer input by converting input() with int(), matching the fourth and fifth learning objectives."
+q1,What does the print() function automatically add at the end of its output?,3,yes,"This question tests knowledge that print() ends with a newline by default, directly related to the second learning objective."
+q2,The newline character in Python output is written as _____.,3,yes,"This question evaluates recognition of the newline escape sequence ""\n"", aligned with the second and third learning objectives."
+q3,Which print statement correctly keeps output on the same line?,3,yes,"This question assesses keeping print output on the same line using end="" "", matching the third learning objective."
+q4,How can a program read a user-entered string into a variable named user_input?,3,yes,"This question tests correct syntax for reading user input into a variable, related to the fourth learning objective."
+q5,Why is int() used on the result of input() when reading a number?,3,yes,"This question evaluates why int() is used on input() for numeric calculations, matching the fifth learning objective."
+q6,"What is printed by the statement print(""Age:"", age) if age = 25?",3,yes,"This question assesses printing a string followed by a variable, related to using print() with strings and variables."
+q7,What type of value does input() return by default?,3,yes,"This question tests the data type returned by input(), aligned with reading input and storing in variables."
+q8,How does the print function separate multiple values inside the parentheses?,3,yes,"This question evaluates how print() separates multiple values with spaces, related to modifying print statements for whitespace."
+q9,Why must strings in print() be enclosed in quotes?,3,no,"This question focuses on syntax for string literals (quotes), which is not explicitly covered in the learning objectives."
+q10,Which escape sequence inserts a tab character in a string?,3,yes,"This question tests knowledge of escape sequences for whitespace (tab), aligned with modifying print statements for whitespace."
+q1,The print() function outputs a/an _____ by default at the end of its output.,4,yes,"This question assesses that print() ends with a newline by default, directly related to the second learning objective."
+q2,Which escape sequence moves output to the next line in a string?,4,yes,"This question evaluates recognition of the newline escape sequence ""\n"", matching the second and third learning objectives."
+q3,What does the input() function do in a Python program?,4,yes,"This question tests understanding that input() reads user input, related to the fourth learning objective."
+q4,How does the print() function handle multiple values separated by commas?,4,yes,"This question assesses how print() handles multiple values separated by commas, related to modifying print statements for whitespace."
+q5,"To convert the string ""123"" to the integer 123, which function is used?",4,yes,"This question evaluates converting string to integer using int(), matching the fifth learning objective."
+q6,Which statement correctly reads a user input string into variable name?,4,yes,"This question tests correct syntax for reading user input into a variable, aligned with the fourth learning objective."
+q7,How to keep output from multiple print() calls on the same line separated by a space?,4,yes,"This question assesses keeping multiple print() outputs on the same line using end="" "", related to modifying print statements."
+q8,"What is the result of print(""A"", ""B"", ""C"") in Python?",4,yes,"This question evaluates print() output formatting with multiple string arguments, matching the third learning objective."
+q9,"If a user types ""42"" when input() runs, what type is the value assigned by default?",4,yes,"This question tests the data type returned by input(), related to reading input and storing in variables."
+q10,"Which code correctly prompts the user with ""Enter age: "" and reads an integer?",4,yes,"This question assesses prompting user and reading integer input using int(input()), aligned with the fourth and fifth learning objectives."

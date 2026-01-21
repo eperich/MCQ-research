@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,1
+2,10,0,0
+3,10,0,0
+4,10,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,4,100
+1,3,3,3,100
+1,4,0,3,100
+2,3,3,7,100
+2,4,0,4,100
+3,4,1,6,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),8
+Similar (70-85%),29
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What symbol ends a statement in Java?,1,1,q2,Which symbol ends a Java statement?,3,2,0.956,duplicate
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.936,duplicate
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.9,duplicate
+q1,What symbol ends a statement in Java?,1,1,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.886,duplicate
+q9,What is the purpose of the Scanner class in Java?,2,9,q9,What is a Scanner in Java used for?,3,9,0.885,duplicate
+q2,The main() method in a Java program is where _____ begins.,1,2,q1,What does the main() method define in a Java program?,3,1,0.878,duplicate
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q2,Which symbol ends a Java statement?,3,2,0.877,duplicate
+q8,Which of the following outputs the value of variable x in Java?,2,8,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.866,duplicate
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.839,similar
+q3,What does the statement 'int wage;' do in Java?,3,3,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.827,similar
+q4,"To output text without a new line in Java, use _____.",1,4,q5,Which output statement prints text without moving to a new line?,2,5,0.826,similar
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.807,similar
+q8,Which output statement prints a blank line?,1,8,q5,Which output statement prints text without moving to a new line?,2,5,0.802,similar
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.795,similar
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.771,similar
+q5,What is the purpose of System.out.println() in Java?,3,5,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.771,similar
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.769,similar
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q3,What does the statement 'int wage;' do in Java?,3,3,0.767,similar
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.761,similar
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.754,similar
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.753,similar
+q5,Which output statement prints text without moving to a new line?,2,5,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.752,similar
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.748,similar
+q4,"To output text without a new line in Java, use _____.",1,4,q8,Which output statement prints a blank line?,1,8,0.747,similar
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q5,What is the purpose of System.out.println() in Java?,3,5,0.736,similar
+q5,Which output statement prints text without moving to a new line?,2,5,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.731,similar
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.729,similar
+q5,Which statement outputs the value stored in variable wage?,1,5,q3,What does the statement 'int wage;' do in Java?,3,3,0.725,similar
+q1,What symbol ends a statement in Java?,1,1,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.722,similar
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.722,similar
+q3,What does the statement 'int wage;' do in Java?,3,3,q10,The statement wage = scnr.nextInt(); means:,4,10,0.716,similar
+q1,A Java program starts executing statements inside which method?,2,1,q1,What does the main() method define in a Java program?,3,1,0.713,similar
+q2,Which symbol ends a Java statement?,3,2,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.712,similar
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.707,similar
+q5,Which output statement prints text without moving to a new line?,2,5,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.707,similar
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.705,similar
+q2,The main() method in a Java program is where _____ begins.,1,2,q1,A Java program starts executing statements inside which method?,2,1,0.702,similar
+q5,Which output statement prints text without moving to a new line?,2,5,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.7,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.697,low
+q7,How is a string literal represented in Java output statements?,2,7,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.695,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.688,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.686,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.679,low
+q4,"To output text without a new line in Java, use _____.",1,4,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.679,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.679,low
+q5,Which output statement prints text without moving to a new line?,2,5,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.677,low
+q9,What is a Scanner in Java used for?,3,9,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.675,low
+q4,"To output text without a new line in Java, use _____.",1,4,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.674,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.674,low
+q1,A Java program starts executing statements inside which method?,2,1,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.672,low
+q4,"To output text without a new line in Java, use _____.",1,4,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.669,low
+q8,Which output statement prints a blank line?,1,8,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.668,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.667,low
+q8,Which output statement prints a blank line?,1,8,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.666,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q10,The statement wage = scnr.nextInt(); means:,4,10,0.661,low
+q4,"To output text without a new line in Java, use _____.",1,4,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.659,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.658,low
+q4,"To output text without a new line in Java, use _____.",1,4,q8,Which of the following outputs the value of variable x in Java?,2,8,0.657,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q5,Which output statement prints text without moving to a new line?,2,5,0.652,low
+q4,"To output text without a new line in Java, use _____.",1,4,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.651,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.651,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.65,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.648,low
+q8,Which output statement prints a blank line?,1,8,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.645,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q5,What is the purpose of System.out.println() in Java?,3,5,0.645,low
+q5,Which output statement prints text without moving to a new line?,2,5,q5,What is the purpose of System.out.println() in Java?,3,5,0.644,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.642,low
+q4,"To output text without a new line in Java, use _____.",1,4,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.64,low
+q4,"To output text without a new line in Java, use _____.",1,4,q5,What is the purpose of System.out.println() in Java?,3,5,0.64,low
+q1,What does the main() method define in a Java program?,3,1,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.637,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.635,low
+q1,A Java program starts executing statements inside which method?,2,1,q5,What is the purpose of System.out.println() in Java?,3,5,0.634,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.633,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q3,What does the statement 'int wage;' do in Java?,3,3,0.632,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q8,Which of the following outputs the value of variable x in Java?,2,8,0.631,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.629,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.628,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.627,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q5,Which output statement prints text without moving to a new line?,2,5,0.626,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q9,What is a Scanner in Java used for?,3,9,0.624,low
+q4,"To output text without a new line in Java, use _____.",1,4,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.621,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q9,What is a Scanner in Java used for?,3,9,0.621,low
+q8,Which output statement prints a blank line?,1,8,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.621,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q8,Which output statement prints a blank line?,1,8,0.618,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.617,low
+q1,What does the main() method define in a Java program?,3,1,q5,What is the purpose of System.out.println() in Java?,3,5,0.615,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q10,The statement wage = scnr.nextInt(); means:,4,10,0.614,low
+q1,A Java program starts executing statements inside which method?,2,1,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.611,low
+q8,Which output statement prints a blank line?,1,8,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.609,low
+q9,What is a Scanner in Java used for?,3,9,q8,Which Java import statement is required to use Scanner for input?,4,8,0.609,low
+q1,A Java program starts executing statements inside which method?,2,1,q9,What is a Scanner in Java used for?,3,9,0.607,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q8,Which Java import statement is required to use Scanner for input?,4,8,0.605,low
+q4,How does a Scanner object get input from the keyboard in Java?,4,4,q8,Which Java import statement is required to use Scanner for input?,4,8,0.604,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.603,low
+q8,Which output statement prints a blank line?,1,8,q5,What is the purpose of System.out.println() in Java?,3,5,0.602,low
+q7,How is a string literal represented in Java output statements?,2,7,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.601,low
+q1,What does the main() method define in a Java program?,3,1,q9,What is a Scanner in Java used for?,3,9,0.601,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.601,low
+q5,Which output statement prints text without moving to a new line?,2,5,q8,Which of the following outputs the value of variable x in Java?,2,8,0.6,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q10,The statement wage = scnr.nextInt(); means:,4,10,0.599,low
+q1,A Java program starts executing statements inside which method?,2,1,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.597,low
+q8,Which output statement prints a blank line?,1,8,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.595,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.595,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.595,low
+q1,A Java program starts executing statements inside which method?,2,1,q5,Which output statement prints text without moving to a new line?,2,5,0.592,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.592,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.59,low
+q4,"To output text without a new line in Java, use _____.",1,4,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.589,low
+q8,Which output statement prints a blank line?,1,8,q8,Which of the following outputs the value of variable x in Java?,2,8,0.587,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.587,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q9,What is the purpose of the Scanner class in Java?,2,9,0.586,low
+q5,Which output statement prints text without moving to a new line?,2,5,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.586,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q5,What is the purpose of System.out.println() in Java?,3,5,0.585,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q5,What is the purpose of System.out.println() in Java?,3,5,0.585,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.584,low
+q5,Why must string literals be enclosed in double quotes in output statements?,4,5,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.58,low
+q1,A Java program starts executing statements inside which method?,2,1,q8,Which of the following outputs the value of variable x in Java?,2,8,0.579,low
+q1,A Java program starts executing statements inside which method?,2,1,q9,What is the purpose of the Scanner class in Java?,2,9,0.579,low
+q1,What symbol ends a statement in Java?,1,1,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.578,low
+q4,"To output text without a new line in Java, use _____.",1,4,q1,A Java program starts executing statements inside which method?,2,1,0.578,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.578,low
+q7,How is a string literal represented in Java output statements?,2,7,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.576,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q1,What does the main() method define in a Java program?,3,1,0.576,low
+q8,Which output statement prints a blank line?,1,8,q1,A Java program starts executing statements inside which method?,2,1,0.574,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.574,low
+q4,"To output text without a new line in Java, use _____.",1,4,q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,0.572,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q10,The statement wage = scnr.nextInt(); means:,4,10,0.572,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.571,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.571,low
+q1,A Java program starts executing statements inside which method?,2,1,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.569,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q8,Which of the following outputs the value of variable x in Java?,2,8,0.569,low
+q8,Which output statement prints a blank line?,1,8,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.567,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q8,Which Java import statement is required to use Scanner for input?,4,8,0.567,low
+q2,Which symbol ends a Java statement?,3,2,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.567,low
+q7,How is a string literal represented in Java output statements?,2,7,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.565,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q10,The statement wage = scnr.nextInt(); means:,4,10,0.565,low
+q1,A Java program starts executing statements inside which method?,2,1,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.56,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.556,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.555,low
+q1,A Java program starts executing statements inside which method?,2,1,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.555,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q5,What is the purpose of System.out.println() in Java?,3,5,0.553,low
+q8,Which output statement prints a blank line?,1,8,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.552,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.55,low
+q1,What symbol ends a statement in Java?,1,1,q7,How is a string literal represented in Java output statements?,2,7,0.548,low
+q1,A Java program starts executing statements inside which method?,2,1,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.548,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q10,The statement wage = scnr.nextInt(); means:,4,10,0.547,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q5,Which output statement prints text without moving to a new line?,2,5,0.545,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.544,low
+q4,"To output text without a new line in Java, use _____.",1,4,q5,Which statement outputs the value stored in variable wage?,1,5,0.543,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.543,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.542,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q5,What is the purpose of System.out.println() in Java?,3,5,0.54,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q10,The statement wage = scnr.nextInt(); means:,4,10,0.539,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.536,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.536,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.535,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.534,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.532,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q1,A Java program starts executing statements inside which method?,2,1,0.532,low
+q1,What symbol ends a statement in Java?,1,1,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.529,low
+q1,A Java program starts executing statements inside which method?,2,1,q8,Which Java import statement is required to use Scanner for input?,4,8,0.529,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.529,low
+q7,How is a string literal represented in Java output statements?,2,7,q2,Which symbol ends a Java statement?,3,2,0.525,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q9,What is a Scanner in Java used for?,3,9,0.521,low
+q1,What symbol ends a statement in Java?,1,1,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.52,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q8,Which Java import statement is required to use Scanner for input?,4,8,0.519,low
+q8,Which output statement prints a blank line?,1,8,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.518,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q8,Which of the following outputs the value of variable x in Java?,2,8,0.517,low
+q1,A Java program starts executing statements inside which method?,2,1,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.517,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.517,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q2,Which symbol ends a Java statement?,3,2,0.516,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.514,low
+q1,What does the main() method define in a Java program?,3,1,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.514,low
+q4,"To output text without a new line in Java, use _____.",1,4,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.513,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.512,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q9,What is a Scanner in Java used for?,3,9,0.51,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.509,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.508,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q9,What is the purpose of the Scanner class in Java?,2,9,0.507,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q8,Which output statement prints a blank line?,1,8,0.506,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q2,Which symbol ends a Java statement?,3,2,0.506,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.506,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.506,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q1,A Java program starts executing statements inside which method?,2,1,0.502,low
+q4,How does a Scanner object get input from the keyboard in Java?,4,4,q10,The statement wage = scnr.nextInt(); means:,4,10,0.502,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.5,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.499,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.499,low
+q1,A Java program starts executing statements inside which method?,2,1,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.499,low
+q9,What is a Scanner in Java used for?,3,9,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.498,low
+q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.498,low
+q5,Which output statement prints text without moving to a new line?,2,5,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.497,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q9,What is a Scanner in Java used for?,3,9,0.495,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.495,low
+q1,What does the main() method define in a Java program?,3,1,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.495,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q7,How is a string literal represented in Java output statements?,2,7,0.494,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q9,What is a Scanner in Java used for?,3,9,0.494,low
+q1,A Java program starts executing statements inside which method?,2,1,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.493,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q9,What is the purpose of the Scanner class in Java?,2,9,0.493,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q8,Which Java import statement is required to use Scanner for input?,4,8,0.492,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q1,A Java program starts executing statements inside which method?,2,1,0.485,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q5,What is the purpose of System.out.println() in Java?,3,5,0.485,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q1,What does the main() method define in a Java program?,3,1,0.485,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.485,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.485,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.484,low
+q4,"To output text without a new line in Java, use _____.",1,4,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.483,low
+q1,A Java program starts executing statements inside which method?,2,1,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.483,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.483,low
+q7,How is a string literal represented in Java output statements?,2,7,q8,Which of the following outputs the value of variable x in Java?,2,8,0.482,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q7,The Scanner statement to create an object for keyboard input is _____.,1,7,0.481,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.48,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.479,low
+q5,Which output statement prints text without moving to a new line?,2,5,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.478,low
+q1,A Java program starts executing statements inside which method?,2,1,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.477,low
+q2,Which symbol ends a Java statement?,3,2,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.475,low
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.475,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.474,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.474,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.474,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.473,low
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.472,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.471,low
+q9,What is a Scanner in Java used for?,3,9,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.471,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q5,What is the purpose of System.out.println() in Java?,3,5,0.47,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.47,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.469,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q5,What is the purpose of System.out.println() in Java?,3,5,0.468,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.466,low
+q1,What symbol ends a statement in Java?,1,1,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.465,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q8,Which of the following outputs the value of variable x in Java?,2,8,0.465,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.465,low
+q7,How is a string literal represented in Java output statements?,2,7,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.465,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.465,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.464,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.463,low
+q8,Which output statement prints a blank line?,1,8,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.463,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.463,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q9,What is the purpose of the Scanner class in Java?,2,9,0.463,low
+q1,What symbol ends a statement in Java?,1,1,q5,What is the purpose of System.out.println() in Java?,3,5,0.462,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.461,low
+q4,"To output text without a new line in Java, use _____.",1,4,q7,How is a string literal represented in Java output statements?,2,7,0.46,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.46,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.46,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.46,low
+q1,What symbol ends a statement in Java?,1,1,q1,A Java program starts executing statements inside which method?,2,1,0.458,low
+q1,What symbol ends a statement in Java?,1,1,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.458,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q1,A Java program starts executing statements inside which method?,2,1,0.458,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.458,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.457,low
+q1,A Java program starts executing statements inside which method?,2,1,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.457,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.457,low
+q1,What symbol ends a statement in Java?,1,1,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.456,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.456,low
+q1,A Java program starts executing statements inside which method?,2,1,q7,How is a string literal represented in Java output statements?,2,7,0.456,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.456,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.456,low
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.456,low
+q1,What symbol ends a statement in Java?,1,1,q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,0.455,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.455,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.454,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q5,What is the purpose of System.out.println() in Java?,3,5,0.453,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.452,low
+q1,What symbol ends a statement in Java?,1,1,q8,Which output statement prints a blank line?,1,8,0.451,low
+q1,A Java program starts executing statements inside which method?,2,1,q2,Which symbol ends a Java statement?,3,2,0.451,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q9,What is the purpose of the Scanner class in Java?,2,9,0.451,low
+q2,Which symbol ends a Java statement?,3,2,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.451,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.449,low
+q5,Which output statement prints text without moving to a new line?,2,5,q7,How is a string literal represented in Java output statements?,2,7,0.449,low
+q2,Which symbol ends a Java statement?,3,2,q5,What is the purpose of System.out.println() in Java?,3,5,0.449,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.449,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.448,low
+q7,How is a string literal represented in Java output statements?,2,7,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.448,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q3,What does the statement 'int wage;' do in Java?,3,3,0.448,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.447,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.447,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q7,How is a string literal represented in Java output statements?,2,7,0.446,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.446,low
+q5,Which output statement prints text without moving to a new line?,2,5,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.446,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q1,What does the main() method define in a Java program?,3,1,0.446,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.445,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.445,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q9,What is a Scanner in Java used for?,3,9,0.445,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q7,How is a string literal represented in Java output statements?,2,7,0.444,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q5,What is the purpose of System.out.println() in Java?,3,5,0.444,low
+q1,What symbol ends a statement in Java?,1,1,q4,"To output text without a new line in Java, use _____.",1,4,0.443,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q8,Which of the following outputs the value of variable x in Java?,2,8,0.443,low
+q5,Which output statement prints text without moving to a new line?,2,5,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.443,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.442,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,0.441,low
+q8,Which output statement prints a blank line?,1,8,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.441,low
+q7,How is a string literal represented in Java output statements?,2,7,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.441,low
+q1,What symbol ends a statement in Java?,1,1,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.44,low
+q4,"To output text without a new line in Java, use _____.",1,4,q1,What does the main() method define in a Java program?,3,1,0.439,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q2,Which symbol ends a Java statement?,3,2,0.439,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q1,What does the main() method define in a Java program?,3,1,0.439,low
+q8,Which output statement prints a blank line?,1,8,q2,Which symbol ends a Java statement?,3,2,0.438,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.438,low
+q7,How is a string literal represented in Java output statements?,2,7,q3,What does the statement 'int wage;' do in Java?,3,3,0.438,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.437,low
+q9,What is a Scanner in Java used for?,3,9,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.437,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.436,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q10,The statement wage = scnr.nextInt(); means:,4,10,0.436,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q1,A Java program starts executing statements inside which method?,2,1,0.435,low
+q4,"To output text without a new line in Java, use _____.",1,4,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.435,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.435,low
+q5,Which output statement prints text without moving to a new line?,2,5,q1,What does the main() method define in a Java program?,3,1,0.435,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.434,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q2,Which symbol ends a Java statement?,3,2,0.433,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.433,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.432,low
+q1,What symbol ends a statement in Java?,1,1,q2,The main() method in a Java program is where _____ begins.,1,2,0.431,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.431,low
+q7,How is a string literal represented in Java output statements?,2,7,q5,What is the purpose of System.out.println() in Java?,3,5,0.431,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.431,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q8,Which Java import statement is required to use Scanner for input?,4,8,0.43,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.43,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.429,low
+q1,A Java program starts executing statements inside which method?,2,1,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.429,low
+q1,A Java program starts executing statements inside which method?,2,1,q10,The statement wage = scnr.nextInt(); means:,4,10,0.429,low
+q1,What does the main() method define in a Java program?,3,1,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.429,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.429,low
+q9,What is a Scanner in Java used for?,3,9,q10,The statement wage = scnr.nextInt(); means:,4,10,0.429,low
+q4,"To output text without a new line in Java, use _____.",1,4,q2,Which symbol ends a Java statement?,3,2,0.428,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.427,low
+q8,Which output statement prints a blank line?,1,8,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.426,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q10,The statement wage = scnr.nextInt(); means:,4,10,0.426,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q9,What is a Scanner in Java used for?,3,9,0.425,low
+q8,Which output statement prints a blank line?,1,8,q7,How is a string literal represented in Java output statements?,2,7,0.424,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q2,Which symbol ends a Java statement?,3,2,0.424,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.424,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.424,low
+q1,What symbol ends a statement in Java?,1,1,q8,Which of the following outputs the value of variable x in Java?,2,8,0.423,low
+q1,What symbol ends a statement in Java?,1,1,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.423,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.423,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q8,Which of the following outputs the value of variable x in Java?,2,8,0.422,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.422,low
+q1,A Java program starts executing statements inside which method?,2,1,q3,What does the statement 'int wage;' do in Java?,3,3,0.422,low
+q2,Which symbol ends a Java statement?,3,2,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.422,low
+q1,What symbol ends a statement in Java?,1,1,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.421,low
+q8,Which output statement prints a blank line?,1,8,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.421,low
+q1,A Java program starts executing statements inside which method?,2,1,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.421,low
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.42,low
+q4,"To output text without a new line in Java, use _____.",1,4,q7,The Scanner statement to create an object for keyboard input is _____.,1,7,0.419,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q7,How is a string literal represented in Java output statements?,2,7,0.419,low
+q1,A Java program starts executing statements inside which method?,2,1,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.419,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.417,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q2,Which symbol ends a Java statement?,3,2,0.417,low
+q8,Which output statement prints a blank line?,1,8,q1,What does the main() method define in a Java program?,3,1,0.416,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.416,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.416,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.416,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.416,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q9,What is a Scanner in Java used for?,3,9,0.416,low
+q1,What symbol ends a statement in Java?,1,1,q5,Which output statement prints text without moving to a new line?,2,5,0.415,low
+q1,What symbol ends a statement in Java?,1,1,q1,What does the main() method define in a Java program?,3,1,0.415,low
+q1,What does the main() method define in a Java program?,3,1,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.415,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.415,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q8,Which of the following outputs the value of variable x in Java?,2,8,0.414,low
+q1,What symbol ends a statement in Java?,1,1,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.413,low
+q4,"To output text without a new line in Java, use _____.",1,4,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.412,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.412,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q8,Which Java import statement is required to use Scanner for input?,4,8,0.412,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.411,low
+q1,What does the main() method define in a Java program?,3,1,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.411,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.41,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.41,low
+q7,How is a string literal represented in Java output statements?,2,7,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.41,low
+q1,What does the main() method define in a Java program?,3,1,q2,Which symbol ends a Java statement?,3,2,0.41,low
+q2,Which symbol ends a Java statement?,3,2,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.41,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.409,low
+q4,"To output text without a new line in Java, use _____.",1,4,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.409,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q7,How is a string literal represented in Java output statements?,2,7,0.409,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q5,Which output statement prints text without moving to a new line?,2,5,0.409,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q9,What is a Scanner in Java used for?,3,9,0.409,low
+q7,How is a string literal represented in Java output statements?,2,7,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.409,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.409,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.408,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.408,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.406,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.405,low
+q1,What does the main() method define in a Java program?,3,1,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.405,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.405,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.403,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.403,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.403,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.401,low
+q7,How is a string literal represented in Java output statements?,2,7,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.401,low
+q7,How is a string literal represented in Java output statements?,2,7,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.401,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.401,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q4,"To output text without a new line in Java, use _____.",1,4,0.4,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.4,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q7,How is a string literal represented in Java output statements?,2,7,0.4,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.4,low
+q1,What symbol ends a statement in Java?,1,1,q5,Which statement outputs the value stored in variable wage?,1,5,0.399,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q8,Which Java import statement is required to use Scanner for input?,4,8,0.399,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.399,low
+q1,What does the main() method define in a Java program?,3,1,q3,What does the statement 'int wage;' do in Java?,3,3,0.399,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.399,low
+q5,Which output statement prints text without moving to a new line?,2,5,q2,Which symbol ends a Java statement?,3,2,0.398,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.398,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q3,What does the statement 'int wage;' do in Java?,3,3,0.397,low
+q5,Which output statement prints text without moving to a new line?,2,5,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.397,low
+q4,"To output text without a new line in Java, use _____.",1,4,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.396,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.396,low
+q1,What symbol ends a statement in Java?,1,1,q9,What is a Scanner in Java used for?,3,9,0.395,low
+q1,What symbol ends a statement in Java?,1,1,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.395,low
+q4,"To output text without a new line in Java, use _____.",1,4,q9,What is a Scanner in Java used for?,3,9,0.395,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.395,low
+q4,"To output text without a new line in Java, use _____.",1,4,q9,What is the purpose of the Scanner class in Java?,2,9,0.394,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q8,Which of the following outputs the value of variable x in Java?,2,8,0.394,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.393,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.393,low
+q2,Which symbol ends a Java statement?,3,2,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.393,low
+q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.393,low
+q1,What does the main() method define in a Java program?,3,1,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.391,low
+q1,What does the main() method define in a Java program?,3,1,q8,Which Java import statement is required to use Scanner for input?,4,8,0.391,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.391,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.39,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q9,What is the purpose of the Scanner class in Java?,2,9,0.39,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q3,What does the statement 'int wage;' do in Java?,3,3,0.39,low
+q9,What is a Scanner in Java used for?,3,9,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.39,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q8,Which of the following outputs the value of variable x in Java?,2,8,0.389,low
+q2,Which symbol ends a Java statement?,3,2,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.389,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q5,Which output statement prints text without moving to a new line?,2,5,0.388,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.388,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q8,Which Java import statement is required to use Scanner for input?,4,8,0.388,low
+q2,Which symbol ends a Java statement?,3,2,q9,What is a Scanner in Java used for?,3,9,0.388,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q8,Which Java import statement is required to use Scanner for input?,4,8,0.388,low
+q4,"To output text without a new line in Java, use _____.",1,4,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.387,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.387,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.387,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.385,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q8,Which output statement prints a blank line?,1,8,0.385,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.385,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q7,The Scanner statement to create an object for keyboard input is _____.,1,7,0.384,low
+q5,Which output statement prints text without moving to a new line?,2,5,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.384,low
+q8,Which Java import statement is required to use Scanner for input?,4,8,q10,The statement wage = scnr.nextInt(); means:,4,10,0.384,low
+q2,Which symbol ends a Java statement?,3,2,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.383,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q8,Which output statement prints a blank line?,1,8,0.382,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.382,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q1,What does the main() method define in a Java program?,3,1,0.382,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.382,low
+q7,How is a string literal represented in Java output statements?,2,7,q1,What does the main() method define in a Java program?,3,1,0.382,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.382,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.382,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.382,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q8,Which Java import statement is required to use Scanner for input?,4,8,0.382,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.381,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q1,What does the main() method define in a Java program?,3,1,0.381,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.381,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.381,low
+q1,What symbol ends a statement in Java?,1,1,q3,What does the statement 'int wage;' do in Java?,3,3,0.379,low
+q8,Which output statement prints a blank line?,1,8,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.379,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q9,What is a Scanner in Java used for?,3,9,0.379,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.379,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q5,What is the purpose of System.out.println() in Java?,3,5,0.379,low
+q1,What symbol ends a statement in Java?,1,1,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.378,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.378,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q1,What does the main() method define in a Java program?,3,1,0.377,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.377,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.377,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.376,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q9,What is the purpose of the Scanner class in Java?,2,9,0.376,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q8,Which Java import statement is required to use Scanner for input?,4,8,0.376,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.376,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.376,low
+q5,Why must string literals be enclosed in double quotes in output statements?,4,5,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.376,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q5,What is the purpose of System.out.println() in Java?,3,5,0.375,low
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q10,The statement wage = scnr.nextInt(); means:,4,10,0.375,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q5,Which output statement prints text without moving to a new line?,2,5,0.374,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.373,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q2,Which symbol ends a Java statement?,3,2,0.372,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q9,What is the purpose of the Scanner class in Java?,2,9,0.372,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q9,What is a Scanner in Java used for?,3,9,0.372,low
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,q8,Which Java import statement is required to use Scanner for input?,4,8,0.372,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q7,How is a string literal represented in Java output statements?,2,7,0.371,low
+q8,Which output statement prints a blank line?,1,8,q9,What is the purpose of the Scanner class in Java?,2,9,0.371,low
+q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,q8,Which Java import statement is required to use Scanner for input?,4,8,0.371,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.37,low
+q1,What does the main() method define in a Java program?,3,1,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.37,low
+q1,What does the main() method define in a Java program?,3,1,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.368,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.368,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.367,low
+q2,Which symbol ends a Java statement?,3,2,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.367,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q9,What is a Scanner in Java used for?,3,9,0.367,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.366,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.365,low
+q1,A Java program starts executing statements inside which method?,2,1,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.365,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q3,What does the statement 'int wage;' do in Java?,3,3,0.365,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.364,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q5,What is the purpose of System.out.println() in Java?,3,5,0.364,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q3,What does the statement 'int wage;' do in Java?,3,3,0.363,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.362,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q1,What does the main() method define in a Java program?,3,1,0.362,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q8,Which of the following outputs the value of variable x in Java?,2,8,0.362,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q7,How is a string literal represented in Java output statements?,2,7,0.362,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.362,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.362,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,0.361,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.361,low
+q1,What symbol ends a statement in Java?,1,1,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.36,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.36,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.36,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q1,What does the main() method define in a Java program?,3,1,0.359,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q8,Which Java import statement is required to use Scanner for input?,4,8,0.358,low
+q7,How is a string literal represented in Java output statements?,2,7,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.358,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q9,What is a Scanner in Java used for?,3,9,0.358,low
+q9,What is a Scanner in Java used for?,3,9,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.358,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.358,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q9,What is the purpose of the Scanner class in Java?,2,9,0.357,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q8,Which Java import statement is required to use Scanner for input?,4,8,0.357,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.357,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.357,low
+q1,What symbol ends a statement in Java?,1,1,q9,What is the purpose of the Scanner class in Java?,2,9,0.356,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.356,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.356,low
+q8,Which output statement prints a blank line?,1,8,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.356,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.356,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.356,low
+q4,"To output text without a new line in Java, use _____.",1,4,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.355,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.355,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q2,Which symbol ends a Java statement?,3,2,0.355,low
+q5,Which output statement prints text without moving to a new line?,2,5,q9,What is the purpose of the Scanner class in Java?,2,9,0.354,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q3,What does the statement 'int wage;' do in Java?,3,3,0.354,low
+q7,How is a string literal represented in Java output statements?,2,7,q9,What is a Scanner in Java used for?,3,9,0.353,low
+q2,Which symbol ends a Java statement?,3,2,q3,What does the statement 'int wage;' do in Java?,3,3,0.353,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q10,The statement wage = scnr.nextInt(); means:,4,10,0.353,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.352,low
+q8,Which output statement prints a blank line?,1,8,q9,What is a Scanner in Java used for?,3,9,0.352,low
+q9,What is a Scanner in Java used for?,3,9,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.352,low
+q4,How does a Scanner object get input from the keyboard in Java?,4,4,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.352,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.35,low
+q5,Which output statement prints text without moving to a new line?,2,5,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.35,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.35,low
+q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,q10,The statement wage = scnr.nextInt(); means:,4,10,0.35,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q8,Which of the following outputs the value of variable x in Java?,2,8,0.349,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.348,low
+q4,"To output text without a new line in Java, use _____.",1,4,q3,What does the statement 'int wage;' do in Java?,3,3,0.347,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.347,low
+q5,Which output statement prints text without moving to a new line?,2,5,q9,What is a Scanner in Java used for?,3,9,0.347,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q2,Which symbol ends a Java statement?,3,2,0.347,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.347,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.346,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q5,Which output statement prints text without moving to a new line?,2,5,0.346,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.346,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.345,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q1,A Java program starts executing statements inside which method?,2,1,0.345,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q3,What does the statement 'int wage;' do in Java?,3,3,0.345,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.345,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q10,The statement wage = scnr.nextInt(); means:,4,10,0.345,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.344,low
+q8,Which of the following outputs the value of variable x in Java?,2,8,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.344,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q1,What does the main() method define in a Java program?,3,1,0.343,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.343,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q5,Which statement outputs the value stored in variable wage?,1,5,0.342,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.342,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.342,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.341,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.341,low
+q7,How is a string literal represented in Java output statements?,2,7,q9,What is the purpose of the Scanner class in Java?,2,9,0.341,low
+q2,Which symbol ends a Java statement?,3,2,q8,Which Java import statement is required to use Scanner for input?,4,8,0.341,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.34,low
+q1,What symbol ends a statement in Java?,1,1,q8,Which Java import statement is required to use Scanner for input?,4,8,0.339,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.339,low
+q5,Which output statement prints text without moving to a new line?,2,5,q3,What does the statement 'int wage;' do in Java?,3,3,0.339,low
+q1,What does the main() method define in a Java program?,3,1,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.338,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.337,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q9,What is a Scanner in Java used for?,3,9,0.337,low
+q5,What is the purpose of System.out.println() in Java?,3,5,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.337,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.336,low
+q4,"To output text without a new line in Java, use _____.",1,4,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.335,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.335,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q2,Which symbol ends a Java statement?,3,2,0.335,low
+q1,What does the main() method define in a Java program?,3,1,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.335,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q8,Which Java import statement is required to use Scanner for input?,4,8,0.335,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.334,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q9,What is the purpose of the Scanner class in Java?,2,9,0.334,low
+q4,"To output text without a new line in Java, use _____.",1,4,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.333,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.333,low
+q8,Which output statement prints a blank line?,1,8,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.333,low
+q8,Which output statement prints a blank line?,1,8,q8,Which Java import statement is required to use Scanner for input?,4,8,0.333,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.333,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.333,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.333,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q5,What is the purpose of System.out.println() in Java?,3,5,0.332,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.332,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.332,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q1,What does the main() method define in a Java program?,3,1,0.33,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.33,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q10,The statement wage = scnr.nextInt(); means:,4,10,0.33,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.329,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q8,Which Java import statement is required to use Scanner for input?,4,8,0.329,low
+q1,What symbol ends a statement in Java?,1,1,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.328,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.328,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.327,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.327,low
+q5,Which output statement prints text without moving to a new line?,2,5,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.327,low
+q2,Which symbol ends a Java statement?,3,2,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.327,low
+q1,What symbol ends a statement in Java?,1,1,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.326,low
+q1,What symbol ends a statement in Java?,1,1,q7,The Scanner statement to create an object for keyboard input is _____.,1,7,0.325,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.325,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q9,What is a Scanner in Java used for?,3,9,0.325,low
+q4,"To output text without a new line in Java, use _____.",1,4,q8,Which Java import statement is required to use Scanner for input?,4,8,0.324,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.324,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q9,What is a Scanner in Java used for?,3,9,0.323,low
+q8,Which output statement prints a blank line?,1,8,q3,What does the statement 'int wage;' do in Java?,3,3,0.323,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.322,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.321,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q9,What is the purpose of the Scanner class in Java?,2,9,0.321,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.321,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.318,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.318,low
+q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.318,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.317,low
+q8,Which Java import statement is required to use Scanner for input?,4,8,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.317,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q3,What does the statement 'int wage;' do in Java?,3,3,0.316,low
+q8,Which output statement prints a blank line?,1,8,q10,The statement wage = scnr.nextInt(); means:,4,10,0.316,low
+q2,Which symbol ends a Java statement?,3,2,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.316,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.316,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q10,The statement wage = scnr.nextInt(); means:,4,10,0.316,low
+q1,"In Java, the main() method's statements are enclosed within _____.",4,1,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.316,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q6,"To output the value of a variable x without quotes, which is correct?",3,6,0.315,low
+q5,Which output statement prints text without moving to a new line?,2,5,q8,Which Java import statement is required to use Scanner for input?,4,8,0.314,low
+q7,How is a string literal represented in Java output statements?,2,7,q8,Which Java import statement is required to use Scanner for input?,4,8,0.314,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.313,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.312,low
+q1,A Java program starts executing statements inside which method?,2,1,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.312,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q8,Which Java import statement is required to use Scanner for input?,4,8,0.311,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.31,low
+q9,What is a Scanner in Java used for?,3,9,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.31,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.309,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.309,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q3,What does the statement System.out.println() do compared to System.out.print()?,4,3,0.308,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q3,What does the statement 'int wage;' do in Java?,3,3,0.308,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.307,low
+q8,Which output statement prints a blank line?,1,8,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.306,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.305,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q8,Which Java import statement is required to use Scanner for input?,4,8,0.305,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.304,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.304,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.303,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q3,What does the statement 'int wage;' do in Java?,3,3,0.303,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q5,What is the purpose of System.out.println() in Java?,3,5,0.302,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q7,The Scanner statement to create an object for keyboard input is _____.,1,7,0.302,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.302,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.302,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.302,low
+q1,What does the main() method define in a Java program?,3,1,q10,The statement wage = scnr.nextInt(); means:,4,10,0.302,low
+q6,"To output the value of a variable x without quotes, which is correct?",3,6,q8,Which Java import statement is required to use Scanner for input?,4,8,0.302,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q9,What is a Scanner in Java used for?,3,9,0.301,low
+q1,What does the main() method define in a Java program?,3,1,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.301,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.301,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q10,The statement wage = scnr.nextInt(); means:,4,10,0.3,low
+q4,"To output text without a new line in Java, use _____.",1,4,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.3,low
+q8,Which output statement prints a blank line?,1,8,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.3,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.3,low
+q1,What symbol ends a statement in Java?,1,1,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.299,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.299,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.298,low
+q5,Which output statement prints text without moving to a new line?,2,5,q10,The statement wage = scnr.nextInt(); means:,4,10,0.298,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q2,Which symbol ends a Java statement?,3,2,0.297,low
+q5,Why must string literals be enclosed in double quotes in output statements?,4,5,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.297,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.296,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q10,The statement wage = scnr.nextInt(); means:,4,10,0.295,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.293,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q5,Which output statement prints text without moving to a new line?,2,5,0.293,low
+q8,Which output statement prints a blank line?,1,8,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.292,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.292,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q5,Which statement outputs the value stored in variable wage?,1,5,0.29,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.29,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.289,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.289,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.288,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q1,"In Java, the main() method's statements are enclosed within _____.",4,1,0.286,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q2,Which Java statement correctly declares an integer variable named wage?,4,2,0.286,low
+q7,How is a string literal represented in Java output statements?,2,7,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.286,low
+q8,Which output statement prints a blank line?,1,8,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.285,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.285,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q7,The Scanner statement to create an object for keyboard input is _____.,1,7,0.283,low
+q7,How is a string literal represented in Java output statements?,2,7,q10,The statement wage = scnr.nextInt(); means:,4,10,0.283,low
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,q10,The statement wage = scnr.nextInt(); means:,4,10,0.282,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,0.281,low
+q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,q10,The statement wage = scnr.nextInt(); means:,4,10,0.28,low
+q4,"To output text without a new line in Java, use _____.",1,4,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.279,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q7,How is a string literal represented in Java output statements?,2,7,0.279,low
+q4,"To output text without a new line in Java, use _____.",1,4,q10,The statement wage = scnr.nextInt(); means:,4,10,0.278,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.278,low
+q9,What is a Scanner in Java used for?,3,9,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.278,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.277,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q8,Which output statement prints a blank line?,1,8,0.276,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.276,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.276,low
+q9,What is the purpose of the Scanner class in Java?,2,9,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.276,low
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.275,low
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.274,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.274,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.273,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.272,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q4,"To output text without a new line in Java, use _____.",1,4,0.271,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.271,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.27,low
+q2,Which Java statement correctly declares an integer variable named wage?,4,2,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.27,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q5,Which output statement prints text without moving to a new line?,2,5,0.269,low
+q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,q8,Which Java import statement is required to use Scanner for input?,4,8,0.269,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q3,What does the statement 'int wage;' do in Java?,3,3,0.268,low
+q5,Which output statement prints text without moving to a new line?,2,5,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.268,low
+q1,What symbol ends a statement in Java?,1,1,q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,0.266,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.266,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.266,low
+q7,How is a string literal represented in Java output statements?,2,7,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.266,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.264,low
+q5,Which statement outputs the value stored in variable wage?,1,5,q8,Which Java import statement is required to use Scanner for input?,4,8,0.264,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q10,The statement wage = scnr.nextInt(); means:,4,10,0.264,low
+q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,q10,The statement wage = scnr.nextInt(); means:,4,10,0.264,low
+q1,What symbol ends a statement in Java?,1,1,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.262,low
+q1,What symbol ends a statement in Java?,1,1,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.262,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q8,Which Java import statement is required to use Scanner for input?,4,8,0.262,low
+q3,What does the statement 'int wage;' do in Java?,3,3,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.261,low
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,q10,The statement wage = scnr.nextInt(); means:,4,10,0.261,low
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,q10,The statement wage = scnr.nextInt(); means:,4,10,0.261,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q10,The statement wage = scnr.nextInt(); means:,4,10,0.26,low
+q1,What symbol ends a statement in Java?,1,1,q10,The statement wage = scnr.nextInt(); means:,4,10,0.259,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.259,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q10,The statement wage = scnr.nextInt(); means:,4,10,0.259,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.257,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.257,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.257,low
+q2,Which symbol ends a Java statement?,3,2,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.257,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q1,What does the main() method define in a Java program?,3,1,0.256,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,8,0.256,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.256,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q7,How is a string literal represented in Java output statements?,2,7,0.255,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.254,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,2,0.254,low
+q3,What symbol must end every Java statement to indicate its completion?,2,3,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.254,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.254,low
+q4,How does a Scanner object get input from the keyboard in Java?,4,4,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.254,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.253,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.252,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.251,low
+q2,Which symbol ends a Java statement?,3,2,q10,The statement wage = scnr.nextInt(); means:,4,10,0.249,low
+q4,How does a Scanner object get input from the keyboard in Java?,4,4,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.249,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q2,Which symbol ends a Java statement?,3,2,0.248,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q10,"In Java, to output a newline character inside a string literal, use _____.",2,10,0.247,low
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,q8,Which Java import statement is required to use Scanner for input?,4,8,0.246,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.246,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q5,Which output statement prints text without moving to a new line?,2,5,0.245,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q6,What does System.out.println() do differently than System.out.print() in Java?,2,6,0.245,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q9,What is the purpose of the Scanner class in Java?,2,9,0.244,low
+q5,Why must string literals be enclosed in double quotes in output statements?,4,5,q10,The statement wage = scnr.nextInt(); means:,4,10,0.244,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.242,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,6,0.241,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,9,0.238,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.236,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,0.235,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,7,0.235,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q6,"What is the result of running System.out.println(""Hello""); twice?",1,6,0.234,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.234,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q2,Which symbol ends a Java statement?,3,2,0.233,low
+q5,Why must string literals be enclosed in double quotes in output statements?,4,5,q8,Which Java import statement is required to use Scanner for input?,4,8,0.233,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,0.232,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.229,low
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,q10,The statement wage = scnr.nextInt(); means:,4,10,0.228,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q3,What symbol must end every Java statement to indicate its completion?,2,3,0.226,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q7,How is a string literal represented in Java output statements?,2,7,0.224,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,7,0.22,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q10,The difference between System.out.print() and System.out.println() is that println _____.,1,10,0.219,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q1,What does the main() method define in a Java program?,3,1,0.216,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q9,What is a Scanner in Java used for?,3,9,0.212,low
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,q8,Which Java import statement is required to use Scanner for input?,4,8,0.212,low
+q2,The main() method in a Java program is where _____ begins.,1,2,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.21,low
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,4,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.201,low
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,3,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.194,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q8,Which Java import statement is required to use Scanner for input?,4,8,0.19,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q4,How does a Scanner object get input from the keyboard in Java?,4,4,0.176,low
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,4,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.174,low
+q7,The Scanner statement to create an object for keyboard input is _____.,1,7,q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,0.172,low
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,9,q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,10,0.165,low
+q4,How does a Scanner object get input from the keyboard in Java?,4,4,q5,Why must string literals be enclosed in double quotes in output statements?,4,5,0.148,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"- Understand the structure and execution flow of a basic Java program, including the role of the main() method and statement syntax.  
+- Declare, initialize, and use variables to store and manipulate data values.  
+- Use System.out.print and System.out.println to output text and variable values, including concatenating multiple items in one output statement.  
+- Implement input operations using the Scanner class to read integer values from the keyboard.  
+- Apply newline characters and output formatting techniques to control program output appearance."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What symbol ends a statement in Java?,1,yes,"This question assesses knowledge of statement syntax, specifically the symbol ending a statement in Java, which relates to the first learning objective."
+q2,The main() method in a Java program is where _____ begins.,1,yes,"This question evaluates understanding of the main() method as the start of program execution, directly tied to the first learning objective."
+q3,Which statement correctly reads an integer input into variable numCars using Scanner scnr?,1,yes,"This question tests correct usage of Scanner to read integer input, addressing the fourth learning objective."
+q4,"To output text without a new line in Java, use _____.",1,yes,"This question assesses use of System.out.print to output text without a new line, relating to the third learning objective."
+q5,Which statement outputs the value stored in variable wage?,1,yes,"This question evaluates outputting variable values using System.out.print/println, aligned with the third learning objective."
+q6,"What is the result of running System.out.println(""Hello""); twice?",1,yes,"This question tests understanding of System.out.println behavior regarding new lines, linked to the third and fifth learning objectives."
+q7,The Scanner statement to create an object for keyboard input is _____.,1,yes,"This question assesses creating a Scanner object for keyboard input, directly related to the fourth learning objective."
+q8,Which output statement prints a blank line?,1,yes,"This question evaluates outputting a blank line using print/println and newline characters, tied to the third and fifth learning objectives."
+q9,What does the statement System.out.println(wage * 40 * 52); output if wage = 20?,1,yes,"This question tests outputting the result of an arithmetic expression involving a variable, related to the second and third learning objectives."
+q10,The difference between System.out.print() and System.out.println() is that println _____.,1,yes,"This question assesses understanding the difference between print and println regarding new lines, linked to the third and fifth learning objectives."
+q1,A Java program starts executing statements inside which method?,2,yes,"This question evaluates knowledge that program execution starts in main(), aligned with the first learning objective."
+q2,"In Java, a statement that declares an integer variable named wage uses the keyword _____.",2,yes,"This question tests declaring an integer variable, directly related to the second learning objective."
+q3,What symbol must end every Java statement to indicate its completion?,2,yes,"This question assesses knowledge of the semicolon ending Java statements, tied to the first learning objective."
+q4,Which Java statement correctly gets an integer input into a variable numUsers using Scanner scnr?,2,yes,"This question evaluates correct Scanner usage to read integer input, addressing the fourth learning objective."
+q5,Which output statement prints text without moving to a new line?,2,yes,"This question tests outputting text without a new line using System.out.print, related to the third learning objective."
+q6,What does System.out.println() do differently than System.out.print() in Java?,2,yes,"This question assesses the difference between print and println regarding new lines, linked to the third and fifth learning objectives."
+q7,How is a string literal represented in Java output statements?,2,yes,"This question evaluates understanding string literals are enclosed in double quotes in output statements, related to the third learning objective."
+q8,Which of the following outputs the value of variable x in Java?,2,yes,"This question tests outputting the value of a variable (not the literal name), aligned with the third learning objective."
+q9,What is the purpose of the Scanner class in Java?,2,yes,"This question assesses the purpose of Scanner for input operations, directly tied to the fourth learning objective."
+q10,"In Java, to output a newline character inside a string literal, use _____.",2,yes,"This question evaluates use of newline character \n inside string literals, related to the fifth learning objective."
+q1,What does the main() method define in a Java program?,3,yes,"This question tests understanding that main() defines the start point of program execution, linked to the first learning objective."
+q2,Which symbol ends a Java statement?,3,yes,"This question assesses knowledge of the semicolon ending Java statements, tied to the first learning objective."
+q3,What does the statement 'int wage;' do in Java?,3,yes,"This question evaluates declaring an integer variable, aligned with the second learning objective."
+q4,"Which Java statement reads an integer input into variable numCars, given Scanner scnr?",3,yes,"This question tests correct Scanner usage to read integer input, addressing the fourth learning objective."
+q5,What is the purpose of System.out.println() in Java?,3,yes,"This question assesses the purpose of System.out.println to output text and move to a new line, related to the third and fifth learning objectives."
+q6,"To output the value of a variable x without quotes, which is correct?",3,yes,"This question evaluates outputting a variable's value without quotes, tied to the third learning objective."
+q7,"What does System.out.print(""Hello""); followed by System.out.print(""World""); output?",3,yes,"This question tests concatenation of output statements without new lines, related to the third learning objective."
+q8,"How does System.out.println(""Hello""); differ from System.out.print(""Hello"");?",3,yes,"This question assesses difference between println and print regarding new lines, linked to the third and fifth learning objectives."
+q9,What is a Scanner in Java used for?,3,yes,"This question evaluates the purpose of Scanner for input, directly related to the fourth learning objective."
+q10,Fill in the blank: A new output line can be produced by inserting a/an _____ character \n within a string literal.,3,yes,"This question tests knowledge of newline character \n in string literals, tied to the fifth learning objective."
+q1,"In Java, the main() method's statements are enclosed within _____.",4,yes,"This question assesses understanding that main() method statements are enclosed in curly braces, related to the first learning objective."
+q2,Which Java statement correctly declares an integer variable named wage?,4,yes,"This question evaluates correct declaration of an integer variable, aligned with the second learning objective."
+q3,What does the statement System.out.println() do compared to System.out.print()?,4,yes,"This question tests difference between System.out.println and System.out.print regarding new lines, linked to the third and fifth learning objectives."
+q4,How does a Scanner object get input from the keyboard in Java?,4,yes,"This question assesses how Scanner reads input from the keyboard, directly tied to the fourth learning objective."
+q5,Why must string literals be enclosed in double quotes in output statements?,4,yes,"This question evaluates why string literals must be enclosed in double quotes in output statements, related to the third learning objective."
+q6,What is the purpose of the semicolon (;) at the end of a Java statement?,4,yes,"This question tests the purpose of the semicolon ending Java statements, tied to the first learning objective."
+q7,"What is the result of executing System.out.print(""Age: "" + age); if age = 25?",4,yes,"This question assesses concatenating text and variable values in output, aligned with the second and third learning objectives."
+q8,Which Java import statement is required to use Scanner for input?,4,yes,"This question evaluates knowledge of the import statement required for Scanner, related to the fourth learning objective."
+q9,"How does System.out.print(""Hello""); differ from System.out.println(""Hello"");?",4,yes,"This question tests understanding the difference between print and println regarding new lines, linked to the third and fifth learning objectives."
+q10,The statement wage = scnr.nextInt(); means:,4,yes,"This question assesses understanding that wage = scnr.nextInt(); reads integer input into wage, directly tied to the second and fourth learning objectives."

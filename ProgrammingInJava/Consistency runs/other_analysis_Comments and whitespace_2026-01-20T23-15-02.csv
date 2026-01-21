@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,3
+2,10,0,4
+3,10,0,1
+4,10,0,3
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,7,100
+1,3,2,9,100
+1,4,3,11,100
+2,3,2,9,100
+2,4,3,7,100
+3,4,3,9,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),15
+Similar (70-85%),63
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.982,duplicate
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.973,duplicate
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.96,duplicate
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.955,duplicate
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.954,duplicate
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.95,duplicate
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.932,duplicate
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.932,duplicate
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.93,duplicate
+q1,What is the primary purpose of a comment in code?,1,1,q1,What is the main purpose of comments in code?,4,1,0.929,duplicate
+q3,What marks the end of a multi-line (block) comment?,3,3,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.919,duplicate
+q1,What is the primary purpose of comments in code?,2,1,q1,What is the main purpose of comments in code?,4,1,0.885,duplicate
+q1,What is the primary purpose of a comment in code?,1,1,q1,What is the primary purpose of comments in code?,2,1,0.879,duplicate
+q5,Why do programmers align code and comments using whitespace?,2,5,q5,Why do programmers align comments and indentation consistently?,4,5,0.875,duplicate
+q7,What does a compiler do with comments in source code?,1,7,q4,How does a compiler treat comments in code?,3,4,0.862,duplicate
+q3,How does a multi-line (block) comment begin and end?,1,3,q3,What marks the end of a multi-line (block) comment?,3,3,0.839,similar
+q7,What does a compiler do with comments in source code?,1,7,q6,What happens to comments during code compilation?,4,6,0.833,similar
+q1,What is the primary purpose of a comment in code?,1,1,q1,What does a comment in code primarily provide?,3,1,0.831,similar
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.819,similar
+q8,Which statement about whitespace is true?,3,8,q4,Which statement about whitespace in code is true?,4,4,0.815,similar
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.814,similar
+q4,How does a compiler treat comments in code?,3,4,q6,What happens to comments during code compilation?,4,6,0.813,similar
+q6,Which practice improves code readability using whitespace?,1,6,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.808,similar
+q1,What does a comment in code primarily provide?,3,1,q1,What is the main purpose of comments in code?,4,1,0.8,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.799,similar
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.796,similar
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.796,similar
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.796,similar
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.794,similar
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.79,similar
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.79,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.79,similar
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.787,similar
+q5,Why do programmers align code and comments using whitespace?,2,5,q5,What is the main purpose of whitespace in source code?,3,5,0.786,similar
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q5,Why do programmers align comments and indentation consistently?,4,5,0.78,similar
+q3,What marks the end of a multi-line (block) comment?,3,3,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.776,similar
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.77,similar
+q1,What is the primary purpose of comments in code?,2,1,q1,What does a comment in code primarily provide?,3,1,0.766,similar
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.766,similar
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.765,similar
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.764,similar
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q3,What marks the end of a multi-line (block) comment?,3,3,0.763,similar
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.759,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.759,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.759,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.758,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.757,similar
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.757,similar
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.756,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.756,similar
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q10,What is the difference between a single-line and multi-line comment?,2,10,0.751,similar
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.745,similar
+q5,How does whitespace affect compilation?,1,5,q4,Which statement about whitespace in code is true?,4,4,0.743,similar
+q10,What is the difference between a single-line and multi-line comment?,2,10,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.742,similar
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q3,How does a multi-line (block) comment begin and end?,1,3,0.738,similar
+q5,How does whitespace affect compilation?,1,5,q4,How does a compiler treat whitespace in source code?,2,4,0.738,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.737,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.737,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.733,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.731,similar
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q3,What marks the end of a multi-line (block) comment?,3,3,0.731,similar
+q3,What marks the end of a multi-line (block) comment?,3,3,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.731,similar
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.729,similar
+q5,Why do programmers align code and comments using whitespace?,2,5,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.729,similar
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q3,What marks the end of a multi-line (block) comment?,3,3,0.729,similar
+q3,How does a multi-line (block) comment begin and end?,1,3,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.727,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q3,What marks the end of a multi-line (block) comment?,3,3,0.726,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.724,similar
+q4,How does a compiler treat whitespace in source code?,2,4,q4,How does a compiler treat comments in code?,3,4,0.724,similar
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q3,What marks the end of a multi-line (block) comment?,3,3,0.718,similar
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q5,Why do programmers align comments and indentation consistently?,4,5,0.713,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.71,similar
+q1,What is the primary purpose of comments in code?,2,1,q5,Why do programmers align comments and indentation consistently?,4,5,0.708,similar
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q10,What is the difference between a single-line and multi-line comment?,2,10,0.708,similar
+q1,What is the primary purpose of comments in code?,2,1,q5,Why do programmers align code and comments using whitespace?,2,5,0.705,similar
+q5,What is the main purpose of whitespace in source code?,3,5,q1,What is the main purpose of comments in code?,4,1,0.704,similar
+q1,What is the primary purpose of a comment in code?,1,1,q5,What is the main purpose of whitespace in source code?,3,5,0.701,similar
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.701,similar
+q10,What is the difference between a single-line and multi-line comment?,2,10,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.697,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.696,low
+q5,How does whitespace affect compilation?,1,5,q8,Which statement about whitespace is true?,3,8,0.695,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.694,low
+q1,What is the main purpose of comments in code?,4,1,q5,Why do programmers align comments and indentation consistently?,4,5,0.694,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.693,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.693,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.693,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.692,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.692,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.691,low
+q4,How does a compiler treat whitespace in source code?,2,4,q4,Which statement about whitespace in code is true?,4,4,0.69,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.686,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q5,Why do programmers align code and comments using whitespace?,2,5,0.686,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.686,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.685,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q8,Which statement about whitespace is true?,3,8,0.684,low
+q7,What does a compiler do with comments in source code?,1,7,q1,What does a comment in code primarily provide?,3,1,0.682,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q4,Which statement about whitespace in code is true?,4,4,0.681,low
+q6,Which practice improves code readability using whitespace?,1,6,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.68,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q3,What marks the end of a multi-line (block) comment?,3,3,0.679,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.679,low
+q1,What is the primary purpose of a comment in code?,1,1,q5,Why do programmers align comments and indentation consistently?,4,5,0.673,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.673,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q10,What is the difference between a single-line and multi-line comment?,2,10,0.671,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.67,low
+q5,How does whitespace affect compilation?,1,5,q5,What is the main purpose of whitespace in source code?,3,5,0.67,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.669,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q6,Which of the following is a correct use of a single-line comment?,2,6,0.663,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q1,What is the main purpose of comments in code?,4,1,0.663,low
+q5,What is the main purpose of whitespace in source code?,3,5,q4,Which statement about whitespace in code is true?,4,4,0.662,low
+q7,What does a compiler do with comments in source code?,1,7,q1,What is the main purpose of comments in code?,4,1,0.661,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q4,Which statement about whitespace in code is true?,4,4,0.66,low
+q1,What is the primary purpose of comments in code?,2,1,q5,What is the main purpose of whitespace in source code?,3,5,0.659,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q1,What is the main purpose of comments in code?,4,1,0.658,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.657,low
+q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.657,low
+q4,How does a compiler treat whitespace in source code?,2,4,q8,Which statement about whitespace is true?,3,8,0.656,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.655,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.655,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.655,low
+q1,What is the main purpose of comments in code?,4,1,q6,What happens to comments during code compilation?,4,6,0.655,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q6,Which of the following is a correct use of a single-line comment?,2,6,0.654,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q6,Which of the following is a correct use of a single-line comment?,2,6,0.653,low
+q1,What is the primary purpose of comments in code?,2,1,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.653,low
+q5,What is the main purpose of whitespace in source code?,3,5,q5,Why do programmers align comments and indentation consistently?,4,5,0.653,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.651,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.651,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.651,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.65,low
+q5,What is the main purpose of whitespace in source code?,3,5,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.65,low
+q1,What is the primary purpose of a comment in code?,1,1,q5,Why do programmers align code and comments using whitespace?,2,5,0.649,low
+q1,What is the primary purpose of a comment in code?,1,1,q7,What does a compiler do with comments in source code?,1,7,0.648,low
+q1,What is the primary purpose of a comment in code?,1,1,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.648,low
+q1,What is the primary purpose of a comment in code?,1,1,q6,What happens to comments during code compilation?,4,6,0.648,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.647,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.647,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.645,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q10,What is the difference between a single-line and multi-line comment?,2,10,0.644,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q1,What is the main purpose of comments in code?,4,1,0.643,low
+q6,Which practice improves code readability using whitespace?,1,6,q5,Why do programmers align code and comments using whitespace?,2,5,0.643,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q10,What is the difference between a single-line and multi-line comment?,2,10,0.643,low
+q1,What does a comment in code primarily provide?,3,1,q4,How does a compiler treat comments in code?,3,4,0.643,low
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.643,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q10,What is the difference between a single-line and multi-line comment?,2,10,0.641,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,0.639,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q1,What is the primary purpose of comments in code?,2,1,0.639,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.639,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q10,What is the difference between a single-line and multi-line comment?,2,10,0.637,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.636,low
+q1,What is the primary purpose of a comment in code?,1,1,q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,0.635,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.635,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q3,What marks the end of a multi-line (block) comment?,3,3,0.633,low
+q1,What does a comment in code primarily provide?,3,1,q6,What happens to comments during code compilation?,4,6,0.632,low
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.632,low
+q5,How does whitespace affect compilation?,1,5,q4,How does a compiler treat comments in code?,3,4,0.631,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.63,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.63,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.63,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.63,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q6,Which of the following is a correct use of a single-line comment?,2,6,0.629,low
+q7,What does a compiler do with comments in source code?,1,7,q1,What is the primary purpose of comments in code?,2,1,0.629,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.629,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.629,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.628,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.627,low
+q1,What is the primary purpose of comments in code?,2,1,q6,What happens to comments during code compilation?,4,6,0.627,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q10,What is the difference between a single-line and multi-line comment?,2,10,0.627,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q4,How does a compiler treat comments in code?,3,4,0.622,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q8,Which statement about whitespace is true?,3,8,0.62,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.619,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q3,What marks the end of a multi-line (block) comment?,3,3,0.616,low
+q1,What does a comment in code primarily provide?,3,1,q5,Why do programmers align comments and indentation consistently?,4,5,0.616,low
+q4,How does a compiler treat comments in code?,3,4,q1,What is the main purpose of comments in code?,4,1,0.615,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.612,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.611,low
+q5,What is the main purpose of whitespace in source code?,3,5,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.611,low
+q4,How does a compiler treat whitespace in source code?,2,4,q5,What is the main purpose of whitespace in source code?,3,5,0.61,low
+q1,What is the primary purpose of a comment in code?,1,1,q4,How does a compiler treat comments in code?,3,4,0.609,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q8,Which statement about whitespace and semicolons is true?,2,8,0.608,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.607,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.605,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.602,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.602,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q4,How does a compiler treat comments in code?,3,4,0.601,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.6,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q6,Which of the following is a correct use of a single-line comment?,2,6,0.598,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.598,low
+q6,Which practice improves code readability using whitespace?,1,6,q5,Why do programmers align comments and indentation consistently?,4,5,0.598,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q4,Which statement about whitespace in code is true?,4,4,0.597,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q7,What does a compiler do with comments in source code?,1,7,0.596,low
+q5,Why do programmers align comments and indentation consistently?,4,5,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.596,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.595,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.595,low
+q4,How does a compiler treat comments in code?,3,4,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.594,low
+q1,What is the primary purpose of comments in code?,2,1,q4,How does a compiler treat comments in code?,3,4,0.592,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.591,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.591,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.591,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.59,low
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.59,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.589,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,0.588,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q5,What is the main purpose of whitespace in source code?,3,5,0.588,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q6,What happens to comments during code compilation?,4,6,0.588,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.588,low
+q1,What does a comment in code primarily provide?,3,1,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.586,low
+q1,What does a comment in code primarily provide?,3,1,q5,What is the main purpose of whitespace in source code?,3,5,0.582,low
+q6,Which practice improves code readability using whitespace?,1,6,q5,What is the main purpose of whitespace in source code?,3,5,0.581,low
+q7,What does a compiler do with comments in source code?,1,7,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.581,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.581,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q3,What marks the end of a multi-line (block) comment?,3,3,0.581,low
+q6,Which practice improves code readability using whitespace?,1,6,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.58,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.579,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.579,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.579,low
+q4,Which statement about whitespace in code is true?,4,4,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.579,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.578,low
+q5,How does whitespace affect compilation?,1,5,q6,What happens to comments during code compilation?,4,6,0.577,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.577,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q4,How does a compiler treat comments in code?,3,4,0.577,low
+q5,What is the main purpose of whitespace in source code?,3,5,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.577,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q1,What does a comment in code primarily provide?,3,1,0.576,low
+q7,What does a compiler do with comments in source code?,1,7,q4,How does a compiler treat whitespace in source code?,2,4,0.576,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.576,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.576,low
+q4,How does a compiler treat comments in code?,3,4,q4,Which statement about whitespace in code is true?,4,4,0.574,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q5,Why do programmers align comments and indentation consistently?,4,5,0.574,low
+q5,How does whitespace affect compilation?,1,5,q5,Why do programmers align code and comments using whitespace?,2,5,0.573,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.573,low
+q1,What is the primary purpose of a comment in code?,1,1,q6,Which of the following is a correct use of a single-line comment?,2,6,0.572,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.57,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q3,What marks the end of a multi-line (block) comment?,3,3,0.569,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.568,low
+q5,How does whitespace affect compilation?,1,5,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.567,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.567,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.567,low
+q5,What is the main purpose of whitespace in source code?,3,5,q8,Which statement about whitespace is true?,3,8,0.567,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.566,low
+q4,How does a compiler treat whitespace in source code?,2,4,q6,What happens to comments during code compilation?,4,6,0.564,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q1,What does a comment in code primarily provide?,3,1,0.564,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q6,What happens to comments during code compilation?,4,6,0.564,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.563,low
+q5,How does whitespace affect compilation?,1,5,q8,Which statement about whitespace and semicolons is true?,2,8,0.561,low
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.561,low
+q4,How does a compiler treat comments in code?,3,4,q5,What is the main purpose of whitespace in source code?,3,5,0.559,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.559,low
+q7,What does a compiler do with comments in source code?,1,7,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.557,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q8,Which statement about whitespace and semicolons is true?,2,8,0.557,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q1,What does a comment in code primarily provide?,3,1,0.557,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q1,What does a comment in code primarily provide?,3,1,0.555,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q6,What happens to comments during code compilation?,4,6,0.555,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.555,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q4,How does a compiler treat comments in code?,3,4,0.554,low
+q1,What is the primary purpose of a comment in code?,1,1,q10,What is the difference between a single-line and multi-line comment?,2,10,0.553,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.553,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.551,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q1,What is the main purpose of comments in code?,4,1,0.551,low
+q6,Which practice improves code readability using whitespace?,1,6,q4,Which statement about whitespace in code is true?,4,4,0.55,low
+q7,What does a compiler do with comments in source code?,1,7,q5,Why do programmers align comments and indentation consistently?,4,5,0.549,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.549,low
+q4,How does a compiler treat whitespace in source code?,2,4,q8,Which statement about whitespace and semicolons is true?,2,8,0.549,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.548,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.548,low
+q4,How does a compiler treat comments in code?,3,4,q8,Which statement about whitespace is true?,3,8,0.548,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q6,Which of the following is a correct use of a single-line comment?,2,6,0.546,low
+q7,What does a compiler do with comments in source code?,1,7,q10,What is the difference between a single-line and multi-line comment?,2,10,0.544,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q8,Which statement about whitespace is true?,3,8,0.544,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q4,Which statement about whitespace in code is true?,4,4,0.544,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.544,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.544,low
+q4,How does a compiler treat comments in code?,3,4,q5,Why do programmers align comments and indentation consistently?,4,5,0.544,low
+q5,How does whitespace affect compilation?,1,5,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.541,low
+q1,What is the primary purpose of a comment in code?,1,1,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.54,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q1,What does a comment in code primarily provide?,3,1,0.54,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.539,low
+q7,What does a compiler do with comments in source code?,1,7,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.537,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.537,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q4,How does a compiler treat comments in code?,3,4,0.536,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.536,low
+q1,What does a comment in code primarily provide?,3,1,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.536,low
+q4,How does a compiler treat whitespace in source code?,2,4,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.535,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q6,What happens to comments during code compilation?,4,6,0.535,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q10,What is the difference between a single-line and multi-line comment?,2,10,0.534,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.534,low
+q4,How does a compiler treat whitespace in source code?,2,4,q5,Why do programmers align code and comments using whitespace?,2,5,0.533,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.533,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.533,low
+q4,How does a compiler treat comments in code?,3,4,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.533,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q4,How does a compiler treat comments in code?,3,4,0.531,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q1,What is the main purpose of comments in code?,4,1,0.529,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.528,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.526,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q6,What happens to comments during code compilation?,4,6,0.524,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q6,Which of the following is a correct use of a single-line comment?,2,6,0.523,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q1,What does a comment in code primarily provide?,3,1,0.523,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q4,How does a compiler treat comments in code?,3,4,0.522,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q1,What does a comment in code primarily provide?,3,1,0.521,low
+q4,How does a compiler treat comments in code?,3,4,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.521,low
+q4,How does a compiler treat comments in code?,3,4,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.52,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q6,Which practice improves code readability using whitespace?,1,6,0.518,low
+q6,Which practice improves code readability using whitespace?,1,6,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.518,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q1,What does a comment in code primarily provide?,3,1,0.517,low
+q1,What is the primary purpose of a comment in code?,1,1,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.516,low
+q7,What does a compiler do with comments in source code?,1,7,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.516,low
+q1,What does a comment in code primarily provide?,3,1,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.516,low
+q1,What is the primary purpose of a comment in code?,1,1,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.515,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.515,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q4,How does a compiler treat comments in code?,3,4,0.514,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q6,What happens to comments during code compilation?,4,6,0.514,low
+q5,Why do programmers align comments and indentation consistently?,4,5,q6,What happens to comments during code compilation?,4,6,0.514,low
+q7,What does a compiler do with comments in source code?,1,7,q5,What is the main purpose of whitespace in source code?,3,5,0.512,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q1,What does a comment in code primarily provide?,3,1,0.512,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q4,How does a compiler treat comments in code?,3,4,0.511,low
+q1,What is the primary purpose of a comment in code?,1,1,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.51,low
+q1,What does a comment in code primarily provide?,3,1,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.509,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q1,What is the main purpose of comments in code?,4,1,0.508,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q4,Which statement about whitespace in code is true?,4,4,0.507,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q1,What does a comment in code primarily provide?,3,1,0.505,low
+q1,What is the primary purpose of a comment in code?,1,1,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.504,low
+q1,What is the primary purpose of a comment in code?,1,1,q2,Which symbol starts a single-line comment in Java and C?,1,2,0.503,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.503,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.502,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q10,What is the difference between a single-line and multi-line comment?,2,10,0.501,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q5,What is the main purpose of whitespace in source code?,3,5,0.501,low
+q4,How does a compiler treat comments in code?,3,4,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.501,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.5,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.5,low
+q1,What is the primary purpose of a comment in code?,1,1,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.499,low
+q5,How does whitespace affect compilation?,1,5,q7,What does a compiler do with comments in source code?,1,7,0.499,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.499,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q8,Which statement about whitespace is true?,3,8,0.499,low
+q1,What is the primary purpose of a comment in code?,1,1,q3,How does a multi-line (block) comment begin and end?,1,3,0.498,low
+q7,What does a compiler do with comments in source code?,1,7,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.498,low
+q1,What is the primary purpose of a comment in code?,1,1,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.496,low
+q7,What does a compiler do with comments in source code?,1,7,q5,Why do programmers align code and comments using whitespace?,2,5,0.496,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q5,Why do programmers align comments and indentation consistently?,4,5,0.496,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.495,low
+q1,What is the primary purpose of comments in code?,2,1,q10,What is the difference between a single-line and multi-line comment?,2,10,0.495,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.495,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q5,What is the main purpose of whitespace in source code?,3,5,0.493,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q4,How does a compiler treat comments in code?,3,4,0.491,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q5,Why do programmers align comments and indentation consistently?,4,5,0.491,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q1,What is the main purpose of comments in code?,4,1,0.491,low
+q5,What is the main purpose of whitespace in source code?,3,5,q6,What happens to comments during code compilation?,4,6,0.491,low
+q4,How does a compiler treat comments in code?,3,4,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.49,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q5,Why do programmers align comments and indentation consistently?,4,5,0.489,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q5,Why do programmers align comments and indentation consistently?,4,5,0.489,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.489,low
+q4,Which statement about whitespace in code is true?,4,4,q6,What happens to comments during code compilation?,4,6,0.489,low
+q1,What is the primary purpose of comments in code?,2,1,q6,Which of the following is a correct use of a single-line comment?,2,6,0.488,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q5,Why do programmers align comments and indentation consistently?,4,5,0.487,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q5,How does whitespace affect compilation?,1,5,0.487,low
+q1,What is the main purpose of comments in code?,4,1,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.487,low
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q5,Why do programmers align comments and indentation consistently?,4,5,0.487,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q1,What is the main purpose of comments in code?,4,1,0.486,low
+q7,What does a compiler do with comments in source code?,1,7,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.485,low
+q6,Which practice improves code readability using whitespace?,1,6,q4,How does a compiler treat whitespace in source code?,2,4,0.484,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q4,How does a compiler treat comments in code?,3,4,0.484,low
+q1,What is the main purpose of comments in code?,4,1,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.484,low
+q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.484,low
+q6,Which practice improves code readability using whitespace?,1,6,q8,Which statement about whitespace is true?,3,8,0.483,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q4,How does a compiler treat comments in code?,3,4,0.483,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.482,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.482,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.482,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.482,low
+q7,What does a compiler do with comments in source code?,1,7,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.481,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.481,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q4,Which statement about whitespace in code is true?,4,4,0.481,low
+q1,What is the main purpose of comments in code?,4,1,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.481,low
+q5,How does whitespace affect compilation?,1,5,q5,Why do programmers align comments and indentation consistently?,4,5,0.48,low
+q7,What does a compiler do with comments in source code?,1,7,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.48,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.48,low
+q1,What is the primary purpose of comments in code?,2,1,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.48,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.479,low
+q4,How does a compiler treat whitespace in source code?,2,4,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.479,low
+q1,What does a comment in code primarily provide?,3,1,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.479,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.479,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q1,What is the main purpose of comments in code?,4,1,0.478,low
+q5,How does whitespace affect compilation?,1,5,q1,What is the main purpose of comments in code?,4,1,0.478,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q4,How does a compiler treat whitespace in source code?,2,4,0.478,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.478,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.477,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q5,Why do programmers align comments and indentation consistently?,4,5,0.477,low
+q1,What does a comment in code primarily provide?,3,1,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.477,low
+q8,Which statement about whitespace is true?,3,8,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.477,low
+q1,What is the primary purpose of a comment in code?,1,1,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.476,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q7,What does a compiler do with comments in source code?,1,7,0.476,low
+q1,What is the primary purpose of comments in code?,2,1,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.475,low
+q4,How does a compiler treat whitespace in source code?,2,4,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.475,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q1,What is the main purpose of comments in code?,4,1,0.475,low
+q1,What is the primary purpose of a comment in code?,1,1,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.474,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q5,Why do programmers align comments and indentation consistently?,4,5,0.474,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q4,How does a compiler treat comments in code?,3,4,0.474,low
+q4,How does a compiler treat comments in code?,3,4,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.474,low
+q4,Which statement about whitespace in code is true?,4,4,q5,Why do programmers align comments and indentation consistently?,4,5,0.474,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q1,What is the main purpose of comments in code?,4,1,0.473,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.473,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q1,What is the main purpose of comments in code?,4,1,0.472,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.472,low
+q4,How does a compiler treat whitespace in source code?,2,4,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.471,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q6,What happens to comments during code compilation?,4,6,0.471,low
+q5,How does whitespace affect compilation?,1,5,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.47,low
+q7,What does a compiler do with comments in source code?,1,7,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.47,low
+q6,Which practice improves code readability using whitespace?,1,6,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.469,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q1,What does a comment in code primarily provide?,3,1,0.469,low
+q4,How does a compiler treat comments in code?,3,4,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.469,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.468,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q6,What happens to comments during code compilation?,4,6,0.468,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.468,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q5,Why do programmers align code and comments using whitespace?,2,5,0.467,low
+q5,How does whitespace affect compilation?,1,5,q6,Which practice improves code readability using whitespace?,1,6,0.467,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q5,Why do programmers align code and comments using whitespace?,2,5,0.467,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q5,Why do programmers align code and comments using whitespace?,2,5,0.467,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q6,What happens to comments during code compilation?,4,6,0.467,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q7,What does a compiler do with comments in source code?,1,7,0.465,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q5,Why do programmers align comments and indentation consistently?,4,5,0.465,low
+q5,How does whitespace affect compilation?,1,5,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.465,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.465,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.464,low
+q6,Which practice improves code readability using whitespace?,1,6,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.464,low
+q4,How does a compiler treat whitespace in source code?,2,4,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.464,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q5,Why do programmers align comments and indentation consistently?,4,5,0.464,low
+q1,What is the primary purpose of a comment in code?,1,1,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.463,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q1,What is the primary purpose of comments in code?,2,1,0.463,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.463,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q4,How does a compiler treat comments in code?,3,4,0.463,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q6,What happens to comments during code compilation?,4,6,0.462,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q5,What is the main purpose of whitespace in source code?,3,5,0.461,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.461,low
+q1,What is the primary purpose of a comment in code?,1,1,q5,How does whitespace affect compilation?,1,5,0.46,low
+q7,What does a compiler do with comments in source code?,1,7,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.459,low
+q7,What does a compiler do with comments in source code?,1,7,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.459,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.459,low
+q1,What is the primary purpose of a comment in code?,1,1,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.458,low
+q6,Which practice improves code readability using whitespace?,1,6,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.458,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.458,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.458,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.458,low
+q1,What is the primary purpose of a comment in code?,1,1,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.457,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q8,Which statement about whitespace is true?,3,8,0.457,low
+q1,What does a comment in code primarily provide?,3,1,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.457,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.456,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q5,What is the main purpose of whitespace in source code?,3,5,0.456,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q5,Why do programmers align comments and indentation consistently?,4,5,0.456,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.456,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q5,Why do programmers align comments and indentation consistently?,4,5,0.456,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q5,Why do programmers align code and comments using whitespace?,2,5,0.455,low
+q1,What is the primary purpose of comments in code?,2,1,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.455,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q6,What happens to comments during code compilation?,4,6,0.455,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.454,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.454,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q5,What is the main purpose of whitespace in source code?,3,5,0.454,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q4,Which statement about whitespace in code is true?,4,4,0.454,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q4,Which statement about whitespace in code is true?,4,4,0.454,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.454,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.454,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q1,What is the main purpose of comments in code?,4,1,0.453,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q5,What is the main purpose of whitespace in source code?,3,5,0.453,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.452,low
+q5,How does whitespace affect compilation?,1,5,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.452,low
+q7,What does a compiler do with comments in source code?,1,7,q6,Which of the following is a correct use of a single-line comment?,2,6,0.452,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q5,Why do programmers align comments and indentation consistently?,4,5,0.452,low
+q5,What is the main purpose of whitespace in source code?,3,5,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.452,low
+q6,Which practice improves code readability using whitespace?,1,6,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.451,low
+q6,Which practice improves code readability using whitespace?,1,6,q8,Which statement about whitespace and semicolons is true?,2,8,0.451,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q1,What is the main purpose of comments in code?,4,1,0.451,low
+q6,Which practice improves code readability using whitespace?,1,6,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.449,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.449,low
+q1,What is the primary purpose of comments in code?,2,1,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.449,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.448,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q8,Which statement about whitespace and semicolons is true?,2,8,0.448,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q4,How does a compiler treat comments in code?,3,4,0.448,low
+q4,How does a compiler treat comments in code?,3,4,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.448,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q6,Which of the following is a correct use of a single-line comment?,2,6,0.447,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.447,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q1,What is the main purpose of comments in code?,4,1,0.447,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q6,Which practice improves code readability using whitespace?,1,6,0.446,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q1,What is the primary purpose of comments in code?,2,1,0.446,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.446,low
+q8,Which statement about whitespace is true?,3,8,q6,What happens to comments during code compilation?,4,6,0.446,low
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q6,What happens to comments during code compilation?,4,6,0.446,low
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q5,Why do programmers align comments and indentation consistently?,4,5,0.446,low
+q6,Which practice improves code readability using whitespace?,1,6,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.445,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q5,Why do programmers align code and comments using whitespace?,2,5,0.445,low
+q1,What is the primary purpose of comments in code?,2,1,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.445,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.445,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.444,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.444,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.444,low
+q6,What happens to comments during code compilation?,4,6,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.444,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q5,What is the main purpose of whitespace in source code?,3,5,0.443,low
+q5,How does whitespace affect compilation?,1,5,q1,What does a comment in code primarily provide?,3,1,0.443,low
+q4,How does a compiler treat whitespace in source code?,2,4,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.443,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.443,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.442,low
+q5,How does whitespace affect compilation?,1,5,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.442,low
+q1,What is the primary purpose of comments in code?,2,1,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.442,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q6,What happens to comments during code compilation?,4,6,0.442,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q4,Which statement about whitespace in code is true?,4,4,0.442,low
+q9,What happens if a multi-line comment includes another /* inside it?,3,9,q4,Which statement about whitespace in code is true?,4,4,0.442,low
+q1,What is the primary purpose of a comment in code?,1,1,q4,Which statement about whitespace in code is true?,4,4,0.441,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.441,low
+q1,What is the primary purpose of comments in code?,2,1,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.441,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.441,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q5,What is the main purpose of whitespace in source code?,3,5,0.44,low
+q1,What is the primary purpose of comments in code?,2,1,q4,Which statement about whitespace in code is true?,4,4,0.44,low
+q4,How does a compiler treat whitespace in source code?,2,4,q5,Why do programmers align comments and indentation consistently?,4,5,0.44,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.44,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q8,Which statement about whitespace is true?,3,8,0.44,low
+q1,What is the main purpose of comments in code?,4,1,q4,Which statement about whitespace in code is true?,4,4,0.44,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q1,What is the primary purpose of comments in code?,2,1,0.439,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q6,What happens to comments during code compilation?,4,6,0.439,low
+q1,What is the primary purpose of a comment in code?,1,1,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.438,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.438,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q5,Why do programmers align code and comments using whitespace?,2,5,0.438,low
+q5,Why do programmers align comments and indentation consistently?,4,5,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.438,low
+q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.438,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.437,low
+q6,Which practice improves code readability using whitespace?,1,6,q10,What is the difference between a single-line and multi-line comment?,2,10,0.436,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q8,Which statement about whitespace and semicolons is true?,2,8,0.436,low
+q1,What is the main purpose of comments in code?,4,1,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.436,low
+q7,What does a compiler do with comments in source code?,1,7,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.435,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.434,low
+q6,Which practice improves code readability using whitespace?,1,6,q4,How does a compiler treat comments in code?,3,4,0.434,low
+q6,Which practice improves code readability using whitespace?,1,6,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.434,low
+q4,How does a compiler treat comments in code?,3,4,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.434,low
+q5,How does whitespace affect compilation?,1,5,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.433,low
+q7,What does a compiler do with comments in source code?,1,7,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.433,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.433,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q6,What happens to comments during code compilation?,4,6,0.432,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.432,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.432,low
+q4,Which statement about whitespace in code is true?,4,4,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.432,low
+q7,What does a compiler do with comments in source code?,1,7,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.431,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.431,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.431,low
+q8,Which statement about whitespace is true?,3,8,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.431,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q6,Which practice improves code readability using whitespace?,1,6,0.43,low
+q6,Which practice improves code readability using whitespace?,1,6,q6,Which of the following is a correct use of a single-line comment?,2,6,0.43,low
+q6,Which practice improves code readability using whitespace?,1,6,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.43,low
+q6,Which practice improves code readability using whitespace?,1,6,q1,What is the primary purpose of comments in code?,2,1,0.429,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q5,What is the main purpose of whitespace in source code?,3,5,0.429,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q4,How does a compiler treat whitespace in source code?,2,4,0.428,low
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.428,low
+q5,Why do programmers align comments and indentation consistently?,4,5,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.428,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.427,low
+q6,What happens to comments during code compilation?,4,6,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.427,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q5,What is the main purpose of whitespace in source code?,3,5,0.425,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.425,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.424,low
+q1,What does a comment in code primarily provide?,3,1,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.424,low
+q1,What does a comment in code primarily provide?,3,1,q4,Which statement about whitespace in code is true?,4,4,0.424,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.424,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q8,Which statement about whitespace is true?,3,8,0.423,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.423,low
+q1,What does a comment in code primarily provide?,3,1,q3,What marks the end of a multi-line (block) comment?,3,3,0.423,low
+q5,Why do programmers align comments and indentation consistently?,4,5,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.423,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q4,Which statement about whitespace in code is true?,4,4,0.421,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.421,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.42,low
+q4,How does a compiler treat whitespace in source code?,2,4,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.42,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q10,What is the difference between a single-line and multi-line comment?,2,10,0.42,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.419,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.418,low
+q1,What does a comment in code primarily provide?,3,1,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.418,low
+q5,How does whitespace affect compilation?,1,5,q1,What is the primary purpose of comments in code?,2,1,0.417,low
+q5,How does whitespace affect compilation?,1,5,q10,What is the difference between a single-line and multi-line comment?,2,10,0.417,low
+q7,What does a compiler do with comments in source code?,1,7,q3,What marks the end of a multi-line (block) comment?,3,3,0.417,low
+q7,What does a compiler do with comments in source code?,1,7,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.417,low
+q1,What is the primary purpose of comments in code?,2,1,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.417,low
+q5,What is the main purpose of whitespace in source code?,3,5,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.417,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.416,low
+q8,Which statement about whitespace is true?,3,8,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.416,low
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.416,low
+q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.416,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.415,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q8,Which statement about whitespace and semicolons is true?,2,8,0.414,low
+q5,How does whitespace affect compilation?,1,5,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.414,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.414,low
+q1,What is the main purpose of comments in code?,4,1,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.414,low
+q1,What is the primary purpose of a comment in code?,1,1,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.413,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.413,low
+q6,Which practice improves code readability using whitespace?,1,6,q1,What is the main purpose of comments in code?,4,1,0.413,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.413,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.412,low
+q1,What does a comment in code primarily provide?,3,1,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.412,low
+q5,What is the main purpose of whitespace in source code?,3,5,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.412,low
+q1,What is the primary purpose of a comment in code?,1,1,q6,Which practice improves code readability using whitespace?,1,6,0.411,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q5,Why do programmers align code and comments using whitespace?,2,5,0.411,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.411,low
+q1,What is the primary purpose of a comment in code?,1,1,q3,What marks the end of a multi-line (block) comment?,3,3,0.409,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q6,What happens to comments during code compilation?,4,6,0.409,low
+q5,What is the main purpose of whitespace in source code?,3,5,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.409,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.408,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.408,low
+q7,What does a compiler do with comments in source code?,1,7,q4,Which statement about whitespace in code is true?,4,4,0.408,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q4,Which statement about whitespace in code is true?,4,4,0.408,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.408,low
+q6,Which practice improves code readability using whitespace?,1,6,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.407,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q1,What is the primary purpose of comments in code?,2,1,0.407,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q4,How does a compiler treat comments in code?,3,4,0.407,low
+q1,What does a comment in code primarily provide?,3,1,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.407,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.406,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.406,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q6,What happens to comments during code compilation?,4,6,0.405,low
+q6,Which practice improves code readability using whitespace?,1,6,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.405,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q4,How does a compiler treat whitespace in source code?,2,4,0.405,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.405,low
+q6,Which practice improves code readability using whitespace?,1,6,q3,What marks the end of a multi-line (block) comment?,3,3,0.404,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q10,What is the difference between a single-line and multi-line comment?,2,10,0.404,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q5,Why do programmers align comments and indentation consistently?,4,5,0.404,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q8,Which statement about whitespace is true?,3,8,0.403,low
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,q6,What happens to comments during code compilation?,4,6,0.403,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q1,What is the main purpose of comments in code?,4,1,0.403,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q5,What is the main purpose of whitespace in source code?,3,5,0.402,low
+q5,How does whitespace affect compilation?,1,5,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.402,low
+q10,What is the difference between a single-line and multi-line comment?,2,10,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.402,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.401,low
+q1,What is the primary purpose of a comment in code?,1,1,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.4,low
+q4,How does a compiler treat whitespace in source code?,2,4,q1,What is the main purpose of comments in code?,4,1,0.4,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.4,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q6,Which of the following is a correct use of a single-line comment?,2,6,0.398,low
+q1,What is the primary purpose of comments in code?,2,1,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.398,low
+q4,How does a compiler treat whitespace in source code?,2,4,q10,What is the difference between a single-line and multi-line comment?,2,10,0.398,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.397,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.397,low
+q5,How does whitespace affect compilation?,1,5,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.396,low
+q1,What is the primary purpose of comments in code?,2,1,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.396,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q5,Why do programmers align comments and indentation consistently?,4,5,0.396,low
+q1,What is the primary purpose of a comment in code?,1,1,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.395,low
+q5,What is the main purpose of whitespace in source code?,3,5,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.395,low
+q6,What happens to comments during code compilation?,4,6,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.395,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q4,Which statement about whitespace in code is true?,4,4,0.394,low
+q7,What happens if a multi-line comment contains another /* inside it?,2,7,q5,What is the main purpose of whitespace in source code?,3,5,0.394,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.394,low
+q4,How does a compiler treat whitespace in source code?,2,4,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.393,low
+q1,What is the primary purpose of comments in code?,2,1,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.392,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q8,Which statement about whitespace and semicolons is true?,2,8,0.392,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.392,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.391,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q8,Which statement about whitespace and semicolons is true?,2,8,0.391,low
+q5,What is the main purpose of whitespace in source code?,3,5,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.391,low
+q5,What is the main purpose of whitespace in source code?,3,5,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.391,low
+q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.391,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q1,What is the main purpose of comments in code?,4,1,0.39,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.389,low
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q6,What happens to comments during code compilation?,4,6,0.389,low
+q6,What happens to comments during code compilation?,4,6,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.388,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q8,Which statement about whitespace and semicolons is true?,2,8,0.387,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q4,Which statement about whitespace in code is true?,4,4,0.386,low
+q4,How does a compiler treat whitespace in source code?,2,4,q1,What does a comment in code primarily provide?,3,1,0.386,low
+q1,What is the main purpose of comments in code?,4,1,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.386,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.384,low
+q5,Why do programmers align code and comments using whitespace?,2,5,q3,What marks the end of a multi-line (block) comment?,3,3,0.384,low
+q1,What is the primary purpose of a comment in code?,1,1,q4,How does a compiler treat whitespace in source code?,2,4,0.383,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q8,Which statement about whitespace is true?,3,8,0.383,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q4,Which statement about whitespace in code is true?,4,4,0.383,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q1,What is the main purpose of comments in code?,4,1,0.383,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q4,Which statement about whitespace in code is true?,4,4,0.381,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q3,What marks the end of a multi-line (block) comment?,3,3,0.381,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q8,Which statement about whitespace and semicolons is true?,2,8,0.379,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.379,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.379,low
+q8,Which statement about whitespace is true?,3,8,q5,Why do programmers align comments and indentation consistently?,4,5,0.379,low
+q6,Which practice improves code readability using whitespace?,1,6,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.378,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q4,Which statement about whitespace in code is true?,4,4,0.378,low
+q1,What is the primary purpose of comments in code?,2,1,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.378,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.378,low
+q10,Why is it good practice to align comments and operators consistently in code?,3,10,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.378,low
+q7,What does a compiler do with comments in source code?,1,7,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.377,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q8,Which statement about whitespace and semicolons is true?,2,8,0.377,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.377,low
+q2,Which symbol starts a single-line comment in Java or C++?,4,2,q4,Which statement about whitespace in code is true?,4,4,0.377,low
+q6,Which practice improves code readability using whitespace?,1,6,q9,What happens if a multi-line comment includes another /* inside it?,3,9,0.375,low
+q7,What does a compiler do with comments in source code?,1,7,q8,Which statement about whitespace is true?,3,8,0.375,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.371,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.37,low
+q1,What is the primary purpose of comments in code?,2,1,q3,What marks the end of a multi-line (block) comment?,3,3,0.368,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q5,What is the main purpose of whitespace in source code?,3,5,0.368,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q8,Which statement about whitespace is true?,3,8,0.367,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q1,What does a comment in code primarily provide?,3,1,0.367,low
+q8,Which statement about whitespace is true?,3,8,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.367,low
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,4,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.365,low
+q1,What is the primary purpose of comments in code?,2,1,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.365,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q7,What happens if a multi-line comment contains another /* inside it?,2,7,0.364,low
+q1,What is the primary purpose of comments in code?,2,1,q4,How does a compiler treat whitespace in source code?,2,4,0.364,low
+q4,How does a compiler treat whitespace in source code?,2,4,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.364,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.364,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q6,What happens to comments during code compilation?,4,6,0.363,low
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.362,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q4,How does a compiler treat whitespace in source code?,2,4,0.359,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.358,low
+q4,How does a compiler treat whitespace in source code?,2,4,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.358,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q5,Why do programmers align comments and indentation consistently?,4,5,0.358,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q4,Which statement about whitespace in code is true?,4,4,0.358,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.358,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.356,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q6,What happens to comments during code compilation?,4,6,0.356,low
+q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.356,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q5,What is the main purpose of whitespace in source code?,3,5,0.355,low
+q7,What does a compiler do with comments in source code?,1,7,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.353,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q8,Which statement about whitespace is true?,3,8,0.353,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.352,low
+q6,Which practice improves code readability using whitespace?,1,6,q8,"When the compiler encounters a semicolon (;), what does it signify?",1,8,0.352,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q6,Which of the following is best practice for using whitespace to improve code readability?,3,6,0.352,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,10,0.352,low
+q4,Which statement about whitespace in code is true?,4,4,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.352,low
+q6,Which practice improves code readability using whitespace?,1,6,q1,What does a comment in code primarily provide?,3,1,0.351,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q10,What is the difference between a single-line and multi-line comment?,2,10,0.351,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q3,What marks the end of a multi-line (block) comment?,3,3,0.351,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.351,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.35,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q4,How does a compiler treat whitespace in source code?,2,4,0.348,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q5,Why do programmers align comments and indentation consistently?,4,5,0.345,low
+q1,What is the primary purpose of comments in code?,2,1,q7,How does the compiler recognize the end of a statement in Java or C++?,4,7,0.345,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.344,low
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,q4,How does a compiler treat whitespace in source code?,2,4,0.341,low
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.341,low
+q5,How does whitespace affect compilation?,1,5,q2,Which symbol starts a single-line comment in Java or C++?,3,2,0.339,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,7,0.339,low
+q6,Which of the following is a correct use of a single-line comment?,2,6,q8,Which statement about whitespace is true?,3,8,0.338,low
+q2,Which symbol starts a single-line comment in Java or C++?,3,2,q8,Which statement about whitespace is true?,3,8,0.336,low
+q5,How does whitespace affect compilation?,1,5,q3,A multi-line comment in code is enclosed by _____ and _____.,2,3,0.335,low
+q5,How does whitespace affect compilation?,1,5,q6,Which of the following is a correct use of a single-line comment?,2,6,0.335,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q8,Which statement about whitespace is true?,3,8,0.333,low
+q2,Which symbol starts a single-line comment in Java or C++?,2,2,q8,Which statement about whitespace is true?,3,8,0.332,low
+q3,What marks the end of a multi-line comment in C-style languages?,4,3,q4,Which statement about whitespace in code is true?,4,4,0.332,low
+q4,Which statement about whitespace in code is true?,4,4,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.332,low
+q5,How does whitespace affect compilation?,1,5,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.331,low
+q2,Which symbol starts a single-line comment in Java and C?,1,2,q5,How does whitespace affect compilation?,1,5,0.33,low
+q4,How does a compiler treat whitespace in source code?,2,4,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.33,low
+q5,How does whitespace affect compilation?,1,5,q2,Which symbol starts a single-line comment in Java or C++?,2,2,0.329,low
+q7,What does a compiler do with comments in source code?,1,7,q8,Which statement about whitespace and semicolons is true?,2,8,0.329,low
+q1,What does a comment in code primarily provide?,3,1,q8,Which statement about whitespace is true?,3,8,0.329,low
+q1,What is the primary purpose of a comment in code?,1,1,q8,Which statement about whitespace is true?,3,8,0.328,low
+q8,Which statement about whitespace is true?,3,8,q2,Which symbol starts a single-line comment in Java or C++?,4,2,0.328,low
+q6,Which practice improves code readability using whitespace?,1,6,q6,What happens to comments during code compilation?,4,6,0.326,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q4,How does a compiler treat whitespace in source code?,2,4,0.326,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.326,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q6,What happens to comments during code compilation?,4,6,0.325,low
+q6,Which practice improves code readability using whitespace?,1,6,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.324,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q1,What does a comment in code primarily provide?,3,1,0.322,low
+q4,How does a compiler treat whitespace in source code?,2,4,q6,Which of the following is a correct use of a single-line comment?,2,6,0.322,low
+q8,Which statement about whitespace is true?,3,8,q1,What is the main purpose of comments in code?,4,1,0.321,low
+q6,Which practice improves code readability using whitespace?,1,6,q7,What does a compiler do with comments in source code?,1,7,0.318,low
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,q8,Which statement about whitespace is true?,3,8,0.318,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q3,What marks the end of a multi-line (block) comment?,3,3,0.312,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q4,Which statement about whitespace in code is true?,4,4,0.31,low
+q1,What is the primary purpose of comments in code?,2,1,q8,Which statement about whitespace is true?,3,8,0.307,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.306,low
+q4,How does a compiler treat whitespace in source code?,2,4,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.306,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.306,low
+q5,How does whitespace affect compilation?,1,5,q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,9,0.304,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q10,Why is it good practice to align comments and operators consistently in code?,3,10,0.303,low
+q8,Which statement about whitespace is true?,3,8,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.303,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q8,Which statement about whitespace and semicolons is true?,2,8,0.3,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q1,What does a comment in code primarily provide?,3,1,0.3,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q4,How does a compiler treat whitespace in source code?,2,4,0.298,low
+q1,What is the primary purpose of a comment in code?,1,1,q8,Which statement about whitespace and semicolons is true?,2,8,0.297,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q1,What is the main purpose of comments in code?,4,1,0.293,low
+q8,Which statement about whitespace is true?,3,8,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.293,low
+q5,How does whitespace affect compilation?,1,5,q3,What marks the end of a multi-line comment in C-style languages?,4,3,0.289,low
+q7,What does a compiler do with comments in source code?,1,7,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.287,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q1,What is the main purpose of comments in code?,4,1,0.287,low
+q8,Which statement about whitespace is true?,3,8,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.285,low
+q5,How does whitespace affect compilation?,1,5,q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,9,0.284,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.284,low
+q8,Which statement about whitespace and semicolons is true?,2,8,q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,0.283,low
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,9,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.283,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q4,Which statement about whitespace in code is true?,4,4,0.283,low
+q1,What is the primary purpose of a comment in code?,1,1,q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,0.281,low
+q5,How does whitespace affect compilation?,1,5,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.275,low
+q4,How does a compiler treat whitespace in source code?,2,4,q3,What marks the end of a multi-line (block) comment?,3,3,0.271,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q5,How does whitespace affect compilation?,1,5,0.267,low
+q3,How does a multi-line (block) comment begin and end?,1,3,q8,Which statement about whitespace is true?,3,8,0.267,low
+q1,What is the primary purpose of comments in code?,2,1,q8,Which statement about whitespace and semicolons is true?,2,8,0.267,low
+q4,How does a compiler treat whitespace in source code?,2,4,q8,Which type of comment allows multiple lines of text without starting each line with //,4,8,0.265,low
+q3,What marks the end of a multi-line (block) comment?,3,3,q8,Which statement about whitespace is true?,3,8,0.25,low
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,10,q1,What is the primary purpose of comments in code?,2,1,0.244,low
+q5,How does whitespace affect compilation?,1,5,q3,What marks the end of a multi-line (block) comment?,3,3,0.237,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Identify and differentiate between single-line and multi-line comments in code.  
+Apply proper use of comments to improve code readability without affecting compilation.  
+Use whitespace effectively to enhance code clarity and maintain consistent formatting.  
+Analyze how comments and whitespace are treated by the compiler during code compilation.  
+Evaluate code snippets for adherence to good commenting and whitespace conventions."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the primary purpose of a comment in code?,1,yes,"This question assesses understanding of the purpose of comments, aligning with identifying and differentiating comments (LO1)."
+q2,Which symbol starts a single-line comment in Java and C?,1,yes,"This question tests knowledge of single-line comment syntax, directly related to identifying comment types (LO1)."
+q3,How does a multi-line (block) comment begin and end?,1,yes,"This question evaluates knowledge of multi-line comment delimiters, addressing differentiation of comment types (LO1)."
+q4,Why should programmers avoid nesting /* */ comments inside block comments?,1,yes,"This question assesses understanding of compiler behavior with nested block comments, relating to how comments affect compilation (LO4)."
+q5,How does whitespace affect compilation?,1,yes,"This question evaluates how whitespace is treated by the compiler, directly linked to analyzing whitespace in compilation (LO4)."
+q6,Which practice improves code readability using whitespace?,1,yes,"This question tests proper use of whitespace to improve readability, matching the objective about whitespace use (LO3)."
+q7,What does a compiler do with comments in source code?,1,yes,"This question assesses how the compiler treats comments during compilation, aligned with analyzing comments in compilation (LO4)."
+q8,"When the compiler encounters a semicolon (;), what does it signify?",1,no,"This question focuses on semicolon usage to end statements, which is not covered in the stated learning objectives."
+q9,Fill in the blank: A single-line comment starts with _____ and includes all text on that line.,1,yes,"This question tests knowledge of single-line comment syntax, related to identifying comment types (LO1)."
+q10,"Fill in the blank: Whitespace includes spaces, tabs, and _____ between statements.",1,yes,"This question assesses understanding of what constitutes whitespace, supporting effective use of whitespace (LO3)."
+q1,What is the primary purpose of comments in code?,2,yes,"This question evaluates the purpose of comments to aid human understanding, aligned with identifying comment purpose (LO1)."
+q2,Which symbol starts a single-line comment in Java or C++?,2,yes,"This question tests knowledge of single-line comment symbols, related to differentiating comment types (LO1)."
+q3,A multi-line comment in code is enclosed by _____ and _____.,2,yes,"This question assesses knowledge of multi-line comment delimiters, addressing comment differentiation (LO1)."
+q4,How does a compiler treat whitespace in source code?,2,yes,"This question evaluates compiler treatment of whitespace, aligned with analyzing whitespace in compilation (LO4)."
+q5,Why do programmers align code and comments using whitespace?,2,yes,"This question tests why programmers use whitespace for alignment, relating to applying whitespace for readability (LO3)."
+q6,Which of the following is a correct use of a single-line comment?,2,yes,"This question assesses correct use of single-line comments, matching the objective about proper comment use (LO2)."
+q7,What happens if a multi-line comment contains another /* inside it?,2,yes,"This question evaluates compiler behavior with nested multi-line comments, related to comment treatment during compilation (LO4)."
+q8,Which statement about whitespace and semicolons is true?,2,no,"This question focuses on semicolon and whitespace relationship, which is not explicitly covered in the learning objectives."
+q9,How many lines of code does the compiler ignore in the following code snippet? int userAge; // Get user age userAge = 29;,2,yes,"This question tests understanding of how many lines the compiler ignores due to comments, related to comment treatment in compilation (LO4)."
+q10,What is the difference between a single-line and multi-line comment?,2,yes,"This question assesses differentiation between single-line and multi-line comments, directly addressing comment types (LO1)."
+q1,What does a comment in code primarily provide?,3,yes,"This question evaluates the primary purpose of comments for human readers, aligned with identifying comment purpose (LO1)."
+q2,Which symbol starts a single-line comment in Java or C++?,3,yes,"This question tests knowledge of single-line comment symbols, related to comment type identification (LO1)."
+q3,What marks the end of a multi-line (block) comment?,3,yes,"This question assesses knowledge of multi-line comment termination, addressing comment differentiation (LO1)."
+q4,How does a compiler treat comments in code?,3,yes,"This question evaluates how the compiler treats comments, aligned with analyzing comments during compilation (LO4)."
+q5,What is the main purpose of whitespace in source code?,3,yes,"This question tests the purpose of whitespace in code readability, matching the objective about whitespace use (LO3)."
+q6,Which of the following is best practice for using whitespace to improve code readability?,3,yes,"This question assesses best practices for whitespace use to improve readability, directly related to applying whitespace effectively (LO3)."
+q7,How does a compiler recognize the end of a statement in languages like Java or C++?,3,no,"This question focuses on statement termination by semicolon, which is not covered in the learning objectives."
+q8,Which statement about whitespace is true?,3,yes,"This question evaluates how whitespace is treated by the compiler, aligned with analyzing whitespace in compilation (LO4)."
+q9,What happens if a multi-line comment includes another /* inside it?,3,yes,"This question tests compiler behavior with nested multi-line comments, relating to comment treatment during compilation (LO4)."
+q10,Why is it good practice to align comments and operators consistently in code?,3,yes,"This question assesses the rationale for consistent alignment of comments and operators, related to applying whitespace and comments for readability (LO2, LO3)."
+q1,What is the main purpose of comments in code?,4,yes,"This question evaluates the purpose of comments for human understanding, aligned with identifying comment purpose (LO1)."
+q2,Which symbol starts a single-line comment in Java or C++?,4,yes,"This question tests knowledge of single-line comment symbols, related to comment type identification (LO1)."
+q3,What marks the end of a multi-line comment in C-style languages?,4,yes,"This question assesses knowledge of multi-line comment termination, addressing comment differentiation (LO1)."
+q4,Which statement about whitespace in code is true?,4,yes,"This question evaluates the role of whitespace in readability and compilation, aligned with analyzing whitespace and its effect (LO3, LO4)."
+q5,Why do programmers align comments and indentation consistently?,4,yes,"This question tests reasons for consistent alignment of comments and indentation, related to applying whitespace and comments for readability (LO2, LO3)."
+q6,What happens to comments during code compilation?,4,yes,"This question assesses what happens to comments during compilation, aligned with analyzing comment treatment by the compiler (LO4)."
+q7,How does the compiler recognize the end of a statement in Java or C++?,4,no,"This question focuses on statement termination by semicolon, which is outside the stated learning objectives."
+q8,Which type of comment allows multiple lines of text without starting each line with //,4,yes,"This question tests knowledge of multi-line comment capability to span multiple lines, related to differentiating comment types (LO1)."
+q9,Fill in the blank: A single-line comment starts with _____ and continues to the end of that line.,4,yes,"This question assesses knowledge of single-line comment syntax, aligned with identifying comment types (LO1)."
+q10,Why is it bad practice to put multiple statements on the same line without proper whitespace?,4,yes,"This question evaluates the impact of improper whitespace use on readability and maintainability, matching applying whitespace effectively (LO3)."

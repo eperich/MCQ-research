@@ -1,0 +1,859 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,1,1
+2,10,0,6
+3,10,1,2
+4,10,1,9
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,7,8,100
+1,3,3,13,100
+1,4,5,11,100
+2,3,6,9,100
+2,4,9,16,100
+3,4,5,10,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),38
+Similar (70-85%),85
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.971,duplicate
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.964,duplicate
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.947,duplicate
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.946,duplicate
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.945,duplicate
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.937,duplicate
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.933,duplicate
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.931,duplicate
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.929,duplicate
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.926,duplicate
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.924,duplicate
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.92,duplicate
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.919,duplicate
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.919,duplicate
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.917,duplicate
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.915,duplicate
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.914,duplicate
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.913,duplicate
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.912,duplicate
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.912,duplicate
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.906,duplicate
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.905,duplicate
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.897,duplicate
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.896,duplicate
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.894,duplicate
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.891,duplicate
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.89,duplicate
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.888,duplicate
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.888,duplicate
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.887,duplicate
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.885,duplicate
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.885,duplicate
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.875,duplicate
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.869,duplicate
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.859,duplicate
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q4,What is the converse of \(p \rightarrow q\)?,1,4,0.858,duplicate
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.856,duplicate
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.855,duplicate
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.85,similar
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.848,similar
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.847,similar
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.844,similar
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.844,similar
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.842,similar
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.841,similar
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.841,similar
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.84,similar
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.834,similar
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.831,similar
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.825,similar
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.822,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.821,similar
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.817,similar
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.815,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.812,similar
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.808,similar
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.808,similar
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.807,similar
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.806,similar
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.8,similar
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.799,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.798,similar
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.798,similar
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.794,similar
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.793,similar
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.793,similar
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.79,similar
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.789,similar
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.786,similar
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.785,similar
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.78,similar
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.777,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.776,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,0.775,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.775,similar
+q10,What is the only condition that makes a conditional statement false?,1,10,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.774,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.774,similar
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.771,similar
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.77,similar
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.769,similar
+q10,What is the only condition that makes a conditional statement false?,1,10,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.765,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.763,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.763,similar
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.759,similar
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.759,similar
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.757,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.748,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.746,similar
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.745,similar
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.737,similar
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.735,similar
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.733,similar
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.731,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.73,similar
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.728,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.726,similar
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.726,similar
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.725,similar
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.724,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.718,similar
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.717,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.716,similar
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.716,similar
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.716,similar
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.714,similar
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.714,similar
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.713,similar
+q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.713,similar
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.711,similar
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.711,similar
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.709,similar
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.708,similar
+q10,What is the only condition that makes a conditional statement false?,1,10,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.708,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.706,similar
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.706,similar
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.706,similar
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.706,similar
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.706,similar
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.706,similar
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.703,similar
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.703,similar
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.703,similar
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.702,similar
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.7,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.699,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.698,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.698,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.698,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,0.695,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.695,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.69,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.69,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.686,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.686,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.685,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.685,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.685,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.684,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.684,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.684,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.684,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.682,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.681,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.681,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.68,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.68,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.679,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.678,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.678,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.678,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.678,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.678,low
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.678,low
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.677,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.676,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.675,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.675,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.674,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.674,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.672,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.672,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.672,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.67,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.669,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.669,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.669,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.668,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.667,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.667,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.667,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.666,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.665,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.664,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.664,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.664,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.663,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.662,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.662,low
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.662,low
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.662,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.661,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.661,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.66,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.66,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.658,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.657,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.657,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.657,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.657,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.656,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.654,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.654,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.653,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.653,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.653,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.653,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.652,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.651,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.651,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.65,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.65,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.65,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.649,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.649,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.649,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.648,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.648,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.648,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,0.647,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.647,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.647,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.646,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.646,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.645,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.645,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.645,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.645,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.644,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.644,low
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.644,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.643,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.643,low
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.643,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.642,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.642,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.641,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.64,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.64,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.64,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.639,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.639,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.639,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.638,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.638,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.638,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.637,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.637,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.637,low
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.637,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.635,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.635,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,0.634,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.634,low
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.634,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.633,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.633,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.633,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.633,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.633,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.632,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.632,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.632,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.632,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.632,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.631,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.631,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.63,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.63,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.63,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.63,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.63,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.63,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.629,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.629,low
+q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.628,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.627,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.626,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.626,low
+q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.626,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.625,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.625,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.625,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.625,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.625,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,0.624,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.624,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.624,low
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.624,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.623,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.623,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.623,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.623,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.623,low
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.623,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.622,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.622,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.621,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.621,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.621,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.621,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.62,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.62,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.619,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.619,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.618,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.618,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.617,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.617,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.616,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.616,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.615,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.615,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.615,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.615,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.615,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.615,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.614,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.614,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.613,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.613,low
+q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.613,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.612,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.612,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.612,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,0.611,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.611,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.611,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.611,low
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.611,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.61,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.61,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.61,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.609,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.609,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.609,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.609,low
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.609,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q4,What is the converse of \(p \rightarrow q\)?,1,4,0.608,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.608,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.608,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.608,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.608,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.608,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.607,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,0.607,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.607,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.606,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.605,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q4,What is the converse of \(p \rightarrow q\)?,1,4,0.604,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.604,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,0.604,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.604,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.604,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.603,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.603,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.601,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.6,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.6,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.6,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.6,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.599,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.598,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.598,low
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.598,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.597,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.596,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.596,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.596,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.595,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.595,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.595,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.595,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.595,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.595,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.595,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.594,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.594,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.593,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.593,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.593,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.593,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.593,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.592,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.592,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.592,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.591,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.591,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,0.59,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,0.59,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.59,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.59,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.589,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.588,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.588,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,0.587,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.586,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.586,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.585,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.584,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.584,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.583,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.582,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.581,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.58,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.579,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.579,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.577,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.577,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.577,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.576,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.576,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.575,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.575,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.574,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.573,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.573,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.573,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.573,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,0.572,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.571,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.571,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.57,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.57,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.57,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.569,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.568,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.568,low
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.567,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,0.566,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,0.566,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.566,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.566,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.566,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.565,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,0.564,low
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.564,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.562,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.562,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.561,low
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.561,low
+q6,A conditional proposition is like a contract that is broken if _____.,4,6,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.561,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.56,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.558,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.558,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.557,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.556,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.556,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.556,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.556,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.555,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.555,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.555,low
+q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.555,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.553,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.553,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,0.552,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.551,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.55,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.55,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.549,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.548,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.547,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.547,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.546,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.546,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.545,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q10,What is the only condition that makes a conditional statement false?,1,10,0.544,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.544,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.543,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.543,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.542,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.542,low
+q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.542,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.541,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.539,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.539,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.538,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.537,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.537,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.536,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.536,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.534,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.533,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.533,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.532,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.531,low
+q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.531,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.53,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.53,low
+q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.53,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q10,What is the only condition that makes a conditional statement false?,1,10,0.529,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,0.528,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.527,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.527,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.527,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.526,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,0.525,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.525,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.525,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.524,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.524,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.523,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.523,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.521,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.52,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.52,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.52,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.516,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.516,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q10,What is the only condition that makes a conditional statement false?,1,10,0.515,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.515,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.514,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.511,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.511,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.509,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.508,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.508,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.507,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.506,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.505,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.505,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.504,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.504,low
+q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.501,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.5,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.499,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.499,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.499,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.499,low
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.499,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.498,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.498,low
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.498,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.497,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.494,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.494,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.493,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.493,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.491,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.489,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.488,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.487,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.487,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.487,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.483,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.482,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.478,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.478,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.478,low
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.477,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.475,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.474,low
+q6,A conditional proposition is like a contract that is broken if _____.,4,6,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.474,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.473,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.471,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.47,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.469,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.469,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.466,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.465,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.463,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.463,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.461,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.46,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.459,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.458,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.456,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.455,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.453,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.452,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.45,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.449,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.446,low
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.446,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.445,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.444,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.444,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.443,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.442,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.44,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.435,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.435,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.435,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q10,What is the only condition that makes a conditional statement false?,1,10,0.434,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.434,low
+q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.434,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.432,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.432,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.429,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.427,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.427,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.426,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.425,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.424,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.422,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.419,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.419,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.417,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.417,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.417,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.415,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.414,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.414,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.412,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.411,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.408,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.406,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.405,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.405,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q10,What is the only condition that makes a conditional statement false?,1,10,0.404,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.403,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.402,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.401,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.4,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.399,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.399,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.398,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.398,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,2,0.398,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.398,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.397,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.397,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.395,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.395,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.394,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.394,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q10,What is the only condition that makes a conditional statement false?,1,10,0.393,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.393,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.393,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.391,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.39,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.389,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,0.389,low
+q6,A conditional proposition is like a contract that is broken if _____.,4,6,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.388,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.387,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.387,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.387,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.386,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.386,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.385,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.385,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.384,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,1,0.384,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.384,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,0.383,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.383,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.383,low
+q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.383,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.382,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.38,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.38,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.38,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.379,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.378,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,0.378,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.375,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.375,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.374,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.374,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.373,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.373,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.371,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.371,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.37,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.37,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.37,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.369,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.369,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.369,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.369,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q10,What is the only condition that makes a conditional statement false?,1,10,0.368,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q6,A conditional proposition is like a contract broken only if _____.,2,6,0.368,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.368,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.367,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.366,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.366,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.366,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.365,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.365,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.363,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.363,low
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.363,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.362,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.362,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.362,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.36,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,0.359,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.359,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.359,low
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.359,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.358,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.357,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.356,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.356,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.356,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.356,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.356,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.355,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.354,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.354,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.354,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.352,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,1,0.352,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.352,low
+q6,A conditional proposition is like a contract that is broken if _____.,4,6,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.352,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q10,What is the only condition that makes a conditional statement false?,1,10,0.349,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,10,0.349,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.348,low
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.347,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,3,0.347,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q10,What is the only condition that makes a conditional statement false?,1,10,0.346,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,5,0.346,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.346,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.345,low
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,2,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.345,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.344,low
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.342,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.339,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.339,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.339,low
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.338,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,9,0.338,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.337,low
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,2,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.337,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q1,The proposition \(p \rightarrow q\) is false when _____.,2,1,0.336,low
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.336,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.332,low
+q6,A conditional proposition is like a contract broken only if _____.,2,6,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.331,low
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,3,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.331,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.331,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,0.33,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.329,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.329,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.329,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.329,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.329,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.327,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q6,A conditional proposition is like a contract that is broken if _____.,4,6,0.327,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.326,low
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,5,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.326,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.325,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.325,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.325,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,0.322,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.321,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,4,0.321,low
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,5,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.32,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.32,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.318,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.318,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,4,0.317,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.315,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,7,0.315,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.314,low
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,6,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.312,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.311,low
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.31,low
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,1,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.308,low
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,9,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.308,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,8,0.308,low
+q4,What is the converse of \(p \rightarrow q\)?,1,4,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.307,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.307,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.307,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,0.306,low
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,3,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.305,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.305,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.304,low
+q10,What is the only condition that makes a conditional statement false?,1,10,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.3,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q7,What is the inverse of \(p \rightarrow q\)?,2,7,0.3,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.3,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.3,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q5,"The converse of “If it rains, then I am wet” is _____.",2,5,0.299,low
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,7,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.299,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,2,0.294,low
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,8,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.293,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q4,Which English expression means the same as \(p \rightarrow q\)?,4,4,0.292,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.285,low
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,3,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.284,low
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,0.278,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,8,0.275,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.27,low
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.27,low
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,10,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.268,low
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.267,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,9,0.266,low
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,7,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.264,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,6,0.262,low
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,10,0.262,low
+q5,"The converse of “If it rains, then I am wet” is _____.",2,5,q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,8,0.261,low
+q7,What is the inverse of \(p \rightarrow q\)?,2,7,q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,9,0.257,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Translate English statements into logical expressions using logic symbols.  
+Express conditional statements equivalently in English using various forms.  
+Identify and construct the converse, inverse, and contrapositive of conditional propositions.  
+Evaluate the truth values of compound propositions involving conditional and biconditional operations.  
+Complete and interpret truth tables for conditional and biconditional statements.  
+Determine the truth value of compound expressions given partial truth assignments."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,Which truth values make the conditional \(p \rightarrow q\) false?,1,yes,"This question assesses evaluating the truth values of conditional propositions, aligning with learning objective 4."
+q2,What is the contrapositive of the statement \(p \rightarrow q\)?,1,yes,"This question evaluates identifying and constructing the contrapositive of conditional propositions, matching learning objective 3."
+q3,Which English sentence expresses \(p \rightarrow q\)?,1,yes,"This question tests expressing conditional statements equivalently in English, which corresponds to learning objective 2."
+q4,What is the converse of \(p \rightarrow q\)?,1,yes,"This question assesses identifying and constructing the converse of conditional propositions, related to learning objective 3."
+q5,When is a biconditional proposition \(p \leftrightarrow q\) true?,1,yes,"This question evaluates understanding when a biconditional proposition is true, aligning with learning objective 4."
+q6,"If the hypothesis of \(p \rightarrow q\) is false, what is the truth value of the conditional?",1,yes,"This question tests evaluating the truth value of a conditional when the hypothesis is false, matching learning objective 4."
+q7,"Which logical expression matches ""I will share my cookie only if you share your soda""?",1,yes,"This question assesses translating English statements into logical expressions, corresponding to learning objective 1."
+q8,"How is the statement ""If it rains, then the game will be canceled"" expressed as its inverse?",1,yes,"This question evaluates expressing the inverse of a conditional statement in English, related to learning objective 3."
+q9,"Which compound proposition correctly represents ""If \(p\), then \(q\) and \(r\)""?",1,yes,"This question tests translating English statements into compound logical expressions, aligning with learning objective 1."
+q10,What is the only condition that makes a conditional statement false?,1,yes,"This question assesses understanding the condition that makes a conditional statement false, matching learning objective 4."
+q1,The proposition \(p \rightarrow q\) is false when _____.,2,yes,"This question evaluates the truth conditions of a conditional proposition, corresponding to learning objective 4."
+q2,The contrapositive of \(p \rightarrow q\) is _____.,2,yes,"This question tests identifying the contrapositive of a conditional proposition, aligning with learning objective 3."
+q3,Which English sentence means the same as \(p \rightarrow q\)?,2,yes,"This question assesses expressing conditional statements equivalently in English, matching learning objective 2."
+q4,The biconditional \(p \leftrightarrow q\) is true when _____.,2,yes,"This question evaluates when a biconditional proposition is true, related to learning objective 4."
+q5,"The converse of “If it rains, then I am wet” is _____.",2,yes,"This question tests identifying the converse of a conditional statement, corresponding to learning objective 3."
+q6,A conditional proposition is like a contract broken only if _____.,2,yes,"This question assesses understanding when a conditional proposition is false, aligning with learning objective 4."
+q7,What is the inverse of \(p \rightarrow q\)?,2,yes,"This question evaluates identifying the inverse of a conditional proposition, matching learning objective 3."
+q8,The statement “\(p\) is sufficient for \(q\)” is logically equivalent to _____.,2,yes,"This question tests expressing conditional statements equivalently in logical form, related to learning objective 1 and 2."
+q9,The truth value of \(p \rightarrow q\) when \(p\) is false is _____.,2,yes,"This question assesses determining the truth value of a conditional given partial truth assignments, aligning with learning objective 6."
+q10,Which expression best translates: “I will share my cookie only if you share your soda”?,2,yes,"This question evaluates translating English statements into logical expressions, corresponding to learning objective 1."
+q1,The conditional proposition \(p \rightarrow q\) is false when _____.,3,yes,"This question tests evaluating the truth value of a conditional proposition, matching learning objective 4."
+q2,"What is the contrapositive of the statement ""If it rains, then the ground is wet""?",3,yes,"This question assesses identifying the contrapositive of a conditional statement, related to learning objective 3."
+q3,Which English expression is logically equivalent to \(p \rightarrow q\)?,3,yes,"This question evaluates expressing conditional statements equivalently in English, aligning with learning objective 2."
+q4,The biconditional proposition \(p \leftrightarrow q\) is true when _____.,3,yes,"This question tests understanding when a biconditional proposition is true, corresponding to learning objective 4."
+q5,Which statement best describes the inverse of \(p \rightarrow q\)?,3,yes,"This question assesses identifying the inverse of a conditional proposition, matching learning objective 3."
+q6,"If a conditional statement's hypothesis is false, what is the truth value of the statement?",3,yes,"This question evaluates the truth value of a conditional when the hypothesis is false, related to learning objective 4."
+q7,"Given \(p\colon\) ""I will share my cookie,"" and \(q\colon\) ""You will share your soda,"" which expression means ""I will share my cookie only if you share your soda""?",3,yes,"This question tests translating English statements into logical expressions, aligning with learning objective 1."
+q8,"How does the truth table for \((p \rightarrow q) \land r\) evaluate when \(p = T\), \(q = F\), and \(r = T\)?",3,yes,"This question assesses completing and interpreting truth tables for compound statements, matching learning objective 5."
+q9,"Which is a valid converse statement of ""If the game is cancelled, then it is raining""?",3,yes,"This question evaluates identifying the converse of a conditional statement, corresponding to learning objective 3."
+q10,Fill in the blank: A conditional proposition with a biconditional operation \(p \leftrightarrow q\) is true when _____.,3,yes,"This question tests understanding when a biconditional proposition is true, related to learning objective 4."
+q1,The conditional statement \(p \rightarrow q\) is false when _____.,4,yes,"This question assesses evaluating the truth value of a conditional proposition, aligning with learning objective 4."
+q2,The converse of the conditional statement \(p \rightarrow q\) is _____.,4,yes,"This question evaluates identifying the converse of a conditional statement, matching learning objective 3."
+q3,The contrapositive of \(p \rightarrow q\) is logically equivalent to _____.,4,yes,"This question tests understanding logical equivalences involving contrapositives and converses, corresponding to learning objective 3."
+q4,Which English expression means the same as \(p \rightarrow q\)?,4,yes,"This question assesses expressing conditional statements equivalently in English, related to learning objective 2."
+q5,The biconditional statement \(p \leftrightarrow q\) is true when _____.,4,yes,"This question evaluates when a biconditional proposition is true, aligning with learning objective 4."
+q6,A conditional proposition is like a contract that is broken if _____.,4,yes,"This question tests understanding when a conditional proposition is false, matching learning objective 4."
+q7,Fill in the blank: A compound proposition using \(\rightarrow\) is called a/an _____ proposition.,4,yes,"This question assesses knowledge of terminology for compound propositions using \(\rightarrow\), related to learning objective 1."
+q8,The inverse of \(p \rightarrow q\) is expressed as _____.,4,yes,"This question evaluates identifying the inverse of a conditional proposition, corresponding to learning objective 3."
+q9,Which statement best describes the truth of \(p \rightarrow q\) when \(p\) is false?,4,yes,"This question tests determining the truth value of a conditional given partial truth assignments, aligning with learning objective 6."
+q10,"If \(p\) is ""I will share my cookie"" and \(q\) is ""You will share soda,"" which expression means ""I will share my cookie only if you share your soda""?",4,yes,"This question assesses translating English statements into logical expressions, matching learning objective 1."

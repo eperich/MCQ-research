@@ -1,0 +1,10 @@
+Discipline,Category,AI_Failure_Rate_%,SME_Failure_Rate_%,Difference_%
+Computer Science,Clarity,2.21,4.15,-1.93
+Computer Science,Accuracy,4.37,2.02,2.35
+Computer Science,Test-wiseness Prevention,4.39,4.3,0.09
+Data Science,Clarity,1.05,5.84,-4.79
+Data Science,Accuracy,2.66,0.0,2.66
+Data Science,Test-wiseness Prevention,4.96,4.71,0.25
+Discrete Mathematics,Clarity,3.06,6.06,-3.0
+Discrete Mathematics,Accuracy,6.44,0.76,5.68
+Discrete Mathematics,Test-wiseness Prevention,5.53,4.21,1.33

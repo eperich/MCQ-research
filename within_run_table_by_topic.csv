@@ -1,0 +1,61 @@
+Discipline,Topic,Has_Duplicates,Has_Similar,Duplicate_Count,Similar_Count
+Computer Science,Arithmetic expressions,False,False,0,0
+Computer Science,Arithmetic expressions (general),False,False,0,0
+Computer Science,Arithmetic expressions (int),False,False,0,0
+Computer Science,Characters,False,False,0,0
+Computer Science,Comments and whitespace,False,False,0,0
+Computer Science,Constant variables,False,False,0,0
+Computer Science,Detecting equal values with branches,False,True,0,1
+Computer Science,Division and modulo,False,False,0,0
+Computer Science,Errors,False,False,0,0
+Computer Science,Errors and warnings,False,False,0,0
+Computer Science,Floating-point,False,False,0,0
+Computer Science,Floating-point (double),False,False,0,0
+Computer Science,Function basics_2026-01-20T20-45-51,False,False,0,0
+Computer Science,Identifiers,False,False,0,0
+Computer Science,Identifiers,False,True,0,2
+Computer Science,Input_Output,False,True,0,1
+Computer Science,List basics,False,False,0,0
+Computer Science,Math methods,False,False,0,0
+Computer Science,Problem solving,False,False,0,0
+Computer Science,Programming (general),False,False,0,0
+Computer Science,Programming (general),False,False,0,0
+Computer Science,Programming basics,False,False,0,0
+Computer Science,Programming using Python,False,False,0,0
+Computer Science,Python expressions_2026-01-20T20-18-29,False,False,0,0
+Computer Science,String basics,False,False,0,0
+Computer Science,Strings,False,True,0,4
+Computer Science,Variables (int),False,False,0,0
+Computer Science,Variables and assignments,False,False,0,0
+Computer Science,Variables and assignments (general),False,True,0,1
+Computer Science,While loops,False,True,0,3
+Data Science,Careers in data science,False,True,0,1
+Data Science,Cleaning data,False,False,0,0
+Data Science,Data science lifecycle,False,False,0,0
+Data Science,Data science packages,False,False,0,0
+Data Science,Data wrangling,False,False,0,0
+Data Science,Ethics in data science,False,False,0,0
+Data Science,Exploring data,False,False,0,0
+Data Science,Historical overview_2026-01-20T19-36-40,False,False,0,0
+Data Science,NumPy package,False,False,0,0
+Data Science,Programming with Python and Jupyter,False,False,0,0
+Data Science,Python data types,False,True,0,2
+Data Science,Python functions,False,False,0,0
+Data Science,Why data science_,False,False,0,0
+Data Science,matplotlib package,False,False,0,0
+Data Science,pandas package,False,True,0,1
+Discrete Mathematics,Conditional statements,True,True,2,24
+Discrete Mathematics,Evaluating compound propositions,True,True,1,3
+Discrete Mathematics,Laws of propositional  logic,True,True,3,33
+Discrete Mathematics,Logical equivalence,True,True,3,30
+Discrete Mathematics,Mathematical induction,False,True,0,17
+Discrete Mathematics,More inductive proofs,False,True,0,1
+Discrete Mathematics,Predicates and quantifiers,True,True,1,16
+Discrete Mathematics,Propositions and logical operations,False,True,0,21
+Discrete Mathematics,Quantified statements,False,True,0,11
+Discrete Mathematics,Recurrence relations,False,True,0,2
+Discrete Mathematics,Sequences,False,True,0,6
+Discrete Mathematics,Sets and subsets,False,True,0,3
+Discrete Mathematics,Sets of sets,False,True,0,6
+Discrete Mathematics,Summations,False,True,0,6
+Discrete Mathematics,Union and intersection,True,True,1,14

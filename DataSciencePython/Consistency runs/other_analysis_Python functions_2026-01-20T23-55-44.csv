@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,1
+2,10,0,0
+3,10,0,0
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,5,100
+1,3,0,2,100
+1,4,0,5,100
+2,3,0,4,100
+2,4,1,5,100
+3,4,0,2,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),1
+Similar (70-85%),24
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What is the scope of a variable defined inside a function?,2,1,q4,What is the scope of a variable defined inside a function?,4,4,0.954,duplicate
+q3,What does a function return if it has no return statement?,2,3,q7,What value does a Python function return if it has no return statement?,4,7,0.822,similar
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.82,similar
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.816,similar
+q10,What type of object is a function in Python?,1,10,q10,What type of object is a Python function itself?,4,10,0.78,similar
+q3,What happens if a function has no return statement?,1,3,q3,What does a function return if it has no return statement?,2,3,0.777,similar
+q4,Which statement best describes the scope of a local variable?,1,4,q1,What is the scope of a local variable in Python?,3,1,0.776,similar
+q2,How are arguments assigned to parameters during a function call?,1,2,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.775,similar
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.768,similar
+q10,What type of Python object is a function itself?,2,10,q10,What type of object is a Python function itself?,4,10,0.765,similar
+q4,Which statement correctly declares a global variable inside a function?,2,4,q2,Which statement declares a global variable inside a function?,3,2,0.762,similar
+q2,How are arguments assigned to parameters during a function call?,1,2,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.742,similar
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.741,similar
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.724,similar
+q6,What is a keyword argument in a function call?,1,6,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.723,similar
+q4,Which statement best describes the scope of a local variable?,1,4,q1,What is the scope of a variable defined inside a function?,2,1,0.722,similar
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q8,What does pass-by-assignment mean for function parameters?,3,8,0.722,similar
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.721,similar
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q8,What does pass-by-assignment mean for function parameters?,3,8,0.72,similar
+q3,What happens if a function has no return statement?,1,3,q7,What value does a Python function return if it has no return statement?,4,7,0.718,similar
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.718,similar
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.713,similar
+q4,Which statement best describes the scope of a local variable?,1,4,q4,What is the scope of a variable defined inside a function?,4,4,0.71,similar
+q1,What is the scope of a variable defined inside a function?,2,1,q1,What is the scope of a local variable in Python?,3,1,0.71,similar
+q2,How are arguments assigned to parameters during a function call?,1,2,q6,What is a keyword argument in a function call?,1,6,0.701,similar
+q1,What is the scope of a local variable in Python?,3,1,q4,What is the scope of a variable defined inside a function?,4,4,0.697,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.679,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.676,low
+q10,What type of object is a function in Python?,1,10,q10,What type of Python object is a function itself?,2,10,0.672,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.672,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.655,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q9,What must be done to modify a global variable inside a function?,4,9,0.653,low
+q2,Which statement declares a global variable inside a function?,3,2,q9,What must be done to modify a global variable inside a function?,4,9,0.651,low
+q6,What is a keyword argument in a function call?,1,6,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.647,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.636,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q10,What type of object is a Python function itself?,4,10,0.632,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.622,low
+q2,Which statement declares a global variable inside a function?,3,2,q4,What is the scope of a variable defined inside a function?,4,4,0.62,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.613,low
+q10,What type of Python object is a function itself?,2,10,q7,What object type is assigned to a variable when a function is defined?,3,7,0.613,low
+q4,What is the scope of a variable defined inside a function?,4,4,q9,What must be done to modify a global variable inside a function?,4,9,0.611,low
+q1,What is the scope of a variable defined inside a function?,2,1,q2,Which statement declares a global variable inside a function?,3,2,0.61,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.61,low
+q6,What is a keyword argument in a function call?,1,6,q7,Why are default parameters useful in a function definition?,1,7,0.608,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q9,What must be done to modify a global variable inside a function?,4,9,0.604,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q4,Which statement correctly declares a global variable inside a function?,2,4,0.602,low
+q3,What happens if a function has no return statement?,1,3,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.601,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q9,What must be done to modify a global variable inside a function?,4,9,0.6,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.598,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q2,Which statement declares a global variable inside a function?,3,2,0.598,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q4,What is the scope of a variable defined inside a function?,4,4,0.594,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.593,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q8,What does pass-by-assignment mean for function parameters?,3,8,0.591,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.588,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q4,What is the scope of a variable defined inside a function?,4,4,0.586,low
+q10,What type of object is a function in Python?,1,10,q7,What object type is assigned to a variable when a function is defined?,3,7,0.585,low
+q1,What is the scope of a variable defined inside a function?,2,1,q9,What must be done to modify a global variable inside a function?,4,9,0.585,low
+q1,What is the scope of a variable defined inside a function?,2,1,q4,Which statement correctly declares a global variable inside a function?,2,4,0.581,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q9,What must be done to modify a global variable inside a function?,4,9,0.581,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q1,What is the scope of a variable defined inside a function?,2,1,0.579,low
+q7,Why are default parameters useful in a function definition?,1,7,q9,Why should default parameter values usually be immutable objects?,3,9,0.576,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.576,low
+q7,Why are default parameters useful in a function definition?,1,7,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.568,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.568,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q3,What does a function call do with arguments?,3,3,0.566,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.562,low
+q6,What is a keyword argument in a function call?,1,6,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.551,low
+q7,How many values can a Python function return directly?,2,7,q7,What value does a Python function return if it has no return statement?,4,7,0.547,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q3,What does a function call do with arguments?,3,3,0.544,low
+q3,What does a function call do with arguments?,3,3,q8,What does pass-by-assignment mean for function parameters?,3,8,0.54,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q9,Why should default parameter values usually be immutable objects?,3,9,0.536,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.535,low
+q6,What is a keyword argument in a function call?,1,6,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.527,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.524,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.52,low
+q6,What is a keyword argument in a function call?,1,6,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.519,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.518,low
+q4,Which statement best describes the scope of a local variable?,1,4,q2,Which statement declares a global variable inside a function?,3,2,0.517,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.517,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.516,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q9,What must be done to modify a global variable inside a function?,4,9,0.513,low
+q10,What type of object is a function in Python?,1,10,q1,What keyword starts a Python function header?,4,1,0.513,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q4,What is the scope of a variable defined inside a function?,4,4,0.513,low
+q7,Why are default parameters useful in a function definition?,1,7,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.511,low
+q3,What happens if a function has no return statement?,1,3,q7,How many values can a Python function return directly?,2,7,0.508,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q8,What does pass-by-assignment mean for function parameters?,3,8,0.504,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.504,low
+q7,How many values can a Python function return directly?,2,7,q10,What type of object is a Python function itself?,4,10,0.503,low
+q10,What type of object is a function in Python?,1,10,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.502,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q7,What value does a Python function return if it has no return statement?,4,7,0.502,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q9,Why should default parameter values usually be immutable objects?,3,9,0.5,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.495,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.494,low
+q3,What does a function call do with arguments?,3,3,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.493,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q3,What does a function call do with arguments?,3,3,0.492,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q7,Why are default parameters useful in a function definition?,1,7,0.491,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.491,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.49,low
+q10,What type of object is a function in Python?,1,10,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.489,low
+q4,Which statement best describes the scope of a local variable?,1,4,q4,Which statement correctly declares a global variable inside a function?,2,4,0.485,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q2,"In Python, what part of a function ends execution immediately?",4,2,0.483,low
+q10,What type of object is a function in Python?,1,10,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.483,low
+q3,What does a function call do with arguments?,3,3,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.482,low
+q3,What happens if a function has no return statement?,1,3,q2,"In Python, what part of a function ends execution immediately?",4,2,0.48,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.48,low
+q4,Which statement best describes the scope of a local variable?,1,4,q5,How does using the global keyword inside a function affect a variable?,1,5,0.478,low
+q6,What is a keyword argument in a function call?,1,6,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.478,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q3,What does a function call do with arguments?,3,3,0.476,low
+q7,What value does a Python function return if it has no return statement?,4,7,q10,What type of object is a Python function itself?,4,10,0.476,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q10,What type of Python object is a function itself?,2,10,0.475,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.474,low
+q10,What type of Python object is a function itself?,2,10,q1,What keyword starts a Python function header?,4,1,0.473,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q7,Why are default parameters useful in a function definition?,1,7,0.472,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.472,low
+q4,Which statement best describes the scope of a local variable?,1,4,q9,What must be done to modify a global variable inside a function?,4,9,0.471,low
+q1,What is the scope of a variable defined inside a function?,2,1,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.471,low
+q1,What keyword starts a Python function header?,4,1,q10,What type of object is a Python function itself?,4,10,0.47,low
+q6,What is a keyword argument in a function call?,1,6,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.469,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q9,Why should default parameter values usually be immutable objects?,3,9,0.469,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q1,What keyword starts a Python function header?,4,1,0.467,low
+q6,What is a keyword argument in a function call?,1,6,q3,What does a function call do with arguments?,3,3,0.466,low
+q1,What is the scope of a local variable in Python?,3,1,q9,What must be done to modify a global variable inside a function?,4,9,0.465,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q1,What is the scope of a local variable in Python?,3,1,0.464,low
+q1,What is the scope of a variable defined inside a function?,2,1,q7,What object type is assigned to a variable when a function is defined?,3,7,0.464,low
+q2,Which statement declares a global variable inside a function?,3,2,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.464,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q10,What type of object is a Python function itself?,4,10,0.462,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q8,What does pass-by-assignment mean for function parameters?,3,8,0.462,low
+q3,What does a function return if it has no return statement?,2,3,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.461,low
+q3,What does a function call do with arguments?,3,3,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.461,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.46,low
+q3,What does a function return if it has no return statement?,2,3,q2,"In Python, what part of a function ends execution immediately?",4,2,0.459,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q4,Which statement best describes the scope of a local variable?,1,4,0.458,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.458,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.458,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q9,Why should default parameter values usually be immutable objects?,3,9,0.457,low
+q3,What does a function return if it has no return statement?,2,3,q7,What object type is assigned to a variable when a function is defined?,3,7,0.457,low
+q3,What does a function call do with arguments?,3,3,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.457,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.456,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q4,What is the scope of a variable defined inside a function?,4,4,0.456,low
+q3,What does a function return if it has no return statement?,2,3,q7,How many values can a Python function return directly?,2,7,0.455,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.455,low
+q1,What keyword starts a Python function header?,4,1,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.454,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q1,What keyword starts a Python function header?,4,1,0.453,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.452,low
+q1,What is the scope of a local variable in Python?,3,1,q2,Which statement declares a global variable inside a function?,3,2,0.452,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q9,Why should default parameter values usually be immutable objects?,3,9,0.451,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q7,What value does a Python function return if it has no return statement?,4,7,0.451,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q4,What is the scope of a variable defined inside a function?,4,4,0.449,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.448,low
+q7,How many values can a Python function return directly?,2,7,q10,What type of Python object is a function itself?,2,10,0.448,low
+q1,What keyword starts a Python function header?,4,1,q2,"In Python, what part of a function ends execution immediately?",4,2,0.448,low
+q3,What happens if a function has no return statement?,1,3,q10,What type of object is a Python function itself?,4,10,0.446,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q1,What keyword starts a Python function header?,4,1,0.446,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q3,What happens if a function has no return statement?,1,3,0.445,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.445,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.444,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.442,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.44,low
+q7,Why are default parameters useful in a function definition?,1,7,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.44,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q9,What must be done to modify a global variable inside a function?,4,9,0.44,low
+q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,q10,What type of object is a Python function itself?,4,10,0.439,low
+q3,What happens if a function has no return statement?,1,3,q7,Why are default parameters useful in a function definition?,1,7,0.438,low
+q3,What does a function return if it has no return statement?,2,3,q10,What type of object is a Python function itself?,4,10,0.438,low
+q3,What happens if a function has no return statement?,1,3,q7,What object type is assigned to a variable when a function is defined?,3,7,0.437,low
+q6,What is a keyword argument in a function call?,1,6,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.437,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q3,What does a function call do with arguments?,3,3,0.437,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q10,What type of object is a Python function itself?,4,10,0.437,low
+q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,q10,What type of object is a Python function itself?,4,10,0.437,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q5,How does using the global keyword inside a function affect a variable?,1,5,0.436,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q7,What object type is assigned to a variable when a function is defined?,3,7,0.436,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q1,What is the scope of a variable defined inside a function?,2,1,0.435,low
+q1,What is the scope of a local variable in Python?,3,1,q1,What keyword starts a Python function header?,4,1,0.435,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q1,What is the scope of a local variable in Python?,3,1,0.434,low
+q1,What is the scope of a variable defined inside a function?,2,1,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.434,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q3,What does a function call do with arguments?,3,3,0.434,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.434,low
+q2,Which statement declares a global variable inside a function?,3,2,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.434,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q7,What object type is assigned to a variable when a function is defined?,3,7,0.433,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q4,What is the scope of a variable defined inside a function?,4,4,0.433,low
+q2,Which statement declares a global variable inside a function?,3,2,q1,What keyword starts a Python function header?,4,1,0.433,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.433,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.432,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.431,low
+q1,What is the scope of a local variable in Python?,3,1,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.43,low
+q1,What is the scope of a local variable in Python?,3,1,q2,"In Python, what part of a function ends execution immediately?",4,2,0.427,low
+q10,What type of object is a function in Python?,1,10,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.425,low
+q10,What type of object is a function in Python?,1,10,q7,What value does a Python function return if it has no return statement?,4,7,0.425,low
+q7,Why are default parameters useful in a function definition?,1,7,q8,What does pass-by-assignment mean for function parameters?,3,8,0.424,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q8,What does pass-by-assignment mean for function parameters?,3,8,0.424,low
+q1,What keyword starts a Python function header?,4,1,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.424,low
+q6,What is a keyword argument in a function call?,1,6,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.423,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.423,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.422,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q9,Why should default parameter values usually be immutable objects?,3,9,0.422,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.42,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q7,What object type is assigned to a variable when a function is defined?,3,7,0.417,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.416,low
+q1,What is the scope of a variable defined inside a function?,2,1,q10,What type of Python object is a function itself?,2,10,0.415,low
+q10,What type of Python object is a function itself?,2,10,q7,What value does a Python function return if it has no return statement?,4,7,0.415,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.414,low
+q3,What does a function call do with arguments?,3,3,q9,What must be done to modify a global variable inside a function?,4,9,0.414,low
+q3,What happens if a function has no return statement?,1,3,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.413,low
+q4,Which statement best describes the scope of a local variable?,1,4,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.413,low
+q10,What type of object is a function in Python?,1,10,q7,How many values can a Python function return directly?,2,7,0.413,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.413,low
+q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,q9,What must be done to modify a global variable inside a function?,4,9,0.413,low
+q10,What type of object is a function in Python?,1,10,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.411,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q7,What object type is assigned to a variable when a function is defined?,3,7,0.411,low
+q7,Why are default parameters useful in a function definition?,1,7,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.41,low
+q10,What type of object is a function in Python?,1,10,q2,"In Python, what part of a function ends execution immediately?",4,2,0.41,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.409,low
+q10,What type of Python object is a function itself?,2,10,q1,What is the scope of a local variable in Python?,3,1,0.408,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.408,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.407,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.406,low
+q1,What keyword starts a Python function header?,4,1,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.406,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q10,What type of object is a function in Python?,1,10,0.405,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q10,What type of object is a Python function itself?,4,10,0.405,low
+q3,What happens if a function has no return statement?,1,3,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.404,low
+q2,Which statement declares a global variable inside a function?,3,2,q7,What object type is assigned to a variable when a function is defined?,3,7,0.404,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.404,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.403,low
+q6,What is a keyword argument in a function call?,1,6,q8,What does pass-by-assignment mean for function parameters?,3,8,0.402,low
+q7,Why are default parameters useful in a function definition?,1,7,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.402,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q2,Which statement declares a global variable inside a function?,3,2,0.401,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q7,What value does a Python function return if it has no return statement?,4,7,0.401,low
+q3,What does a function call do with arguments?,3,3,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.399,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.399,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q10,What type of object is a Python function itself?,4,10,0.399,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q4,Which statement correctly declares a global variable inside a function?,2,4,0.398,low
+q7,Why are default parameters useful in a function definition?,1,7,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.398,low
+q3,What does a function call do with arguments?,3,3,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.398,low
+q7,How many values can a Python function return directly?,2,7,q2,"In Python, what part of a function ends execution immediately?",4,2,0.397,low
+q10,What type of Python object is a function itself?,2,10,q4,What is the scope of a variable defined inside a function?,4,4,0.397,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.396,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q9,What must be done to modify a global variable inside a function?,4,9,0.395,low
+q2,Which statement declares a global variable inside a function?,3,2,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.395,low
+q3,What does a function call do with arguments?,3,3,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.395,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q9,What must be done to modify a global variable inside a function?,4,9,0.394,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q7,What object type is assigned to a variable when a function is defined?,3,7,0.393,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.393,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.393,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q8,What does pass-by-assignment mean for function parameters?,3,8,0.392,low
+q7,Why are default parameters useful in a function definition?,1,7,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.391,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q9,What must be done to modify a global variable inside a function?,4,9,0.39,low
+q6,What is a keyword argument in a function call?,1,6,q9,What must be done to modify a global variable inside a function?,4,9,0.388,low
+q10,What type of object is a function in Python?,1,10,q3,What does a function return if it has no return statement?,2,3,0.388,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q7,What object type is assigned to a variable when a function is defined?,3,7,0.388,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q3,What does a function return if it has no return statement?,2,3,0.387,low
+q4,Which statement best describes the scope of a local variable?,1,4,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.387,low
+q6,What is a keyword argument in a function call?,1,6,q10,What type of object is a function in Python?,1,10,0.387,low
+q10,What type of Python object is a function itself?,2,10,q2,Which statement declares a global variable inside a function?,3,2,0.387,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q3,What does a function call do with arguments?,3,3,0.386,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q4,Which statement best describes the scope of a local variable?,1,4,0.385,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q1,What is the scope of a local variable in Python?,3,1,0.385,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q2,Which statement declares a global variable inside a function?,3,2,0.384,low
+q10,What type of object is a function in Python?,1,10,q9,Why should default parameter values usually be immutable objects?,3,9,0.383,low
+q1,What is the scope of a local variable in Python?,3,1,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.382,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q1,What is the scope of a local variable in Python?,3,1,0.381,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q10,What type of object is a Python function itself?,4,10,0.381,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q10,What type of Python object is a function itself?,2,10,0.381,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q9,What must be done to modify a global variable inside a function?,4,9,0.381,low
+q3,What happens if a function has no return statement?,1,3,q10,What type of object is a function in Python?,1,10,0.38,low
+q7,Why are default parameters useful in a function definition?,1,7,q3,What does a function call do with arguments?,3,3,0.38,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q1,What is the scope of a local variable in Python?,3,1,0.38,low
+q10,What type of Python object is a function itself?,2,10,q2,"In Python, what part of a function ends execution immediately?",4,2,0.38,low
+q10,What type of Python object is a function itself?,2,10,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.38,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q10,What type of object is a function in Python?,1,10,0.379,low
+q6,What is a keyword argument in a function call?,1,6,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.379,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.379,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q1,What keyword starts a Python function header?,4,1,0.379,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.379,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.379,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q7,What object type is assigned to a variable when a function is defined?,3,7,0.379,low
+q3,What happens if a function has no return statement?,1,3,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.377,low
+q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,q9,What must be done to modify a global variable inside a function?,4,9,0.376,low
+q7,Why are default parameters useful in a function definition?,1,7,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.375,low
+q3,What does a function return if it has no return statement?,2,3,q10,What type of Python object is a function itself?,2,10,0.375,low
+q3,What happens if a function has no return statement?,1,3,q10,What type of Python object is a function itself?,2,10,0.374,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q1,What is the scope of a local variable in Python?,3,1,0.374,low
+q8,Which statement correctly defines a function parameter with a default value?,4,8,q10,What type of object is a Python function itself?,4,10,0.374,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.373,low
+q6,What is a keyword argument in a function call?,1,6,q7,What object type is assigned to a variable when a function is defined?,3,7,0.372,low
+q7,Why are default parameters useful in a function definition?,1,7,q9,What must be done to modify a global variable inside a function?,4,9,0.372,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.372,low
+q3,What happens if a function has no return statement?,1,3,q6,What is a keyword argument in a function call?,1,6,0.371,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.371,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.369,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.369,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q4,Which statement correctly declares a global variable inside a function?,2,4,0.368,low
+q1,What keyword starts a Python function header?,4,1,q9,What must be done to modify a global variable inside a function?,4,9,0.368,low
+q6,What is a keyword argument in a function call?,1,6,q9,Why should default parameter values usually be immutable objects?,3,9,0.367,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.367,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q10,What type of object is a Python function itself?,4,10,0.366,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q10,What type of object is a Python function itself?,4,10,0.365,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.365,low
+q1,What keyword starts a Python function header?,4,1,q7,What value does a Python function return if it has no return statement?,4,7,0.365,low
+q3,What happens if a function has no return statement?,1,3,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.364,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q9,What must be done to modify a global variable inside a function?,4,9,0.364,low
+q10,What type of Python object is a function itself?,2,10,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.364,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q1,What is the scope of a variable defined inside a function?,2,1,0.363,low
+q6,What is a keyword argument in a function call?,1,6,q1,What keyword starts a Python function header?,4,1,0.363,low
+q10,What type of object is a function in Python?,1,10,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.363,low
+q1,What is the scope of a local variable in Python?,3,1,q10,What type of object is a Python function itself?,4,10,0.363,low
+q10,What type of object is a function in Python?,1,10,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.362,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q7,What object type is assigned to a variable when a function is defined?,3,7,0.362,low
+q10,What type of object is a function in Python?,1,10,q9,What must be done to modify a global variable inside a function?,4,9,0.361,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.361,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.36,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q8,What does pass-by-assignment mean for function parameters?,3,8,0.36,low
+q7,Why are default parameters useful in a function definition?,1,7,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.359,low
+q3,What happens if a function has no return statement?,1,3,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.358,low
+q10,What type of object is a function in Python?,1,10,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.358,low
+q7,How many values can a Python function return directly?,2,7,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.358,low
+q7,How many values can a Python function return directly?,2,7,q1,What is the scope of a local variable in Python?,3,1,0.358,low
+q3,What happens if a function has no return statement?,1,3,q3,What does a function call do with arguments?,3,3,0.357,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.357,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.357,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q6,What is a keyword argument in a function call?,1,6,0.356,low
+q7,What value does a Python function return if it has no return statement?,4,7,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.356,low
+q10,What type of object is a function in Python?,1,10,q1,What is the scope of a local variable in Python?,3,1,0.355,low
+q2,Which statement declares a global variable inside a function?,3,2,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.355,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.355,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q8,What does pass-by-assignment mean for function parameters?,3,8,0.355,low
+q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.355,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q10,What type of object is a function in Python?,1,10,0.354,low
+q1,What is the scope of a local variable in Python?,3,1,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.354,low
+q10,What type of object is a function in Python?,1,10,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.353,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q9,Why should default parameter values usually be immutable objects?,3,9,0.353,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q9,Why should default parameter values usually be immutable objects?,3,9,0.353,low
+q1,What is the scope of a local variable in Python?,3,1,q7,What object type is assigned to a variable when a function is defined?,3,7,0.353,low
+q3,What happens if a function has no return statement?,1,3,q5,How does using the global keyword inside a function affect a variable?,1,5,0.352,low
+q10,What type of object is a function in Python?,1,10,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.352,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q9,Why should default parameter values usually be immutable objects?,3,9,0.351,low
+q7,Why are default parameters useful in a function definition?,1,7,q7,What object type is assigned to a variable when a function is defined?,3,7,0.351,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q7,What object type is assigned to a variable when a function is defined?,3,7,0.351,low
+q10,What type of object is a function in Python?,1,10,q3,What does a function call do with arguments?,3,3,0.35,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.35,low
+q7,How many values can a Python function return directly?,2,7,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.35,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q10,What type of Python object is a function itself?,2,10,0.349,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q7,What object type is assigned to a variable when a function is defined?,3,7,0.348,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q4,What is the scope of a variable defined inside a function?,4,4,0.348,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.348,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.348,low
+q4,What is the scope of a variable defined inside a function?,4,4,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.348,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q6,What is a keyword argument in a function call?,1,6,0.347,low
+q3,What does a function call do with arguments?,3,3,q7,What object type is assigned to a variable when a function is defined?,3,7,0.347,low
+q3,What does a function return if it has no return statement?,2,3,q1,What keyword starts a Python function header?,4,1,0.346,low
+q3,What happens if a function has no return statement?,1,3,q1,What keyword starts a Python function header?,4,1,0.345,low
+q4,Which statement best describes the scope of a local variable?,1,4,q3,What does a function call do with arguments?,3,3,0.343,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q10,What type of object is a Python function itself?,4,10,0.343,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q8,What does pass-by-assignment mean for function parameters?,3,8,0.342,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.341,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q4,What is the scope of a variable defined inside a function?,4,4,0.341,low
+q7,Why are default parameters useful in a function definition?,1,7,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.34,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.34,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q1,What keyword starts a Python function header?,4,1,0.34,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.34,low
+q1,What is the scope of a local variable in Python?,3,1,q3,What does a function call do with arguments?,3,3,0.339,low
+q7,Why are default parameters useful in a function definition?,1,7,q10,What type of object is a function in Python?,1,10,0.338,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q7,Why are default parameters useful in a function definition?,1,7,0.337,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q1,What keyword starts a Python function header?,4,1,0.337,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q1,What keyword starts a Python function header?,4,1,0.337,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q10,What type of Python object is a function itself?,2,10,0.336,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q10,What type of Python object is a function itself?,2,10,0.336,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q9,What must be done to modify a global variable inside a function?,4,9,0.336,low
+q4,Which statement best describes the scope of a local variable?,1,4,q7,What object type is assigned to a variable when a function is defined?,3,7,0.335,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.334,low
+q3,What happens if a function has no return statement?,1,3,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.334,low
+q1,What is the scope of a variable defined inside a function?,2,1,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.334,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.333,low
+q6,What is a keyword argument in a function call?,1,6,q10,What type of object is a Python function itself?,4,10,0.333,low
+q10,What type of object is a function in Python?,1,10,q2,Which statement declares a global variable inside a function?,3,2,0.333,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.333,low
+q7,Why are default parameters useful in a function definition?,1,7,q3,What does a function return if it has no return statement?,2,3,0.331,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q4,What is the scope of a variable defined inside a function?,4,4,0.331,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.33,low
+q4,Which statement best describes the scope of a local variable?,1,4,q1,What keyword starts a Python function header?,4,1,0.329,low
+q4,Which statement best describes the scope of a local variable?,1,4,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.329,low
+q1,What is the scope of a variable defined inside a function?,2,1,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.329,low
+q10,What type of Python object is a function itself?,2,10,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.329,low
+q3,What does a function call do with arguments?,3,3,q10,What type of object is a Python function itself?,4,10,0.329,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q9,What must be done to modify a global variable inside a function?,4,9,0.329,low
+q3,What happens if a function has no return statement?,1,3,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.328,low
+q10,What type of object is a function in Python?,1,10,q4,What is the scope of a variable defined inside a function?,4,4,0.328,low
+q1,What is the scope of a variable defined inside a function?,2,1,q7,How many values can a Python function return directly?,2,7,0.328,low
+q7,How many values can a Python function return directly?,2,7,q7,What object type is assigned to a variable when a function is defined?,3,7,0.328,low
+q10,What type of Python object is a function itself?,2,10,q9,What must be done to modify a global variable inside a function?,4,9,0.328,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q10,What type of object is a Python function itself?,4,10,0.327,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q10,What type of object is a Python function itself?,4,10,0.327,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.327,low
+q3,What happens if a function has no return statement?,1,3,q1,What is the scope of a local variable in Python?,3,1,0.326,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.326,low
+q3,What happens if a function has no return statement?,1,3,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.325,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.325,low
+q6,What is a keyword argument in a function call?,1,6,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.325,low
+q1,What is the scope of a variable defined inside a function?,2,1,q1,What keyword starts a Python function header?,4,1,0.325,low
+q7,How many values can a Python function return directly?,2,7,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.325,low
+q10,What type of Python object is a function itself?,2,10,q3,What does a function call do with arguments?,3,3,0.325,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.325,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q3,What happens if a function has no return statement?,1,3,0.324,low
+q3,What happens if a function has no return statement?,1,3,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.324,low
+q4,Which statement best describes the scope of a local variable?,1,4,q10,What type of Python object is a function itself?,2,10,0.324,low
+q7,Why are default parameters useful in a function definition?,1,7,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.324,low
+q1,What is the scope of a local variable in Python?,3,1,q8,What does pass-by-assignment mean for function parameters?,3,8,0.324,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q4,What is the scope of a variable defined inside a function?,4,4,0.324,low
+q7,Why are default parameters useful in a function definition?,1,7,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.323,low
+q7,How many values can a Python function return directly?,2,7,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.323,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q9,What must be done to modify a global variable inside a function?,4,9,0.322,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q9,Why should default parameter values usually be immutable objects?,3,9,0.322,low
+q1,What is the scope of a variable defined inside a function?,2,1,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.322,low
+q3,What does a function return if it has no return statement?,2,3,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.322,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.322,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.321,low
+q4,Which statement best describes the scope of a local variable?,1,4,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.321,low
+q4,Which statement best describes the scope of a local variable?,1,4,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.321,low
+q3,What happens if a function has no return statement?,1,3,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.32,low
+q4,Which statement best describes the scope of a local variable?,1,4,q2,"In Python, what part of a function ends execution immediately?",4,2,0.32,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q1,What is the scope of a variable defined inside a function?,2,1,0.32,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.32,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.319,low
+q2,Which statement declares a global variable inside a function?,3,2,q3,What does a function call do with arguments?,3,3,0.319,low
+q7,Why are default parameters useful in a function definition?,1,7,q1,What keyword starts a Python function header?,4,1,0.318,low
+q10,What type of object is a function in Python?,1,10,q1,What is the scope of a variable defined inside a function?,2,1,0.317,low
+q10,What type of object is a function in Python?,1,10,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.317,low
+q10,What type of object is a function in Python?,1,10,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.317,low
+q10,What type of object is a function in Python?,1,10,q8,What does pass-by-assignment mean for function parameters?,3,8,0.317,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q3,What does a function call do with arguments?,3,3,0.317,low
+q10,What type of Python object is a function itself?,2,10,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.317,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.316,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q1,What is the scope of a local variable in Python?,3,1,0.316,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q10,What type of object is a Python function itself?,4,10,0.316,low
+q10,What type of Python object is a function itself?,2,10,q9,Why should default parameter values usually be immutable objects?,3,9,0.316,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q9,What must be done to modify a global variable inside a function?,4,9,0.316,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q2,How are arguments assigned to parameters during a function call?,1,2,0.314,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q2,Which statement declares a global variable inside a function?,3,2,0.314,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.314,low
+q7,Why are default parameters useful in a function definition?,1,7,q2,Which statement declares a global variable inside a function?,3,2,0.313,low
+q7,How many values can a Python function return directly?,2,7,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.313,low
+q10,What type of Python object is a function itself?,2,10,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.313,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.313,low
+q7,How many values can a Python function return directly?,2,7,q4,What is the scope of a variable defined inside a function?,4,4,0.312,low
+q7,How many values can a Python function return directly?,2,7,q9,Why should default parameter values usually be immutable objects?,3,9,0.311,low
+q1,What is the scope of a local variable in Python?,3,1,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.311,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.31,low
+q1,What keyword starts a Python function header?,4,1,q4,What is the scope of a variable defined inside a function?,4,4,0.31,low
+q3,What happens if a function has no return statement?,1,3,q9,Why should default parameter values usually be immutable objects?,3,9,0.309,low
+q4,Which statement best describes the scope of a local variable?,1,4,q8,What does pass-by-assignment mean for function parameters?,3,8,0.309,low
+q3,What happens if a function has no return statement?,1,3,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.308,low
+q1,What is the scope of a variable defined inside a function?,2,1,q8,What does pass-by-assignment mean for function parameters?,3,8,0.308,low
+q1,What is the scope of a variable defined inside a function?,2,1,q10,What type of object is a Python function itself?,4,10,0.308,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q10,What type of object is a function in Python?,1,10,0.306,low
+q3,What happens if a function has no return statement?,1,3,q4,Which statement best describes the scope of a local variable?,1,4,0.306,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.306,low
+q7,Why are default parameters useful in a function definition?,1,7,q4,Which statement correctly declares a global variable inside a function?,2,4,0.306,low
+q7,Why are default parameters useful in a function definition?,1,7,q7,What value does a Python function return if it has no return statement?,4,7,0.306,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q1,What keyword starts a Python function header?,4,1,0.306,low
+q2,Which statement declares a global variable inside a function?,3,2,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.306,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q4,What is the scope of a variable defined inside a function?,4,4,0.306,low
+q7,Why are default parameters useful in a function definition?,1,7,q4,What is the scope of a variable defined inside a function?,4,4,0.305,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.305,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q9,What must be done to modify a global variable inside a function?,4,9,0.305,low
+q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,q7,What value does a Python function return if it has no return statement?,4,7,0.305,low
+q6,What is a keyword argument in a function call?,1,6,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.304,low
+q7,Why are default parameters useful in a function definition?,1,7,q1,What is the scope of a variable defined inside a function?,2,1,0.304,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q7,What value does a Python function return if it has no return statement?,4,7,0.303,low
+q3,What happens if a function has no return statement?,1,3,q1,What is the scope of a variable defined inside a function?,2,1,0.303,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q10,What type of object is a function in Python?,1,10,0.302,low
+q4,Which statement best describes the scope of a local variable?,1,4,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.301,low
+q10,What type of object is a function in Python?,1,10,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.301,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q10,What type of Python object is a function itself?,2,10,0.301,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q9,Why should default parameter values usually be immutable objects?,3,9,0.301,low
+q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.301,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.3,low
+q3,What happens if a function has no return statement?,1,3,q9,What must be done to modify a global variable inside a function?,4,9,0.3,low
+q4,Which statement best describes the scope of a local variable?,1,4,q10,What type of object is a function in Python?,1,10,0.3,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.3,low
+q7,How many values can a Python function return directly?,2,7,q1,What keyword starts a Python function header?,4,1,0.3,low
+q3,What happens if a function has no return statement?,1,3,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.299,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.299,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q9,Why should default parameter values usually be immutable objects?,3,9,0.297,low
+q3,What does a function call do with arguments?,3,3,q1,What keyword starts a Python function header?,4,1,0.297,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q1,What keyword starts a Python function header?,4,1,0.296,low
+q3,What happens if a function has no return statement?,1,3,q4,Which statement correctly declares a global variable inside a function?,2,4,0.295,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q2,"In Python, what part of a function ends execution immediately?",4,2,0.295,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q2,"In Python, what part of a function ends execution immediately?",4,2,0.295,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q10,What type of object is a Python function itself?,4,10,0.295,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.294,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q2,Which statement declares a global variable inside a function?,3,2,0.293,low
+q1,What is the scope of a variable defined inside a function?,2,1,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.293,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q10,What type of Python object is a function itself?,2,10,0.293,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.293,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q3,What does a function call do with arguments?,3,3,0.293,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q10,What type of object is a Python function itself?,4,10,0.293,low
+q8,Which statement correctly defines a function parameter with a default value?,4,8,q9,What must be done to modify a global variable inside a function?,4,9,0.293,low
+q3,What happens if a function has no return statement?,1,3,q2,Which statement declares a global variable inside a function?,3,2,0.292,low
+q2,Which statement declares a global variable inside a function?,3,2,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.292,low
+q7,How many values can a Python function return directly?,2,7,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.291,low
+q3,What happens if a function has no return statement?,1,3,q4,What is the scope of a variable defined inside a function?,4,4,0.29,low
+q4,Which statement best describes the scope of a local variable?,1,4,q6,What is a keyword argument in a function call?,1,6,0.289,low
+q4,Which statement best describes the scope of a local variable?,1,4,q7,Why are default parameters useful in a function definition?,1,7,0.289,low
+q6,What is a keyword argument in a function call?,1,6,q1,What is the scope of a variable defined inside a function?,2,1,0.289,low
+q2,Which statement declares a global variable inside a function?,3,2,q10,What type of object is a Python function itself?,4,10,0.289,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q1,What keyword starts a Python function header?,4,1,0.289,low
+q1,What is the scope of a variable defined inside a function?,2,1,q3,What does a function call do with arguments?,3,3,0.288,low
+q3,What does a function return if it has no return statement?,2,3,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.288,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q7,What object type is assigned to a variable when a function is defined?,3,7,0.287,low
+q10,What type of Python object is a function itself?,2,10,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.287,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q10,What type of object is a Python function itself?,4,10,0.286,low
+q7,Why are default parameters useful in a function definition?,1,7,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.286,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q3,What does a function call do with arguments?,3,3,0.286,low
+q4,What is the scope of a variable defined inside a function?,4,4,q10,What type of object is a Python function itself?,4,10,0.286,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q8,What does pass-by-assignment mean for function parameters?,3,8,0.285,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q5,How does using the global keyword inside a function affect a variable?,1,5,0.283,low
+q1,What is the scope of a local variable in Python?,3,1,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.283,low
+q7,Why are default parameters useful in a function definition?,1,7,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.282,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q4,Which statement correctly declares a global variable inside a function?,2,4,0.282,low
+q2,Which statement declares a global variable inside a function?,3,2,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.282,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.281,low
+q7,How many values can a Python function return directly?,2,7,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.281,low
+q3,What does a function call do with arguments?,3,3,q4,What is the scope of a variable defined inside a function?,4,4,0.281,low
+q4,Which statement best describes the scope of a local variable?,1,4,q10,What type of object is a Python function itself?,4,10,0.28,low
+q6,What is a keyword argument in a function call?,1,6,q1,What is the scope of a local variable in Python?,3,1,0.28,low
+q6,What is a keyword argument in a function call?,1,6,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.28,low
+q1,What is the scope of a variable defined inside a function?,2,1,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.28,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q10,What type of Python object is a function itself?,2,10,0.28,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q4,What is the scope of a variable defined inside a function?,4,4,0.28,low
+q3,What does a function call do with arguments?,3,3,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.28,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.279,low
+q1,What is the scope of a local variable in Python?,3,1,q7,What value does a Python function return if it has no return statement?,4,7,0.279,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.278,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q7,What value does a Python function return if it has no return statement?,4,7,0.278,low
+q6,What is a keyword argument in a function call?,1,6,q2,Which statement declares a global variable inside a function?,3,2,0.277,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.277,low
+q2,Which statement declares a global variable inside a function?,3,2,q8,What does pass-by-assignment mean for function parameters?,3,8,0.277,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.277,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q8,What does pass-by-assignment mean for function parameters?,3,8,0.276,low
+q7,Why are default parameters useful in a function definition?,1,7,q10,What type of object is a Python function itself?,4,10,0.276,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q7,What object type is assigned to a variable when a function is defined?,3,7,0.276,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q2,"In Python, what part of a function ends execution immediately?",4,2,0.276,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q8,What does pass-by-assignment mean for function parameters?,3,8,0.276,low
+q1,What is the scope of a variable defined inside a function?,2,1,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.275,low
+q3,What does a function return if it has no return statement?,2,3,q2,Which statement declares a global variable inside a function?,3,2,0.275,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.275,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.274,low
+q3,What happens if a function has no return statement?,1,3,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.274,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q9,What must be done to modify a global variable inside a function?,4,9,0.274,low
+q7,What object type is assigned to a variable when a function is defined?,3,7,q2,"In Python, what part of a function ends execution immediately?",4,2,0.274,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.273,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q2,Which statement declares a global variable inside a function?,3,2,0.272,low
+q3,What does a function return if it has no return statement?,2,3,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.271,low
+q7,How many values can a Python function return directly?,2,7,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.271,low
+q4,What is the scope of a variable defined inside a function?,4,4,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.271,low
+q7,Why are default parameters useful in a function definition?,1,7,q7,How many values can a Python function return directly?,2,7,0.27,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.27,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.269,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.269,low
+q2,Which statement declares a global variable inside a function?,3,2,q2,"In Python, what part of a function ends execution immediately?",4,2,0.269,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q10,What type of object is a Python function itself?,4,10,0.269,low
+q3,What happens if a function has no return statement?,1,3,q8,What does pass-by-assignment mean for function parameters?,3,8,0.268,low
+q1,What is the scope of a variable defined inside a function?,2,1,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.268,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q2,Which statement declares a global variable inside a function?,3,2,0.268,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q9,Why should default parameter values usually be immutable objects?,3,9,0.268,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.268,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q10,What type of Python object is a function itself?,2,10,0.267,low
+q6,What is a keyword argument in a function call?,1,6,q4,What is the scope of a variable defined inside a function?,4,4,0.267,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q9,What must be done to modify a global variable inside a function?,4,9,0.267,low
+q10,What type of Python object is a function itself?,2,10,q8,What does pass-by-assignment mean for function parameters?,3,8,0.267,low
+q3,What does a function call do with arguments?,3,3,q9,Why should default parameter values usually be immutable objects?,3,9,0.267,low
+q4,Which statement best describes the scope of a local variable?,1,4,q7,How many values can a Python function return directly?,2,7,0.266,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q7,How many values can a Python function return directly?,2,7,0.266,low
+q1,What is the scope of a local variable in Python?,3,1,q9,Why should default parameter values usually be immutable objects?,3,9,0.266,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.266,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.265,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.265,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q1,What keyword starts a Python function header?,4,1,0.264,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.264,low
+q2,Which statement declares a global variable inside a function?,3,2,q7,What value does a Python function return if it has no return statement?,4,7,0.264,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.263,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q10,What type of object is a Python function itself?,4,10,0.263,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q1,What is the scope of a local variable in Python?,3,1,0.263,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q8,What does pass-by-assignment mean for function parameters?,3,8,0.262,low
+q10,What type of Python object is a function itself?,2,10,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.262,low
+q10,What type of Python object is a function itself?,2,10,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.262,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q4,What is the scope of a variable defined inside a function?,4,4,0.262,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.261,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.26,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.26,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q7,How many values can a Python function return directly?,2,7,0.26,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q2,Which statement declares a global variable inside a function?,3,2,0.26,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.26,low
+q1,What is the scope of a local variable in Python?,3,1,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.258,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.257,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q7,How many values can a Python function return directly?,2,7,0.257,low
+q4,Which statement best describes the scope of a local variable?,1,4,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.257,low
+q6,What is a keyword argument in a function call?,1,6,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.257,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q9,What must be done to modify a global variable inside a function?,4,9,0.257,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.257,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q1,What keyword starts a Python function header?,4,1,0.257,low
+q3,What does a function return if it has no return statement?,2,3,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.256,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.256,low
+q7,How many values can a Python function return directly?,2,7,q3,What does a function call do with arguments?,3,3,0.256,low
+q7,How many values can a Python function return directly?,2,7,q9,What must be done to modify a global variable inside a function?,4,9,0.256,low
+q4,Which statement best describes the scope of a local variable?,1,4,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.255,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q10,What type of object is a Python function itself?,4,10,0.255,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q1,What keyword starts a Python function header?,4,1,0.254,low
+q7,Why are default parameters useful in a function definition?,1,7,q10,What type of Python object is a function itself?,2,10,0.253,low
+q7,Why are default parameters useful in a function definition?,1,7,q2,"In Python, what part of a function ends execution immediately?",4,2,0.253,low
+q4,Which statement best describes the scope of a local variable?,1,4,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.252,low
+q1,What is the scope of a variable defined inside a function?,2,1,q3,What does a function return if it has no return statement?,2,3,0.252,low
+q3,What does a function return if it has no return statement?,2,3,q3,What does a function call do with arguments?,3,3,0.252,low
+q3,What does a function return if it has no return statement?,2,3,q9,What must be done to modify a global variable inside a function?,4,9,0.252,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.252,low
+q7,Why are default parameters useful in a function definition?,1,7,q1,What is the scope of a local variable in Python?,3,1,0.25,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.25,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.25,low
+q3,What does a function call do with arguments?,3,3,q2,"In Python, what part of a function ends execution immediately?",4,2,0.25,low
+q4,What is the scope of a variable defined inside a function?,4,4,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.25,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q3,What does a function return if it has no return statement?,2,3,0.249,low
+q6,What is a keyword argument in a function call?,1,6,q3,What does a function return if it has no return statement?,2,3,0.248,low
+q3,What does a function return if it has no return statement?,2,3,q1,What is the scope of a local variable in Python?,3,1,0.248,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q4,What is the scope of a variable defined inside a function?,4,4,0.248,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.247,low
+q6,What is a keyword argument in a function call?,1,6,q4,Which statement correctly declares a global variable inside a function?,2,4,0.247,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q7,How many values can a Python function return directly?,2,7,0.246,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q7,How many values can a Python function return directly?,2,7,0.245,low
+q3,What does a function return if it has no return statement?,2,3,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.245,low
+q6,What is a keyword argument in a function call?,1,6,q7,What value does a Python function return if it has no return statement?,4,7,0.244,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q7,What value does a Python function return if it has no return statement?,4,7,0.244,low
+q7,How many values can a Python function return directly?,2,7,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.244,low
+q1,What is the scope of a variable defined inside a function?,2,1,q2,"In Python, what part of a function ends execution immediately?",4,2,0.243,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.243,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q2,"In Python, what part of a function ends execution immediately?",4,2,0.243,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q4,What is the scope of a variable defined inside a function?,4,4,0.243,low
+q6,What is a keyword argument in a function call?,1,6,q10,What type of Python object is a function itself?,2,10,0.242,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.242,low
+q3,What does a function return if it has no return statement?,2,3,q4,Which statement correctly declares a global variable inside a function?,2,4,0.242,low
+q3,What does a function return if it has no return statement?,2,3,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.242,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.242,low
+q1,What is the scope of a local variable in Python?,3,1,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.242,low
+q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,q7,What value does a Python function return if it has no return statement?,4,7,0.242,low
+q4,Which statement best describes the scope of a local variable?,1,4,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.241,low
+q4,Which statement best describes the scope of a local variable?,1,4,q3,What does a function return if it has no return statement?,2,3,0.241,low
+q10,What type of object is a function in Python?,1,10,q4,Which statement correctly declares a global variable inside a function?,2,4,0.241,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q10,What type of object is a Python function itself?,4,10,0.241,low
+q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.241,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.24,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q7,How many values can a Python function return directly?,2,7,0.24,low
+q1,What is the scope of a local variable in Python?,3,1,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.24,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.24,low
+q9,What must be done to modify a global variable inside a function?,4,9,q10,What type of object is a Python function itself?,4,10,0.24,low
+q2,Which statement declares a global variable inside a function?,3,2,q9,Why should default parameter values usually be immutable objects?,3,9,0.239,low
+q5,Which is a valid way to call a function using keyword arguments?,3,5,q7,What value does a Python function return if it has no return statement?,4,7,0.239,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.238,low
+q3,What does a function return if it has no return statement?,2,3,q4,What is the scope of a variable defined inside a function?,4,4,0.238,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.237,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q2,"In Python, what part of a function ends execution immediately?",4,2,0.237,low
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,q7,What value does a Python function return if it has no return statement?,4,7,0.237,low
+q7,What value does a Python function return if it has no return statement?,4,7,q9,What must be done to modify a global variable inside a function?,4,9,0.237,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.236,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.236,low
+q7,How many values can a Python function return directly?,2,7,q2,Which statement declares a global variable inside a function?,3,2,0.236,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.235,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q7,What value does a Python function return if it has no return statement?,4,7,0.234,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q2,"In Python, what part of a function ends execution immediately?",4,2,0.232,low
+q2,Which statement declares a global variable inside a function?,3,2,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.232,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.231,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.23,low
+q2,"In Python, what part of a function ends execution immediately?",4,2,q9,What must be done to modify a global variable inside a function?,4,9,0.23,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q2,"In Python, what part of a function ends execution immediately?",4,2,0.229,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.229,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.229,low
+q6,What is a keyword argument in a function call?,1,6,q2,"In Python, what part of a function ends execution immediately?",4,2,0.228,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q2,"In Python, what part of a function ends execution immediately?",4,2,0.228,low
+q4,Which statement best describes the scope of a local variable?,1,4,q7,What value does a Python function return if it has no return statement?,4,7,0.227,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q5,How does Python assign arguments to parameters in a function call without keywords?,4,5,0.227,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q8,Which statement correctly defines a function parameter with a default value?,4,8,0.227,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q10,What type of Python object is a function itself?,2,10,0.226,low
+q1,What is the scope of a variable defined inside a function?,2,1,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.226,low
+q4,Which statement best describes the scope of a local variable?,1,4,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.224,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q7,What value does a Python function return if it has no return statement?,4,7,0.224,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q7,What object type is assigned to a variable when a function is defined?,3,7,0.224,low
+q3,What does a function return if it has no return statement?,2,3,q9,Why should default parameter values usually be immutable objects?,3,9,0.224,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q2,"In Python, what part of a function ends execution immediately?",4,2,0.224,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q5,Which is a valid way to call a function using keyword arguments?,3,5,0.223,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q2,"In Python, what part of a function ends execution immediately?",4,2,0.222,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q7,How many values can a Python function return directly?,2,7,0.222,low
+q1,What is the scope of a variable defined inside a function?,2,1,q9,Why should default parameter values usually be immutable objects?,3,9,0.222,low
+q3,What does a function return if it has no return statement?,2,3,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.222,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q10,What type of object is a Python function itself?,4,10,0.222,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q1,What is the scope of a local variable in Python?,3,1,0.222,low
+q1,What is the scope of a variable defined inside a function?,2,1,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.221,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q7,What value does a Python function return if it has no return statement?,4,7,0.221,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q1,What keyword starts a Python function header?,4,1,0.22,low
+q7,How many values can a Python function return directly?,2,7,q8,What does pass-by-assignment mean for function parameters?,3,8,0.219,low
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,q2,"In Python, what part of a function ends execution immediately?",4,2,0.219,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,0.218,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q7,How many values can a Python function return directly?,2,7,0.218,low
+q3,What does a function call do with arguments?,3,3,q7,What value does a Python function return if it has no return statement?,4,7,0.217,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.216,low
+q3,What does a function return if it has no return statement?,2,3,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.216,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.215,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.215,low
+q9,Why should default parameter values usually be immutable objects?,3,9,q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,0.215,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q2,Which statement declares a global variable inside a function?,3,2,0.214,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.214,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q10,What type of Python object is a function itself?,2,10,0.213,low
+q4,Which statement best describes the scope of a local variable?,1,4,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.212,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q9,Why should default parameter values usually be immutable objects?,3,9,0.211,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q1,What is the scope of a local variable in Python?,3,1,0.21,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q2,"In Python, what part of a function ends execution immediately?",4,2,0.21,low
+q7,How many values can a Python function return directly?,2,7,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.21,low
+q4,Which statement best describes the scope of a local variable?,1,4,q9,Why should default parameter values usually be immutable objects?,3,9,0.209,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q7,What value does a Python function return if it has no return statement?,4,7,0.209,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q1,What is the scope of a local variable in Python?,3,1,0.209,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.208,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.208,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q4,What is the scope of a variable defined inside a function?,4,4,0.205,low
+q3,What does a function return if it has no return statement?,2,3,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.205,low
+q1,What keyword starts a Python function header?,4,1,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.204,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,10,0.203,low
+q6,What is a keyword argument in a function call?,1,6,q7,How many values can a Python function return directly?,2,7,0.202,low
+q1,What is the scope of a variable defined inside a function?,2,1,q7,What value does a Python function return if it has no return statement?,4,7,0.202,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q4,What is the scope of a variable defined inside a function?,4,4,0.202,low
+q3,What does a function return if it has no return statement?,2,3,q5,What happens when a mutable object is passed as an argument to a function?,2,5,0.201,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q3,What does a function return if it has no return statement?,2,3,0.198,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q7,What value does a Python function return if it has no return statement?,4,7,0.198,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,6,0.198,low
+q5,How does using the global keyword inside a function affect a variable?,1,5,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.196,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q7,What object type is assigned to a variable when a function is defined?,3,7,0.195,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.193,low
+q1,What is the scope of a variable defined inside a function?,2,1,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.193,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.192,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q3,What does a function return if it has no return statement?,2,3,0.192,low
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,3,q7,What value does a Python function return if it has no return statement?,4,7,0.192,low
+q4,What is the scope of a variable defined inside a function?,4,4,q7,What value does a Python function return if it has no return statement?,4,7,0.192,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q1,What keyword starts a Python function header?,4,1,0.191,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q9,Why should default parameter values usually be immutable objects?,3,9,0.189,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q2,Which statement declares a global variable inside a function?,3,2,0.189,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q7,How many values can a Python function return directly?,2,7,0.186,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.184,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q2,"In Python, what part of a function ends execution immediately?",4,2,0.183,low
+q5,What happens when a mutable object is passed as an argument to a function?,2,5,q7,What value does a Python function return if it has no return statement?,4,7,0.183,low
+q4,Which statement correctly declares a global variable inside a function?,2,4,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.182,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q1,What keyword starts a Python function header?,4,1,0.182,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q1,What is the scope of a variable defined inside a function?,2,1,0.18,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q4,What is the scope of a variable defined inside a function?,4,4,0.179,low
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,q4,What is the scope of a variable defined inside a function?,4,4,0.179,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q3,What does a function return if it has no return statement?,2,3,0.176,low
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,q4,What is the scope of a variable defined inside a function?,4,4,0.175,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q1,What keyword starts a Python function header?,4,1,0.174,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q2,"In Python, what part of a function ends execution immediately?",4,2,0.173,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q2,"In Python, what part of a function ends execution immediately?",4,2,0.173,low
+q3,What does a function return if it has no return statement?,2,3,q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,9,0.172,low
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,8,q7,What value does a Python function return if it has no return statement?,4,7,0.171,low
+q1,What is the scope of a variable defined inside a function?,2,1,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.171,low
+q3,What happens if a function has no return statement?,1,3,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.169,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q7,What value does a Python function return if it has no return statement?,4,7,0.169,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.167,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,0.167,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,4,0.167,low
+q4,Which statement best describes the scope of a local variable?,1,4,q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,6,0.166,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q7,What value does a Python function return if it has no return statement?,4,7,0.165,low
+q4,Which statement best describes the scope of a local variable?,1,4,q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,0.155,low
+q3,What does a function return if it has no return statement?,2,3,q8,What does pass-by-assignment mean for function parameters?,3,8,0.155,low
+q2,How are arguments assigned to parameters during a function call?,1,2,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.154,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q3,What does a function call do with arguments?,3,3,0.154,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q4,Which statement correctly declares a global variable inside a function?,2,4,0.153,low
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,8,q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,0.153,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q2,"In Python, what part of a function ends execution immediately?",4,2,0.153,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q7,What value does a Python function return if it has no return statement?,4,7,0.152,low
+q4,Which statement best describes the scope of a local variable?,1,4,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.151,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q4,Which statement correctly declares a global variable inside a function?,2,4,0.148,low
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,6,q1,What keyword starts a Python function header?,4,1,0.14,low
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,2,q3,What does a function return if it has no return statement?,2,3,0.139,low
+q6,What is a keyword argument in a function call?,1,6,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.137,low
+q7,Why are default parameters useful in a function definition?,1,7,q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,0.136,low
+q1,What part of a function contains parameters and ends with a colon?,1,1,q9,Why should default parameter values usually be immutable objects?,3,9,0.133,low
+q8,What does pass-by-assignment mean for function parameters?,3,8,q7,What value does a Python function return if it has no return statement?,4,7,0.131,low
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,9,q8,What does pass-by-assignment mean for function parameters?,3,8,0.112,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define the components of a Python function, including headers, parameters, bodies, and return statements.  
+Explain the scope of variables and functions, distinguishing between local and global scope.  
+Identify and use keyword arguments, default parameters, and positional parameters in function calls.  
+Understand and predict the behavior of Python’s pass-by-assignment parameter passing mechanism.  
+Recognize that functions are objects in Python and can be assigned, passed, and returned like other objects."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What part of a function contains parameters and ends with a colon?,1,yes,"This question assesses knowledge of function headers and parameters, directly related to defining components of a Python function."
+q2,How are arguments assigned to parameters during a function call?,1,yes,"This question evaluates understanding of how arguments are assigned to parameters, covering keyword, positional, and default parameters."
+q3,What happens if a function has no return statement?,1,yes,This question tests understanding of return statements and what happens if a function lacks one.
+q4,Which statement best describes the scope of a local variable?,1,yes,"This question assesses understanding of variable scope, specifically local scope."
+q5,How does using the global keyword inside a function affect a variable?,1,yes,This question evaluates knowledge of the global keyword and its effect on variable scope.
+q6,What is a keyword argument in a function call?,1,yes,This question tests understanding of keyword arguments in function calls.
+q7,Why are default parameters useful in a function definition?,1,yes,This question assesses knowledge of default parameters and their usefulness.
+q8,What is the effect of pass-by-assignment when a mutable object is passed as an argument?,1,yes,"This question evaluates understanding of Python’s pass-by-assignment mechanism, especially with mutable objects."
+q9,"What does the following code print? def modify(numList): numList[1] = 99 lst = [10, 20, 30] modify(lst) print(lst)",1,yes,This question tests practical understanding of pass-by-assignment and mutability effects on function arguments.
+q10,What type of object is a function in Python?,1,yes,This question assesses recognition that functions are objects in Python.
+q1,What is the scope of a variable defined inside a function?,2,yes,"This question tests understanding of variable scope inside functions, distinguishing local scope."
+q2,How are arguments matched to parameters when using keyword arguments in Python?,2,yes,This question evaluates knowledge of keyword argument matching by parameter name.
+q3,What does a function return if it has no return statement?,2,yes,This question assesses understanding of the default return value of functions without return statements.
+q4,Which statement correctly declares a global variable inside a function?,2,yes,"This question tests correct syntax for declaring global variables inside functions, related to scope."
+q5,What happens when a mutable object is passed as an argument to a function?,2,yes,This question evaluates understanding of mutable objects passed to functions and their modifiability.
+q6,What error occurs if keyword arguments are used after positional arguments incorrectly?,2,yes,This question assesses knowledge of errors related to incorrect use of keyword and positional arguments.
+q7,How many values can a Python function return directly?,2,no,This question about how many values a function can return is not explicitly covered in the learning objectives.
+q8,What is the correct syntax to define a function with default parameters x=1 and y=2?,2,yes,This question tests correct syntax for defining functions with default parameters.
+q9,What is the mechanism called when function parameters are assigned with argument objects in Python?,2,yes,This question assesses understanding of Python’s pass-by-assignment parameter passing mechanism.
+q10,What type of Python object is a function itself?,2,yes,This question evaluates recognition that functions are function objects in Python.
+q1,What is the scope of a local variable in Python?,3,yes,This question tests detailed understanding of the scope of local variables in Python functions.
+q2,Which statement declares a global variable inside a function?,3,yes,This question assesses knowledge of declaring global variables inside functions.
+q3,What does a function call do with arguments?,3,yes,This question evaluates understanding of how arguments are assigned to parameters and function execution.
+q4,What happens when a function has a parameter with a default value and the argument is omitted?,3,yes,This question tests knowledge of default parameter behavior when arguments are omitted.
+q5,Which is a valid way to call a function using keyword arguments?,3,yes,This question assesses correct usage of keyword arguments in function calls.
+q6,What happens to a global variable passed as an argument if the function modifies a mutable argument object?,3,yes,This question evaluates understanding of how mutable global variables passed as arguments can be modified inside functions.
+q7,What object type is assigned to a variable when a function is defined?,3,yes,This question tests recognition that a function definition assigns a function object to a variable.
+q8,What does pass-by-assignment mean for function parameters?,3,yes,This question assesses understanding of pass-by-assignment semantics for function parameters.
+q9,Why should default parameter values usually be immutable objects?,3,no,This question about why default parameter values should be immutable is not explicitly covered in the learning objectives.
+q10,"If a function parameter is assigned inside the function, does it change the argument if the argument is immutable?",3,yes,This question evaluates understanding of parameter assignment effects on immutable arguments.
+q1,What keyword starts a Python function header?,4,yes,This question tests knowledge of the keyword that starts a Python function header.
+q2,"In Python, what part of a function ends execution immediately?",4,no,This question about statements that end execution immediately is not covered in the learning objectives.
+q3,Which of the following is a correct way to call a function with keyword arguments?,4,yes,This question assesses correct usage of keyword arguments in function calls.
+q4,What is the scope of a variable defined inside a function?,4,yes,This question tests understanding of variable scope inside functions.
+q5,How does Python assign arguments to parameters in a function call without keywords?,4,yes,This question evaluates knowledge of how Python assigns arguments to parameters by position without keywords.
+q6,What happens if a mutable object like a list is passed to a function and modified inside it?,4,yes,This question assesses understanding of the effect of modifying mutable objects passed to functions.
+q7,What value does a Python function return if it has no return statement?,4,yes,This question tests knowledge of the return value of functions without return statements.
+q8,Which statement correctly defines a function parameter with a default value?,4,yes,This question evaluates correct syntax for defining function parameters with default values.
+q9,What must be done to modify a global variable inside a function?,4,yes,This question assesses understanding of how to modify global variables inside functions using the global keyword.
+q10,What type of object is a Python function itself?,4,yes,This question tests recognition that Python functions are function objects.

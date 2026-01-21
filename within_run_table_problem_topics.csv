@@ -1,0 +1,25 @@
+Discipline,Topic,Duplicate_Count,Similar_Count,Runs_With_Duplicates,Runs_With_Similar
+Discrete Mathematics,Laws of propositional  logic,3,33,2,4
+Discrete Mathematics,Logical equivalence,3,30,2,4
+Discrete Mathematics,Conditional statements,2,24,2,4
+Discrete Mathematics,Evaluating compound propositions,1,3,1,3
+Discrete Mathematics,Predicates and quantifiers,1,16,1,4
+Discrete Mathematics,Union and intersection,1,14,1,4
+Discrete Mathematics,Mathematical induction,0,17,0,4
+Discrete Mathematics,Sets and subsets,0,3,0,3
+Discrete Mathematics,Sequences,0,6,0,4
+Discrete Mathematics,Summations,0,6,0,4
+Discrete Mathematics,More inductive proofs,0,1,0,1
+Discrete Mathematics,Sets of sets,0,6,0,3
+Discrete Mathematics,Recurrence relations,0,2,0,2
+Data Science,Careers in data science,0,1,0,1
+Data Science,pandas package,0,1,0,1
+Discrete Mathematics,Quantified statements,0,11,0,3
+Computer Science,While loops,0,3,0,2
+Computer Science,Input_Output,0,1,0,1
+Computer Science,Detecting equal values with branches,0,1,0,1
+Computer Science,Identifiers,0,2,0,2
+Computer Science,Variables and assignments (general),0,1,0,1
+Computer Science,Strings,0,4,0,4
+Data Science,Python data types,0,2,0,2
+Discrete Mathematics,Propositions and logical operations,0,21,0,4

@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,1,2
+2,10,2,10
+3,10,0,6
+4,10,0,6
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,5,16,100
+1,3,5,12,100
+1,4,5,12,100
+2,3,4,21,100
+2,4,6,17,100
+3,4,6,12,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),34
+Similar (70-85%),114
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.987,duplicate
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.984,duplicate
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.983,duplicate
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.978,duplicate
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.97,duplicate
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.97,duplicate
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.969,duplicate
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.968,duplicate
+q3,Two compound propositions are logically equivalent if _____.,3,3,q3,Two compound propositions are logically equivalent if _____.,4,3,0.953,duplicate
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.937,duplicate
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.934,duplicate
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.932,duplicate
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.927,duplicate
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.925,duplicate
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.924,duplicate
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.917,duplicate
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.917,duplicate
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.915,duplicate
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.915,duplicate
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.909,duplicate
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.907,duplicate
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.905,duplicate
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,0.899,duplicate
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.898,duplicate
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.896,duplicate
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.895,duplicate
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.892,duplicate
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.889,duplicate
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.884,duplicate
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.876,duplicate
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.875,duplicate
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.871,duplicate
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.871,duplicate
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.851,duplicate
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.849,similar
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.846,similar
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.843,similar
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.843,similar
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.842,similar
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.842,similar
+q4,Two compound propositions are logically equivalent if _____.,2,4,q3,Two compound propositions are logically equivalent if _____.,3,3,0.84,similar
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.838,similar
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.837,similar
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.831,similar
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.83,similar
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.829,similar
+q4,Two compound propositions are logically equivalent if _____.,2,4,q3,Two compound propositions are logically equivalent if _____.,4,3,0.829,similar
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.828,similar
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.827,similar
+q3,Two compound propositions are logically equivalent if _____.,3,3,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.826,similar
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.82,similar
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.816,similar
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.814,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.811,similar
+q4,Two compound propositions are logically equivalent if _____.,2,4,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.811,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q4,Two compound propositions are logically equivalent if _____.,2,4,0.807,similar
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.807,similar
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q3,Two compound propositions are logically equivalent if _____.,3,3,0.805,similar
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.804,similar
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.804,similar
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q3,Two compound propositions are logically equivalent if _____.,4,3,0.804,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.802,similar
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.801,similar
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.8,similar
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.8,similar
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.798,similar
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.797,similar
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.797,similar
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.796,similar
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.796,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.794,similar
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q3,Two compound propositions are logically equivalent if _____.,4,3,0.793,similar
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.791,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.79,similar
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.79,similar
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.789,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,0.788,similar
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.788,similar
+q4,Two compound propositions are logically equivalent if _____.,2,4,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.782,similar
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.781,similar
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.78,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.779,similar
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.774,similar
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.774,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.773,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.772,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q3,Two compound propositions are logically equivalent if _____.,3,3,0.767,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.766,similar
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.766,similar
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.765,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.764,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q3,Two compound propositions are logically equivalent if _____.,3,3,0.764,similar
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.763,similar
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.763,similar
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.761,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.76,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q3,Two compound propositions are logically equivalent if _____.,4,3,0.758,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q3,Two compound propositions are logically equivalent if _____.,4,3,0.757,similar
+q4,Two compound propositions are logically equivalent if _____.,2,4,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.756,similar
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.756,similar
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q4,Two compound propositions are logically equivalent if _____.,2,4,0.754,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q3,Two compound propositions are logically equivalent if _____.,3,3,0.754,similar
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.754,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.753,similar
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q3,Two compound propositions are logically equivalent if _____.,3,3,0.753,similar
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.753,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.751,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.75,similar
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.75,similar
+q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.749,similar
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.747,similar
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.746,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.744,similar
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.743,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.742,similar
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.741,similar
+q3,Two compound propositions are logically equivalent if _____.,3,3,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.741,similar
+q3,Two compound propositions are logically equivalent if _____.,3,3,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.74,similar
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.739,similar
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.739,similar
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.738,similar
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.737,similar
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.737,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q3,Two compound propositions are logically equivalent if _____.,4,3,0.736,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.735,similar
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.735,similar
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q3,Two compound propositions are logically equivalent if _____.,4,3,0.729,similar
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q3,Two compound propositions are logically equivalent if _____.,4,3,0.727,similar
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.726,similar
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.726,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,0.724,similar
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.723,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q3,Two compound propositions are logically equivalent if _____.,3,3,0.722,similar
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.721,similar
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.719,similar
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.719,similar
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.717,similar
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.717,similar
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q3,Two compound propositions are logically equivalent if _____.,3,3,0.715,similar
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q3,Two compound propositions are logically equivalent if _____.,3,3,0.715,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q3,Two compound propositions are logically equivalent if _____.,4,3,0.714,similar
+q4,Two compound propositions are logically equivalent if _____.,2,4,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.71,similar
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.71,similar
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.706,similar
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.706,similar
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q3,Two compound propositions are logically equivalent if _____.,4,3,0.706,similar
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q3,Two compound propositions are logically equivalent if _____.,4,3,0.703,similar
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.702,similar
+q3,Two compound propositions are logically equivalent if _____.,3,3,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.7,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.699,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.698,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.697,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q3,Two compound propositions are logically equivalent if _____.,3,3,0.696,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.696,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.694,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q3,Two compound propositions are logically equivalent if _____.,4,3,0.693,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.692,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q3,Two compound propositions are logically equivalent if _____.,3,3,0.691,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.69,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.69,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.69,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.688,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.688,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.687,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.687,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.687,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.686,low
+q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.686,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.684,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.682,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.681,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q3,Two compound propositions are logically equivalent if _____.,3,3,0.68,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.68,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.68,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.679,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q4,Two compound propositions are logically equivalent if _____.,2,4,0.679,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.679,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q3,Two compound propositions are logically equivalent if _____.,4,3,0.677,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.676,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.676,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q3,Two compound propositions are logically equivalent if _____.,3,3,0.676,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.676,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.675,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.67,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q3,Two compound propositions are logically equivalent if _____.,4,3,0.67,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.67,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.668,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q3,Two compound propositions are logically equivalent if _____.,4,3,0.666,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.665,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.665,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.661,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.659,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.659,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q3,Two compound propositions are logically equivalent if _____.,4,3,0.658,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.658,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q4,Two compound propositions are logically equivalent if _____.,2,4,0.657,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q3,Two compound propositions are logically equivalent if _____.,4,3,0.655,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.655,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.654,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.652,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.652,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.651,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.649,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.648,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q3,Two compound propositions are logically equivalent if _____.,3,3,0.648,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.648,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,0.647,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.647,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.645,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.644,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q3,Two compound propositions are logically equivalent if _____.,3,3,0.641,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.641,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.641,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.639,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.639,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.639,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.639,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.638,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q4,Two compound propositions are logically equivalent if _____.,2,4,0.637,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.636,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.632,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.632,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.632,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.632,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.632,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.631,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.63,low
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.63,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q3,Two compound propositions are logically equivalent if _____.,4,3,0.629,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.629,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.628,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.628,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.627,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.627,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.627,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,0.626,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.625,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.624,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.623,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.622,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q4,Two compound propositions are logically equivalent if _____.,2,4,0.622,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.622,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.62,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.619,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.618,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.617,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.616,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.615,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.613,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,0.611,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.611,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.61,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.61,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.609,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.609,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.609,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.608,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.608,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.607,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.607,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.607,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.607,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.606,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.604,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.604,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.603,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.603,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.602,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.601,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.6,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.6,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.599,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.599,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q4,Two compound propositions are logically equivalent if _____.,2,4,0.598,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.598,low
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.598,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.597,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.597,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.596,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.595,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.595,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.592,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,0.591,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.591,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.591,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.59,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.589,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.589,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.589,low
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.589,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.588,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.587,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.587,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.587,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.587,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.586,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.586,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.586,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.585,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.585,low
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q3,Two compound propositions are logically equivalent if _____.,4,3,0.585,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.584,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.584,low
+q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.584,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.583,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.583,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.583,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.582,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.582,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.582,low
+q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.582,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.58,low
+q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.58,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.579,low
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.579,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.578,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.578,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.577,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.577,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.576,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.576,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.576,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.576,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q3,Two compound propositions are logically equivalent if _____.,4,3,0.575,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.574,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.574,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.574,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.573,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.573,low
+q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.572,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.571,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q4,Two compound propositions are logically equivalent if _____.,2,4,0.571,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.571,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.571,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.57,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.57,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.569,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q3,Two compound propositions are logically equivalent if _____.,3,3,0.567,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.567,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.567,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.567,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.566,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.566,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.566,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.566,low
+q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.566,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.565,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.565,low
+q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.564,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.563,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.563,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.563,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,0.562,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.562,low
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.562,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.561,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q3,Two compound propositions are logically equivalent if _____.,4,3,0.56,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q4,Two compound propositions are logically equivalent if _____.,2,4,0.56,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.56,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,0.559,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.559,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.559,low
+q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.559,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.558,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.557,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.556,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.556,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.555,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.555,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.554,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.554,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.554,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.554,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.554,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.553,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.552,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.551,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.551,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.55,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.55,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.55,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.55,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.549,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.548,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.547,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.547,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.547,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q3,Two compound propositions are logically equivalent if _____.,4,3,0.547,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.547,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.546,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.546,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.546,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.546,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.546,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.545,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.545,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.544,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,0.544,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.544,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.544,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.543,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.543,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.543,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.542,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.542,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.541,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.541,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.541,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.541,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.541,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q4,Two compound propositions are logically equivalent if _____.,2,4,0.54,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.54,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.54,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.54,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.539,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.539,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.539,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.539,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.538,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.537,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.537,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.537,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.536,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.536,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.536,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.535,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.535,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.535,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.534,low
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.534,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.534,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.533,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.532,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.531,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,0.53,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.53,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.529,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.529,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.529,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.528,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.528,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.528,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.528,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q3,Two compound propositions are logically equivalent if _____.,4,3,0.527,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.526,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q3,Two compound propositions are logically equivalent if _____.,3,3,0.526,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.526,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.525,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.525,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.525,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.524,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.524,low
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.524,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.523,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.522,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,0.522,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q4,Two compound propositions are logically equivalent if _____.,2,4,0.522,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.522,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.522,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.522,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.522,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.521,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.52,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.52,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.52,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.52,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.519,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.519,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.518,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.517,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.517,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.517,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.516,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.516,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.516,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.515,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.515,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.514,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q3,Two compound propositions are logically equivalent if _____.,4,3,0.513,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.513,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.513,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.512,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.512,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.512,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.512,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.511,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.51,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.509,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.508,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.508,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.508,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.508,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.506,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.506,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.506,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.505,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.504,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.503,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,0.502,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q3,Two compound propositions are logically equivalent if _____.,3,3,0.5,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.5,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.498,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.498,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.498,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.497,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.497,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.495,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.495,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,0.494,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.494,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.494,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q3,Two compound propositions are logically equivalent if _____.,4,3,0.494,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.493,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.492,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.492,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.492,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.491,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.491,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.491,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q3,Two compound propositions are logically equivalent if _____.,4,3,0.491,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.489,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q3,Two compound propositions are logically equivalent if _____.,4,3,0.489,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.488,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.484,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q3,Two compound propositions are logically equivalent if _____.,3,3,0.483,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,0.481,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.481,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.48,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.479,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.478,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q4,Two compound propositions are logically equivalent if _____.,2,4,0.475,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q3,Two compound propositions are logically equivalent if _____.,3,3,0.475,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.473,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q3,Two compound propositions are logically equivalent if _____.,4,3,0.473,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.468,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.467,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.464,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.463,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.462,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.461,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.461,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.46,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.46,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.459,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.458,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.457,low
+q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.456,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.455,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.455,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.455,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.455,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.455,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.454,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.453,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.453,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.452,low
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.452,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.451,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.45,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.449,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.449,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.446,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.446,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.445,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.445,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.444,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.443,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.442,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.442,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.441,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.441,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.44,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.438,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q3,Two compound propositions are logically equivalent if _____.,4,3,0.438,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.437,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.437,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.437,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.437,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.436,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.434,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.434,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.433,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q3,Two compound propositions are logically equivalent if _____.,3,3,0.433,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.433,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.431,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.43,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.429,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.429,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.429,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.427,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.423,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.422,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,0.422,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.422,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.422,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.421,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.421,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.421,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.421,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.421,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.421,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.42,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.42,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.42,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.418,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.417,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.417,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.417,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.414,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.414,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.411,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.41,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.41,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,0.409,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.409,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.409,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.409,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.408,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.407,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.406,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.405,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.405,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.404,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.403,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.402,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.401,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.401,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.401,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.401,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.4,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.398,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.398,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.397,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,0.395,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.395,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.394,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q3,Two compound propositions are logically equivalent if _____.,4,3,0.394,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.392,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.39,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.389,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.388,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.385,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.385,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.384,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.383,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.382,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.38,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.379,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.379,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,0.378,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.378,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.378,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.376,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.376,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.376,low
+q4,Two compound propositions are logically equivalent if _____.,2,4,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.374,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.374,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q4,Two compound propositions are logically equivalent if _____.,2,4,0.373,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.371,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.371,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.369,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.369,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.366,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.366,low
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,7,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.364,low
+q8,Two propositions that differ in truth value for some assignment are _____.,3,8,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.363,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.362,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.362,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.354,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.352,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.352,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.351,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q8,Two propositions that differ in truth value for some assignment are _____.,3,8,0.351,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.35,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.349,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.349,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.348,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.347,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.344,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.341,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.341,low
+q3,Two compound propositions are logically equivalent if _____.,4,3,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.338,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,9,0.338,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.336,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q3,Two compound propositions are logically equivalent if _____.,4,3,0.336,low
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.335,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.335,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.333,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,6,0.333,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.331,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.329,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.329,low
+q3,Two compound propositions are logically equivalent if _____.,3,3,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.328,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.327,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q3,Two compound propositions are logically equivalent if _____.,3,3,0.326,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,0.325,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.32,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,0.318,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q10,What is required to show a compound proposition is not a contradiction?,1,10,0.315,low
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.315,low
+q10,What is required to show a compound proposition is not a contradiction?,1,10,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.313,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.312,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.311,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,6,0.309,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.307,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.306,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.306,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.302,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.3,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.3,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.299,low
+q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.299,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,7,0.297,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.296,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.295,low
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,2,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.294,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.294,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.293,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.292,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,0.291,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,0.289,low
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,9,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.289,low
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,5,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.288,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.287,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.286,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.286,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.286,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,0.284,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.283,low
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,4,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.28,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.277,low
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,3,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.272,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,0.271,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,0.27,low
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,9,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.27,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,1,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.267,low
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.265,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,0.262,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.261,low
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.261,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.26,low
+q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.26,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q2,A compound proposition always false regardless of variable values is called a/an _____.,2,2,0.259,low
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,10,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.258,low
+q4,Which logical equivalence is an example of De Morgan's laws?,3,4,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.257,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,5,0.256,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,0.253,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q4,Which logical equivalence is an example of De Morgan's laws?,3,4,0.252,low
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.25,low
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,1,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.25,low
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.248,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,5,0.247,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.245,low
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.245,low
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,1,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.244,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,7,0.244,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,0.243,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,0.242,low
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.242,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,1,0.241,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.24,low
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.24,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,3,0.239,low
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,4,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.238,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,0.238,low
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.238,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q2,The proposition \(p \land \neg p\) is an example of a _____.,3,2,0.236,low
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,9,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.235,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,10,0.234,low
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,2,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.232,low
+q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,6,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.23,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,7,0.225,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.221,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.216,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,10,0.214,low
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.214,low
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,5,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.21,low
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,8,0.208,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,8,0.185,low
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,6,q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,8,0.182,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Determine whether a compound proposition is a tautology or contradiction.  
+Use truth tables to show logical equivalence between compound propositions.  
+Identify when two compound propositions are not logically equivalent using specific truth assignments.  
+Apply De Morgan's laws to negate conjunctions and disjunctions of propositional variables.  
+Translate English expressions into logical form and rewrite them using De Morgan's laws."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A compound proposition that is always true regardless of its variables is called a/an _____.,1,yes,This question assesses the ability to determine whether a compound proposition is a tautology or contradiction.
+q2,What does a truth table show when two compound propositions are logically equivalent?,1,yes,This question evaluates understanding of truth tables showing logical equivalence between compound propositions.
+q3,Which truth assignment proves \((p \land q) \rightarrow r\) is not a tautology?,1,yes,This question requires identifying a truth assignment that shows a compound proposition is not a tautology.
+q4,The proposition \(p \land \neg p\) is an example of a/an _____.,1,yes,This question tests recognition of a contradiction compound proposition.
+q5,"By De Morgan's laws, \(\neg (p \lor q)\) is equivalent to _____.",1,yes,This question assesses application of De Morgan's laws to negate disjunctions.
+q6,"When \(\neg (p \land q)\) is rewritten using De Morgan's laws, it becomes _____.",1,yes,This question assesses application of De Morgan's laws to negate conjunctions.
+q7,Two propositions are not logically equivalent if there exists a truth assignment where their truth values are _____.,1,yes,This question evaluates identifying when two compound propositions are not logically equivalent using specific truth assignments.
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",1,yes,This question tests translation of English expressions into logical form and rewriting using De Morgan's laws.
+q9,The notation \(s \equiv r\) means the two propositions \(s\) and \(r\) are _____.,1,yes,This question assesses understanding of the notation for logical equivalence between propositions.
+q10,What is required to show a compound proposition is not a contradiction?,1,yes,This question evaluates understanding of what is required to show a compound proposition is not a contradiction.
+q1,A compound proposition always true regardless of variable values is called a/an _____.,2,yes,"This question assesses the concept of a tautology, directly related to determining tautologies or contradictions."
+q2,A compound proposition always false regardless of variable values is called a/an _____.,2,yes,"This question assesses understanding of contradiction, a compound proposition always false."
+q3,The proposition \(p \land \neg p\) is an example of a/an _____.,2,yes,This question tests identification of a contradiction proposition.
+q4,Two compound propositions are logically equivalent if _____.,2,yes,This question evaluates understanding of logical equivalence via truth tables.
+q5,De Morgan's law \(\neg (p \lor q)\) is logically equivalent to _____.,2,yes,This question assesses application of De Morgan's laws to negate disjunctions.
+q6,"To prove two propositions are not logically equivalent, it suffices to find _____.",2,yes,This question tests identifying a truth assignment that shows two propositions are not logically equivalent.
+q7,The proposition \((p \land q) \rightarrow p\) is a/an _____.,2,yes,"This question assesses classification of a compound proposition as tautology, contradiction, or contingency."
+q8,The truth value of \(\neg (p \land q)\) equals the truth value of _____ according to De Morgan's law.,2,yes,This question evaluates application of De Morgan's laws to rewrite negated conjunctions.
+q9,"If \(s \equiv r\), then the proposition \(s \leftrightarrow r\) is a/an _____.",2,yes,This question tests understanding that logical equivalence implies the biconditional is a tautology.
+q10,Which truth assignment makes \(\neg (p \lor q)\) true?,2,yes,This question assesses using truth assignments to evaluate the truth of a negated disjunction.
+q1,"A compound proposition is a _____ if it is always true, regardless of its variables.",3,yes,This question assesses understanding of tautology definitions.
+q2,The proposition \(p \land \neg p\) is an example of a _____.,3,yes,This question tests identification of contradiction propositions.
+q3,Two compound propositions are logically equivalent if _____.,3,yes,This question evaluates understanding of logical equivalence via biconditional tautology.
+q4,Which logical equivalence is an example of De Morgan's laws?,3,yes,This question assesses knowledge of De Morgan's laws as logical equivalences.
+q5,"To prove a compound proposition is not a tautology, it suffices to find _____.",3,yes,This question tests understanding of how to prove a proposition is not a tautology using truth assignments.
+q6,"If \(\neg (p \lor q)\) is true, then which must be true?",3,yes,This question assesses application of De Morgan's laws to infer truth values.
+q7,"Which statement is logically equivalent to: ""It is not true that the child is at least 8 years old and at least 57 inches tall""?",3,yes,This question tests translation of English expressions into logical form and application of De Morgan's laws.
+q8,Two propositions that differ in truth value for some assignment are _____.,3,yes,This question evaluates identifying when two propositions are not logically equivalent based on differing truth values.
+q9,Showing \((p \lor \neg q) \rightarrow r\) is logically equivalent to \(\neg r \rightarrow (\neg p \land q)\) requires checking _____.,3,yes,This question assesses understanding of checking logical equivalence via truth values in all cases.
+q10,What does De Morgan's law say about \(\neg (p \land q)\)?,3,yes,This question tests knowledge of De Morgan's laws for negated conjunctions.
+q1,A compound proposition always true regardless of variable values is called a/an _____.,4,yes,This question assesses understanding of tautology definitions.
+q2,Which truth assignment disproves that \((p \land q) \rightarrow r\) is a tautology?,4,yes,This question requires identifying a truth assignment disproving a tautology.
+q3,Two compound propositions are logically equivalent if _____.,4,yes,This question evaluates logical equivalence via biconditional tautology.
+q4,Which of the following is logically equivalent to \(\neg (p \lor q)\) by De Morgan's law?,4,yes,This question assesses application of De Morgan's laws to negated disjunctions.
+q5,The proposition \(p \land \neg p\) is an example of a/an _____.,4,yes,This question tests identification of contradiction propositions.
+q6,"If \(\neg (p \land q)\) is equivalent to \(\neg p \lor \neg q\), what type of logical rule is this?",4,yes,This question assesses recognition of De Morgan's laws as a type of logical rule.
+q7,What truth assignment shows that \(p \rightarrow q\) and \(q \rightarrow p\) are not logically equivalent?,4,yes,This question evaluates identifying a truth assignment showing two propositions are not logically equivalent.
+q8,"Which English sentence is logically equivalent to ""It is not true that the child is at least 8 years old and at least 57 inches tall.""?",4,yes,This question tests translation of English expressions into logical form and application of De Morgan's laws.
+q9,"To prove two propositions are not logically equivalent, it suffices to find _____.",4,yes,This question assesses understanding of how to prove propositions are not logically equivalent using truth assignments.
+q10,The proposition \(\neg (p \lor q)\) is false when \(p = \text{T}\) and \(q = \text{F}\). What is the truth value of \(\neg p \land \neg q\) for this assignment?,4,yes,This question evaluates applying truth assignments to verify equivalence from De Morgan's laws.

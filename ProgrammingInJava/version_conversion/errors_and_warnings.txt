@@ -1,0 +1,751 @@
+<zySection title="Errors and warnings" shorttitle="Errors and warnings" id="3e641565-3051-ee4e-fda1-dc429dbee65a" >
+<zypInfo person="Alex" date="3/18/14"  hwStatus="0" Status="2"> Needs first review, including QS (see comment) and 1 more HW problem </zypInfo>
+<zypInfo person="Susan" date="4/08/14">First review done. (Added the QS, needs a first/second review. For Fall pass, Video needs updating to match new coding style (missing space between operators, variable init, c example needs main(void), java class needs capitalization)) NEEDS final review.  </zypInfo>
+<zypInfo person="Alex" date="4/9/14"  hwStatus="0" Status="2"> Reviewed added QS ready for second review.  </zypInfo>
+<zypInfo person="Arash" date="4/18/14" Status="3"> Second review complete. Comments for authors. </zypInfo>
+<zypInfo person="Alex" date="4/21/14" Status="3"> Comments addressed. </zypInfo>
+<zypInfo person="Susan" date="4/23/14"  hwStatus="1"> Added 1 more HW problem. </zypInfo>
+<zypInfo person="Frank" date="5/1/14" Status="3"> Modified to include compiler warnings.</zypInfo>
+<zypInfo person="Frank" date="5/1/14" Status="3"> Completed final review.</zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="Draft1Doing"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/10/14" minutes="" hwStatusCpp ="Rev1Done"></zypInfo>
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Frank" date="02/11/15" minutes="60"> Various polishing/rearranging, and added animation/qs on line numbers. </zypInfo>
+<zypInfo person="Nicole" date="03/17/17" minutes="5"> Cleaned up gdocs in preparation for a new release.  </zypInfo> 
+<zypInfo person="Susan" date="05/30/17" minutes="40" status="Rev1Done">Reviewed C++ updates only. Still needs conversion to Java and C.</zypInfo>
+<zypInfo person="Susan" date="05/06/17" minutes="70" status="Rev1Doing">Converted to Java and C. Needs check </zypInfo> 
+<zypInfo person="Roman" date="6/15/17" minutes="10" status="Rev1Done"></zypInfo>
+<zypInfo person="Amanda" date="6/22/17" minutes="180" status="Rev2Doing">Added comments regarding some questions</zypInfo>
+<zypInfo person="Susan" date="06/26/17" minutes="10" status="Rev2Done">Addressed comments</zypInfo> 
+<zypInfo person="EvanOlds" date="07/10/20" minutes="30" status="Rev1Done">In response to non-bug feedback, added a paragraph to the last subsection's text that better explains why you'd want a compiler to show more warnings. Emailed Liz to request a rev2.</zypInfo>
+<zypInfo person="Aubrey" date="08/09/20" minutes="10">bug report</zypInfo> 
+<zypInfo person="Aubrey" date="09/07/20" minutes="10">bug report: rm zyDEs for C and Cpp </zypInfo>
+<zypInfo person="DanO" date="05/28/24" minutes="20" status="BugFix">Updated link to first bug report</zypInfo> 
+<zypInfo person="LukeM" date="4/1/25" minutes="10" status="Update">Added alt text steps to all animations</zypInfo> 
+<zypInfo person="MichaelGoldwasser" date="06/26/25" minutes="15" status="Bugix">Replaced Q2 for Unclear Error Message PA</zypInfo> 
+<zypInfo person="LukeM" date="9/19/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<!--<zyAside type="bordered" name="" id="8e5f28a7-cbb3-4814-8106-fc58820637ab">
+Learn to:
+<ul>
+<li>Analyze compiler error messages to locate and fix errors in code.</li> <!-- SS1, SS2, SS3, CA1, CA2, TB1, TB2 -->
+<li>Differentiate between syntax errors and logic errors.</li> <!-- SS4, TB2, TB3 -->
+<li>Implement best practices for frequent compilation to minimize and manage errors.</li> <!-- SS3, SS5, CA1, CA2, TB1 -->
+<li>Understand the difference between compiler warnings and errors and why warnings should be corrected.</li><!-- SS3-->
+</ul>
+</zyAside>-->
+
+
+<zyHTML id="bd375283-6a4a-9546-bd97-fdca757bbafb" subsection="true" caption="Syntax errors">
+<h3>Syntax errors</h3>
+</zyHTML>
+
+<zyVersion version="java">
+<zyGdocImage id="9927c6bb-f874-3b64-447b-2d49c9728b4b" alt="Picture of a beverage spilled on paper." width="125" pull="right">
+
+</zyGdocImage>
+</zyVersion>
+
+<zyHTML id="24f722c6-748e-4420-af80-40021948966f">
+<p> People make mistakes. Programmers thus make mistakes&mdash;lots of them. <zyDefn> One kind of mistake, known as a _syntax error_, is to violate a programming language's rules on how symbols can be combined to create a program.</zyDefn> An example is forgetting to end a statement with a semicolon.  </p> 
+
+<p>A compiler generates a message when encountering a syntax error. The following program is missing a semicolon after the first output statement. </p> 
+</zyHTML>
+
+
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Compiler reporting a syntax error." id="4f3bdc6f-d098-9455-5b95-53ab08b4b5d9">
+<!--<table>
+<tr>
+<td>
+<zyCode>
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+</zyCode>
+</td>
+<td valign="top">-->
+<zyCode language="java" numbering="true">
+public class Traffic {
+   public static void main(String [] args) {
+
+      System.out.print("Traffic today")
+      System.out.println(" is very light.");
+   }
+}
+</zyCode>
+<!--</td>
+<td>-->
+<zyConsole>
+Traffic.java:4: ';' expected
+      System.out.print("Traffic today")
+                                       ^
+1 error
+</zyConsole>
+<!--</td>
+</tr>
+</table>-->
+</zyFigure>
+
+<zyHTML id="c3b78fcc-652a-46cb-9859-8de05f8c33f8">
+<p> Above, the 4 refers to the 4th line in the code. </p> 
+</zyHTML>
+</zyVersion>
+
+
+
+
+<zyVersion version="java">
+<zyTry caption="Syntax errors often exist before the reported line." id="87158e2b-976a-8cf2-44b8-926dd351ccb8"> 
+<p>The program below has a syntax error on line 3. The = at the end of the statement <zyICode>int playerScore=</zyICode> should be a semicolon.</p>
+
+<p>Before correcting the error, press Run, and notice that the error message is for a line that comes AFTER that statement, because that later line is where the compiler got confused. </p>
+
+<p>Replace the = with a semicolon, and press Run again. Your program should work correctly now. </p>
+
+<zyDE id="d47a44c9-620d-0866-2223-37ae19c56b62" language="java" input="false" reset="true" stacked="false" activity_type="tinker">
+<zyProgram>public class DisplayPlayer {
+   public static void main(String [] args) {
+      int playerScore=
+      int playerNum;
+
+      playerNum = 1;
+      playerScore = 100; 
+      System.out.println(playerNum);       
+      System.out.println(playerScore);       
+   }
+}
+</zyProgram>
+</zyDE>
+
+<p> In subsequent coding activities, you might find an error message being reported for a line that follows your statements, being a line you cannot edit. This situation almost always means that your statements have an error.  </p>
+</zyTry>
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetTF caption="Syntax errors." id="deba8203-a259-304d-c248-7ea5bba73d34" truelabel="Error" falselabel="No error">
+<p>Find the syntax errors. Assume variable numDogs has been declared. </p>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>System.out.print(numDogs). </zyCode></zyQtext>
+<zyQexpl>Statements end with a semicolon, not period. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>System.out.print("Dogs: " numDogs); </zyCode></zyQtext>
+<zyQexpl>Missing + before numDogs</zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>system.out.print("Everyone wins.");  </zyCode></zyQtext>
+<zyQexpl>Should be an uppercase S in System. </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>System.out.print("Hello friends!); </zyCode></zyQtext>
+<zyQexpl>Missing the ending ", as in: System.out.print("Hello friends!");</zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="No error">
+<zyCode>System.out.print("Amy // Michael"); </zyCode></zyQtext>
+<zyQexpl>Some might think // creates a problem, but the compiler does not treat // as a comment when within a string literal.  </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>
+System.out.print(NumDogs); </zyCode></zyQtext>
+<zyQexpl>The declared variable was numDogs, not NumDogs. The compiler will report that NumDogs has not been declared.   </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>
+int numCats
+numCats = 3; 
+System.out.print(numCats); </zyCode></zyQtext>
+<zyQexpl>Missing a semicolon after int numCats.  </zyQexpl>
+</zyQ>
+
+<zyQ>
+<zyQtext correct="Error">
+<zyCode>
+System.print(numDogs); </zyCode></zyQtext>
+<zyQexpl>Should be System.out.print, not System.print. </zyQexpl>
+</zyQ>
+</zyQSetTF>
+</zyVersion>
+
+
+
+<zyHTML id="90d9d9b2-5755-3779-65c3-8bde74328b54" subsection="true" caption="Unclear error messages">
+<h3>Unclear error messages</h3>
+</zyHTML>
+
+
+<zyHTML id="0ac6bc6c-221c-4b90-b1eb-d5642f0221e9">
+<p> Compiler error messages are often unclear or even misleading. The message is like the compiler's "best guess" of what is really wrong. </p>
+</zyHTML> 
+
+
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Misleading compiler error message." id="9f6cc460-28a9-5d98-81d3-3ba78c515b3d">
+<!--<table>
+<tr>
+<td>
+<zyCode>
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+</zyCode>
+</td>
+<td valign="top">-->
+<zyCode language="java" numbering="true">
+public class Traffic {
+   public static void main(String [] args) {
+
+      System.out.print "Traffic today ";
+      System.out.println("is very light.");
+   }
+}
+</zyCode>
+<!--</td>
+<td>-->
+<zyConsole>
+Traffic.java:4: error: not a statement
+	System.out.print "Traffic today ";
+	          ^
+Traffic.java:4: error: ';' expected
+	System.out.print "Traffic today ";
+	                ^
+</zyConsole>
+<!--</td>
+</tr>
+</table>-->
+</zyFigure>
+</zyVersion>
+
+
+
+
+<p> The compiler indicates a missing semicolon ';'. But the real error is the missing parentheses. </p> 
+</zyVersion>
+
+<p> Sometimes the compiler error message refers to a line that is actually many lines past where the error actually occurred. Not finding an error at the specified line, the programmer should look to <i>previous</i> lines. </p> 
+</zyHTML>
+
+
+
+<zyAnimator id="cda49116-2e64-cee6-a87d-b37916a417cd" caption="The compiler error message's line may be past the line with the actual error." height="270px" width="600px" selectedInstr="18" selectedObj="none" numObjsEverCreated="7" loadOnDemand="false">
+<!-- Last modified Thu Jun 01 2017 08:55:27 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="2" objType="text" objName="Object 1: Text" top="74px" left="46px" padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' border-color='zyAnimator-purple'><zyCode unsupported-language="pseudocode" nobox="true" zyanimator="true">1: Stmt
+2: Stmt
+3: Stmt-with-error
+4: Stmt
+5: Stmt
+6: Stmt</zyCode></zyObject><zyObject objNum="3" objType="triangle" objName="Object 3: Triangle" top="78px" left="198px" opacity="0" background-color="zyAnimator-blue"></zyObject><zyObject objNum="4" objType="text" objName="Compiler processing" top="74px" left="214px" opacity="0" color='zyAnimator-blue' font-family='arial, sans-serif'><text>Compiler processing</text></zyObject><zyObject objNum="5" objType="text" objName="Error at line 5" top="146px" left="190px" opacity="0" color='zyAnimator-red' font-style='italic' font-family='arial, sans-serif'><text>Compiler message: Error at line 5</text></zyObject><zyObject objNum="6" objType="text" objName="Programmer should co" top="135px" left="358px" opacity="0" font-family='arial, sans-serif'><text>Programmer should examine line 5</text></zyObject><zyObject objNum="7" objType="text" objName="and earlier lines." top="150px" left="418px" opacity="0" color='zyAnimator-green' font-style='italic' font-family='arial, sans-serif'><text>and earlier lines.</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>The compiler hasn&apos;t yet detected the error.  </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="4" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="3" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0" top="90" left="214"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="3" timeLabel="-" top="94" left="198"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0" top="104" left="214"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="3" timeLabel="-" top="108" left="198"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0" top="118" left="214"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="3" timeLabel="-" top="122" left="198"></zyInstruction>
+<zyInstruction instrType="step"><text>Now the compiler is confused, so it generates a message. 
+But the reported line number is past the actual syntax error. </text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.2" top="134" left="214"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="3" timeLabel="-" top="138" left="198"></zyInstruction><zyInstruction instrType="fade" objNum="5" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="-" top="182" left="50"></zyInstruction>
+<zyInstruction instrType="step"><text>Upon not finding an error at line 5, the programmer should look at earlier lines. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="6" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="7" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="7" timeLabel="-" top="118" left="418"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="-" top="99" left="358"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Static figure: The following is shown to the left and labeled "Compiler processing".
+
+1: Stmt
+2: Stmt
+3: Stmt-with-error
+4: Stmt
+5: Stmt
+6: Stmt
+
+Compiler message: Error at line 5
+
+Programmer should examine line 5 and earlier lines.
+
+Step 1: The compiler hasn't yet detected the error. The compiler processing label starts at line 1, and continues line by line to line 4.
+
+Step 2: Now the compiler is confused, so it generates a message. But the reported line number is past the actual syntax error. Compiler processing moves to line 5, and the message "Compiler message: Error at line 5" appears.
+
+Step 3: Upon not finding an error at line 5, the programmer should look at earlier lines. The message, "Programmer should examine line 5 and earlier lines" appears.
+</zyAltDescription>
+</zyAnimator>
+
+
+
+<zyQSetTF caption="Unclear error messages." id="e23adee4-20d2-30f3-62b9-a87acfbe7fc5">
+<zyQ>
+<zyQText correct="False">When a compiler says that an error exists on line 5, that line must have an error.  </zyQText>
+<zyQExpl>The error may actually exist in an earlier line, but the compiler didn't get confused until reaching line 5.   </zyQExpl>
+</zyQ>
+
+<!-- 
+<zyQ>
+<zyQText correct="False">If a compiler says that an error exists on line 90, the actual error may be on line 91, 92, etc. </zyQText>
+<zyQExpl>The actual error may be in an earlier line, but the compiler wasn't able to realize the error immediately, so proceeds to subsequent lines, then gets confused and reports an error.   </zyQExpl>
+</zyQ>
+-->
+
+<zyQ>
+<zyQText correct="True">If a compiler says that an error exists on line 90, the actual error may be on line 89, 88, etc. </zyQText>
+<zyQExpl>The actual error may be in an earlier line, but the compiler wasn't able to realize the error immediately, so proceeds to subsequent lines, then gets confused and reports an error.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="False">If a compiler generates a specific message like "missing semicolon", then a semicolon must be missing somewhere, though maybe from an earlier line. </zyQText>
+<zyQExpl>The actual error could be different, like missing parentheses. If a programmer makes a mistake, the statement and subsequent statements may still be valid code, but eventually the compiler cannot make sense of the code and generates an error message.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="35cc4c18-71ee-2348-096a-235026db5bd2" subsection="true" caption="Fixing the first error">
+<h3>Fixing the first error</h3>
+</zyHTML>
+
+
+<zyHTML id="340c1a6a-a07e-45a3-aefd-b9a4896bc4bc">
+<p>Some errors create an upsettingly long list of error messages. <zyGoodPractice id="d92c33b1-0af9-2df9-971d-c7611d9474c3"> Good practice is to focus on fixing just the first error reported by the compiler and then recompiling.</zyGoodPractice> The remaining error messages may be real but are more commonly due to the compiler's confusion caused by the first error and are thus irrelevant. </p>
+</zyHTML>
+
+<zyAside type="elaboration" name="Good practice for fixing errors reported by the compiler." id="d9162b58-9092-d983-47b6-8abe1aad5c65"> 
+<ol><li>Focus on FIRST error message, ignoring the rest.</li>
+<li>Look at reported line of first error message. If error found, fix.  Else, look at previous few lines.</li>
+<li>Compile, repeat.</li></ol>  
+</zyAside>
+
+<zyTry caption="Fixing syntax errors." id="acc0add9-e211-2b65-ba57-1f3577393648"> 
+<p>Click run to compile, and note the long error list. Fix only the first error, then recompile. Repeat that process (fix first error, recompile) until the program compiles and runs.  <i>Expect</i> to see misleading error messages as well as errors that occur before the reported line number. </p> 
+
+
+
+
+
+<zyVersion version="java">
+<zyDE id="9aac62e0-b2f9-584a-1246-4640b8527051" language="java" input="false" reset="true" stacked="false" activity_type="tinker">
+<zyProgram>public class BeansInJars {
+   public static void main (String [] args) {
+      int numBeans
+      int numJars;
+      inl totalBeans;
+
+      numBeans = 500;
+      numJars = 3;
+   
+      System.out.print(numBeans + " beans in ");
+      System.out.print(numJar + " jars yields "); 
+      totalBeans = numBeans * numJars; 
+      Systems.out.println(totalBeans " total");  
+   }
+}
+</zyProgram>
+</zyDE>
+</zyVersion>
+</zyTry>
+
+
+
+<zyQSetMultipleChoice caption="Fixing the first error. " id="5fb66c69-175e-46c6-ad83-b85d50268537">
+<p>A compiler generates the following error messages: <br />
+Line 7: Missing semicolon<br />
+Line 9: numItems not defined<br />
+Line 10: Expected '('</p>
+
+<zyQ>
+<zyQText>The programmer should start by examining line _____. </zyQText>
+<zyQChoice correct="true">
+<zyQAns>7</zyQAns>
+<zyQExpl>The first error message refers to line 7. The programmer should focus on the first error message. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>9</zyQAns>
+<zyQExpl>Line 9 is not mentioned in the first error message. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>10</zyQAns>
+<zyQExpl>Line 10 is the last error message, but the programmer should focus on the first message, not last. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>If the programmer corrects an error on line 7, the programmer should _____. </zyQText>
+<zyQChoice>
+<zyQAns>check earlier lines too</zyQAns>
+<zyQExpl>If the programmer found an error on line 7, checking earlier lines is unnecessary. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>compile</zyQAns>
+<zyQExpl>After finding the first error, the programmer should compile. Examining other errors often wastes time, since those may have stemmed from the first. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>check line 9</zyQAns>
+<zyQExpl>Often, error messages after the first one are irrelevant, caused by the compiler becoming confused from the first error. Thus, checking the line mentioned in the next message is often not wise. </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>If the programmer does NOT find an error on line 7, the programmer should check line _____. </zyQText>
+<zyQChoice correct="true">
+<zyQAns>6</zyQAns>
+<zyQExpl>Sometimes a compiler doesn't notice an error exists until getting confused on a later line. Thus, the programmer should check the previous line, and if an error isn't found there, check even earlier lines.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>8</zyQAns>
+<zyQExpl>Line 8 is the next line after line 7, but the first error message couldn't have been referring to an error in line 8, as the message was generated before line 8. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>9</zyQAns>
+<zyQExpl>Line 9 is mentioned in the next error message, but is not where the first message's error might exist. </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+
+
+<zypInfo person="James" date="3/31/20" minutes="10">Xiv9qCpJ - Fixed CA for basic syntax errors</zypInfo>
+
+
+
+
+
+
+
+
+
+
+<zyHomeworkProblem id="33a672f9-3195-3156-1096-e84b0cdc47a3" language="java" caption="Basic syntax errors." author="FV/RS/FG">
+<zyInstructions>
+Type the statements. Then, correct the one syntax error in each statement. Hints: Statements end in semicolons, and string literals use double quotes. <br />
+<pre>
+System.out.printl("Predictions are hard.");
+System.out.print("Especially <!--"-->');
+System.out.println("about the future.").
+System.out.println("Num is: " - userNum);
+ 
+</pre>  
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class Errors {
+   public static void main(String [] args) {
+      int userNum;
+
+      userNum = 5;
+      <STUDENT CODE>
+
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+System.out.println("Predictions are hard.");
+System.out.print("Especially ");
+System.out.println("about the future.");
+System.out.println("Num is: " + userNum);
+</zySolution>
+
+<zyTestVectors>
+public static void main (String [] args) { 
+   zyInitialize();
+   int userNum;
+
+   userNum = 5;
+   <STUDENT CODE>
+    zyAssertOutput("Predictions are hard.\nEspecially about the future.\nNum is: 5\n", 
+      "Testing for correct output", false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+
+
+
+
+
+
+
+<zyHomeworkProblem id="a9185555-3665-de38-f485-75d1c8da69ae" language="java" caption="More syntax errors." author="SL/RS/FG">
+<zyInstructions>
+Retype the statements, correcting the syntax errors.<br />
+<pre>
+System.out.println("Num: " + songnum);
+System.out.println(int songNum);
+System.out.println(songNum " songs");
+</pre>  
+<!--Note: These activities may test code with different test values. This activity will perform two tests: the first with songNum = 5, the second with songNum = 9. See <zyLink link="https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/3"> How to Use zyBooks</zyLink>. -->
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class Errors {
+   public static void main (String [] args) {
+      int songNum;
+
+      songNum = 5;
+      <STUDENT CODE>
+
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+System.out.println("Num: " + songNum);
+System.out.println(songNum);
+System.out.println(songNum + " songs");
+</zySolution>
+
+<zyTestVectors>
+public static void main (String [] args)  {
+   zyInitialize();
+   int songNum; 
+
+   songNum = 5; 
+   <STUDENT CODE>
+   zyAssertOutput("Num: 5\n5\n5 songs\n", "Testing with songNum = 5", false, false, true, false);
+
+   songNum = 9; 
+   <STUDENT CODE>
+   zyAssertOutput("Num: 9\n9\n9 songs\n", "Testing with songNum = 9", false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>
+
+
+
+
+
+<zyHTML id="11a797c5-9a51-dba7-4f5c-4733793e2636" subsection="true" caption="Logic errors">
+<h3>Logic errors</h3>
+</zyHTML>
+
+
+<zyHTML id="7d089239-64dd-4511-9987-a1ecc6e64ed8">
+<p><zyDefn> Because a syntax error is detected by the compiler, a syntax error is known as a type of _compile-time error_</zyDefn>.</p> 
+
+<p> New programmers commonly complain: "The program compiled perfectly but isn't working." Successfully compiling means the program doesn't have compile-time errors, but the program may have other kinds of errors. <zyDefn>A _logic error_, also called a _bug_, is an error that occurs while a program runs</zyDefn>. For example, a programmer might mean to type <zyICode>numBeans * numJars</zyICode> but accidentally types <zyICode>numBeans + numJars</zyICode> (+ instead of *).  The program would compile but would not run as intended. </p> 
+</zyHTML>
+
+
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Logic errors." id="31de192a-dda2-e329-e691-4d273468ba89">
+<zyCode language="cpp">
+public class BeansInJars {
+   public static void main (String [] args) {
+      int numBeans;
+      int numJars;
+      int totalBeans;
+
+      numBeans = 500;
+      numJars = 3;
+   
+      System.out.print(numBeans + " beans in ");
+      System.out.print(numJars + " jars yields "); 
+      totalBeans = numBeans + numJars; // Oops, used + instead of *
+      System.out.println(totalBeans + " total");  
+   }
+}
+</zyCode> 
+</zyFigure>
+</zyVersion>
+
+
+
+<zyTry caption="Fix the bug." id="eb091f7b-b907-98c5-71fe-cfc9afe72632"> 
+<p>Click run to compile and execute and then note the incorrect program output. Fix the bug in the program.  </p> 
+
+
+
+
+
+<zyVersion version="java">
+<zyDE id="91410164-9d33-e06c-3030-6670b57d64d9" language="java" input="false" reset="true" stacked="false" activity_type="tinker">
+<zyProgram>// This program has a bug that causes a logic error. 
+// Can you find the bug?
+public class BeansInJars {
+   public static void main (String [] args) {
+      int numBeans;
+      int numJars;
+      int totalBeans;
+
+      numBeans = 500;
+      numJars = 3;
+   
+      System.out.print(numBeans + " beans in ");
+      System.out.print(numJars + " jars yields "); 
+      totalBeans = numBeans * numJars; 
+      System.out.println("totalBeans" + " total");  
+   }
+}
+</zyProgram>
+</zyDE>
+</zyVersion>
+</zyTry>
+
+
+<!-- Link no longer works: https://education.nationalgeographic.org/resource/worlds-first-computer-bug 
+I don't think this exists on the national geographic website anymore. -->
+<zyAside type="bordered" name="Bugs" id="4759a925-1c34-2505-8df5-7ad547eb85fa"> 
+<p> The term <i>bug</i> to describe a runtime error was popularized when in 1947 engineers discovered their program on a Harvard University Mark II computer was not working because a moth was stuck in one of the relays (a type of mechanical switch). They taped the bug into their engineering log book, still preserved today (<zyLink link="<!--http://americanhistory.si.edu/collections/search/object/nmah_334663-->https://www.history.navy.mil/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-96000/NH-96566-KN.html">The moth</zyLink>).</p>
+
+<zyGdocImage id="4ba74c78-2e18-d139-da37-b87f680a4312" alt="An image of a log book page shows calculations pertaining to the first computer bug in 1947. The log page has a small moth taped to it. A caption beside the moth reads Relay number 70 panel F, (moth) in relay. First case of actual bug being found." width= "200">
+
+</zyGdocImage>
+<sub>Credit: <!--zyBooks-->National Geographic Education</sub>
+</zyAside>
+
+
+
+<zyHTML id="7d8c978b-7773-87c2-1401-8b55f2b6393a" subsection="true" caption="Compiling frequently">
+<h3>Compiling frequently</h3>
+</zyHTML>
+
+
+<zyHTML id="421240c9-a403-4450-b1f2-2f2e6a1161d6">
+<p><zyGoodPractice id="72e923d3-d448-3c12-d5e3-a31de3015686"> Good practice, especially for new programmers, is to compile after writing only a few lines of code, rather than writing tens of lines and then compiling. </zyGoodPractice> New programmers commonly write tens of lines before compiling, which may result in an overwhelming number of compilation errors and warnings and logic errors that are hard to detect and correct.</p>   
+</zyHTML>
+
+
+
+<zyAnimator id="fd872b24-1878-47f5-8ac6-b54206613813" caption="Compile and run after writing just a few statements.
+" height="350px" width="600px" selectedInstr="23" selectedObj="none" numObjsEverCreated="26" loadOnDemand="false">
+<!-- Last modified Tue Jun 06 2017 13:51:27 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="3" objType="box" objName="background" top="58px" left="148px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="116px" width="72px" border-width="0px" border-style="none"></zyObject><zyObject objNum="4" objType="box" objName="background 2" top="58px" left="337px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="116px" width="72px" border-width="0px" border-style="none"></zyObject><zyObject objNum="5" objType="box" objName="Conosle1" top="182px" left="132px" border-radius="14px" background-color="zyAnimator-white" useConstrainedProportions="false" height="64px" width="96px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="6" objType="box" objName="Console1 stand" top="248px" left="165px" background-color="zyAnimator-white" useConstrainedProportions="false" height="8px" width="34px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="7" objType="box" objName="Console2" top="182px" left="324px" border-radius="14px" background-color="zyAnimator-white" useConstrainedProportions="false" height="64px" width="96px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="8" objType="box" objName="Console2 stand" top="248px" left="356px" background-color="zyAnimator-white" useConstrainedProportions="false" height="8px" width="34px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="9" objType="text" objName="Compile &amp; run - red" top="146px" left="143px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='arial, sans-serif'><text>Compile &amp; run</text></zyObject><zyObject objNum="10" objType="text" objName="Compile &amp; run - green" top="86px" left="334px" opacity="0" color='zyAnimator-green' font-size='12px' font-family='arial, sans-serif'><text>Compile &amp; run</text></zyObject><zyObject objNum="11" objType="text" objName="Compile &amp; run - orange" top="110px" left="333px" opacity="0" color='zyAnimator-orange' font-size='12px' font-family='arial, sans-serif'><text>Compile &amp; run</text></zyObject><zyObject objNum="12" objType="text" objName="Compile &amp; run blue" top="146px" left="333px" opacity="0" color='zyAnimator-blue' font-size='12px' font-family='arial, sans-serif'><text>Compile &amp; run</text></zyObject><zyObject objNum="13" objType="text" objName="stmt1 red" top="58px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt1</text></zyObject><zyObject objNum="14" objType="text" objName="stmt2 red" top="70px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt2</text></zyObject><zyObject objNum="15" objType="text" objName="stmt3 red" top="82px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt3</text></zyObject><zyObject objNum="16" objType="text" objName="stmt4 red" top="94px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt4</text></zyObject><zyObject objNum="17" objType="text" objName="stmt5 red" top="106px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt5</text></zyObject><zyObject objNum="18" objType="text" objName="stmt6 red" top="118px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt6</text></zyObject><zyObject objNum="19" objType="text" objName="stmt7 red" top="130px" left="148px" opacity="0" color='zyAnimator-purple' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt7</text></zyObject><zyObject objNum="20" objType="text" objName="stmt1 green" top="58px" left="340px" opacity="0" color='zyAnimator-green' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt1</text></zyObject><zyObject objNum="21" objType="text" objName="stmt2 green" top="70px" left="340px" opacity="0" color='zyAnimator-green' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt2</text></zyObject><zyObject objNum="22" objType="text" objName="stmt3 orange" top="82px" left="340px" opacity="0" color='zyAnimator-orange' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt3</text></zyObject><zyObject objNum="23" objType="text" objName="stmt4 orange" top="94px" left="340px" opacity="0" color='zyAnimator-orange' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt4</text></zyObject><zyObject objNum="24" objType="text" objName="stmt5 blue" top="106px" left="340px" opacity="0" color='zyAnimator-blue' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt5</text></zyObject><zyObject objNum="25" objType="text" objName="stmt6 blue" top="118px" left="340px" opacity="0" color='zyAnimator-blue' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt6</text></zyObject><zyObject objNum="26" objType="text" objName="stmt7 blue" top="130px" left="340px" opacity="0" color='zyAnimator-blue' font-size='12px' font-family='courier' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' line-height='14px'><text>stmt7</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>Writing many lines of code without compiling and running is bad practice.</text></zyInstruction>
+<zyInstruction instrType="fade" objNum="13" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="14" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="9" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="-" top="186" left="140"></zyInstruction>
+<zyInstruction instrType="step"><text>New programmers should compile and run programs after every few lines. Even experienced programmers compile and run frequently. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="20" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="-" top="186" left="332"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="-" top="202" left="332"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="12" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="-" top="218" left="332"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Static figure: The following is shown to the left.
+
+stmt1
+stmt2
+stmt3
+stmt4
+stmt5
+stmt6
+stmt7
+
+All statements are the same color. Output shows "Compile and run".
+
+The following is shown to the right.
+
+stmt1
+stmt2
+stmt3
+stmt4
+stmt5
+stmt6
+stmt7
+
+Statements 1-2, 3-4, and 5-7 are in different colors. Output shows "Compile and run" 3 times, each corresponding to a different color.
+
+Step 1: Writing many lines of code without compiling and running is bad practice. The left statements appear, then "Compile and run" appears.
+
+Step 2: New programmers should compile and run programs after every few lines. Even experienced programmers compile and run frequently. On the right, the first two statements appear, then the first "Compile and run" appears. The third and fourth statements appear, then the second "Compile and run" appears. Then the fifth through seventh statements appear, then the third "Compile and run" appears.
+</zyAltDescription>
+</zyAnimator>
+
+
+
+<zyQSetTF caption="Compiling and running frequently. " id="6592a164-4a45-4ef4-b241-7895f2ac9e4b">
+<zyQ>
+<zyQText correct="following good practice" truelabel="wasting time" falselabel="following good practice">A new programmer writes 5 lines of code, compiles and runs, writes 5 more lines, and compiles and runs again. The programmer is _____ . </zyQText>
+<zyQExpl>Though beginning programmers may think such an approach wastes time, in fact the approach saves time. The approach enables faster detection and correction of errors. If multiple errors exist in large code, the errors may interact and be harder to detect and correct.   </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="programming dangerously" truelabel="programming dangerously" falselabel="following good practice">An experienced programmer writes 80 lines of code and then compiles and runs. The programmer is probably _____ . </zyQText>
+<zyQExpl>Even experienced programmers tend to compile and run frequently. Errors are common, even for experienced programmers.  80 lines is probably dangerous, since errors may lurk in the code and be hard to find and correct.   </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+
+
+<zyHTML id="716865db-3ce3-cebb-7eac-78e3de877e2c" subsection="true" caption="Compiler warnings">
+<h3>Compiler warnings</h3>
+</zyHTML>
+
+
+
+
+<p> <zyDefn>A compiler will sometimes report a _warning_, which doesn't stop the compiler from creating an executable program but indicates a possible logic error.</zyDefn> Ex: Some compilers will report a warning like "Warning, dividing by 0 is not defined" if encountering code like: <zyICode>totalItems = numItems / 0</zyICode> (running that program does result in a runtime error). <zyGoodPractice id="8024735d-2ef7-99ae-394b-53a1eba8a52a">Even though the compiler may create an executable program, good practice is to write programs that compile without warnings.</zyGoodPractice> <!--<zyGoodPractice id="254e79ba-ea52-90d9-7a4a-38a32b66d850">In fact, many programmers recommend the good practice of configuring compilers to print even more warnings.</zyGoodPractice> For example, javac can be run as <zyICode> javac -Xlint yourfile.java</zyICode>. --></p>
+<p>By default, Java compilers don't print every possible warning. Ex: A programmer's Java code may use something old that has a newer, better alternative. The compiler recognizes this, but since the code may still run fine, no warning is given. <zyGoodPractice id="c5722cd3-6c2a-fab9-369b-d4b75e77079a">So, many programmers recommend the good practice of configuring compilers to be more picky with warnings than the default.</zyGoodPractice> Ex: javac can be run as <zyICode>javac -Xlint yourfile.java</zyICode> to enable all recommended warnings. Programmers often feel more confident about code that compiles with no warnings when -Xlint is used.</p>
+</zyVersion>
+</zyHTML>
+
+
+
+<zyQSetTF caption="Compiler warnings." id="8fe07c71-941a-9551-ba99-af6cbcc2146e"> 
+<zyQ>
+<zyQText correct="False"> A compiler warning by default will prevent a program from being created. </zyQText>
+<zyQExpl> Unless the programmer specially configures the compiler, warnings will NOT prevent a program from being created; only errors will. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="True"> Generally, a programmer should not ignore warnings. </zyQText>
+<zyQExpl>Ignoring warnings can cause an important warning to be overlooked in the middle of less-important warnings. Writing code that generates no warnings is better. </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText correct="False"> A compiler's default settings cause most warnings to be reported during compilation. </zyQText>
+<zyQExpl>Default settings commonly do NOT report all important issues. Good practice is to explicitly configure the compiler to report most warnings.  </zyQExpl>
+</zyQ>
+</zyQSetTF>
+
+</zySection>

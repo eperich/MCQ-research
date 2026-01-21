@@ -60,6 +60,41 @@ CRITERIA_COLUMNS = [
     'unfocused_stem'
 ]
 
+# SAQUET criteria grouped by category
+CRITERIA_CATEGORIES = {
+    'Clarity': [
+        'complex_k_type',
+        'unfocused_stem',
+        'negative_worded_stem',
+        'ambiguous_unclear_information',
+        'gratuitous_information_in_stem',
+        'lost_sequence',
+        'vague_terms'
+    ],
+    'Accuracy': [
+        'more_than_one_correct',
+        'absolute_terms'
+    ],
+    'Test-wiseness Prevention': [
+        'implausible_distractors',
+        'true_or_false',
+        'avoid_convergence_cues',
+        'longest_answer_correct',
+        'none_of_the_above',
+        'word_repeats_in_stem_and_correct_answer',
+        'avoid_logical_cues',
+        'all_of_the_above',
+        'grammatical_cues_in_stem'
+    ]
+}
+
+# Category colors
+CATEGORY_COLORS = {
+    'Clarity': '#F77F00',          # Vibrant orange
+    'Accuracy': '#E63946',         # Coral red
+    'Test-wiseness Prevention': '#118AB2'  # Ocean blue
+}
+
 class QuestionQualityAnalyzer:
     """Analyze question quality from SAQUET evaluation results."""
     
@@ -67,6 +102,7 @@ class QuestionQualityAnalyzer:
         self.base_path = Path(base_path)
         self.ai_data = None
         self.sme_data = None
+        self.category_analysis = None
         
     def load_all_files(self):
         """Load all SAQUET results files (AI and SME)."""
@@ -306,6 +342,97 @@ class QuestionQualityAnalyzer:
             'comparison': comparison_df
         }
     
+    def analyze_by_category(self, output_dir=None):
+        """Analyze failures grouped by SAQUET categories."""
+        if output_dir is None:
+            output_dir = self.base_path
+        else:
+            output_dir = Path(output_dir)
+        
+        print("\n=== Analyzing by SAQUET Category ===")
+        
+        # Calculate failures by category for AI and SME
+        category_results = []
+        
+        for category, criteria in CRITERIA_CATEGORIES.items():
+            # AI failures in this category
+            ai_failures = 0
+            ai_total = len(self.ai_data) * len(criteria)
+            
+            for criterion in criteria:
+                if criterion in self.ai_data.columns:
+                    ai_failures += (self.ai_data[criterion] == 'Fail').sum()
+            
+            ai_failure_rate = (ai_failures / ai_total * 100) if ai_total > 0 else 0
+            
+            # SME failures in this category
+            sme_failures = 0
+            sme_total = len(self.sme_data) * len(criteria)
+            
+            for criterion in criteria:
+                if criterion in self.sme_data.columns:
+                    sme_failures += (self.sme_data[criterion] == 'Fail').sum()
+            
+            sme_failure_rate = (sme_failures / sme_total * 100) if sme_total > 0 else 0
+            
+            category_results.append({
+                'Category': category,
+                'Criteria_Count': len(criteria),
+                'AI_Failures': ai_failures,
+                'AI_Total_Opportunities': ai_total,
+                'AI_Failure_Rate_%': round(ai_failure_rate, 2),
+                'SME_Failures': sme_failures,
+                'SME_Total_Opportunities': sme_total,
+                'SME_Failure_Rate_%': round(sme_failure_rate, 2),
+                'Difference_%': round(ai_failure_rate - sme_failure_rate, 2)
+            })
+        
+        category_df = pd.DataFrame(category_results)
+        category_df.to_csv(output_dir / 'table_failures_by_category.csv', index=False)
+        print("✓ Saved table_failures_by_category.csv")
+        
+        # Also analyze by category AND discipline
+        category_discipline_results = []
+        
+        for discipline in sorted(self.ai_data['discipline'].unique()):
+            for category, criteria in CRITERIA_CATEGORIES.items():
+                ai_disc = self.ai_data[self.ai_data['discipline'] == discipline]
+                sme_disc = self.sme_data[self.sme_data['discipline'] == discipline]
+                
+                # AI failures
+                ai_failures = 0
+                ai_total = len(ai_disc) * len(criteria)
+                for criterion in criteria:
+                    if criterion in ai_disc.columns:
+                        ai_failures += (ai_disc[criterion] == 'Fail').sum()
+                
+                ai_failure_rate = (ai_failures / ai_total * 100) if ai_total > 0 else 0
+                
+                # SME failures
+                sme_failures = 0
+                sme_total = len(sme_disc) * len(criteria)
+                for criterion in criteria:
+                    if criterion in sme_disc.columns:
+                        sme_failures += (sme_disc[criterion] == 'Fail').sum()
+                
+                sme_failure_rate = (sme_failures / sme_total * 100) if sme_total > 0 else 0
+                
+                category_discipline_results.append({
+                    'Discipline': discipline,
+                    'Category': category,
+                    'AI_Failure_Rate_%': round(ai_failure_rate, 2),
+                    'SME_Failure_Rate_%': round(sme_failure_rate, 2),
+                    'Difference_%': round(ai_failure_rate - sme_failure_rate, 2)
+                })
+        
+        category_discipline_df = pd.DataFrame(category_discipline_results)
+        category_discipline_df.to_csv(output_dir / 'table_failures_by_category_and_discipline.csv', index=False)
+        print("✓ Saved table_failures_by_category_and_discipline.csv")
+        
+        self.category_analysis = category_df
+        
+        return category_df, category_discipline_df
+    
     def create_visualizations(self, output_dir=None):
         """Create all visualizations."""
         if output_dir is None:
@@ -352,7 +479,16 @@ class QuestionQualityAnalyzer:
             ax1.text(bar.get_x() + bar.get_width()/2., height + 1,
                     f'{val:.1f}%', ha='center', va='bottom', fontsize=10)
         
+        plt.tight_layout()
+        filename = 'quality_comparison_overall.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # 2. Distribution of failure counts - AI
+        fig2, ax2 = plt.subplots(1, 1, figsize=(8, 6))
         ai_failure_dist = self.ai_data['failure_count'].value_counts().sort_index()
         ax2.bar(ai_failure_dist.index, ai_failure_dist.values, 
                color=COLORS['ai'], edgecolor='black', linewidth=1, alpha=0.8)
@@ -367,7 +503,16 @@ class QuestionQualityAnalyzer:
         ax2.spines['top'].set_visible(False)
         ax2.spines['right'].set_visible(False)
         
+        plt.tight_layout()
+        filename = 'quality_distribution_ai.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # 3. Distribution of failure counts - SME
+        fig3, ax3 = plt.subplots(1, 1, figsize=(8, 6))
         sme_failure_dist = self.sme_data['failure_count'].value_counts().sort_index()
         ax3.bar(sme_failure_dist.index, sme_failure_dist.values,
                color=COLORS['sme'], edgecolor='black', linewidth=1, alpha=0.8)
@@ -382,7 +527,16 @@ class QuestionQualityAnalyzer:
         ax3.spines['top'].set_visible(False)
         ax3.spines['right'].set_visible(False)
         
+        plt.tight_layout()
+        filename = 'quality_distribution_sme.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # 4. Comparison table
+        fig4, ax4 = plt.subplots(1, 1, figsize=(8, 4))
         comparison_data = [
             ['AI-Generated', len(self.ai_data), 
              (self.ai_data['quality'] == 'Acceptable').sum(),
@@ -420,8 +574,8 @@ class QuestionQualityAnalyzer:
                 table[(i, j)].set_edgecolor('black')
                 table[(i, j)].set_linewidth(0.5)
         
-        plt.tight_layout(pad=2.0)
-        filename = 'quality_comparison_ai_vs_sme.png'
+        plt.tight_layout()
+        filename = 'quality_comparison_table.png'
         plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
@@ -430,7 +584,10 @@ class QuestionQualityAnalyzer:
     
     def _create_discipline_comparison(self, output_dir):
         """Compare quality across disciplines."""
-        fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 9))
+        # Create each visualization separately
+        
+        # 1. Acceptance rate by discipline and source
+        fig1, ax1 = plt.subplots(1, 1, figsize=(10, 6))
         
         # Combine AI and SME data for discipline analysis
         all_data = pd.concat([self.ai_data, self.sme_data], ignore_index=True)
@@ -468,7 +625,16 @@ class QuestionQualityAnalyzer:
                     ax1.text(bar.get_x() + bar.get_width()/2., height + 1.5,
                             f'{height:.1f}', ha='center', va='bottom', fontsize=8)
         
+        plt.tight_layout()
+        filename = 'quality_by_discipline_comparison.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # 2. AI quality by discipline
+        fig2, ax2 = plt.subplots(1, 1, figsize=(8, 6))
         ai_by_disc = self.ai_data.groupby('discipline')['quality'].apply(
             lambda x: (x == 'Acceptable').sum() / len(x) * 100
         ).sort_values(ascending=True)
@@ -489,7 +655,16 @@ class QuestionQualityAnalyzer:
             ax2.text(width + 1.5, bar.get_y() + bar.get_height()/2.,
                     f'{val:.1f}', ha='left', va='center', fontsize=9)
         
+        plt.tight_layout()
+        filename = 'quality_by_discipline_ai.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # 3. SME quality by discipline
+        fig3, ax3 = plt.subplots(1, 1, figsize=(8, 6))
         sme_by_disc = self.sme_data.groupby('discipline')['quality'].apply(
             lambda x: (x == 'Acceptable').sum() / len(x) * 100
         ).sort_values(ascending=True)
@@ -509,7 +684,16 @@ class QuestionQualityAnalyzer:
             ax3.text(width + 1.5, bar.get_y() + bar.get_height()/2.,
                     f'{val:.1f}', ha='left', va='center', fontsize=9)
         
+        plt.tight_layout()
+        filename = 'quality_by_discipline_sme.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # 4. Average failures by discipline
+        fig4, ax4 = plt.subplots(1, 1, figsize=(10, 6))
         avg_failures = all_data.groupby(['discipline', 'source'])['failure_count'].mean().unstack()
         
         x = np.arange(len(avg_failures))
@@ -530,8 +714,8 @@ class QuestionQualityAnalyzer:
         ax4.spines['top'].set_visible(False)
         ax4.spines['right'].set_visible(False)
         
-        plt.tight_layout(pad=2.0)
-        filename = 'quality_by_discipline.png'
+        plt.tight_layout()
+        filename = 'quality_avg_failures_by_discipline.png'
         plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
@@ -540,8 +724,6 @@ class QuestionQualityAnalyzer:
     
     def _create_failure_analysis(self, output_dir):
         """Analyze which criteria fail most often."""
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
-        
         # Count failures for each criterion
         ai_failures = {}
         sme_failures = {}
@@ -559,6 +741,7 @@ class QuestionQualityAnalyzer:
         sme_vals = [sme_failures.get(k, 0) for k, _ in ai_sorted]
         
         # AI failures
+        fig1, ax1 = plt.subplots(1, 1, figsize=(8, 8))
         y = np.arange(len(criteria_names))
         bars = ax1.barh(y, ai_vals, color=COLORS['ai'], edgecolor='black', linewidth=0.5)
         ax1.set_yticks(y)
@@ -575,7 +758,16 @@ class QuestionQualityAnalyzer:
                 ax1.text(val + max(ai_vals)*0.015, bar.get_y() + bar.get_height()/2.,
                         f'{val}', ha='left', va='center', fontsize=8)
         
+        plt.tight_layout()
+        filename = 'failure_by_criterion_ai.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
         # SME failures
+        fig2, ax2 = plt.subplots(1, 1, figsize=(8, 8))
         bars = ax2.barh(y, sme_vals, color=COLORS['sme'], edgecolor='black', linewidth=0.5)
         ax2.set_yticks(y)
         ax2.set_yticklabels(criteria_names, fontsize=8)
@@ -591,13 +783,302 @@ class QuestionQualityAnalyzer:
                 ax2.text(val + max(sme_vals)*0.015, bar.get_y() + bar.get_height()/2.,
                         f'{val}', ha='left', va='center', fontsize=8)
         
-        plt.tight_layout(pad=2.0)
-        filename = 'failure_by_criterion.png'
+        plt.tight_layout()
+        filename = 'failure_by_criterion_sme.png'
         plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
         print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+    
+    def create_category_visualizations(self, output_dir=None):
+        """Create visualizations for category-based analysis."""
+        if output_dir is None:
+            output_dir = self.base_path
+        else:
+            output_dir = Path(output_dir)
+        
+        if self.category_analysis is None:
+            print("Warning: No category analysis data. Run analyze_by_category() first.")
+            return
+        
+        print("\n=== Creating Category Visualizations ===")
+        
+        # 1. Overall failure rates by category
+        fig1, ax1 = plt.subplots(1, 1, figsize=(10, 6))
+        
+        categories = self.category_analysis['Category']
+        x = np.arange(len(categories))
+        width = 0.35
+        
+        bars1 = ax1.bar(x - width/2, self.category_analysis['AI_Failure_Rate_%'], width,
+                       label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1)
+        bars2 = ax1.bar(x + width/2, self.category_analysis['SME_Failure_Rate_%'], width,
+                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1)
+        
+        ax1.set_ylabel('Failure Rate (%)', fontsize=11)
+        ax1.set_title('SAQUET Failure Rate by Category\n(AI-Generated vs SME-Written)',
+                     fontsize=12, pad=15)
+        ax1.set_xticks(x)
+        ax1.set_xticklabels(categories, fontsize=10)
+        ax1.legend(frameon=True, fontsize=9, loc='upper right')
+        ax1.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
+        
+        # Add value labels
+        for bars in [bars1, bars2]:
+            for bar in bars:
+                height = bar.get_height()
+                if height > 0:
+                    ax1.text(bar.get_x() + bar.get_width()/2., height + 0.3,
+                            f'{height:.1f}%', ha='center', va='bottom', fontsize=8)
+        
+        plt.tight_layout()
+        filename = 'category_failure_rates_comparison.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 2. Difference in failure rates by category
+        fig2, ax2 = plt.subplots(1, 1, figsize=(10, 6))
+        
+        differences = self.category_analysis['Difference_%']
+        colors_diff = [COLORS['unacceptable'] if d > 0 else COLORS['acceptable'] for d in differences]
+        
+        bars = ax2.barh(categories, differences, color=colors_diff, edgecolor='black', linewidth=1)
+        ax2.axvline(x=0, color='black', linestyle='-', linewidth=1.5)
+        ax2.set_xlabel('Difference in Failure Rate (AI - SME) %', fontsize=11)
+        ax2.set_title('Difference in Failure Rates by Category\n(Positive = AI worse, Negative = AI better)',
+                     fontsize=12, pad=15)
+        ax2.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['right'].set_visible(False)
+        
+        for bar, val in zip(bars, differences):
+            width = bar.get_width()
+            label_x = width + (0.3 if width > 0 else -0.3)
+            ha = 'left' if width > 0 else 'right'
+            ax2.text(label_x, bar.get_y() + bar.get_height()/2.,
+                    f'{val:.1f}%', ha=ha, va='center', fontsize=9, fontweight='bold')
+        
+        plt.tight_layout()
+        filename = 'category_failure_difference.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 3. AI failure rates by category (detailed)
+        fig3, ax3 = plt.subplots(1, 1, figsize=(10, 6))
+        
+        cat_colors = [CATEGORY_COLORS[cat] for cat in categories]
+        bars = ax3.bar(categories, self.category_analysis['AI_Failure_Rate_%'],
+                      color=cat_colors, edgecolor='black', linewidth=1.5)
+        ax3.set_ylabel('Failure Rate (%)', fontsize=11)
+        ax3.set_title('AI-Generated Questions: Failure Rate by Category',
+                     fontsize=12, pad=15)
+        ax3.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax3.spines['top'].set_visible(False)
+        ax3.spines['right'].set_visible(False)
+        
+        for bar, val, count in zip(bars, self.category_analysis['AI_Failure_Rate_%'],
+                                   self.category_analysis['Criteria_Count']):
+            height = bar.get_height()
+            ax3.text(bar.get_x() + bar.get_width()/2., height + 0.3,
+                    f'{val:.1f}%\n({count} criteria)', ha='center', va='bottom', fontsize=8)
+        
+        plt.tight_layout()
+        filename = 'category_ai_failure_rates.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 4. SME failure rates by category (detailed)
+        fig4, ax4 = plt.subplots(1, 1, figsize=(10, 6))
+        
+        bars = ax4.bar(categories, self.category_analysis['SME_Failure_Rate_%'],
+                      color=cat_colors, edgecolor='black', linewidth=1.5)
+        ax4.set_ylabel('Failure Rate (%)', fontsize=11)
+        ax4.set_title('SME-Written Questions: Failure Rate by Category',
+                     fontsize=12, pad=15)
+        ax4.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax4.spines['top'].set_visible(False)
+        ax4.spines['right'].set_visible(False)
+        
+        for bar, val, count in zip(bars, self.category_analysis['SME_Failure_Rate_%'],
+                                   self.category_analysis['Criteria_Count']):
+            height = bar.get_height()
+            ax4.text(bar.get_x() + bar.get_width()/2., height + 0.3,
+                    f'{val:.1f}%\n({count} criteria)', ha='center', va='bottom', fontsize=8)
+        
+        plt.tight_layout()
+        filename = 'category_sme_failure_rates.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        print("✓ All category visualizations complete")
+    
+    def create_category_by_discipline_visualizations(self, output_dir=None):
+        """Create visualizations for category analysis by discipline."""
+        if output_dir is None:
+            output_dir = self.base_path
+        else:
+            output_dir = Path(output_dir)
+        
+        print("\n=== Creating Category by Discipline Visualizations ===")
+        
+        # Load the category by discipline data
+        cat_disc_file = output_dir / 'table_failures_by_category_and_discipline.csv'
+        if not cat_disc_file.exists():
+            print("Warning: Category by discipline data not found. Run analyze_by_category() first.")
+            return
+        
+        cat_disc_df = pd.read_csv(cat_disc_file)
+        
+        # 1. Grouped bar chart: All disciplines and categories
+        fig1, ax1 = plt.subplots(1, 1, figsize=(12, 7))
+        
+        disciplines = sorted(cat_disc_df['Discipline'].unique())
+        categories = sorted(cat_disc_df['Category'].unique())
+        
+        x = np.arange(len(categories))
+        width = 0.12
+        
+        colors_disc = [COLORS['discipline1'], COLORS['discipline2'], COLORS['discipline3']]
+        
+        # Plot AI bars for each discipline
+        for i, discipline in enumerate(disciplines):
+            disc_data = cat_disc_df[cat_disc_df['Discipline'] == discipline]
+            disc_data = disc_data.sort_values('Category')
+            offset = (i - 1) * width
+            ax1.bar(x + offset - width, disc_data['AI_Failure_Rate_%'], width,
+                   label=f'{discipline} (AI)', color=colors_disc[i], edgecolor='black', 
+                   linewidth=0.5, alpha=0.8)
+        
+        # Plot SME bars for each discipline
+        for i, discipline in enumerate(disciplines):
+            disc_data = cat_disc_df[cat_disc_df['Discipline'] == discipline]
+            disc_data = disc_data.sort_values('Category')
+            offset = (i - 1) * width
+            ax1.bar(x + offset + width, disc_data['SME_Failure_Rate_%'], width,
+                   label=f'{discipline} (SME)', color=colors_disc[i], edgecolor='black',
+                   linewidth=0.5, alpha=0.4, hatch='//')
+        
+        ax1.set_ylabel('Failure Rate (%)', fontsize=11)
+        ax1.set_title('SAQUET Failure Rates by Category and Discipline\n(Solid = AI, Hatched = SME)',
+                     fontsize=12, pad=15)
+        ax1.set_xticks(x)
+        ax1.set_xticklabels(categories, fontsize=10)
+        ax1.legend(frameon=True, fontsize=8, loc='upper right', ncol=2)
+        ax1.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
+        
+        plt.tight_layout()
+        filename = 'category_by_discipline_all.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 2. Individual charts for each discipline
+        for discipline in disciplines:
+            disc_data = cat_disc_df[cat_disc_df['Discipline'] == discipline]
+            disc_data = disc_data.sort_values('Category')
+            
+            fig, ax = plt.subplots(1, 1, figsize=(10, 6))
+            
+            x = np.arange(len(disc_data))
+            width = 0.35
+            
+            bars1 = ax.bar(x - width/2, disc_data['AI_Failure_Rate_%'], width,
+                          label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1)
+            bars2 = ax.bar(x + width/2, disc_data['SME_Failure_Rate_%'], width,
+                          label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1)
+            
+            ax.set_ylabel('Failure Rate (%)', fontsize=11)
+            ax.set_title(f'{discipline}: SAQUET Failure Rate by Category',
+                        fontsize=12, pad=15)
+            ax.set_xticks(x)
+            ax.set_xticklabels(disc_data['Category'], fontsize=10)
+            ax.legend(frameon=True, fontsize=9)
+            ax.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+            ax.spines['top'].set_visible(False)
+            ax.spines['right'].set_visible(False)
+            
+            # Add value labels
+            for bars in [bars1, bars2]:
+                for bar in bars:
+                    height = bar.get_height()
+                    if height > 0:
+                        ax.text(bar.get_x() + bar.get_width()/2., height + 0.2,
+                               f'{height:.1f}%', ha='center', va='bottom', fontsize=8)
+            
+            plt.tight_layout()
+            filename = f'category_by_discipline_{discipline.lower().replace(" ", "_")}.png'
+            plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+            plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+            plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+            plt.close()
+            print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 3. Heatmap of differences (AI - SME) by discipline and category
+        fig3, ax3 = plt.subplots(1, 1, figsize=(10, 6))
+        
+        # Pivot the data for heatmap
+        heatmap_data = cat_disc_df.pivot(index='Discipline', columns='Category', values='Difference_%')
+        
+        # Create custom colormap: negative (green) to zero (white) to positive (red)
+        from matplotlib.colors import TwoSlopeNorm
+        vmin = heatmap_data.min().min()
+        vmax = heatmap_data.max().max()
+        norm = TwoSlopeNorm(vmin=vmin, vcenter=0, vmax=vmax)
+        
+        im = ax3.imshow(heatmap_data.values, cmap='RdYlGn_r', aspect='auto', norm=norm)
+        
+        # Set ticks and labels
+        ax3.set_xticks(np.arange(len(heatmap_data.columns)))
+        ax3.set_yticks(np.arange(len(heatmap_data.index)))
+        ax3.set_xticklabels(heatmap_data.columns, fontsize=10)
+        ax3.set_yticklabels(heatmap_data.index, fontsize=10)
+        
+        # Rotate x labels
+        plt.setp(ax3.get_xticklabels(), rotation=0, ha="center")
+        
+        # Add text annotations
+        for i in range(len(heatmap_data.index)):
+            for j in range(len(heatmap_data.columns)):
+                val = heatmap_data.values[i, j]
+                text = ax3.text(j, i, f'{val:.1f}%',
+                              ha="center", va="center", color="black", fontsize=9,
+                              fontweight='bold')
+        
+        ax3.set_title('Difference in Failure Rates by Discipline and Category\n(AI - SME: Red = AI worse, Green = AI better)',
+                     fontsize=12, pad=15)
+        
+        # Add colorbar
+        cbar = plt.colorbar(im, ax=ax3)
+        cbar.set_label('Difference in Failure Rate (%)', rotation=270, labelpad=20, fontsize=10)
+        
+        plt.tight_layout()
+        filename = 'category_by_discipline_heatmap.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        print("✓ All category by discipline visualizations complete")
     
     def _create_interactive_dashboard(self, output_dir):
         """Create interactive Plotly dashboard."""
@@ -720,7 +1201,7 @@ def main():
     analyzer = QuestionQualityAnalyzer(base_path)
     
     # Load data
-    print("\n[1/2] Loading SAQUET evaluation results...")
+    print("\n[1/5] Loading SAQUET evaluation results...")
     ai_data, sme_data = analyzer.load_all_files()
     
     if ai_data is None or len(ai_data) == 0:
@@ -748,12 +1229,24 @@ def main():
         print(f"  Average failures per question: {sme_data['failure_count'].mean():.2f}")
     
     # Export data tables
-    print(f"\n[2/3] Exporting data tables...")
+    print(f"\n[2/6] Exporting data tables...")
     tables = analyzer.export_data_tables()
     
-    # Create visualizations
-    print(f"\n[3/3] Creating visualizations...")
+    # Analyze by category
+    print(f"\n[3/6] Analyzing by SAQUET category...")
+    category_df, category_discipline_df = analyzer.analyze_by_category()
+    
+    # Create standard visualizations
+    print(f"\n[4/6] Creating standard visualizations...")
     analyzer.create_visualizations()
+    
+    # Create category visualizations
+    print(f"\n[5/6] Creating category visualizations...")
+    analyzer.create_category_visualizations()
+    
+    # Create category by discipline visualizations
+    print(f"\n[6/6] Creating category by discipline visualizations...")
+    analyzer.create_category_by_discipline_visualizations()
     
     # Print tables to console for easy viewing
     print("\n" + "=" * 70)
@@ -775,15 +1268,39 @@ def main():
     print("\n\n5. DISCIPLINE COMPARISON (AI vs SME)")
     print(tables['comparison'].to_string(index=False))
     
+    print("\n\n6. FAILURE RATES BY CATEGORY")
+    print(category_df.to_string(index=False))
+    
+    print("\n\n7. FAILURE RATES BY CATEGORY AND DISCIPLINE")
+    print(category_discipline_df.to_string(index=False))
+    
     print("\n" + "=" * 70)
     print("✓ Analysis complete!")
     print("=" * 70)
     print("\nGenerated files:")
-    print("  Visualizations:")
-    print("    - quality_comparison_ai_vs_sme.png/pdf")
-    print("    - quality_by_discipline.png/pdf")
-    print("    - failure_by_criterion.png/pdf")
+    print("  Standard Visualizations:")
+    print("    - quality_comparison_overall.png/pdf/eps")
+    print("    - quality_distribution_ai.png/pdf/eps")
+    print("    - quality_distribution_sme.png/pdf/eps")
+    print("    - quality_comparison_table.png/pdf/eps")
+    print("    - quality_by_discipline_comparison.png/pdf/eps")
+    print("    - quality_by_discipline_ai.png/pdf/eps")
+    print("    - quality_by_discipline_sme.png/pdf/eps")
+    print("    - quality_avg_failures_by_discipline.png/pdf/eps")
+    print("    - failure_by_criterion_ai.png/pdf/eps")
+    print("    - failure_by_criterion_sme.png/pdf/eps")
     print("    - quality_dashboard.html")
+    print("  Category Visualizations:")
+    print("    - category_failure_rates_comparison.png/pdf/eps")
+    print("    - category_failure_difference.png/pdf/eps")
+    print("    - category_ai_failure_rates.png/pdf/eps")
+    print("    - category_sme_failure_rates.png/pdf/eps")
+    print("  Category by Discipline Visualizations:")
+    print("    - category_by_discipline_all.png/pdf/eps")
+    print("    - category_by_discipline_computer_science.png/pdf/eps")
+    print("    - category_by_discipline_data_science.png/pdf/eps")
+    print("    - category_by_discipline_discrete_mathematics.png/pdf/eps")
+    print("    - category_by_discipline_heatmap.png/pdf/eps")
     print("  Data Tables:")
     print("    - table_overall_summary.csv")
     print("    - table_quality_by_discipline.csv")
@@ -791,6 +1308,8 @@ def main():
     print("    - table_failures_by_criterion.csv")
     print("    - table_failure_distribution.csv")
     print("    - table_discipline_comparison.csv")
+    print("    - table_failures_by_category.csv")
+    print("    - table_failures_by_category_and_discipline.csv")
     print(f"\nAll files saved to: {base_path}")
 
 

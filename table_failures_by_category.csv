@@ -1,0 +1,4 @@
+Category,Criteria_Count,AI_Failures,AI_Total_Opportunities,AI_Failure_Rate_%,SME_Failures,SME_Total_Opportunities,SME_Failure_Rate_%,Difference_%
+Clarity,7,202,8610,2.35,119,2254,5.28,-2.93
+Accuracy,2,121,2460,4.92,7,644,1.09,3.83
+Test-wiseness Prevention,9,553,11070,5.0,126,2898,4.35,0.65

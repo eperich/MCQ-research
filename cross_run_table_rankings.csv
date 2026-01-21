@@ -1,0 +1,21 @@
+Discipline,Topic,Consistency_%,Duplicate_%,Similar_%,Total_Comparisons
+Discrete Mathematics,Laws of propositional  logic,36.666666666666664,4.5,32.166666666666664,600
+Discrete Mathematics,Logical equivalence,20.166666666666664,5.166666666666667,15.0,600
+Discrete Mathematics,Propositions and logical operations,17.166666666666668,3.5000000000000004,13.666666666666666,600
+Discrete Mathematics,Conditional statements,17.0,5.833333333333333,11.166666666666666,600
+Discrete Mathematics,Evaluating compound propositions,12.833333333333332,3.0,9.833333333333332,600
+Computer Science,Comments and whitespace,11.166666666666666,2.5,8.666666666666668,600
+Computer Science,Programming using Python,9.166666666666666,3.166666666666667,6.0,600
+Data Science,Why data science_,8.666666666666668,1.3333333333333335,7.333333333333333,600
+Computer Science,Errors and warnings,7.5,1.6666666666666667,5.833333333333333,600
+Computer Science,Variables and assignments,6.5,2.5,4.0,600
+Computer Science,Programming (general),6.333333333333334,1.5,4.833333333333333,600
+Computer Science,Programming basics,5.833333333333333,1.3333333333333335,4.5,600
+Computer Science,Variables and assignments (general),5.5,1.1666666666666667,4.333333333333334,600
+Data Science,Data science lifecycle,5.166666666666667,1.8333333333333333,3.3333333333333335,600
+Data Science,Data science packages,4.833333333333333,2.166666666666667,2.666666666666667,600
+Data Science,pandas package,4.833333333333333,0.5,4.333333333333334,600
+Computer Science,Arithmetic expressions,4.5,0.6666666666666667,3.833333333333333,600
+Computer Science,Input_Output,4.333333333333334,0.5,3.833333333333333,600
+Computer Science,Programming (general),4.0,2.0,2.0,600
+Data Science,Python functions,4.0,0.16666666666666669,3.833333333333333,600

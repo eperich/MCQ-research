@@ -1,0 +1,859 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,0
+2,10,0,0
+3,10,0,0
+4,10,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,4,100
+1,3,1,3,100
+1,4,0,5,100
+2,3,2,4,100
+2,4,0,5,100
+3,4,0,5,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),3
+Similar (70-85%),27
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.957,duplicate
+q1,What does the pandas DataFrame object represent?,2,1,q1,What does a pandas DataFrame primarily represent?,3,1,0.905,duplicate
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.89,duplicate
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.846,similar
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.846,similar
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.837,similar
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.835,similar
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.827,similar
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.815,similar
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.806,similar
+q1,What data structure does pandas use to represent datasets?,1,1,q1,What type does the pandas package use to represent datasets?,4,1,0.802,similar
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.801,similar
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.786,similar
+q3,What are the labels identifying DataFrame rows called?,1,3,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.782,similar
+q4,Which pandas method selects rows and columns by integer location?,1,4,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.782,similar
+q3,What are the labels identifying DataFrame rows called?,1,3,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.781,similar
+q1,What does a pandas DataFrame primarily represent?,3,1,q1,What type does the pandas package use to represent datasets?,4,1,0.781,similar
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.777,similar
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q2,What does the index of a pandas dataframe represent?,4,2,0.763,similar
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q8,What does the dataframe method drop_duplicates() do?,4,8,0.763,similar
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q2,What does the index of a pandas dataframe represent?,4,2,0.759,similar
+q1,What does the pandas DataFrame object represent?,2,1,q1,What type does the pandas package use to represent datasets?,4,1,0.748,similar
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.747,similar
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.736,similar
+q4,Which pandas method selects rows and columns by integer location?,1,4,q4,How does the pandas iloc() method select data?,2,4,0.731,similar
+q8,What logical operator returns True if at least one operand is True?,1,8,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.721,similar
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.719,similar
+q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.707,similar
+q4,How does the pandas iloc() method select data?,2,4,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.702,similar
+q3,What are the labels identifying DataFrame rows called?,1,3,q2,What does the index of a pandas dataframe represent?,4,2,0.7,similar
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.694,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.694,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.692,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.691,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.687,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.683,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q2,What does the index of a pandas dataframe represent?,4,2,0.683,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q1,What does the pandas DataFrame object represent?,2,1,0.676,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.67,low
+q1,What data structure does pandas use to represent datasets?,1,1,q1,What does a pandas DataFrame primarily represent?,3,1,0.669,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.665,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q1,What does a pandas DataFrame primarily represent?,3,1,0.662,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,0.658,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.653,low
+q1,What data structure does pandas use to represent datasets?,1,1,q1,What does the pandas DataFrame object represent?,2,1,0.65,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.641,low
+q4,How does the pandas iloc() method select data?,2,4,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.638,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.638,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q8,What does the dataframe method drop_duplicates() do?,4,8,0.634,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.633,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.633,low
+q1,What does the pandas DataFrame object represent?,2,1,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.631,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q2,What does the index of a pandas dataframe represent?,4,2,0.627,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q8,What does the dataframe method drop_duplicates() do?,4,8,0.626,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.622,low
+q1,What type does the pandas package use to represent datasets?,4,1,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.622,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.616,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.615,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q2,What does the index of a pandas dataframe represent?,4,2,0.613,low
+q1,What does the pandas DataFrame object represent?,2,1,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.612,low
+q1,What does the pandas DataFrame object represent?,2,1,q2,What does the index of a pandas dataframe represent?,4,2,0.612,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q1,What type does the pandas package use to represent datasets?,4,1,0.612,low
+q1,What data structure does pandas use to represent datasets?,1,1,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.609,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.606,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.605,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.604,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q8,What logical operator returns True if at least one operand is True?,1,8,0.597,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.597,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.597,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.593,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.591,low
+q4,How does the pandas iloc() method select data?,2,4,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.591,low
+q1,What data structure does pandas use to represent datasets?,1,1,q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,0.589,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q1,What type does the pandas package use to represent datasets?,4,1,0.589,low
+q1,What data structure does pandas use to represent datasets?,1,1,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.587,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.586,low
+q1,What data structure does pandas use to represent datasets?,1,1,q2,What does the index of a pandas dataframe represent?,4,2,0.584,low
+q1,What does the pandas DataFrame object represent?,2,1,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.584,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.583,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.578,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.578,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.577,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q1,What does a pandas DataFrame primarily represent?,3,1,0.576,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q1,What does a pandas DataFrame primarily represent?,3,1,0.576,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q2,What does the index of a pandas dataframe represent?,4,2,0.573,low
+q1,What data structure does pandas use to represent datasets?,1,1,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.571,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.571,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q8,What does the dataframe method drop_duplicates() do?,4,8,0.571,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q1,What does a pandas DataFrame primarily represent?,3,1,0.569,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.568,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.566,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.565,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.563,low
+q1,What does the pandas DataFrame object represent?,2,1,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.559,low
+q1,What type does the pandas package use to represent datasets?,4,1,q2,What does the index of a pandas dataframe represent?,4,2,0.559,low
+q1,What does the pandas DataFrame object represent?,2,1,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.558,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.557,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.557,low
+q4,How does the pandas iloc() method select data?,2,4,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.556,low
+q2,What does the index of a pandas dataframe represent?,4,2,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.555,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.554,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.553,low
+q1,What does the pandas DataFrame object represent?,2,1,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.551,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.551,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.55,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.548,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q8,What does the dataframe method drop_duplicates() do?,4,8,0.544,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q1,What type does the pandas package use to represent datasets?,4,1,0.539,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.535,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.535,low
+q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.535,low
+q4,How does the pandas iloc() method select data?,2,4,q2,What does the index of a pandas dataframe represent?,4,2,0.534,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.533,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.532,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.53,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.53,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.525,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q2,What does the index of a pandas dataframe represent?,4,2,0.525,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.524,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q4,How does the pandas iloc() method select data?,2,4,0.523,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.521,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.521,low
+q8,What does the dataframe method drop_duplicates() do?,4,8,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.521,low
+q1,What data structure does pandas use to represent datasets?,1,1,q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,0.519,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q1,What type does the pandas package use to represent datasets?,4,1,0.519,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q1,What type does the pandas package use to represent datasets?,4,1,0.517,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q2,What does the index of a pandas dataframe represent?,4,2,0.517,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.516,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q1,What type does the pandas package use to represent datasets?,4,1,0.515,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.513,low
+q4,How does the pandas iloc() method select data?,2,4,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.512,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.512,low
+q1,What does the pandas DataFrame object represent?,2,1,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.511,low
+q4,How does the pandas iloc() method select data?,2,4,q1,What does a pandas DataFrame primarily represent?,3,1,0.511,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.51,low
+q1,What data structure does pandas use to represent datasets?,1,1,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.505,low
+q1,What does the pandas DataFrame object represent?,2,1,q4,How does the pandas iloc() method select data?,2,4,0.503,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q1,What type does the pandas package use to represent datasets?,4,1,0.503,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q4,How does the pandas iloc() method select data?,2,4,0.5,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.499,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q1,What does a pandas DataFrame primarily represent?,3,1,0.499,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q1,What type does the pandas package use to represent datasets?,4,1,0.499,low
+q1,What data structure does pandas use to represent datasets?,1,1,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.498,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.489,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q3,What are the labels identifying DataFrame rows called?,1,3,0.487,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.487,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.484,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q1,What does a pandas DataFrame primarily represent?,3,1,0.484,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.484,low
+q4,How does the pandas iloc() method select data?,2,4,q1,What type does the pandas package use to represent datasets?,4,1,0.481,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.481,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.481,low
+q4,How does the pandas iloc() method select data?,2,4,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.48,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.479,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.478,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.476,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q2,What does the index of a pandas dataframe represent?,4,2,0.476,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.474,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.474,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q1,What does the pandas DataFrame object represent?,2,1,0.473,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.473,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.472,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.472,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.472,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.471,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.47,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.469,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q1,What does a pandas DataFrame primarily represent?,3,1,0.468,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.468,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.466,low
+q1,What data structure does pandas use to represent datasets?,1,1,q3,What are the labels identifying DataFrame rows called?,1,3,0.465,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.465,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q1,What type does the pandas package use to represent datasets?,4,1,0.465,low
+q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.465,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q1,What does the pandas DataFrame object represent?,2,1,0.464,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.463,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.462,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q2,What does the index of a pandas dataframe represent?,4,2,0.462,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q4,How does the pandas iloc() method select data?,2,4,0.46,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.46,low
+q4,How does the pandas iloc() method select data?,2,4,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.46,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q1,What does a pandas DataFrame primarily represent?,3,1,0.459,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.459,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.458,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.455,low
+q1,What does the pandas DataFrame object represent?,2,1,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.455,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.454,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.453,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.452,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q8,What does the dataframe method drop_duplicates() do?,4,8,0.452,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.452,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.451,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q1,What does the pandas DataFrame object represent?,2,1,0.449,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.449,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.449,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.447,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.446,low
+q1,What does the pandas DataFrame object represent?,2,1,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.443,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.442,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.442,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.442,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.442,low
+q4,How does the pandas iloc() method select data?,2,4,q6,Using comparison operators in pandas subsetting will return:,2,6,0.442,low
+q4,How does the pandas iloc() method select data?,2,4,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.44,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.439,low
+q1,What data structure does pandas use to represent datasets?,1,1,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.438,low
+q1,What does the pandas DataFrame object represent?,2,1,q8,What does the dataframe method drop_duplicates() do?,4,8,0.438,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.438,low
+q1,What data structure does pandas use to represent datasets?,1,1,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.437,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.437,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q1,What type does the pandas package use to represent datasets?,4,1,0.437,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.437,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.436,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.436,low
+q4,How does the pandas iloc() method select data?,2,4,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.435,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.435,low
+q1,What does the pandas DataFrame object represent?,2,1,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.433,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.432,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.432,low
+q1,What type does the pandas package use to represent datasets?,4,1,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.432,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.431,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q2,What does the index of a pandas dataframe represent?,4,2,0.431,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q1,What type does the pandas package use to represent datasets?,4,1,0.429,low
+q4,How does the pandas iloc() method select data?,2,4,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.429,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.428,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.428,low
+q1,What type does the pandas package use to represent datasets?,4,1,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.428,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.427,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q2,What does the index of a pandas dataframe represent?,4,2,0.427,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.427,low
+q2,What does the index of a pandas dataframe represent?,4,2,q8,What does the dataframe method drop_duplicates() do?,4,8,0.427,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q6,Using comparison operators in pandas subsetting will return:,2,6,0.426,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.426,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q4,How does the pandas iloc() method select data?,2,4,0.423,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.423,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.423,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q2,What does the index of a pandas dataframe represent?,4,2,0.423,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.422,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q6,Using comparison operators in pandas subsetting will return:,2,6,0.421,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.421,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q1,What type does the pandas package use to represent datasets?,4,1,0.421,low
+q1,What does the pandas DataFrame object represent?,2,1,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.42,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.419,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.419,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.418,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.418,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.418,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q8,What does the dataframe method drop_duplicates() do?,4,8,0.418,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,0.417,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.417,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.417,low
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,q8,What does the dataframe method drop_duplicates() do?,4,8,0.416,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q4,Which pandas method selects rows and columns by integer location?,1,4,0.415,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.415,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q2,What does the index of a pandas dataframe represent?,4,2,0.414,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.414,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q2,What does the index of a pandas dataframe represent?,4,2,0.414,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.413,low
+q4,How does the pandas iloc() method select data?,2,4,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.413,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q6,Using comparison operators in pandas subsetting will return:,2,6,0.41,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.41,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q4,How does the pandas iloc() method select data?,2,4,0.41,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.41,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.41,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.41,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q8,What does the dataframe method drop_duplicates() do?,4,8,0.41,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.409,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.409,low
+q1,What data structure does pandas use to represent datasets?,1,1,q4,How does the pandas iloc() method select data?,2,4,0.408,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.408,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.408,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q8,What does the dataframe method drop_duplicates() do?,4,8,0.406,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.406,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q6,Using comparison operators in pandas subsetting will return:,2,6,0.405,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.405,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.404,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q4,How does the pandas iloc() method select data?,2,4,0.404,low
+q4,How does the pandas iloc() method select data?,2,4,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.403,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q8,What does the dataframe method drop_duplicates() do?,4,8,0.403,low
+q2,What does the index of a pandas dataframe represent?,4,2,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.403,low
+q1,What data structure does pandas use to represent datasets?,1,1,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.402,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,0.402,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.402,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.401,low
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.401,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,0.4,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.4,low
+q1,What data structure does pandas use to represent datasets?,1,1,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.399,low
+q1,What does the pandas DataFrame object represent?,2,1,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.399,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.399,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.398,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.396,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.396,low
+q1,What data structure does pandas use to represent datasets?,1,1,q8,What does the dataframe method drop_duplicates() do?,4,8,0.395,low
+q1,What does the pandas DataFrame object represent?,2,1,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.395,low
+q1,What type does the pandas package use to represent datasets?,4,1,q8,What does the dataframe method drop_duplicates() do?,4,8,0.395,low
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.395,low
+q1,What data structure does pandas use to represent datasets?,1,1,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.394,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.394,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.394,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.392,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q8,What does the dataframe method drop_duplicates() do?,4,8,0.392,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.391,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.391,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.391,low
+q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,q8,What does the dataframe method drop_duplicates() do?,4,8,0.391,low
+q4,How does the pandas iloc() method select data?,2,4,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.39,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.39,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.389,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.389,low
+q4,How does the pandas iloc() method select data?,2,4,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.389,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q2,What does the index of a pandas dataframe represent?,4,2,0.389,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.388,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.388,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.388,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.387,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.387,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.387,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.387,low
+q2,What does the index of a pandas dataframe represent?,4,2,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.387,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q6,Using comparison operators in pandas subsetting will return:,2,6,0.386,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.386,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.386,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.386,low
+q1,What data structure does pandas use to represent datasets?,1,1,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.385,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.385,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.385,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.385,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.385,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q8,What does the dataframe method drop_duplicates() do?,4,8,0.385,low
+q1,What does the pandas DataFrame object represent?,2,1,q6,Using comparison operators in pandas subsetting will return:,2,6,0.384,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.384,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.384,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q8,What does the dataframe method drop_duplicates() do?,4,8,0.384,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.383,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.382,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.381,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.381,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.381,low
+q1,What does the pandas DataFrame object represent?,2,1,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.38,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q1,What does a pandas DataFrame primarily represent?,3,1,0.38,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.38,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.379,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q4,How does the pandas iloc() method select data?,2,4,0.378,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.378,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.378,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.378,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.378,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.376,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.376,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.375,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.375,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.375,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.375,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q1,What type does the pandas package use to represent datasets?,4,1,0.375,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.374,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.374,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.373,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.373,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.373,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.373,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.373,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.373,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.372,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.372,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.372,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.371,low
+q4,How does the pandas iloc() method select data?,2,4,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.371,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.371,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.371,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q8,What does the dataframe method drop_duplicates() do?,4,8,0.37,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.37,low
+q4,How does the pandas iloc() method select data?,2,4,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.37,low
+q4,How does the pandas iloc() method select data?,2,4,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.37,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.369,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q1,What type does the pandas package use to represent datasets?,4,1,0.369,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.369,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.368,low
+q1,What does the pandas DataFrame object represent?,2,1,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.368,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.367,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.367,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.366,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q2,What does the index of a pandas dataframe represent?,4,2,0.366,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q1,What does a pandas DataFrame primarily represent?,3,1,0.365,low
+q4,How does the pandas iloc() method select data?,2,4,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.365,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q1,What does a pandas DataFrame primarily represent?,3,1,0.365,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.365,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.364,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q1,What type does the pandas package use to represent datasets?,4,1,0.364,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.364,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.364,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.364,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.363,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.363,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.363,low
+q1,What data structure does pandas use to represent datasets?,1,1,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.362,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q4,Which pandas method selects rows and columns by integer location?,1,4,0.362,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.362,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.362,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.362,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q1,What does the pandas DataFrame object represent?,2,1,0.361,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.361,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.361,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.361,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.361,low
+q1,What data structure does pandas use to represent datasets?,1,1,q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,0.36,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.36,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q4,How does the pandas iloc() method select data?,2,4,0.36,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.36,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q2,What does the index of a pandas dataframe represent?,4,2,0.36,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q6,Using comparison operators in pandas subsetting will return:,2,6,0.359,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.359,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.359,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.359,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.359,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q2,What does the index of a pandas dataframe represent?,4,2,0.359,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q1,What type does the pandas package use to represent datasets?,4,1,0.359,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q1,What type does the pandas package use to represent datasets?,4,1,0.358,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.358,low
+q1,What data structure does pandas use to represent datasets?,1,1,q4,Which pandas method selects rows and columns by integer location?,1,4,0.357,low
+q1,What data structure does pandas use to represent datasets?,1,1,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.357,low
+q4,How does the pandas iloc() method select data?,2,4,q8,What does the dataframe method drop_duplicates() do?,4,8,0.357,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.357,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.357,low
+q4,How does the pandas iloc() method select data?,2,4,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.356,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q8,What does the dataframe method drop_duplicates() do?,4,8,0.355,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q6,Using comparison operators in pandas subsetting will return:,2,6,0.354,low
+q4,How does the pandas iloc() method select data?,2,4,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.354,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.354,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q2,What does the index of a pandas dataframe represent?,4,2,0.354,low
+q1,What does the pandas DataFrame object represent?,2,1,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.353,low
+q1,What type does the pandas package use to represent datasets?,4,1,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.353,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,0.352,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.352,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q1,What does a pandas DataFrame primarily represent?,3,1,0.352,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.352,low
+q8,What does the dataframe method drop_duplicates() do?,4,8,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.352,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.35,low
+q1,What does the pandas DataFrame object represent?,2,1,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.35,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.35,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q2,What does the index of a pandas dataframe represent?,4,2,0.35,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.35,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.35,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,0.349,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.349,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.349,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.349,low
+q1,What data structure does pandas use to represent datasets?,1,1,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.348,low
+q1,What data structure does pandas use to represent datasets?,1,1,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.348,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.348,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q2,What does the index of a pandas dataframe represent?,4,2,0.348,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q2,What does the index of a pandas dataframe represent?,4,2,0.347,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.347,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.347,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.347,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q6,Using comparison operators in pandas subsetting will return:,2,6,0.346,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q8,What does the dataframe method drop_duplicates() do?,4,8,0.346,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.346,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q8,What does the dataframe method drop_duplicates() do?,4,8,0.346,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q8,What does the dataframe method drop_duplicates() do?,4,8,0.345,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.345,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.344,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.344,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.344,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.344,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.343,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q8,What does the dataframe method drop_duplicates() do?,4,8,0.342,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.342,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.341,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.341,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.341,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.34,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.339,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.339,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.339,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q1,What does the pandas DataFrame object represent?,2,1,0.338,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.338,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q8,What does the dataframe method drop_duplicates() do?,4,8,0.338,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.338,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.338,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q1,What does a pandas DataFrame primarily represent?,3,1,0.337,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.337,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.337,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.337,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.337,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.336,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q1,What type does the pandas package use to represent datasets?,4,1,0.336,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,0.335,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.335,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q6,Using comparison operators in pandas subsetting will return:,2,6,0.335,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.335,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q1,What type does the pandas package use to represent datasets?,4,1,0.335,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.335,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.334,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.334,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.334,low
+q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.334,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.333,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.333,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q1,What type does the pandas package use to represent datasets?,4,1,0.333,low
+q4,How does the pandas iloc() method select data?,2,4,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.332,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.332,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.332,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.332,low
+q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.332,low
+q1,What data structure does pandas use to represent datasets?,1,1,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.331,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q1,What type does the pandas package use to represent datasets?,4,1,0.331,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q2,What does the index of a pandas dataframe represent?,4,2,0.331,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.331,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.33,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.33,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q6,Using comparison operators in pandas subsetting will return:,2,6,0.33,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q1,What type does the pandas package use to represent datasets?,4,1,0.33,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.329,low
+q1,What type does the pandas package use to represent datasets?,4,1,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.329,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.329,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.328,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q1,What does a pandas DataFrame primarily represent?,3,1,0.328,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.328,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.327,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.327,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.327,low
+q1,What data structure does pandas use to represent datasets?,1,1,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.325,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.325,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.325,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.325,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.325,low
+q2,What does the index of a pandas dataframe represent?,4,2,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.325,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.324,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.324,low
+q1,What does the pandas DataFrame object represent?,2,1,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.324,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.324,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.324,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.324,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.322,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q8,What does the dataframe method drop_duplicates() do?,4,8,0.322,low
+q1,What does the pandas DataFrame object represent?,2,1,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.322,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.321,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.321,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.321,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q1,What type does the pandas package use to represent datasets?,4,1,0.321,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.321,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.321,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.321,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.32,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q8,What does the dataframe method drop_duplicates() do?,4,8,0.32,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.32,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.32,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.319,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.319,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.319,low
+q2,What does the index of a pandas dataframe represent?,4,2,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.319,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q6,Using comparison operators in pandas subsetting will return:,2,6,0.318,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.318,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.318,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.317,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.317,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.317,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q8,What does the dataframe method drop_duplicates() do?,4,8,0.317,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.316,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.316,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q1,What type does the pandas package use to represent datasets?,4,1,0.316,low
+q1,What does the pandas DataFrame object represent?,2,1,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.315,low
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.315,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.314,low
+q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.314,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.313,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q1,What does a pandas DataFrame primarily represent?,3,1,0.313,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.313,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.313,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.312,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.312,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.31,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.31,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.31,low
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.31,low
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.309,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q1,What does the pandas DataFrame object represent?,2,1,0.308,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.308,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.308,low
+q1,What does the pandas DataFrame object represent?,2,1,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.307,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.307,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.307,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q8,What does the dataframe method drop_duplicates() do?,4,8,0.307,low
+q1,What data structure does pandas use to represent datasets?,1,1,q6,Using comparison operators in pandas subsetting will return:,2,6,0.306,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.306,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.306,low
+q2,What does the index of a pandas dataframe represent?,4,2,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.306,low
+q1,What data structure does pandas use to represent datasets?,1,1,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.305,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.305,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.305,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.305,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.305,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.304,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.303,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.303,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.303,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.303,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.303,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.303,low
+q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.303,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.302,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.301,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.301,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.3,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.299,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.299,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.298,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.298,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.298,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.297,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.296,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.296,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.296,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.295,low
+q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,q8,What does the dataframe method drop_duplicates() do?,4,8,0.295,low
+q1,What data structure does pandas use to represent datasets?,1,1,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.294,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.294,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.294,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.294,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.293,low
+q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,q8,What does the dataframe method drop_duplicates() do?,4,8,0.293,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.292,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.292,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.292,low
+q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.292,low
+q1,What data structure does pandas use to represent datasets?,1,1,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.291,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.291,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.29,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.29,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.289,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.289,low
+q6,What does the DataFrame iloc method use for subsetting?,3,6,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.289,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.288,low
+q1,What does the pandas DataFrame object represent?,2,1,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.287,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.287,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.286,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.286,low
+q1,What type does the pandas package use to represent datasets?,4,1,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.286,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.285,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.285,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.285,low
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.285,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.284,low
+q1,What data structure does pandas use to represent datasets?,1,1,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.283,low
+q1,What does the pandas DataFrame object represent?,2,1,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.283,low
+q1,What does a pandas DataFrame primarily represent?,3,1,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.283,low
+q1,What data structure does pandas use to represent datasets?,1,1,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.282,low
+q1,What type does the pandas package use to represent datasets?,4,1,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.282,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.281,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.28,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.28,low
+q1,What data structure does pandas use to represent datasets?,1,1,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.278,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.278,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.278,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.277,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q6,Using comparison operators in pandas subsetting will return:,2,6,0.277,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.276,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.276,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.275,low
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.275,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.275,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.274,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,0.272,low
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,8,q8,What does the dataframe method drop_duplicates() do?,4,8,0.271,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.27,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.27,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.269,low
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.267,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.267,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.267,low
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.267,low
+q2,What does the index of a pandas dataframe represent?,4,2,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.267,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.267,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.265,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.264,low
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.264,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.263,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.262,low
+q6,Using comparison operators in pandas subsetting will return:,2,6,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.262,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.261,low
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.261,low
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.261,low
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.261,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.26,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.259,low
+q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.257,low
+q1,What data structure does pandas use to represent datasets?,1,1,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.256,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.252,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.251,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.249,low
+q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.249,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.248,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.246,low
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.243,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.242,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.241,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.241,low
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.239,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.237,low
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.235,low
+q1,What data structure does pandas use to represent datasets?,1,1,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.232,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q10,Which logical operator in pandas returns True if both operands are True?,2,10,0.23,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,7,0.23,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.226,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.225,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q8,What does the dataframe method drop_duplicates() do?,4,8,0.224,low
+q3,How do pandas dataframes differ from NumPy arrays?,4,3,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.221,low
+q10,Which logical operator in pandas returns True if both operands are True?,2,10,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.217,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.216,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q4,How does the pandas iloc() method select data?,2,4,0.216,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,9,0.215,low
+q8,How does the loc() method differ from iloc() when subsetting?,2,8,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.214,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.211,low
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.208,low
+q10,Which DataFrame method inserts a new column at a specified position?,3,10,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.207,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q4,How does the pandas iloc() method select data?,2,4,0.186,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.179,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.179,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,7,0.177,low
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,6,0.172,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.17,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q7,Which comparison operator returns True if two values are not equal?,1,7,0.166,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.161,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.157,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.147,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.139,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.137,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q7,Which comparison operator returns True if two values are not equal?,1,7,0.136,low
+q4,Which pandas method selects rows and columns by integer location?,1,4,q8,What logical operator returns True if at least one operand is True?,1,8,0.134,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q6,What does the DataFrame iloc method use for subsetting?,3,6,0.134,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,4,0.123,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q8,How does the loc() method differ from iloc() when subsetting?,2,8,0.118,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q8,What does the dataframe method drop_duplicates() do?,4,8,0.115,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.11,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q2,What does the index of a pandas dataframe represent?,4,2,0.104,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,5,0.099,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.097,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.095,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.094,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.091,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,2,0.09,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.088,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.088,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,5,0.087,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,2,0.081,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,5,0.076,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q7,Which comparison operator returns True if two values are not equal?,1,7,0.075,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q10,What method removes duplicate rows from a DataFrame based on column labels?,1,10,0.074,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q7,Which comparison operator returns True if two values are not equal?,1,7,0.073,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q7,Which comparison operator returns True if two values are not equal?,1,7,0.072,low
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,5,q8,What logical operator returns True if at least one operand is True?,1,8,0.071,low
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,2,q8,What logical operator returns True if at least one operand is True?,1,8,0.07,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q1,What does the pandas DataFrame object represent?,2,1,0.06,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q10,Which DataFrame method inserts a new column at a specified position?,3,10,0.06,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.059,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,7,0.058,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.056,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q1,What does a pandas DataFrame primarily represent?,3,1,0.055,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q1,What does a pandas DataFrame primarily represent?,3,1,0.052,low
+q3,What are the labels identifying DataFrame rows called?,1,3,q8,What logical operator returns True if at least one operand is True?,1,8,0.049,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q1,What does the pandas DataFrame object represent?,2,1,0.049,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.047,low
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,6,q8,What logical operator returns True if at least one operand is True?,1,8,0.046,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q3,How do pandas dataframes differ from NumPy arrays?,4,3,0.046,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q10,What parameter in drop() specifies columns to remove from a dataframe?,4,10,0.042,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q1,What type does the pandas package use to represent datasets?,4,1,0.036,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.036,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q2,What does the index of a pandas dataframe represent?,4,2,0.035,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.032,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q4,Which parameter in the DataFrame constructor specifies the column labels?,3,4,0.03,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q1,What type does the pandas package use to represent datasets?,4,1,0.028,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,3,0.026,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,9,0.023,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q9,What is the effect of the pandas replace() method on a DataFrame?,2,9,0.021,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q8,What does the dataframe method drop_duplicates() do?,4,8,0.021,low
+q7,Which comparison operator returns True if two values are not equal?,1,7,q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,9,0.02,low
+q8,What logical operator returns True if at least one operand is True?,1,8,q3,What is the term for the set of row labels in a pandas DataFrame?,3,3,0.018,low
+q1,What data structure does pandas use to represent datasets?,1,1,q7,Which comparison operator returns True if two values are not equal?,1,7,0.004,low
+q1,What data structure does pandas use to represent datasets?,1,1,q8,What logical operator returns True if at least one operand is True?,1,8,-0.001,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define the DataFrame object type and its structure including rows, columns, labels, and indices  
+Compare pandas DataFrames with NumPy arrays in terms of dimensions, data types, and labeling  
+Create DataFrames using the DataFrame constructor with specified data, columns, and index labels  
+Subset DataFrames using labels, indices, slices, and methods like loc() and iloc()  
+Apply comparison and logical operators to filter and subset DataFrames based on conditions  
+Use pandas DataFrame methods to modify data including inserting, updating, sorting, handling missing values, and removing duplicates"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What data structure does pandas use to represent datasets?,1,yes,"This question assesses knowledge of the DataFrame object type used by pandas, aligning with defining the DataFrame object and its structure."
+q2,How do pandas DataFrame columns differ from NumPy array columns?,1,yes,"This question compares pandas DataFrame columns with NumPy array columns in terms of data types and labeling, matching the learning objective on comparing DataFrames with NumPy arrays."
+q3,What are the labels identifying DataFrame rows called?,1,yes,"This question tests understanding of the labels identifying DataFrame rows, directly related to the DataFrame structure including indices and labels."
+q4,Which pandas method selects rows and columns by integer location?,1,yes,"This question evaluates knowledge of the iloc() method for subsetting DataFrames by integer location, matching the objective on subsetting DataFrames using loc() and iloc()."
+q5,"How do you select multiple columns ""Name"" and ""Population"" from a DataFrame and get a DataFrame result?",1,yes,"This question assesses the ability to subset DataFrames by selecting multiple columns and returning a DataFrame, aligning with subsetting DataFrames using labels and indices."
+q6,"What is the result type when selecting a single column with df[""Population""]?",1,yes,"This question tests understanding of the result type when selecting a single column from a DataFrame, related to DataFrame structure and subsetting."
+q7,Which comparison operator returns True if two values are not equal?,1,yes,This question evaluates knowledge of comparison operators used to filter and subset DataFrames based on conditions.
+q8,What logical operator returns True if at least one operand is True?,1,yes,This question assesses understanding of logical operators used in filtering and subsetting DataFrames.
+q9,"To filter a DataFrame for rows where the ""Population"" column is greater than 100000, which expression is correct?",1,yes,"This question tests applying comparison operators to filter DataFrames, directly aligned with filtering and subsetting based on conditions."
+q10,What method removes duplicate rows from a DataFrame based on column labels?,1,yes,"This question evaluates knowledge of the drop_duplicates() method to remove duplicate rows, matching the objective on modifying data including removing duplicates."
+q1,What does the pandas DataFrame object represent?,2,yes,"This question assesses understanding of what the DataFrame object represents, aligning with defining the DataFrame and its structure."
+q2,Which of the following is a key difference between pandas DataFrames and NumPy arrays?,2,yes,"This question compares DataFrames and NumPy arrays regarding data types, matching the learning objective on comparing DataFrames with NumPy arrays."
+q3,"In a pandas DataFrame, what is the term for the set of row labels?",2,yes,"This question tests knowledge of the term for row labels in a DataFrame, related to DataFrame structure including indices and labels."
+q4,How does the pandas iloc() method select data?,2,yes,"This question evaluates how iloc() selects data by integer positions, aligning with subsetting DataFrames using loc() and iloc()."
+q5,"Which of these statements returns a DataFrame containing only the ""Name"" column?",2,yes,"This question assesses selecting a single column as a DataFrame, related to subsetting DataFrames using labels."
+q6,Using comparison operators in pandas subsetting will return:,2,yes,"This question tests understanding of the effect of comparison operators in pandas subsetting, matching filtering and subsetting based on conditions."
+q7,What does the pandas drop_duplicates() method do when given a subset parameter?,2,yes,"This question evaluates the behavior of drop_duplicates() with a subset parameter, related to modifying data including removing duplicates."
+q8,How does the loc() method differ from iloc() when subsetting?,2,yes,"This question compares loc() and iloc() methods for subsetting, aligned with subsetting DataFrames using loc() and iloc()."
+q9,What is the effect of the pandas replace() method on a DataFrame?,2,yes,"This question assesses the effect of the replace() method on a DataFrame, related to modifying data including updating values."
+q10,Which logical operator in pandas returns True if both operands are True?,2,yes,"This question tests knowledge of logical operators used in filtering DataFrames, matching applying logical operators to filter and subset DataFrames."
+q1,What does a pandas DataFrame primarily represent?,3,yes,"This question assesses understanding of what a pandas DataFrame primarily represents, aligned with defining the DataFrame object and its structure."
+q2,How do a pandas DataFrame and a NumPy array differ in data types?,3,yes,"This question compares data types in DataFrames and NumPy arrays, matching the learning objective on comparing DataFrames with NumPy arrays."
+q3,What is the term for the set of row labels in a pandas DataFrame?,3,yes,"This question tests the term for row labels in a DataFrame, related to DataFrame structure including indices and labels."
+q4,Which parameter in the DataFrame constructor specifies the column labels?,3,yes,"This question evaluates knowledge of the DataFrame constructor parameter for column labels, aligned with creating DataFrames using the constructor with specified columns."
+q5,How can one select multiple columns from a DataFrame to get another DataFrame?,3,yes,"This question assesses selecting multiple columns to get a DataFrame, matching subsetting DataFrames using labels and indices."
+q6,What does the DataFrame iloc method use for subsetting?,3,yes,"This question tests what iloc uses for subsetting, aligned with subsetting DataFrames using iloc()."
+q7,"Which statement correctly filters rows where a column ""Population"" is greater than 100000?",3,yes,"This question evaluates filtering rows based on a condition, matching applying comparison operators to filter DataFrames."
+q8,"What logical operator represents ""and"" when subsetting pandas DataFrames?",3,yes,"This question assesses knowledge of the logical ""and"" operator used in pandas subsetting, aligned with applying logical operators to filter DataFrames."
+q9,What is the effect of the drop_duplicates() method on a DataFrame?,3,yes,"This question tests the effect of drop_duplicates() on a DataFrame, related to modifying data including removing duplicates."
+q10,Which DataFrame method inserts a new column at a specified position?,3,yes,"This question evaluates the method to insert a new column at a specified position, matching modifying data including inserting columns."
+q1,What type does the pandas package use to represent datasets?,4,yes,"This question assesses knowledge of the data structure pandas uses to represent datasets, aligned with defining the DataFrame object."
+q2,What does the index of a pandas dataframe represent?,4,yes,"This question tests understanding of what the index represents in a DataFrame, related to DataFrame structure including indices and labels."
+q3,How do pandas dataframes differ from NumPy arrays?,4,yes,"This question compares pandas DataFrames and NumPy arrays regarding data types, matching the learning objective on comparing DataFrames with NumPy arrays."
+q4,Which method selects rows by integer location and columns by integer location in a dataframe?,4,yes,"This question evaluates which method selects rows and columns by integer location, aligned with subsetting DataFrames using iloc()."
+q5,"Which statement selects multiple columns ""Name"" and ""Population"" from a dataframe returning a dataframe?",4,yes,"This question assesses selecting multiple columns returning a DataFrame, matching subsetting DataFrames using labels and indices."
+q6,"What does the pandas statement country[country[""Population""] > 100000] return?",4,yes,"This question tests filtering rows based on a condition, aligned with applying comparison operators to filter DataFrames."
+q7,Which logical operator returns True if both operands are True when subsetting dataframes?,4,yes,"This question evaluates knowledge of the logical operator returning True if both operands are True, matching applying logical operators to filter DataFrames."
+q8,What does the dataframe method drop_duplicates() do?,4,yes,"This question assesses the effect of drop_duplicates() method, related to modifying data including removing duplicates."
+q9,"How can a single column ""Population"" be selected from a dataframe as a pandas Series?",4,yes,"This question tests selecting a single column as a Series, related to DataFrame structure and subsetting."
+q10,What parameter in drop() specifies columns to remove from a dataframe?,4,yes,"This question evaluates the parameter in drop() specifying columns to remove, aligned with modifying data including removing columns."

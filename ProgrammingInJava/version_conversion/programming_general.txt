@@ -1,0 +1,355 @@
+<zySection title="Programming (general)" shorttitle="Programming (general)" id="40a1dead-a7a1-4c84-1698-4bbb8d166ac0">
+<zypInfo person="Alex" date="03/18/14"  hwStatus="" Status="3"> NEEDS first review.  </zypInfo>
+<zypInfo person="Susan" date="04/07/14">First review done. NEEDS final review. </zypInfo>
+<zypInfo person="Arash" date="04/16/14" Status="3"> Second review complete. Seems good to go. </zypInfo>
+<zypInfo person="Frank" date="02/11/15" minutes="15"> Merged cookie and recipe into one gdocDrawing. Moved subsequent sentence into figure caption.  </zypInfo> 
+<zypInfo person="Nicole" date="03/17/17" minutes="5"> Cleaned up gdocs in preparation for a new release.  </zypInfo> 
+<zypInfo person="Frank" date="5/24/17" minutes="180" status="Draft1Done">Rewrote per Susan/Roman/Frank's outline</zypInfo>
+<zypInfo person="Roman" date="5/30/17" minutes="30" status="Rev1Doing">Minor update to tool pending.</zypInfo>
+<zypInfo person="Susan" date="6/06/17" minutes="20" status="Rev1Doing">C and Java same. Just needs tool update.</zypInfo> 
+<zypInfo person="Amanda" date="6/20/17" minutes="180" status="Draft1Done">Added alt text to zyTools</zypInfo>
+<zypInfo person="Amanda" date="6/22/17" minutes="120" status="Rev2Done"></zypInfo>
+<zypInfo person="Tia" date="8/17/17" minutes="10" status="Draft1Doing">Animation updates</zypInfo>
+<zypInfo person="Aubrey" date="11/02/20" minutes="15">non-bug feedback</zypInfo>
+<zypInfo person="DanO" date="07/10/24" minutes="20" status="BugFix">Removed cookie image and changed cookie recipe to ordered list.</zypInfo>
+<zypInfo person="LukeM" date="3/31/25" minutes="5" status="Update">Added alt text steps to animation "A basic computer program."</zypInfo>
+<zypInfo person="LukeM" date="9/19/25" minutes="" status="Update">LOs added</zypInfo>
+
+<!--<zyAside type="bordered" name="" id="5de96394-384d-4264-ad5b-8f373055185b">
+Learn to:
+<ul>
+<li>Define what variables are and how their values can change.</li> <!-- SS1, SS2, TB2 -->
+<li>Identify and execute the basic types of instructions in a computer program: input, process, and output.</li> <!-- SS1, SS2 -->
+<li>Construct a simple program to perform basic arithmetic operations and output the results.</li> <!-- SS2, SS3 -->
+<li>Develop algorithms to solve specific problems, such as calculating the area of a triangle or the average of three numbers.</li> <!-- SS3, TB1 -->
+</ul>
+</zyAside>-->
+
+
+<zyHTML id="ba872538-dad2-475d-dedf-0196476a2075" subsection="true" caption="Computer program basics">
+<h3>Computer program basics</h3>
+</zyHTML>
+
+
+<zyHTML id="d8656552-2ea4-fbdd-811c-67fe1f45725a" caption="">
+<p>Computer programs are abundant in many people's lives today, carrying out applications on smartphones, tablets, and laptops, powering businesses like Amazon and Netflix, helping cars drive and planes fly, and much more.  </p>
+
+<p><zyDefn> A computer _program_ consists of instructions executing one at a time. </zyDefn> Basic instruction types are: 
+<ul>
+<li> <zyDefn> _Input_: A program gets data, perhaps from a file, keyboard, touchscreen, network, etc. </zyDefn> </li>
+<li> <zyDefn> _Process_: A program performs computations on that data, such as adding two values like x + y. </zyDefn> </li>
+<li> <zyDefn> _Output_: A program puts that data somewhere, such as to a file, screen, network, etc. </zyDefn> </li>
+</ul>
+ </p> 
+
+<p> <zyDefn> Programs use _variables_ to refer to data, like x</zyDefn>, y, and z below. The name is due to a variable's value varying as a program assigns a variable like x with new values.  </p> 
+</zyHTML>
+
+
+
+<zyAnimator id="32ae6afd-8b6a-4eaa-9055-707c19557300" caption="A basic computer program" height="310px" width="600px" selectedInstr="31" selectedObj="5" numObjsEverCreated="26" loadOnDemand="false">
+<!-- Last modified Tue May 30 2017 15:20:10 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="4" objType="box" objName="Code box" top="76px" left="54px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="155px" width="184px"></zyObject><zyObject objNum="5" objType="box" objName="Code highlight" top="89px" left="54px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="18px" width="1px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="6" objType="text" objName="Input (keyboard)" top="77px" left="370px" font-family='arial, sans-serif'><text>Input (keyboard)</text></zyObject><zyObject objNum="7" objType="text" objName="Output (screen)" top="157px" left="370px" font-family='arial, sans-serif'><text>Output (screen)</text></zyObject><zyObject objNum="8" objType="box" objName="Object 3: Box" top="97px" left="370px" useConstrainedProportions="false" height="28px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="9" objType="box" objName="Object 4: Box" top="177px" left="370px" opacity="50" border-radius="8px" background-color="zyAnimator-gray" useConstrainedProportions="false" height="40px" border-color="zyAnimator-black"></zyObject><zyObject objNum="10" objType="box" objName="Object 5: Box" top="221px" left="392px" background-color="zyAnimator-gray" useConstrainedProportions="false" height="8px" width="60px" border-width="0px" border-style="none" border-color="zyAnimator-black"></zyObject><zyObject objNum="11" objType="text" objName="x = Get input" top="90px" left="90px" font-family='arial, sans-serif'><text>x = Get next input</text></zyObject><zyObject objNum="12" objType="text" objName="y = Get next input i" top="115px" left="90px" font-family='arial, sans-serif'><text>y = Get next input</text></zyObject><zyObject objNum="13" objType="text" objName="z = x + y" top="150px" left="90px" font-family='arial, sans-serif'><text>z = x + y</text></zyObject><zyObject objNum="14" objType="text" objName="Put z to output" top="185px" left="90px" font-family='arial, sans-serif'><text>Put z to output</text></zyObject><zyObject objNum="15" objType="text" objName="2" top="103px" left="378px" opacity="0" font-family='arial, sans-serif'><text>2</text></zyObject><zyObject objNum="16" objType="text" objName="5" top="103px" left="394px" opacity="0" font-family='arial, sans-serif'><text>5</text></zyObject><zyObject objNum="17" objType="text" objName="7" top="150px" left="270px" opacity="0" font-family='arial, sans-serif'><text>7</text></zyObject><zyObject objNum="18" objType="text" objName="Computer program" top="51px" left="86px" font-family='arial, sans-serif'><text>Computer program</text></zyObject><zyObject objNum="19" objType="text" objName="2" top="103px" left="378px" opacity="0" font-family='arial, sans-serif'><text>2</text></zyObject><zyObject objNum="20" objType="text" objName="5" top="103px" left="394px" opacity="0" font-family='arial, sans-serif'><text>5</text></zyObject><zyObject objNum="21" objType="text" objName="7" top="169px" left="90px" opacity="0" font-family='arial, sans-serif'><text>7</text></zyObject><zyObject objNum="22" objType="text" objName="x:" top="90px" left="254px" opacity="0" font-family='arial, sans-serif'><text>x:</text></zyObject><zyObject objNum="23" objType="text" objName="y:" top="114px" left="254px" opacity="0" font-family='arial, sans-serif'><text>y:</text></zyObject><zyObject objNum="24" objType="text" objName="z:" top="150px" left="254px" opacity="0" font-family='arial, sans-serif'><text>z:</text></zyObject><zyObject objNum="25" objType="text" objName="2" top="90px" left="270px" opacity="0" font-family='arial, sans-serif'><text>2</text></zyObject><zyObject objNum="26" objType="text" objName="5" top="114px" left="270px" opacity="0" font-family='arial, sans-serif'><text>5</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A basic computer program&apos;s instructions get input, process, and put output.  This program first assigns x with what is typed on the keyboard input, in this case 2. </text></zyInstruction>
+<zyInstruction instrType="fade" objNum="5" timeLabel="0.2" opacity="100"></zyInstruction><zyInstruction instrType="resize" objNum="5" timeLabel="-" height="18" width="184"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="22" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="-" top="90" left="270"></zyInstruction><zyInstruction instrType="fade" objNum="15" timeLabel="-" opacity="40"></zyInstruction>
+<zyInstruction instrType="step"><text>The program&apos;s next instruction gets the next input, in this case 5.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="0.2" top="115" left="53"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="23" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="20" timeLabel="-" top="114" left="270"></zyInstruction><zyInstruction instrType="fade" objNum="16" timeLabel="-" opacity="40"></zyInstruction>
+<zyInstruction instrType="step"><text>The program then does some processing, in this case assigning z with x + y (so 2 + 5 yields z of 7). </text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="0.2" top="150" left="53"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="26" timeLabel="-" top="169" left="135"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="25" timeLabel="-" top="169" left="113"></zyInstruction><zyInstruction instrType="fade" objNum="21" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="21" timeLabel="0" top="150" left="270"></zyInstruction><zyInstruction instrType="fade" objNum="24" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="25" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>Finally, the program puts z (7) to output, in this case to a screen. </text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="5" timeLabel="0.2" top="184" left="53"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="-" top="179" left="378"></zyInstruction><zyInstruction instrType="fade" objNum="5" timeLabel="0.2" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>
+Static figure: To the left is pseudocode, to the right is an input box and a screen for output.
+Begin Pseudocode:
+x = Get next input
+y = Get next input
+z = x + y
+Put z to output
+End Pseudocode.
+x:  2
+y:  5
+z:  7
+
+<!--The program's input (keyboard) and output (screen) are shown. The program's inputs are 2 and 5. The program's output is 7.-->
+
+Step 1: A basic computer program's instructions get input, process, and put output. This program first assigns x with what is typed on the keyboard input, in this case 2. Line, "x = Get next input", is highlighted and 2 appears in the input box. x is assigned the value 2.
+
+Step 2: The program's next instruction gets the next input, in this case 5. Line, "y = Get next input" is highlighted and 5 appears in the input box. y is assigned the value 5.
+
+Step 3: The program then does some processing, in this case assigning z with x + y (so 2 + 5 yields z of 7). Line, "z = x + y", is highlighted and z is assigned the value 7.
+
+Step 4: Finally, the program puts z (7) to output, in this case to a screen. Line, "Put z to the output", is highlighted and 7 appears on the output screen.
+</zyAltDescription>
+
+</zyAnimator>
+
+
+
+<zyQSetShortAnswer caption="A basic computer program." id="b583a999-ce4a-4f5c-9745-b4bda53db0e3">
+<p>Consider the example above. </p>
+
+<zyQ>
+<zyQText>The program has a total number of _____ instructions. </zyQText>
+<zyQAns obeyspace="false" obeycase="false" lines="1" columns="5" preferred="true">4</zyQAns>
+<zyQAns obeyspace="false" obeycase="false" lines="1" columns="5">four</zyQAns>
+<zyQExpl>The program has 2 input instructions, 1 processing instruction, and 1 output instruction, totaling 4 instructions. </zyQExpl>
+<zyQHint>2 input instructions, 1 processing instruction, and 1 output instruction. </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Suppose a new instruction was inserted as follows: <br /><br />
+...<br />
+z = x + y <br />
+Add 1 <!--more-->to z (new instruction) <br />
+Put z to output <br /><br />
+What would the last instruction <!--then-->output to the screen? </zyQText>
+<zyQAns obeyspace="false" obeycase="false" lines="1" columns="5">8</zyQAns>
+<zyQExpl>z = x + y assigned z with 2 + 5, or 7. Then, adding 1 more to z makes z become 8. Programs often have numerous such processing instructions. </zyQExpl>
+<zyQHint>7 + 1 is ? </zyQHint>
+</zyQ>
+
+<zyQ>
+<zyQText>Consider the instruction: z = x + y. If x is 10 and y is 20, then z is assigned with _____. </zyQText>
+<zyQAns obeyspace="false" obeycase="false" lines="1" columns="5">30</zyQAns>
+<zyQExpl>Note that in programming, the instruction z = x + y has a different meaning than in traditional algebra. In algebra, z = x + y states an equality: z is the same as x + y. But in programming, z = x + y is an assignment: z is assigned with the sum of the current values of x and y. </zyQExpl>
+<zyQHint>10 + 20 is ? </zyQHint>
+</zyQ>
+</zyQSetShortAnswer>
+
+
+
+<zyAside type="bordered" name="A program is like a recipe" id="20dc6895-ed13-94de-d925-c2a2b487d9bb"> 
+<p>Some people think of  a program as being like a cooking recipe. A recipe consists of <i> instructions </i> that a chef executes, like adding eggs or stirring ingredients. Likewise,  a computer program consists of instructions that a computer executes, like multiplying numbers or outputting a number to a screen.</p>
+<h4>Baking chocolate chip cookies from a recipe</h4>
+<ol>
+<li> Mix one stick of butter and one cup of sugar.</li>
+<li> Add egg and mix until combined.</li>
+<li> Stir in flour and chocolate.</li>
+<li> Bake at 350°F for 8 minutes.</li>
+</ol>
+
+<!--
+<zyGdocImage id="374ab633-8b71-072d-cd56-174819150277" alt="An image of two chocolate chip cookies placed one on top of the other. A list with four steps is listed beside the cookies. The heading reads, 'bake chocolate chip cookies:' The four steps are as follows, from top to bottom. Mix one stick of butter and one cup of sugar. Add egg and mix until combined. Stir in the flour and chocolate. Bake at three hundred and fifty degrees Fahrenheit for eight minutes." sizeperc="80%">
+
+</zyGdocImage>
+<sub>Credit: Wikimedia commons under a public domain license. <zyLink link="http://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies_(2).jpg">http://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies_(2).jpg</zyLink></sub>
+-->
+</zyAside>
+
+
+
+<zyHTML id="595ccb99-bbfc-7b53-68bb-508f16af4a7b" subsection="true" caption="A first programming activity">
+<h3>A first programming activity</h3>
+</zyHTML>
+
+
+<zyHTML id="5d38f238-bc5b-ef52-ec9b-9b78a0be9949" caption="">
+<p>Below is a simple tool that allows a user to rearrange some prewritten instructions (in no particular programming language). The tool illustrates how a computer executes each instruction one at a time, assigning variable m with new values throughout and outputting ("printing") values to the screen.</p>
+</zyHTML>
+
+
+
+<zyTool name="arrangeInst" id="689886cc-d374-1d6a-dbfd-5e911c1c8f7d" caption="A first programming activity.">
+<zyInstructions>Execute the program by clicking the "Run program" button and observe the output. Click and drag the instructions to change the order of the instructions, and execute the program again.  Not required<!--(points are awarded just for interacting)-->, but can you make the program output a value greater than 500? How about greater than 1,000? </zyInstructions>
+<zyOptions>
+ <vars type="list">
+  <element>m</element>
+ </vars>
+ <instrs type="list">
+  <element type="dict">
+    <code>m = 5</code>
+    <sortable>unsortable</sortable>
+   </element>
+
+  <element type="dict">
+    <code>put m</code>
+    <sortable>unsortable</sortable>
+   </element>
+
+
+ <element type="dict">
+    <code>m = m * 2
+put m</code>
+    <sortable>sortable</sortable>
+   </element>
+
+<element type="dict">
+    <code>m = m * m
+put m</code>
+    <sortable>sortable</sortable>
+   </element>
+
+<element type="dict">
+    <code>m = m + 15
+put m</code>
+    <sortable>sortable</sortable>
+   </element>
+
+  </instrs>
+</zyOptions>
+
+<zyAltDescription>
+<zyCode nobox="true">
+m = 5
+put m
+</zyCode><br />
+Instruction 1:
+<zyCode nobox="true">
+m = m * 2
+put m
+</zyCode><br />
+Instruction 2: 
+<zyCode nobox="true">
+m = m * m
+put m
+</zyCode><br />
+Instruction 3:
+<zyCode nobox="true">
+m = m + 15
+put m
+</zyCode><br />
+Answer: Running the program as is, outputs <br />5<br /> 10<br /> 100<br /> 115<br /> To output a value greater than 500, the instructions can be arranged in the order 3, 2, 1 to print <br />5<br /> 20<br /> 400<br /> 800<br /> 
+To output a value greater than 1000, the instructions can be arranged in the order 3, 1, 2 to print <br />5<br /> 20<br /> 40<br /> 1600.
+<br />
+</zyAltDescription>
+</zyTool>
+
+
+
+<zyQSetMultipleChoice caption="Instructions." id="6c15db65-054a-b34e-26d7-f48ed75e1c31">
+<zyQ>
+<zyQText>Which instruction completes the program to compute a triangle's area? The equation for a triangle's area is 1/2 * base * height. <br />
+base = Get next input<br />
+height = Get next input<br />
+Assign x with base * height<br />
+_____<br />
+Put x to output
+</zyQText>
+<zyQChoice>
+<zyQAns> Multiply x by 2  </zyQAns>
+<zyQExpl>base * height * 2 is not the formula for a triangle's area. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> Add 2 to x</zyQAns>
+<zyQExpl> 2 + (base * height) is not the formula for a triangle's area. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>Multiply x by 1/2 </zyQAns>
+<zyQExpl>A triangle's area is (1/2) *
+ base * height.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText>Which instruction completes the program to compute the average of three numbers? <br />
+x = Get next input <br />
+y = Get next input<br />
+z = Get next input<br />
+_____ <br />
+Put a to output
+</zyQText>
+<zyQChoice correct="true">
+<zyQAns>a = (x + y + z)  / 3</zyQAns>
+<zyQExpl>The average of three numbers is those numbers' sum divided by 3. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>a = (x + y + z) / 2</zyQAns>
+<zyQExpl>The sum is correct, but dividing by 2 is not.</zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>a = x + y + z</zyQAns>
+<zyQExpl>The sum is correct, but a division is also needed.</zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+
+
+
+<zyHTML id="3c6bcbd0-3327-4284-c517-efe3f42b7422" subsection="true" caption="Computational thinking">
+<h3>Computational thinking</h3>
+</zyHTML>
+
+
+<zyHTML id="11bc4636-c24b-60a3-28e9-56c5be34c6e1" caption="">
+<p> <i> Mathematical thinking</i> became increasingly important throughout the industrial age to enable people to successfully live and work.  <zyDefn> In the information age, many people believe _computational thinking_,  or creating a sequence of instructions to solve a problem, will become increasingly important for work and everyday life.</zyDefn> <zyDefn>A sequence of instructions that solves a problem is called an _algorithm_.</zyDefn> </p>
+</zyHTML>
+
+
+
+<zypInfo person="Susan" date="8/22/18" minutes="08/22/18">Frank/Roman/Alex updated directions in an attempt to reduce student frustration and bug reports. Pushed to the fall 18 and spring 19 releases</zypInfo>
+<zyTool name="drawingSim" id="31488ce0-ad81-636c-5d87-e8ede6c61ad5" caption="Computational thinking: Creating algorithms to draw shapes using turtle graphics.">
+<zyInstructions>
+<p>A common way to become familiar with algorithms is called turtle graphics: You instruct a robotic turtle to walk a certain path, via instructions like "Turn left", "Walk forward 10 steps", or "Pen down" (to draw a line while walking).</p>
+
+<p> The 6-instruction algorithm shown below ("Pen down", "Forward 100", etc.) draws a triangle.</p>
+
+<p>
+<ol>
+<li> Press "Run" to see the instructions execute from top to bottom, yielding a triangle. </li>
+<li> Can you modify the instructions to draw a square? Hint: "Pen down", "Forward 100", "Left 90", "Forward 100", "Left 90"&mdash;keep going! </li>
+<li> Experiment to see what else you can draw. </li>
+</ol>
+Note: The values after a Left or Right turn are angles in degrees.
+</p>
+
+<p> How to:
+<ul>
+<li> Add an instruction: Click an orange button ("Pen up", "Pen down", "Forward", "Turn left"). </li>
+<li> Delete an instruction: Click its "x". </li>
+<li> Move an instruction: Drag it up or down.</li>
+</ul>
+</p>
+</zyInstructions>
+<zyAltDescription>
+Pressing "Run" causes an invisible turtle to execute the list of instructions on the left, one at a time, causing lines to appear on the right. <br />
+Example: Sample instructions draw a triangle. <br />
+<ol>
+<li>Pen down</li>
+<li>Forward 100</li>
+<li>Left 120</li>
+<li>Forward 100</li>
+<li>Left 120</li>
+<li>Forward 100</li>
+</ol>
+
+Question: The task "Draw a square" can be decomposed into 8 steps.<br />
+<ol>
+<li>Put the pencil down on the paper.</li>
+<li>Move the pencil forward.</li>
+<li>Turn the pencil left 90 degrees.</li>
+<li>Move the pencil forward.</li>
+<li>Turn the pencil left 90 degrees.</li>
+<li>Move the pencil forward.</li>
+<li>Turn the pencil left 90 degrees</li>
+<li>Move the pencil forward.</li>
+</ol>
+ 
+Draw a square using the following instructions.<br />
+<ul>
+<li>Pen up</li>
+<li>Pen down</li>
+<li>Forward (DISTANCE FIELD)</li>
+<li>Turn left (DEGREES FIELD)</li>
+</ul>
+ 
+Answer: A square with sides that are 50 units long can be drawn using the following steps.<br />
+<ol>
+<li>Pen down</li>
+<li>Forward 50</li>
+<li>Left 90</li>
+<li>Forward 50</li>
+<li>Left 90</li>
+<li>Forward 50</li>
+<li>Left 90</li>
+<li>Forward 50</li>
+</ol>
+
+</zyAltDescription>
+</zyTool>
+
+</zySection>

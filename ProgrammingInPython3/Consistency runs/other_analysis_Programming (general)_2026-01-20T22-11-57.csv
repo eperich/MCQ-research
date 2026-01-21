@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,1
+2,10,0,1
+3,10,0,0
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,4,100
+1,3,2,5,100
+1,4,2,5,100
+2,3,1,5,100
+2,4,2,5,100
+3,4,0,5,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),9
+Similar (70-85%),31
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What is the primary purpose of a computer program?,2,1,q1,What is the primary purpose of a computer program?,4,1,0.935,duplicate
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.888,duplicate
+q1,What is the main purpose of a computer program?,1,1,q1,What is the primary purpose of a computer program?,4,1,0.879,duplicate
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.877,duplicate
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.876,duplicate
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.875,duplicate
+q1,What is the main purpose of a computer program?,1,1,q1,What is the primary purpose of a computer program?,2,1,0.872,duplicate
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.86,duplicate
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.855,duplicate
+q2,Which instruction type receives data from the keyboard or file?,3,2,q3,Which instruction type receives data from a user or file?,4,3,0.841,similar
+q5,Why do programs use variables instead of fixed values?,1,5,q1,What is the main purpose of using variables in a program?,3,1,0.818,similar
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q2,Which instruction type receives data from the keyboard or file?,3,2,0.81,similar
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.803,similar
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q3,Which instruction type performs computations on data in a program?,2,3,0.793,similar
+q3,A variable in a program is used to _____.,1,3,q4,How does a variable in a program function?,2,4,0.789,similar
+q3,Which instruction type performs computations on data in a program?,2,3,q2,Which instruction type receives data from the keyboard or file?,3,2,0.789,similar
+q4,How does a variable in a program function?,2,4,q4,A variable in a program is named because its value _____.,4,4,0.781,similar
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q3,Which instruction type receives data from a user or file?,4,3,0.778,similar
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.776,similar
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q2,Which instruction type receives data from the keyboard or file?,3,2,0.768,similar
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q10,Why is a program like a cooking recipe?,4,10,0.76,similar
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q3,Which instruction type receives data from a user or file?,4,3,0.755,similar
+q9,An algorithm is best described as _____.,1,9,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.752,similar
+q9,An algorithm is best described as _____.,1,9,q6,What is an algorithm in computational thinking?,3,6,0.75,similar
+q3,A variable in a program is used to _____.,1,3,q4,A variable in a program is named because its value _____.,4,4,0.747,similar
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.747,similar
+q7,What role does the output instruction play in a program?,3,7,q6,How does a program produce output?,4,6,0.737,similar
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,0.732,similar
+q3,A variable in a program is used to _____.,1,3,q1,What is the main purpose of using variables in a program?,3,1,0.729,similar
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q3,Which instruction type performs computations on data in a program?,2,3,0.726,similar
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q3,Which instruction type receives data from a user or file?,4,3,0.725,similar
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.725,similar
+q3,Which instruction type performs computations on data in a program?,2,3,q7,What role does the output instruction play in a program?,3,7,0.725,similar
+q3,Which instruction type performs computations on data in a program?,2,3,q3,Which instruction type receives data from a user or file?,4,3,0.725,similar
+q4,How does a variable in a program function?,2,4,q1,What is the main purpose of using variables in a program?,3,1,0.722,similar
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.721,similar
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.72,similar
+q6,What is an algorithm in computational thinking?,3,6,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.716,similar
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q2,Which instruction type receives data from the keyboard or file?,3,2,0.714,similar
+q7,What role does the output instruction play in a program?,3,7,q3,Which instruction type receives data from a user or file?,4,3,0.703,similar
+q2,Which instruction type receives data from the keyboard or file?,3,2,q7,What role does the output instruction play in a program?,3,7,0.697,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.696,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.684,low
+q1,What is the main purpose of a computer program?,1,1,q1,What is the main purpose of using variables in a program?,3,1,0.68,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q7,What role does the output instruction play in a program?,3,7,0.676,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q3,Which instruction type performs computations on data in a program?,2,3,0.675,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q7,What role does the output instruction play in a program?,3,7,0.674,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.671,low
+q3,A variable in a program is used to _____.,1,3,q3,Which instruction type performs computations on data in a program?,2,3,0.666,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.666,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.663,low
+q3,A variable in a program is used to _____.,1,3,q5,Why do programs use variables instead of fixed values?,1,5,0.662,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.662,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.662,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.661,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q6,How does a program produce output?,4,6,0.661,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q7,What role does the output instruction play in a program?,3,7,0.661,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.66,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.654,low
+q1,What is the main purpose of using variables in a program?,3,1,q4,A variable in a program is named because its value _____.,4,4,0.652,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.649,low
+q3,A variable in a program is used to _____.,1,3,q7,What role does the output instruction play in a program?,3,7,0.647,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.644,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.643,low
+q3,Which instruction type performs computations on data in a program?,2,3,q6,How does a program produce output?,4,6,0.642,low
+q3,A variable in a program is used to _____.,1,3,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.64,low
+q5,Why do programs use variables instead of fixed values?,1,5,q4,A variable in a program is named because its value _____.,4,4,0.635,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.635,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.634,low
+q9,What does computational thinking involve?,2,9,q8,How does computational thinking relate to programming?,3,8,0.634,low
+q4,How does a variable in a program function?,2,4,q7,What role does the output instruction play in a program?,3,7,0.633,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.633,low
+q5,Why do programs use variables instead of fixed values?,1,5,q4,How does a variable in a program function?,2,4,0.629,low
+q6,What is an algorithm in computational thinking?,3,6,q8,How does computational thinking relate to programming?,3,8,0.625,low
+q9,What does computational thinking involve?,2,9,q6,What is an algorithm in computational thinking?,3,6,0.622,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q7,What role does the output instruction play in a program?,3,7,0.621,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.62,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.62,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q6,How does a program produce output?,4,6,0.619,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.617,low
+q1,What is the primary purpose of a computer program?,2,1,q7,What role does the output instruction play in a program?,3,7,0.616,low
+q3,A variable in a program is used to _____.,1,3,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.611,low
+q1,What is the main purpose of a computer program?,1,1,q7,What role does the output instruction play in a program?,3,7,0.608,low
+q3,A variable in a program is used to _____.,1,3,q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,0.608,low
+q7,What role does the output instruction play in a program?,3,7,q1,What is the primary purpose of a computer program?,4,1,0.606,low
+q3,Which instruction type performs computations on data in a program?,2,3,q4,How does a variable in a program function?,2,4,0.605,low
+q1,What is the main purpose of using variables in a program?,3,1,q1,What is the primary purpose of a computer program?,4,1,0.601,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.6,low
+q1,What is the main purpose of a computer program?,1,1,q6,How does a program produce output?,4,6,0.592,low
+q1,What is the primary purpose of a computer program?,2,1,q1,What is the main purpose of using variables in a program?,3,1,0.59,low
+q3,Which instruction type performs computations on data in a program?,2,3,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.589,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q6,How does a program produce output?,4,6,0.587,low
+q1,What is the main purpose of a computer program?,1,1,q4,Why do computer programs execute instructions one at a time?,3,4,0.585,low
+q1,What is the main purpose of a computer program?,1,1,q10,Why is a program like a cooking recipe?,4,10,0.585,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q6,How does a program produce output?,4,6,0.583,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.581,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q6,How does a program produce output?,4,6,0.579,low
+q5,Why do programs use variables instead of fixed values?,1,5,q4,Why do computer programs execute instructions one at a time?,3,4,0.577,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.574,low
+q1,What is the primary purpose of a computer program?,4,1,q6,How does a program produce output?,4,6,0.573,low
+q9,What does computational thinking involve?,2,9,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.57,low
+q3,Which instruction type receives data from a user or file?,4,3,q6,How does a program produce output?,4,6,0.569,low
+q1,What is the primary purpose of a computer program?,2,1,q6,How does a program produce output?,4,6,0.567,low
+q4,How does a variable in a program function?,2,4,q6,How does a program produce output?,4,6,0.565,low
+q3,A variable in a program is used to _____.,1,3,q6,How does a program produce output?,4,6,0.564,low
+q6,How does a program produce output?,4,6,q10,Why is a program like a cooking recipe?,4,10,0.563,low
+q1,What is the primary purpose of a computer program?,2,1,q4,Why do computer programs execute instructions one at a time?,3,4,0.555,low
+q1,What is the main purpose of using variables in a program?,3,1,q7,What role does the output instruction play in a program?,3,7,0.555,low
+q1,What is the main purpose of a computer program?,1,1,q4,How does a variable in a program function?,2,4,0.553,low
+q4,How does a variable in a program function?,2,4,q10,Why is a program like a cooking recipe?,4,10,0.552,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q8,What does the instruction “Put z to output” do in a program?,1,8,0.55,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q1,What is the primary purpose of a computer program?,4,1,0.549,low
+q3,A variable in a program is used to _____.,1,3,q3,Which instruction type receives data from a user or file?,4,3,0.548,low
+q8,How does computational thinking relate to programming?,3,8,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.548,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q3,A variable in a program is used to _____.,1,3,0.546,low
+q3,A variable in a program is used to _____.,1,3,q8,What does the instruction “Put z to output” do in a program?,1,8,0.545,low
+q9,An algorithm is best described as _____.,1,9,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.541,low
+q1,What is the main purpose of a computer program?,1,1,q3,A variable in a program is used to _____.,1,3,0.54,low
+q1,What is the main purpose of using variables in a program?,3,1,q6,How does a program produce output?,4,6,0.538,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q6,How does a program produce output?,4,6,0.529,low
+q1,What is the main purpose of using variables in a program?,3,1,q4,Why do computer programs execute instructions one at a time?,3,4,0.528,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.527,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q3,Which instruction type performs computations on data in a program?,2,3,0.525,low
+q3,A variable in a program is used to _____.,1,3,q2,Which instruction type receives data from the keyboard or file?,3,2,0.519,low
+q3,Which instruction type performs computations on data in a program?,2,3,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.519,low
+q1,What is the main purpose of a computer program?,1,1,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.518,low
+q3,A variable in a program is used to _____.,1,3,q1,What is the primary purpose of a computer program?,2,1,0.517,low
+q3,A variable in a program is used to _____.,1,3,q1,What is the primary purpose of a computer program?,4,1,0.515,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q8,What does the instruction “Put z to output” do in a program?,1,8,0.515,low
+q1,What is the main purpose of using variables in a program?,3,1,q10,Why is a program like a cooking recipe?,4,10,0.513,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q4,Why do computer programs execute instructions one at a time?,3,4,0.512,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q3,Which instruction type receives data from a user or file?,4,3,0.511,low
+q4,How does a variable in a program function?,2,4,q1,What is the primary purpose of a computer program?,4,1,0.509,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q6,What is an algorithm in computational thinking?,3,6,0.509,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.509,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q4,How does a variable in a program function?,2,4,0.508,low
+q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,q10,Why is a program like a cooking recipe?,4,10,0.508,low
+q1,What is the primary purpose of a computer program?,2,1,q10,Why is a program like a cooking recipe?,4,10,0.507,low
+q6,How does a program produce output?,4,6,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.507,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.506,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q6,How does a program produce output?,4,6,0.506,low
+q3,A variable in a program is used to _____.,1,3,q10,Why is a program like a cooking recipe?,4,10,0.504,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q10,Why is a program like a cooking recipe?,4,10,0.504,low
+q1,What is the main purpose of a computer program?,1,1,q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,0.502,low
+q1,What is the primary purpose of a computer program?,2,1,q4,How does a variable in a program function?,2,4,0.501,low
+q1,What is the primary purpose of a computer program?,4,1,q10,Why is a program like a cooking recipe?,4,10,0.501,low
+q3,Which instruction type performs computations on data in a program?,2,3,q1,What is the main purpose of using variables in a program?,3,1,0.5,low
+q4,How does a variable in a program function?,2,4,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.5,low
+q7,What role does the output instruction play in a program?,3,7,q10,Why is a program like a cooking recipe?,4,10,0.498,low
+q3,A variable in a program is used to _____.,1,3,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.497,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q6,How does a program produce output?,4,6,0.496,low
+q9,An algorithm is best described as _____.,1,9,q3,Which instruction type performs computations on data in a program?,2,3,0.495,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.495,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q4,How does a variable in a program function?,2,4,0.494,low
+q3,Which instruction type performs computations on data in a program?,2,3,q4,Why do computer programs execute instructions one at a time?,3,4,0.494,low
+q3,Which instruction type performs computations on data in a program?,2,3,q10,Why is a program like a cooking recipe?,4,10,0.492,low
+q6,How does a program produce output?,4,6,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.492,low
+q1,What is the main purpose of a computer program?,1,1,q2,Which instruction type involves performing calculations or data manipulation?,1,2,0.49,low
+q4,A variable in a program is named because its value _____.,4,4,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.49,low
+q5,Why do programs use variables instead of fixed values?,1,5,q3,Which instruction type performs computations on data in a program?,2,3,0.489,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q1,What is the primary purpose of a computer program?,2,1,0.489,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.488,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q2,Which instruction type receives data from the keyboard or file?,3,2,0.487,low
+q3,A variable in a program is used to _____.,1,3,q9,An algorithm is best described as _____.,1,9,0.485,low
+q1,What is the main purpose of a computer program?,1,1,q5,Why do programs use variables instead of fixed values?,1,5,0.484,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.483,low
+q3,Which instruction type performs computations on data in a program?,2,3,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.483,low
+q9,What does computational thinking involve?,2,9,q10,Why is a program like a cooking recipe?,4,10,0.483,low
+q5,Why do programs use variables instead of fixed values?,1,5,q6,How does a program produce output?,4,6,0.482,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q4,How does a variable in a program function?,2,4,0.482,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q7,What role does the output instruction play in a program?,3,7,0.482,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q6,How does a program produce output?,4,6,0.482,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q7,What role does the output instruction play in a program?,3,7,0.481,low
+q5,Why do programs use variables instead of fixed values?,1,5,q10,Why is a program like a cooking recipe?,4,10,0.479,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q7,What role does the output instruction play in a program?,3,7,0.479,low
+q7,What role does the output instruction play in a program?,3,7,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.479,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.478,low
+q9,An algorithm is best described as _____.,1,9,q10,Why is a program like a cooking recipe?,4,10,0.478,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.478,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q8,What does the instruction “Put z to output” do in a program?,1,8,0.476,low
+q3,Which instruction type performs computations on data in a program?,2,3,q4,A variable in a program is named because its value _____.,4,4,0.476,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q10,Why is a program like a cooking recipe?,4,10,0.474,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q1,What is the primary purpose of a computer program?,2,1,0.473,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.473,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q10,Why is a program like a cooking recipe?,4,10,0.472,low
+q7,What role does the output instruction play in a program?,3,7,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.47,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q1,What is the primary purpose of a computer program?,4,1,0.469,low
+q9,An algorithm is best described as _____.,1,9,q8,How does computational thinking relate to programming?,3,8,0.468,low
+q4,A variable in a program is named because its value _____.,4,4,q10,Why is a program like a cooking recipe?,4,10,0.467,low
+q1,What is the main purpose of a computer program?,1,1,q2,Which instruction type receives data from the keyboard or file?,3,2,0.465,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q4,Why do computer programs execute instructions one at a time?,3,4,0.464,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q1,What is the primary purpose of a computer program?,4,1,0.463,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q1,What is the primary purpose of a computer program?,4,1,0.463,low
+q3,Which instruction type performs computations on data in a program?,2,3,q6,What is an algorithm in computational thinking?,3,6,0.461,low
+q4,How does a variable in a program function?,2,4,q3,Which instruction type receives data from a user or file?,4,3,0.461,low
+q1,What is the main purpose of a computer program?,1,1,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.459,low
+q3,A variable in a program is used to _____.,1,3,q4,Why do computer programs execute instructions one at a time?,3,4,0.459,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.459,low
+q1,What is the primary purpose of a computer program?,2,1,q2,Which instruction type receives data from the keyboard or file?,3,2,0.457,low
+q3,A variable in a program is used to _____.,1,3,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.456,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q4,Why do computer programs execute instructions one at a time?,3,4,0.456,low
+q1,What is the primary purpose of a computer program?,2,1,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.455,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q1,What is the primary purpose of a computer program?,4,1,0.454,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q7,What role does the output instruction play in a program?,3,7,0.453,low
+q9,An algorithm is best described as _____.,1,9,q4,How does a variable in a program function?,2,4,0.453,low
+q5,Why do programs use variables instead of fixed values?,1,5,q1,What is the primary purpose of a computer program?,4,1,0.452,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.452,low
+q3,Which instruction type performs computations on data in a program?,2,3,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.452,low
+q3,Which instruction type performs computations on data in a program?,2,3,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.452,low
+q4,How does a variable in a program function?,2,4,q2,Which instruction type receives data from the keyboard or file?,3,2,0.452,low
+q1,What is the main purpose of a computer program?,1,1,q3,Which instruction type performs computations on data in a program?,2,3,0.451,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q9,What does computational thinking involve?,2,9,0.451,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q4,How does a variable in a program function?,2,4,0.449,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q4,Why do computer programs execute instructions one at a time?,3,4,0.449,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.449,low
+q3,A variable in a program is used to _____.,1,3,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.448,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.447,low
+q4,How does a variable in a program function?,2,4,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.446,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.445,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.444,low
+q6,What is an algorithm in computational thinking?,3,6,q10,Why is a program like a cooking recipe?,4,10,0.444,low
+q9,An algorithm is best described as _____.,1,9,q6,How does a program produce output?,4,6,0.443,low
+q1,What is the main purpose of a computer program?,1,1,q3,Which instruction type receives data from a user or file?,4,3,0.442,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q6,How does a program produce output?,4,6,0.442,low
+q1,What is the primary purpose of a computer program?,4,1,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.442,low
+q3,A variable in a program is used to _____.,1,3,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.441,low
+q1,What is the primary purpose of a computer program?,2,1,q3,Which instruction type performs computations on data in a program?,2,3,0.441,low
+q3,Which instruction type performs computations on data in a program?,2,3,q1,What is the primary purpose of a computer program?,4,1,0.441,low
+q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.44,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.438,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q6,How does a program produce output?,4,6,0.438,low
+q9,What does computational thinking involve?,2,9,q6,How does a program produce output?,4,6,0.438,low
+q3,Which instruction type performs computations on data in a program?,2,3,q9,What does computational thinking involve?,2,9,0.436,low
+q3,Which instruction type performs computations on data in a program?,2,3,q8,How does computational thinking relate to programming?,3,8,0.436,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q1,What is the main purpose of using variables in a program?,3,1,0.434,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q3,Which instruction type receives data from a user or file?,4,3,0.434,low
+q5,Why do programs use variables instead of fixed values?,1,5,q1,What is the primary purpose of a computer program?,2,1,0.433,low
+q5,Why do programs use variables instead of fixed values?,1,5,q7,What role does the output instruction play in a program?,3,7,0.433,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q4,A variable in a program is named because its value _____.,4,4,0.433,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q3,Which instruction type performs computations on data in a program?,2,3,0.432,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.432,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q8,How does computational thinking relate to programming?,3,8,0.432,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.432,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q8,How does computational thinking relate to programming?,3,8,0.432,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q3,Which instruction type receives data from a user or file?,4,3,0.431,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q1,What is the main purpose of using variables in a program?,3,1,0.429,low
+q9,An algorithm is best described as _____.,1,9,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.429,low
+q1,What is the primary purpose of a computer program?,2,1,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.428,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q6,What is an algorithm in computational thinking?,3,6,0.428,low
+q6,What is an algorithm in computational thinking?,3,6,q6,How does a program produce output?,4,6,0.428,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.427,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.426,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q1,What is the primary purpose of a computer program?,2,1,0.425,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q7,What role does the output instruction play in a program?,3,7,0.424,low
+q4,A variable in a program is named because its value _____.,4,4,q6,How does a program produce output?,4,6,0.423,low
+q1,What is the main purpose of a computer program?,1,1,q8,What does the instruction “Put z to output” do in a program?,1,8,0.422,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q1,What is the primary purpose of a computer program?,4,1,0.421,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q10,Why is a program like a cooking recipe?,4,10,0.421,low
+q4,How does a variable in a program function?,2,4,q4,Why do computer programs execute instructions one at a time?,3,4,0.42,low
+q7,What role does the output instruction play in a program?,3,7,q4,A variable in a program is named because its value _____.,4,4,0.42,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q9,What does computational thinking involve?,2,9,0.419,low
+q9,An algorithm is best described as _____.,1,9,q9,What does computational thinking involve?,2,9,0.418,low
+q1,What is the primary purpose of a computer program?,2,1,q3,Which instruction type receives data from a user or file?,4,3,0.418,low
+q4,How does a variable in a program function?,2,4,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.418,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.417,low
+q1,What is the main purpose of a computer program?,1,1,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.416,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q10,Why is a program like a cooking recipe?,4,10,0.416,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q2,Which instruction type receives data from the keyboard or file?,3,2,0.416,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q10,Why is a program like a cooking recipe?,4,10,0.415,low
+q3,Which instruction type receives data from a user or file?,4,3,q10,Why is a program like a cooking recipe?,4,10,0.415,low
+q9,An algorithm is best described as _____.,1,9,q4,Why do computer programs execute instructions one at a time?,3,4,0.414,low
+q1,What is the main purpose of a computer program?,1,1,q6,What is an algorithm in computational thinking?,3,6,0.413,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q4,Why do computer programs execute instructions one at a time?,3,4,0.413,low
+q9,An algorithm is best described as _____.,1,9,q4,A variable in a program is named because its value _____.,4,4,0.41,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.409,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q6,What is an algorithm in computational thinking?,3,6,0.409,low
+q5,Why do programs use variables instead of fixed values?,1,5,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.409,low
+q1,What is the main purpose of a computer program?,1,1,q9,An algorithm is best described as _____.,1,9,0.408,low
+q8,How does computational thinking relate to programming?,3,8,q6,How does a program produce output?,4,6,0.408,low
+q1,What is the main purpose of using variables in a program?,3,1,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.407,low
+q1,What is the main purpose of a computer program?,1,1,q8,How does computational thinking relate to programming?,3,8,0.406,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q1,What is the main purpose of using variables in a program?,3,1,0.406,low
+q5,Why do programs use variables instead of fixed values?,1,5,q8,How does computational thinking relate to programming?,3,8,0.406,low
+q5,Why do programs use variables instead of fixed values?,1,5,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.406,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.406,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q10,Why is a program like a cooking recipe?,4,10,0.406,low
+q4,How does a variable in a program function?,2,4,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.405,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.405,low
+q8,How does computational thinking relate to programming?,3,8,q1,What is the primary purpose of a computer program?,4,1,0.405,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.404,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q1,What is the main purpose of using variables in a program?,3,1,0.404,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q9,An algorithm is best described as _____.,1,9,0.403,low
+q9,An algorithm is best described as _____.,1,9,q7,What role does the output instruction play in a program?,3,7,0.402,low
+q1,What is the main purpose of a computer program?,1,1,q4,A variable in a program is named because its value _____.,4,4,0.401,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q7,What role does the output instruction play in a program?,3,7,0.401,low
+q8,How does computational thinking relate to programming?,3,8,q10,Why is a program like a cooking recipe?,4,10,0.401,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.4,low
+q3,A variable in a program is used to _____.,1,3,q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,0.4,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.4,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.399,low
+q5,Why do programs use variables instead of fixed values?,1,5,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.399,low
+q1,What is the primary purpose of a computer program?,4,1,q3,Which instruction type receives data from a user or file?,4,3,0.399,low
+q9,What does computational thinking involve?,2,9,q4,Why do computer programs execute instructions one at a time?,3,4,0.398,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.397,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.396,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q8,How does computational thinking relate to programming?,3,8,0.394,low
+q1,What is the main purpose of using variables in a program?,3,1,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.393,low
+q1,What is the main purpose of a computer program?,1,1,q9,What does computational thinking involve?,2,9,0.392,low
+q4,How does a variable in a program function?,2,4,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.392,low
+q1,What is the primary purpose of a computer program?,2,1,q6,What is an algorithm in computational thinking?,3,6,0.391,low
+q5,Why do programs use variables instead of fixed values?,1,5,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.39,low
+q1,What is the primary purpose of a computer program?,2,1,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.39,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q4,A variable in a program is named because its value _____.,4,4,0.389,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q2,Which instruction type receives data from the keyboard or file?,3,2,0.389,low
+q9,What does computational thinking involve?,2,9,q2,Which instruction type receives data from the keyboard or file?,3,2,0.389,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q3,Which instruction type receives data from a user or file?,4,3,0.389,low
+q6,What is an algorithm in computational thinking?,3,6,q7,What role does the output instruction play in a program?,3,7,0.389,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,0.388,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q4,A variable in a program is named because its value _____.,4,4,0.388,low
+q3,Which instruction type receives data from a user or file?,4,3,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.388,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q3,Which instruction type receives data from a user or file?,4,3,0.387,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.387,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.387,low
+q6,What is an algorithm in computational thinking?,3,6,q1,What is the primary purpose of a computer program?,4,1,0.387,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.386,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q9,An algorithm is best described as _____.,1,9,0.385,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.384,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q6,How does a program produce output?,4,6,0.384,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.383,low
+q1,What is the main purpose of using variables in a program?,3,1,q3,Which instruction type receives data from a user or file?,4,3,0.383,low
+q1,What is the primary purpose of a computer program?,2,1,q8,How does computational thinking relate to programming?,3,8,0.382,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.382,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.381,low
+q3,Which instruction type receives data from a user or file?,4,3,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.381,low
+q3,A variable in a program is used to _____.,1,3,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.38,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q2,Which instruction type receives data from the keyboard or file?,3,2,0.38,low
+q9,An algorithm is best described as _____.,1,9,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.38,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.38,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.379,low
+q4,How does a variable in a program function?,2,4,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.379,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q6,What is an algorithm in computational thinking?,3,6,0.379,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.378,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q4,Why do computer programs execute instructions one at a time?,3,4,0.377,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.377,low
+q5,Why do programs use variables instead of fixed values?,1,5,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.376,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q4,A variable in a program is named because its value _____.,4,4,0.376,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q4,Why do computer programs execute instructions one at a time?,3,4,0.376,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.375,low
+q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.375,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q6,How does a program produce output?,4,6,0.374,low
+q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,q10,Why is a program like a cooking recipe?,4,10,0.374,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q10,Why is a program like a cooking recipe?,4,10,0.373,low
+q9,What does computational thinking involve?,2,9,q7,What role does the output instruction play in a program?,3,7,0.371,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q4,Why do computer programs execute instructions one at a time?,3,4,0.371,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.371,low
+q5,Why do programs use variables instead of fixed values?,1,5,q8,What does the instruction “Put z to output” do in a program?,1,8,0.37,low
+q5,Why do programs use variables instead of fixed values?,1,5,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.37,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.37,low
+q9,An algorithm is best described as _____.,1,9,q1,What is the primary purpose of a computer program?,2,1,0.37,low
+q3,Which instruction type performs computations on data in a program?,2,3,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.37,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.37,low
+q1,What is the main purpose of using variables in a program?,3,1,q2,Which instruction type receives data from the keyboard or file?,3,2,0.37,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q1,What is the primary purpose of a computer program?,4,1,0.369,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.368,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q1,What is the main purpose of using variables in a program?,3,1,0.368,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.368,low
+q1,What is the main purpose of a computer program?,1,1,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.367,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.367,low
+q5,Why do programs use variables instead of fixed values?,1,5,q9,An algorithm is best described as _____.,1,9,0.367,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,0.366,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q3,Which instruction type receives data from a user or file?,4,3,0.365,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.365,low
+q9,What does computational thinking involve?,2,9,q1,What is the primary purpose of a computer program?,4,1,0.365,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q4,A variable in a program is named because its value _____.,4,4,0.365,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.364,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q3,Which instruction type performs computations on data in a program?,2,3,0.363,low
+q9,An algorithm is best described as _____.,1,9,q1,What is the primary purpose of a computer program?,4,1,0.363,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.363,low
+q3,A variable in a program is used to _____.,1,3,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.361,low
+q3,Which instruction type performs computations on data in a program?,2,3,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.361,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q1,What is the primary purpose of a computer program?,4,1,0.361,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.36,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.36,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.36,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q7,Which instruction completes a program to calculate a triangle’s area?,1,7,0.359,low
+q7,What role does the output instruction play in a program?,3,7,q8,How does computational thinking relate to programming?,3,8,0.359,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q5,Why do programs use variables instead of fixed values?,1,5,0.358,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q6,What is an algorithm in computational thinking?,3,6,0.358,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q8,How does computational thinking relate to programming?,3,8,0.357,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q7,Which instruction completes a program to calculate a triangle’s area?,1,7,0.355,low
+q1,What is the primary purpose of a computer program?,2,1,q9,What does computational thinking involve?,2,9,0.355,low
+q3,A variable in a program is used to _____.,1,3,q6,What is an algorithm in computational thinking?,3,6,0.354,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.354,low
+q4,How does a variable in a program function?,2,4,q8,How does computational thinking relate to programming?,3,8,0.354,low
+q7,What role does the output instruction play in a program?,3,7,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.354,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q1,What is the main purpose of using variables in a program?,3,1,0.353,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.352,low
+q1,What is the primary purpose of a computer program?,4,1,q4,A variable in a program is named because its value _____.,4,4,0.352,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q5,Why do programs use variables instead of fixed values?,1,5,0.35,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.35,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q4,How does a variable in a program function?,2,4,0.349,low
+q7,What role does the output instruction play in a program?,3,7,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.349,low
+q1,What is the primary purpose of a computer program?,2,1,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.347,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.347,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.347,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.347,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.346,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.346,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.346,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.345,low
+q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.345,low
+q9,An algorithm is best described as _____.,1,9,q2,Which instruction type receives data from the keyboard or file?,3,2,0.344,low
+q5,Why do programs use variables instead of fixed values?,1,5,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.342,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q10,Why is a program like a cooking recipe?,4,10,0.342,low
+q9,An algorithm is best described as _____.,1,9,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.341,low
+q1,What is the primary purpose of a computer program?,2,1,q4,A variable in a program is named because its value _____.,4,4,0.341,low
+q4,How does a variable in a program function?,2,4,q6,What is an algorithm in computational thinking?,3,6,0.34,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.34,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q4,A variable in a program is named because its value _____.,4,4,0.34,low
+q9,An algorithm is best described as _____.,1,9,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.339,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.339,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q3,Which instruction type receives data from a user or file?,4,3,0.339,low
+q3,A variable in a program is used to _____.,1,3,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.338,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q4,A variable in a program is named because its value _____.,4,4,0.338,low
+q4,A variable in a program is named because its value _____.,4,4,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.338,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.337,low
+q1,What is the main purpose of using variables in a program?,3,1,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.337,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q3,Which instruction type receives data from a user or file?,4,3,0.337,low
+q3,A variable in a program is used to _____.,1,3,q8,How does computational thinking relate to programming?,3,8,0.336,low
+q5,Why do programs use variables instead of fixed values?,1,5,q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,0.336,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.336,low
+q9,An algorithm is best described as _____.,1,9,q1,What is the main purpose of using variables in a program?,3,1,0.336,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q4,Why do computer programs execute instructions one at a time?,3,4,0.333,low
+q3,Which instruction type performs computations on data in a program?,2,3,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.332,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q6,What is an algorithm in computational thinking?,3,6,0.332,low
+q1,What is the main purpose of a computer program?,1,1,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.331,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.331,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q6,What is an algorithm in computational thinking?,3,6,0.33,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q4,A variable in a program is named because its value _____.,4,4,0.33,low
+q1,What is the main purpose of using variables in a program?,3,1,q8,How does computational thinking relate to programming?,3,8,0.33,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q10,Why is a program like a cooking recipe?,4,10,0.328,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.328,low
+q3,Which instruction type receives data from a user or file?,4,3,q4,A variable in a program is named because its value _____.,4,4,0.328,low
+q5,Why do programs use variables instead of fixed values?,1,5,q2,Which instruction type receives data from the keyboard or file?,3,2,0.327,low
+q9,An algorithm is best described as _____.,1,9,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.327,low
+q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.327,low
+q1,What is the main purpose of using variables in a program?,3,1,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.325,low
+q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.325,low
+q5,Why do programs use variables instead of fixed values?,1,5,q3,Which instruction type receives data from a user or file?,4,3,0.324,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q6,How does a program produce output?,4,6,0.324,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.324,low
+q1,What is the main purpose of a computer program?,1,1,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.323,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q4,A variable in a program is named because its value _____.,4,4,0.323,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q2,Which instruction type receives data from the keyboard or file?,3,2,0.322,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.322,low
+q1,What is the primary purpose of a computer program?,4,1,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.322,low
+q5,Why do programs use variables instead of fixed values?,1,5,q9,What does computational thinking involve?,2,9,0.321,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.32,low
+q9,An algorithm is best described as _____.,1,9,q3,Which instruction type receives data from a user or file?,4,3,0.319,low
+q1,What is the main purpose of a computer program?,1,1,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.318,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.318,low
+q5,Why do programs use variables instead of fixed values?,1,5,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.318,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.318,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q4,A variable in a program is named because its value _____.,4,4,0.316,low
+q1,What is the primary purpose of a computer program?,2,1,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.316,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q8,How does computational thinking relate to programming?,3,8,0.316,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q9,What does computational thinking involve?,2,9,0.315,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q1,What is the main purpose of using variables in a program?,3,1,0.314,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.314,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q1,What is the primary purpose of a computer program?,4,1,0.313,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.311,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.311,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q4,Why do computer programs execute instructions one at a time?,3,4,0.311,low
+q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,q6,How does a program produce output?,4,6,0.311,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.31,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.31,low
+q5,Why do programs use variables instead of fixed values?,1,5,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.31,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q3,Which instruction type receives data from a user or file?,4,3,0.31,low
+q9,What does computational thinking involve?,2,9,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.31,low
+q1,What is the main purpose of a computer program?,1,1,q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,0.309,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.309,low
+q6,What is an algorithm in computational thinking?,3,6,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.309,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.308,low
+q4,How does a variable in a program function?,2,4,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.308,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q4,A variable in a program is named because its value _____.,4,4,0.308,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.307,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q8,How does computational thinking relate to programming?,3,8,0.307,low
+q1,What is the primary purpose of a computer program?,2,1,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.307,low
+q1,What is the primary purpose of a computer program?,2,1,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.307,low
+q5,Why do programs use variables instead of fixed values?,1,5,q6,What is an algorithm in computational thinking?,3,6,0.306,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q4,Why do computer programs execute instructions one at a time?,3,4,0.306,low
+q9,What does computational thinking involve?,2,9,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.306,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q6,How does a program produce output?,4,6,0.306,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.306,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q1,What is the primary purpose of a computer program?,4,1,0.305,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.305,low
+q9,An algorithm is best described as _____.,1,9,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.305,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q2,Which instruction type receives data from the keyboard or file?,3,2,0.304,low
+q3,Which instruction type performs computations on data in a program?,2,3,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.303,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q6,What is an algorithm in computational thinking?,3,6,0.302,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.301,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.301,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q9,What does computational thinking involve?,2,9,0.3,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.3,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q8,What does the instruction “Put z to output” do in a program?,1,8,0.299,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.299,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q7,What role does the output instruction play in a program?,3,7,0.298,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.298,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q8,How does computational thinking relate to programming?,3,8,0.298,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.298,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.298,low
+q1,What is the primary purpose of a computer program?,4,1,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.297,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q1,What is the primary purpose of a computer program?,2,1,0.296,low
+q3,A variable in a program is used to _____.,1,3,q9,What does computational thinking involve?,2,9,0.295,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.294,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q9,An algorithm is best described as _____.,1,9,0.293,low
+q4,How does a variable in a program function?,2,4,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.293,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.292,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.292,low
+q3,Which instruction type performs computations on data in a program?,2,3,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.292,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.292,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q6,How does a program produce output?,4,6,0.292,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q9,An algorithm is best described as _____.,1,9,0.291,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q6,What is an algorithm in computational thinking?,3,6,0.288,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q1,What is the primary purpose of a computer program?,4,1,0.288,low
+q7,What role does the output instruction play in a program?,3,7,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.288,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q9,An algorithm is best described as _____.,1,9,0.287,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.286,low
+q8,How does computational thinking relate to programming?,3,8,q4,A variable in a program is named because its value _____.,4,4,0.286,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.285,low
+q4,How does a variable in a program function?,2,4,q9,What does computational thinking involve?,2,9,0.285,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q1,What is the main purpose of using variables in a program?,3,1,0.285,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q9,What does computational thinking involve?,2,9,0.285,low
+q9,What does computational thinking involve?,2,9,q1,What is the main purpose of using variables in a program?,3,1,0.285,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.284,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q8,How does computational thinking relate to programming?,3,8,0.284,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.284,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q6,What is an algorithm in computational thinking?,3,6,0.283,low
+q9,What does computational thinking involve?,2,9,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.283,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.282,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.282,low
+q6,What is an algorithm in computational thinking?,3,6,q3,Which instruction type receives data from a user or file?,4,3,0.282,low
+q3,A variable in a program is used to _____.,1,3,q7,Which instruction completes a program to calculate a triangle’s area?,1,7,0.281,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q9,What does computational thinking involve?,2,9,0.28,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.28,low
+q1,What is the main purpose of a computer program?,1,1,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.279,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.279,low
+q9,What does computational thinking involve?,2,9,q3,Which instruction type receives data from a user or file?,4,3,0.279,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.278,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q4,A variable in a program is named because its value _____.,4,4,0.277,low
+q8,How does computational thinking relate to programming?,3,8,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.277,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.276,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q4,A variable in a program is named because its value _____.,4,4,0.276,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q8,How does computational thinking relate to programming?,3,8,0.275,low
+q1,What is the primary purpose of a computer program?,2,1,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.275,low
+q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.275,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q10,Why is a program like a cooking recipe?,4,10,0.274,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.274,low
+q3,A variable in a program is used to _____.,1,3,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.273,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.272,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.272,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q6,What is an algorithm in computational thinking?,3,6,0.272,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.271,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q7,Which instruction completes a program to calculate a triangle’s area?,1,7,0.27,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q9,What does computational thinking involve?,2,9,0.27,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.27,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.269,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.269,low
+q3,Which instruction type performs computations on data in a program?,2,3,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.269,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q2,Which instruction type receives data from the keyboard or file?,3,2,0.269,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.268,low
+q1,What is the main purpose of using variables in a program?,3,1,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.268,low
+q6,What is an algorithm in computational thinking?,3,6,q4,A variable in a program is named because its value _____.,4,4,0.268,low
+q5,Why do programs use variables instead of fixed values?,1,5,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.267,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.266,low
+q9,An algorithm is best described as _____.,1,9,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.266,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q10,Why is a program like a cooking recipe?,4,10,0.266,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.265,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q9,What does computational thinking involve?,2,9,0.265,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q6,How does a program produce output?,4,6,0.265,low
+q1,What is the main purpose of using variables in a program?,3,1,q6,What is an algorithm in computational thinking?,3,6,0.265,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.264,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q2,Which instruction type receives data from the keyboard or file?,3,2,0.264,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.264,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q3,Which instruction type receives data from a user or file?,4,3,0.263,low
+q9,An algorithm is best described as _____.,1,9,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.263,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.263,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q6,What is an algorithm in computational thinking?,3,6,0.262,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q10,Why is a program like a cooking recipe?,4,10,0.262,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.261,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q6,What is an algorithm in computational thinking?,3,6,0.261,low
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.261,low
+q3,A variable in a program is used to _____.,1,3,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.26,low
+q6,What is an algorithm in computational thinking?,3,6,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.26,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.259,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q9,What does computational thinking involve?,2,9,0.259,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.259,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.259,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q4,Why do computer programs execute instructions one at a time?,3,4,0.258,low
+q9,What does computational thinking involve?,2,9,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.257,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q7,What role does the output instruction play in a program?,3,7,0.257,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.256,low
+q8,How does computational thinking relate to programming?,3,8,q3,Which instruction type receives data from a user or file?,4,3,0.256,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q8,How does computational thinking relate to programming?,3,8,0.255,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.255,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q7,What role does the output instruction play in a program?,3,7,0.255,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q3,Which instruction type receives data from a user or file?,4,3,0.255,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q10,Why is a program like a cooking recipe?,4,10,0.255,low
+q1,What is the main purpose of a computer program?,1,1,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.254,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q9,What does computational thinking involve?,2,9,0.254,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.254,low
+q3,Which instruction type performs computations on data in a program?,2,3,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.254,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q8,How does computational thinking relate to programming?,3,8,0.252,low
+q9,What does computational thinking involve?,2,9,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.252,low
+q7,What role does the output instruction play in a program?,3,7,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.252,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q3,Which instruction type receives data from a user or file?,4,3,0.252,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.251,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q1,What is the primary purpose of a computer program?,4,1,0.251,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.25,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q8,How does computational thinking relate to programming?,3,8,0.25,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.249,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.249,low
+q3,A variable in a program is used to _____.,1,3,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.248,low
+q3,A variable in a program is used to _____.,1,3,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.248,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.248,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.248,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.247,low
+q9,What does computational thinking involve?,2,9,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.247,low
+q8,How does computational thinking relate to programming?,3,8,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.246,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.245,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.245,low
+q3,"In a program, what does the instruction 'z = x + y' do?",3,3,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.245,low
+q6,What is an algorithm in computational thinking?,3,6,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.245,low
+q1,What is the primary purpose of a computer program?,2,1,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.244,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q10,Why is a program like a cooking recipe?,4,10,0.244,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q6,How does a program produce output?,4,6,0.243,low
+q5,Why do programs use variables instead of fixed values?,1,5,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.242,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.242,low
+q6,What is an algorithm in computational thinking?,3,6,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.242,low
+q9,An algorithm is best described as _____.,1,9,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.241,low
+q3,Which instruction type performs computations on data in a program?,2,3,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.241,low
+q5,Why do programs use variables instead of fixed values?,1,5,q7,Which instruction completes a program to calculate a triangle’s area?,1,7,0.24,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q1,What is the primary purpose of a computer program?,4,1,0.24,low
+q3,A variable in a program is used to _____.,1,3,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.239,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q4,How does a variable in a program function?,2,4,0.239,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.239,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.236,low
+q9,What does computational thinking involve?,2,9,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.236,low
+q3,A variable in a program is used to _____.,1,3,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.235,low
+q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,q10,Why is a program like a cooking recipe?,4,10,0.235,low
+q6,How does a program produce output?,4,6,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.235,low
+q9,An algorithm is best described as _____.,1,9,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.234,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.234,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.234,low
+q3,A variable in a program is used to _____.,1,3,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.233,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q6,What is an algorithm in computational thinking?,3,6,0.233,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.233,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q4,Why do computer programs execute instructions one at a time?,3,4,0.233,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.233,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q7,What role does the output instruction play in a program?,3,7,0.232,low
+q9,An algorithm is best described as _____.,1,9,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.231,low
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.231,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.23,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q4,A variable in a program is named because its value _____.,4,4,0.23,low
+q8,How does computational thinking relate to programming?,3,8,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.23,low
+q5,Why do programs use variables instead of fixed values?,1,5,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.229,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q3,"In a program, what does the instruction 'z = x + y' do?",3,3,0.229,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.229,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q1,What is the primary purpose of a computer program?,4,1,0.229,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,7,0.228,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.225,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.224,low
+q9,An algorithm is best described as _____.,1,9,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.224,low
+q9,What does computational thinking involve?,2,9,q4,A variable in a program is named because its value _____.,4,4,0.223,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q8,How does computational thinking relate to programming?,3,8,0.222,low
+q4,How does a variable in a program function?,2,4,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.222,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.22,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q1,What is the primary purpose of a computer program?,4,1,0.218,low
+q6,What is an algorithm in computational thinking?,3,6,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.218,low
+q1,What is the main purpose of a computer program?,1,1,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.217,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.217,low
+q9,What does computational thinking involve?,2,9,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.217,low
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,4,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.216,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.216,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.216,low
+q2,Which instruction type receives data from the keyboard or file?,3,2,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.216,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q10,Why is a program like a cooking recipe?,4,10,0.215,low
+q9,An algorithm is best described as _____.,1,9,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.214,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q10,Why is a program like a cooking recipe?,4,10,0.214,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q1,What is the primary purpose of a computer program?,4,1,0.213,low
+q7,What role does the output instruction play in a program?,3,7,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.213,low
+q8,How does computational thinking relate to programming?,3,8,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.213,low
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.213,low
+q6,What is an algorithm in computational thinking?,3,6,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.211,low
+q8,How does computational thinking relate to programming?,3,8,q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,10,0.211,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.21,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.21,low
+q4,How does a variable in a program function?,2,4,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.209,low
+q4,How does a variable in a program function?,2,4,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.208,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q1,What is the main purpose of using variables in a program?,3,1,0.208,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q6,What is an algorithm in computational thinking?,3,6,0.208,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q1,What is the main purpose of using variables in a program?,3,1,0.207,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,9,0.207,low
+q1,What is the primary purpose of a computer program?,2,1,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.207,low
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,6,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.206,low
+q4,How does a variable in a program function?,2,4,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.206,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q1,What is the primary purpose of a computer program?,4,1,0.205,low
+q2,Which instruction type involves performing calculations or data manipulation?,1,2,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.204,low
+q1,What is the primary purpose of a computer program?,2,1,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.204,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.204,low
+q3,Which instruction type performs computations on data in a program?,2,3,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.204,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q3,Which instruction type receives data from a user or file?,4,3,0.203,low
+q1,What is the main purpose of a computer program?,1,1,q7,Which instruction completes a program to calculate a triangle’s area?,1,7,0.202,low
+q1,What is the main purpose of a computer program?,1,1,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.202,low
+q1,What is the primary purpose of a computer program?,2,1,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.202,low
+q1,What is the main purpose of using variables in a program?,3,1,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.201,low
+q1,What is the main purpose of a computer program?,1,1,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.2,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q1,What is the primary purpose of a computer program?,4,1,0.2,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q2,Which instruction type receives data from the keyboard or file?,3,2,0.198,low
+q1,What is the main purpose of a computer program?,1,1,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.195,low
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.195,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q8,How does computational thinking relate to programming?,3,8,0.195,low
+q3,Which instruction type receives data from a user or file?,4,3,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.195,low
+q3,Which instruction type receives data from a user or file?,4,3,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.195,low
+q1,What is the primary purpose of a computer program?,2,1,q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,0.194,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q5,"In the example program, what does the instruction ""z = x + y"" do?",2,5,0.193,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.193,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q4,A variable in a program is named because its value _____.,4,4,0.192,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q7,What role does the output instruction play in a program?,3,7,0.192,low
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,8,q4,A variable in a program is named because its value _____.,4,4,0.192,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q3,Which instruction type receives data from a user or file?,4,3,0.191,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q6,How does a program produce output?,4,6,0.191,low
+q4,How does a variable in a program function?,2,4,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.191,low
+q1,What is the main purpose of using variables in a program?,3,1,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.191,low
+q1,What is the primary purpose of a computer program?,4,1,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.19,low
+q9,What does computational thinking involve?,2,9,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.187,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.186,low
+q2,A program instruction that receives data from a user or device is called _____.,2,2,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.185,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.185,low
+q7,Which instruction completes a program to calculate a triangle’s area?,1,7,q1,What is the primary purpose of a computer program?,2,1,0.184,low
+q4,A variable in a program is named because its value _____.,4,4,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.184,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,6,0.183,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,2,0.18,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q4,A variable in a program is named because its value _____.,4,4,0.179,low
+q1,What is the main purpose of a computer program?,1,1,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.178,low
+q4,How does a variable in a program function?,2,4,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.178,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q8,How does computational thinking relate to programming?,3,8,0.178,low
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,q3,Which instruction type receives data from a user or file?,4,3,0.178,low
+q4,A variable in a program is named because its value _____.,4,4,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.178,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q3,Which instruction type performs computations on data in a program?,2,3,0.177,low
+q5,Why do programs use variables instead of fixed values?,1,5,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.176,low
+q5,Why do programs use variables instead of fixed values?,1,5,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.175,low
+q5,Why do programs use variables instead of fixed values?,1,5,q10,"In turtle graphics, what instruction sequence draws a square?",2,10,0.174,low
+q1,What is the primary purpose of a computer program?,4,1,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.173,low
+q8,What does the instruction “Put z to output” do in a program?,1,8,q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,5,0.169,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q1,What is the primary purpose of a computer program?,2,1,0.169,low
+q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,q10,Why is a program like a cooking recipe?,4,10,0.169,low
+q4,Why do computer programs execute instructions one at a time?,3,4,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.168,low
+q9,An algorithm is best described as _____.,1,9,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.167,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q4,Why do computer programs execute instructions one at a time?,3,4,0.161,low
+q1,What is the primary purpose of a computer program?,2,1,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.161,low
+q8,How does computational thinking relate to programming?,3,8,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.159,low
+q1,What is the main purpose of a computer program?,1,1,q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,0.158,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q2,A program instruction that receives data from a user or device is called _____.,2,2,0.158,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q8,How does computational thinking relate to programming?,3,8,0.158,low
+q10,"In turtle graphics, what instruction sequence draws a square?",2,10,q1,What is the main purpose of using variables in a program?,3,1,0.158,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q6,What is an algorithm in computational thinking?,3,6,0.157,low
+q1,What is the primary purpose of a computer program?,2,1,q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,5,0.156,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q1,What is the main purpose of using variables in a program?,3,1,0.151,low
+q1,What is the main purpose of using variables in a program?,3,1,q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,0.149,low
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,9,q4,A variable in a program is named because its value _____.,4,4,0.148,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q9,What does computational thinking involve?,2,9,0.147,low
+q1,What is the main purpose of a computer program?,1,1,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.146,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q4,How does a variable in a program function?,2,4,0.138,low
+q7,Why is a computer program often compared to a cooking recipe?,2,7,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.138,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q7,Why is a computer program often compared to a cooking recipe?,2,7,0.125,low
+q5,Why do programs use variables instead of fixed values?,1,5,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.122,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q4,A variable in a program is named because its value _____.,4,4,0.12,low
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,10,q10,Why is a program like a cooking recipe?,4,10,0.118,low
+q1,What is the main purpose of using variables in a program?,3,1,q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,8,0.104,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Understand the basic structure of a computer program, including input, processing, and output instructions.  
+Explain the role and behavior of variables in storing and manipulating data within a program.  
+Interpret and trace the execution of simple programs step-by-step to predict outputs.  
+Apply computational thinking by creating and modifying sequences of instructions (algorithms) to solve problems.  
+Use programming concepts to construct algorithms for drawing shapes using turtle graphics."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the main purpose of a computer program?,1,yes,"This question assesses understanding of the basic structure and purpose of a computer program, related to input, processing, and output instructions."
+q2,Which instruction type involves performing calculations or data manipulation?,1,yes,"This question evaluates knowledge of the processing instruction type, which is part of understanding program structure."
+q3,A variable in a program is used to _____.,1,yes,This question directly tests the role and behavior of variables in storing and manipulating data.
+q4,"In the example program, what is the output if x = 10 and y = 20 for the instruction z = x + y?",1,yes,This question requires interpreting and tracing a simple program instruction to predict output.
+q5,Why do programs use variables instead of fixed values?,1,yes,"This question assesses understanding of why variables are used, related to their role in data manipulation."
+q6,A program receives data from a keyboard. This type of instruction is called _____.,1,yes,"This question tests knowledge of input instructions, part of the basic program structure."
+q7,Which instruction completes a program to calculate a triangle’s area?,1,yes,"This question evaluates applying programming concepts to solve a problem, specifically calculating a triangle’s area."
+q8,What does the instruction “Put z to output” do in a program?,1,yes,This question assesses understanding of output instructions in a program.
+q9,An algorithm is best described as _____.,1,yes,"This question tests knowledge of algorithms as sequences of instructions to solve problems, related to computational thinking."
+q10,"In turtle graphics, turning left 90 degrees is used to _____.",1,yes,This question assesses use of programming concepts in turtle graphics to control direction.
+q1,What is the primary purpose of a computer program?,2,yes,"This question assesses understanding of the primary purpose of a computer program, related to program structure."
+q2,A program instruction that receives data from a user or device is called _____.,2,yes,"This question tests knowledge of input instructions, part of program structure."
+q3,Which instruction type performs computations on data in a program?,2,yes,This question evaluates understanding of processing instructions in a program.
+q4,How does a variable in a program function?,2,yes,This question assesses the role and behavior of variables in a program.
+q5,"In the example program, what does the instruction ""z = x + y"" do?",2,yes,This question requires interpreting a simple program instruction to understand variable assignment and output.
+q6,"What output will be shown if the program adds 1 to z after ""z = x + y"" where x=2, y=5?",2,yes,This question tests tracing program execution step-by-step to predict output.
+q7,Why is a computer program often compared to a cooking recipe?,2,yes,"This question assesses understanding of algorithms as step-by-step instructions, related to computational thinking."
+q8,What must a program do to compute a triangle's area after inputting base and height?,2,yes,This question evaluates applying programming concepts to compute a triangle’s area.
+q9,What does computational thinking involve?,2,yes,This question tests understanding of computational thinking as creating instruction sequences to solve problems.
+q10,"In turtle graphics, what instruction sequence draws a square?",2,yes,This question assesses use of programming concepts to construct algorithms for drawing shapes in turtle graphics.
+q1,What is the main purpose of using variables in a program?,3,yes,This question tests understanding of the role of variables in storing changeable data.
+q2,Which instruction type receives data from the keyboard or file?,3,yes,This question assesses knowledge of input instructions in a program.
+q3,"In a program, what does the instruction 'z = x + y' do?",3,yes,This question evaluates interpreting a simple program instruction involving variables and assignment.
+q4,Why do computer programs execute instructions one at a time?,3,yes,This question tests understanding of program execution flow and sequencing of instructions.
+q5,"A program that multiplies base and height, then multiplies by 1/2, calculates a/an _____.",3,yes,This question assesses applying programming concepts to calculate a triangle’s area.
+q6,What is an algorithm in computational thinking?,3,yes,This question evaluates understanding of algorithms in computational thinking.
+q7,What role does the output instruction play in a program?,3,yes,This question tests knowledge of output instructions in a program.
+q8,How does computational thinking relate to programming?,3,yes,This question assesses understanding of computational thinking as creating instruction sequences to solve problems.
+q9,"In turtle graphics, what does the instruction ""Turn left 90"" do?",3,yes,This question evaluates use of programming concepts in turtle graphics to control direction.
+q10,"Given x = 10 and y = 20, what does the instruction 'z = x + y' assign to z?",3,yes,This question tests interpreting a simple program instruction to predict variable assignment.
+q1,What is the primary purpose of a computer program?,4,yes,This question assesses understanding of the primary purpose of a computer program.
+q2,"A program that assigns x = 3, y = 4, then z = x + y will store _____ in z.",4,yes,This question evaluates interpreting variable assignment and simple arithmetic in a program.
+q3,Which instruction type receives data from a user or file?,4,yes,This question tests knowledge of input instructions in a program.
+q4,A variable in a program is named because its value _____.,4,yes,This question assesses understanding of the variable concept and its changing value.
+q5,"To complete a triangle area program, after computing base * height, the next instruction should:",4,yes,This question evaluates applying programming concepts to complete a triangle area calculation.
+q6,How does a program produce output?,4,yes,This question tests understanding of output instructions in a program.
+q7,Computational thinking involves creating a sequence of instructions called a/an _____.,4,yes,This question assesses knowledge of algorithms as sequences of instructions in computational thinking.
+q8,"In turtle graphics, turning left 90 degrees and moving forward repeatedly draws a _____.",4,yes,This question evaluates use of programming concepts in turtle graphics to draw shapes.
+q9,"If a program has instructions: m = 5; m = m * 2; output m, what is the output?",4,yes,This question tests tracing program execution and understanding variable manipulation and output.
+q10,Why is a program like a cooking recipe?,4,yes,"This question assesses understanding of program structure as step-by-step instructions, analogous to a cooking recipe."

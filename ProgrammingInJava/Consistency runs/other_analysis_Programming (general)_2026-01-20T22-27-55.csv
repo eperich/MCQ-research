@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,0
+2,10,0,0
+3,10,0,1
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,3,100
+1,3,2,2,100
+1,4,1,2,100
+2,3,3,2,100
+2,4,4,2,100
+3,4,1,1,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),12
+Similar (70-85%),13
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.98,duplicate
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.959,duplicate
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.951,duplicate
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.944,duplicate
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.94,duplicate
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.936,duplicate
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.921,duplicate
+q1,What is the main purpose of a computer program?,1,1,q1,What is the main purpose of a computer program?,3,1,0.882,duplicate
+q1,What are the three basic types of instructions in a computer program?,2,1,q1,What are the three basic instruction types in a computer program?,4,1,0.871,duplicate
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.858,duplicate
+q2,A variable in a program is named so because its value _____.,2,2,q2,A variable in a program is named because its value _____.,4,2,0.856,duplicate
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.851,duplicate
+q8,An algorithm is best described as _____.,1,8,q7,An algorithm is a _____.,2,7,0.846,similar
+q2,Which instruction type gets data from a keyboard or file?,1,2,q2,Which instruction type gets data from the user or a file?,3,2,0.827,similar
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.826,similar
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.82,similar
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.817,similar
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.804,similar
+q9,Which of the following best compares a program to a recipe?,2,9,q5,Why is a computer program compared to a cooking recipe?,4,5,0.796,similar
+q2,Which instruction type gets data from the user or a file?,3,2,q6,What type of instruction performs calculations on input data?,3,6,0.767,similar
+q3,Variables in a program are used to _____.,1,3,q2,A variable in a program is named because its value _____.,4,2,0.74,similar
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.739,similar
+q8,An algorithm is best described as _____.,1,8,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.738,similar
+q7,An algorithm is a _____.,2,7,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.736,similar
+q6,How does a program typically execute its instructions?,1,6,q4,Why does a program execute instructions one at a time?,2,4,0.73,similar
+q2,Which instruction type gets data from a keyboard or file?,1,2,q6,What type of instruction performs calculations on input data?,3,6,0.684,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.684,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.683,low
+q3,Variables in a program are used to _____.,1,3,q4,"Why do programs use variables like x, y, and z?",3,4,0.682,low
+q7,What does the output instruction do in a program?,1,7,q2,Which instruction type gets data from the user or a file?,3,2,0.673,low
+q3,Variables in a program are used to _____.,1,3,q2,A variable in a program is named so because its value _____.,2,2,0.664,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q3,Which step correctly describes the process instruction in the example program?,4,3,0.658,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q3,Which step correctly describes the process instruction in the example program?,4,3,0.649,low
+q6,What type of instruction performs calculations on input data?,3,6,q1,What are the three basic instruction types in a computer program?,4,1,0.646,low
+q7,What does the output instruction do in a program?,1,7,q1,What are the three basic types of instructions in a computer program?,2,1,0.645,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q6,What type of instruction performs calculations on input data?,3,6,0.645,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q2,Which instruction type gets data from the user or a file?,3,2,0.641,low
+q2,Which instruction type gets data from the user or a file?,3,2,q1,What are the three basic instruction types in a computer program?,4,1,0.637,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q1,What are the three basic instruction types in a computer program?,4,1,0.636,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q1,What are the three basic types of instructions in a computer program?,2,1,0.631,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q7,What does the output instruction do in a program?,1,7,0.625,low
+q7,What does the output instruction do in a program?,1,7,q1,What are the three basic instruction types in a computer program?,4,1,0.621,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q3,Which step correctly describes the process instruction in the example program?,4,3,0.615,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.609,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.608,low
+q8,An algorithm is best described as _____.,1,8,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.605,low
+q7,What does the output instruction do in a program?,1,7,q10,How does the order of instructions affect the output in a program?,3,10,0.603,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.603,low
+q1,What is the main purpose of a computer program?,3,1,q4,"Why do programs use variables like x, y, and z?",3,4,0.601,low
+q1,What is the main purpose of a computer program?,1,1,q4,"Why do programs use variables like x, y, and z?",3,4,0.598,low
+q6,Computational thinking is best described as _____.,2,6,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.596,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.594,low
+q3,Variables in a program are used to _____.,1,3,q7,What does the output instruction do in a program?,1,7,0.593,low
+q3,Variables in a program are used to _____.,1,3,q1,What is the main purpose of a computer program?,3,1,0.591,low
+q7,An algorithm is a _____.,2,7,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.591,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.586,low
+q4,Why does a program execute instructions one at a time?,2,4,q10,How does the order of instructions affect the output in a program?,3,10,0.586,low
+q7,What does the output instruction do in a program?,1,7,q6,What type of instruction performs calculations on input data?,3,6,0.583,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.582,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q3,Which step correctly describes the process instruction in the example program?,4,3,0.581,low
+q1,What is the main purpose of a computer program?,1,1,q3,Variables in a program are used to _____.,1,3,0.58,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q10,How does the order of instructions affect the output in a program?,3,10,0.58,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.58,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q3,Which step correctly describes the process instruction in the example program?,4,3,0.578,low
+q10,How does the order of instructions affect the output in a program?,3,10,q1,What are the three basic instruction types in a computer program?,4,1,0.578,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.572,low
+q7,What does the output instruction do in a program?,1,7,q1,What is the main purpose of a computer program?,3,1,0.571,low
+q1,What is the main purpose of a computer program?,3,1,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.571,low
+q8,An algorithm is best described as _____.,1,8,q6,Computational thinking is best described as _____.,2,6,0.569,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q3,Which step correctly describes the process instruction in the example program?,4,3,0.569,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q2,A variable in a program is named because its value _____.,4,2,0.568,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q2,A variable in a program is named because its value _____.,4,2,0.565,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q1,What is the main purpose of a computer program?,3,1,0.56,low
+q6,How does a program typically execute its instructions?,1,6,q10,How does the order of instructions affect the output in a program?,3,10,0.559,low
+q3,Variables in a program are used to _____.,1,3,q1,What are the three basic instruction types in a computer program?,4,1,0.558,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.558,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q3,Which step correctly describes the process instruction in the example program?,4,3,0.557,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.555,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q3,Which step correctly describes the process instruction in the example program?,4,3,0.555,low
+q6,How does a program typically execute its instructions?,1,6,q7,What does the output instruction do in a program?,1,7,0.55,low
+q4,Why does a program execute instructions one at a time?,2,4,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.55,low
+q1,What is the main purpose of a computer program?,1,1,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.548,low
+q1,What is the main purpose of a computer program?,1,1,q7,What does the output instruction do in a program?,1,7,0.547,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q2,A variable in a program is named so because its value _____.,2,2,0.547,low
+q4,Why does a program execute instructions one at a time?,2,4,q1,What is the main purpose of a computer program?,3,1,0.546,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.544,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q1,What are the three basic instruction types in a computer program?,4,1,0.544,low
+q3,Variables in a program are used to _____.,1,3,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.543,low
+q1,What is the main purpose of a computer program?,1,1,q1,What are the three basic types of instructions in a computer program?,2,1,0.542,low
+q1,What are the three basic instruction types in a computer program?,4,1,q5,Why is a computer program compared to a cooking recipe?,4,5,0.542,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.539,low
+q3,Variables in a program are used to _____.,1,3,q1,What are the three basic types of instructions in a computer program?,2,1,0.538,low
+q6,Computational thinking is best described as _____.,2,6,q7,An algorithm is a _____.,2,7,0.537,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,0.534,low
+q2,A variable in a program is named so because its value _____.,2,2,q4,"Why do programs use variables like x, y, and z?",3,4,0.533,low
+q6,Which instruction completes the program to compute the area of a triangle?,4,6,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.531,low
+q1,What is the main purpose of a computer program?,3,1,q1,What are the three basic instruction types in a computer program?,4,1,0.53,low
+q6,How does a program typically execute its instructions?,1,6,q1,What are the three basic types of instructions in a computer program?,2,1,0.529,low
+q7,What does the output instruction do in a program?,1,7,q2,A variable in a program is named because its value _____.,4,2,0.529,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q5,Why is a computer program compared to a cooking recipe?,4,5,0.528,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.527,low
+q8,An algorithm is best described as _____.,1,8,q1,What are the three basic instruction types in a computer program?,4,1,0.525,low
+q1,What is the main purpose of a computer program?,1,1,q1,What are the three basic instruction types in a computer program?,4,1,0.523,low
+q6,How does a program typically execute its instructions?,1,6,q1,What are the three basic instruction types in a computer program?,4,1,0.523,low
+q3,Variables in a program are used to _____.,1,3,q7,An algorithm is a _____.,2,7,0.522,low
+q3,Variables in a program are used to _____.,1,3,q8,An algorithm is best described as _____.,1,8,0.52,low
+q3,Variables in a program are used to _____.,1,3,q2,Which instruction type gets data from the user or a file?,3,2,0.52,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q3,Variables in a program are used to _____.,1,3,0.519,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.519,low
+q3,Variables in a program are used to _____.,1,3,q6,What type of instruction performs calculations on input data?,3,6,0.518,low
+q1,What is the main purpose of a computer program?,3,1,q5,Why is a computer program compared to a cooking recipe?,4,5,0.517,low
+q7,What does the output instruction do in a program?,1,7,q4,Why does a program execute instructions one at a time?,2,4,0.516,low
+q8,An algorithm is best described as _____.,1,8,q5,Why is a computer program compared to a cooking recipe?,4,5,0.516,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.516,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.515,low
+q8,An algorithm is best described as _____.,1,8,q1,What is the main purpose of a computer program?,3,1,0.515,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q3,Which step correctly describes the process instruction in the example program?,4,3,0.514,low
+q1,What is the main purpose of a computer program?,3,1,q6,What type of instruction performs calculations on input data?,3,6,0.514,low
+q6,What type of instruction performs calculations on input data?,3,6,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.513,low
+q7,What does the output instruction do in a program?,1,7,q3,Which step correctly describes the process instruction in the example program?,4,3,0.512,low
+q8,An algorithm is best described as _____.,1,8,q1,What are the three basic types of instructions in a computer program?,2,1,0.512,low
+q6,Computational thinking is best described as _____.,2,6,q6,What type of instruction performs calculations on input data?,3,6,0.509,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.509,low
+q3,Variables in a program are used to _____.,1,3,q3,Which step correctly describes the process instruction in the example program?,4,3,0.508,low
+q4,Why does a program execute instructions one at a time?,2,4,q4,"Why do programs use variables like x, y, and z?",3,4,0.508,low
+q1,What is the main purpose of a computer program?,1,1,q5,Why is a computer program compared to a cooking recipe?,4,5,0.507,low
+q1,What is the main purpose of a computer program?,1,1,q4,Why does a program execute instructions one at a time?,2,4,0.501,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.501,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.5,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.5,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.498,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.498,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.496,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q4,Why does a program execute instructions one at a time?,2,4,0.494,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q4,"Why do programs use variables like x, y, and z?",3,4,0.494,low
+q4,Why does a program execute instructions one at a time?,2,4,q1,What are the three basic instruction types in a computer program?,4,1,0.494,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q3,Which step correctly describes the process instruction in the example program?,4,3,0.493,low
+q9,Which of the following best compares a program to a recipe?,2,9,q1,What are the three basic instruction types in a computer program?,4,1,0.493,low
+q6,How does a program typically execute its instructions?,1,6,q1,What is the main purpose of a computer program?,3,1,0.492,low
+q1,What are the three basic instruction types in a computer program?,4,1,q3,Which step correctly describes the process instruction in the example program?,4,3,0.492,low
+q5,Why is a computer program compared to a cooking recipe?,4,5,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.492,low
+q7,An algorithm is a _____.,2,7,q5,Why is a computer program compared to a cooking recipe?,4,5,0.491,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.491,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q4,"Why do programs use variables like x, y, and z?",3,4,0.49,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q9,Which of the following best compares a program to a recipe?,2,9,0.49,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.49,low
+q6,Computational thinking is best described as _____.,2,6,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.489,low
+q7,An algorithm is a _____.,2,7,q1,What are the three basic instruction types in a computer program?,4,1,0.489,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.488,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.487,low
+q6,How does a program typically execute its instructions?,1,6,q9,Which of the following best compares a program to a recipe?,2,9,0.486,low
+q1,What is the main purpose of a computer program?,3,1,q2,Which instruction type gets data from the user or a file?,3,2,0.486,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.486,low
+q7,What does the output instruction do in a program?,1,7,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.484,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q3,Which step correctly describes the process instruction in the example program?,4,3,0.484,low
+q3,Variables in a program are used to _____.,1,3,q4,Why does a program execute instructions one at a time?,2,4,0.483,low
+q3,Variables in a program are used to _____.,1,3,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.483,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.483,low
+q3,Variables in a program are used to _____.,1,3,q10,How does the order of instructions affect the output in a program?,3,10,0.481,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.481,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.48,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q4,"Why do programs use variables like x, y, and z?",3,4,0.479,low
+q7,What does the output instruction do in a program?,1,7,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.479,low
+q8,An algorithm is best described as _____.,1,8,q9,Which of the following best compares a program to a recipe?,2,9,0.479,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.479,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.479,low
+q7,What does the output instruction do in a program?,1,7,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.478,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.478,low
+q6,What type of instruction performs calculations on input data?,3,6,q3,Which step correctly describes the process instruction in the example program?,4,3,0.477,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q5,Why is a computer program compared to a cooking recipe?,4,5,0.476,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q1,What are the three basic instruction types in a computer program?,4,1,0.476,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q7,An algorithm is a _____.,2,7,0.475,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q5,Why is a computer program compared to a cooking recipe?,4,5,0.475,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q6,How does a program typically execute its instructions?,1,6,0.474,low
+q3,Variables in a program are used to _____.,1,3,q6,How does a program typically execute its instructions?,1,6,0.473,low
+q6,How does a program typically execute its instructions?,1,6,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.473,low
+q7,An algorithm is a _____.,2,7,q1,What is the main purpose of a computer program?,3,1,0.473,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.472,low
+q3,Variables in a program are used to _____.,1,3,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.471,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.47,low
+q1,What are the three basic instruction types in a computer program?,4,1,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.47,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.469,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.469,low
+q7,What does the output instruction do in a program?,1,7,q4,"Why do programs use variables like x, y, and z?",3,4,0.468,low
+q6,Computational thinking is best described as _____.,2,6,q1,What is the main purpose of a computer program?,3,1,0.468,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q4,"Why do programs use variables like x, y, and z?",3,4,0.467,low
+q3,Variables in a program are used to _____.,1,3,q5,Why is a computer program compared to a cooking recipe?,4,5,0.466,low
+q7,What does the output instruction do in a program?,1,7,q5,Why is a computer program compared to a cooking recipe?,4,5,0.466,low
+q8,An algorithm is best described as _____.,1,8,q6,What type of instruction performs calculations on input data?,3,6,0.466,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.465,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q3,Which step correctly describes the process instruction in the example program?,4,3,0.465,low
+q1,What is the main purpose of a computer program?,1,1,q6,How does a program typically execute its instructions?,1,6,0.464,low
+q1,What is the main purpose of a computer program?,1,1,q8,An algorithm is best described as _____.,1,8,0.464,low
+q6,What type of instruction performs calculations on input data?,3,6,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.464,low
+q2,Which instruction type gets data from the user or a file?,3,2,q3,Which step correctly describes the process instruction in the example program?,4,3,0.463,low
+q6,How does a program typically execute its instructions?,1,6,q2,Which instruction type gets data from the user or a file?,3,2,0.462,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q1,What are the three basic types of instructions in a computer program?,2,1,0.461,low
+q7,What does the output instruction do in a program?,1,7,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.461,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.461,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q4,"Why do programs use variables like x, y, and z?",3,4,0.46,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q10,How does the order of instructions affect the output in a program?,3,10,0.459,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.459,low
+q10,How does the order of instructions affect the output in a program?,3,10,q2,A variable in a program is named because its value _____.,4,2,0.459,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.458,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.458,low
+q1,What is the main purpose of a computer program?,1,1,q6,What type of instruction performs calculations on input data?,3,6,0.457,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q3,Which step correctly describes the process instruction in the example program?,4,3,0.457,low
+q4,Why does a program execute instructions one at a time?,2,4,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.457,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.457,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q1,What are the three basic instruction types in a computer program?,4,1,0.457,low
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.455,low
+q1,What is the main purpose of a computer program?,1,1,q2,Which instruction type gets data from the user or a file?,3,2,0.454,low
+q6,What type of instruction performs calculations on input data?,3,6,q10,How does the order of instructions affect the output in a program?,3,10,0.454,low
+q6,How does a program typically execute its instructions?,1,6,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.453,low
+q4,Why does a program execute instructions one at a time?,2,4,q9,Which of the following best compares a program to a recipe?,2,9,0.453,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.453,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.452,low
+q6,How does a program typically execute its instructions?,1,6,q7,An algorithm is a _____.,2,7,0.451,low
+q7,An algorithm is a _____.,2,7,q2,A variable in a program is named because its value _____.,4,2,0.451,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.451,low
+q10,How does the order of instructions affect the output in a program?,3,10,q5,Why is a computer program compared to a cooking recipe?,4,5,0.451,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.45,low
+q6,Computational thinking is best described as _____.,2,6,q1,What are the three basic instruction types in a computer program?,4,1,0.45,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q1,What are the three basic instruction types in a computer program?,4,1,0.45,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q4,Why does a program execute instructions one at a time?,2,4,0.449,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.449,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.449,low
+q9,Which of the following best compares a program to a recipe?,2,9,q10,How does the order of instructions affect the output in a program?,3,10,0.449,low
+q8,An algorithm is best described as _____.,1,8,q4,"Why do programs use variables like x, y, and z?",3,4,0.448,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.447,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q6,Computational thinking is best described as _____.,2,6,0.446,low
+q2,Which instruction type gets data from the user or a file?,3,2,q10,How does the order of instructions affect the output in a program?,3,10,0.446,low
+q1,What are the three basic instruction types in a computer program?,4,1,q2,A variable in a program is named because its value _____.,4,2,0.446,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q1,What is the main purpose of a computer program?,3,1,0.445,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q10,How does the order of instructions affect the output in a program?,3,10,0.445,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.445,low
+q8,An algorithm is best described as _____.,1,8,q2,A variable in a program is named because its value _____.,4,2,0.444,low
+q6,Computational thinking is best described as _____.,2,6,q5,Why is a computer program compared to a cooking recipe?,4,5,0.444,low
+q6,What type of instruction performs calculations on input data?,3,6,q5,Why is a computer program compared to a cooking recipe?,4,5,0.444,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q5,Why is a computer program compared to a cooking recipe?,4,5,0.442,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.441,low
+q1,What is the main purpose of a computer program?,1,1,q7,An algorithm is a _____.,2,7,0.44,low
+q3,Variables in a program are used to _____.,1,3,q9,Which of the following best compares a program to a recipe?,2,9,0.44,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.44,low
+q8,An algorithm is best described as _____.,1,8,q4,Why does a program execute instructions one at a time?,2,4,0.44,low
+q4,Why does a program execute instructions one at a time?,2,4,q5,Why is a computer program compared to a cooking recipe?,4,5,0.44,low
+q7,What does the output instruction do in a program?,1,7,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.439,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q4,"Why do programs use variables like x, y, and z?",3,4,0.439,low
+q7,An algorithm is a _____.,2,7,q6,What type of instruction performs calculations on input data?,3,6,0.439,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.438,low
+q3,Variables in a program are used to _____.,1,3,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.437,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.437,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q3,Which step correctly describes the process instruction in the example program?,4,3,0.437,low
+q1,What is the main purpose of a computer program?,3,1,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.436,low
+q2,Which instruction type gets data from the user or a file?,3,2,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.435,low
+q6,How does a program typically execute its instructions?,1,6,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.434,low
+q6,How does a program typically execute its instructions?,1,6,q6,What type of instruction performs calculations on input data?,3,6,0.434,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.432,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.431,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.431,low
+q6,How does a program typically execute its instructions?,1,6,q8,An algorithm is best described as _____.,1,8,0.431,low
+q2,A variable in a program is named so because its value _____.,2,2,q7,An algorithm is a _____.,2,7,0.431,low
+q2,A variable in a program is named because its value _____.,4,2,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.431,low
+q6,Which instruction completes the program to compute the area of a triangle?,4,6,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.431,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q3,Which step correctly describes the process instruction in the example program?,4,3,0.43,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.43,low
+q6,What type of instruction performs calculations on input data?,3,6,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.43,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q10,How does the order of instructions affect the output in a program?,3,10,0.429,low
+q6,What type of instruction performs calculations on input data?,3,6,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.429,low
+q7,What does the output instruction do in a program?,1,7,q8,An algorithm is best described as _____.,1,8,0.428,low
+q7,What does the output instruction do in a program?,1,7,q9,Which of the following best compares a program to a recipe?,2,9,0.428,low
+q8,An algorithm is best described as _____.,1,8,q10,How does the order of instructions affect the output in a program?,3,10,0.428,low
+q4,Why does a program execute instructions one at a time?,2,4,q7,An algorithm is a _____.,2,7,0.428,low
+q7,What does the output instruction do in a program?,1,7,q7,An algorithm is a _____.,2,7,0.427,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.427,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q1,What are the three basic instruction types in a computer program?,4,1,0.426,low
+q4,Why does a program execute instructions one at a time?,2,4,q6,What type of instruction performs calculations on input data?,3,6,0.426,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.426,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q2,A variable in a program is named because its value _____.,4,2,0.426,low
+q6,How does a program typically execute its instructions?,1,6,q5,Why is a computer program compared to a cooking recipe?,4,5,0.425,low
+q9,Which of the following best compares a program to a recipe?,2,9,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.425,low
+q1,What is the main purpose of a computer program?,3,1,q3,Which step correctly describes the process instruction in the example program?,4,3,0.423,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q1,What are the three basic types of instructions in a computer program?,2,1,0.422,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q1,What are the three basic instruction types in a computer program?,4,1,0.422,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q4,Why does a program execute instructions one at a time?,2,4,0.421,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.421,low
+q9,Which of the following best compares a program to a recipe?,2,9,q1,What is the main purpose of a computer program?,3,1,0.42,low
+q4,Why does a program execute instructions one at a time?,2,4,q2,A variable in a program is named because its value _____.,4,2,0.418,low
+q7,What does the output instruction do in a program?,1,7,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.417,low
+q7,An algorithm is a _____.,2,7,q9,Which of the following best compares a program to a recipe?,2,9,0.417,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.416,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q6,What type of instruction performs calculations on input data?,3,6,0.415,low
+q1,What is the main purpose of a computer program?,1,1,q2,A variable in a program is named because its value _____.,4,2,0.414,low
+q8,An algorithm is best described as _____.,1,8,q2,A variable in a program is named so because its value _____.,2,2,0.414,low
+q2,Which instruction type gets data from the user or a file?,3,2,q5,Why is a computer program compared to a cooking recipe?,4,5,0.414,low
+q1,What are the three basic instruction types in a computer program?,4,1,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.414,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q1,What are the three basic types of instructions in a computer program?,2,1,0.413,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q10,How does the order of instructions affect the output in a program?,3,10,0.413,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.412,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q5,Why is a computer program compared to a cooking recipe?,4,5,0.412,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q10,How does the order of instructions affect the output in a program?,3,10,0.412,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q1,What are the three basic instruction types in a computer program?,4,1,0.411,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.411,low
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.411,low
+q6,How does a program typically execute its instructions?,1,6,q3,Which step correctly describes the process instruction in the example program?,4,3,0.409,low
+q8,An algorithm is best described as _____.,1,8,q3,Which step correctly describes the process instruction in the example program?,4,3,0.409,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.409,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.409,low
+q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.409,low
+q7,What does the output instruction do in a program?,1,7,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.408,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q9,Which of the following best compares a program to a recipe?,2,9,0.407,low
+q4,Why does a program execute instructions one at a time?,2,4,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.407,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.407,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q6,What type of instruction performs calculations on input data?,3,6,0.407,low
+q10,How does the order of instructions affect the output in a program?,3,10,q3,Which step correctly describes the process instruction in the example program?,4,3,0.407,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q4,"Why do programs use variables like x, y, and z?",3,4,0.406,low
+q7,An algorithm is a _____.,2,7,q10,How does the order of instructions affect the output in a program?,3,10,0.406,low
+q1,What is the main purpose of a computer program?,1,1,q6,Computational thinking is best described as _____.,2,6,0.405,low
+q1,What is the main purpose of a computer program?,1,1,q9,Which of the following best compares a program to a recipe?,2,9,0.405,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.405,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.405,low
+q6,How does a program typically execute its instructions?,1,6,q4,"Why do programs use variables like x, y, and z?",3,4,0.404,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.404,low
+q1,What is the main purpose of a computer program?,1,1,q2,Which instruction type gets data from a keyboard or file?,1,2,0.403,low
+q1,What is the main purpose of a computer program?,1,1,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.403,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q1,What is the main purpose of a computer program?,3,1,0.403,low
+q1,What is the main purpose of a computer program?,3,1,q10,How does the order of instructions affect the output in a program?,3,10,0.403,low
+q1,What is the main purpose of a computer program?,1,1,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.402,low
+q4,Why does a program execute instructions one at a time?,2,4,q2,Which instruction type gets data from the user or a file?,3,2,0.402,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.401,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.4,low
+q3,Variables in a program are used to _____.,1,3,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.399,low
+q6,How does a program typically execute its instructions?,1,6,q2,A variable in a program is named because its value _____.,4,2,0.399,low
+q2,A variable in a program is named so because its value _____.,2,2,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.399,low
+q2,Which instruction type gets data from the user or a file?,3,2,q4,"Why do programs use variables like x, y, and z?",3,4,0.398,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.397,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.396,low
+q10,How does the order of instructions affect the output in a program?,3,10,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.396,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q8,An algorithm is best described as _____.,1,8,0.395,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q10,How does the order of instructions affect the output in a program?,3,10,0.395,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.394,low
+q8,An algorithm is best described as _____.,1,8,q2,Which instruction type gets data from the user or a file?,3,2,0.393,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.393,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q2,Which instruction type gets data from the user or a file?,3,2,0.393,low
+q9,Which of the following best compares a program to a recipe?,2,9,q2,Which instruction type gets data from the user or a file?,3,2,0.393,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q4,"Why do programs use variables like x, y, and z?",3,4,0.393,low
+q2,A variable in a program is named because its value _____.,4,2,q3,Which step correctly describes the process instruction in the example program?,4,3,0.393,low
+q2,A variable in a program is named because its value _____.,4,2,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.393,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.392,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q2,A variable in a program is named because its value _____.,4,2,0.391,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.391,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.391,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.391,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.391,low
+q9,Which of the following best compares a program to a recipe?,2,9,q6,What type of instruction performs calculations on input data?,3,6,0.39,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.39,low
+q3,Variables in a program are used to _____.,1,3,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.389,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.389,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q7,An algorithm is a _____.,2,7,0.388,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q6,What type of instruction performs calculations on input data?,3,6,0.388,low
+q3,Variables in a program are used to _____.,1,3,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.387,low
+q4,Why does a program execute instructions one at a time?,2,4,q6,Computational thinking is best described as _____.,2,6,0.387,low
+q1,What is the main purpose of a computer program?,3,1,q2,A variable in a program is named because its value _____.,4,2,0.387,low
+q2,A variable in a program is named because its value _____.,4,2,q5,Why is a computer program compared to a cooking recipe?,4,5,0.387,low
+q2,A variable in a program is named because its value _____.,4,2,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.387,low
+q3,Variables in a program are used to _____.,1,3,q6,Computational thinking is best described as _____.,2,6,0.385,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q7,What does the output instruction do in a program?,1,7,0.385,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q6,What type of instruction performs calculations on input data?,3,6,0.385,low
+q7,An algorithm is a _____.,2,7,q4,"Why do programs use variables like x, y, and z?",3,4,0.385,low
+q7,What does the output instruction do in a program?,1,7,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.384,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q5,Why is a computer program compared to a cooking recipe?,4,5,0.384,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.384,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.383,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.383,low
+q2,A variable in a program is named so because its value _____.,2,2,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.382,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q5,Why is a computer program compared to a cooking recipe?,4,5,0.381,low
+q1,What is the main purpose of a computer program?,1,1,q3,Which step correctly describes the process instruction in the example program?,4,3,0.38,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q2,A variable in a program is named because its value _____.,4,2,0.379,low
+q2,A variable in a program is named so because its value _____.,2,2,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.379,low
+q7,An algorithm is a _____.,2,7,q2,Which instruction type gets data from the user or a file?,3,2,0.379,low
+q8,An algorithm is best described as _____.,1,8,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.378,low
+q1,What is the main purpose of a computer program?,1,1,q10,How does the order of instructions affect the output in a program?,3,10,0.377,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q5,Why is a computer program compared to a cooking recipe?,4,5,0.377,low
+q4,Why does a program execute instructions one at a time?,2,4,q3,Which step correctly describes the process instruction in the example program?,4,3,0.377,low
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.377,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q7,What does the output instruction do in a program?,1,7,0.375,low
+q6,How does a program typically execute its instructions?,1,6,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.375,low
+q6,What type of instruction performs calculations on input data?,3,6,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.375,low
+q7,What does the output instruction do in a program?,1,7,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.374,low
+q1,What are the three basic instruction types in a computer program?,4,1,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.374,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q2,A variable in a program is named because its value _____.,4,2,0.373,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.373,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.373,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q1,What are the three basic instruction types in a computer program?,4,1,0.373,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.372,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.371,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.371,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q10,How does the order of instructions affect the output in a program?,3,10,0.371,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.371,low
+q2,Which instruction type gets data from the user or a file?,3,2,q2,A variable in a program is named because its value _____.,4,2,0.371,low
+q10,How does the order of instructions affect the output in a program?,3,10,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.371,low
+q6,How does a program typically execute its instructions?,1,6,q2,A variable in a program is named so because its value _____.,2,2,0.37,low
+q7,What does the output instruction do in a program?,1,7,q2,A variable in a program is named so because its value _____.,2,2,0.37,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.369,low
+q9,Which of the following best compares a program to a recipe?,2,9,q3,Which step correctly describes the process instruction in the example program?,4,3,0.369,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.369,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q2,A variable in a program is named because its value _____.,4,2,0.368,low
+q6,How does a program typically execute its instructions?,1,6,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.367,low
+q8,An algorithm is best described as _____.,1,8,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.367,low
+q2,A variable in a program is named so because its value _____.,2,2,q10,How does the order of instructions affect the output in a program?,3,10,0.367,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q1,What are the three basic instruction types in a computer program?,4,1,0.367,low
+q1,What are the three basic instruction types in a computer program?,4,1,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.367,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q6,Computational thinking is best described as _____.,2,6,0.366,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q6,How does a program typically execute its instructions?,1,6,0.366,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q6,What type of instruction performs calculations on input data?,3,6,0.366,low
+q9,Which of the following best compares a program to a recipe?,2,9,q2,A variable in a program is named because its value _____.,4,2,0.366,low
+q2,A variable in a program is named so because its value _____.,2,2,q4,Why does a program execute instructions one at a time?,2,4,0.364,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.363,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q1,What are the three basic types of instructions in a computer program?,2,1,0.361,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.361,low
+q4,Why does a program execute instructions one at a time?,2,4,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.361,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q5,Why is a computer program compared to a cooking recipe?,4,5,0.361,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.36,low
+q3,Variables in a program are used to _____.,1,3,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.36,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.36,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.36,low
+q7,What does the output instruction do in a program?,1,7,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.359,low
+q8,An algorithm is best described as _____.,1,8,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.359,low
+q8,An algorithm is best described as _____.,1,8,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.359,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.359,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q1,What are the three basic instruction types in a computer program?,4,1,0.359,low
+q2,Which instruction type gets data from the user or a file?,3,2,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.359,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,0.358,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.358,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.358,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.358,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.357,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q7,An algorithm is a _____.,2,7,0.357,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q9,Which of the following best compares a program to a recipe?,2,9,0.357,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.357,low
+q2,A variable in a program is named so because its value _____.,2,2,q1,What are the three basic instruction types in a computer program?,4,1,0.357,low
+q6,What type of instruction performs calculations on input data?,3,6,q2,A variable in a program is named because its value _____.,4,2,0.357,low
+q6,Computational thinking is best described as _____.,2,6,q9,Which of the following best compares a program to a recipe?,2,9,0.356,low
+q6,Computational thinking is best described as _____.,2,6,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.356,low
+q6,Which instruction completes the program to compute the area of a triangle?,4,6,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.355,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q10,How does the order of instructions affect the output in a program?,3,10,0.354,low
+q10,How does the order of instructions affect the output in a program?,3,10,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.354,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q10,How does the order of instructions affect the output in a program?,3,10,0.353,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.353,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.353,low
+q6,Computational thinking is best described as _____.,2,6,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.353,low
+q6,What type of instruction performs calculations on input data?,3,6,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.353,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.352,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q6,What type of instruction performs calculations on input data?,3,6,0.352,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.352,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.351,low
+q7,An algorithm is a _____.,2,7,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.351,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.35,low
+q6,Computational thinking is best described as _____.,2,6,q10,How does the order of instructions affect the output in a program?,3,10,0.35,low
+q1,What is the main purpose of a computer program?,3,1,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.35,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.35,low
+q3,Variables in a program are used to _____.,1,3,q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,0.349,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.349,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.349,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q2,Which instruction type gets data from the user or a file?,3,2,0.349,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q5,Why is a computer program compared to a cooking recipe?,4,5,0.349,low
+q9,Which of the following best compares a program to a recipe?,2,9,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.349,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q1,What are the three basic instruction types in a computer program?,4,1,0.349,low
+q2,A variable in a program is named so because its value _____.,2,2,q3,Which step correctly describes the process instruction in the example program?,4,3,0.348,low
+q6,Computational thinking is best described as _____.,2,6,q3,Which step correctly describes the process instruction in the example program?,4,3,0.348,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.348,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.347,low
+q1,What is the main purpose of a computer program?,1,1,q2,A variable in a program is named so because its value _____.,2,2,0.346,low
+q6,How does a program typically execute its instructions?,1,6,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.346,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.346,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q6,What type of instruction performs calculations on input data?,3,6,0.346,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,0.345,low
+q8,An algorithm is best described as _____.,1,8,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.345,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.345,low
+q10,How does the order of instructions affect the output in a program?,3,10,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.345,low
+q7,What is the purpose of an algorithm in computational thinking?,4,7,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.345,low
+q7,An algorithm is a _____.,2,7,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.344,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q2,A variable in a program is named because its value _____.,4,2,0.344,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q5,Why is a computer program compared to a cooking recipe?,4,5,0.343,low
+q8,An algorithm is best described as _____.,1,8,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.343,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.342,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.342,low
+q6,How does a program typically execute its instructions?,1,6,q6,Computational thinking is best described as _____.,2,6,0.341,low
+q6,Computational thinking is best described as _____.,2,6,q4,"Why do programs use variables like x, y, and z?",3,4,0.341,low
+q1,What are the three basic instruction types in a computer program?,4,1,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.341,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q6,What type of instruction performs calculations on input data?,3,6,0.34,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q2,Which instruction type gets data from the user or a file?,3,2,0.339,low
+q8,An algorithm is best described as _____.,1,8,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.339,low
+q4,Why does a program execute instructions one at a time?,2,4,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.339,low
+q7,An algorithm is a _____.,2,7,q3,Which step correctly describes the process instruction in the example program?,4,3,0.339,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q1,What are the three basic instruction types in a computer program?,4,1,0.338,low
+q5,Why is a computer program compared to a cooking recipe?,4,5,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.338,low
+q7,What is the purpose of an algorithm in computational thinking?,4,7,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.336,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.335,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.335,low
+q2,A variable in a program is named so because its value _____.,2,2,q5,Why is a computer program compared to a cooking recipe?,4,5,0.334,low
+q6,Computational thinking is best described as _____.,2,6,q2,Which instruction type gets data from the user or a file?,3,2,0.334,low
+q6,Computational thinking is best described as _____.,2,6,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.334,low
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,q5,Why is a computer program compared to a cooking recipe?,4,5,0.333,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q2,Which instruction type gets data from the user or a file?,3,2,0.332,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.332,low
+q9,Which of the following best compares a program to a recipe?,2,9,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.332,low
+q3,Variables in a program are used to _____.,1,3,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.331,low
+q6,How does a program typically execute its instructions?,1,6,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.331,low
+q2,A variable in a program is named so because its value _____.,2,2,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.331,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.331,low
+q9,Which of the following best compares a program to a recipe?,2,9,q4,"Why do programs use variables like x, y, and z?",3,4,0.331,low
+q3,Variables in a program are used to _____.,1,3,q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,0.33,low
+q6,What type of instruction performs calculations on input data?,3,6,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.33,low
+q6,How does a program typically execute its instructions?,1,6,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.328,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.328,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.327,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q1,What are the three basic instruction types in a computer program?,4,1,0.327,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q6,What type of instruction performs calculations on input data?,3,6,0.326,low
+q7,What does the output instruction do in a program?,1,7,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.325,low
+q7,What does the output instruction do in a program?,1,7,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.325,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q6,What type of instruction performs calculations on input data?,3,6,0.325,low
+q9,Which of the following best compares a program to a recipe?,2,9,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.325,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.324,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.323,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q2,A variable in a program is named because its value _____.,4,2,0.323,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q9,Which of the following best compares a program to a recipe?,2,9,0.322,low
+q2,Which instruction type gets data from the user or a file?,3,2,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.322,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.321,low
+q7,What does the output instruction do in a program?,1,7,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.32,low
+q2,A variable in a program is named so because its value _____.,2,2,q1,What is the main purpose of a computer program?,3,1,0.32,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.32,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q8,An algorithm is best described as _____.,1,8,0.319,low
+q1,What are the three basic instruction types in a computer program?,4,1,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.319,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.318,low
+q2,Which instruction type gets data from the user or a file?,3,2,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.318,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.317,low
+q8,An algorithm is best described as _____.,1,8,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.316,low
+q7,An algorithm is a _____.,2,7,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.316,low
+q1,What is the main purpose of a computer program?,3,1,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.316,low
+q6,What type of instruction performs calculations on input data?,3,6,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.316,low
+q3,Variables in a program are used to _____.,1,3,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.315,low
+q3,Variables in a program are used to _____.,1,3,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.313,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q2,A variable in a program is named because its value _____.,4,2,0.313,low
+q7,What does the output instruction do in a program?,1,7,q6,Computational thinking is best described as _____.,2,6,0.313,low
+q4,Why does a program execute instructions one at a time?,2,4,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.313,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q6,How does a program typically execute its instructions?,1,6,0.312,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q4,"Why do programs use variables like x, y, and z?",3,4,0.312,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.312,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.312,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.311,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q9,Which of the following best compares a program to a recipe?,2,9,0.311,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q2,Which instruction type gets data from the user or a file?,3,2,0.311,low
+q6,How does a program typically execute its instructions?,1,6,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.31,low
+q9,Which of the following best compares a program to a recipe?,2,9,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.31,low
+q4,Why does a program execute instructions one at a time?,2,4,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.309,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q1,What is the main purpose of a computer program?,3,1,0.309,low
+q1,What is the main purpose of a computer program?,1,1,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.308,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q8,An algorithm is best described as _____.,1,8,0.308,low
+q6,How does a program typically execute its instructions?,1,6,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.308,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q9,Which of the following best compares a program to a recipe?,2,9,0.307,low
+q2,A variable in a program is named so because its value _____.,2,2,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.307,low
+q6,Computational thinking is best described as _____.,2,6,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.307,low
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.307,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q4,Why does a program execute instructions one at a time?,2,4,0.306,low
+q7,An algorithm is a _____.,2,7,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.306,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.306,low
+q3,Which step correctly describes the process instruction in the example program?,4,3,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.306,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q1,What is the main purpose of a computer program?,3,1,0.305,low
+q7,What does the output instruction do in a program?,1,7,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.305,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q7,An algorithm is a _____.,2,7,0.305,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q4,"Why do programs use variables like x, y, and z?",3,4,0.305,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q1,What are the three basic instruction types in a computer program?,4,1,0.304,low
+q2,A variable in a program is named so because its value _____.,2,2,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.304,low
+q10,How does the order of instructions affect the output in a program?,3,10,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.304,low
+q5,Why is a computer program compared to a cooking recipe?,4,5,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.304,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q10,How does the order of instructions affect the output in a program?,3,10,0.301,low
+q9,Which of the following best compares a program to a recipe?,2,9,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.301,low
+q9,Which of the following best compares a program to a recipe?,2,9,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.301,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.299,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.299,low
+q1,What is the main purpose of a computer program?,3,1,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.299,low
+q1,What are the three basic types of instructions in a computer program?,2,1,q2,A variable in a program is named so because its value _____.,2,2,0.298,low
+q1,What is the main purpose of a computer program?,3,1,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.298,low
+q6,Which instruction completes the program to compute the area of a triangle?,4,6,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.298,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.297,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.297,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.297,low
+q8,An algorithm is best described as _____.,1,8,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.297,low
+q8,An algorithm is best described as _____.,1,8,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.297,low
+q2,Which instruction type gets data from the user or a file?,3,2,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.297,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q7,An algorithm is a _____.,2,7,0.296,low
+q8,An algorithm is best described as _____.,1,8,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.296,low
+q6,Computational thinking is best described as _____.,2,6,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.296,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q5,Why is a computer program compared to a cooking recipe?,4,5,0.296,low
+q7,An algorithm is a _____.,2,7,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.295,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.295,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q7,An algorithm is a _____.,2,7,0.294,low
+q6,Computational thinking is best described as _____.,2,6,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.294,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.293,low
+q2,A variable in a program is named so because its value _____.,2,2,q9,Which of the following best compares a program to a recipe?,2,9,0.293,low
+q2,Which instruction type gets data from the user or a file?,3,2,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.293,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.293,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q2,A variable in a program is named so because its value _____.,2,2,0.292,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q9,Which of the following best compares a program to a recipe?,2,9,0.292,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.292,low
+q3,Variables in a program are used to _____.,1,3,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.291,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.291,low
+q6,Computational thinking is best described as _____.,2,6,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.29,low
+q1,What is the main purpose of a computer program?,3,1,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.29,low
+q1,What is the main purpose of a computer program?,1,1,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.289,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q10,How does the order of instructions affect the output in a program?,3,10,0.289,low
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.289,low
+q6,How does a program typically execute its instructions?,1,6,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.288,low
+q4,Why does a program execute instructions one at a time?,2,4,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.288,low
+q6,What type of instruction performs calculations on input data?,3,6,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.288,low
+q10,How does the order of instructions affect the output in a program?,3,10,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.288,low
+q6,How does a program typically execute its instructions?,1,6,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.287,low
+q8,An algorithm is best described as _____.,1,8,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.287,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q3,Which step correctly describes the process instruction in the example program?,4,3,0.287,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.286,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q6,Computational thinking is best described as _____.,2,6,0.286,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q7,An algorithm is a _____.,2,7,0.286,low
+q7,An algorithm is a _____.,2,7,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.286,low
+q1,What is the main purpose of a computer program?,1,1,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.285,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.285,low
+q6,How does a program typically execute its instructions?,1,6,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.285,low
+q2,A variable in a program is named so because its value _____.,2,2,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.285,low
+q9,Which of the following best compares a program to a recipe?,2,9,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.285,low
+q5,Why is a computer program compared to a cooking recipe?,4,5,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.285,low
+q7,What does the output instruction do in a program?,1,7,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.284,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,8,0.284,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q6,Computational thinking is best described as _____.,2,6,0.284,low
+q1,What is the main purpose of a computer program?,1,1,q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,0.283,low
+q1,What is the main purpose of a computer program?,1,1,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.283,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q5,Why is a computer program compared to a cooking recipe?,4,5,0.283,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q10,How does the order of instructions affect the output in a program?,3,10,0.283,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q9,Which of the following best compares a program to a recipe?,2,9,0.282,low
+q1,What is the main purpose of a computer program?,1,1,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.281,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q6,Computational thinking is best described as _____.,2,6,0.281,low
+q7,An algorithm is a _____.,2,7,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.28,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q5,Why is a computer program compared to a cooking recipe?,4,5,0.28,low
+q3,Variables in a program are used to _____.,1,3,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.279,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q2,A variable in a program is named because its value _____.,4,2,0.279,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.278,low
+q2,A variable in a program is named so because its value _____.,2,2,q6,What type of instruction performs calculations on input data?,3,6,0.277,low
+q2,A variable in a program is named so because its value _____.,2,2,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.277,low
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,4,q2,A variable in a program is named so because its value _____.,2,2,0.276,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q6,What type of instruction performs calculations on input data?,3,6,0.276,low
+q4,Why does a program execute instructions one at a time?,2,4,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.275,low
+q7,What is the name for a sequence of instructions that solves a problem?,3,7,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.275,low
+q6,How does a program typically execute its instructions?,1,6,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.274,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q2,Which instruction type gets data from the user or a file?,3,2,0.273,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.272,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q1,What is the main purpose of a computer program?,3,1,0.272,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q6,Computational thinking is best described as _____.,2,6,0.272,low
+q6,Computational thinking is best described as _____.,2,6,q2,A variable in a program is named because its value _____.,4,2,0.271,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q2,A variable in a program is named because its value _____.,4,2,0.27,low
+q8,An algorithm is best described as _____.,1,8,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.269,low
+q9,Which of the following best compares a program to a recipe?,2,9,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.269,low
+q4,Why does a program execute instructions one at a time?,2,4,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.268,low
+q7,An algorithm is a _____.,2,7,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.268,low
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.268,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q10,How does the order of instructions affect the output in a program?,3,10,0.268,low
+q6,Computational thinking is best described as _____.,2,6,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.267,low
+q9,Which of the following best compares a program to a recipe?,2,9,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.267,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q6,Computational thinking is best described as _____.,2,6,0.266,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q1,What is the main purpose of a computer program?,3,1,0.265,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.265,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q7,What is the name for a sequence of instructions that solves a problem?,3,7,0.264,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q4,Why does a program execute instructions one at a time?,2,4,0.264,low
+q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.264,low
+q2,Which instruction type gets data from the user or a file?,3,2,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.263,low
+q1,What is the main purpose of a computer program?,3,1,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.262,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q5,Why is a computer program compared to a cooking recipe?,4,5,0.261,low
+q7,An algorithm is a _____.,2,7,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.261,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.259,low
+q1,What is the main purpose of a computer program?,1,1,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.258,low
+q2,Which instruction type gets data from the user or a file?,3,2,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.258,low
+q6,How does a program typically execute its instructions?,1,6,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.257,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,8,0.257,low
+q2,A variable in a program is named so because its value _____.,2,2,q2,Which instruction type gets data from the user or a file?,3,2,0.257,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q10,How does the order of instructions affect the output in a program?,3,10,0.257,low
+q2,Which instruction type gets data from the user or a file?,3,2,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.256,low
+q3,Variables in a program are used to _____.,1,3,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.255,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q4,Why does a program execute instructions one at a time?,2,4,0.255,low
+q4,Why does a program execute instructions one at a time?,2,4,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.255,low
+q6,Computational thinking is best described as _____.,2,6,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.254,low
+q9,Which of the following best compares a program to a recipe?,2,9,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.254,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q10,How does the order of instructions affect the output in a program?,3,10,0.254,low
+q2,A variable in a program is named so because its value _____.,2,2,q6,Computational thinking is best described as _____.,2,6,0.253,low
+q6,How does a program typically execute its instructions?,1,6,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.252,low
+q6,How does a program typically execute its instructions?,1,6,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.251,low
+q6,Computational thinking is best described as _____.,2,6,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.25,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.25,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q2,Which instruction type gets data from the user or a file?,3,2,0.249,low
+q2,Which instruction type gets data from the user or a file?,3,2,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.249,low
+q3,Variables in a program are used to _____.,1,3,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.248,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.248,low
+q2,A variable in a program is named so because its value _____.,2,2,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.247,low
+q7,An algorithm is a _____.,2,7,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.247,low
+q1,What is the main purpose of a computer program?,3,1,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.247,low
+q4,Why does a program execute instructions one at a time?,2,4,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.244,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q2,A variable in a program is named because its value _____.,4,2,0.244,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.242,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.241,low
+q8,An algorithm is best described as _____.,1,8,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.24,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q6,Computational thinking is best described as _____.,2,6,0.24,low
+q4,Why does a program execute instructions one at a time?,2,4,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.239,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q1,What is the main purpose of a computer program?,3,1,0.239,low
+q6,Computational thinking is best described as _____.,2,6,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.239,low
+q2,A variable in a program is named because its value _____.,4,2,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.239,low
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.238,low
+q2,Which instruction type gets data from the user or a file?,3,2,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.237,low
+q1,What is the main purpose of a computer program?,3,1,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.236,low
+q2,A variable in a program is named because its value _____.,4,2,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.235,low
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,q2,A variable in a program is named so because its value _____.,2,2,0.234,low
+q3,Variables in a program are used to _____.,1,3,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.233,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,10,0.233,low
+q2,A variable in a program is named so because its value _____.,2,2,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.233,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q5,Why is a computer program compared to a cooking recipe?,4,5,0.232,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.23,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q1,What is the main purpose of a computer program?,3,1,0.23,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.228,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.226,low
+q7,An algorithm is a _____.,2,7,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.226,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q4,Why does a program execute instructions one at a time?,2,4,0.225,low
+q8,An algorithm is best described as _____.,1,8,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.224,low
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.224,low
+q4,"Why do programs use variables like x, y, and z?",3,4,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.223,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.221,low
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.221,low
+q1,What is the main purpose of a computer program?,1,1,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.216,low
+q7,What does the output instruction do in a program?,1,7,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.216,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.216,low
+q1,What is the main purpose of a computer program?,1,1,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.215,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,8,0.215,low
+q7,What is the purpose of an algorithm in computational thinking?,4,7,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.215,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,3,0.214,low
+q1,What is the main purpose of a computer program?,3,1,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.213,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.213,low
+q2,A variable in a program is named so because its value _____.,2,2,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.212,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q1,What is the main purpose of a computer program?,3,1,0.211,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q7,An algorithm is a _____.,2,7,0.21,low
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.21,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q2,Which instruction type gets data from the user or a file?,3,2,0.208,low
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.208,low
+q1,What is the main purpose of a computer program?,1,1,q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,5,0.207,low
+q3,Variables in a program are used to _____.,1,3,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.207,low
+q2,A variable in a program is named so because its value _____.,2,2,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.207,low
+q2,A variable in a program is named so because its value _____.,2,2,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.206,low
+q7,What does the output instruction do in a program?,1,7,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.205,low
+q2,A variable in a program is named so because its value _____.,2,2,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.205,low
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,q2,A variable in a program is named because its value _____.,4,2,0.205,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,3,0.204,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q4,"In the example program, what is the output when x = 2 and y = 5?",4,4,0.203,low
+q2,Which instruction type gets data from a keyboard or file?,1,2,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.202,low
+q1,What is the main purpose of a computer program?,1,1,q6,Which instruction completes the program to compute the area of a triangle?,4,6,0.2,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q4,"Why do programs use variables like x, y, and z?",3,4,0.198,low
+q4,Why does a program execute instructions one at a time?,2,4,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.197,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q7,What is the purpose of an algorithm in computational thinking?,4,7,0.194,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.194,low
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,q2,A variable in a program is named because its value _____.,4,2,0.194,low
+q9,Which of the following best compares a program to a recipe?,2,9,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.187,low
+q1,What is the main purpose of a computer program?,1,1,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,0.186,low
+q1,What is the main purpose of a computer program?,1,1,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.184,low
+q1,What is the main purpose of a computer program?,1,1,q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,5,0.182,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.171,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q9,Which of the following best compares a program to a recipe?,2,9,0.17,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,9,0.17,low
+q10,"In a program, what happens when a variable is assigned a new value?",1,10,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.157,low
+q1,What is the main purpose of a computer program?,1,1,q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,10,0.156,low
+q5,Why is a computer program compared to a cooking recipe?,4,5,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.156,low
+q1,What is the main purpose of a computer program?,1,1,q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,5,0.154,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q10,"In a program, what happens when a variable is assigned a new value?",1,10,0.153,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q5,Why is a computer program compared to a cooking recipe?,4,5,0.151,low
+q2,A variable in a program is named because its value _____.,4,2,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.143,low
+q2,A variable in a program is named so because its value _____.,2,2,q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,9,0.13,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q2,A variable in a program is named because its value _____.,4,2,0.125,low
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,9,q2,A variable in a program is named so because its value _____.,2,2,0.114,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Understand the basic structure of a computer program as a sequence of instructions including input, process, and output  
+Define variables and explain how their values can change during program execution  
+Construct simple programs to perform arithmetic operations and produce outputs  
+Develop algorithms to solve problems such as calculating geometric areas or averages  
+Apply computational thinking by creating and modifying algorithms to perform tasks like drawing shapes using turtle graphics"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the main purpose of a computer program?,1,yes,This question assesses understanding the basic structure of a computer program as a sequence of instructions.
+q2,Which instruction type gets data from a keyboard or file?,1,yes,"This question evaluates knowledge of input instructions, part of the program structure learning objective."
+q3,Variables in a program are used to _____.,1,yes,This question tests defining variables and understanding their changing values during execution.
+q4,"If a program has instructions: x = Get input, y = Get input, z = x + y, what is z when x=3 and y=4?",1,yes,This question assesses constructing simple programs performing arithmetic operations and producing outputs.
+q5,Which instruction completes this triangle area program? base = Get input; height = Get input; x = base * height; _____; Put x to output,1,yes,This question evaluates developing algorithms to solve problems like calculating geometric areas.
+q6,How does a program typically execute its instructions?,1,yes,This question tests understanding the execution order of instructions in a program.
+q7,What does the output instruction do in a program?,1,yes,This question assesses knowledge of output instructions in the basic program structure.
+q8,An algorithm is best described as _____.,1,yes,This question evaluates understanding algorithms as sequences of instructions solving problems.
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",1,yes,This question assesses applying computational thinking by creating/modifying algorithms in turtle graphics.
+q10,"In a program, what happens when a variable is assigned a new value?",1,yes,This question tests understanding how variable values change during program execution.
+q1,What are the three basic types of instructions in a computer program?,2,yes,This question assesses knowledge of the three basic instruction types in a computer program.
+q2,A variable in a program is named so because its value _____.,2,yes,This question evaluates understanding why variables are named so due to their changing values.
+q3,"In the instruction ""z = x + y"", what does the ""="" symbol mean in programming?",2,yes,"This question tests understanding assignment in programming, related to variables and program construction."
+q4,Why does a program execute instructions one at a time?,2,yes,This question assesses understanding the sequential execution of program instructions.
+q5,Which instruction completes the triangle area calculation program? base = Get next input height = Get next input x = base * height _____ Put x to output,2,yes,This question evaluates developing algorithms for geometric area calculation.
+q6,Computational thinking is best described as _____.,2,yes,This question assesses applying computational thinking by creating sequences of instructions to solve problems.
+q7,An algorithm is a _____.,2,yes,This question tests understanding algorithms as sequences of instructions solving problems.
+q8,"In the example program, what is the output if the inputs are 2 and 5, and the instruction is z = x + y?",2,yes,This question evaluates constructing simple programs performing arithmetic operations and producing outputs.
+q9,Which of the following best compares a program to a recipe?,2,yes,"This question assesses understanding the sequential nature of program instructions, analogous to recipes."
+q10,"To calculate the average of three numbers x, y, and z, the correct instruction is:",2,yes,This question tests developing algorithms to solve problems like calculating averages.
+q1,What is the main purpose of a computer program?,3,yes,This question assesses understanding the main purpose of a computer program as executing instructions.
+q2,Which instruction type gets data from the user or a file?,3,yes,This question evaluates knowledge of input instructions in program structure.
+q3,"In the instruction ""z = x + y"", what does the equals sign (=) mean in programming?",3,yes,This question tests understanding assignment operation in programming related to variables.
+q4,"Why do programs use variables like x, y, and z?",3,yes,This question assesses defining variables and their changing values during execution.
+q5,Which instruction completes this program to find a triangle's area? base = Get next input height = Get next input x = base * height _____ Put x to output,3,yes,This question evaluates developing algorithms for calculating triangle areas.
+q6,What type of instruction performs calculations on input data?,3,yes,This question tests understanding process instructions performing calculations on input data.
+q7,What is the name for a sequence of instructions that solves a problem?,3,yes,This question assesses understanding algorithms as sequences of instructions solving problems.
+q8,A program outputs the value 7 after inputs 2 and 5. What was the processing instruction?,3,yes,This question evaluates constructing simple programs performing arithmetic operations and producing outputs.
+q9,"What is the correct instruction to compute the average of three numbers x, y, and z?",3,yes,This question tests developing algorithms to calculate averages.
+q10,How does the order of instructions affect the output in a program?,3,yes,This question assesses understanding how instruction order affects program output and variable values.
+q1,What are the three basic instruction types in a computer program?,4,yes,This question evaluates knowledge of the three basic instruction types in a computer program.
+q2,A variable in a program is named because its value _____.,4,yes,This question tests understanding why variables are named for their changing values during execution.
+q3,Which step correctly describes the process instruction in the example program?,4,yes,This question assesses understanding process instructions in program construction.
+q4,"In the example program, what is the output when x = 2 and y = 5?",4,yes,This question evaluates constructing simple programs performing arithmetic operations and producing outputs.
+q5,Why is a computer program compared to a cooking recipe?,4,yes,This question tests understanding the sequential execution of instructions in programs analogous to recipes.
+q6,Which instruction completes the program to compute the area of a triangle?,4,yes,This question assesses developing algorithms for calculating triangle areas.
+q7,What is the purpose of an algorithm in computational thinking?,4,yes,This question evaluates applying computational thinking by using algorithms to solve problems.
+q8,"To compute the average of three numbers x, y, and z, which instruction is correct?",4,yes,This question tests developing algorithms to calculate averages.
+q9,"In turtle graphics, which instruction would turn the turtle left by 90 degrees?",4,yes,This question assesses applying computational thinking by creating/modifying algorithms in turtle graphics.
+q10,"In the first programming activity, which operation increases variable m's value by multiplication?",4,yes,This question evaluates constructing simple programs performing arithmetic operations and modifying variable values.

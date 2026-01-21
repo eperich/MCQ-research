@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,2
+2,10,0,0
+3,10,0,0
+4,10,0,2
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,0,6,100
+1,3,1,3,100
+1,4,2,5,100
+2,3,1,5,100
+2,4,2,3,100
+3,4,1,4,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),7
+Similar (70-85%),30
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What does an assignment statement do in programming?,1,1,q1,What does an assignment statement do in programming?,4,1,0.934,duplicate
+q9,How does programming assignment differ from algebraic equality?,2,9,q6,How does programming assignment differ from algebraic equality?,4,6,0.919,duplicate
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.898,duplicate
+q10,Which of these is an invalid assignment statement?,2,10,q5,Which assignment is invalid in programming?,4,5,0.894,duplicate
+q8,How does assignment differ from equality in algebra?,3,8,q6,How does programming assignment differ from algebraic equality?,4,6,0.885,duplicate
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.884,duplicate
+q9,How does programming assignment differ from algebraic equality?,2,9,q8,How does assignment differ from equality in algebra?,3,8,0.877,duplicate
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.84,similar
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.824,similar
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q10,Complete the increment operation: y = _____,4,10,0.824,similar
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.822,similar
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.815,similar
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.807,similar
+q3,Which is a valid left side in an assignment statement?,1,3,q3,Which of the following is a valid assignment statement in programming?,3,3,0.797,similar
+q10,Which of these is an invalid assignment statement?,2,10,q3,Which of the following is a valid assignment statement in programming?,3,3,0.785,similar
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q9,How does programming assignment differ from algebraic equality?,2,9,0.783,similar
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.778,similar
+q3,Which of the following is a valid assignment statement in programming?,3,3,q5,Which assignment is invalid in programming?,4,5,0.77,similar
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.768,similar
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.767,similar
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q6,How does programming assignment differ from algebraic equality?,4,6,0.764,similar
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q3,Which of the following is a valid assignment statement in programming?,3,3,0.761,similar
+q1,What does the assignment statement x = 5 do in a program?,2,1,q3,Which of the following is a valid assignment statement in programming?,3,3,0.747,similar
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.744,similar
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.74,similar
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.737,similar
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.735,similar
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.732,similar
+q1,What does an assignment statement do in programming?,1,1,q1,What does the assignment statement x = 5 do in a program?,2,1,0.719,similar
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.716,similar
+q6,What must the right side of an assignment contain?,1,6,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.715,similar
+q6,What must the right side of an assignment contain?,1,6,q6,Why must the left side of an assignment be a variable?,3,6,0.712,similar
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.709,similar
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.705,similar
+q1,What does the assignment statement x = 5 do in a program?,2,1,q1,What does an assignment statement do in programming?,4,1,0.705,similar
+q1,What does an assignment statement do in programming?,1,1,q6,How does programming assignment differ from algebraic equality?,4,6,0.704,similar
+q1,What does an assignment statement do in programming?,4,1,q6,How does programming assignment differ from algebraic equality?,4,6,0.702,similar
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q1,What does the assignment statement x = 5 do in a program?,2,1,0.7,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q5,Which assignment is invalid in programming?,4,5,0.699,low
+q6,What must the right side of an assignment contain?,1,6,q3,Which side of an assignment must be a variable in programming?,4,3,0.696,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.692,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.692,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.69,low
+q3,Which is a valid left side in an assignment statement?,1,3,q10,Which of these is an invalid assignment statement?,2,10,0.689,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q8,How does assignment differ from equality in algebra?,3,8,0.687,low
+q3,Which is a valid left side in an assignment statement?,1,3,q5,Which assignment is invalid in programming?,4,5,0.686,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q3,Which of the following is a valid assignment statement in programming?,3,3,0.685,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q6,Why must the left side of an assignment be a variable?,3,6,0.683,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.683,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q5,What does the equals sign (=) mean in programming languages?,3,5,0.678,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q1,What does an assignment statement do in programming?,4,1,0.678,low
+q8,How does assignment differ from equality in algebra?,3,8,q1,What does an assignment statement do in programming?,4,1,0.676,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.673,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.672,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.672,low
+q6,Why must the left side of an assignment be a variable?,3,6,q3,Which side of an assignment must be a variable in programming?,4,3,0.672,low
+q1,What does an assignment statement do in programming?,1,1,q9,How does programming assignment differ from algebraic equality?,2,9,0.67,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.67,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q10,Which of these is an invalid assignment statement?,2,10,0.67,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.666,low
+q1,What does an assignment statement do in programming?,1,1,q8,How does assignment differ from equality in algebra?,3,8,0.661,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q6,How does programming assignment differ from algebraic equality?,4,6,0.661,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.66,low
+q5,Which assignment is invalid in programming?,4,5,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.66,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.658,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q8,How does assignment differ from equality in algebra?,3,8,0.658,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q5,Which assignment is invalid in programming?,4,5,0.657,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q3,Which of the following is a valid assignment statement in programming?,3,3,0.656,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.656,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.655,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.654,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q5,What does the equals sign (=) mean in programming languages?,3,5,0.653,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q5,Which assignment is invalid in programming?,4,5,0.649,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.648,low
+q8,What does incrementing a variable mean?,1,8,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.646,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.645,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.643,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.642,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.642,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q10,Which of these is an invalid assignment statement?,2,10,0.64,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q1,What does the assignment statement x = 5 do in a program?,2,1,0.637,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.636,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q3,Which of the following is a valid assignment statement in programming?,3,3,0.635,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q8,How does assignment differ from equality in algebra?,3,8,0.63,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q3,Which of the following is a valid assignment statement in programming?,3,3,0.629,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q3,Which of the following is a valid assignment statement in programming?,3,3,0.628,low
+q10,Which of these is an invalid assignment statement?,2,10,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.628,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q9,How does programming assignment differ from algebraic equality?,2,9,0.627,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.627,low
+q1,What does an assignment statement do in programming?,1,1,q1,What is the purpose of a variable in programming?,3,1,0.625,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q10,Which of these is an invalid assignment statement?,2,10,0.625,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q6,How does programming assignment differ from algebraic equality?,4,6,0.624,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.624,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q6,Why must the left side of an assignment be a variable?,3,6,0.623,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.622,low
+q3,Which is a valid left side in an assignment statement?,1,3,q1,What does the assignment statement x = 5 do in a program?,2,1,0.622,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.621,low
+q3,Which is a valid left side in an assignment statement?,1,3,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.62,low
+q3,Which is a valid left side in an assignment statement?,1,3,q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,0.619,low
+q3,Which is a valid left side in an assignment statement?,1,3,q6,Why must the left side of an assignment be a variable?,3,6,0.617,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q10,Which of these is an invalid assignment statement?,2,10,0.611,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.611,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.609,low
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,q5,Which assignment is invalid in programming?,4,5,0.609,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.608,low
+q6,What must the right side of an assignment contain?,1,6,q1,What does an assignment statement do in programming?,4,1,0.607,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q5,Which assignment is invalid in programming?,4,5,0.606,low
+q10,Which of these is an invalid assignment statement?,2,10,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.606,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.603,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.603,low
+q1,What does an assignment statement do in programming?,1,1,q3,Which of the following is a valid assignment statement in programming?,3,3,0.602,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q3,Which of the following is a valid assignment statement in programming?,3,3,0.601,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.6,low
+q3,Which is a valid left side in an assignment statement?,1,3,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.6,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q3,Which of the following is a valid assignment statement in programming?,3,3,0.6,low
+q3,Which is a valid left side in an assignment statement?,1,3,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.599,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q3,Which of the following is a valid assignment statement in programming?,3,3,0.598,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q5,Which assignment is invalid in programming?,4,5,0.598,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.598,low
+q10,Which of these is an invalid assignment statement?,2,10,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.598,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.598,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.597,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q1,What does an assignment statement do in programming?,4,1,0.597,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q1,What does the assignment statement x = 5 do in a program?,2,1,0.596,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.595,low
+q1,What does an assignment statement do in programming?,1,1,q6,What must the right side of an assignment contain?,1,6,0.594,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q6,How does programming assignment differ from algebraic equality?,4,6,0.594,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.593,low
+q3,Which is a valid left side in an assignment statement?,1,3,q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,0.593,low
+q3,Which is a valid left side in an assignment statement?,1,3,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.593,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q6,How does programming assignment differ from algebraic equality?,4,6,0.592,low
+q1,What does an assignment statement do in programming?,1,1,q5,What does the equals sign (=) mean in programming languages?,3,5,0.591,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.591,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.591,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q3,Which side of an assignment must be a variable in programming?,4,3,0.59,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q5,Which assignment is invalid in programming?,4,5,0.589,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.588,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q3,Which of the following is a valid assignment statement in programming?,3,3,0.588,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.588,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.585,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q3,Which of the following is a valid assignment statement in programming?,3,3,0.584,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q10,Which of these is an invalid assignment statement?,2,10,0.584,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.583,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.583,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.582,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.581,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q1,What does an assignment statement do in programming?,4,1,0.58,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q1,What does an assignment statement do in programming?,4,1,0.579,low
+q3,Which is a valid left side in an assignment statement?,1,3,q6,What must the right side of an assignment contain?,1,6,0.578,low
+q3,Which is a valid left side in an assignment statement?,1,3,q3,Which side of an assignment must be a variable in programming?,4,3,0.578,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.578,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q6,How does programming assignment differ from algebraic equality?,4,6,0.578,low
+q1,What is the purpose of a variable in programming?,3,1,q1,What does an assignment statement do in programming?,4,1,0.577,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q6,How does programming assignment differ from algebraic equality?,4,6,0.577,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.577,low
+q3,Which is a valid left side in an assignment statement?,1,3,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.576,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.576,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q5,Which assignment is invalid in programming?,4,5,0.576,low
+q1,What does an assignment statement do in programming?,1,1,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.575,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q8,How does assignment differ from equality in algebra?,3,8,0.575,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q1,What does an assignment statement do in programming?,4,1,0.575,low
+q1,What is the purpose of a variable in programming?,3,1,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.575,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.575,low
+q1,What does an assignment statement do in programming?,1,1,q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,0.574,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.574,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.574,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.574,low
+q6,What must the right side of an assignment contain?,1,6,q6,How does programming assignment differ from algebraic equality?,4,6,0.573,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q10,Which of these is an invalid assignment statement?,2,10,0.572,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q5,Which assignment is invalid in programming?,4,5,0.572,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q5,What does the equals sign (=) mean in programming languages?,3,5,0.57,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.569,low
+q6,Why must the left side of an assignment be a variable?,3,6,q6,How does programming assignment differ from algebraic equality?,4,6,0.569,low
+q3,Which is a valid left side in an assignment statement?,1,3,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.567,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q9,How does programming assignment differ from algebraic equality?,2,9,0.567,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q1,What does an assignment statement do in programming?,4,1,0.566,low
+q1,What does an assignment statement do in programming?,1,1,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.563,low
+q3,Which is a valid left side in an assignment statement?,1,3,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.562,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q5,Which assignment is invalid in programming?,4,5,0.562,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,0.561,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.561,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q1,What does an assignment statement do in programming?,4,1,0.561,low
+q6,Why must the left side of an assignment be a variable?,3,6,q8,How does assignment differ from equality in algebra?,3,8,0.56,low
+q1,What does an assignment statement do in programming?,1,1,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.559,low
+q3,Which is a valid left side in an assignment statement?,1,3,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.559,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.558,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.557,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.556,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.556,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.556,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.555,low
+q6,What must the right side of an assignment contain?,1,6,q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,0.555,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q5,Which assignment is invalid in programming?,4,5,0.555,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.555,low
+q3,Which is a valid left side in an assignment statement?,1,3,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.553,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q8,How does assignment differ from equality in algebra?,3,8,0.553,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.553,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q1,What does an assignment statement do in programming?,4,1,0.552,low
+q3,Which is a valid left side in an assignment statement?,1,3,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.551,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q5,Which assignment is invalid in programming?,4,5,0.55,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q1,What does the assignment statement x = 5 do in a program?,2,1,0.55,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.55,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q10,Complete the increment operation: y = _____,4,10,0.55,low
+q1,What does an assignment statement do in programming?,1,1,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.549,low
+q8,What does incrementing a variable mean?,1,8,q10,Complete the increment operation: y = _____,4,10,0.549,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.548,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q8,How does assignment differ from equality in algebra?,3,8,0.548,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.547,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q3,Which of the following is a valid assignment statement in programming?,3,3,0.546,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q9,How does programming assignment differ from algebraic equality?,2,9,0.545,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.543,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.542,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q5,What does the equals sign (=) mean in programming languages?,3,5,0.542,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.542,low
+q10,Which of these is an invalid assignment statement?,2,10,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.542,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.541,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.541,low
+q10,Which of these is an invalid assignment statement?,2,10,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.541,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q8,How does assignment differ from equality in algebra?,3,8,0.541,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q10,Complete the increment operation: y = _____,4,10,0.541,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q5,Which assignment is invalid in programming?,4,5,0.541,low
+q3,Which is a valid left side in an assignment statement?,1,3,q10,Complete the increment operation: y = _____,4,10,0.54,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q3,Which of the following is a valid assignment statement in programming?,3,3,0.54,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q6,Why must the left side of an assignment be a variable?,3,6,0.54,low
+q6,Why must the left side of an assignment be a variable?,3,6,q1,What does an assignment statement do in programming?,4,1,0.54,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,0.539,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.539,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.539,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q5,Which assignment is invalid in programming?,4,5,0.538,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.538,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,0.537,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q6,How does programming assignment differ from algebraic equality?,4,6,0.537,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q10,Which of these is an invalid assignment statement?,2,10,0.536,low
+q1,What does an assignment statement do in programming?,1,1,q6,Why must the left side of an assignment be a variable?,3,6,0.535,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q6,How does programming assignment differ from algebraic equality?,4,6,0.535,low
+q1,What does an assignment statement do in programming?,1,1,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.534,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,0.533,low
+q6,What must the right side of an assignment contain?,1,6,q9,How does programming assignment differ from algebraic equality?,2,9,0.533,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.533,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q10,Which of these is an invalid assignment statement?,2,10,0.533,low
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.531,low
+q6,What must the right side of an assignment contain?,1,6,q3,Which of the following is a valid assignment statement in programming?,3,3,0.53,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q3,Which is a valid left side in an assignment statement?,1,3,0.529,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.529,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q6,Why must the left side of an assignment be a variable?,3,6,0.529,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q10,Which of these is an invalid assignment statement?,2,10,0.528,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.528,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.528,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.528,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.527,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.527,low
+q1,What does an assignment statement do in programming?,4,1,q3,Which side of an assignment must be a variable in programming?,4,3,0.527,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q5,Which assignment is invalid in programming?,4,5,0.526,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.525,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q10,Complete the increment operation: y = _____,4,10,0.524,low
+q1,What does an assignment statement do in programming?,1,1,q3,Which side of an assignment must be a variable in programming?,4,3,0.523,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,0.522,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.522,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.522,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.522,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.521,low
+q1,What does an assignment statement do in programming?,1,1,q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,0.52,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q5,What does the equals sign (=) mean in programming languages?,3,5,0.52,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.52,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q9,How does programming assignment differ from algebraic equality?,2,9,0.519,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.519,low
+q10,Which of these is an invalid assignment statement?,2,10,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.519,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q1,What does an assignment statement do in programming?,4,1,0.519,low
+q1,What does an assignment statement do in programming?,1,1,q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,0.518,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.518,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q1,What does the assignment statement x = 5 do in a program?,2,1,0.518,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q6,What happens to a variable's previous value after a new assignment?,2,6,0.515,low
+q3,Which is a valid left side in an assignment statement?,1,3,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.515,low
+q6,What must the right side of an assignment contain?,1,6,q8,How does assignment differ from equality in algebra?,3,8,0.514,low
+q8,How does assignment differ from equality in algebra?,3,8,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.514,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.513,low
+q3,Which is a valid left side in an assignment statement?,1,3,q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,0.512,low
+q3,Which is a valid left side in an assignment statement?,1,3,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.511,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q3,Which of the following is a valid assignment statement in programming?,3,3,0.511,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q6,How does programming assignment differ from algebraic equality?,4,6,0.511,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.51,low
+q6,What must the right side of an assignment contain?,1,6,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.51,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q6,Why must the left side of an assignment be a variable?,3,6,0.51,low
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,q10,Complete the increment operation: y = _____,4,10,0.51,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.509,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.509,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q10,Complete the increment operation: y = _____,4,10,0.509,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.509,low
+q6,What must the right side of an assignment contain?,1,6,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.508,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q8,How does assignment differ from equality in algebra?,3,8,0.508,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q1,What is the purpose of a variable in programming?,3,1,0.508,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,0.507,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q1,What does an assignment statement do in programming?,4,1,0.507,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.507,low
+q1,What is the purpose of a variable in programming?,3,1,q6,Why must the left side of an assignment be a variable?,3,6,0.507,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q8,What does incrementing a variable mean?,1,8,0.506,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q5,What does the equals sign (=) mean in programming languages?,3,5,0.506,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q10,Complete the increment operation: y = _____,4,10,0.506,low
+q1,What is the purpose of a variable in programming?,3,1,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.506,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q6,How does programming assignment differ from algebraic equality?,4,6,0.505,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q6,How does programming assignment differ from algebraic equality?,4,6,0.504,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q1,What is the purpose of a variable in programming?,3,1,0.504,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.504,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.504,low
+q5,Which assignment is invalid in programming?,4,5,q6,How does programming assignment differ from algebraic equality?,4,6,0.504,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.503,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q5,What does the equals sign (=) mean in programming languages?,3,5,0.503,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.502,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.502,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q1,What is the purpose of a variable in programming?,3,1,0.501,low
+q6,What must the right side of an assignment contain?,1,6,q1,What does the assignment statement x = 5 do in a program?,2,1,0.501,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.501,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.501,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.501,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.501,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q6,Why must the left side of an assignment be a variable?,3,6,0.501,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.5,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q8,How does assignment differ from equality in algebra?,3,8,0.499,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q10,Complete the increment operation: y = _____,4,10,0.499,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.499,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q5,What does the equals sign (=) mean in programming languages?,3,5,0.499,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.499,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q6,Why must the left side of an assignment be a variable?,3,6,0.497,low
+q6,What must the right side of an assignment contain?,1,6,q5,What does the equals sign (=) mean in programming languages?,3,5,0.497,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.497,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.497,low
+q1,What is the purpose of a variable in programming?,3,1,q6,How does programming assignment differ from algebraic equality?,4,6,0.497,low
+q3,Which is a valid left side in an assignment statement?,1,3,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.496,low
+q8,What does incrementing a variable mean?,1,8,q1,What is the purpose of a variable in programming?,3,1,0.496,low
+q1,What does an assignment statement do in programming?,4,1,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.496,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.495,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.494,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q3,Which side of an assignment must be a variable in programming?,4,3,0.494,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q8,How does assignment differ from equality in algebra?,3,8,0.492,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q10,Complete the increment operation: y = _____,4,10,0.491,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q10,Complete the increment operation: y = _____,4,10,0.491,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q1,What does an assignment statement do in programming?,4,1,0.49,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.489,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.489,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.489,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.488,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.488,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q6,How does programming assignment differ from algebraic equality?,4,6,0.488,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.487,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.487,low
+q1,What does an assignment statement do in programming?,1,1,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.486,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.486,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.485,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.485,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q6,Why must the left side of an assignment be a variable?,3,6,0.485,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q1,What does the assignment statement x = 5 do in a program?,2,1,0.483,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.483,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q3,Which side of an assignment must be a variable in programming?,4,3,0.483,low
+q5,Which assignment is invalid in programming?,4,5,q10,Complete the increment operation: y = _____,4,10,0.482,low
+q8,How does assignment differ from equality in algebra?,3,8,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.481,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.48,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.48,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.478,low
+q1,What does an assignment statement do in programming?,1,1,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.477,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q3,Which side of an assignment must be a variable in programming?,4,3,0.477,low
+q1,What is the purpose of a variable in programming?,3,1,q5,What does the equals sign (=) mean in programming languages?,3,5,0.477,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.476,low
+q8,What does incrementing a variable mean?,1,8,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.476,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q6,How does programming assignment differ from algebraic equality?,4,6,0.476,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.476,low
+q8,What does incrementing a variable mean?,1,8,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.474,low
+q8,How does assignment differ from equality in algebra?,3,8,q5,Which assignment is invalid in programming?,4,5,0.474,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q1,What does an assignment statement do in programming?,4,1,0.473,low
+q1,What does an assignment statement do in programming?,4,1,q5,Which assignment is invalid in programming?,4,5,0.473,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.472,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.472,low
+q10,Which of these is an invalid assignment statement?,2,10,q6,How does programming assignment differ from algebraic equality?,4,6,0.472,low
+q1,What does an assignment statement do in programming?,1,1,q5,Which assignment is invalid in programming?,4,5,0.471,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.471,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.471,low
+q1,What does an assignment statement do in programming?,1,1,q10,Which of these is an invalid assignment statement?,2,10,0.47,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.47,low
+q3,Which is a valid left side in an assignment statement?,1,3,q1,What does an assignment statement do in programming?,4,1,0.469,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q1,What is the purpose of a variable in programming?,3,1,0.469,low
+q3,Which is a valid left side in an assignment statement?,1,3,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.467,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q10,Which of these is an invalid assignment statement?,2,10,0.467,low
+q6,What must the right side of an assignment contain?,1,6,q1,What is the purpose of a variable in programming?,3,1,0.467,low
+q10,Which of these is an invalid assignment statement?,2,10,q1,What does an assignment statement do in programming?,4,1,0.467,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.466,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.466,low
+q8,What does incrementing a variable mean?,1,8,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.466,low
+q1,What does an assignment statement do in programming?,1,1,q3,Which is a valid left side in an assignment statement?,1,3,0.465,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q9,How does programming assignment differ from algebraic equality?,2,9,0.465,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q10,Which of these is an invalid assignment statement?,2,10,0.465,low
+q1,What does an assignment statement do in programming?,1,1,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.464,low
+q8,What does incrementing a variable mean?,1,8,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.464,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q10,Complete the increment operation: y = _____,4,10,0.464,low
+q10,Which of these is an invalid assignment statement?,2,10,q10,Complete the increment operation: y = _____,4,10,0.464,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.464,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q10,Which of these is an invalid assignment statement?,2,10,0.463,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.462,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.461,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q9,How does programming assignment differ from algebraic equality?,2,9,0.461,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.461,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q5,Which assignment is invalid in programming?,4,5,0.461,low
+q1,What does an assignment statement do in programming?,1,1,q8,What does incrementing a variable mean?,1,8,0.46,low
+q6,What must the right side of an assignment contain?,1,6,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.46,low
+q1,What does an assignment statement do in programming?,4,1,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.46,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q6,Why must the left side of an assignment be a variable?,3,6,0.459,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.459,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.459,low
+q1,What does an assignment statement do in programming?,1,1,q6,What happens to a variable's previous value after a new assignment?,2,6,0.458,low
+q8,What does incrementing a variable mean?,1,8,q1,What does the assignment statement x = 5 do in a program?,2,1,0.457,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.457,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q3,Which side of an assignment must be a variable in programming?,4,3,0.457,low
+q8,How does assignment differ from equality in algebra?,3,8,q3,Which side of an assignment must be a variable in programming?,4,3,0.457,low
+q1,What does an assignment statement do in programming?,1,1,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.456,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.456,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.456,low
+q10,Which of these is an invalid assignment statement?,2,10,q8,How does assignment differ from equality in algebra?,3,8,0.456,low
+q6,Why must the left side of an assignment be a variable?,3,6,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.456,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q8,How does assignment differ from equality in algebra?,3,8,0.454,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.454,low
+q1,What does an assignment statement do in programming?,1,1,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.452,low
+q3,Which is a valid left side in an assignment statement?,1,3,q6,How does programming assignment differ from algebraic equality?,4,6,0.452,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.452,low
+q6,Why must the left side of an assignment be a variable?,3,6,q5,Which assignment is invalid in programming?,4,5,0.452,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q5,Which assignment is invalid in programming?,4,5,0.451,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.45,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q5,What does the equals sign (=) mean in programming languages?,3,5,0.45,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.449,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.449,low
+q3,Which is a valid left side in an assignment statement?,1,3,q5,What does the equals sign (=) mean in programming languages?,3,5,0.447,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.447,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q1,What is the purpose of a variable in programming?,3,1,0.447,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.447,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.446,low
+q6,What must the right side of an assignment contain?,1,6,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.445,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q5,Which assignment is invalid in programming?,4,5,0.445,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.444,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q6,What must the right side of an assignment contain?,1,6,0.443,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.443,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.442,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q1,What does an assignment statement do in programming?,4,1,0.442,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.442,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q1,What does an assignment statement do in programming?,4,1,0.442,low
+q1,What does an assignment statement do in programming?,1,1,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.441,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q1,What is the purpose of a variable in programming?,3,1,0.441,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q1,What does an assignment statement do in programming?,4,1,0.441,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q6,How does programming assignment differ from algebraic equality?,4,6,0.441,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.441,low
+q7,"If x = 4, what is the result after x = x * 3?",4,7,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.441,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.44,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q6,What happens to a variable's previous value after a new assignment?,2,6,0.44,low
+q6,What must the right side of an assignment contain?,1,6,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.437,low
+q6,What must the right side of an assignment contain?,1,6,q5,Which assignment is invalid in programming?,4,5,0.437,low
+q3,Which is a valid left side in an assignment statement?,1,3,q8,How does assignment differ from equality in algebra?,3,8,0.436,low
+q10,Which of these is an invalid assignment statement?,2,10,q6,Why must the left side of an assignment be a variable?,3,6,0.436,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.436,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q4,Why is the assignment x = x + 1 valid in programming?,2,4,0.434,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.434,low
+q3,Which is a valid left side in an assignment statement?,1,3,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.433,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q5,Which assignment is invalid in programming?,4,5,0.433,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q6,How does programming assignment differ from algebraic equality?,4,6,0.432,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q9,How does programming assignment differ from algebraic equality?,2,9,0.432,low
+q3,Which is a valid left side in an assignment statement?,1,3,q9,How does programming assignment differ from algebraic equality?,2,9,0.431,low
+q1,What is the purpose of a variable in programming?,3,1,q3,Which of the following is a valid assignment statement in programming?,3,3,0.431,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.43,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q10,Complete the increment operation: y = _____,4,10,0.43,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.429,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q6,Why must the left side of an assignment be a variable?,3,6,0.429,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.428,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q3,Which side of an assignment must be a variable in programming?,4,3,0.428,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.427,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.427,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.426,low
+q8,What does incrementing a variable mean?,1,8,q1,What does an assignment statement do in programming?,4,1,0.426,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.426,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.426,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q8,How does assignment differ from equality in algebra?,3,8,0.426,low
+q1,What is the purpose of a variable in programming?,3,1,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.426,low
+q6,What must the right side of an assignment contain?,1,6,q10,Which of these is an invalid assignment statement?,2,10,0.425,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.425,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q10,Which of these is an invalid assignment statement?,2,10,0.425,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.424,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.423,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q6,What must the right side of an assignment contain?,1,6,0.422,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.422,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q1,What is the purpose of a variable in programming?,3,1,0.422,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q3,Which side of an assignment must be a variable in programming?,4,3,0.422,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q10,Complete the increment operation: y = _____,4,10,0.421,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q6,Why must the left side of an assignment be a variable?,3,6,0.421,low
+q8,What does incrementing a variable mean?,1,8,q3,Which of the following is a valid assignment statement in programming?,3,3,0.42,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q6,How does programming assignment differ from algebraic equality?,4,6,0.42,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q1,What is the purpose of a variable in programming?,3,1,0.419,low
+q6,What must the right side of an assignment contain?,1,6,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.418,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.418,low
+q6,What must the right side of an assignment contain?,1,6,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.417,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q8,How does assignment differ from equality in algebra?,3,8,0.417,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.416,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q6,Why must the left side of an assignment be a variable?,3,6,0.415,low
+q1,What is the purpose of a variable in programming?,3,1,q8,How does assignment differ from equality in algebra?,3,8,0.415,low
+q3,Which is a valid left side in an assignment statement?,1,3,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.412,low
+q6,Why must the left side of an assignment be a variable?,3,6,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.412,low
+q1,What does an assignment statement do in programming?,1,1,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.411,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q1,What is the purpose of a variable in programming?,3,1,0.411,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.409,low
+q8,What does incrementing a variable mean?,1,8,q6,What happens to a variable's previous value after a new assignment?,2,6,0.409,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q10,Which of these is an invalid assignment statement?,2,10,0.409,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.409,low
+q10,Which of these is an invalid assignment statement?,2,10,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.409,low
+q3,Which of the following is a valid assignment statement in programming?,3,3,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.409,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q5,Which assignment is invalid in programming?,4,5,0.409,low
+q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,q10,Complete the increment operation: y = _____,4,10,0.409,low
+q8,What does incrementing a variable mean?,1,8,q6,How does programming assignment differ from algebraic equality?,4,6,0.408,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q5,Which assignment is invalid in programming?,4,5,0.408,low
+q10,Which of these is an invalid assignment statement?,2,10,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.408,low
+q6,What must the right side of an assignment contain?,1,6,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.407,low
+q6,What must the right side of an assignment contain?,1,6,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.407,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.407,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q3,Which side of an assignment must be a variable in programming?,4,3,0.407,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.406,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.406,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q10,Complete the increment operation: y = _____,4,10,0.405,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.405,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q9,How does programming assignment differ from algebraic equality?,2,9,0.405,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q6,How does programming assignment differ from algebraic equality?,4,6,0.405,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.404,low
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,q6,How does programming assignment differ from algebraic equality?,4,6,0.404,low
+q1,What is the purpose of a variable in programming?,3,1,q3,Which side of an assignment must be a variable in programming?,4,3,0.403,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q1,What does an assignment statement do in programming?,4,1,0.403,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.402,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.402,low
+q8,What does incrementing a variable mean?,1,8,q5,What does the equals sign (=) mean in programming languages?,3,5,0.402,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.401,low
+q8,What does incrementing a variable mean?,1,8,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.401,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.401,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.4,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q6,Why must the left side of an assignment be a variable?,3,6,0.4,low
+q6,Why must the left side of an assignment be a variable?,3,6,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.4,low
+q6,How does programming assignment differ from algebraic equality?,4,6,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.4,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q3,Which side of an assignment must be a variable in programming?,4,3,0.399,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.399,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.399,low
+q6,What must the right side of an assignment contain?,1,6,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.398,low
+q6,What must the right side of an assignment contain?,1,6,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.398,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.398,low
+q1,What is the purpose of a variable in programming?,3,1,q2,"In the assignment x = x + 1, what happens during execution?",3,2,0.398,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.398,low
+q1,What does an assignment statement do in programming?,1,1,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.397,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q6,What happens to a variable's previous value after a new assignment?,2,6,0.397,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.397,low
+q10,Which of these is an invalid assignment statement?,2,10,q3,Which side of an assignment must be a variable in programming?,4,3,0.396,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q5,Which assignment is invalid in programming?,4,5,0.396,low
+q6,Why must the left side of an assignment be a variable?,3,6,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.396,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q10,Complete the increment operation: y = _____,4,10,0.396,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q8,How does assignment differ from equality in algebra?,3,8,0.395,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.395,low
+q10,Which of these is an invalid assignment statement?,2,10,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.395,low
+q1,What does an assignment statement do in programming?,4,1,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.395,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q1,What is the purpose of a variable in programming?,3,1,0.393,low
+q3,Which is a valid left side in an assignment statement?,1,3,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.393,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.393,low
+q8,What does incrementing a variable mean?,1,8,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.392,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q3,Which side of an assignment must be a variable in programming?,4,3,0.392,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q10,Complete the increment operation: y = _____,4,10,0.392,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.391,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.391,low
+q6,What must the right side of an assignment contain?,1,6,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.39,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q8,What does incrementing a variable mean?,1,8,0.39,low
+q6,Why must the left side of an assignment be a variable?,3,6,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.39,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q1,What is the purpose of a variable in programming?,3,1,0.389,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q5,What does the equals sign (=) mean in programming languages?,3,5,0.389,low
+q6,How does programming assignment differ from algebraic equality?,4,6,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.389,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q10,Complete the increment operation: y = _____,4,10,0.387,low
+q6,Why must the left side of an assignment be a variable?,3,6,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.387,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.386,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q6,Why must the left side of an assignment be a variable?,3,6,0.385,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q5,What does the equals sign (=) mean in programming languages?,3,5,0.384,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q10,Complete the increment operation: y = _____,4,10,0.384,low
+q10,Which of these is an invalid assignment statement?,2,10,q5,What does the equals sign (=) mean in programming languages?,3,5,0.384,low
+q1,What does an assignment statement do in programming?,4,1,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.384,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q5,Which assignment is invalid in programming?,4,5,0.382,low
+q5,Which assignment is invalid in programming?,4,5,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.379,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q10,Complete the increment operation: y = _____,4,10,0.378,low
+q1,What is the purpose of a variable in programming?,3,1,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.378,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.377,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.376,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.375,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q9,How does programming assignment differ from algebraic equality?,2,9,0.374,low
+q7,"If x = 4, what is the result after x = x * 3?",4,7,q10,Complete the increment operation: y = _____,4,10,0.374,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.373,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.372,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.371,low
+q1,What does the assignment statement x = 5 do in a program?,2,1,q6,What happens to a variable's previous value after a new assignment?,2,6,0.371,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q8,What does incrementing a variable mean?,1,8,0.368,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.368,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q6,Why must the left side of an assignment be a variable?,3,6,0.368,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.368,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.368,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q3,Which side of an assignment must be a variable in programming?,4,3,0.368,low
+q8,What does incrementing a variable mean?,1,8,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.365,low
+q6,What must the right side of an assignment contain?,1,6,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.364,low
+q8,How does assignment differ from equality in algebra?,3,8,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.364,low
+q8,How does assignment differ from equality in algebra?,3,8,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.364,low
+q4,Why is the assignment x = x + 1 valid in programming?,2,4,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.363,low
+q8,How does assignment differ from equality in algebra?,3,8,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.363,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q1,What is the purpose of a variable in programming?,3,1,0.362,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q2,"In the assignment x = x + 1, what happens to x?",4,2,0.362,low
+q1,What does an assignment statement do in programming?,1,1,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.361,low
+q8,What does incrementing a variable mean?,1,8,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.361,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.36,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q3,Which side of an assignment must be a variable in programming?,4,3,0.36,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.359,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.358,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.358,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.358,low
+q8,What does incrementing a variable mean?,1,8,q5,Which statement is true about the assignment y = x if x is 10?,2,5,0.357,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q6,How does programming assignment differ from algebraic equality?,4,6,0.357,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q5,What does the equals sign (=) mean in programming languages?,3,5,0.357,low
+q8,What does incrementing a variable mean?,1,8,q6,Why must the left side of an assignment be a variable?,3,6,0.356,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.356,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.356,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q3,Which side of an assignment must be a variable in programming?,4,3,0.355,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q1,What is the purpose of a variable in programming?,3,1,0.352,low
+q8,What does incrementing a variable mean?,1,8,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.352,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q3,Which side of an assignment must be a variable in programming?,4,3,0.352,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q8,What does incrementing a variable mean?,1,8,0.351,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q6,Why must the left side of an assignment be a variable?,3,6,0.351,low
+q1,What is the purpose of a variable in programming?,3,1,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.351,low
+q8,How does assignment differ from equality in algebra?,3,8,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.351,low
+q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,q10,Complete the increment operation: y = _____,4,10,0.351,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.35,low
+q6,What must the right side of an assignment contain?,1,6,q6,What happens to a variable's previous value after a new assignment?,2,6,0.349,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.349,low
+q1,What is the purpose of a variable in programming?,3,1,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.349,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.349,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q1,What is the purpose of a variable in programming?,3,1,0.348,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q3,After executing x = 2; y = x + 3; what is y's value?,2,3,0.347,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q9,How does programming assignment differ from algebraic equality?,2,9,0.347,low
+q8,What does incrementing a variable mean?,1,8,q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,0.346,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.346,low
+q1,What is the purpose of a variable in programming?,3,1,q5,Which assignment is invalid in programming?,4,5,0.346,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.345,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.344,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q6,What happens to a variable's previous value after a new assignment?,2,6,0.343,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.343,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q1,What does an assignment statement do in programming?,4,1,0.343,low
+q2,"In the assignment x = x + 1, what happens during execution?",3,2,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.342,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q3,Which side of an assignment must be a variable in programming?,4,3,0.341,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.34,low
+q8,What does incrementing a variable mean?,1,8,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.34,low
+q8,What does incrementing a variable mean?,1,8,q10,Which of these is an invalid assignment statement?,2,10,0.34,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q6,How does programming assignment differ from algebraic equality?,4,6,0.339,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q3,Which of the following is a valid assignment statement in programming?,3,3,0.338,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q6,What happens to a variable's previous value after a new assignment?,2,6,0.337,low
+q6,What must the right side of an assignment contain?,1,6,q8,What does incrementing a variable mean?,1,8,0.337,low
+q8,What does incrementing a variable mean?,1,8,q8,How does assignment differ from equality in algebra?,3,8,0.337,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q3,Which side of an assignment must be a variable in programming?,4,3,0.337,low
+q3,Which is a valid left side in an assignment statement?,1,3,q1,What is the purpose of a variable in programming?,3,1,0.336,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.336,low
+q8,What does incrementing a variable mean?,1,8,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.335,low
+q3,Which is a valid left side in an assignment statement?,1,3,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.333,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.333,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.332,low
+q2,"In the assignment x = x + 1, what happens to x?",4,2,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.332,low
+q1,What does an assignment statement do in programming?,1,1,q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,0.331,low
+q3,Which is a valid left side in an assignment statement?,1,3,q8,What does incrementing a variable mean?,1,8,0.331,low
+q5,Which statement is true about the assignment y = x if x is 10?,2,5,q3,Which side of an assignment must be a variable in programming?,4,3,0.331,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q5,What does the equals sign (=) mean in programming languages?,3,5,0.33,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.33,low
+q1,What does an assignment statement do in programming?,1,1,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.329,low
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,4,q10,Complete the increment operation: y = _____,4,10,0.329,low
+q1,What is the purpose of a variable in programming?,3,1,q10,Complete the increment operation: y = _____,4,10,0.329,low
+q8,What does incrementing a variable mean?,1,8,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.328,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.328,low
+q8,What does incrementing a variable mean?,1,8,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.327,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.327,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.327,low
+q6,What must the right side of an assignment contain?,1,6,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.326,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,0.326,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q1,What is the purpose of a variable in programming?,3,1,0.325,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,0.325,low
+q8,What does incrementing a variable mean?,1,8,q5,Which assignment is invalid in programming?,4,5,0.321,low
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,10,q3,Which side of an assignment must be a variable in programming?,4,3,0.321,low
+q8,What does incrementing a variable mean?,1,8,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.319,low
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,10,q5,What does the equals sign (=) mean in programming languages?,3,5,0.319,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.319,low
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.319,low
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,8,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.318,low
+q10,Which of these is an invalid assignment statement?,2,10,q1,What is the purpose of a variable in programming?,3,1,0.318,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.318,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.317,low
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,2,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.316,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q6,Why must the left side of an assignment be a variable?,3,6,0.316,low
+q8,What does incrementing a variable mean?,1,8,q9,How does programming assignment differ from algebraic equality?,2,9,0.315,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.314,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,0.314,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q9,How does programming assignment differ from algebraic equality?,2,9,0.313,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q5,What does the equals sign (=) mean in programming languages?,3,5,0.313,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q6,Why must the left side of an assignment be a variable?,3,6,0.312,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q6,What must the right side of an assignment contain?,1,6,0.311,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q8,How does assignment differ from equality in algebra?,3,8,0.311,low
+q8,What does incrementing a variable mean?,1,8,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.31,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q5,What does the equals sign (=) mean in programming languages?,3,5,0.309,low
+q6,How does programming assignment differ from algebraic equality?,4,6,q10,Complete the increment operation: y = _____,4,10,0.309,low
+q5,Which assignment is invalid in programming?,4,5,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.307,low
+q10,Which of these is an invalid assignment statement?,2,10,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.306,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q6,How does programming assignment differ from algebraic equality?,4,6,0.306,low
+q1,What is the purpose of a variable in programming?,3,1,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.305,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.304,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q5,What does the equals sign (=) mean in programming languages?,3,5,0.304,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q1,What does an assignment statement do in programming?,4,1,0.303,low
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,7,q6,What happens to a variable's previous value after a new assignment?,2,6,0.301,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q9,What happens if a variable is assigned multiple times in sequence?,3,9,0.301,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.299,low
+q1,What is the purpose of a variable in programming?,3,1,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.297,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q6,How does programming assignment differ from algebraic equality?,4,6,0.294,low
+q6,Why must the left side of an assignment be a variable?,3,6,q10,Complete the increment operation: y = _____,4,10,0.294,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q3,Which side of an assignment must be a variable in programming?,4,3,0.293,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q1,What does an assignment statement do in programming?,4,1,0.293,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q9,How does programming assignment differ from algebraic equality?,2,9,0.292,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q6,What happens to a variable's previous value after a new assignment?,2,6,0.292,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.292,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q3,Which side of an assignment must be a variable in programming?,4,3,0.288,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.288,low
+q8,What does incrementing a variable mean?,1,8,q3,Which side of an assignment must be a variable in programming?,4,3,0.288,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q7,"Fill in the blank: In programming, the symbol = means _____.",2,7,0.287,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q10,Which of these is an invalid assignment statement?,2,10,0.284,low
+q3,After executing x = 2; y = x + 3; what is y's value?,2,3,q6,What happens to a variable's previous value after a new assignment?,2,6,0.281,low
+q1,What does an assignment statement do in programming?,1,1,q10,Complete the increment operation: y = _____,4,10,0.28,low
+q6,What must the right side of an assignment contain?,1,6,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.279,low
+q3,Which is a valid left side in an assignment statement?,1,3,q6,What happens to a variable's previous value after a new assignment?,2,6,0.277,low
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,4,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.276,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q10,Complete the increment operation: y = _____,4,10,0.274,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.274,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.273,low
+q9,What happens if a variable is assigned multiple times in sequence?,3,9,q10,Complete the increment operation: y = _____,4,10,0.273,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q3,Which side of an assignment must be a variable in programming?,4,3,0.272,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q6,How does programming assignment differ from algebraic equality?,4,6,0.271,low
+q6,What must the right side of an assignment contain?,1,6,q10,Complete the increment operation: y = _____,4,10,0.269,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.269,low
+q1,What is the purpose of a variable in programming?,3,1,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.268,low
+q1,What does an assignment statement do in programming?,1,1,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.267,low
+q6,Why must the left side of an assignment be a variable?,3,6,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.267,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q5,What does the equals sign (=) mean in programming languages?,3,5,0.266,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q5,Which assignment is invalid in programming?,4,5,0.266,low
+q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.266,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q8,How does assignment differ from equality in algebra?,3,8,0.265,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q6,What happens to a variable's previous value after a new assignment?,2,6,0.265,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q6,Why must the left side of an assignment be a variable?,3,6,0.262,low
+q2,"In programming, the left side of an assignment must be a/an _____.",2,2,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.262,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,0.259,low
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,4,q8,How does assignment differ from equality in algebra?,3,8,0.259,low
+q5,What does the equals sign (=) mean in programming languages?,3,5,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.259,low
+q6,Why must the left side of an assignment be a variable?,3,6,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.259,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,9,0.257,low
+q1,What does an assignment statement do in programming?,4,1,q10,Complete the increment operation: y = _____,4,10,0.255,low
+q6,What must the right side of an assignment contain?,1,6,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.254,low
+q1,What does an assignment statement do in programming?,1,1,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.253,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q2,"In programming, the left side of an assignment must be a/an _____.",2,2,0.253,low
+q6,What must the right side of an assignment contain?,1,6,q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,0.251,low
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,5,q6,What happens to a variable's previous value after a new assignment?,2,6,0.25,low
+q8,How does assignment differ from equality in algebra?,3,8,q10,Complete the increment operation: y = _____,4,10,0.247,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.245,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q9,How does programming assignment differ from algebraic equality?,2,9,0.244,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q10,Complete the increment operation: y = _____,4,10,0.241,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.237,low
+q6,How does programming assignment differ from algebraic equality?,4,6,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.236,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q8,How does assignment differ from equality in algebra?,3,8,0.23,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q1,What does an assignment statement do in programming?,4,1,0.23,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.229,low
+q6,What happens to a variable's previous value after a new assignment?,2,6,q10,Complete the increment operation: y = _____,4,10,0.229,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,0.229,low
+q7,"If x = 4, what is the result after x = x * 3?",4,7,q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,8,0.227,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q3,Which side of an assignment must be a variable in programming?,4,3,0.226,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q1,What does an assignment statement do in programming?,4,1,0.217,low
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,7,q8,How does assignment differ from equality in algebra?,3,8,0.214,low
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,9,q3,Which side of an assignment must be a variable in programming?,4,3,0.213,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q10,Complete the increment operation: y = _____,4,10,0.212,low
+q8,How does assignment differ from equality in algebra?,3,8,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.207,low
+q9,How does programming assignment differ from algebraic equality?,2,9,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.194,low
+q1,What does an assignment statement do in programming?,1,1,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.193,low
+q1,What does an assignment statement do in programming?,4,1,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.174,low
+q3,Which side of an assignment must be a variable in programming?,4,3,q7,"If x = 4, what is the result after x = x * 3?",4,7,0.174,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define what a variable and an assignment are in programming.  
+Determine the value of a variable after a sequence of assignment operations.  
+Identify valid and invalid assignment statements in programming.  
+Differentiate between assignment in programming and equality in mathematics.  
+Understand and perform increment operations on variables."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does an assignment statement do in programming?,1,yes,"This question assesses the definition of an assignment in programming, matching the first learning objective."
+q2,"In the assignment `x = x + 1`, what happens to the variable x?",1,yes,"This question evaluates determining the value of a variable after an assignment operation, aligned with the second learning objective."
+q3,Which is a valid left side in an assignment statement?,1,yes,"This question tests identification of valid left sides in assignment statements, matching the third learning objective."
+q4,How is the programming assignment `x = 5` different from the algebra equation `x = 5`?,1,yes,"This question differentiates assignment in programming from equality in mathematics, directly addressing the fourth learning objective."
+q5,"After `x = 5; y = x + 2; x = 3`, what is the value of y?",1,yes,"This question requires determining the value of a variable after a sequence of assignments, aligned with the second learning objective."
+q6,What must the right side of an assignment contain?,1,yes,"This question assesses understanding of what the right side of an assignment can contain, related to the first and third learning objectives."
+q7,Why does the statement `x + 1 = 3` cause an error in programming?,1,yes,"This question tests identification of invalid assignment statements, matching the third learning objective."
+q8,What does incrementing a variable mean?,1,yes,"This question evaluates understanding of increment operations on variables, directly addressing the fifth learning objective."
+q9,"If `x = 2` and then `x = x * 3`, what is the final value of x?",1,yes,"This question requires determining the value of a variable after an assignment involving multiplication, aligned with the second learning objective."
+q10,"After these assignments: `x = 7; y = x; x = 10`, what is the value of y?",1,yes,"This question assesses understanding of variable values after multiple assignments, related to the second learning objective."
+q1,What does the assignment statement x = 5 do in a program?,2,yes,"This question tests the definition of an assignment statement, matching the first learning objective."
+q2,"In programming, the left side of an assignment must be a/an _____.",2,yes,"This question assesses identification of valid left sides in assignment statements, aligned with the third learning objective."
+q3,After executing x = 2; y = x + 3; what is y's value?,2,yes,"This question evaluates determining the value of a variable after assignment operations, matching the second learning objective."
+q4,Why is the assignment x = x + 1 valid in programming?,2,yes,"This question tests understanding of why an assignment like x = x + 1 is valid, related to the first and fifth learning objectives."
+q5,Which statement is true about the assignment y = x if x is 10?,2,yes,"This question assesses understanding of how assignment copies values, aligned with the second learning objective."
+q6,What happens to a variable's previous value after a new assignment?,2,yes,"This question evaluates understanding of what happens to a variable's previous value after assignment, related to the first learning objective."
+q7,"Fill in the blank: In programming, the symbol = means _____.",2,yes,"This question tests differentiation between assignment and equality symbols, matching the fourth learning objective."
+q8,What is the result of these assignments? x = 5; x = x + 7; What is x?,2,yes,"This question requires determining the value of a variable after increment-like assignment, aligned with the second and fifth learning objectives."
+q9,How does programming assignment differ from algebraic equality?,2,yes,"This question directly assesses the difference between programming assignment and algebraic equality, matching the fourth learning objective."
+q10,Which of these is an invalid assignment statement?,2,yes,"This question tests identification of invalid assignment statements, aligned with the third learning objective."
+q1,What is the purpose of a variable in programming?,3,yes,"This question assesses the definition and purpose of a variable, matching the first learning objective."
+q2,"In the assignment x = x + 1, what happens during execution?",3,yes,"This question evaluates understanding of the effect of an increment assignment, related to the second and fifth learning objectives."
+q3,Which of the following is a valid assignment statement in programming?,3,yes,"This question tests identification of valid assignment statements, aligned with the third learning objective."
+q4,"After executing x = 5; y = x; x = 3;, what is the value of y?",3,yes,"This question requires determining variable values after multiple assignments, matching the second learning objective."
+q5,What does the equals sign (=) mean in programming languages?,3,yes,"This question assesses understanding of the meaning of the equals sign in programming, related to the first and fourth learning objectives."
+q6,Why must the left side of an assignment be a variable?,3,yes,"This question tests why the left side of an assignment must be a variable, aligned with the third learning objective."
+q7,"If x is 6, what is the value of x after x = x * 20 executes?",3,yes,"This question evaluates determining the value of a variable after an assignment involving multiplication, matching the second learning objective."
+q8,How does assignment differ from equality in algebra?,3,yes,"This question directly assesses the difference between assignment and algebraic equality, matching the fourth learning objective."
+q9,What happens if a variable is assigned multiple times in sequence?,3,yes,"This question tests understanding of multiple assignments to a variable and the resulting value, related to the second learning objective."
+q10,Fill in the blank: Incrementing a variable by 1 is done by the assignment y = _____.,3,yes,"This question assesses understanding and performance of increment operations on variables, matching the fifth learning objective."
+q1,What does an assignment statement do in programming?,4,yes,"This question evaluates the definition of an assignment statement, aligned with the first learning objective."
+q2,"In the assignment x = x + 1, what happens to x?",4,yes,"This question tests understanding of the effect of an increment assignment, related to the second and fifth learning objectives."
+q3,Which side of an assignment must be a variable in programming?,4,yes,"This question assesses identification of valid left sides in assignment statements, matching the third learning objective."
+q4,What is the value of y after these assignments? x = 7 y = x + 3 x = 5,4,yes,"This question requires determining variable values after multiple assignments, aligned with the second learning objective."
+q5,Which assignment is invalid in programming?,4,yes,"This question tests identification of invalid assignment statements, matching the third learning objective."
+q6,How does programming assignment differ from algebraic equality?,4,yes,"This question directly assesses the difference between programming assignment and algebraic equality, aligned with the fourth learning objective."
+q7,"If x = 4, what is the result after x = x * 3?",4,yes,"This question evaluates determining the value of a variable after an assignment involving multiplication, related to the second learning objective."
+q8,Fill in the blank: A variable is a/an _____ used to hold a value in a program.,4,yes,"This question assesses the definition of a variable, matching the first learning objective."
+q9,"After these assignments, what is the value of z? x = 2 y = 5 z = x + y x = 7",4,yes,"This question requires determining variable values after multiple assignments, aligned with the second learning objective."
+q10,Complete the increment operation: y = _____,4,yes,"This question tests understanding and performance of increment operations on variables, matching the fifth learning objective."

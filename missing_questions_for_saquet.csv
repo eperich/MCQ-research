@@ -1,0 +1,2 @@
+text,answer,a,b,c,d,e,f,g,h,hint,feedback
+What does a function return if it has no return statement?,nan,An error,The last calculated value,nan,Zero,,,,,Missing from SAQUET analysis - needs to be analyzed,

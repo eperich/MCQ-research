@@ -1,0 +1,2337 @@
+<zySection title="Programming basics" shorttitle="Programming basics" id="c09a9fd3-a837-4b30-958b-4d219d87c51c">
+<zypInfo person="Alex" date="03/18/14" status="2"> NEEDS first review., including HW conversion to Java</zypInfo>
+<zypInfo person="Susan" date="04/07/14">First review done. NEEDS final review.  </zypInfo>
+<zypInfo person="Arash" date="04/16/14" Status="3"> Second review complete. Comments for authors. </zypInfo>
+<zypInfo person="Alex" date="04/21/14" Status="3"> Addressed Arash's comments. </zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusC ="NotStarted"></zypInfo> 
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusJava ="NotStarted"></zypInfo>
+<zypInfo person="Susan" date="06/10/14" minutes="" hwStatusCpp ="Draft1Done"></zypInfo> 
+<zypInfo person="Frank" date="06/10/14" minutes="" hwStatusCpp ="Rev1Done"></zypInfo> 
+<zypInfo person="Fox" date="06/16/14" minutes="" hwStatusCpp ="Rev2Done"></zypInfo> 
+<zypInfo person="Roman" date="8/18/14" minutes="5"> Update QS to allow %i in scanf </zypInfo>
+<zypInfo person="Frank" date="07/28/14" minutes="20" hwStatusCpp ="Rev2Done">I updated the homework problems (C/C++/Java) -- clearer instructions, eliminated "single statement" restriction. </zypInfo> 
+<zypInfo person="Roman" date="08/18/14" minutes="5"> Update QS to allow %i in printf </zypInfo>
+<zypInfo person="Frank" date="01/20/15" minutes="30"> Updated QS (student types output)  to convert short answer to MC (we were getting bug reports due to whitespace differences not visible to student)  </zypInfo>
+<zypInfo person="Roman" date="01/20/15" minutes="15"> Reviewed and revised updated QS</zypInfo>
+<zypInfo person="Adrian,Roman" date="02/20/16" minutes="10"> Added scanner definition for Java </zypInfo>
+<zypInfo person="Nicole" date="03/17/17" minutes="5"> Cleaned up gdocs in preparation for a new release.  </zypInfo> 
+<zypInfo person="Frank" date="05/29/17" minutes="300" status="Draft1Done">Combined input/output sections into one section. Maintenance pass.  </zypInfo> 
+<zypInfo person="Susan" date="05/30/17" minutes="60" status="Rev1Doing">Reviewed C++ updates only. Still needs conversion to Java and C.</zypInfo> 
+<zypInfo person="Susan" date="05/30/17" minutes="240" status="Rev1Doing">Converted to Java and C. Request for 2 tool updates pending.</zypInfo> 
+<zypInfo person="Roman" date="6/15/17" minutes="30" status="Rev1Doing">Needs progressions for C and Java, updated tools.</zypInfo>
+<zypInfo person="Amanda" date="6/20/17" minutes="180" status="Draft1Done">Added alt text to zyTools</zypInfo>
+<zypInfo person="Amanda" date="6/22/17" minutes="120" status="Rev2Doing">Added comments to some questions</zypInfo>
+<zypInfo person="Susan" date="06/26/17" minutes="10" status="Rev2Done">Addressed comments</zypInfo> 
+<zypInfo person="Tia" date="8/17/17" minutes="15" status="Draft1Doing">Animation updates</zypInfo>
+<zypInfo person="Roman" date="12/13/18" minutes="15" status="Draft1Doing">Removing // comments</zypInfo>
+<zypInfo person="EvanOlds" date="08/02/19" minutes="15" status="Rev2Done">Moved mention of Java's scanner import to the basic input subsection.</zypInfo>
+<zypInfo person="Aubrey" date="06/14/20" minutes="10"> bug report </zypInfo>
+<zypInfo person="Aubrey" date="06/23/20" minutes="10"> bug report </zypInfo>
+<zypInfo person="Aubrey" date="06/25/20" minutes="20"> bug report </zypInfo>
+<zypInfo person="Aubrey" date="11/02/20" minutes="20"> non-bug feedback on dog years zyde </zypInfo>
+<zypInfo person="Aubrey" date="11/02/20" minutes="60"> non-bug feedback on CA format </zypInfo>
+<zypInfo person="Aubrey" date="12/31/20" minutes="60"> non-bug feedback fix: noticed 52 vs 50 inconsistencies throughout</zypInfo>
+<zypInfo person="Aubrey" date="10/18/22" minutes="60"> updated cpp endl definition </zypInfo>
+<zypInfo person="Aubrey" date="01/10/23" minutes="60"> updated CA instructions and HowTo links </zypInfo>
+<zypInfo person="Aubrey" date="01/26/23" minutes="25" status="BugFix">adding back notes to codewriting CAs</zypInfo>
+<zypInfo person="DanO" date="06/25/24" minutes="20" status="BugFix">Edited newline character aside.</zypInfo> 
+<zypInfo person="DanO" date="07/16/24" minutes="30" status="BugFix">Removed table from 'Outputting text and new lines.'</zypInfo> 
+<zypInfo person="Kenny" date="10/22/24" minutes="0" status="BugFix"></zypInfo>
+<zypInfo person="LukeM" date="3/31/25" minutes="15" status="Update">Added alt text steps to all animations</zypInfo>
+<zypInfo person="LukeM" date="9/19/25" minutes="" status="Update">LOs added</zypInfo>
+
+
+<!--<zyAside type="bordered" name="" id="4a94cf40-2891-4b0d-8fc5-8edaae8902f1">
+Learn to:
+<ul>
+<li><zyVersion version="java">Construct output statements using System.out.print and System.out.println.</zyVersion></li> <!-- SS1, SS3, SS4, SS5, CA1 (L1-5), CA2, CA3 (L1-5), TB1, TB2 -->
+<li>Declare and initialize variables.</li> <!-- SS1, SS2, SS4, SS5, CA1 (L4-5), CA2, CA3 (L1, L3-5) -->
+<li>Define the purpose and function of main().</li> <!-- SS1 -->
+<li>Identify the structure and syntax of a basic program.</li> <!-- SS1, SS2, SS3, SS4, SS5, CA1 (L1-5), CA2, CA3 (L1-5) -->
+<li><zyVersion version="java">Implement input statements using Scanner.</zyVersion></li> <!-- SS2, CA2, CA3 (L1, L3, L5) -->
+</ul>
+</zyAside>-->
+
+
+<zyHTML id="6b4c5624-12da-52bb-4ebb-d9fe78d1caa7" subsection="true" caption="A first program">
+<h3>A first program</h3>
+</zyHTML>
+
+
+<zyVersion version="java">
+<zyHTML id="4f437938-60aa-4f43-8459-22bfe401c159">
+<p> A simple Java program appears below. 
+<ul>
+<li> <zyDefn> A _program_ starts in main(), executing the statements within main's braces { }, one at a time.</zyDefn> </li>
+<li><zyDefn> Each statement typically appears alone on a  line and ends with a _semicolon_, as English sentences end with a period. </zyDefn></li>
+<li> The <zyICode>int wage</zyICode> statement creates an integer variable named wage. The <zyICode>wage = 20</zyICode> statement assigns wage with 20. </li>
+<li> The print and println statements output various values. </li> 
+</ul>
+</p> 
+</zyHTML>
+</zyVersion>
+
+
+
+
+<zypInfo person="Tia" date="8/17/17">Changed font of one line to Arial because it wasn't code</zypInfo>
+<!-- Last modified Tue Nov 03 2020 08:14:15 GMT-0800 (Pacific Standard Time) with version 2.17.12.20 --><zyObjects><zyObject objNum="5" objType="box" objName="Code box" top="59px" left="35px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="221px" width="210px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="6" objType="box" objName="highlight" top="105px" left="35px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="16px" width="1px" border-color="rgb(87, 128, 220)"></zyObject><zyObject objNum="7" objType="text" objName="Code" top="62px" left="37px" color='rgb(51, 51, 51)' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' border-color='rgb(51, 51, 51)'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int wage;
+
+  wage = 20;
+
+  cout &lt;&lt; &quot;Salary is &quot;;
+  cout &lt;&lt; wage * 40 * 52;
+  cout &lt;&lt; endl;
+
+  return 0;
+}</zyCode></zyObject><zyObject objNum="8" objType="box" objName="Mem box2" top="57px" left="326px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="9" objType="box" objName="Mem box3" top="79px" left="326px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="10" objType="box" objName="Mem box4" top="101px" left="326px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="11" objType="text" objName="20" top="146px" left="113px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text>20</text></zyObject><zyObject objNum="12" objType="text" objName="wage" top="119px" left="90px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text>wage</text></zyObject><zyObject objNum="13" objType="box" objName="console - monitor" top="149px" left="300px" border-radius="10px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="100px" width="160px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="14" objType="box" objName="console - base" top="265px" left="350px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="5px" width="60px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="15" objType="box" objName="console - base" top="253px" left="365px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="9px" width="30px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="16" objType="box" objName="console - screen" top="157px" left="307px" border-radius="10px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="88px" width="150px" border-width="0px" border-style="none" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="17" objType="box" objName="cursor" top="169px" left="312px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="15px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="18" objType="text" objName="Salary is" top="171px" left="125px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Salary is </text></zyObject><zyObject objNum="19" objType="text" objName="41600" top="186px" left="250px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>41600</text></zyObject><zyObject objNum="20" objType="text" objName="20" top="83px" left="354px" opacity="0" color='rgb(230, 129, 66)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)' line-height='14px'><text> 20   </text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A program begins executing statements in main(). &apos;int wage&apos; declares an integer variable. &apos;wage = 20&apos; assigns wage with 20. </text></zyInstruction>
+<zyInstruction instrType="resize" objNum="6" timeLabel="0.2" height="16" width="210"></zyInstruction><zyInstruction instrType="fade" objNum="6" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0" top="120" left="35"></zyInstruction><zyInstruction instrType="fade" objNum="12" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="12" timeLabel="0" top="83" left="414"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0" top="147" left="35"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="0" top="83" left="357"></zyInstruction>
+<zyInstruction instrType="step"><text>The cout statement outputs &apos;Salary is &apos; to the screen at the cursor&apos;s present location.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="176" left="35"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="18" timeLabel="0" top="167" left="315"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="169" left="367"></zyInstruction>
+<zyInstruction instrType="step"><text>This cout statement outputs the result of wage * 40 * 52, so 20 * 40 * 52 or 41600.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="190" left="35"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="20" timeLabel="0" top="185" left="125"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="0" top="167" left="368"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="169" left="403"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="step"><text>This cout statement with &apos;endl&apos; moves the output cursor to the next line on the screen.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="204" left="35"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0" top="190" left="317"></zyInstruction>
+<zyInstruction instrType="step"><text>The &apos;return 0&apos; statement ends the program.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="6" timeLabel="0.2" top="232" left="35"></zyInstruction><zyInstruction instrType="resize" objNum="6" timeLabel="0.1" height="18" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="6" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>Static figure:
+Begin C++ code:
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int wage;
+
+  wage = 20;
+
+  cout &lt;&lt; &quot;Salary is &quot;;
+  cout &lt;&lt; wage * 40 * 52;
+  cout &lt;&lt; endl;
+
+  return 0;
+
+}
+End C++ code.
+When the integer variable wage is declared, wage is given a location in memory to hold a value. When wage is assigned with the value 20, the value 20 populates wage's location in memory.
+The output is "Salary is 41600".
+
+Step 1: A program begins executing statements in main(). 'int wage' declares an integer variable. 'wage = 20' assigns wage with 20. In memory, a memory address is assigned the variable name wage with the value 20.
+
+Step 2: The cout statement outputs 'Salary is ' to the screen at the cursor's present location. Code line, "cout &lt;&lt; "Salary is ";", is highlighted and 'Salary is' is printed to the screen.
+
+Step 3: This cout statement outputs the result of wage * 40 * 52, so 20 * 40 * 52 or 41600. Code line, "cout &lt;&lt; wage * 40 * 52;", is highlighted and 41600 is printed to the screen.
+
+Step 4: This cout statement with 'endl' moves the output cursor to the next line on the screen.
+
+Step 5: The 'return 0' statement ends the program.
+</zyAltDescription>
+
+</zyAnimator>
+
+
+</zyVersion> 
+
+
+<zyVersion version="java">
+<!--
+<zyAnimator id="e9cb0eb3-48ea-4ba6-9e3c-ee3f3dfc0555" caption="Program execution begins with main, then proceeds one statement at a time." height="350px" width="604px" selectedInstr="26" selectedObj="none" numObjsEverCreated="20" loadOnDemand="false">
+<!-- Last modified Mon Jun 05 2017 18:34:19 GMT-0700 (PDT) with version 2.17.2.06 --><zyObjects><zyObject objNum="3" objType="box" objName="Code box" top="42px" left="11px" background-color="zyAnimator-light-blue" useConstrainedProportions="false" height="162px" width="350px"></zyObject><zyObject objNum="9" objType="box" objName="highlight" top="74px" left="11px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="15px" width="1px" border-color="zyAnimator-blue"></zyObject><zyObject objNum="4" objType="text" objName="Code" top="44px" left="13px" padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px'><zyCode language="java" snippet="true" nobox="true" zyanimator="true">public class Salary {                         
+ 
+   public static void main (String [] args) { 
+      int wage;
+
+      wage = 20;                          
+ 
+      System.out.print(&quot;Salary is &quot;);         
+      System.out.println(wage * 40 * 50);     
+   } 
+} </zyCode></zyObject><zyObject objNum="5" objType="box" objName="Mem box1" top="35px" left="410px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" width="80px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="6" objType="box" objName="Mem box2" top="57px" left="410px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" width="80px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="7" objType="box" objName="Mem box3" top="79px" left="410px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" width="80px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="8" objType="box" objName="Mem box4" top="101px" left="410px" background-color="zyAnimator-light-orange" useConstrainedProportions="false" width="80px" border-color="zyAnimator-orange"></zyObject><zyObject objNum="10" objType="text" objName="20" top="117px" left="109px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>20</text></zyObject><zyObject objNum="11" objType="text" objName="wage" top="88px" left="86px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>wage</text></zyObject><zyObject objNum="12" objType="box" objName="console - monitor" top="149px" left="384px" border-radius="10px" background-color="zyAnimator-gray" useConstrainedProportions="false" height="100px" width="160px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="13" objType="box" objName="console - base" top="265px" left="434px" background-color="zyAnimator-gray" useConstrainedProportions="false" height="5px" width="60px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="14" objType="box" objName="console - base" top="253px" left="449px" background-color="zyAnimator-gray" useConstrainedProportions="false" height="9px" width="30px" border-color="zyAnimator-gray"></zyObject><zyObject objNum="15" objType="box" objName="console - screen" top="157px" left="391px" border-radius="10px" background-color="zyAnimator-white" useConstrainedProportions="false" height="88px" width="150px" border-width="0px" border-style="none" border-color="zyAnimator-gray"></zyObject><zyObject objNum="16" objType="box" objName="cursor" top="164px" left="399px" background-color="zyAnimator-gray" useConstrainedProportions="false" height="15px" width="2px" border-width="0px" border-style="none"></zyObject><zyObject objNum="17" objType="text" objName="Salary is" top="145px" left="188px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>Salary is </text></zyObject><zyObject objNum="18" objType="box" objName="wage cover" top="163px" left="197px" opacity="0" background-color="zyAnimator-white" useConstrainedProportions="false" height="10px" width="32px" border-width="0px" border-style="none" border-color="zyAnimator-gray"></zyObject><zyObject objNum="19" objType="text" objName="40000" top="176px" left="234px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>40000</text></zyObject><zyObject objNum="20" objType="text" objName="20" top="81px" left="441px" opacity="0" font-size='12px' font-family='arial, sans-serif'><text>20</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A program begins executing statements in main(). &apos;int wage&apos; declares an integer variable. &apos;wage = 20&apos; assigns wage with 20.
+</text></zyInstruction>
+<zyInstruction instrType="resize" objNum="9" timeLabel="0.2" height="15" width="350"></zyInstruction><zyInstruction instrType="fade" objNum="9" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0.1" top="88" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="0" top="81" left="498"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0.1" top="116" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="0" top="81" left="441"></zyInstruction>
+<zyInstruction instrType="step"><text>The System.out.print statement outputs &apos;Salary is &apos; to the screen at the cursor&apos;s present location.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0.2" top="144" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0.1" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0.1" top="162" left="402"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="164" left="454"></zyInstruction>
+<zyInstruction instrType="step"><text>This System.out.println statement outputs the result of wage * 40 * 50, so 20 * 40 * 50 or 40000, and then moves cursor to next line.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="9" timeLabel="0.2" top="159" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="0.1" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="20" timeLabel="0.1" top="159" left="205"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="0.1" top="162" left="455"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="164" left="495"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="181" left="399"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="resize" objNum="9" timeLabel="0.1" height="15" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="9" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions></zyAnimator>
+-->
+
+<!--
+<zyAnimator id="e9cb0eb3-48ea-4ba6-9e3c-ee3f3dfc0555" caption="Program execution begins with main, then proceeds one statement at a time." height="350px" width="604px" selectedInstr="26" selectedObj="none" numObjsEverCreated="20" loadOnDemand="false">
+<!-- Last modified Fri Jul 24 2020 10:05:47 GMT-0700 (Pacific Daylight Time) with version 2.17.12.20 --><zyObjects><zyObject objNum="3" objType="box" objName="Code box" top="42px" left="11px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="162px" width="350px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="4" objType="box" objName="highlight" top="72px" left="11px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="15px" width="1px" border-color="rgb(87, 128, 220)"></zyObject><zyObject objNum="5" objType="text" objName="Code" top="44px" left="13px" color='rgb(51, 51, 51)' padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px' border-color='rgb(51, 51, 51)'><zyCode language="java" snippet="true" nobox="true" zyanimator="true">public class Salary {                        
+
+   public static void main (String [] args) {
+       int wage;
+
+       wage = 20;                         
+
+       System.out.print("Salary is ");        
+       System.out.println(wage * 40 * 50);    
+   }
+} </zyCode></zyObject><zyObject objNum="6" objType="box" objName="Mem box1" top="35px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="7" objType="box" objName="Mem box2" top="57px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="8" objType="box" objName="Mem box3" top="79px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="9" objType="box" objName="Mem box4" top="101px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="10" objType="text" objName="20" top="113px" left="109px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject><zyObject objNum="11" objType="text" objName="wage" top="87px" left="86px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>wage</text></zyObject><zyObject objNum="12" objType="box" objName="console - monitor" top="149px" left="384px" border-radius="10px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="100px" width="160px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="13" objType="box" objName="console - base" top="265px" left="434px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="5px" width="60px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="14" objType="box" objName="console - base" top="253px" left="449px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="9px" width="30px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="15" objType="box" objName="console - screen" top="157px" left="391px" border-radius="10px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="88px" width="150px" border-width="0px" border-style="none" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="16" objType="box" objName="cursor" top="164px" left="399px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="15px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="17" objType="text" objName="Salary is" top="139px" left="188px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Salary is </text></zyObject><zyObject objNum="18" objType="box" objName="wage cover" top="163px" left="197px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="10px" width="32px" border-width="0px" border-style="none" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="19" objType="text" objName="40000" top="176px" left="234px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>40000</text></zyObject><zyObject objNum="20" objType="text" objName="20" top="81px" left="441px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A program begins executing statements in main(). &apos;int wage&apos; declares an integer variable. &apos;wage = 20&apos; assigns wage with 20.
+</text></zyInstruction>
+<zyInstruction instrType="resize" objNum="4" timeLabel="0.2" height="15" width="350"></zyInstruction><zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.1" top="88" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="0" top="81" left="498"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.1" top="116" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="0" top="81" left="441"></zyInstruction>
+<zyInstruction instrType="step"><text>The System.out.print statement outputs &apos;Salary is &apos; to the screen at the cursor&apos;s present location.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.2" top="144" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0.1" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0.1" top="162" left="402"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="164" left="454"></zyInstruction>
+<zyInstruction instrType="step"><text>This System.out.println statement outputs the result of wage * 40 * 50, so 20 * 40 * 50 or 40000, and then moves cursor to next line.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.2" top="158" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="0.1" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="20" timeLabel="0.1" top="156" left="205"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="0.1" top="162" left="455"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="164" left="491"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="181" left="399"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="resize" objNum="4" timeLabel="0.1" height="15" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>undefined</zyAltDescription>
+</zyAnimator>
+-->
+
+<zypInfo person="James" date="11/3/20" minutes="10">Non-bug feedback</zypInfo>
+<zyAnimator id="e9cb0eb3-48ea-4ba6-9e3c-ee3f3dfc0555" caption="Program execution begins with main, then proceeds one statement at a time." height="350px" width="604px" selectedInstr="26" selectedObj="5" numObjsEverCreated="20" loadOnDemand="false">
+<!-- Last modified Tue Nov 03 2020 08:29:32 GMT-0800 (Pacific Standard Time) with version 2.17.12.20 --><zyObjects><zyObject objNum="3" objType="box" objName="Code box" top="42px" left="11px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="162px" width="350px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="4" objType="box" objName="highlight" top="72px" left="11px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="15px" width="1px" border-color="rgb(87, 128, 220)"></zyObject><zyObject objNum="5" objType="text" objName="Code" top="44px" left="13px" color='rgb(51, 51, 51)' padding-left='4px' padding-right='4px' padding-top='4px' padding-bottom='4px' border-color='rgb(51, 51, 51)'><zyCode language="java" snippet="true" nobox="true" zyanimator="true">public class Salary {                       
+
+  public static void main (String [] args) {
+      int wage;
+
+      wage = 20;                        
+
+      System.out.print(&quot;Salary is &quot;);       
+      System.out.println(wage * 40 * 52);   
+  }
+} </zyCode></zyObject><zyObject objNum="6" objType="box" objName="Mem box1" top="35px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="7" objType="box" objName="Mem box2" top="57px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="8" objType="box" objName="Mem box3" top="79px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="9" objType="box" objName="Mem box4" top="101px" left="410px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="10" objType="text" objName="20" top="113px" left="109px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject><zyObject objNum="11" objType="text" objName="wage" top="87px" left="86px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>wage</text></zyObject><zyObject objNum="12" objType="box" objName="console - monitor" top="149px" left="384px" border-radius="10px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="100px" width="160px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="13" objType="box" objName="console - base" top="265px" left="434px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="5px" width="60px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="14" objType="box" objName="console - base" top="253px" left="449px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="9px" width="30px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="15" objType="box" objName="console - screen" top="157px" left="391px" border-radius="10px" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="88px" width="150px" border-width="0px" border-style="none" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="16" objType="box" objName="cursor" top="164px" left="399px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="15px" width="2px" border-width="0px" border-style="none" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="17" objType="text" objName="Salary is" top="139px" left="188px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Salary is </text></zyObject><zyObject objNum="18" objType="box" objName="wage cover" top="163px" left="197px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="10px" width="32px" border-width="0px" border-style="none" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="19" objType="text" objName="41600" top="176px" left="234px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>41600</text></zyObject><zyObject objNum="20" objType="text" objName="20" top="81px" left="441px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A program begins executing statements in main(). &apos;int wage&apos; declares an integer variable. &apos;wage = 20&apos; assigns wage with 20.
+</text></zyInstruction>
+<zyInstruction instrType="resize" objNum="4" timeLabel="0.2" height="15" width="350"></zyInstruction><zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.1" top="88" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="11" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="11" timeLabel="0" top="81" left="498"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.1" top="116" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="10" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="10" timeLabel="0" top="81" left="441"></zyInstruction>
+<zyInstruction instrType="step"><text>The System.out.print statement outputs &apos;Salary is &apos; to the screen at the cursor&apos;s present location.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.2" top="144" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="17" timeLabel="0.1" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="17" timeLabel="0.1" top="162" left="402"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="164" left="454"></zyInstruction>
+<zyInstruction instrType="step"><text>This System.out.println statement outputs the result of wage * 40 * 52, so 20 * 40 * 52 or 41600, and then moves cursor to next line.</text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="4" timeLabel="0.2" top="158" left="11"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="0.1" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="20" timeLabel="0.1" top="156" left="205"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="50"></zyInstruction><zyInstruction instrType="fade" objNum="19" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="19" timeLabel="0.1" top="162" left="455"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="164" left="491"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="16" timeLabel="0" top="181" left="399"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="fade" objNum="20" timeLabel="-" opacity="0"></zyInstruction><zyInstruction instrType="resize" objNum="4" timeLabel="0.1" height="15" width="1"></zyInstruction><zyInstruction instrType="fade" objNum="4" timeLabel="-" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown, graphically on the right, and textually on the left.
+
+public class Salary {                       
+
+  public static void main (String [] args) {
+      int wage;
+
+      wage = 20;                        
+
+      System.out.print("Salary is ");       
+      System.out.println(wage * 40 * 52);   
+  }
+}
+
+When the integer variable wage is declared, wage is given a location in memory to hold a value. When wage is assigned with the value 20, the value 20 populates wage's location in memory.
+The output is "Salary is 41600".
+
+</zyAltDescription>
+</zyAnimator>
+
+
+
+
+</zyVersion> 
+
+
+<zypInfo person="Frank" date="11/5/19" minutes="60" status="Draft1Done">Replace the T/F QS by MC. We generally want to reduce TF and only use when really 2 choices, not as a shortcut for making MC questions -- MC questions are better due to having explicit explanations for wrong answers. Kept the same number of questions (6) and the same guid. </zypInfo>
+<zypInfo person="Kenny" date="12/4/19" minutes="25" status="Rev1Doing"></zypInfo>
+<zyQSetMultipleChoice caption="A first program." id="3cda5d64-6f5b-4b8f-8d0e-89096932ff90">
+<p>Consider the program above. </p>
+<zyQ>
+<zyQText>Program execution begins at main() and executes statements surrounded by which symbols? </zyQText>
+<zyQChoice>
+<zyQAns>( )</zyQAns>
+
+
+<zyVersion version="java">
+<zyDE id="a8c64007-a580-cd71-121a-34a4280773a7" language="java" reset="true" stacked="false" activity_type="tinker">
+<zyProgram>public class Salary {                         
+   public static void main (String [] args) { 
+      int wage;                          
+
+      wage = 20;
+
+      System.out.print("Salary is ");         
+      System.out.println(wage * 40 * 5<!--0-->2);     
+   } 
+} 
+</zyProgram>
+</zyDE>
+</zyVersion>
+</zyTry>
+
+
+
+<zyHTML id="468853c3-fe9c-be56-b551-777898417bd8" subsection="true" caption="Basic input">
+<h3>Basic input</h3>
+</zyHTML>
+
+
+<zyHTML id="1aa9386e-2b57-4725-b61b-208b8c6e6ab4">
+<p> Programs commonly get input values, perform some processing on that input, and put output values to a screen or elsewhere. Input is commonly gotten from a keyboard, a file, fields on a web form or app, etc. </p>
+
+
+
+<zyVersion version="java">
+<p>The following code at the top of a file enables the program to get input:<br />
+<zyCode language="java">
+import java.util.Scanner;
+</zyCode>
+</p>
+<p><zyDefn>A _Scanner_ is a text parser that can get numbers, words, or phrases from an input source such as the keyboard. </zyDefn>Getting input is achieved by first creating a Scanner object via the statement: <zyICode>Scanner scnr = new Scanner(System.in);</zyICode>. System.in corresponds to keyboard input. Then, <zyDefn> given Scanner object scnr, the following statement gets an input value and assigns x with that value: x = _scnr.nextInt()_ ;</zyDefn> </p>
+</zyVersion>
+</zyHTML>
+
+
+
+
+
+<zyVersion version="java">
+<zyAnimator id="fddeb052-9d16-4db4-db59-9c686a59bfd7" caption="A program can get an input value from the keyboard." height="350px" width="604px" selectedInstr="15" selectedObj="none" numObjsEverCreated="29" loadOnDemand="false">
+<!-- Last modified Mon Feb 03 2020 23:32:33 GMT-0500 (Eastern Standard Time) with version 2.17.12.20 --><zyObjects><zyObject objNum="12" objType="box" objName="Code box" top="59px" left="16px" background-color="rgb(176, 214, 251)" useConstrainedProportions="false" height="193px" width="341px" border-color="rgb(176, 214, 251)"></zyObject><zyObject objNum="13" objType="box" objName="highlight" top="107px" left="16px" opacity="0" background-color="rgb(255, 255, 255)" useConstrainedProportions="false" height="15px" width="1px" border-color="rgb(87, 128, 220)"></zyObject><zyObject objNum="14" objType="text" objName="Code" top="62px" left="18px" color='rgb(51, 51, 51)' padding-left='5px' padding-right='5px' padding-top='5px' padding-bottom='5px' border-color='rgb(51, 51, 51)'><zyCode language="cpp" snippet="true" nobox="true" zyanimator="true">import java.util.Scanner;
+
+public class Salary {
+   public static void main(String [] args) {
+      int wage;
+
+      Scanner scnr = new Scanner(System.in);
+      wage = scnr.nextInt();
+
+      System.out.print("Salary is ");
+      System.out.println(wage * 40 * 5<!--0-->2);
+   }
+}</zyCode></zyObject><zyObject objNum="15" objType="box" objName="Mem box2" top="47px" left="449px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="16" objType="box" objName="Mem box3" top="69px" left="449px" background-color="rgb(249, 216, 188)" useConstrainedProportions="false" width="80px" border-color="rgb(230, 129, 66)"></zyObject><zyObject objNum="17" objType="text" objName="20" top="156px" left="121px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject><zyObject objNum="18" objType="text" objName="wage" top="121px" left="92px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>wage</text></zyObject><zyObject objNum="19" objType="box" objName="console - base" top="270px" left="458px" opacity="70" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="9px" width="60px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="20" objType="box" objName="console - screen" top="208px" left="413px" opacity="35" border-radius="10px" background-color="rgb(175, 175, 175)" useConstrainedProportions="false" height="58px" width="150px" border-color="rgb(51, 51, 51)"></zyObject><zyObject objNum="21" objType="text" objName="Salary is" top="179px" left="134px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='courier' border-color='rgb(51, 51, 51)' line-height='14px'><text>Salary is </text></zyObject><zyObject objNum="22" objType="text" objName="4<!--00-->1600" top="194px" left="250px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='courier' border-color='rgb(51, 51, 51)' line-height='14px'><text>4<!--00-->1600</text></zyObject><zyObject objNum="23" objType="text" objName="20" top="81px" left="462px" opacity="0" background-color="rgb(255, 255, 255)" color='rgb(230, 129, 66)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text> 20   </text></zyObject><zyObject objNum="24" objType="text" objName="Input" top="118px" left="469px" color='rgb(87, 128, 220)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Input</text></zyObject><zyObject objNum="25" objType="box" objName="Object 23: Box" top="138px" left="435px" useConstrainedProportions="false" height="30px" border-color="rgb(175, 175, 175)"></zyObject><zyObject objNum="26" objType="text" objName="20" top="146px" left="440px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject><zyObject objNum="27" objType="text" objName="Output" top="188px" left="464px" color='rgb(51, 51, 51)' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>Output</text></zyObject><zyObject objNum="28" objType="text" objName="20" top="146px" left="440px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='arial, sans-serif' border-color='rgb(51, 51, 51)'><text>20</text></zyObject><zyObject objNum="29" objType="text" objName="Salary is 4<!--00-->1600" top="218px" left="420px" opacity="0" color='rgb(51, 51, 51)' font-size='12px' font-family='courier' border-color='rgb(51, 51, 51)' line-height='14px'><text>Salary is 4<!--00-->1600</text></zyObject></zyObjects><zyInstructions>
+<zyInstruction instrType="step1"><text>A scanner object is set up to scan input from System.in. The scnr.nextInt() statement gets an input value from the keyboard (or file, etc.) and puts that value into the wage variable. </text></zyInstruction>
+<zyInstruction instrType="resize" objNum="13" timeLabel="0.2" height="15" width="341"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="0" top="121" left="16"></zyInstruction><zyInstruction instrType="fade" objNum="18" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="18" timeLabel="-" top="73" left="538"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="0" top="149" left="16"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="0" top="163" left="16"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="28" timeLabel="-" opacity="100"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="28" timeLabel="0" top="164" left="168"></zyInstruction><zyInstruction instrType="fade" objNum="26" timeLabel="-" opacity="40"></zyInstruction><zyInstruction instrType="move" easing="swing" objNum="28" timeLabel="0" top="72" left="480"></zyInstruction>
+<zyInstruction instrType="step"><text>wage&apos;s value can then be used in subsequent processing and outputs. </text></zyInstruction>
+<zyInstruction instrType="move" easing="swing" objNum="13" timeLabel="0" top="190" left="16"></zyInstruction><zyInstruction instrType="resize" objNum="13" timeLabel="-" height="30" width="341"></zyInstruction><zyInstruction instrType="fade" objNum="29" timeLabel="0" opacity="100"></zyInstruction><zyInstruction instrType="fade" objNum="13" timeLabel="0.2" opacity="0"></zyInstruction>
+<zyInstruction instrType="startStep"><text></text></zyInstruction>
+</zyInstructions>
+<zyAltDescription>The following program is shown, graphically on the right, and textually on the left.
+
+import java.util.Scanner;
+
+public class Salary {
+   public static void main(String [] args) {
+      int wage;
+
+      Scanner scnr = new Scanner(System.in);
+      wage = scnr.nextInt();
+
+      System.out.print("Salary is ");
+      System.out.println(wage * 40 * 52);
+   }
+}
+
+The input is "20".
+
+The output is "Salary is 41600".
+</zyAltDescription>
+</zyAnimator>
+
+</zyVersion>
+
+
+<zypInfo person="Frank" date="11/5/19" minutes="60" status="Draft1Done">Improved the MC explanations. </zypInfo>
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption= "Basic input." id="35e2c88e-71c8-80da-a31f-1cabe6533d82"> 
+<zyQ>
+<zyQText> Assuming scnr already exists and the variable numCars has been declared, which statement gets an input number into <!--variable -->numCars? 
+</zyQText>
+<zyQChoice>
+<zyQAns> <zyICode>scnr.nextInt(numCars); </zyICode></zyQAns>
+<zyQExpl><!--numCars is in the wrong place. --> numCars should be on the left with an =, rather than in the parentheses. This mistake is common among learners, especially because System.out.println puts the variable in the parentheses.  </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> <zyICode>numCars = scnr.nextInt; </zyICode></zyQAns>
+<zyQExpl> <!--Missing parentheses after nextInt.--> The parentheses after nextInt are missing. This mistake is common, and often yields an <!--unhelpful--> error message.  </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> <zyICode>numCars = scnr.nextInt();</zyICode></zyQAns>
+<zyQExpl> <!--The input value will be put in numCars.--> The variable numCars will be assigned with the next integer gotten via scnr.nextInt(). </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetShortAnswer caption="Basic input." id="c5c22cac-bd71-a492-c244-cba5335199c8">
+<zyQ>
+<zyQText> Type a statement that gets an input value into variable numUsers. Assume scnr already exists and numUsers has been declared. 
+</zyQText>
+<zyQAns obeyspace="false" obeycase="true" columns="35"> numUsers = scnr.nextInt(); </zyQAns>
+<zyQHint> numUsers = s???.n??????();  </zyQHint>
+<zyQExpl> The input value will be put in numUsers.  </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+</zyVersion>
+
+
+
+<zypInfo person="Susan" date="07/20/18" minutes="10">Removed single output statement in code example. Concept not taught until the next subsection. </zypInfo>
+<zyTry caption="Basic input" id="80b97b8c-9e7b-5244-2675-bb6ec12acb9a"> 
+<p>Run the program and observe the output. Change the input box value from 3 to another number, and then run again. Note: Handling program input in a web-based development environment is surprisingly difficult. <i>Preentering</i> the input is a workaround in zyDE. For dynamic output and input interaction, use a traditional development environment. </p> 
+
+
+
+<zyVersion version="java">
+<zyDE id="e525be8a-44a0-d1de-0f6d-062f89bb7751" language="java" input="true" reset="true" stacked="false" activity_type="tinker">
+<zyInput>3</zyInput>
+<zyProgram>import java.util.Scanner;
+
+public class DogYears {
+   public static void main(String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      int dogYears;
+      int humanYears;
+
+      dogYears = scnr.nextInt();
+      humanYears = 7 * dogYears;
+
+      <!--System.out.print("A ");-->System.out.print(dogYears);
+      System.out.print(" <!--year old -->dog years is about <!--the same age as a -->");
+      System.out.print(humanYears);
+      System.out.println(" human years<!-- old human-->.");
+   }
+}
+</zyProgram>
+</zyDE>
+</zyVersion>
+</zyTry>
+
+
+
+<zyHTML id="7d4acdd3-170c-f19a-e55d-8e264b27b40d" subsection="true" caption="Basic output: Text">
+<h3>Basic output: Text</h3>
+</zyHTML>
+
+
+<zyHTML id="5ec21b12-c13f-40ec-8037-3bace1817218">
+
+
+<zyVersion version="java">
+<p><zyDefn>The _System.out.print_ construct supports output.</zyDefn> Outputting text is achieved via: <zyICode>System.out.print("desired text");</zyICode>.  <zyDefn>Text in double quotes " " is known as a _string literal_.</zyDefn> Multiple output statements continue printing on the same output line. </p>
+
+<p> <zyDefn>System.out.println (note the ln at the end, short for "line"), starts a new output line after the outputted values, called a _newline_.</zyDefn> <zyCommonError id="515d1554-3b3f-f656-04d5-7de9ee4d994a">A common error is to type the number "1" or a capital <zyICode>I</zyICode>, as in "in", instead of a lower case <zyICode>l</zyICode> as in "print line".</zyCommonError> </p> 
+</zyVersion>
+</zyHTML>
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Outputting text and new lines." id="e8b4cba7-5dad-d454-4a7b-374f1c8d812c">
+
+<!--
+<table>
+<tr>
+<td>
+-->
+
+<zyCode language="java">
+public class KeepCalm {
+   public static void main (String [] args) {
+
+      System.out.print("Keep calm");
+      System.out.print("and");
+      System.out.print("carry on");
+   }
+}
+</zyCode>
+
+<!--
+</td>
+<td> 
+-->
+
+<zyConsole preserve-white-space="true">
+Keep calmandcarry on
+</zyConsole>
+<br /><br />
+
+<!--
+</td>
+</tr>
+<tr>
+<td>
+-->
+
+<zyCode language="java">
+public class KeepCalm {
+   public static void main (String [] args) {
+
+      System.out.println("Keep calm"); 
+      System.out.println("and");       
+      System.out.println("carry on");
+   }
+}
+</zyCode>
+
+<!--
+</td>
+<td> 
+-->
+
+<zyConsole preserve-white-space="true">
+Keep calm
+and
+carry on
+</zyConsole>
+
+<!--
+</td>
+</tr>
+</table>
+-->
+
+</zyFigure>
+</zyVersion>
+
+
+
+<zyVersion version="java">
+<zyHTML id="5cbb81a0-be57-4fb2-be70-0529e4d82a33">
+<p> Outputting a blank line is achieved by: System.out.println().</p> 
+</zyHTML>
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption= "Basic text output." id="23b7d262-65c3-9251-292b-b983351eb4b7"> 
+<zyQ>
+<zyQText> Which statement outputs: Welcome! 
+</zyQText>
+<zyQChoice>
+<zyQAns><zyICode>System.out.print(Welcome!);</zyICode></zyQAns>
+<zyQExpl>Missing quotes around the string literal. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns><zyICode>System.out.print "Welcome!";</zyICode></zyQAns>
+<zyQExpl> Missing parentheses around string literal. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns><zyICode>System.out.print("Welcome!");</zyICode></zyQAns>
+<zyQExpl> The string literal is printed to output.  </zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText> Which statement outputs Hey followed by a new line?  
+</zyQText>
+<zyQChoice>
+<zyQAns> <zyICode>System.out.print("Hey"ln); </zyICode></zyQAns>
+<zyQExpl>ln is in wrong place.  </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns> <zyICode>System.out.println(Hey); </zyICode></zyQAns>
+<zyQExpl> Hey should be in quotes. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns> <zyICode>System.out.println("Hey"); </zyICode></zyQAns>
+<zyQExpl> println follows the printed output with a new output line.  </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetShortAnswer caption="Basic text output." id="429964d2-ba79-a5c1-b74d-dfb1d8fc9d20">
+<p> End each statement with a semicolon. Do not output a new line unless instructed. </p>
+
+<zyQ>
+<zyQText> Type a statement that outputs: Hello </zyQText>
+<zyQAns obeyspace="false" obeycase="true" columns="35"> System.out.print("Hello"); </zyQAns>
+<zyQHint> System.out.print("?????"); </zyQHint>
+<zyQExpl> The string literal will be output.  </zyQExpl>
+</zyQ>
+
+<zyQ>
+<zyQText> Type a statement that outputs Hello and then starts a new output line.</zyQText>
+<zyQAns obeyspace="false" obeycase="true" columns="35" preferred="true"> System.out.println("Hello"); </zyQAns>
+<zyQAns obeyspace="false" obeycase="true" columns="35"> System.out.print("Hello\n"); </zyQAns>
+<zyQHint>  System.out.println("?????"); </zyQHint>
+<zyQExpl> println follows the output with a new line. A common error is to type the number "1" or a capital <zyICode>I</zyICode>, as in "in", instead of a lower case <zyICode>l</zyICode> as in "print line". </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+</zyVersion>
+
+<zyHTML id="f7488920-8b14-84c3-c748-b4b22771ea51" subsection="true" caption="Outputting a variable's value">
+<h3>Outputting a variable's value</h3>
+</zyHTML>
+
+
+<zyHTML id="c95ad278-5542-4350-956a-76b773e9c7b3" caption="">
+
+
+<zyVersion version="java">
+<p>Outputting a variable's value is achieved via: System.out.print(x); Note that no quotes surround x.  println() could also be used.</p> 
+</zyVersion>
+</zyHTML>
+
+
+
+
+
+<zyVersion version="java">
+<zyFigure caption="Outputting a variable's value." id="46ddcf98-7f3d-d388-8d21-2a6d99ecab69" type="CodeConsole">
+<zyCode language="java" highlight="8">public class Salary {
+  public static void main (String [] args) {
+     int wage;
+
+     wage = 20;
+
+     System.out.print("Wage is: "); 
+     System.out.println(wage);
+     System.out.println("Goodbye.");
+  }
+}
+</zyCode>
+
+<zyConsole>
+Wage is: 20
+Goodbye.
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyHTML id="96cedd34-55be-40f6-9557-35dfa9a55764">
+<p> Note that the programmer intentionally did <i>not</i> start a new output line after outputting "Wage is: " so that the wage variable's value would appear on that same line. </p>  
+</zyHTML>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption= "Basic variable output." id="6c2ea83a-d795-8b15-1942-91fd74bc876c"> 
+<zyQ>
+<zyQText> Given variable numCars = 9, which statement outputs 9? 
+</zyQText>
+<zyQChoice>
+<zyQAns><zyICode>System.out.print("numCars");</zyICode></zyQAns>
+<zyQExpl>Will output text "numCars". Text in a string literal is just text, and not recognized as a variable. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns><zyICode>System.out.print numCars;</zyICode></zyQAns>
+<zyQExpl>Missing parentheses. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns><zyICode>System.out.print(numCars);</zyICode></zyQAns>
+<zyQExpl>The value of numCars will be output.</zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetShortAnswer caption="Basic variable output." id="437216d4-28bb-57e2-0b11-acb73734d6f6">
+<zyQ>
+<zyQText> Type a statement that outputs the value of numUsers (a variable). End statement with a semicolon. 
+</zyQText>
+<zyQAns obeyspace="false" obeycase="true" columns="35"> System.out.print(numUsers); </zyQAns>
+<zyQAns obeyspace="false" obeycase="true" columns="35"> System.out.println(numUsers); </zyQAns>
+<zyQHint> System.out.print(n???????);  </zyQHint>
+<zyQExpl> The value of numUsers will be output.  </zyQExpl>
+</zyQ>
+</zyQSetShortAnswer>
+</zyVersion>
+
+
+<zyHTML id="50526920-152d-a1c4-6658-9e59a2d3b755" subsection="true" caption="Outputting multiple items with one statement">
+<h3>Outputting multiple items with one statement</h3>
+</zyHTML>
+
+
+<zyHTML id="e3fd1de8-3105-40fe-88ee-e8fc010c3d37">
+
+
+<zyVersion version="java">
+<zyFigure caption="Outputting multiple items using one output statement." id="b99f2d99-aedb-81c1-de13-b5e16867ec1b" type="CodeConsole">
+<zyCode language="java" highlight="7">public class Salary {
+   public static void main (String [] args) {
+      int wage;
+
+      wage = 20;
+
+      System.out.println("Wage is: " + wage); 
+      System.out.println("Goodbye."); 
+   }
+}
+</zyCode> 
+<zyConsole>
+Wage is: 20
+Goodbye.
+</zyConsole>
+</zyFigure>
+</zyVersion>
+
+
+
+<zyTry caption="Single output statement." id="56374714-3198-5d9c-7d4b-63b3d91cbab4">
+<p>Modify the program to use only two output statements, one for each output sentence. 
+
+<pre> 
+In 2014, the driving age is 18. 
+10 states have exceptions.
+</pre>
+<br />
+Do not type numbers directly in the output statements; use the variables. ADVICE: Make incremental changes&mdash;Change one code line, run and check, change another code line, run and check, repeat. Don't try to change everything at once. </p>
+ 
+
+
+<zyVersion version="java">
+<zyDE id="5ab128d3-df77-7262-fad6-7318cb60bfba" language="java" input="false" reset="true" stacked="false" activity_type="tinker">
+<zyProgram>public class DrivingAge {
+   public static void main (String [] args) {
+      int drivingYear;
+      int drivingAge;
+      int numStates;
+
+      drivingYear = 2014;
+      drivingAge = 18;
+      numStates = 10;
+
+      System.out.print("In ");
+      System.out.print(drivingYear);
+      System.out.print(", the driving age is ");
+      System.out.print(drivingAge);
+      System.out.println(".");
+      System.out.print(numStates);
+      System.out.println(" states have exceptions.");
+   }
+}
+</zyProgram>
+</zyDE>
+</zyVersion>
+</zyTry>
+
+
+
+
+
+<zyVersion version="java">
+<zyQSetMultipleChoice caption="Basic output" id="9497e749-b0b9-a326-633e-2cd54b2a2738">
+<p>Indicate the actual output of each statement. Assume userAge is 22. </p>
+
+<zyQ>
+<zyQText><zyCode language="java" snippet="true" nobox="true">System.out.print("You're " + userAge + " years."); </zyCode></zyQText>
+<zyQChoice correct="true">
+<zyQAns>You're 22 years.</zyQAns>
+<zyQExpl>userAge's value is printed. Note the space at the end of "You're " and at the start of " years." </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>You're userAge years.</zyQAns>
+<zyQExpl>userAge  is not in quotes so  itself won't be printed. Instead, userAge's value will be printed. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>No output; an error exists.</zyQAns>
+<zyQExpl>The statement has no error that would prevent output.</zyQExpl>
+</zyQChoice>
+</zyQ>
+
+<zyQ>
+<zyQText><zyCode language="java" snippet="true" nobox="true">System.out.print(userAge + "years is good.");  </zyCode> </zyQText>
+<zyQChoice>
+<zyQAns>22 years is good. </zyQAns>
+<zyQExpl>Notice the lack of a space at the start of "years is good."</zyQExpl>
+</zyQChoice>
+
+<zyQChoice correct="true">
+<zyQAns>22years is good.</zyQAns>
+<zyQExpl>"years is good" lacks a space at the start. </zyQExpl>
+</zyQChoice>
+
+<zyQChoice>
+<zyQAns>No output; an error exists.</zyQAns>
+<zyQExpl>The programmer likely made an error, but one that still produces output. </zyQExpl>
+</zyQChoice>
+</zyQ>
+</zyQSetMultipleChoice>
+</zyVersion>
+
+
+<zypInfo person="Kenny" date="10/24/24" minutes="0" status="BugFix">Removed this tool/PA as it causes confusion and has no added purpose (the previous syDE is a better tool).</zypInfo>
+
+
+<zyVersion version="java">
+<zyTool name="basicOutputSim" id="c1887ec2-0951-8e29-9956-6c3e14c7aeae" caption="Output simulator." >
+<zyInstructions>
+<p>The tool below supports a subset of Java, allowing for experimenting with System.out.print statements. The activity is marked as complete upon interacting with the tool.<br /></p>
+
+<p>The following variable has already been declared and assigned: <zyICode>countryPopulation  = 1344130000;</zyICode>.  Using that variable (do not type the large number) along with text, finish the output statement to output the following:</p> 
+
+<zyConsole>
+China's population was 1344130000 in 2011. 
+</zyConsole>
+<br /><br />
+<p>Then, try some variations, like: </p> 
+
+<zyConsole>
+1344130000 is the population. 1344130000 is a lot.  
+</zyConsole>
+</zyInstructions>
+ <zyOptions>
+  <lang>java</lang>
+ </zyOptions>
+<zyAltDescription>
+<!--The tool shows the following code followed by an answer field: System.out.print(ANSWER FIELD);<br />-->
+<!--Answer: -->To output "China's population was 1344130000 in 2011." the code is<!--fill the answer field with the following-->:<br />System.out.print("China's population was " + countryPopulation + " in 2011.")<br />
+To output "1344130000 is the population. 1344130000 is a lot."  the code is<!--fill the answer field with the following-->:<br />System.out.print(countryPopulation + " is the population. " + countryPopulation + " is a lot.")
+</zyAltDescription>
+</zyTool>
+</zyVersion>-->
+
+
+
+
+
+<zyVersion version="java"> 
+<zyTool name="codeOutput" caption="Enter the output." id="52ed0fcf-a8ab-4b1f-ad90-abb847ad7c97" parts="5" challenge="true">
+<zyOptions>
+<language>java</language>
+<questions type="list">
+<item type="dict">
+	<explanation>The string "{{personName}} is {{personStatus}}." is printed to output.</explanation>
+	<template unescape-html="true">public class GeneralOutput {
+   public static void main (String [] args) {
+      System.out.print("{{personName}} is {{personStatus}}.");
+   }
+}</template>
+	<parameters type="dict">
+		<personName type="list">
+			<item>Ann</item>
+			<item>Sam</item>
+			<item>Bob</item>
+			<item>Joe</item>
+			<item>Ron</item>
+</personName>
+<personStatus type="list">
+			<item>good</item>
+			<item>great</item>
+			<item>nice</item>
+			<item>happy</item>
+</personStatus>
+</parameters>
+</item>
+<item type="dict">
+	<explanation>First, "{{personName}}" is printed to output. Then, " is " is printed. Then, "{{personStatus}}." is printed. Three System.out.print statements were used, rather than System.out.println, so all the outputs appear on the same line.</explanation>
+	<template unescape-html="true">public class GeneralOutput {
+   public static void main (String [] args) {
+      System.out.print("{{personName}}");
+      System.out.print(" is ");
+      System.out.print("{{personStatus}}.");
+   }
+}</template>
+	<parameters type="dict">
+		<personName type="list">
+			<item>Ann</item>
+			<item>Sam</item>
+			<item>Bob</item>
+			<item>Joe</item>
+			<item>Ron</item>
+</personName>
+<personStatus type="list">
+			<item>good</item>
+			<item>great</item>
+			<item>nice</item>
+			<item>happy</item>
+</personStatus>
+</parameters>
+</item>
+<item type="dict">
+	<explanation>Each System.out.println starts a new output line after the outputted values.</explanation>
+	<template unescape-html="true">public class GeneralOutput {
+   public static void main (String [] args) {
+      System.out.println("{{personName}}");
+      System.out.println("is");
+      System.out.print("{{personStatus}}.");
+   }
+}</template>
+	<parameters type="dict">
+		<personName type="list">
+			<item>Ann</item>
+			<item>Sam</item>
+			<item>Bob</item>
+			<item>Joe</item>
+			<item>Ron</item>
+</personName>
+<personStatus type="list">
+			<item>good</item>
+			<item>great</item>
+			<item>nice</item>
+			<item>happy</item>
+</personStatus>
+</parameters>
+</item>
+<item type="dict">
+	<explanation>Using System.out.print(personAge) outputs the value of the personAge variable. System.out.println was not used, so all output appears on one line. Note the space at the end of "{{personName}} is ".</explanation>
+	<template unescape-html="true">public class GeneralOutput {
+   public static void main (String [] args) {
+      int personAge;
+
+      personAge = {{personAge}};
+   
+      System.out.print("{{personName}} is ");
+      System.out.print(personAge);
+      System.out.print(".");
+   }
+}</template>
+	<parameters type="dict">
+		<personName type="list">
+			<item>Ann</item>
+			<item>Sam</item>
+			<item>Bob</item>
+			<item>Joe</item>
+			<item>Ron</item>
+</personName>
+<personAge type="list">
+			<item>18</item>
+			<item>19</item>
+			<item>20</item>
+			<item>21</item>
+			<item>22</item>
+			<item>23</item>
+			<item>24</item>
+</personAge>
+</parameters>
+</item>
+<item type="dict">
+	<explanation>Different items can be output in one System.out.print statement. First, "{{personName}} is " is printed to output, then the value of personAge, then "years.". Note that "years." lacks a leading space, so the output ends with "{{personAge}}years.". The programmer probably forgot to include that space (a common mistake). </explanation>
+	<template unescape-html="true">public class GeneralOutput {
+   public static void main (String [] args) {
+      int personAge;
+
+      personAge = {{personAge}};
+
+      System.out.print("{{personName}} is " + personAge + "years.");
+   }
+}</template>
+	<parameters type="dict">
+		<personName type="list">
+			<item>Ann</item>
+			<item>Sam</item>
+			<item>Bob</item>
+			<item>Joe</item>
+			<item>Ron</item>
+</personName>
+<personAge type="list">
+			<item>18</item>
+			<item>19</item>
+			<item>20</item>
+			<item>21</item>
+			<item>22</item>
+			<item>23</item>
+			<item>24</item>
+</personAge>
+</parameters>
+</item>
+</questions>
+</zyOptions>
+</zyTool>
+</zyVersion>
+
+
+<!--GOLDEN CA-->
+<zypInfo person="Fay" date="9/16/20" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Alex" date="9/16/20" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="9/16/20" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Frank" date="9/22/20" minutes="30" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="9/22/20" minutes="60" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="9/22/20" minutes="15" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="9/23/20" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="9/23/20" minutes="2" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="12/08/21" minutes="90" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="12/09/21" minutes="8" status="SpecReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="12/09/21" minutes="30" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="12/13/21" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="12/13/21" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="12/15/21" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="12/15/21" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="12/16/21" minutes="4" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="16" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="2" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="19" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="11" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/08/22" minutes="4" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="23" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/09/22" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/09/22" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/09/22" minutes="3" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/09/22" minutes="60" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="09/12/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="09/12/22" minutes="25" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Hite" date="09/12/22" minutes="15" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="09/12/22" minutes="7" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/12/22" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="09/12/22" minutes="15" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/13/22" minutes="25" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="09/13/22" minutes="25" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/15/22" minutes="100" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/20/22" minutes="40" status="SpecDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/21/22" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/21/22" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/22/22" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/29/22" minutes="60" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/21/23" minutes="27" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/22/23" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/30/23" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Nicole Collins" date="02/20/24" minutes="120" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda Bull" date="02/26/24" minutes="180" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Nicole Collins" date="02/27/24" minutes="30" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Amanda" date="02/27/24" minutes="14" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Nicole Collins" date="02/28/24" minutes="30" status="CodeReviewing">Golden_CA_development Cpp</zypInfo>
+<zypInfo person="Jamie" date="09/16/24" minutes="125" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/18/24" minutes="180" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/23/24" minutes="150" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/24/24" minutes="45" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/24/24" minutes="10" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/24/24" minutes="60" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/24/24" minutes="5" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/25/24" minutes="5" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="03/03/25" minutes="144" status="BugFix">Cpp</zypInfo>
+<zypInfo person="Annie" date="03/06/25" minutes="20" status="BugFix">Cpp</zypInfo>
+<zypInfo person="Amanda Golden" date="9/10/25" minutes="450" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="9/12/25" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda Golden" date="10/28/25" minutes="210" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="10/28/25" minutes="31" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/4/25" minutes="150" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/4/25" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/5/25" minutes="40" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/5/25" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/5/25" minutes="8" status="CodeDone">Golden_CA_development</zypInfo>
+
+
+
+
+
+
+
+
+
+
+<zypInfo person="Andrew Munoz" date="10/13/19" minutes="35" status="Draft1Doing"></zypInfo>
+<zypInfo person="Joseph Park" date="10/14/19" minutes="10" status="Rev2Doing"></zypInfo>
+
+
+
+<!-- Parsons (c): Read multiple user inputs -->
+
+
+<!--<zyHomeworkProblem id="e175b23c-5a44-f8b1-5ebb-34a4999cae8e" language="c" caption="Read multiple user inputs." author="SL/RS">
+<zyInstructions>
+Write two <b><i>scanf</i></b> statements to get input values into birthMonth and birthYear. Then write a statement to output the month, a slash, and the year. End with newline. <br /> <br />
+
+<!-- The program will be tested with inputs 1 2000 and then with inputs 5 1950. -->Ex: If the input is 1 2000, the output is: <br /> 
+<zyICode>1/2000</zyICode>
+<!-- <br /><br />
+Note: The input values come from user input, so be sure to use scanf statements, as in <zyICode>scanf("%d", &birthMonth)</zyICode>, to get those input values (and don't assign values directly, as in <zyICode>birthMonth = 1</zyICode>). Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 1 and 2000, and then with the inputs 5 and 1950. See <zyLink link="https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/9">How to Use zyBooks</zyLink> for info on how our automated program grader works.-->
+<br /><br />
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 1 and 2000, and then with the inputs 5 and 1950.
+</zyInstructions>
+<zyOptions>
+<longDemoMessage type="boolean">true</longDemoMessage>
+</zyOptions>
+
+<zyStudentProgram>
+#include <stdio.h>
+
+int main(void) {
+   int birthMonth;
+   int birthYear;
+  
+   <STUDENT CODE>
+
+   return 0;
+}
+</zyStudentProgram>
+
+<zySolution>
+scanf("%d", &birthMonth);
+scanf("%d", &birthYear);
+
+printf("%d", birthMonth);
+printf("/");
+printf("%d", birthYear);
+printf("\n");
+</zySolution>
+
+<zyInput> 1 2000
+5 1950
+</zyInput> 
+<zyTestVectors>
+int main(void) {
+   int birthMonth = 0;
+   int birthYear  = 0;
+
+   <STUDENT CODE>
+   zyAssertOutput("1/2000\n", "Testing with user input 1 2000", false, false, true, false);
+
+   <STUDENT CODE>
+   zyAssertOutput("5/1950\n", "Testing with user input 5 1950", false, false, false, false);
+
+   zyTerminate();
+}
+</zyTestVectors>
+</zyHomeworkProblem>-->
+
+<!-- Parsons (Java): Read multiple user inputs -->
+
+<zypInfo person="Jamie" date="02/13/25" minutes="20" status="BugFix"></zypInfo>
+<zypInfo person="DNorment" date="02/21/25" minutes="40" status="BugFix"></zypInfo>
+<zypInfo person="Jamie" date="02/24/25" minutes="10" status="BugFix"></zypInfo>
+<zypInfo person="DNorment" date="02/24/25" minutes="5" status="BugFix"></zypInfo>
+
+<zyVersion version="java"> 
+<zyTool name="ParsonsCodingPA" caption="Read multiple user inputs" id="299efbd4-68b7-4868-5a41-092738be44ba" parts="1" challenge="true" edited-last="Mon Feb 24 2025 09:19:23 GMT-0800 (Pacific Standard Time)"><zyOptions type="dict"><files type="list"><li type="dict"><contents type="list"><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">import java.util.Scanner;
+
+public class InputExample {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int birthMonth;
+      int birthYear;
+      </solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">birthMonth = scnr.nextInt();</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">birthYear = scnr.nextInt();
+</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(birthMonth);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.print(&quot;/&quot;);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">true</editable><indents type="number">2</indents><solution type="string">System.out.println(birthYear);</solution></li><li type="dict"><distractors type="list"></distractors><editable type="boolean">false</editable><indents type="number">0</indents><solution type="string">   }
+}</solution></li></contents><input type="boolean">false</input><main type="boolean">true</main><name type="string">InputExample.java</name></li></files><language type="string">java</language><prompt type="string">Drag and drop the **_scnr.nextInt_** statements in the correct order to read input values into birthMonth and then birthYear. Then, drag and drop the **_print_** statements to output the month, a slash, and the year. End with a newline by using **_println_**.
+
+Ex: If the input is `1 2000`, then the output is:
+
+`1/2000`
+
+Note: Our autograder automatically runs your program several times, trying different input values each time to ensure your program works for any values. This program is tested twice, first with the inputs 1 and 2000, and then with the inputs 5 and 1950.</prompt><tests type="list"><li type="dict"><stdin type="string">1 2000</stdin><type type="string">stdout</type><filename type="string"></filename></li><li type="dict"><stdin type="string">5 1950</stdin><type type="string">stdout</type><filename type="string"></filename></li></tests></zyOptions></zyTool>
+
+
+
+
+<zypInfo person="Daniel" date="09/04/24" minutes="25" status="BugFix"></zypInfo>
+<zypInfo person="Fay" date="09/11/24" minutes="15" status="BugFix"></zypInfo>
+<zypInfo person="Daniel" date="09/11/24" minutes="10" status="BugFix"></zypInfo>
+<zypInfo person="Fay" date="09/12/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Daniel" date="09/12/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Fay" date="09/13/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Daniel" date="09/16/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Fay" date="09/17/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Daniel" date="09/18/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Fay" date="09/19/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Daniel" date="09/19/24" minutes="5" status="BugFix"></zypInfo>
+<zypInfo person="Fay" date="09/20/24" minutes="5" status="BugFix"></zypInfo>
+<!--<zyHomeworkProblem id="2c92ca12-5a27-7ee5-e9c2-0bb2ee6e9c33" language="java" caption="Read multiple user inputs." author="SL/FG">
+<zyInstructions>
+Complete the code to perform the following tasks:
+<ul><li>Read an integer from input into birthMonth using <zyICode>birthMonth = scnr.nextInt();</zyICode>.</li>
+<li>Then, read another integer from input into birthYear using scnr.nextInt() again.</li>
+<li>Finally, write print statements to output birthMonth, a slash, and birthYear. End with a newline.</li></ul>
+
+Ex: If the input is <zyICode>1 2000</zyICode>, then the output is: <br />  
+<zyICode>1/2000</zyICode>
+<br /><br />
+Note:
+<ul> <li>Our autograder automatically runs your program several times, testing different input values each time to ensure your program works for any values.</li><li><zyICode>System.out.println();</zyICode> ends the output with a newline. <zyICode>System.out.print();</zyICode> does <b> not</b> end the output with a newline.</li><!--<li>scnr.nextInput() should <b>not</b> include anything within the parentheses.</li>--></ul>
+</zyInstructions>
+<zyInput> 1 2000
+5 1950
+</zyInput> 
+<zyStudentProgram>
+import java.util.Scanner;
+
+public class InputExample {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int birthMonth;
+      int birthYear;
+  
+      <STUDENT CODE>
+
+   }
+}
+</zyStudentProgram>
+
+<zySolution>
+birthMonth = scnr.nextInt();
+birthYear = scnr.nextInt();
+
+System.out.print(birthMonth);
+System.out.print("/");
+System.out.println(birthYear);
+</zySolution>
+
+<zyTestVectors>             
+   public static void main (String [] args) { 
+      zyInitialize();
+      Scanner scnr = new Scanner(System.in);
+      int birthMonth;
+      int birthYear;
+
+      <STUDENT CODE>
+      zyAssertOutput("1/2000\n", "Testing with user input 1 2000", false, false, true, false);
+
+      <STUDENT CODE>
+      zyAssertOutput("5/1950\n", "Testing with user input 5 1950", false, false, false, false);
+
+      zyTerminate();    
+   } 
+</zyTestVectors>
+
+<zyOptions>
+    <hints type="list">
+        <hint type="dict">
+            <regex unescape-html="true">scnr.nextInt()</regex>
+            <invertMatch type="boolean">true</invertMatch>
+            <message unescape-html="true">Your code did not use scnr.nextInt() to get the values from input, but should do so.</message>
+            <priority>1</priority>
+        </hint>
+        <hint type="dict">
+            <regex unescape-html="true">\(\s*birthMonth\s*/\s*birthYear</regex>
+            <message unescape-html="true">Your code output birthMonth / birthYear, which is division. You probably meant to output birthMonth, then "/", then birthYear.</message>
+            <priority>1</priority>
+        </hint>
+        <hint type="dict">
+            <regex unescape-html="true">(^|[^\w])birthMonth\s*=\s*\d+;</regex>
+            <message unescape-html="true">Your code used an assignment statement to assign birthMonth with a number. You probably meant to use scnr.nextInt().</message>
+            <priority>2</priority>
+        </hint>
+        <hint type="dict">
+            <regex unescape-html="true">(^|[^\w])birthYear\s*=\s*\d+;</regex>
+            <message unescape-html="true">Your code used an assignment statement to assign birthYear with a number. You probably meant to use scnr.nextInt().</message>
+            <priority>2</priority>
+        </hint>
+        <hint type="dict">
+            <regex unescape-html="true">(^|[^\w])System\.out\.print(ln)?\s*\(\s*[^;]*birthMonth[^;]*\);</regex>
+            <invertMatch type="boolean">true</invertMatch>
+            <message unescape-html="true">Your code did not use System.out.println() to output birthMonth, but you probably meant to do so.</message>
+            <priority>3</priority>
+        </hint>
+        <hint type="dict">
+            <regex unescape-html="true">(^|[^\w])System\.out\.print(ln)?\s*\(\s*[^;]*birthYear[^;]*\);</regex>
+            <invertMatch type="boolean">true</invertMatch>
+            <message unescape-html="true">Your code did not use System.out.println() to output birthYear, but you probably meant to do so.</message>
+            <priority>3</priority>
+        </hint>
+    </hints>
+</zyOptions>
+
+</zyHomeworkProblem>-->
+
+</zyVersion> 
+
+<zypInfo person="Enrique" date="07/18/23" minutes="120" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="07/19/23" minutes="90" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="07/19/23" minutes="60" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="07/20/23" minutes="150" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="DNorment" date="07/21/23" minutes="60" status="CodeDone">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/07/23" minutes="5" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/21/23" minutes="27" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/21/23" minutes="100" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/22/23" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="08/28/23" minutes="100" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/30/23" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/05/23" minutes="5" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="02/15/24" minutes="204" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Nicole Collins" date="02/20/24" minutes="60" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Amanda Bull" date="02/26/24" minutes="180" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Nicole Collins" date="02/27/24" minutes="20" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Amanda" date="02/27/24" minutes="8" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Nicole Collins" date="02/28/24" minutes="30" status="CodeReviewing">Golden_CA_development C</zypInfo>
+<zypInfo person="Jamie" date="09/16/24" minutes="125" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/18/24" minutes="180" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/23/24" minutes="150" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/24/24" minutes="45" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/24/24" minutes="10" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/24/24" minutes="60" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/24/24" minutes="5" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/25/24" minutes="5" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="03/03/25" minutes="144" status="BugFix">C</zypInfo>
+<zypInfo person="Annie" date="03/06/25" minutes="30" status="BugFix">C</zypInfo>
+<zypInfo person="Amanda" date="03/07/25" minutes="15" status="BugFix">C</zypInfo>
+<zypInfo person="Annie" date="03/10/25" minutes="5" status="BugFix">C</zypInfo>
+<zypInfo person="Amanda Golden" date="9/10/25" minutes="450" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="9/12/25" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda Golden" date="10/28/25" minutes="210" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="10/28/25" minutes="31" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/4/25" minutes="150" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/4/25" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/5/25" minutes="40" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/5/25" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/5/25" minutes="8" status="CodeDone">Golden_CA_development</zypInfo>
+
+
+
+
+
+
+
+<zypInfo person="Andrew Munoz" date="10/13/19" minutes="40" status="Draft1Doing"></zypInfo>
+<zypInfo person="Arian" date="10/14/19" minutes="15" status="Rev1Doing"></zypInfo>
+<zypInfo person="Andrew Munoz" date="10/14/19" minutes="5" status="Rev1Doing"></zypInfo>
+<zypInfo person="Joseph Park" date="10/14/19" minutes="10" status="Rev2Doing"></zypInfo>
+<zypInfo person="Sabrina" date="02/17/22" minutes="40" status="CodeDoing">Convert to CodeWriting tool for accessibility purposes</zypInfo>
+<zypInfo person="Fay" date="02/18/22" minutes="18" status="CodeReviewing"></zypInfo>
+<zypInfo person="Sabrina" date="02/22/22" minutes="6" status="CodeReviewing"></zypInfo>
+<zypInfo person="Fay" date="02/23/22" minutes="12" status="CodeDone"></zypInfo>
+<zypInfo person="Enrique" date="02/23/22" minutes="15" status="QADoing"></zypInfo>
+<zypInfo person="Sabrina" date="02/23/22" minutes="8" status="QADoing"></zypInfo>
+<zypInfo person="Enrique" date="02/23/22" minutes="5" status="QADone"></zypInfo>
+<zypInfo person="Amanda" date="07/28/22" minutes="28" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="08/01/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/01/22" minutes="34" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/01/22" minutes="40" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="08/02/22" minutes="15" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/02/22" minutes="24" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/04/22" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Annie" date="08/08/22" minutes="80" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="13" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="08/08/22" minutes="8" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/08/22" minutes="23" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/09/22" minutes="15" status="QADone">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/09/22" minutes="60" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Fay" date="09/12/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/12/22" minutes="37" status="CodeReviewing"></zypInfo>
+<zypInfo person="Enrique" date="09/13/22" minutes="150" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/21/22" minutes="120" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/22/22" minutes="45" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="09/22/22" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/26/22" minutes="20" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/26/22" minutes="5" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/29/22" minutes="1" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/21/23" minutes="27" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/22/23" minutes="20" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="08/30/23" minutes="10" status="QADoing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="01/28/24" minutes="192" status="CodeDoing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Maya" date="02/01/24" minutes="120" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Amanda" date="02/06/24" minutes="60" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Nicole Collins" date="02/20/24" minutes="60" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Amanda Bull" date="02/26/24" minutes="200" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Nicole Collins" date="02/27/24" minutes="30" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Amanda" date="02/27/24" minutes="25" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Nicole Collins" date="02/28/24" minutes="30" status="CodeReviewing">Golden_CA_development Java</zypInfo>
+<zypInfo person="Jamie" date="09/16/24" minutes="125" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/18/24" minutes="180" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/23/24" minutes="150" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/24/24" minutes="45" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/24/24" minutes="10" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/24/24" minutes="60" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="09/24/24" minutes="5" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Enrique" date="09/25/24" minutes="5" status="BugFix">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="03/03/25" minutes="144" status="BugFix">Java</zypInfo>
+<zypInfo person="Annie" date="03/06/25" minutes="20" status="BugFix">Java</zypInfo>
+<zypInfo person="Amanda Golden" date="9/10/25" minutes="450" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Jamie" date="9/12/25" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda Golden" date="10/28/25" minutes="210" status="CodeDoing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="10/28/25" minutes="31" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/4/25" minutes="150" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/4/25" minutes="10" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/5/25" minutes="40" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Sabrina" date="11/5/25" minutes="8" status="CodeReviewing">Golden_CA_development</zypInfo>
+<zypInfo person="Amanda" date="11/5/25" minutes="8" status="CodeDone">Golden_CA_development</zypInfo>
+
+
+
+
+<zyVersion version="java">
+
+<!--
+<zyTool name="CodeWriting" caption="Output basics" id="6fd9cacf-0625-919c-c7cd-d9e3e3417e8a" parts="6" challenge="true" edited-last="Thu Sep 29 2022 13:13:13 GMT-0500 (Central Daylight Time)"><zyOptions type="dict"><global type="string">import random
+
+var_ends = [
+    'Days', 'Months', 'Years', 'Seconds', 'Minutes', 'Hours', 'Weeks', 
+    'Items', 'Objects', 'Tickets', 'Trees', 'Cats', 'Dogs', 'Kids', 
+    'Birds', 'Houses', 'Rooms', 'Baths', 'Stores', 'Books', 'Keys', 'Exams'
+]</global><language type="string">java</language><levels type="list"><li type="dict">
+<explanation type="string">The string literal "This ${meaningful.noun} ${meaningful.verb} ${meaningful.adjective}." is output using System.out.println().
+
+Your program's output is shown below. If your program's output matches the expected output, then a green checkmark appears with the message "All tests passed". If your program's output does not match the expected output, then both outputs are shown with any differences highlighted in yellow.
+
+To re-run your code, click "Check" again.
+&lt;br&gt;To proceed to the next level after passing all tests, click "Next level".
+&lt;br&gt;To generate another question within the same level, click the current level's button (1).</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">public class OutputTest {
+   public static void main(String[] args) {
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println("This ${meaningful.noun} ${meaningful.verb} ${meaningful.adjective}.");</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputTest.java</name></li></files><prompt type="string">This challenge activity consists of a series of auto-generated, randomized questions allowing unlimited submissions. You must correctly answer a question at each level before proceeding to the next level.
+- Click the "Start" button to begin the challenge activity.
+
+- Write code that outputs the following. End with a newline. Remember to use println instead of print to output a newline. 
+
+`This ${meaningful.noun} ${meaningful.verb} ${meaningful.adjective}.`
+
+- Click the "Check" button to run your program.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {
+        'noun': random.choice(nouns),
+        'verb': random.choice(verbs),
+        'adjective': random.choice(adjectives)
+    }</meaningful><setup type="string">nouns = ['day', 'week', 'month', 'year', 'soup', 'dessert', 'cake', 'meal', 'salad', 'dinner', 'lunch', 'breakfast', 'weekend']
+verbs = ['is', 'was', 'will be']
+adjectives = ['good', 'great', 'superb', 'nice', 'wonderful', 'awesome', 'excellent', 'marvelous', 'satisfying']</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">The program uses two System.out.println() statements to output the string literals "${meaningful.noun1}" and "${meaningful.noun2}". Each output ends with a newline.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">public class OutputTest {
+   public static void main(String[] args) {
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println("${meaningful.noun1}");
+System.out.println("${meaningful.noun2}");</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputTest.java</name></li></files><prompt type="string">Write code that outputs the following. End each output with a newline.
+
+`${meaningful.noun1}
+${meaningful.noun2}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {
+        'noun1': random.choice(nouns1),
+        'noun2': random.choice(nouns2)
+    }</meaningful><setup type="string">nouns1 = [
+    'cat', 'dog', 'bat', 'pen', 'six', 'fox', 'tub', 'peg', 'log', 
+    'egg', 'pin', 'sun', 'jam', 'pod', 'cup', 'map', 'leg', 'mop', 
+    'can', 'web', 'bib', 'cot', 'bus', 'wig', 'bun', 'rug', 'rat'
+]
+
+nouns2 = [
+    'ham', 'hem', 'ink', 'dot', 'gum', 'pad', 'den', 'cod', 'mud', 
+    'rag', 'elk', 'bin', 'lad', 'elm', 'bog', 'gap', 'hog', 'ant', 
+    'jet', 'fin', 'fog', 'cub', 'lip', 'mop', 'pup', 'pop', 'bug', 
+    'sap'
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">The program uses two System.out.println() statements to output the string literals &lt;span style="white-space: nowrap"&gt;"${distractor.spaces1}${meaningful.line1}"&lt;/span&gt; and &lt;span style="white-space: nowrap"&gt;"${distractor.spaces2}${meaningful.line2}"&lt;/span&gt;. The ${meaningful.line_with_spaces} string literal has ${meaningful.num_spaces} spaces at the front. Each output ends with a newline.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">public class OutputTest {
+   public static void main(String[] args) {
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println("${meaningful.spaces1}${meaningful.line1}");
+System.out.println("${meaningful.spaces2}${meaningful.line2}");</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputTest.java</name></li></files><prompt type="string">Write code that outputs "${distractor.spaces1}${meaningful.line1}" on one line, and "${distractor.spaces2}${meaningful.line2}" on another line. End with a newline.
+
+```
+${meaningful.spaces1}${meaningful.line1}
+${meaningful.spaces2}${meaningful.line2}
+```
+
+Note:
+- The ${meaningful.line_with_spaces} line has ${meaningful.num_spaces} spaces at the front.
+- Feel free to copy the string literals from the prompt and paste the string literals within your program.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {
+        'spaces1': meaningful_permutation['spaces1'].replace(' ', '&amp;nbsp;'),
+        'spaces2': meaningful_permutation['spaces2'].replace(' ', '&amp;nbsp;'),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    scenario = random.choice(scenarios)
+    
+    return {
+        'spaces1': scenario.spaces1, 
+        'spaces2': scenario.spaces2,
+        'line1': scenario.line1,
+        'line2': scenario.line2,
+        'num_spaces': scenario.num_spaces,
+        'line_with_spaces': scenario.line_with_spaces
+    }</meaningful><setup type="string">class Scenario:
+    def __init__(self, num_spaces1, num_spaces2, line1, line2):
+        self.spaces1 = ' ' * random.choice(num_spaces1)
+        self.spaces2 = ' ' * random.choice(num_spaces2)
+        self.line1 = random.choice(line1)
+        self.line2 = random.choice(line2)
+        self.num_spaces = max(len(self.spaces1), len(self.spaces2))
+        self.line_with_spaces = 'first' if len(self.spaces1) != 0 else 'second'
+        
+scenarios = [
+    Scenario([3, 4, 7], [0], ['Cats', 'Dogs', 'Pets', 'Kids'], ['are welcome']),
+    Scenario([3, 4, 7], [0], ['No'], ['loitering', 'swimming', 'bickering']),
+    Scenario([0], [3, 6], ['Protect the'], ['trees', 'water', 'birds']),
+    Scenario([0], [3, 4, 7], ['Do something'], ['great', 'today']),
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">`System.out.println(x);` outputs the value of a variable named x.
+
+Ex: For input `2`, the program reads 2 from input and assigns ${meaningful.var_name} with 2. The program then outputs the value of ${meaningful.var_name} (2) and ends with a newline. Similarly, for input `5`, the System.out.println() statement outputs the value of ${meaningful.var_name} (5) and ends with a newline.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class OutputTest {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${meaningful.var_name};
+      
+      // The following statement gets an input value and puts that value into variable ${meaningful.var_name}
+      ${meaningful.var_name} = scnr.nextInt();
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println(${meaningful.var_name});</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputTest.java</name></li></files><prompt type="string">The program gets an input value into variable ${meaningful.var_name}. Write code that outputs the value of variable ${meaningful.var_name}. End with a newline.
+
+Ex: If the input is `2`, then the output is:
+
+`2`
+
+Ex: If the input is `5`, then the output is:
+
+`5`
+
+Note:
+- Our autograder automatically runs your program several times, testing different input values each time to ensure your program works for any values. This program is tested three times: first with the input 2, then with the input 5, and finally with a random input.
+- The input values like 2 or 5 should _not_ explicitly be written in the code, since ${meaningful.var_name} will contain the input.</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {
+        'var_name': 'num{}'.format(random.choice(var_ends))
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {'random_input': random.choice([1, 3, 4, 6, 7, 8, 9])}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">2</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">5</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.random_input}</stdin></li></tests></li><li type="dict">
+<explanation type="string">Two separate output statements may be used to output the two items: &lt;span style="white-space: nowrap"&gt;"${meaningful.var_end}: "&lt;/span&gt; and the variable ${meaningful.var_name}.
+
+A single output statement may also be used by separating the items &lt;span style="white-space: nowrap"&gt;"${meaningful.var_end}: "&lt;/span&gt; and the variable ${meaningful.var_name} with a + symbol.
+
+Ex: For input `3`, the program reads 3 from input and assigns ${meaningful.var_name} with 3. The program then outputs &lt;span style="white-space: nowrap"&gt;"${meaningful.var_end}: ",&lt;/span&gt; followed by the value of ${meaningful.var_name} (3), and ends with a newline.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class OutputTest {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${meaningful.var_name};
+      
+      ${meaningful.var_name} = scnr.nextInt();
+      </template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println("${meaningful.var_end}: " + ${meaningful.var_name});</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputTest.java</name></li></files><prompt type="string">The program gets an input value into variable ${meaningful.var_name}. Write code that outputs "${meaningful.var_end}: ", followed by the value of variable ${meaningful.var_name}. End with a newline.
+
+Ex: If the input is `3`, then the output is:
+
+`${meaningful.var_end}: 3`
+
+Ex: If the input is `6`, then the output is:
+
+`${meaningful.var_end}: 6`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {}</distractor><meaningful type="string">def make_meaningful_permutation():
+    var_end = random.choice(var_ends)
+    
+    return {
+        'var_end': var_end,
+        'var_name': 'num{}'.format(var_end)
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {'random_input': random.choice([1, 2, 4, 5, 7, 8, 9])}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">3</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">6</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.random_input}</stdin></li></tests></li><li type="dict">
+<explanation type="string">Three separate output statements may be used to output the three items: &lt;span style="white-space: nowrap"&gt;"${meaningful.sentence_start} ",&lt;/span&gt; the variable ${meaningful.var_name}, and &lt;span style="white-space: nowrap"&gt;" ${meaningful.var_end_lower}${meaningful.sentence_end}"&lt;/span&gt;${distractor.period}
+
+A single output statement may also be used by separating the items &lt;span style="white-space: nowrap"&gt;"${meaningful.sentence_start} ",&lt;/span&gt; the variable ${meaningful.var_name}, and &lt;span style="white-space: nowrap"&gt;" ${meaningful.var_end_lower}${meaningful.sentence_end}"&lt;/span&gt; with + symbols.
+
+Ex: For input `4`, the program reads 4 from input and assigns ${meaningful.var_name} with 4. The program then outputs &lt;span style="white-space: nowrap"&gt;"${meaningful.sentence_start} ",&lt;/span&gt; followed by the value of ${meaningful.var_name} (4), and &lt;span style="white-space: nowrap"&gt;" ${meaningful.var_end_lower}${meaningful.sentence_end}"${distractor.period}&lt;/span&gt; The output ends with a newline.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class OutputTest {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${meaningful.var_name};
+      
+      ${meaningful.var_name} = scnr.nextInt();
+      </template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">System.out.println("${meaningful.sentence_start} " + ${meaningful.var_name} + " ${meaningful.var_end_lower}${meaningful.sentence_end}");</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">OutputTest.java</name></li></files><prompt type="string">The program gets an input value into variable ${meaningful.var_name}. Write code that outputs "${meaningful.sentence_start} ", followed by the value of variable ${meaningful.var_name}, and then " ${meaningful.var_end_lower}${meaningful.sentence_end}"${distractor.period} End with a newline.
+
+Ex: If the input is `4`, then the output is:
+
+`${meaningful.sentence_start} 4 ${meaningful.var_end_lower}${meaningful.sentence_end}`
+
+Ex: If the input is `7`, then the output is:
+
+`${meaningful.sentence_start} 7 ${meaningful.var_end_lower}${meaningful.sentence_end}`</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    return {'period': '' if meaningful_permutation['sentence_end'] == '.' else '.'}</distractor><meaningful type="string">def make_meaningful_permutation():
+    var_end = random.choice(var_ends)
+    sentence_starts, sentence_end = random.choice(sentence_start_end)
+    
+    return {
+        'var_name': 'num{}'.format(var_end),
+        'var_end': var_end,
+        'var_end_lower': var_end.lower(),
+        'sentence_start': random.choice(sentence_starts),
+        'sentence_end': sentence_end
+    }</meaningful><setup type="string">var_ends = ['Mugs', 'Books', 'Tacos', 'Pens', 'Shirts', 'Pants', 'Condos', 'Houses', 'Cars']
+
+sentence_start_end = [
+    [['Were there', 'Are there', 'Will there be'], '?'],
+    [['There were', 'There are', 'We have', 'We bought', 'We sold', 'Sam has', 'Sam bought', 'Sam sold'], '.']
+]</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {'random_input': random.choice([1, 2, 3, 5, 6, 8, 9])}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">4</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">7</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.random_input}</stdin></li></tests></li></levels></zyOptions></zyTool>
+-->
+
+<zyTool name="CodeWriting" caption="Programming basics" id="18ddc8a8-dbff-49cf-b4b1-7f6ebe16a78e" parts="5" challenge="true" edited-last="Wed Nov 05 2025 13:12:44 GMT-0600 (Central Standard Time)"><zyOptions type="dict"><global type="string">import random, string
+from common_functions import pick_from, pick_from_range, make_words_from_list
+
+
+def html_bold(text):
+    return &apos;&lt;strong&gt;{}&lt;/strong&gt;&apos;.format(text)
+
+
+def html_code(text, multiline=False):
+    code = &apos;&lt;code&gt;{}&lt;/code&gt;&apos;.format(text)
+    return &apos;&lt;pre style=&quot;margin-top:10px; margin-bottom:10px;&quot;&gt;{}&lt;/pre&gt;&apos;.format(code) if multiline else code
+
+
+def html_dropdown(contents, caption=&apos;Click here for more info&apos;):
+    dropdown = &apos;&lt;details&gt;&lt;summary style=&quot;color: #0277BD&quot;&gt;{0}&lt;/summary&gt;{1}&lt;/details&gt;&apos;
+    return dropdown.format(html_bold(caption), contents)
+
+
+def html_inline(text):
+    return &apos;&lt;span style=&quot;white-space: nowrap; white-space: pre&quot;&gt;{}&lt;/span&gt;&apos;.format(text)
+
+
+def html_list(bullet_list, is_ul=True):
+    bullets = &apos;&apos;.join([&apos;&lt;li&gt;{}&lt;/li&gt;&apos;.format(bullet) for bullet in bullet_list])
+    return &apos;&lt;{0}&gt;{1}&lt;/{0}&gt;&apos;.format(&apos;ul&apos; if is_ul else &apos;ol&apos;, bullets)
+
+
+def html_p(contents):
+    p = &apos;&lt;p&gt;{}&lt;/p&gt;&apos;
+    if isinstance(contents, list):
+        return &apos;&apos;.join([p.format(paragraph) for paragraph in contents])
+    else:
+        return p.format(contents)
+
+
+def make_example(in_text, out_text, label=1):
+    example_in = &apos; {}, &apos;.format(html_code(in_text))
+    if &apos;\n&apos; in str(in_text):
+        example_in = &apos;:&apos; + html_code(in_text, multiline=True)
+    example_out = html_code(out_text, multiline=True)
+    example = &apos;Ex: If the input is{0}then the output is:{1}&apos;.format(example_in, example_out)
+    return html_dropdown(example, caption=&apos;Click here for example {}&apos;.format(label))
+
+
+num_words = {1: &apos;one&apos;, 2: &apos;two&apos;, 3: &apos;three&apos;, 4: &apos;four&apos;, 5: &apos;five&apos;}
+
+first_names = [
+    &apos;Abe&apos;, &apos;Ada&apos;, &apos;Ali&apos;, &apos;Amy&apos;, &apos;Ana&apos;, &apos;Ani&apos;, &apos;Ann&apos;, &apos;Ara&apos;, &apos;Ari&apos;, &apos;Ava&apos;,
+    &apos;Avi&apos;, &apos;Aya&apos;, &apos;Ben&apos;, &apos;Bly&apos;, &apos;Bob&apos;, &apos;Cal&apos;, &apos;Cam&apos;, &apos;Dan&apos;, &apos;Dax&apos;, &apos;Del&apos;,
+    &apos;Edd&apos;, &apos;Eli&apos;, &apos;Erl&apos;, &apos;Eve&apos;, &apos;Fay&apos;, &apos;Fin&apos;, &apos;Gil&apos;, &apos;Gio&apos;, &apos;Gus&apos;, &apos;Guy&apos;,
+    &apos;Hal&apos;, &apos;Han&apos;, &apos;Hud&apos;, &apos;Huy&apos;, &apos;Ian&apos;, &apos;Ike&apos;, &apos;Ina&apos;, &apos;Ira&apos;, &apos;Jan&apos;, &apos;Jay&apos;,
+    &apos;Jeb&apos;, &apos;Jen&apos;, &apos;Jim&apos;, &apos;Joe&apos;, &apos;Jon&apos;, &apos;Joy&apos;, &apos;Kai&apos;, &apos;Kay&apos;, &apos;Ken&apos;, &apos;Kim&apos;,
+    &apos;Kit&apos;, &apos;Lei&apos;, &apos;Leo&apos;, &apos;Lia&apos;, &apos;Lou&apos;, &apos;Mac&apos;, &apos;Mae&apos;, &apos;Mai&apos;, &apos;Max&apos;, &apos;May&apos;,
+    &apos;Meg&apos;, &apos;Mel&apos;, &apos;Moe&apos;, &apos;Mox&apos;, &apos;Ned&apos;, &apos;Nia&apos;, &apos;Oma&apos;, &apos;Pal&apos;, &apos;Pam&apos;, &apos;Pat&apos;,
+    &apos;Rae&apos;, &apos;Ray&apos;, &apos;Rob&apos;, &apos;Ron&apos;, &apos;Sal&apos;, &apos;Sam&apos;, &apos;Seb&apos;, &apos;Sid&apos;, &apos;Sue&apos;, &apos;Tad&apos;,
+    &apos;Taj&apos;, &apos;Tay&apos;, &apos;Ted&apos;, &apos;Tia&apos;, &apos;Tim&apos;, &apos;Tom&apos;, &apos;Uma&apos;, &apos;Val&apos;, &apos;Van&apos;, &apos;Vic&apos;,
+    &apos;Wes&apos;, &apos;Wyn&apos;, &apos;Xan&apos;, &apos;Xim&apos;, &apos;Xio&apos;, &apos;Yaz&apos;, &apos;Zak&apos;, &apos;Zel&apos;, &apos;Zia&apos;, &apos;Zoe&apos;,
+]
+first_name = pick_from(first_names)
+
+foods = [
+    &apos;apples&apos;, &apos;oranges&apos;, &apos;peaches&apos;, &apos;plums&apos;, &apos;lemons&apos;, &apos;limes&apos;,
+    &apos;pears&apos;, &apos;onions&apos;, &apos;carrots&apos;, &apos;tomatoes&apos;, &apos;bananas&apos;,
+    &apos;potatoes&apos;, &apos;peppers&apos;, &apos;turnips&apos;, &apos;cucumbers&apos;, &apos;mushrooms&apos;,
+]
+food = pick_from(foods)
+food_var = &apos;num{}&apos;.format(food.capitalize())
+food_dataset = range(3, 10)
+food_phrase = pick_from([
+    &apos;I want to buy&apos;, &apos;I bought&apos;, &apos;We need&apos;, &apos;My recipe needs&apos;, &apos;{} sold me&apos;,
+    &apos;We bought&apos;, &apos;The store has&apos;, &apos;{} bought&apos;, &apos;We have&apos;,
+]).format(first_name)
+food_phrase += &apos; &apos;
+
+input_code = html_code(&apos;scnr.nextInt()&apos;)
+print_code = html_code(&apos;System.out.println()&apos;)
+println = &apos;System.out.println(&quot;{0}&quot; + {1});&apos;
+read_int = &apos;{0} = scnr.nextInt();&apos;
+
+birthdays = [
+    &apos;BirthDate&apos;, [
+        [&apos;birthDay&apos;, range(1, 29), &apos;Day:&apos;],
+        [&apos;birthMonth&apos;, range(1, 13), &apos;Month:&apos;],
+        [&apos;birthYear&apos;, range(1950, 2021), &apos;Year:&apos;],
+    ]
+]
+
+cars = [
+    &apos;UsedCar&apos;, [
+        [&apos;totalMileage&apos;, [i * 100 for i in range(100, 301, 5)], &apos;Total mileage:&apos;],
+        [&apos;mpg&apos;, range(10, 41), &apos;Miles per gallon:&apos;],
+        [&apos;remainingGas&apos;, range(1, 21), &apos;Remaining gallons of gas:&apos;],
+    ]
+]
+
+class_var, contexts = pick_from([birthdays, cars])
+context1, context2 = random.sample(contexts, 2)
+var1, dataset1, phrase1 = context1
+var2, dataset2, phrase2 = context2
+phrase1 += &apos; &apos;
+phrase2 += &apos; &apos;
+
+var_names = [food_var, var1, var2]
+food_decl, var1_decl, var2_decl = [&apos;int {};\n\t\t&apos;.format(x) for x in var_names]
+food_read, var1_read, var2_read = [(&apos;\n\t\t&apos; + read_int + &apos; // Reads {0} from input&apos;).format(x) for x in var_names]
+food_read_sol, var1_read_sol, var2_read_sol = [read_int.format(x) for x in var_names]
+
+phrases = [html_inline(&apos;&quot;{}&quot;&apos;.format(phrase)) for phrase in [food_phrase, phrase1, phrase2]]
+food_phrase_inline, phrase1_inline, phrase2_inline = phrases
+
+num_examples = 2
+
+explain_similar = &apos;Both the second and third tests produce similar outputs, but with different values.&apos;</global><language type="string">java</language><languageOption type="string"></languageOption><levels type="list"><li type="dict">
+<explanation type="string">Your code is tested with three random input values each time &quot;Check&quot; is clicked. For each test below, if your output matches the expected output, then the test passes.
+
+For the first test, ${distractor.solution1_code} reads ${distractor.test1} from input into variable ${distractor.food_var}.
+
+Then, ${distractor.solution2_code} outputs &quot;${distractor.phrase}&quot;, followed by the value of ${distractor.food_var} (${distractor.test1}) and a newline.
+
+${distractor.explain_similar}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int ${distractor.food_var};
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">This activity has randomized questions with unlimited attempts. You must pass all tests in a level before proceeding to the next level. The first level shows how the autograder works.
+
+Complete the following three steps:
+${distractor.prompt_bullets}
+${distractor.dropdown}
+&lt;a href=&quot;https://learn.zybooks.com/zybook/HowToUseZyBooks2/chapter/1/section/8&quot; target=&quot;_blank&quot;&gt;Learn how our autograder works&lt;/a&gt;</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    phrase = &apos;{0}{1} &apos;.format(food, pick_from(meaningful_permutation[&apos;symbol&apos;]))
+
+    solution1 = read_int.format(food_var)
+    solution2 = &apos;System.out.println(&quot;{0}&quot; + {1});&apos;.format(phrase, food_var)
+    solution = &apos;\n&apos;.join([solution1, solution2])
+
+    prompt1 = &apos;Delete the following code comment including {} and {}:&apos;.format(html_code(&apos;/*&apos;), html_code(&apos;*/&apos;))
+    prompt1 += html_code(&apos;/* Your code goes here */&apos;, multiline=True)
+    prompt2 = &apos;Copy and paste the following two lines of code:&apos;
+    prompt2 += html_code(solution, multiline=True)
+    prompt3 = &apos;Click the &quot;Check&quot; button to test your code.&apos;
+    prompt_bullets = [prompt1, prompt2, prompt3]
+
+    note1 = input_code + &apos; is used to read in a value for variable {1}.&apos;
+    note2 = print_code + &apos; is used to output &quot;{0}&quot;, followed by the value of {1}. &apos;
+    note2 += &apos;The output automatically ends with a newline.&apos;
+    note3 = (
+        &apos;Our autograder automatically runs your program several times, &apos;
+        &apos;testing different input values each time to ensure your program works for any values. &apos;
+        &apos;An explanation is also provided.&apos;
+    )
+
+    dropdown = [note.format(phrase, html_bold(food_var)) for note in [note1, note2, note3]]
+
+    return {
+        &apos;class_var&apos;: food.capitalize(),
+        &apos;dropdown&apos;: html_dropdown(html_list(dropdown)),
+        &apos;explain_similar&apos;: explain_similar,
+        &apos;food_var&apos;: food_var,
+        &apos;phrase&apos;: phrase,
+        &apos;prompt_bullets&apos;: html_list(prompt_bullets, False),
+        &apos;solution&apos;: solution,
+        &apos;solution1_code&apos;: html_code(solution1),
+        &apos;solution2_code&apos;: html_code(solution2),
+        &apos;test1&apos;: pick_from(test_range),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;symbol&apos;: pick_from([&apos;-&apos;, &apos;:&apos;])}</meaningful><setup type="string">test_range = range(10, 99)</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    test1 = distractor_permutation[&apos;test1&apos;]
+    test2 = pick_from(test_range, [test1])
+    test3 = pick_from(test_range, [test1, test2])
+    return {&apos;test2&apos;: test2, &apos;test3&apos;: test3}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test1}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain1}
+
+${distractor.explain2}
+
+Note: Since the program does not read from input, only one test is used to check if your code produces the correct output.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      ${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">The following figure with ${distractor.prompt1} outputs the figure&apos;s first line. 
+
+Complete the program with ${distractor.prompt2} statements to ensure the program&apos;s output matches the given figure &lt;em&gt;exactly&lt;/em&gt;, including number of spaces and newlines.
+
+${distractor.prompt3}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    num_total_lines = meaningful_permutation[&apos;num_total_lines&apos;]
+    total_word = meaningful_permutation[&apos;total_word&apos;]
+    total_word_minus_one = meaningful_permutation[&apos;total_word_minus_one&apos;]
+
+    letter = pick_from(string.ascii_lowercase, &apos;iklosw&apos;)
+    
+    two_letters = [&apos;   &apos;.join(letter * 2), &quot;two {}&apos;s separated by three spaces&quot;.format(letter)]
+    five_letters = [letter * 5, &quot;five {}&apos;s&quot;.format(letter)]
+
+    order = [two_letters, five_letters]
+    random.shuffle(order)
+    line1, explain_line1 = order[0]
+    line2, explain_line2 = order[1]
+    
+    lines = [line1, line2] * 2
+    if num_total_lines == 5:
+        lines.append(line1)
+
+    print_lines = [&apos;System.out.println(&quot;{}&quot;);&apos;.format(line) for line in lines]
+    print1, print2, solution = print_lines[0], print_lines[1], print_lines[1:]
+
+    explain_out = &apos; outputs {} and ends with a newline.&apos;
+
+    return {
+        &apos;class_var&apos;: &apos;OutputFormat&apos;,
+        &apos;explain1&apos;: html_inline(html_code(print1)) + explain_out.format(explain_line1),
+        &apos;explain2&apos;: html_inline(html_code(print2)) + explain_out.format(explain_line2),
+        &apos;prefix&apos;: print1,
+        &apos;prompt1&apos;: &quot;{}&apos;s has {} lines. In the program below, {}&quot;.format(letter, total_word, html_code(print1)),
+        &apos;prompt2&apos;: &apos;{} more {}&apos;.format(total_word_minus_one, print_code),
+        &apos;prompt3&apos;: html_code(&apos;\n&apos;.join(lines), multiline=True),
+        &apos;solution&apos;: &apos;\n&apos;.join(solution),
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    num_total_lines = pick_from([4, 5])
+    return {
+        &apos;num_total_lines&apos;: num_total_lines,
+        &apos;total_word&apos;: num_words[num_total_lines],
+        &apos;total_word_minus_one&apos;: num_words[num_total_lines - 1]
+    }</meaningful><setup type="string"></setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    return {}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string"></stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}
+
+${distractor.explain_similar}
+
+Note: If any of the tests did not pass, the output produced by your code is shown, followed by the expected output of the program. Any differences are highlighted in yellow.</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      ${distractor.prefix}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">The program uses ${distractor.prompt1}.
+
+Complete the program${distractor.prompt2}
+
+${distractor.note}
+${distractor.example1}
+${distractor.example2}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):  
+    num_inputs = meaningful_permutation[&apos;num_inputs&apos;]
+    perm = scenarios[num_inputs]
+        
+    set1 = random.sample(perm[&apos;dataset1&apos;], num_examples)
+    in1, in2 = [[num] for num in set1]
+    test_set = [[num for num in perm[&apos;dataset1&apos;] if num not in set1]]
+    if num_inputs == 2:
+        set2 = random.sample(perm[&apos;dataset2&apos;], num_examples)
+        test_set.append([num for num in perm[&apos;dataset2&apos;] if num not in set2])
+        in1, in2 = zip(set1, set2)
+
+    test1, test2 = [&apos; &apos;.join([str(num) for num in test]) for test in [in1, in2]]
+    out1, out2 = [perm[&apos;example&apos;].format(*test) for test in [in1, in2]]
+
+    prompt1 = input_code + &apos; {0} to read {1} user-entered integer{2} from input into variable{2} {3}&apos;
+
+    explain = &apos;The first input is &apos; + &apos; and &apos;.join([html_code(num) for num in in1])
+    explain += &apos;, so the program reads {0} into variable &apos; + perm[&apos;explain1&apos;]
+    explain += &apos;. Then, &apos; + print_code + &apos; is used to output &apos; + perm[&apos;explain2&apos;]
+
+    return {
+        &apos;class_var&apos;: perm[&apos;class_var&apos;],
+        &apos;example1&apos;: make_example(test1, out1, label=1),
+        &apos;example2&apos;: make_example(test2, out2, label=2),
+        &apos;explain&apos;: explain.format(*in1),
+        &apos;explain_similar&apos;: explain_similar,
+        &apos;note&apos;: &apos;Note: {0} automatically ends {1} output with a newline.&apos;.format(print_code, perm[&apos;note&apos;]),
+        &apos;prefix&apos;: perm[&apos;prefix&apos;],
+        &apos;prompt1&apos;: prompt1.format(*perm[&apos;prompt_vals&apos;]),
+        &apos;prompt2&apos;: perm[&apos;prompt2&apos;],
+        &apos;solution&apos;: perm[&apos;solution&apos;],
+        &apos;test1&apos;: test1,
+        &apos;test2&apos;: test2,
+        &apos;test_set&apos;: test_set,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;num_inputs&apos;: pick_from(scenarios.keys())}</meaningful><setup type="string">prompt_write = &apos;{0} &apos; + print_code + &apos; statement to output {1}, &apos;
+prompt_write += &apos;followed by the variable {2}{3}&apos;
+explain_out = &apos;{0}, followed by the value of {1} ({2}){3} and a newline.&apos;
+
+scenarios = {
+    1: {
+        &apos;class_var&apos;: food.capitalize(),
+        &apos;dataset1&apos;: range(3, 10),
+        &apos;example&apos;: food_phrase + &apos;{} &apos; + food + &apos;.&apos;,
+        &apos;explain1&apos;: food_var,
+        &apos;explain2&apos;: explain_out.format(food_phrase_inline, food_var, &apos;{0}&apos;, &apos;, &apos; + html_inline(&apos;&quot; {}.&quot;,&apos;.format(food))),
+        &apos;note&apos;: &apos;the&apos;,
+        &apos;prefix&apos;: food_decl + food_read,
+        &apos;prompt2&apos;: (
+            &apos; with &apos; + 
+            prompt_write.format(&apos;one&apos;, food_phrase_inline, html_bold(food_var), &apos; and &apos; + html_inline(&apos;&quot; {}.&quot;&apos;.format(food)))
+        ),
+        &apos;prompt_vals&apos;: [&apos;&apos;, &apos;a&apos;, &apos;&apos;, html_bold(food_var)],
+        &apos;solution&apos;: println.format(food_phrase, food_var + &apos; + &quot; {}.&quot;&apos;.format(food)),
+    },
+    2: {
+        &apos;class_var&apos;: class_var,
+        &apos;dataset1&apos;: dataset1,
+        &apos;dataset2&apos;: dataset2,
+        &apos;example&apos;: phrase1 + &apos;{}\n&apos; + phrase2 + &apos;{}&apos;,
+        &apos;explain1&apos;: var1 + &apos;, and {1} into variable &apos; + var2,
+        &apos;explain2&apos;: (
+            explain_out.format(phrase1_inline, var1, &apos;{0}&apos;, &apos;&apos;) +
+            &apos; Lastly, {} is used again to output &apos;.format(print_code) +
+            explain_out.format(phrase2_inline, var2, &apos;{1}&apos;, &apos;&apos;)
+        ),
+        &apos;note&apos;: &apos;each&apos;,
+        &apos;prefix&apos;: var1_decl + var2_decl + var1_read + var2_read,
+        &apos;prompt2&apos;: &apos;:&apos; + html_list([
+            &apos;Write &apos; + prompt_write.format(&apos;one&apos;, phrase1_inline, html_bold(var1), &apos;.&apos;),
+            &apos;Write &apos; + prompt_write.format(&apos;a second&apos;, phrase2_inline, html_bold(var2), &apos;.&apos;),
+        ]),
+        &apos;prompt_vals&apos;: [&apos;twice &apos;, &apos;two&apos;, &apos;s&apos;, &apos;{} and {}, respectively&apos;.format(html_bold(var1), html_bold(var2))],
+        &apos;solution&apos;: &apos;\n&apos;.join([println.format(phrase1, var1), println.format(phrase2, var2)]),
+    }
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    test3 = [str(pick_from(dataset)) for dataset in distractor_permutation[&apos;test_set&apos;]]        
+    return {&apos;test3&apos;: &apos;\n&apos;.join(test3)}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test1}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      ${distractor.prefix}</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+      ${distractor.postfix}
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">${distractor.prompt}
+${distractor.example1}
+${distractor.example2}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    num_inputs = meaningful_permutation[&apos;num_inputs&apos;]
+
+    if num_inputs == 1:
+        prompt = prompt1.format(html_bold(food_var))
+
+        test1, test2 = tests = random.sample(food_dataset, num_examples)
+        test_set = [[str(num) for num in food_dataset if num not in [test1, test2]]]
+
+        out1, out2 = [&apos;{0}{1} {2}.&apos;.format(food_phrase, test, food) for test in tests]
+
+        prefix = food_decl
+        
+        solution = food_read_sol
+        
+        postfix = println.format(food_phrase, food_var + &apos; + &quot; {}.&quot;&apos;.format(food))
+
+        explain1 = read_code + &apos; reads {1} from input and assigns {0} with {1}.&apos;
+        explain1 = explain1.format(food_var, test1)
+
+    else:
+        prompt = [prompt1.format(html_bold(var1)), prompt2.format(html_bold(var2))]
+        symbol = pick_from([&apos;-&apos;, &apos;.&apos;, &apos;,&apos;])
+
+        test1_in1, test2_in1 = random.sample(dataset1, num_inputs)
+        test1_in2, test2_in2 = random.sample(dataset2, num_inputs)
+        test_set = [
+            [str(num) for num in dataset1 if num not in [test1_in1, test2_in1]],
+            [str(num) for num in dataset2 if num not in [test1_in2, test2_in2]],
+        ]
+        test1 = &apos;{} {}&apos;.format(test1_in1, test1_in2)
+        test2 = &apos;{} {}&apos;.format(test2_in1, test2_in2)
+
+        out1 = out2 = &apos;{}&apos; + symbol + &apos;{}&apos;
+        out1 = out1.format(test1_in1, test1_in2)
+        out2 = out2.format(test2_in1, test2_in2)
+
+        prefix = var1_decl + var2_decl
+
+        solution = &apos;\n&apos;.join([var1_read_sol, var2_read_sol])
+
+        postfix = &apos;System.out.println({} + &quot;{}&quot; + {});&apos;.format(var1, symbol, var2)
+
+        explain1 = &apos;{0} reads {1} from input and assigns {2} with {1}. &apos;
+        explain1 += &apos;Then, a second {3} reads {4} from input and assigns {5} with {4}. &apos;
+        explain1 = explain1.format(read_code, test1_in1, var1, read_code, test1_in2, var2)
+
+    explain = &apos;For the first test, &apos; + explain1
+    explain += &apos; So, the program outputs: &apos; + html_code(out1, multiline=True)
+
+    return {
+        &apos;class_var&apos;: food.capitalize(),
+        &apos;example1&apos;: make_example(test1, out1, label=1),
+        &apos;example2&apos;: make_example(test2, out2, label=2),
+        &apos;explain&apos;: html_p(explain),
+        &apos;prefix&apos;: prefix,
+        &apos;postfix&apos;: postfix,
+        &apos;prompt&apos;: html_p(prompt),
+        &apos;read_code&apos;: read_code,
+        &apos;solution&apos;: solution,
+        &apos;test1&apos;: test1,
+        &apos;test2&apos;: test2,
+        &apos;test_set&apos;: test_set,
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;num_inputs&apos;: pick_from_range(1, 2)}</meaningful><setup type="string">last_names = [
+    &apos;Aber&apos;, &apos;Axon&apos;, &apos;Baca&apos;, &apos;Bach&apos;, &apos;Ball&apos;, &apos;Beck&apos;, &apos;Bell&apos;, &apos;Boyd&apos;, &apos;Bran&apos;, &apos;Bray&apos;,
+    &apos;Bull&apos;, &apos;Burt&apos;, &apos;Cain&apos;, &apos;Cape&apos;, &apos;Carr&apos;, &apos;Chan&apos;, &apos;Chen&apos;, &apos;Choi&apos;, &apos;Chow&apos;, &apos;Cole&apos;,
+    &apos;Cook&apos;, &apos;Cruz&apos;, &apos;Dahl&apos;, &apos;Dean&apos;, &apos;Diaz&apos;, &apos;Dunn&apos;, &apos;Dyer&apos;, &apos;Fern&apos;, &apos;Finn&apos;, &apos;Ford&apos;,
+    &apos;Gogh&apos;, &apos;Gray&apos;, &apos;Gunn&apos;, &apos;Hale&apos;, &apos;Hall&apos;, &apos;Hart&apos;, &apos;Hill&apos;, &apos;Holt&apos;, &apos;Howe&apos;, &apos;Hunt&apos;,
+    &apos;Hyde&apos;, &apos;Jang&apos;, &apos;Jean&apos;, &apos;Karl&apos;, &apos;Kato&apos;, &apos;Kent&apos;, &apos;Khan&apos;, &apos;King&apos;, &apos;Kwan&apos;, &apos;Lane&apos;,
+    &apos;Lara&apos;, &apos;Leon&apos;, &apos;Liao&apos;, &apos;Lier&apos;, &apos;Long&apos;, &apos;Love&apos;, &apos;Luna&apos;, &apos;Lynn&apos;, &apos;Marx&apos;, &apos;Matt&apos;,
+    &apos;Monk&apos;, &apos;Moya&apos;, &apos;Nava&apos;, &apos;Owen&apos;, &apos;Pace&apos;, &apos;Page&apos;, &apos;Park&apos;, &apos;Paul&apos;, &apos;Pena&apos;, &apos;Pham&apos;,
+    &apos;Pike&apos;, &apos;Reed&apos;, &apos;Reid&apos;, &apos;Rice&apos;, &apos;Rios&apos;, &apos;Robb&apos;, &apos;Ross&apos;, &apos;Ruiz&apos;, &apos;Rush&apos;, &apos;Sanz&apos;,
+    &apos;Sato&apos;, &apos;Shah&apos;, &apos;Shaw&apos;, &apos;Sims&apos;, &apos;Soto&apos;, &apos;Teal&apos;, &apos;Tran&apos;, &apos;Tung&apos;, &apos;Vail&apos;, &apos;Vega&apos;,
+    &apos;Wade&apos;, &apos;Ward&apos;, &apos;Webb&apos;, &apos;West&apos;, &apos;Wong&apos;, &apos;Wood&apos;, &apos;Wyne&apos;, &apos;Yang&apos;, &apos;York&apos;, &apos;Zion&apos;,
+]
+
+read = &apos;scnr.nextInt()&apos;
+read_code = html_code(read)
+
+prompt1 = &apos;Write one &apos; + read_code + &apos; statement to read an integer from input into variable {}.&apos;
+prompt2 = &apos;Then, &apos; + prompt1[0].lower() + prompt1[1:].replace(&apos;one&apos;, &apos;a second&apos;)</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    test3 = [str(pick_from(dataset)) for dataset in distractor_permutation[&apos;test_set&apos;]]        
+    return {&apos;test3&apos;: &apos; &apos;.join(test3)}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test1}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li><li type="dict">
+<explanation type="string">${distractor.explain}</explanation>
+<files type="list"><li type="dict"><content type="list"><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">import java.util.Scanner;
+
+public class ${distractor.class_var} {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      ${distractor.var_decls}
+</template></li><li type="dict"><editable type="boolean">true</editable><solution type="string">${distractor.solution}</solution><template type="string">
+      /* Your code goes here */
+</template></li><li type="dict"><editable type="boolean">false</editable><solution type="string"></solution><template type="string">
+   }
+}</template></li></content><hide type="boolean">false</hide><input type="boolean">false</input><main type="boolean">true</main><name type="string">${distractor.class_var}.java</name></li></files><prompt type="string">${distractor.prompt}
+${distractor.example1}
+${distractor.example2}</prompt><randomization type="dict"><distractor type="string">def make_distractor_permutation(meaningful_permutation):
+    scenario = meaningful_permutation[&apos;scenario&apos;]
+    perm = scenarios[scenario]
+
+    var_names = perm[&apos;vars&apos;]
+    if scenario in [&apos;rect&apos;, &apos;weight&apos;]:
+        random.shuffle(var_names)
+    vars_prompt = make_words_from_list([html_bold(var_name) for var_name in var_names])
+
+    num_inputs = len(var_names)
+    num_inputs_word = num_words[num_inputs]
+
+    op = perm[&apos;op&apos;]
+    op_func, op_word = ops[op][&apos;func&apos;], ops[op][&apos;word&apos;]
+
+    prompt1 = &apos;Write {0} {1} statements to read {0} integers from input into variables {2}, respectively.&apos;
+    prompt2 = &apos;Then, write one {3} statement to output the {4} of the {0} integers.&apos;
+    prompt = [p.format(num_inputs_word, input_code, vars_prompt, print_code, op_word) for p in [prompt1, prompt2]]
+
+    inputs = random.sample(perm[&apos;dataset&apos;], num_inputs * num_examples)
+    test1, test2 = in1, in2 = [inputs[:num_inputs], inputs[num_inputs:]]
+
+    test1, test2 = [&apos; &apos;.join([str(num) for num in nums]) for nums in [in1, in2]]
+    out1, out2 = [reduce(op_func, nums) for nums in [in1, in2]]
+
+    expression = &apos; {} &apos;.format(op).join(var_names)
+    solution = (
+        &apos;\n&apos;.join([read_int.format(var_name) for var_name in var_names]) +
+        &apos;\n\nSystem.out.println({});&apos;.format(expression)
+    )
+
+    explain_str = &apos;the program reads {0} from input and assigns {1} with {0}.&apos;
+    explains = [explain_str.format(num, var_name) for num, var_name in zip(in1, var_names)]
+    explains = [explains[0]]  + [&apos;Then, &apos; + explain for explain in explains[1:]]
+
+    explain = [&apos;For input {}, {}&apos;.format(html_code(test1),&apos; &apos;.join(explains))]
+    explain.append(
+        &apos;The program then outputs the result of {0}. Thus, the output is {1}, followed by a newline.&apos;
+        .format(html_inline(expression), html_code(out1))
+    )
+
+    return {
+        &apos;class_var&apos;: perm[&apos;class_var&apos;],
+        &apos;example1&apos;: make_example(test1, out1, label=1),
+        &apos;example2&apos;: make_example(test2, out2, label=2),
+        &apos;explain&apos;: html_p(explain),
+        &apos;num_inputs&apos;: num_inputs,
+        &apos;prompt&apos;: html_p(prompt), 
+        &apos;solution&apos;: solution, 
+        &apos;test1&apos;: test1,
+        &apos;test2&apos;: test2,
+        &apos;test_set&apos;: [num for num in (perm[&apos;dataset&apos;] + range(11, 30)) if num not in inputs],
+        &apos;var_decls&apos;: &apos;\n\t\t&apos;.join([&apos;int {};&apos;.format(var_name) for var_name in var_names])
+    }</distractor><meaningful type="string">def make_meaningful_permutation():
+    return {&apos;scenario&apos;: pick_from(scenarios.keys())}</meaningful><setup type="string">small_ints = range(1, 11)
+food_ints = range(10, 51)
+weight_ints = range(15, 61)
+
+three_labels = range(1, 4)
+four_labels = range(1, 5)
+
+num_vars = [&apos;num{}&apos;.format(num) for num in three_labels]
+food_vars = [&apos;{}{}&apos;.format(food_var, num) for num in three_labels]
+side_vars = [&apos;side{}&apos;.format(num) for num in four_labels]
+rect_vars = [&apos;rectangle{}&apos;.format(word) for word in [&apos;Length&apos;, &apos;Width&apos;]]
+weight_vars = [&apos;{}Weight&apos;.format(word) for word in [&apos;backpack&apos;, &apos;suitcase&apos;, &apos;luggage&apos;]]
+
+scenarios = {
+    &apos;add&apos;: {&apos;vars&apos;: num_vars, &apos;dataset&apos;: small_ints, &apos;op&apos;: &apos;+&apos;, &apos;class_var&apos;: &apos;AddNums&apos;},
+    &apos;mult&apos;: {&apos;vars&apos;: num_vars, &apos;dataset&apos;: small_ints, &apos;op&apos;: &apos;*&apos;, &apos;class_var&apos;: &apos;MultiplyNums&apos;},
+    &apos;food&apos;: {&apos;vars&apos;: food_vars, &apos;dataset&apos;: food_ints, &apos;op&apos;: &apos;+&apos;, &apos;class_var&apos;: food.capitalize()},
+    &apos;side&apos;: {&apos;vars&apos;: side_vars, &apos;dataset&apos;: small_ints, &apos;op&apos;: &apos;+&apos;, &apos;class_var&apos;: &apos;Perimeter&apos;},
+    &apos;rect&apos;: {&apos;vars&apos;: rect_vars, &apos;dataset&apos;: small_ints, &apos;op&apos;: &apos;*&apos;, &apos;class_var&apos;: &apos;Area&apos;},
+    &apos;weight&apos;: {&apos;vars&apos;: weight_vars, &apos;dataset&apos;: weight_ints, &apos;op&apos;: &apos;+&apos;, &apos;class_var&apos;: &apos;TotalWeight&apos;},
+}
+
+ops = {
+    &apos;+&apos;: {&apos;func&apos;: lambda x, y: x + y, &apos;word&apos;: &apos;sum&apos;},
+    &apos;*&apos;: {&apos;func&apos;: lambda x, y: x * y, &apos;word&apos;: &apos;product&apos;},
+}</setup><test type="string">def make_test_permutation(meaningful_permutation, distractor_permutation):
+    num_inputs = distractor_permutation[&apos;num_inputs&apos;]
+    test_set = distractor_permutation[&apos;test_set&apos;]
+    test3 = [str(num) for num in random.sample(test_set, num_inputs)]
+    return {&apos;test3&apos;: &apos; &apos;.join(test3)}</test></randomization><tests type="list"><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test1}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${distractor.test2}</stdin></li><li type="dict"><args type="string"></args><out type="dict"><type type="string">std</type><value type="string"></value></out><stdin type="string">${test.test3}</stdin></li></tests></li></levels></zyOptions></zyTool>
+</zyVersion>
+
+
+<!--
+<zyVersion version="java">
+<zyTool name='CodingProgression' caption='Methods with simple conditionals.' id='2a2e1dc5-b9be-fd5a-ed9d-3ea282dad9ce' parts='1' challenge='true'>
+<zyOptions>
+<language>java</language>
+<levels type='list'>
+
+   <level type='dict'>
+      <prompt unescape-html='true'>
+Write a public static method studentFn() that {{question.prompt}}
+<br />
+</prompt>
+      <solution unescape-html='true'>{{{question.solution}}}</solution>
+      <program type='dict'>
+        <filename>Question.java</filename>
+         <prefix unescape-html='true'>import java.util.Scanner;
+
+public class Question {
+   </prefix>
+   <postfix unescape-html='true'>
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in); 
+      {{question.main}}
+   }
+}</postfix>
+      </program>
+      <input type='list'>
+         <li>{{question.test1}}</li>
+         <li>{{question.test2}}</li>
+         <li>{{question.test3}}</li>
+      </input>
+      <parameters type='dict'>
+         <question type='list'>
+             <li type='list'>
+
+
+<li type='dict'><name>print_minimum</name><main>int inp1 = scnr.nextInt();
+      int inp2 = scnr.nextInt();
+      studentFn(inp1, inp2);</main><test1>13 -12</test1><test2>0 14</test2><test3>-56 -55</test3><prompt>takes two integer parameters and prints the smaller (closer to negative infinity) of the two. End with a newline. Your method should not return a value.
+
+Ex: If -3 and 19 are passed to the method, print: -3 (with a newline)</prompt><solution unescape-html='true'>public static void studentFn(int val1, int val2) { 
+   if (val1 &lt; val2) {
+      System.out.println(val1); 
+   }
+   else { 
+      System.out.println(val2); 
+   }
+}</solution></li>
+
+<li type='dict'><name>return_minimum</name><main>int inp1 = scnr.nextInt();
+      int inp2 = scnr.nextInt();
+      int out = studentFn(inp1, inp2);
+      System.out.println(out); </main><test1>31 -21</test1><test2>-34 18</test2><test3>56 0</test3><prompt>takes two integer parameters and returns the smaller (closer to negative infinity) of the two.
+
+Ex: If -3 and 19 are passed to the method, return: -3
+</prompt><solution unescape-html='true'>public static int studentFn(int val1, int val2) { 
+   if (val1 &lt; val2) {
+      return val1; 
+   } 
+   return val2; 
+}</solution></li>
+
+<li type='dict'><name>print_maximum</name><main>int inp1 = scnr.nextInt();
+      int inp2 = scnr.nextInt();
+      studentFn(inp1, inp2);</main><test1>13 -12</test1><test2>0 14</test2><test3>-56 -55</test3><prompt>takes two integer parameters and prints the larger (closer to infinity) of the two. End with a newline. Your method should not return a value.
+
+Ex: If -3 and 19 are passed to the method, print: 19 (with a newline)
+</prompt><solution unescape-html='true'>public static void studentFn(int val1, int val2) { 
+   if (val1 &gt; val2) {
+      System.out.println(val1); 
+   }
+   else { 
+      System.out.println(val2); 
+   }
+}</solution></li>
+
+<li type='dict'><name>return_maximum</name><main>int inp1 = scnr.nextInt();
+      int inp2 = scnr.nextInt();
+      int out = studentFn(inp1, inp2);
+      System.out.println(out);</main><test1>31 -21</test1><test2>-34 18</test2><test3>56 0</test3><prompt>takes two integer parameters and returns the larger (closer to infinity) of the two.
+
+Ex: If -3 and 19 are passed to the method, return: 19</prompt><solution unescape-html='true'>public static int studentFn(int val1, int val2) { 
+   if (val1 &gt; val2) {
+      return val1; 
+   } 
+   return val2; 
+}</solution></li>
+
+<li type='dict'><name>print_polarity</name><main>int inp1 = scnr.nextInt();
+      studentFn(inp1);</main><test1>31</test1><test2>-34</test2><test3>0</test3><prompt>takes an integer parameter and prints Positive, if the parameter is greater than zero, or Not positive otherwise. End with a newline. Your method should not return a value.
+
+Ex: If -1 is passed to the method, print: Not positive (with a newline)
+</prompt><solution unescape-html='true'>public static void studentFn(int val1) { 
+   if (val1 &gt; 0) {
+      System.out.println("Positive"); 
+   }
+   else {
+      System.out.println("Not positive"); 
+   } 
+}</solution></li>
+
+<li type='dict'><name>print_polarity2</name><main>int inp1 = scnr.nextInt();
+      studentFn(inp1);</main><test1>31</test1><test2>-34</test2><test3>0</test3><prompt>takes an integer parameter and prints Negative, if the parameter is less than zero, or Not negative otherwise. End with a newline. Your method should not return a value.
+
+Ex: If 19 is passed to the method, print: Not negative (with a newline)
+</prompt><solution unescape-html='true'>public static void studentFn(int val1) { 
+   if (val1 &lt; 0) {
+      System.out.println("Negative"); 
+   }
+   else {
+      System.out.println("Not negative"); 
+   } 
+}</solution></li>
+
+<li type='dict'><name>print_longer</name><main>String str1 = scnr.next();
+      String str2 = scnr.next();
+      studentFn(str1, str2);</main><test1>ant anteater</test1><test2>bees bee</test2><test3>aardvark shark</test3><prompt>takes two String parameters and prints the longer of the two. If parameters are the same length, print the first parameter. End with a newline. Recall that Strings have a length() method. Your method should not return a value.
+
+Ex: If "salad" and "lettuce" are passed to the method, print: lettuce (with a newline)
+</prompt><solution unescape-html='true'>public static void studentFn(String str1, String str2) { 
+   if (str1.length() &gt;= str2.length()) {
+      System.out.println(str1); 
+   }
+   else {
+      System.out.println(str2); 
+   } 
+}</solution></li>
+
+<li type='dict'><name>return_shorter</name><main>String str1 = scnr.next();
+      String str2 = scnr.next();
+      String str3 = studentFn(str1, str2);
+      System.out.println(str3);</main><test1>ant anteater</test1><test2>bees bee</test2><test3>aardvark shark</test3><prompt>takes two String parameters and returns the shorter of the two. If parameters are the same length, return the first parameter. Recall that Strings have a length() method.
+
+Ex: If "salad" and "lettuce" are passed to the method, return: salad
+</prompt><solution unescape-html='true'>public static String studentFn(String str1, String str2) { 
+   if (str1.length() &lt;= str2.length()) {
+      return str1; 
+   }
+   else {
+      return str2; 
+   } 
+}</solution></li>
+
+<li type='dict'><name>print_if_long</name><main>String str = scnr.next();
+      studentFn(str);</main><test1>ant</test1><test2>bees</test2><test3>aardvark</test3><prompt>takes a String parameter and prints that String out, if the String is longer than 3 characters, or prints Too short otherwise. End with a newline. Your method should not return a value. Recall that Strings have a length() method.
+
+Ex: If "be" is passed to the method, print: Too short (with a newline)
+</prompt><solution unescape-html='true'>public static void studentFn(String str) { 
+   if (str.length() &lt; 4) {
+      System.out.println("Too short"); 
+   }
+   else {
+      System.out.println(str); 
+   } 
+}</solution></li>
+
+<li type='dict'><name>return_if_short</name><main>String str = scnr.next();
+      String out = studentFn(str);
+      System.out.println(out);</main><test1>ant</test1><test2>bees</test2><test3>aardvark</test3><prompt>takes a String parameter and returns that String, if the String is shorter than 4 characters, or returns Too Long otherwise. Recall that Strings have a length() method.
+
+Ex: If "salad" is passed to the method, return: Too Long</prompt><solution unescape-html='true'>public static String studentFn(String str) { 
+   if (str.length() &lt; 4) {
+      return str;
+   }
+   return "Too Long";
+}</solution></li>
+
+<li type='dict'><name>print_begins_a</name><main>String str = scnr.next();
+      studentFn(str);</main><test1>ant</test1><test2>bees</test2><test3>aardvark</test3><prompt>takes a String parameter and prints that String out, if the first character of the String is lowercase 'a', or Other character otherwise. End with a newline. Your method should not return a value. Recall that charAt() can read characters from Strings.
+
+Ex: If "banana" is passed to the method, print: Other character (with a newline)
+</prompt><solution unescape-html='true'>public static void studentFn(String str) { 
+   if (str.charAt(0) == 'a') {
+      System.out.println(str); 
+   }
+   else {
+      System.out.println("Other character"); 
+   } 
+}</solution></li>
+
+<li type='dict'><name>return_begins_a</name><main>String str = scnr.next();
+      String out = studentFn(str);
+      System.out.println(out);</main><test1>ant</test1><test2>bees</test2><test3>aardvark</test3><prompt>takes a String parameter and returns that String, if the first character of the String is lowercase 'a'. Otherwise, method returns an empty String. Recall that charAt() can read characters from Strings.
+
+Ex: If "apple" is passed to the method, return: apple
+</prompt><solution unescape-html='true'>public static String studentFn(String str) { 
+   if (str.charAt(0) == 'a') {
+      return str;
+   }
+   return "";
+}</solution></li>
+
+            </li>
+         </question>
+      </parameters>
+   </level>
+</levels>
+</zyOptions>
+</zyTool>
+</zyVersion>
+-->
+
+
+<zyVersion version="java">
+<zyAside type="elaboration" name="Newline character" id="f1cb03bc-ec1c-dfc4-51c7-7d9b64e2aa1f"> 
+<p> <zyDefn> A new output line can also be produced by inserting \n, known as a _newline character_, within a string literal. </zyDefn>  Ex: Outputting "1\n2\n3" outputs each number on its own output line. \n consists of two characters, \ and n, but together are considered as one newline character. <zyGoodPractice id="d8552b5e-b9b5-fac1-3b46-514f28c18778"> Good practice is to use println to output a newline when possible, as println has some technical advantages not mentioned here. </zyGoodPractice></p>  
+</zyAside>
+</zyVersion>
+
+</zySection>

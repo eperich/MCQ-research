@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,1
+2,10,0,1
+3,10,0,2
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,5,100
+1,3,1,7,100
+1,4,2,6,100
+2,3,1,11,100
+2,4,1,7,100
+3,4,1,8,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),8
+Similar (70-85%),48
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.926,duplicate
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.888,duplicate
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q6,Cloud-based storage helps manage big data by _____.,4,6,0.885,duplicate
+q2,"In a dataset, an instance represents a/an _____.",1,2,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.876,duplicate
+q1,A dataset is a collection of _____ with features and instances.,2,1,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.876,duplicate
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.873,duplicate
+q1,A dataset is a collection of _____ and instances.,1,1,q1,A dataset is a collection of _____ with features and instances.,2,1,0.862,duplicate
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.859,duplicate
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.849,similar
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.842,similar
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.842,similar
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.835,similar
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.833,similar
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.831,similar
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.83,similar
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.828,similar
+q2,"In a dataset, an instance represents a/an _____.",1,2,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.826,similar
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.812,similar
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.805,similar
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.8,similar
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.797,similar
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.796,similar
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q6,Cloud-based storage helps manage big data by _____.,4,6,0.796,similar
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q3,Instances in a dataset are also called _____.,4,3,0.794,similar
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.793,similar
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.791,similar
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.786,similar
+q2,"In a dataset, an instance represents a/an _____.",1,2,q8,A feature in a dataset is _____.,1,8,0.773,similar
+q1,A dataset is a collection of _____ and instances.,1,1,q3,Instances in a dataset are also called _____.,4,3,0.772,similar
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.771,similar
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q3,An individual row in a dataset is called a(n) _____.,3,3,0.771,similar
+q1,A dataset is a collection of _____ and instances.,1,1,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.766,similar
+q8,A feature in a dataset is _____.,1,8,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.765,similar
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.764,similar
+q2,"In a dataset, an instance represents a/an _____.",1,2,q3,An individual row in a dataset is called a(n) _____.,3,3,0.758,similar
+q8,A feature in a dataset is _____.,1,8,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.754,similar
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q10,What does velocity refer to in big data?,4,10,0.752,similar
+q8,A feature in a dataset is _____.,1,8,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.751,similar
+q3,An individual row in a dataset is called a(n) _____.,3,3,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.751,similar
+q1,A dataset is a collection of _____ and instances.,1,1,q1,A _____ is a collection of information used in data science.,3,1,0.75,similar
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.75,similar
+q1,A dataset is a collection of _____ with features and instances.,2,1,q1,A _____ is a collection of information used in data science.,3,1,0.744,similar
+q1,A _____ is a collection of information used in data science.,3,1,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.744,similar
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q5,Why do data scientists use specialized tools for big data?,4,5,0.742,similar
+q2,"In a dataset, an instance represents a/an _____.",1,2,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.738,similar
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q6,Cloud-based storage helps manage big data by _____.,4,6,0.738,similar
+q8,How do data scientists handle the variety of data types in big data?,3,8,q9,Big data variety requires data scientists to _____.,4,9,0.733,similar
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.732,similar
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.732,similar
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q3,Instances in a dataset are also called _____.,4,3,0.721,similar
+q7,How do data scientists handle constantly updating big data?,1,7,q7,"To handle high velocity data, data scientists often _____.",4,7,0.718,similar
+q1,A dataset is a collection of _____ and instances.,1,1,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.712,similar
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q8,Which task is best suited for automation by data scientists?,4,8,0.71,similar
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q10,What does velocity refer to in big data?,4,10,0.71,similar
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.708,similar
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q3,An individual row in a dataset is called a(n) _____.,3,3,0.707,similar
+q4,"What does the ""variety"" in big data refer to?",1,4,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.697,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.694,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q3,An individual row in a dataset is called a(n) _____.,3,3,0.693,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.691,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q10,What does velocity refer to in big data?,4,10,0.69,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.684,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q10,What does velocity refer to in big data?,4,10,0.682,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q8,Which task is best suited for automation by data scientists?,4,8,0.678,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q3,Instances in a dataset are also called _____.,4,3,0.677,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.673,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.672,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q3,Instances in a dataset are also called _____.,4,3,0.672,low
+q1,A dataset is a collection of _____ and instances.,1,1,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.671,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q3,Instances in a dataset are also called _____.,4,3,0.671,low
+q8,A feature in a dataset is _____.,1,8,q3,An individual row in a dataset is called a(n) _____.,3,3,0.669,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q9,Big data variety requires data scientists to _____.,4,9,0.669,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q7,"To handle high velocity data, data scientists often _____.",4,7,0.665,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q3,Instances in a dataset are also called _____.,4,3,0.664,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q4,"What does the ""variety"" in big data refer to?",1,4,0.661,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.66,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q7,"To handle high velocity data, data scientists often _____.",4,7,0.659,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.658,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q1,A _____ is a collection of information used in data science.,3,1,0.652,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.651,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q3,Instances in a dataset are also called _____.,4,3,0.648,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.648,low
+q10,Data scientists use version control to _____.,1,10,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.647,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q10,What does velocity refer to in big data?,4,10,0.647,low
+q1,A dataset is a collection of _____ and instances.,1,1,q8,A feature in a dataset is _____.,1,8,0.646,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.644,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q10,What does velocity refer to in big data?,4,10,0.644,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q7,"To handle high velocity data, data scientists often _____.",4,7,0.64,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q5,Why do data scientists use specialized tools for big data?,4,5,0.639,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.634,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q10,What does velocity refer to in big data?,4,10,0.634,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q5,Why do data scientists use specialized tools for big data?,4,5,0.631,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.63,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.63,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q5,Why do data scientists use specialized tools for big data?,4,5,0.63,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q10,Data scientists use version control to _____.,1,10,0.628,low
+q7,How do data scientists handle constantly updating big data?,1,7,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.627,low
+q1,A dataset is a collection of _____ and instances.,1,1,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.625,low
+q8,A feature in a dataset is _____.,1,8,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.622,low
+q7,How do data scientists handle constantly updating big data?,1,7,q10,Data scientists use version control to _____.,1,10,0.62,low
+q8,A feature in a dataset is _____.,1,8,q1,A dataset is a collection of _____ with features and instances.,2,1,0.62,low
+q1,A dataset is a collection of _____ and instances.,1,1,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.618,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.617,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.613,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.611,low
+q8,A feature in a dataset is _____.,1,8,q3,Instances in a dataset are also called _____.,4,3,0.61,low
+q4,"The three Vs of big data include volume, velocity, and _____.",4,4,q10,What does velocity refer to in big data?,4,10,0.61,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.606,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.605,low
+q10,Data scientists use version control to _____.,1,10,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.604,low
+q1,A _____ is a collection of information used in data science.,3,1,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.604,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.603,low
+q10,Data scientists use version control to _____.,1,10,q7,"To handle high velocity data, data scientists often _____.",4,7,0.602,low
+q7,"To handle high velocity data, data scientists often _____.",4,7,q8,Which task is best suited for automation by data scientists?,4,8,0.602,low
+q10,Data scientists use version control to _____.,1,10,q6,Cloud-based storage helps manage big data by _____.,4,6,0.6,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q8,How do data scientists handle the variety of data types in big data?,3,8,0.598,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.593,low
+q1,A dataset is a collection of _____ and instances.,1,1,q2,"In a dataset, an instance represents a/an _____.",1,2,0.591,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.589,low
+q7,How do data scientists handle constantly updating big data?,1,7,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.586,low
+q1,A _____ is a collection of information used in data science.,3,1,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.585,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q7,"To handle high velocity data, data scientists often _____.",4,7,0.584,low
+q7,How do data scientists handle constantly updating big data?,1,7,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.583,low
+q7,How do data scientists handle constantly updating big data?,1,7,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.582,low
+q1,A _____ is a collection of information used in data science.,3,1,q3,Instances in a dataset are also called _____.,4,3,0.582,low
+q8,A feature in a dataset is _____.,1,8,q1,A _____ is a collection of information used in data science.,3,1,0.581,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.581,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q7,How do data scientists handle constantly updating big data?,1,7,0.576,low
+q7,How do data scientists handle constantly updating big data?,1,7,q5,Why do data scientists use specialized tools for big data?,4,5,0.576,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q1,A dataset is a collection of _____ with features and instances.,2,1,0.575,low
+q10,Data scientists use version control to _____.,1,10,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.574,low
+q1,A dataset is a collection of _____ and instances.,1,1,q3,An individual row in a dataset is called a(n) _____.,3,3,0.569,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.568,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.562,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.562,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q7,"To handle high velocity data, data scientists often _____.",4,7,0.56,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q3,Instances in a dataset are also called _____.,4,3,0.56,low
+q7,How do data scientists handle constantly updating big data?,1,7,q8,Which task is best suited for automation by data scientists?,4,8,0.559,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q10,Data scientists use version control to _____.,1,10,0.558,low
+q10,Data scientists use version control to _____.,1,10,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.558,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q1,A _____ is a collection of information used in data science.,3,1,0.557,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q9,Big data variety requires data scientists to _____.,4,9,0.555,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q5,Why do data scientists use specialized tools for big data?,4,5,0.554,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q8,How do data scientists handle the variety of data types in big data?,3,8,0.553,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.551,low
+q8,A feature in a dataset is _____.,1,8,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.544,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q5,Why do data scientists use specialized tools for big data?,4,5,0.544,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.54,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.539,low
+q5,Why do data scientists use specialized tools for big data?,4,5,q9,Big data variety requires data scientists to _____.,4,9,0.537,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q8,How do data scientists handle the variety of data types in big data?,3,8,0.533,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q1,A _____ is a collection of information used in data science.,3,1,0.532,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q3,An individual row in a dataset is called a(n) _____.,3,3,0.531,low
+q7,How do data scientists handle constantly updating big data?,1,7,q8,How do data scientists handle the variety of data types in big data?,3,8,0.53,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.529,low
+q10,Data scientists use version control to _____.,1,10,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.528,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.526,low
+q5,Why do data scientists use specialized tools for big data?,4,5,q6,Cloud-based storage helps manage big data by _____.,4,6,0.526,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.521,low
+q7,How do data scientists handle constantly updating big data?,1,7,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.519,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.519,low
+q1,A _____ is a collection of information used in data science.,3,1,q3,An individual row in a dataset is called a(n) _____.,3,3,0.516,low
+q10,Data scientists use version control to _____.,1,10,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.515,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q5,Why do data scientists use specialized tools for big data?,4,5,0.514,low
+q7,"To handle high velocity data, data scientists often _____.",4,7,q9,Big data variety requires data scientists to _____.,4,9,0.514,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.513,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.512,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q7,"To handle high velocity data, data scientists often _____.",4,7,0.51,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q7,"To handle high velocity data, data scientists often _____.",4,7,0.51,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q8,Which task is best suited for automation by data scientists?,4,8,0.509,low
+q10,Data scientists use version control to _____.,1,10,q5,Why do data scientists use specialized tools for big data?,4,5,0.507,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.507,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.506,low
+q10,Data scientists use version control to _____.,1,10,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.505,low
+q7,How do data scientists handle constantly updating big data?,1,7,q9,Big data variety requires data scientists to _____.,4,9,0.503,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q8,How do data scientists handle the variety of data types in big data?,3,8,0.503,low
+q7,How do data scientists handle constantly updating big data?,1,7,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.502,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.501,low
+q7,How do data scientists handle constantly updating big data?,1,7,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.5,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q8,How do data scientists handle the variety of data types in big data?,3,8,0.5,low
+q1,A dataset is a collection of _____ and instances.,1,1,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.499,low
+q10,Data scientists use version control to _____.,1,10,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.499,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.497,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.497,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q6,Cloud-based storage makes big data manageable by _____.,1,6,0.496,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q9,Big data variety requires data scientists to _____.,4,9,0.496,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.496,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.494,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.494,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.492,low
+q10,Data scientists use version control to _____.,1,10,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.49,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q5,Why do data scientists use specialized tools for big data?,4,5,0.49,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.489,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q7,"To handle high velocity data, data scientists often _____.",4,7,0.489,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.488,low
+q7,How do data scientists handle constantly updating big data?,1,7,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.486,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q5,Why do data scientists use specialized tools for big data?,4,5,0.485,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.485,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,0.484,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q7,How do data scientists handle constantly updating big data?,1,7,0.484,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q6,Cloud-based storage helps manage big data by _____.,4,6,0.484,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q5,Why do data scientists use specialized tools for big data?,4,5,0.483,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q6,Cloud-based storage helps manage big data by _____.,4,6,0.481,low
+q5,Why do data scientists use specialized tools for big data?,4,5,q7,"To handle high velocity data, data scientists often _____.",4,7,0.48,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q7,"To handle high velocity data, data scientists often _____.",4,7,0.478,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q7,"To handle high velocity data, data scientists often _____.",4,7,0.478,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q6,Cloud-based storage helps manage big data by _____.,4,6,0.477,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.476,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q9,Big data variety requires data scientists to _____.,4,9,0.474,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q7,How do data scientists handle constantly updating big data?,1,7,0.473,low
+q7,How do data scientists handle constantly updating big data?,1,7,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.472,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q6,Cloud-based storage makes big data manageable by _____.,1,6,0.469,low
+q10,Data scientists use version control to _____.,1,10,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.468,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q10,Data scientists use version control to _____.,1,10,0.467,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.467,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.466,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q6,Cloud-based storage helps manage big data by _____.,4,6,0.466,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q9,Big data variety requires data scientists to _____.,4,9,0.466,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.466,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.465,low
+q7,How do data scientists handle constantly updating big data?,1,7,q6,Cloud-based storage helps manage big data by _____.,4,6,0.463,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q1,A _____ is a collection of information used in data science.,3,1,0.463,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.463,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q10,Data scientists use version control to _____.,1,10,0.462,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q5,Why do data scientists use specialized tools for big data?,4,5,0.462,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.461,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.461,low
+q10,Data scientists use version control to _____.,1,10,q9,Big data variety requires data scientists to _____.,4,9,0.461,low
+q7,How do data scientists handle constantly updating big data?,1,7,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.46,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.46,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.459,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.459,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q8,How do data scientists handle the variety of data types in big data?,3,8,0.459,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.458,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.458,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q8,How do data scientists handle the variety of data types in big data?,3,8,0.458,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q10,What does velocity refer to in big data?,4,10,0.457,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.456,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q10,What does velocity refer to in big data?,4,10,0.455,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.455,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.455,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q3,Instances in a dataset are also called _____.,4,3,0.454,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.454,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q7,"To handle high velocity data, data scientists often _____.",4,7,0.454,low
+q1,A dataset is a collection of _____ and instances.,1,1,q10,Data scientists use version control to _____.,1,10,0.453,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.453,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q9,Big data variety requires data scientists to _____.,4,9,0.453,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q6,Cloud-based storage helps manage big data by _____.,4,6,0.452,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.451,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q10,Data scientists use version control to _____.,1,10,0.451,low
+q10,Data scientists use version control to _____.,1,10,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.451,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.451,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.451,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q5,Why do data scientists use specialized tools for big data?,4,5,0.45,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.45,low
+q6,Cloud-based storage helps manage big data by _____.,4,6,q7,"To handle high velocity data, data scientists often _____.",4,7,0.45,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q6,Cloud-based storage helps manage big data by _____.,4,6,0.449,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q10,What does velocity refer to in big data?,4,10,0.448,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.448,low
+q10,Data scientists use version control to _____.,1,10,q8,Which task is best suited for automation by data scientists?,4,8,0.447,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.447,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.446,low
+q7,How do data scientists handle constantly updating big data?,1,7,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.446,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.444,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.443,low
+q8,A feature in a dataset is _____.,1,8,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.443,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.443,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.442,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q7,"To handle high velocity data, data scientists often _____.",4,7,0.442,low
+q1,A dataset is a collection of _____ and instances.,1,1,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.441,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.441,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.441,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.44,low
+q8,A feature in a dataset is _____.,1,8,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.44,low
+q10,Data scientists use version control to _____.,1,10,q1,A _____ is a collection of information used in data science.,3,1,0.44,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.439,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.438,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q9,Big data variety requires data scientists to _____.,4,9,0.438,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.437,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q9,Big data variety requires data scientists to _____.,4,9,0.437,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.436,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q7,"To handle high velocity data, data scientists often _____.",4,7,0.436,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q5,Why do data scientists use specialized tools for big data?,4,5,0.435,low
+q1,A dataset is a collection of _____ and instances.,1,1,q6,Cloud-based storage makes big data manageable by _____.,1,6,0.434,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q7,"To handle high velocity data, data scientists often _____.",4,7,0.434,low
+q1,A dataset is a collection of _____ and instances.,1,1,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.432,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q8,Which task is best suited for automation by data scientists?,4,8,0.431,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.431,low
+q10,Data scientists use version control to _____.,1,10,q1,A dataset is a collection of _____ with features and instances.,2,1,0.429,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q8,Which task is best suited for automation by data scientists?,4,8,0.428,low
+q7,How do data scientists handle constantly updating big data?,1,7,q10,What does velocity refer to in big data?,4,10,0.427,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q9,Big data variety requires data scientists to _____.,4,9,0.426,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q6,Cloud-based storage helps manage big data by _____.,4,6,0.426,low
+q10,Data scientists use version control to _____.,1,10,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.426,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q9,Big data variety requires data scientists to _____.,4,9,0.426,low
+q10,Data scientists use version control to _____.,1,10,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.425,low
+q4,"The three Vs of big data include volume, velocity, and _____.",4,4,q9,Big data variety requires data scientists to _____.,4,9,0.425,low
+q10,Data scientists use version control to _____.,1,10,q10,What does velocity refer to in big data?,4,10,0.424,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.424,low
+q6,Cloud-based storage helps manage big data by _____.,4,6,q9,Big data variety requires data scientists to _____.,4,9,0.422,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q10,What does velocity refer to in big data?,4,10,0.421,low
+q8,A feature in a dataset is _____.,1,8,q6,Cloud-based storage helps manage big data by _____.,4,6,0.42,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.42,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.42,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.419,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.418,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q8,Which task is best suited for automation by data scientists?,4,8,0.418,low
+q1,A dataset is a collection of _____ and instances.,1,1,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.417,low
+q7,How do data scientists handle constantly updating big data?,1,7,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.417,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.416,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.416,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.415,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q7,"To handle high velocity data, data scientists often _____.",4,7,0.415,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q8,How do data scientists handle the variety of data types in big data?,3,8,0.415,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q8,Which task is best suited for automation by data scientists?,4,8,0.415,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q9,Big data variety requires data scientists to _____.,4,9,0.415,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.414,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q6,Cloud-based storage makes big data manageable by _____.,1,6,0.413,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q8,A feature in a dataset is _____.,1,8,0.413,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q7,"To handle high velocity data, data scientists often _____.",4,7,0.413,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q9,Big data variety requires data scientists to _____.,4,9,0.412,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.411,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.411,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.41,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q6,Cloud-based storage helps manage big data by _____.,4,6,0.41,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.409,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.409,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q3,Instances in a dataset are also called _____.,4,3,0.409,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q6,Cloud-based storage helps manage big data by _____.,4,6,0.409,low
+q1,A dataset is a collection of _____ and instances.,1,1,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.408,low
+q1,A dataset is a collection of _____ and instances.,1,1,q6,Cloud-based storage helps manage big data by _____.,4,6,0.407,low
+q10,Data scientists use version control to _____.,1,10,q8,How do data scientists handle the variety of data types in big data?,3,8,0.407,low
+q1,A dataset is a collection of _____ and instances.,1,1,q7,"To handle high velocity data, data scientists often _____.",4,7,0.406,low
+q8,A feature in a dataset is _____.,1,8,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.406,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q5,Why do data scientists use specialized tools for big data?,4,5,0.406,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q7,How do data scientists handle constantly updating big data?,1,7,0.405,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.405,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.405,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q10,What does velocity refer to in big data?,4,10,0.405,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q8,How do data scientists handle the variety of data types in big data?,3,8,0.405,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.405,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q9,Big data variety requires data scientists to _____.,4,9,0.405,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,0.404,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.404,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q1,A _____ is a collection of information used in data science.,3,1,0.404,low
+q1,A dataset is a collection of _____ and instances.,1,1,q8,Which task is best suited for automation by data scientists?,4,8,0.403,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.403,low
+q10,Data scientists use version control to _____.,1,10,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.403,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q1,A _____ is a collection of information used in data science.,3,1,0.403,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q8,How do data scientists handle the variety of data types in big data?,3,8,0.402,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.402,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.402,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q6,Cloud-based storage helps manage big data by _____.,4,6,0.402,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q10,What does velocity refer to in big data?,4,10,0.401,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.4,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q8,A feature in a dataset is _____.,1,8,0.4,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q5,Why do data scientists use specialized tools for big data?,4,5,0.4,low
+q1,A _____ is a collection of information used in data science.,3,1,q8,Which task is best suited for automation by data scientists?,4,8,0.4,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.399,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q8,How do data scientists handle the variety of data types in big data?,3,8,0.399,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.399,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q6,Cloud-based storage helps manage big data by _____.,4,6,0.399,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.398,low
+q1,A dataset is a collection of _____ and instances.,1,1,q4,"What does the ""variety"" in big data refer to?",1,4,0.397,low
+q1,A dataset is a collection of _____ and instances.,1,1,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.397,low
+q8,A feature in a dataset is _____.,1,8,q10,Data scientists use version control to _____.,1,10,0.397,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.397,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.397,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.396,low
+q1,A dataset is a collection of _____ and instances.,1,1,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.395,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q7,"To handle high velocity data, data scientists often _____.",4,7,0.395,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q8,How do data scientists handle the variety of data types in big data?,3,8,0.395,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.394,low
+q1,A dataset is a collection of _____ and instances.,1,1,q5,Why do data scientists use specialized tools for big data?,4,5,0.393,low
+q8,A feature in a dataset is _____.,1,8,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.393,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.393,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.392,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.392,low
+q1,A _____ is a collection of information used in data science.,3,1,q7,"To handle high velocity data, data scientists often _____.",4,7,0.392,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.391,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.389,low
+q1,A _____ is a collection of information used in data science.,3,1,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.389,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q10,What does velocity refer to in big data?,4,10,0.389,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q6,Cloud-based storage helps manage big data by _____.,4,6,0.389,low
+q8,A feature in a dataset is _____.,1,8,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.388,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.388,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.388,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q8,How do data scientists handle the variety of data types in big data?,3,8,0.388,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.387,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.387,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.387,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.386,low
+q10,Data scientists use version control to _____.,1,10,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.386,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q8,How do data scientists handle the variety of data types in big data?,3,8,0.386,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q8,Which task is best suited for automation by data scientists?,4,8,0.385,low
+q1,A _____ is a collection of information used in data science.,3,1,q9,Big data variety requires data scientists to _____.,4,9,0.385,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.384,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q7,"To handle high velocity data, data scientists often _____.",4,7,0.384,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.384,low
+q1,A _____ is a collection of information used in data science.,3,1,q5,Why do data scientists use specialized tools for big data?,4,5,0.384,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.384,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q3,Instances in a dataset are also called _____.,4,3,0.384,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q1,A dataset is a collection of _____ with features and instances.,2,1,0.383,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.383,low
+q1,A _____ is a collection of information used in data science.,3,1,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.383,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q9,Big data variety requires data scientists to _____.,4,9,0.383,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.382,low
+q8,A feature in a dataset is _____.,1,8,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.382,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.382,low
+q6,Cloud-based storage helps manage big data by _____.,4,6,q10,What does velocity refer to in big data?,4,10,0.382,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q5,Why do data scientists use specialized tools for big data?,4,5,0.381,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.38,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.38,low
+q7,"To handle high velocity data, data scientists often _____.",4,7,q10,What does velocity refer to in big data?,4,10,0.38,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.379,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.379,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.379,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q8,Which task is best suited for automation by data scientists?,4,8,0.379,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.379,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q6,Cloud-based storage helps manage big data by _____.,4,6,0.378,low
+q8,A feature in a dataset is _____.,1,8,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.378,low
+q1,A _____ is a collection of information used in data science.,3,1,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.378,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.377,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.377,low
+q3,Instances in a dataset are also called _____.,4,3,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.377,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.376,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q6,Cloud-based storage helps manage big data by _____.,4,6,0.376,low
+q8,Which task is best suited for automation by data scientists?,4,8,q9,Big data variety requires data scientists to _____.,4,9,0.375,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.374,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.374,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.373,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.373,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q3,Instances in a dataset are also called _____.,4,3,0.373,low
+q8,A feature in a dataset is _____.,1,8,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.372,low
+q3,Instances in a dataset are also called _____.,4,3,q7,"To handle high velocity data, data scientists often _____.",4,7,0.372,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q7,"To handle high velocity data, data scientists often _____.",4,7,0.371,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.371,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.371,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q9,Big data variety requires data scientists to _____.,4,9,0.371,low
+q5,Why do data scientists use specialized tools for big data?,4,5,q8,Which task is best suited for automation by data scientists?,4,8,0.371,low
+q8,A feature in a dataset is _____.,1,8,q7,"To handle high velocity data, data scientists often _____.",4,7,0.37,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.37,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q8,Which task is best suited for automation by data scientists?,4,8,0.37,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.37,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.369,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.369,low
+q1,A dataset is a collection of _____ and instances.,1,1,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.368,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.368,low
+q8,A feature in a dataset is _____.,1,8,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.368,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.368,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q9,Big data variety requires data scientists to _____.,4,9,0.368,low
+q1,A _____ is a collection of information used in data science.,3,1,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.368,low
+q1,A dataset is a collection of _____ and instances.,1,1,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.367,low
+q8,A feature in a dataset is _____.,1,8,q9,Big data variety requires data scientists to _____.,4,9,0.367,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.367,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.367,low
+q1,A dataset is a collection of _____ and instances.,1,1,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.366,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q1,A dataset is a collection of _____ with features and instances.,2,1,0.366,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q6,Cloud-based storage helps manage big data by _____.,4,6,0.366,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.366,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.366,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q8,A feature in a dataset is _____.,1,8,0.365,low
+q8,A feature in a dataset is _____.,1,8,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.365,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.365,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.365,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.365,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q7,"To handle high velocity data, data scientists often _____.",4,7,0.364,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q3,Instances in a dataset are also called _____.,4,3,0.363,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q10,What does velocity refer to in big data?,4,10,0.363,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q9,Big data variety requires data scientists to _____.,4,9,0.362,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.362,low
+q1,A dataset is a collection of _____ and instances.,1,1,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.361,low
+q7,How do data scientists handle constantly updating big data?,1,7,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.361,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q6,Cloud-based storage helps manage big data by _____.,4,6,0.361,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q9,Big data variety requires data scientists to _____.,4,9,0.361,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.361,low
+q3,Instances in a dataset are also called _____.,4,3,q8,Which task is best suited for automation by data scientists?,4,8,0.361,low
+q8,A feature in a dataset is _____.,1,8,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.36,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q5,Why do data scientists use specialized tools for big data?,4,5,0.36,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.36,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.359,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q1,A _____ is a collection of information used in data science.,3,1,0.359,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q9,Big data variety requires data scientists to _____.,4,9,0.359,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q10,What does velocity refer to in big data?,4,10,0.359,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.358,low
+q7,How do data scientists handle constantly updating big data?,1,7,q1,A _____ is a collection of information used in data science.,3,1,0.358,low
+q10,Data scientists use version control to _____.,1,10,q3,Instances in a dataset are also called _____.,4,3,0.358,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q8,How do data scientists handle the variety of data types in big data?,3,8,0.358,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q10,What does velocity refer to in big data?,4,10,0.358,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.358,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q3,Instances in a dataset are also called _____.,4,3,0.358,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q8,Which task is best suited for automation by data scientists?,4,8,0.358,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q1,A _____ is a collection of information used in data science.,3,1,0.357,low
+q8,A feature in a dataset is _____.,1,8,q5,Why do data scientists use specialized tools for big data?,4,5,0.357,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.357,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q3,Instances in a dataset are also called _____.,4,3,0.357,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q1,A _____ is a collection of information used in data science.,3,1,0.356,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q8,Which task is best suited for automation by data scientists?,4,8,0.356,low
+q1,A dataset is a collection of _____ and instances.,1,1,q7,How do data scientists handle constantly updating big data?,1,7,0.355,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.355,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.354,low
+q8,A feature in a dataset is _____.,1,8,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.354,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q1,A _____ is a collection of information used in data science.,3,1,0.354,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.353,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q1,A dataset is a collection of _____ with features and instances.,2,1,0.353,low
+q10,Data scientists use version control to _____.,1,10,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.353,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.353,low
+q9,Big data variety requires data scientists to _____.,4,9,q10,What does velocity refer to in big data?,4,10,0.353,low
+q8,A feature in a dataset is _____.,1,8,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.352,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.352,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q3,Instances in a dataset are also called _____.,4,3,0.352,low
+q1,A _____ is a collection of information used in data science.,3,1,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.352,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,0.351,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.351,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.351,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.351,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.351,low
+q7,How do data scientists handle constantly updating big data?,1,7,q1,A dataset is a collection of _____ with features and instances.,2,1,0.35,low
+q10,Data scientists use version control to _____.,1,10,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.35,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q7,"To handle high velocity data, data scientists often _____.",4,7,0.35,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.35,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.349,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.349,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.349,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.349,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.349,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q6,Cloud-based storage helps manage big data by _____.,4,6,0.349,low
+q1,A dataset is a collection of _____ and instances.,1,1,q9,Big data variety requires data scientists to _____.,4,9,0.348,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.348,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q1,A _____ is a collection of information used in data science.,3,1,0.348,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.348,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.347,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.347,low
+q1,A dataset is a collection of _____ and instances.,1,1,q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,0.346,low
+q1,A dataset is a collection of _____ and instances.,1,1,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.346,low
+q8,A feature in a dataset is _____.,1,8,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.346,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.346,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q9,Big data variety requires data scientists to _____.,4,9,0.346,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.345,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.344,low
+q5,Why do data scientists use specialized tools for big data?,4,5,q10,What does velocity refer to in big data?,4,10,0.344,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.343,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q8,How do data scientists handle the variety of data types in big data?,3,8,0.343,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.343,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.343,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.343,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q9,Big data variety requires data scientists to _____.,4,9,0.342,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q8,How do data scientists handle the variety of data types in big data?,3,8,0.342,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.342,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.342,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.341,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.341,low
+q1,A _____ is a collection of information used in data science.,3,1,q8,How do data scientists handle the variety of data types in big data?,3,8,0.341,low
+q1,A _____ is a collection of information used in data science.,3,1,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.341,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.341,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.34,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.34,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q1,A _____ is a collection of information used in data science.,3,1,0.34,low
+q3,Instances in a dataset are also called _____.,4,3,q9,Big data variety requires data scientists to _____.,4,9,0.34,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.339,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.339,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.339,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.339,low
+q1,A _____ is a collection of information used in data science.,3,1,q6,Cloud-based storage helps manage big data by _____.,4,6,0.339,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q9,Big data variety requires data scientists to _____.,4,9,0.338,low
+q4,"The three Vs of big data include volume, velocity, and _____.",4,4,q6,Cloud-based storage helps manage big data by _____.,4,6,0.338,low
+q4,"The three Vs of big data include volume, velocity, and _____.",4,4,q7,"To handle high velocity data, data scientists often _____.",4,7,0.338,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q8,Which task is best suited for automation by data scientists?,4,8,0.337,low
+q10,Data scientists use version control to _____.,1,10,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.337,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q7,"To handle high velocity data, data scientists often _____.",4,7,0.337,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.336,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.336,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q1,A _____ is a collection of information used in data science.,3,1,0.335,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.335,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.335,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.335,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.335,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q9,Big data variety requires data scientists to _____.,4,9,0.334,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.334,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.334,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q5,Why do data scientists use specialized tools for big data?,4,5,0.334,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.333,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q3,Instances in a dataset are also called _____.,4,3,0.333,low
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,q8,Which task is best suited for automation by data scientists?,4,8,0.333,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q1,A _____ is a collection of information used in data science.,3,1,0.332,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.332,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.331,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.331,low
+q1,A dataset is a collection of _____ and instances.,1,1,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.33,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.329,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.329,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.328,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.326,low
+q7,How do data scientists handle constantly updating big data?,1,7,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.326,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q9,Big data variety requires data scientists to _____.,4,9,0.326,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.325,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.325,low
+q1,A dataset is a collection of _____ and instances.,1,1,q8,How do data scientists handle the variety of data types in big data?,3,8,0.324,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.324,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.324,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q8,Which task is best suited for automation by data scientists?,4,8,0.322,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.322,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q1,A dataset is a collection of _____ with features and instances.,2,1,0.321,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q5,Why do data scientists use specialized tools for big data?,4,5,0.32,low
+q7,How do data scientists handle constantly updating big data?,1,7,q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,0.32,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q7,"To handle high velocity data, data scientists often _____.",4,7,0.319,low
+q1,A dataset is a collection of _____ and instances.,1,1,q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,0.318,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q5,Why do data scientists use specialized tools for big data?,4,5,0.318,low
+q1,A dataset is a collection of _____ and instances.,1,1,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.317,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,0.317,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q8,Which task is best suited for automation by data scientists?,4,8,0.317,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.316,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q10,What does velocity refer to in big data?,4,10,0.316,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,0.315,low
+q7,How do data scientists handle constantly updating big data?,1,7,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.315,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q6,Cloud-based storage helps manage big data by _____.,4,6,0.314,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q6,Cloud-based storage helps manage big data by _____.,4,6,0.314,low
+q7,How do data scientists handle constantly updating big data?,1,7,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.313,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q10,Data scientists use version control to _____.,1,10,0.312,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.312,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.311,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.31,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q3,Instances in a dataset are also called _____.,4,3,0.31,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q8,Which task is best suited for automation by data scientists?,4,8,0.309,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q8,A feature in a dataset is _____.,1,8,0.307,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q4,"What does the ""variety"" in big data refer to?",1,4,0.306,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q8,Which task is best suited for automation by data scientists?,4,8,0.306,low
+q10,Data scientists use version control to _____.,1,10,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.306,low
+q6,Cloud-based storage helps manage big data by _____.,4,6,q8,Which task is best suited for automation by data scientists?,4,8,0.306,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.305,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.305,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,5,0.305,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.305,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.304,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.304,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q3,Which term describes the individual data points or rows in a dataset?,2,3,0.303,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.303,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.303,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q1,A _____ is a collection of information used in data science.,3,1,0.302,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.301,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.3,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q1,A dataset is a collection of _____ with features and instances.,2,1,0.3,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q3,Instances in a dataset are also called _____.,4,3,0.3,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.3,low
+q1,A dataset is a collection of _____ used by data scientists.,4,1,q10,What does velocity refer to in big data?,4,10,0.3,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.299,low
+q8,A feature in a dataset is _____.,1,8,q10,What does velocity refer to in big data?,4,10,0.299,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q6,Cloud-based storage helps manage big data by _____.,4,6,0.299,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.298,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q8,Which task is best suited for automation by data scientists?,4,8,0.297,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.297,low
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,8,q3,An individual row in a dataset is called a(n) _____.,3,3,0.296,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q3,Instances in a dataset are also called _____.,4,3,0.296,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q6,Cloud-based storage helps manage big data by _____.,4,6,0.295,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.295,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.295,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q6,Cloud-based storage makes big data manageable by _____.,1,6,0.294,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q7,"To handle high velocity data, data scientists often _____.",4,7,0.294,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q3,Instances in a dataset are also called _____.,4,3,0.294,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.294,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q10,What does velocity refer to in big data?,4,10,0.294,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q3,Instances in a dataset are also called _____.,4,3,0.293,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q8,Which task is best suited for automation by data scientists?,4,8,0.292,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.292,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q3,Instances in a dataset are also called _____.,4,3,0.292,low
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.292,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q10,A data scientist automates generating weekly reports because these reports _____.,2,10,0.29,low
+q1,A dataset is a collection of _____ and instances.,1,1,q10,What does velocity refer to in big data?,4,10,0.289,low
+q8,A feature in a dataset is _____.,1,8,q8,How do data scientists handle the variety of data types in big data?,3,8,0.289,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.289,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q9,Big data variety requires data scientists to _____.,4,9,0.289,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q5,Why do data scientists use specialized tools for big data?,4,5,0.289,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,0.288,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q1,A dataset is a collection of _____ used by data scientists.,4,1,0.288,low
+q8,Which task is best suited for automation by data scientists?,4,8,q10,What does velocity refer to in big data?,4,10,0.288,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.287,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.287,low
+q3,Instances in a dataset are also called _____.,4,3,q6,Cloud-based storage helps manage big data by _____.,4,6,0.287,low
+q7,How do data scientists handle constantly updating big data?,1,7,q3,Instances in a dataset are also called _____.,4,3,0.286,low
+q4,"The three Vs of big data include volume, velocity, and _____.",4,4,q5,Why do data scientists use specialized tools for big data?,4,5,0.286,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q8,How do data scientists handle the variety of data types in big data?,3,8,0.285,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q3,An individual row in a dataset is called a(n) _____.,3,3,0.285,low
+q3,Instances in a dataset are also called _____.,4,3,q5,Why do data scientists use specialized tools for big data?,4,5,0.285,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q3,An individual row in a dataset is called a(n) _____.,3,3,0.284,low
+q10,A data scientist automates generating weekly reports because these reports _____.,2,10,q10,What does velocity refer to in big data?,4,10,0.284,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,0.284,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.283,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q3,Instances in a dataset are also called _____.,4,3,0.283,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.282,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q3,Instances in a dataset are also called _____.,4,3,0.279,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.279,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q7,"To handle high velocity data, data scientists often _____.",4,7,0.279,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q6,Cloud-based storage helps manage big data by _____.,4,6,0.279,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,0.278,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q4,"The three Vs of big data include volume, velocity, and _____.",4,4,0.277,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q3,An individual row in a dataset is called a(n) _____.,3,3,0.274,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q7,"To handle high velocity data, data scientists often _____.",4,7,0.274,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.273,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.272,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q6,Cloud-based storage helps manage big data by _____.,4,6,0.272,low
+q1,A _____ is a collection of information used in data science.,3,1,q10,What does velocity refer to in big data?,4,10,0.272,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.272,low
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.272,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q5,Why do data scientists use specialized tools for big data?,4,5,0.27,low
+q3,Which term describes the individual data points or rows in a dataset?,2,3,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.27,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q10,What does velocity refer to in big data?,4,10,0.269,low
+q1,A _____ is a collection of information used in data science.,3,1,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.268,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.265,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.264,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q9,Automating the generation of weekly reports in data science is useful because it _____.,3,9,0.263,low
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,7,q3,An individual row in a dataset is called a(n) _____.,3,3,0.261,low
+q1,A dataset is a collection of _____ and instances.,1,1,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.259,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q9,Big data variety requires data scientists to _____.,4,9,0.253,low
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,3,q3,An individual row in a dataset is called a(n) _____.,3,3,0.252,low
+q7,How do data scientists handle constantly updating big data?,1,7,q8,A feature in a dataset is _____.,1,8,0.252,low
+q10,Data scientists use version control to _____.,1,10,q3,An individual row in a dataset is called a(n) _____.,3,3,0.252,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.251,low
+q8,A feature in a dataset is _____.,1,8,q8,Which task is best suited for automation by data scientists?,4,8,0.251,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.25,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q6,Why do data scientists use cloud-based storage for big data?,2,6,0.249,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.249,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.248,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q3,Instances in a dataset are also called _____.,4,3,0.248,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q5,Why do data scientists use specialized tools for big data?,4,5,0.248,low
+q4,"What does the ""variety"" in big data refer to?",1,4,q3,An individual row in a dataset is called a(n) _____.,3,3,0.247,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q10,What does velocity refer to in big data?,4,10,0.247,low
+q7,How do data scientists handle constantly updating big data?,1,7,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.246,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.246,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q5,Why do data scientists use specialized tools for big data?,4,5,0.246,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q7,Which tool is commonly used to handle very large datasets in data science?,3,7,0.246,low
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,5,q8,Which task is best suited for automation by data scientists?,4,8,0.245,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q5,Why do data scientists use specialized tools for big data?,4,5,0.244,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q7,"To handle high velocity data, data scientists often _____.",4,7,0.243,low
+q1,A dataset is a collection of _____ with features and instances.,2,1,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.242,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q6,Cloud-based storage helps manage big data by _____.,4,6,0.242,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q10,What does velocity refer to in big data?,4,10,0.241,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q8,How do data scientists handle the variety of data types in big data?,3,8,0.238,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q8,Which task is best suited for automation by data scientists?,4,8,0.238,low
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,4,q8,Which task is best suited for automation by data scientists?,4,8,0.238,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q8,Which task is best suited for automation by data scientists?,4,8,0.236,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q10,What does velocity refer to in big data?,4,10,0.235,low
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,9,q3,An individual row in a dataset is called a(n) _____.,3,3,0.235,low
+q3,Instances in a dataset are also called _____.,4,3,q10,What does velocity refer to in big data?,4,10,0.234,low
+q8,How do data scientists handle the variety of data types in big data?,3,8,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.232,low
+q4,"The three Vs of big data include volume, velocity, and _____.",4,4,q8,Which task is best suited for automation by data scientists?,4,8,0.231,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q5,Why do data scientists use specialized tools for big data?,4,5,0.23,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.229,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,0.228,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q10,What does velocity refer to in big data?,4,10,0.228,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,6,0.228,low
+q7,How do data scientists handle constantly updating big data?,1,7,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.227,low
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,4,q8,Which task is best suited for automation by data scientists?,4,8,0.226,low
+q6,Cloud-based storage makes big data manageable by _____.,1,6,q3,An individual row in a dataset is called a(n) _____.,3,3,0.224,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q8,How do data scientists handle the variety of data types in big data?,3,8,0.223,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q3,Instances in a dataset are also called _____.,4,3,0.223,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q8,Which task is best suited for automation by data scientists?,4,8,0.221,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q9,Which tool is designed to store and analyze large volumes of data?,2,9,0.212,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q7,How do data scientists handle constantly updating big data?,1,7,0.21,low
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,q8,Which task is best suited for automation by data scientists?,4,8,0.209,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,0.208,low
+q8,A feature in a dataset is _____.,1,8,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.206,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.205,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q8,How do data scientists handle the variety of data types in big data?,3,8,0.2,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,0.199,low
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,2,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.196,low
+q7,Which tool is commonly used to handle very large datasets in data science?,3,7,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.196,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q3,An individual row in a dataset is called a(n) _____.,3,3,0.192,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q5,Why do data scientists use specialized tools for big data?,4,5,0.191,low
+q6,Why do data scientists use cloud-based storage for big data?,2,6,q3,An individual row in a dataset is called a(n) _____.,3,3,0.188,low
+q7,How do data scientists handle constantly updating big data?,1,7,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.184,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.178,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q10,What does velocity refer to in big data?,4,10,0.172,low
+q7,How do data scientists handle constantly updating big data?,1,7,q3,An individual row in a dataset is called a(n) _____.,3,3,0.171,low
+q9,Which tool is designed to store and analyze large volumes of data?,2,9,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.163,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q8,How do data scientists handle the variety of data types in big data?,3,8,0.159,low
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,2,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.158,low
+q3,An individual row in a dataset is called a(n) _____.,3,3,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.157,low
+q2,"In a dataset, an instance represents a/an _____.",1,2,q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,0.156,low
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,5,q3,An individual row in a dataset is called a(n) _____.,3,3,0.154,low
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,10,q2,"In a dataset, a feature represents a/an _____ of an instance.",4,2,0.139,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define features and instances in a dataset.  
+Identify and explain the three Vs of big data: volume, velocity, and variety.  
+Describe how data scientists manage and analyze large volumes of data using specialized tools and cloud-based storage.  
+Explain strategies data scientists use to handle high-velocity data, including reproducible analyses, automation, and version control.  
+Understand how data scientists address the variety of data types by applying interdisciplinary techniques from statistics, computer science, machine learning, and artificial intelligence."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A dataset is a collection of _____ and instances.,1,yes,This question assesses the understanding of features and instances in a dataset.
+q2,"In a dataset, an instance represents a/an _____.",1,yes,This question evaluates knowledge of what an instance represents in a dataset.
+q3,"Which ""V"" of big data describes the speed at which data is created and updated?",1,yes,"This question tests identification of the ""velocity"" V of big data."
+q4,"What does the ""variety"" in big data refer to?",1,yes,"This question assesses understanding of the ""variety"" aspect of big data."
+q5,Why do data scientists use tools like Apache Spark or Hadoop?,1,yes,This question evaluates knowledge of specialized tools used to manage and analyze large volumes of data.
+q6,Cloud-based storage makes big data manageable by _____.,1,yes,This question assesses understanding of how cloud-based storage helps manage big data.
+q7,How do data scientists handle constantly updating big data?,1,yes,"This question tests strategies for handling high-velocity data, including automation and reproducibility."
+q8,A feature in a dataset is _____.,1,yes,This question evaluates understanding of what a feature in a dataset is.
+q9,"Which of the following best explains the ""volume"" characteristic of big data?",1,yes,"This question assesses understanding of the ""volume"" characteristic of big data."
+q10,Data scientists use version control to _____.,1,yes,This question tests knowledge of version control as a strategy for reproducible analyses.
+q1,A dataset is a collection of _____ with features and instances.,2,no,This question incorrectly describes datasets and does not align with defining features and instances.
+q2,"In a dataset, a feature is a characteristic measured on a/an _____.",2,yes,This question assesses understanding of what a feature is in relation to an observational unit (instance).
+q3,Which term describes the individual data points or rows in a dataset?,2,yes,This question evaluates knowledge of what individual data points or rows (instances) are called.
+q4,"Big data has high _____, meaning it updates continuously and rapidly.",2,yes,"This question tests understanding of the ""velocity"" characteristic of big data."
+q5,"Which ""V"" of big data refers to the many formats like images, text, and tables?",2,yes,"This question assesses knowledge of the ""variety"" characteristic of big data."
+q6,Why do data scientists use cloud-based storage for big data?,2,yes,This question evaluates understanding of why cloud-based storage is used for big data.
+q7,What is a key advantage of writing code for data analyses with high-velocity data?,2,yes,This question tests strategies for handling high-velocity data through code automation.
+q8,Data scientists handle big data variety by using tools from multiple _____.,2,yes,This question assesses how data scientists handle data variety using interdisciplinary techniques.
+q9,Which tool is designed to store and analyze large volumes of data?,2,yes,This question evaluates knowledge of specialized tools designed for large volume data storage and analysis.
+q10,A data scientist automates generating weekly reports because these reports _____.,2,yes,This question tests understanding of automation in handling consistent data structures for reports.
+q1,A _____ is a collection of information used in data science.,3,yes,This question assesses understanding of what a dataset is in data science.
+q2,"In a dataset, a _____ represents a characteristic measured on each instance.",3,yes,This question evaluates knowledge of what a feature represents in a dataset.
+q3,An individual row in a dataset is called a(n) _____.,3,yes,This question tests understanding of what an individual row (instance) in a dataset is called.
+q4,"Big data is defined by three Vs: volume, velocity, and _____.",3,yes,"This question assesses knowledge of the three Vs of big data, including variety."
+q5,"Which ""V"" of big data involves datasets being continually updated in real time?",3,yes,"This question tests understanding of the ""velocity"" characteristic of big data."
+q6,Data scientists use cloud-based storage for big data mainly because it _____.,3,yes,This question evaluates understanding of cloud-based storage for managing big data.
+q7,Which tool is commonly used to handle very large datasets in data science?,3,yes,This question assesses knowledge of tools used to handle very large datasets.
+q8,How do data scientists handle the variety of data types in big data?,3,yes,This question tests understanding of handling data variety using interdisciplinary tools.
+q9,Automating the generation of weekly reports in data science is useful because it _____.,3,yes,This question evaluates understanding of automation benefits in handling consistent data.
+q10,What is the benefit of writing code to analyze data when data arrives at high velocity?,3,yes,This question assesses the benefit of code automation for high-velocity data analysis.
+q1,A dataset is a collection of _____ used by data scientists.,4,no,This question incorrectly defines a dataset and does not align with the learning objectives.
+q2,"In a dataset, a feature represents a/an _____ of an instance.",4,yes,This question tests understanding of what a feature represents in relation to an instance.
+q3,Instances in a dataset are also called _____.,4,yes,This question evaluates knowledge of alternative terms for instances in a dataset.
+q4,"The three Vs of big data include volume, velocity, and _____.",4,yes,"This question assesses knowledge of the three Vs of big data, including variety."
+q5,Why do data scientists use specialized tools for big data?,4,yes,This question tests understanding of why specialized tools are needed for big data analysis.
+q6,Cloud-based storage helps manage big data by _____.,4,yes,This question evaluates understanding of cloud-based storage's role in managing big data.
+q7,"To handle high velocity data, data scientists often _____.",4,yes,This question assesses strategies for handling high-velocity data through code automation.
+q8,Which task is best suited for automation by data scientists?,4,yes,This question tests understanding of tasks suitable for automation in data science.
+q9,Big data variety requires data scientists to _____.,4,yes,This question evaluates knowledge of addressing big data variety using interdisciplinary techniques.
+q10,What does velocity refer to in big data?,4,yes,"This question assesses understanding of the ""velocity"" characteristic of big data."

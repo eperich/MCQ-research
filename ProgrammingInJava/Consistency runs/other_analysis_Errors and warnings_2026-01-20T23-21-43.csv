@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,1
+2,10,0,0
+3,10,0,1
+4,10,0,2
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,5,100
+1,3,2,8,100
+1,4,1,6,100
+2,3,2,6,100
+2,4,1,4,100
+3,4,2,6,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),10
+Similar (70-85%),39
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q8,Why should programmers configure compilers to show more warnings?,3,8,0.932,duplicate
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.907,duplicate
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.898,duplicate
+q3,Why should a programmer fix the first compiler error before others?,2,3,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.898,duplicate
+q10,"After fixing the first error, the programmer should _____.",2,10,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.886,duplicate
+q8,Why should programmers configure compilers to show more warnings?,3,8,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.886,duplicate
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.883,duplicate
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.873,duplicate
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.86,duplicate
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q6,Good practice for new programmers is to compile _____.,3,6,0.851,duplicate
+q5,A logic error is different from a syntax error because it _____.,1,5,q5,A logic error differs from a syntax error because it _____.,2,5,0.847,similar
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.843,similar
+q7,Compiler warnings _____.,1,7,q6,Compiler warnings indicate _____.,2,6,0.84,similar
+q1,A syntax error occurs when a program _____.,1,1,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.824,similar
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.807,similar
+q4,Which is best practice for compiling code?,2,4,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.804,similar
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.802,similar
+q9,"The term ""bug"" originated from a/an _____.",1,9,q10,"The term ""bug"" originally referred to _____.",3,10,0.801,similar
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.795,similar
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.792,similar
+q6,Good practice for new programmers is to compile _____.,3,6,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.786,similar
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.781,similar
+q5,A compiler warning means the program _____.,3,5,q7,What does a compiler warning indicate?,4,7,0.778,similar
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.772,similar
+q4,Which is best practice for compiling code?,2,4,q6,Good practice for new programmers is to compile _____.,3,6,0.771,similar
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.769,similar
+q5,A logic error differs from a syntax error because it _____.,2,5,q5,A logic error occurs when:,4,5,0.757,similar
+q5,A logic error occurs when:,4,5,q7,What does a compiler warning indicate?,4,7,0.754,similar
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q5,A logic error occurs when:,4,5,0.751,similar
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q4,Which is best practice for compiling code?,2,4,0.75,similar
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.748,similar
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.742,similar
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q5,A logic error occurs when:,4,5,0.739,similar
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.733,similar
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.732,similar
+q5,A logic error is different from a syntax error because it _____.,1,5,q5,A logic error occurs when:,4,5,0.732,similar
+q1,A syntax error occurs when a program _____.,1,1,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.731,similar
+q5,A logic error differs from a syntax error because it _____.,2,5,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.731,similar
+q5,A logic error is different from a syntax error because it _____.,1,5,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.73,similar
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.727,similar
+q1,A syntax error occurs when a program _____.,1,1,q5,A logic error is different from a syntax error because it _____.,1,5,0.725,similar
+q5,A logic error differs from a syntax error because it _____.,2,5,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.719,similar
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.711,similar
+q7,Compiler warnings _____.,1,7,q5,A logic error occurs when:,4,5,0.71,similar
+q5,A logic error differs from a syntax error because it _____.,2,5,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.71,similar
+q10,"After fixing the first error, the programmer should _____.",2,10,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.706,similar
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q3,Why should a programmer fix the first compiler error before others?,2,3,0.703,similar
+q5,A logic error is different from a syntax error because it _____.,1,5,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.703,similar
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.702,similar
+q1,A syntax error occurs when a program _____.,1,1,q5,A logic error differs from a syntax error because it _____.,2,5,0.7,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.697,low
+q1,A syntax error occurs when a program _____.,1,1,q5,A logic error occurs when:,4,5,0.695,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.693,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.69,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.686,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.685,low
+q7,Compiler warnings _____.,1,7,q7,Which statement about compiler warnings is true?,2,7,0.685,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.684,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.681,low
+q7,Compiler warnings _____.,1,7,q7,What does a compiler warning indicate?,4,7,0.677,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q10,"After fixing the first error, the programmer should _____.",2,10,0.677,low
+q6,Compiler warnings indicate _____.,2,6,q5,A compiler warning means the program _____.,3,5,0.676,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q5,A logic error occurs when:,4,5,0.675,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.673,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q7,What does a compiler warning indicate?,4,7,0.673,low
+q5,A compiler warning means the program _____.,3,5,q5,A logic error occurs when:,4,5,0.672,low
+q1,A syntax error occurs when a program _____.,1,1,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.671,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.67,low
+q7,Compiler warnings _____.,1,7,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.668,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q3,Why should a programmer fix the first compiler error before others?,2,3,0.667,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.667,low
+q7,Compiler warnings _____.,1,7,q5,A compiler warning means the program _____.,3,5,0.667,low
+q7,Which statement about compiler warnings is true?,2,7,q5,A compiler warning means the program _____.,3,5,0.666,low
+q5,A logic error occurs when:,4,5,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.666,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.664,low
+q1,A syntax error occurs when a program _____.,1,1,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.663,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.663,low
+q6,Compiler warnings indicate _____.,2,6,q5,A logic error occurs when:,4,5,0.662,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.662,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.662,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.659,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.659,low
+q7,Which statement about compiler warnings is true?,2,7,q8,Why should programmers configure compilers to show more warnings?,3,8,0.657,low
+q7,What does a compiler warning indicate?,4,7,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.657,low
+q7,Compiler warnings _____.,1,7,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.656,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.654,low
+q7,Compiler warnings _____.,1,7,q8,Why should programmers configure compilers to show more warnings?,3,8,0.653,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q7,What does a compiler warning indicate?,4,7,0.652,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.652,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.647,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.646,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q10,"After fixing the first error, the programmer should _____.",2,10,0.644,low
+q7,Which statement about compiler warnings is true?,2,7,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.644,low
+q6,Compiler warnings indicate _____.,2,6,q7,Which statement about compiler warnings is true?,2,7,0.643,low
+q7,Which statement about compiler warnings is true?,2,7,q7,What does a compiler warning indicate?,4,7,0.643,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.643,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.642,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q5,A logic error occurs when:,4,5,0.639,low
+q6,Compiler warnings indicate _____.,2,6,q7,What does a compiler warning indicate?,4,7,0.638,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.638,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q10,"After fixing the first error, the programmer should _____.",2,10,0.637,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q10,"After fixing the first error, the programmer should _____.",2,10,0.635,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q5,A logic error occurs when:,4,5,0.633,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.632,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,0.631,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.631,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.629,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q5,A logic error differs from a syntax error because it _____.,2,5,0.628,low
+q1,A syntax error occurs when a program _____.,1,1,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.625,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.625,low
+q6,Compiler warnings indicate _____.,2,6,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.624,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q5,A logic error occurs when:,4,5,0.624,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.624,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.623,low
+q7,Compiler warnings _____.,1,7,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.623,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.621,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.62,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q7,Which statement about compiler warnings is true?,2,7,0.62,low
+q4,Which is best practice for compiling code?,2,4,q10,"After fixing the first error, the programmer should _____.",2,10,0.619,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q6,Good practice for new programmers is to compile _____.,3,6,0.619,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.617,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.616,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,0.614,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.614,low
+q7,Compiler warnings _____.,1,7,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.61,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.61,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.609,low
+q7,Compiler warnings _____.,1,7,q5,A logic error differs from a syntax error because it _____.,2,5,0.607,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q7,Compiler warnings _____.,1,7,0.606,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.603,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.601,low
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,q5,A logic error occurs when:,4,5,0.601,low
+q6,Compiler warnings indicate _____.,2,6,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.6,low
+q1,A syntax error occurs when a program _____.,1,1,q7,Compiler warnings _____.,1,7,0.599,low
+q7,Compiler warnings _____.,1,7,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.599,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.599,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.596,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.596,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.595,low
+q4,Which is best practice for compiling code?,2,4,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.595,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.594,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.593,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q8,Why should programmers configure compilers to show more warnings?,3,8,0.592,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.591,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q7,What does a compiler warning indicate?,4,7,0.59,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q5,A logic error occurs when:,4,5,0.59,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.59,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q5,A logic error occurs when:,4,5,0.588,low
+q7,Compiler warnings _____.,1,7,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.586,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q3,Why should a programmer fix the first compiler error before others?,2,3,0.585,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q5,A logic error differs from a syntax error because it _____.,2,5,0.585,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.585,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.583,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.583,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q8,Why should programmers configure compilers to show more warnings?,3,8,0.582,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.58,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q6,Compiler warnings indicate _____.,2,6,0.579,low
+q7,Which statement about compiler warnings is true?,2,7,q5,A logic error occurs when:,4,5,0.579,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.578,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q7,What does a compiler warning indicate?,4,7,0.578,low
+q4,Which is best practice for compiling code?,2,4,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.577,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q10,"The term ""bug"" originally referred to _____.",3,10,0.577,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q3,Why should a programmer fix the first compiler error before others?,2,3,0.576,low
+q6,Compiler warnings indicate _____.,2,6,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.576,low
+q7,What does a compiler warning indicate?,4,7,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.576,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q6,Good practice for new programmers is to compile _____.,3,6,0.575,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.571,low
+q1,A syntax error occurs when a program _____.,1,1,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.57,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q6,Compiler warnings indicate _____.,2,6,0.57,low
+q6,Compiler warnings indicate _____.,2,6,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.57,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q10,"The term ""bug"" originally referred to _____.",3,10,0.569,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.569,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.569,low
+q5,A compiler warning means the program _____.,3,5,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.569,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.567,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,0.566,low
+q7,Compiler warnings _____.,1,7,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.566,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q10,"The term ""bug"" originally referred to _____.",3,10,0.566,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q10,"The term ""bug"" originally referred to _____.",3,10,0.565,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.564,low
+q4,Which is best practice for compiling code?,2,4,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.562,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q7,What does a compiler warning indicate?,4,7,0.561,low
+q6,Compiler warnings indicate _____.,2,6,q8,Why should programmers configure compilers to show more warnings?,3,8,0.561,low
+q5,A compiler warning means the program _____.,3,5,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.561,low
+q7,Compiler warnings _____.,1,7,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.56,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q4,Which is best practice for compiling code?,2,4,0.56,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.56,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q5,A logic error differs from a syntax error because it _____.,2,5,0.559,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q6,Good practice for new programmers is to compile _____.,3,6,0.558,low
+q6,What is the best practice for how often new programmers should compile their code?,4,6,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.557,low
+q7,Compiler warnings _____.,1,7,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.556,low
+q7,Which statement about compiler warnings is true?,2,7,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.556,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,0.555,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q4,Which is best practice for compiling code?,2,4,0.555,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q6,Compiler warnings indicate _____.,2,6,0.555,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.554,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.553,low
+q5,A logic error occurs when:,4,5,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.553,low
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,q7,What does a compiler warning indicate?,4,7,0.552,low
+q1,A syntax error occurs when a program _____.,1,1,q6,Compiler warnings indicate _____.,2,6,0.551,low
+q4,Which is best practice for compiling code?,2,4,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.551,low
+q7,Compiler warnings _____.,1,7,q3,Why should a programmer fix the first compiler error before others?,2,3,0.55,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.549,low
+q6,Compiler warnings indicate _____.,2,6,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.549,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.548,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.548,low
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.548,low
+q1,A syntax error occurs when a program _____.,1,1,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.547,low
+q7,Compiler warnings _____.,1,7,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.546,low
+q6,Compiler warnings indicate _____.,2,6,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.545,low
+q5,A compiler warning means the program _____.,3,5,q8,Why should programmers configure compilers to show more warnings?,3,8,0.545,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.544,low
+q7,Which statement about compiler warnings is true?,2,7,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.544,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.543,low
+q4,Which is best practice for compiling code?,2,4,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.542,low
+q6,Good practice for new programmers is to compile _____.,3,6,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.542,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.541,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.54,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.54,low
+q1,A syntax error occurs when a program _____.,1,1,q5,A compiler warning means the program _____.,3,5,0.539,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q5,A logic error differs from a syntax error because it _____.,2,5,0.539,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q7,What does a compiler warning indicate?,4,7,0.538,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q10,"The term ""bug"" originally referred to _____.",3,10,0.538,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.538,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.536,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q7,What does a compiler warning indicate?,4,7,0.536,low
+q6,What is the best practice for how often new programmers should compile their code?,4,6,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.535,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q6,Compiler warnings indicate _____.,2,6,0.532,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.532,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q5,A compiler warning means the program _____.,3,5,0.532,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q5,A logic error occurs when:,4,5,0.531,low
+q4,Which is best practice for compiling code?,2,4,q8,Why should programmers configure compilers to show more warnings?,3,8,0.531,low
+q1,A syntax error occurs when a program _____.,1,1,q10,"After fixing the first error, the programmer should _____.",2,10,0.53,low
+q7,Compiler warnings _____.,1,7,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.53,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q6,Compiler warnings indicate _____.,2,6,0.53,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.53,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q5,A logic error occurs when:,4,5,0.529,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q5,A logic error occurs when:,4,5,0.529,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.528,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.528,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q4,Which is best practice for compiling code?,2,4,0.527,low
+q7,Compiler warnings _____.,1,7,q10,"After fixing the first error, the programmer should _____.",2,10,0.526,low
+q1,A syntax error occurs when a program _____.,1,1,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.525,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.525,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.524,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.524,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.524,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.524,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.523,low
+q5,A logic error occurs when:,4,5,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.523,low
+q1,A syntax error occurs when a program _____.,1,1,q7,What does a compiler warning indicate?,4,7,0.522,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q7,Compiler warnings _____.,1,7,0.522,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q4,Which is best practice for compiling code?,2,4,0.522,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q5,A compiler warning means the program _____.,3,5,0.522,low
+q5,A compiler warning means the program _____.,3,5,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.522,low
+q7,What does a compiler warning indicate?,4,7,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.522,low
+q6,Compiler warnings indicate _____.,2,6,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.521,low
+q5,A compiler warning means the program _____.,3,5,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.521,low
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.521,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.519,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.519,low
+q6,Compiler warnings indicate _____.,2,6,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.519,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q5,A compiler warning means the program _____.,3,5,0.518,low
+q1,A syntax error occurs when a program _____.,1,1,q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,0.517,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.517,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.517,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q7,What does a compiler warning indicate?,4,7,0.517,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q6,Compiler warnings indicate _____.,2,6,0.516,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.516,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q7,What does a compiler warning indicate?,4,7,0.516,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q5,A logic error occurs when:,4,5,0.516,low
+q7,Compiler warnings _____.,1,7,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.515,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.515,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q3,Why should a programmer fix the first compiler error before others?,2,3,0.515,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.515,low
+q7,Which statement about compiler warnings is true?,2,7,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.515,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.515,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.515,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.514,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.514,low
+q7,Compiler warnings _____.,1,7,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.514,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q10,"The term ""bug"" originally referred to _____.",3,10,0.513,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q7,Compiler warnings _____.,1,7,0.512,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.512,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q5,A logic error occurs when:,4,5,0.511,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q3,Why should a programmer fix the first compiler error before others?,2,3,0.511,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q8,Why should programmers configure compilers to show more warnings?,3,8,0.511,low
+q1,A syntax error occurs when a program _____.,1,1,q10,"The term ""bug"" originally referred to _____.",3,10,0.51,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.51,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q8,Why should programmers configure compilers to show more warnings?,3,8,0.51,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.51,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q6,Good practice for new programmers is to compile _____.,3,6,0.51,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.51,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.51,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.509,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.508,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.508,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.507,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.507,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.507,low
+q1,A syntax error occurs when a program _____.,1,1,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.506,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,0.506,low
+q6,Compiler warnings indicate _____.,2,6,q10,"The term ""bug"" originally referred to _____.",3,10,0.506,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q5,A logic error occurs when:,4,5,0.506,low
+q7,Compiler warnings _____.,1,7,q10,"The term ""bug"" originally referred to _____.",3,10,0.505,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q7,What does a compiler warning indicate?,4,7,0.505,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.505,low
+q7,Compiler warnings _____.,1,7,q6,Good practice for new programmers is to compile _____.,3,6,0.503,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.503,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q7,What does a compiler warning indicate?,4,7,0.503,low
+q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.503,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q6,Good practice for new programmers is to compile _____.,3,6,0.502,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.502,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q6,Compiler warnings indicate _____.,2,6,0.501,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q5,A compiler warning means the program _____.,3,5,0.501,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q5,A logic error occurs when:,4,5,0.5,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q5,A compiler warning means the program _____.,3,5,0.5,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q7,What does a compiler warning indicate?,4,7,0.5,low
+q7,Compiler warnings _____.,1,7,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.498,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.498,low
+q1,A syntax error occurs when a program _____.,1,1,q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,0.497,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.497,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.497,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q10,"After fixing the first error, the programmer should _____.",2,10,0.497,low
+q4,Which is best practice for compiling code?,2,4,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.497,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q5,A compiler warning means the program _____.,3,5,0.497,low
+q6,Good practice for new programmers is to compile _____.,3,6,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.497,low
+q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.497,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.496,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q10,"After fixing the first error, the programmer should _____.",2,10,0.496,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q10,"After fixing the first error, the programmer should _____.",2,10,0.496,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q6,Good practice for new programmers is to compile _____.,3,6,0.496,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q10,"After fixing the first error, the programmer should _____.",2,10,0.496,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.496,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q7,What does a compiler warning indicate?,4,7,0.496,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q6,Good practice for new programmers is to compile _____.,3,6,0.495,low
+q6,Compiler warnings indicate _____.,2,6,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.495,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.495,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q5,A logic error differs from a syntax error because it _____.,2,5,0.494,low
+q7,Compiler warnings _____.,1,7,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.494,low
+q6,Good practice for new programmers is to compile _____.,3,6,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.494,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.494,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q7,What does a compiler warning indicate?,4,7,0.493,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q5,A compiler warning means the program _____.,3,5,0.493,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.493,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.493,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.493,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.492,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q6,Good practice for new programmers is to compile _____.,3,6,0.492,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q7,What does a compiler warning indicate?,4,7,0.492,low
+q6,Compiler warnings indicate _____.,2,6,q10,"After fixing the first error, the programmer should _____.",2,10,0.491,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q8,Why should programmers configure compilers to show more warnings?,3,8,0.491,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q6,Good practice for new programmers is to compile _____.,3,6,0.491,low
+q4,Which is best practice for compiling code?,2,4,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.49,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q7,What does a compiler warning indicate?,4,7,0.49,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q5,A logic error occurs when:,4,5,0.49,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.49,low
+q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.49,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q5,A logic error occurs when:,4,5,0.489,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.489,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.489,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q5,A compiler warning means the program _____.,3,5,0.489,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q6,Compiler warnings indicate _____.,2,6,0.488,low
+q6,Good practice for new programmers is to compile _____.,3,6,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.488,low
+q7,Compiler warnings _____.,1,7,q4,Which is best practice for compiling code?,2,4,0.487,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q7,What does a compiler warning indicate?,4,7,0.487,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.487,low
+q1,A syntax error occurs when a program _____.,1,1,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.486,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.486,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.486,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q10,"After fixing the first error, the programmer should _____.",2,10,0.484,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q5,A logic error is different from a syntax error because it _____.,1,5,0.484,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q7,What does a compiler warning indicate?,4,7,0.484,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.484,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q3,Why should a programmer fix the first compiler error before others?,2,3,0.483,low
+q7,Compiler warnings _____.,1,7,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.483,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q5,A logic error occurs when:,4,5,0.483,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.482,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q10,"After fixing the first error, the programmer should _____.",2,10,0.482,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.482,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.482,low
+q4,Which is best practice for compiling code?,2,4,q7,What does a compiler warning indicate?,4,7,0.482,low
+q1,A syntax error occurs when a program _____.,1,1,q3,Why should a programmer fix the first compiler error before others?,2,3,0.481,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q7,Compiler warnings _____.,1,7,0.481,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.481,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.48,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.479,low
+q7,Compiler warnings _____.,1,7,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.479,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.479,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.479,low
+q6,Good practice for new programmers is to compile _____.,3,6,q8,Why should programmers configure compilers to show more warnings?,3,8,0.479,low
+q1,A syntax error occurs when a program _____.,1,1,q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,0.478,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.478,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.478,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.478,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q7,Which statement about compiler warnings is true?,2,7,0.477,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.477,low
+q5,A compiler warning means the program _____.,3,5,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.477,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q5,A logic error occurs when:,4,5,0.477,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.476,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.476,low
+q6,Compiler warnings indicate _____.,2,6,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.476,low
+q6,Compiler warnings indicate _____.,2,6,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.476,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q7,What does a compiler warning indicate?,4,7,0.475,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.475,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.475,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.475,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q5,A compiler warning means the program _____.,3,5,0.475,low
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.475,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q7,Compiler warnings _____.,1,7,0.474,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.474,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q8,Why should programmers configure compilers to show more warnings?,3,8,0.474,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.474,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q10,"The term ""bug"" originally referred to _____.",3,10,0.474,low
+q6,Compiler warnings indicate _____.,2,6,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.474,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.473,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.473,low
+q6,Compiler warnings indicate _____.,2,6,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.473,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.473,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.473,low
+q1,A syntax error occurs when a program _____.,1,1,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.472,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.472,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q5,A compiler warning means the program _____.,3,5,0.472,low
+q6,Compiler warnings indicate _____.,2,6,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.472,low
+q1,A syntax error occurs when a program _____.,1,1,q6,Good practice for new programmers is to compile _____.,3,6,0.471,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.471,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.47,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.47,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.469,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q4,Which is best practice for compiling code?,2,4,0.469,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.469,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.469,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.468,low
+q4,Which is best practice for compiling code?,2,4,q5,A logic error occurs when:,4,5,0.468,low
+q1,A syntax error occurs when a program _____.,1,1,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.467,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.467,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q5,A compiler warning means the program _____.,3,5,0.465,low
+q7,Compiler warnings _____.,1,7,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.465,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.465,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q3,Why should a programmer fix the first compiler error before others?,2,3,0.465,low
+q5,A compiler warning means the program _____.,3,5,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.465,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q5,A logic error differs from a syntax error because it _____.,2,5,0.464,low
+q7,Which statement about compiler warnings is true?,2,7,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.464,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.464,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.463,low
+q1,A syntax error occurs when a program _____.,1,1,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.462,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.462,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.462,low
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.462,low
+q1,A syntax error occurs when a program _____.,1,1,q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,0.461,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q5,A logic error differs from a syntax error because it _____.,2,5,0.461,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.461,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q5,A compiler warning means the program _____.,3,5,0.461,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q7,What does a compiler warning indicate?,4,7,0.461,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q7,What does a compiler warning indicate?,4,7,0.461,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q6,Compiler warnings indicate _____.,2,6,0.46,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.46,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q10,"The term ""bug"" originally referred to _____.",3,10,0.46,low
+q1,A syntax error occurs when a program _____.,1,1,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.459,low
+q1,A syntax error occurs when a program _____.,1,1,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.459,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.459,low
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.459,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.458,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.458,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.457,low
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,q8,Why should programmers configure compilers to show more warnings?,3,8,0.457,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.457,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q5,A compiler warning means the program _____.,3,5,0.456,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.456,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q6,Good practice for new programmers is to compile _____.,3,6,0.455,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.455,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.455,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.455,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.454,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q10,"The term ""bug"" originally referred to _____.",3,10,0.454,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q10,"The term ""bug"" originally referred to _____.",3,10,0.454,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.453,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.452,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q10,"The term ""bug"" originally referred to _____.",3,10,0.452,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q4,Which is best practice for compiling code?,2,4,0.451,low
+q7,Which statement about compiler warnings is true?,2,7,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.451,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q7,What does a compiler warning indicate?,4,7,0.449,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.448,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q6,Good practice for new programmers is to compile _____.,3,6,0.448,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q8,Why should programmers configure compilers to show more warnings?,3,8,0.447,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q5,A logic error occurs when:,4,5,0.447,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.447,low
+q5,A compiler warning means the program _____.,3,5,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.447,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q10,"The term ""bug"" originally referred to _____.",3,10,0.446,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.446,low
+q7,Compiler warnings _____.,1,7,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.446,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.445,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q5,A logic error is different from a syntax error because it _____.,1,5,0.444,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.444,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.444,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.443,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q7,Which statement about compiler warnings is true?,2,7,0.443,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.443,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q10,"The term ""bug"" originally referred to _____.",3,10,0.443,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.443,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q5,A compiler warning means the program _____.,3,5,0.443,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.443,low
+q7,Compiler warnings _____.,1,7,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.442,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q5,A logic error is different from a syntax error because it _____.,1,5,0.441,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.441,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.441,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.441,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q9,"The term ""bug"" originated from a/an _____.",1,9,0.44,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.439,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.438,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.438,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.438,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.436,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q5,A logic error occurs when:,4,5,0.436,low
+q7,Which statement about compiler warnings is true?,2,7,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.435,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.435,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.435,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.433,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.433,low
+q6,What is the best practice for how often new programmers should compile their code?,4,6,q7,What does a compiler warning indicate?,4,7,0.433,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.432,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q10,"The term ""bug"" originally referred to _____.",3,10,0.432,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.432,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.431,low
+q4,Which is best practice for compiling code?,2,4,q5,A compiler warning means the program _____.,3,5,0.431,low
+q5,A compiler warning means the program _____.,3,5,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.431,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,0.43,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.43,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.43,low
+q5,A logic error occurs when:,4,5,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.43,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.429,low
+q4,Which is best practice for compiling code?,2,4,q7,Which statement about compiler warnings is true?,2,7,0.429,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q7,What does a compiler warning indicate?,4,7,0.428,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.428,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.428,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q7,Which statement about compiler warnings is true?,2,7,0.428,low
+q7,Which statement about compiler warnings is true?,2,7,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.428,low
+q5,A compiler warning means the program _____.,3,5,q6,Good practice for new programmers is to compile _____.,3,6,0.428,low
+q5,A compiler warning means the program _____.,3,5,q10,"The term ""bug"" originally referred to _____.",3,10,0.428,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q5,A logic error differs from a syntax error because it _____.,2,5,0.427,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.427,low
+q1,A syntax error occurs when a program _____.,1,1,q4,Which is best practice for compiling code?,2,4,0.425,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q5,A compiler warning means the program _____.,3,5,0.425,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q5,A logic error occurs when:,4,5,0.425,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.425,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.424,low
+q1,A syntax error occurs when a program _____.,1,1,q8,Why should programmers configure compilers to show more warnings?,3,8,0.423,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.423,low
+q6,Compiler warnings indicate _____.,2,6,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.422,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.422,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.421,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.421,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q5,A logic error occurs when:,4,5,0.421,low
+q6,Good practice for new programmers is to compile _____.,3,6,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.421,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q5,A compiler warning means the program _____.,3,5,0.42,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q6,Compiler warnings indicate _____.,2,6,0.42,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.42,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.42,low
+q1,A syntax error occurs when a program _____.,1,1,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.419,low
+q7,Which statement about compiler warnings is true?,2,7,q10,"After fixing the first error, the programmer should _____.",2,10,0.419,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.417,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.417,low
+q5,A compiler warning means the program _____.,3,5,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.417,low
+q1,A syntax error occurs when a program _____.,1,1,q9,"The term ""bug"" originated from a/an _____.",1,9,0.416,low
+q1,A syntax error occurs when a program _____.,1,1,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.415,low
+q6,Compiler warnings indicate _____.,2,6,q6,Good practice for new programmers is to compile _____.,3,6,0.415,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.413,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.413,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q8,Why should programmers configure compilers to show more warnings?,3,8,0.413,low
+q7,Which statement about compiler warnings is true?,2,7,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.413,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.413,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.412,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q6,Compiler warnings indicate _____.,2,6,0.412,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.412,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.411,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.411,low
+q6,Good practice for new programmers is to compile _____.,3,6,q5,A logic error occurs when:,4,5,0.41,low
+q6,Good practice for new programmers is to compile _____.,3,6,q7,What does a compiler warning indicate?,4,7,0.41,low
+q7,Which statement about compiler warnings is true?,2,7,q6,Good practice for new programmers is to compile _____.,3,6,0.409,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.408,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.408,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.408,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q10,"After fixing the first error, the programmer should _____.",2,10,0.408,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.408,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.407,low
+q4,Which is best practice for compiling code?,2,4,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.407,low
+q7,Which statement about compiler warnings is true?,2,7,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.407,low
+q7,Which statement about compiler warnings is true?,2,7,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.407,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.407,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q10,"The term ""bug"" originally referred to _____.",3,10,0.406,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.406,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.405,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.405,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.405,low
+q4,Which is best practice for compiling code?,2,4,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.404,low
+q7,Which statement about compiler warnings is true?,2,7,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.404,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.404,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q7,Which statement about compiler warnings is true?,2,7,0.403,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.403,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q10,"The term ""bug"" originally referred to _____.",3,10,0.403,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q7,Which statement about compiler warnings is true?,2,7,0.402,low
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,q8,Why should programmers configure compilers to show more warnings?,3,8,0.402,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.401,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.401,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.4,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.4,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.398,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.398,low
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.398,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.397,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.397,low
+q1,A syntax error occurs when a program _____.,1,1,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.396,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.396,low
+q1,A syntax error occurs when a program _____.,1,1,q7,Which statement about compiler warnings is true?,2,7,0.395,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q8,Why should programmers configure compilers to show more warnings?,3,8,0.395,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,0.395,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q8,Why should programmers configure compilers to show more warnings?,3,8,0.395,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.395,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.395,low
+q4,Which is best practice for compiling code?,2,4,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.395,low
+q1,A syntax error occurs when a program _____.,1,1,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.394,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q10,"The term ""bug"" originally referred to _____.",3,10,0.394,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q5,A logic error differs from a syntax error because it _____.,2,5,0.394,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.394,low
+q4,Which is best practice for compiling code?,2,4,q6,Compiler warnings indicate _____.,2,6,0.394,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.394,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q5,A logic error differs from a syntax error because it _____.,2,5,0.392,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q4,Which is best practice for compiling code?,2,4,0.391,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q10,"The term ""bug"" originally referred to _____.",3,10,0.391,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.39,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.389,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.389,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.389,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.387,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.387,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.386,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.386,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q7,Which statement about compiler warnings is true?,2,7,0.385,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q8,Why do some programmers configure compilers to show more warnings?,1,8,0.385,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q1,A syntax error occurs because a program _____ the programming language rules.,2,1,0.385,low
+q4,Which is best practice for compiling code?,2,4,q5,A logic error differs from a syntax error because it _____.,2,5,0.385,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q8,Why should programmers configure compilers to show more warnings?,3,8,0.385,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q10,"After fixing the first error, the programmer should _____.",2,10,0.385,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.385,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q6,Good practice for new programmers is to compile _____.,3,6,0.384,low
+q6,Compiler warnings indicate _____.,2,6,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.384,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.384,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.384,low
+q6,Good practice for new programmers is to compile _____.,3,6,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.383,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.382,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q8,Why should programmers configure compilers to show more warnings?,3,8,0.382,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.382,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.381,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q8,Why should programmers configure compilers to show more warnings?,3,8,0.381,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q6,Good practice for new programmers is to compile _____.,3,6,0.381,low
+q10,"After fixing the first error, the programmer should _____.",2,10,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.38,low
+q6,Good practice for new programmers is to compile _____.,3,6,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.379,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.378,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.377,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q10,"After fixing the first error, the programmer should _____.",2,10,0.377,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q5,A compiler warning means the program _____.,3,5,0.377,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.377,low
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.377,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q7,Which statement about compiler warnings is true?,2,7,0.376,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.376,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.374,low
+q7,Which statement about compiler warnings is true?,2,7,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.374,low
+q5,A compiler warning means the program _____.,3,5,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.374,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.373,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q5,A logic error occurs when:,4,5,0.372,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q5,A compiler warning means the program _____.,3,5,0.372,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.371,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.37,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q7,Which statement about compiler warnings is true?,2,7,0.368,low
+q7,Which statement about compiler warnings is true?,2,7,q10,"The term ""bug"" originally referred to _____.",3,10,0.366,low
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,4,q9,"The term ""bug"" originated from a/an _____.",1,9,0.365,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.365,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.365,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.364,low
+q3,"After fixing the first compiler error, the programmer should _____.",3,3,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.364,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q6,Good practice for new programmers is to compile _____.,3,6,0.363,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.363,low
+q7,Which statement about compiler warnings is true?,2,7,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.363,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.363,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q7,Which statement about compiler warnings is true?,2,7,0.362,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q10,"The term ""bug"" originally referred to _____.",3,10,0.362,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q10,"After fixing the first error, the programmer should _____.",2,10,0.361,low
+q8,Why should programmers configure compilers to show more warnings?,3,8,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.361,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q4,Which is best practice for compiling code?,2,4,0.36,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.359,low
+q4,Which is best practice for compiling code?,2,4,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.359,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.359,low
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,3,q9,"The term ""bug"" originated from a/an _____.",1,9,0.358,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.357,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q6,Good practice for new programmers is to compile _____.,3,6,0.357,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.356,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.356,low
+q7,Which statement about compiler warnings is true?,2,7,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.356,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q4,Logic errors differ from syntax errors because logic errors occur _____.,3,4,0.356,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q6,Good practice for new programmers is to compile _____.,3,6,0.356,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,2,0.355,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q10,"The term ""bug"" originally referred to _____.",3,10,0.354,low
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.353,low
+q6,What is the best practice for how often new programmers should compile their code?,4,6,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.353,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.352,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.349,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.349,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q10,Which of the following is NOT a characteristic of a syntax error?,4,10,0.349,low
+q4,Which is best practice for compiling code?,2,4,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.348,low
+q1,What type of error occurs when a program violates language syntax rules?,4,1,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.348,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q9,"The term ""bug"" originated from a/an _____.",1,9,0.347,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,2,0.347,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q3,Why should a programmer fix the first compiler error before others?,2,3,0.347,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q8,Why should programmers configure compilers to show more warnings?,3,8,0.347,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q3,Why should a programmer fix the first compiler error before others?,2,3,0.346,low
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,2,q9,"The term ""bug"" originated from a/an _____.",1,9,0.345,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.345,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q10,"The term ""bug"" originally referred to _____.",3,10,0.345,low
+q1,A syntax error occurs when a program _____.,1,1,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.341,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q7,What does a compiler warning indicate?,4,7,0.34,low
+q1,A syntax error occurs because a program _____ the programming language rules.,2,1,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.34,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q3,"When a compiler reports an error on line 10, where might the actual error be?",4,3,0.34,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q6,Good practice for new programmers is to compile _____.,3,6,0.339,low
+q6,Good practice for new programmers is to compile _____.,3,6,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.339,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q7,What does a compiler warning indicate?,4,7,0.338,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.336,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.336,low
+q7,Compiler warnings _____.,1,7,q9,"The term ""bug"" originated from a/an _____.",1,9,0.335,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q6,Compiler warnings indicate _____.,2,6,0.334,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.333,low
+q3,Why should a programmer fix the first compiler error before others?,2,3,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.333,low
+q4,Which is best practice for compiling code?,2,4,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.333,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.329,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.328,low
+q1,A syntax error occurs when a program violates _____ rules.,3,1,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.327,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.323,low
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,6,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.32,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.319,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.314,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q3,"After fixing the first compiler error, the programmer should _____.",3,3,0.312,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.312,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.309,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q1,A syntax error occurs when a program violates _____ rules.,3,1,0.307,low
+q6,Good practice for new programmers is to compile _____.,3,6,q10,"The term ""bug"" originally referred to _____.",3,10,0.305,low
+q6,Good practice for new programmers is to compile _____.,3,6,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.301,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,4,0.3,low
+q5,A logic error differs from a syntax error because it _____.,2,5,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.299,low
+q5,A logic error is different from a syntax error because it _____.,1,5,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.297,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q2,Why should a programmer focus on fixing the first compiler error before others?,4,2,0.293,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,0.292,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q6,Good practice for new programmers is to compile _____.,3,6,0.292,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,9,0.292,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,9,0.286,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.286,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.286,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q5,A compiler warning means the program _____.,3,5,0.285,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.285,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.284,low
+q10,"The term ""bug"" originally referred to _____.",3,10,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.281,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.276,low
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.275,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.273,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q7,Which statement about compiler warnings is true?,2,7,0.272,low
+q4,Which is best practice for compiling code?,2,4,q10,"The term ""bug"" originally referred to _____.",3,10,0.272,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q7,What does a compiler warning indicate?,4,7,0.27,low
+q7,Which statement about compiler warnings is true?,2,7,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.268,low
+q8,The recommended compiler option in Java to show more warnings is _____.,2,8,q1,What type of error occurs when a program violates language syntax rules?,4,1,0.261,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.26,low
+q4,Which is best practice for compiling code?,2,4,q9,A missing semicolon error message may actually indicate a missing _____.,2,9,0.26,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q8,Why do many programmers configure compilers to be more picky with warnings?,4,8,0.259,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q4,Which is best practice for compiling code?,2,4,0.257,low
+q4,Which is best practice for compiling code?,2,4,q7,"A missing semicolon "";"" is an example of a _____ error.",3,7,0.256,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q8,Why should programmers configure compilers to show more warnings?,3,8,0.254,low
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,10,q6,What is the best practice for how often new programmers should compile their code?,4,6,0.251,low
+q9,A missing semicolon error message may actually indicate a missing _____.,2,9,q8,Why should programmers configure compilers to show more warnings?,3,8,0.251,low
+q8,Why do some programmers configure compilers to show more warnings?,1,8,q9,"The term ""bug"" originated from a/an _____.",1,9,0.241,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q7,Which statement about compiler warnings is true?,2,7,0.235,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q8,The recommended compiler option in Java to show more warnings is _____.,2,8,0.235,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q8,Why should programmers configure compilers to show more warnings?,3,8,0.235,low
+q9,"The term ""bug"" originated from a/an _____.",1,9,q4,Which is best practice for compiling code?,2,4,0.221,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Analyze compiler error messages to locate and fix syntax errors in code  
+Differentiate between syntax errors, logic errors, and compiler warnings  
+Apply best practices by focusing on fixing the first compiler error before addressing subsequent errors  
+Understand that compiler error messages may be unclear or misleading and that errors may be reported on lines after the actual mistake  
+Compile and run code frequently during development to detect and correct errors early"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,A syntax error occurs when a program _____.,1,yes,"This question assesses understanding of what a syntax error is, directly related to differentiating syntax errors (LO2) and analyzing compiler error messages (LO1)."
+q2,"A compiler error message refers to line 10, but the actual error is usually found on line _____.",1,yes,This question evaluates knowledge that compiler error messages may be misleading and errors may be reported after the actual mistake (LO4).
+q3,"When a compiler shows many errors, the programmer should first fix the _____ error.",1,yes,This question tests the best practice of fixing the first compiler error before others (LO3).
+q4,"If the first compiler error line shows no error, the programmer should check _____ lines.",1,yes,"This question assesses understanding that if the first error line shows no error, the programmer should check previous lines (LO4)."
+q5,A logic error is different from a syntax error because it _____.,1,yes,This question differentiates between logic errors and syntax errors (LO2).
+q6,The best practice for new programmers is to compile and run their code after writing _____.,1,yes,This question evaluates the practice of compiling and running code frequently during development (LO5).
+q7,Compiler warnings _____.,1,yes,This question assesses understanding of compiler warnings and their difference from errors (LO2).
+q8,Why do some programmers configure compilers to show more warnings?,1,yes,"This question tests knowledge of why programmers configure compilers to show more warnings, related to early detection of errors (LO5)."
+q9,"The term ""bug"" originated from a/an _____.",1,no,"This question about the origin of the term ""bug"" is general programming knowledge and not related to the learning objectives."
+q10,A missing semicolon error message might actually be caused by a missing _____.,1,yes,This question assesses understanding that compiler error messages may be unclear or misleading (LO4).
+q1,A syntax error occurs because a program _____ the programming language rules.,2,yes,This question tests understanding of syntax errors as violations of language rules (LO2).
+q2,"When a compiler reports an error on line 10, the actual syntax error is often on line _____.",2,yes,This question evaluates knowledge that actual syntax errors may be on lines before the reported line (LO4).
+q3,Why should a programmer fix the first compiler error before others?,2,yes,This question assesses the best practice of fixing the first compiler error first (LO3).
+q4,Which is best practice for compiling code?,2,yes,This question tests the practice of compiling frequently during development (LO5).
+q5,A logic error differs from a syntax error because it _____.,2,yes,This question differentiates logic errors from syntax errors (LO2).
+q6,Compiler warnings indicate _____.,2,yes,This question assesses understanding of compiler warnings and their implications (LO2).
+q7,Which statement about compiler warnings is true?,2,yes,This question evaluates knowledge about compiler warnings allowing compilation (LO2).
+q8,The recommended compiler option in Java to show more warnings is _____.,2,no,This question about specific compiler options in Java is not covered by the learning objectives.
+q9,A missing semicolon error message may actually indicate a missing _____.,2,yes,This question tests understanding that error messages may be misleading (LO4).
+q10,"After fixing the first error, the programmer should _____.",2,yes,This question assesses the best practice of recompiling after fixing the first error (LO3 and LO5).
+q1,A syntax error occurs when a program violates _____ rules.,3,yes,This question tests understanding of what constitutes a syntax error (LO2).
+q2,"When a compiler reports an error on line 10, the actual error is often on _____.",3,yes,This question evaluates knowledge that actual errors may be on earlier lines than reported (LO4).
+q3,"After fixing the first compiler error, the programmer should _____.",3,yes,This question assesses the practice of recompiling after fixing the first error (LO3 and LO5).
+q4,Logic errors differ from syntax errors because logic errors occur _____.,3,yes,This question differentiates logic errors from syntax errors by timing of occurrence (LO2).
+q5,A compiler warning means the program _____.,3,yes,This question tests understanding of compiler warnings allowing compilation but indicating possible issues (LO2).
+q6,Good practice for new programmers is to compile _____.,3,yes,This question assesses the best practice of compiling frequently (LO5).
+q7,"A missing semicolon "";"" is an example of a _____ error.",3,yes,This question tests recognition of a missing semicolon as a syntax error (LO2).
+q8,Why should programmers configure compilers to show more warnings?,3,yes,This question evaluates why programmers configure compilers to show more warnings for early detection (LO5).
+q9,"If a compiler error message says ""missing semicolon,"" the actual error might be _____.",3,yes,This question assesses understanding that error messages may be misleading (LO4).
+q10,"The term ""bug"" originally referred to _____.",3,no,"This question about the origin of the term ""bug"" is general knowledge not related to the learning objectives."
+q1,What type of error occurs when a program violates language syntax rules?,4,yes,This question tests understanding of syntax errors as violations of language syntax rules (LO2).
+q2,Why should a programmer focus on fixing the first compiler error before others?,4,yes,This question assesses the best practice of fixing the first compiler error first (LO3).
+q3,"When a compiler reports an error on line 10, where might the actual error be?",4,yes,This question evaluates knowledge that actual errors may be on earlier lines than reported (LO4).
+q4,"A compiler reports ""missing semicolon"" but the real mistake is missing parentheses. This shows that compiler messages are:",4,yes,This question tests understanding that compiler messages can be misleading (LO4).
+q5,A logic error occurs when:,4,yes,This question differentiates logic errors from syntax errors (LO2).
+q6,What is the best practice for how often new programmers should compile their code?,4,yes,This question assesses the best practice of compiling frequently during development (LO5).
+q7,What does a compiler warning indicate?,4,yes,This question tests understanding of compiler warnings and their implications (LO2).
+q8,Why do many programmers configure compilers to be more picky with warnings?,4,yes,This question evaluates why programmers configure compilers to show more warnings for early detection (LO5).
+q9,"If no error is found on the line reported by the first compiler error, what should the programmer do next?",4,yes,This question assesses the practice of checking previous lines if no error is found on the reported line (LO4).
+q10,Which of the following is NOT a characteristic of a syntax error?,4,yes,This question tests understanding of characteristics of syntax errors (LO2).

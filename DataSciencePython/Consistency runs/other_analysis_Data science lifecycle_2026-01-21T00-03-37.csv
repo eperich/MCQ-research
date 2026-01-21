@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,0
+2,10,0,0
+3,10,0,1
+4,10,0,1
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,3,100
+1,3,2,4,100
+1,4,1,4,100
+2,3,2,3,100
+2,4,2,4,100
+3,4,3,2,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),11
+Similar (70-85%),22
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q1,What is the first step in the data science lifecycle?,2,1,q1,What is the first step in the data science lifecycle?,3,1,1,duplicate
+q1,What is the first step in the data science lifecycle?,1,1,q1,What is the first step of the data science lifecycle?,4,1,0.997,duplicate
+q2,Which type of data is stored in tables with rows and columns?,3,2,q2,Which type of data is stored in tables with rows and columns?,4,2,0.997,duplicate
+q1,What is the first step in the data science lifecycle?,1,1,q1,What is the first step in the data science lifecycle?,2,1,0.985,duplicate
+q1,What is the first step in the data science lifecycle?,1,1,q1,What is the first step in the data science lifecycle?,3,1,0.985,duplicate
+q1,What is the first step in the data science lifecycle?,2,1,q1,What is the first step of the data science lifecycle?,4,1,0.983,duplicate
+q1,What is the first step in the data science lifecycle?,3,1,q1,What is the first step of the data science lifecycle?,4,1,0.983,duplicate
+q6,What distinguishes supervised models from unsupervised models?,2,6,q5,What distinguishes supervised models from unsupervised models?,4,5,0.945,duplicate
+q4,Why do data scientists clean data before modeling?,3,4,q3,Why do data scientists clean data before modeling?,4,3,0.901,duplicate
+q3,Why do data scientists clean data before analysis?,1,3,q4,Why do data scientists clean data before modeling?,3,4,0.886,duplicate
+q4,Why must data be cleaned before modeling?,2,4,q4,Why do data scientists clean data before modeling?,3,4,0.87,duplicate
+q3,Why do data scientists clean data before analysis?,1,3,q3,Why do data scientists clean data before modeling?,4,3,0.848,similar
+q3,Why do data scientists clean data before analysis?,1,3,q4,Why must data be cleaned before modeling?,2,4,0.834,similar
+q4,Why must data be cleaned before modeling?,2,4,q3,Why do data scientists clean data before modeling?,4,3,0.818,similar
+q3,Why do data scientists clean data before analysis?,1,3,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.811,similar
+q3,Which type of data is unstructured?,2,3,q3,Which dataset is an example of unstructured data?,3,3,0.806,similar
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q2,Which type of data is stored in tables with rows and columns?,3,2,0.803,similar
+q1,What is the first step in the data science lifecycle?,2,1,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.802,similar
+q1,What is the first step in the data science lifecycle?,3,1,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.802,similar
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q2,Which type of data is stored in tables with rows and columns?,4,2,0.797,similar
+q7,Which scenario fits a regression model?,1,7,q8,Which scenario best fits a regression model?,3,8,0.794,similar
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q1,What is the first step of the data science lifecycle?,4,1,0.788,similar
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.786,similar
+q1,What is the first step in the data science lifecycle?,1,1,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.785,similar
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.785,similar
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.78,similar
+q4,Why do data scientists clean data before modeling?,3,4,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.756,similar
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.745,similar
+q4,Why must data be cleaned before modeling?,2,4,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.738,similar
+q7,Which task is best suited for a classification model?,2,7,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.735,similar
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q7,What does an unsupervised model do?,3,7,0.727,similar
+q3,Why do data scientists clean data before modeling?,4,3,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.713,similar
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q5,What is the goal of exploratory data analysis?,3,5,0.712,similar
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q3,Why do data scientists clean data before modeling?,4,3,0.688,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q7,What does an unsupervised model do?,3,7,0.682,low
+q3,Why do data scientists clean data before analysis?,1,3,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.677,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.676,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.676,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q9,What should a data scientist do after developing a predictive model?,4,9,0.674,low
+q7,What does an unsupervised model do?,3,7,q5,What distinguishes supervised models from unsupervised models?,4,5,0.672,low
+q5,What is the goal of exploratory data analysis?,3,5,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.669,low
+q8,What is a key difference between structured and unstructured data?,1,8,q8,What is a key characteristic of semi-structured data?,4,8,0.668,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.665,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q8,Which scenario best fits a regression model?,3,8,0.665,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q4,Why do data scientists clean data before modeling?,3,4,0.664,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q5,What is the goal of exploratory data analysis?,3,5,0.663,low
+q2,Structured data is best described as data that is _____.,2,2,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.662,low
+q1,What is the first step in the data science lifecycle?,2,1,q3,Why do data scientists clean data before modeling?,4,3,0.654,low
+q1,What is the first step in the data science lifecycle?,3,1,q3,Why do data scientists clean data before modeling?,4,3,0.654,low
+q1,What is the first step in the data science lifecycle?,1,1,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.652,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q6,What distinguishes supervised models from unsupervised models?,2,6,0.652,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q1,What is the first step of the data science lifecycle?,4,1,0.652,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q5,What is the goal of exploratory data analysis?,3,5,0.651,low
+q1,What is the first step in the data science lifecycle?,1,1,q3,Why do data scientists clean data before modeling?,4,3,0.646,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.646,low
+q1,What is the first step of the data science lifecycle?,4,1,q3,Why do data scientists clean data before modeling?,4,3,0.646,low
+q8,What is a key difference between structured and unstructured data?,1,8,q2,Which type of data is stored in tables with rows and columns?,4,2,0.645,low
+q5,What is the goal of exploratory data analysis?,3,5,q3,Why do data scientists clean data before modeling?,4,3,0.644,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q5,What distinguishes supervised models from unsupervised models?,4,5,0.643,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q9,What should a data scientist do after developing a predictive model?,4,9,0.643,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q3,Why do data scientists clean data before modeling?,4,3,0.642,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q1,What is the first step of the data science lifecycle?,4,1,0.639,low
+q8,An unsupervised model is useful for _____.,2,8,q7,What does an unsupervised model do?,3,7,0.639,low
+q8,What is a key difference between structured and unstructured data?,1,8,q2,Which type of data is stored in tables with rows and columns?,3,2,0.637,low
+q5,What is the goal of exploratory data analysis?,3,5,q9,What should a data scientist do after developing a predictive model?,4,9,0.637,low
+q1,What is the first step in the data science lifecycle?,1,1,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.635,low
+q1,What is the first step in the data science lifecycle?,2,1,q4,Why do data scientists clean data before modeling?,3,4,0.634,low
+q3,Which type of data is unstructured?,2,3,q2,Which type of data is stored in tables with rows and columns?,4,2,0.634,low
+q1,What is the first step in the data science lifecycle?,3,1,q4,Why do data scientists clean data before modeling?,3,4,0.634,low
+q3,Why do data scientists clean data before modeling?,4,3,q9,What should a data scientist do after developing a predictive model?,4,9,0.634,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q9,What should a data scientist do after developing a predictive model?,4,9,0.633,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,0.632,low
+q1,What is the first step in the data science lifecycle?,2,1,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.631,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q1,What is the first step in the data science lifecycle?,3,1,0.631,low
+q4,Why do data scientists clean data before modeling?,3,4,q1,What is the first step of the data science lifecycle?,4,1,0.629,low
+q3,Which type of data is unstructured?,2,3,q2,Which type of data is stored in tables with rows and columns?,3,2,0.628,low
+q1,What is the first step in the data science lifecycle?,1,1,q4,Why do data scientists clean data before modeling?,3,4,0.627,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q8,An unsupervised model is useful for _____.,2,8,0.627,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.624,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q3,Why do data scientists clean data before modeling?,4,3,0.622,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q3,Why do data scientists clean data before modeling?,4,3,0.621,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q1,What is the first step in the data science lifecycle?,2,1,0.618,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q1,What is the first step in the data science lifecycle?,3,1,0.618,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q3,Why do data scientists clean data before modeling?,4,3,0.615,low
+q10,Which of the following is an example of semi-structured data?,1,10,q3,Which dataset is an example of unstructured data?,3,3,0.615,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q1,What is the first step in the data science lifecycle?,2,1,0.604,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q1,What is the first step in the data science lifecycle?,3,1,0.604,low
+q10,Which of the following is an example of semi-structured data?,1,10,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.604,low
+q4,Why do data scientists clean data before modeling?,3,4,q9,What should a data scientist do after developing a predictive model?,4,9,0.604,low
+q3,Why do data scientists clean data before analysis?,1,3,q1,What is the first step of the data science lifecycle?,4,1,0.602,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q4,Why must data be cleaned before modeling?,2,4,0.602,low
+q3,Why do data scientists clean data before analysis?,1,3,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.601,low
+q5,What is the goal of exploratory data analysis?,3,5,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.601,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q9,What should a data scientist do after developing a predictive model?,4,9,0.601,low
+q1,What is the first step in the data science lifecycle?,1,1,q3,Why do data scientists clean data before analysis?,1,3,0.6,low
+q10,Which of the following is an example of semi-structured data?,1,10,q2,Structured data is best described as data that is _____.,2,2,0.598,low
+q1,What is the first step in the data science lifecycle?,2,1,q9,What should a data scientist do after developing a predictive model?,4,9,0.598,low
+q1,What is the first step in the data science lifecycle?,3,1,q9,What should a data scientist do after developing a predictive model?,4,9,0.598,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q1,What is the first step of the data science lifecycle?,4,1,0.596,low
+q10,Which of the following is an example of semi-structured data?,1,10,q2,Which type of data is stored in tables with rows and columns?,3,2,0.595,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q5,What is the goal of exploratory data analysis?,3,5,0.595,low
+q1,What is the first step in the data science lifecycle?,1,1,q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,0.594,low
+q4,Why do data scientists clean data before modeling?,3,4,q5,What is the goal of exploratory data analysis?,3,5,0.594,low
+q4,Why do data scientists clean data before modeling?,3,4,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.593,low
+q3,Why do data scientists clean data before modeling?,4,3,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.593,low
+q3,Why do data scientists clean data before analysis?,1,3,q1,What is the first step in the data science lifecycle?,2,1,0.592,low
+q3,Why do data scientists clean data before analysis?,1,3,q1,What is the first step in the data science lifecycle?,3,1,0.592,low
+q10,Which of the following is an example of semi-structured data?,1,10,q2,Which type of data is stored in tables with rows and columns?,4,2,0.592,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q3,Why do data scientists clean data before modeling?,4,3,0.592,low
+q1,What is the first step of the data science lifecycle?,4,1,q9,What should a data scientist do after developing a predictive model?,4,9,0.591,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q3,Which dataset is an example of unstructured data?,3,3,0.589,low
+q2,Structured data is best described as data that is _____.,2,2,q2,Which type of data is stored in tables with rows and columns?,3,2,0.589,low
+q1,What is the first step in the data science lifecycle?,1,1,q9,What should a data scientist do after developing a predictive model?,4,9,0.588,low
+q2,Structured data is best described as data that is _____.,2,2,q2,Which type of data is stored in tables with rows and columns?,4,2,0.587,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q4,Why do data scientists clean data before modeling?,3,4,0.584,low
+q7,Which scenario fits a regression model?,1,7,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.583,low
+q10,Which of the following is an example of semi-structured data?,1,10,q3,Which type of data is unstructured?,2,3,0.582,low
+q3,Why do data scientists clean data before analysis?,1,3,q5,What is the goal of exploratory data analysis?,3,5,0.581,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.581,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q9,What should a data scientist do after developing a predictive model?,4,9,0.581,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q4,Why do data scientists clean data before modeling?,3,4,0.579,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.577,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q5,What is the goal of exploratory data analysis?,3,5,0.576,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.575,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.575,low
+q8,An unsupervised model is useful for _____.,2,8,q5,What distinguishes supervised models from unsupervised models?,4,5,0.575,low
+q7,Which task is best suited for a classification model?,2,7,q8,Which scenario best fits a regression model?,3,8,0.574,low
+q3,Why do data scientists clean data before analysis?,1,3,q9,What should a data scientist do after developing a predictive model?,4,9,0.573,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q4,Why do data scientists clean data before modeling?,3,4,0.573,low
+q7,Which scenario fits a regression model?,1,7,q7,Which task is best suited for a classification model?,2,7,0.572,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q8,What is a key characteristic of semi-structured data?,4,8,0.572,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q8,What is a key characteristic of semi-structured data?,4,8,0.571,low
+q1,What is the first step in the data science lifecycle?,2,1,q4,Why must data be cleaned before modeling?,2,4,0.57,low
+q4,Why must data be cleaned before modeling?,2,4,q1,What is the first step in the data science lifecycle?,3,1,0.57,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q4,Why do data scientists clean data before modeling?,3,4,0.569,low
+q3,Which dataset is an example of unstructured data?,3,3,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.569,low
+q8,Which scenario best fits a regression model?,3,8,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.569,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q9,What should a data scientist do after developing a predictive model?,4,9,0.566,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q10,Which of the following is an example of semi-structured data?,1,10,0.565,low
+q4,Why must data be cleaned before modeling?,2,4,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.561,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q3,Which type of data is unstructured?,2,3,0.559,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.558,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.558,low
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,q9,What should a data scientist do after developing a predictive model?,4,9,0.557,low
+q7,Which scenario fits a regression model?,1,7,q8,An unsupervised model is useful for _____.,2,8,0.555,low
+q4,Why must data be cleaned before modeling?,2,4,q1,What is the first step of the data science lifecycle?,4,1,0.555,low
+q1,What is the first step in the data science lifecycle?,1,1,q4,Why must data be cleaned before modeling?,2,4,0.554,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q8,What is a key characteristic of semi-structured data?,4,8,0.554,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q8,What is a key difference between structured and unstructured data?,1,8,0.553,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.553,low
+q4,Why do data scientists clean data before modeling?,3,4,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.553,low
+q8,What is a key difference between structured and unstructured data?,1,8,q3,Which type of data is unstructured?,2,3,0.552,low
+q10,A data scientist should investigate missing values because _____.,2,10,q4,Why do data scientists clean data before modeling?,3,4,0.552,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.552,low
+q5,A classification model predicts a/an _____ feature.,1,5,q8,An unsupervised model is useful for _____.,2,8,0.551,low
+q7,Which scenario fits a regression model?,1,7,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.551,low
+q3,Why do data scientists clean data before analysis?,1,3,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.55,low
+q3,Which dataset is an example of unstructured data?,3,3,q2,Which type of data is stored in tables with rows and columns?,4,2,0.549,low
+q3,Why do data scientists clean data before analysis?,1,3,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.548,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q2,Structured data is best described as data that is _____.,2,2,0.546,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q8,An unsupervised model is useful for _____.,2,8,0.546,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q3,Which dataset is an example of unstructured data?,3,3,0.546,low
+q4,Why must data be cleaned before modeling?,2,4,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.545,low
+q3,Why do data scientists clean data before analysis?,1,3,q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,0.538,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.537,low
+q4,Why must data be cleaned before modeling?,2,4,q9,What should a data scientist do after developing a predictive model?,4,9,0.534,low
+q8,An unsupervised model is useful for _____.,2,8,q8,Which scenario best fits a regression model?,3,8,0.534,low
+q3,Why do data scientists clean data before analysis?,1,3,q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,0.532,low
+q3,Why do data scientists clean data before analysis?,1,3,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.532,low
+q4,Why must data be cleaned before modeling?,2,4,q10,A data scientist should investigate missing values because _____.,2,10,0.532,low
+q3,Why do data scientists clean data before analysis?,1,3,q10,A data scientist should investigate missing values because _____.,2,10,0.531,low
+q10,A data scientist should investigate missing values because _____.,2,10,q3,Why do data scientists clean data before modeling?,4,3,0.531,low
+q5,What is the goal of exploratory data analysis?,3,5,q1,What is the first step of the data science lifecycle?,4,1,0.53,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.529,low
+q2,Structured data is best described as data that is _____.,2,2,q8,What is a key characteristic of semi-structured data?,4,8,0.528,low
+q1,What is the first step in the data science lifecycle?,1,1,q5,What is the goal of exploratory data analysis?,3,5,0.525,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.525,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q10,A data scientist should investigate missing values because _____.,2,10,0.524,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q1,What is the first step in the data science lifecycle?,2,1,0.521,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q1,What is the first step in the data science lifecycle?,3,1,0.521,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q1,What is the first step of the data science lifecycle?,4,1,0.518,low
+q1,What is the first step in the data science lifecycle?,1,1,q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,0.516,low
+q1,What is the first step in the data science lifecycle?,2,1,q5,What is the goal of exploratory data analysis?,3,5,0.516,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q7,What does an unsupervised model do?,3,7,0.516,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q9,What should a data scientist do after developing a predictive model?,4,9,0.516,low
+q1,What is the first step in the data science lifecycle?,3,1,q5,What is the goal of exploratory data analysis?,3,5,0.516,low
+q7,Which task is best suited for a classification model?,2,7,q8,An unsupervised model is useful for _____.,2,8,0.514,low
+q9,What should a data scientist do after developing a predictive model?,4,9,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.513,low
+q1,What is the first step of the data science lifecycle?,4,1,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.512,low
+q2,Structured data is best described as data that is _____.,2,2,q3,Which dataset is an example of unstructured data?,3,3,0.511,low
+q1,What is the first step in the data science lifecycle?,1,1,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.51,low
+q3,Which type of data is unstructured?,2,3,q8,What is a key characteristic of semi-structured data?,4,8,0.51,low
+q10,A data scientist should investigate missing values because _____.,2,10,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.51,low
+q10,Which of the following is an example of semi-structured data?,1,10,q8,What is a key characteristic of semi-structured data?,4,8,0.508,low
+q1,What is the first step in the data science lifecycle?,2,1,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.508,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.508,low
+q1,What is the first step in the data science lifecycle?,3,1,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.508,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q7,What does an unsupervised model do?,3,7,0.507,low
+q7,What does an unsupervised model do?,3,7,q3,Why do data scientists clean data before modeling?,4,3,0.507,low
+q4,Why must data be cleaned before modeling?,2,4,q5,What is the goal of exploratory data analysis?,3,5,0.505,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.503,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q4,Why must data be cleaned before modeling?,2,4,0.503,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.495,low
+q5,A classification model predicts a/an _____ feature.,1,5,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.493,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.493,low
+q2,Structured data is best described as data that is _____.,2,2,q3,Which type of data is unstructured?,2,3,0.493,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q4,Why must data be cleaned before modeling?,2,4,0.492,low
+q4,Why must data be cleaned before modeling?,2,4,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.486,low
+q5,What is the goal of exploratory data analysis?,3,5,q7,What does an unsupervised model do?,3,7,0.486,low
+q7,What does an unsupervised model do?,3,7,q9,What should a data scientist do after developing a predictive model?,4,9,0.485,low
+q7,What does an unsupervised model do?,3,7,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.484,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.483,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.482,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q3,Why do data scientists clean data before modeling?,4,3,0.482,low
+q4,Why must data be cleaned before modeling?,2,4,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.481,low
+q7,"A dataset with images, videos, and audio files is considered _____.",4,7,q8,What is a key characteristic of semi-structured data?,4,8,0.481,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.479,low
+q5,What is the goal of exploratory data analysis?,3,5,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.479,low
+q1,What is the first step of the data science lifecycle?,4,1,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.478,low
+q8,What is a key difference between structured and unstructured data?,1,8,q3,Which dataset is an example of unstructured data?,3,3,0.477,low
+q1,What is the first step in the data science lifecycle?,1,1,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.475,low
+q1,What is the first step in the data science lifecycle?,2,1,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.475,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q1,What is the first step in the data science lifecycle?,3,1,0.475,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q8,An unsupervised model is useful for _____.,2,8,0.474,low
+q5,A classification model predicts a/an _____ feature.,1,5,q5,What distinguishes supervised models from unsupervised models?,4,5,0.473,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q1,What is the first step of the data science lifecycle?,4,1,0.472,low
+q1,What is the first step in the data science lifecycle?,1,1,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.471,low
+q10,A data scientist should investigate missing values because _____.,2,10,q9,What should a data scientist do after developing a predictive model?,4,9,0.471,low
+q1,What is the first step in the data science lifecycle?,2,1,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.469,low
+q1,What is the first step in the data science lifecycle?,3,1,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.469,low
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.469,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q7,What does an unsupervised model do?,3,7,0.467,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q5,What distinguishes supervised models from unsupervised models?,4,5,0.467,low
+q8,What is a key difference between structured and unstructured data?,1,8,q2,Structured data is best described as data that is _____.,2,2,0.466,low
+q4,Why do data scientists clean data before modeling?,3,4,q7,What does an unsupervised model do?,3,7,0.465,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.462,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.462,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.462,low
+q8,An unsupervised model is useful for _____.,2,8,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.462,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q8,An unsupervised model is useful for _____.,2,8,0.459,low
+q4,Why do data scientists clean data before modeling?,3,4,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.459,low
+q8,An unsupervised model is useful for _____.,2,8,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.455,low
+q3,Which type of data is unstructured?,2,3,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.454,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.453,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.453,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q6,What distinguishes supervised models from unsupervised models?,2,6,0.448,low
+q10,A data scientist should investigate missing values because _____.,2,10,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.447,low
+q5,A classification model predicts a/an _____ feature.,1,5,q6,What distinguishes supervised models from unsupervised models?,2,6,0.445,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.445,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q5,A classification model predicts a/an _____ feature.,1,5,0.443,low
+q3,Which dataset is an example of unstructured data?,3,3,q8,What is a key characteristic of semi-structured data?,4,8,0.443,low
+q7,What does an unsupervised model do?,3,7,q8,Which scenario best fits a regression model?,3,8,0.442,low
+q8,What is a key difference between structured and unstructured data?,1,8,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.44,low
+q5,A classification model predicts a/an _____ feature.,1,5,q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,0.438,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.437,low
+q7,Which task is best suited for a classification model?,2,7,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.434,low
+q5,A classification model predicts a/an _____ feature.,1,5,q8,What is a key characteristic of semi-structured data?,4,8,0.433,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q5,What distinguishes supervised models from unsupervised models?,4,5,0.429,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.427,low
+q8,An unsupervised model is useful for _____.,2,8,q4,Why do data scientists clean data before modeling?,3,4,0.425,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q6,What distinguishes supervised models from unsupervised models?,2,6,0.424,low
+q10,A data scientist should investigate missing values because _____.,2,10,q7,What does an unsupervised model do?,3,7,0.424,low
+q5,A classification model predicts a/an _____ feature.,1,5,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.423,low
+q7,What does an unsupervised model do?,3,7,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.423,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.422,low
+q4,Why must data be cleaned before modeling?,2,4,q7,What does an unsupervised model do?,3,7,0.421,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.421,low
+q5,What is the goal of exploratory data analysis?,3,5,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.421,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q10,A data scientist should investigate missing values because _____.,2,10,0.42,low
+q7,Which scenario fits a regression model?,1,7,q7,What does an unsupervised model do?,3,7,0.419,low
+q3,Why do data scientists clean data before analysis?,1,3,q7,What does an unsupervised model do?,3,7,0.417,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.417,low
+q8,What is a key difference between structured and unstructured data?,1,8,q10,Which of the following is an example of semi-structured data?,1,10,0.415,low
+q8,What is a key difference between structured and unstructured data?,1,8,q6,What distinguishes supervised models from unsupervised models?,2,6,0.414,low
+q8,An unsupervised model is useful for _____.,2,8,q3,Why do data scientists clean data before modeling?,4,3,0.414,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q8,Which scenario best fits a regression model?,3,8,0.413,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q3,Why do data scientists clean data before modeling?,4,3,0.413,low
+q5,A classification model predicts a/an _____ feature.,1,5,q8,What is a key difference between structured and unstructured data?,1,8,0.41,low
+q4,Why must data be cleaned before modeling?,2,4,q8,An unsupervised model is useful for _____.,2,8,0.41,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q5,What distinguishes supervised models from unsupervised models?,4,5,0.41,low
+q8,An unsupervised model is useful for _____.,2,8,q3,Which dataset is an example of unstructured data?,3,3,0.41,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q8,Which scenario best fits a regression model?,3,8,0.409,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q6,What distinguishes supervised models from unsupervised models?,2,6,0.408,low
+q5,A classification model predicts a/an _____ feature.,1,5,q7,Which scenario fits a regression model?,1,7,0.405,low
+q8,What is a key difference between structured and unstructured data?,1,8,q5,What distinguishes supervised models from unsupervised models?,4,5,0.405,low
+q5,A classification model predicts a/an _____ feature.,1,5,q7,What does an unsupervised model do?,3,7,0.404,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.403,low
+q10,A data scientist should investigate missing values because _____.,2,10,q5,What is the goal of exploratory data analysis?,3,5,0.403,low
+q4,Why must data be cleaned before modeling?,2,4,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.402,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q10,A data scientist should investigate missing values because _____.,2,10,0.399,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q7,Which scenario fits a regression model?,1,7,0.399,low
+q5,What distinguishes supervised models from unsupervised models?,4,5,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.399,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q7,Which scenario fits a regression model?,1,7,0.398,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.398,low
+q7,What does an unsupervised model do?,3,7,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.397,low
+q7,What does an unsupervised model do?,3,7,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.397,low
+q7,Which task is best suited for a classification model?,2,7,q7,What does an unsupervised model do?,3,7,0.396,low
+q8,An unsupervised model is useful for _____.,2,8,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.396,low
+q1,What is the first step in the data science lifecycle?,2,1,q7,What does an unsupervised model do?,3,7,0.395,low
+q10,A data scientist should investigate missing values because _____.,2,10,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.395,low
+q1,What is the first step in the data science lifecycle?,3,1,q7,What does an unsupervised model do?,3,7,0.395,low
+q3,Why do data scientists clean data before modeling?,4,3,q5,What distinguishes supervised models from unsupervised models?,4,5,0.394,low
+q5,A classification model predicts a/an _____ feature.,1,5,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.393,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.393,low
+q3,Why do data scientists clean data before analysis?,1,3,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.392,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q9,What should a data scientist do after developing a predictive model?,4,9,0.392,low
+q8,Which scenario best fits a regression model?,3,8,q5,What distinguishes supervised models from unsupervised models?,4,5,0.392,low
+q1,What is the first step in the data science lifecycle?,2,1,q10,A data scientist should investigate missing values because _____.,2,10,0.39,low
+q1,What is the first step in the data science lifecycle?,2,1,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.39,low
+q10,A data scientist should investigate missing values because _____.,2,10,q1,What is the first step in the data science lifecycle?,3,1,0.39,low
+q1,What is the first step in the data science lifecycle?,3,1,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.39,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q5,What distinguishes supervised models from unsupervised models?,4,5,0.388,low
+q5,A classification model predicts a/an _____ feature.,1,5,q8,Which scenario best fits a regression model?,3,8,0.387,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q8,Which scenario best fits a regression model?,3,8,0.386,low
+q5,A classification model predicts a/an _____ feature.,1,5,q7,Which task is best suited for a classification model?,2,7,0.385,low
+q5,A classification model predicts a/an _____ feature.,1,5,q4,Why must data be cleaned before modeling?,2,4,0.384,low
+q8,An unsupervised model is useful for _____.,2,8,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.384,low
+q8,An unsupervised model is useful for _____.,2,8,q9,What should a data scientist do after developing a predictive model?,4,9,0.383,low
+q5,What distinguishes supervised models from unsupervised models?,4,5,q9,What should a data scientist do after developing a predictive model?,4,9,0.382,low
+q1,What is the first step in the data science lifecycle?,1,1,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.381,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q4,Why do data scientists clean data before modeling?,3,4,0.381,low
+q4,Why do data scientists clean data before modeling?,3,4,q5,What distinguishes supervised models from unsupervised models?,4,5,0.381,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q1,What is the first step of the data science lifecycle?,4,1,0.381,low
+q10,A data scientist should investigate missing values because _____.,2,10,q1,What is the first step of the data science lifecycle?,4,1,0.38,low
+q1,What is the first step in the data science lifecycle?,1,1,q10,A data scientist should investigate missing values because _____.,2,10,0.379,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.379,low
+q8,An unsupervised model is useful for _____.,2,8,q10,A data scientist should investigate missing values because _____.,2,10,0.379,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.378,low
+q5,A classification model predicts a/an _____ feature.,1,5,q2,Which type of data is stored in tables with rows and columns?,3,2,0.376,low
+q5,A classification model predicts a/an _____ feature.,1,5,q2,Which type of data is stored in tables with rows and columns?,4,2,0.376,low
+q3,Which dataset is an example of unstructured data?,3,3,q8,Which scenario best fits a regression model?,3,8,0.376,low
+q7,What does an unsupervised model do?,3,7,q1,What is the first step of the data science lifecycle?,4,1,0.373,low
+q1,What is the first step in the data science lifecycle?,1,1,q7,What does an unsupervised model do?,3,7,0.372,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q2,Which type of data is stored in tables with rows and columns?,3,2,0.37,low
+q5,A classification model predicts a/an _____ feature.,1,5,q4,Why do data scientists clean data before modeling?,3,4,0.368,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q10,A data scientist should investigate missing values because _____.,2,10,0.368,low
+q5,A classification model predicts a/an _____ feature.,1,5,q3,Which type of data is unstructured?,2,3,0.365,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q2,Which type of data is stored in tables with rows and columns?,4,2,0.365,low
+q7,Which scenario fits a regression model?,1,7,q5,What distinguishes supervised models from unsupervised models?,4,5,0.363,low
+q3,Which type of data is unstructured?,2,3,q8,Which scenario best fits a regression model?,3,8,0.363,low
+q4,Why must data be cleaned before modeling?,2,4,q5,What distinguishes supervised models from unsupervised models?,4,5,0.363,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q10,A data scientist should investigate missing values because _____.,2,10,0.362,low
+q3,Which type of data is unstructured?,2,3,q8,An unsupervised model is useful for _____.,2,8,0.362,low
+q8,An unsupervised model is useful for _____.,2,8,q5,What is the goal of exploratory data analysis?,3,5,0.362,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q5,A classification model predicts a/an _____ feature.,1,5,0.36,low
+q8,What is a key difference between structured and unstructured data?,1,8,q4,Why must data be cleaned before modeling?,2,4,0.36,low
+q5,A classification model predicts a/an _____ feature.,1,5,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.359,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q3,Which dataset is an example of unstructured data?,3,3,0.359,low
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,q5,What distinguishes supervised models from unsupervised models?,4,5,0.359,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,0.358,low
+q3,Why do data scientists clean data before analysis?,1,3,q6,What distinguishes supervised models from unsupervised models?,2,6,0.358,low
+q10,Which of the following is an example of semi-structured data?,1,10,q8,Which scenario best fits a regression model?,3,8,0.358,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q9,What should a data scientist do after developing a predictive model?,4,9,0.358,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q4,Why must data be cleaned before modeling?,2,4,0.357,low
+q4,Why must data be cleaned before modeling?,2,4,q6,What distinguishes supervised models from unsupervised models?,2,6,0.357,low
+q5,A classification model predicts a/an _____ feature.,1,5,q3,Which dataset is an example of unstructured data?,3,3,0.356,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q7,Which task is best suited for a classification model?,2,7,0.356,low
+q5,A classification model predicts a/an _____ feature.,1,5,q2,Structured data is best described as data that is _____.,2,2,0.355,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.354,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.354,low
+q7,Which scenario fits a regression model?,1,7,q6,What distinguishes supervised models from unsupervised models?,2,6,0.354,low
+q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,q9,What should a data scientist do after developing a predictive model?,4,9,0.354,low
+q7,Which scenario fits a regression model?,1,7,q9,What should a data scientist do after developing a predictive model?,4,9,0.353,low
+q8,Which scenario best fits a regression model?,3,8,q9,What should a data scientist do after developing a predictive model?,4,9,0.353,low
+q3,Which dataset is an example of unstructured data?,3,3,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.351,low
+q4,Why do data scientists clean data before modeling?,3,4,q8,What is a key characteristic of semi-structured data?,4,8,0.351,low
+q4,Why do data scientists clean data before modeling?,3,4,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.35,low
+q5,A classification model predicts a/an _____ feature.,1,5,q10,Which of the following is an example of semi-structured data?,1,10,0.349,low
+q4,Why must data be cleaned before modeling?,2,4,q8,What is a key characteristic of semi-structured data?,4,8,0.349,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q3,Which type of data is unstructured?,2,3,0.348,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.348,low
+q7,Which scenario fits a regression model?,1,7,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.348,low
+q8,What is a key difference between structured and unstructured data?,1,8,q4,Why do data scientists clean data before modeling?,3,4,0.348,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q7,Which task is best suited for a classification model?,2,7,0.346,low
+q3,Which type of data is unstructured?,2,3,q4,Why must data be cleaned before modeling?,2,4,0.346,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.346,low
+q7,Which scenario fits a regression model?,1,7,q10,Which of the following is an example of semi-structured data?,1,10,0.344,low
+q7,Which scenario fits a regression model?,1,7,q3,Which dataset is an example of unstructured data?,3,3,0.344,low
+q7,Which task is best suited for a classification model?,2,7,q5,What distinguishes supervised models from unsupervised models?,4,5,0.344,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q2,Which type of data is stored in tables with rows and columns?,3,2,0.342,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q3,Which dataset is an example of unstructured data?,3,3,0.342,low
+q8,What is a key difference between structured and unstructured data?,1,8,q3,Why do data scientists clean data before modeling?,4,3,0.342,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,0.341,low
+q3,Which type of data is unstructured?,2,3,q3,Why do data scientists clean data before modeling?,4,3,0.341,low
+q4,Why must data be cleaned before modeling?,2,4,q3,Which dataset is an example of unstructured data?,3,3,0.341,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q2,Structured data is best described as data that is _____.,2,2,0.34,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.34,low
+q5,What distinguishes supervised models from unsupervised models?,4,5,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.34,low
+q10,Which of the following is an example of semi-structured data?,1,10,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.339,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q5,What distinguishes supervised models from unsupervised models?,4,5,0.339,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q2,Which type of data is stored in tables with rows and columns?,4,2,0.337,low
+q7,Which scenario fits a regression model?,1,7,q3,Why do data scientists clean data before modeling?,4,3,0.337,low
+q7,Which scenario fits a regression model?,1,7,q4,Why do data scientists clean data before modeling?,3,4,0.336,low
+q1,What is the first step in the data science lifecycle?,2,1,q6,What distinguishes supervised models from unsupervised models?,2,6,0.336,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q1,What is the first step in the data science lifecycle?,3,1,0.336,low
+q2,Structured data is best described as data that is _____.,2,2,q8,An unsupervised model is useful for _____.,2,8,0.335,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q8,Which scenario best fits a regression model?,3,8,0.335,low
+q3,Which dataset is an example of unstructured data?,3,3,q3,Why do data scientists clean data before modeling?,4,3,0.335,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q4,Why do data scientists clean data before modeling?,3,4,0.334,low
+q3,Which type of data is unstructured?,2,3,q6,What distinguishes supervised models from unsupervised models?,2,6,0.334,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q5,What distinguishes supervised models from unsupervised models?,4,5,0.334,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q5,What distinguishes supervised models from unsupervised models?,4,5,0.334,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.333,low
+q8,Which scenario best fits a regression model?,3,8,q3,Why do data scientists clean data before modeling?,4,3,0.333,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q8,An unsupervised model is useful for _____.,2,8,0.332,low
+q3,Why do data scientists clean data before analysis?,1,3,q5,What distinguishes supervised models from unsupervised models?,4,5,0.332,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q3,Which dataset is an example of unstructured data?,3,3,0.332,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q7,Which task is best suited for a classification model?,2,7,0.332,low
+q8,An unsupervised model is useful for _____.,2,8,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.332,low
+q1,What is the first step in the data science lifecycle?,2,1,q5,What distinguishes supervised models from unsupervised models?,4,5,0.331,low
+q1,What is the first step in the data science lifecycle?,3,1,q5,What distinguishes supervised models from unsupervised models?,4,5,0.331,low
+q10,Which of the following is an example of semi-structured data?,1,10,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.33,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.33,low
+q7,Which task is best suited for a classification model?,2,7,q9,What should a data scientist do after developing a predictive model?,4,9,0.33,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q7,Which scenario fits a regression model?,1,7,0.329,low
+q1,What is the first step in the data science lifecycle?,2,1,q8,Which scenario best fits a regression model?,3,8,0.329,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q3,Which dataset is an example of unstructured data?,3,3,0.329,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q5,What is the goal of exploratory data analysis?,3,5,0.329,low
+q1,What is the first step in the data science lifecycle?,3,1,q8,Which scenario best fits a regression model?,3,8,0.329,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q3,Why do data scientists clean data before modeling?,4,3,0.329,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q8,What is a key difference between structured and unstructured data?,1,8,0.328,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.328,low
+q7,Which scenario fits a regression model?,1,7,q5,What is the goal of exploratory data analysis?,3,5,0.326,low
+q7,Which scenario fits a regression model?,1,7,q1,What is the first step in the data science lifecycle?,2,1,0.325,low
+q7,Which scenario fits a regression model?,1,7,q1,What is the first step in the data science lifecycle?,3,1,0.325,low
+q3,Which type of data is unstructured?,2,3,q4,Why do data scientists clean data before modeling?,3,4,0.325,low
+q8,An unsupervised model is useful for _____.,2,8,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.325,low
+q5,What is the goal of exploratory data analysis?,3,5,q5,What distinguishes supervised models from unsupervised models?,4,5,0.325,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q3,Why do data scientists clean data before analysis?,1,3,0.324,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q3,Why do data scientists clean data before modeling?,4,3,0.324,low
+q4,Why must data be cleaned before modeling?,2,4,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.324,low
+q4,Why do data scientists clean data before modeling?,3,4,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.324,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q3,Which type of data is unstructured?,2,3,0.323,low
+q3,Which type of data is unstructured?,2,3,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.322,low
+q4,Why must data be cleaned before modeling?,2,4,q2,Which type of data is stored in tables with rows and columns?,3,2,0.322,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q1,What is the first step of the data science lifecycle?,4,1,0.322,low
+q10,A data scientist should investigate missing values because _____.,2,10,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.322,low
+q7,Which scenario fits a regression model?,1,7,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.321,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q8,What is a key characteristic of semi-structured data?,4,8,0.321,low
+q3,Why do data scientists clean data before modeling?,4,3,q8,What is a key characteristic of semi-structured data?,4,8,0.321,low
+q1,What is the first step in the data science lifecycle?,1,1,q6,What distinguishes supervised models from unsupervised models?,2,6,0.32,low
+q3,Why do data scientists clean data before analysis?,1,3,q3,Which type of data is unstructured?,2,3,0.32,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q10,Which of the following is an example of semi-structured data?,1,10,0.32,low
+q1,What is the first step in the data science lifecycle?,2,1,q8,An unsupervised model is useful for _____.,2,8,0.32,low
+q8,An unsupervised model is useful for _____.,2,8,q1,What is the first step in the data science lifecycle?,3,1,0.32,low
+q3,Which dataset is an example of unstructured data?,3,3,q1,What is the first step of the data science lifecycle?,4,1,0.32,low
+q4,Why do data scientists clean data before modeling?,3,4,q8,Which scenario best fits a regression model?,3,8,0.32,low
+q1,What is the first step in the data science lifecycle?,1,1,q3,Which dataset is an example of unstructured data?,3,3,0.319,low
+q3,Which type of data is unstructured?,2,3,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.319,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.319,low
+q3,Which dataset is an example of unstructured data?,3,3,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.319,low
+q8,Which scenario best fits a regression model?,3,8,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.318,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q2,Which type of data is stored in tables with rows and columns?,3,2,0.317,low
+q3,Which dataset is an example of unstructured data?,3,3,q7,What does an unsupervised model do?,3,7,0.316,low
+q1,What is the first step in the data science lifecycle?,1,1,q8,Which scenario best fits a regression model?,3,8,0.315,low
+q3,Which type of data is unstructured?,2,3,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.315,low
+q3,Which type of data is unstructured?,2,3,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.315,low
+q1,What is the first step of the data science lifecycle?,4,1,q5,What distinguishes supervised models from unsupervised models?,4,5,0.315,low
+q1,What is the first step in the data science lifecycle?,1,1,q7,Which scenario fits a regression model?,1,7,0.313,low
+q3,Which type of data is unstructured?,2,3,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.313,low
+q4,Why must data be cleaned before modeling?,2,4,q2,Which type of data is stored in tables with rows and columns?,4,2,0.313,low
+q8,An unsupervised model is useful for _____.,2,8,q8,What is a key characteristic of semi-structured data?,4,8,0.313,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q3,Why do data scientists clean data before modeling?,4,3,0.313,low
+q3,Why do data scientists clean data before modeling?,4,3,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.313,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q7,What does an unsupervised model do?,3,7,0.312,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.312,low
+q7,Which scenario fits a regression model?,1,7,q3,Which type of data is unstructured?,2,3,0.312,low
+q7,Which scenario fits a regression model?,1,7,q1,What is the first step of the data science lifecycle?,4,1,0.312,low
+q8,Which scenario best fits a regression model?,3,8,q1,What is the first step of the data science lifecycle?,4,1,0.312,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.312,low
+q1,What is the first step in the data science lifecycle?,1,1,q5,What distinguishes supervised models from unsupervised models?,4,5,0.311,low
+q2,Structured data is best described as data that is _____.,2,2,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.311,low
+q3,Which type of data is unstructured?,2,3,q7,What does an unsupervised model do?,3,7,0.311,low
+q3,Why do data scientists clean data before analysis?,1,3,q8,An unsupervised model is useful for _____.,2,8,0.31,low
+q10,Which of the following is an example of semi-structured data?,1,10,q8,An unsupervised model is useful for _____.,2,8,0.31,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q2,Which type of data is stored in tables with rows and columns?,4,2,0.31,low
+q10,A data scientist should investigate missing values because _____.,2,10,q5,What distinguishes supervised models from unsupervised models?,4,5,0.31,low
+q5,What is the goal of exploratory data analysis?,3,5,q8,Which scenario best fits a regression model?,3,8,0.31,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q8,Which scenario best fits a regression model?,3,8,0.309,low
+q1,What is the first step in the data science lifecycle?,2,1,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.308,low
+q1,What is the first step in the data science lifecycle?,3,1,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.308,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q2,Which type of data is stored in tables with rows and columns?,4,2,0.308,low
+q3,Why do data scientists clean data before analysis?,1,3,q8,What is a key difference between structured and unstructured data?,1,8,0.307,low
+q10,Which of the following is an example of semi-structured data?,1,10,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.307,low
+q4,Why must data be cleaned before modeling?,2,4,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.307,low
+q3,Which dataset is an example of unstructured data?,3,3,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.307,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.307,low
+q3,Which type of data is unstructured?,2,3,q5,What distinguishes supervised models from unsupervised models?,4,5,0.306,low
+q3,Which dataset is an example of unstructured data?,3,3,q4,Why do data scientists clean data before modeling?,3,4,0.306,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.306,low
+q1,What is the first step in the data science lifecycle?,1,1,q8,An unsupervised model is useful for _____.,2,8,0.304,low
+q5,A classification model predicts a/an _____ feature.,1,5,q10,A data scientist should investigate missing values because _____.,2,10,0.304,low
+q1,What is the first step in the data science lifecycle?,2,1,q3,Which dataset is an example of unstructured data?,3,3,0.304,low
+q8,An unsupervised model is useful for _____.,2,8,q1,What is the first step of the data science lifecycle?,4,1,0.304,low
+q1,What is the first step in the data science lifecycle?,3,1,q3,Which dataset is an example of unstructured data?,3,3,0.304,low
+q10,Which of the following is an example of semi-structured data?,1,10,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.303,low
+q3,Which type of data is unstructured?,2,3,q5,What is the goal of exploratory data analysis?,3,5,0.303,low
+q3,Which type of data is unstructured?,2,3,q1,What is the first step of the data science lifecycle?,4,1,0.303,low
+q7,Which task is best suited for a classification model?,2,7,q4,Why do data scientists clean data before modeling?,3,4,0.303,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.303,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q3,Why do data scientists clean data before modeling?,4,3,0.303,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.302,low
+q3,Why do data scientists clean data before analysis?,1,3,q3,Which dataset is an example of unstructured data?,3,3,0.302,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q7,What does an unsupervised model do?,3,7,0.302,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.302,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.302,low
+q1,What is the first step in the data science lifecycle?,1,1,q3,Which type of data is unstructured?,2,3,0.301,low
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,4,q8,What is a key characteristic of semi-structured data?,4,8,0.3,low
+q8,What is a key difference between structured and unstructured data?,1,8,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.3,low
+q10,A data scientist should investigate missing values because _____.,2,10,q8,What is a key characteristic of semi-structured data?,4,8,0.3,low
+q5,What is the goal of exploratory data analysis?,3,5,q8,What is a key characteristic of semi-structured data?,4,8,0.3,low
+q3,Why do data scientists clean data before analysis?,1,3,q8,What is a key characteristic of semi-structured data?,4,8,0.299,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q10,A data scientist should investigate missing values because _____.,2,10,0.298,low
+q3,Which dataset is an example of unstructured data?,3,3,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.298,low
+q3,Which type of data is unstructured?,2,3,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.297,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q8,What is a key characteristic of semi-structured data?,4,8,0.297,low
+q8,What is a key difference between structured and unstructured data?,1,8,q8,An unsupervised model is useful for _____.,2,8,0.296,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.296,low
+q7,Which task is best suited for a classification model?,2,7,q3,Why do data scientists clean data before modeling?,4,3,0.296,low
+q1,What is the first step in the data science lifecycle?,1,1,q2,Which type of dataset has features stored in columns and instances in rows?,1,2,0.295,low
+q2,Structured data is best described as data that is _____.,2,2,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.295,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q4,Why do data scientists clean data before modeling?,3,4,0.295,low
+q5,What distinguishes supervised models from unsupervised models?,4,5,q8,What is a key characteristic of semi-structured data?,4,8,0.295,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q1,What is the first step of the data science lifecycle?,4,1,0.294,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.294,low
+q3,Which dataset is an example of unstructured data?,3,3,q5,What distinguishes supervised models from unsupervised models?,4,5,0.294,low
+q8,Which scenario best fits a regression model?,3,8,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.294,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q8,What is a key characteristic of semi-structured data?,4,8,0.293,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q2,Which type of data is stored in tables with rows and columns?,4,2,0.293,low
+q7,Which scenario fits a regression model?,1,7,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.292,low
+q4,Why must data be cleaned before modeling?,2,4,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.292,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q7,What does an unsupervised model do?,3,7,0.292,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q7,What does an unsupervised model do?,3,7,0.291,low
+q2,Structured data is best described as data that is _____.,2,2,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.291,low
+q3,Which dataset is an example of unstructured data?,3,3,q5,What is the goal of exploratory data analysis?,3,5,0.291,low
+q5,A classification model predicts a/an _____ feature.,1,5,q3,Why do data scientists clean data before modeling?,4,3,0.29,low
+q1,What is the first step in the data science lifecycle?,2,1,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.289,low
+q1,What is the first step in the data science lifecycle?,3,1,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.289,low
+q7,What does an unsupervised model do?,3,7,q2,Which type of data is stored in tables with rows and columns?,4,2,0.289,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q5,What is the goal of exploratory data analysis?,3,5,0.288,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.288,low
+q3,Why do data scientists clean data before analysis?,1,3,q2,Which type of data is stored in tables with rows and columns?,3,2,0.288,low
+q1,What is the first step in the data science lifecycle?,2,1,q3,Which type of data is unstructured?,2,3,0.288,low
+q3,Which type of data is unstructured?,2,3,q1,What is the first step in the data science lifecycle?,3,1,0.288,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.288,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.287,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.287,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q2,Which type of data is stored in tables with rows and columns?,4,2,0.287,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q9,What should a data scientist do after developing a predictive model?,4,9,0.286,low
+q3,Which type of data is unstructured?,2,3,q9,What should a data scientist do after developing a predictive model?,4,9,0.286,low
+q5,What is the goal of exploratory data analysis?,3,5,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.286,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q5,What is the goal of exploratory data analysis?,3,5,0.285,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q1,What is the first step of the data science lifecycle?,4,1,0.285,low
+q4,Why do data scientists clean data before modeling?,3,4,q2,Which type of data is stored in tables with rows and columns?,4,2,0.285,low
+q1,What is the first step in the data science lifecycle?,1,1,q2,Which type of data is stored in tables with rows and columns?,3,2,0.284,low
+q4,Why must data be cleaned before modeling?,2,4,q8,Which scenario best fits a regression model?,3,8,0.284,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q7,Which task is best suited for a classification model?,2,7,0.284,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q2,Which type of data is stored in tables with rows and columns?,3,2,0.284,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.283,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q8,What is a key characteristic of semi-structured data?,4,8,0.283,low
+q8,Which scenario best fits a regression model?,3,8,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.283,low
+q5,A classification model predicts a/an _____ feature.,1,5,q9,What should a data scientist do after developing a predictive model?,4,9,0.282,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q2,Which type of data is stored in tables with rows and columns?,3,2,0.282,low
+q8,What is a key difference between structured and unstructured data?,1,8,q10,A data scientist should investigate missing values because _____.,2,10,0.282,low
+q3,Which dataset is an example of unstructured data?,3,3,q9,What should a data scientist do after developing a predictive model?,4,9,0.282,low
+q1,What is the first step in the data science lifecycle?,1,1,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.281,low
+q7,Which scenario fits a regression model?,1,7,q4,Why must data be cleaned before modeling?,2,4,0.281,low
+q8,An unsupervised model is useful for _____.,2,8,q2,Which type of data is stored in tables with rows and columns?,3,2,0.281,low
+q8,Which scenario best fits a regression model?,3,8,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.281,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q2,Which type of data is stored in tables with rows and columns?,4,2,0.28,low
+q8,An unsupervised model is useful for _____.,2,8,q2,Which type of data is stored in tables with rows and columns?,4,2,0.28,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q1,What is the first step of the data science lifecycle?,4,1,0.28,low
+q3,Why do data scientists clean data before analysis?,1,3,q2,Which type of data is stored in tables with rows and columns?,4,2,0.279,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q2,Structured data is best described as data that is _____.,2,2,0.279,low
+q7,Which scenario fits a regression model?,1,7,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.279,low
+q8,What is a key difference between structured and unstructured data?,1,8,q7,What does an unsupervised model do?,3,7,0.279,low
+q5,What is the goal of exploratory data analysis?,3,5,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.279,low
+q5,What is the goal of exploratory data analysis?,3,5,q2,Which type of data is stored in tables with rows and columns?,4,2,0.279,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q1,What is the first step in the data science lifecycle?,2,1,0.278,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q1,What is the first step in the data science lifecycle?,3,1,0.278,low
+q5,A classification model predicts a/an _____ feature.,1,5,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.278,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q2,Which type of data is stored in tables with rows and columns?,4,2,0.278,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q3,Which dataset is an example of unstructured data?,3,3,0.277,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.277,low
+q3,Why do data scientists clean data before analysis?,1,3,q5,A classification model predicts a/an _____ feature.,1,5,0.275,low
+q3,Why do data scientists clean data before analysis?,1,3,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.275,low
+q8,What is a key difference between structured and unstructured data?,1,8,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.275,low
+q2,Structured data is best described as data that is _____.,2,2,q4,Why must data be cleaned before modeling?,2,4,0.275,low
+q7,Which task is best suited for a classification model?,2,7,q5,What is the goal of exploratory data analysis?,3,5,0.275,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.275,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.275,low
+q7,Which scenario fits a regression model?,1,7,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.274,low
+q10,A data scientist should investigate missing values because _____.,2,10,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.274,low
+q1,What is the first step in the data science lifecycle?,1,1,q2,Which type of data is stored in tables with rows and columns?,4,2,0.273,low
+q8,What is a key difference between structured and unstructured data?,1,8,q5,What is the goal of exploratory data analysis?,3,5,0.273,low
+q2,Structured data is best described as data that is _____.,2,2,q8,Which scenario best fits a regression model?,3,8,0.273,low
+q7,What does an unsupervised model do?,3,7,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.273,low
+q1,What is the first step of the data science lifecycle?,4,1,q2,Which type of data is stored in tables with rows and columns?,4,2,0.273,low
+q2,Structured data is best described as data that is _____.,2,2,q6,What distinguishes supervised models from unsupervised models?,2,6,0.272,low
+q8,Which scenario best fits a regression model?,3,8,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.271,low
+q3,Why do data scientists clean data before modeling?,4,3,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.271,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.27,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.27,low
+q9,"After modeling data, what is the next step in the lifecycle?",3,9,q8,What is a key characteristic of semi-structured data?,4,8,0.27,low
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.27,low
+q3,Which type of data is unstructured?,2,3,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.269,low
+q8,An unsupervised model is useful for _____.,2,8,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.269,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q9,What should a data scientist do after developing a predictive model?,4,9,0.269,low
+q3,Which dataset is an example of unstructured data?,3,3,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.269,low
+q1,What is the first step in the data science lifecycle?,1,1,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.268,low
+q1,What is the first step of the data science lifecycle?,4,1,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.267,low
+q7,Which scenario fits a regression model?,1,7,q10,A data scientist should investigate missing values because _____.,2,10,0.266,low
+q8,What is a key difference between structured and unstructured data?,1,8,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.266,low
+q8,What is a key difference between structured and unstructured data?,1,8,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.266,low
+q10,Which of the following is an example of semi-structured data?,1,10,q4,Why must data be cleaned before modeling?,2,4,0.266,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.266,low
+q10,Which of the following is an example of semi-structured data?,1,10,q6,What distinguishes supervised models from unsupervised models?,2,6,0.265,low
+q1,What is the first step in the data science lifecycle?,2,1,q2,Which type of data is stored in tables with rows and columns?,3,2,0.265,low
+q8,An unsupervised model is useful for _____.,2,8,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.265,low
+q1,What is the first step in the data science lifecycle?,3,1,q2,Which type of data is stored in tables with rows and columns?,3,2,0.265,low
+q5,What distinguishes supervised models from unsupervised models?,4,5,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.265,low
+q7,"A dataset with images, videos, and audio files is considered _____.",4,7,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.265,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q8,What is a key characteristic of semi-structured data?,4,8,0.264,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.264,low
+q5,A classification model predicts a/an _____ feature.,1,5,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.263,low
+q7,Which scenario fits a regression model?,1,7,q2,Which type of data is stored in tables with rows and columns?,3,2,0.263,low
+q10,Which of the following is an example of semi-structured data?,1,10,q3,Why do data scientists clean data before modeling?,4,3,0.263,low
+q7,Which task is best suited for a classification model?,2,7,q9,"After modeling data, what is the next step in the lifecycle?",3,9,0.263,low
+q10,A data scientist should investigate missing values because _____.,2,10,q8,Which scenario best fits a regression model?,3,8,0.263,low
+q5,A classification model predicts a/an _____ feature.,1,5,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.262,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q9,What should a data scientist do after developing a predictive model?,4,9,0.262,low
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,q8,What is a key characteristic of semi-structured data?,4,8,0.262,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.261,low
+q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.261,low
+q1,What is the first step in the data science lifecycle?,1,1,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.26,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.26,low
+q1,What is the first step of the data science lifecycle?,4,1,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.26,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.26,low
+q7,Which scenario fits a regression model?,1,7,q2,Which type of data is stored in tables with rows and columns?,4,2,0.258,low
+q2,Structured data is best described as data that is _____.,2,2,q5,What distinguishes supervised models from unsupervised models?,4,5,0.258,low
+q7,Which scenario fits a regression model?,1,7,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.257,low
+q3,Why do data scientists clean data before analysis?,1,3,q8,Which scenario best fits a regression model?,3,8,0.256,low
+q2,Structured data is best described as data that is _____.,2,2,q4,Why do data scientists clean data before modeling?,3,4,0.256,low
+q2,Structured data is best described as data that is _____.,2,2,q3,Why do data scientists clean data before modeling?,4,3,0.256,low
+q2,Structured data is best described as data that is _____.,2,2,q5,What is the goal of exploratory data analysis?,3,5,0.255,low
+q5,"During exploratory data analysis, data scientists primarily _____.",2,5,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.255,low
+q10,Which of the following is an example of semi-structured data?,1,10,q1,What is the first step of the data science lifecycle?,4,1,0.254,low
+q2,Structured data is best described as data that is _____.,2,2,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.254,low
+q2,Structured data is best described as data that is _____.,2,2,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.254,low
+q10,A data scientist should investigate missing values because _____.,2,10,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.254,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q8,What is a key difference between structured and unstructured data?,1,8,0.253,low
+q10,Which of the following is an example of semi-structured data?,1,10,q9,What should a data scientist do after developing a predictive model?,4,9,0.253,low
+q1,What is the first step in the data science lifecycle?,2,1,q7,Which task is best suited for a classification model?,2,7,0.253,low
+q1,What is the first step in the data science lifecycle?,2,1,q2,Which type of data is stored in tables with rows and columns?,4,2,0.253,low
+q7,Which task is best suited for a classification model?,2,7,q1,What is the first step in the data science lifecycle?,3,1,0.253,low
+q1,What is the first step in the data science lifecycle?,3,1,q2,Which type of data is stored in tables with rows and columns?,4,2,0.253,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q5,What distinguishes supervised models from unsupervised models?,4,5,0.253,low
+q8,What is a key difference between structured and unstructured data?,1,8,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.252,low
+q8,What is a key difference between structured and unstructured data?,1,8,q9,What should a data scientist do after developing a predictive model?,4,9,0.252,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q3,Which dataset is an example of unstructured data?,3,3,0.252,low
+q7,Which task is best suited for a classification model?,2,7,q3,Which dataset is an example of unstructured data?,3,3,0.252,low
+q5,What is the goal of exploratory data analysis?,3,5,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.251,low
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,6,q10,Which of the following is an example of semi-structured data?,1,10,0.25,low
+q10,Which of the following is an example of semi-structured data?,1,10,q4,Why do data scientists clean data before modeling?,3,4,0.25,low
+q3,Which type of data is unstructured?,2,3,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.25,low
+q4,Why do data scientists clean data before modeling?,3,4,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.25,low
+q1,What is the first step in the data science lifecycle?,1,1,q10,Which of the following is an example of semi-structured data?,1,10,0.249,low
+q4,Why must data be cleaned before modeling?,2,4,q7,Which task is best suited for a classification model?,2,7,0.249,low
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.249,low
+q1,What is the first step in the data science lifecycle?,2,1,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.248,low
+q1,What is the first step in the data science lifecycle?,3,1,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.248,low
+q8,What is a key characteristic of semi-structured data?,4,8,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.248,low
+q3,Why do data scientists clean data before analysis?,1,3,q7,Which scenario fits a regression model?,1,7,0.246,low
+q2,Structured data is best described as data that is _____.,2,2,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.246,low
+q7,What does an unsupervised model do?,3,7,q8,What is a key characteristic of semi-structured data?,4,8,0.246,low
+q5,A classification model predicts a/an _____ feature.,1,5,q5,What is the goal of exploratory data analysis?,3,5,0.245,low
+q5,A classification model predicts a/an _____ feature.,1,5,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.245,low
+q8,What is a key characteristic of semi-structured data?,4,8,q9,What should a data scientist do after developing a predictive model?,4,9,0.245,low
+q10,Which of the following is an example of semi-structured data?,1,10,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.244,low
+q7,What does an unsupervised model do?,3,7,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.244,low
+q1,What is the first step in the data science lifecycle?,1,1,q7,Which task is best suited for a classification model?,2,7,0.243,low
+q3,Why do data scientists clean data before analysis?,1,3,q10,Which of the following is an example of semi-structured data?,1,10,0.243,low
+q10,Which of the following is an example of semi-structured data?,1,10,q1,What is the first step in the data science lifecycle?,2,1,0.243,low
+q10,Which of the following is an example of semi-structured data?,1,10,q1,What is the first step in the data science lifecycle?,3,1,0.243,low
+q3,Which type of data is unstructured?,2,3,q7,Which task is best suited for a classification model?,2,7,0.243,low
+q7,Which task is best suited for a classification model?,2,7,q1,What is the first step of the data science lifecycle?,4,1,0.242,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q2,Which type of data is stored in tables with rows and columns?,3,2,0.239,low
+q10,Which of the following is an example of semi-structured data?,1,10,q5,What is the goal of exploratory data analysis?,3,5,0.239,low
+q3,Which dataset is an example of unstructured data?,3,3,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.239,low
+q3,Why do data scientists clean data before analysis?,1,3,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.238,low
+q10,How should data scientists communicate complex model results to non-technical managers?,3,10,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.238,low
+q8,What is a key difference between structured and unstructured data?,1,8,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.237,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q8,Which scenario best fits a regression model?,3,8,0.237,low
+q3,Why do data scientists clean data before analysis?,1,3,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.236,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q10,Which of the following is an example of semi-structured data?,1,10,0.236,low
+q10,Which of the following is an example of semi-structured data?,1,10,q5,What distinguishes supervised models from unsupervised models?,4,5,0.236,low
+q10,Which of the following is an example of semi-structured data?,1,10,q7,Which task is best suited for a classification model?,2,7,0.235,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q8,Which scenario best fits a regression model?,3,8,0.235,low
+q1,What is the first step in the data science lifecycle?,1,1,q2,Structured data is best described as data that is _____.,2,2,0.234,low
+q10,Which of the following is an example of semi-structured data?,1,10,q5,"During exploratory data analysis, data scientists primarily _____.",2,5,0.234,low
+q6,What distinguishes supervised models from unsupervised models?,2,6,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.234,low
+q7,Which task is best suited for a classification model?,2,7,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.234,low
+q2,Structured data is best described as data that is _____.,2,2,q1,What is the first step of the data science lifecycle?,4,1,0.233,low
+q8,Which scenario best fits a regression model?,3,8,q2,Which type of data is stored in tables with rows and columns?,4,2,0.233,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q8,What is a key characteristic of semi-structured data?,4,8,0.232,low
+q2,Structured data is best described as data that is _____.,2,2,q7,What does an unsupervised model do?,3,7,0.232,low
+q7,"A dataset with images, videos, and audio files is considered _____.",4,7,q9,What should a data scientist do after developing a predictive model?,4,9,0.232,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.231,low
+q3,Why do data scientists clean data before analysis?,1,3,q2,Structured data is best described as data that is _____.,2,2,0.23,low
+q7,Which task is best suited for a classification model?,2,7,q10,A data scientist should investigate missing values because _____.,2,10,0.23,low
+q7,Which task is best suited for a classification model?,2,7,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.23,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q2,Which type of data is stored in tables with rows and columns?,4,2,0.228,low
+q3,Which type of data is unstructured?,2,3,q10,A data scientist should investigate missing values because _____.,2,10,0.228,low
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,q8,What is a key characteristic of semi-structured data?,4,8,0.228,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.227,low
+q10,A data scientist should investigate missing values because _____.,2,10,q3,Which dataset is an example of unstructured data?,3,3,0.227,low
+q7,Which task is best suited for a classification model?,2,7,q10,How should data scientists communicate complex model results to non-technical managers?,3,10,0.226,low
+q7,Which scenario fits a regression model?,1,7,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.225,low
+q7,Which scenario fits a regression model?,1,7,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.225,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q3,Which type of data is unstructured?,2,3,0.225,low
+q10,Which of the following is an example of semi-structured data?,1,10,q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,4,0.225,low
+q1,What is the first step in the data science lifecycle?,2,1,q2,Structured data is best described as data that is _____.,2,2,0.225,low
+q2,Structured data is best described as data that is _____.,2,2,q1,What is the first step in the data science lifecycle?,3,1,0.225,low
+q2,Structured data is best described as data that is _____.,2,2,q9,What should a data scientist do after developing a predictive model?,4,9,0.225,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q8,An unsupervised model is useful for _____.,2,8,0.223,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q6,What distinguishes supervised models from unsupervised models?,2,6,0.222,low
+q1,What is the first step in the data science lifecycle?,1,1,q8,What is a key difference between structured and unstructured data?,1,8,0.221,low
+q8,What is a key difference between structured and unstructured data?,1,8,q1,What is the first step of the data science lifecycle?,4,1,0.22,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q10,A data scientist should investigate missing values because _____.,2,10,0.219,low
+q5,A classification model predicts a/an _____ feature.,1,5,q1,What is the first step in the data science lifecycle?,2,1,0.217,low
+q5,A classification model predicts a/an _____ feature.,1,5,q1,What is the first step in the data science lifecycle?,3,1,0.217,low
+q7,Which task is best suited for a classification model?,2,7,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.217,low
+q10,Which of the following is an example of semi-structured data?,1,10,q7,What does an unsupervised model do?,3,7,0.216,low
+q8,Which scenario best fits a regression model?,3,8,q8,What is a key characteristic of semi-structured data?,4,8,0.215,low
+q8,What is a key difference between structured and unstructured data?,1,8,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.214,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q8,Which scenario best fits a regression model?,3,8,0.214,low
+q10,Which of the following is an example of semi-structured data?,1,10,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.214,low
+q2,Structured data is best described as data that is _____.,2,2,q10,A data scientist should investigate missing values because _____.,2,10,0.214,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.214,low
+q1,What is the first step in the data science lifecycle?,1,1,q8,What is a key characteristic of semi-structured data?,4,8,0.213,low
+q1,What is the first step of the data science lifecycle?,4,1,q8,What is a key characteristic of semi-structured data?,4,8,0.213,low
+q3,Why do data scientists clean data before analysis?,1,3,q7,Which task is best suited for a classification model?,2,7,0.212,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q5,What distinguishes supervised models from unsupervised models?,4,5,0.212,low
+q8,What is a key difference between structured and unstructured data?,1,8,q1,What is the first step in the data science lifecycle?,2,1,0.21,low
+q8,What is a key difference between structured and unstructured data?,1,8,q1,What is the first step in the data science lifecycle?,3,1,0.21,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q5,What distinguishes supervised models from unsupervised models?,4,5,0.21,low
+q5,A classification model predicts a/an _____ feature.,1,5,q1,What is the first step of the data science lifecycle?,4,1,0.209,low
+q1,What is the first step in the data science lifecycle?,1,1,q5,A classification model predicts a/an _____ feature.,1,5,0.206,low
+q10,A data scientist should investigate missing values because _____.,2,10,q2,Which type of data is stored in tables with rows and columns?,3,2,0.206,low
+q10,A data scientist should investigate missing values because _____.,2,10,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.205,low
+q2,Structured data is best described as data that is _____.,2,2,q10,Why might data scientists remove some instances during data cleaning?,4,10,0.203,low
+q7,Which scenario fits a regression model?,1,7,q2,Structured data is best described as data that is _____.,2,2,0.202,low
+q1,What is the first step in the data science lifecycle?,2,1,q8,What is a key characteristic of semi-structured data?,4,8,0.201,low
+q1,What is the first step in the data science lifecycle?,3,1,q8,What is a key characteristic of semi-structured data?,4,8,0.201,low
+q8,What is a key difference between structured and unstructured data?,1,8,q8,Which scenario best fits a regression model?,3,8,0.2,low
+q10,A data scientist should investigate missing values because _____.,2,10,q2,Which type of data is stored in tables with rows and columns?,4,2,0.2,low
+q7,Which scenario fits a regression model?,1,7,q8,What is a key difference between structured and unstructured data?,1,8,0.199,low
+q2,Which type of data is stored in tables with rows and columns?,3,2,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.199,low
+q7,Which scenario fits a regression model?,1,7,q8,What is a key characteristic of semi-structured data?,4,8,0.197,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q2,Structured data is best described as data that is _____.,2,2,0.195,low
+q2,Which type of data is stored in tables with rows and columns?,4,2,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.191,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q7,Which task is best suited for a classification model?,2,7,0.19,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.189,low
+q2,Which type of dataset has features stored in columns and instances in rows?,1,2,q7,Which task is best suited for a classification model?,2,7,0.187,low
+q5,A classification model predicts a/an _____ feature.,1,5,q9,What is the main purpose of interpreting data in the lifecycle?,2,9,0.186,low
+q9,What is the main purpose of interpreting data in the lifecycle?,2,9,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.185,low
+q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.184,low
+q8,What is a key difference between structured and unstructured data?,1,8,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.18,low
+q10,Which of the following is an example of semi-structured data?,1,10,q10,A data scientist should investigate missing values because _____.,2,10,0.173,low
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,6,0.167,low
+q2,Structured data is best described as data that is _____.,2,2,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.162,low
+q7,Which task is best suited for a classification model?,2,7,q8,What is a key characteristic of semi-structured data?,4,8,0.16,low
+q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,q8,What is a key characteristic of semi-structured data?,4,8,0.156,low
+q5,A classification model predicts a/an _____ feature.,1,5,q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,9,0.152,low
+q7,Which task is best suited for a classification model?,2,7,q2,Which type of data is stored in tables with rows and columns?,3,2,0.152,low
+q7,Which task is best suited for a classification model?,2,7,q2,Which type of data is stored in tables with rows and columns?,4,2,0.147,low
+q2,Structured data is best described as data that is _____.,2,2,q7,Which task is best suited for a classification model?,2,7,0.145,low
+q8,What is a key difference between structured and unstructured data?,1,8,q7,Which task is best suited for a classification model?,2,7,0.143,low
+q7,Which task is best suited for a classification model?,2,7,q7,"A dataset with images, videos, and audio files is considered _____.",4,7,0.137,low
+q8,What is a key difference between structured and unstructured data?,1,8,q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,6,0.123,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define the five steps of the data science lifecycle  
+Distinguish between structured, semi-structured, and unstructured data types  
+Explain the importance of data cleaning and techniques for handling missing or erroneous data  
+Use exploratory data analysis to identify patterns and relationships in data  
+Compare supervised (classification and regression) and unsupervised modeling approaches"
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the first step in the data science lifecycle?,1,yes,"This question assesses knowledge of the first step in the data science lifecycle, directly related to defining the five steps of the data science lifecycle."
+q2,Which type of dataset has features stored in columns and instances in rows?,1,yes,"This question evaluates understanding of structured data, which relates to distinguishing between structured, semi-structured, and unstructured data types."
+q3,Why do data scientists clean data before analysis?,1,yes,"This question tests the importance of data cleaning and its purpose, aligning with the objective about data cleaning and handling missing or erroneous data."
+q4,"During exploratory data analysis, data scientists primarily use _____ to find patterns.",1,yes,"This question assesses the use of exploratory data analysis to find patterns, matching the objective on exploratory data analysis."
+q5,A classification model predicts a/an _____ feature.,1,yes,"This question evaluates understanding of classification models predicting categorical features, relating to supervised modeling approaches."
+q6,"In the data science lifecycle, unsupervised models are used to _____.",1,yes,"This question tests knowledge of unsupervised models and their purpose, aligning with the objective comparing supervised and unsupervised modeling approaches."
+q7,Which scenario fits a regression model?,1,yes,"This question assesses understanding of regression models, a type of supervised modeling approach."
+q8,What is a key difference between structured and unstructured data?,1,yes,"This question evaluates the difference between structured and unstructured data, directly related to distinguishing data types."
+q9,What is the purpose of interpreting data in the final step of the data science lifecycle?,1,yes,"This question tests the purpose of interpreting data in the lifecycle, which is part of defining the data science lifecycle steps."
+q10,Which of the following is an example of semi-structured data?,1,yes,"This question assesses knowledge of semi-structured data examples, relating to distinguishing data types."
+q1,What is the first step in the data science lifecycle?,2,yes,"This question repeats the first step in the data science lifecycle, assessing the same learning objective as question 1."
+q2,Structured data is best described as data that is _____.,2,yes,"This question evaluates understanding of structured data characteristics, related to distinguishing data types."
+q3,Which type of data is unstructured?,2,yes,"This question tests identification of unstructured data, aligning with distinguishing data types."
+q4,Why must data be cleaned before modeling?,2,yes,"This question assesses why data must be cleaned before modeling, relating to the importance of data cleaning."
+q5,"During exploratory data analysis, data scientists primarily _____.",2,yes,"This question evaluates the role of exploratory data analysis in recognizing patterns, matching the exploratory data analysis objective."
+q6,What distinguishes supervised models from unsupervised models?,2,yes,"This question compares supervised and unsupervised models, directly addressing the modeling approaches objective."
+q7,Which task is best suited for a classification model?,2,yes,"This question assesses classification model use cases, related to supervised modeling approaches."
+q8,An unsupervised model is useful for _____.,2,yes,"This question tests the purpose of unsupervised models, aligning with the comparison of modeling approaches."
+q9,What is the main purpose of interpreting data in the lifecycle?,2,yes,"This question evaluates the purpose of interpreting data in the lifecycle, related to defining lifecycle steps."
+q10,A data scientist should investigate missing values because _____.,2,yes,"This question assesses understanding of missing data and its implications, relating to data cleaning and handling missing data."
+q1,What is the first step in the data science lifecycle?,3,yes,"This question repeats the first step in the data science lifecycle, assessing the lifecycle steps objective."
+q2,Which type of data is stored in tables with rows and columns?,3,yes,"This question evaluates knowledge of structured data storage, relating to distinguishing data types."
+q3,Which dataset is an example of unstructured data?,3,yes,"This question tests identification of unstructured data examples, aligning with distinguishing data types."
+q4,Why do data scientists clean data before modeling?,3,yes,"This question assesses why data cleaning is necessary before modeling, related to data cleaning importance."
+q5,What is the goal of exploratory data analysis?,3,yes,"This question evaluates the goal of exploratory data analysis, matching the exploratory data analysis objective."
+q6,"Which type of model predicts categories like ""spam"" or ""not spam""?",3,yes,"This question tests knowledge of classification models, relating to supervised modeling approaches."
+q7,What does an unsupervised model do?,3,yes,"This question assesses the function of unsupervised models, aligning with the comparison of modeling approaches."
+q8,Which scenario best fits a regression model?,3,yes,"This question evaluates regression model use cases, related to supervised modeling approaches."
+q9,"After modeling data, what is the next step in the lifecycle?",3,yes,"This question tests knowledge of the lifecycle step following modeling, related to defining the data science lifecycle steps."
+q10,How should data scientists communicate complex model results to non-technical managers?,3,no,This question focuses on communication style rather than any of the specified learning objectives.
+q1,What is the first step of the data science lifecycle?,4,yes,"This question repeats the first step in the data science lifecycle, assessing lifecycle steps knowledge."
+q2,Which type of data is stored in tables with rows and columns?,4,yes,"This question evaluates understanding of structured data, relating to distinguishing data types."
+q3,Why do data scientists clean data before modeling?,4,yes,"This question assesses why data cleaning is done before modeling, matching the data cleaning objective."
+q4,"During exploratory data analysis, data scientists primarily use plots to _____.",4,yes,"This question tests the use of plots in exploratory data analysis, aligning with the exploratory data analysis objective."
+q5,What distinguishes supervised models from unsupervised models?,4,yes,"This question compares supervised and unsupervised models, directly addressing the modeling approaches objective."
+q6,Which model type is appropriate for predicting whether a house sells within 30 days?,4,yes,"This question evaluates classification model applicability, relating to supervised modeling approaches."
+q7,"A dataset with images, videos, and audio files is considered _____.",4,yes,"This question tests identification of unstructured data types, aligning with distinguishing data types."
+q8,What is a key characteristic of semi-structured data?,4,yes,"This question assesses characteristics of semi-structured data, related to distinguishing data types."
+q9,What should a data scientist do after developing a predictive model?,4,yes,"This question evaluates the step after model development, related to interpreting data and communicating results in the lifecycle."
+q10,Why might data scientists remove some instances during data cleaning?,4,yes,"This question tests reasons for removing data during cleaning, aligning with the importance of data cleaning and handling noisy data."

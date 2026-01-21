@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,0
+2,10,0,1
+3,10,0,0
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,1,4,100
+1,3,1,3,100
+1,4,1,4,100
+2,3,1,5,100
+2,4,0,3,100
+3,4,0,4,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),4
+Similar (70-85%),24
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.959,duplicate
+q2,Which operator raises a number to a power in Python?,1,2,q2,Which operator in Python raises a number to a power?,2,2,0.952,duplicate
+q4,What symbol is used for multiplication in programming expressions?,1,4,q2,Which symbol represents multiplication in most programming languages?,3,2,0.904,duplicate
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q9,Why is it good practice to use parentheses in expressions?,3,9,0.856,duplicate
+q7,Why are parentheses used in programming expressions?,1,7,q9,Why is it good practice to use parentheses in expressions?,3,9,0.846,similar
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.839,similar
+q7,Why are parentheses used in programming expressions?,1,7,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.805,similar
+q2,Which operator in Python raises a number to a power?,2,2,q2,Which operator is used for exponentiation in Python?,4,2,0.797,similar
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q1,What is an arithmetic expression in programming?,3,1,0.795,similar
+q2,Which operator raises a number to a power in Python?,1,2,q2,Which operator is used for exponentiation in Python?,4,2,0.784,similar
+q9,Why is it good practice to use parentheses in expressions?,3,9,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.783,similar
+q7,Why are parentheses used in programming expressions?,1,7,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.782,similar
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.774,similar
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q2,Which operator is used for exponentiation in Python?,4,2,0.771,similar
+q7,Why are parentheses used in programming expressions?,1,7,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.77,similar
+q2,Which operator raises a number to a power in Python?,1,2,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.768,similar
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.761,similar
+q2,Which operator in Python raises a number to a power?,2,2,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.76,similar
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.76,similar
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.757,similar
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.756,similar
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q9,Why is it good practice to use parentheses in expressions?,3,9,0.752,similar
+q8,Which of the following is a valid expression in programming?,1,8,q7,Which of the following is a valid Python expression?,2,7,0.748,similar
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q1,What is an arithmetic expression in programming?,3,1,0.744,similar
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.743,similar
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q1,What does an _expression_ in programming always do?,4,1,0.741,similar
+q2,Which symbol represents multiplication in most programming languages?,3,2,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.714,similar
+q4,What symbol is used for multiplication in programming expressions?,1,4,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.702,similar
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.698,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.697,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.696,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q2,Which operator is used for exponentiation in Python?,4,2,0.695,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.692,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.685,low
+q8,Which of the following is a valid expression in programming?,1,8,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.684,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.684,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.683,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q8,What is the correct Python operator to represent multiplication?,2,8,0.682,low
+q7,Which of the following is a valid Python expression?,2,7,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.681,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.675,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.672,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.668,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.667,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q2,Which operator is used for exponentiation in Python?,4,2,0.667,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.664,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.664,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q2,Which symbol represents multiplication in most programming languages?,3,2,0.663,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.657,low
+q1,What is an arithmetic expression in programming?,3,1,q1,What does an _expression_ in programming always do?,4,1,0.656,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.652,low
+q8,Which of the following is a valid expression in programming?,1,8,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.651,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.65,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.646,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q7,Which of the following is a valid Python expression?,2,7,0.646,low
+q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.643,low
+q1,What is an arithmetic expression in programming?,3,1,q10,A literal in programming is:,4,10,0.639,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.638,low
+q4,What is the correct way to write multiplication in most programming languages?,4,4,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.631,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q10,A literal in programming is:,4,10,0.629,low
+q7,Which of the following is a valid Python expression?,2,7,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.629,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.623,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q8,Which of the following is a valid expression in programming?,1,8,0.621,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q6,What does unary minus do in an expression?,4,6,0.617,low
+q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.615,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q8,Which of the following is a valid expression in programming?,1,8,0.614,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.61,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q8,What is the correct Python operator to represent multiplication?,2,8,0.604,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q7,Which of the following is a valid Python expression?,2,7,0.603,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.601,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.601,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.6,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.596,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q7,Which of the following is a valid Python expression?,2,7,0.595,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.594,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.594,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.594,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.594,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.592,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q6,What does unary minus do in an expression?,4,6,0.59,low
+q2,Which operator in Python raises a number to a power?,2,2,q8,What is the correct Python operator to represent multiplication?,2,8,0.588,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.587,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.586,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.586,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.585,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.585,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.584,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.583,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.582,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,0.58,low
+q7,Why are parentheses used in programming expressions?,1,7,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.578,low
+q7,Why are parentheses used in programming expressions?,1,7,q1,What does an _expression_ in programming always do?,4,1,0.578,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q8,What is the correct Python operator to represent multiplication?,2,8,0.578,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.577,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.577,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q7,Why are parentheses used in programming expressions?,1,7,0.576,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q1,What does an _expression_ in programming always do?,4,1,0.572,low
+q2,Which operator in Python raises a number to a power?,2,2,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.572,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.567,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.567,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.567,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.566,low
+q7,Why are parentheses used in programming expressions?,1,7,q1,What is an arithmetic expression in programming?,3,1,0.566,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.566,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.566,low
+q2,Which operator raises a number to a power in Python?,1,2,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.565,low
+q2,Which operator raises a number to a power in Python?,1,2,q8,What is the correct Python operator to represent multiplication?,2,8,0.565,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q4,What symbol is used for multiplication in programming expressions?,1,4,0.565,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.562,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.561,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.56,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.559,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.557,low
+q8,Which of the following is a valid expression in programming?,1,8,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.557,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.557,low
+q8,Which of the following is a valid expression in programming?,1,8,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.556,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q1,What is an arithmetic expression in programming?,3,1,0.556,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q2,Which operator is used for exponentiation in Python?,4,2,0.555,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.551,low
+q1,What does an _expression_ in programming always do?,4,1,q10,A literal in programming is:,4,10,0.55,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.549,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.549,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.549,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.548,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q2,Which operator is used for exponentiation in Python?,4,2,0.548,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.546,low
+q7,Why are parentheses used in programming expressions?,1,7,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.544,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.543,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.542,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.541,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.541,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.541,low
+q8,Which of the following is a valid expression in programming?,1,8,q2,Which symbol represents multiplication in most programming languages?,3,2,0.54,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.539,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.538,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q10,A literal in programming is:,4,10,0.537,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.537,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.533,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q8,What is the correct Python operator to represent multiplication?,2,8,0.532,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q4,What symbol is used for multiplication in programming expressions?,1,4,0.531,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.531,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.53,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.53,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.53,low
+q1,What is an arithmetic expression in programming?,3,1,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.529,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.529,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.528,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.527,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.527,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.526,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.526,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.525,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.524,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q2,Which operator is used for exponentiation in Python?,4,2,0.523,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.523,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.522,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.521,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.517,low
+q8,Which of the following is a valid expression in programming?,1,8,q1,What is an arithmetic expression in programming?,3,1,0.516,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.516,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.515,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.514,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.514,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.513,low
+q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.513,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.511,low
+q8,Which of the following is a valid expression in programming?,1,8,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.51,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q2,Which symbol represents multiplication in most programming languages?,3,2,0.51,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.51,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.51,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q8,Which of the following is a valid expression in programming?,1,8,0.509,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.509,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q2,Which operator is used for exponentiation in Python?,4,2,0.508,low
+q5,The expression 5t is invalid because _____.,3,5,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.506,low
+q4,What is the correct way to write multiplication in most programming languages?,4,4,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.506,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,0.505,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.505,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q9,Why is it good practice to use parentheses in expressions?,3,9,0.505,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q1,What is an arithmetic expression in programming?,3,1,0.503,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q1,What does an _expression_ in programming always do?,4,1,0.503,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.502,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.502,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.502,low
+q8,Which of the following is a valid expression in programming?,1,8,q1,What does an _expression_ in programming always do?,4,1,0.5,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q2,Which symbol represents multiplication in most programming languages?,3,2,0.5,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.499,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.498,low
+q7,Why are parentheses used in programming expressions?,1,7,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.498,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q8,What is the correct Python operator to represent multiplication?,2,8,0.498,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.497,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q2,Which symbol represents multiplication in most programming languages?,3,2,0.496,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.495,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.495,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.494,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.494,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q2,Which symbol represents multiplication in most programming languages?,3,2,0.493,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.493,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.492,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q2,Which symbol represents multiplication in most programming languages?,3,2,0.492,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q9,Why is it good practice to use parentheses in expressions?,3,9,0.49,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.49,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.489,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.489,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.489,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,0.488,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.488,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q1,What does an _expression_ in programming always do?,4,1,0.488,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q7,Which of the following is a valid Python expression?,2,7,0.487,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q7,Why are parentheses used in programming expressions?,1,7,0.486,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.485,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.484,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.484,low
+q2,Which operator in Python raises a number to a power?,2,2,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.483,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q1,What does an _expression_ in programming always do?,4,1,0.483,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.482,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.481,low
+q7,Which of the following is a valid Python expression?,2,7,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.481,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.48,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.48,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.48,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q2,Which operator is used for exponentiation in Python?,4,2,0.479,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.478,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.478,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.477,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.476,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.476,low
+q8,Which of the following is a valid expression in programming?,1,8,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.475,low
+q8,Which of the following is a valid expression in programming?,1,8,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.475,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.474,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q1,What does an _expression_ in programming always do?,4,1,0.474,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.474,low
+q2,Which operator raises a number to a power in Python?,1,2,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.473,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.473,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.472,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.472,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q7,Why are parentheses used in programming expressions?,1,7,0.471,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.471,low
+q7,Why are parentheses used in programming expressions?,1,7,q10,A literal in programming is:,4,10,0.471,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.471,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.47,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.469,low
+q7,Which of the following is a valid Python expression?,2,7,q8,What is the correct Python operator to represent multiplication?,2,8,0.469,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q7,Which of the following is a valid Python expression?,2,7,0.468,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.468,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q10,A literal in programming is:,4,10,0.467,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.467,low
+q8,Which of the following is a valid expression in programming?,1,8,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.466,low
+q2,Which operator is used for exponentiation in Python?,4,2,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.466,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.465,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q7,Which of the following is a valid Python expression?,2,7,0.464,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q1,What does an _expression_ in programming always do?,4,1,0.464,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.464,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.464,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.464,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.463,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q8,Which of the following is a valid expression in programming?,1,8,0.462,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q1,What does an _expression_ in programming always do?,4,1,0.462,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q5,The expression 5t is invalid because _____.,3,5,0.461,low
+q8,Which of the following is a valid expression in programming?,1,8,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.461,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q6,What does unary minus do in an expression?,4,6,0.461,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.459,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.459,low
+q1,What is an arithmetic expression in programming?,3,1,q9,Why is it good practice to use parentheses in expressions?,3,9,0.459,low
+q1,What is an arithmetic expression in programming?,3,1,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.459,low
+q1,What does an _expression_ in programming always do?,4,1,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.459,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q10,A literal in programming is:,4,10,0.458,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q2,Which symbol represents multiplication in most programming languages?,3,2,0.456,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.455,low
+q7,Which of the following is a valid Python expression?,2,7,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.455,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.454,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q1,What is an arithmetic expression in programming?,3,1,0.454,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.454,low
+q1,What is an arithmetic expression in programming?,3,1,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.453,low
+q8,Which of the following is a valid expression in programming?,1,8,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.452,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q8,What is the correct Python operator to represent multiplication?,2,8,0.452,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q1,What does an _expression_ in programming always do?,4,1,0.452,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.452,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.451,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.451,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q2,Which operator is used for exponentiation in Python?,4,2,0.451,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.451,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q7,Which of the following is a valid Python expression?,2,7,0.451,low
+q7,Why are parentheses used in programming expressions?,1,7,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.45,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.45,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.45,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q2,Which operator is used for exponentiation in Python?,4,2,0.449,low
+q7,Why are parentheses used in programming expressions?,1,7,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.448,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.448,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.447,low
+q2,Which operator in Python raises a number to a power?,2,2,q2,Which symbol represents multiplication in most programming languages?,3,2,0.447,low
+q2,Which operator is used for exponentiation in Python?,4,2,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.447,low
+q4,What is the correct way to write multiplication in most programming languages?,4,4,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.447,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q5,The expression 5t is invalid because _____.,3,5,0.446,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.446,low
+q1,What is an arithmetic expression in programming?,3,1,q2,Which symbol represents multiplication in most programming languages?,3,2,0.446,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q6,What does unary minus do in an expression?,4,6,0.446,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.446,low
+q7,Why are parentheses used in programming expressions?,1,7,q8,Which of the following is a valid expression in programming?,1,8,0.445,low
+q8,Which of the following is a valid expression in programming?,1,8,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.445,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.444,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.443,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.443,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.443,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q2,Which symbol represents multiplication in most programming languages?,3,2,0.443,low
+q2,Which operator raises a number to a power in Python?,1,2,q2,Which symbol represents multiplication in most programming languages?,3,2,0.442,low
+q8,Which of the following is a valid expression in programming?,1,8,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.441,low
+q7,Why are parentheses used in programming expressions?,1,7,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.44,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.44,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q1,What is an arithmetic expression in programming?,3,1,0.44,low
+q5,The expression 5t is invalid because _____.,3,5,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.439,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.439,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q1,What is an arithmetic expression in programming?,3,1,0.437,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.437,low
+q7,Why are parentheses used in programming expressions?,1,7,q2,Which symbol represents multiplication in most programming languages?,3,2,0.436,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q6,What does unary minus do in an expression?,4,6,0.436,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.436,low
+q8,Which of the following is a valid expression in programming?,1,8,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.435,low
+q1,What is an arithmetic expression in programming?,3,1,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.434,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.433,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q2,Which symbol represents multiplication in most programming languages?,3,2,0.433,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.433,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.432,low
+q1,What is an arithmetic expression in programming?,3,1,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.432,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.432,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.431,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.43,low
+q7,Why are parentheses used in programming expressions?,1,7,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.43,low
+q2,Which operator in Python raises a number to a power?,2,2,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.43,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.43,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.429,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q9,Why is it good practice to use parentheses in expressions?,3,9,0.429,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.429,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q8,What is the correct Python operator to represent multiplication?,2,8,0.428,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.426,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.426,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.425,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q7,Which of the following is a valid Python expression?,2,7,0.424,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q5,The expression 5t is invalid because _____.,3,5,0.424,low
+q8,Which of the following is a valid expression in programming?,1,8,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.424,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q2,Which symbol represents multiplication in most programming languages?,3,2,0.424,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.424,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.424,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.423,low
+q7,Which of the following is a valid Python expression?,2,7,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.422,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.421,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q1,What is an arithmetic expression in programming?,3,1,0.421,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.421,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.421,low
+q8,Which of the following is a valid expression in programming?,1,8,q10,A literal in programming is:,4,10,0.42,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.419,low
+q7,Why are parentheses used in programming expressions?,1,7,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.419,low
+q7,Which of the following is a valid Python expression?,2,7,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.419,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.418,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.417,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q2,Which operator in Python raises a number to a power?,2,2,0.417,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.415,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.414,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q5,The expression 5t is invalid because _____.,3,5,0.414,low
+q2,Which operator is used for exponentiation in Python?,4,2,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.414,low
+q2,Which operator raises a number to a power in Python?,1,2,q4,What symbol is used for multiplication in programming expressions?,1,4,0.412,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q7,Why are parentheses used in programming expressions?,1,7,0.412,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.411,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.411,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.411,low
+q2,Which operator raises a number to a power in Python?,1,2,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.41,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.41,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.41,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q1,What does an _expression_ in programming always do?,4,1,0.41,low
+q2,Which operator is used for exponentiation in Python?,4,2,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.41,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,0.409,low
+q2,Which operator in Python raises a number to a power?,2,2,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.409,low
+q7,Which of the following is a valid Python expression?,2,7,q1,What is an arithmetic expression in programming?,3,1,0.409,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.408,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q5,The expression 5t is invalid because _____.,3,5,0.408,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.408,low
+q7,Which of the following is a valid Python expression?,2,7,q1,What does an _expression_ in programming always do?,4,1,0.408,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q2,Which operator in Python raises a number to a power?,2,2,0.407,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q2,Which symbol represents multiplication in most programming languages?,3,2,0.407,low
+q1,What is an arithmetic expression in programming?,3,1,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.407,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q7,Which of the following is a valid Python expression?,2,7,0.406,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.405,low
+q8,Which of the following is a valid expression in programming?,1,8,q5,The expression 5t is invalid because _____.,3,5,0.405,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.405,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q2,Which symbol represents multiplication in most programming languages?,3,2,0.405,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.403,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.403,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q2,Which symbol represents multiplication in most programming languages?,3,2,0.402,low
+q8,Which of the following is a valid expression in programming?,1,8,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.402,low
+q7,Which of the following is a valid Python expression?,2,7,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.402,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.401,low
+q5,The expression 5t is invalid because _____.,3,5,q10,A literal in programming is:,4,10,0.401,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q5,The expression 5t is invalid because _____.,3,5,0.4,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.399,low
+q2,Which operator raises a number to a power in Python?,1,2,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.398,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.398,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.398,low
+q1,What does an _expression_ in programming always do?,4,1,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.398,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.397,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q2,Which operator is used for exponentiation in Python?,4,2,0.397,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.397,low
+q8,Which of the following is a valid expression in programming?,1,8,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.397,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.397,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q6,What does unary minus do in an expression?,4,6,0.396,low
+q7,Why are parentheses used in programming expressions?,1,7,q7,Which of the following is a valid Python expression?,2,7,0.395,low
+q7,Which of the following is a valid Python expression?,2,7,q5,The expression 5t is invalid because _____.,3,5,0.395,low
+q7,Why are parentheses used in programming expressions?,1,7,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.394,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.394,low
+q5,The expression 5t is invalid because _____.,3,5,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.394,low
+q8,Which of the following is a valid expression in programming?,1,8,q8,What is the correct Python operator to represent multiplication?,2,8,0.393,low
+q7,Which of the following is a valid Python expression?,2,7,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.393,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q1,What is an arithmetic expression in programming?,3,1,0.392,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.392,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.392,low
+q7,Which of the following is a valid Python expression?,2,7,q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,0.392,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.391,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q1,What does an _expression_ in programming always do?,4,1,0.391,low
+q7,Which of the following is a valid Python expression?,2,7,q2,Which symbol represents multiplication in most programming languages?,3,2,0.391,low
+q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.391,low
+q2,Which operator raises a number to a power in Python?,1,2,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.39,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.39,low
+q1,What is an arithmetic expression in programming?,3,1,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.39,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.389,low
+q8,Which of the following is a valid expression in programming?,1,8,q9,Why is it good practice to use parentheses in expressions?,3,9,0.389,low
+q2,Which operator is used for exponentiation in Python?,4,2,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.388,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,0.387,low
+q2,Which operator raises a number to a power in Python?,1,2,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.386,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.386,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.386,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.386,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q10,A literal in programming is:,4,10,0.386,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.386,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q1,What is an arithmetic expression in programming?,3,1,0.386,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.386,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,0.385,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.385,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q9,Why is it good practice to use parentheses in expressions?,3,9,0.385,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.385,low
+q5,The expression 5t is invalid because _____.,3,5,q1,What does an _expression_ in programming always do?,4,1,0.385,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.383,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q9,Why is it good practice to use parentheses in expressions?,3,9,0.383,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q9,Why is it good practice to use parentheses in expressions?,3,9,0.383,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.383,low
+q1,What is an arithmetic expression in programming?,3,1,q5,The expression 5t is invalid because _____.,3,5,0.383,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q10,A literal in programming is:,4,10,0.383,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q2,Which operator is used for exponentiation in Python?,4,2,0.383,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q2,Which operator in Python raises a number to a power?,2,2,0.382,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.382,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q6,What does unary minus do in an expression?,4,6,0.382,low
+q1,What does an _expression_ in programming always do?,4,1,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.382,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.381,low
+q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.381,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.38,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q6,What does unary minus do in an expression?,4,6,0.379,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.378,low
+q2,Which operator in Python raises a number to a power?,2,2,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.378,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.378,low
+q1,What does an _expression_ in programming always do?,4,1,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.378,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.377,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q1,What does an _expression_ in programming always do?,4,1,0.375,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.375,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.374,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q5,The expression 5t is invalid because _____.,3,5,0.374,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.374,low
+q1,What does an _expression_ in programming always do?,4,1,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.374,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.373,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q1,What does an _expression_ in programming always do?,4,1,0.373,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.373,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q10,A literal in programming is:,4,10,0.373,low
+q1,What does an _expression_ in programming always do?,4,1,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.373,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.372,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q5,The expression 5t is invalid because _____.,3,5,0.372,low
+q5,The expression 5t is invalid because _____.,3,5,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.372,low
+q8,Why should parentheses be used even if precedence rules exist?,4,8,q10,A literal in programming is:,4,10,0.372,low
+q8,Which of the following is a valid expression in programming?,1,8,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.371,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.37,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.37,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.37,low
+q2,Which operator in Python raises a number to a power?,2,2,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.37,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q10,A literal in programming is:,4,10,0.37,low
+q7,Which of the following is a valid Python expression?,2,7,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.37,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.369,low
+q7,Which of the following is a valid Python expression?,2,7,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.369,low
+q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,q6,What does unary minus do in an expression?,4,6,0.369,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.368,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q9,Why is it good practice to use parentheses in expressions?,3,9,0.368,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.368,low
+q7,Why are parentheses used in programming expressions?,1,7,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.367,low
+q2,Which operator in Python raises a number to a power?,2,2,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.366,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q6,What does unary minus do in an expression?,4,6,0.365,low
+q8,Which of the following is a valid expression in programming?,1,8,q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,0.364,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.364,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q2,Which operator is used for exponentiation in Python?,4,2,0.362,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q5,The expression 5t is invalid because _____.,3,5,0.362,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q9,Why is it good practice to use parentheses in expressions?,3,9,0.361,low
+q7,Why are parentheses used in programming expressions?,1,7,q5,The expression 5t is invalid because _____.,3,5,0.361,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.361,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q6,What does unary minus do in an expression?,4,6,0.361,low
+q1,What is an arithmetic expression in programming?,3,1,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.361,low
+q2,Which operator raises a number to a power in Python?,1,2,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.36,low
+q2,Which operator in Python raises a number to a power?,2,2,q7,Which of the following is a valid Python expression?,2,7,0.36,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.359,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q6,What does unary minus do in an expression?,4,6,0.359,low
+q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,q10,A literal in programming is:,4,10,0.359,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.358,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q2,Which operator is used for exponentiation in Python?,4,2,0.358,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q10,A literal in programming is:,4,10,0.358,low
+q7,Which of the following is a valid Python expression?,2,7,q2,Which operator is used for exponentiation in Python?,4,2,0.358,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q1,What does an _expression_ in programming always do?,4,1,0.357,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.357,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.357,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.357,low
+q5,The expression 5t is invalid because _____.,3,5,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.357,low
+q2,Which operator raises a number to a power in Python?,1,2,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.356,low
+q7,Why are parentheses used in programming expressions?,1,7,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.356,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q1,What does an _expression_ in programming always do?,4,1,0.356,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.356,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.355,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.355,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q7,Which of the following is a valid Python expression?,2,7,0.354,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q2,Which operator is used for exponentiation in Python?,4,2,0.354,low
+q2,Which operator in Python raises a number to a power?,2,2,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.354,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q10,A literal in programming is:,4,10,0.354,low
+q1,What does an _expression_ in programming always do?,4,1,q6,What does unary minus do in an expression?,4,6,0.354,low
+q4,What is the correct way to write multiplication in most programming languages?,4,4,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.354,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q6,What does unary minus do in an expression?,4,6,0.353,low
+q1,What is an arithmetic expression in programming?,3,1,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.353,low
+q7,Which of the following is a valid Python expression?,2,7,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.352,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.352,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.352,low
+q2,Which operator raises a number to a power in Python?,1,2,q7,Which of the following is a valid Python expression?,2,7,0.351,low
+q2,Which operator raises a number to a power in Python?,1,2,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.351,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.351,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q6,What does unary minus do in an expression?,4,6,0.351,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.35,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.35,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q7,Which of the following is a valid Python expression?,2,7,0.35,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q1,What is an arithmetic expression in programming?,3,1,0.349,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q5,The expression 5t is invalid because _____.,3,5,0.349,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.347,low
+q7,Why are parentheses used in programming expressions?,1,7,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.347,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q1,What does an _expression_ in programming always do?,4,1,0.347,low
+q2,Which operator in Python raises a number to a power?,2,2,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.347,low
+q7,Which of the following is a valid Python expression?,2,7,q9,Why is it good practice to use parentheses in expressions?,3,9,0.347,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.346,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q5,The expression 5t is invalid because _____.,3,5,0.346,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q2,Which symbol represents multiplication in most programming languages?,3,2,0.346,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q1,What does an _expression_ in programming always do?,4,1,0.346,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.345,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q9,Why is it good practice to use parentheses in expressions?,3,9,0.344,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q9,Why is it good practice to use parentheses in expressions?,3,9,0.344,low
+q5,The expression 5t is invalid because _____.,3,5,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.344,low
+q2,Which operator raises a number to a power in Python?,1,2,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.343,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q8,What is the correct Python operator to represent multiplication?,2,8,0.343,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.343,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.343,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,0.342,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.342,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q8,What is the correct Python operator to represent multiplication?,2,8,0.342,low
+q5,The expression 5t is invalid because _____.,3,5,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.342,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q1,What does an _expression_ in programming always do?,4,1,0.341,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.341,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q6,What does unary minus do in an expression?,4,6,0.341,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q1,What does an _expression_ in programming always do?,4,1,0.34,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.339,low
+q8,Which of the following is a valid expression in programming?,1,8,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.339,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.339,low
+q4,What is the correct way to write multiplication in most programming languages?,4,4,q10,A literal in programming is:,4,10,0.339,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q2,Which operator is used for exponentiation in Python?,4,2,0.338,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q2,Which operator is used for exponentiation in Python?,4,2,0.338,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.337,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q5,The expression 5t is invalid because _____.,3,5,0.336,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q1,What is an arithmetic expression in programming?,3,1,0.336,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q10,A literal in programming is:,4,10,0.336,low
+q6,What does unary minus do in an expression?,4,6,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.336,low
+q1,What is an arithmetic expression in programming?,3,1,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.335,low
+q1,What is an arithmetic expression in programming?,3,1,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.334,low
+q2,Which operator raises a number to a power in Python?,1,2,q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,0.333,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q10,A literal in programming is:,4,10,0.333,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q10,A literal in programming is:,4,10,0.333,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q5,The expression 5t is invalid because _____.,3,5,0.332,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.332,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.332,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.332,low
+q2,Which operator raises a number to a power in Python?,1,2,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.331,low
+q2,Which operator raises a number to a power in Python?,1,2,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.331,low
+q2,Which operator in Python raises a number to a power?,2,2,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.331,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q10,A literal in programming is:,4,10,0.331,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q10,A literal in programming is:,4,10,0.33,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.329,low
+q7,Which of the following is a valid Python expression?,2,7,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.328,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q6,What does unary minus do in an expression?,4,6,0.328,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q6,What does unary minus do in an expression?,4,6,0.327,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q5,The expression 5t is invalid because _____.,3,5,0.327,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.327,low
+q5,The expression 5t is invalid because _____.,3,5,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.327,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.327,low
+q1,What is an arithmetic expression in programming?,3,1,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.325,low
+q1,What is an arithmetic expression in programming?,3,1,q6,What does unary minus do in an expression?,4,6,0.325,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.325,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.325,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q5,The expression 5t is invalid because _____.,3,5,0.323,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.323,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q2,Which operator in Python raises a number to a power?,2,2,0.322,low
+q7,Why are parentheses used in programming expressions?,1,7,q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,0.322,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q8,What is the correct Python operator to represent multiplication?,2,8,0.322,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q4,What is the correct way to write multiplication in most programming languages?,4,4,0.321,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q9,Why is it good practice to use parentheses in expressions?,3,9,0.319,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.318,low
+q5,The expression 5t is invalid because _____.,3,5,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.318,low
+q4,What symbol is used for multiplication in programming expressions?,1,4,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.317,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.317,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q5,The expression 5t is invalid because _____.,3,5,0.316,low
+q1,What does an _expression_ in programming always do?,4,1,q2,Which operator is used for exponentiation in Python?,4,2,0.316,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.315,low
+q7,Why are parentheses used in programming expressions?,1,7,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.313,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.312,low
+q8,Which of the following is a valid expression in programming?,1,8,q6,What does unary minus do in an expression?,4,6,0.311,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.311,low
+q8,Why should parentheses be used even if precedence rules exist?,4,8,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.311,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q2,Which operator is used for exponentiation in Python?,4,2,0.31,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q2,Which operator is used for exponentiation in Python?,4,2,0.31,low
+q5,The expression 5t is invalid because _____.,3,5,q9,Why is it good practice to use parentheses in expressions?,3,9,0.309,low
+q1,What is an arithmetic expression in programming?,3,1,q2,Which operator is used for exponentiation in Python?,4,2,0.308,low
+q5,The expression 5t is invalid because _____.,3,5,q2,Which operator is used for exponentiation in Python?,4,2,0.307,low
+q2,Which operator is used for exponentiation in Python?,4,2,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.307,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q9,Why is it good practice to use parentheses in expressions?,3,9,0.306,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q8,Which of the following is a valid expression in programming?,1,8,0.305,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.305,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.305,low
+q2,Which operator in Python raises a number to a power?,2,2,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.304,low
+q7,Why are parentheses used in programming expressions?,1,7,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.303,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.302,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.302,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q7,Why are parentheses used in programming expressions?,1,7,0.301,low
+q2,Which operator raises a number to a power in Python?,1,2,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.298,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,0.298,low
+q8,Which of the following is a valid expression in programming?,1,8,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.298,low
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.298,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.297,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.296,low
+q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,q10,A literal in programming is:,4,10,0.296,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q8,What is the correct Python operator to represent multiplication?,2,8,0.295,low
+q7,Why are parentheses used in programming expressions?,1,7,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.295,low
+q7,Why are parentheses used in programming expressions?,1,7,q6,What does unary minus do in an expression?,4,6,0.294,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q6,What does unary minus do in an expression?,4,6,0.294,low
+q2,Which operator raises a number to a power in Python?,1,2,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.293,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q10,A literal in programming is:,4,10,0.293,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.291,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.29,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.288,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q10,A literal in programming is:,4,10,0.287,low
+q2,Which operator in Python raises a number to a power?,2,2,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.287,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q8,What is the correct Python operator to represent multiplication?,2,8,0.286,low
+q2,Which operator raises a number to a power in Python?,1,2,q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,0.286,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q6,What does unary minus do in an expression?,4,6,0.286,low
+q7,Which of the following is a valid Python expression?,2,7,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.286,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.286,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,0.286,low
+q7,Which of the following is a valid Python expression?,2,7,q10,A literal in programming is:,4,10,0.285,low
+q6,What does unary minus do in an expression?,4,6,q10,A literal in programming is:,4,10,0.285,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q9,Why is it good practice to use parentheses in expressions?,3,9,0.284,low
+q2,Which symbol represents multiplication in most programming languages?,3,2,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.284,low
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,3,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.284,low
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,3,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.283,low
+q2,Which operator in Python raises a number to a power?,2,2,q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,0.283,low
+q2,Which operator raises a number to a power in Python?,1,2,q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,4,0.281,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q1,What is an arithmetic expression in programming?,3,1,0.281,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.28,low
+q7,Why are parentheses used in programming expressions?,1,7,q8,What is the correct Python operator to represent multiplication?,2,8,0.28,low
+q6,What does unary minus do in an expression?,4,6,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.28,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q1,What is an arithmetic expression in programming?,3,1,0.278,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q6,What does unary minus do in an expression?,4,6,0.278,low
+q2,Which operator is used for exponentiation in Python?,4,2,q10,A literal in programming is:,4,10,0.277,low
+q8,Which of the following is a valid expression in programming?,1,8,q2,Which operator is used for exponentiation in Python?,4,2,0.276,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.276,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.274,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.273,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q1,What does an _expression_ in programming always do?,4,1,0.273,low
+q7,Why are parentheses used in programming expressions?,1,7,q2,Which operator is used for exponentiation in Python?,4,2,0.272,low
+q2,Which operator raises a number to a power in Python?,1,2,q1,What does an arithmetic expression typically combine to produce a value?,2,1,0.269,low
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,3,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.269,low
+q2,Which operator raises a number to a power in Python?,1,2,q1,What does an _expression_ in programming always do?,4,1,0.268,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q2,Which operator in Python raises a number to a power?,2,2,0.268,low
+q8,Which of the following is a valid expression in programming?,1,8,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.267,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q2,Which operator is used for exponentiation in Python?,4,2,0.266,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q9,Why is it good practice to use parentheses in expressions?,3,9,0.265,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q5,The expression 5t is invalid because _____.,3,5,0.265,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.264,low
+q2,Which operator raises a number to a power in Python?,1,2,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.263,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q2,Which operator in Python raises a number to a power?,2,2,0.262,low
+q2,Which operator raises a number to a power in Python?,1,2,q5,The expression 5t is invalid because _____.,3,5,0.26,low
+q2,Which operator in Python raises a number to a power?,2,2,q5,The expression 5t is invalid because _____.,3,5,0.26,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q9,Why is it good practice to use parentheses in expressions?,3,9,0.259,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q10,A literal in programming is:,4,10,0.257,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q9,Why is it good practice to use parentheses in expressions?,3,9,0.257,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q1,What does an _expression_ in programming always do?,4,1,0.257,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,0.256,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q1,What does an _expression_ in programming always do?,4,1,0.256,low
+q8,Which of the following is a valid expression in programming?,1,8,q2,Which operator in Python raises a number to a power?,2,2,0.256,low
+q6,What does unary minus do in an expression?,4,6,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.256,low
+q2,Which operator raises a number to a power in Python?,1,2,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.255,low
+q2,Which operator in Python raises a number to a power?,2,2,q4,What is the purpose of parentheses in an arithmetic expression?,2,4,0.254,low
+q2,Which operator in Python raises a number to a power?,2,2,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.253,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.253,low
+q4,What is the correct way to write multiplication in most programming languages?,4,4,q6,What does unary minus do in an expression?,4,6,0.251,low
+q2,Which operator raises a number to a power in Python?,1,2,q10,A literal in programming is:,4,10,0.25,low
+q2,Which operator raises a number to a power in Python?,1,2,q8,Which of the following is a valid expression in programming?,1,8,0.249,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q10,A literal in programming is:,4,10,0.249,low
+q7,Fill in the blank: The exponent operator in Python is _____.,3,7,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.249,low
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,3,q10,A literal in programming is:,4,10,0.249,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.247,low
+q2,Which operator is used for exponentiation in Python?,4,2,q6,What does unary minus do in an expression?,4,6,0.247,low
+q2,Which operator in Python raises a number to a power?,2,2,q1,What does an _expression_ in programming always do?,4,1,0.246,low
+q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,q10,A literal in programming is:,4,10,0.246,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q2,Which operator raises a number to a power in Python?,1,2,0.244,low
+q2,Which operator raises a number to a power in Python?,1,2,q6,What does unary minus do in an expression?,4,6,0.243,low
+q5,The expression 5t is invalid because _____.,3,5,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.243,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.24,low
+q5,The expression 5t is invalid because _____.,3,5,q6,What does unary minus do in an expression?,4,6,0.24,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q6,What does unary minus do in an expression?,4,6,0.239,low
+q2,Which operator raises a number to a power in Python?,1,2,q1,What is an arithmetic expression in programming?,3,1,0.238,low
+q7,Why are parentheses used in programming expressions?,1,7,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.237,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.237,low
+q2,Which operator in Python raises a number to a power?,2,2,q6,What does unary minus do in an expression?,4,6,0.236,low
+q2,Which operator in Python raises a number to a power?,2,2,q10,A literal in programming is:,4,10,0.236,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q6,Which operator has equal precedence and is evaluated left to right?,3,6,0.234,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q2,Which operator in Python raises a number to a power?,2,2,0.232,low
+q2,Which operator in Python raises a number to a power?,2,2,q1,What is an arithmetic expression in programming?,3,1,0.232,low
+q2,Which operator raises a number to a power in Python?,1,2,q7,Why are parentheses used in programming expressions?,1,7,0.231,low
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,6,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.231,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q6,What does unary minus do in an expression?,4,6,0.23,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q9,Why is it good practice to use parentheses in expressions?,3,9,0.228,low
+q1,What does an arithmetic expression typically combine to produce a value?,2,1,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.227,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q7,Fill in the blank: The exponent operator in Python is _____.,3,7,0.226,low
+q4,What is the purpose of parentheses in an arithmetic expression?,2,4,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.225,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.225,low
+q7,Why are parentheses used in programming expressions?,1,7,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.223,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q9,Why is it good practice to use parentheses in expressions?,3,9,0.222,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q5,The expression 5t is invalid because _____.,3,5,0.222,low
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.22,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.22,low
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.22,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q2,Which operator in Python raises a number to a power?,2,2,0.218,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q1,What is an arithmetic expression in programming?,3,1,0.218,low
+q8,What is the correct Python operator to represent multiplication?,2,8,q6,What does unary minus do in an expression?,4,6,0.217,low
+q2,Which operator raises a number to a power in Python?,1,2,q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,5,0.216,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.215,low
+q7,Which of the following is a valid Python expression?,2,7,q6,What does unary minus do in an expression?,4,6,0.212,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q10,A literal in programming is:,4,10,0.212,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q2,Which operator is used for exponentiation in Python?,4,2,0.212,low
+q7,Why are parentheses used in programming expressions?,1,7,q2,Which operator in Python raises a number to a power?,2,2,0.211,low
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,q10,A literal in programming is:,4,10,0.208,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.206,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q10,A literal in programming is:,4,10,0.205,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q1,What does an _expression_ in programming always do?,4,1,0.204,low
+q9,Why is it good practice to use parentheses in expressions?,3,9,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.204,low
+q2,Which operator in Python raises a number to a power?,2,2,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.203,low
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,1,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.202,low
+q2,Which operator raises a number to a power in Python?,1,2,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.202,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,9,0.202,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q10,Why is it good practice to use parentheses explicitly in expressions?,2,10,0.202,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q7,Which of the following is a valid Python expression?,2,7,0.2,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,5,0.195,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,7,0.19,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q6,What does unary minus do in an expression?,4,6,0.189,low
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,5,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.186,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,9,0.184,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q6,What does unary minus do in an expression?,4,6,0.184,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q2,Which operator is used for exponentiation in Python?,4,2,0.181,low
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.181,low
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,q2,Which operator is used for exponentiation in Python?,4,2,0.174,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q10,A literal in programming is:,4,10,0.173,low
+q2,Which operator raises a number to a power in Python?,1,2,q9,Why is it good practice to use parentheses in expressions?,3,9,0.163,low
+q2,Which operator in Python raises a number to a power?,2,2,q9,Why is it good practice to use parentheses in expressions?,3,9,0.162,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q9,Why is it good practice to use parentheses in expressions?,3,9,0.16,low
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,q8,Why should parentheses be used even if precedence rules exist?,4,8,0.16,low
+q2,Which operator raises a number to a power in Python?,1,2,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.15,low
+q6,Which operator has equal precedence and is evaluated left to right?,3,6,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.15,low
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,10,q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,9,0.145,low
+q2,Which operator in Python raises a number to a power?,2,2,q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,8,0.143,low
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,6,q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,10,0.1,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Write arithmetic expressions using variables, literals, operators, and parentheses.  
+Apply precedence rules to evaluate or find equivalent arithmetic expressions.  
+Convert mathematical equations into valid Python statements.  
+Use parentheses effectively to clarify and control the order of evaluation in expressions.  
+Identify valid and invalid expressions in programming contexts."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,"An _expression_ in programming is a combination of variables, literals, operators, and _____.",1,yes,"This question assesses knowledge of what components form an expression, directly related to writing arithmetic expressions using variables, literals, operators, and parentheses."
+q2,Which operator raises a number to a power in Python?,1,yes,"This question tests understanding of the exponentiation operator in Python, which relates to converting mathematical equations into valid Python statements and applying precedence rules."
+q3,"In the expression 3 + 4 * 5, which operation is evaluated first?",1,yes,This question evaluates understanding of operator precedence in arithmetic expressions.
+q4,What symbol is used for multiplication in programming expressions?,1,yes,"This question checks knowledge of valid operators in programming expressions, relevant to writing expressions and identifying valid expressions."
+q5,Which expression correctly shows the order of evaluation for y + 2 * z?,1,yes,This question assesses understanding of order of evaluation and use of parentheses to clarify it.
+q6,"Fill in the blank: The unary minus operator, used for negation, has _____ precedence than multiplication and division.",1,yes,"This question tests knowledge of operator precedence, specifically unary minus relative to multiplication and division."
+q7,Why are parentheses used in programming expressions?,1,yes,This question evaluates understanding of the purpose of parentheses in expressions to clarify and control evaluation order.
+q8,Which of the following is a valid expression in programming?,1,yes,This question assesses ability to identify valid and invalid expressions in programming contexts.
+q9,Convert the mathematical expression 5 × (x + 1) to a correct Python expression.,1,yes,This question tests converting a mathematical expression into a valid Python statement using correct operators and parentheses.
+q10,"Fill in the blank: In Python, the subtraction operator is the _____ symbol.",1,yes,"This question checks knowledge of valid operators in Python expressions, relevant to writing and identifying valid expressions."
+q1,What does an arithmetic expression typically combine to produce a value?,2,yes,"This question assesses understanding of what components make up an arithmetic expression, aligned with writing expressions using variables, literals, operators, and parentheses."
+q2,Which operator in Python raises a number to a power?,2,yes,"This question tests knowledge of the exponentiation operator in Python, relevant to converting math to Python and precedence."
+q3,"In the expression y = 3 + 2 * x, which operation is evaluated first?",2,yes,This question evaluates understanding of operator precedence in expressions.
+q4,What is the purpose of parentheses in an arithmetic expression?,2,yes,This question assesses understanding of the role of parentheses in controlling order of evaluation.
+q5,Which operator has the highest precedence in Python arithmetic expressions?,2,yes,This question tests knowledge of operator precedence hierarchy in Python arithmetic expressions.
+q6,How does Python treat the expression -x when evaluating arithmetic?,2,yes,This question evaluates understanding of unary minus operator behavior and precedence.
+q7,Which of the following is a valid Python expression?,2,yes,This question assesses ability to identify valid Python expressions.
+q8,What is the correct Python operator to represent multiplication?,2,yes,This question tests knowledge of the correct multiplication operator in Python expressions.
+q9,"If x = 4 and w = 2, what is the value of y after y = 3 * (x + 10 / w)?",2,yes,This question assesses applying precedence rules to evaluate an expression with variables and operators.
+q10,Why is it good practice to use parentheses explicitly in expressions?,2,yes,This question evaluates understanding of the importance of parentheses to clarify evaluation order beyond precedence rules.
+q1,What is an arithmetic expression in programming?,3,yes,This question assesses understanding of what constitutes an arithmetic expression in programming.
+q2,Which symbol represents multiplication in most programming languages?,3,yes,This question tests knowledge of the multiplication operator symbol in programming languages.
+q3,Which operator has the highest precedence in the expression 3 * (x + 10 / w)?,3,yes,"This question evaluates understanding of operator precedence, especially parentheses having highest precedence."
+q4,"In the expression y = 2 * (x + 1), what does the parentheses enforce?",3,yes,This question assesses understanding of how parentheses affect order of evaluation in expressions.
+q5,The expression 5t is invalid because _____.,3,yes,"This question tests ability to identify invalid expressions due to missing operators, relevant to identifying valid/invalid expressions."
+q6,Which operator has equal precedence and is evaluated left to right?,3,yes,This question assesses knowledge of operator precedence and associativity rules.
+q7,Fill in the blank: The exponent operator in Python is _____.,3,yes,"This question tests knowledge of the exponent operator in Python, relevant to converting math to Python and precedence."
+q8,"If x = 5, what does the expression -x + 3 evaluate to?",3,yes,This question evaluates understanding of unary minus operator and expression evaluation.
+q9,Why is it good practice to use parentheses in expressions?,3,yes,This question assesses understanding of why parentheses are used to make evaluation order explicit.
+q10,Convert the math expression Age × 0.2017 + Weight × 0.09036 to Python code using variables age and weight.,3,yes,This question tests converting a mathematical expression into valid Python code using variables and operators.
+q1,What does an _expression_ in programming always do?,4,yes,"This question assesses understanding that expressions evaluate to values, foundational to writing and evaluating expressions."
+q2,Which operator is used for exponentiation in Python?,4,yes,This question tests knowledge of the exponentiation operator in Python.
+q3,"In the expression 3 * (x + 10 / w), which operation is evaluated first?",4,yes,This question evaluates understanding of operator precedence and order of evaluation within parentheses.
+q4,What is the correct way to write multiplication in most programming languages?,4,yes,This question assesses knowledge of valid multiplication syntax in programming expressions.
+q5,"In arithmetic expressions, what is the precedence order of these operators: +, *, ()?",4,yes,"This question tests understanding of operator precedence order including parentheses, multiplication, and addition."
+q6,What does unary minus do in an expression?,4,yes,This question evaluates understanding of the unary minus operator's function in expressions.
+q7,"How does evaluation proceed when two operators of equal precedence appear, like x * y / z?",4,yes,This question assesses knowledge of operator associativity when operators have equal precedence.
+q8,Why should parentheses be used even if precedence rules exist?,4,yes,This question tests understanding of the importance of parentheses to explicitly indicate evaluation order.
+q9,Convert the mathematical expression 5 × (x + 1) to a valid Python expression:,4,yes,This question assesses converting a mathematical expression with multiplication and parentheses into valid Python syntax.
+q10,A literal in programming is:,4,yes,This question evaluates understanding of what a literal is in programming expressions.

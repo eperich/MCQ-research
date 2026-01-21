@@ -1,0 +1,858 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,10,0,1
+2,10,0,0
+3,10,0,0
+4,10,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,3,3,100
+1,3,3,2,100
+1,4,1,4,100
+2,3,2,2,100
+2,4,2,3,100
+3,4,2,2,100
+
+Summary
+Total Comparisons,780
+Duplicates (≥85%),13
+Similar (70-85%),17
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.959,duplicate
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.953,duplicate
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.944,duplicate
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.94,duplicate
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.919,duplicate
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.915,duplicate
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.912,duplicate
+q5,"In Python, how are functions accessed from an imported package?",1,5,q2,How does Python access a function inside an imported package with an alias?,3,2,0.888,duplicate
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.887,duplicate
+q1,What does a Python package contain?,1,1,q1,What does a Python package contain?,3,1,0.879,duplicate
+q10,How is a single function imported from a package?,1,10,q3,Which command imports just one function from a package?,2,3,0.874,duplicate
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.874,duplicate
+q6,What is a dependency in Python packaging?,1,6,q9,What is a dependency in Python package management?,2,9,0.859,duplicate
+q7,Which package manager is included by default with Python installations?,3,7,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.849,similar
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.848,similar
+q10,How are functions inside an imported package accessed in code?,2,10,q2,How does Python access a function inside an imported package with an alias?,3,2,0.835,similar
+q5,"In Python, how are functions accessed from an imported package?",1,5,q10,How are functions inside an imported package accessed in code?,2,10,0.82,similar
+q2,Which command imports a package under an alias?,1,2,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.819,similar
+q10,How are functions inside an imported package accessed in code?,2,10,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.782,similar
+q8,Which package is primarily used for machine learning models in Python?,1,8,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.776,similar
+q3,What role does a package manager play in Python?,1,3,q6,What is the main role of a package manager like pip?,2,6,0.769,similar
+q8,Which package is primarily used for machine learning models in Python?,1,8,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.766,similar
+q10,How is a single function imported from a package?,1,10,q9,The command to import a single function named func from package pkg is _____.,4,9,0.762,similar
+q3,Which command imports just one function from a package?,2,3,q9,The command to import a single function named func from package pkg is _____.,4,9,0.755,similar
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.753,similar
+q10,How is a single function imported from a package?,1,10,q10,How are functions inside an imported package accessed in code?,2,10,0.746,similar
+q2,Which command imports a package under an alias?,1,2,q2,How does Python access a function inside an imported package with an alias?,3,2,0.714,similar
+q8,Which package is primarily used for machine learning models in Python?,1,8,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.708,similar
+q5,"In Python, how are functions accessed from an imported package?",1,5,q10,How is a single function imported from a package?,1,10,0.703,similar
+q2,A Python package is best described as a/an _____.,2,2,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.703,similar
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.697,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.696,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.695,low
+q2,A Python package is best described as a/an _____.,2,2,q1,What does a Python package contain?,3,1,0.695,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.691,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.691,low
+q2,Which command imports a package under an alias?,1,2,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.69,low
+q3,Which command imports just one function from a package?,2,3,q10,How are functions inside an imported package accessed in code?,2,10,0.688,low
+q2,Which command imports a package under an alias?,1,2,q10,How are functions inside an imported package accessed in code?,2,10,0.687,low
+q1,What does a Python package contain?,1,1,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.686,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.686,low
+q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.682,low
+q10,How is a single function imported from a package?,1,10,q2,How does Python access a function inside an imported package with an alias?,3,2,0.673,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.669,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.664,low
+q2,Which command imports a package under an alias?,1,2,q3,Which command imports just one function from a package?,2,3,0.663,low
+q10,How are functions inside an imported package accessed in code?,2,10,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.661,low
+q8,Which package provides implementations of many machine learning algorithms?,4,8,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.661,low
+q1,What does a Python package contain?,1,1,q2,A Python package is best described as a/an _____.,2,2,0.66,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.66,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.657,low
+q9,What is a dependency in Python package management?,2,9,q6,Why do Python packages have dependencies?,3,6,0.656,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.654,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.652,low
+q3,What role does a package manager play in Python?,1,3,q6,What is a dependency in Python packaging?,1,6,0.65,low
+q2,Which command imports a package under an alias?,1,2,q10,How is a single function imported from a package?,1,10,0.648,low
+q1,What does a Python package contain?,3,1,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.648,low
+q2,Which command imports a package under an alias?,1,2,q5,"In Python, how are functions accessed from an imported package?",1,5,0.643,low
+q2,Which command imports a package under an alias?,1,2,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.643,low
+q6,What is a dependency in Python packaging?,1,6,q6,Why do Python packages have dependencies?,3,6,0.642,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.633,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.632,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.627,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.627,low
+q10,How is a single function imported from a package?,1,10,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.625,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.623,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.622,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.62,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q3,Which command imports just one function from a package?,2,3,0.619,low
+q3,What role does a package manager play in Python?,1,3,q9,What is a dependency in Python package management?,2,9,0.618,low
+q3,Which command imports just one function from a package?,2,3,q2,How does Python access a function inside an imported package with an alias?,3,2,0.614,low
+q4,"To install a Python package not found in the environment, use a _____.",4,4,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.613,low
+q6,What is the main role of a package manager like pip?,2,6,q9,What is a dependency in Python package management?,2,9,0.611,low
+q6,What is the main role of a package manager like pip?,2,6,q7,Which package manager is included by default with Python installations?,3,7,0.611,low
+q3,What role does a package manager play in Python?,1,3,q5,What is a terminal in Python package management?,3,5,0.61,low
+q3,Which command imports just one function from a package?,2,3,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.606,low
+q10,How are functions inside an imported package accessed in code?,2,10,q9,The command to import a single function named func from package pkg is _____.,4,9,0.605,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.605,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q2,How does Python access a function inside an imported package with an alias?,3,2,0.603,low
+q10,How are functions inside an imported package accessed in code?,2,10,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.603,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.603,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.602,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.602,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.598,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.595,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.591,low
+q3,What role does a package manager play in Python?,1,3,q6,Why do Python packages have dependencies?,3,6,0.589,low
+q10,How is a single function imported from a package?,1,10,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.587,low
+q3,Which command imports just one function from a package?,2,3,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.587,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q10,How are functions inside an imported package accessed in code?,2,10,0.587,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.587,low
+q3,Which command imports just one function from a package?,2,3,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.586,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.584,low
+q9,What is a dependency in Python package management?,2,9,q7,Which package manager is included by default with Python installations?,3,7,0.584,low
+q10,How is a single function imported from a package?,1,10,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.582,low
+q6,What is the main role of a package manager like pip?,2,6,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.582,low
+q6,What is a dependency in Python packaging?,1,6,q6,What is the main role of a package manager like pip?,2,6,0.581,low
+q10,How is a single function imported from a package?,1,10,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.58,low
+q1,What does a Python package contain?,1,1,q3,What role does a package manager play in Python?,1,3,0.579,low
+q3,Which command imports just one function from a package?,2,3,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.574,low
+q3,What role does a package manager play in Python?,1,3,q1,What does a Python package contain?,3,1,0.573,low
+q9,What is a dependency in Python package management?,2,9,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.572,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q9,The command to import a single function named func from package pkg is _____.,4,9,0.57,low
+q6,What is the main role of a package manager like pip?,2,6,q5,What is a terminal in Python package management?,3,5,0.567,low
+q4,Where does Python look to load a package when importing?,1,4,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.561,low
+q9,What is a dependency in Python package management?,2,9,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.561,low
+q1,What does a Python package contain?,3,1,q5,What is a terminal in Python package management?,3,5,0.56,low
+q1,What does a Python package contain?,1,1,q4,Where does Python look to load a package when importing?,1,4,0.559,low
+q2,Which command imports a package under an alias?,1,2,q9,The command to import a single function named func from package pkg is _____.,4,9,0.557,low
+q2,Which command imports a package under an alias?,1,2,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.555,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.555,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.553,low
+q6,What is a dependency in Python packaging?,1,6,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.552,low
+q5,What is a terminal in Python package management?,3,5,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.552,low
+q5,What is a terminal in Python package management?,3,5,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.552,low
+q3,What role does a package manager play in Python?,1,3,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.55,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q8,Which package is primarily used for machine learning models in Python?,1,8,0.55,low
+q6,What is the main role of a package manager like pip?,2,6,q6,Why do Python packages have dependencies?,3,6,0.549,low
+q3,What role does a package manager play in Python?,1,3,q7,Which package manager is included by default with Python installations?,3,7,0.548,low
+q4,Where does Python look to load a package when importing?,1,4,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.547,low
+q6,What is a dependency in Python packaging?,1,6,q5,What is a terminal in Python package management?,3,5,0.545,low
+q6,What is the main role of a package manager like pip?,2,6,q1,What does a Python package contain?,3,1,0.545,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q6,What is the main role of a package manager like pip?,2,6,0.543,low
+q1,What does a Python package contain?,1,1,q5,What is a terminal in Python package management?,3,5,0.542,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.541,low
+q2,Which command imports a package under an alias?,1,2,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.539,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q9,The command to import a single function named func from package pkg is _____.,4,9,0.537,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q9,The command to import a single function named func from package pkg is _____.,4,9,0.536,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.535,low
+q9,What is a dependency in Python package management?,2,9,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.535,low
+q4,Where does Python look to load a package when importing?,1,4,q2,How does Python access a function inside an imported package with an alias?,3,2,0.532,low
+q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.532,low
+q3,What role does a package manager play in Python?,1,3,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.531,low
+q4,Where does Python look to load a package when importing?,1,4,q5,"In Python, how are functions accessed from an imported package?",1,5,0.531,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.531,low
+q7,Which package manager is included by default with Python installations?,3,7,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.531,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q9,The command to import a single function named func from package pkg is _____.,4,9,0.53,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.526,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.525,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q2,How does Python access a function inside an imported package with an alias?,3,2,0.523,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q9,What is a dependency in Python package management?,2,9,0.523,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.523,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.521,low
+q2,Which command imports a package under an alias?,1,2,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.52,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q2,How does Python access a function inside an imported package with an alias?,3,2,0.518,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q3,Which command imports just one function from a package?,2,3,0.516,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.514,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.513,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q9,The command to import a single function named func from package pkg is _____.,4,9,0.513,low
+q2,Which command imports a package under an alias?,1,2,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.512,low
+q3,What role does a package manager play in Python?,1,3,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.512,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q6,What is the main role of a package manager like pip?,2,6,0.512,low
+q6,What is the main role of a package manager like pip?,2,6,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.512,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q6,Why do Python packages have dependencies?,3,6,0.511,low
+q2,A Python package is best described as a/an _____.,2,2,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.51,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.509,low
+q5,What is a terminal in Python package management?,3,5,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.509,low
+q1,What does a Python package contain?,1,1,q6,Why do Python packages have dependencies?,3,6,0.508,low
+q2,A Python package is best described as a/an _____.,2,2,q5,What is a terminal in Python package management?,3,5,0.507,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.507,low
+q9,What is a dependency in Python package management?,2,9,q5,What is a terminal in Python package management?,3,5,0.505,low
+q4,Where does Python look to load a package when importing?,1,4,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.504,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.504,low
+q3,What role does a package manager play in Python?,1,3,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.503,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q6,Why do Python packages have dependencies?,3,6,0.501,low
+q4,Where does Python look to load a package when importing?,1,4,q1,What does a Python package contain?,3,1,0.5,low
+q6,What is a dependency in Python packaging?,1,6,q7,Which package manager is included by default with Python installations?,3,7,0.5,low
+q6,Why do Python packages have dependencies?,3,6,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.5,low
+q1,What does a Python package contain?,1,1,q6,What is the main role of a package manager like pip?,2,6,0.498,low
+q6,What is a dependency in Python packaging?,1,6,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.497,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q7,Which package manager is included by default with Python installations?,3,7,0.496,low
+q3,What role does a package manager play in Python?,1,3,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.495,low
+q6,What is a dependency in Python packaging?,1,6,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.495,low
+q6,What is a dependency in Python packaging?,1,6,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.494,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.494,low
+q6,What is a dependency in Python packaging?,1,6,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.493,low
+q1,What does a Python package contain?,3,1,q6,Why do Python packages have dependencies?,3,6,0.493,low
+q6,What is a dependency in Python packaging?,1,6,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.492,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.491,low
+q3,What role does a package manager play in Python?,1,3,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.49,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.49,low
+q6,What is the main role of a package manager like pip?,2,6,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.489,low
+q10,How is a single function imported from a package?,1,10,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.488,low
+q2,A Python package is best described as a/an _____.,2,2,q6,What is the main role of a package manager like pip?,2,6,0.488,low
+q3,What role does a package manager play in Python?,1,3,q2,A Python package is best described as a/an _____.,2,2,0.485,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.485,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.484,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q6,Why do Python packages have dependencies?,3,6,0.484,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.484,low
+q6,What is the main role of a package manager like pip?,2,6,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.483,low
+q9,What is a dependency in Python package management?,2,9,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.483,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.482,low
+q4,Where does Python look to load a package when importing?,1,4,q10,How is a single function imported from a package?,1,10,0.481,low
+q6,What is a dependency in Python packaging?,1,6,q2,A Python package is best described as a/an _____.,2,2,0.481,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.481,low
+q9,What is a dependency in Python package management?,2,9,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.48,low
+q6,What is a dependency in Python packaging?,1,6,q1,What does a Python package contain?,3,1,0.479,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q9,The command to import a single function named func from package pkg is _____.,4,9,0.479,low
+q9,What is a dependency in Python package management?,2,9,q1,What does a Python package contain?,3,1,0.477,low
+q4,Where does Python look to load a package when importing?,1,4,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.476,low
+q2,A Python package is best described as a/an _____.,2,2,q9,What is a dependency in Python package management?,2,9,0.476,low
+q1,What does a Python package contain?,1,1,q6,What is a dependency in Python packaging?,1,6,0.475,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q7,Which package manager is included by default with Python installations?,3,7,0.475,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.474,low
+q4,Where does Python look to load a package when importing?,1,4,q3,Which command imports just one function from a package?,2,3,0.473,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q5,What is a terminal in Python package management?,3,5,0.473,low
+q1,What does a Python package contain?,1,1,q9,What is a dependency in Python package management?,2,9,0.471,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.471,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.471,low
+q10,How is a single function imported from a package?,1,10,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.47,low
+q5,What is a terminal in Python package management?,3,5,q7,Which package manager is included by default with Python installations?,3,7,0.47,low
+q3,Which command imports just one function from a package?,2,3,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.469,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.462,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.461,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.46,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.458,low
+q1,What does a Python package contain?,3,1,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.458,low
+q1,What does a Python package contain?,1,1,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.457,low
+q6,What is the main role of a package manager like pip?,2,6,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.457,low
+q3,What role does a package manager play in Python?,1,3,q4,Where does Python look to load a package when importing?,1,4,0.456,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.456,low
+q1,What does a Python package contain?,1,1,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.455,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q6,Why do Python packages have dependencies?,3,6,0.454,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.454,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.452,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.451,low
+q4,Where does Python look to load a package when importing?,1,4,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.449,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q5,What is a terminal in Python package management?,3,5,0.449,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q2,A Python package is best described as a/an _____.,2,2,0.447,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q6,Why do Python packages have dependencies?,3,6,0.447,low
+q4,Where does Python look to load a package when importing?,1,4,q6,Why do Python packages have dependencies?,3,6,0.446,low
+q10,How is a single function imported from a package?,1,10,q9,What is a dependency in Python package management?,2,9,0.446,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.446,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q5,What is a terminal in Python package management?,3,5,0.445,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.444,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.443,low
+q6,Why do Python packages have dependencies?,3,6,q7,Which package manager is included by default with Python installations?,3,7,0.443,low
+q4,Where does Python look to load a package when importing?,1,4,q2,A Python package is best described as a/an _____.,2,2,0.442,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q1,What does a Python package contain?,3,1,0.442,low
+q2,A Python package is best described as a/an _____.,2,2,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.442,low
+q6,What is the main role of a package manager like pip?,2,6,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.442,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q1,What does a Python package contain?,3,1,0.441,low
+q10,How are functions inside an imported package accessed in code?,2,10,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.441,low
+q2,A Python package is best described as a/an _____.,2,2,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.44,low
+q6,What is the main role of a package manager like pip?,2,6,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.44,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.439,low
+q2,A Python package is best described as a/an _____.,2,2,q6,Why do Python packages have dependencies?,3,6,0.438,low
+q2,Which command imports a package under an alias?,1,2,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.437,low
+q1,What does a Python package contain?,1,1,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.436,low
+q10,How is a single function imported from a package?,1,10,q2,A Python package is best described as a/an _____.,2,2,0.436,low
+q10,How is a single function imported from a package?,1,10,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.436,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.434,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.432,low
+q2,A Python package is best described as a/an _____.,2,2,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.432,low
+q5,What is a terminal in Python package management?,3,5,q6,Why do Python packages have dependencies?,3,6,0.432,low
+q4,Where does Python look to load a package when importing?,1,4,q5,What is a terminal in Python package management?,3,5,0.431,low
+q2,A Python package is best described as a/an _____.,2,2,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.431,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q2,How does Python access a function inside an imported package with an alias?,3,2,0.43,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q9,What is a dependency in Python package management?,2,9,0.43,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.429,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.429,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q7,Which package manager is included by default with Python installations?,3,7,0.429,low
+q2,A Python package is best described as a/an _____.,2,2,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.429,low
+q1,What does a Python package contain?,1,1,q5,"In Python, how are functions accessed from an imported package?",1,5,0.428,low
+q6,What is a dependency in Python packaging?,1,6,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.428,low
+q6,What is a dependency in Python packaging?,1,6,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.428,low
+q10,How is a single function imported from a package?,1,10,q1,What does a Python package contain?,3,1,0.428,low
+q4,Where does Python look to load a package when importing?,1,4,q6,What is the main role of a package manager like pip?,2,6,0.427,low
+q4,Where does Python look to load a package when importing?,1,4,q10,How are functions inside an imported package accessed in code?,2,10,0.427,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q2,A Python package is best described as a/an _____.,2,2,0.427,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q6,What is the main role of a package manager like pip?,2,6,0.427,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q6,What is the main role of a package manager like pip?,2,6,0.427,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q2,A Python package is best described as a/an _____.,2,2,0.427,low
+q10,How are functions inside an imported package accessed in code?,2,10,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.427,low
+q1,What does a Python package contain?,3,1,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.427,low
+q6,What is a dependency in Python packaging?,1,6,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.426,low
+q5,What is a terminal in Python package management?,3,5,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.425,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.425,low
+q4,Where does Python look to load a package when importing?,1,4,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.424,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q7,Which package manager is included by default with Python installations?,3,7,0.424,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.423,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.423,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q1,What does a Python package contain?,3,1,0.423,low
+q6,What is the main role of a package manager like pip?,2,6,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.423,low
+q1,What does a Python package contain?,3,1,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.423,low
+q2,Which command imports a package under an alias?,1,2,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.422,low
+q2,A Python package is best described as a/an _____.,2,2,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.422,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q6,What is the main role of a package manager like pip?,2,6,0.422,low
+q4,Where does Python look to load a package when importing?,1,4,q9,What is a dependency in Python package management?,2,9,0.421,low
+q1,What does a Python package contain?,1,1,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.42,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q9,What is a dependency in Python package management?,2,9,0.42,low
+q7,Which package manager is included by default with Python installations?,3,7,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.42,low
+q1,What does a Python package contain?,1,1,q7,Which package manager is included by default with Python installations?,3,7,0.419,low
+q3,What role does a package manager play in Python?,1,3,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.418,low
+q6,What is a dependency in Python packaging?,1,6,q10,How is a single function imported from a package?,1,10,0.417,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q5,What is a terminal in Python package management?,3,5,0.417,low
+q1,What does a Python package contain?,3,1,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.416,low
+q4,Where does Python look to load a package when importing?,1,4,q7,Which package manager is included by default with Python installations?,3,7,0.415,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q1,What does a Python package contain?,3,1,0.415,low
+q2,A Python package is best described as a/an _____.,2,2,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.415,low
+q2,A Python package is best described as a/an _____.,2,2,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.415,low
+q1,What does a Python package contain?,1,1,q10,How is a single function imported from a package?,1,10,0.414,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.414,low
+q3,Which command imports just one function from a package?,2,3,q9,What is a dependency in Python package management?,2,9,0.414,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.414,low
+q1,What does a Python package contain?,3,1,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.414,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.412,low
+q10,How is a single function imported from a package?,1,10,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.411,low
+q6,Why do Python packages have dependencies?,3,6,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.411,low
+q1,What does a Python package contain?,1,1,q2,How does Python access a function inside an imported package with an alias?,3,2,0.41,low
+q2,A Python package is best described as a/an _____.,2,2,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.41,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q1,What does a Python package contain?,3,1,0.41,low
+q1,What does a Python package contain?,3,1,q2,How does Python access a function inside an imported package with an alias?,3,2,0.41,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q10,How are functions inside an imported package accessed in code?,2,10,0.409,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.409,low
+q7,Which package manager is included by default with Python installations?,3,7,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.409,low
+q1,What does a Python package contain?,3,1,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.408,low
+q2,A Python package is best described as a/an _____.,2,2,q2,How does Python access a function inside an imported package with an alias?,3,2,0.406,low
+q7,Which package manager is included by default with Python installations?,3,7,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.406,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.406,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q7,Which package manager is included by default with Python installations?,3,7,0.405,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q9,What is a dependency in Python package management?,2,9,0.405,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.405,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q1,What does a Python package contain?,3,1,0.404,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.404,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.404,low
+q9,What is a dependency in Python package management?,2,9,q2,How does Python access a function inside an imported package with an alias?,3,2,0.404,low
+q1,What does a Python package contain?,1,1,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.403,low
+q3,What role does a package manager play in Python?,1,3,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.402,low
+q3,Which command imports just one function from a package?,2,3,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.402,low
+q6,What is the main role of a package manager like pip?,2,6,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.402,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.402,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q6,What is a dependency in Python packaging?,1,6,0.401,low
+q6,What is the main role of a package manager like pip?,2,6,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.401,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.4,low
+q9,What is a dependency in Python package management?,2,9,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.4,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q5,What is a terminal in Python package management?,3,5,0.399,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.399,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.399,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q2,A Python package is best described as a/an _____.,2,2,0.398,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.398,low
+q10,How is a single function imported from a package?,1,10,q6,Why do Python packages have dependencies?,3,6,0.398,low
+q6,What is the main role of a package manager like pip?,2,6,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.398,low
+q6,What is the main role of a package manager like pip?,2,6,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.398,low
+q5,What is a terminal in Python package management?,3,5,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.398,low
+q1,What does a Python package contain?,1,1,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.397,low
+q4,Where does Python look to load a package when importing?,1,4,q6,What is a dependency in Python packaging?,1,6,0.397,low
+q4,Where does Python look to load a package when importing?,1,4,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.397,low
+q2,A Python package is best described as a/an _____.,2,2,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.397,low
+q1,What does a Python package contain?,3,1,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.397,low
+q7,Which package manager is included by default with Python installations?,3,7,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.397,low
+q4,"To install a Python package not found in the environment, use a _____.",4,4,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.397,low
+q2,A Python package is best described as a/an _____.,2,2,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.396,low
+q2,A Python package is best described as a/an _____.,2,2,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.396,low
+q1,What does a Python package contain?,3,1,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.396,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.396,low
+q7,Which package manager is included by default with Python installations?,3,7,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.395,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.395,low
+q1,What does a Python package contain?,1,1,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.394,low
+q2,Which command imports a package under an alias?,1,2,q4,Where does Python look to load a package when importing?,1,4,0.394,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.394,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q1,What does a Python package contain?,3,1,0.394,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.394,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.393,low
+q6,Why do Python packages have dependencies?,3,6,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.393,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.392,low
+q1,What does a Python package contain?,3,1,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.392,low
+q1,What does a Python package contain?,1,1,q8,Which package is primarily used for machine learning models in Python?,1,8,0.391,low
+q2,A Python package is best described as a/an _____.,2,2,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.391,low
+q2,A Python package is best described as a/an _____.,2,2,q7,Which package manager is included by default with Python installations?,3,7,0.391,low
+q3,Which command imports just one function from a package?,2,3,q1,What does a Python package contain?,3,1,0.391,low
+q3,What role does a package manager play in Python?,1,3,q5,"In Python, how are functions accessed from an imported package?",1,5,0.39,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q7,Which package manager is included by default with Python installations?,3,7,0.39,low
+q2,A Python package is best described as a/an _____.,2,2,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.39,low
+q6,What is a dependency in Python packaging?,1,6,q3,Which command imports just one function from a package?,2,3,0.389,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.389,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q9,The command to import a single function named func from package pkg is _____.,4,9,0.389,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q7,Which package manager is included by default with Python installations?,3,7,0.389,low
+q1,What does a Python package contain?,3,1,q7,Which package manager is included by default with Python installations?,3,7,0.389,low
+q1,What does a Python package contain?,1,1,q3,Which command imports just one function from a package?,2,3,0.388,low
+q2,A Python package is best described as a/an _____.,2,2,q3,Which command imports just one function from a package?,2,3,0.387,low
+q5,What is a terminal in Python package management?,3,5,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.387,low
+q3,What role does a package manager play in Python?,1,3,q2,How does Python access a function inside an imported package with an alias?,3,2,0.386,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.386,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q9,The command to import a single function named func from package pkg is _____.,4,9,0.386,low
+q2,Which command imports a package under an alias?,1,2,q6,What is a dependency in Python packaging?,1,6,0.385,low
+q4,Where does Python look to load a package when importing?,1,4,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.385,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q5,What is a terminal in Python package management?,3,5,0.385,low
+q3,Which command imports just one function from a package?,2,3,q6,Why do Python packages have dependencies?,3,6,0.384,low
+q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.384,low
+q3,What role does a package manager play in Python?,1,3,q10,How is a single function imported from a package?,1,10,0.383,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.383,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.383,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.383,low
+q1,What does a Python package contain?,1,1,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.382,low
+q1,What does a Python package contain?,3,1,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.381,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q10,How are functions inside an imported package accessed in code?,2,10,0.38,low
+q4,"To install a Python package not found in the environment, use a _____.",4,4,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.38,low
+q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.38,low
+q3,Which command imports just one function from a package?,2,3,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.379,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.379,low
+q6,Why do Python packages have dependencies?,3,6,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.379,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q6,What is the main role of a package manager like pip?,2,6,0.378,low
+q6,What is a dependency in Python packaging?,1,6,q2,How does Python access a function inside an imported package with an alias?,3,2,0.378,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.378,low
+q7,Which package manager is included by default with Python installations?,3,7,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.377,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.376,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.376,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.376,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q5,What is a terminal in Python package management?,3,5,0.375,low
+q2,Which command imports a package under an alias?,1,2,q7,Which package manager is included by default with Python installations?,3,7,0.374,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.374,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.373,low
+q1,What does a Python package contain?,1,1,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.372,low
+q4,Where does Python look to load a package when importing?,1,4,q8,Which package is primarily used for machine learning models in Python?,1,8,0.372,low
+q2,Which command imports a package under an alias?,1,2,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.371,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q5,What is a terminal in Python package management?,3,5,0.371,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.371,low
+q7,Which package manager is included by default with Python installations?,3,7,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.371,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.37,low
+q2,Which command imports a package under an alias?,1,2,q9,What is a dependency in Python package management?,2,9,0.369,low
+q6,What is the main role of a package manager like pip?,2,6,q2,How does Python access a function inside an imported package with an alias?,3,2,0.369,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q5,What is a terminal in Python package management?,3,5,0.369,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.369,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.368,low
+q4,Where does Python look to load a package when importing?,1,4,q9,The command to import a single function named func from package pkg is _____.,4,9,0.366,low
+q10,How is a single function imported from a package?,1,10,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.366,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.365,low
+q1,What does a Python package contain?,3,1,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.365,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.365,low
+q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.365,low
+q3,What role does a package manager play in Python?,1,3,q8,Which package is primarily used for machine learning models in Python?,1,8,0.364,low
+q4,Where does Python look to load a package when importing?,1,4,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.364,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.364,low
+q2,A Python package is best described as a/an _____.,2,2,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.364,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q10,How are functions inside an imported package accessed in code?,2,10,0.364,low
+q6,Why do Python packages have dependencies?,3,6,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.363,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.363,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.363,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.362,low
+q10,How is a single function imported from a package?,1,10,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.362,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q6,Why do Python packages have dependencies?,3,6,0.361,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.36,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q7,Which package manager is included by default with Python installations?,3,7,0.359,low
+q6,Why do Python packages have dependencies?,3,6,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.359,low
+q3,What role does a package manager play in Python?,1,3,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.358,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q9,The command to import a single function named func from package pkg is _____.,4,9,0.358,low
+q4,"To install a Python package not found in the environment, use a _____.",4,4,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.358,low
+q3,Which command imports just one function from a package?,2,3,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.357,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.357,low
+q1,What does a Python package contain?,1,1,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.356,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.355,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.355,low
+q9,What is a dependency in Python package management?,2,9,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.355,low
+q2,Which command imports a package under an alias?,1,2,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.354,low
+q3,What role does a package manager play in Python?,1,3,q3,Which command imports just one function from a package?,2,3,0.354,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.354,low
+q6,What is the main role of a package manager like pip?,2,6,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.354,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.353,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q7,Which package manager is included by default with Python installations?,3,7,0.352,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.352,low
+q10,How is a single function imported from a package?,1,10,q6,What is the main role of a package manager like pip?,2,6,0.351,low
+q4,"To install a Python package not found in the environment, use a _____.",4,4,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.351,low
+q2,Which command imports a package under an alias?,1,2,q3,What role does a package manager play in Python?,1,3,0.35,low
+q9,What is a dependency in Python package management?,2,9,q9,The command to import a single function named func from package pkg is _____.,4,9,0.35,low
+q5,What is a terminal in Python package management?,3,5,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.35,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q9,What is a dependency in Python package management?,2,9,0.349,low
+q2,A Python package is best described as a/an _____.,2,2,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.349,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.349,low
+q2,A Python package is best described as a/an _____.,2,2,q10,How are functions inside an imported package accessed in code?,2,10,0.348,low
+q4,Where does Python look to load a package when importing?,1,4,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.347,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q5,What is a terminal in Python package management?,3,5,0.347,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.347,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q7,Which package manager is included by default with Python installations?,3,7,0.346,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.346,low
+q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.346,low
+q6,What is a dependency in Python packaging?,1,6,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.345,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.345,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.344,low
+q10,How are functions inside an imported package accessed in code?,2,10,q1,What does a Python package contain?,3,1,0.344,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.343,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q6,Why do Python packages have dependencies?,3,6,0.343,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.343,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.342,low
+q4,Where does Python look to load a package when importing?,1,4,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.341,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q5,What is a terminal in Python package management?,3,5,0.341,low
+q2,A Python package is best described as a/an _____.,2,2,q9,The command to import a single function named func from package pkg is _____.,4,9,0.341,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q1,What does a Python package contain?,3,1,0.341,low
+q7,Which package manager is included by default with Python installations?,3,7,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.341,low
+q1,What does a Python package contain?,1,1,q10,How are functions inside an imported package accessed in code?,2,10,0.34,low
+q6,What is a dependency in Python packaging?,1,6,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.34,low
+q6,What is a dependency in Python packaging?,1,6,q8,Which package is primarily used for machine learning models in Python?,1,8,0.339,low
+q9,What is a dependency in Python package management?,2,9,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.339,low
+q6,A package that must be installed for another package to work is called a/an _____.,4,6,q9,The command to import a single function named func from package pkg is _____.,4,9,0.339,low
+q9,What is a dependency in Python package management?,2,9,q10,How are functions inside an imported package accessed in code?,2,10,0.338,low
+q6,What is a dependency in Python packaging?,1,6,q9,The command to import a single function named func from package pkg is _____.,4,9,0.337,low
+q10,How is a single function imported from a package?,1,10,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.337,low
+q4,"To install a Python package not found in the environment, use a _____.",4,4,q9,The command to import a single function named func from package pkg is _____.,4,9,0.337,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q6,Why do Python packages have dependencies?,3,6,0.336,low
+q2,Which command imports a package under an alias?,1,2,q6,What is the main role of a package manager like pip?,2,6,0.335,low
+q3,Which command imports just one function from a package?,2,3,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.335,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.335,low
+q3,What role does a package manager play in Python?,1,3,q7,Which package is best for reading and manipulating tabular datasets?,1,7,0.334,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.334,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q7,Which package manager is included by default with Python installations?,3,7,0.334,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q5,What is a terminal in Python package management?,3,5,0.334,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q7,Which package manager is included by default with Python installations?,3,7,0.334,low
+q5,What is a terminal in Python package management?,3,5,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.334,low
+q4,Where does Python look to load a package when importing?,1,4,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.333,low
+q2,Which command imports a package under an alias?,1,2,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.332,low
+q3,What role does a package manager play in Python?,1,3,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.332,low
+q9,What is a dependency in Python package management?,2,9,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.331,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.33,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.33,low
+q2,Which command imports a package under an alias?,1,2,q6,Why do Python packages have dependencies?,3,6,0.329,low
+q3,Which command imports just one function from a package?,2,3,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.329,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.329,low
+q10,How are functions inside an imported package accessed in code?,2,10,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.329,low
+q5,What is a terminal in Python package management?,3,5,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.329,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.329,low
+q1,What does a Python package contain?,1,1,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.328,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.327,low
+q3,What role does a package manager play in Python?,1,3,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.326,low
+q3,What role does a package manager play in Python?,1,3,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.326,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q10,How is a single function imported from a package?,1,10,0.326,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q3,Which command imports just one function from a package?,2,3,0.326,low
+q2,Which command imports a package under an alias?,1,2,q2,A Python package is best described as a/an _____.,2,2,0.325,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q9,What is a dependency in Python package management?,2,9,0.325,low
+q3,Which command imports just one function from a package?,2,3,q6,What is the main role of a package manager like pip?,2,6,0.325,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.325,low
+q9,What is a dependency in Python package management?,2,9,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.325,low
+q6,What is a dependency in Python packaging?,1,6,q10,How are functions inside an imported package accessed in code?,2,10,0.324,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.324,low
+q2,Which command imports a package under an alias?,1,2,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.323,low
+q4,Where does Python look to load a package when importing?,1,4,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.323,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q1,What does a Python package contain?,3,1,0.323,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.323,low
+q1,What does a Python package contain?,1,1,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.322,low
+q3,What role does a package manager play in Python?,1,3,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.322,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.322,low
+q1,What does a Python package contain?,1,1,q7,Which package is best for reading and manipulating tabular datasets?,1,7,0.321,low
+q1,What does a Python package contain?,1,1,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.32,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q6,What is the main role of a package manager like pip?,2,6,0.32,low
+q4,Where does Python look to load a package when importing?,1,4,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.319,low
+q10,How is a single function imported from a package?,1,10,q5,What is a terminal in Python package management?,3,5,0.319,low
+q1,What does a Python package contain?,1,1,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.318,low
+q6,What is a dependency in Python packaging?,1,6,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.318,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q9,What is a dependency in Python package management?,2,9,0.318,low
+q2,Which command imports a package under an alias?,1,2,q5,What is a terminal in Python package management?,3,5,0.317,low
+q3,What role does a package manager play in Python?,1,3,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.317,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.317,low
+q4,Where does Python look to load a package when importing?,1,4,q7,Which package is best for reading and manipulating tabular datasets?,1,7,0.316,low
+q10,How is a single function imported from a package?,1,10,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.315,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.315,low
+q9,What is a dependency in Python package management?,2,9,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.314,low
+q6,What is a dependency in Python packaging?,1,6,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.313,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.313,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.313,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q2,A Python package is best described as a/an _____.,2,2,0.313,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.313,low
+q9,What is a dependency in Python package management?,2,9,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.313,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.313,low
+q1,A Python package is a collection of _____ that extend Python functionality.,4,1,q9,The command to import a single function named func from package pkg is _____.,4,9,0.313,low
+q6,What is a dependency in Python packaging?,1,6,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.312,low
+q10,How is a single function imported from a package?,1,10,q7,Which package manager is included by default with Python installations?,3,7,0.312,low
+q6,What is a dependency in Python packaging?,1,6,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.311,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.311,low
+q9,What is a dependency in Python package management?,2,9,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.311,low
+q3,What role does a package manager play in Python?,1,3,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.31,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.31,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.31,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q8,Which package is primarily used for machine learning models in Python?,1,8,0.309,low
+q6,What is a dependency in Python packaging?,1,6,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.309,low
+q1,What does a Python package contain?,3,1,q9,The command to import a single function named func from package pkg is _____.,4,9,0.309,low
+q3,What role does a package manager play in Python?,1,3,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.308,low
+q4,Where does Python look to load a package when importing?,1,4,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.308,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.308,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.308,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.308,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.307,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.307,low
+q3,What role does a package manager play in Python?,1,3,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.306,low
+q6,What is a dependency in Python packaging?,1,6,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.306,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.306,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q10,How is a single function imported from a package?,1,10,0.305,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.305,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.305,low
+q3,What role does a package manager play in Python?,1,3,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.304,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.304,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.304,low
+q3,Which command imports just one function from a package?,2,3,q5,What is a terminal in Python package management?,3,5,0.303,low
+q3,Which command imports just one function from a package?,2,3,q7,Which package manager is included by default with Python installations?,3,7,0.303,low
+q10,How are functions inside an imported package accessed in code?,2,10,q6,Why do Python packages have dependencies?,3,6,0.303,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.303,low
+q1,What does a Python package contain?,1,1,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.302,low
+q1,What does a Python package contain?,1,1,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.302,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.302,low
+q10,How are functions inside an imported package accessed in code?,2,10,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.302,low
+q2,Which command imports a package under an alias?,1,2,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.301,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.301,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.301,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q9,Which package provides machine learning algorithms with uniform syntax?,3,9,0.301,low
+q1,What does a Python package contain?,1,1,q9,The command to import a single function named func from package pkg is _____.,4,9,0.3,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.3,low
+q6,What is the main role of a package manager like pip?,2,6,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.3,low
+q5,What is a terminal in Python package management?,3,5,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.3,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.299,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.299,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.299,low
+q6,Why do Python packages have dependencies?,3,6,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.299,low
+q6,Why do Python packages have dependencies?,3,6,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.299,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.299,low
+q6,What is a dependency in Python packaging?,1,6,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.298,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.298,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.298,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.298,low
+q9,What is a dependency in Python package management?,2,9,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.298,low
+q5,What is a terminal in Python package management?,3,5,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.298,low
+q3,What role does a package manager play in Python?,1,3,q9,The command to import a single function named func from package pkg is _____.,4,9,0.297,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.297,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.297,low
+q6,What is a dependency in Python packaging?,1,6,q7,Which package is best for reading and manipulating tabular datasets?,1,7,0.296,low
+q5,"When a package is not found in Python, what is the next step to make it available?",2,5,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.296,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q3,Which command imports just one function from a package?,2,3,0.295,low
+q10,How is a single function imported from a package?,1,10,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.295,low
+q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,q9,The command to import a single function named func from package pkg is _____.,4,9,0.295,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.294,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.294,low
+q6,Why do Python packages have dependencies?,3,6,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.294,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q9,What is a dependency in Python package management?,2,9,0.292,low
+q3,Which command imports just one function from a package?,2,3,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.292,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q9,What is a dependency in Python package management?,2,9,0.292,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q7,Which package is best for reading and manipulating tabular datasets?,1,7,0.291,low
+q3,Which command imports just one function from a package?,2,3,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.291,low
+q10,How are functions inside an imported package accessed in code?,2,10,q4,"To install a Python package not found in the environment, use a _____.",4,4,0.29,low
+q1,What does a Python package contain?,1,1,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.289,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.289,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q6,Why do Python packages have dependencies?,3,6,0.289,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q1,A Python package is a collection of _____ that extend Python functionality.,4,1,0.289,low
+q4,Where does Python look to load a package when importing?,1,4,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.288,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q6,Why do Python packages have dependencies?,3,6,0.288,low
+q1,What does a Python package contain?,1,1,q2,Which command imports a package under an alias?,1,2,0.287,low
+q1,What does a Python package contain?,1,1,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.287,low
+q4,Where does Python look to load a package when importing?,1,4,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.286,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,0.285,low
+q3,What role does a package manager play in Python?,1,3,q10,How are functions inside an imported package accessed in code?,2,10,0.284,low
+q4,Where does Python look to load a package when importing?,1,4,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.283,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.283,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q1,What does the Python command <zyICode>import</zyICode> do?,2,1,0.283,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q6,Why do Python packages have dependencies?,3,6,0.283,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.282,low
+q2,Which command imports a package under an alias?,1,2,q1,What does a Python package contain?,3,1,0.28,low
+q3,What role does a package manager play in Python?,1,3,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.28,low
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,4,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.28,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q10,How is a single function imported from a package?,1,10,0.279,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.279,low
+q5,What is a terminal in Python package management?,3,5,q9,The command to import a single function named func from package pkg is _____.,4,9,0.279,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.278,low
+q7,Which package manager is included by default with Python installations?,3,7,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.278,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.277,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q9,The command to import a single function named func from package pkg is _____.,4,9,0.276,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.276,low
+q4,Where does Python look to load a package when importing?,1,4,q9,What is the common alias for the matplotlib.pyplot package?,1,9,0.275,low
+q5,"In Python, how are functions accessed from an imported package?",1,5,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.275,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.275,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.275,low
+q6,Why do Python packages have dependencies?,3,6,q9,The command to import a single function named func from package pkg is _____.,4,9,0.275,low
+q6,What is the main role of a package manager like pip?,2,6,q10,How are functions inside an imported package accessed in code?,2,10,0.274,low
+q6,Why do Python packages have dependencies?,3,6,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.274,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.273,low
+q5,What is a terminal in Python package management?,3,5,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.272,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q2,How does Python access a function inside an imported package with an alias?,3,2,0.271,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.271,low
+q10,How are functions inside an imported package accessed in code?,2,10,q5,What is a terminal in Python package management?,3,5,0.27,low
+q6,Why do Python packages have dependencies?,3,6,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.27,low
+q10,How is a single function imported from a package?,1,10,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.268,low
+q1,What does a Python package contain?,3,1,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.268,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.267,low
+q1,What does the Python command <zyICode>import</zyICode> do?,2,1,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.266,low
+q6,What is the main role of a package manager like pip?,2,6,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.266,low
+q6,What is the main role of a package manager like pip?,2,6,q9,The command to import a single function named func from package pkg is _____.,4,9,0.265,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.263,low
+q10,How is a single function imported from a package?,1,10,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.262,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.262,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.261,low
+q10,How are functions inside an imported package accessed in code?,2,10,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.261,low
+q2,Which command imports a package under an alias?,1,2,q8,Which package is primarily used for machine learning models in Python?,1,8,0.26,low
+q10,How is a single function imported from a package?,1,10,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.259,low
+q6,What is a dependency in Python packaging?,1,6,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.258,low
+q10,How are functions inside an imported package accessed in code?,2,10,q7,Which package manager is included by default with Python installations?,3,7,0.258,low
+q2,Which command imports a package under an alias?,1,2,q7,Which package is best for reading and manipulating tabular datasets?,1,7,0.257,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.257,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q5,"When a package is not found in Python, what is the next step to make it available?",2,5,0.257,low
+q9,What is the common alias for the matplotlib.pyplot package?,1,9,q4,Which command installs a Python package and its dependencies from a repository?,3,4,0.257,low
+q4,Which command installs a Python package and its dependencies from a repository?,3,4,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.257,low
+q7,Which package manager is included by default with Python installations?,3,7,q9,The command to import a single function named func from package pkg is _____.,4,9,0.257,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.255,low
+q1,What does a Python package contain?,1,1,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.254,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q2,How does Python access a function inside an imported package with an alias?,3,2,0.254,low
+q6,Why do Python packages have dependencies?,3,6,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.254,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q3,Which command imports just one function from a package?,2,3,0.253,low
+q10,How is a single function imported from a package?,1,10,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.253,low
+q2,Which command imports a package under an alias?,1,2,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.252,low
+q6,What is a dependency in Python packaging?,1,6,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.252,low
+q2,Which command imports a package under an alias?,1,2,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.251,low
+q2,Which command imports a package under an alias?,1,2,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.251,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.251,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.251,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q2,How does Python access a function inside an imported package with an alias?,3,2,0.25,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.25,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.249,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.249,low
+q9,Which package provides machine learning algorithms with uniform syntax?,3,9,q9,The command to import a single function named func from package pkg is _____.,4,9,0.249,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.248,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.248,low
+q6,What is the main role of a package manager like pip?,2,6,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.247,low
+q2,How does Python access a function inside an imported package with an alias?,3,2,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.246,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q6,Why do Python packages have dependencies?,3,6,0.245,low
+q10,How are functions inside an imported package accessed in code?,2,10,q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,5,0.245,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.243,low
+q1,What does a Python package contain?,3,1,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.243,low
+q4,Where does Python look to load a package when importing?,1,4,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.242,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.242,low
+q3,What role does a package manager play in Python?,1,3,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.24,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q2,How does Python access a function inside an imported package with an alias?,3,2,0.24,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.238,low
+q10,How is a single function imported from a package?,1,10,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.238,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.238,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.238,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q10,How are functions inside an imported package accessed in code?,2,10,0.236,low
+q10,How are functions inside an imported package accessed in code?,2,10,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.236,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.236,low
+q2,Which command imports a package under an alias?,1,2,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.235,low
+q7,Which package manager is included by default with Python installations?,3,7,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.235,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q10,How are functions inside an imported package accessed in code?,2,10,0.234,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.234,low
+q10,How is a single function imported from a package?,1,10,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.233,low
+q3,Which command imports just one function from a package?,2,3,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.233,low
+q3,Which command imports just one function from a package?,2,3,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.232,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.23,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.228,low
+q2,The command to import a package with a shorter alias is _____ as _____.,4,2,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.228,low
+q10,How are functions inside an imported package accessed in code?,2,10,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.227,low
+q6,A package that must be installed for another package to work is called a/an _____.,4,6,q8,Which package provides implementations of many machine learning algorithms?,4,8,0.226,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q2,The command to import a package with a shorter alias is _____ as _____.,4,2,0.223,low
+q2,Which command imports a package under an alias?,1,2,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.222,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.222,low
+q3,Which command imports just one function from a package?,2,3,q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,0.221,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q10,How are functions inside an imported package accessed in code?,2,10,0.22,low
+q2,Which command imports a package under an alias?,1,2,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.218,low
+q3,Which command imports just one function from a package?,2,3,q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,0.218,low
+q8,Which package provides implementations of many machine learning algorithms?,4,8,q9,The command to import a single function named func from package pkg is _____.,4,9,0.215,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q9,The command to import a single function named func from package pkg is _____.,4,9,0.212,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q3,What is the purpose of aliasing a package at import in Python?,3,3,0.212,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.21,low
+q3,What is the purpose of aliasing a package at import in Python?,3,3,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.209,low
+q3,Using dot notation to access a package function after importing allows access to _____.,4,3,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.209,low
+q10,How are functions inside an imported package accessed in code?,2,10,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.208,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.206,low
+q3,Which command imports just one function from a package?,2,3,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.204,low
+q9,The command to import a single function named func from package pkg is _____.,4,9,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.204,low
+q3,Which command imports just one function from a package?,2,3,q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,0.203,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q9,The command to import a single function named func from package pkg is _____.,4,9,0.194,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q9,The command to import a single function named func from package pkg is _____.,4,9,0.191,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q9,The command to import a single function named func from package pkg is _____.,4,9,0.189,low
+q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,q9,The command to import a single function named func from package pkg is _____.,4,9,0.189,low
+q8,Which package is primarily used for machine learning models in Python?,1,8,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.182,low
+q6,A package that must be installed for another package to work is called a/an _____.,4,6,q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,10,0.179,low
+q10,How are functions inside an imported package accessed in code?,2,10,q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,0.171,low
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,8,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.165,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q10,How are functions inside an imported package accessed in code?,2,10,0.164,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.158,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q9,The command to import a single function named func from package pkg is _____.,4,9,0.158,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q9,The command to import a single function named func from package pkg is _____.,4,9,0.156,low
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,10,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.149,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q3,Using dot notation to access a package function after importing allows access to _____.,4,3,0.148,low
+q7,Which package is best for reading and manipulating tabular datasets?,1,7,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.144,low
+q6,A package that must be installed for another package to work is called a/an _____.,4,6,q7,Which package is best for reading and manipulating tabular datasets in Python?,4,7,0.118,low
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,8,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.073,low
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,7,q6,A package that must be installed for another package to work is called a/an _____.,4,6,0.065,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Use Jupyter to import Python packages and functions.  
+Explain the process of installing Python packages using package managers like pip and conda.  
+Define key terms related to Python packages, including package, dependency, and package manager.  
+Identify common Python data science packages and their primary uses.  
+Select appropriate data science packages for tasks such as data manipulation, visualization, and machine learning."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What does a Python package contain?,1,yes,"This question assesses understanding of what a Python package contains, directly related to defining key terms like package."
+q2,Which command imports a package under an alias?,1,yes,"This question evaluates the ability to use Python import syntax with aliases, addressing the objective of using Jupyter to import packages and functions."
+q3,What role does a package manager play in Python?,1,yes,"This question tests knowledge of the role of a package manager, aligning with explaining the process of installing packages and defining package manager."
+q4,Where does Python look to load a package when importing?,1,no,This question about where Python looks to load packages is more about Python internals than the stated learning objectives.
+q5,"In Python, how are functions accessed from an imported package?",1,yes,"This question assesses how functions are accessed from an imported package, relevant to using Jupyter to import packages and functions."
+q6,What is a dependency in Python packaging?,1,yes,"This question defines the term dependency in Python packaging, directly matching the objective to define key terms."
+q7,Which package is best for reading and manipulating tabular datasets?,1,yes,"This question identifies a common Python data science package and its use, matching the objective to identify common packages and their uses."
+q8,Which package is primarily used for machine learning models in Python?,1,yes,"This question identifies the package primarily used for machine learning, aligning with identifying data science packages and their uses."
+q9,What is the common alias for the matplotlib.pyplot package?,1,yes,"This question tests knowledge of common aliases for packages, relevant to importing packages and functions in Jupyter."
+q10,How is a single function imported from a package?,1,yes,"This question assesses how to import a single function from a package, directly related to using Jupyter to import packages and functions."
+q1,What does the Python command <zyICode>import</zyICode> do?,2,yes,"This question tests understanding of what the import command does, related to using Jupyter to import packages and functions."
+q2,A Python package is best described as a/an _____.,2,yes,"This question defines what a Python package is, matching the objective to define key terms."
+q3,Which command imports just one function from a package?,2,yes,"This question assesses how to import a single function from a package, relevant to using Jupyter to import packages and functions."
+q4,Why are aliases like <zyICode>import pandas as pd</zyICode> used when importing packages?,2,yes,"This question explains why aliases are used when importing packages, related to using Jupyter to import packages and functions."
+q5,"When a package is not found in Python, what is the next step to make it available?",2,yes,"This question addresses the next step when a package is not found, relating to installing packages using package managers."
+q6,What is the main role of a package manager like pip?,2,yes,"This question tests the main role of a package manager like pip, matching the objective to explain installing packages and package managers."
+q7,Which Python package is most suitable for reading and manipulating tabular data?,2,yes,"This question identifies the best package for tabular data manipulation, aligning with identifying common data science packages and their uses."
+q8,Which package is best to create advanced data visualizations that work well with pandas DataFrames?,2,yes,"This question identifies a package for advanced data visualization, relevant to selecting appropriate data science packages."
+q9,What is a dependency in Python package management?,2,yes,"This question defines dependency in package management, matching the objective to define key terms."
+q10,How are functions inside an imported package accessed in code?,2,yes,"This question assesses how functions inside imported packages are accessed, related to using Jupyter to import packages and functions."
+q1,What does a Python package contain?,3,yes,"This question defines what a Python package contains, matching the objective to define key terms."
+q2,How does Python access a function inside an imported package with an alias?,3,yes,"This question tests how to access functions inside an imported package with an alias, relevant to using Jupyter to import packages and functions."
+q3,What is the purpose of aliasing a package at import in Python?,3,yes,"This question explains the purpose of aliasing packages, related to using Jupyter to import packages and functions."
+q4,Which command installs a Python package and its dependencies from a repository?,3,yes,"This question tests knowledge of the command to install packages and dependencies, matching the objective to explain installing packages using package managers."
+q5,What is a terminal in Python package management?,3,no,This question about what a terminal is in package management is more about general computing knowledge than the stated objectives.
+q6,Why do Python packages have dependencies?,3,yes,"This question explains why packages have dependencies, aligning with defining key terms and understanding dependencies."
+q7,Which package manager is included by default with Python installations?,3,yes,"This question identifies the package manager included by default with Python, relevant to explaining package managers."
+q8,Which Python package is best suited for reading and manipulating tabular datasets?,3,yes,"This question identifies the best package for tabular data manipulation, matching identifying common data science packages and uses."
+q9,Which package provides machine learning algorithms with uniform syntax?,3,yes,"This question identifies the package providing machine learning algorithms, relevant to identifying data science packages and uses."
+q10,Which package is best for creating visualizations that work well with pandas DataFrames?,3,yes,"This question identifies the best package for visualizations with pandas, aligning with selecting appropriate data science packages."
+q1,A Python package is a collection of _____ that extend Python functionality.,4,yes,"This question defines a Python package as a collection of related functions and classes, matching defining key terms."
+q2,The command to import a package with a shorter alias is _____ as _____.,4,yes,"This question tests knowledge of the syntax to import a package with an alias, relevant to using Jupyter to import packages and functions."
+q3,Using dot notation to access a package function after importing allows access to _____.,4,yes,"This question assesses understanding of dot notation to access package functions, related to using Jupyter to import packages and functions."
+q4,"To install a Python package not found in the environment, use a _____.",4,yes,"This question tests knowledge of using a package manager to install packages, matching explaining installation with package managers."
+q5,The package manager that comes installed with Python and is used in terminal is called _____.,4,yes,"This question identifies pip as the default package manager, relevant to explaining package managers."
+q6,A package that must be installed for another package to work is called a/an _____.,4,yes,"This question defines a dependency, matching the objective to define key terms."
+q7,Which package is best for reading and manipulating tabular datasets in Python?,4,yes,"This question identifies the best package for tabular data manipulation, aligning with identifying common data science packages and uses."
+q8,Which package provides implementations of many machine learning algorithms?,4,yes,"This question identifies the package providing machine learning algorithms, relevant to identifying data science packages and uses."
+q9,The command to import a single function named func from package pkg is _____.,4,yes,"This question tests the command to import a single function from a package, related to using Jupyter to import packages and functions."
+q10,Which package is designed primarily for creating advanced data visualizations working well with pandas DataFrames?,4,yes,"This question identifies the package for advanced visualizations working with pandas, matching selecting appropriate data science packages."
