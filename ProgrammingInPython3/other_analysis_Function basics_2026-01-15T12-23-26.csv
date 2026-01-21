@@ -1,0 +1,566 @@
+=== SIMILARITY ANALYSIS ===
+
+Within-Run Analysis
+Run Number,Question Count,Internal Duplicates,Internal Similar
+1,8,0,0
+2,8,0,0
+3,8,0,0
+4,8,0,0
+
+Cross-Run Analysis
+Run A,Run B,Duplicates,Similar,Total Comparisons
+1,2,2,1,64
+1,3,3,3,64
+1,4,1,3,64
+2,3,1,2,64
+2,4,1,1,64
+3,4,1,2,64
+
+Summary
+Total Comparisons,496
+Duplicates (≥85%),9
+Similar (70-85%),12
+
+Pairwise Comparisons
+Question A ID,Question A Text,Question A Run,Question A Number,Question B ID,Question B Text,Question B Run,Question B Number,Similarity Score,Category
+q4,What keyword is used in Python to create a new function?,3,4,q2,What keyword defines a new function in Python?,4,2,0.961,duplicate
+q5,What is the difference between a parameter and an argument?,1,5,q5,What is the difference between a parameter and an argument in functions?,2,5,0.894,duplicate
+q1,What is the main purpose of defining a function in a program?,1,1,q1,Why do programmers use functions in a program?,3,1,0.893,duplicate
+q4,A function parameter is _____.,1,4,q4,A function parameter is _____.,4,4,0.882,duplicate
+q6,What does a return statement in a function do?,1,6,q7,What does a return statement do inside a function?,3,7,0.882,duplicate
+q8,What does a hierarchical (nested) function call mean?,1,8,q8,What is a hierarchical (nested) function call?,2,8,0.877,duplicate
+q6,"If a function has no return statement, what value does it return by default?",2,6,q7,What does a function return if it has no return statement?,4,7,0.876,duplicate
+q4,A function parameter is _____.,1,4,q5,A function parameter is:,3,5,0.863,duplicate
+q1,Why are functions used to group statements in a program?,2,1,q1,Why do programmers use functions in a program?,3,1,0.856,duplicate
+q3,Which keyword is used to define a new function in Python?,1,3,q4,What keyword is used in Python to create a new function?,3,4,0.847,similar
+q3,Which keyword is used to define a new function in Python?,1,3,q2,What keyword defines a new function in Python?,4,2,0.832,similar
+q1,What is the main purpose of defining a function in a program?,1,1,q1,Why are functions used to group statements in a program?,2,1,0.824,similar
+q5,A function parameter is:,3,5,q4,A function parameter is _____.,4,4,0.823,similar
+q7,How are multiple parameters specified in a function definition?,1,7,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.784,similar
+q8,What does a hierarchical (nested) function call mean?,1,8,q8,Hierarchical function calls occur when a function _____.,4,8,0.781,similar
+q8,What is a hierarchical (nested) function call?,2,8,q8,Hierarchical function calls occur when a function _____.,4,8,0.768,similar
+q8,What is a hierarchical (nested) function call?,2,8,q8,"In hierarchical function calls, what occurs?",3,8,0.746,similar
+q8,What does a hierarchical (nested) function call mean?,1,8,q8,"In hierarchical function calls, what occurs?",3,8,0.744,similar
+q3,What is the purpose of the return statement in a function?,2,3,q7,What does a return statement do inside a function?,3,7,0.737,similar
+q2,How does a function call affect program execution?,1,2,q2,What happens when a function call is executed in a program?,3,2,0.706,similar
+q8,"In hierarchical function calls, what occurs?",3,8,q8,Hierarchical function calls occur when a function _____.,4,8,0.705,similar
+q6,What does a return statement in a function do?,1,6,q3,What is the purpose of the return statement in a function?,2,3,0.694,low
+q2,How does a function call affect program execution?,1,2,q2,What does a function call do in a program?,2,2,0.664,low
+q4,A function parameter is _____.,1,4,q3,A function definition must include _____ followed by a block of statements.,3,3,0.647,low
+q2,What happens when a function call is executed in a program?,3,2,q3,"In Python, a function call causes execution to _____.",4,3,0.638,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q5,A function parameter is:,3,5,0.631,low
+q6,What does a return statement in a function do?,1,6,q2,What does a function call do in a program?,2,2,0.628,low
+q5,What is the difference between a parameter and an argument?,1,5,q5,A function parameter is:,3,5,0.622,low
+q2,What does a function call do in a program?,2,2,q2,What happens when a function call is executed in a program?,3,2,0.622,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q4,A function parameter is _____.,4,4,0.618,low
+q2,What does a function call do in a program?,2,2,q7,What does a return statement do inside a function?,3,7,0.609,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q5,A function parameter is:,3,5,0.608,low
+q6,What does a return statement in a function do?,1,6,q2,What happens when a function call is executed in a program?,3,2,0.598,low
+q2,How does a function call affect program execution?,1,2,q3,"In Python, a function call causes execution to _____.",4,3,0.594,low
+q4,A function parameter is _____.,1,4,q5,What is the difference between a parameter and an argument?,1,5,0.59,low
+q2,What does a function call do in a program?,2,2,q3,A function definition must include _____ followed by a block of statements.,3,3,0.587,low
+q3,What is the purpose of the return statement in a function?,2,3,q4,A function parameter is _____.,4,4,0.583,low
+q1,Why do programmers use functions in a program?,3,1,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.581,low
+q2,What happens when a function call is executed in a program?,3,2,q7,What does a return statement do inside a function?,3,7,0.574,low
+q4,A function parameter is _____.,1,4,q5,What is the difference between a parameter and an argument in functions?,2,5,0.573,low
+q1,What is the main purpose of defining a function in a program?,1,1,q2,What does a function call do in a program?,2,2,0.561,low
+q5,What is the difference between a parameter and an argument?,1,5,q4,A function parameter is _____.,4,4,0.561,low
+q1,What is the main purpose of defining a function in a program?,1,1,q3,What is the purpose of the return statement in a function?,2,3,0.558,low
+q2,What happens when a function call is executed in a program?,3,2,q8,"In hierarchical function calls, what occurs?",3,8,0.557,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q4,A function parameter is _____.,4,4,0.554,low
+q2,How does a function call affect program execution?,1,2,q6,What does a return statement in a function do?,1,6,0.552,low
+q2,What does a function call do in a program?,2,2,q8,What is a hierarchical (nested) function call?,2,8,0.551,low
+q2,What does a function call do in a program?,2,2,q3,"In Python, a function call causes execution to _____.",4,3,0.549,low
+q1,Why are functions used to group statements in a program?,2,1,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.536,low
+q6,What does a return statement in a function do?,1,6,q3,A function definition must include _____ followed by a block of statements.,3,3,0.532,low
+q4,A function parameter is _____.,1,4,q3,What is the purpose of the return statement in a function?,2,3,0.528,low
+q2,What does a function call do in a program?,2,2,q2,What keyword defines a new function in Python?,4,2,0.528,low
+q2,How does a function call affect program execution?,1,2,q7,What does a return statement do inside a function?,3,7,0.527,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q2,What keyword defines a new function in Python?,4,2,0.524,low
+q2,How does a function call affect program execution?,1,2,q8,"In hierarchical function calls, what occurs?",3,8,0.52,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q4,What keyword is used in Python to create a new function?,3,4,0.52,low
+q3,What is the purpose of the return statement in a function?,2,3,q1,Why do programmers use functions in a program?,3,1,0.518,low
+q2,What does a function call do in a program?,2,2,q3,What is the purpose of the return statement in a function?,2,3,0.516,low
+q1,What is the main purpose of defining a function in a program?,1,1,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.514,low
+q6,What does a return statement in a function do?,1,6,q4,A function parameter is _____.,4,4,0.514,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.514,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q7,What does a return statement do inside a function?,3,7,0.514,low
+q2,What does a function call do in a program?,2,2,q4,What keyword is used in Python to create a new function?,3,4,0.513,low
+q2,What does a function call do in a program?,2,2,q8,"In hierarchical function calls, what occurs?",3,8,0.512,low
+q7,What does a return statement do inside a function?,3,7,q7,What does a function return if it has no return statement?,4,7,0.505,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.502,low
+q3,What is the purpose of the return statement in a function?,2,3,q3,A function definition must include _____ followed by a block of statements.,3,3,0.501,low
+q2,What does a function call do in a program?,2,2,q5,A function parameter is:,3,5,0.498,low
+q2,What does a function call do in a program?,2,2,q1,Why do programmers use functions in a program?,3,1,0.497,low
+q1,Why are functions used to group statements in a program?,2,1,q2,What happens when a function call is executed in a program?,3,2,0.496,low
+q1,Why are functions used to group statements in a program?,2,1,q8,"In hierarchical function calls, what occurs?",3,8,0.495,low
+q3,Which keyword is used to define a new function in Python?,1,3,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.493,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.492,low
+q5,What is the difference between a parameter and an argument?,1,5,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.49,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q7,What does a return statement do inside a function?,3,7,0.49,low
+q2,What does a function call do in a program?,2,2,q4,A function parameter is _____.,4,4,0.489,low
+q1,Why are functions used to group statements in a program?,2,1,q2,What does a function call do in a program?,2,2,0.485,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q2,What does a function call do in a program?,2,2,0.484,low
+q2,How does a function call affect program execution?,1,2,q1,Why are functions used to group statements in a program?,2,1,0.482,low
+q1,Why do programmers use functions in a program?,3,1,q2,What happens when a function call is executed in a program?,3,2,0.482,low
+q1,What is the main purpose of defining a function in a program?,1,1,q8,What is a hierarchical (nested) function call?,2,8,0.481,low
+q4,A function parameter is _____.,1,4,q2,What does a function call do in a program?,2,2,0.479,low
+q6,What does a return statement in a function do?,1,6,q8,What is a hierarchical (nested) function call?,2,8,0.479,low
+q3,What is the purpose of the return statement in a function?,2,3,q5,A function parameter is:,3,5,0.479,low
+q8,What is a hierarchical (nested) function call?,2,8,q5,A function parameter is:,3,5,0.479,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q2,What happens when a function call is executed in a program?,3,2,0.477,low
+q7,What does a return statement do inside a function?,3,7,q3,"In Python, a function call causes execution to _____.",4,3,0.477,low
+q1,Why do programmers use functions in a program?,3,1,q8,"In hierarchical function calls, what occurs?",3,8,0.476,low
+q7,What does a return statement do inside a function?,3,7,q4,A function parameter is _____.,4,4,0.476,low
+q8,What is a hierarchical (nested) function call?,2,8,q1,Why do programmers use functions in a program?,3,1,0.474,low
+q8,What is a hierarchical (nested) function call?,2,8,q2,What happens when a function call is executed in a program?,3,2,0.471,low
+q2,How does a function call affect program execution?,1,2,q8,What is a hierarchical (nested) function call?,2,8,0.47,low
+q4,A function parameter is _____.,1,4,q6,What does a return statement in a function do?,1,6,0.47,low
+q2,What does a function call do in a program?,2,2,q8,Hierarchical function calls occur when a function _____.,4,8,0.469,low
+q3,Which keyword is used to define a new function in Python?,1,3,q2,What does a function call do in a program?,2,2,0.466,low
+q8,What is a hierarchical (nested) function call?,2,8,q3,A function definition must include _____ followed by a block of statements.,3,3,0.466,low
+q6,What does a return statement in a function do?,1,6,q3,"In Python, a function call causes execution to _____.",4,3,0.465,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q6,How many values can a Python function return directly?,4,6,0.464,low
+q8,"In hierarchical function calls, what occurs?",3,8,q3,"In Python, a function call causes execution to _____.",4,3,0.464,low
+q6,What does a return statement in a function do?,1,6,q8,Hierarchical function calls occur when a function _____.,4,8,0.463,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q5,A function parameter is:,3,5,0.463,low
+q1,What is the main purpose of defining a function in a program?,1,1,q2,How does a function call affect program execution?,1,2,0.462,low
+q6,What does a return statement in a function do?,1,6,q7,What does a function return if it has no return statement?,4,7,0.462,low
+q2,How does a function call affect program execution?,1,2,q1,Why do programmers use functions in a program?,3,1,0.46,low
+q6,What does a return statement in a function do?,1,6,q6,"If a function has no return statement, what value does it return by default?",2,6,0.458,low
+q7,How are multiple parameters specified in a function definition?,1,7,q5,A function parameter is:,3,5,0.458,low
+q7,How are multiple parameters specified in a function definition?,1,7,q3,A function definition must include _____ followed by a block of statements.,3,3,0.455,low
+q2,How does a function call affect program execution?,1,2,q8,What does a hierarchical (nested) function call mean?,1,8,0.454,low
+q1,What is the main purpose of defining a function in a program?,1,1,q3,A function definition must include _____ followed by a block of statements.,3,3,0.45,low
+q4,A function parameter is _____.,1,4,q8,Hierarchical function calls occur when a function _____.,4,8,0.448,low
+q1,Why are functions used to group statements in a program?,2,1,q3,What is the purpose of the return statement in a function?,2,3,0.448,low
+q7,How are multiple parameters specified in a function definition?,1,7,q8,What does a hierarchical (nested) function call mean?,1,8,0.447,low
+q8,What is a hierarchical (nested) function call?,2,8,q4,A function parameter is _____.,4,4,0.447,low
+q5,A function parameter is:,3,5,q8,Hierarchical function calls occur when a function _____.,4,8,0.447,low
+q7,How are multiple parameters specified in a function definition?,1,7,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.446,low
+q3,What is the purpose of the return statement in a function?,2,3,q2,What happens when a function call is executed in a program?,3,2,0.445,low
+q1,What is the main purpose of defining a function in a program?,1,1,q2,What happens when a function call is executed in a program?,3,2,0.443,low
+q2,What happens when a function call is executed in a program?,3,2,q3,A function definition must include _____ followed by a block of statements.,3,3,0.443,low
+q1,Why are functions used to group statements in a program?,2,1,q8,What is a hierarchical (nested) function call?,2,8,0.442,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.442,low
+q7,How are multiple parameters specified in a function definition?,1,7,q8,What is a hierarchical (nested) function call?,2,8,0.441,low
+q7,How are multiple parameters specified in a function definition?,1,7,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.44,low
+q1,What is the main purpose of defining a function in a program?,1,1,q8,"In hierarchical function calls, what occurs?",3,8,0.439,low
+q4,A function parameter is _____.,4,4,q8,Hierarchical function calls occur when a function _____.,4,8,0.439,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q1,Why do programmers use functions in a program?,3,1,0.436,low
+q4,A function parameter is _____.,1,4,q7,How are multiple parameters specified in a function definition?,1,7,0.432,low
+q4,A function parameter is _____.,1,4,q7,What does a return statement do inside a function?,3,7,0.432,low
+q2,What happens when a function call is executed in a program?,3,2,q7,What does a function return if it has no return statement?,4,7,0.431,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q2,What happens when a function call is executed in a program?,3,2,0.43,low
+q2,How does a function call affect program execution?,1,2,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.427,low
+q3,What is the purpose of the return statement in a function?,2,3,q7,What does a function return if it has no return statement?,4,7,0.427,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q8,Hierarchical function calls occur when a function _____.,4,8,0.427,low
+q2,How does a function call affect program execution?,1,2,q3,A function definition must include _____ followed by a block of statements.,3,3,0.426,low
+q4,A function parameter is _____.,4,4,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.426,low
+q1,What is the main purpose of defining a function in a program?,1,1,q8,What does a hierarchical (nested) function call mean?,1,8,0.424,low
+q6,What does a return statement in a function do?,1,6,q5,A function parameter is:,3,5,0.424,low
+q3,What is the purpose of the return statement in a function?,2,3,q8,What is a hierarchical (nested) function call?,2,8,0.424,low
+q8,What is a hierarchical (nested) function call?,2,8,q7,What does a return statement do inside a function?,3,7,0.423,low
+q5,A function parameter is:,3,5,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.423,low
+q2,How does a function call affect program execution?,1,2,q8,Hierarchical function calls occur when a function _____.,4,8,0.422,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q5,A function parameter is:,3,5,0.422,low
+q4,A function parameter is _____.,1,4,q8,What is a hierarchical (nested) function call?,2,8,0.421,low
+q7,How are multiple parameters specified in a function definition?,1,7,q4,A function parameter is _____.,4,4,0.421,low
+q7,How are multiple parameters specified in a function definition?,1,7,q5,What is the difference between a parameter and an argument in functions?,2,5,0.42,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.42,low
+q8,What is a hierarchical (nested) function call?,2,8,q3,"In Python, a function call causes execution to _____.",4,3,0.42,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q7,What does a function return if it has no return statement?,4,7,0.42,low
+q4,A function parameter is _____.,1,4,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.419,low
+q2,How does a function call affect program execution?,1,2,q3,What is the purpose of the return statement in a function?,2,3,0.418,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.418,low
+q3,What is the purpose of the return statement in a function?,2,3,q6,"If a function has no return statement, what value does it return by default?",2,6,0.418,low
+q2,What happens when a function call is executed in a program?,3,2,q8,Hierarchical function calls occur when a function _____.,4,8,0.418,low
+q5,What is the difference between a parameter and an argument?,1,5,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.417,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q6,How many values can a Python function return directly?,4,6,0.417,low
+q3,"In Python, a function call causes execution to _____.",4,3,q8,Hierarchical function calls occur when a function _____.,4,8,0.414,low
+q6,What does a return statement in a function do?,1,6,q8,"In hierarchical function calls, what occurs?",3,8,0.413,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q8,What is a hierarchical (nested) function call?,2,8,0.411,low
+q1,What is the main purpose of defining a function in a program?,1,1,q7,How are multiple parameters specified in a function definition?,1,7,0.41,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q4,A function parameter is _____.,4,4,0.41,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q3,A function definition must include _____ followed by a block of statements.,3,3,0.41,low
+q1,What is the main purpose of defining a function in a program?,1,1,q6,What does a return statement in a function do?,1,6,0.409,low
+q6,What does a return statement in a function do?,1,6,q1,Why do programmers use functions in a program?,3,1,0.409,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.409,low
+q4,What keyword is used in Python to create a new function?,3,4,q3,"In Python, a function call causes execution to _____.",4,3,0.409,low
+q3,What is the purpose of the return statement in a function?,2,3,q3,"In Python, a function call causes execution to _____.",4,3,0.408,low
+q1,Why are functions used to group statements in a program?,2,1,q3,"In Python, a function call causes execution to _____.",4,3,0.407,low
+q7,What does a return statement do inside a function?,3,7,q8,Hierarchical function calls occur when a function _____.,4,8,0.407,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q2,What happens when a function call is executed in a program?,3,2,0.405,low
+q6,How many values can a Python function return directly?,4,6,q7,What does a function return if it has no return statement?,4,7,0.404,low
+q5,What is the difference between a parameter and an argument?,1,5,q7,How are multiple parameters specified in a function definition?,1,7,0.403,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q1,Why are functions used to group statements in a program?,2,1,0.403,low
+q1,Why do programmers use functions in a program?,3,1,q8,Hierarchical function calls occur when a function _____.,4,8,0.403,low
+q1,Why do programmers use functions in a program?,3,1,q3,"In Python, a function call causes execution to _____.",4,3,0.402,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q3,"In Python, a function call causes execution to _____.",4,3,0.402,low
+q1,What is the main purpose of defining a function in a program?,1,1,q7,What does a return statement do inside a function?,3,7,0.401,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q2,What keyword defines a new function in Python?,4,2,0.4,low
+q3,What is the purpose of the return statement in a function?,2,3,q8,Hierarchical function calls occur when a function _____.,4,8,0.399,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q3,A function definition must include _____ followed by a block of statements.,3,3,0.399,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q4,What keyword is used in Python to create a new function?,3,4,0.399,low
+q1,What is the main purpose of defining a function in a program?,1,1,q3,"In Python, a function call causes execution to _____.",4,3,0.398,low
+q4,A function parameter is _____.,1,4,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.398,low
+q7,How are multiple parameters specified in a function definition?,1,7,q1,Why do programmers use functions in a program?,3,1,0.398,low
+q2,What happens when a function call is executed in a program?,3,2,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.398,low
+q6,What does a return statement in a function do?,1,6,q1,Why are functions used to group statements in a program?,2,1,0.397,low
+q3,Which keyword is used to define a new function in Python?,1,3,q5,A function parameter is:,3,5,0.396,low
+q2,What does a function call do in a program?,2,2,q7,What does a function return if it has no return statement?,4,7,0.396,low
+q4,A function parameter is _____.,1,4,q8,What does a hierarchical (nested) function call mean?,1,8,0.395,low
+q2,What keyword defines a new function in Python?,4,2,q3,"In Python, a function call causes execution to _____.",4,3,0.394,low
+q1,Why do programmers use functions in a program?,3,1,q7,What does a return statement do inside a function?,3,7,0.393,low
+q1,Why do programmers use functions in a program?,3,1,q3,A function definition must include _____ followed by a block of statements.,3,3,0.392,low
+q6,What does a return statement in a function do?,1,6,q8,What does a hierarchical (nested) function call mean?,1,8,0.391,low
+q5,A function parameter is:,3,5,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.39,low
+q3,Which keyword is used to define a new function in Python?,1,3,q3,A function definition must include _____ followed by a block of statements.,3,3,0.389,low
+q1,What is the main purpose of defining a function in a program?,1,1,q5,A function parameter is:,3,5,0.388,low
+q1,What is the main purpose of defining a function in a program?,1,1,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.388,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q3,"In Python, a function call causes execution to _____.",4,3,0.388,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q4,A function parameter is _____.,4,4,0.388,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.388,low
+q4,What keyword is used in Python to create a new function?,3,4,q5,A function parameter is:,3,5,0.388,low
+q3,Which keyword is used to define a new function in Python?,1,3,q4,A function parameter is _____.,1,4,0.384,low
+q2,What happens when a function call is executed in a program?,3,2,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.384,low
+q2,What does a function call do in a program?,2,2,q6,"If a function has no return statement, what value does it return by default?",2,6,0.381,low
+q5,A function parameter is:,3,5,q2,What keyword defines a new function in Python?,4,2,0.381,low
+q1,What is the main purpose of defining a function in a program?,1,1,q2,What keyword defines a new function in Python?,4,2,0.38,low
+q4,A function parameter is _____.,1,4,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.38,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.38,low
+q1,Why do programmers use functions in a program?,3,1,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.379,low
+q5,A function parameter is:,3,5,q7,What does a return statement do inside a function?,3,7,0.379,low
+q2,What does a function call do in a program?,2,2,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.378,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.378,low
+q1,What is the main purpose of defining a function in a program?,1,1,q4,What keyword is used in Python to create a new function?,3,4,0.377,low
+q2,How does a function call affect program execution?,1,2,q4,A function parameter is _____.,4,4,0.377,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q4,A function parameter is _____.,4,4,0.377,low
+q7,How are multiple parameters specified in a function definition?,1,7,q8,Hierarchical function calls occur when a function _____.,4,8,0.376,low
+q3,Which keyword is used to define a new function in Python?,1,3,q8,What is a hierarchical (nested) function call?,2,8,0.375,low
+q4,A function parameter is _____.,1,4,q4,What keyword is used in Python to create a new function?,3,4,0.374,low
+q8,What is a hierarchical (nested) function call?,2,8,q4,What keyword is used in Python to create a new function?,3,4,0.374,low
+q1,What is the main purpose of defining a function in a program?,1,1,q8,Hierarchical function calls occur when a function _____.,4,8,0.373,low
+q7,What does a return statement do inside a function?,3,7,q8,"In hierarchical function calls, what occurs?",3,8,0.373,low
+q1,Why are functions used to group statements in a program?,2,1,q7,What does a return statement do inside a function?,3,7,0.372,low
+q2,What happens when a function call is executed in a program?,3,2,q4,A function parameter is _____.,4,4,0.372,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q3,"In Python, a function call causes execution to _____.",4,3,0.372,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q3,A function definition must include _____ followed by a block of statements.,3,3,0.371,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q8,Hierarchical function calls occur when a function _____.,4,8,0.371,low
+q4,A function parameter is _____.,1,4,q2,What keyword defines a new function in Python?,4,2,0.37,low
+q7,How are multiple parameters specified in a function definition?,1,7,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.37,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q5,What is the difference between a parameter and an argument in functions?,2,5,0.37,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q5,A function parameter is:,3,5,0.369,low
+q1,What is the main purpose of defining a function in a program?,1,1,q4,A function parameter is _____.,4,4,0.368,low
+q2,How does a function call affect program execution?,1,2,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.368,low
+q8,What is a hierarchical (nested) function call?,2,8,q2,What keyword defines a new function in Python?,4,2,0.368,low
+q8,What is a hierarchical (nested) function call?,2,8,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.368,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q5,What is the difference between a parameter and an argument in functions?,2,5,0.367,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q3,"In Python, a function call causes execution to _____.",4,3,0.367,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q8,"In hierarchical function calls, what occurs?",3,8,0.367,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.366,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q8,Hierarchical function calls occur when a function _____.,4,8,0.362,low
+q3,Which keyword is used to define a new function in Python?,1,3,q3,"In Python, a function call causes execution to _____.",4,3,0.361,low
+q7,How are multiple parameters specified in a function definition?,1,7,q8,"In hierarchical function calls, what occurs?",3,8,0.361,low
+q1,Why are functions used to group statements in a program?,2,1,q8,Hierarchical function calls occur when a function _____.,4,8,0.361,low
+q3,Which keyword is used to define a new function in Python?,1,3,q8,What does a hierarchical (nested) function call mean?,1,8,0.36,low
+q6,What does a return statement in a function do?,1,6,q6,How many values can a Python function return directly?,4,6,0.36,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q8,Hierarchical function calls occur when a function _____.,4,8,0.36,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q4,A function parameter is _____.,4,4,0.359,low
+q3,Which keyword is used to define a new function in Python?,1,3,q4,A function parameter is _____.,4,4,0.358,low
+q3,What is the purpose of the return statement in a function?,2,3,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.357,low
+q8,What is a hierarchical (nested) function call?,2,8,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.357,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q3,What is the purpose of the return statement in a function?,2,3,0.356,low
+q6,How many values can a Python function return directly?,4,6,q8,Hierarchical function calls occur when a function _____.,4,8,0.356,low
+q2,How does a function call affect program execution?,1,2,q5,A function parameter is:,3,5,0.354,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q8,"In hierarchical function calls, what occurs?",3,8,0.353,low
+q5,A function parameter is:,3,5,q8,"In hierarchical function calls, what occurs?",3,8,0.353,low
+q5,What is the difference between a parameter and an argument?,1,5,q2,What does a function call do in a program?,2,2,0.352,low
+q7,How are multiple parameters specified in a function definition?,1,7,q1,Why are functions used to group statements in a program?,2,1,0.352,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q4,What keyword is used in Python to create a new function?,3,4,0.352,low
+q7,What does a return statement do inside a function?,3,7,q6,How many values can a Python function return directly?,4,6,0.352,low
+q2,How does a function call affect program execution?,1,2,q7,What does a function return if it has no return statement?,4,7,0.351,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q4,A function parameter is _____.,4,4,0.351,low
+q4,A function parameter is _____.,1,4,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.35,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q2,What keyword defines a new function in Python?,4,2,0.35,low
+q1,Why are functions used to group statements in a program?,2,1,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.35,low
+q8,What is a hierarchical (nested) function call?,2,8,q6,How many values can a Python function return directly?,4,6,0.35,low
+q7,How are multiple parameters specified in a function definition?,1,7,q2,What does a function call do in a program?,2,2,0.349,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.349,low
+q1,Why are functions used to group statements in a program?,2,1,q3,A function definition must include _____ followed by a block of statements.,3,3,0.348,low
+q2,What does a function call do in a program?,2,2,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.348,low
+q3,"In Python, a function call causes execution to _____.",4,3,q4,A function parameter is _____.,4,4,0.348,low
+q4,A function parameter is _____.,1,4,q6,"If a function has no return statement, what value does it return by default?",2,6,0.347,low
+q5,What is the difference between a parameter and an argument?,1,5,q8,What does a hierarchical (nested) function call mean?,1,8,0.347,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q6,How many values can a Python function return directly?,4,6,0.347,low
+q2,What does a function call do in a program?,2,2,q5,What is the difference between a parameter and an argument in functions?,2,5,0.346,low
+q3,What is the purpose of the return statement in a function?,2,3,q6,How many values can a Python function return directly?,4,6,0.346,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q8,"In hierarchical function calls, what occurs?",3,8,0.346,low
+q4,A function parameter is _____.,4,4,q6,How many values can a Python function return directly?,4,6,0.346,low
+q4,A function parameter is _____.,4,4,q7,What does a function return if it has no return statement?,4,7,0.345,low
+q1,Why do programmers use functions in a program?,3,1,q5,A function parameter is:,3,5,0.344,low
+q4,What keyword is used in Python to create a new function?,3,4,q4,A function parameter is _____.,4,4,0.343,low
+q1,What is the main purpose of defining a function in a program?,1,1,q3,Which keyword is used to define a new function in Python?,1,3,0.342,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q6,How many values can a Python function return directly?,4,6,0.342,low
+q5,What is the difference between a parameter and an argument?,1,5,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.34,low
+q2,What does a function call do in a program?,2,2,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.34,low
+q2,What happens when a function call is executed in a program?,3,2,q5,A function parameter is:,3,5,0.34,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q4,A function parameter is _____.,4,4,0.339,low
+q2,What does a function call do in a program?,2,2,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.338,low
+q4,What keyword is used in Python to create a new function?,3,4,q6,How many values can a Python function return directly?,4,6,0.338,low
+q2,What keyword defines a new function in Python?,4,2,q4,A function parameter is _____.,4,4,0.338,low
+q1,What is the main purpose of defining a function in a program?,1,1,q4,A function parameter is _____.,1,4,0.337,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q3,"In Python, a function call causes execution to _____.",4,3,0.337,low
+q1,Why do programmers use functions in a program?,3,1,q4,A function parameter is _____.,4,4,0.337,low
+q5,What is the difference between a parameter and an argument?,1,5,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.336,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q7,What does a return statement do inside a function?,3,7,0.336,low
+q5,What is the difference between a parameter and an argument?,1,5,q3,A function definition must include _____ followed by a block of statements.,3,3,0.334,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q7,What does a function return if it has no return statement?,4,7,0.334,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.333,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q8,What is a hierarchical (nested) function call?,2,8,0.333,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q8,"In hierarchical function calls, what occurs?",3,8,0.333,low
+q2,How does a function call affect program execution?,1,2,q6,"If a function has no return statement, what value does it return by default?",2,6,0.332,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q3,A function definition must include _____ followed by a block of statements.,3,3,0.332,low
+q7,How are multiple parameters specified in a function definition?,1,7,q3,What is the purpose of the return statement in a function?,2,3,0.331,low
+q3,What is the purpose of the return statement in a function?,2,3,q8,"In hierarchical function calls, what occurs?",3,8,0.33,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q1,Why do programmers use functions in a program?,3,1,0.33,low
+q1,Why are functions used to group statements in a program?,2,1,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.329,low
+q5,Which symbol separates multiple parameters in a function definition?,4,5,q8,Hierarchical function calls occur when a function _____.,4,8,0.327,low
+q1,Why do programmers use functions in a program?,3,1,q4,What keyword is used in Python to create a new function?,3,4,0.326,low
+q5,A function parameter is:,3,5,q6,How many values can a Python function return directly?,4,6,0.326,low
+q8,"In hierarchical function calls, what occurs?",3,8,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.326,low
+q2,What happens when a function call is executed in a program?,3,2,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.325,low
+q1,What is the main purpose of defining a function in a program?,1,1,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.324,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.324,low
+q8,"In hierarchical function calls, what occurs?",3,8,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.324,low
+q5,What is the difference between a parameter and an argument?,1,5,q8,What is a hierarchical (nested) function call?,2,8,0.323,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q3,"In Python, a function call causes execution to _____.",4,3,0.323,low
+q2,What keyword defines a new function in Python?,4,2,q6,How many values can a Python function return directly?,4,6,0.323,low
+q1,What is the main purpose of defining a function in a program?,1,1,q5,What is the difference between a parameter and an argument in functions?,2,5,0.322,low
+q6,What does a return statement in a function do?,1,6,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.322,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q8,What is a hierarchical (nested) function call?,2,8,0.321,low
+q4,A function parameter is _____.,1,4,q6,How many values can a Python function return directly?,4,6,0.32,low
+q7,How are multiple parameters specified in a function definition?,1,7,q2,What happens when a function call is executed in a program?,3,2,0.319,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.319,low
+q8,"In hierarchical function calls, what occurs?",3,8,q4,A function parameter is _____.,4,4,0.319,low
+q1,What is the main purpose of defining a function in a program?,1,1,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.318,low
+q8,What is a hierarchical (nested) function call?,2,8,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.318,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q8,Hierarchical function calls occur when a function _____.,4,8,0.318,low
+q5,What is the difference between a parameter and an argument?,1,5,q8,Hierarchical function calls occur when a function _____.,4,8,0.317,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q4,What keyword is used in Python to create a new function?,3,4,0.317,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q5,A function parameter is:,3,5,0.315,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q2,What keyword defines a new function in Python?,4,2,0.314,low
+q2,How does a function call affect program execution?,1,2,q4,A function parameter is _____.,1,4,0.313,low
+q4,A function parameter is _____.,1,4,q3,"In Python, a function call causes execution to _____.",4,3,0.313,low
+q5,What is the difference between a parameter and an argument?,1,5,q3,What is the purpose of the return statement in a function?,2,3,0.313,low
+q3,What is the purpose of the return statement in a function?,2,3,q5,What is the difference between a parameter and an argument in functions?,2,5,0.313,low
+q1,Why do programmers use functions in a program?,3,1,q2,What keyword defines a new function in Python?,4,2,0.313,low
+q3,Which keyword is used to define a new function in Python?,1,3,q6,How many values can a Python function return directly?,4,6,0.311,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q8,Hierarchical function calls occur when a function _____.,4,8,0.311,low
+q3,"In Python, a function call causes execution to _____.",4,3,q6,How many values can a Python function return directly?,4,6,0.31,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.309,low
+q7,What does a return statement do inside a function?,3,7,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.309,low
+q3,Which keyword is used to define a new function in Python?,1,3,q8,Hierarchical function calls occur when a function _____.,4,8,0.307,low
+q3,Which keyword is used to define a new function in Python?,1,3,q7,How are multiple parameters specified in a function definition?,1,7,0.306,low
+q4,A function parameter is _____.,1,4,q7,What does a function return if it has no return statement?,4,7,0.306,low
+q6,What does a return statement in a function do?,1,6,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.306,low
+q7,How are multiple parameters specified in a function definition?,1,7,q4,What keyword is used in Python to create a new function?,3,4,0.306,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.306,low
+q8,"In hierarchical function calls, what occurs?",3,8,q6,How many values can a Python function return directly?,4,6,0.306,low
+q7,How are multiple parameters specified in a function definition?,1,7,q2,What keyword defines a new function in Python?,4,2,0.305,low
+q1,Why do programmers use functions in a program?,3,1,q7,What does a function return if it has no return statement?,4,7,0.305,low
+q5,A function parameter is:,3,5,q3,"In Python, a function call causes execution to _____.",4,3,0.304,low
+q3,Which keyword is used to define a new function in Python?,1,3,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.303,low
+q7,What does a return statement do inside a function?,3,7,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.303,low
+q2,How does a function call affect program execution?,1,2,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.302,low
+q4,A function parameter is _____.,1,4,q2,What happens when a function call is executed in a program?,3,2,0.302,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q1,Why do programmers use functions in a program?,3,1,0.302,low
+q3,Which keyword is used to define a new function in Python?,1,3,q1,Why do programmers use functions in a program?,3,1,0.301,low
+q1,Why do programmers use functions in a program?,3,1,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.301,low
+q1,What is the main purpose of defining a function in a program?,1,1,q7,What does a function return if it has no return statement?,4,7,0.3,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q6,How many values can a Python function return directly?,4,6,0.3,low
+q3,Which keyword is used to define a new function in Python?,1,3,q6,"If a function has no return statement, what value does it return by default?",2,6,0.298,low
+q3,Which keyword is used to define a new function in Python?,1,3,q8,"In hierarchical function calls, what occurs?",3,8,0.298,low
+q3,What is the purpose of the return statement in a function?,2,3,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.298,low
+q2,How does a function call affect program execution?,1,2,q2,What keyword defines a new function in Python?,4,2,0.297,low
+q4,A function parameter is _____.,1,4,q1,Why do programmers use functions in a program?,3,1,0.297,low
+q2,How does a function call affect program execution?,1,2,q3,Which keyword is used to define a new function in Python?,1,3,0.296,low
+q3,What is the purpose of the return statement in a function?,2,3,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.296,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q2,What keyword defines a new function in Python?,4,2,0.296,low
+q3,"In Python, a function call causes execution to _____.",4,3,q7,What does a function return if it has no return statement?,4,7,0.296,low
+q1,What is the main purpose of defining a function in a program?,1,1,q5,What is the difference between a parameter and an argument?,1,5,0.295,low
+q2,How does a function call affect program execution?,1,2,q4,What keyword is used in Python to create a new function?,3,4,0.295,low
+q7,How are multiple parameters specified in a function definition?,1,7,q6,How many values can a Python function return directly?,4,6,0.294,low
+q1,Why are functions used to group statements in a program?,2,1,q7,What does a function return if it has no return statement?,4,7,0.294,low
+q1,Why do programmers use functions in a program?,3,1,q6,How many values can a Python function return directly?,4,6,0.293,low
+q2,What keyword defines a new function in Python?,4,2,q8,Hierarchical function calls occur when a function _____.,4,8,0.292,low
+q2,What happens when a function call is executed in a program?,3,2,q6,How many values can a Python function return directly?,4,6,0.291,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q4,What keyword is used in Python to create a new function?,3,4,0.29,low
+q5,What is the difference between a parameter and an argument?,1,5,q2,What keyword defines a new function in Python?,4,2,0.289,low
+q3,What is the purpose of the return statement in a function?,2,3,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.289,low
+q4,What keyword is used in Python to create a new function?,3,4,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.288,low
+q5,What is the difference between a parameter and an argument?,1,5,q4,What keyword is used in Python to create a new function?,3,4,0.287,low
+q2,What happens when a function call is executed in a program?,3,2,q4,What keyword is used in Python to create a new function?,3,4,0.287,low
+q4,What keyword is used in Python to create a new function?,3,4,q8,"In hierarchical function calls, what occurs?",3,8,0.286,low
+q4,What keyword is used in Python to create a new function?,3,4,q8,Hierarchical function calls occur when a function _____.,4,8,0.286,low
+q5,A function parameter is:,3,5,q7,What does a function return if it has no return statement?,4,7,0.284,low
+q2,What keyword defines a new function in Python?,4,2,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.284,low
+q8,"In hierarchical function calls, what occurs?",3,8,q2,What keyword defines a new function in Python?,4,2,0.283,low
+q2,What keyword defines a new function in Python?,4,2,q7,What does a function return if it has no return statement?,4,7,0.283,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q1,Why do programmers use functions in a program?,3,1,0.282,low
+q2,How does a function call affect program execution?,1,2,q7,How are multiple parameters specified in a function definition?,1,7,0.281,low
+q2,How does a function call affect program execution?,1,2,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.281,low
+q2,What happens when a function call is executed in a program?,3,2,q2,What keyword defines a new function in Python?,4,2,0.281,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.281,low
+q4,A function parameter is _____.,1,4,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.28,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q3,A function definition must include _____ followed by a block of statements.,3,3,0.28,low
+q8,What is a hierarchical (nested) function call?,2,8,q7,What does a function return if it has no return statement?,4,7,0.28,low
+q4,What keyword is used in Python to create a new function?,3,4,q7,What does a function return if it has no return statement?,4,7,0.28,low
+q3,Which keyword is used to define a new function in Python?,1,3,q2,What happens when a function call is executed in a program?,3,2,0.278,low
+q2,How does a function call affect program execution?,1,2,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.276,low
+q7,What does a function return if it has no return statement?,4,7,q8,Hierarchical function calls occur when a function _____.,4,8,0.276,low
+q2,How does a function call affect program execution?,1,2,q5,What is the difference between a parameter and an argument in functions?,2,5,0.275,low
+q1,What is the main purpose of defining a function in a program?,1,1,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.273,low
+q7,What does a return statement do inside a function?,3,7,q2,What keyword defines a new function in Python?,4,2,0.273,low
+q3,"In Python, a function call causes execution to _____.",4,3,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.272,low
+q4,A function parameter is _____.,1,4,q8,"In hierarchical function calls, what occurs?",3,8,0.271,low
+q6,What does a return statement in a function do?,1,6,q2,What keyword defines a new function in Python?,4,2,0.271,low
+q1,Why are functions used to group statements in a program?,2,1,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.271,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.27,low
+q5,What is the difference between a parameter and an argument?,1,5,q1,Why do programmers use functions in a program?,3,1,0.268,low
+q1,Why are functions used to group statements in a program?,2,1,q5,A function parameter is:,3,5,0.267,low
+q4,What keyword is used in Python to create a new function?,3,4,q7,What does a return statement do inside a function?,3,7,0.267,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q2,What happens when a function call is executed in a program?,3,2,0.266,low
+q3,Which keyword is used to define a new function in Python?,1,3,q1,Why are functions used to group statements in a program?,2,1,0.265,low
+q6,What does a return statement in a function do?,1,6,q4,What keyword is used in Python to create a new function?,3,4,0.265,low
+q3,Which keyword is used to define a new function in Python?,1,3,q5,What is the difference between a parameter and an argument in functions?,2,5,0.263,low
+q5,A function parameter is:,3,5,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.263,low
+q2,What does a function call do in a program?,2,2,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.262,low
+q1,What is the main purpose of defining a function in a program?,1,1,q6,How many values can a Python function return directly?,4,6,0.261,low
+q2,How does a function call affect program execution?,1,2,q6,How many values can a Python function return directly?,4,6,0.261,low
+q5,Which symbol separates multiple parameters in a function definition?,4,5,q7,What does a function return if it has no return statement?,4,7,0.261,low
+q1,Why are functions used to group statements in a program?,2,1,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.26,low
+q2,How does a function call affect program execution?,1,2,q5,What is the difference between a parameter and an argument?,1,5,0.259,low
+q3,Which keyword is used to define a new function in Python?,1,3,q7,What does a function return if it has no return statement?,4,7,0.258,low
+q6,What does a return statement in a function do?,1,6,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.258,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q8,What is a hierarchical (nested) function call?,2,8,0.258,low
+q3,Which keyword is used to define a new function in Python?,1,3,q5,What is the difference between a parameter and an argument?,1,5,0.257,low
+q1,Why are functions used to group statements in a program?,2,1,q4,What keyword is used in Python to create a new function?,3,4,0.257,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q2,What happens when a function call is executed in a program?,3,2,0.256,low
+q3,Which keyword is used to define a new function in Python?,1,3,q7,What does a return statement do inside a function?,3,7,0.255,low
+q6,What does a return statement in a function do?,1,6,q7,How are multiple parameters specified in a function definition?,1,7,0.255,low
+q1,Why are functions used to group statements in a program?,2,1,q2,What keyword defines a new function in Python?,4,2,0.255,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q8,Hierarchical function calls occur when a function _____.,4,8,0.255,low
+q3,Which keyword is used to define a new function in Python?,1,3,q6,What does a return statement in a function do?,1,6,0.254,low
+q5,What is the difference between a parameter and an argument?,1,5,q6,What does a return statement in a function do?,1,6,0.254,low
+q2,What does a function call do in a program?,2,2,q6,How many values can a Python function return directly?,4,6,0.254,low
+q1,Why are functions used to group statements in a program?,2,1,q4,A function parameter is _____.,4,4,0.253,low
+q1,What is the main purpose of defining a function in a program?,1,1,q6,"If a function has no return statement, what value does it return by default?",2,6,0.252,low
+q3,Which keyword is used to define a new function in Python?,1,3,q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,0.251,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q8,"In hierarchical function calls, what occurs?",3,8,0.25,low
+q6,What does a return statement in a function do?,1,6,q5,What is the difference between a parameter and an argument in functions?,2,5,0.249,low
+q7,How are multiple parameters specified in a function definition?,1,7,q7,What does a return statement do inside a function?,3,7,0.249,low
+q5,What is the difference between a parameter and an argument?,1,5,q2,What happens when a function call is executed in a program?,3,2,0.248,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q1,Why do programmers use functions in a program?,3,1,0.248,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q4,What keyword is used in Python to create a new function?,3,4,0.245,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q7,What does a return statement do inside a function?,3,7,0.244,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q3,"In Python, a function call causes execution to _____.",4,3,0.243,low
+q7,How are multiple parameters specified in a function definition?,1,7,q3,"In Python, a function call causes execution to _____.",4,3,0.242,low
+q1,Why are functions used to group statements in a program?,2,1,q6,"If a function has no return statement, what value does it return by default?",2,6,0.241,low
+q3,What is the purpose of the return statement in a function?,2,3,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.241,low
+q5,What is the difference between a parameter and an argument?,1,5,q8,"In hierarchical function calls, what occurs?",3,8,0.24,low
+q3,Which keyword is used to define a new function in Python?,1,3,q3,What is the purpose of the return statement in a function?,2,3,0.239,low
+q8,"In hierarchical function calls, what occurs?",3,8,q7,What does a function return if it has no return statement?,4,7,0.239,low
+q7,How are multiple parameters specified in a function definition?,1,7,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.238,low
+q6,What does a return statement in a function do?,1,6,q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,0.237,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q6,How many values can a Python function return directly?,4,6,0.237,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q7,What does a function return if it has no return statement?,4,7,0.234,low
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,7,q2,What keyword defines a new function in Python?,4,2,0.234,low
+q7,How are multiple parameters specified in a function definition?,1,7,q7,What does a function return if it has no return statement?,4,7,0.232,low
+q3,What is the purpose of the return statement in a function?,2,3,q4,What keyword is used in Python to create a new function?,3,4,0.231,low
+q3,What is the purpose of the return statement in a function?,2,3,q2,What keyword defines a new function in Python?,4,2,0.231,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q6,"If a function has no return statement, what value does it return by default?",2,6,0.23,low
+q3,A function definition must include _____ followed by a block of statements.,3,3,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.23,low
+q5,Which symbol separates multiple parameters in a function definition?,4,5,q6,How many values can a Python function return directly?,4,6,0.23,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q3,"In Python, a function call causes execution to _____.",4,3,0.227,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q6,How many values can a Python function return directly?,4,6,0.227,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q7,What does a return statement do inside a function?,3,7,0.225,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q7,What does a return statement do inside a function?,3,7,0.223,low
+q5,What is the difference between a parameter and an argument?,1,5,q3,"In Python, a function call causes execution to _____.",4,3,0.222,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q5,Which symbol separates multiple parameters in a function definition?,4,5,0.221,low
+q3,Which keyword is used to define a new function in Python?,1,3,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.22,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q6,"If a function has no return statement, what value does it return by default?",2,6,0.22,low
+q4,What keyword is used in Python to create a new function?,3,4,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.219,low
+q1,Why are functions used to group statements in a program?,2,1,q5,What is the difference between a parameter and an argument in functions?,2,5,0.216,low
+q1,Why are functions used to group statements in a program?,2,1,q6,How many values can a Python function return directly?,4,6,0.216,low
+q8,What does a hierarchical (nested) function call mean?,1,8,q6,"If a function has no return statement, what value does it return by default?",2,6,0.213,low
+q5,What is the difference between a parameter and an argument?,1,5,q7,What does a return statement do inside a function?,3,7,0.211,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q7,What does a function return if it has no return statement?,4,7,0.211,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q8,"In hierarchical function calls, what occurs?",3,8,0.209,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q7,What does a function return if it has no return statement?,4,7,0.209,low
+q4,A function parameter is _____.,1,4,q1,Why are functions used to group statements in a program?,2,1,0.204,low
+q5,What is the difference between a parameter and an argument?,1,5,q1,Why are functions used to group statements in a program?,2,1,0.202,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q7,What does a function return if it has no return statement?,4,7,0.202,low
+q4,What keyword is used in Python to create a new function?,3,4,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.193,low
+q5,What is the difference between a parameter and an argument?,1,5,q6,"If a function has no return statement, what value does it return by default?",2,6,0.191,low
+q7,How are multiple parameters specified in a function definition?,1,7,q6,"If a function has no return statement, what value does it return by default?",2,6,0.191,low
+q5,What is the difference between a parameter and an argument?,1,5,q6,How many values can a Python function return directly?,4,6,0.19,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q2,What keyword defines a new function in Python?,4,2,0.19,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.189,low
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,4,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.186,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.182,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q2,What keyword defines a new function in Python?,4,2,0.182,low
+q3,Which keyword is used to define a new function in Python?,1,3,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.175,low
+q5,What is the difference between a parameter and an argument?,1,5,q7,What does a function return if it has no return statement?,4,7,0.175,low
+q6,"If a function has no return statement, what value does it return by default?",2,6,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.175,low
+q6,What does a return statement in a function do?,1,6,q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,0.168,low
+q1,A program uses a function to reduce _____ caused by repeated code.,4,1,q6,How many values can a Python function return directly?,4,6,0.164,low
+q5,What is the difference between a parameter and an argument?,1,5,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.156,low
+q5,What is the difference between a parameter and an argument in functions?,2,5,q1,A program uses a function to reduce _____ caused by repeated code.,4,1,0.156,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q7,What does a return statement do inside a function?,3,7,0.123,low
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,6,q7,What does a function return if it has no return statement?,4,7,0.117,low
+
+
+=== LEARNING OBJECTIVE ALIGNMENT ===
+
+Inferred Learning Objectives:
+"Define a function to group a set of statements for reuse in a program.  
+Call a function to execute its predefined set of operations.  
+Return a value from a function to provide a result back to the caller.  
+Specify parameters in a function definition to accept inputs and influence function behavior.  
+Use hierarchical function calls by invoking functions within other functions to build complex operations."
+
+Question Alignment Analysis
+Question ID,Question Text,Run Number,Aligned (Yes/No),Explanation
+q1,What is the main purpose of defining a function in a program?,1,yes,"Yes, the question directly assesses the learning objective of defining a function to group a set of statements for reuse in a program, as it specifically asks about the main purpose of defining a function."
+q2,How does a function call affect program execution?,1,yes,"Yes, the question directly assesses the learning objective of calling a function to execute its predefined set of operations, as it asks about the effect of a function call on program execution."
+q3,Which keyword is used to define a new function in Python?,1,yes,"Yes, the question directly assesses the learning objective of defining a function, as it asks for the keyword used to create a function in Python, which is fundamental to understanding how to group statements for reuse."
+q4,A function parameter is _____.,1,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it asks about the definition of a function parameter."
+q5,What is the difference between a parameter and an argument?,1,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it requires understanding the distinction between parameters and arguments in that context."
+q6,What does a return statement in a function do?,1,yes,"Yes, the question directly assesses the learning objective of returning a value from a function to provide a result back to the caller, as it specifically asks about the purpose of a return statement in a function."
+q7,How are multiple parameters specified in a function definition?,1,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it focuses on how to correctly define multiple parameters."
+q8,What does a hierarchical (nested) function call mean?,1,yes,"Yes, the question directly assesses the learning objective of using hierarchical function calls by asking for the definition of a nested function call, which relates to invoking functions within other functions."
+q1,Why are functions used to group statements in a program?,2,yes,"Yes, the question assesses the understanding of the purpose of functions, which relates to the learning objective of defining a function to group statements for reuse and reduce redundancy in code."
+q2,What does a function call do in a program?,2,yes,"Yes, the question directly assesses the learning objective of calling a function to execute its predefined set of operations."
+q3,What is the purpose of the return statement in a function?,2,yes,"Yes, the question directly assesses the learning objective of returning a value from a function to provide a result back to the caller."
+q4,Which of the following correctly defines a function with two parameters x and y in Python?,2,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it requires knowledge of the correct syntax for defining a function with parameters in Python."
+q5,What is the difference between a parameter and an argument in functions?,2,yes,"Yes, the question assesses the understanding of function parameters, which relates to the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior."
+q6,"If a function has no return statement, what value does it return by default?",2,yes,"Yes, the question directly assesses the learning objective of returning a value from a function to provide a result back to the caller, as it addresses the concept of default return values in functions."
+q7,What happens when a function with multiple parameters is called with fewer arguments than parameters?,2,yes,"Yes, the question assesses the understanding of function parameters and behavior when calling functions, which relates to the objective of specifying parameters in a function definition to accept inputs and influence function behavior."
+q8,What is a hierarchical (nested) function call?,2,yes,"Yes, the question directly assesses the learning objective of using hierarchical function calls by asking for the definition of calling a function from inside another function's statements."
+q1,Why do programmers use functions in a program?,3,yes,"Yes, the question assesses the learning objective of defining a function to group a set of statements for reuse in a program, as it directly addresses the purpose of using functions in programming."
+q2,What happens when a function call is executed in a program?,3,yes,"Yes, the question directly assesses the learning objective of calling a function to execute its predefined set of operations, as it asks about the outcome of executing a function call in a program."
+q3,A function definition must include _____ followed by a block of statements.,3,yes,"Yes, the question directly assesses the learning objective of defining a function, as it requires understanding the components necessary for a function definition, specifically the function's name and parentheses."
+q4,What keyword is used in Python to create a new function?,3,yes,"Yes, the question directly assesses the learning objective of defining a function, as it requires knowledge of the specific keyword used in Python to create a function."
+q5,A function parameter is:,3,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it asks about the definition of a function parameter."
+q6,"When a function has multiple parameters, how are arguments assigned during a call?",3,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it focuses on how arguments are assigned to parameters during a function call."
+q7,What does a return statement do inside a function?,3,yes,"Yes, the question directly assesses the learning objective of returning a value from a function to provide a result back to the caller, as it specifically asks about the purpose of a return statement within a function."
+q8,"In hierarchical function calls, what occurs?",3,yes,"Yes, the question directly assesses the learning objective of using hierarchical function calls by asking about the behavior of functions calling other functions within their statements."
+q1,A program uses a function to reduce _____ caused by repeated code.,4,yes,"Yes, the question directly assesses the understanding of program redundancy, which relates to the learning objective of defining a function to group statements for reuse, thereby reducing repeated code."
+q2,What keyword defines a new function in Python?,4,yes,"Yes, the question directly assesses the learning objective of defining a function, as it asks for the specific keyword used to create a function in Python."
+q3,"In Python, a function call causes execution to _____.",4,yes,"Yes, the question directly assesses the understanding of how a function call operates in Python, which relates to the learning objective of calling a function to execute its predefined set of operations."
+q4,A function parameter is _____.,4,yes,"Yes, the question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it asks about the definition of a function parameter."
+q5,Which symbol separates multiple parameters in a function definition?,4,yes,"Yes, this question directly assesses the learning objective of specifying parameters in a function definition to accept inputs and influence function behavior, as it tests knowledge of the syntax used in defining multiple parameters."
+q6,How many values can a Python function return directly?,4,no,"No, the question does not directly assess the learning objectives listed above, as it focuses solely on the number of values a function can return rather than the application of defining, calling, or using functions with parameters and hierarchical calls."
+q7,What does a function return if it has no return statement?,4,yes,"Yes, the question assesses the understanding of function behavior, specifically regarding return values, which relates to the learning objective of returning a value from a function."
+q8,Hierarchical function calls occur when a function _____.,4,yes,"Yes, the question directly assesses the learning objective of using hierarchical function calls by specifically asking about the scenario where a function calls another function inside it."

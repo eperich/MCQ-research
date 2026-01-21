@@ -1,0 +1,19 @@
+Criterion,Type,AI_Failures,AI_Total,AI_Failure_Rate_%
+Complex K Type,Explicit,70,1230,5.69
+Gratuitous Information In Stem,Explicit,1,1230,0.08
+Ambiguous Unclear Information,Explicit,29,1230,2.36
+Grammatical Cues In Stem,Explicit,43,1230,3.5
+Absolute Terms,Explicit,118,1230,9.59
+Negative Worded Stem,Explicit,58,1230,4.72
+Implausible Distractors,Non-Explicit,70,1230,5.69
+None Of The Above,Non-Explicit,27,1230,2.2
+All Of The Above,Non-Explicit,2,1230,0.16
+True Or False,Non-Explicit,10,1230,0.81
+Longest Answer Correct,Non-Explicit,168,1230,13.66
+Word Repeats In Stem And Correct Answer,Non-Explicit,77,1230,6.26
+Avoid Logical Cues,Non-Explicit,43,1230,3.5
+Lost Sequence,Non-Explicit,32,1230,2.6
+More Than One Correct,Non-Explicit,3,1230,0.24
+Avoid Convergence Cues,Non-Explicit,113,1230,9.19
+Vague Terms,Non-Explicit,12,1230,0.98
+Unfocused Stem,Non-Explicit,0,1230,0.0

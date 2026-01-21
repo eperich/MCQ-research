@@ -1,0 +1,3 @@
+Criteria_Type,Num_Criteria,Total_Failures,Total_Opportunities,Failure_Rate_%,Adherence_%
+Explicit (in prompt),6,319,7380,4.32,95.68
+Non-Explicit,12,557,14760,3.77,96.23

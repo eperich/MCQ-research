@@ -12,6 +12,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from matplotlib.colors import TwoSlopeNorm
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -95,6 +96,32 @@ CATEGORY_COLORS = {
     'Test-wiseness Prevention': '#118AB2'  # Ocean blue
 }
 
+# Criteria explicitly stated in AI prompt guidelines
+EXPLICIT_PROMPT_CRITERIA = [
+    'complex_k_type',
+    'gratuitous_information_in_stem',
+    'ambiguous_unclear_information',
+    'grammatical_cues_in_stem',
+    'absolute_terms',
+    'negative_worded_stem'
+]
+
+# Non-explicit criteria (not mentioned in prompt)
+NON_EXPLICIT_CRITERIA = [
+    'implausible_distractors',
+    'none_of_the_above',
+    'all_of_the_above',
+    'true_or_false',
+    'longest_answer_correct',
+    'word_repeats_in_stem_and_correct_answer',
+    'avoid_logical_cues',
+    'lost_sequence',
+    'more_than_one_correct',
+    'avoid_convergence_cues',
+    'vague_terms',
+    'unfocused_stem'
+]
+
 class QuestionQualityAnalyzer:
     """Analyze question quality from SAQUET evaluation results."""
     
@@ -103,6 +130,7 @@ class QuestionQualityAnalyzer:
         self.ai_data = None
         self.sme_data = None
         self.category_analysis = None
+        self.prompt_adherence_analysis = None
         
     def load_all_files(self):
         """Load all SAQUET results files (AI and SME)."""
@@ -432,6 +460,124 @@ class QuestionQualityAnalyzer:
         self.category_analysis = category_df
         
         return category_df, category_discipline_df
+    
+    def analyze_prompt_adherence(self):
+        """Analyze AI adherence to explicitly stated prompt guidelines vs non-explicit criteria."""
+        print("\n=== Analyzing Prompt Adherence (Explicit vs Non-Explicit Criteria) ===")
+        
+        # Calculate failure rates for explicit vs non-explicit criteria
+        criterion_data = []
+        
+        # Analyze each explicit criterion
+        for criterion in EXPLICIT_PROMPT_CRITERIA:
+            ai_failures = (self.ai_data[criterion] == 'Fail').sum()
+            ai_total = len(self.ai_data)
+            ai_rate = (ai_failures / ai_total) * 100
+            
+            display_name = criterion.replace('_', ' ').title()
+            
+            criterion_data.append({
+                'Criterion': display_name,
+                'Type': 'Explicit',
+                'AI_Failures': ai_failures,
+                'AI_Total': ai_total,
+                'AI_Failure_Rate_%': round(ai_rate, 2)
+            })
+        
+        # Analyze each non-explicit criterion
+        for criterion in NON_EXPLICIT_CRITERIA:
+            ai_failures = (self.ai_data[criterion] == 'Fail').sum()
+            ai_total = len(self.ai_data)
+            ai_rate = (ai_failures / ai_total) * 100
+            
+            display_name = criterion.replace('_', ' ').title()
+            
+            criterion_data.append({
+                'Criterion': display_name,
+                'Type': 'Non-Explicit',
+                'AI_Failures': ai_failures,
+                'AI_Total': ai_total,
+                'AI_Failure_Rate_%': round(ai_rate, 2)
+            })
+        
+        criterion_df = pd.DataFrame(criterion_data)
+        
+        # Calculate overall rates for explicit vs non-explicit
+        explicit_failures = sum((self.ai_data[c] == 'Fail').sum() for c in EXPLICIT_PROMPT_CRITERIA)
+        explicit_total = len(self.ai_data) * len(EXPLICIT_PROMPT_CRITERIA)
+        explicit_rate = (explicit_failures / explicit_total) * 100
+        
+        non_explicit_failures = sum((self.ai_data[c] == 'Fail').sum() for c in NON_EXPLICIT_CRITERIA)
+        non_explicit_total = len(self.ai_data) * len(NON_EXPLICIT_CRITERIA)
+        non_explicit_rate = (non_explicit_failures / non_explicit_total) * 100
+        
+        overall_df = pd.DataFrame([
+            {
+                'Criteria_Type': 'Explicit (in prompt)',
+                'Num_Criteria': len(EXPLICIT_PROMPT_CRITERIA),
+                'Total_Failures': explicit_failures,
+                'Total_Opportunities': explicit_total,
+                'Failure_Rate_%': round(explicit_rate, 2),
+                'Adherence_%': round(100 - explicit_rate, 2)
+            },
+            {
+                'Criteria_Type': 'Non-Explicit',
+                'Num_Criteria': len(NON_EXPLICIT_CRITERIA),
+                'Total_Failures': non_explicit_failures,
+                'Total_Opportunities': non_explicit_total,
+                'Failure_Rate_%': round(non_explicit_rate, 2),
+                'Adherence_%': round(100 - non_explicit_rate, 2)
+            }
+        ])
+        
+        # Analyze by discipline
+        discipline_data = []
+        
+        for discipline in ['Computer Science', 'Data Science', 'Discrete Mathematics']:
+            ai_disc = self.ai_data[self.ai_data['discipline'] == discipline]
+            
+            # Explicit criteria
+            explicit_disc_failures = sum((ai_disc[c] == 'Fail').sum() for c in EXPLICIT_PROMPT_CRITERIA)
+            explicit_disc_total = len(ai_disc) * len(EXPLICIT_PROMPT_CRITERIA)
+            explicit_disc_rate = (explicit_disc_failures / explicit_disc_total) * 100 if explicit_disc_total > 0 else 0
+            
+            # Non-explicit criteria
+            non_explicit_disc_failures = sum((ai_disc[c] == 'Fail').sum() for c in NON_EXPLICIT_CRITERIA)
+            non_explicit_disc_total = len(ai_disc) * len(NON_EXPLICIT_CRITERIA)
+            non_explicit_disc_rate = (non_explicit_disc_failures / non_explicit_disc_total) * 100 if non_explicit_disc_total > 0 else 0
+            
+            difference = explicit_disc_rate - non_explicit_disc_rate
+            
+            discipline_data.append({
+                'Discipline': discipline,
+                'Explicit_Failure_Rate_%': round(explicit_disc_rate, 2),
+                'Non_Explicit_Failure_Rate_%': round(non_explicit_disc_rate, 2),
+                'Difference_%': round(difference, 2),
+                'Explicit_Adherence_%': round(100 - explicit_disc_rate, 2),
+                'Non_Explicit_Adherence_%': round(100 - non_explicit_disc_rate, 2)
+            })
+        
+        discipline_df = pd.DataFrame(discipline_data)
+        
+        # Save to CSV
+        criterion_df.to_csv(self.base_path / 'table_prompt_adherence_by_criterion.csv', index=False)
+        overall_df.to_csv(self.base_path / 'table_prompt_adherence_overall.csv', index=False)
+        discipline_df.to_csv(self.base_path / 'table_prompt_adherence_by_discipline.csv', index=False)
+        
+        print("✓ Saved table_prompt_adherence_by_criterion.csv")
+        print("✓ Saved table_prompt_adherence_overall.csv")
+        print("✓ Saved table_prompt_adherence_by_discipline.csv")
+        
+        # Store results
+        self.prompt_adherence_analysis = {
+            'by_criterion': criterion_df,
+            'overall': overall_df,
+            'by_discipline': discipline_df,
+            'explicit_rate': explicit_rate,
+            'non_explicit_rate': non_explicit_rate
+        }
+        
+        return criterion_df, overall_df, discipline_df
     
     def create_visualizations(self, output_dir=None):
         """Create all visualizations."""
@@ -1080,6 +1226,209 @@ class QuestionQualityAnalyzer:
         
         print("✓ All category by discipline visualizations complete")
     
+    def create_prompt_adherence_visualizations(self, output_dir=None):
+        """Create visualizations for AI adherence to explicit vs non-explicit criteria."""
+        if output_dir is None:
+            output_dir = self.base_path
+        else:
+            output_dir = Path(output_dir)
+        
+        print("\n=== Creating Prompt Adherence Visualizations ===")
+        
+        criterion_df = self.prompt_adherence_analysis['by_criterion']
+        overall_df = self.prompt_adherence_analysis['overall']
+        discipline_df = self.prompt_adherence_analysis['by_discipline']
+        
+        # 1. Overall comparison - Explicit vs Non-Explicit
+        fig, ax = plt.subplots(1, 1, figsize=(10, 6))
+        
+        types = overall_df['Criteria_Type'].tolist()
+        x = np.arange(len(types))
+        width = 0.6
+        
+        colors = ['#06A77D', '#E63946']  # Green for explicit (good), Red for non-explicit
+        bars = ax.bar(x, overall_df['Failure_Rate_%'], width,
+                      color=colors, edgecolor='black', linewidth=1)
+        
+        ax.set_ylabel('Average Failure Rate (%)', fontsize=12)
+        ax.set_title('AI Performance: Explicit Prompt Guidelines vs Non-Explicit Criteria\n(Lower is better)',
+                    fontsize=13, fontweight='bold', pad=20)
+        ax.set_xticks(x)
+        ax.set_xticklabels(types, fontsize=11)
+        ax.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        
+        # Add value labels
+        for bar in bars:
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height + 0.2,
+                   f'{height:.2f}%', ha='center', va='bottom', fontsize=11, fontweight='bold')
+        
+        # Add adherence percentages
+        for i, bar in enumerate(bars):
+            adherence = overall_df.iloc[i]['Adherence_%']
+            ax.text(bar.get_x() + bar.get_width()/2., bar.get_height()/2.,
+                   f'{adherence:.2f}%\nadherence', ha='center', va='center',
+                   fontsize=10, color='white', fontweight='bold')
+        
+        # Add summary text
+        diff = overall_df.iloc[0]['Failure_Rate_%'] - overall_df.iloc[1]['Failure_Rate_%']
+        text = f"Explicit criteria {abs(diff):.2f}% {'better' if diff < 0 else 'worse'} than non-explicit"
+        ax.text(0.5, 0.95, text, transform=ax.transAxes, ha='center', va='top',
+               fontsize=10, bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+        
+        plt.tight_layout()
+        filename = 'prompt_adherence_overall.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 2. Individual criteria comparison
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7))
+        
+        # Explicit criteria
+        explicit_data = criterion_df[criterion_df['Type'] == 'Explicit'].sort_values('AI_Failure_Rate_%', ascending=True)
+        y_pos = np.arange(len(explicit_data))
+        
+        bars1 = ax1.barh(y_pos, explicit_data['AI_Failure_Rate_%'],
+                        color='#06A77D', edgecolor='black', linewidth=1)
+        ax1.set_yticks(y_pos)
+        ax1.set_yticklabels(explicit_data['Criterion'], fontsize=10)
+        ax1.set_xlabel('Failure Rate (%)', fontsize=11)
+        ax1.set_title('Explicit Prompt Guidelines\n(Mentioned in AI prompt)',
+                     fontsize=12, fontweight='bold', pad=15)
+        ax1.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
+        
+        # Add value labels
+        for bar, val in zip(bars1, explicit_data['AI_Failure_Rate_%']):
+            width = bar.get_width()
+            ax1.text(width + 0.3, bar.get_y() + bar.get_height()/2.,
+                    f'{val:.2f}%', ha='left', va='center', fontsize=9)
+        
+        # Non-explicit criteria
+        non_explicit_data = criterion_df[criterion_df['Type'] == 'Non-Explicit'].sort_values('AI_Failure_Rate_%', ascending=True)
+        y_pos = np.arange(len(non_explicit_data))
+        
+        bars2 = ax2.barh(y_pos, non_explicit_data['AI_Failure_Rate_%'],
+                        color='#E63946', edgecolor='black', linewidth=1)
+        ax2.set_yticks(y_pos)
+        ax2.set_yticklabels(non_explicit_data['Criterion'], fontsize=10)
+        ax2.set_xlabel('Failure Rate (%)', fontsize=11)
+        ax2.set_title('Non-Explicit Criteria\n(Not mentioned in AI prompt)',
+                     fontsize=12, fontweight='bold', pad=15)
+        ax2.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['right'].set_visible(False)
+        
+        # Add value labels
+        for bar, val in zip(bars2, non_explicit_data['AI_Failure_Rate_%']):
+            width = bar.get_width()
+            ax2.text(width + 0.3, bar.get_y() + bar.get_height()/2.,
+                    f'{val:.2f}%', ha='left', va='center', fontsize=9)
+        
+        plt.tight_layout()
+        filename = 'prompt_adherence_by_criterion.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 3. By discipline comparison
+        fig, ax = plt.subplots(1, 1, figsize=(12, 6))
+        
+        disciplines = discipline_df['Discipline'].tolist()
+        x = np.arange(len(disciplines))
+        width = 0.35
+        
+        bars1 = ax.bar(x - width/2, discipline_df['Explicit_Failure_Rate_%'], width,
+                      label='Explicit Criteria', color='#06A77D', edgecolor='black', linewidth=1)
+        bars2 = ax.bar(x + width/2, discipline_df['Non_Explicit_Failure_Rate_%'], width,
+                      label='Non-Explicit Criteria', color='#E63946', edgecolor='black', linewidth=1)
+        
+        ax.set_ylabel('Average Failure Rate (%)', fontsize=12)
+        ax.set_xlabel('Discipline', fontsize=12)
+        ax.set_title('AI Performance by Discipline: Explicit vs Non-Explicit Criteria\n(Lower is better)',
+                    fontsize=13, fontweight='bold', pad=20)
+        ax.set_xticks(x)
+        ax.set_xticklabels(disciplines, fontsize=11)
+        ax.legend(frameon=True, fontsize=11, loc='upper left')
+        ax.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        
+        # Add value labels
+        for bars in [bars1, bars2]:
+            for bar in bars:
+                height = bar.get_height()
+                if height > 0:
+                    ax.text(bar.get_x() + bar.get_width()/2., height + 0.2,
+                           f'{height:.2f}%', ha='center', va='bottom', fontsize=9)
+        
+        plt.tight_layout()
+        filename = 'prompt_adherence_by_discipline.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        # 4. Heatmap by criterion type and discipline
+        heatmap_data = []
+        for discipline in ['Computer Science', 'Data Science', 'Discrete Mathematics']:
+            ai_disc = self.ai_data[self.ai_data['discipline'] == discipline]
+            
+            row_data = {}
+            for criterion in EXPLICIT_PROMPT_CRITERIA:
+                ai_rate = ((ai_disc[criterion] == 'Fail').sum() / len(ai_disc)) * 100 if len(ai_disc) > 0 else 0
+                row_data[criterion.replace('_', ' ').title()] = ai_rate
+            
+            heatmap_data.append(row_data)
+        
+        heatmap_df = pd.DataFrame(heatmap_data, index=['Computer Science', 'Data Science', 'Discrete Mathematics'])
+        
+        fig, ax = plt.subplots(1, 1, figsize=(14, 5))
+        
+        # Create colormap
+        im = ax.imshow(heatmap_df.values, cmap='RdYlGn_r', aspect='auto', vmin=0, vmax=20)
+        
+        # Set ticks
+        ax.set_xticks(np.arange(len(heatmap_df.columns)))
+        ax.set_yticks(np.arange(len(heatmap_df.index)))
+        ax.set_xticklabels(heatmap_df.columns, fontsize=10)
+        ax.set_yticklabels(heatmap_df.index, fontsize=11)
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+        
+        # Add text annotations
+        for i in range(len(heatmap_df.index)):
+            for j in range(len(heatmap_df.columns)):
+                val = heatmap_df.values[i, j]
+                ax.text(j, i, f'{val:.1f}%',
+                       ha="center", va="center", color="black", fontsize=9,
+                       fontweight='bold')
+        
+        ax.set_title('AI Failure Rates on Explicit Prompt Guidelines by Discipline\n(Green = low failure, Red = high failure)',
+                    fontsize=12, fontweight='bold', pad=20)
+        
+        # Add colorbar
+        cbar = plt.colorbar(im, ax=ax)
+        cbar.set_label('Failure Rate (%)', rotation=270, labelpad=20, fontsize=10)
+        
+        plt.tight_layout()
+        filename = 'prompt_adherence_heatmap.png'
+        plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+        plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
+        plt.close()
+        print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+        
+        print("✓ All prompt adherence visualizations complete")
+    
     def _create_interactive_dashboard(self, output_dir):
         """Create interactive Plotly dashboard."""
         all_data = pd.concat([self.ai_data, self.sme_data], ignore_index=True)
@@ -1229,24 +1578,32 @@ def main():
         print(f"  Average failures per question: {sme_data['failure_count'].mean():.2f}")
     
     # Export data tables
-    print(f"\n[2/6] Exporting data tables...")
+    print(f"\n[2/7] Exporting data tables...")
     tables = analyzer.export_data_tables()
     
     # Analyze by category
-    print(f"\n[3/6] Analyzing by SAQUET category...")
+    print(f"\n[3/7] Analyzing by SAQUET category...")
     category_df, category_discipline_df = analyzer.analyze_by_category()
     
+    # Analyze prompt adherence
+    print(f"\n[4/7] Analyzing adherence to explicit prompt guidelines...")
+    prompt_criterion_df, prompt_overall_df, prompt_discipline_df = analyzer.analyze_prompt_adherence()
+    
     # Create standard visualizations
-    print(f"\n[4/6] Creating standard visualizations...")
+    print(f"\n[5/7] Creating standard visualizations...")
     analyzer.create_visualizations()
     
     # Create category visualizations
-    print(f"\n[5/6] Creating category visualizations...")
+    print(f"\n[6/7] Creating category visualizations...")
     analyzer.create_category_visualizations()
     
     # Create category by discipline visualizations
-    print(f"\n[6/6] Creating category by discipline visualizations...")
+    print(f"\n[7/7] Creating category by discipline visualizations...")
     analyzer.create_category_by_discipline_visualizations()
+    
+    # Create prompt adherence visualizations
+    print(f"\n[8/8] Creating prompt adherence visualizations...")
+    analyzer.create_prompt_adherence_visualizations()
     
     # Print tables to console for easy viewing
     print("\n" + "=" * 70)
@@ -1273,6 +1630,15 @@ def main():
     
     print("\n\n7. FAILURE RATES BY CATEGORY AND DISCIPLINE")
     print(category_discipline_df.to_string(index=False))
+    
+    print("\n\n8. PROMPT ADHERENCE OVERALL (EXPLICIT vs NON-EXPLICIT)")
+    print(prompt_overall_df.to_string(index=False))
+    
+    print("\n\n9. PROMPT ADHERENCE BY INDIVIDUAL CRITERION")
+    print(prompt_criterion_df.to_string(index=False))
+    
+    print("\n\n10. PROMPT ADHERENCE BY DISCIPLINE")
+    print(prompt_discipline_df.to_string(index=False))
     
     print("\n" + "=" * 70)
     print("✓ Analysis complete!")
@@ -1301,6 +1667,11 @@ def main():
     print("    - category_by_discipline_data_science.png/pdf/eps")
     print("    - category_by_discipline_discrete_mathematics.png/pdf/eps")
     print("    - category_by_discipline_heatmap.png/pdf/eps")
+    print("  Prompt Adherence Visualizations:")
+    print("    - prompt_adherence_overall.png/pdf/eps")
+    print("    - prompt_adherence_by_criterion.png/pdf/eps")
+    print("    - prompt_adherence_by_discipline.png/pdf/eps")
+    print("    - prompt_adherence_heatmap.png/pdf/eps")
     print("  Data Tables:")
     print("    - table_overall_summary.csv")
     print("    - table_quality_by_discipline.csv")
@@ -1310,6 +1681,9 @@ def main():
     print("    - table_discipline_comparison.csv")
     print("    - table_failures_by_category.csv")
     print("    - table_failures_by_category_and_discipline.csv")
+    print("    - table_prompt_adherence_overall.csv")
+    print("    - table_prompt_adherence_by_criterion.csv")
+    print("    - table_prompt_adherence_by_discipline.csv")
     print(f"\nAll files saved to: {base_path}")
 
 
