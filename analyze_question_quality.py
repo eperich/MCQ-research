@@ -132,18 +132,34 @@ class QuestionQualityAnalyzer:
         self.category_analysis = None
         self.prompt_adherence_analysis = None
         
-    def load_all_files(self):
-        """Load all SAQUET results files (AI and SME)."""
+    def load_all_files(self, sample_percentage=None, exact_sample_size=None):
+        """Load all SAQUET results files (AI and SME).
+        
+        Args:
+            sample_percentage: If provided, only use first N% of AI questions from each topic
+            exact_sample_size: If provided, take exactly this many AI questions total (overrides sample_percentage)
+        """
         print("\n[Loading AI-Generated Questions]")
-        self.ai_data = self._load_files_by_pattern('SAQUET_results_*.csv', 'AI')
+        if exact_sample_size:
+            print(f"  (Taking exactly {exact_sample_size} questions total)")
+        elif sample_percentage:
+            print(f"  (Sampling first {sample_percentage}% from each topic)")
+        self.ai_data = self._load_files_by_pattern('SAQUET_results_*.csv', 'AI', sample_percentage, exact_sample_size)
         
         print("\n[Loading SME-Written Questions]")
         self.sme_data = self._load_files_by_pattern('SME_SAQUET_results_*.csv', 'SME')
         
         return self.ai_data, self.sme_data
     
-    def _load_files_by_pattern(self, pattern, source_type):
-        """Load files matching a pattern."""
+    def _load_files_by_pattern(self, pattern, source_type, sample_percentage=None, exact_sample_size=None):
+        """Load files matching a pattern.
+        
+        Args:
+            pattern: File pattern to match
+            source_type: 'AI' or 'SME'
+            sample_percentage: If provided, only use first N% of questions from each topic
+            exact_sample_size: If provided, take exactly this many questions total (overrides sample_percentage)
+        """
         all_questions = []
         
         disciplines = {
@@ -165,6 +181,11 @@ class QuestionQualityAnalyzer:
                 try:
                     topic = file.stem.replace('SAQUET_results_', '').replace('SME_SAQUET_results_', '')
                     df = pd.read_csv(file)
+                    
+                    # If sampling AI data by percentage, take only first N% from each topic
+                    if sample_percentage is not None and source_type == 'AI' and exact_sample_size is None:
+                        sample_size = max(1, int(len(df) * sample_percentage / 100))
+                        df = df.head(sample_size)
                     
                     # Count failures for each question
                     df['failure_count'] = 0
@@ -190,6 +211,11 @@ class QuestionQualityAnalyzer:
         
         if all_questions:
             combined = pd.concat(all_questions, ignore_index=True)
+            
+            # If exact sample size requested for AI, take first N questions from combined dataset
+            if exact_sample_size is not None and source_type == 'AI':
+                combined = combined.head(exact_sample_size)
+            
             print(f"\n  Total {source_type} questions loaded: {len(combined)}")
             print(f"  Acceptable: {(combined['quality'] == 'Acceptable').sum()} ({(combined['quality'] == 'Acceptable').sum()/len(combined)*100:.1f}%)")
             print(f"  Unacceptable: {(combined['quality'] == 'Unacceptable').sum()} ({(combined['quality'] == 'Unacceptable').sum()/len(combined)*100:.1f}%)")
@@ -750,7 +776,7 @@ class QuestionQualityAnalyzer:
         bars1 = ax1.bar(x - width/2, discipline_source['AI'], width,
                        label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1)
         bars2 = ax1.bar(x + width/2, discipline_source['SME'], width,
-                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1)
+                       label='SME-Authored', color=COLORS['sme'], edgecolor='black', linewidth=1)
         
         ax1.set_ylabel('Acceptance Rate (%)', fontsize=11)
         ax1.set_title('Question Acceptance Rate by Discipline',
@@ -886,51 +912,122 @@ class QuestionQualityAnalyzer:
         ai_vals = [v for _, v in ai_sorted]
         sme_vals = [sme_failures.get(k, 0) for k, _ in ai_sorted]
         
-        # AI failures
-        fig1, ax1 = plt.subplots(1, 1, figsize=(8, 8))
+        # Create side-by-side comparison
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
         y = np.arange(len(criteria_names))
-        bars = ax1.barh(y, ai_vals, color=COLORS['ai'], edgecolor='black', linewidth=0.5)
+        
+        # Add main title for the entire figure
+        fig.suptitle('Failures by IWF Criteria', fontsize=16, fontweight='bold', y=0.98)
+        
+        # Determine common x-axis scale (use max of AI failures)
+        max_scale = max(ai_vals)
+        
+        # AI failures (left)
+        bars1 = ax1.barh(y, ai_vals, color=COLORS['ai'], edgecolor='black', linewidth=0.5)
         ax1.set_yticks(y)
         ax1.set_yticklabels(criteria_names, fontsize=8)
         ax1.set_xlabel('Number of Failures', fontsize=11)
-        ax1.set_title('AI-Generated Questions: Failures by Criterion',
-                     fontsize=12, pad=15)
+        ax1.set_title('AI-Generated Questions',
+                     fontsize=11, pad=10)
+        ax1.set_xlim(0, max_scale * 1.1)
         ax1.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
         ax1.spines['top'].set_visible(False)
         ax1.spines['right'].set_visible(False)
         
-        for bar, val in zip(bars, ai_vals):
+        for bar, val in zip(bars1, ai_vals):
             if val > 0:
-                ax1.text(val + max(ai_vals)*0.015, bar.get_y() + bar.get_height()/2.,
+                ax1.text(val + max_scale*0.015, bar.get_y() + bar.get_height()/2.,
                         f'{val}', ha='left', va='center', fontsize=8)
         
-        plt.tight_layout()
-        filename = 'failure_by_criterion_ai.png'
+        # SME failures (right) - same scale as AI
+        bars2 = ax2.barh(y, sme_vals, color=COLORS['sme'], edgecolor='black', linewidth=0.5)
+        ax2.set_yticks(y)
+        ax2.set_yticklabels(criteria_names, fontsize=8)
+        ax2.set_xlabel('Number of Failures', fontsize=11)
+        ax2.set_title('SME-Authored Questions',
+                     fontsize=11, pad=10)
+        ax2.set_xlim(0, max_scale * 1.1)  # Same scale as AI
+        ax2.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax2.spines['top'].set_visible(False)
+        ax2.spines['right'].set_visible(False)
+        
+        for bar, val in zip(bars2, sme_vals):
+            if val > 0:
+                ax2.text(val + max_scale*0.015, bar.get_y() + bar.get_height()/2.,
+                        f'{val}', ha='left', va='center', fontsize=8)
+        
+        plt.tight_layout(rect=[0, 0, 1, 0.96])
+        filename = 'failure_by_criterion_comparison.png'
         plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
         plt.close()
         print(f"✓ Saved {filename} (PNG, PDF, EPS)")
+    
+    def _create_failure_analysis_sampled(self, output_dir, ai_data, sme_data):
+        """Create side-by-side comparison with sampled AI data for fair comparison."""
+        # Count failures for each criterion
+        ai_failures = {}
+        sme_failures = {}
         
-        # SME failures
-        fig2, ax2 = plt.subplots(1, 1, figsize=(8, 8))
-        bars = ax2.barh(y, sme_vals, color=COLORS['sme'], edgecolor='black', linewidth=0.5)
+        for col in CRITERIA_COLUMNS:
+            if col in ai_data.columns:
+                ai_failures[col] = (ai_data[col] == 'Fail').sum()
+            if col in sme_data.columns:
+                sme_failures[col] = (sme_data[col] == 'Fail').sum()
+        
+        # Sort by AI failures
+        ai_sorted = sorted(ai_failures.items(), key=lambda x: x[1], reverse=True)
+        criteria_names = [k.replace('_', ' ').title() for k, _ in ai_sorted]
+        ai_vals = [v for _, v in ai_sorted]
+        sme_vals = [sme_failures.get(k, 0) for k, _ in ai_sorted]
+        
+        # Create side-by-side comparison
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
+        y = np.arange(len(criteria_names))
+        
+        # Add main title for the entire figure
+        fig.suptitle('Failures by IWF Criteria (Equal Sample Sizes)', fontsize=16, fontweight='bold', y=0.98)
+        
+        # Determine common x-axis scale (use max of both)
+        max_scale = max(max(ai_vals), max(sme_vals))
+        
+        # AI failures (left)
+        bars1 = ax1.barh(y, ai_vals, color=COLORS['ai'], edgecolor='black', linewidth=0.5)
+        ax1.set_yticks(y)
+        ax1.set_yticklabels(criteria_names, fontsize=8)
+        ax1.set_xlabel('Number of Failures', fontsize=11)
+        ax1.set_title(f'AI-Generated Questions (n={len(ai_data)})',
+                     fontsize=11, pad=10)
+        ax1.set_xlim(0, max_scale * 1.1)
+        ax1.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
+        ax1.spines['top'].set_visible(False)
+        ax1.spines['right'].set_visible(False)
+        
+        for bar, val in zip(bars1, ai_vals):
+            if val > 0:
+                ax1.text(val + max_scale*0.015, bar.get_y() + bar.get_height()/2.,
+                        f'{val}', ha='left', va='center', fontsize=8)
+        
+        # SME failures (right) - same scale
+        bars2 = ax2.barh(y, sme_vals, color=COLORS['sme'], edgecolor='black', linewidth=0.5)
         ax2.set_yticks(y)
         ax2.set_yticklabels(criteria_names, fontsize=8)
         ax2.set_xlabel('Number of Failures', fontsize=11)
-        ax2.set_title('SME-Written Questions: Failures by Criterion',
-                     fontsize=12, pad=15)
+        ax2.set_title(f'SME-Authored Questions (n={len(sme_data)})',
+                     fontsize=11, pad=10)
+        ax2.set_xlim(0, max_scale * 1.1)  # Same scale as AI
         ax2.grid(axis='x', alpha=0.3, linestyle='--', linewidth=0.5)
         ax2.spines['top'].set_visible(False)
         ax2.spines['right'].set_visible(False)
         
-        for bar, val in zip(bars, sme_vals):
+        for bar, val in zip(bars2, sme_vals):
             if val > 0:
-                ax2.text(val + max(sme_vals)*0.015, bar.get_y() + bar.get_height()/2.,
+                ax2.text(val + max_scale*0.015, bar.get_y() + bar.get_height()/2.,
                         f'{val}', ha='left', va='center', fontsize=8)
         
-        plt.tight_layout()
-        filename = 'failure_by_criterion_sme.png'
+        plt.tight_layout(rect=[0, 0, 1, 0.96])
+        filename = 'failure_by_criterion_comparison_sampled.png'
         plt.savefig(output_dir / filename, dpi=600, bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
         plt.savefig(output_dir / filename.replace('.png', '.eps'), bbox_inches='tight', facecolor='white', format='eps')
@@ -960,10 +1057,10 @@ class QuestionQualityAnalyzer:
         bars1 = ax1.bar(x - width/2, self.category_analysis['AI_Failure_Rate_%'], width,
                        label='AI-Generated', color=COLORS['ai'], edgecolor='black', linewidth=1)
         bars2 = ax1.bar(x + width/2, self.category_analysis['SME_Failure_Rate_%'], width,
-                       label='SME-Written', color=COLORS['sme'], edgecolor='black', linewidth=1)
+                       label='SME-Authored', color=COLORS['sme'], edgecolor='black', linewidth=1)
         
         ax1.set_ylabel('Failure Rate (%)', fontsize=11)
-        ax1.set_title('SAQUET Failure Rate by Category\n(AI-Generated vs SME-Written)',
+        ax1.set_title('IWF Failure Rate by Quality Metric\n(AI-Generated vs SME-Authored)',
                      fontsize=12, pad=15)
         ax1.set_xticks(x)
         ax1.set_xticklabels(categories, fontsize=10)
@@ -1604,6 +1701,29 @@ def main():
     # Create prompt adherence visualizations
     print(f"\n[8/8] Creating prompt adherence visualizations...")
     analyzer.create_prompt_adherence_visualizations()
+    
+    # Create sampled comparison for fair comparison
+    print(f"\n[9/9] Creating sampled comparison with equal sample sizes...")
+    print("\n=== Creating Sampled Dataset for Fair Comparison ===")
+    
+    # Calculate percentage needed to match SME sample size
+    sme_count = len(sme_data)
+    ai_count = len(ai_data)
+    target_percentage = (sme_count / ai_count) * 100
+    
+    print(f"  Target: {sme_count} AI questions to match {sme_count} SME questions")
+    print(f"  Calculated sample percentage: {target_percentage:.2f}%")
+    
+    sampled_analyzer = QuestionQualityAnalyzer(base_path)
+    ai_data_sampled, sme_data_sampled = sampled_analyzer.load_all_files(sample_percentage=target_percentage)
+    
+    print(f"\n  Final sample sizes:")
+    print(f"  AI-Generated: {len(ai_data_sampled)} questions")
+    print(f"  SME-Authored: {len(sme_data_sampled)} questions")
+    print(f"  Difference: {abs(len(ai_data_sampled) - len(sme_data_sampled))} questions")
+    
+    # Create the sampled comparison chart
+    sampled_analyzer._create_failure_analysis_sampled(base_path, ai_data_sampled, sme_data_sampled)
     
     # Print tables to console for easy viewing
     print("\n" + "=" * 70)

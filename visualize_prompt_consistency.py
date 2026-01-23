@@ -559,7 +559,7 @@ class ConsistencyAnalyzer:
                     fmt='none', ecolor='black', capsize=5, linewidth=1.5, alpha=0.7)
         
         ax2.set_ylabel('Cross-Run Consistency (%)', fontsize=11)
-        ax2.set_title('Cross-Run Consistency by Discipline\n(Mean with min/max range)',
+        ax2.set_title('Cross-Run Behavior across multiple runs\n(Mean with min/max range)',
                      fontsize=12, pad=15)
         ax2.set_ylim([0, max(disc_cons_df['Max']) * 1.15])
         ax2.grid(axis='y', alpha=0.3, linestyle='--', linewidth=0.5)
