@@ -418,6 +418,15 @@
     background: var(--light);
   }
   .cat-card.highlight .pct { color: var(--navy); }
+  .slide8-takeaway {
+    margin-top: var(--space-lg);
+    text-align: center;
+    font-size: clamp(24px, 2.4vw, 40px);
+    font-weight: 700;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+  }
+  .slide8-takeaway strong { color: var(--accent); }
 
   /* MCQ example card */
   .mcq-wrap {
@@ -1282,6 +1291,11 @@ ul.clean li:last-child { border-bottom: none; }
   color: rgba(255,255,255,0.55); margin-bottom: 10px; line-height: 1;
 }
 .vbar-pct.dominant { font-size: clamp(34px, 4vw, 60px); color: var(--accent); }
+.vbar-top-label {
+  font-size: clamp(10px, 0.8vw, 12px); font-weight: 700;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em;
+  margin: 0 0 10px;
+}
 .vbar-bar { width: 100%; border-radius: 6px 6px 0 0; }
 .vbar-divider { height: 2px; background: rgba(255,255,255,0.12); margin: 0 0 var(--space-md); }
 .vbar-labels { display: flex; justify-content: center; gap: 5%; }
@@ -1289,7 +1303,7 @@ ul.clean li:last-child { border-bottom: none; }
   flex: 1; text-align: center; font-size: clamp(10px, 0.82vw, 13px);
   color: rgba(255,255,255,0.42); text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.4;
 }
-.vbar-label.dominant { color: rgba(255,255,255,0.70); font-weight: 700; }
+.vbar-label.dominant { color: rgba(255,255,255,0.88); font-weight: 700; }
 .vbar-caption {
   text-align: center; margin-top: var(--space-md);
   font-size: clamp(11px, 0.85vw, 14px); color: rgba(255,255,255,0.32);
@@ -1601,6 +1615,7 @@ ul.clean li:last-child { border-bottom: none; }
       <div class="disciplines" style="margin-top: var(--space-md);">
         <strong>Computer Science</strong> &nbsp;&middot;&nbsp; <strong>Data Science</strong> &nbsp;&middot;&nbsp; <strong>Mathematics</strong>
       </div>
+      <p style="margin-top: var(--space-lg); font-size: clamp(13px, 1.05vw, 17px); color: var(--muted); max-width: 600px; text-align: center; line-height: 1.6;">Each question was evaluated using our effectiveness framework across<br>quality and learning-objective alignment.</p>
     </div>
   </section>
 
@@ -1614,7 +1629,8 @@ ul.clean li:last-child { border-bottom: none; }
       <div class="vbar-chart">
         <div class="vbar-wrap">
           <div class="vbar-pct dominant">77.7%</div>
-          <div class="vbar-bar" style="height: clamp(100px, 17vw, 280px); background: rgba(255,255,255,0.72);"></div>
+          <div class="vbar-top-label">Classroom-ready</div>
+          <div class="vbar-bar" style="height: clamp(100px, 17vw, 280px); background: rgba(255,255,255,0.92);"></div>
         </div>
         <div class="vbar-wrap">
           <div class="vbar-pct">19.2%</div>
@@ -1668,6 +1684,7 @@ ul.clean li:last-child { border-bottom: none; }
         <div class="action">Start over</div>
       </div>
     </div>
+    <div class="slide8-takeaway"><strong>Only 0.6%</strong> required starting over</div>
   </section>
 
   <!-- Slide 9: Example Question -->
@@ -1678,12 +1695,12 @@ ul.clean li:last-child { border-bottom: none; }
     </div>
     <div class="mcq-wrap">
       <div class="mcq-card">
-        <div class="q">Which pandas method splits a dataframe into groups based on a categorical feature?</div>
+        <div class="q">In the expression <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">y = 3 + 2 * x</code>, which operation is performed first?</div>
         <ul class="mcq-options">
-          <li>A. <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">df.split()</code></li>
-          <li class="correct">B. <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">df.groupby()</code></li>
-          <li>C. <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">df.pivot_table()</code></li>
-          <li>D. <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">df.aggregate()</code></li>
+          <li>A. Addition of <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">3 + 2</code></li>
+          <li class="correct">B. Multiplication of <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">2 * x</code></li>
+          <li>C. Assignment to <code style="font-family: 'SF Mono', Menlo, Consolas, monospace;">y</code></li>
+          <li>D. Evaluation from right to left</li>
         </ul>
         <div class="mcq-answer">Answer: <strong>B</strong></div>
       </div>
