@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Accent color comparison</title>
+<style>
+  :root {
+    --navy: #1a2a4a;
+    --navy-pale: #eef1f7;
+    --charcoal: #2b2b2b;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --amber: #f59e0b;
+    --burnt: #ea580c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f5f6f8;
+    color: var(--charcoal);
+    padding: 40px;
+  }
+  h1 {
+    font-size: 24px; font-weight: 600; color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .sub { color: var(--muted); margin-bottom: 32px; font-size: 14px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .col {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .col-head {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    color: var(--muted); padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .col-head .hex { color: var(--charcoal); font-weight: 500; margin-left: 8px; }
+  .swatch-bar {
+    height: 60px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 600; letter-spacing: 0.05em;
+  }
+
+  /* Sample tiles */
+  .tile {
+    background: #fff; border-radius: 10px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .tile.dark {
+    background: var(--navy); color: rgba(255,255,255,0.88);
+  }
+
+  /* Eyebrow */
+  .eyebrow {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    margin-bottom: 12px;
+  }
+  .tile h3 {
+    font-size: 22px; font-weight: 600; line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .tile.dark h3 { color: #fff; }
+  .tile p { font-size: 14px; line-height: 1.5; color: var(--muted); }
+  .tile.dark p { color: rgba(255,255,255,0.6); }
+
+  /* Big number */
+  .big-num {
+    font-size: 58px; font-weight: 600; line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .big-num .unit { font-size: 0.45em; vertical-align: super; margin-left: 2px; }
+
+  /* Inline strong */
+  .body { font-size: 15px; line-height: 1.5; }
+  .body strong { font-weight: 700; }
+
+  /* Accent bar */
+  .accent-bar {
+    width: 60px; height: 4px; border-radius: 2px;
+    margin-bottom: 14px;
+  }
+
+  /* Stat row */
+  .stat-row { display: flex; align-items: baseline; gap: 14px; }
+  .stat-row .n { font-size: 32px; font-weight: 700; }
+  .stat-row .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+  .tile.dark .stat-row .lbl { color: rgba(255,255,255,0.55); }
+
+  /* Buttons / pill */
+  .pill {
+    display: inline-block; padding: 6px 14px; border-radius: 999px;
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.14em;
+  }
+
+  /* Quote */
+  .quote {
+    font-style: italic; font-size: 18px; line-height: 1.4;
+    padding-left: 16px; border-left: 2px solid;
+  }
+
+  /* Divider between sections */
+  .section-label {
+    grid-column: 1 / -1;
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    color: var(--muted);
+    margin: 16px 0 -8px;
+  }
+
+  /* Amber-specific colors */
+  .amber-text { color: var(--amber); }
+  .amber-bg   { background: var(--amber); }
+  .amber-border { border-color: var(--amber); }
+  .amber-bar  { background: var(--amber); }
+  .amber-pill { background: var(--amber); color: var(--navy); }
+  .amber-pill-outline { background: rgba(245,158,11,0.15); color: var(--amber); }
+
+  /* Burnt orange-specific colors */
+  .burnt-text { color: var(--burnt); }
+  .burnt-bg   { background: var(--burnt); }
+  .burnt-border { border-color: var(--burnt); }
+  .burnt-bar  { background: var(--burnt); }
+  .burnt-pill { background: var(--burnt); color: #fff; }
+  .burnt-pill-outline { background: rgba(234,88,12,0.12); color: var(--burnt); }
+</style>
+</head>
+<body>
+
+<h1>Accent color comparison</h1>
+<p class="sub">Each row shows the same component rendered with both candidates against light and dark backgrounds.</p>
+
+<div class="grid">
+
+  <!-- Column headers -->
+  <div class="col-head">Amber <span class="hex">#f59e0b</span></div>
+  <div class="col-head">Burnt orange <span class="hex">#ea580c</span></div>
+
+  <!-- Pure swatches -->
+  <div class="swatch-bar amber-bg">Amber</div>
+  <div class="swatch-bar burnt-bg">Burnt orange</div>
+
+  <!-- ─── 1. Eyebrow + heading on light ─── -->
+  <div class="section-label">1. Eyebrow label + heading on light slide</div>
+
+  <div class="tile">
+    <div class="eyebrow amber-text">The Question</div>
+    <h3>Can AI help create assessments?</h3>
+    <p>Eyebrow tag and accent line drawn in amber.</p>
+    <div class="accent-bar amber-bar" style="margin-top:14px;"></div>
+  </div>
+  <div class="tile">
+    <div class="eyebrow burnt-text">The Question</div>
+    <h3>Can AI help create assessments?</h3>
+    <p>Eyebrow tag and accent line drawn in burnt orange.</p>
+    <div class="accent-bar burnt-bar" style="margin-top:14px;"></div>
+  </div>
+
+  <!-- ─── 2. Big number on light ─── -->
+  <div class="section-label">2. Headline data number</div>
+
+  <div class="tile">
+    <div class="big-num amber-text">77.7<span class="unit">%</span></div>
+    <div class="eyebrow" style="margin-top:10px; color: var(--muted);">Classroom-ready</div>
+  </div>
+  <div class="tile">
+    <div class="big-num burnt-text">77.7<span class="unit">%</span></div>
+    <div class="eyebrow" style="margin-top:10px; color: var(--muted);">Classroom-ready</div>
+  </div>
+
+  <!-- ─── 3. Inline emphasis in body text ─── -->
+  <div class="section-label">3. Inline emphasis in body text</div>
+
+  <div class="tile">
+    <p class="body">
+      <strong class="amber-text">77.7%</strong> of generated questions were classroom-ready,
+      and only <strong class="amber-text">0.6%</strong> required complete replacement &mdash;
+      a result that strengthens the case for guardrail-led prompting.
+    </p>
+  </div>
+  <div class="tile">
+    <p class="body">
+      <strong class="burnt-text">77.7%</strong> of generated questions were classroom-ready,
+      and only <strong class="burnt-text">0.6%</strong> required complete replacement &mdash;
+      a result that strengthens the case for guardrail-led prompting.
+    </p>
+  </div>
+
+  <!-- ─── 4. Pills / tags ─── -->
+  <div class="section-label">4. Tag pills</div>
+
+  <div class="tile">
+    <span class="pill amber-pill-outline">Well-built</span>
+    &nbsp; <span class="pill amber-pill">Recommended</span>
+  </div>
+  <div class="tile">
+    <span class="pill burnt-pill-outline">Well-built</span>
+    &nbsp; <span class="pill burnt-pill">Recommended</span>
+  </div>
+
+  <!-- ─── 5. On dark slide ─── -->
+  <div class="section-label">5. On navy slide (eyebrow + heading)</div>
+
+  <div class="tile dark">
+    <div class="eyebrow amber-text">Discussion</div>
+    <h3>Questions?</h3>
+    <p>Amber on navy stays bright and warm.</p>
+  </div>
+  <div class="tile dark">
+    <div class="eyebrow burnt-text">Discussion</div>
+    <h3>Questions?</h3>
+    <p>Burnt orange on navy is deeper, more saturated.</p>
+  </div>
+
+  <!-- ─── 6. Big number on dark ─── -->
+  <div class="section-label">6. Headline data on navy</div>
+
+  <div class="tile dark">
+    <div class="big-num amber-text">77.7<span class="unit">%</span></div>
+    <div class="eyebrow" style="margin-top:10px; color: rgba(255,255,255,0.55);">Classroom-ready</div>
+  </div>
+  <div class="tile dark">
+    <div class="big-num burnt-text">77.7<span class="unit">%</span></div>
+    <div class="eyebrow" style="margin-top:10px; color: rgba(255,255,255,0.55);">Classroom-ready</div>
+  </div>
+
+  <!-- ─── 7. Inline emphasis on dark ─── -->
+  <div class="section-label">7. Inline emphasis on navy</div>
+
+  <div class="tile dark">
+    <p class="body">
+      <strong class="amber-text">77.7%</strong> of generated questions were classroom-ready,
+      and only <strong class="amber-text">0.6%</strong> required complete replacement.
+    </p>
+  </div>
+  <div class="tile dark">
+    <p class="body">
+      <strong class="burnt-text">77.7%</strong> of generated questions were classroom-ready,
+      and only <strong class="burnt-text">0.6%</strong> required complete replacement.
+    </p>
+  </div>
+
+  <!-- ─── 8. Quote with side bar ─── -->
+  <div class="section-label">8. Quote with side accent</div>
+
+  <div class="tile dark">
+    <div class="quote amber-border amber-text" style="color: rgba(255,255,255,0.92);">
+      "Prompt guardrails matter."
+    </div>
+  </div>
+  <div class="tile dark">
+    <div class="quote burnt-border burnt-text" style="color: rgba(255,255,255,0.92);">
+      "Prompt guardrails matter."
+    </div>
+  </div>
+
+  <!-- ─── 9. Numbered marker (key takeaways style) ─── -->
+  <div class="section-label">9. Numbered list markers</div>
+
+  <div class="tile dark">
+    <div style="display:flex; gap:18px; align-items:baseline; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.12);">
+      <span class="amber-text" style="font-weight:600; font-size:14px;">01</span>
+      <span>Prompt guardrails matter.</span>
+    </div>
+    <div style="display:flex; gap:18px; align-items:baseline; padding: 10px 0;">
+      <span class="amber-text" style="font-weight:600; font-size:14px;">02</span>
+      <span><strong class="amber-text">77.7%</strong> classroom-ready.</span>
+    </div>
+  </div>
+  <div class="tile dark">
+    <div style="display:flex; gap:18px; align-items:baseline; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.12);">
+      <span class="burnt-text" style="font-weight:600; font-size:14px;">01</span>
+      <span>Prompt guardrails matter.</span>
+    </div>
+    <div style="display:flex; gap:18px; align-items:baseline; padding: 10px 0;">
+      <span class="burnt-text" style="font-weight:600; font-size:14px;">02</span>
+      <span><strong class="burnt-text">77.7%</strong> classroom-ready.</span>
+    </div>
+  </div>
+
+  <!-- ─── 10. Bar fill ─── -->
+  <div class="section-label">10. Bar chart fill</div>
+
+  <div class="tile">
+    <div style="display:flex; align-items:center; gap:14px; margin-bottom:10px;">
+      <span style="width:160px; font-size:13px;">Absolute terms</span>
+      <div style="flex:1; height:18px; background:#f3f4f6; border-radius:3px; overflow:hidden;">
+        <div class="amber-bg" style="width:96%; height:100%;"></div>
+      </div>
+      <span style="width:50px; font-size:13px; font-weight:600;">9.6%</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <span style="width:160px; font-size:13px;">More than one correct</span>
+      <div style="flex:1; height:18px; background:#f3f4f6; border-radius:3px; overflow:hidden;">
+        <div class="amber-bg" style="width:2.4%; height:100%; opacity:.5;"></div>
+      </div>
+      <span style="width:50px; font-size:13px; opacity:.6;">0.24%</span>
+    </div>
+  </div>
+  <div class="tile">
+    <div style="display:flex; align-items:center; gap:14px; margin-bottom:10px;">
+      <span style="width:160px; font-size:13px;">Absolute terms</span>
+      <div style="flex:1; height:18px; background:#f3f4f6; border-radius:3px; overflow:hidden;">
+        <div class="burnt-bg" style="width:96%; height:100%;"></div>
+      </div>
+      <span style="width:50px; font-size:13px; font-weight:600;">9.6%</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <span style="width:160px; font-size:13px;">More than one correct</span>
+      <div style="flex:1; height:18px; background:#f3f4f6; border-radius:3px; overflow:hidden;">
+        <div class="burnt-bg" style="width:2.4%; height:100%; opacity:.5;"></div>
+      </div>
+      <span style="width:50px; font-size:13px; opacity:.6;">0.24%</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
